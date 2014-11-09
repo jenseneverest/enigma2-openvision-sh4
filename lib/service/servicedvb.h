@@ -172,6 +172,7 @@ public:
 	int isTimeshiftEnabled();
 	RESULT activateTimeshift();
 	RESULT setNextPlaybackFile(const char *fn);
+	void goToNextPlaybackFile();
 	RESULT saveTimeshiftFile();
 	std::string getTimeshiftFilename();
 	void switchToLive();

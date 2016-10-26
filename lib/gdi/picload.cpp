@@ -1155,6 +1155,13 @@ bool ePicLoad::getExif(const char *filename, int fileType, int Thumb)
 	return true;
 }
 
+static void fillrow_uint(unsigned int *row_buffer, unsigned int background, int len)
+{
+	unsigned int *end_buffer = (unsigned int *) row_buffer + len;
+	while(row_buffer < end_buffer)
+		*row_buffer++ = background;
+}
+
 int ePicLoad::getData(ePtr<gPixmap> &result)
 {
 	result = 0;
@@ -1178,7 +1185,6 @@ int ePicLoad::getData(ePtr<gPixmap> &result)
 	result = new gPixmap(m_filepara->max_x, m_filepara->max_y, m_filepara->bits == 8 ? 8 : 32,
 				NULL, m_filepara->bits == 8 ? gPixmap::accelAlways : gPixmap::accelAuto);
 	gUnmanagedSurface *surface = result->surface;
-
 	// original image    : ox, oy
 	// surface size      : max_x, max_y
 	// after aspect calc : scrx, scry
@@ -1232,80 +1238,48 @@ int ePicLoad::getData(ePtr<gPixmap> &result)
 	if (xoff != 0 || yoff != 0) {
 		unsigned int background;
 		if (m_filepara->bits == 8) {
-			gRGB bg(m_conf.background | 0xFF000000);
+			gRGB bg(m_conf.background);
 			background = surface->clut.findColor(bg);
-
-			if (yoff != 0) {
-				memset(tmp_buffer, background, yoff * surface->stride);
-				memset(tmp_buffer + (yoff + scry) * surface->stride, background,
-					(m_filepara->max_y - scry - yoff) * surface->stride);
-			}
-
-			if (xoff != 0) {
-				#pragma omp parallel for
-				for(int y = yoff; y < scry; ++y) {
-					memset(tmp_buffer + y * surface->stride, background, xoff);
-					memset(tmp_buffer + y * surface->stride + xoff + scrx, background,
-						(m_filepara->max_x - scrx - xoff));
-				}
-                        }
 		}
 		else {
 			background = m_conf.background;
-			if (yoff != 0) {
-				if (m_filepara->bits == 8)
-				{
-					unsigned char* row_buffer;
-					row_buffer = (unsigned char *) tmp_buffer;
-					for (int x = 0; x < m_filepara->max_x; ++x) // fill first line
-						*row_buffer++ = background;
-				}
-				else
-				{
-					unsigned int* row_buffer;
-					row_buffer = (unsigned int *) tmp_buffer;
-					for (int x = 0; x < m_filepara->max_x; ++x) // fill first line
-						*row_buffer++ = background;
-				}
-				int y;
-				#pragma omp parallel for
-				for (y = 1; y < yoff; ++y) // copy from first line
-					memcpy(tmp_buffer + y*surface->stride, tmp_buffer,
-						m_filepara->max_x * surface->bypp);
-				#pragma omp parallel for
-				for (y = yoff + scry; y < m_filepara->max_y; ++y)
-					memcpy(tmp_buffer + y * surface->stride, tmp_buffer,
-						m_filepara->max_x * surface->bypp);
+		}
+		if (yoff != 0) {
+			if (surface->bypp == 1) {
+				memset(tmp_buffer, background, m_filepara->max_x);
+			} else {
+				fillrow_uint((unsigned int *) tmp_buffer, background, m_filepara->max_x);
 			}
-			if (xoff != 0) {
-				if (m_filepara->bits == 8)
-				{
-					unsigned char* row_buffer = (unsigned char *) (tmp_buffer + yoff * surface->stride);
-					int x;
-					for (x = 0; x < xoff; ++x) // fill left side of first line
-						*row_buffer++ = background;
-					row_buffer += scrx;
-					for (x = xoff + scrx; x < m_filepara->max_x; ++x) // fill right side of first line
-						*row_buffer++ = background;
-				}
-				else {
-					unsigned int* row_buffer = (unsigned int *) (tmp_buffer + yoff * surface->stride);
-					int x;
-					for (x = 0; x < xoff; ++x) // fill left side of first line
-						*row_buffer++ = background;
-					row_buffer += scrx;
-					for (x = xoff + scrx; x < m_filepara->max_x; ++x) // fill right side of first line
-						*row_buffer++ = background;
-				}
-				#pragma omp parallel for
-				for (int y = yoff + 1; y < scry; ++y) { // copy from first line
-					memcpy(tmp_buffer + y*surface->stride,
-						tmp_buffer + yoff * surface->stride,
-						xoff * surface->bypp);
-					memcpy(tmp_buffer + y*surface->stride + (xoff + scrx) * surface->bypp,
-						tmp_buffer + yoff * surface->stride + (xoff + scrx) * surface->bypp,
-						(m_filepara->max_x - scrx - xoff) * surface->bypp);
-				}
+			int y;
+			#pragma omp parallel for
+			for (y = 1; y < yoff; ++y) // copy from first line
+				memcpy(tmp_buffer + y*surface->stride, tmp_buffer,
+					m_filepara->max_x * surface->bypp);
+			#pragma omp parallel for
+			for (y = yoff + scry; y < m_filepara->max_y; ++y)
+				memcpy(tmp_buffer + y * surface->stride, tmp_buffer,
+					m_filepara->max_x * surface->bypp);
+		}
+		if (xoff != 0) {
+			if(surface->bypp == 1) {
+				unsigned char *row_buffer = (unsigned char *) (tmp_buffer + yoff * surface->stride);
+				memset(row_buffer, background, xoff);
+				row_buffer += xoff + scrx;
+				memset(row_buffer, background, m_filepara->max_x - (xoff + scrx));
+			} else {
+				unsigned int *row_buffer = (unsigned int *) (tmp_buffer + yoff * surface->stride);
+				fillrow_uint(row_buffer, background, xoff);
+				row_buffer += xoff + scrx;
+				fillrow_uint(row_buffer, background, m_filepara->max_x - (xoff + scrx));
+			}
+			#pragma omp parallel for
+			for (int y = yoff + 1; y < scry; ++y) { // copy from first line
+				memcpy(tmp_buffer + y*surface->stride,
+					tmp_buffer + yoff * surface->stride,
+					xoff * surface->bypp);
+				memcpy(tmp_buffer + y*surface->stride + (xoff + scrx) * surface->bypp,
+					tmp_buffer + yoff * surface->stride + (xoff + scrx) * surface->bypp,
+					(m_filepara->max_x - scrx - xoff) * surface->bypp);
 			}
 		}
 		tmp_buffer += yoff * surface->stride + xoff * surface->bypp;

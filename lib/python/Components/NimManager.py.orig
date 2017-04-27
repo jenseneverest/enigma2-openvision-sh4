@@ -23,6 +23,10 @@ import xml.etree.cElementTree
 config.unicable = ConfigSubsection()
 
 def getConfigSatlist(orbpos, satlist):
+#+++>  CAUSE OF CRASH!
+	if not satlist:
+		return None
+#+++<
 	default_orbpos = None
 	for x in satlist:
 		if x[0] == orbpos:
@@ -479,7 +483,7 @@ class SecConfigure:
 		self.update()
 
 class NIM(object):
-	def __init__(self, slot, type, description, has_outputs = True, internally_connectable = None, multi_type = {}, frontend_id = None, i2c = None, is_empty = False):
+	def __init__(self, slot, type, description, has_outputs = True, internally_connectable = None, multi_type = {}, frontend_id = None, i2c = None, is_empty = False, multistream = False):
 		nim_types = ["DVB-S", "DVB-S2", "DVB-C", "DVB-T", "DVB-T2", "ATSC"]
 
 		if type and type not in nim_types:
@@ -490,6 +494,7 @@ class NIM(object):
 		self.type = type
 		self.description = description
 		self.has_outputs = has_outputs
+		self.multistream = multistream
 		self.internally_connectable = internally_connectable
 		self.multi_type = multi_type
 		self.i2c = i2c
@@ -592,12 +597,22 @@ class NIM(object):
 	def isEmpty(self):
 		return self.__is_empty
 
+	def hasMultistream(self):
+		return self.multistream
+
 	# empty tuners are supported!
 	def isSupported(self):
 		return (self.frontend_id is not None) or self.__is_empty
 
 	def isMultistream(self):
+<<<<<<< HEAD
+		# Spark support multistream thefore return True without test
+		return True
+
+		multistream = self.frontend_id and eDVBResourceManager.getInstance().frontendIsMultistream(self.frontend_id) or False
+=======
 		multistream = self.frontend_id is not None and eDVBResourceManager.getInstance().frontendIsMultistream(self.frontend_id) or False
+>>>>>>> upstream/develop
 		# HACK due to poor support for VTUNER_SET_FE_INFO
 		# When vtuner does not accept fe_info we have to fallback to detection using tuner name
 		# More tuner names will be added when confirmed as multistream (FE_CAN_MULTISTREAM)
@@ -750,26 +765,26 @@ class NimManager:
 			if not line:
 				break
 			line = line.strip()
-			if line.startswith("NIM Socket"):
+			if line[:10] == "NIM Socket":
 				parts = line.split(" ")
 				current_slot = int(parts[2][:-1])
 				entries[current_slot] = {}
-			elif line.startswith("Type:"):
+			elif line[:5] == "Type:":
 				entries[current_slot]["type"] = str(line[6:])
 				entries[current_slot]["isempty"] = False
-			elif line.startswith("Name:"):
+			elif line[:5] == "Name:":
 				entries[current_slot]["name"] = str(line[6:])
 				entries[current_slot]["isempty"] = False
-			elif line.startswith("Has_Outputs:"):
-				input = str(line[len("Has_Outputs:") + 1:])
+			elif line[:12] == "Has_Outputs:":
+				input = str(line[13:])
 				entries[current_slot]["has_outputs"] = (input == "yes")
-			elif line.startswith("Internally_Connectable:"):
-				input = int(line[len("Internally_Connectable:") + 1:])
+			elif line[:23] == "Internally_Connectable:":
+				input = int(line[24:])
 				entries[current_slot]["internally_connectable"] = input
-			elif line.startswith("Frontend_Device:"):
-				input = int(line[len("Frontend_Device:") + 1:])
+			elif line[:16] == "Frontend_Device:":
+				input = int(line[17:])
 				entries[current_slot]["frontend_device"] = input
-			elif  line.startswith("Mode"):
+			elif  line[:4] == "Mode":
 				# "Mode 0: DVB-T" -> ["Mode 0", "DVB-T"]
 				split = line.split(": ")
 				if len(split) > 1 and split[1]:
@@ -778,10 +793,13 @@ class NimManager:
 					modes = entries[current_slot].get("multi_type", {})
 					modes[split2[1]] = split[1].strip()
 					entries[current_slot]["multi_type"] = modes
-			elif line.startswith("I2C_Device:"):
-				input = int(line[len("I2C_Device:") + 1:])
+			elif line[:12] == "Multistream:":
+				input = str(line[13:])
+				entries[current_slot]["multistream"] = (input == "yes")
+			elif line[:11] == "I2C_Device:":
+				input = int(line[12:])
 				entries[current_slot]["i2c"] = input
-			elif line.startswith("empty"):
+			elif line[:5] == "empty":
 				entries[current_slot]["type"] = None
 				entries[current_slot]["name"] = _("N/A")
 				entries[current_slot]["isempty"] = True
@@ -795,6 +813,8 @@ class NimManager:
 				entry["i2c"] = None
 			if "has_outputs" not in entry:
 				entry["has_outputs"] = True
+			if "multistream" not in entry:
+				entry["multistream"] = False
 			if "frontend_device" in entry: # check if internally connectable
 				if os.path.exists("/proc/stb/frontend/%d/rf_switch" % entry["frontend_device"]):
 					entry["internally_connectable"] = entry["frontend_device"] - 1
@@ -804,7 +824,7 @@ class NimManager:
 				entry["frontend_device"] = entry["internally_connectable"] = None
 			if "multi_type" not in entry:
 				entry["multi_type"] = {}
-			self.nim_slots.append(NIM(slot = id, description = entry["name"], type = entry["type"], has_outputs = entry["has_outputs"], internally_connectable = entry["internally_connectable"], multi_type = entry["multi_type"], frontend_id = entry["frontend_device"], i2c = entry["i2c"], is_empty = entry["isempty"]))
+			self.nim_slots.append(NIM(slot = id, description = entry["name"], type = entry["type"], has_outputs = entry["has_outputs"], internally_connectable = entry["internally_connectable"], multi_type = entry["multi_type"], frontend_id = entry["frontend_device"], i2c = entry["i2c"], is_empty = entry["isempty"], multistream = entry["multistream"]))
 
 	def hasNimType(self, chktype):
 		return any(slot.canBeCompatible(chktype) for slot in self.nim_slots)

@@ -2,6 +2,9 @@ from Screens.Screen import Screen
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, getConfigListEntry
 from Components.Sources.StaticText import StaticText
+from Plugins.Plugin import PluginDescriptor
+
+import Components.HdmiCec
 
 class HdmiCECSetupScreen(Screen, ConfigListScreen):
 	skin = """
@@ -69,11 +72,6 @@ class HdmiCECSetupScreen(Screen, ConfigListScreen):
 			self.list.append(getConfigListEntry(_("Wakeup receiver from standby"), config.hdmicec.control_receiver_wakeup))
 			self.list.append(getConfigListEntry(_("Minimum send interval"), config.hdmicec.minimum_send_interval))
 			self.list.append(getConfigListEntry(_("Repeat leave standby messages"), config.hdmicec.repeat_wakeup_timer))
-			self.list.append(getConfigListEntry(_("Detect next boxes before standby"), config.hdmicec.next_boxes_detect))
-			self.list.append(getConfigListEntry(_("Debug to file"), config.hdmicec.debug))
-			self.logpath_entry = getConfigListEntry(_("Select path for logfile"), config.hdmicec.log_path)
-			if config.hdmicec.debug.value != "0":
-				self.list.append(self.logpath_entry)
 		self["config"].list = self.list
 		self["config"].l.setList(self.list)
 
@@ -121,6 +119,8 @@ class HdmiCECSetupScreen(Screen, ConfigListScreen):
 			fixedaddresslabel = _("Using fixed address") + ": " + config.hdmicec.fixed_physical_address.value
 		self["fixed_address"].setText(fixedaddresslabel)
 
+<<<<<<< HEAD
+=======
 	def logPath(self, res):
 		if res is not None:
 			config.hdmicec.log_path.value = res
@@ -134,6 +134,7 @@ class HdmiCECSetupScreen(Screen, ConfigListScreen):
 				inhibitDirs=inhibitDirs, minFree=1
 				)
 
+>>>>>>> upstream/develop
 def main(session, **kwargs):
 	session.open(HdmiCECSetupScreen)
 
@@ -143,9 +144,4 @@ def startSetup(menuid):
 	return []
 
 def Plugins(**kwargs):
-	from os import path
-	if path.exists("/dev/hdmi_cec") or path.exists("/dev/misc/hdmi_cec0"):
-		import Components.HdmiCec
-		from Plugins.Plugin import PluginDescriptor
-		return [PluginDescriptor(where = PluginDescriptor.WHERE_MENU, fnc = startSetup)]
-	return []
+	return [PluginDescriptor(where = PluginDescriptor.WHERE_MENU, fnc = startSetup)]

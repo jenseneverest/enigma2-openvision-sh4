@@ -26,17 +26,16 @@ def to_unsigned(x):
 def ServiceInfoListEntry(a, b, valueType=TYPE_TEXT, param=4):
 	print "b:", b
 	if not isinstance(b, str):
-		if valueType == TYPE_VALUE_HEX:
+		if valueType is TYPE_VALUE_HEX:
 			b = ("%0" + str(param) + "X") % to_unsigned(b)
-		elif valueType == TYPE_VALUE_FREQ:
+		elif valueType is TYPE_VALUE_FREQ:
 			b = "%s MHz" % (b / 1000)
-		elif valueType == TYPE_VALUE_FREQ_FLOAT:
+		elif valueType is TYPE_VALUE_FREQ_FLOAT:
 			b = "%.3f MHz" % (b / 1000.0)
-		elif valueType == TYPE_VALUE_BITRATE:
+		elif valueType is TYPE_VALUE_BITRATE:
 			b = "%s KSymbols/s" % (b / 1000)
-		elif valueType == TYPE_VALUE_HEX_DEC:
 			b = ("%0" + str(param) + "X (%d)") % (to_unsigned(b), b)
-		elif valueType == TYPE_VALUE_ORBIT_DEC:
+		elif valueType is TYPE_VALUE_ORBIT_DEC:
 			direction = 'E'
 			if b > 1800:
 				b = 3600 - b
@@ -201,22 +200,30 @@ class ServiceInfo(Screen):
 			else:
 				tuner = (_("NIM & Type"), chr(ord('A') + frontendData["tuner_number"]) + " - " + frontendData["tuner_type"], TYPE_TEXT)
 			if frontendDataOrg["tuner_type"] == "DVB-S":
-				return (tuner,
+				data = (tuner,
 					(_("System & Modulation"), frontendData["system"] + " " + frontendData["modulation"], TYPE_TEXT),
 					(_("Orbital position"), frontendData["orbital_position"], TYPE_VALUE_DEC),
 					(_("Frequency & Polarization"), "%s MHz" % (frontendData.get("frequency", 0) / 1000) + " - " + frontendData["polarization"], TYPE_TEXT),
 					(_("Symbol rate & FEC"), "%s KSymb/s" % (frontendData.get("symbol_rate", 0) / 1000) + " - " + frontendData["fec_inner"], TYPE_TEXT),
+<<<<<<< HEAD
+					(_("Inversion, Pilot & Roll-off"), frontendData["inversion"] + " - " + str(frontendData.get("pilot", None)) + " - " + str(frontendData.get("rolloff", None)), TYPE_TEXT),)
+				if frontendData["system"] == "DVB-S2":
+					data += ((_("Input Stream"), frontendData["is_id"], TYPE_VALUE_DEC),
+						(_("PLS Mode & PLS Code"), str(frontendData["pls_mode"]) + " - " + str(frontendData["pls_code"]), TYPE_TEXT),)
+				return data
+=======
 					(_("Inversion, Pilot & Roll-off"), frontendData["inversion"] + " - " + str(frontendData.get("pilot", None)) + " - " + str(frontendData.get("rolloff", None)), TYPE_TEXT),
 					(_("Input Stream ID"), frontendData.get("is_id", 0), TYPE_VALUE_DEC),
 					(_("PLS Mode"), frontendData.get("pls_mode", None), TYPE_TEXT),
 					(_("PLS Code"), frontendData.get("pls_code", 0), TYPE_VALUE_DEC))
+>>>>>>> upstream/develop
 			elif frontendDataOrg["tuner_type"] == "DVB-C":
 				return (tuner,
 					(_("Modulation"), frontendData["modulation"], TYPE_TEXT),
 					(_("Frequency"), frontendData.get("frequency", 0), TYPE_VALUE_FREQ_FLOAT),
 					(_("Symbol rate & FEC"), "%s KSymb/s" % (frontendData.get("symbol_rate", 0) / 1000) + " - " + frontendData["fec_inner"], TYPE_TEXT),
 					(_("Inversion"), frontendData["inversion"], TYPE_TEXT))
-			elif frontendDataOrg["tuner_type"] == "DVB-T":
+			elif frontendDataOrg["tuner_type"] == "DVB-T" and frontendData["system"] == "DVB-T2":
 				return (tuner,
 					(_("Frequency & Channel"), "%.3f MHz" % ((frontendData.get("frequency", 0) / 1000) / 1000.0) + " - Ch. " + getChannelNumber(frontendData["frequency"], frontendData["tuner_number"]), TYPE_TEXT),
 					(_("Inversion & Bandwidth"), frontendData["inversion"] + " - " + str(frontendData["bandwidth"]), TYPE_TEXT),

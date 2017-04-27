@@ -66,7 +66,7 @@ class ServiceScan:
 						else:
 							network = ("%s %d.%d %s") % (sat_name, orb_pos / 10, orb_pos % 10, h)
 						tp_text = { tp.System_DVB_S : "DVB-S", tp.System_DVB_S2 : "DVB-S2" }.get(tp.system, "")
-						if tp_text == "DVB-S2":
+						if tp.system == tp.System_DVB_S2:
 							tp_text = ("%s %s") % ( tp_text,
 								{ tp.Modulation_Auto : "Auto", tp.Modulation_QPSK : "QPSK",
 									tp.Modulation_8PSK : "8PSK", tp.Modulation_QAM16 : "QAM16",
@@ -79,8 +79,13 @@ class ServiceScan:
 								tp.FEC_3_4 : "3/4", tp.FEC_5_6 : "5/6", tp.FEC_7_8 : "7/8",
 								tp.FEC_8_9 : "8/9", tp.FEC_3_5 : "3/5", tp.FEC_4_5 : "4/5",
 								tp.FEC_9_10 : "9/10", tp.FEC_None : "NONE" }.get(tp.fec, ""))
+<<<<<<< HEAD
+						if tp.system == tp.System_DVB_S2 and tp.is_id > -1:
+							tp_text = ("%s IS %d") % ( tp_text, tp.is_id )
+=======
 						if tp.is_id > -1 and tp.system == tp.System_DVB_S2:
 							tp_text = ("%s IS %d") % (tp_text, tp.is_id)
+>>>>>>> upstream/develop
 					elif tp_type == iDVBFrontend.feCable:
 						network = _("Cable")
 						tp = transponder.getDVBC()
@@ -106,7 +111,7 @@ class ServiceScan:
 								tp.System_DVB_T : "DVB-T",
 								tp.System_DVB_T2 : "DVB-T2"
 							}.get(tp.system, ""),
-							{
+							{ 
 								tp.Modulation_QPSK : "QPSK",
 								tp.Modulation_QAM16 : "QAM16", tp.Modulation_QAM64 : "QAM64",
 								tp.Modulation_Auto : "AUTO", tp.Modulation_QAM256 : "QAM256"
@@ -117,6 +122,8 @@ class ServiceScan:
 								tp.Bandwidth_Auto : "Bw Auto", tp.Bandwidth_5MHz : "Bw 5MHz",
 								tp.Bandwidth_1_712MHz : "Bw 1.712MHz", tp.Bandwidth_10MHz : "Bw 10MHz"
 							}.get(tp.bandwidth, ""))
+						if tp.plp_id > -1 and tp.system == tp.System_DVB_T2:
+							tp_text += (" PLP %d") %(tp.plp_id)
 					elif tp_type == iDVBFrontend.feATSC:
 						network = _("ATSC")
 						tp = transponder.getATSC()

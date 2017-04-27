@@ -863,7 +863,7 @@ exit:
 
 DEFINE_REF(eServiceLibpl);
 
-RESULT eServiceLibpl::connectEvent(const Slot2<void,iPlayableService*,int> &event, ePtr<eConnection> &connection)
+RESULT eServiceLibpl::connectEvent(const sigc::slot2<void,iPlayableService*,int> &event, ePtr<eConnection> &connection)
 {
 	connection = new eConnection((iPlayableService*)this, m_event.connect(event));
 	m_event(this, evSeekableStatusChanged);

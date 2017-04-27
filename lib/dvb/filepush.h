@@ -20,7 +20,7 @@ public:
 #endif
 };
 
-class eFilePushThread: public eThread, public Object
+class eFilePushThread: public eThread, public sigc::trackable
 {
 public:
 	eFilePushThread(int blocksize, size_t buffersize);
@@ -41,7 +41,7 @@ public:
 	void setScatterGather(iFilePushScatterGather *);
 
 	enum { evtEOF, evtReadError, evtWriteError, evtUser, evtStopped };
-	Signal1<void,int> m_event;
+	sigc::signal1<void,int> m_event;
 
 		/* you can send private events if you want */
 	void sendEvent(int evt);
@@ -68,7 +68,7 @@ private:
 	void recvEvent(const int &evt);
 };
 
-class eFilePushThreadRecorder: public eThread, public Object
+class eFilePushThreadRecorder: public eThread, public sigc::trackable
 {
 public:
 	eFilePushThreadRecorder(unsigned char* buffer, size_t buffersize);
@@ -77,7 +77,7 @@ public:
 	void start(int sourcefd);
 
 	enum { evtEOF, evtReadError, evtWriteError, evtUser, evtStopped };
-	Signal1<void,int> m_event;
+	sigc::signal1<void,int> m_event;
 
 	void sendEvent(int evt);
 protected:

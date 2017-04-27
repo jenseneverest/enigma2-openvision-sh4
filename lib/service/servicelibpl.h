@@ -82,7 +82,7 @@ public:
 
 class eServiceLibpl: public iPlayableService, public iPauseableService,
 	public iServiceInformation, public iSeekableService, public iAudioTrackSelection, public iAudioChannelSelection,
-	public iSubtitleOutput, public iStreamedService, public iAudioDelay, public Object, public iCueSheet
+	public iSubtitleOutput, public iStreamedService, public iAudioDelay, public sigc::trackable, public iCueSheet
 {
 	DECLARE_REF(eServiceLibpl);
 
@@ -92,7 +92,7 @@ public:
 	eFixedMessagePump<int> (*inst_m_pump);
 
 	// iPlayableService
-	RESULT connectEvent(const Slot2<void,iPlayableService*,int> &event, ePtr<eConnection> &connection);
+	RESULT connectEvent(const sigc::slot2<void,iPlayableService*,int> &event, ePtr<eConnection> &connection);
 	RESULT start();
 	RESULT stop();
 	RESULT pause(ePtr<iPauseableService> &ptr);
@@ -244,7 +244,7 @@ private:
 	bool m_use_chapter_entries;
 	bufferInfo m_bufferInfo;
 	eServiceLibpl(eServiceReference ref);
-	Signal2<void, iPlayableService*, int> m_event;
+	sigc::signal2<void, iPlayableService*, int> m_event;
 	enum
 	{
 		stIdle, stRunning, stStopped,

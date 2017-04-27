@@ -9,4 +9,4 @@ install_PYTHON = \
 	ValueBitTest.py TunerInfo.py ConfigEntryTest.py ClientsStreaming.py TemplatedMultiContent.py ProgressToText.py \
 	Combine.py SensorToText.py ValueToPixmap.py PliExtraInfo.py genre.py TransponderInfo.py \
 	VfdDisplay.py VfdNumberClock.py \
-	RotorPosition.py
+	RotorPosition.py BhAnalogic.py

@@ -4,7 +4,7 @@ SUBDIRS = SoftwareManager PositionerSetup Satfinder \
 	SkinSelector SatelliteEquipmentControl Videomode VideoTune Hotplug \
 	DefaultServicesScanner DiseqcTester \
 	FastScan OSDPositionSetup OSD3DSetup HdmiCEC VideoClippingSetup \
-	VideoEnhancement NetworkWizard
+	VideoEnhancement NetworkWizard CableScan
 
 if ! ENABLE_MINIMAL
 SUBDIRS += WirelessLan

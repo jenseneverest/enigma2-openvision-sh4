@@ -133,7 +133,8 @@
 		<key id="KEY_PLAY" mapto="showMovies" flags="m"/>
 		<key id="KEY_FIND" mapto="showMovies" flags="m"/>
 		<key id="KEY_FILE" mapto="showMovies" flags="m"/>
-		<key id="KEY_TV" mapto="toggleTvRadio" flags="m"/>
+		<key id="KEY_TV" mapto="toggleTvRadio" flags="b"/>
+		<key id="KEY_RADIO" mapto="toggleTvRadio" flags="b"/>
 	</map>
 
 	<map context="InfobarAudioSelectionActions">
@@ -346,9 +347,9 @@
 	</map>
 
 	<map context="TvRadioActions">
-		<key id="KEY_0" mapto="keyTV" flags="m"/>
-		<key id="KEY_RADIO" mapto="keyRadio" flags="m"/>
-		<key id="KEY_TV" mapto="keyTV" flags="m"/>
+		<key id="KEY_0" mapto="keyTV" flags="b"/>
+		<key id="KEY_RADIO" mapto="keyRadio" flags="b"/>
+		<key id="KEY_TV" mapto="keyTV" flags="b"/>
 	</map>
 
 	<map context="TimerEditActions">

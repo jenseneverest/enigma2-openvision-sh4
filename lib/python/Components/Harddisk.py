@@ -27,7 +27,7 @@ def getProcMounts():
 def isFileSystemSupported(filesystem):
 	try:
 		for fs in open('/proc/filesystems', 'r'):
-			if fs.strip()[-len(filesystem):] == filesystem:
+			if fs.strip().endswith(filesystem):
 				return True
 		return False
 	except Exception, ex:
@@ -77,16 +77,26 @@ class Harddisk:
 		except:
 			self.rotational = True
 
-		if self.type is DEVTYPE_UDEV:
+		if self.type == DEVTYPE_UDEV:
 			self.dev_path = '/dev/' + self.device
 			self.disk_path = self.dev_path
 			self.card = "sdhci" in self.phys_path
 
-#+++>
-		elif self.type is DEVTYPE_DEVFS:
-			self.dev_path = '/dev/' + self.device
-			self.disk_path = self.dev_path
-#+++<
+		elif self.type == DEVTYPE_DEVFS:
+			tmp = readFile(self.sysfsPath('dev')).split(':')
+			s_major = int(tmp[0])
+			s_minor = int(tmp[1])
+			for disc in os.listdir("/dev/discs"):
+				dev_path = os.path.realpath('/dev/discs/' + disc)
+				disk_path = dev_path + '/disc'
+				try:
+					rdev = os.stat(disk_path).st_rdev
+				except OSError:
+					continue
+				if s_major == os.major(rdev) and s_minor == os.minor(rdev):
+					self.dev_path = dev_path
+					self.disk_path = disk_path
+					break
 			self.card = self.device[:2] == "hd" and "host0" not in self.dev_path
 
 		print "[Harddisk] new device", self.device, '->', self.dev_path, '->', self.disk_path
@@ -97,12 +107,12 @@ class Harddisk:
 		return self.device < ob.device
 
 	def partitionPath(self, n):
-		if self.type is DEVTYPE_UDEV:
+		if self.type == DEVTYPE_UDEV:
 			if self.dev_path.startswith('/dev/mmcblk0'):
 				return self.dev_path + "p" + n
 			else:
 				return self.dev_path + n
-		elif self.type is DEVTYPE_DEVFS:
+		elif self.type == DEVTYPE_DEVFS:
 			return self.dev_path + '/part' + n
 
 	def sysfsPath(self, filename):
@@ -116,10 +126,10 @@ class Harddisk:
 	def bus(self):
 		ret = _("External")
 		# SD/MMC(F1 specific)
-		if self.type is DEVTYPE_UDEV:
+		if self.type == DEVTYPE_UDEV:
 			type_name = " (SD/MMC)"
 		# CF(7025 specific)
-		elif self.type is DEVTYPE_DEVFS:
+		elif self.type == DEVTYPE_DEVFS:
 			type_name = " (CF)"
 
 		if self.card:
@@ -181,30 +191,30 @@ class Harddisk:
 
 	def numPartitions(self):
 		numPart = -1
-		if self.type is DEVTYPE_UDEV:
+		if self.type == DEVTYPE_UDEV:
 			try:
 				devdir = os.listdir('/dev')
 			except OSError:
 				return -1
 			for filename in devdir:
-				if filename[:len(self.device)] == self.device:
+				if filename.startswith(self.device):
 					numPart += 1
 
-		elif self.type is DEVTYPE_DEVFS:
+		elif self.type == DEVTYPE_DEVFS:
 			try:
 				idedir = os.listdir(self.dev_path)
 			except OSError:
 				return -1
 			for filename in idedir:
-				if filename[:4] == "disc":
+				if filename.startswith("disc"):
 					numPart += 1
-				if filename[:4] == "part":
+				if filename.startswith("part"):
 					numPart += 1
 		return numPart
 
 	def mountDevice(self):
 		for parts in getProcMounts():
-			if os.path.realpath(parts[0])[:len(self.dev_path)] == self.dev_path:
+			if os.path.realpath(parts[0]).startswith(self.dev_path):
 				self.mount_device = parts[0]
 				self.mount_path = parts[1]
 				return parts[1]
@@ -212,7 +222,7 @@ class Harddisk:
 
 	def enumMountDevices(self):
 		for parts in getProcMounts():
-			if os.path.realpath(parts[0])[:len(self.dev_path)] == self.dev_path:
+			if os.path.realpath(parts[0]).startswith(self.dev_path):
 				yield parts[1]
 
 	def findMount(self):
@@ -262,7 +272,7 @@ class Harddisk:
 				return (res >> 8)
 		# device is not in fstab
 		res = -1
-		if self.type is DEVTYPE_UDEV:
+		if self.type == DEVTYPE_UDEV:
 			# we can let udev do the job, re-read the partition table
 			res = os.system('hdparm -z ' + self.disk_path)
 			# give udev some time to make the mount, which it will do asynchronously
@@ -378,7 +388,7 @@ class Harddisk:
 		elif size > 2048:
 			# Over 2GB: 32 i-nodes per megabyte
 			task.args += ["-T", "largefile", "-N", str(size * 32)]
-		task.args += ["-L hdd","-m0", "-O", ",".join(big_o_options), self.partitionPath("1")]
+		task.args += ["-m0", "-O", ",".join(big_o_options), self.partitionPath("1")]
 
 		task = MountTask(job, self)
 		task.weighting = 3
@@ -722,10 +732,6 @@ class HarddiskManager:
 		error, blacklisted, removable, is_cdrom, partitions, medium_found = self.getBlockDevInfo(device)
 		if not blacklisted and medium_found:
 			description = self.getUserfriendlyDeviceName(device, physdev)
-#+++>
-			if description[:16] == "External Storage":
-				return False, False, False, False, [], False
-#+++<
 			p = Partition(mountpoint = self.getMountpoint(device), description = description, force_mounted = True, device = device)
 			self.partitions.append(p)
 			if p.mountpoint: # Plugins won't expect unmounted devices
@@ -815,17 +821,16 @@ class HarddiskManager:
 	def getUserfriendlyDeviceName(self, dev, phys):
 		dev, part = self.splitDeviceName(dev)
 		description = _("External Storage %s") % dev
-		if "virtual" not in phys:
-			try:
-				description = readFile("/sys" + phys + "/model")
-			except IOError, s:
-				print "couldn't read model: ", s
+		try:
+			description = readFile("/sys" + phys + "/model")
+		except IOError, s:
+			print "couldn't read model: ", s
 		from Tools.HardwareInfo import HardwareInfo
 		for physdevprefix, pdescription in DEVICEDB.get(HardwareInfo().device_name,{}).items():
-			if phys[:len(physdevprefix)] == physdevprefix:
+			if phys.startswith(physdevprefix):
 				description = pdescription
 		# not wholedisk and not partition 1
-		if part and part is not 1:
+		if part and part != 1:
 			description += _(" (Partition %d)") % part
 		return description
 
@@ -844,7 +849,7 @@ class HarddiskManager:
 
 	def setDVDSpeed(self, device, speed = 0):
 		ioctl_flag=int(0x5322)
-		if device[0] != '/':
+		if not device.startswith('/'):
 			device = "/dev/" + device
 		try:
 			from fcntl import ioctl
@@ -909,7 +914,7 @@ class MountTask(Task.LoggingTask):
 				self.postconditions.append(Task.ReturncodePostcondition())
 				return
 		# device is not in fstab
-		if self.hdd.type is DEVTYPE_UDEV:
+		if self.hdd.type == DEVTYPE_UDEV:
 			# we can let udev do the job, re-read the partition table
 			# Sorry for the sleep 2 hack...
 			self.setCmdline('sleep 2; hdparm -z ' + self.hdd.disk_path)

@@ -639,7 +639,7 @@ void ePicLoad::decodePic()
 
 	if (m_filepara->id == F_JPEG)
 	{
-		//eDebug("[ePicLoad] hardware decode picture... %s", m_filepara->file);
+		eDebug("[ePicLoad] hardware decode picture... %s", m_filepara->file);
 		m_filepara->pic_buffer = NULL;
 		FILE *fp;
 
@@ -666,7 +666,7 @@ void ePicLoad::decodePic()
 		m_filepara->pic_buffer = NULL;
 	}
 
-	eDebug("[ePicLoad] decode picture... %s", m_filepara->file);
+	//eDebug("[ePicLoad] decode picture... %s", m_filepara->file);
 
 	switch(m_filepara->id)
 	{

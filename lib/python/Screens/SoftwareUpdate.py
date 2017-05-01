@@ -64,14 +64,9 @@ class UpdatePlugin(Screen, ProtectedScreen):
 
 		self.activity = 0
 		self.activityTimer = eTimer()
-		self.activityTimer.callback.append(self.checkTraficLight1)
+		self.activityTimer.callback.append(self.checkTraficLight)
 		self.activityTimer.callback.append(self.doActivityTimer)
-		self.activityTimer.start(20, True)
-
-	def checkTraficLight1(self):
-		self.activityTimer.callback.remove(self.checkTraficLight1)
-		self.activityTimer.start(100, False)
-		self.showDisclaimer()
+		self.activityTimer.start(100, True)
 
 	def isProtected(self):
 		return config.ParentalControl.setuppinactive.value and\
@@ -131,9 +126,6 @@ class UpdatePlugin(Screen, ProtectedScreen):
 			self.startActualUpdate(answer)
 
 	def getLatestImageTimestamp(self):
-		# TODO: Impement own sh4 timestamp
-		return ""
-		
 		currentTimeoutDefault = socket.getdefaulttimeout()
 		socket.setdefaulttimeout(3)
 		try:
@@ -172,9 +164,9 @@ class UpdatePlugin(Screen, ProtectedScreen):
 		self.setEndMessage(ngettext("Update completed, %d package was installed.", "Update completed, %d packages were installed.", self.packages) % self.packages)
 
 	def ipkgCallback(self, event, param):
-		if event is IpkgComponent.EVENT_DOWNLOAD:
+		if event == IpkgComponent.EVENT_DOWNLOAD:
 			self.status.setText(_("Downloading"))
-		elif event is IpkgComponent.EVENT_UPGRADE:
+		elif event == IpkgComponent.EVENT_UPGRADE:
 			if param in self.sliderPackages:
 				self.slider.setValue(self.sliderPackages[param])
 			self.package.setText(param)
@@ -182,22 +174,22 @@ class UpdatePlugin(Screen, ProtectedScreen):
 			if not param in self.processed_packages:
 				self.processed_packages.append(param)
 				self.packages += 1
-		elif event is IpkgComponent.EVENT_INSTALL:
+		elif event == IpkgComponent.EVENT_INSTALL:
 			self.package.setText(param)
 			self.status.setText(_("Installing"))
 			if not param in self.processed_packages:
 				self.processed_packages.append(param)
 				self.packages += 1
-		elif event is IpkgComponent.EVENT_REMOVE:
+		elif event == IpkgComponent.EVENT_REMOVE:
 			self.package.setText(param)
 			self.status.setText(_("Removing"))
 			if not param in self.processed_packages:
 				self.processed_packages.append(param)
 				self.packages += 1
-		elif event is IpkgComponent.EVENT_CONFIGURING:
+		elif event == IpkgComponent.EVENT_CONFIGURING:
 			self.package.setText(param)
 			self.status.setText(_("Configuring"))
-		elif event is IpkgComponent.EVENT_MODIFIED:
+		elif event == IpkgComponent.EVENT_MODIFIED:
 			if config.plugins.softwaremanager.overwriteConfigFiles.value in ("N", "Y"):
 				self.ipkg.write(True and config.plugins.softwaremanager.overwriteConfigFiles.value)
 			else:
@@ -206,13 +198,13 @@ class UpdatePlugin(Screen, ProtectedScreen):
 					MessageBox,
 					_("A configuration file (%s) has been modified since it was installed.\nDo you want to keep your modifications?") % (param)
 				)
-		elif event is IpkgComponent.EVENT_ERROR:
+		elif event == IpkgComponent.EVENT_ERROR:
 			self.error += 1
-		elif event is IpkgComponent.EVENT_DONE:
+		elif event == IpkgComponent.EVENT_DONE:
 			if self.updating:
 				self.updating = False
 				self.ipkg.startCmd(IpkgComponent.CMD_UPGRADE_LIST)
-			elif self.ipkg.currentCommand is IpkgComponent.CMD_UPGRADE_LIST and self.error == 0:
+			elif self.ipkg.currentCommand == IpkgComponent.CMD_UPGRADE_LIST:
 				self.total_packages = len(self.ipkg.getFetchedList())
 				if self.total_packages:
 					latestImageTimestamp = self.getLatestImageTimestamp()
@@ -226,11 +218,11 @@ class UpdatePlugin(Screen, ProtectedScreen):
 					choices = [(_("Update and reboot (recommended)"), "cold"),
 						(_("Update and ask to reboot"), "hot"),
 						(_("Update channel list only"), "channels"),
-						(_("Show updated packages"), "showlist")]
+						(_("Show packages to be upgraded"), "showlist")]
 				else:
 					message = _("No updates available")
 					choices = []
-				if fileExists("/hdd/ipkgupgrade.log"):
+				if fileExists("/home/root/ipkgupgrade.log"):
 					choices.append((_("Show latest upgrade log"), "log"))
 				choices.append((_("Show latest commits"), "commits"))
 				if not config.usage.show_update_disclaimer.value:
@@ -263,7 +255,7 @@ class UpdatePlugin(Screen, ProtectedScreen):
 				if self.updating:
 					error = _("Update failed. Your receiver does not have a working internet connection.")
 				self.status.setText(_("Error") +  " - " + error)
-		elif event is IpkgComponent.EVENT_LISTITEM:
+		elif event == IpkgComponent.EVENT_LISTITEM:
 			if 'enigma2-plugin-settings-' in param[0] and self.channellist_only > 0:
 				self.channellist_name = param[0]
 				self.channellist_only = 2
@@ -299,7 +291,7 @@ class UpdatePlugin(Screen, ProtectedScreen):
 			self.session.openWithCallback(boundFunction(self.ipkgCallback, IpkgComponent.EVENT_DONE, None), TextBox, text, _("Packages to update"), True)
 		elif answer[1] == "log":
 			text = ""
-			for i in open("/hdd/ipkgupgrade.log", "r").readlines():
+			for i in open("/home/root/ipkgupgrade.log", "r").readlines():
 				text += i
 			self.session.openWithCallback(boundFunction(self.ipkgCallback, IpkgComponent.EVENT_DONE, None), TextBox, text, _("Packages to update"), True)
 		else:

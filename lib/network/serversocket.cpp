@@ -12,7 +12,13 @@ void eServerSocket::notifier(int)
 {
 	int clientfd;
 	socklen_t clientlen;
-	struct sockaddr client_addr;
+	union // ugly workaround for sizeof(sockaddr) < sizeof(sockaddr_in6) issue
+	{
+		sockaddr sock;
+		sockaddr_in sock_in;
+		sockaddr_in6 sock_in6;
+	} client_addr;
+
 	char straddr[INET6_ADDRSTRLEN];
 
 #ifdef DEBUG_SERVERSOCKET
@@ -20,22 +26,15 @@ void eServerSocket::notifier(int)
 #endif
 
 	clientlen = sizeof(client_addr);
-	clientfd = accept(getDescriptor(), &client_addr, &clientlen);
+	clientfd = accept(getDescriptor(), &client_addr.sock, &clientlen);
 	if (clientfd < 0)
 	{
 		eDebug("[eServerSocket] error on accept: %m");
 		return;
 	}
 
-	if (client_addr.sa_family == AF_LOCAL)
+	switch(client_addr.sock.sa_family)
 	{
-<<<<<<< HEAD
-		strRemoteHost = "(local)";
-	}
-	else
-	{
-		strRemoteHost = inet_ntop(client_addr.sa_family, client_addr.sa_data, straddr, sizeof(straddr));
-=======
 		case(AF_LOCAL):
 		{
 			strRemoteHost = "(local)";
@@ -66,8 +65,8 @@ void eServerSocket::notifier(int)
 			strRemoteHost = "(error)";
 			break;
 		}
->>>>>>> upstream/develop
 	}
+
 	newConnection(clientfd);
 }
 
@@ -143,7 +142,8 @@ eServerSocket::~eServerSocket()
 
 int eServerSocket::startListening(struct addrinfo *addr)
 {
-	struct addrinfo *ptr = addr;
+	struct addrinfo *ptr;
+
 	for (ptr = addr; ptr != NULL; ptr = ptr->ai_next)
 	{
 		if (setSocket(socket(ptr->ai_family, ptr->ai_socktype, ptr->ai_protocol), 1) < 0)

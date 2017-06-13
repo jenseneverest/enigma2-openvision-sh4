@@ -227,6 +227,7 @@ class InfoBarShowHide(InfoBarScreenSaver):
 	STATE_SHOWING = 2
 	STATE_SHOWN = 3
 	FLAG_HIDE_VBI = 512
+	FLAG_CENTER_DVB_SUBS = 2048
 
 	def __init__(self):
 		self["ShowHideActions"] = ActionMap( ["InfobarShowHideActions"] ,
@@ -3334,6 +3335,19 @@ class InfoBarSubtitleSupport(object):
 		else:
 			return 0
 
+	def doCenterDVBSubs(self):
+		service = self.session.nav.getCurrentlyPlayingServiceReference()
+		servicepath = service and service.getPath()
+		if servicepath and servicepath.startswith("/"):
+			if service.toString().startswith("1:"):
+				info = eServiceCenter.getInstance().info(service)
+				service = info and info.getInfoString(service, iServiceInformation.sServiceref)
+				config.subtitles.dvb_subtitles_centered.value = service and eDVBDB.getInstance().getFlag(eServiceReference(service)) & self.FLAG_CENTER_DVB_SUBS and True
+				return
+		service = self.session.nav.getCurrentService()
+		info = service and service.info()
+		config.subtitles.dvb_subtitles_centered.value = info and info.getInfo(iServiceInformation.sCenterDVBSubs) and True
+
 	def __serviceChanged(self):
 		if self.cached_subtitle:  # lybeplayer start play after cached subtitle enabled
 			self.cached_subtitle = False
@@ -3348,6 +3362,7 @@ class InfoBarSubtitleSupport(object):
 			if cachedsubtitle:
 				self.cached_subtitle = True
 				self.enableSubtitle(cachedsubtitle)
+				self.doCenterDVBSubs()
 
 	def enableSubtitle(self, selectedSubtitle):
 		subtitle = self.getCurrentServiceSubtitle()
@@ -3355,6 +3370,7 @@ class InfoBarSubtitleSupport(object):
 		if subtitle and self.selected_subtitle:
 			subtitle.enableSubtitles(self.subtitle_window.instance, self.selected_subtitle)
 			self.subtitle_window.show()
+			self.doCenterDVBSubs()
 		else:
 			if subtitle:
 				subtitle.disableSubtitles(self.subtitle_window.instance)

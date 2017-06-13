@@ -133,8 +133,13 @@
 		<key id="KEY_PLAY" mapto="showMovies" flags="m"/>
 		<key id="KEY_FIND" mapto="showMovies" flags="m"/>
 		<key id="KEY_FILE" mapto="showMovies" flags="m"/>
+<<<<<<< HEAD
 		<key id="KEY_TV" mapto="toggleTvRadio" flags="b"/>
 		<key id="KEY_RADIO" mapto="toggleTvRadio" flags="b"/>
+=======
+		<key id="KEY_TEXT" mapto="showText" flags="m"/>
+		<key id="KEY_MEDIA" mapto="showMovies" flags="b" />
+>>>>>>> upstream/develop
 	</map>
 
 	<map context="InfobarAudioSelectionActions">
@@ -331,6 +336,7 @@
 		<key id="KEY_LEFT" mapto="keyLeft" flags="m"/>
 		<key id="KEY_RIGHT" mapto="keyRight" flags="m"/>
 		<key id="KEY_RECORD" mapto="keyRecord" flags="m"/>
+		<key id="KEY_FAVORITES" mapto="showFavourites" flags="m"/>
 	</map>
 
 	<map context="ChannelSelectEPGActions">
@@ -584,6 +590,7 @@
 		<key id="KEY_F2" mapto="f2_long" flags="l"/>
 		<key id="KEY_F3" mapto="f3" flags="b"/>
 		<key id="KEY_F3" mapto="f3_long" flags="l"/>
+<<<<<<< HEAD
 		<key id="KEY_F4" mapto="f4" flags="b"/>
 		<key id="KEY_F4" mapto="f4_long" flags="l"/>
 		<key id="KEY_TVSAT" mapto="tvsat" flags="m"/>
@@ -603,5 +610,17 @@
 		<key id="KEY_USB" mapto="usb_long" flags="l"/>
 		<key id="KEY_PORTAL" mapto="portal" flags="b"/>
 		<key id="KEY_PORTAL" mapto="portal_long" flags="l"/>
+=======
+		<key id="KEY_AUX" mapto="HDMIin" flags="b"/>
+		<key id="KEY_AUX" mapto="HDMIin_long" flags="l"/>
+		<key id="KEY_PAGEUP" mapto="pageUp" flags="b"/>
+		<key id="KEY_PAGEUP" mapto="pageUp_long" flags="l"/>
+		<key id="KEY_PAGEDOWN" mapto="pageDown" flags="b"/>
+		<key id="KEY_PAGEDOWN" mapto="pageDown_long" flags="l"/>
+		<key id="KEY_MEDIA" mapto="media" flags="b"/>
+		<key id="KEY_MEDIA" mapto="media_long" flags="l"/>
+		<key id="KEY_FAVORITES" mapto="favorites" flags="b"/>
+		<key id="KEY_FAVORITES" mapto="favorites_long" flags="l"/>
+>>>>>>> upstream/develop
 	</map>
 </keymap>

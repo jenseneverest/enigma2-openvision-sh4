@@ -78,11 +78,11 @@ class UsedKeys:
 			( "Fast", "fast", ""),
 			( "Power", "power", "Module/Screens.Standby/Standby"),
 			( "Power " + _("long"), "power_long", "Menu/shutdown"),
-                        ( "HDMIin" + " " + _("long"), "HDMIin_long", ""),
-        		( "Media", "media", ""),
-	        	( "Media" + " " + _("long"), "media_long", "")]
- 
- 
+			( "HDMIin" + " " + _("long"), "HDMIin_long", ""),
+			( "Media", "media", ""),
+			( "Media" + " " + _("long"), "media_long", "")]
+
+
 
 		usedkeys = []
 		lircfile = "/etc/lircd.conf"

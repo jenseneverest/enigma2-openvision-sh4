@@ -1,4 +1,4 @@
-<menu text="Mainmenu" title="Main menu">
+<menu text="Main menu" title="Main menu">
 	<id val="mainmenu"/>
 <!-- the following types are allowed:
 	<screen [module="mod"] [screen="classname"]>[arguments]</screen>
@@ -13,28 +13,24 @@
 	<code> .. code .. </code>
 		"exec"s code
 -->
-		<menu weight="0" text="Standby / restart" entryID="standby_restart_list">
-			<id val="shutdown" />
-			<item text="Restart enigma" entryID="restart_enigma"><screen module="Standby" screen="TryQuitMainloop">3</screen></item>
-			<item text="Restart" entryID="restart"><screen module="Standby" screen="TryQuitMainloop">2</screen></item>
-			<item text="Sleep timer" entryID="sleep"><screen module="SleepTimerEdit" screen="SleepTimerEdit" /></item>
-			<item text="Standby" entryID="standby"><screen module="Standby" screen="Standby"/></item>
-			<item text="Deep standby" requires="DeepstandbySupport" entryID="deep_standby"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
-			<item text="Shutdown" requires="!DeepstandbySupport" entryID="deep_standby"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
+		<item level="0" text="Timer" entryID="timer_edit"><screen module="TimerEdit" screen="TimerEditList"/></item>
+		<item level="1" text="VCR scart" entryID="scart_switch" configcondition="config.usage.show_vcr_scart" requires="ScartSwitch"><code>self.session.scart.VCRSbChanged(3)</code></item>
+
+		<menu level="0" text="Information" entryID="info_screen">
+			<id val="information"/>
+			<item level="1" text="Service" entryID="service_info_screen"><screen module="ServiceInfo" screen="ServiceInfo"/></item>
+			<item level="0" text="About" entryID="about_screen"><screen module="About"/></item>
+			<item level="2" text="Streaming clients info" entryID="streaming_clients_info_screen"><screen module="StreamingClientsInfo"/></item>
 		</menu>
-<<<<<<< HEAD
-		<menu weight="1" level="0" text="Setup" flushConfigOnClose="1" entryID="setup_selection" >
-=======
 
 		<item level="0" text="Plugins" entryID="plugin_selection"><screen module="PluginBrowser" screen="PluginBrowser"/></item>
 		<menu level="0" text="Setup" flushConfigOnClose="1" entryID="setup_selection" >
->>>>>>> upstream/develop
 			<id val="setup"/>
 			<menu weight="7" level="0" text="Service searching" entryID="service_searching_selection">
 				<id val="scan"/>
 				<item text="Tuner configuration" entryID="tuner_setup"><screen module="Satconfig" screen="NimSelection"/></item>
 				<item text="Automatic scan" entryID="auto_scan"><screen module="ScanSetup" screen="ScanSimple"/></item>
-				<item text="Manual Scan" entryID="manual_scan"><screen module="ScanSetup" /></item>
+				<item text="Manual scan" entryID="manual_scan"><screen module="ScanSetup"/></item>
 			</menu>
 			<menu weight="5" level="0" text="System" entryID="system_selection">
 				<id val="system"/>
@@ -47,16 +43,6 @@
 				</menu>
 
 				<item level="0" entryID="usage_setup"><setup id="usage"/></item>
-<<<<<<< HEAD
-				<item level="0" entryID="user_interface"><setup id="userinterface" /></item> 
-				<item level="0" entryID="epg_settings"><setup id="epgsettings"/></item>
-				<item level="0" entryID="recording_setup"><setup id="recording"/></item>
-				<item level="2" entryID="subtitle_setup"><setup id="subtitlesetup"/></item>
-				<item level="1" entryID="autolanguage_setup"><setup id="autolanguagesetup"/></item>
-				<item level="0" entryID="av_setup"><setup id="avsetup"/></item>
-				<!--item level="1" entryID="rfmod_setup" requires="RfModulator"><setup id="RFmod"/></item>-->
-				<menu level="0" text="Harddisk" entryID="hardisk_selection" requires="Harddisk">
-=======
 				<item level="0" entryID="user_interface"><setup id="userinterface"/></item>
 				<item level="1" entryID="rfmod_setup" requires="RfModulator"><setup id="RFmod"/></item>
 
@@ -67,7 +53,6 @@
 
 
 					<menu level="0" text="Harddisk" entryID="hardisk_selection" requires="Harddisk">
->>>>>>> upstream/develop
 					<id val="harddisk"/>
 					<item level="0" entryID="harddisk_setup"><setup id="harddisk"/></item>
 					<item level="0" text="Initialization" entryID="harddisk_init"><screen module="HarddiskSetup" screen="HarddiskSelection"/></item>
@@ -84,17 +69,11 @@
 				<item level="1" text="Hotkey" entryID="hotkey_setup"><screen module="Hotkey" screen="HotkeySetup"/></item>
 				</menu>
 			</menu>
-			<!--<menu weight="10" text="SoftCam / CI" entryID="cam_setup">
+			<menu weight="10" text="SoftCam / CI" entryID="cam_setup">
 				<id val="cam"/>
-<<<<<<< HEAD
-				<item weight="10" level="1" text="Softcam Setup" entryID="softcam_setup"><screen module="SoftcamSetup" screen="SoftcamSetup"/></item>
-				<item weight="10" level="1" text="Common Interface" entryID="ci_setup" requires="CommonInterface"><screen module="Ci" screen="CiSelection"/></item>
-			</menu>-->
-=======
 				<item weight="10" level="0" text="Softcam Setup" entryID="softcam_setup"><screen module="SoftcamSetup" screen="SoftcamSetup"/></item>
 				<item weight="10" level="0" text="Common Interface" entryID="ci_setup" requires="CommonInterface"><screen module="Ci" screen="CiSelection"/></item>
 			</menu>
->>>>>>> upstream/develop
 			<item weight="15" level="0" text="Parental control" entryID="parental_setup"><screen module="ParentalControlSetup" screen="ParentalControlSetup"/></item>
 			<item weight="15" level="0" text="Factory reset" entryID="factory_reset">
 				<code>
@@ -103,20 +82,20 @@ def msgClosed(ret):
 	if ret:
 		from os import system, _exit
 		system("rm -R /etc/enigma2")
-		system("cp -R /usr/share/enigma2/defaults /etc/enigma2")
 		_exit(0)
 self.session.openWithCallback(msgClosed, FactoryReset)
 </code>
 			</item>
 			<item weight="15" level="0" text="Software update" entryID="software_update"><screen module="SoftwareUpdate" screen="UpdatePlugin"/></item>
 		</menu>
-		<item weight="3" level="0" text="Plugins" entryID="plugin_selection"><screen module="PluginBrowser" screen="PluginBrowser" /></item>
-		<item level="0" text="Timer" entryID="timer_edit"><screen module="TimerEdit" screen="TimerEditList" /></item>
-		<menu level="2" text="Information" entryID="info_screen">
-			<id val="information" />
-			<item level="1" text="Service" entryID="service_info_screen"><screen module="ServiceInfo" screen="ServiceInfo"/></item>
-			<item level="0" text="About" entryID="about_screen"><screen module="About" /></item>
-			<item level="2" text="Streaming clients info" entryID="streaming_clients_info_screen"><screen module="StreamingClientsInfo"/></item>
+		<menu text="Standby / restart" entryID="standby_restart_list">
+			<id val="shutdown"/>
+			<item text="Sleep timer" entryID="sleep"><screen module="SleepTimerEdit" screen="SleepTimerEdit"/></item>
+			<item text="Standby" entryID="standby"><screen module="Standby" screen="Standby"/></item>
+			<item text="Restart" entryID="restart"><screen module="Standby" screen="TryQuitMainloop">2</screen></item>
+			<item text="Restart enigma" entryID="restart_enigma"><screen module="Standby" screen="TryQuitMainloop">3</screen></item>
+			<item text="Deep standby" requires="DeepstandbySupport" entryID="deep_standby"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
+			<item text="Shutdown" requires="!DeepstandbySupport" entryID="deep_standby"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
 		</menu>
 		<item level="2" text="Change video port" entryID="ChangeVideoPort" configcondition="config.usage.show_vcr_scart" requires="ScartSwitch">
 			<code>

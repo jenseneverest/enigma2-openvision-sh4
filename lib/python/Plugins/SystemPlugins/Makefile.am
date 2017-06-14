@@ -5,7 +5,7 @@ SUBDIRS = SoftwareManager PositionerSetup Satfinder \
 	DefaultServicesScanner DiseqcTester \
 	FastScan OSDPositionSetup OSD3DSetup HdmiCEC VideoClippingSetup \
 	VideoEnhancement NetworkWizard CableScan \
-	SparkVFDControl SH4OSDAdjustment
+	SparkVFDControl SH4OSDAdjustment SH4BoosterControl
 
 if ! ENABLE_MINIMAL
 SUBDIRS += WirelessLan

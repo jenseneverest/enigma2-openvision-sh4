@@ -364,6 +364,14 @@ lib/python/Plugins/SystemPlugins/Videomode/Makefile
 lib/python/Plugins/SystemPlugins/Videomode/meta/Makefile
 lib/python/Plugins/SystemPlugins/WirelessLan/Makefile
 lib/python/Plugins/SystemPlugins/WirelessLan/meta/Makefile
+lib/python/Plugins/SystemPlugins/SparkVFDControl/Makefile
+lib/python/Plugins/SystemPlugins/SparkVFDControl/meta/Makefile
+lib/python/Plugins/SystemPlugins/SH4OSDAdjustment/Makefile
+lib/python/Plugins/SystemPlugins/SH4OSDAdjustment/meta/Makefile
+lib/python/Plugins/SystemPlugins/SH4BoosterControl/Makefile
+lib/python/Plugins/SystemPlugins/SH4BoosterControl/meta/Makefile
+lib/python/Plugins/SystemPlugins/SparkUnionTunerType/Makefile
+lib/python/Plugins/SystemPlugins/SparkUnionTunerType/meta/Makefile
 lib/python/Plugins/SystemPlugins/OnErrorRestartService/Makefile
 lib/python/Tools/Makefile
 po/Makefile

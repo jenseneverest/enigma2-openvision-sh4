@@ -8,7 +8,7 @@ from Screen import Screen
 from Screens.MessageBox import MessageBox
 
 profile("LOAD:enigma")
-import enigmaa
+import enigma
 #+++>
 from enigma import iServiceInformation
 #+++<

@@ -1,4 +1,4 @@
-installdir = $(pkglibdir)/python/Plugins/SystemPlugins/VFDControl
+installdir = $(pkglibdir)/python/Plugins/SystemPlugins/SparkVFDControl
 
 SUBDIRS = meta
 

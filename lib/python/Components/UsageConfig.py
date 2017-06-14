@@ -690,7 +690,7 @@ def InitUsageConfig():
 	config.mediaplayer.alternateUserAgent = ConfigText(default="")
 
 	config.misc.softcam_setup = ConfigSubsection()
-	config.misc.softcam_setup.extension_menu = ConfigYesNo(default = True)a
+	config.misc.softcam_setup.extension_menu = ConfigYesNo(default = True)
 	config.mediaplayer.defaultPlayer = ConfigSelection(default = "libeplayer", choices = [
 		("libeplayer", _("Libeplayer")), ("gstreamer", _("Gstreamer"))])
 	def defaultPlayerChange(configElement):

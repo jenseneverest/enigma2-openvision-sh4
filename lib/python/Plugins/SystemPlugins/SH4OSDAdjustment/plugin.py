@@ -12,7 +12,6 @@ config.OSDAdjustment.bottom = ConfigInteger(default=0)
 config.OSDAdjustment.left = ConfigInteger(default=0)
 config.OSDAdjustment.right = ConfigInteger(default=0)
 config.OSDAdjustment.settuxtxt2conf = ConfigInteger(default=0)
-from __init__ import _
 
 class Screen_adjust(Screen):
     if getDesktop(0).size().width() == 1280:

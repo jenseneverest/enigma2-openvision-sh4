@@ -1,5 +1,4 @@
 # for localized messages
-from . import _
 
 from Screens.Screen import Screen
 from Plugins.Plugin import PluginDescriptor

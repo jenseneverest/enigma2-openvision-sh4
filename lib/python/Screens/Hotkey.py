@@ -13,6 +13,7 @@ from ServiceReference import ServiceReference
 from enigma import eServiceReference
 import os
 
+<<<<<<< HEAD
 
 class UsedKeys:
 	def __init__(self):
@@ -112,6 +113,90 @@ class UsedKeys:
 		return self.keys
 
 used_keys = UsedKeys()
+=======
+def getHotkeys():
+	return [(_("Red") + " " + _("long"), "red_long", ""),
+		(_("Green") + " " + _("long"), "green_long", ""),
+		(_("Yellow") + " " + _("long"), "yellow_long", ""),
+		(_("Blue") + " " + _("long"), "blue_long", "SoftcamSetup"),
+		("F1/LAN", "f1", ""),
+		("F1" + " " + _("long"), "f1_long", ""),
+		("F2", "f2", ""),
+		("F2" + " " + _("long"), "f2_long", ""),
+		("F3", "f3", ""),
+		("F3" + " " + _("long"), "f3_long", ""),
+		(_("Red"), "red", ""),
+		(_("Green"), "green", ""),
+		(_("Yellow"), "yellow", ""),
+		(_("Blue"), "blue", ""),
+		("Rec", "rec", ""),
+		("Radio", "radio", ""),
+		("Radio" + " " + _("long"), "radio_long", ""),
+		("TV", "showTv", ""),
+		("TV" + " " + _("long"), "showTv_long", SystemInfo["LcdLiveTV"] and "Infobar/ToggleLCDLiveTV" or ""),
+		("TV2", "toggleTvRadio", ""),
+		("TV2" + " " + _("long"), "toggleTvRadio_long", SystemInfo["LcdLiveTV"] and "Infobar/ToggleLCDLiveTV" or ""),
+		("Teletext", "text", ""),
+		("Help", "displayHelp", ""),
+		("Help" + " " + _("long"), "displayHelp_long", ""),
+		("Subtitle", "subtitle", ""),
+		("Menu", "mainMenu", ""),
+		("Info (EPG)", "info", "Infobar/openEventView"),
+		("Info (EPG)" + " " + _("long"), "info_long", "Infobar/showEventInfoPlugins"),
+		("List/Fav/PVR", "list", ""),
+		("Back/Recall", "back", ""),
+		("Back/Recall" + " " + _("long"), "back_long", ""),
+		("End", "end", ""),
+		("Epg/Guide", "epg", "Plugins/Extensions/GraphMultiEPG/1"),
+		("Epg/Guide" + " " + _("long"), "epg_long", "Infobar/showEventInfoPlugins"),
+		("Left", "cross_left", ""),
+		("Right", "cross_right", ""),
+		("Up", "cross_up", ""),
+		("Down", "cross_down", ""),
+		("Ok", "ok", ""),
+		("Channel up", "channelup", ""),
+		("Channel down", "channeldown", ""),
+		("Page up", "pageUp", ""),
+		("Page up"  + " " + _("long"), "pageUp_long", ""),
+		("Page down", "pageDown", ""),
+		("Page down" + " " + _("long"), "pageDown_long", ""),
+		("Next", "next", ""),
+		("Previous", "previous", ""),
+		("Audio", "audio", ""),
+		("Play", "play", ""),
+		("Playpause", "playpause", ""),
+		("Stop", "stop", ""),
+		("Pause", "pause", ""),
+		("Rewind", "rewind", ""),
+		("Fastforward", "fastforward", ""),
+		("Skip back", "skip_back", ""),
+		("Skip forward", "skip_forward", ""),
+		("activatePiP", "activatePiP", ""),
+		("Timer", "timer", ""),
+		("Timer" + " " + _("long"), "timer_long", ""),
+		("Playlist", "playlist", ""),
+		("Timeshift", "timeshift", ""),
+		("Search", "search", ""),
+		("Search" + " " + _("long"), "search_long", ""),
+		("Slow", "slow", ""),
+		("Mark/Portal/Playlist", "mark", ""),
+		("Mark/Portal/Playlist" + " " + _("long"), "mark_long", ""),
+		("Sleep", "sleep", ""),
+		("Sleep" + " " + _("long"), "sleep_long", ""),
+		("Context", "contextmenu", ""),
+		("Context" + " " + _("long"), "contextmenu_long", ""),
+		("Video Mode", "vmode", ""),
+		("Video Mode" + " " + _("long"), "vmode_long", ""),
+		("Home", "home", ""),
+		("Power", "power", "Module/Screens.Standby/Standby"),
+		("Power" + " " + _("long"), "power_long", "Menu/shutdown"),
+		("HDMIin", "HDMIin", "Infobar/HDMIIn"),
+		("HDMIin" + " " + _("long"), "HDMIin_long", ""),
+		("Media", "media", ""),
+		("Media" + " " + _("long"), "media_long", ""),
+		("Favorites", "favorites", "Infobar/openFavouritesList"),
+		("Favorites" + " " + _("long"), "favorites_long", "")]
+>>>>>>> upstream/develop
 
 config.misc.hotkey = ConfigSubsection()
 config.misc.hotkey.additional_keys = ConfigYesNo(default=False)
@@ -191,6 +276,11 @@ def getHotkeyFunctions():
 	if SystemInfo["HasHDMI-CEC"]:
 		hotkeyFunctions.append((_("HDMI-CEC Source Active"), "Infobar/SourceActiveHdmiCec", "InfoBar"))
 		hotkeyFunctions.append((_("HDMI-CEC Source Inactive"), "Infobar/SourceInactiveHdmiCec", "InfoBar"))
+<<<<<<< HEAD
+=======
+	if SystemInfo["HasSoftcamInstalled"]:
+		hotkeyFunctions.append((_("Softcam Setup"), "SoftcamSetup", "Setup"))
+>>>>>>> upstream/develop
 	hotkeyFunctions.append((_("HotKey Setup"), "Module/Screens.Hotkey/HotkeySetup", "Setup"))
 	hotkeyFunctions.append((_("Software update"), "Module/Screens.SoftwareUpdate/UpdatePlugin", "Setup"))
 	hotkeyFunctions.append((_("Latest Commits"), "Module/Screens.About/CommitInfo", "Setup"))
@@ -597,8 +687,15 @@ class InfoBarHotkey():
 					exec "self.session.open(" + ",".join(selected[2:]) + ")"
 				except:
 					print "[Hotkey] error during executing module %s, screen %s" % (selected[1], selected[2])
+			elif selected[0] == "SoftcamSetup" and SystemInfo["HasSoftcamInstalled"]:
+				from Screens.SoftcamSetup import SoftcamSetup
+				self.session.open(SoftcamSetup)
 			elif selected[0] == "Setup":
+<<<<<<< HEAD
 				from Screens.Setup import Setup
+=======
+				from Screens.Setup import *
+>>>>>>> upstream/develop
 				exec "self.session.open(Setup, \"" + selected[1] + "\")"
 			elif selected[0][:3] == "Zap":
 				if selected[0] == "ZapPanic":

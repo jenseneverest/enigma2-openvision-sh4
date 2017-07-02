@@ -3,8 +3,6 @@ from Converter import Converter
 from Components.Element import cached
 
 class ClockToText(Converter, object):
-	FULL_DATE = 13
-
 	def __init__(self, type):
 		Converter.__init__(self, type)
 

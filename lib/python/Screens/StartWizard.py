@@ -96,9 +96,9 @@ class AutoInstallWizard(Screen):
 		os.remove("/etc/.doAutoinstall")
 		self.close(3)
 
-wizardManager.registerWizard(AutoInstallWizard, os.path.isfile("/etc/.doAutoinstall"), priority=0)
-wizardManager.registerWizard(AutoRestoreWizard, config.misc.languageselected.value and config.misc.firstrun.value and checkForAvailableAutoBackup(), priority=0)
-wizardManager.registerWizard(LanguageWizard, config.misc.languageselected.value, priority=10)
+wizardManager.registerWizard(AutoInstallWizard, os.path.isfile("/etc/.doAutoinstall"), priority=-10)
+wizardManager.registerWizard(AutoRestoreWizard, config.misc.languageselected.value and config.misc.firstrun.value and checkForAvailableAutoBackup(), priority=-10)
+wizardManager.registerWizard(LanguageWizard, config.misc.languageselected.value, priority=5)
 if OverscanWizard:
-	wizardManager.registerWizard(OverscanWizard, config.misc.do_overscanwizard.value, priority=30)
-wizardManager.registerWizard(StartWizard, config.misc.firstrun.value, priority=40)
+	wizardManager.registerWizard(OverscanWizard, config.misc.do_overscanwizard.value, priority=10)
+wizardManager.registerWizard(StartWizard, config.misc.firstrun.value, priority=20)

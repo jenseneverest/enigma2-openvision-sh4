@@ -64,7 +64,7 @@ class ClockToText(Converter, object):
 		elif self.type == "LongDate":
 			# TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
 			d = _("%A %e %B")
-		elif self.type == self.FULL_DATE:
+		elif self.type == "FULL_DATE":
 			# TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
 			d = _("%a %e %B %Y")
 		elif self.type == "VFD":

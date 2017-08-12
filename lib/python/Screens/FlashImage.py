@@ -52,23 +52,35 @@ class SelectImage(Screen):
 		self.delay.start(0, True)
 
 	def getImagesList(self, reply=None):
-		list = []
+
+		def getImages(path, files):
+			for file in [x for x in files if x.endswith('.zip') and model in x]:
+				try:
+					if checkimagefiles([x.split(os.sep)[-1] for x in zipfile.ZipFile(file).namelist()]):
+						medium = path.split(os.sep)[-1]
+						if medium not in self.imagesList:
+							self.imagesList[medium] = {}
+						self.imagesList[medium][file] = { 'link': file, 'name': file.split(os.sep)[-1]}
+				except:
+					pass
+
 		model = HardwareInfo().get_device_model()
+
 		if not self.imagesList:
 			try:
 				self.imagesList = json.load(urllib2.urlopen('https://openpli.org/download/json/%s' % model))
 			except:
 				self.imagesList = {}
-			for path, dirs, files in [x for x in os.walk('/media') if x[0].count(os.sep) <= 3]:
-				for file in ['/'.join([path, x]) for x in files if x.endswith('.zip') and model in x]:
-					try:
-						if checkimagefiles([x.split(os.sep)[-1] for x in zipfile.ZipFile(file).namelist()]):
-							medium = path.split(os.sep)[-1]
-							if medium not in self.imagesList:
-								self.imagesList[medium] = {}
-							self.imagesList[medium][file] = { 'link': file, 'name': file.split(os.sep)[-1]}
-					except:
-						pass
+
+			for media in ['/media/%s' % x for x in os.listdir('/media')]:
+				if not os.path.islink(media) and not(SystemInfo['HasMMC'] and "/mmc" in media):
+					getImages(media, ["%s/%s" % (media, x) for x in os.listdir(media) if x.endswith('.zip') and model in x])
+					if "downloaded_images" in os.listdir(media):
+						media = "%s/downloaded_images" % media
+						if os.path.isdir(media) and not os.path.islink(media) and not os.path.ismount(media):
+							getImages(media, ["%s/%s" % (media, x) for x in os.listdir(media) if x.endswith('.zip') and model in x])
+
+		list = []
 		for catagorie in reversed(sorted(self.imagesList.keys())):
 			if catagorie in self.expanded:
 				list.append(ChoiceEntryComponent('expanded',((str(catagorie)), "Expander")))
@@ -323,7 +335,8 @@ class MultibootSelection(SelectImage):
 		self.currentimageslot = GetCurrentImage()
 		for x in sorted(imagesdict.keys()):
 			list.append(ChoiceEntryComponent('',((_("slot%s - %s slot 1 (current image)") if x == self.currentimageslot else _("slot%s - %s slot 1")) % (x, imagesdict[x]['imagename']), x)))
-			list.append(ChoiceEntryComponent('',((_("slot%s - %s slot 12 (current image)") if x == self.currentimageslot else _("slot%s - %s slot 12")) % (x, imagesdict[x]['imagename']), x + 12)))
+			if SystemInfo["canMode12"]:
+				list.append(ChoiceEntryComponent('',((_("slot%s - %s slot 12 (current image)") if x == self.currentimageslot else _("slot%s - %s slot 12")) % (x, imagesdict[x]['imagename']), x + 12)))
 		self["list"].setList(list)
 
 	def keyOk(self):
@@ -335,7 +348,7 @@ class MultibootSelection(SelectImage):
 				startupFileContents = "boot emmcflash0.kernel%s 'root=/dev/mmcblk0p%s rw rootwait %s_4.boxmode=1'\n" % (slot, slot * 2 + 1, model)
 			else:
 				slot -= 12
-				startupFileContents = "boot emmcflash0.kernel%s 'brcm_cma=520M@248M brcm_cma=%s@768M root=/dev/mmcblk0p%s rw rootwait %s_4.boxmode=12'\n" % (slot, "200M" if model == "h7" else "192M", slot * 2 + 1, model)
-			open('/media/%s/STARTUP' % ('mmcblk0p1' if model == "hd51" else 'mmc'), 'w').write(startupFileContents)
+				startupFileContents = "boot emmcflash0.kernel%s 'brcm_cma=520M@248M brcm_cma=%s@768M root=/dev/mmcblk0p%s rw rootwait %s_4.boxmode=12'\n" % (slot, SystemInfo["canMode12"], slot * 2 + 1, model)
+			open(SystemInfo["canMultiBoot"], 'w').write(startupFileContents)
 			from Screens.Standby import TryQuitMainloop
 			self.session.open(TryQuitMainloop, 2)

@@ -11,7 +11,7 @@ from Components.SystemInfo import SystemInfo
 from Tools.BoundFunction import boundFunction
 from Tools.Downloader import downloadWithProgress
 from Tools.HardwareInfo import HardwareInfo
-from Tools.Multiboot import GetImagelist, GetCurrentImage
+from Tools.Multiboot import GetImagelist, GetCurrentImage, GetCurrentImageMode
 import os, urllib2, json, time, zipfile
 from enigma import eTimer, eEPGCache
 
@@ -165,14 +165,14 @@ class FlashImage(Screen):
 	def getImagelistCallback(self, imagedict):
 		self.getImageList = None
 		imagelist = []
-		self.currentimageslot = GetCurrentImage()
+		currentimageslot = GetCurrentImage()
 		for x in range(1,5):
 			if x in imagedict:
-				imagelist.append(((_("slot%s - %s (current image)") if x == self.currentimageslot else _("slot%s - %s")) % (x, imagedict[x]['imagename']), x))
+				imagelist.append(((_("slot%s - %s (current image)") if x == currentimageslot else _("slot%s - %s")) % (x, imagedict[x]['imagename']), x))
 			else:
 				imagelist.append((_("slot%s - empty") % x, x))
 		imagelist.append((_("Do not flash image"), False))
-		self.session.openWithCallback(self.backupsettings, MessageBox, self.message, list=imagelist, default=self.currentimageslot, simple=True)
+		self.session.openWithCallback(self.backupsettings, MessageBox, self.message, list=imagelist, default=currentimageslot, simple=True)
 
 	def backupsettings(self, retval):
 		
@@ -258,7 +258,7 @@ class FlashImage(Screen):
 			zipfile.ZipFile(self.zippedimage, 'r').extractall(self.unzippedimage)
 			self.flashimage()	
 		except:
-			self.session.openWithCallback(self.abort, MessageBox, _("Error during unzipping image\n%s\n%s") % (self.imagename, reason), type=MessageBox.TYPE_ERROR, simple=True)
+			self.session.openWithCallback(self.abort, MessageBox, _("Error during unzipping image\n%s") % self.imagename, type=MessageBox.TYPE_ERROR, simple=True)
 
 	def flashimage(self):
 		def findimagefiles(path):
@@ -267,10 +267,10 @@ class FlashImage(Screen):
 					return checkimagefiles(files) and path
 		imagefiles = findimagefiles(self.unzippedimage)
 		if imagefiles:
-			if SystemInfo["canMultiBoot"] and self.multibootslot != self.currentimageslot:
+			if SystemInfo["canMultiBoot"]:
 				command = "/usr/bin/ofgwrite -k -r -m%s '%s'" % (self.multibootslot, imagefiles)
 			else:
-				command = "/usr/bin/ofgwrite %s'" % imagefiles
+				command = "/usr/bin/ofgwrite -k -r '%s'" % imagefiles
 			self.containerofgwrite = Console()
 			self.containerofgwrite.ePopen(command, self.FlashimageDone)
 		else:
@@ -280,7 +280,7 @@ class FlashImage(Screen):
 		self.containerofgwrite = None
 		if retval == 0:
 			self["header"].setText(_("Flashing image succesfull"))
-			self["info"].setText(_("%s\nPress exit to abort") % self.imagename)
+			self["info"].setText(_("%s\nPress exit to close") % self.imagename)
 			self["progress"].hide()
 		else:
 			self.session.openWithCallback(self.abort, MessageBox, _("Flashing image was not succesfull\n%s") % self.imagename, type=MessageBox.TYPE_ERROR, simple=True)
@@ -332,11 +332,12 @@ class MultibootSelection(SelectImage):
 
 	def getImagelistCallback(self, imagesdict):
 		list = []
-		self.currentimageslot = GetCurrentImage()
+		currentimageslot = GetCurrentImage()
+		mode = SystemInfo["canMode12"] and GetCurrentImageMode() or 0
 		for x in sorted(imagesdict.keys()):
-			list.append(ChoiceEntryComponent('',((_("slot%s - %s slot 1 (current image)") if x == self.currentimageslot else _("slot%s - %s slot 1")) % (x, imagesdict[x]['imagename']), x)))
+			list.append(ChoiceEntryComponent('',((_("slot%s - %s mode 1 (current image)") if x == currentimageslot and mode == 1 else _("slot%s - %s mode 1")) % (x, imagesdict[x]['imagename']), x)))
 			if SystemInfo["canMode12"]:
-				list.append(ChoiceEntryComponent('',((_("slot%s - %s slot 12 (current image)") if x == self.currentimageslot else _("slot%s - %s slot 12")) % (x, imagesdict[x]['imagename']), x + 12)))
+				list.append(ChoiceEntryComponent('',((_("slot%s - %s mode 12 (current image)") if x == currentimageslot and mode == 12 else _("slot%s - %s mode 12")) % (x, imagesdict[x]['imagename']), x + 12)))
 		self["list"].setList(list)
 
 	def keyOk(self):
@@ -349,6 +350,9 @@ class MultibootSelection(SelectImage):
 			else:
 				slot -= 12
 				startupFileContents = "boot emmcflash0.kernel%s 'brcm_cma=520M@248M brcm_cma=%s@768M root=/dev/mmcblk0p%s rw rootwait %s_4.boxmode=12'\n" % (slot, SystemInfo["canMode12"], slot * 2 + 1, model)
-			open(SystemInfo["canMultiBoot"], 'w').write(startupFileContents)
+			for media in ['/media/%s' % x for x in os.listdir('/media') if x.startswith('mmc')]:
+				if 'STARTUP' in os.listdir(media):
+					open('%s/%s' % (media, 'STARTUP'), 'w').write(startupFileContents)
+					break
 			from Screens.Standby import TryQuitMainloop
 			self.session.open(TryQuitMainloop, 2)

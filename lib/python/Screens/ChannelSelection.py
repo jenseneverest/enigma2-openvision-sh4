@@ -43,6 +43,7 @@ from Components.PluginComponent import plugins
 from Screens.ChoiceBox import ChoiceBox
 from Screens.EventView import EventViewEPGSelect
 import os, unicodedata
+import re
 profile("ChannelSelection.py after imports")
 
 FLAG_SERVICE_NEW_FOUND = 64
@@ -110,7 +111,7 @@ def append_when_current_valid(current, menu, args, level=0, key=""):
 
 def removed_userbouquets_available():
 	for file in os.listdir("/etc/enigma2/"):
-		if file.startswith("userbouquet") and file.endswith(".del"):
+		if file[:11] == "userbouquet" and file[-4:] == ".del":
 			return True
 	return False
 
@@ -214,6 +215,9 @@ class ChannelContextMenu(Screen):
 							append_when_current_valid(current, menu, (_("play in mainwindow"), self.playMain), level=0, key="red")
 						else:
 							append_when_current_valid(current, menu, (_("play as picture in picture"), self.showServiceInPiP), level=0, key="blue")
+					if current.type in [4097, 5001, 5003]:
+						append_when_current_valid(current, menu, (_("Play with libeplayer"), self.playLibeplayer))
+						append_when_current_valid(current, menu, (_("Play with gstreamer"), self.playGstreamer))
 					append_when_current_valid(current, menu, (_("find currently played service"), self.findCurrentlyPlayed), level=0, key="3")
 				else:
 					if 'FROM SATELLITES' in current_root.getPath() and current and _("Services") in eServiceCenter.getInstance().info(current).getName(current):
@@ -391,7 +395,7 @@ class ChannelContextMenu(Screen):
 	def purgeDeletedBouquetsCallback(self, answer):
 		if answer:
 			for file in os.listdir("/etc/enigma2/"):
-				if file.startswith("userbouquet") and file.endswith(".del"):
+				if file[:11] == "userbouquet" and file[-4:] == ".del":
 					file = "/etc/enigma2/" + file
 					print "permantly remove file ", file
 					os.remove(file)
@@ -399,7 +403,7 @@ class ChannelContextMenu(Screen):
 
 	def restoreDeletedBouquets(self):
 		for file in os.listdir("/etc/enigma2/"):
-			if file.startswith("userbouquet") and file.endswith(".del"):
+			if file[:11] == "userbouquet" and file[-4:] == ".del":
 				file = "/etc/enigma2/" + file
 				print "restore file ", file[:-4]
 				os.rename(file, file[:-4])
@@ -421,6 +425,19 @@ class ChannelContextMenu(Screen):
 			self.close(True)
 		else:
 			return 0
+
+	def playLibeplayer(self):
+		self.changePlayer(5003)
+
+	def playGstreamer(self):
+		self.changePlayer(5001)
+
+	def changePlayer(self, reftype):
+		sel = self.csel.getCurrentSelection()
+		ref = eServiceReference(reftype, 0, sel.getPath())
+		ref.setName(sel.getName())
+		self.csel.zap(ref=ref)
+		self.close(True)
 
 	def okbuttonClick(self):
 		self["menu"].getCurrent()[0][1]()
@@ -994,8 +1011,10 @@ class ChannelSelectionEdit:
 				if mutableBouquet:
 					mutableBouquet.setListName(bName)
 					if services is not None:
+						# optimize function lookup
+						l_bouquetAdd = mutableBouquet.addService
 						for service in services:
-							if mutableBouquet.addService(service):
+							if l_bouquetAdd(service):
 								print "add", service.toString(), "to new bouquet failed"
 					mutableBouquet.flushChanges()
 				else:
@@ -1123,6 +1142,7 @@ class ChannelSelectionEdit:
 			else:
 				new_title += ' ' + _("[favourite edit]")
 		self.setTitle(new_title)
+
 		self.__marked = self.servicelist.getRootServices()
 		for x in self.__marked:
 			self.servicelist.addMarked(eServiceReference(x))
@@ -1134,13 +1154,9 @@ class ChannelSelectionEdit:
 			old_marked = set(self.__marked)
 			removed = old_marked - new_marked
 			added = new_marked - old_marked
-			changed = False
-			for x in removed:
-				changed = True
-				self.mutableList.removeService(eServiceReference(x))
-			for x in added:
-				changed = True
-				self.mutableList.addService(eServiceReference(x))
+			changed = (len(removed)>0 or len(added)>0)
+			(self.mutableList.removeService(eServiceReference(x)) for x in removed)
+			(self.mutableList.addService(eServiceReference(x)) for x in added)
 			if changed:
 				if self.bouquet_mark_edit == EDIT_ALTERNATIVES and not new_marked and self.__marked:
 					self.mutableList.addService(eServiceReference(self.__marked[0]))
@@ -1397,6 +1413,7 @@ class ChannelSelectionBase(Screen):
 		title += _(" (Radio)")
 		self.setTitle(title)
 
+
 	def setRoot(self, root, justSet=False):
 		if self.startRoot is None:
 			self.startRoot = self.getRoot()
@@ -1542,43 +1559,55 @@ class ChannelSelectionBase(Screen):
 						self.clearPath()
 						self.enterPath(ref, True)
 				if justSet:
+					servicelist = None
 					addCableAndTerrestrialLater = []
 					serviceHandler = eServiceCenter.getInstance()
-					servicelist = serviceHandler.list(ref)
-					if not servicelist is None:
-						while True:
-							service = servicelist.getNext()
-							if not service.valid(): #check if end of list
-								break
-							unsigned_orbpos = service.getUnsignedData(4) >> 16
-							orbpos = service.getData(4) >> 16
-							if orbpos < 0:
-								orbpos += 3600
-							if "FROM PROVIDER" in service.getPath():
-								service_type = self.showSatDetails and _("Providers")
-							elif ("flags == %d" %(FLAG_SERVICE_NEW_FOUND)) in service.getPath():
-								service_type = self.showSatDetails and _("New")
-							else:
-								service_type = _("Services")
-							if service_type:
-								if unsigned_orbpos == 0xFFFF: #Cable
-									service_name = _("Cable")
-									addCableAndTerrestrialLater.append(("%s - %s" % (service_name, service_type), service.toString()))
-								elif unsigned_orbpos == 0xEEEE: #Terrestrial
-									service_name = _("Terrestrial")
-									addCableAndTerrestrialLater.append(("%s - %s" % (service_name, service_type), service.toString()))
+					if self.showSatDetails and self.mode is 0: # TV mode
+						typeslist = [self.service_types, '1:7:11:0:0:0:0:0:0:0:(type == 17) || (type == 25) || (type == 134) || (type == 195)']
+					else:
+						typeslist = [self.service_types]
+					for srvtypes in typeslist:
+						ref = eServiceReference('%s FROM SATELLITES ORDER BY satellitePosition'%(srvtypes))
+						servicelist = serviceHandler.list(ref)
+						if not servicelist is None:
+							while True:
+								service = servicelist.getNext()
+								if not service.valid(): #check if end of list
+									break
+								unsigned_orbpos = service.getUnsignedData(4) >> 16
+								orbpos = service.getData(4) >> 16
+								if orbpos < 0:
+									orbpos += 3600
+								if "FROM PROVIDER" in service.getPath():
+									service_type = self.showSatDetails and _("Providers")
+								elif ("flags == %d" %(FLAG_SERVICE_NEW_FOUND)) in service.getPath():
+									service_type = self.showSatDetails and _("New")
 								else:
-									try:
-										service_name = str(nimmanager.getSatDescription(orbpos))
-									except:
-										if orbpos > 1800: # west
-											orbpos = 3600 - orbpos
-											h = _("W")
-										else:
-											h = _("E")
-										service_name = ("%d.%d" + h) % (orbpos / 10, orbpos % 10)
-									service.setName("%s - %s" % (service_name, service_type))
-									self.servicelist.addService(service)
+									service_type = _("Services")
+								if service_type:
+									if unsigned_orbpos == 0xFFFF: #Cable
+										service_name = _("Cable")
+										addCableAndTerrestrialLater.append(("%s - %s" % (service_name, service_type), service.toString()))
+									elif unsigned_orbpos == 0xEEEE: #Terrestrial
+										service_name = _("Terrestrial")
+										addCableAndTerrestrialLater.append(("%s - %s" % (service_name, service_type), service.toString()))
+									else:
+										try:
+											service_name = str(nimmanager.getSatDescription(orbpos))
+										except:
+											if orbpos > 1800: # west
+												orbpos = 3600 - orbpos
+												h = _("W")
+											else:
+												h = _("E")
+											service_name = ("%d.%d" + h) % (orbpos / 10, orbpos % 10)
+										if self.showSatDetails:
+											if not '(type == 1)' in srvtypes and '(type == 17)' in srvtypes:
+												service_type = "HD-%s"%(service_type)
+											service_type += " (%d)"%(self.getServicesCount(service))
+										service.setName("%s - %s" % (service_name, service_type))
+										self.servicelist.addService(service)
+					if not servicelist is None:
 						cur_ref = self.session.nav.getCurrentlyPlayingServiceReference()
 						self.servicelist.l.sort()
 						if cur_ref:
@@ -1589,7 +1618,10 @@ class ChannelSelectionBase(Screen):
 								cur_ref.getUnsignedData(3), # ONID
 								self.service_types[pos+1:])
 							ref = eServiceReference(refstr)
-							ref.setName(_("Current transponder"))
+							if self.showSatDetails:
+								ref.setName(_("Current transponder") + " (%d)"%(self.getServicesCount(ref)))
+							else:
+								ref.setName(_("Current transponder"))
 							self.servicelist.addService(ref, beforeCurrent=True)
 						for (service_name, service_ref) in addCableAndTerrestrialLater:
 							ref = eServiceReference(service_ref)
@@ -1607,6 +1639,17 @@ class ChannelSelectionBase(Screen):
 									op = op[:-4] + '0000'
 								refstr = '1:7:0:0:0:0:%s:0:0:0:(satellitePosition == %s) && %s ORDER BY name' % (op, hop, self.service_types[self.service_types.rfind(':')+1:])
 								self.setCurrentSelectionAlternative(eServiceReference(refstr))
+
+	def getServicesCount(self, ref):
+		count = 0
+		serviceHandler = eServiceCenter.getInstance()
+		reflist = serviceHandler.list(ref)
+		if reflist is not None:
+			while True:
+				s = reflist.getNext()
+				if not s.valid(): break
+				count += 1
+		return count
 
 	def showProviders(self):
 		if not self.pathChangeDisabled:
@@ -2198,11 +2241,10 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 		current = [x.toString() for x in self.servicePath]
 		if tmp != current or self.rootChanged:
 			self.clearPath()
-			cnt = 0
+			l_sPathAppend = self.servicePath.append
 			for i in tmp:
-				self.servicePath.append(eServiceReference(i))
-				cnt += 1
-			if cnt:
+				l_sPathAppend(eServiceReference(i))
+			if len(tmp):
 				path = self.servicePath.pop()
 				self.enterPath(path)
 			else:
@@ -2467,11 +2509,9 @@ class ChannelSelectionRadio(ChannelSelectionBase, ChannelSelectionEdit, ChannelS
 		tmp = [x for x in config.radio.lastroot.value.split(';') if x != '']
 		current = [x.toString() for x in self.servicePath]
 		if tmp != current or self.rootChanged:
-			cnt = 0
 			for i in tmp:
 				self.servicePathRadio.append(eServiceReference(i))
-				cnt += 1
-			if cnt:
+			if len(tmp):
 				path = self.servicePathRadio.pop()
 				self.enterPath(path)
 			else:

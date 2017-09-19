@@ -2,7 +2,7 @@ from Screens.Screen import Screen
 from Components.ConfigList import ConfigListScreen, ConfigList
 from Components.ActionMap import ActionMap
 from Components.Sources.StaticText import StaticText
-from Components.config import config, ConfigSubsection, ConfigBoolean, getConfigListEntry, ConfigSelection, ConfigYesNo, ConfigIP
+from Components.config import config, ConfigSubsection, ConfigBoolean, getConfigListEntry, ConfigSelection, ConfigYesNo, ConfigIP, ConfigNothing
 from Components.Network import iNetwork
 from Components.Ipkg import IpkgComponent
 from enigma import eDVBDB
@@ -12,21 +12,22 @@ config.misc.installwizard.hasnetwork = ConfigBoolean(default = False)
 config.misc.installwizard.ipkgloaded = ConfigBoolean(default = False)
 config.misc.installwizard.channellistdownloaded = ConfigBoolean(default = False)
 
-
 class InstallWizard(Screen, ConfigListScreen):
 
 	STATE_UPDATE = 0
 	STATE_CHOISE_CHANNELLIST = 1
 	INSTALL_PLUGINS = 2
+	SCAN = 3
 
 	def __init__(self, session, args = None):
 		Screen.__init__(self, session)
 
 		self.index = args
 		self.list = []
+		self.doNextStep = False
 		ConfigListScreen.__init__(self, self.list)
 
-		if self.index is self.STATE_UPDATE:
+		if self.index == self.STATE_UPDATE:
 			config.misc.installwizard.hasnetwork.value = False
 			config.misc.installwizard.ipkgloaded.value = False
 			modes = {0: " "}
@@ -44,13 +45,21 @@ class InstallWizard(Screen, ConfigListScreen):
 					break
 			if is_found is False:
 				self.createMenu()
-		elif self.index is self.STATE_CHOISE_CHANNELLIST:
+		elif self.index == self.STATE_CHOISE_CHANNELLIST:
 			self.enabled = ConfigYesNo(default = True)
 			modes = {"19e-23e-basis": "Astra1 Astra3 basis", "19e-23e": "Astra 1 Astra 3", "19e-23e-28e": "Astra 1 Astra 2 Astra 3", "13e-19e-23e-28e": "Astra 1 Astra 2 Astra 3 Hotbird", "kabelnl": "Kabel-NL"}
 			self.channellist_type = ConfigSelection(choices = modes, default = "19e-23e-basis")
 			self.createMenu()
 		elif self.index == self.INSTALL_PLUGINS:
-			self.enabled = ConfigYesNo(default = True)
+			self.noplugins = ConfigNothing()
+			self.doplugins = ConfigNothing()
+			self.createMenu()
+		elif self.index == self.SCAN:
+			self.noscan = ConfigNothing()
+			self.autoscan = ConfigNothing()
+			self.manualscan = ConfigNothing()
+			self.fastscan = ConfigNothing()
+			self.cablescan = ConfigNothing()
 			self.createMenu()
 
 	def checkNetworkCB(self, data):
@@ -70,17 +79,24 @@ class InstallWizard(Screen, ConfigListScreen):
 		except:
 			return
 		self.list = []
-		if self.index is self.STATE_UPDATE:
+		if self.index == self.STATE_UPDATE:
 			if config.misc.installwizard.hasnetwork.value:
 				self.list.append(getConfigListEntry(_("Your internet connection is working (ip: %s)") % (self.ipConfigEntry.getText()), self.enabled))
 			else:
 				self.list.append(getConfigListEntry(_("Your receiver does not have an internet connection"), self.enabled))
-		elif self.index is self.STATE_CHOISE_CHANNELLIST:
+		elif self.index == self.STATE_CHOISE_CHANNELLIST:
 			self.list.append(getConfigListEntry(_("Install channel list"), self.enabled))
 			if self.enabled.value:
 				self.list.append(getConfigListEntry(_("Channel list type"), self.channellist_type))
 		elif self.index == self.INSTALL_PLUGINS:
-			self.list.append(getConfigListEntry(_("Do you want to install plugins"), self.enabled))
+			self.list.append(getConfigListEntry(_("No, I do not want to install plugins"), self.noplugins))
+			self.list.append(getConfigListEntry(_("Yes, I do want to install plugins"), self.doplugins))
+		elif self.index == self.SCAN:
+			self.list.append(getConfigListEntry(_("I do not want to perform any service scans"), self.noscan))
+			self.list.append(getConfigListEntry(_("Do an automatic service scan now"), self.autoscan))
+			self.list.append(getConfigListEntry(_("Do a manual service scan now"), self.manualscan))
+			self.list.append(getConfigListEntry(_("Do a fast service scan now"), self.fastscan))
+			self.list.append(getConfigListEntry(_("Do a cable service scan now"), self.cablescan))
 		self["config"].list = self.list
 		self["config"].l.setList(self.list)
 
@@ -97,13 +113,33 @@ class InstallWizard(Screen, ConfigListScreen):
 		self.createMenu()
 
 	def run(self):
-		if self.index is self.STATE_UPDATE and config.misc.installwizard.hasnetwork.value:
+		if self.index == self.STATE_UPDATE and config.misc.installwizard.hasnetwork.value:
 			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (updating packages)'), IpkgComponent.CMD_UPDATE)
-		elif self.index is self.STATE_CHOISE_CHANNELLIST and self.enabled.value:
-			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading channel list)'), IpkgComponent.CMD_REMOVE, {'package': 'enigma2-plugin-settings-hans-' + self.channellist_type.value})
-		elif self.index == self.INSTALL_PLUGINS and self.enabled.value:
-			from PluginBrowser import PluginDownloadBrowser
-			self.session.open(PluginDownloadBrowser, 0)
+			self.doNextStep = True
+		elif self.index == self.STATE_CHOISE_CHANNELLIST:
+			if self.enabled.value:
+				self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading channel list)'), IpkgComponent.CMD_REMOVE, {'package': 'enigma2-plugin-settings-hans-' + self.channellist_type.value})
+			self.doNextStep = True
+		elif self.index == self.INSTALL_PLUGINS:
+			if self["config"].getCurrent()[1] == self.doplugins:
+				from PluginBrowser import PluginDownloadBrowser
+				self.session.open(PluginDownloadBrowser, 0)
+			self.doNextStep = True
+		elif self.index == self.SCAN:
+			if self["config"].getCurrent()[1] == self.autoscan:
+				from Screens.ScanSetup import ScanSimple
+				self.session.open(ScanSimple)
+			elif self["config"].getCurrent()[1] == self.manualscan:
+				from Screens.ScanSetup import ScanSetup
+				self.session.open(ScanSetup)
+			elif self["config"].getCurrent()[1] == self.fastscan:
+				from Plugins.SystemPlugins.FastScan.plugin import FastScanMain
+				FastScanMain(self.session)
+			elif self["config"].getCurrent()[1] == self.cablescan:
+				from Plugins.SystemPlugins.CableScan.plugin import CableScanMain
+				CableScanMain(self.session)
+			else:
+				self.doNextStep = True
 
 class InstallWizardIpkgUpdater(Screen):
 	skin = """
@@ -124,16 +160,16 @@ class InstallWizardIpkgUpdater(Screen):
 		self.ipkg = IpkgComponent()
 		self.ipkg.addCallback(self.ipkgCallback)
 
-		if self.index is InstallWizard.STATE_CHOISE_CHANNELLIST:
+		if self.index == InstallWizard.STATE_CHOISE_CHANNELLIST:
 			self.ipkg.startCmd(cmd, {'package': 'enigma2-plugin-settings-*'})
 		else:
 			self.ipkg.startCmd(cmd, pkg)
 
 	def ipkgCallback(self, event, param):
-		if event is IpkgComponent.EVENT_DONE:
-			if self.index is InstallWizard.STATE_UPDATE:
+		if event == IpkgComponent.EVENT_DONE:
+			if self.index == InstallWizard.STATE_UPDATE:
 				config.misc.installwizard.ipkgloaded.value = True
-			elif self.index is InstallWizard.STATE_CHOISE_CHANNELLIST:
+			elif self.index == InstallWizard.STATE_CHOISE_CHANNELLIST:
 				if self.state == 0:
 					self.ipkg.startCmd(IpkgComponent.CMD_INSTALL, self.pkg)
 					self.state = 1

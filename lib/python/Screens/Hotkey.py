@@ -11,6 +11,7 @@ from Plugins.Plugin import PluginDescriptor
 from Tools.BoundFunction import boundFunction
 from ServiceReference import ServiceReference
 from enigma import eServiceReference
+from Components.Pixmap import Pixmap
 import os
 
 
@@ -185,15 +186,21 @@ def getHotkeyFunctions():
 		hotkeyFunctions.append((_("Swap PIP"), "Infobar/swapPiP", "InfoBar"))
 		hotkeyFunctions.append((_("Move PIP"), "Infobar/movePiP", "InfoBar"))
 		hotkeyFunctions.append((_("Toggle PIPzap"), "Infobar/togglePipzap", "InfoBar"))
+	hotkeyFunctions.append((_("Activate HbbTV (Redbutton)"), "Infobar/activateRedButton", "InfoBar"))
 	hotkeyFunctions.append((_("Toggle HDMI In"), "Infobar/HDMIIn", "InfoBar"))
+	if SystemInfo["LcdLiveTV"]:
+		hotkeyFunctions.append((_("Toggle LCD LiveTV"), "Infobar/ToggleLCDLiveTV", "InfoBar"))
 	hotkeyFunctions.append((_("Toggle dashed flickering line for this service"), "Infobar/ToggleHideVBI", "InfoBar"))
 	hotkeyFunctions.append((_("Do nothing"), "Void", "InfoBar"))
 	if SystemInfo["HasHDMI-CEC"]:
 		hotkeyFunctions.append((_("HDMI-CEC Source Active"), "Infobar/SourceActiveHdmiCec", "InfoBar"))
 		hotkeyFunctions.append((_("HDMI-CEC Source Inactive"), "Infobar/SourceInactiveHdmiCec", "InfoBar"))
+	if SystemInfo["HasSoftcamInstalled"]:
+		hotkeyFunctions.append((_("Softcam Setup"), "SoftcamSetup", "Setup"))
 	hotkeyFunctions.append((_("HotKey Setup"), "Module/Screens.Hotkey/HotkeySetup", "Setup"))
 	hotkeyFunctions.append((_("Software update"), "Module/Screens.SoftwareUpdate/UpdatePlugin", "Setup"))
 	hotkeyFunctions.append((_("Latest Commits"), "Module/Screens.About/CommitInfo", "Setup"))
+	hotkeyFunctions.append((_("CI (Common Interface) Setup"), "Module/Screens.Ci/CiSelection", "Setup"))
 	hotkeyFunctions.append((_("Tuner Configuration"), "Module/Screens.Satconfig/NimSelection", "Scanning"))
 	hotkeyFunctions.append((_("Manual Scan"), "Module/Screens.ScanSetup/ScanSetup", "Scanning"))
 	hotkeyFunctions.append((_("Automatic Scan"), "Module/Screens.ScanSetup/ScanSimple", "Scanning"))
@@ -229,7 +236,7 @@ def getHotkeyFunctions():
 	if os.path.isdir("/usr/script"):
 		for x in [x for x in os.listdir("/usr/script") if x[-3:] == ".sh"]:
 			x = x[:-3]
-			hotkeyFunctions.append((_("Shellscript") + " " + x, "Shellscript/" + x, "Shellscript"))
+			hotkeyFunctions.append((_("Shellscript") + " " + x, "Shellscript/" + x, "Shellscripts"))
 			hotkeyFunctions.append((_("Background script") + " " + x, "Backgroundscript/" + x, "Shellscript"))
 	return hotkeyFunctions
 
@@ -341,7 +348,14 @@ class HotkeySetupSelect(Screen):
 		self.setTitle(_("Hotkey Setup") + " " + key[0][0])
 		self["key_red"] = Button(_("Cancel"))
 		self["key_green"] = Button(_("Save"))
-		self["key_yellow"] = Button(_("Remove and order"))
+		self["key_yellow"] = Button()
+		self["h_red"] = Pixmap()
+		self["h_green"] = Pixmap()
+		self["h_yellow"] = Pixmap()
+		self["h_yellow"].hide()
+		self["h_prev"] = Pixmap()
+		self["h_next"] = Pixmap()
+
 		self.mode = "list"
 		self.hotkeyFunctions = getHotkeyFunctions()
 		self.config = eval("config.misc.hotkey." + key[0][1])
@@ -357,6 +371,8 @@ class HotkeySetupSelect(Screen):
 				if function:
 					self.selected.append(ChoiceEntryComponent('',((function[0][0]), function[0][1])))
 		self.prevselected = self.selected[:]
+		if self.prevselected:
+			self.yellowButton(_("Edit selection"))
 		self["choosen"] = ChoiceList(list=self.selected, selection=0)
 		self["list"] = ChoiceList(list=self.getFunctionList(), selection=0)
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions", "DirectionActions", "KeyboardInputActions", "MenuActions"],
@@ -380,6 +396,9 @@ class HotkeySetupSelect(Screen):
 			"moveDown": self.moveDown,
 			"menu": boundFunction(self.close, True),
 		}, -1)
+
+		self.showPrevNext()
+
 		self.onLayoutFinish.append(self.__layoutFinished)
 
 	def __layoutFinished(self):
@@ -405,17 +424,41 @@ class HotkeySetupSelect(Screen):
 				functionslist.append(ChoiceEntryComponent('expandable',((localcatagorie), "Expander")))
 		return functionslist
 
+	def yellowButton(self, text=""):
+		self["key_yellow"].setText(text)
+		if text:
+			self["h_yellow"].show()
+		else:
+			self["h_yellow"].hide()
+
 	def toggleMode(self):
 		if self.mode == "list" and self.selected:
 			self.mode = "choosen"
 			self["choosen"].selectionEnabled(1)
 			self["list"].selectionEnabled(0)
-			self["key_yellow"].setText(_("Select Function"))
+			self.yellowButton(_("Select function"))
+			if len(self.selected) > 1:
+				self.showPrevNext(True)
 		elif self.mode == "choosen":
 			self.mode = "list"
 			self["choosen"].selectionEnabled(0)
 			self["list"].selectionEnabled(1)
-			self["key_yellow"].setText(_("Remove and order"))
+			self.toggleText()
+
+	def toggleText(self):
+		if self.selected:
+			self.yellowButton(_("Edit selection"))
+		else:
+			self.yellowButton("")
+		self.showPrevNext()
+
+	def showPrevNext(self, show=False):
+		if show:
+			self["h_prev"].show()
+			self["h_next"].show()
+		else:
+			self["h_prev"].hide()
+			self["h_next"].hide()
 
 	def keyOk(self):
 		if self.mode == "list":
@@ -438,10 +481,14 @@ class HotkeySetupSelect(Screen):
 						self.session.openWithCallback(self.zaptoCallback, SimpleChannelSelection, _("Hotkey zap") + " " + self.key[0][0], currentBouquet=True)
 					else:
 						self.selected.append(currentSelected[:2])
+			self.toggleText()
 		elif self.selected:
 			self.selected.remove(self["choosen"].l.getCurrentSelection())
 			if not self.selected:
 				self.toggleMode()
+				self.toggleText()
+		if len(self.selected) < 2:
+			self.showPrevNext()
 		self["choosen"].setList(self.selected)
 
 	def zaptoCallback(self, *args):
@@ -658,6 +705,8 @@ class InfoBarHotkey():
 		elif hasattr(self, "showMovies"):
 			self.showMovies()
 
+	def ToggleLCDLiveTV(self):
+		config.lcd.showTv.value = not config.lcd.showTv.value
 
 	def SourceActiveHdmiCec(self):
 		self.setHdmiCec("sourceactive")

@@ -378,6 +378,8 @@ class Wizard(Screen):
 					return
 				else:
 					self.configInstance.run()
+					if hasattr(self.configInstance, "doNextStep") and not self.configInstance.doNextStep:
+						return
 		self.finished()
 
 	def keyNumberGlobal(self, number):

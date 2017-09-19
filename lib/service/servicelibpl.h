@@ -104,6 +104,7 @@ public:
 	RESULT subtitle(ePtr<iSubtitleOutput> &ptr);
 	RESULT audioDelay(ePtr<iAudioDelay> &ptr);
 	RESULT cueSheet(ePtr<iCueSheet> &ptr);
+	void setQpipMode(bool value, bool audio) { }
 
 	// not implemented (yet)
 	RESULT setTarget(int target, bool noaudio = false) { return -1; }

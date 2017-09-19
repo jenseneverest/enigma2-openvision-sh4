@@ -246,13 +246,12 @@ class HotkeySetup(Screen):
 		self.session = session
 		self.setTitle(_("Hotkey Setup"))
 		self["key_red"] = Button(_("Exit"))
-		self["key_green"] = Button(_("Toggle Extra Keys"))
 		self.list = []
 		self.hotkeys = used_keys.getHotkeys()
 		self.hotkeyFunctions = getHotkeyFunctions()
 		for x in self.hotkeys:
 			self.list.append(ChoiceEntryComponent('',(x[0], x[1])))
-		self["list"] = ChoiceList(list=self.list[:config.misc.hotkey.additional_keys.value and len(self.hotkeys) or 10], selection = 0)
+		self["list"] = ChoiceList(list=self.list)
 		self["choosen"] = ChoiceList(list=[])
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions", "DirectionActions", "MenuActions"],
 		{
@@ -279,7 +278,7 @@ class HotkeySetup(Screen):
 
 	def hotkeyGlobal(self, key):
 		index = 0
-		for x in self.list[:config.misc.hotkey.additional_keys.value and len(self.hotkeys) or 10]:
+		for x in self.list:
 			if key == x[0][1]:
 				self["list"].moveToIndex(index)
 				break
@@ -319,11 +318,6 @@ class HotkeySetup(Screen):
 
 	def keyNumberGlobal(self, number):
 		self.session.openWithCallback(self.setDefaultHotkey, MessageBox, _("Set all hotkey to default?"), MessageBox.TYPE_YESNO)
-
-	def toggleAdditionalKeys(self):
-		config.misc.hotkey.additional_keys.value = not config.misc.hotkey.additional_keys.value
-		config.misc.hotkey.additional_keys.save()
-		self["list"].setList(self.list[:config.misc.hotkey.additional_keys.value and len(self.hotkeys) or 4])
 
 	def getFunctions(self):
 		key = self["list"].l.getCurrentSelection()[0][1]

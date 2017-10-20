@@ -130,9 +130,9 @@
 	</map>
 
 	<map context="InfobarActions">
-		<key id="KEY_PLAY" mapto="showMovies" flags="m"/>
-		<key id="KEY_FIND" mapto="showMovies" flags="m"/>
-		<key id="KEY_FILE" mapto="showMovies" flags="m"/>
+		<key id="KEY_PLAY" mapto="showMovies" flags="b"/>
+		<key id="KEY_FIND" mapto="showMovies" flags="b"/>
+		<key id="KEY_FILE" mapto="showMovies" flags="b"/>
 		<key id="KEY_TV" mapto="toggleTvRadio" flags="b"/>
 		<key id="KEY_RADIO" mapto="toggleTvRadio" flags="b"/>
 		<key id="KEY_MEDIA" mapto="showMovies" flags="b" />
@@ -260,7 +260,7 @@
 	<map context="InfobarMovieListActions">
 		<key id="KEY_UP" mapto="up" flags="m"/>
 		<key id="KEY_DOWN" mapto="down" flags="m"/>
-		<key id="KEY_OK" mapto="movieList" flags="m"/>
+		<key id="KEY_OK" mapto="movieList" flags="b"/>
 	</map>
 
 	<map context="MoviePlayerActions">

@@ -930,7 +930,8 @@ void eDVBCIInterfaces::removePMTHandler(eDVBServicePMTHandler *pmthandler)
 				slot->sendCAPMT(pmthandler, caids);  // send a capmt without caids to remove a running service
 				slot->removeService(service_to_remove.getServiceID().get());
 				/* restore ci source to the default (tuner "A") */
-				slot->setSource("A");
+				if (slot->current_tuner == -1)
+					slot->setSource("A");
 			}
 
 			if (!--slot->use_count)

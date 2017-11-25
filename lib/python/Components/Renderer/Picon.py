@@ -1,27 +1,19 @@
 import os, re, unicodedata
-from enigma import ePixmap
-
-from Components.Harddisk import harddiskmanager
 from Renderer import Renderer
-from ServiceReference import ServiceReference
+from enigma import ePixmap
 from Tools.Alternatives import GetWithAlternative
-from Tools.Directories import pathExists, SCOPE_SKIN_IMAGE, \
-	SCOPE_CURRENT_SKIN, resolveFilename
-
+from Tools.Directories import pathExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename
+from Components.Harddisk import harddiskmanager
+from ServiceReference import ServiceReference
+from Components.config import config
 
 searchPaths = []
-if pathExists('/tmp/picon/'):
-	piconInTmp = True
-	lastPiconPath = '/tmp/picon/'
-	print "[Picon] use path:", lastPiconPath
-else:
-	piconInTmp = False
-	lastPiconPath = None
+lastPiconPath = None
 
 def initPiconPaths():
 	global searchPaths
 	searchPaths = []
-	for mp in ('/tmp/', '/media/hdd/', '/usr/share/enigma2/', '/'):
+	for mp in ('/usr/share/enigma2/', '/'):
 		onMountpointAdded(mp)
 	for part in harddiskmanager.getMountedPartitions():
 		onMountpointAdded(part.mountpoint)
@@ -29,12 +21,12 @@ def initPiconPaths():
 def onMountpointAdded(mountpoint):
 	global searchPaths
 	try:
-		piconPath = os.path.join(mountpoint, 'picon') + '/'
-		if os.path.isdir(piconPath) and piconPath not in searchPaths:
-			for fn in os.listdir(piconPath):
-				if fn[-4:] == '.png':
-					print "[Picon] adding path:", piconPath
-					searchPaths.append(piconPath)
+		path = os.path.join(mountpoint, 'picon') + '/'
+		if os.path.isdir(path) and path not in searchPaths:
+			for fn in os.listdir(path):
+				if fn.endswith('.png'):
+					print "[Picon] adding path:", path
+					searchPaths.append(path)
 					break
 	except Exception, ex:
 		print "[Picon] Failed to investigate %s:" % mountpoint, ex
@@ -49,29 +41,29 @@ def onMountpointRemoved(mountpoint):
 		pass
 
 def onPartitionChange(why, part):
-	if why is 'add':
+	if why == 'add':
 		onMountpointAdded(part.mountpoint)
-	elif why is 'remove':
+	elif why == 'remove':
 		onMountpointRemoved(part.mountpoint)
 
 def findPicon(serviceName):
 	global lastPiconPath
-	if lastPiconPath:
+	if lastPiconPath is not None:
 		pngname = lastPiconPath + serviceName + ".png"
 		if pathExists(pngname):
 			return pngname
-	if not piconInTmp:
-		for piconPath in searchPaths:
-			pngname = piconPath + serviceName + ".png"
-			if pngname:
-				if pathExists(pngname):
-					lastPiconPath = piconPath
-					return pngname
+	global searchPaths
+	for path in searchPaths:
+		if pathExists(path):
+			pngname = path + serviceName + ".png"
+			if pathExists(pngname):
+				lastPiconPath = path
+				return pngname
 	return ""
 
 def getPiconName(serviceName):
 	#remove the path and name fields, and replace ':' by '_'
-fields = GetWithAlternative(serviceName).split(':', 10)[:10]
+	fields = GetWithAlternative(serviceName).split(':', 10)[:10]
 	if not fields or len(fields) < 10:
 		return ""
 	pngname = findPicon('_'.join(fields))
@@ -101,8 +93,10 @@ class Picon(Renderer):
 	def __init__(self):
 		Renderer.__init__(self)
 		self.pngname = ""
+		self.lastPath = None
 		pngname = findPicon("picon_default")
 		self.defaultpngname = None
+		self.showPicon = True
 		if not pngname:
 			tmp = resolveFilename(SCOPE_CURRENT_SKIN, "picon_default.png")
 			if pathExists(tmp):
@@ -115,7 +109,7 @@ class Picon(Renderer):
 	def addPath(self, value):
 		if pathExists(value):
 			global searchPaths
-			if value[-1] != '/':
+			if not value.endswith('/'):
 				value += '/'
 			if value not in searchPaths:
 				searchPaths.append(value)
@@ -123,8 +117,11 @@ class Picon(Renderer):
 	def applySkin(self, desktop, parent):
 		attribs = self.skinAttributes[:]
 		for (attrib, value) in self.skinAttributes:
-			if attrib is "path":
+			if attrib == "path":
 				self.addPath(value)
+				attribs.remove((attrib,value))
+			elif attrib == "isFrontDisplayPicon":
+				self.showPicon = value == "0"
 				attribs.remove((attrib,value))
 		self.skinAttributes = attribs
 		return Renderer.applySkin(self, desktop, parent)
@@ -133,21 +130,22 @@ class Picon(Renderer):
 
 	def changed(self, what):
 		if self.instance:
-			pngname = ""
-			if what[0] != self.CHANGED_CLEAR:
-				pngname = getPiconName(self.source.text)
-			if not pngname: # no picon for service found
-				pngname = self.defaultpngname
-			if self.pngname is not pngname:
-				if pngname:
-					#self.instance.setScale(1)
-					self.instance.setPixmapFromFile(pngname)
-					self.instance.show()
-				else:
-					self.instance.hide()
-				self.pngname = pngname
+			if self.showPicon or config.usage.show_picon_in_display.value:
+				pngname = ""
+				if what[0] != self.CHANGED_CLEAR:
+					pngname = getPiconName(self.source.text)
+				if not pngname: # no picon for service found
+					pngname = self.defaultpngname
+				if self.pngname != pngname:
+					if pngname:
+						self.instance.setScale(1)
+						self.instance.setPixmapFromFile(pngname)
+						self.instance.show()
+					else:
+						self.instance.hide()
+					self.pngname = pngname
+			elif self.visible:
+				self.instance.hide()
 
-if not piconInTmp:
-	harddiskmanager.on_partition_list_change.append(onPartitionChange)
-	initPiconPaths()
-
+harddiskmanager.on_partition_list_change.append(onPartitionChange)
+initPiconPaths()

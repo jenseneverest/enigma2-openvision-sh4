@@ -98,13 +98,18 @@ int eComponentScan::start(int feid, int flags, int networkid)
 		return -1;
 
 	m_done = 0;
-	ePtr<eDVBResourceManager> mgr;
+	ePtr<eDVBResourceManager> res;
+	int err;
 
-	eDVBResourceManager::getInstance(mgr);
+	if ((err = eDVBResourceManager::getInstance(res)) != 0)
+	{
+		eDebug("[eComponentScan] no resource manager");
+		return -1;
+	}
 
 	eUsePtr<iDVBChannel> channel;
 
-	if (mgr->allocateRawChannel(channel, feid))
+	if (res->allocateRawChannel(channel, feid))
 	{
 		eDebug("[eComponentScan] allocating raw channel (on frontend %d) failed!", feid);
 		return -1;
@@ -116,10 +121,7 @@ int eComponentScan::start(int feid, int flags, int networkid)
 	if (!(flags & scanRemoveServices))
 	{
 		ePtr<iDVBChannelList> db;
-		ePtr<eDVBResourceManager> res;
-		if (eDVBResourceManager::getInstance(res) != 0)
-			eDebug("[eComponentScan] no resource manager");
-		else if (res->getChannelList(db) != 0)
+		if ((err = res->getChannelList(db)) != 0)
 			eDebug("[eComponentScan] no channel list");
 		else
 		{

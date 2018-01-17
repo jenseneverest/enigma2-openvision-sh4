@@ -15,7 +15,6 @@ from Components.ProgressBar import ProgressBar
 from Tools.StbHardware import getFPVersion
 from enigma import eTimer, eLabel, eConsoleAppContainer
 
-from Components.HTMLComponent import HTMLComponent
 from Components.GUIComponent import GUIComponent
 import skin, os
 
@@ -39,7 +38,12 @@ class About(Screen):
 		self["ImageVersion"] = StaticText(ImageVersion)
 		# AboutText += ImageVersion + "\n"
 
-		EnigmaVersion = _("Enigma version: ") + about.getEnigmaVersionString()
+		EnigmaVersion = about.getEnigmaVersionString().rsplit("-", 2)
+		if len(EnigmaVersion) == 3:
+			EnigmaVersion = EnigmaVersion[0] + " " + EnigmaVersion[2] + "-" + EnigmaVersion[1]
+		else:
+			EnigmaVersion = " ".join(EnigmaVersion)
+		EnigmaVersion = _("Enigma version: ") + EnigmaVersion
 		self["EnigmaVersion"] = StaticText(EnigmaVersion)
 		AboutText += "\n" + EnigmaVersion + "\n"
 
@@ -324,7 +328,7 @@ class MemoryInfo(Screen):
 		open("/proc/sys/vm/drop_caches", "w").write("3")
 		self.getMemoryInfo()
 
-class MemoryInfoSkinParams(HTMLComponent, GUIComponent):
+class MemoryInfoSkinParams(GUIComponent):
 	def __init__(self):
 		GUIComponent.__init__(self)
 		self.rows_in_column = 25

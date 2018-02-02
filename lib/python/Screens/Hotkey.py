@@ -49,7 +49,7 @@ class UsedKeys:
 			( "Channel up", "channelup", ""),
 			( "Channel down", "channeldown", ""),
 			( "Favorites", "favorites", "Infobar/openFavouritesList"),
-			( "Favorites " + _("long"), "favorites_long", ""),
+			( "Favorites" + " " + _("long"), "favorites_long", ""),
 			( "Epg", "epg", "Plugins/Extensions/GraphMultiEPG/1"),
 			( "Epg " + _("long"), "epg_long", "Infobar/showEventInfoPlugins"),
 			( "Menu", "menu", ""),
@@ -81,7 +81,9 @@ class UsedKeys:
 			( "Power " + _("long"), "power_long", "Menu/shutdown"),
 			( "HDMIin" + " " + _("long"), "HDMIin_long", ""),
 			( "Media", "media", ""),
-			( "Media" + " " + _("long"), "media_long", "")]
+			( "Media" + " " + _("long"), "media_long", ""),
+			( "WWW Portal", "www", ""),
+			( "WWW Portal" + " " + _("long"), "www_long", "")]
 
 
 

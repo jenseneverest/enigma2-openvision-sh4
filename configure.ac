@@ -72,6 +72,7 @@ AC_ARG_ENABLE([gstreamer],
 
 AM_CONDITIONAL(ENABLE_GSTREAMER, test "$enable_gstreamer" = "yes")
 
+PKG_CHECK_MODULES(TUXTXT, tuxbox-tuxtxt)
 if test "$enable_gstreamer" = "yes"; then
 	AC_DEFINE(ENABLE_GSTREAMER, 1, [include gstreamer as player engine support])
 	AC_ARG_WITH(gstversion,
@@ -268,6 +269,10 @@ fi
 
 AC_CHECK_HEADERS([sys/klog.h])
 AC_CHECK_FUNCS([klogctl])
+AC_CHECK_HEADERS([shadow.h])
+
+AC_CHECK_LIB([crypt], [crypt], [BASE_LIBS+=" -lcrypt"], [AC_MSG_ERROR([Could not find crypt])])
+AC_CHECK_LIB([rt], [clock_gettime], [BASE_LIBS+=" -lrt"], [AC_MSG_ERROR([Could not find rt])])
 
 ENIGMA2_CFLAGS="-fno-rtti -fno-exceptions -rdynamic -funwind-tables"
 AC_SUBST(ENIGMA2_CFLAGS)

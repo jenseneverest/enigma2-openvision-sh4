@@ -33,6 +33,7 @@ enigma2_LDADD_WHOLE = \
 	$(top_builddir)/lib/service/libenigma_service.a
 
 enigma2_LDADD = \
+	@TUXTXT_LIBS@ \
 	@BASE_LIBS@ \
 	@LIBGIF_LIBS@ \
 	@LIBJPEG_LIBS@ \
@@ -46,7 +47,7 @@ enigma2_LDADD = \
 	@AMADEC_LIBS@ \
 	@DVBCSA_LIBS@ \
 	@AVAHI_LIBS@ \
-	-ltuxtxt -ltuxtxt32bpp -lcrypt \
+	-ltuxtxt32bpp -lcrypt \
 	-ldl -lpthread -lcrypt -lresolv -lrt -lmmeimage
 
 if ENABLE_LIBEPLAYER3

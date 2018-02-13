@@ -219,7 +219,7 @@ void eConsoleAppContainer::closePipes()
 		::close(fd[2]);
 		fd[2]=-1;
 	}
-	while( !outbuf.empty() ) // cleanup out buffer
+	while( outbuf.size() ) // cleanup out buffer
 	{
 		queue_data d = outbuf.front();
 		outbuf.pop();
@@ -298,7 +298,7 @@ void eConsoleAppContainer::write( const char *data, int len )
 
 void eConsoleAppContainer::readyWrite(int what)
 {
-	if (what&eSocketNotifier::Write && !outbuf.empty() )
+	if (what&eSocketNotifier::Write && outbuf.size() )
 	{
 		queue_data &d = outbuf.front();
 		int wr = ::write( fd[1], d.data+d.dataSent, d.len-d.dataSent );
@@ -314,7 +314,7 @@ void eConsoleAppContainer::readyWrite(int what)
 			/* emit */ dataSent(0);
 		}
 	}
-	if ( outbuf.empty() )
+	if ( !outbuf.size() )
 	{
 		if ( filefd[0] >= 0 )
 		{

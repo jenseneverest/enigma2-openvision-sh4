@@ -7,14 +7,13 @@ opkgStatusPath = ''
 
 def opkgExtraDestinations():
 	global opkgDestinations
-	return ''.join([" --dest %s:%s" % (i,i) for i in opkgDestinations])
+	return ''.join([" --add-dest %s:%s" % (i,i) for i in opkgDestinations])
 
 def opkgAddDestination(mountpoint):
-	pass
-	#global opkgDestinations
-	#if mountpoint not in opkgDestinations:
-		#opkgDestinations.append(mountpoint)
-		#print "[Ipkg] Added to OPKG destinations:", mountpoint
+	global opkgDestinations
+	if mountpoint not in opkgDestinations:
+		opkgDestinations.append(mountpoint)
+		print "[Ipkg] Added to OPKG destinations:", mountpoint
 
 def onPartitionChange(why, part):
 	global opkgDestinations
@@ -23,11 +22,11 @@ def onPartitionChange(why, part):
 	if mountpoint and mountpoint != '/':
 		if why == 'add':
 			if opkgStatusPath == '':
-				# older opkg versions
-				opkgStatusPath = 'usr/lib/opkg/status'
+				# recent opkg versions
+				opkgStatusPath = 'var/lib/opkg/status'
 				if not os.path.exists(os.path.join('/', opkgStatusPath)):
-					# recent opkg versions
-					opkgStatusPath = 'var/lib/opkg/status'
+					# older opkg versions
+					opkgStatusPath = 'usr/lib/opkg/status'
 			if os.path.exists(os.path.join(mountpoint, opkgStatusPath)):
 				opkgAddDestination(mountpoint)
 		elif why == 'remove':
@@ -81,26 +80,26 @@ class IpkgComponent:
 			self.cmdFinished(-1)
 
 	def startCmd(self, cmd, args = None):
-		if cmd is self.CMD_UPDATE:
+		if cmd == self.CMD_UPDATE:
 			self.runCmdEx("update")
-		elif cmd is self.CMD_UPGRADE:
+		elif cmd == self.CMD_UPGRADE:
 			append = ""
 			if args["test_only"]:
 				append = " -test"
 			self.runCmdEx("upgrade" + append)
-		elif cmd is self.CMD_LIST:
+		elif cmd == self.CMD_LIST:
 			self.fetchedList = []
 			if args['installed_only']:
 				self.runCmdEx("list_installed")
 			else:
 				self.runCmd("list")
-		elif cmd is self.CMD_INSTALL:
+		elif cmd == self.CMD_INSTALL:
 			self.runCmd("install " + args['package'])
-		elif cmd is self.CMD_REMOVE:
+		elif cmd == self.CMD_REMOVE:
 			self.runCmd("remove " + args['package'])
-		elif cmd is self.CMD_UPGRADE_LIST:
+		elif cmd == self.CMD_UPGRADE_LIST:
 			self.fetchedList = []
-			self.runCmdEx("list_upgradable")
+			self.runCmdEx("list-upgradable")
 		self.setCurrentCommand(cmd)
 
 	def cmdFinished(self, retval):
@@ -133,29 +132,26 @@ class IpkgComponent:
 				return
 			if self.currentCommand in (self.CMD_LIST, self.CMD_UPGRADE_LIST):
 				item = data.split(' - ', 2)
-				if len(item) < 3:
-					self.callCallbacks(self.EVENT_ERROR, None)
-					return
 				self.fetchedList.append(item)
 				self.callCallbacks(self.EVENT_LISTITEM, item)
 				return
-			if data[:11] == 'Downloading':
+			if data.startswith('Downloading'):
 				self.callCallbacks(self.EVENT_DOWNLOAD, data.split(' ', 5)[1].strip())
-			elif data[:9] == 'Upgrading':
+			elif data.startswith('Upgrading'):
 				self.callCallbacks(self.EVENT_UPGRADE, data.split(' ', 2)[1])
-			elif data[:10] == 'Installing':
+			elif data.startswith('Installing'):
 				self.callCallbacks(self.EVENT_INSTALL, data.split(' ', 2)[1])
-			elif data[:8] == 'Removing':
+			elif data.startswith('Removing'):
 				self.callCallbacks(self.EVENT_REMOVE, data.split(' ', 3)[2])
-			elif data[:11] == 'Configuring':
+			elif data.startswith('Configuring'):
 				self.callCallbacks(self.EVENT_CONFIGURING, data.split(' ', 2)[1])
-			elif data[:17] == 'An error occurred':
+			elif data.startswith('An error occurred'):
 				self.callCallbacks(self.EVENT_ERROR, None)
-			elif data[:18] == 'Failed to download':
+			elif data.startswith('Failed to download'):
 				self.callCallbacks(self.EVENT_ERROR, None)
-			elif data[:21] == 'ipkg_download: ERROR:':
+			elif data.startswith('ipkg_download: ERROR:'):
 				self.callCallbacks(self.EVENT_ERROR, None)
-			elif 'Configuration file \'' in data:
+			elif data.find('Configuration file \'') >= 0:
 				# Note: the config file update question doesn't end with a newline, so
 				# if we get multiple config file update questions, the next ones
 				# don't necessarily start at the beginning of a line

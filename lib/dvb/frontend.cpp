@@ -126,8 +126,8 @@ void eDVBFrontendParametersSatellite::set(const SatelliteDeliverySystemDescripto
 	}
 	rolloff = descriptor.getRollOff();
 	is_id = NO_STREAM_ID_FILTER;
-	pls_mode = eDVBFrontendParametersSatellite::PLS_Root;
-	pls_code = 1;
+	pls_mode = eDVBFrontendParametersSatellite::PLS_Gold;
+	pls_code = 0;
 	if (system == System_DVB_S2)
 	{
 		eDebug("[eDVBFrontendParametersSatellite] SAT DVB-S2 freq %d, %s, pos %d, sr %d, fec %d, modulation %d, rolloff %d, is_id %d, pls_mode %d, pls_code %d",
@@ -2655,8 +2655,8 @@ int eDVBFrontend::isCompatibleWith(ePtr<iDVBFrontendParameters> &feparm)
 		{
 			return 0;
 		}
-		bool multistream = (static_cast<unsigned int>(parm.is_id) != NO_STREAM_ID_FILTER || (parm.pls_code & 0x3FFFF) != 1 ||
-					(parm.pls_mode & 3) != eDVBFrontendParametersSatellite::PLS_Root);
+		bool multistream = (static_cast<unsigned int>(parm.is_id) != NO_STREAM_ID_FILTER || (parm.pls_code & 0x3FFFF) != 0 ||
+					(parm.pls_mode & 3) != eDVBFrontendParametersSatellite::PLS_Gold);
 		if (parm.system == eDVBFrontendParametersSatellite::System_DVB_S2 && multistream && !is_multistream())
 		{
 			return 0;

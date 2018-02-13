@@ -38,7 +38,8 @@ class About(Screen):
 		self["ImageVersion"] = StaticText(ImageVersion)
 		# AboutText += ImageVersion + "\n"
 
-		EnigmaVersion = about.getEnigmaVersionString().rsplit("-", 2)
+		EnigmaVersion = about.getEnigmaVersionString()
+		EnigmaVersion = EnigmaVersion.rsplit("-", EnigmaVersion.count("-") - 2)
 		if len(EnigmaVersion) == 3:
 			EnigmaVersion = EnigmaVersion[0] + " " + EnigmaVersion[2] + "-" + EnigmaVersion[1]
 		else:

@@ -54,7 +54,7 @@ def InitUsageConfig():
 	config.usage.servicelist_number_of_services = ConfigSelection(default = "by skin", choices = choicelist)
 	config.usage.servicelist_number_of_services.addNotifier(refreshServiceList)
 
-	config.usage.multiepg_ask_bouquet = ConfignesNo(default = False)
+	config.usage.multiepg_ask_bouquet = ConfigYesNo(default = False)
 
 	config.usage.quickzap_bouquet_change = ConfigYesNo(default = False)
 	config.usage.e1like_radio_mode = ConfigYesNo(default = True)

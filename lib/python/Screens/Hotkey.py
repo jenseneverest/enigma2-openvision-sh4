@@ -321,6 +321,11 @@ class HotkeySetup(Screen):
 	def keyNumberGlobal(self, number):
 		self.session.openWithCallback(self.setDefaultHotkey, MessageBox, _("Set all hotkey to default?"), MessageBox.TYPE_YESNO)
 
+	def toggleAdditionalKeys(self):
+		config.misc.hotkey.additional_keys.value = not config.misc.hotkey.additional_keys.value
+		config.misc.hotkey.additional_keys.save()
+		self["list"].setList(self.list[:config.misc.hotkey.additional_keys.value and len(self.hotkeys) or 10])
+
 	def getFunctions(self):
 		key = self["list"].l.getCurrentSelection()[0][1]
 		if key:

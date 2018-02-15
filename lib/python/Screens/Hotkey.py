@@ -668,20 +668,6 @@ class InfoBarHotkey():
 				if os.path.isfile(ppanelFileName) and os.path.isdir('/usr/lib/enigma2/python/Plugins/Extensions/PPanel'):
 					from Plugins.Extensions.PPanel.ppanel import PPanel
 					self.session.open(PPanel, name=selected[1] + ' PPanel', node=None, filename=ppanelFileName, deletenode=None)
-			elif selected[0][-6:] == "script":
-				command = '/usr/script/' + selected[1] + ".sh"
-				if os.path.isfile(command):
-					if selected[0] == "Backgroundscript":
-						from Components.Console import Console as eConsole					
-						message = _("Execute %s") % (selected[1] + ".sh")
-						self.session.open(MessageBox, message, type = MessageBox.TYPE_INFO, timeout = 2)
-						eConsole().ePopen(command)
-					elif os.path.isdir('/usr/lib/enigma2/python/Plugins/Extensions/PPanel'):
-						from Plugins.Extensions.PPanel.ppanel import Execute
-						self.session.open(Execute, selected[1] + " shellscript", None, command)
-					else:
-						from Screens.Console import Console as sConsole
-						self.session.open(sConsole, cmdlist = [command])
 			elif selected[0] == "Shellscript":
 				command = '/usr/script/' + selected[1] + ".sh"
 				if os.path.isfile(command):

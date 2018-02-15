@@ -232,14 +232,13 @@ def getHotkeyFunctions():
 	hotkeyFunctions.append((_("Language"), "Module/Screens.LanguageSelection/LanguageSelection", "Setup"))
 	hotkeyFunctions.append((_("Memory Info"), "Module/Screens.About/MemoryInfo", "Setup"))
 	if os.path.isdir("/etc/ppanels"):
-		for x in [x for x in os.listdir("/etc/ppanels") if x[-4:] == ".xml"]:
+		for x in [x for x in os.listdir("/etc/ppanels") if x.endswith(".xml")]:
 			x = x[:-4]
 			hotkeyFunctions.append((_("PPanel") + " " + x, "PPanel/" + x, "PPanels"))
 	if os.path.isdir("/usr/script"):
-		for x in [x for x in os.listdir("/usr/script") if x[-3:] == ".sh"]:
+		for x in [x for x in os.listdir("/usr/script") if x.endswith(".sh")]:
 			x = x[:-3]
 			hotkeyFunctions.append((_("Shellscript") + " " + x, "Shellscript/" + x, "Shellscripts"))
-			hotkeyFunctions.append((_("Background script") + " " + x, "Backgroundscript/" + x, "Shellscript"))
 	return hotkeyFunctions
 
 class HotkeySetup(Screen):
@@ -683,6 +682,15 @@ class InfoBarHotkey():
 					else:
 						from Screens.Console import Console as sConsole
 						self.session.open(sConsole, cmdlist = [command])
+			elif selected[0] == "Shellscript":
+				command = '/usr/script/' + selected[1] + ".sh"
+				if os.path.isfile(command):
+					if ".hidden." in command:
+						from enigma import eConsoleAppContainer
+						eConsoleAppContainer().execute(command)
+					else:
+						from Screens.Console import Console
+						self.session.open(Console, selected[1] + " shellscript", command, closeOnSuccess=selected[1].startswith('!'), showStartStopText=False)
 			elif selected[0] == "Menu":
 				from Screens.Menu import MainMenu, mdom
 				root = mdom.getroot()

@@ -287,9 +287,9 @@ class PluginDownloadBrowser(Screen):
 				self.expanded.append(sel)
 			self.updateList()
 		else:
-			if self.type is self.DOWNLOAD:
+			if self.type == self.DOWNLOAD:
 				self.session.openWithCallback(self.runInstall, MessageBox, _("Do you really want to download\nthe plugin \"%s\"?") % sel.name)
-			elif self.type is self.REMOVE:
+			elif self.type == self.REMOVE:
 				self.session.openWithCallback(self.runInstall, MessageBox, _("Do you really want to remove\nthe plugin \"%s\"?") % sel.name)
 
 	def requestClose(self):
@@ -315,10 +315,10 @@ class PluginDownloadBrowser(Screen):
 	def installDestinationCallback(self, result):
 		if result is not None:
 			dest = result[1]
-			if dest[0] == '/':
+			if dest.startswith('/'):
 				# Custom install path, add it to the list too
 				dest = os.path.normpath(dest)
-				extra = '--dest %s:%s -d %s' % (dest,dest,dest)
+				extra = '--add-dest %s:%s -d %s' % (dest,dest,dest)
 				Ipkg.opkgAddDestination(dest)
 			else:
 				extra = '-d ' + dest
@@ -328,8 +328,8 @@ class PluginDownloadBrowser(Screen):
 
 	def runInstall(self, val):
 		if val:
-			if self.type is self.DOWNLOAD:
-				if self["list"].l.getCurrentSelection()[0].name[:7] == "picons-":
+			if self.type == self.DOWNLOAD:
+				if self["list"].l.getCurrentSelection()[0].name.startswith("picons-"):
 					supported_filesystems = frozenset(('ext4', 'ext3', 'ext2', 'reiser', 'reiser4', 'jffs2', 'ubifs', 'rootfs'))
 					candidates = []
 					import Components.Harddisk
@@ -343,12 +343,12 @@ class PluginDownloadBrowser(Screen):
 						self.session.openWithCallback(self.installDestinationCallback, ChoiceBox, title=_("Install picons on"), list=candidates)
 					return
 				self.install_settings_name = self["list"].l.getCurrentSelection()[0].name
-				if self["list"].l.getCurrentSelection()[0].name[:9] == "settings-":
+				if self["list"].l.getCurrentSelection()[0].name.startswith('settings-'):
 					self.check_settings = True
 					self.startIpkgListInstalled(self.PLUGIN_PREFIX + 'settings-*')
 				else:
 					self.runSettingsInstall()
-			elif self.type is self.REMOVE:
+			elif self.type == self.REMOVE:
 				self.doRemove(self.installFinished, self["list"].l.getCurrentSelection()[0].name)
 
 	def doRemove(self, callback, pkgname):
@@ -375,7 +375,7 @@ class PluginDownloadBrowser(Screen):
 		self["list"].instance.hide()
 		self.listWidth = listsize.width()
 		self.listHeight = listsize.height()
-		if self.type is self.DOWNLOAD:
+		if self.type == self.DOWNLOAD:
 			if self.needupdate and not PluginDownloadBrowser.lastDownloadDate or (time() - PluginDownloadBrowser.lastDownloadDate) > 3600:
 				# Only update from internet once per hour
 				self.container.execute(self.ipkg + " update")
@@ -383,7 +383,7 @@ class PluginDownloadBrowser(Screen):
 			else:
 				self.run = 1
 				self.startIpkgListInstalled()
-		elif self.type is self.REMOVE:
+		elif self.type == self.REMOVE:
 			self.run = 1
 			self.startIpkgListInstalled()
 
@@ -403,7 +403,7 @@ class PluginDownloadBrowser(Screen):
 				self.pluginlist.remove(plugin)
 				break
 		self.plugins_changed = True
-		if self["list"].l.getCurrentSelection()[0].name[:9] == "settings-":
+		if self["list"].l.getCurrentSelection()[0].name.startswith("settings-"):
 			self.reload_settings = True
 		if self["list"].l.getCurrentSelection()[0].name.startswith("softcams-"):
 			self.check_softcams = True
@@ -419,9 +419,9 @@ class PluginDownloadBrowser(Screen):
 		self.remainingdata = ""
 		if self.run == 0:
 			self.run = 1
-			if self.type is self.DOWNLOAD:
+			if self.type == self.DOWNLOAD:
 				self.startIpkgListInstalled()
-		elif self.run is 1 and self.type is self.DOWNLOAD:
+		elif self.run == 1 and self.type == self.DOWNLOAD:
 			self.run = 2
 			from Components import opkg
 			pluginlist = []
@@ -461,14 +461,14 @@ class PluginDownloadBrowser(Screen):
 			self.session.openWithCallback(self.runSettingsRemove, MessageBox, _('You already have a channel list installed,\nwould you like to remove\n"%s"?') % self.remove_settings_name)
 			return
 
-		if self.run is 1:
+		if self.run == 1:
 			for x in lines:
 				plugin = x.split(" - ", 2)
 				# 'opkg list_installed' only returns name + version, no description field
 				if len(plugin) >= 2:
-					if plugin[0][-4:] != '-dev' and plugin[0][-10:] != '-staticdev' and plugin[0][-4:] != '-dbg' and plugin[0][-4:] != '-doc' and plugin[0][-4:] != '-src':
+					if not plugin[0].endswith('-dev') and not plugin[0].endswith('-staticdev') and not plugin[0].endswith('-dbg') and not plugin[0].endswith('-doc') and not plugin[0].endswith('-src'):
 						if plugin[0] not in self.installedplugins:
-							if self.type is self.DOWNLOAD:
+							if self.type == self.DOWNLOAD:
 								self.installedplugins.append(plugin[0])
 							else:
 								if len(plugin) == 2:

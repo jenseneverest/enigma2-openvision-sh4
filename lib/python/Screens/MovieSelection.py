@@ -274,7 +274,7 @@ class MovieBrowserConfiguration(ConfigListScreen,Screen):
 			getConfigListEntry(_("Show extended description"), cfg.description),
 			getConfigListEntry(_("Type"), cfg.listtype),
 			getConfigListEntry(_("Use individual settings for each directory"), config.movielist.settings_per_directory),
-			getConfigListEntry(_("Allow quit movieplayer with exit"), config.usage.leave_movieplayer_onExit),
+			getConfigListEntry(_("Allow quitting movieplayer with exit"), config.usage.leave_movieplayer_onExit),
 			getConfigListEntry(_("Behavior when a movie reaches the end"), config.usage.on_movie_eof),
 			getConfigListEntry(_("Stop service on return to movie list"), config.movielist.stop_service),
 			getConfigListEntry(_("Load length of movies in movie list"), config.usage.load_length_of_movies_in_moviellist),
@@ -2198,8 +2198,8 @@ class MovieSelectionFileManagerList(Screen):
 						index += 1
 		self.list = data
 
-		self["files"] = self.list
-		self["text"] = Label()
+		self["config"] = self.list
+		self["description"] = Label()
 
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions", "MovieSelectionActions"],
 			{
@@ -2218,7 +2218,7 @@ class MovieSelectionFileManagerList(Screen):
 		self["key_blue"] = Button(_("Inversion"))
 
 		self.sort = 0
-		self["text"].setText(_("Select files with 'OK' and then use 'Menu' for select operation"))
+		self["description"].setText(_("Select files with 'OK' and then use 'Menu' or 'Green' for select operation"))
 
 	def changePng(self):
 		from Tools.Directories import SCOPE_CURRENT_SKIN
@@ -2279,7 +2279,7 @@ class MovieSelectionFileManagerList(Screen):
 			except Exception, e:
 				self.session.open(MessageBox, str(e), MessageBox.TYPE_ERROR)
 		else:
-			item = self["files"].getCurrent()[0]
+			item = self["config"].getCurrent()[0]
 			try:
 				copyServiceFiles(item[1], dest, item[0])
 			except Exception, e:
@@ -2303,7 +2303,7 @@ class MovieSelectionFileManagerList(Screen):
 			except Exception, e:
 				self.session.open(MessageBox, str(e), MessageBox.TYPE_ERROR)
 		else:
-			item = self["files"].getCurrent()[0]
+			item = self["config"].getCurrent()[0]
 			try:
 				moveServiceFiles(item[1], dest, item[0])
 				self.list.removeSelection(item)

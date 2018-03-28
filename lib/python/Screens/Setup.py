@@ -1,11 +1,12 @@
 from Screen import Screen
 from Components.ActionMap import NumberActionMap
-from Components.config import config, ConfigNothing
+from Components.config import config, ConfigNothing, ConfigText, ConfigPassword
 from Components.Label import Label
 from Components.SystemInfo import SystemInfo
 from Components.ConfigList import ConfigListScreen
+from Components.Pixmap import Pixmap
 from Components.Sources.StaticText import StaticText
-from Components.config import ConfigText, ConfigPassword
+from Components.Sources.Boolean import Boolean
 from enigma import eEnv
 
 import xml.etree.cElementTree
@@ -87,6 +88,9 @@ class Setup(ConfigListScreen, Screen):
 		self["key_red"] = StaticText(_("Cancel"))
 		self["key_green"] = StaticText(_("OK"))
 		self["description"] = Label("")
+		self["HelpWindow"] = Pixmap()
+		self["HelpWindow"].hide()
+		self["VKeyIcon"] = Boolean(False)
 
 		self["actions"] = NumberActionMap(["SetupActions", "MenuActions"],
 			{

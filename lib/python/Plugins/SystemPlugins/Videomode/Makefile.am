@@ -19,4 +19,5 @@ dist_install_DATA = \
 	YPbPr.png \
 	HDMI.png \
 	HDMI-PC.png \
-	lcd_HDMI.png
+	lcd_HDMI.png \
+	RSA.png

@@ -20,4 +20,4 @@ dist_install_DATA = \
 	HDMI.png \
 	HDMI-PC.png \
 	lcd_HDMI.png \
-	RSA.png
+	RCA.png

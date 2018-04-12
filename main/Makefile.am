@@ -51,11 +51,6 @@ enigma2_LDADD = \
 	-ltuxtxt32bpp \
 	-lpthread -lresolv -lmmeimage
 
-if ENABLE_LIBEPLAYER3
-enigma2_LDADD += \
-	-leplayer3
-endif
-
 if HAVE_GRAPHLCD
 enigma2_LDADD += -lglcddrivers -lglcdgraphics -lglcdskin
 endif

@@ -7,11 +7,6 @@ AM_CPPFLAGS = \
 	-include Python.h \
 	-include $(top_builddir)/enigma2_config.h
 
-if ENABLE_LIBEPLAYER3
-AM_CPPFLAGS += \
-	-I$(top_srcdir)/../misc/tools/libeplayer3/include
-endif
-
 # initialize these, to be filled with targets in the included files
 noinst_LIBRARIES=
 BUILT_SOURCES=

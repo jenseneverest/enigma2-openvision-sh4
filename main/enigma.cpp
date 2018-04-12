@@ -38,10 +38,6 @@
 #include "bsod.h"
 #include "version_info.h"
 
-#ifdef ENABLE_GSTREAMER
-#include <gst/gst.h>
-#endif
-
 #ifdef OBJECT_DEBUG
 int object_total_remaining;
 
@@ -190,10 +186,6 @@ int main(int argc, char **argv)
 
 #ifdef OBJECT_DEBUG
 	atexit(object_dump);
-#endif
-
-#ifdef ENABLE_GSTREAMER
-	gst_init(&argc, &argv);
 #endif
 
 	// set pythonpath if unset
@@ -358,15 +350,6 @@ const char *getEnigmaVersionString()
 const char *getBoxType()
 {
 	return BOXTYPE;
-}
-
-const char *getGStreamerVersionString()
-{
-#ifdef ENABLE_GSTREAMER
-	return gst_version_string();
-#else
-	return "";
-#endif
 }
 
 #include <malloc.h>

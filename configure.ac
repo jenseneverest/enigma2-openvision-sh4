@@ -29,8 +29,6 @@ TUXBOX_APPS_DVB
 AM_CONDITIONAL(HAVE_GIT_DIR, test -d "$srcdir/.git")
 AM_CONDITIONAL(HAVE_FAKE_GIT_DIR, test -f "$srcdir/.git/last_commit_info")
 
-PKG_CHECK_MODULES(LIBDDVD, libdreamdvd, HAVE_LIBDDVD="yes", HAVE_LIBDDVD="no")
-
 AC_ARG_ENABLE(spark,
 	[  --enable-spark          enable spark stuff],
 	[AC_DEFINE(ENABLE_SPARK,1,[enable spark stuff])])
@@ -49,14 +47,6 @@ if test "$enable_spark7162" = "yes"; then
 	AC_DEFINE(ENABLE_SPARK7162,1,[enable spark7162 stuff])
 fi
 
-AC_ARG_ENABLE(libeplayer3,
-	[  --enable-libeplayer3          enable TDT libeplayer3 as player engine supportt],
-	[AC_DEFINE(ENABLE_LIBEPLAYER3, 1, [enable TDT libeplayer3 as player engine support])])
-if test "$enable_libeplayer3" = "yes"; then
-	AC_DEFINE(ENABLE_LIBEPLAYER3, 1, [include TDT libeplayer3 as player engine support])
-fi
-AM_CONDITIONAL(ENABLE_LIBEPLAYER3, test "$enable_libeplayer3" = "yes")
-
 AC_ARG_ENABLE(minimal,
 	[  --enable-minimal          enable minimal config],
 	[AC_DEFINE(ENABLE_MINIMAL, 1, [enable minimal config])])
@@ -65,25 +55,10 @@ if test "$enable_minimal" = "yes"; then
 fi
 AM_CONDITIONAL(ENABLE_MINIMAL, test "$enable_minimal" = "yes")
 
-AC_ARG_ENABLE([gstreamer],
-	[AS_HELP_STRING([--disable-gstreamer],[disable gstreamer as player engine supportt])],
-	[enable_gstreamer=$enableval],
-	[enable_gstreamer=yes])
-
-AM_CONDITIONAL(ENABLE_GSTREAMER, test "$enable_gstreamer" = "yes")
-
+dnl versions of plugins-base
 PKG_CHECK_MODULES(TUXTXT, tuxbox-tuxtxt)
-if test "$enable_gstreamer" = "yes"; then
-	AC_DEFINE(ENABLE_GSTREAMER, 1, [include gstreamer as player engine support])
-	AC_ARG_WITH(gstversion,
-		AS_HELP_STRING([--with-gstversion],[use gstreamer version (major.minor)]),
-		[GST_MAJORMINOR=$withval],[GST_MAJORMINOR=0.10])
-	PKG_CHECK_MODULES(GSTREAMER, gstreamer-$GST_MAJORMINOR gstreamer-pbutils-$GST_MAJORMINOR)
-	PKG_CHECK_MODULES(BASE, [freetype2 fribidi gstreamer-$GST_MAJORMINOR gstreamer-pbutils-$GST_MAJORMINOR libdvbsi++ libpng libxml-2.0 sigc++-2.0 libssl libcrypto glib-2.0])
-else
-	PKG_CHECK_MODULES(BASE, [freetype2 fribidi libdvbsi++ libpng libxml-2.0 sigc++-2.0 libssl libcrypto glib-2.0])
-fi
-
+PKG_CHECK_MODULES(BASE, [freetype2 fribidi glib-2.0 libdvbsi++ libpng libxml-2.0 sigc++-2.0 libssl libcrypto])
+PKG_CHECK_MODULES(LIBDDVD, libdreamdvd, HAVE_LIBDDVD="yes", HAVE_LIBDDVD="no")
 AM_CONDITIONAL(HAVE_LIBDDVD, test "$HAVE_LIBDDVD" = "yes")
 PKG_CHECK_MODULES(AVAHI, avahi-client)
 

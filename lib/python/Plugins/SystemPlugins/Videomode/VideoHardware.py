@@ -195,6 +195,12 @@ class VideoHardware:
 		except IOError:
 			print "[VideoHardware] writing initial videomode to /etc/videomode failed."
 
+		if SystemInfo["Has24hz"]:
+			try:
+				open("/proc/stb/video/videomode_24hz", "w").write(mode_24)
+			except IOError:
+				print "[VideoHardware] cannot open /proc/stb/video/videomode_24hz"
+
 		#call setResolution() with -1,-1 to read the new scrren dimesions without changing the framebuffer resolution
 		from enigma import gMainDC
 		gMainDC.getInstance().setResolution(-1, -1)

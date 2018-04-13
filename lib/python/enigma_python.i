@@ -434,6 +434,8 @@ extern void addFont(const char *filename, const char *alias, int scale_factor, i
 extern const char *getEnigmaVersionString();
 extern const char *getBoxType();
 extern void dump_malloc_stats(void);
+extern void pauseInit(void);
+extern void resumeInit(void);
 %}
 
 extern void addFont(const char *filename, const char *alias, int scale_factor, int is_replacement, int renderflags = 0);
@@ -444,6 +446,8 @@ extern eApplication *getApplication();
 extern const char *getEnigmaVersionString();
 extern const char *getBoxType();
 extern void dump_malloc_stats(void);
+extern void pauseInit(void);
+extern void resumeInit(void);
 
 %include <lib/python/python_console.i>
 %include <lib/python/python_base.i>

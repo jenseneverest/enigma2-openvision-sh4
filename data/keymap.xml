@@ -32,6 +32,7 @@
 		<key id="KEY_9" mapto="9" flags="m"/>
 		<key id="KEY_0" mapto="0" flags="m"/>
 		<key id="KEY_FILE" mapto="file" flags="m"/>
+		<key id="KEY_PVR" mapto="file" flags="m"/>
 	</map>
 
 	<map context="InputActions">
@@ -136,6 +137,7 @@
 		<key id="KEY_TV" mapto="toggleTvRadio" flags="b"/>
 		<key id="KEY_RADIO" mapto="toggleTvRadio" flags="b"/>
 		<key id="KEY_MEDIA" mapto="showMovies" flags="b" />
+		<key id="KEY_PVR" mapto="showMovies" flags="b"/>
 	</map>
 
 	<map context="InfobarAudioSelectionActions">
@@ -270,6 +272,7 @@
 		<key id="KEY_UP" mapto="up" flags="m"/>
 		<key id="KEY_DOWN" mapto="down" flags="m"/>
 		<key id="KEY_OK" mapto="movieList" flags="b"/>
+		<key id="KEY_PVR" mapto="movieList" flags="b"/>
 	</map>
 
 	<map context="MoviePlayerActions">
@@ -618,5 +621,6 @@
 		<key id="KEY_MEDIA" mapto="media_long" flags="l"/>
 		<key id="KEY_WWW" mapto="www" flags="b"/>
 		<key id="KEY_WWW" mapto="www_long" flags="l"/>
+		<key id="KEY_PVR" mapto="list" flags="b"/>
 	</map>
 </keymap>

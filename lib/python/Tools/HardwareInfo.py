@@ -54,15 +54,8 @@ class HardwareInfo:
 
 		self.device_model = self.device_model or self.device_name
 
-		# unify Xtrend device models
-		if self.device_model in ("et9000", "et9100", "et9200", "et9500"):
-			self.device_model = "et9x00"
-		elif self.device_model in ("et6000", "et6x00"):
-			self.device_model = "et6x00"
-		elif self.device_model in ("et5000", "et5x00"):
-			self.device_model = "et5x00"
-		elif self.device_model in ("et4000", "et4x00"):
-			self.device_model = "et4x00"
+		# map for Xtrend device models to machine names
+		self.machine_name = "%s%s%s" % (self.device_model[:3], "x", self.device_model[-2:]) if self.device_model.startswith(("et9", "et4", "et5", "et6")) else self.device_model
 
 		# only some early DMM boxes do not have HDMI hardware
 		# Disable on spark
@@ -88,6 +81,9 @@ class HardwareInfo:
 		elif hw_info.device_version:
 			return "%s (%s)" % (hw_info.device_model, hw_info.device_version)
 		return hw_info.device_model
+
+	def get_machine_name(self):
+		return hw_info.machine_name
 
 	def has_hdmi(self):
 		return hw_info.device_hdmi

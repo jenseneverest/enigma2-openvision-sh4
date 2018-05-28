@@ -17,6 +17,7 @@ from Screens.ChoiceBox import ChoiceBox
 from Screens.MessageBox import MessageBox
 from Screens.VirtualKeyBoard import VirtualKeyBoard
 from Tools.Alternatives import GetWithAlternative
+from Tools.FallbackTimer import FallbackTimerList
 from RecordTimer import AFTEREVENT
 from enigma import eEPGCache
 from time import localtime, mktime, time, strftime
@@ -24,14 +25,14 @@ from datetime import datetime
 import urllib
 
 class TimerEntry(Screen, ConfigListScreen):
-	def __init__(self, session, timer, edit=False):
+	def __init__(self, session, timer):
 		Screen.__init__(self, session)
 		self.timer = timer
 
-		self.edit = edit
-		self.service_ref_prev = self.timer.service_ref
-		self.begin_prev = self.timer.begin
-		self.end_prev = self.timer.end
+		self.timer.service_ref_prev = self.timer.service_ref
+		self.timer.begin_prev = self.timer.begin
+		self.timer.end_prev = self.timer.end
+		self.timer.external_prev = self.timer.external
 
 		self.entryDate = None
 		self.entryService = None
@@ -161,9 +162,9 @@ class TimerEntry(Screen, ConfigListScreen):
 
 	def createSetup(self, widget):
 		self.list = []
-		self.entryRemoteTimer = getConfigListEntry(_("Remote Timer"), self.timerentry_fallback)
+		self.entryFallbackTimer = getConfigListEntry(_("Fallback Timer"), self.timerentry_fallback)
 		if config.usage.remote_fallback_external_timer.value and config.usage.remote_fallback.value and not hasattr(self, "timerentry_remote"):
-			self.list.append(self.entryRemoteTimer)
+			self.list.append(self.entryFallbackTimer)
 		self.entryName = getConfigListEntry(_("Name"), self.timerentry_name)
 		self.list.append(self.entryName)
 		self.entryDescription = getConfigListEntry(_("Description"), self.timerentry_description)
@@ -241,7 +242,7 @@ class TimerEntry(Screen, ConfigListScreen):
 
 	def newConfig(self):
 		print "[TimerEdit] newConfig", self["config"].getCurrent()
-		if self["config"].getCurrent() in (self.timerTypeEntry, self.timerJustplayEntry, self.frequencyEntry, self.entryShowEndTime, self.entryRemoteTimer):
+		if self["config"].getCurrent() in (self.timerTypeEntry, self.timerJustplayEntry, self.frequencyEntry, self.entryShowEndTime, self.entryFallbackTimer):
 			self.createSetup("config")
 
 	def keyLeft(self):
@@ -474,45 +475,8 @@ class TimerEntry(Screen, ConfigListScreen):
 					elif n > 0:
 						parent = self.timer.service_ref.ref
 						self.timer.service_ref = ServiceReference(event.getLinkageService(parent, 0))
-			if self.timerentry_fallback.value:
-				if self.edit:
-					url = "%s/web/timerchange?sRef=%s&begin=%s&end=%s&name=%s&description=%s&disabled=%s&justplay=%s&afterevent=%s&repeated=%s&channelOld=%s&beginOld=%s&endOld=%s&dirname=%s&eit=%s" % (
-						config.usage.remote_fallback.value.rsplit(":", 1)[0],
-						self.timer.service_ref,
-						self.timer.begin,
-						self.timer.end,
-						self.timer.name,
-						self.timer.description,
-						self.timer.disabled,
-						self.timer.justplay,
-						self.timer.afterEvent,
-						self.timer.repeated,
-						self.service_ref_prev,
-						self.begin_prev,
-						self.end_prev,
-						None,
-						self.timer.eit or 0,
-					)
-				else:
-					url = "%s/web/timeradd?sRef=%s&begin=%s&end=%s&name=%s&description=%s&disabled=%s&justplay=%s&afterevent=%s&repeated=%s&dirname=%s&eit=%s" % (
-						config.usage.remote_fallback.value.rsplit(":", 1)[0],
-						self.timer.service_ref,
-						self.timer.begin,
-						self.timer.end,
-						self.timer.name,
-						self.timer.description,
-						self.timer.disabled,
-						self.timer.justplay,
-						self.timer.afterEvent,
-						self.timer.repeated,
-						None,
-						self.timer.eit or 0,
-					)
-				from Screens.TimerEdit import getUrl
-				getUrl(url).addCallback(boundFunction(self.close, (True, self.timer))).addErrback(boundFunction(self.close, (False, self.timer)))
-			else:
-				self.saveTimer()
-				self.close((True, self.timer))
+			self.saveTimer()
+			self.close((True, self.timer))
 
 	def changeTimerType(self):
 		self.timerentry_justplay.selectNext()

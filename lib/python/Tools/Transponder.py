@@ -73,11 +73,11 @@ def ConvertToHumanReadable(tp, tunertype = None):
 			eDVBFrontendParametersSatellite.FEC_1_2 : "1/2",
 			eDVBFrontendParametersSatellite.FEC_2_3 : "2/3",
 			eDVBFrontendParametersSatellite.FEC_3_4 : "3/4",
+			eDVBFrontendParametersSatellite.FEC_3_5 : "3/5",
+			eDVBFrontendParametersSatellite.FEC_4_5 : "4/5",
 			eDVBFrontendParametersSatellite.FEC_5_6 : "5/6",
 			eDVBFrontendParametersSatellite.FEC_6_7 : "6/7",
 			eDVBFrontendParametersSatellite.FEC_7_8 : "7/8",
-			eDVBFrontendParametersSatellite.FEC_3_5 : "3/5",
-			eDVBFrontendParametersSatellite.FEC_4_5 : "4/5",
 			eDVBFrontendParametersSatellite.FEC_8_9 : "8/9",
 			eDVBFrontendParametersSatellite.FEC_9_10 : "9/10"}.get(tp.get("fec_inner"))
 		ret["modulation"] = {
@@ -140,11 +140,12 @@ def ConvertToHumanReadable(tp, tunertype = None):
 			eDVBFrontendParametersCable.FEC_1_2 : "1/2",
 			eDVBFrontendParametersCable.FEC_2_3 : "2/3",
 			eDVBFrontendParametersCable.FEC_3_4 : "3/4",
-			eDVBFrontendParametersCable.FEC_5_6 : "5/6",
-			eDVBFrontendParametersCable.FEC_7_8 : "7/8",
-			eDVBFrontendParametersCable.FEC_8_9 : "8/9",
 			eDVBFrontendParametersCable.FEC_3_5 : "3/5",
 			eDVBFrontendParametersCable.FEC_4_5 : "4/5",
+			eDVBFrontendParametersCable.FEC_5_6 : "5/6",
+			eDVBFrontendParametersCable.FEC_6_7 : "6/7",
+			eDVBFrontendParametersCable.FEC_7_8 : "7/8",
+			eDVBFrontendParametersCable.FEC_8_9 : "8/9",
 			eDVBFrontendParametersCable.FEC_9_10 : "9/10"}.get(tp.get("fec_inner"))
 		ret["system"] = {
 			eDVBFrontendParametersCable.System_DVB_C_ANNEX_A : "DVB-C",
@@ -159,24 +160,28 @@ def ConvertToHumanReadable(tp, tunertype = None):
 			6000000 : "6 MHz",
 			5000000 : "5 MHz",
 			1712000 : "1.712 MHz"}.get(tp.get("bandwidth"))
-		ret["code_rate_hp"] = {
-			eDVBFrontendParametersTerrestrial.FEC_Auto : _("Auto"),
-			eDVBFrontendParametersTerrestrial.FEC_1_2 : "1/2",
-			eDVBFrontendParametersTerrestrial.FEC_3_5 : "3/5",
-			eDVBFrontendParametersTerrestrial.FEC_2_3 : "2/3",
-			eDVBFrontendParametersTerrestrial.FEC_3_4 : "3/4",
-			eDVBFrontendParametersTerrestrial.FEC_4_5 : "4/5",
-			eDVBFrontendParametersTerrestrial.FEC_5_6 : "5/6",
-			eDVBFrontendParametersTerrestrial.FEC_7_8 : "7/8"}.get(tp.get("code_rate_hp"))
 		ret["code_rate_lp"] = {
 			eDVBFrontendParametersTerrestrial.FEC_Auto : _("Auto"),
 			eDVBFrontendParametersTerrestrial.FEC_1_2 : "1/2",
-			eDVBFrontendParametersTerrestrial.FEC_3_5 : "3/5",
 			eDVBFrontendParametersTerrestrial.FEC_2_3 : "2/3",
 			eDVBFrontendParametersTerrestrial.FEC_3_4 : "3/4",
+			eDVBFrontendParametersTerrestrial.FEC_3_5 : "3/5",
 			eDVBFrontendParametersTerrestrial.FEC_4_5 : "4/5",
 			eDVBFrontendParametersTerrestrial.FEC_5_6 : "5/6",
-			eDVBFrontendParametersTerrestrial.FEC_7_8 : "7/8"}.get(tp.get("code_rate_lp"))
+			eDVBFrontendParametersTerrestrial.FEC_6_7 : "6/7",
+			eDVBFrontendParametersTerrestrial.FEC_7_8 : "7/8",
+			eDVBFrontendParametersTerrestrial.FEC_8_9 : "8/9"}.get(tp.get("code_rate_lp"))
+		ret["code_rate_hp"] = {
+			eDVBFrontendParametersTerrestrial.FEC_Auto : _("Auto"),
+			eDVBFrontendParametersTerrestrial.FEC_1_2 : "1/2",
+			eDVBFrontendParametersTerrestrial.FEC_2_3 : "2/3",
+			eDVBFrontendParametersTerrestrial.FEC_3_4 : "3/4",
+			eDVBFrontendParametersTerrestrial.FEC_3_5 : "3/5",
+			eDVBFrontendParametersTerrestrial.FEC_4_5 : "4/5",
+			eDVBFrontendParametersTerrestrial.FEC_5_6 : "5/6",
+			eDVBFrontendParametersTerrestrial.FEC_6_7 : "6/7",
+			eDVBFrontendParametersTerrestrial.FEC_7_8 : "7/8",
+			eDVBFrontendParametersTerrestrial.FEC_8_9 : "8/9"}.get(tp.get("code_rate_hp"))
 		ret["constellation"] = {
 			eDVBFrontendParametersTerrestrial.Modulation_Auto : _("Auto"),
 			eDVBFrontendParametersTerrestrial.Modulation_QPSK : "QPSK",
@@ -199,10 +204,7 @@ def ConvertToHumanReadable(tp, tunertype = None):
 			eDVBFrontendParametersTerrestrial.GuardInterval_1_32 : "1/32",
 			eDVBFrontendParametersTerrestrial.GuardInterval_1_16 : "1/16",
 			eDVBFrontendParametersTerrestrial.GuardInterval_1_8 : "1/8",
-			eDVBFrontendParametersTerrestrial.GuardInterval_1_4 : "1/4",
-			eDVBFrontendParametersTerrestrial.GuardInterval_1_128 : "1/128",
-			eDVBFrontendParametersTerrestrial.GuardInterval_19_128 : "19/128",
-			eDVBFrontendParametersTerrestrial.GuardInterval_19_256 : "19/256"}.get(tp.get("guard_interval"))
+			eDVBFrontendParametersTerrestrial.GuardInterval_1_4 : "1/4"}.get(tp.get("guard_interval"))
 		ret["hierarchy_information"] = {
 			eDVBFrontendParametersTerrestrial.Hierarchy_Auto : _("Auto"),
 			eDVBFrontendParametersTerrestrial.Hierarchy_None : _("None"),

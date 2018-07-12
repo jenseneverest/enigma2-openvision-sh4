@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 11:34+0430\n"
-"PO-Revision-Date: 2018-05-28 22:00+0300\n"
+"POT-Creation-Date: 2018-07-08 11:27+0430\n"
+"PO-Revision-Date: 2018-07-08 13:46+0300\n"
 "Last-Translator: Audronis Grincevičius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.1\n"
 
 msgid ""
 "\n"
@@ -34,7 +34,7 @@ msgid ""
 "Backup your receiver settings."
 msgstr ""
 "\n"
-"Atsarginė Jūsų imtuvo nustatymų kopija."
+"Atsarginė imtuvo nustatymų kopija."
 
 msgid ""
 "\n"
@@ -62,7 +62,7 @@ msgid ""
 "Online update of your receiver software."
 msgstr ""
 "\n"
-"Atnaujinti savo imtuvo programinę įrangą internetu."
+"Atnaujinti imtuvo programinę įrangą internetu."
 
 msgid ""
 "\n"
@@ -83,21 +83,21 @@ msgid ""
 "Restore your backups by date."
 msgstr ""
 "\n"
-"Atkurti jūsų atsarginę kopiją pagal datą."
+"Atkurti atsarginę kopiją pagal datą."
 
 msgid ""
 "\n"
 "Restore your receiver settings."
 msgstr ""
 "\n"
-"Atkurti Jūsų imtuvo nustatymus."
+"Atkurti imtuvo nustatymus."
 
 msgid ""
 "\n"
 "Restore your receiver with a new firmware."
 msgstr ""
 "\n"
-"Atkurti Jūsų imtuvą su nauja programine įranga."
+"Atkurti imtuvą su nauja programine įranga."
 
 msgid ""
 "\n"
@@ -142,7 +142,7 @@ msgid " (Partition %d)"
 msgstr " (Skaidinys %d)"
 
 msgid " (PiP)"
-msgstr " (Paveikslėlis paveikslėlyje)"
+msgstr " (Vaizdas vaizde)"
 
 msgid " (Radio)"
 msgstr " (Radijas)"
@@ -733,10 +733,19 @@ msgid "A/V settings"
 msgstr "Garso ir vaizdo nustatymai"
 
 msgid "AAC downmix"
-msgstr "AAC kanalų suliejimas"
+msgstr "AAC kanalų perkodavimas"
+
+msgid "AAC transcoding"
+msgstr "AAC perkodavimas"
+
+msgid "AC3"
+msgstr "AC3"
 
 msgid "AC3 downmix"
-msgstr "AC3 kanalų suliejimas"
+msgstr "AC3 kanalų perkodavimas"
+
+msgid "AC3 plus transcoding"
+msgstr "AC3 plus perkodavimas"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "GAUNAMAS TSID/ONID"
@@ -769,7 +778,7 @@ msgid "Activate HbbTV (Redbutton)"
 msgstr "Aktyvuoti HbbTV (raudonas mygtukas)"
 
 msgid "Activate Picture in Picture"
-msgstr "Aktyvuoti paveikslėlį paveikslėlyje"
+msgstr "Įjungti vaizdą vaizde"
 
 msgid "Activate current configuration"
 msgstr "Aktyvuoti dabartinę konfigūraciją"
@@ -889,13 +898,13 @@ msgid "Advanced restore"
 msgstr "Išplėstinis atkūrimas"
 
 msgid "Advanced software"
-msgstr "Išplėstinė programinė įranga"
+msgstr "Patobulinta programinė įranga"
 
 msgid "Advanced software plugin"
 msgstr "Išplėstinis programinės įrangos priedas"
 
 msgid "Advanced video enhancement setup"
-msgstr "Išplėstinė vaizdo gerinimo sąranka"
+msgstr "Išplėstinis vaizdo įrašo patobulinimų nustatymas"
 
 msgid "Advanced video setup"
 msgstr "Išplėstiniai vaizdo nustatymai"
@@ -962,6 +971,12 @@ msgstr ""
 
 msgid "Allocate unused memory index"
 msgstr "Paskirti nenaudojamos atminties indeksą"
+
+msgid "Allow 10bit"
+msgstr "Leisti 10 bitų"
+
+msgid "Allow 12bit"
+msgstr "Leisti 12 bitų"
 
 msgid "Allow quit movieplayer with exit"
 msgstr "Leisti užverti filmų grotuvą su exit"
@@ -1721,6 +1736,12 @@ msgstr "Pasirinkite imtuvą"
 msgid "Choose bouquet"
 msgstr "Pasirinkite paketą"
 
+msgid ""
+"Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
+msgstr ""
+"Pasirinkite, ar kelių kanalų garso takeliai bus konvertuoti į PCM, arba "
+"SPDIF."
+
 msgid "Choose which tuner to configure."
 msgstr "Pasirinkti kurį imtuvą konfigūruoti."
 
@@ -2249,13 +2270,32 @@ msgstr ""
 "juosta, dukart paspaudus 'OK'. Antroji info juosta pateikia papildomą "
 "informaciją apie rodomą kanalą."
 
+msgid "Configure whether AAC sound tracks should be transcoded."
+msgstr "Konfigūruokite, ar reikia perkoduoti AAC garso takelius."
+
+msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
+msgstr ""
+"Konfigūruokite, ar AC3 plius garso takeliai turėtų būti perkoduoti į AC3."
+
+msgid ""
+"Configure whether DTS-HD channel sound tracks should be downmixed or "
+"transcoded."
+msgstr ""
+"Nustatykite, ar daugiakanaliai garso takeliai turi būti perkoduoti į stereo."
+
+msgid ""
+"Configure whether WMA pro channel sound tracks should be downmixed or "
+"transcoded."
+msgstr ""
+"Nustatykite, ar daugiakanaliai garso takeliai turi būti perkoduoti į stereo."
+
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr "Nustatykite, ar kelių kanalų PCM garsas turėtų būti įjungtas."
 
 msgid ""
 "Configure whether multi channel sound tracks should be downmixed to stereo."
 msgstr ""
-"Nustatykite, ar daugiakanaliai garso takeliai turi būti konvertuoti į stereo."
+"Nustatykite, ar daugiakanaliai garso takeliai turi būti perkoduoti į stereo."
 
 msgid ""
 "Configure whether or not a rotor position will be displayed on the infobar"
@@ -2414,7 +2454,7 @@ msgid "Could not load medium! No disc inserted?"
 msgstr "Nepavyko atverti laikmenos! Neįdėtas diskas?"
 
 msgid "Could not open Picture in Picture"
-msgstr "Negalima atidaryti paveikslėlio paveikslėlyje"
+msgstr "Vaizdo vaizde atverti nepavyko"
 
 #, python-format
 msgid "Could not record due to conflicting timer %s"
@@ -2544,8 +2584,14 @@ msgstr "DMM išsamiai"
 msgid "DMM normal"
 msgstr "DMM normalus"
 
+msgid "DTS"
+msgstr "DTS"
+
 msgid "DTS downmix"
 msgstr "DTS perkodavimas"
+
+msgid "DTS-HD downmix"
+msgstr "DTS-HD perkodavimas"
 
 msgid "DUAL LAYER DVD"
 msgstr "DVISLUOKSNIS DVD"
@@ -2818,7 +2864,7 @@ msgid "Disable"
 msgstr "Išjungti"
 
 msgid "Disable Picture in Picture"
-msgstr "Išjungti paveikslėlį paveikslėlyje"
+msgstr "Išjungti vaizdą vaizde"
 
 msgid "Disable background scanning"
 msgstr "Išjungti foninį skenavimą"
@@ -3047,6 +3093,9 @@ msgstr "Parsiunčiamas atvaizdas"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Parsiunčiama informacija apie priedus. Prašome laukti..."
+
+msgid "Downmix"
+msgstr "Perkodavimas"
 
 msgid "Drop unconfigured satellites"
 msgstr "Pašalinti nesukonfigūruotus palydovus"
@@ -4083,6 +4132,9 @@ msgstr "HDMI spalvų erdvė"
 msgid "HDMI HDR Type"
 msgstr "HDMI HDR tipas"
 
+msgid "HDMI audio source"
+msgstr "HDMI garso šaltinis"
+
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC šaltinis aktyvus"
 
@@ -4095,8 +4147,14 @@ msgstr "HDMI-CEC nustatymai"
 msgid "HDR10"
 msgstr "HDR10"
 
+msgid "HDR10 support"
+msgstr "HDR10 palaikymas"
+
 msgid "HLG"
 msgstr "HLG"
+
+msgid "HLG support"
+msgstr "HLG palaikymas"
 
 msgid "Haiti"
 msgstr "Haitis"
@@ -4413,6 +4471,9 @@ msgstr "Miego laikmatis po neveiklumo"
 
 msgid "Include AIT in http streams"
 msgstr "Įtraukti AIT į http srautus"
+
+msgid "Include CI assignment"
+msgstr "Įtraukti CI priskyrimą"
 
 msgid "Include ECM in http streams"
 msgstr "Įtraukti ECM į http srautus"
@@ -5159,7 +5220,7 @@ msgid "Move PiP to main picture"
 msgstr "Perkelti PiP į pagrindinį vaizdą"
 
 msgid "Move Picture in Picture"
-msgstr "Perkelti paveikslėlį į paveikslėlį"
+msgstr "Perkelti vaizdą vaizde"
 
 msgid "Move east"
 msgstr "Sukti į rytus"
@@ -5184,9 +5245,6 @@ msgstr "Filmų sąrašo konfigūracija"
 
 msgid "Movie location"
 msgstr "Filmo vieta"
-
-msgid "Movie manager"
-msgstr "Filmų tvarkyklė"
 
 msgid "Movie selection"
 msgstr "Filmo pasirinkimas"
@@ -5791,6 +5849,9 @@ msgstr "Perrašyti konfigūracijos failus naujais?"
 msgid "PAL"
 msgstr "PAL"
 
+msgid "PCM"
+msgstr "PCM"
+
 msgid "PCR PID"
 msgstr "PCR PID"
 
@@ -5867,6 +5928,9 @@ msgstr "Tėvų kontrolės kanalų redaktorius"
 msgid "Parental control setup"
 msgstr "Tėvų kontrolės sąranka"
 
+msgid "Passthrough"
+msgstr "Pereiti"
+
 msgid "Pause"
 msgstr "Pauzė"
 
@@ -5910,7 +5974,7 @@ msgid "Picon and servicename"
 msgstr "Logotipas ir kanalo pavadinimas"
 
 msgid "Picture player"
-msgstr "Paveikslėlių peržiūra"
+msgstr "Vaizdo peržiūra"
 
 #. TRANSLATORS: (aspect ratio policy: black bars on left/right) in doubt, keep english term.
 msgid "Pillarbox"
@@ -6363,6 +6427,9 @@ msgstr ""
 
 msgid "Press OK to select a provider."
 msgstr "Tiekėjui pasirinkti, spauskite OK."
+
+msgid "Press OK to select a service."
+msgstr "Kanalo pasirinkimui, spauskite OK."
 
 msgid "Press OK to select satellites"
 msgstr "Paspauskite OK norėdami pasirinkti palydovus"
@@ -7701,6 +7768,9 @@ msgstr "Kanalo pavadinimas"
 
 msgid "Services"
 msgstr "Kanalai"
+
+msgid "Set CI assignment for detection of available services."
+msgstr "Galimų kanalų aptikimui, įtraukti ir CI priskyrimą."
 
 msgid "Set PIN"
 msgstr "Nustatyti PIN"
@@ -9127,6 +9197,18 @@ msgstr "Ši parinktis leidžia įjungti 3D erdvinio garso ribotuvą."
 msgid "This option allows you to enable 3D surround sound."
 msgstr "Ši parinktis leidžia įjungti 3D erdvinį garsą."
 
+msgid "This option allows you to enable or disable the 10 bit color mode"
+msgstr "Ši parinktis leidžia jums įjungti arba išjungti 10 bitų spalvų režimą"
+
+msgid "This option allows you to enable or disable the 12 bit color mode"
+msgstr "Ši parinktis leidžia jums įjungti arba išjungti 12 bitų spalvų režimą"
+
+msgid "This option allows you to force the HDR10 modes for UHD"
+msgstr "Ši parinktis leidžia priverstinai naudoti HDR10 režimą dėl UHD"
+
+msgid "This option allows you to force the HLG modes for UHD"
+msgstr "Ši parinktis leidžia priverstinai naudoti HLG režimą dėl UHD"
+
 msgid ""
 "This option allows you to hide and sort menu entries. When selecting user "
 "you can change order and hide menu items via the blue button"
@@ -9462,7 +9544,7 @@ msgstr "Viršuje ir apačioje"
 
 #, python-format
 msgid "Total clients streaming: %d (%s)"
-msgstr "Klientinių transliacijų iš viso: %d (%s)"
+msgstr "Iš viso srautu besinaudojančių klientų: %d ( %s)"
 
 msgid "Track"
 msgstr "Takelis"
@@ -10050,6 +10132,9 @@ msgstr "WEP"
 
 msgid "WLAN connection"
 msgstr "Belaidis tinklas"
+
+msgid "WMA pro downmix"
+msgstr "WMA pro perkodavimas"
 
 msgid "WPA"
 msgstr "WPA"
@@ -11007,10 +11092,10 @@ msgid "Zap down"
 msgstr "Perjungti žemyn"
 
 msgid "Zap focus to Picture in Picture"
-msgstr "Perjungti į paveikslėlis paveikslėlyje"
+msgstr "Perjungti vaizdo centrą vaizde"
 
 msgid "Zap focus to main screen"
-msgstr "Perjungti priartinimą į pagrindinį ekraną"
+msgstr "Perjungti į pagrindinį ekraną"
 
 msgid "Zap mode"
 msgstr "Perjungimo būdas"
@@ -11266,6 +11351,21 @@ msgstr "patvirtinta"
 msgid "connected"
 msgstr "prisijungta"
 
+msgid "controlled by HDMI"
+msgstr "kontroliuojama HDMI"
+
+msgid "convert to AC3"
+msgstr "konvertuoti į AC3"
+
+msgid "convert to DTS"
+msgstr "konvertuoti į DTS"
+
+msgid "convert to multi channel PCM"
+msgstr "konvertuoti į daugiakanalį PCM"
+
+msgid "convert to multi-channel PCM"
+msgstr "konvertuoti į daugiakanalį PCM"
+
 msgid "cooking"
 msgstr "valgio gaminimas"
 
@@ -11463,6 +11563,15 @@ msgstr "folk/tradicinė muzika"
 
 msgid "football/soccer"
 msgstr "futbolas, amerikietiškas futbolas"
+
+msgid "force AC3 plus"
+msgstr "priverstinis AC3 plus"
+
+msgid "force disabled"
+msgstr "priverstinai išjungta"
+
+msgid "force enabled"
+msgstr "priverstinai įjungta"
 
 msgid "foreign countries/expeditions"
 msgstr "užsienio šalys/ekspedicijos"
@@ -11714,7 +11823,7 @@ msgid "of a DUAL layer medium used."
 msgstr "iš DVIEJŲ sluoksnių naudojama."
 
 msgid "of a SINGLE layer medium used."
-msgstr "iš VIENO sluoksnio naudojama."
+msgstr "naudojama VIENO sluoksnio laikmena."
 
 msgid "off"
 msgstr "išjungta"
@@ -12126,6 +12235,9 @@ msgstr "netikrintinas"
 msgid "until standby/restart"
 msgstr "iki budėjimo/paleidimo iš naujo"
 
+msgid "use best, controlled by HDMI"
+msgstr "naudoti geriausią, kontroliuojama HDMI"
+
 msgid "user defined"
 msgstr "naudotojo nustatytas"
 
@@ -12219,6 +12331,9 @@ msgstr "perjungta"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Movie manager"
+#~ msgstr "Filmų tvarkyklė"
 
 #~ msgid "Add Biss Caid to service"
 #~ msgstr "Pridėti Biss Caid į kanalą"

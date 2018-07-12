@@ -14,10 +14,10 @@ import skin
 
 from enigma import eListboxPythonMultiContent, eListbox, gFont, iServiceInformation, RT_HALIGN_LEFT, RT_HALIGN_RIGHT, eServiceReference, eServiceCenter, eTimer, RT_VALIGN_CENTER
 
-AUDIO_EXTENSIONS = frozenset((".dts", ".mp3", ".wav", ".wave", ".oga", ".ogg", ".flac", ".m4a", ".mp2", ".m2a", ".wma", ".ac3", ".mka", ".aac", ".ape", ".alac"))
+AUDIO_EXTENSIONS = frozenset((".dts", ".mp3", ".wav", ".wave", ".wv", ".oga", ".ogg", ".flac", ".m4a", ".mp2", ".m2a", ".wma", ".ac3", ".mka", ".aac", ".ape", ".alac", ".amr", ".au", ".mid"))
 DVD_EXTENSIONS = frozenset((".iso", ".img", ".nrg"))
 IMAGE_EXTENSIONS = frozenset((".jpg", ".png", ".gif", ".bmp", ".jpeg"))
-MOVIE_EXTENSIONS = frozenset((".mpg", ".vob", ".m4v", ".mkv", ".avi", ".divx", ".dat", ".flv", ".mp4", ".mov", ".wmv", ".asf", ".3gp", ".3g2", ".mpeg", ".mpe", ".rm", ".rmvb", ".ogm", ".ogv", ".m2ts", ".mts", ".webm"))
+MOVIE_EXTENSIONS = frozenset((".mpg", ".vob", ".m4v", ".mkv", ".avi", ".divx", ".dat", ".flv", ".mp4", ".mov", ".wmv", ".asf", ".3gp", ".3g2", ".mpeg", ".mpe", ".rm", ".rmvb", ".ogm", ".ogv", ".m2ts", ".mts", ".webm", ".pva", ".wtv"))
 KNOWN_EXTENSIONS = MOVIE_EXTENSIONS.union(IMAGE_EXTENSIONS, DVD_EXTENSIONS, AUDIO_EXTENSIONS)
 
 cutsParser = struct.Struct('>QI') # big-endian, 64-bit PTS and 32-bit type
@@ -36,11 +36,11 @@ class StubInfo:
 	def isPlayable(self):
 		return True
 	def getInfo(self, serviceref, w):
-		if w is iServiceInformation.sTimeCreate:
+		if w == iServiceInformation.sTimeCreate:
 			return os.stat(serviceref.getPath()).st_ctime
-		if w is iServiceInformation.sFileSize:
+		if w == iServiceInformation.sFileSize:
 			return os.stat(serviceref.getPath()).st_size
-		if w is iServiceInformation.sDescription:
+		if w == iServiceInformation.sDescription:
 			return serviceref.getPath()
 		return 0
 	def getInfoString(self, serviceref, w):
@@ -56,50 +56,47 @@ def moviePlayState(cutsFileName, ref, length):
 	try:
 		# read the cuts file first
 		f = open(cutsFileName, 'rb')
-		lastCut = None
-		cutPTS = None
+		lastPosition = None
 		while 1:
 			data = f.read(cutsParser.size)
 			if len(data) < cutsParser.size:
 				break
 			cut, cutType = cutsParser.unpack(data)
-			if cutType is 3: # undocumented, but 3 appears to be the stop
-				cutPTS = cut
-			else:
-				lastCut = cut
+			if cutType == 3: # undocumented, but 3 appears to be the stop
+				lastPosition = cut
 		f.close()
 		# See what we have in RAM (it might help)
 		last = lastPlayPosFromCache(ref)
 		if last:
-			# Get the length from the cache
-			if not lastCut:
-				lastCut = last[2]
 			# Get the cut point from the cache if not in the file
-			if not cutPTS:
-				cutPTS = last[1]
-		if cutPTS is None:
+			lastPosition = last[1]
+			# Get the length from the cache
+			length = last[2]
+		else:
+			if length and (length > 0):
+				length = length * 90000
+			else:
+				if lastPosition:
+					return 50
+		if lastPosition is None:
 			# Unseen movie
 			return None
-		if not lastCut:
-			if length and (length > 0):
-				lastCut = length * 90000
-			else:
-				# Seen, but unknown how far
-				return 50
-		if cutPTS >= lastCut:
+		if lastPosition >= length:
 			return 100
-		return (100 * cutPTS) // lastCut
+		return (100 * lastPosition) // length
 	except:
-		cutPTS = lastPlayPosFromCache(ref)
-		if cutPTS:
-			if not length or (length<0):
-				length = cutPTS[2]
+		last = lastPlayPosFromCache(ref)
+		if last:
+			lastPosition = last[1]
+			if not length or (length < 0):
+				length = last[2]
 			if length:
-				if cutPTS[1] >= length:
+				if lastPosition >= length:
 					return 100
-				return (100 * cutPTS[1]) // length
+				return (100 * lastPosition) // length
 			else:
-				return 50
+				if lastPosition:
+					return 50
 		return None
 
 def resetMoviePlayState(cutsFileName, ref=None):
@@ -114,7 +111,7 @@ def resetMoviePlayState(cutsFileName, ref=None):
 			if len(data) < cutsParser.size:
 				break
 			cut, cutType = cutsParser.unpack(data)
-			if cutType is not 3:
+			if cutType != 3:
 				cutlist.append(data)
 		f.close()
 		f = open(cutsFileName, 'wb')
@@ -245,7 +242,7 @@ class MovieList(GUIComponent):
 			x()
 
 	def setListType(self, type):
-		if type is not self.list_type:
+		if type != self.list_type:
 			self.list_type = type
 			self.redrawList()
 
@@ -320,11 +317,11 @@ class MovieList(GUIComponent):
 		return GUIComponent.applySkin(self, desktop, parent)
 
 	def redrawList(self):
-		if self.list_type is MovieList.LISTTYPE_ORIGINAL:
+		if self.list_type == MovieList.LISTTYPE_ORIGINAL:
 			for i in range(3):
 				self.l.setFont(i, gFont(self.fontName, self.fontSizesOriginal[i]))
 			self.itemHeight = self.itemHeights[0]
-		elif self.list_type is MovieList.LISTTYPE_COMPACT_DESCRIPTION or self.list_type is MovieList.LISTTYPE_COMPACT:
+		elif self.list_type == MovieList.LISTTYPE_COMPACT_DESCRIPTION or self.list_type == MovieList.LISTTYPE_COMPACT:
 			for i in range(2):
 				self.l.setFont(i, gFont(self.fontName, self.fontSizesCompact[i]))
 			self.itemHeight = self.itemHeights[1]
@@ -339,9 +336,7 @@ class MovieList(GUIComponent):
 		self.list[index] = (x[0], x[1], x[2], None)
 
 	def invalidateCurrentItem(self):
-		index = self.getCurrentIndex()
-		self.invalidateItem(index)
-		self.l.invalidateEntry(index)
+		self.invalidateItem(self.getCurrentIndex())
 
 	def buildMovieListEntry(self, serviceref, info, begin, data):
 		width = self.l.getItemSize().width()
@@ -377,7 +372,7 @@ class MovieList(GUIComponent):
 			res.append(MultiContentEntryText(pos=(x, 0), size=(width-x-tn-r, self.itemHeight), font = 0, flags = RT_HALIGN_LEFT|valign_center, text = txt))
 			res.append(MultiContentEntryText(pos=(width-tn-r, 0), size=(tn, self.itemHeight), font=1, flags=RT_HALIGN_RIGHT|valign_center, text=_("Directory")))
 			return res
-		if (data is -1) or (data is None):
+		if (data == -1) or (data is None):
 			data = MovieListData()
 			cur_idx = self.l.getCurrentSelectionIndex()
 			x = self.list[cur_idx] # x = ref,info,begin,...
@@ -403,13 +398,13 @@ class MovieList(GUIComponent):
 			else:
 				switch = config.usage.show_icons_in_movielist.value
 				data.part = moviePlayState(pathName + '.cuts', serviceref, data.len)
-				if switch is 'i':
+				if switch == 'i':
 					if data.part is None:
 						if config.usage.movielist_unseen.value:
 							data.icon = self.iconUnwatched
 					else:
 						data.icon = self.iconPart[data.part // 25]
-				elif switch is 'p' or switch is 's':
+				elif switch == 'p' or switch == 's':
 					if data.part is None:
 						if config.usage.movielist_unseen.value:
 							data.part = 0
@@ -439,11 +434,11 @@ class MovieList(GUIComponent):
 			res.append(MultiContentEntryPixmapAlphaTest(pos=pos, size=(iconSize,data.icon.size().height()), png=data.icon))
 		switch = config.usage.show_icons_in_movielist.value
 		if switch in ('p', 's'):
-			if switch is 'p':
+			if switch == 'p':
 				iconSize = self.pbarLargeWidth
 			if data.part is not None:
 				res.append(MultiContentEntryProgress(pos=(0,self.pbarShift), size=(iconSize, self.pbarHeight), percent=data.part, borderWidth=2, foreColor=data.partcol, foreColorSelected=None, backColor=None, backColorSelected=None))
-		elif switch is 'i':
+		elif switch == 'i':
 			pass
 		else:
 			iconSize = 0
@@ -453,7 +448,7 @@ class MovieList(GUIComponent):
 			begin_string = ', '.join(FuzzyTime(begin, inPast = True))
 
 		ih = self.itemHeight
-		if self.list_type is MovieList.LISTTYPE_ORIGINAL:
+		if self.list_type == MovieList.LISTTYPE_ORIGINAL:
 			fc, sc = self.columnsOriginal[0], self.columnsOriginal[1]
 			ih1 = (ih * 2) / 5 # 75 -> 30
 			ih2 = (ih * 2) / 3 # 75 -> 50
@@ -469,7 +464,7 @@ class MovieList(GUIComponent):
 			res.append(MultiContentEntryText(pos=(0, ih2), size=(sc-r, ih-ih2), font=1, flags=RT_HALIGN_LEFT, text=begin_string))
 			if len:
 			     res.append(MultiContentEntryText(pos=(width-sc-r, ih2), size=(sc, ih-ih2), font=1, flags=RT_HALIGN_RIGHT, text=len))
-		elif self.list_type is MovieList.LISTTYPE_COMPACT_DESCRIPTION:
+		elif self.list_type == MovieList.LISTTYPE_COMPACT_DESCRIPTION:
 			ih1 = ((ih * 8) + 14) / 15 # 37 -> 20, round up
 			if len:
 			     lenSize = 58 * ih / 37
@@ -483,7 +478,7 @@ class MovieList(GUIComponent):
 				res.append(MultiContentEntryText(pos=(width-tc-lenSize-r, ih1), size=(tc, ih-ih1), font = 1, flags = RT_HALIGN_RIGHT, text = data.serviceName))
 			if lenSize:
 			     res.append(MultiContentEntryText(pos=(width-lenSize-r, ih1), size=(lenSize, ih-ih1), font=1, flags=RT_HALIGN_RIGHT, text=len))
-		elif self.list_type is MovieList.LISTTYPE_COMPACT:
+		elif self.list_type == MovieList.LISTTYPE_COMPACT:
 			col = self.compactColumn
 			ih1 = ((ih * 8) + 14) / 15 # 37 -> 20, round up
 			if len:
@@ -502,10 +497,10 @@ class MovieList(GUIComponent):
 			if lenSize:
 			     res.append(MultiContentEntryText(pos=(width-lenSize-r, 0), size=(lenSize, ih1), font=0, flags=RT_HALIGN_RIGHT, text=len))
 		else:
-			if (self.descr_state is MovieList.SHOW_DESCRIPTION) or not len:
+			if (self.descr_state == MovieList.SHOW_DESCRIPTION) or not len:
 				dateSize = ih * 145 / 25   # 25 -> 145
 				res.append(MultiContentEntryText(pos=(iconSize+space, 0), size=(width-iconSize-space-dateSize-r, ih), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = data.txt))
-				res.append(MultiContentEntryText(pos=(width-dateSize-r, 4), size=(dateSize, ih), font=1, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=begin_string))
+				res.append(MultiContentEntryText(pos=(width-dateSize-r, 2), size=(dateSize, ih), font=1, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=begin_string))
 			else:
 				lenSize = ih * 3 # 25 -> 75
 				res.append(MultiContentEntryText(pos=(iconSize+space, 0), size=(width-lenSize-iconSize-space-r, ih), font = 0, flags = RT_HALIGN_LEFT, text = data.txt))
@@ -615,7 +610,7 @@ class MovieList(GUIComponent):
 			parent = os.path.split(os.path.normpath(rootPath))[0]
 			if parent and (parent not in defaultInhibitDirs):
 				# enigma wants an extra '/' appended
-				if parent[-1] != '/':
+				if not parent.endswith('/'):
 					parent += '/'
 				ref = eServiceReference("2:0:1:0:0:0:0:0:0:0:" + parent)
 				ref.flags = eServiceReference.flagDirectory
@@ -665,30 +660,30 @@ class MovieList(GUIComponent):
 
 		self.firstFileEntry = numberOfDirs
 		self.parentDirectory = 0
-		if self.sort_type is MovieList.SORT_ALPHANUMERIC:
+		if self.sort_type == MovieList.SORT_ALPHANUMERIC:
 			self.list.sort(key=self.buildAlphaNumericSortKey)
-		elif self.sort_type is MovieList.SORT_ALPHANUMERIC_FLAT:
+		elif self.sort_type == MovieList.SORT_ALPHANUMERIC_FLAT:
 			self.list.sort(key=self.buildAlphaNumericFlatSortKey)
-		elif self.sort_type is MovieList.SORT_ALPHANUMERIC_FLAT_REVERSE:
+		elif self.sort_type == MovieList.SORT_ALPHANUMERIC_FLAT_REVERSE:
 			self.list.sort(key=self.buildAlphaNumericFlatSortKey, reverse = True)
-		elif self.sort_type is MovieList.SORT_RECORDED:
+		elif self.sort_type == MovieList.SORT_RECORDED:
 			self.list.sort(key=self.buildBeginTimeSortKey)
 		else:
 			#always sort first this way to avoid shuffle and reverse-sort directories
 			self.list.sort(key=self.buildGroupwiseSortkey)
-			if self.sort_type is MovieList.SHUFFLE:
+			if self.sort_type == MovieList.SHUFFLE:
 				dirlist = self.list[:numberOfDirs]
 				shufflelist = self.list[numberOfDirs:]
 				random.shuffle(shufflelist)
 				self.list = dirlist + shufflelist
-			elif self.sort_type is MovieList.SORT_ALPHANUMERIC_REVERSE:
+			elif self.sort_type == MovieList.SORT_ALPHANUMERIC_REVERSE:
 				self.list = self.list[:numberOfDirs] + sorted(self.list[numberOfDirs:], key=self.buildAlphaNumericSortKey, reverse = True)
-			elif self.sort_type is MovieList.SORT_RECORDED_REVERSE:
+			elif self.sort_type == MovieList.SORT_RECORDED_REVERSE:
 				self.list = self.list[:numberOfDirs] + sorted(self.list[numberOfDirs:], key=self.buildBeginTimeSortKey, reverse = True)
 
 		if self.root and numberOfDirs > 0:
 			rootPath = os.path.normpath(self.root.getPath())
-			if rootPath[-1] != '/':
+			if not rootPath.endswith('/'):
 				rootPath += '/'
 			if rootPath != parent:
 				# with new sort types directories may be in between files, so scan whole
@@ -696,7 +691,7 @@ class MovieList(GUIComponent):
 				for index, item in enumerate(self.list):
 					if item[0].flags & eServiceReference.mustDescent:
 						itempath = os.path.normpath(item[0].getPath())
-						if itempath[-1] != '/':
+						if not itempath.endswith('/'):
 							itempath += '/'
 						if itempath == rootPath:
 							self.parentDirectory = index
@@ -728,9 +723,9 @@ class MovieList(GUIComponent):
 			# Check if the set has a complete sentence in common, and how far
 			for m in movies[1:]:
 				if m[start:end] != match:
-					if m[:len(movie[:last])] != movie[:last]:
+					if not m.startswith(movie[:last]):
 						start = first
-					if m[-len(movie[first:]):] != movie[first:]:
+					if not m.endswith(movie[first:]):
 						end = last
 					match = movie[start:end]
 					if m[start:end] != match:
@@ -826,24 +821,24 @@ class MovieList(GUIComponent):
 			for index, item in enumerate(itemsBelow):
 				ref = item[0]
 				itemName = getShortName(item[1].getName(ref).upper(), ref)
-				if len(self._char) == 1 and itemName[0] == self._char:
+				if len(self._char) == 1 and itemName.startswith(self._char):
 					found = True
 					self.instance.moveSelectionTo(index + currentIndex + 1)
 					break
-				elif len(self._char) > 1 and self._char in itemName:
+				elif len(self._char) > 1 and itemName.find(self._char) >= 0:
 					found = True
 					self.instance.moveSelectionTo(index + currentIndex + 1)
 					break
-		if found is False and currentIndex > 0:
+		if found == False and currentIndex > 0:
 			itemsAbove = self.list[1:currentIndex] #first item (0) points parent folder - no point to include
 			for index, item in enumerate(itemsAbove):
 				ref = item[0]
 				itemName = getShortName(item[1].getName(ref).upper(), ref)
-				if len(self._char) == 1 and itemName[0] == self._char:
+				if len(self._char) == 1 and itemName.startswith(self._char):
 					found = True
 					self.instance.moveSelectionTo(index + 1)
 					break
-				elif len(self._char) > 1 and self._char in itemName:
+				elif len(self._char) > 1 and itemName.find(self._char) >= 0:
 					found = True
 					self.instance.moveSelectionTo(index + 1)
 					break

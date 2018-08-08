@@ -756,15 +756,6 @@ def InitUsageConfig():
 
 	config.misc.softcam_setup = ConfigSubsection()
 	config.misc.softcam_setup.extension_menu = ConfigYesNo(default = True)
-	config.mediaplayer.defaultPlayer = ConfigSelection(default = "libeplayer", choices = [
-		("libeplayer", _("Libeplayer")), ("gstreamer", _("Gstreamer"))])
-	def defaultPlayerChange(configElement):
-		path = eEnv.resolve("${sysconfdir}/enigma2/mp3player")
-		if configElement.value == "gstreamer":
-			open(path, "wb").close()
-		elif os.path.exists(path):
-			os.remove(path)
-	config.mediaplayer.defaultPlayer.addNotifier(defaultPlayerChange)
 
 def updateChoices(sel, choices):
 	if choices:

@@ -217,7 +217,7 @@ class ChannelContextMenu(Screen):
 						else:
 							append_when_current_valid(current, menu, (_("play as picture in picture"), self.showServiceInPiP), level=0, key="blue")
 					if current.type in [4097, 5001, 5003]:
-						append_when_current_valid(current, menu, (_("Play with libeplayer"), self.playLibeplayer))
+						append_when_current_valid(current, menu, (_("Play with exteplayer"), self.playExteplayer))
 						append_when_current_valid(current, menu, (_("Play with gstreamer"), self.playGstreamer))
 					append_when_current_valid(current, menu, (_("find currently played service"), self.findCurrentlyPlayed), level=0, key="3")
 				else:
@@ -427,8 +427,8 @@ class ChannelContextMenu(Screen):
 		else:
 			return 0
 
-	def playLibeplayer(self):
-		self.changePlayer(5003)
+	def playExteplayer(self):
+		self.changePlayer(5002)
 
 	def playGstreamer(self):
 		self.changePlayer(5001)

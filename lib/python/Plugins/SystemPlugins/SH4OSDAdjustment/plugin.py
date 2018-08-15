@@ -3,7 +3,6 @@ from Components.ActionMap import ActionMap
 from Components.config import config, ConfigSubsection, ConfigInteger
 from Components.Label import Label
 from Components.Sources.StaticText import StaticText
-from Plugins.Plugin import PluginDescriptor
 from enigma import getDesktop, fbClass
 from os import path as os_path
 config.OSDAdjustment = ConfigSubsection()
@@ -331,13 +330,10 @@ def main(session, **kwargs):
 
 
 def menu(menuid, **kwargs):
-    if menuid == 'osd_menu':
-        return [(_('OSD Adjustment'),
-          main,
-          'OSD_Adjustment',
-          11)]
-    return []
+    return menuid == "video" and [(_("OSD Position setup"), main, "sd_position_setup", 0)] or []
 
 
 def Plugins(**kwargs):
-    return [PluginDescriptor(where=PluginDescriptor.WHERE_SESSIONSTART, fnc=sessionstart), PluginDescriptor(name='OSD Adjustment', description=_('change the OSD screen size'), where=PluginDescriptor.WHERE_MENU, fnc=menu)]
+    from Plugins.Plugin import PluginDescriptor
+    return [PluginDescriptor(name = "OSD Position setup", description = "", where = PluginDescriptor.WHERE_SESSIONSTART, fnc = sessionstart),
+            PluginDescriptor(name = "OSD Position setup", description = _("Wizard to arrange the overscan"), where = PluginDescriptor.WHERE_MENU, fnc = menu)]

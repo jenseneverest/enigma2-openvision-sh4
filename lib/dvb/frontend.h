@@ -20,6 +20,7 @@ class eDVBFrontendParameters: public iDVBFrontendParameters
 		eDVBFrontendParametersATSC atsc;
 	};
 	int m_type;
+	int m_types;
 	int m_flags;
 public:
 	eDVBFrontendParameters();

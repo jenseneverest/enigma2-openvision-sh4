@@ -655,9 +655,7 @@ int eDVBFrontend::initModeList()
 				//eDebug("[adenin] add mode %d to DVB-C",mode);
 #ifdef SYS_DVBC_ANNEX_A
 				m_modelist[SYS_DVBC_ANNEX_A] = mode;
-#if DVB_API_VERSION > 5 || DVB_API_VERSION == 5 && DVB_API_VERSION_MINOR >= 6
 				m_modelist[SYS_DVBC_ANNEX_C] = mode;
-#endif
 #else
 				m_modelist[SYS_DVBC_ANNEX_AC] = mode;
 #endif

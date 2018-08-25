@@ -29,7 +29,6 @@ public:
 	}
 
 	SWIG_VOID(RESULT) getSystem(int &SWIG_OUTPUT) const;
-	SWIG_VOID(RESULT) getSystems(int &SWIG_OUTPUT) const;
 	SWIG_VOID(RESULT) getDVBS(eDVBFrontendParametersSatellite &SWIG_OUTPUT) const;
 	SWIG_VOID(RESULT) getDVBC(eDVBFrontendParametersCable &SWIG_OUTPUT) const;
 	SWIG_VOID(RESULT) getDVBT(eDVBFrontendParametersTerrestrial &SWIG_OUTPUT) const;

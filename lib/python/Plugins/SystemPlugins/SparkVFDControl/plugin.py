@@ -33,7 +33,6 @@ class Channelnumber:
 
 	def __init__(self, session):
 		self.session = session
-		self.sign = 0
 		self.updatetime = 10000
 		self.blink = False
 		self.channelnrdelay = 15
@@ -116,12 +115,7 @@ class Channelnumber:
 				if int(clock) > 12:
 					clock = str(int(clock) - 12)
 
-			if self.sign == 0:
-				clock2 = "%02d.%02d" % (int(clock), int(clock1))
-				self.sign = 1
-			else:
-				clock2 = "%02d%02d" % (int(clock), int(clock1))
-				self.sign = 0
+			clock2 = "%02d.%02d" % (int(clock), int(clock1))
 
 			vfd_write(clock2)
 		else:

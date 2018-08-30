@@ -69,7 +69,7 @@ class ClockToText(Converter, object):
 			d = _("%a %e %B %Y")
 		elif self.type == "VFD":
 			# VFD hour minute
-			return "%02d.%02d" % (t.tm_hour, t.tm_min)
+			return "%02d%02d" % (t.tm_hour, t.tm_min)
 		elif self.type == "LED":
 			# LED hour minute
 			return "%02d.%02d" % (t.tm_hour, t.tm_min)

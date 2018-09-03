@@ -16,6 +16,11 @@ from time import localtime, time
 from Tools.Directories import fileExists
 from enigma import pNavigation
 import Components.RecordingConfig
+
+f = open("/proc/stb/info/boxtype","r");
+boxtype = f.read().rstrip('\n')
+f.close()
+
 import Screens.Standby
 import NavigationInstance
 from Screens.SessionGlobals import SessionGlobals
@@ -139,7 +144,7 @@ class Channelnumber:
 					self.prikaz()
 			else:
 				self.__eventInfoChanged()
-
+					
 		if val == 'Off':
 			vfd_write("....")
 			self.zaPrik.start(self.updatetime, 1)
@@ -159,14 +164,14 @@ class Channelnumber:
 			self.RecTimer = eTimer()
 			self.RecTimer.callback.append(self.showRec)
 			self.RecTimer.start(1000, True)
-
+    
 	def showRec(self):
 		try:
 			#not all images support recording type indicators
 			recordings = len(NavigationInstance.instance.getRecordings(False,Components.RecordingConfig.recType(config.recording.show_rec_symbol_for_rec_types.getValue())))
 		except:
 			recordings = len(NavigationInstance.instance.getRecordings())
-
+		
 		if recordings >= 1:
 			pattern = 4294967295
 			f = open("/proc/stb/fp/led0_pattern", "w")
@@ -400,5 +405,8 @@ def sessionstart(reason, **kwargs):
 		SessionGlobals.__init__ = newSessionGlobals__init__
 
 def Plugins(**kwargs):
-		return [ PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], fnc=sessionstart),
-			PluginDescriptor(name="LED Display Setup", description="Change VFD display settings",where = PluginDescriptor.WHERE_MENU, fnc = main) ]
+		if boxtype == "spark":
+			return [ PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], fnc=sessionstart),
+				PluginDescriptor(name="LED Display Setup", description="Change VFD display settings",where = PluginDescriptor.WHERE_MENU, fnc = main) ]
+		else:
+			return []

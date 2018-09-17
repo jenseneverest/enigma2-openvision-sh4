@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-21 18:40+0200\n"
-"PO-Revision-Date: 2018-08-26 15:06+0300\n"
+"POT-Creation-Date: 2018-09-03 21:04+0200\n"
+"PO-Revision-Date: 2018-09-03 23:38+0300\n"
 "Last-Translator: Audronis Grincevičius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -424,7 +424,7 @@ msgstr "%s%d min."
 
 #, python-format
 msgid "%s/%s: %s"
-msgstr "%s : %s,%s"
+msgstr "%s: %s,%s"
 
 #, python-format
 msgid "%s:%s"
@@ -444,10 +444,10 @@ msgid "(activated +%d min)"
 msgstr "(veikia +%d min.)"
 
 msgid "(empty)"
-msgstr "(laisva)"
+msgstr "(tuščias)"
 
 msgid "(not activated)"
-msgstr "(neaktyvus)"
+msgstr "(neaktyvuota)"
 
 msgid "(show optional DVD audio menu)"
 msgstr "(rodyti pasirinktinį DVD garso meniu)"
@@ -735,17 +735,8 @@ msgstr "Garso ir vaizdo nustatymai"
 msgid "AAC downmix"
 msgstr "AAC suliejimas"
 
-msgid "AAC transcoding"
-msgstr "AAC perkodavimas"
-
-msgid "AC3"
-msgstr "AC3"
-
 msgid "AC3 downmix"
 msgstr "AC3 suliejimas"
-
-msgid "AC3 plus transcoding"
-msgstr "AC3 plus perkodavimas"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "GAUNAMAS TSID/ONID"
@@ -1297,7 +1288,7 @@ msgid "Azerbaijan"
 msgstr "Azerbaidžanas"
 
 msgid "B"
-msgstr "B+-"
+msgstr "B"
 
 msgid "BER"
 msgstr "BER"
@@ -1489,7 +1480,7 @@ msgid "Burn existing image to DVD"
 msgstr "Įrašyti esamą atvaizdą į DVD"
 
 msgid "Burn to DVD"
-msgstr "Įrašyti į DVD"
+msgstr "Įrašyti į DVD diską"
 
 msgid "Burundi"
 msgstr "Burundis"
@@ -1511,7 +1502,7 @@ msgid "C"
 msgstr "C"
 
 msgid "C-Band"
-msgstr "C diapazonas"
+msgstr "C-juosta"
 
 msgid "CH"
 msgstr "KAN."
@@ -1747,12 +1738,6 @@ msgstr "Pasirinkite imtuvą"
 
 msgid "Choose bouquet"
 msgstr "Pasirinkite paketą"
-
-msgid ""
-"Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr ""
-"Pasirinkite, ar kelių kanalų garso takeliai bus konvertuoti į PCM, arba "
-"SPDIF."
 
 msgid "Choose which tuner to configure."
 msgstr "Pasirinkti kurį imtuvą konfigūruoti."
@@ -2282,27 +2267,6 @@ msgstr ""
 "juosta, dukart paspaudus 'OK'. Antroji info juosta pateikia papildomą "
 "informaciją apie rodomą kanalą."
 
-msgid "Configure whether AAC sound tracks should be transcoded."
-msgstr "Konfigūruokite, ar reikia perkoduoti AAC garso takelius."
-
-msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
-msgstr ""
-"Konfigūruokite, ar AC3 plius garso takeliai turėtų būti perkoduoti į AC3."
-
-msgid ""
-"Configure whether DTS-HD channel sound tracks should be downmixed or "
-"transcoded."
-msgstr ""
-"Pasirinkite, ar DTS-HD kanalo garso takeliai turėtų būti sulieti ar "
-"perkoduoti."
-
-msgid ""
-"Configure whether WMA pro channel sound tracks should be downmixed or "
-"transcoded."
-msgstr ""
-"Pasirinkite, ar WMA Pro kanalo garso takeliai turėtų būti sulieti arba "
-"perkoduoti."
-
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr "Nustatykite, ar kelių kanalų PCM garsas turėtų būti įjungtas."
 
@@ -2386,7 +2350,7 @@ msgid "Congo (Democratic Republic of the)"
 msgstr "Kongo Demokratinė Respublika"
 
 msgid "Connect"
-msgstr "Jungtis"
+msgstr "Prisijungti"
 
 msgid "Connect to a wireless network"
 msgstr "Prisijungti prie belaidžio tinklo"
@@ -2457,11 +2421,12 @@ msgid "Could not find installed channel list."
 msgstr "Nepavyko surasti įdiegtų kanalų sąrašo."
 
 msgid ""
-"Could not find suitable media - Please insert a media (e.g. USB stick) and "
-"try again!"
+"Could not find suitable media - Please remove some downloaded images or "
+"insert a media (e.g. USB stick) with sufficiant free space and try again!"
 msgstr ""
-"Nerasta tinkama media - prijunkite laikmeną (pvz., USB atmintinę) ir "
-"bandykite dar kartą!"
+"Nepavyko rasti tinkamos laikmenos - Pašalinkite kai kuriuos atsisiųstus "
+"atvaizdus arba įdėkite laikmeną (pvz., USB atmintinę) su pakankama laisva "
+"vieta ir bandykite dar kartą!"
 
 msgid "Could not load medium! No disc inserted?"
 msgstr "Nepavyko atverti laikmenos! Neįdėtas diskas?"
@@ -2597,14 +2562,8 @@ msgstr "DMM išplėstinis"
 msgid "DMM normal"
 msgstr "DMM normalus"
 
-msgid "DTS"
-msgstr "DTS"
-
 msgid "DTS downmix"
 msgstr "DTS suliejimas"
-
-msgid "DTS-HD downmix"
-msgstr "DTS-HD suliejimas"
 
 msgid "DUAL LAYER DVD"
 msgstr "DVISLUOKSNIS DVD"
@@ -2643,7 +2602,7 @@ msgid "DVB-T2"
 msgstr "DVB-T2"
 
 msgid "DVD Burn"
-msgstr "Įrašyti DVD"
+msgstr "DVD įrašymas"
 
 msgid "DVD Menu"
 msgstr "DVD meniu"
@@ -2689,6 +2648,9 @@ msgstr "Numatytoji filmų vieta"
 
 msgid "Default settings"
 msgstr "Numatytosios nuostatos"
+
+msgid "Define the location of the EPG Cache file."
+msgstr "Nustatykite EPG talpyklos failo vietą."
 
 msgid "Delay after change voltage before switch command"
 msgstr "Delsa tarp įtampos pasikeitimo ir perjungimo komandos"
@@ -3112,9 +3074,6 @@ msgstr "Parsiunčiamas atvaizdas"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Parsiunčiama informacija apie priedus. Prašome laukti..."
-
-msgid "Downmix"
-msgstr "Suliejimas"
 
 msgid "Drop unconfigured satellites"
 msgstr "Pašalinti nesukonfigūruotus palydovus"
@@ -4150,9 +4109,6 @@ msgstr "HDMI spalvų erdvė"
 msgid "HDMI HDR Type"
 msgstr "HDMI HDR tipas"
 
-msgid "HDMI audio source"
-msgstr "HDMI garso šaltinis"
-
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC šaltinis aktyvus"
 
@@ -4988,6 +4944,9 @@ msgstr "Vieta"
 msgid "Location"
 msgstr "Buvimo vieta"
 
+msgid "Location EPG Cache file"
+msgstr "EPG failo talpyklos vieta"
+
 msgid "Location for instant recordings"
 msgstr "Vieta greitiems įrašams"
 
@@ -5707,7 +5666,7 @@ msgid "Normal"
 msgstr "Normalus"
 
 msgid "Normal mode"
-msgstr "Įprastinis režimas"
+msgstr "Normalus režimas"
 
 msgid "North"
 msgstr "Šiaurė"
@@ -5824,7 +5783,7 @@ msgid "Oman"
 msgstr "Omanas"
 
 msgid "On"
-msgstr "Įjungta"
+msgstr "Įj."
 
 msgid "On end of movie"
 msgstr "Filmo pabaigoje"
@@ -5904,7 +5863,7 @@ msgid "Output"
 msgstr "Išvestis"
 
 msgid "Overall progress:"
-msgstr "Bendra vykdymo eiga:"
+msgstr "Bendra eiga:"
 
 msgid "Overscan wizard"
 msgstr "Ekrano formato vedlys"
@@ -5996,9 +5955,6 @@ msgstr "Tėvų kontrolės kanalų redaktorius"
 
 msgid "Parental control setup"
 msgstr "Tėvų kontrolės sąranka"
-
-msgid "Passthrough"
-msgstr "Pereiti"
 
 msgid "Pause"
 msgstr "Pauzė"
@@ -8897,7 +8853,7 @@ msgstr "Sistema ir moduliacija"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "Audronis Grincevičius (Adga) Pasvalys, Lietuva\n"
-"2018-08-26"
+"2018-09-01 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -10243,9 +10199,6 @@ msgstr "WEP"
 msgid "WLAN connection"
 msgstr "Belaidis ryšys"
 
-msgid "WMA pro downmix"
-msgstr "WMA pro suliejimas"
-
 msgid "WPA"
 msgstr "WPA"
 
@@ -11307,7 +11260,7 @@ msgid "add service to bouquet"
 msgstr "įtraukti kanalą į paketą"
 
 msgid "add service to favourites"
-msgstr "įtraukti į mėgstamus"
+msgstr "įtraukti kanalą į mėgstamus"
 
 msgid "add to parental protection"
 msgstr "įjungti tėvų kontrolę"
@@ -11331,7 +11284,7 @@ msgid "all"
 msgstr "visi"
 
 msgid "alphabetic"
-msgstr "abėcėlės tvarka"
+msgstr "abėcėlinis"
 
 msgid "alphabetic reverse"
 msgstr "ne abėcėlės tvarka"
@@ -11463,18 +11416,6 @@ msgstr "prijungtas"
 
 msgid "controlled by HDMI"
 msgstr "kontroliuojama HDMI"
-
-msgid "convert to AC3"
-msgstr "konvertuoti į AC3"
-
-msgid "convert to DTS"
-msgstr "konvertuoti į DTS"
-
-msgid "convert to multi channel PCM"
-msgstr "konvertuoti į daugiakanalį PCM"
-
-msgid "convert to multi-channel PCM"
-msgstr "konvertuoti į daugiakanalį PCM"
 
 msgid "cooking"
 msgstr "valgio gaminimas"
@@ -11663,7 +11604,7 @@ msgid "fitness & health"
 msgstr "fitnesas ir sveikata"
 
 msgid "flat alphabetic"
-msgstr "abėcėlės tvarka"
+msgstr "plokščias abėcėlinis"
 
 msgid "flat alphabetic reverse"
 msgstr "ne abėcėlės tvarka"
@@ -11673,9 +11614,6 @@ msgstr "folk/tradicinė muzika"
 
 msgid "football/soccer"
 msgstr "futbolas, amerikietiškas futbolas"
-
-msgid "force AC3 plus"
-msgstr "priverstinis AC3 plus"
 
 msgid "force disabled"
 msgstr "priverstinai išjungta"
@@ -11906,7 +11844,7 @@ msgid "none"
 msgstr "joks"
 
 msgid "normal"
-msgstr "įprastas"
+msgstr "normalus"
 
 msgid "not configured"
 msgstr "nesukonfigūruotas"
@@ -11945,7 +11883,7 @@ msgid "offset is"
 msgstr "poslinkis yra"
 
 msgid "on"
-msgstr "įjungta"
+msgstr "įj."
 
 msgid "on READ ONLY medium."
 msgstr "diskas TIK SKAITYMUI."
@@ -12345,9 +12283,6 @@ msgstr "netikrintinas"
 msgid "until standby/restart"
 msgstr "iki budėjimo/paleidimo iš naujo"
 
-msgid "use best, controlled by HDMI"
-msgstr "naudoti geriausią, kontroliuojama HDMI"
-
 msgid "user defined"
 msgstr "naudotojo nustatytas"
 
@@ -12441,6 +12376,79 @@ msgstr "perjungta"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "AAC transcoding"
+#~ msgstr "AAC perkodavimas"
+
+#~ msgid "AC3"
+#~ msgstr "AC3"
+
+#~ msgid "AC3 plus transcoding"
+#~ msgstr "AC3 plus perkodavimas"
+
+#~ msgid ""
+#~ "Choose whether multi channel sound tracks should be convert to PCM or "
+#~ "SPDIF."
+#~ msgstr ""
+#~ "Pasirinkite, ar kelių kanalų garso takeliai bus konvertuoti į PCM, arba "
+#~ "SPDIF."
+
+#~ msgid "Configure whether AAC sound tracks should be transcoded."
+#~ msgstr "Konfigūruokite, ar reikia perkoduoti AAC garso takelius."
+
+#~ msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
+#~ msgstr ""
+#~ "Konfigūruokite, ar AC3 plius garso takeliai turėtų būti perkoduoti į AC3."
+
+#~ msgid ""
+#~ "Configure whether DTS-HD channel sound tracks should be downmixed or "
+#~ "transcoded."
+#~ msgstr ""
+#~ "Pasirinkite, ar DTS-HD kanalo garso takeliai turėtų būti sulieti ar "
+#~ "perkoduoti."
+
+#~ msgid ""
+#~ "Configure whether WMA pro channel sound tracks should be downmixed or "
+#~ "transcoded."
+#~ msgstr ""
+#~ "Pasirinkite, ar WMA Pro kanalo garso takeliai turėtų būti sulieti arba "
+#~ "perkoduoti."
+
+#~ msgid "DTS"
+#~ msgstr "DTS"
+
+#~ msgid "DTS-HD downmix"
+#~ msgstr "DTS-HD suliejimas"
+
+#~ msgid "Downmix"
+#~ msgstr "Suliejimas"
+
+#~ msgid "HDMI audio source"
+#~ msgstr "HDMI garso šaltinis"
+
+#~ msgid "Passthrough"
+#~ msgstr "Pereiti"
+
+#~ msgid "WMA pro downmix"
+#~ msgstr "WMA pro suliejimas"
+
+#~ msgid "convert to AC3"
+#~ msgstr "konvertuoti į AC3"
+
+#~ msgid "convert to DTS"
+#~ msgstr "konvertuoti į DTS"
+
+#~ msgid "convert to multi channel PCM"
+#~ msgstr "konvertuoti į daugiakanalį PCM"
+
+#~ msgid "convert to multi-channel PCM"
+#~ msgstr "konvertuoti į daugiakanalį PCM"
+
+#~ msgid "force AC3 plus"
+#~ msgstr "priverstinis AC3 plus"
+
+#~ msgid "use best, controlled by HDMI"
+#~ msgstr "naudoti geriausią, kontroliuojama HDMI"
 
 #~ msgid "Movie manager"
 #~ msgstr "Filmų tvarkyklė"

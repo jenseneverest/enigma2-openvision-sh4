@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-21 18:40+0200\n"
+"POT-Creation-Date: 2018-09-03 21:04+0200\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -777,19 +777,8 @@ msgstr "Ljud / Video inställningar"
 msgid "AAC downmix"
 msgstr "AAC nedmixning"
 
-#, fuzzy
-msgid "AAC transcoding"
-msgstr "Omkodning :"
-
-msgid "AC3"
-msgstr ""
-
 msgid "AC3 downmix"
 msgstr "AC3 nedmixning"
-
-#, fuzzy
-msgid "AC3 plus transcoding"
-msgstr "Omkodning :"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
@@ -1896,10 +1885,6 @@ msgstr "Välj tuner"
 msgid "Choose bouquet"
 msgstr "Välj kanallista"
 
-#, fuzzy
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
-
 msgid "Choose which tuner to configure."
 msgstr "Välj vilken tuner som skall konfigureras."
 
@@ -2335,22 +2320,6 @@ msgstr "Konfigurera var färdiga timers visas i timerlistan."
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Konfigurera om (och hur länge) den andra infobalken visas när du trycker på OK två gånger. Den andra infobalken innehåller ytterligare information om den aktuella kanalen."
 
-#, fuzzy
-msgid "Configure whether AAC sound tracks should be transcoded."
-msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
-
-#, fuzzy
-msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
-msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
-
-#, fuzzy
-msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
-msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
-
-#, fuzzy
-msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
-msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
-
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr "Konfigurera om flerkanals PCM ljud skall aktiveras."
 
@@ -2488,7 +2457,7 @@ msgstr ""
 msgid "Could not find installed channel list."
 msgstr "Det gick inte att hitta den installerade kanallistan."
 
-msgid "Could not find suitable media - Please insert a media (e.g. USB stick) and try again!"
+msgid "Could not find suitable media - Please remove some downloaded images or insert a media (e.g. USB stick) with sufficiant free space and try again!"
 msgstr ""
 
 #
@@ -2650,14 +2619,7 @@ msgstr "avancerad"
 msgid "DMM normal"
 msgstr "normal"
 
-msgid "DTS"
-msgstr ""
-
 msgid "DTS downmix"
-msgstr "DTS nedmixning"
-
-#, fuzzy
-msgid "DTS-HD downmix"
 msgstr "DTS nedmixning"
 
 #
@@ -2759,6 +2721,10 @@ msgstr "Grundplats för film"
 #
 msgid "Default settings"
 msgstr "Grundinställningar"
+
+#, fuzzy
+msgid "Define the location of the EPG Cache file."
+msgstr "Konfigurera bildförhållandet på skärmen."
 
 msgid "Delay after change voltage before switch command"
 msgstr "Fördröjning efter ändrad spänning före switchkommando"
@@ -3245,10 +3211,6 @@ msgstr "Laddar ner"
 #
 msgid "Downloading plugin information. Please wait..."
 msgstr "Hämtar plugininformation. Var vänlig vänta..."
-
-#, fuzzy
-msgid "Downmix"
-msgstr "DTS nedmixning"
 
 #, fuzzy
 msgid "Drop unconfigured satellites"
@@ -4341,10 +4303,6 @@ msgid "HDMI HDR Type"
 msgstr "NIM & Typ"
 
 #, fuzzy
-msgid "HDMI audio source"
-msgstr "HDMI Färgrymd"
-
-#, fuzzy
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC inställning"
 
@@ -5210,6 +5168,9 @@ msgstr "Lokalt nätverk"
 #
 msgid "Location"
 msgstr "Sökväg"
+
+msgid "Location EPG Cache file"
+msgstr ""
 
 #
 msgid "Location for instant recordings"
@@ -6301,9 +6262,6 @@ msgstr "Kanaleditor för föräldrakontroll"
 #
 msgid "Parental control setup"
 msgstr "Inställningar för föräldrakontroll"
-
-msgid "Passthrough"
-msgstr ""
 
 #
 msgid "Pause"
@@ -10808,10 +10766,6 @@ msgstr "WEP"
 msgid "WLAN connection"
 msgstr "WLAN anslutning"
 
-#, fuzzy
-msgid "WMA pro downmix"
-msgstr "AAC nedmixning"
-
 #
 msgid "WPA"
 msgstr "WPA"
@@ -11852,20 +11806,6 @@ msgstr "ansluten"
 msgid "controlled by HDMI"
 msgstr ""
 
-msgid "convert to AC3"
-msgstr ""
-
-msgid "convert to DTS"
-msgstr ""
-
-#, fuzzy
-msgid "convert to multi channel PCM"
-msgstr "Multikanal PCM"
-
-#, fuzzy
-msgid "convert to multi-channel PCM"
-msgstr "Multikanal PCM"
-
 msgid "cooking"
 msgstr "matlagning"
 
@@ -12093,9 +12033,6 @@ msgstr "folk / traditionell musik"
 
 msgid "football/soccer"
 msgstr "amerikansk fotboll / fotboll"
-
-msgid "force AC3 plus"
-msgstr ""
 
 #
 #, fuzzy
@@ -12875,9 +12812,6 @@ msgstr "omöjlig att testa"
 #
 msgid "until standby/restart"
 msgstr "tills viloläge / omstart"
-
-msgid "use best, controlled by HDMI"
-msgstr ""
 
 #
 msgid "user defined"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-21 18:40+0200\n"
+"POT-Creation-Date: 2018-09-03 21:04+0200\n"
 "PO-Revision-Date: 2018-05-01 21:32+0300\n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: Bulgarian\n"
@@ -714,20 +714,8 @@ msgstr "Аудио / Видео настройки"
 msgid "AAC downmix"
 msgstr "AAC downmix"
 
-#, fuzzy
-msgid "AAC transcoding"
-msgstr "Транскодиране: "
-
-#, fuzzy
-msgid "AC3"
-msgstr "DAC"
-
 msgid "AC3 downmix"
 msgstr "AC3 downmix"
-
-#, fuzzy
-msgid "AC3 plus transcoding"
-msgstr "Транскодиране: "
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "ПРИДОБИВАНЕ НА TSID/ONID"
@@ -1697,10 +1685,6 @@ msgstr "Избор на Тунера"
 msgid "Choose bouquet"
 msgstr "Избор на букет"
 
-#, fuzzy
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "Настройка дали многоканален звук да се сведе до стерео."
-
 msgid "Choose which tuner to configure."
 msgstr "Изберете тунер за конфигуриране."
 
@@ -2098,22 +2082,6 @@ msgstr "Настройка къде завършените таймери да �
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Настройка дали (и за колко време) втората инфо лента да се показва когато OK е натиснат два пъти. Втората инфо лента съдържа допълнителна информация относно текущия канал."
 
-#, fuzzy
-msgid "Configure whether AAC sound tracks should be transcoded."
-msgstr "Настройка дали многоканален звук да се сведе до стерео."
-
-#, fuzzy
-msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
-msgstr "Настройка дали многоканален звук да се сведе до стерео."
-
-#, fuzzy
-msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
-msgstr "Настройка дали многоканален звук да се сведе до стерео."
-
-#, fuzzy
-msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
-msgstr "Настройка дали многоканален звук да се сведе до стерео."
-
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr "Настройка, дали да се включи многоканален PCM звук."
 
@@ -2235,7 +2203,8 @@ msgstr "Бряг на Слоновата Кост"
 msgid "Could not find installed channel list."
 msgstr "Не може да се открие инсталиран списък с канали."
 
-msgid "Could not find suitable media - Please insert a media (e.g. USB stick) and try again!"
+#, fuzzy
+msgid "Could not find suitable media - Please remove some downloaded images or insert a media (e.g. USB stick) with sufficiant free space and try again!"
 msgstr "Не може да се открие пододящ носител. Моля поставете, например USB флашка и опитайте отново!"
 
 msgid "Could not load medium! No disc inserted?"
@@ -2373,14 +2342,7 @@ msgstr "DMM за напреднали"
 msgid "DMM normal"
 msgstr "DMM нормален"
 
-msgid "DTS"
-msgstr ""
-
 msgid "DTS downmix"
-msgstr "DTS downmix"
-
-#, fuzzy
-msgid "DTS-HD downmix"
 msgstr "DTS downmix"
 
 msgid "DUAL LAYER DVD"
@@ -2466,6 +2428,10 @@ msgstr "Местоположение на филмите по подразбир
 
 msgid "Default settings"
 msgstr "Стандартни Настройки"
+
+#, fuzzy
+msgid "Define the location of the EPG Cache file."
+msgstr "Настройте формата на картината."
 
 msgid "Delay after change voltage before switch command"
 msgstr "Закъснение след изменение напрежението преди команда за превключв."
@@ -2885,10 +2851,6 @@ msgstr "Изтегляне на Имиджа"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Изтеглям информация за плъгина. Моля изчакайте..."
-
-#, fuzzy
-msgid "Downmix"
-msgstr "DTS downmix"
 
 #, fuzzy
 msgid "Drop unconfigured satellites"
@@ -3885,10 +3847,6 @@ msgstr "HDMI Цветови модел"
 msgid "HDMI HDR Type"
 msgstr "NIM & Тип на тунера"
 
-#, fuzzy
-msgid "HDMI audio source"
-msgstr "HDMI Цветови модел"
-
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC Източник Активен"
 
@@ -4651,6 +4609,9 @@ msgstr "Локална Мрежа"
 
 msgid "Location"
 msgstr "Местоположение"
+
+msgid "Location EPG Cache file"
+msgstr ""
 
 msgid "Location for instant recordings"
 msgstr "Местоположение за незабавни записи"
@@ -5606,9 +5567,6 @@ msgstr "Редактор на каналите в родителския кон�
 
 msgid "Parental control setup"
 msgstr "Настройка на Родителски контрол"
-
-msgid "Passthrough"
-msgstr ""
 
 msgid "Pause"
 msgstr "Пауза"
@@ -9516,10 +9474,6 @@ msgstr "WEP"
 msgid "WLAN connection"
 msgstr "WLAN свързване"
 
-#, fuzzy
-msgid "WMA pro downmix"
-msgstr "AAC downmix"
-
 msgid "WPA"
 msgstr "WPA"
 
@@ -10451,20 +10405,6 @@ msgstr "свързан"
 msgid "controlled by HDMI"
 msgstr ""
 
-msgid "convert to AC3"
-msgstr ""
-
-msgid "convert to DTS"
-msgstr ""
-
-#, fuzzy
-msgid "convert to multi channel PCM"
-msgstr "Многоканален PCM"
-
-#, fuzzy
-msgid "convert to multi-channel PCM"
-msgstr "Многоканален PCM"
-
 msgid "cooking"
 msgstr "готвене"
 
@@ -10662,9 +10602,6 @@ msgstr "народна/традициона музика"
 
 msgid "football/soccer"
 msgstr "футбол"
-
-msgid "force AC3 plus"
-msgstr ""
 
 #, fuzzy
 msgid "force disabled"
@@ -11335,9 +11272,6 @@ msgstr "непроверено"
 
 msgid "until standby/restart"
 msgstr "до режим готовност/рестарт"
-
-msgid "use best, controlled by HDMI"
-msgstr ""
 
 msgid "user defined"
 msgstr "потребителски"

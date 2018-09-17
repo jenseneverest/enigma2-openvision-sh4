@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-21 18:40+0200\n"
-"PO-Revision-Date: 2018-08-21 18:47+0200\n"
+"POT-Creation-Date: 2018-09-03 21:04+0200\n"
+"PO-Revision-Date: 2018-09-04 09:27+0200\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
 "Language: fr\n"
@@ -714,17 +714,8 @@ msgstr "Paramètres A/V"
 msgid "AAC downmix"
 msgstr "Downmix AAC"
 
-msgid "AAC transcoding"
-msgstr "AAC transcodage"
-
-msgid "AC3"
-msgstr "AC3"
-
 msgid "AC3 downmix"
 msgstr "Downmix AC3"
-
-msgid "AC3 plus transcoding"
-msgstr "AC3 plus transcodage"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "ACQUISITION DE TSID/ONID"
@@ -1687,9 +1678,6 @@ msgstr "Choisir tuner"
 msgid "Choose bouquet"
 msgstr "Choisir le bouquet"
 
-msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
-msgstr "Configure si plusieurs pistes sonores doivent être remixées en PCM ou SPDIF."
-
 msgid "Choose which tuner to configure."
 msgstr "Choisissez le tuner à configurer."
 
@@ -2087,18 +2075,6 @@ msgstr "Configure comment les programmations terminées apparaissent dans la lis
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Configure si (et pour combien de temps) une deuxième barre d'informations s'affiche lorsque vous appuyez sur OK à deux reprises. La seconde barre contient des informations supplémentaires sur la chaîne actuelle."
 
-msgid "Configure whether AAC sound tracks should be transcoded."
-msgstr "Configure si plusieurs les pistes sons AAC doivent être transcodées."
-
-msgid "Configure whether AC3 plus sound tracks should be transcoded to AC3."
-msgstr "Configure si plusieurs pistes sonores ACS3 doivent être transcodée en AC3."
-
-msgid "Configure whether DTS-HD channel sound tracks should be downmixed or transcoded."
-msgstr "Configure si plusieurs pistes sonores DTS-HD doivent être remixées ou transcodées."
-
-msgid "Configure whether WMA pro channel sound tracks should be downmixed or transcoded."
-msgstr "Configure si les pistes sonores WMA pro doivent être remixées ou transcodées."
-
 msgid "Configure whether multi channel PCM sound should be enabled."
 msgstr "Configure si la piste PCM multi canaux doit être activée."
 
@@ -2219,8 +2195,8 @@ msgstr "Côte d'Ivoire"
 msgid "Could not find installed channel list."
 msgstr "Impossible de trouver la liste des chaînes installées."
 
-msgid "Could not find suitable media - Please insert a media (e.g. USB stick) and try again!"
-msgstr "Impossible de trouver un média qui convient - Veuillez insérer un média (p.e. une clé USB) et essayer à nouveau!"
+msgid "Could not find suitable media - Please remove some downloaded images or insert a media (e.g. USB stick) with sufficiant free space and try again!"
+msgstr "Impossible de trouver un média qui convient - Veuillez effacer certaines images téléchargées ou insérer un média (p.e. une clé USB) avec suffisamment d’espace libre et essayer à nouveau!"
 
 msgid "Could not load medium! No disc inserted?"
 msgstr "Impossible de charger le support! Aucun disque inséré?"
@@ -2356,14 +2332,8 @@ msgstr "DMM avancée"
 msgid "DMM normal"
 msgstr "DMM normal"
 
-msgid "DTS"
-msgstr "DTS"
-
 msgid "DTS downmix"
 msgstr "Downmix DTS"
-
-msgid "DTS-HD downmix"
-msgstr "DTS-HD downmix"
 
 msgid "DUAL LAYER DVD"
 msgstr "DVD DOUBLE COUCHE"
@@ -2448,6 +2418,9 @@ msgstr "Emplacement standard films"
 
 msgid "Default settings"
 msgstr "Paramètres par défaut"
+
+msgid "Define the location of the EPG Cache file."
+msgstr "Définir la localisation du fichier de cache EPG."
 
 msgid "Delay after change voltage before switch command"
 msgstr "Délai après le changement de tension et avant la commande de bascule (switch)"
@@ -2868,9 +2841,6 @@ msgstr "Téléchargement de l'image"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Téléchargement des informations sur les extensions. Patientez SVP..."
-
-msgid "Downmix"
-msgstr "Downmix"
 
 msgid "Drop unconfigured satellites"
 msgstr "Oublier les satellites non configurés"
@@ -3858,9 +3828,6 @@ msgstr "Espace colorimétrique HDMI"
 msgid "HDMI HDR Type"
 msgstr "Type HDMI HDR"
 
-msgid "HDMI audio source"
-msgstr "source audioHDMI"
-
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC source active"
 
@@ -4611,6 +4578,9 @@ msgstr "Locale"
 
 msgid "Location"
 msgstr "Emplacement"
+
+msgid "Location EPG Cache file"
+msgstr "Emplacement du fichier du cache EPG"
 
 msgid "Location for instant recordings"
 msgstr "Emplacement pour les enregistrements instantanés"
@@ -5565,9 +5535,6 @@ msgstr "Éditeur des services avec contrôle parental"
 
 msgid "Parental control setup"
 msgstr "Paramètres du contrôle parental"
-
-msgid "Passthrough"
-msgstr "Traverser (Passthrough)"
 
 msgid "Pause"
 msgstr "Pause"
@@ -8257,7 +8224,7 @@ msgstr ""
 "Traduction Française\n"
 "Enigma2 - OpenPLi\n"
 "Support: www.openpli.org\n"
-"Dernière MAJ: 21-08-2018"
+"Dernière MAJ: 04-09-2018"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "Fichier TS trop grand pour le niveau 1 ISO9660!"
@@ -9469,9 +9436,6 @@ msgstr "WEP"
 msgid "WLAN connection"
 msgstr "Connexion WLAN"
 
-msgid "WMA pro downmix"
-msgstr "Downmix WMA pro"
-
 msgid "WPA"
 msgstr "WPA"
 
@@ -10415,18 +10379,6 @@ msgstr "Connecté"
 msgid "controlled by HDMI"
 msgstr "Contrôlé par HDMI"
 
-msgid "convert to AC3"
-msgstr "convertir en AC3"
-
-msgid "convert to DTS"
-msgstr "convertir en DTS"
-
-msgid "convert to multi channel PCM"
-msgstr "convertir en PCM multi-canaux"
-
-msgid "convert to multi-channel PCM"
-msgstr "convertir en PCM multi-canaux"
-
 msgid "cooking"
 msgstr "Cuisine"
 
@@ -10624,9 +10576,6 @@ msgstr "Folk/Musique traditionnelle"
 
 msgid "football/soccer"
 msgstr "Football/Foot"
-
-msgid "force AC3 plus"
-msgstr "forcer AC3 plus"
 
 msgid "force disabled"
 msgstr "forcer désactivé"
@@ -11295,9 +11244,6 @@ msgstr "non testable"
 
 msgid "until standby/restart"
 msgstr "Jusqu'à veille/redémarrage"
-
-msgid "use best, controlled by HDMI"
-msgstr "utiliser le meilleur, contrôler par HDMI"
 
 msgid "user defined"
 msgstr "Défini par l'utilisateur"

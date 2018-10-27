@@ -190,6 +190,8 @@ class FlashImage(Screen):
 		{
 			"cancel": self.abort,
 			"red": self.abort,
+			"ok": self.ok,
+			"green": self.ok,
 		}, -1)
 
 		self.delay = eTimer()
@@ -312,6 +314,14 @@ class FlashImage(Screen):
 		self.unzip()
 
 	def unzip(self):
+		self["header"].setText(_("Unzipping Image"))
+		self["info"].setText("%s\n%s"% (self.imagename, _("Please wait")))
+		self["progress"].hide()
+		self.delay.callback.remove(self.confirmation)
+		self.delay.callback.append(self.doUnzip)
+		self.delay.start(0, True)
+
+	def doUnzip(self):
 		try:
 			zipfile.ZipFile(self.zippedimage, 'r').extractall(self.unzippedimage)
 			self.flashimage()
@@ -319,6 +329,7 @@ class FlashImage(Screen):
 			self.session.openWithCallback(self.abort, MessageBox, _("Error during unzipping image\n%s") % self.imagename, type=MessageBox.TYPE_ERROR, simple=True)
 
 	def flashimage(self):
+		self["header"].setText(_("Flashing Image"))
 		def findimagefiles(path):
 			for path, subdirs, files in os.walk(path):
 				if not subdirs and files:
@@ -338,8 +349,7 @@ class FlashImage(Screen):
 		self.containerofgwrite = None
 		if retval == 0:
 			self["header"].setText(_("Flashing image succesfull"))
-			self["info"].setText(_("%s\nPress exit to close") % self.imagename)
-			self["progress"].hide()
+			self["info"].setText(_("%s\nPress ok for multiboot selection\nPress exit to close") % self.imagename)
 		else:
 			self.session.openWithCallback(self.abort, MessageBox, _("Flashing image was not succesfull\n%s") % self.imagename, type=MessageBox.TYPE_ERROR, simple=True)
 
@@ -351,6 +361,12 @@ class FlashImage(Screen):
 		if self.containerbackup:
 			self.containerbackup.killAll()
 		self.close()
+
+	def ok(self):
+		if self["header"].text == _("Flashing image succesfull"):
+			self.session.openWithCallback(self.abort, MultibootSelection)
+		else:
+			return 0
 
 class MultibootSelection(SelectImage):
 	def __init__(self, session, *args):

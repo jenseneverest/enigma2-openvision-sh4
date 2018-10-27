@@ -590,8 +590,11 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 
 		self["InfobarActions"] = HelpableActionMap(self, "InfobarActions",
 			{
-				"showMovies": (self.itemSelected, _("Select movie")),
-				"toogleTvRadio": (self.btn_tv, boundFunction(self.getinitUserDefinedActionsDescription, "btn_tv")),
+				"showMovies": (self.doPathSelect, _("Select the movie path")),
+				"showRadio": (self.btn_radio, boundFunction(self.getinitUserDefinedActionsDescription, "btn_radio")),
+				"showTv": (self.btn_tv, boundFunction(self.getinitUserDefinedActionsDescription, "btn_tv")),
+				"toggleTvRadio": (self.btn_tv, boundFunction(self.getinitUserDefinedActionsDescription, "btn_tv")),
+				"showText": (self.btn_text, boundFunction(self.getinitUserDefinedActionsDescription, "btn_text")),
 			})
 
 		self["NumberActions"] =  NumberActionMap(["NumberActions", "InputAsciiActions"],
@@ -756,7 +759,10 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 				'green': config.movielist.btn_green,
 				'yellow': config.movielist.btn_yellow,
 				'blue': config.movielist.btn_blue,
-				'TV/Radio': config.movielist.btn_tv,
+				'Radio': config.movielist.btn_radio,
+				'TV': config.movielist.btn_tv,
+				'TV2': config.movielist.btn_tv,
+				'Text': config.movielist.btn_text,
 				'F1': config.movielist.btn_F1,
 				'F2': config.movielist.btn_F2,
 				'F3': config.movielist.btn_F3
@@ -1020,6 +1026,14 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 		except Exception, e:
 			print "[ML] DVD Player not installed:", e
 
+	def playSuburi(self, path):
+		suburi = os.path.splitext(path)[0][:-7]
+		for ext in AUDIO_EXTENSIONS:
+			if os.path.exists("%s%s" % (suburi, ext)):
+				current = eServiceReference(4097, 0, "file://%s&suburi=file://%s%s" % (path, suburi, ext))
+				self.close(current)
+				return True
+
 	def __serviceStarted(self):
 		if not self.list.playInBackground:
 			return
@@ -1173,43 +1187,23 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 
 	def itemSelectedCheckTimeshiftCallback(self, ext, path, answer):
 		if answer:
-			if ext == ".iso":
-				if os.path.exists("/media/bludisc"):
-					Console().ePopen("umount -f /media/bludisc")
-				else:
-					Console().ePopen("mkdir /media/bludisc")
-				Console().ePopen("mount -r %s /media/bludisc" % path, self.CheckIsoMount, path)
-			elif ext == "bluray" or ext in DVD_EXTENSIONS:
-				self.setMovieType(ext, path)
-			else:
-				self.movieSelected()
-
-	def CheckIsoMount(self, result, retval, extra_args):
-		ext = self.IsBluray("/media/bludisc/")
-		self.setMovieType(ext, extra_args)
-
-	def setMovieType(self, ext, path):
-		current = None
-		if "bluray" in ext:
-			if ext == "bluray":
-				newpath = path
-			else:
-				newpath = "/media/bludisc/"
-			print "[MovieSelection]",path ,"play as bluray disc"
-			current = eServiceReference(4097, 0, "bluray:/" + newpath)
-		else:
-			print "[MovieSelection]",path ,"play as dvd disc"
-			if os.path.exists("/media/bludisc"):
-				Console().ePopen("umount -f /media/bludisc")
-				Console().ePopen("rmdir /media/bludisc")
-			if self.playAsDVD(path):
-				return
-		self.movieSelected(current)
-
-	def IsBluray(self, path):
-		if os.path.exists(os.path.join(path, 'BDMV/index.bdmv')) or os.path.exists(os.path.join(path, 'BRD/BDMV/index.bdmv')):
-			return "blurayiso"
-		return ""
+			if ext in (".iso", ".img", ".nrg") and BlurayPlayer is not None:
+				try:
+					from Plugins.Extensions.BlurayPlayer import blurayinfo
+					if blurayinfo.isBluray(path) == 1:
+						ext = 'bluray'
+				except Exception as e:
+					print "[ML] Error in blurayinfo:", e
+			if ext == 'bluray':
+				if self.playAsBLURAY(path):
+					return
+			elif ext in DVD_EXTENSIONS:
+				if self.playAsDVD(path):
+					return
+			elif "_suburi." in path:
+				if self.playSuburi(path):
+					return
+			self.movieSelected()
 
 	# Note: DVDBurn overrides this method, hence the itemSelected indirection.
 	def movieSelected(self, current = None):
@@ -1354,7 +1348,7 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 		for x in l_moviesort:
 			if int(x[0]) == int(config.movielist.moviesort.value):
 				used = index
-			menu.append((_(x[1]), x[0], "%d" % index))
+			menu.append((x[1], x[0]))
 			index += 1
 		self.session.openWithCallback(self.sortbyMenuCallback, ChoiceBox, title=_("Sort list:"), list=menu, selection = used, skin_name="SortbyChoiceBox")
 

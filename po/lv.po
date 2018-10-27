@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-03 21:04+0200\n"
+"POT-Creation-Date: 2018-10-21 11:16+0200\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Tapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -91,13 +91,6 @@ msgid ""
 msgstr ""
 "\n"
 "Atjaunot uztvērēja iestatījumus."
-
-msgid ""
-"\n"
-"Restore your receiver with a new firmware."
-msgstr ""
-"\n"
-"Atjaunot uztvērēju ar jauno programaparatūru."
 
 msgid ""
 "\n"
@@ -389,10 +382,12 @@ msgstr "%k:%M %e/%m"
 #, python-format
 msgid ""
 "%s\n"
+"Press ok for multiboot selection\n"
 "Press exit to close"
 msgstr ""
 "%s\n"
-"Nospiediet iziet lai aizvērtu"
+"Spiediet ok multiboot izvēlei\n"
+"Spiediet iziet lai aizvērtu"
 
 #, python-format
 msgid "%s %d.%d"
@@ -1518,7 +1513,7 @@ msgid "Cancel"
 msgstr "Atcelt"
 
 msgid "Cancel any text changes and exit"
-msgstr ""
+msgstr "Atcelt teksta izmaiņas un iziet"
 
 msgid "Cancelled upon user request"
 msgstr "Atcelts pēc lietotāja pieprasījuma"
@@ -2178,9 +2173,6 @@ msgstr "Saturs neietilpst DVD!"
 msgid "Continue"
 msgstr "Turpināt"
 
-msgid "Continue in background"
-msgstr "Turpināt fonā"
-
 msgid "Continue playback"
 msgstr "Turpināt atskaņošanu"
 
@@ -2208,9 +2200,8 @@ msgstr "Kotdivuāra"
 msgid "Could not find installed channel list."
 msgstr "Nevar atrast instalēto kanālu sarakstu."
 
-#, fuzzy
 msgid "Could not find suitable media - Please remove some downloaded images or insert a media (e.g. USB stick) with sufficiant free space and try again!"
-msgstr "Nav pieejams piemērots datu nesējs - lūdzu pieslēdziet datu nesēju (piemēram USB zibatmiņu) un mēģiniet vēlreiz!"
+msgstr "Nav pieejams piemērots datu nesējs - lūdzu izdzēsiet kādu imidžu vai pieslēdziet datu nesēju ar pietiekamu daudzumu brīvas vietas un mēģiniet vēlreiz!"
 
 msgid "Could not load medium! No disc inserted?"
 msgstr "Nevar ielādēt datu nesēju! Disks nav ievietots?"
@@ -2433,9 +2424,8 @@ msgstr "Media failu atrašanās vieta pēc noklusējuma"
 msgid "Default settings"
 msgstr "Noklusējuma iestatījumi"
 
-#, fuzzy
 msgid "Define the location of the EPG Cache file."
-msgstr "Konfigurēt ekrāna proporcijas."
+msgstr "Norādiet EPG kešatmiņas faila atrašanās vietu."
 
 msgid "Delay after change voltage before switch command"
 msgstr "Aizture pēc sprieguma izamiņas līdz komutatora komandai"
@@ -2522,10 +2512,10 @@ msgid "Delete saved playlist"
 msgstr "Dzēst saglabāto repertuāru"
 
 msgid "Delete the character to the left of text buffer cursor"
-msgstr ""
+msgstr "Dzēst burtu pa kreisi"
 
 msgid "Delete the character under the text buffer cursor"
-msgstr ""
+msgstr "Dzēst burtu"
 
 msgid "Delete timer"
 msgstr "Dzēst taimeri"
@@ -3537,6 +3527,9 @@ msgstr "Uzstādīt"
 msgid "Flash image"
 msgstr "Uzstādīt imidžu"
 
+msgid "Flashing Image"
+msgstr "Uzstāda imidžu"
+
 msgid "Flashing image succesfull"
 msgstr "Imidžs ir veiksmīgi uzstādīts"
 
@@ -3781,7 +3774,7 @@ msgid "Greek"
 msgstr "Grieķu"
 
 msgid "Greek (Modern)"
-msgstr ""
+msgstr "Grieķu (Modernais)"
 
 msgid "Green"
 msgstr "Zaļā"
@@ -3859,7 +3852,7 @@ msgid "HDR10 support"
 msgstr "HDR10 atbalsts"
 
 msgid "HELP"
-msgstr ""
+msgstr "Palīdzība"
 
 msgid "HLG"
 msgstr "HLG"
@@ -3905,6 +3898,9 @@ msgstr "Palīdzēs ietstīt jūsu antenu"
 
 msgid "Hidden network"
 msgstr "Neredzams tīkls"
+
+msgid "Hide"
+msgstr "Slēpt"
 
 msgid "Hide channel list in radio mode"
 msgstr "Slēpt kanālu sarakstu radio režīmā"
@@ -4000,10 +3996,10 @@ msgid "IDLE"
 msgstr "NEIZMANTOTS"
 
 msgid "INFO"
-msgstr ""
+msgstr "Info"
 
 msgid "INS"
-msgstr ""
+msgstr "INS"
 
 msgid "IP address"
 msgstr "IP adrese"
@@ -4219,12 +4215,6 @@ msgstr "Ievades ierīces"
 
 msgid "Install"
 msgstr "Instalēt"
-
-msgid "Install a new image with a USB stick"
-msgstr "Instalēt jaunu imidžu no USB zibatmiņas"
-
-msgid "Install a new image with your web browser"
-msgstr "Instalēt jaunu imidžu no tīmekļa pārlūka"
 
 msgid "Install channel list"
 msgstr "Instalēt kanālu srakstu"
@@ -4597,7 +4587,7 @@ msgid "Location"
 msgstr "Atrašanās vieta"
 
 msgid "Location EPG Cache file"
-msgstr ""
+msgstr "EPG kešatmiņas fails"
 
 msgid "Location for instant recordings"
 msgstr "Ierakstu atrašanās vieta"
@@ -4627,7 +4617,7 @@ msgid "Loop through from"
 msgstr "Loop cauri no"
 
 msgid "Lower case"
-msgstr ""
+msgstr "Mazie burti"
 
 msgid "Luxembourg"
 msgstr "Luksemburga"
@@ -4868,28 +4858,28 @@ msgid "Move east"
 msgstr "Griezt uz austrumiem"
 
 msgid "Move the text buffer cursor left"
-msgstr ""
+msgstr "Pārvietot kursoru pa kreisi"
 
 msgid "Move the text buffer cursor right"
-msgstr ""
+msgstr "Pārvietot kursoru pa labi"
 
 msgid "Move the text buffer cursor to the first character"
-msgstr ""
+msgstr "Pārvietot kursoru uz pirmo burtu"
 
 msgid "Move the text buffer cursor to the last character"
-msgstr ""
+msgstr "Pārvietot kursoru uz pēdējo burtu"
 
 msgid "Move the virtual keyboard cursor down"
-msgstr ""
+msgstr "Pārvietot kursoru uz leju"
 
 msgid "Move the virtual keyboard cursor left"
-msgstr ""
+msgstr "Pārvietot kursoru pa kreisi"
 
 msgid "Move the virtual keyboard cursor right"
-msgstr ""
+msgstr "Pārvietot kursoru pa labi"
 
 msgid "Move the virtual keyboard cursor up"
-msgstr ""
+msgstr "Pārvietot kursoru uz augšu"
 
 msgid "Move to position X"
 msgstr "Griezt uz pozīciju X"
@@ -5129,9 +5119,6 @@ msgstr "Nav atrasts vai inicializēts cietais disks!"
 msgid "No age block"
 msgstr "Nebloķēt pēc vecuma"
 
-msgid "No backup needed"
-msgstr "Dublējumkopija nav neieciešama"
-
 msgid ""
 "No data on transponder!\n"
 "(Timeout reading PAT)"
@@ -5263,14 +5250,8 @@ msgstr "Nē, bet pārstartēt no sākuma"
 msgid "No, do not flash image"
 msgstr "Nē, neuzstādīt imidžu"
 
-msgid "No, do nothing."
-msgstr "Nē, nedarīt neko"
-
 msgid "No, except Wakeup timer"
 msgstr "Lietojot pamodināšanas taimeri"
-
-msgid "No, just start my receiver"
-msgstr "Nē, tikai startēt uztvērēju"
 
 msgid "No, never"
 msgstr "Nē, nekad"
@@ -5352,13 +5333,10 @@ msgid "Number of repeating text on display."
 msgstr "Atkārtojamā teksta skaits displejā."
 
 msgid "Number or SMS style data entry"
-msgstr ""
+msgstr "SMS stila datu ievades numurs"
 
 msgid "OK"
 msgstr "Labi"
-
-msgid "OK, guide me through the upgrade process"
-msgstr "Labi, pavadi mani atjaunināšanas procesā"
 
 msgid "ONID"
 msgstr "ONID"
@@ -5376,7 +5354,7 @@ msgid "OSD transparency"
 msgstr "OSD caurspīdīgums"
 
 msgid "OVR"
-msgstr ""
+msgstr "OVR"
 
 msgid "Off"
 msgstr "Izslēgts"
@@ -5666,6 +5644,9 @@ msgstr ""
 "Lūdzu konfigurējiet vai pārbaudiet DNS aizpildot nepieciešamās vērtības.\n"
 "Kad esat gatavs nospiediet OK, lai turpinātu."
 
+msgid "Please configure the fallback tuner setup?"
+msgstr "Iestatiet attālināto uztvērēju"
+
 msgid ""
 "Please configure your internet connection by filling out the required values.\n"
 "When you are ready press OK to continue."
@@ -5801,6 +5782,9 @@ msgstr "Lūdzu iestatiet uztvērēju Q"
 
 msgid "Please set up tuner R"
 msgstr "Lūdzu iestatiet uztvērēju R"
+
+msgid "Please setup the following basic configs!"
+msgstr "Lūdzu iestatiet pamata iestatījumus!"
 
 msgid ""
 "Please use direction keys to move the PiP window.\n"
@@ -6199,13 +6183,16 @@ msgid "Really exit the subservices quickzap?"
 msgstr "Vai tiešām iziet no papildkanālu ātrās pārslēgšanas režīma?"
 
 msgid "Really reboot now?"
-msgstr "Vai tiešām pārstartēt tagad?"
+msgstr "Vai tiešām pārstartēt?"
+
+msgid "Really restart in debug mode now?"
+msgstr "Vai tiešām pārstartēt testa režīmā?"
 
 msgid "Really restart now?"
-msgstr "Vai tiešām pārstartēt tagad?"
+msgstr "Vai tiešām pārstartēt?"
 
 msgid "Really shutdown now?"
-msgstr "Vai tiešām izslēgt tagad?"
+msgstr "Vai tiešām izslēgt?"
 
 #, python-format
 msgid "Really store at index %2d for current position?"
@@ -6472,6 +6459,9 @@ msgstr "Pārstartēt karšu serveri"
 
 msgid "Restart enigma"
 msgstr "Pārstartēt enigmu"
+
+msgid "Restart enigma in debug mode"
+msgstr "Pārstartēt enigmu testa režīmā"
 
 msgid "Restart network"
 msgstr "Pārstartēt tīklu"
@@ -7047,7 +7037,7 @@ msgid "Select the Unicable channel to be assigned to this tuner. This is a uniqu
 msgstr "Izvēlieties Unicable kanālu, kas jāpiešķir šim uztvērējam. Šī ir unikāla vērtība. Pārliecinieties ka nevienai citai ierīcei, kas savienota ar šo Unicable sistēmu, nav piešķirts tas pats kanās."
 
 msgid "Select the character or action under the virtual keyboard cursor"
-msgstr ""
+msgstr "Izvēlieties darbību virtuālās tastatūras kursoram"
 
 msgid "Select the format of your Unicable device. Choices are 'SCR Unicable' (Unicable I format), or 'SCR JESS' (Unicable II format)."
 msgstr "Izvēlieties Unicable ierīces formātu. Izvēles ir 'SCR Unicable' (Unicable I formāts) vai 'SCR JESS' (Unicable II formāts)."
@@ -7095,10 +7085,10 @@ msgid "Select the type of Unicable device you are using."
 msgstr "Izvēlieties Unicable ierīces veidu, kuru izmantojat."
 
 msgid "Select the virtual keyboard locale from a menu"
-msgstr ""
+msgstr "Izvēlieties virtuālās tastatūras lokalizāciju"
 
 msgid "Select the virtual keyboard shifted character set"
-msgstr ""
+msgstr "Izvēlieties virtuālās tastatūras speciālo izkārtojumu"
 
 msgid "Select upgrade source"
 msgstr "Izvēlieties atjaunināšanas avotu"
@@ -7354,6 +7344,9 @@ msgstr "Skripti"
 
 msgid "Short filenames"
 msgstr "Īsie failu nosaukumi"
+
+msgid "Show"
+msgstr "Rādīt"
 
 msgid "Show Audioselection"
 msgstr "Rādīt audio izvēlni"
@@ -7739,9 +7732,6 @@ msgstr "Programmatūras pārvaldīšana"
 
 msgid "Software manager setup"
 msgstr "Programmatūras pārvaldīšanas iestatījumi"
-
-msgid "Software restore"
-msgstr "Programmatūras atjaunošana"
 
 msgid "Software update"
 msgstr "Programmatūras atjaunināšana"
@@ -8338,9 +8328,6 @@ msgstr "PIN kods nomainīts veiksmīgi."
 msgid "The PIN codes you entered are different."
 msgstr "Ievadītie PIN kodi atšķiras."
 
-msgid "The backup failed. Please choose a different backup location."
-msgstr "Dublējumkopēšana neizdevās. Lūdzu izvēlieties citu vietu dublējumkopijai. "
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -8452,6 +8439,9 @@ msgstr ""
 "Lietotāja interfeiss tiek pārstartēts\n"
 "dēļ kļūdas failā mytest.py"
 
+msgid "The user interface of your receiver is restarting in debug mode"
+msgstr "Uztvērēja lietotāja interfeiss tiek pārstartēts testa režīmā"
+
 msgid ""
 "The wireless LAN plugin is not installed!\n"
 "Please install it and choose what you want to do next."
@@ -8465,12 +8455,6 @@ msgid ""
 msgstr ""
 "Bezvadu tīkla spraudnis nav instalēts!\n"
 "Lūdzu uzstādiet to."
-
-msgid "The wizard can backup your current settings. Do you want to do a backup now?"
-msgstr "Vednis var izveidot pašreizējo iestatījumu dublējumkopiju. Vai vēlaties veidot dublējumkopiju tulīt?"
-
-msgid "The wizard is finished now."
-msgstr "Vednis ir pabeidzis darbu."
 
 msgid "There are at least "
 msgstr "Vismaz "
@@ -8833,7 +8817,7 @@ msgid "Toggle infoBar"
 msgstr "Infojosla"
 
 msgid "Toggle new text inserts before or overwrites existing text"
-msgstr ""
+msgstr "Pārvieto uz jaunu tekstu"
 
 msgid "Toggle show/hide"
 msgstr "Pārslēdz parādīt/slēpt"
@@ -9094,6 +9078,9 @@ msgstr "Atmontēt"
 msgid "Unsupported"
 msgstr "Neatbalstāms"
 
+msgid "Unzipping Image"
+msgstr "Atarhivē imidžu"
+
 msgid "Update"
 msgstr "Atjaunināt"
 
@@ -9135,7 +9122,7 @@ msgid "Upgrading"
 msgstr "Atjauno"
 
 msgid "Upper case"
-msgstr ""
+msgstr "Lieli burti"
 
 msgid "Uruguay"
 msgstr "Urugvaja"
@@ -9541,9 +9528,6 @@ msgstr ""
 "\n"
 "Tad ejiet uz beigām, spiediet OK, izvēlieties 'griezuma beigas'. Tas arī viss."
 
-msgid "Welcome to the image upgrade wizard. The wizard will assist you in upgrading the firmware of your receiver by providing a backup facility for your current settings and a short explanation of how to upgrade your firmware."
-msgstr "Laipni lūdzam imidža atjaunināšanas vednī. Vednis palīdzēs jums atjaunot uztvērēja programmatūru nodrošinot dublējumkopiju pašreizējiem iestatījumiem, kā arī īsumā izskaidros kā veikt programmatūras atjaunošanu."
-
 msgid ""
 "Welcome.\n"
 "\n"
@@ -9784,9 +9768,6 @@ msgstr "Ja attēla malu attiecība ir 16:9 izvēlieties, kā palielināt/stiept 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Ja attēla malu attiecība ir 4:3 izvēlieties, kā palielināt/stiept attēlu."
 
-msgid "Where do you want to backup your settings?"
-msgstr "Kur Jūs vēlaties veidot savu iestatījumu dublējumkopiju?"
-
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Kur saglabāt pagaidu laika aiztures ierakstus?"
 
@@ -9816,6 +9797,9 @@ msgstr "Ar uznirstošo logu"
 
 msgid "Without popup"
 msgstr "Bez uznirstošā loga"
+
+msgid "Wizard setup"
+msgstr "Iestatījumi"
 
 msgid "Wizard to arrange the overscan"
 msgstr "Veidnis lai pārbaudītu overscan"
@@ -9884,9 +9868,6 @@ msgstr "Jā vienmēr"
 msgid "Yes, and delete this movie"
 msgstr "Jā, un dzēst šo filmu"
 
-msgid "Yes, backup my settings!"
-msgstr "Jā, veidot iestatījumu dublējumkopiju!"
-
 msgid "Yes, delete this movie and return to movie list"
 msgstr "Jā, dzēst šo filmu un atgriesties media sarakstā"
 
@@ -9895,12 +9876,6 @@ msgstr "Jā, tikai no dziļās gaidstāves"
 
 msgid "Yes, only from standby"
 msgstr "Jā, tikai no gaidstāves"
-
-msgid "Yes, perform a shutdown now."
-msgstr "Jā, izslēgt tagad."
-
-msgid "Yes, restore the settings now"
-msgstr "Jā, atjaunot iestatījumus tagad"
 
 msgid "Yes, returning to movie list"
 msgstr "Jā, atgriezties uz media sarakstu"
@@ -9999,12 +9974,6 @@ msgstr ""
 msgid "You didn't select a channel to record from."
 msgstr "Jūs nenorādījāt ierakstāmo kanālu."
 
-msgid "You have chosen to backup your settings. Please press OK to start the backup now."
-msgstr "Jūs izvēlējāties veidot iestatījumu dublējumkopiju. Lūdzu spiediet OK, lai sāktu kopijas veidošanu."
-
-msgid "You have chosen to restore your settings. Enigma2 will restart after restore. Please press OK to start the restore now."
-msgstr "Jūs izvēlējāties atjaunot jūsu iestatījumus. Enigma2 pēc atjaunošanas pārstartēsies. Lūdzu nospiediet OK, lai sāktu atjaunošanu."
-
 #, python-format
 msgid "You have to wait %s!"
 msgstr "Jums jāuzgaida %s!"
@@ -10012,16 +9981,6 @@ msgstr "Jums jāuzgaida %s!"
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Pārslēgsies uz kanālu %s (%s - '%s')!\n"
-
-msgid ""
-"You need a PC connected to your receiver. If you need further instructions, please visit the website https://openpli.org\n"
-"Your receiver will now be halted. After you have performed the update instructions from the website, your new firmware will ask you to restore your settings."
-msgstr ""
-"Jūsu datoram jābūt savienotam ar uztvērēju. Ja jums nepieciešama papildus informācija, lūdzu apmeklējiet http://openpli.org/.\n"
-"Jūsu uztvērējs tagad tiks apturēts. Pēc tam, kad būs veikta atjaunināšana, jūsu jaunā programmatūra piedāvās jums atjaunot iestatījumus."
-
-msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
-msgstr "Dublējumkopija izveidota. Tagad izskaidrosim turpmāko atjaunināšanas procesu. "
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Jūsu kolekcija pārsniedz diska lielumu, jums ir nepieciešams tukšs dubultslāņa DVD!"
@@ -10090,9 +10049,6 @@ msgstr "Jūsu uztvērējs pārstartējas"
 
 msgid "Your receiver is shutting down"
 msgstr "Jūsu uztvērējs izslēdzas"
-
-msgid "Your receiver is shutting down. Please stand by..."
-msgstr "Jūsu uztvērējs izslēdzas. Lūdzu uzgaidiet..."
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 msgstr "Jūsu uztvērējs nav lietojams. Pirms uztvērēja pārstartēšanas, lai saņemtu palīdzību, lūdzu izlasiet rokasgrāmatu."
@@ -10169,6 +10125,9 @@ msgstr "Pārslēdz uz taimera kanālu %s!"
 
 msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
 msgstr "Zgemma H.S/H.2S/H.2H/H5/H7"
+
+msgid "Zgemma H9"
+msgstr "Zgemma H9"
 
 msgid "Zgemma Star S/2S/H1/H2"
 msgstr "Zgemma Star S/2S/H1/H2"
@@ -10636,9 +10595,6 @@ msgstr "augstums"
 msgid "help..."
 msgstr "palīdzība..."
 
-msgid "hide"
-msgstr "Slēpt"
-
 msgid "horizontal"
 msgstr "horizontālā"
 
@@ -11049,9 +11005,6 @@ msgstr "kanāls nedarbojas"
 
 msgid "set as startup service"
 msgstr "iestatīt kā starta kanālu"
-
-msgid "show"
-msgstr "Rādīt"
 
 msgid "show DVD main menu"
 msgstr "rādīt DVD galveno izvēlni"

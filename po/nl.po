@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-21 11:16+0200\n"
+"POT-Creation-Date: 2018-10-27 22:07+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: PLiteam <translators@openpli.org>\n"
@@ -68,6 +68,13 @@ msgid ""
 msgstr ""
 "\n"
 "Druk op de Ok toets om door te gaan."
+
+msgid ""
+"\n"
+"Press OK or Exit to abort!"
+msgstr ""
+"\n"
+"Druk Ok of Exit om af te sluiten!"
 
 msgid ""
 "\n"
@@ -373,6 +380,9 @@ msgid ""
 "Press ok for multiboot selection\n"
 "Press exit to close"
 msgstr ""
+"%s\n"
+"Druk ok om multiboot te kiezen\n"
+"Druk exit om af te sluiten"
 
 #, python-format
 msgid "%s %d.%d"
@@ -1194,6 +1204,16 @@ msgstr "Speel blu-ray bestand automatisch af"
 
 msgid "Auto scart switching"
 msgstr "Automatisch scart schakelen"
+
+#, python-format
+msgid "Autoinstalling %s"
+msgstr "(Auto)Installeert %s"
+
+msgid "Autoinstalling Completed"
+msgstr "(Auto)installatie afgerond "
+
+msgid "Autoinstalling please wait for packages being updated"
+msgstr "Autoinstallatie, wacht totdat alle packages ge-update zijn"
 
 msgid "Automatic"
 msgstr "Automatisch"
@@ -3685,9 +3705,8 @@ msgstr "Flash de image"
 msgid "Flash image"
 msgstr "Image flashen"
 
-#, fuzzy
 msgid "Flashing Image"
-msgstr "Flash de image"
+msgstr "De image wordt geflasht"
 
 msgid "Flashing image succesfull"
 msgstr "Het flashen van de image is gelukt."
@@ -3777,7 +3796,7 @@ msgstr "Volledig beeld"
 msgid "Full transparency"
 msgstr "Volledige transparantie"
 
-msgid "Fulview resulution"
+msgid "Full view resolution"
 msgstr "Resolutie van de volledige beeldgrootte"
 
 msgid "Function of OK button"
@@ -4059,7 +4078,7 @@ msgid "Hidden network"
 msgstr "Verborgen netwerk"
 
 msgid "Hide"
-msgstr ""
+msgstr "Verberg"
 
 msgid "Hide channel list in radio mode"
 msgstr "Verberg de zenderlijst tijdens de radiomodus"
@@ -5817,9 +5836,8 @@ msgstr ""
 "Configureer of controleer uw nameservers door de verplichte velden in te vullen.\n"
 "Druk op Ok om verder te gaan."
 
-#, fuzzy
 msgid "Please configure the fallback tuner setup?"
-msgstr "Instellen van de Fallback (externe) tuner"
+msgstr "Configureer aub de installatie van de Fallback tuner"
 
 msgid ""
 "Please configure your internet connection by filling out the required values.\n"
@@ -5958,7 +5976,7 @@ msgid "Please set up tuner R"
 msgstr "Stel aub Tuner R in"
 
 msgid "Please setup the following basic configs!"
-msgstr ""
+msgstr "Configureer aub de volgende basisinstellingen!"
 
 msgid ""
 "Please use direction keys to move the PiP window.\n"
@@ -6359,9 +6377,8 @@ msgstr "Subzenders snelzap verlaten?"
 msgid "Really reboot now?"
 msgstr "Nu herstarten?"
 
-#, fuzzy
 msgid "Really restart in debug mode now?"
-msgstr "Nu herstarten?"
+msgstr "Wilt u werkelijk in debug modus opstarten?"
 
 msgid "Really restart now?"
 msgstr "Nu herstarten?"
@@ -6637,9 +6654,8 @@ msgstr "Herstart de kaartserver"
 msgid "Restart enigma"
 msgstr "Herstart Enigma2"
 
-#, fuzzy
 msgid "Restart enigma in debug mode"
-msgstr "Herstart Enigma2"
+msgstr "Herstart enigma in debug modus"
 
 msgid "Restart network"
 msgstr "Netwerk herstarten"
@@ -6684,10 +6700,10 @@ msgstr "Hervat positie op %s"
 msgid "Resuming playback"
 msgstr "Afspelen wordt hervat"
 
-msgid "Retreiving image list - Please wait..."
+msgid "Retrieving image list - Please wait..."
 msgstr "De gegevens worden opgehaald. Een ogenblik geduld aub..."
 
-msgid "Retreiving image slots - Please wait..."
+msgid "Retrieving image slots - Please wait..."
 msgstr "De slotinfo wordt opgehaald. Een ogenblik geduld aub..."
 
 msgid "Return to movie list"
@@ -7528,9 +7544,8 @@ msgstr "Shellscript"
 msgid "Short filenames"
 msgstr "Korte bestandsnamen"
 
-#, fuzzy
 msgid "Show"
-msgstr "Toon de PIP"
+msgstr "Toon"
 
 msgid "Show Audioselection"
 msgstr "Toon de audioselectie"
@@ -8419,7 +8434,7 @@ msgstr "Systeem & Modulatie"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "Deze vertaling wordt u aangeboden door het OpenPLi team.\n"
-"De huidige vertaling is van 1 september 2018.\n"
+"De huidige vertaling is van 28 oktober 2018.\n"
 "Voor aanvullingen en opmerkingen stuurt u een mail naar\n"
 "translators@openpli.org."
 
@@ -8635,9 +8650,8 @@ msgstr ""
 "De gebruikersomgeving van uw ontvanger wordt opnieuw opgestart\n"
 "als gevolg van een geconstateerd probleem in mytest.py"
 
-#, fuzzy
 msgid "The user interface of your receiver is restarting in debug mode"
-msgstr "De gebruikersomgeving van uw ontvanger wordt herstart."
+msgstr "De gebruikersomgeving van uw ontvanger wordt in debug modus herstart"
 
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -9258,6 +9272,18 @@ msgstr "Ongeldige toets"
 msgid "Unhide parental control services"
 msgstr "Maak het kinderslot zichtbaar"
 
+#, fuzzy
+msgid "Unicable delay after change voltage before switch command"
+msgstr "Schakel-commando vertraging nadat de spanning gewijzigd is."
+
+#, fuzzy
+msgid "Unicable delay after enable voltage before switch command"
+msgstr "De Unicable-vertraging na 'power on' maar voor het schakelcommando"
+
+#, fuzzy
+msgid "Unicable delay after last diseqc command"
+msgstr "De Unicable-vertraging na het laatste diseqc commando"
+
 msgid "Uninstall"
 msgstr "De-installeer"
 
@@ -9291,9 +9317,8 @@ msgstr "Ontkoppel"
 msgid "Unsupported"
 msgstr "Niet ondersteund"
 
-#, fuzzy
 msgid "Unzipping Image"
-msgstr "De image wordt gedownload"
+msgstr "De image wordt uitgepakt"
 
 msgid "Update"
 msgstr "Update"
@@ -10040,9 +10065,8 @@ msgstr "Met popup"
 msgid "Without popup"
 msgstr "Zonder popup"
 
-#, fuzzy
 msgid "Wizard setup"
-msgstr "Video instellingen"
+msgstr "Installatiewizard"
 
 msgid "Wizard to arrange the overscan"
 msgstr "Wizard om de overscan in te stellen"
@@ -10371,7 +10395,7 @@ msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
 msgstr "Zgemma H.S/H.2S/H.2H/H5/H7"
 
 msgid "Zgemma H9"
-msgstr ""
+msgstr "Zgemma H9"
 
 msgid "Zgemma Star S/2S/H1/H2"
 msgstr "Zgemma Star S/2S/H1/H2"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-21 11:16+0200\n"
-"PO-Revision-Date: 2018-10-21 19:02+0300\n"
+"POT-Creation-Date: 2018-10-27 22:08+0200\n"
+"PO-Revision-Date: 2018-10-29 20:13+0200\n"
 "Last-Translator: Audronis Grincevičius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -70,6 +70,13 @@ msgid ""
 msgstr ""
 "\n"
 "Spauskite OK savo valdymo pulte ir tęskite."
+
+msgid ""
+"\n"
+"Press OK or Exit to abort!"
+msgstr ""
+"\n"
+"Spauskite OK arba Exit, kad nutraukti!"
 
 msgid ""
 "\n"
@@ -1254,6 +1261,16 @@ msgstr "Bluray failo automatinis paleidimas"
 
 msgid "Auto scart switching"
 msgstr "Automatinis SCART perjungimas"
+
+#, python-format
+msgid "Autoinstalling %s"
+msgstr "Automatiškai diegiama %s"
+
+msgid "Autoinstalling Completed"
+msgstr "Automatinis diegimas baigtas"
+
+msgid "Autoinstalling please wait for packages being updated"
+msgstr "Automatinis įdiegimas, palaukite kol naujinami paketai"
 
 msgid "Automatic"
 msgstr "Automatinis"
@@ -3616,7 +3633,7 @@ msgid "FAILED"
 msgstr "NEPAVYKO"
 
 msgid "FBC SCR (Unicable/JESS)"
-msgstr "FBC SCR (laido arba JESS)"
+msgstr "FBC SCR (Unicable/JESS)"
 
 msgid "FBC automatic"
 msgstr "FBC automatinis"
@@ -3882,7 +3899,7 @@ msgstr "Visas ekranas"
 msgid "Full transparency"
 msgstr "Visiškai permatomas"
 
-msgid "Fulview resulution"
+msgid "Full view resolution"
 msgstr "Pilno vaizdo rezoliucija"
 
 msgid "Function of OK button"
@@ -6937,11 +6954,11 @@ msgstr "Tęsti nuo %s pozicijos"
 msgid "Resuming playback"
 msgstr "Tęsti žiūrėjimą"
 
-msgid "Retreiving image list - Please wait..."
-msgstr "Gaunamas atvaizdų sąrašas - laukite..."
+msgid "Retrieving image list - Please wait..."
+msgstr "Gaunamas atvaizdų sąrašas - prašome laukti..."
 
-msgid "Retreiving image slots - Please wait..."
-msgstr "Gaunami atvaizdo siužetai - palaukite..."
+msgid "Retrieving image slots - Please wait..."
+msgstr "Gaunami atvaizdo siužetai - prašome laukti..."
 
 msgid "Return to movie list"
 msgstr "Grįžti į filmų sąrašą"
@@ -7013,13 +7030,13 @@ msgid "SCPC optimized search range"
 msgstr "SCPC optimizuotas paieškos diapazonas"
 
 msgid "SCR (Unicable/JESS)"
-msgstr "FBC SCR (laido arba JESS)"
+msgstr "SCR (Unicable/JESS)"
 
 msgid "SCR JESS"
 msgstr "SCR JESS"
 
 msgid "SCR Unicable"
-msgstr "Kelių kabelių SCR"
+msgstr "SCR Unicable"
 
 msgid "SDR"
 msgstr "SDR"
@@ -9783,6 +9800,15 @@ msgstr "Nepalaikomas mygtukas"
 msgid "Unhide parental control services"
 msgstr "Nebeslėpti tėvų kontrolės kanalų"
 
+msgid "Unicable delay after change voltage before switch command"
+msgstr "Unicable delsa po įtampos pasikeitimo prieš perjungiant komandą"
+
+msgid "Unicable delay after enable voltage before switch command"
+msgstr "Unicable delsa po įtampos įjungimo prieš perjungiant komandą"
+
+msgid "Unicable delay after last diseqc command"
+msgstr "Unicable delsa po paskutinės diseqc komandos"
+
 msgid "Uninstall"
 msgstr "Išinstaliuoti"
 
@@ -12414,13 +12440,6 @@ msgstr "®"
 
 #~ msgid "show"
 #~ msgstr "rodyti"
-
-#~ msgid ""
-#~ "%s\n"
-#~ "Press exit to close"
-#~ msgstr ""
-#~ "%s\n"
-#~ "Spauskite exit, kad užverti"
 
 #~ msgid "AAC transcoding"
 #~ msgstr "AAC perkodavimas"

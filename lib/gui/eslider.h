@@ -29,15 +29,9 @@ private:
 	{
 		evtChangedSlider = evtUserWidget
 	};
-<<<<<<< HEAD
-	bool m_have_border_color;
-	int m_min, m_max, m_value, m_start, m_orientation, m_orientation_swapped, m_border_width;
-	bool m_have_foreground_color;
-=======
 	bool m_have_border_color, m_have_foreground_color;
 	bool m_have_sliderborder_color, m_have_sliderforeground_color, m_have_sliderborder_width;
 	int m_min, m_max, m_value, m_start, m_orientation, m_orientation_swapped, m_border_width, m_sliderborder_width;
->>>>>>> 8cde20e885e3196ec4a09ee0ad9243525bb8386a
 	ePtr<gPixmap> m_pixmap, m_backgroundpixmap;
 
 	gRegion m_currently_filled;

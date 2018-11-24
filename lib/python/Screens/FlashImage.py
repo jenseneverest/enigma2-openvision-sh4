@@ -33,6 +33,7 @@ class SelectImage(Screen):
 		self["key_green"] = StaticText()
 		self["key_yellow"] = StaticText()
 		self["key_blue"] = StaticText()
+		self["description"] = StaticText()
 		self["list"] = ChoiceList(list=[ChoiceEntryComponent('',((_("Retrieving image list - Please wait...")), "Waiter"))])
 
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions", "DirectionActions", "KeyboardInputActions", "MenuActions"],
@@ -63,10 +64,9 @@ class SelectImage(Screen):
 			for file in [x for x in files if os.path.splitext(x)[1] == ".zip" and model in x]:
 				try:
 					if checkimagefiles([x.split(os.sep)[-1] for x in zipfile.ZipFile(file).namelist()]):
-						medium = path.split(os.sep)[-1]
-						if medium not in self.imagesList:
-							self.imagesList[medium] = {}
-						self.imagesList[medium][file] = { 'link': file, 'name': file.split(os.sep)[-1]}
+						if "Downloaded Images" not in self.imagesList:
+							self.imagesList["Downloaded Images"] = {}
+						self.imagesList["Downloaded Images"][file] = {'link': file, 'name': file.split(os.sep)[-1]}
 				except:
 					pass
 
@@ -145,7 +145,12 @@ class SelectImage(Screen):
 		if currentSelected[0][1] == "Waiter":
 			self["key_green"].setText("")
 		else:
-			self["key_green"].setText((_("Compress") if currentSelected[0][0] in self.expanded else _("Expand")) if currentSelected[0][1] == "Expander" else _("Flash Image"))
+			if currentSelected[0][1] == "Expander":
+				self["key_green"].setText(_("Compress") if currentSelected[0][0] in self.expanded else _("Expand"))
+				self["description"].setText("")
+			else:
+				self["key_green"].setText(_("Flash Image"))
+				self["description"].setText(currentSelected[0][1])
 
 	def keyLeft(self):
 		self["list"].instance.moveSelection(self["list"].instance.pageUp)

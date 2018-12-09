@@ -1083,7 +1083,7 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 	{
 		ret = (snr * 240) >> 8;
 	}
-	else if (strstr(m_description, "BCM4506") || strstr(m_description, "BCM4505") || strstr(m_description, "BCM45208") || strstr(m_description, "BCM45308"))
+	else if (strstr(m_description, "BCM4506") || strstr(m_description, "BCM4505") || strstr(m_description, "BCM45208") || strstr(m_description, "BCM45308") || strstr(m_description, "BCM4506 (internal)") || strstr(m_description, "BCM73625 (G3)"))
 	{
 		ret = (snr * 100) >> 8;
 	}
@@ -1117,9 +1117,13 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 	{
 		ret = (int)((((double(snr) / (65535.0 / 100.0)) * 0.28) - 10.0) * 100);
 	}
-	else if (!strcmp(m_description, "DVB-S2 NIM(45208 FBC)"))
+	else if (!strcmp(m_description, "DVB-S2 NIM(45208 FBC)") || !strcmp(m_description, "DVB-S2 NIM(45308 FBC)"))
 	{
 		ret = (int)((((double(snr) / (65535.0 / 100.0)) * 0.1950) - 1.0000) * 100);
+	}
+	else if (!strcmp(m_description, "DVB-C NIM(3128 FBC)"))
+	{
+		ret = (int)(snr / 17);
 	}
 	else if (!strcmp(m_description, "Genpix"))
 	{
@@ -1207,6 +1211,11 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 				sat_max = 1550;
 				break;
 		}
+	}
+	else if (!strncmp(m_description, "Si2166D", 7))
+	{
+		ret = snr;
+		sat_max = 1620;
 	}
 	else if (!strncmp(m_description, "Si216", 5)) // New models with SI tuners
 	{

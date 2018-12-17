@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-11 15:26+0100\n"
+"POT-Creation-Date: 2018-12-16 20:38+0100\n"
 "PO-Revision-Date: 2018-10-22T21:44:30+02:00\n"
 "Last-Translator: daddelfalk <OpenPLi>\n"
 "Language-Team: Sfteam  angelo2807@hotmail.com\n"
@@ -412,6 +412,10 @@ msgid "%s%d min"
 msgstr "%s%d min"
 
 #, python-format
+msgid "%s%d%s"
+msgstr ""
+
+#, python-format
 msgid "%s/%s: %s"
 msgstr "%s/%s: %s"
 
@@ -725,6 +729,10 @@ msgstr "ACQUIRING TSID/ONID"
 msgid "AGC:"
 msgstr "AGC:"
 
+#, fuzzy
+msgid "ASS File"
+msgstr "ASS-Datei"
+
 msgid "ASS file"
 msgstr "ASS-Datei"
 
@@ -948,10 +956,10 @@ msgid "Also import from the extension menu"
 msgstr "Auch aus dem Erweiterungsmenü importieren"
 
 msgid "Also import when box is leaving standby"
-msgstr "Auch imporieren, wenn die Box die Bereitschaft verlässt"
+msgstr "Auch imporieren, wenn die Box aus dem Standby geht"
 
 msgid "Also on standby"
-msgstr "Auch in Bereitschaft"
+msgstr "Auch in Standby"
 
 msgid "Alternative"
 msgstr "Alternativen hinzufügen"
@@ -1126,6 +1134,13 @@ msgstr "Audio / Video"
 msgid "Audio PID"
 msgstr "Audio PID"
 
+#, python-format
+msgid "Audio PID%s, codec & lang"
+msgstr ""
+
+msgid "Audio PID, codec & lang"
+msgstr ""
+
 msgid "Audio auto volume level"
 msgstr "Audio-Auto-Lautstärkepegel"
 
@@ -1206,14 +1221,14 @@ msgstr "Automatische Scart-Umschaltung"
 
 #, fuzzy, python-format
 msgid "Autoinstalling %s"
-msgstr "Installiere"
+msgstr "Automatische Installation: %s"
 
 #, fuzzy
 msgid "Autoinstalling Completed"
-msgstr "Installation abgeschlossen"
+msgstr "Automatische Installation abgeschlossen"
 
 msgid "Autoinstalling please wait for packages being updated"
-msgstr ""
+msgstr "Automatische Installation, bitte warten bis alle Pakete geupdated sind"
 
 msgid "Automatic"
 msgstr "Automatisch"
@@ -1311,6 +1326,9 @@ msgstr "Bangladesh"
 
 msgid "Barbados"
 msgstr "Barbados"
+
+msgid "Basic PID info"
+msgstr ""
 
 msgid "Basque"
 msgstr "Baskisch"
@@ -1511,7 +1529,7 @@ msgid "Can be used for different fps between external subtitles and video."
 msgstr "Kann für unterschiedliche fps-Werte zwischen externen Untertiteln und dem Video verwendet werden."
 
 msgid "Can only find a network drive to store the backup this means after the flash the autorestore will not work. Alternativaly you can mount the network drive after the flash and perform a manufacurer reset to autorestore"
-msgstr ""
+msgstr "Für das Backup wurde nur eine Netzwerkfestplatte gefunden, daher ist ein automatischer Restore der Einstellungen nach dem Flash nicht möglich. Alternativ kann nach dem Flash die Netzwerkfestplatte erneut eingebunden und dann die Box auf Werkseinstellungen zurückgesetzt werden um Autorestore zu nutzen."
 
 msgid "Canada"
 msgstr "Kanada"
@@ -1532,7 +1550,7 @@ msgid "Cannot find any signal ..., aborting !"
 msgstr "Kein Signal erkannt …, Abbruch!"
 
 msgid "Cannot find images - please try later"
-msgstr "Bilder können nicht gefunden werden - bitte versuchen Sie es später"
+msgstr "Images können nicht gefunden werden - bitte versuchen Sie es später"
 
 msgid "Cannot move files on a different disk or system to the trash can"
 msgstr "Dateien auf einem anderen System können nicht in den Papierkorb verschoben werden!"
@@ -2170,7 +2188,7 @@ msgstr "Konstellation und FFT-Modus"
 
 #, fuzzy
 msgid "Consult your SCR device spec sheet for this information."
-msgstr "Weitere Informationen finden Sie in Ihrem Unicable-Gerätespezifikationsblatt."
+msgstr "Weitere Informationen finden Sie in Ihrem Unicable/SCR-Gerätespezifikationsblatt."
 
 msgid "Consult your motor's spec sheet for this information, or leave the default setting."
 msgstr "Konsultieren Sie das Datenblatt Ihres Motors für diese Information oder belassen Sie die Standardeinstellung."
@@ -2353,6 +2371,9 @@ msgstr "Doppelschicht DVD (DUAL LAYER)"
 
 msgid "DVB CI Delay"
 msgstr "DVB CI-Verzögerung"
+
+msgid "DVB Subtitles PID & lang"
+msgstr ""
 
 msgid "DVB driver version: "
 msgstr "DVB-Treiberversion:"
@@ -2943,6 +2964,10 @@ msgstr "El Salvador"
 msgid "Electronic Program Guide"
 msgstr "Elektronischer Programmführer"
 
+#, fuzzy
+msgid "Embedded"
+msgstr "integriert"
+
 msgid "Empty slot"
 msgstr "Leerer Slot"
 
@@ -2963,7 +2988,7 @@ msgstr "Aktiviere EIT EPG"
 
 #, fuzzy
 msgid "Enable HDMI-CEC"
-msgstr "Aktiviere EIT EPG"
+msgstr "Aktiviere HDMI-CEC"
 
 msgid "Enable MHW EPG"
 msgstr "Aktiviere MHW EPG"
@@ -3312,6 +3337,10 @@ msgstr "Sleeptimer 15 min verlängern"
 msgid "Extended"
 msgstr "Erweitert"
 
+#, fuzzy
+msgid "Extended PID info"
+msgstr "Erweitert"
+
 msgid "Extended Software"
 msgstr "Fortgeschrittene Software"
 
@@ -3544,18 +3573,18 @@ msgstr "Flash Bild"
 
 #, fuzzy
 msgid "Flashing Image"
-msgstr "Flash Bild"
+msgstr "Flash Image"
 
 msgid "Flashing image succesfull"
-msgstr "Blinkendes Bild erfolgreich"
+msgstr "Image Flash erfolgreich"
 
 #, python-format
 msgid ""
 "Flashing image was not succesfull\n"
 "%s"
 msgstr ""
-"Blinkendes Bild war nicht erfolgreich\n"
-"% s"
+"Image Flash war nicht erfolgreich\n"
+"%s"
 
 msgid "Following tasks will be done after you press OK!"
 msgstr "Folgendes wird ausgeführt, nachdem Sie OK gedrückt haben!"
@@ -3666,9 +3695,8 @@ msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"Das System muss neu gestartet werden,\n"
-"um den neuen Skin übernehmen zu können.\n"
-"Wollen Sie jetzt neu starten?"
+"Zur Übernahme des neuen Skins muss die Benutzerobfläche neu gestartet werden\n"
+"Wollen Sie die Benutzerobfläche neu starten?"
 
 msgid "Gabon"
 msgstr "Gabun"
@@ -5399,14 +5427,14 @@ msgid "On end of movie (as menu)"
 msgstr "Am Ende des Films (als Menü)"
 
 msgid "On valid ONIDs, ignore frequency sub network part"
-msgstr "Unterteilen Sie bei gültigen ONIDs den Frequenzunternetzwerkteil"
+msgstr "Ignoriere bei gültigen ONIDs den Frequenzunternetzwerkteil"
 
 msgid "One"
 msgstr "Eins"
 
 #, fuzzy
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
-msgstr "Ändern Sie diese Einstellung nur, wenn Sie ein Unicable-Gerät verwenden, das mit einem benutzerdefinierten Programmiergerät neu programmiert wurde. Weitere Informationen erhalten Sie von der Person, die das Gerät neu programmiert hat."
+msgstr "Ändern Sie diese Einstellung nur, wenn Sie ein Unicable/SCR-Gerät verwenden, das mit einem benutzerdefinierten Programmiergerät neu programmiert wurde. Weitere Informationen erhalten Sie von der Person, die das Gerät neu programmiert hat."
 
 msgid "Only extensions."
 msgstr "Nur Erweiterungen."
@@ -5415,10 +5443,10 @@ msgid "Only free scan"
 msgstr "Nur frei empfangbare"
 
 msgid "Only move the dish quickly after this hour."
-msgstr "Bewegen Sie das Geschirr erst nach dieser Stunde."
+msgstr "Bewegen Sie die Satellitenschüssel erst nach dieser Stunde."
 
 msgid "Only move the dish quickly before this hour."
-msgstr "Bewegen Sie das Geschirr erst kurz vor dieser Stunde."
+msgstr "Bewegen Sie die Satellitenschüssel erst kurz vor dieser Stunde."
 
 msgid "Only on startup"
 msgstr "Nur beim Start"
@@ -5448,13 +5476,17 @@ msgid "Orbital position"
 msgstr "Orbitale Position"
 
 msgid "Ordinary"
-msgstr "gewöhnliche"
+msgstr "Gewöhnlich"
 
 msgid "Original"
 msgstr "Original"
 
 msgid "Other"
 msgstr "Andere"
+
+#, fuzzy
+msgid "Other Subtitles & lang"
+msgstr "Untertitel Einstellungen"
 
 msgid "Output"
 msgstr "Ausgabe"
@@ -5482,6 +5514,10 @@ msgstr "PCR PID"
 
 msgid "PDC"
 msgstr "PDC "
+
+#, fuzzy
+msgid "PGS File"
+msgstr "PGS Datei"
 
 msgid "PGS file"
 msgstr "PGS Datei"
@@ -6532,10 +6568,10 @@ msgid "Resuming playback"
 msgstr "Setze Wiedergabe fort"
 
 msgid "Retrieving image list - Please wait..."
-msgstr "Bildliste abrufen - Bitte warten…"
+msgstr "Plugin-informationen abrufen. Bitte warten..."
 
 msgid "Retrieving image slots - Please wait..."
-msgstr "Abrufen von Bildslots - Bitte warten…"
+msgstr "Nach verfügbaren Updates suchen. Bitte warten..."
 
 msgid "Return to movie list"
 msgstr "Zurück zur Videoliste"
@@ -6630,8 +6666,16 @@ msgstr "SNR:"
 msgid "SPDIF"
 msgstr "SPDIF"
 
+#, fuzzy
+msgid "SRT File"
+msgstr "SRT Datei"
+
 msgid "SRT file"
 msgstr "SRT Datei"
+
+#, fuzzy
+msgid "SSA File"
+msgstr "SSA Datei"
 
 msgid "SSA file"
 msgstr "SSA Datei"
@@ -6881,7 +6925,7 @@ msgstr "Wählen Sie “A” oder “B”, wenn Ihr Antennensystem dies erfordert
 
 #, fuzzy
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
-msgstr "Wählen Sie “Unicable”, wenn dieser Tuner ein Unicable-Gerät verwendet. Für alle anderen Setups wählen Sie “FBC automatisch”."
+msgstr "Wählen Sie “FBC SCR”, wenn dieser Tuner ein Unicable/SCR-Gerät verwendet. Für alle anderen Setups wählen Sie “FBC automatisch”."
 
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr "Wählen Sie “Band”, wenn Sie ein “universelles” LNB verwenden, andernfalls konsultieren Sie Ihr LNB-Datenblatt."
@@ -6897,7 +6941,7 @@ msgstr "Wählen Sie “Provider”, um aus der vordefinierten Liste von Kabelmul
 
 #, fuzzy
 msgid "Select 'yes' if this tuner is connected to the SCR device through another tuner, otherwise select 'no'."
-msgstr "Wählen Sie “Ja”, wenn dieser Tuner über einen anderen Tuner mit dem Unicable-Gerät verbunden ist, andernfalls wählen Sie “Nein”."
+msgstr "Wählen Sie “Ja”, wenn dieser Tuner über einen anderen Tuner mit dem Unicable/SCR-Gerät verbunden ist, andernfalls wählen Sie “Nein”."
 
 msgid "Select 'yes' to choose what bands or step sizes will be scanned."
 msgstr "Wählen Sie “Ja”, um auszuwählen, welche Bänder oder Schrittgrößen gescannt werden."
@@ -7070,18 +7114,18 @@ msgstr "Wählen Sie das Zeichen oder die Aktion für den Cursor aus"
 
 #, fuzzy
 msgid "Select the manufacturer of your SCR device. If the manufacturer is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
-msgstr "Wählen Sie den Hersteller Ihres Unicable-Geräts aus. Wenn der Hersteller nicht aufgeführt ist, setzen Sie “SCR” auf “Benutzerdefiniert” und geben Sie die Geräteparameter gemäß dem zugehörigen Datenblatt manuell ein."
+msgstr "Wählen Sie den Hersteller Ihres Unicable/SCR-Geräts aus. Wenn der Hersteller nicht aufgeführt ist, setzen Sie “SCR” auf “Benutzerdefiniert” und geben Sie die Geräteparameter gemäß dem zugehörigen Datenblatt manuell ein."
 
 #, fuzzy
 msgid "Select the model number of your SCR device. If the model number is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
-msgstr "Wählen Sie die Modellnummer Ihres Unicable-Geräts. Wenn die Modellnummer nicht aufgeführt ist, setzen Sie “SCR” auf “benutzerdefiniert” und geben Sie die Geräteparameter gemäß ihrem Datenblatt manuell ein."
+msgstr "Wählen Sie die Modellnummer Ihres Unicable/SCR-Geräts. Wenn die Modellnummer nicht aufgeführt ist, setzen Sie “SCR” auf “benutzerdefiniert” und geben Sie die Geräteparameter gemäß ihrem Datenblatt manuell ein."
 
 msgid "Select the movie path"
 msgstr "Den Filmpfad auswählen"
 
 #, fuzzy
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
-msgstr "Wählen Sie das Format Ihres Unicable-Geräts. Zur Auswahl stehen “SCR Unicable” (Unicable I-Format) oder “SCR JESS” (Unicable II-Format)."
+msgstr "Wählen Sie das Format Ihres Unicable/SCR-Geräts. Zur Auswahl stehen “SCR Unicable” (Unicable I-Format) oder “SCR JESS” (Unicable II-Format)."
 
 msgid "Select the satellite which is connected to Port-A of your switch. If you are unsure select 'automatic' and the receiver will attempt to determine this for you. If nothing is connected to this port, select 'nothing connected'."
 msgstr "Wählen Sie den Satelliten aus, der mit Port A Ihres Switches verbunden ist. Wenn Sie sich nicht sicher sind, wählen Sie “automatisch” und der Empfänger wird versuchen, dies für Sie zu ermitteln. Wenn an diesem Port nichts angeschlossen ist, wählen Sie “nichts verbunden”."
@@ -7109,14 +7153,14 @@ msgstr "Wählen Sie den Tuner, von dem diese Durchschleifung abhängt."
 
 #, fuzzy
 msgid "Select the tuner to which the signal cable of the SCR device is connected."
-msgstr "Wählen Sie den Tuner, an den das Signalkabel des Unicable-Geräts angeschlossen ist."
+msgstr "Wählen Sie den Tuner, an den das Signalkabel des Unicable/SCR-Geräts angeschlossen ist."
 
 msgid "Select the type of LNB/device being used (normally 'Universal'). If your LNB type is not available select 'user defined'."
 msgstr "Wählen Sie den Typ des verwendeten LNB / Geräts (normalerweise ‘Universal’). Wenn Ihr LNB-Typ nicht verfügbar ist, wählen Sie ‘benutzerdefiniert’."
 
 #, fuzzy
 msgid "Select the type of Single Cable Reception device you are using."
-msgstr "Wählen Sie den Typ des Unicable-Geräts aus, das Sie verwenden."
+msgstr "Wählen Sie den Typ des Unicable/SCR-Geräts aus, das Sie verwenden."
 
 msgid "Select the virtual keyboard locale from a menu"
 msgstr "Wählen Sie das Gebietsschema der virtuellen Tastatur aus einem Menü"
@@ -7216,6 +7260,14 @@ msgstr "Kanal-Infos"
 
 msgid "Service info - ECM Info"
 msgstr "Serviceinfo - ECM Info"
+
+#, fuzzy
+msgid "Service info - service & Basic PID Info"
+msgstr "Service Info - Service & PIDs"
+
+#, fuzzy
+msgid "Service info - service & Extended PID Info"
+msgstr "Service Info - Service & PIDs"
 
 msgid "Service info - service & PIDs"
 msgstr "Service Info - Service & PIDs"
@@ -7381,7 +7433,7 @@ msgstr "Kurze Dateinamen"
 
 #, fuzzy
 msgid "Show"
-msgstr "PIP (Bild in Bild) anzeigen"
+msgstr "Anzeigen"
 
 msgid "Show Audioselection"
 msgstr "Ton-Auswahl anzeigen"
@@ -7500,7 +7552,8 @@ msgstr "Letzte Änderungen anzeigen"
 msgid "Show latest upgrade log"
 msgstr "Protokoll der letzten Aktualisierung anzeigen"
 
-msgid "Show menu numbers"
+#, fuzzy
+msgid "Show menu or plugin numbers"
 msgstr "Menü-Nummern anzeigen"
 
 msgid "Show menu paths"
@@ -7688,7 +7741,7 @@ msgstr "Skin"
 
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
-msgstr ""
+msgstr "Skin & Auflösung: %s (%sx%s)\n"
 
 msgid "Skins"
 msgstr "Skins"
@@ -8289,6 +8342,10 @@ msgstr "TV physikalischer Adressenverkündung"
 msgid "TXT PID"
 msgstr "TXT PID"
 
+#, fuzzy
+msgid "TXT Subtitles page & lang"
+msgstr "Untertitel Einstellungen"
+
 msgid "Table of contents for collection"
 msgstr "Inhalt der Zusammenstellung"
 
@@ -8510,11 +8567,11 @@ msgstr "Es sind keine Aktivitäten geplant."
 
 #, fuzzy
 msgid "There are no saved playlists to delete!"
-msgstr "Bitte wählen Sie eine Wiedergabeliste zum Löschen…"
+msgstr "Es gibt keine zu löschenden Wiedergabelisten"
 
 #, fuzzy
 msgid "There are no saved playlists to load!"
-msgstr "Gespeicherte Wiedergabeliste löschen"
+msgstr "Es gibt keine zu ladenden Wiedergabelisten"
 
 msgid "There are no updates available."
 msgstr "Es sind keine Aktualisierungen verfügbar."
@@ -8624,7 +8681,8 @@ msgstr "Mit dieser Option können Sie das Display ausschalten."
 msgid "This option allows you to show all symbols on the display."
 msgstr "Mit dieser Option können Sie alle Symbole auf dem Display anzeigen."
 
-msgid "This option allows you to show menu number quick links."
+#, fuzzy
+msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr "Mit dieser Option können Sie Menüeinträge mit den Zifferntasten auswählen."
 
 msgid "This option allows you to show menu paths."
@@ -9333,6 +9391,10 @@ msgstr "VLAN-Verbindung"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (Intro-Trailer)"
 
+#, fuzzy
+msgid "VOB File"
+msgstr "VOB Datei"
+
 msgid "VOB file"
 msgstr "VOB Datei"
 
@@ -9680,7 +9742,7 @@ msgstr "Wenn aktiviert, werden EIT Daten in HTTP-Streams eingefügt. Dies ermög
 
 #, fuzzy
 msgid "When enabled, HDMI-CEC is enabled with standard configuration"
-msgstr "Dynamische IP Adressen (DHCP) für IP-Vergabe verwenden."
+msgstr "Bei Einstellung 'Ja' wird HDMI-CEC mit Standardeinstellungen aktiviert."
 
 msgid "When enabled, a popup message will be shown when a movie has finished and the next one will start."
 msgstr "Anzeige eines Popups wenn ein Film fertig wiedergegeben wurde und die nächste Wiedergabe startet."
@@ -10665,6 +10727,18 @@ msgstr "Hilfe…"
 
 msgid "horizontal"
 msgstr "Horizontal"
+
+#, fuzzy
+msgid "in menu and plugins"
+msgstr "Plugins herunterladen"
+
+#, fuzzy
+msgid "in menu only"
+msgstr "Hauptmenü"
+
+#, fuzzy
+msgid "in plugins only"
+msgstr "Keine neuen Plugins gefunden"
 
 msgid "information/education/school program"
 msgstr "Information/Bildung/Schulprogramm"

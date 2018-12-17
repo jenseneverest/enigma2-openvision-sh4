@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-11 15:26+0100\n"
+"POT-Creation-Date: 2018-12-16 20:38+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -233,11 +233,11 @@ msgstr ""
 
 #. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
 msgid "%A %e %B"
-msgstr "%A %e. %B"
+msgstr "%A, %e. %B"
 
 #. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
 msgid "%A %e %B %Y"
-msgstr "%A %e. %B %Y"
+msgstr "%A, %e. %B %Y"
 
 #
 msgid "%H:%M"
@@ -446,6 +446,10 @@ msgstr[2] " %s dostupných aktualizací"
 
 #, python-format
 msgid "%s%d min"
+msgstr ""
+
+#, python-format
+msgid "%s%d%s"
 msgstr ""
 
 #, python-format
@@ -811,6 +815,10 @@ msgstr ""
 
 msgid "AGC:"
 msgstr ""
+
+#, fuzzy
+msgid "ASS File"
+msgstr "ASS soubor"
 
 msgid "ASS file"
 msgstr "ASS soubor"
@@ -1281,6 +1289,13 @@ msgstr ""
 msgid "Audio PID"
 msgstr ""
 
+#, python-format
+msgid "Audio PID%s, codec & lang"
+msgstr ""
+
+msgid "Audio PID, codec & lang"
+msgstr ""
+
 msgid "Audio auto volume level"
 msgstr "Automatická úroveň hlasitosti"
 
@@ -1502,6 +1517,9 @@ msgstr "Bangladéš"
 
 msgid "Barbados"
 msgstr "Barbados"
+
+msgid "Basic PID info"
+msgstr ""
 
 #
 msgid "Basque"
@@ -2676,6 +2694,9 @@ msgstr "DVOUVRSTVÉ DVD"
 msgid "DVB CI Delay"
 msgstr "DVB CI zpoždění"
 
+msgid "DVB Subtitles PID & lang"
+msgstr ""
+
 msgid "DVB driver version: "
 msgstr "DVB ovladače: "
 
@@ -3384,6 +3405,10 @@ msgstr "Salvador"
 msgid "Electronic Program Guide"
 msgstr "EPG"
 
+#, fuzzy
+msgid "Embedded"
+msgstr "vložený"
+
 msgid "Empty slot"
 msgstr "volný slot"
 
@@ -3796,6 +3821,10 @@ msgid "Extend sleeptimer 15 minutes"
 msgstr "Přidat 15 minut k časovači usínání"
 
 msgid "Extended"
+msgstr "rozšířené"
+
+#, fuzzy
+msgid "Extended PID info"
 msgstr "rozšířené"
 
 #
@@ -6250,6 +6279,10 @@ msgstr "Původní"
 msgid "Other"
 msgstr "Další"
 
+#, fuzzy
+msgid "Other Subtitles & lang"
+msgstr "Nastavení titulků"
+
 #
 msgid "Output"
 msgstr "Výstup"
@@ -6279,6 +6312,9 @@ msgid "PCR PID"
 msgstr ""
 
 msgid "PDC"
+msgstr ""
+
+msgid "PGS File"
 msgstr ""
 
 msgid "PGS file"
@@ -7645,8 +7681,16 @@ msgstr "SNR:"
 msgid "SPDIF"
 msgstr ""
 
+#, fuzzy
+msgid "SRT File"
+msgstr "SRT soubor"
+
 msgid "SRT file"
 msgstr "SRT soubor"
+
+#, fuzzy
+msgid "SSA File"
+msgstr "SSA soubor"
 
 msgid "SSA file"
 msgstr "SSA soubor"
@@ -8315,6 +8359,14 @@ msgstr "Info o programu"
 msgid "Service info - ECM Info"
 msgstr ""
 
+#, fuzzy
+msgid "Service info - service & Basic PID Info"
+msgstr "Informace o programu - Service & PIDs"
+
+#, fuzzy
+msgid "Service info - service & Extended PID Info"
+msgstr "Informace o programu - Service & PIDs"
+
 msgid "Service info - service & PIDs"
 msgstr "Informace o programu - Service & PIDs"
 
@@ -8635,8 +8687,8 @@ msgstr "Zobrazit poslední změny"
 msgid "Show latest upgrade log"
 msgstr "Zobrazit log poslední aktualizace"
 
-msgid "Show menu numbers"
-msgstr "Zobrazovat čísla v menu"
+msgid "Show menu or plugin numbers"
+msgstr "Zobrazovat čísla v menu nebo pluginech"
 
 msgid "Show menu paths"
 msgstr "Zobrazovat cesty menu"
@@ -9528,7 +9580,7 @@ msgstr ""
 "Pro případné korekce můžete kontaktovat autora\n"
 "na výše uvedené adrese.\n"
 "\n"
-"®11.12.2018"
+"®14.12.2018"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -9548,6 +9600,10 @@ msgstr "Ohlášení fyzické adresy TV"
 
 msgid "TXT PID"
 msgstr ""
+
+#, fuzzy
+msgid "TXT Subtitles page & lang"
+msgstr "Nastavení titulků"
 
 #
 msgid "Table of contents for collection"
@@ -9902,8 +9958,8 @@ msgstr "Toto nastavení umožňuje vypnout displej."
 msgid "This option allows you to show all symbols on the display."
 msgstr "Tato volba umožňuje zobrazovat všechny symboly na displeji."
 
-msgid "This option allows you to show menu number quick links."
-msgstr "Zobrazuje čísla rychlých odkazů pro menu."
+msgid "This option allows you to show menu and/or plugin number quick links."
+msgstr "Zobrazuje čísla rychlých odkazů pro menu a/nebo pluginy."
 
 msgid "This option allows you to show menu paths."
 msgstr "Tato volba umožňuje zobrazovat cestu v menu."
@@ -10713,6 +10769,10 @@ msgstr "VLAN připojení"
 #
 msgid "VMGM (intro trailer)"
 msgstr ""
+
+#, fuzzy
+msgid "VOB File"
+msgstr "VOB soubor"
 
 msgid "VOB file"
 msgstr "VOB soubor"
@@ -12221,6 +12281,15 @@ msgstr "Nápověda..."
 #
 msgid "horizontal"
 msgstr "Horizontální"
+
+msgid "in menu and plugins"
+msgstr "V menu a pluginech"
+
+msgid "in menu only"
+msgstr "Pouze v menu"
+
+msgid "in plugins only"
+msgstr "Pouze v pluginech"
 
 msgid "information/education/school program"
 msgstr "informace/vzdělání/školní program"

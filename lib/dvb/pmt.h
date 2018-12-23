@@ -167,6 +167,7 @@ private:
 		std::string name;
 	};
 	std::vector<struct aitInfo> m_aitInfoList;
+	int compareAudioSubtitleCode(const std::string &subtitleTrack, const std::string &audioTrack);
 #endif
 };
 

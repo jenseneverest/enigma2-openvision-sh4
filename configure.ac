@@ -29,31 +29,302 @@ TUXBOX_APPS_DVB
 AM_CONDITIONAL(HAVE_GIT_DIR, test -d "$srcdir/.git")
 AM_CONDITIONAL(HAVE_FAKE_GIT_DIR, test -f "$srcdir/.git/last_commit_info")
 
-AC_ARG_ENABLE(spark,
-	[  --enable-spark          enable spark stuff],
-	[AC_DEFINE(ENABLE_SPARK,1,[enable spark stuff])])
+AC_ARG_ENABLE(adb_box,
+	[  --enable-adb_box            enable adb_box stuff],
+	[AC_DEFINE(ENABLE_ADB_BOX, 1, [enable adb_box stuff])])
 
-AM_CONDITIONAL(ENABLE_SPARK,test "$enable_spark" = "yes")
+AM_CONDITIONAL(ENABLE_ADB_BOX, test "$enable_adb_box" = "yes")
+if test "$enable_adb_box" = "yes"; then
+	AC_DEFINE(ENABLE_ADB_BOX, 1, [enable adb_box stuff])
+fi
+
+AC_ARG_ENABLE(arivalink200,
+	[  --enable-arivalink200            enable arivalink200 stuff],
+	[AC_DEFINE(ENABLE_ARIVALINK200, 1, [enable arivalink200 stuff])])
+
+AM_CONDITIONAL(ENABLE_ARIVALINK200, test "$enable_arivalink200" = "yes")
+if test "$enable_arivalink200" = "yes"; then
+	AC_DEFINE(ENABLE_ARIVALINK200, 1, [enable arivalink200 stuff])
+fi
+
+AC_ARG_ENABLE(atemio520,
+	[  --enable-atemio520            enable atemio520 stuff],
+	[AC_DEFINE(ENABLE_ATEMIO520, 1, [enable atemio520 stuff])])
+
+AM_CONDITIONAL(ENABLE_ATEMIO520, test "$enable_atemio520" = "yes")
+if test "$enable_atemio520" = "yes"; then
+	AC_DEFINE(ENABLE_ATEMIO520, 1, [enable atemio520 stuff])
+fi
+
+AC_ARG_ENABLE(atemio530,
+	[  --enable-atemio530            enable atemio530 stuff],
+	[AC_DEFINE(ENABLE_ATEMIO520, 1, [enable atemio530 stuff])])
+
+AM_CONDITIONAL(ENABLE_ATEMIO530, test "$enable_atemio530" = "yes")
+if test "$enable_atemio530" = "yes"; then
+	AC_DEFINE(ENABLE_ATEMIO520, 1, [enable atemio530 stuff])
+fi
+
+AC_ARG_ENABLE(atevio7500,
+	[  --enable-atevio7500            enable atevio7500 stuff],
+	[AC_DEFINE(ENABLE_ATEVIO7500, 1, [enable atevio7500 stuff])])
+
+AM_CONDITIONAL(ENABLE_ATEVIO7500, test "$enable_atevio7500" = "yes")
+if test "$enable_atevio7500" = "yes"; then
+	AC_DEFINE(ENABLE_ATEVIO7500, 1, [enable atevio7500 stuff])
+fi
+
+AC_ARG_ENABLE(cuberevo,
+	[  --enable-cuberevo            enable cuberevo stuff],
+	[AC_DEFINE(ENABLE_CUBEREVO, 1, [enable cuberevo stuff])])
+
+AM_CONDITIONAL(ENABLE_CUBEREVO,test "$enable_cuberevo" = "yes")
+if test "$enable_cuberevo" = "yes"; then
+	AC_DEFINE(ENABLE_CUBEREVO, 1, [enable cuberevo stuff])
+fi
+
+AC_ARG_ENABLE(cuberevo_2000hd,
+	[  --enable-cuberevo_2000hd            enable cuberevo_2000hd stuff],
+	[AC_DEFINE(ENABLE_CUBEREVO_2000HD, 1, [enable cuberevo_2000hd stuff])])
+
+AM_CONDITIONAL(ENABLE_CUBEREVO_2000HD, test "$enable_cuberevo_2000hd" = "yes")
+if test "$enable_cuberevo_2000hd" = "yes"; then
+	AC_DEFINE(ENABLE_CUBEREVO_2000HD, 1, [enable cuberevo_2000hd stuff])
+fi
+
+AC_ARG_ENABLE(cuberevo_250hd,
+	[  --enable-cuberevo_250hd            enable cuberevo_250hd stuff],
+	[AC_DEFINE(ENABLE_CUBEREVO_250HD, 1, [enable cuberevo_250hd stuff])])
+
+AM_CONDITIONAL(ENABLE_CUBEREVO_250HD, test "$enable_cuberevo_250hd" = "yes")
+if test "$enable_cuberevo_250hd" = "yes"; then
+	AC_DEFINE(ENABLE_CUBEREVO_250HD, 1, [enable cuberevo_250hd stuff])
+fi
+
+AC_ARG_ENABLE(cuberevo_3000hd,
+	[  --enable-cuberevo_3000hd            enable cuberevo_3000hd stuff],
+	[AC_DEFINE(ENABLE_CUBEREVO_3000HD, 1, [enable cuberevo_3000hd stuff])])
+
+AM_CONDITIONAL(ENABLE_CUBEREVO_3000HD, test "$enable_cuberevo_3000hd" = "yes")
+if test "$enable_cuberevo_3000hd" = "yes"; then
+	AC_DEFINE(ENABLE_CUBEREVO_3000HD, 1, [enable cuberevo_3000hd stuff])
+fi
+
+AC_ARG_ENABLE(cuberevo_mini,
+	[  --enable-cuberevo_mini            enable cuberevo_mini stuff],
+	[AC_DEFINE(ENABLE_CUBEREVO_MINI, 1, [enable cuberevo_mini stuff])])
+
+AM_CONDITIONAL(ENABLE_CUBEREVO_MINI, test "$enable_cuberevo_mini" = "yes")
+if test "$enable_cuberevo_mini" = "yes"; then
+	AC_DEFINE(ENABLE_CUBEREVO_MINI, 1, [enable cuberevo_mini stuff])
+fi
+
+AC_ARG_ENABLE(cuberevo_mini2,
+	[  --enable-cuberevo_mini2            enable cuberevo_mini2 stuff],
+	[AC_DEFINE(ENABLE_CUBEREVO_MINI2, 1, [enable cuberevo_mini2 stuff])])
+
+AM_CONDITIONAL(ENABLE_CUBEREVO_MINI2, test "$enable_cuberevo_mini2" = "yes")
+if test "$enable_cuberevo_mini2" = "yes"; then
+	AC_DEFINE(ENABLE_CUBEREVO_MINI2, 1, [enable cuberevo_mini2 stuff])
+fi
+
+AC_ARG_ENABLE(fortis_hdbox,
+	[  --enable-fortis_hdbox            enable fortis_hdbox stuff],
+	[AC_DEFINE(ENABLE_FORTIS_HDBOX, 1, [enable fortis_hdbox stuff])])
+
+AM_CONDITIONAL(ENABLE_FORTIS_HDBOX, test "$enable_fortis_hdbox" = "yes")
+if test "$enable_fortis_hdbox" = "yes"; then
+	AC_DEFINE(ENABLE_FORTIS_HDBOX, 1, [enable fortis_hdbox stuff])
+fi
+
+AC_ARG_ENABLE(hl101,
+	[  --enable-hl101            enable hl101 stuff],
+	[AC_DEFINE(ENABLE_HL101, 1, [enable hl101 stuff])])
+
+AM_CONDITIONAL(ENABLE_HL101, test "$enablehl101" = "yes")
+if test "$enable_hl101" = "yes"; then
+	AC_DEFINE(ENABLE_HL101, 1, [enable hl101 stuff])
+fi
+
+AC_ARG_ENABLE(hs7110,
+	[  --enable-hs7110            enable hs7110 stuff],
+	[AC_DEFINE(ENABLE_HS7110, 1, [enable hs7110 stuff])])
+
+AM_CONDITIONAL(ENABLE_HS7110, test "$enable_hs7110" = "yes")
+if test "$enable_hs7110" = "yes"; then
+	AC_DEFINE(ENABLE_HS7110, 1, [enable hs7110 stuff])
+fi
+
+AC_ARG_ENABLE(hs7119,
+	[  --enable-hs7119            enable hs7119 stuff],
+	[AC_DEFINE(ENABLE_HS7119, 1, [enable hs7119 stuff])])
+
+AM_CONDITIONAL(ENABLE_HS7119, test "$enable_hs7119" = "yes")
+if test "$enable_hs7119" = "yes"; then
+	AC_DEFINE(ENABLE_HS7119, 1, [enable hs7119 stuff])
+fi
+
+AC_ARG_ENABLE(hs7420,
+	[  --enable-hs7420            enable hs7420 stuff],
+	[AC_DEFINE(ENABLE_HS7420, 1, [enable hs7420 stuff])])
+
+AM_CONDITIONAL(ENABLE_HS7420, test "$enable_hs7420" = "yes")
+if test "$enable_hs7420" = "yes"; then
+	AC_DEFINE(ENABLE_HS7420, 1, [enable hs7420 stuff])
+fi
+
+AC_ARG_ENABLE(hs7429,
+	[  --enable-hs7429            enable hs7429 stuff],
+	[AC_DEFINE(ENABLE_HS7429, 1, [enable hs7429 stuff])])
+
+AM_CONDITIONAL(ENABLE_HS7429, test "$enable_hs7429" = "yes")
+if test "$enable_hs7429" = "yes"; then
+	AC_DEFINE(ENABLE_HS7429, 1, [enable hs7429 stuff])
+fi
+
+AC_ARG_ENABLE(hs7810a,
+	[  --enable-hs7810a            enable hs7810a stuff],
+	[AC_DEFINE(ENABLE_HS7810A, 1, [enable hs7810a stuff])])
+
+AM_CONDITIONAL(ENABLE_HS7810A, test "$enable_hs7810a" = "yes")
+if test "$enable_hs7810a" = "yes"; then
+	AC_DEFINE(ENABLE_HS7810A, 1, [enable hs7810a stuff])
+fi
+
+AC_ARG_ENABLE(hs7819,
+	[  --enable-hs7819            enable hs7819 stuff],
+	[AC_DEFINE(ENABLE_HS7819, 1, [enable hs7819 stuff])])
+
+AM_CONDITIONAL(ENABLE_HS7819, test "$enable_hs7819" = "yes")
+if test "$enable_hs7819" = "yes"; then
+	AC_DEFINE(ENABLE_HS7819, 1, [enable hs7819 stuff])
+fi
+
+AC_ARG_ENABLE(ipbox55,
+	[  --enable-ipbox55            enable ipbox55 stuff],
+	[AC_DEFINE(ENABLE_IPBOX55, 1, [enable ipbox55 stuff])])
+
+AM_CONDITIONAL(ENABLE_IPBOX55, test "$enable_ipbox55" = "yes")
+if test "$enable_ipbox55" = "yes"; then
+	AC_DEFINE(ENABLE_IPBOX55, 1, [enable ipbox55 stuff])
+fi
+
+AC_ARG_ENABLE(ipbox99,
+	[  --enable-ipbox99            enable ipbox99 stuff],
+	[AC_DEFINE(ENABLE_IPBOX99, 1, [enable ipbox99 stuff])])
+
+AM_CONDITIONAL(ENABLE_IPBOX99, test "$enable_ipbox99" = "yes")
+if test "$enable_ipbox99" = "yes"; then
+	AC_DEFINE(ENABLE_IPBOX99, 1, [enable ipbox99 stuff])
+fi
+
+AC_ARG_ENABLE(ipbox9900,
+	[  --enable-ipbox9900            enable ipbox9900 stuff],
+	[AC_DEFINE(ENABLE_IPBOX9900, 1, [enable ipbox9900 stuff])])
+
+AM_CONDITIONAL(ENABLE_IPBOX9900, test "$enable_ipbox9900" = "yes")
+if test "$enable_ipbox9900" = "yes"; then
+	AC_DEFINE(ENABLE_IPBOX9900, 1, [enable ipbox9900 stuff])
+fi
+
+AC_ARG_ENABLE(octagon1008,
+	[  --enable-octagon1008            enable octagon1008 stuff],
+	[AC_DEFINE(ENABLE_OCTAGON1008, 1, [enable octagon1008 stuff])])
+
+AM_CONDITIONAL(ENABLE_OCTAGON1008, test "$enable_octagon1008" = "yes")
+if test "$enable_octagon1008" = "yes"; then
+	AC_DEFINE(ENABLE_OCTAGON1008, 1, [enable octagon1008 stuff])
+fi
+
+AC_ARG_ENABLE(sagemcom88,
+	[  --enable-sagemcom88            enable sagemcom88 stuff],
+	[AC_DEFINE(ENABLE_SAGEMCOM88, 1, [enable sagemcom88 stuff])])
+
+AM_CONDITIONAL(ENABLE_SAGEMCOM88, test "$enable_sagemcom88" = "yes")
+if test "$enable_sagemcom88" = "yes"; then
+	AC_DEFINE(ENABLE_SAGEMCOM88, 1, [enable sagemcom88 stuff])
+fi
+
+AC_ARG_ENABLE(spark,
+	[  --enable-spark            enable spark stuff],
+	[AC_DEFINE(ENABLE_SPARK, 1, [enable spark stuff])])
+
+AM_CONDITIONAL(ENABLE_SPARK, test "$enable_spark" = "yes")
 if test "$enable_spark" = "yes"; then
-	AC_DEFINE(ENABLE_SPARK,1,[enable spark stuff])
+	AC_DEFINE(ENABLE_SPARK, 1, [enable spark stuff])
 fi
 
 AC_ARG_ENABLE(spark7162,
-	[  --enable-spark7162          enable spark7162 stuff],
-	[AC_DEFINE(ENABLE_SPARK7162,1,[enable spark7162 stuff])])
+	[  --enable-spark7162            enable spark7162 stuff],
+	[AC_DEFINE(ENABLE_SPARK7162, 1, [enable spark7162 stuff])])
 
-AM_CONDITIONAL(ENABLE_SPARK7162,test "$enable_spark7162" = "yes")
+AM_CONDITIONAL(ENABLE_SPARK7162, test "$enable_spark7162" = "yes")
 if test "$enable_spark7162" = "yes"; then
-	AC_DEFINE(ENABLE_SPARK7162,1,[enable spark7162 stuff])
+	AC_DEFINE(ENABLE_SPARK7162, 1, [enable spark7162 stuff])
 fi
 
-AC_ARG_ENABLE(minimal,
-	[  --enable-minimal          enable minimal config],
-	[AC_DEFINE(ENABLE_MINIMAL, 1, [enable minimal config])])
-if test "$enable_minimal" = "yes"; then
-	AC_DEFINE(ENABLE_MINIMAL, 1, [enable minimal config])
+AC_ARG_ENABLE(tf7700,
+	[  --enable-tf7700            enable tf7700 stuff],
+	[AC_DEFINE(ENABLE_TF7700, 1, [enable tf7700 stuff])])
+
+AM_CONDITIONAL(ENABLE_TF7700, test "$enable_tf7700" = "yes")
+if test "$enable_tf7700" = "yes"; then
+	AC_DEFINE(ENABLE_TF7700, 1, [enable tf7700 stuff])
 fi
-AM_CONDITIONAL(ENABLE_MINIMAL, test "$enable_minimal" = "yes")
+
+AC_ARG_ENABLE(ufc960,
+	[  --enable-ufc960            enable ufc960 stuff],
+	[AC_DEFINE(ENABLE_UFC960, 1, [enable ufc960 stuff])])
+
+AM_CONDITIONAL(ENABLE_UFC960, test "$enable_ufc960" = "yes")
+if test "$enable_ufc960" = "yes"; then
+	AC_DEFINE(ENABLE_UFC960, 1, [enable ufc960 stuff])
+fi
+
+AC_ARG_ENABLE(ufs910,
+	[  --enable-ufs910            enable ufs910 stuff],
+	[AC_DEFINE(ENABLE_UFS910, 1, [enable ufs910 stuff])])
+
+AM_CONDITIONAL(ENABLE_UFS910, test "$enable_ufs910" = "yes")
+if test "$enable_ufs910" = "yes"; then
+	AC_DEFINE(ENABLE_UFS910, 1, [enable ufs910 stuff])
+fi
+
+AC_ARG_ENABLE(ufs912,
+	[  --enable-ufs912            enable ufs912 stuff],
+	[AC_DEFINE(ENABLE_UFS912, 1, [enable ufs912 stuff])])
+
+AM_CONDITIONAL(ENABLE_UFS912, test "$enable_ufs912" = "yes")
+if test "$enable_ufs912" = "yes"; then
+	AC_DEFINE(ENABLE_UFS912, 1, [enable ufs912 stuff])
+fi
+
+AC_ARG_ENABLE(ufs913,
+	[  --enable-ufs913            enable ufs913 stuff],
+	[AC_DEFINE(ENABLE_UFS913, 1, [enable ufs913 stuff])])
+
+AM_CONDITIONAL(ENABLE_UFS913, test "$enable_ufs913" = "yes")
+if test "$enable_ufs913" = "yes"; then
+	AC_DEFINE(ENABLE_UFS913, 1, [enable ufs913 stuff])
+fi
+
+AC_ARG_ENABLE(ufs922,
+	[  --enable-ufs922            enable ufs922 stuff],
+	[AC_DEFINE(ENABLE_UFS922, 1, [enable ufs922 stuff])])
+
+AM_CONDITIONAL(ENABLE_UFS922, test "$enable_ufs922" = "yes")
+if test "$enable_ufs922" = "yes"; then
+	AC_DEFINE(ENABLE_UFS922, 1, [enable ufs922 stuff])
+fi
+
+AC_ARG_ENABLE(vitamin_hd5000,
+	[  --enable-vitamin_hd5000            enable vitamin_hd5000 stuff],
+	[AC_DEFINE(ENABLE_VITAMIN_HD5000, 1, [enable vitamin_hd5000 stuff])])
+
+AM_CONDITIONAL(ENABLE_VITAMIN_HD5000, test "$enable_vitamin_hd5000" = "yes")
+if test "$enable_vitamin_hd5000" = "yes"; then
+	AC_DEFINE(ENABLE_VITAMIN_HD5000, 1, [enable vitamin_hd5000 stuff])
+fi
 
 dnl versions of plugins-base
 PKG_CHECK_MODULES(TUXTXT, tuxbox-tuxtxt)

@@ -4,11 +4,15 @@ prefix=@prefix@
 exec_prefix=@exec_prefix@
 datarootdir=@datarootdir@
 
-# write E2 on spark vfd display
+# write enigma2 on vfd display
 if ENABLE_SPARK
 echo "-E2-" > /dev/vfd
 else
-echo "ENIGMA2" > /dev/vfd
+	if ENABLE_SPARK7162
+		echo "-E2-" > /dev/vfd
+	else
+		echo "ENIGMA2" > /dev/vfd
+	fi
 fi
 
 if [ -e @libdir@/enigma2/python/Plugins/SystemPlugins/SH4BoosterControl/plugin.pyo ]; then

@@ -4,16 +4,8 @@ prefix=@prefix@
 exec_prefix=@exec_prefix@
 datarootdir=@datarootdir@
 
-# write enigma2 on vfd display
-if ENABLE_SPARK
+# write -E2- on vfd display
 echo "-E2-" > /dev/vfd
-else
-	if ENABLE_SPARK7162
-		echo "-E2-" > /dev/vfd
-	else
-		echo "ENIGMA2" > /dev/vfd
-	fi
-fi
 
 if [ -e @libdir@/enigma2/python/Plugins/SystemPlugins/SH4BoosterControl/plugin.pyo ]; then
 	cpufreq=`cat /etc/enigma2/settings | grep config.plugins.booster.normalfrequenz | cut -d "=" -f2`

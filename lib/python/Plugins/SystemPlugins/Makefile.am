@@ -5,14 +5,18 @@ SUBDIRS = SoftwareManager PositionerSetup Satfinder \
 	DefaultServicesScanner DiseqcTester CommonInterfaceAssignment \
 	CableScan FastScan OSDPositionSetup OSD3DSetup HdmiCEC VideoClippingSetup \
 	VideoEnhancement WirelessLan NetworkWizard \
-	SparkVFDControl SH4OSDAdjustment SH4BoosterControl
+	SparkVFDControl SH4OSDAdjustment
 
 if HAVE_TEMPFANCONTROL
 SUBDIRS += TempFanControl
 endif
 
+if ENABLE_SPARK
+SUBDIRS += SH4BoosterControl
+endif
+
 if ENABLE_SPARK7162
-SUBDIRS += SparkUnionTunerType
+SUBDIRS += SparkUnionTunerType SH4BoosterControl
 endif
 
 install_PYTHON =	\

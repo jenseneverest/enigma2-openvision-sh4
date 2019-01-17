@@ -110,6 +110,15 @@ if test "$enable_cuberevo_3000hd" = "yes"; then
 	AC_DEFINE(ENABLE_CUBEREVO_3000HD, 1, [enable cuberevo_3000hd stuff])
 fi
 
+AC_ARG_ENABLE(cuberevo_9500hd,
+	[  --enable-cuberevo_9500hd            enable cuberevo_9500hd stuff],
+	[AC_DEFINE(ENABLE_CUBEREVO_9500HD, 1, [enable cuberevo_9500hd stuff])])
+
+AM_CONDITIONAL(ENABLE_CUBEREVO_9500HD, test "$enable_cuberevo_9500hd" = "yes")
+if test "$enable_cuberevo_9500hd" = "yes"; then
+	AC_DEFINE(ENABLE_CUBEREVO_9500HD, 1, [enable cuberevo_9500hd stuff])
+fi
+
 AC_ARG_ENABLE(cuberevo_mini,
 	[  --enable-cuberevo_mini            enable cuberevo_mini stuff],
 	[AC_DEFINE(ENABLE_CUBEREVO_MINI, 1, [enable cuberevo_mini stuff])])
@@ -236,6 +245,15 @@ if test "$enable_octagon1008" = "yes"; then
 	AC_DEFINE(ENABLE_OCTAGON1008, 1, [enable octagon1008 stuff])
 fi
 
+AC_ARG_ENABLE(pace7241,
+	[  --enable-pace7241            enable pace7241 stuff],
+	[AC_DEFINE(ENABLE_PACE7241, 1, [enable pace7241 stuff])])
+
+AM_CONDITIONAL(ENABLE_PACE7241, test "$enable_pace7241" = "yes")
+if test "$enable_pace7241" = "yes"; then
+	AC_DEFINE(ENABLE_PACE7241, 1, [enable pace7241 stuff])
+fi
+
 AC_ARG_ENABLE(sagemcom88,
 	[  --enable-sagemcom88            enable sagemcom88 stuff],
 	[AC_DEFINE(ENABLE_SAGEMCOM88, 1, [enable sagemcom88 stuff])])
@@ -315,6 +333,24 @@ AC_ARG_ENABLE(ufs922,
 AM_CONDITIONAL(ENABLE_UFS922, test "$enable_ufs922" = "yes")
 if test "$enable_ufs922" = "yes"; then
 	AC_DEFINE(ENABLE_UFS922, 1, [enable ufs922 stuff])
+fi
+
+AC_ARG_ENABLE(vip1_v2,
+	[  --enable-vip1_v2            enable vip1_v2 stuff],
+	[AC_DEFINE(ENABLE_VIP1_V2, 1, [enable vip1_v2 stuff])])
+
+AM_CONDITIONAL(ENABLE_VIP1_V2, test "$enable_vip1_v2" = "yes")
+if test "$enable_vip1_v2" = "yes"; then
+	AC_DEFINE(ENABLE_VIP1_V2, 1, [enable vip1_v2 stuff])
+fi
+
+AC_ARG_ENABLE(vip2_v1,
+	[  --enable-vip2_v1            enable vip2_v1 stuff],
+	[AC_DEFINE(ENABLE_VIP2_V1, 1, [enable vip2_v1 stuff])])
+
+AM_CONDITIONAL(ENABLE_VIP2_V1, test "$enable_vip2_v1" = "yes")
+if test "$enable_vip2_v1" = "yes"; then
+	AC_DEFINE(ENABLE_VIP2_V1, 1, [enable vip2_v1 stuff])
 fi
 
 AC_ARG_ENABLE(vitamin_hd5000,

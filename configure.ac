@@ -150,9 +150,18 @@ AC_ARG_ENABLE(hl101,
 	[  --enable-hl101            enable hl101 stuff],
 	[AC_DEFINE(ENABLE_HL101, 1, [enable hl101 stuff])])
 
-AM_CONDITIONAL(ENABLE_HL101, test "$enablehl101" = "yes")
+AM_CONDITIONAL(ENABLE_HL101, test "$enable_hl101" = "yes")
 if test "$enable_hl101" = "yes"; then
 	AC_DEFINE(ENABLE_HL101, 1, [enable hl101 stuff])
+fi
+
+AC_ARG_ENABLE(homecast5101,
+	[  --enable-homecast5101            enable homecast5101 stuff],
+	[AC_DEFINE(ENABLE_HOMECAST5101, 1, [enable homecast5101 stuff])])
+
+AM_CONDITIONAL(ENABLE_HOMECAST5101, test "$enable_homecast5101" = "yes")
+if test "$enable_homecast5101" = "yes"; then
+	AC_DEFINE(ENABLE_HOMECAST5101, 1, [enable homecast5101 stuff])
 fi
 
 AC_ARG_ENABLE(hs7110,

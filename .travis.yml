@@ -90,7 +90,7 @@ script:
 - echo installing libdvbsi++
 - pushd .
 - cd /tmp
-- git clone https://github.com/PLi-metas/libdvbsi.git
+- git clone https://github.com/OpenVisionE2/libdvbsi.git
 - cd libdvbsi
 - autoreconf -i
 - ./configure

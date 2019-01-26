@@ -16,7 +16,6 @@ from Tools.Directories import fileExists
 from Tools.HardwareInfo import HardwareInfo
 from enigma import eTimer, getBoxType, eDVBDB
 from urllib2 import urlopen
-import socket
 
 class UpdatePlugin(Screen, ProtectedScreen):
 	skin = """
@@ -76,9 +75,6 @@ class UpdatePlugin(Screen, ProtectedScreen):
 	def checkTraficLight(self):
 		self.activityTimer.callback.remove(self.checkTraficLight)
 		self.activityTimer.start(100, False)
-
-		currentTimeoutDefault = socket.getdefaulttimeout()
-		socket.setdefaulttimeout(3)
 		message = ""
 		picon = None
 		try:
@@ -102,7 +98,6 @@ class UpdatePlugin(Screen, ProtectedScreen):
 		except:
 			message = _("The status of the current image could not be checked because %s can not be reached.") % ("www.openpli.org")
 			picon = MessageBox.TYPE_ERROR
-		socket.setdefaulttimeout(currentTimeoutDefault)
 		if message != "":
 			message += "\n" + _("Do you want to update your receiver?")
 			self.session.openWithCallback(self.startActualUpdate, MessageBox, message, picon = picon)
@@ -110,26 +105,18 @@ class UpdatePlugin(Screen, ProtectedScreen):
 			self.startActualUpdate(True)
 
 	def getLatestImageTimestamp(self):
-		currentTimeoutDefault = socket.getdefaulttimeout()
-		socket.setdefaulttimeout(3)
 		try:
 			# TODO: Use Twisted's URL fetcher, urlopen is evil. And it can
 			# run in parallel to the package update.
 			from time import strftime
 			from datetime import datetime
-			imageVersion = about.getImageTypeString().split(" ")[1]
-			imageVersion = (int(imageVersion) < 5 and "%.1f" or "%s") % int(imageVersion)
-			url = "https://openpli.org/download/timestamp/%s~%s" % (HardwareInfo().get_device_model(), imageVersion)
-			try:
-				latestImageTimestamp = datetime.fromtimestamp(int(urlopen(url, timeout=5).read())).strftime(_("%Y-%m-%d %H:%M"))
-			except:
-				# OpenPli 5.0 uses python 2.7.11 and here we need to bypass the certificate check
-				from ssl import _create_unverified_context
-				latestImageTimestamp = datetime.fromtimestamp(int(urlopen(url, timeout=5, context=_create_unverified_context()).read())).strftime(_("%Y-%m-%d %H:%M"))
+			import json
+			jsonlist = json.loads(urlopen('http://downloads.openpli.org/json/%s' % HardwareInfo().get_device_model(), timeout=5).read())
+			release = about.getImageTypeString().split()[1].lower()
+			date = sorted([jsonlist[release][x]['date'] for x in jsonlist[release]], reverse=True)[0]
+			return datetime.fromtimestamp(date).strftime('%Y-%m-%d %H:%M:%S')
 		except:
-			latestImageTimestamp = ""
-		socket.setdefaulttimeout(currentTimeoutDefault)
-		return latestImageTimestamp
+			pass
 
 	def startActualUpdate(self,answer):
 		if answer:
@@ -193,7 +180,7 @@ class UpdatePlugin(Screen, ProtectedScreen):
 				if self.total_packages:
 					latestImageTimestamp = self.getLatestImageTimestamp()
 					if latestImageTimestamp:
-						message = _("Do you want to update your receiver to %s?") % self.getLatestImageTimestamp() + "\n"
+						message = _("Do you want to update your receiver to %s?") % latestImageTimestamp + "\n"
 					else:
 						message = _("Do you want to update your receiver?") + "\n"
 					message += "(" + (ngettext("%s updated package available", "%s updated packages available", self.total_packages) % self.total_packages) + ")"

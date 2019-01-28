@@ -51,24 +51,16 @@ if [ -d /home/root ]; then
 fi
 
 # any debuglevel passed?
-if [ -z $ENIGMA_DEBUG_LVL ]; then
-	DEBUG_LVL=3
-else
-	DEBUG_LVL=$ENIGMA_DEBUG_LVL
-fi
+DEBUG_LVL=3
 
 LIBS=@libdir@/libopen.so.0.0.0
 
 # enigma main loop
 while : ; do
 
-	# start enigma
-	sync
-	if [ $ENIGMA_DEBUG_LVL -lt 4 ]; then
-		LD_PRELOAD=$LIBS ENIGMA_DEBUG_LVL=$DEBUG_LVL @bindir@/enigma2
-	else
-		LD_PRELOAD=$LIBS ENIGMA_DEBUG_LVL=$DEBUG_LVL @bindir@/enigma2 > /home/root/enigma.log 2&>1
-	fi
+# start enigma
+sync
+LD_PRELOAD=$LIBS ENIGMA_DEBUG_LVL=$DEBUG_LVL @bindir@/enigma2
 
 
 	# enigma2 exit codes:

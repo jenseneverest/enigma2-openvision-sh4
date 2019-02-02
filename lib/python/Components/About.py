@@ -124,20 +124,7 @@ def getCPUInfoString():
 		return _("undefined")
 
 def getDriverInstalledDate():
-	try:
-		from glob import glob
-		try:
-			driver = [x.split("-")[-2:-1][0][-8:] for x in open(glob("/var/lib/opkg/info/*-dvb-modules-*.control")[0], "r") if x.startswith("Version:")][0]
-			return  "%s-%s-%s" % (driver[:4], driver[4:6], driver[6:])
-		except:
-			try:
-				driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/*-dvb-proxy-*.control")[0], "r") if x.startswith("Version:")][0]
-				return  "%s" % driver[1].replace("\n","")
-			except:
-				driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/*-platform-util-*.control")[0], "r") if x.startswith("Version:")][0]
-				return  "%s" % driver[1].replace("\n","")
-	except:
-		return _("unknown")
+	return  "01-Feb-2019"
 
 def getPythonVersionString():
 	try:

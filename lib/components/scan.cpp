@@ -18,11 +18,12 @@ void eComponentScan::scanEvent(int evt)
 			ePtr<iDVBChannelList> db;
 			ePtr<eDVBResourceManager> res;
 
-			if (eDVBResourceManager::getInstance(res) != 0)
+			int err;
+			if ((err = eDVBResourceManager::getInstance(res)) != 0)
 			{
 				eDebug("[eComponentScan] no resource manager");
 				m_failed = 2;
-			} else if (res->getChannelList(db) != 0)
+			} else if ((err = res->getChannelList(db)) != 0)
 			{
 				m_failed = 3;
 				eDebug("[eComponentScan] no channel list");

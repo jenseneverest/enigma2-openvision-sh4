@@ -1,4 +1,4 @@
-installdir = $(pkglibdir)/python/Plugins/SystemPlugins/UnionTunerType
+installdir = $(pkglibdir)/python/Plugins/SystemPlugins/SparkUnionTunerType
 
 SUBDIRS = meta
 

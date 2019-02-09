@@ -16,11 +16,6 @@ from time import localtime, time
 from Tools.Directories import fileExists
 from enigma import pNavigation
 import Components.RecordingConfig
-
-f = open("/proc/stb/info/boxtype","r");
-boxtype = f.read().rstrip('\n')
-f.close()
-
 import Screens.Standby
 import NavigationInstance
 from Screens.SessionGlobals import SessionGlobals
@@ -405,8 +400,5 @@ def sessionstart(reason, **kwargs):
 		SessionGlobals.__init__ = newSessionGlobals__init__
 
 def Plugins(**kwargs):
-		if boxtype == "spark":
-			return [ PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], fnc=sessionstart),
-				PluginDescriptor(name="LED Display Setup", description="Change VFD display settings",where = PluginDescriptor.WHERE_MENU, fnc = main) ]
-		else:
-			return []
+		return [ PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], fnc=sessionstart),
+			PluginDescriptor(name="Spark LED Display Setup", description="Change VFD display settings",where = PluginDescriptor.WHERE_MENU, fnc = main) ]

@@ -1,4 +1,3 @@
-# Embedded file name: usr/lib/enigma2/python/Plugins/SystemPlugins/VFD-Icons/plugin.py
 from Plugins.Plugin import PluginDescriptor
 import ServiceReference
 from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation, evfd
@@ -120,4 +119,4 @@ def main(session, **kwargs):
 
 
 def Plugins(**kwargs):
-    return [PluginDescriptor(name='VFDIcons', description='Icons in VFD', where=PluginDescriptor.WHERE_SESSIONSTART, fnc=main)]
+    return [PluginDescriptor(name='VFD Icons', description='Icons in VFD', where=PluginDescriptor.WHERE_SESSIONSTART, fnc=main)]

@@ -74,7 +74,7 @@ def main(session, **kwargs):
 
 def menu(menuid, **kwargs):
     if menuid == 'scan':
-        return [(_('UnionTunerType config'),
+        return [(_('SparkUnionTunerType config'),
           main,
           'UnionTunerType',
           None)]

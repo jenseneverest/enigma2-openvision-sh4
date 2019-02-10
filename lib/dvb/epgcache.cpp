@@ -1355,7 +1355,7 @@ void eEPGCache::load()
 					uint8_t type=0;
 					ret = fread( &type, sizeof(uint8_t), 1, f);
 					ret = fread( &len, sizeof(uint8_t), 1, f);
-					event = new eventData(0, len, type);
+					eventData *event = new eventData(0, len, type);
 					event->n_crc = (len-10) / sizeof(uint32_t);
 					ret = fread( event->rawEITdata, 10, 1, f);
 					if (event->n_crc)

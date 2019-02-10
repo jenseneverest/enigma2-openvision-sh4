@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-10 01:11+0330\n"
+"POT-Creation-Date: 2019-02-10 12:23+0330\n"
 "PO-Revision-Date: 2019-02-06 13:41+0100\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -378,10 +378,7 @@ msgstr "%d.%d.%d"
 msgid "%d:%02d"
 msgstr "%d:%02d"
 
-#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
-msgid "%k:%M %e/%m"
-msgstr "%k:%M %e/%m"
-
+#, python-format
 msgid ""
 "%s\n"
 "Do you still want to flash image\n"
@@ -7680,6 +7677,10 @@ msgstr "Nastaviť stanicu po spustení"
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "Nastaviť User ID rozhrania OpenWeb záložného tuneru"
+
+#, fuzzy
+msgid "Set the password of the OpenWebif from your fallback tuner"
+msgstr "Nastaviť port rozhrania OpenWeb záložného tuneru"
 
 msgid "Set the port of the OpenWebif from your fallback tuner"
 msgstr "Nastaviť port rozhrania OpenWeb záložného tuneru"

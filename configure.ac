@@ -398,12 +398,6 @@ AC_ARG_WITH(boxtype,
 AC_SUBST(BOXTYPE)
 AC_DEFINE_UNQUOTED(BOXTYPE,"$BOXTYPE",[box type])
 
-AM_CONDITIONAL(DREAMBOX, test `echo "$BOXTYPE" | cut -b 1-2` == "dm")
-if test `echo "$BOXTYPE" | cut -b 1-2` == "dm"; then
-	AC_DEFINE(DREAMBOX, 1, [Dreambox hardware])
-	AC_DEFINE(KEY_PLAY_ACTUALLY_IS_KEY_PLAYPAUSE, 1,[define when rc sends a KEY_PLAY event for its KEY_PLAYPAUSE key])
-fi
-
 AC_ARG_WITH(textlcd,
 	AC_HELP_STRING([--with-textlcd], [use ascii based lcd, yes or no]),
 	[[withtextlcd=$withval]],
@@ -420,13 +414,6 @@ AC_ARG_WITH(7segment,
 	[[TEXTSKIN="default"]]
 )
 AC_SUBST(TEXTSKIN)
-
-if test `echo "$BOXTYPE" | cut -b 1-7` == "mbmicro"; then
-	AC_DEFINE(FORCE_NO_BLENDING_ACCELERATION, 1,[define when the framebuffer acceleration does not have alphablending support, though the autodetection might indicate that it does])
-	AC_DEFINE(FORCE_NO_FILL_ACCELERATION, 1,[define when the framebuffer acceleration does not have fill support])
-	AC_DEFINE(FORCE_ADVANCED_REMOTE, 1,[define to fixup the input device identification when the remote control is actually an 'advanced' remote (with play/forward/rewind keys)])
-	AC_DEFINE(KEY_PLAY_ACTUALLY_IS_KEY_PLAYPAUSE, 1,[define when rc sends a KEY_PLAY event for its KEY_PLAYPAUSE key])
-fi
 
 AC_ARG_WITH(graphlcd,
 	AC_HELP_STRING([--with-graphlcd], [use GraphLCD color display, yes or no]),
@@ -543,19 +530,6 @@ AC_ARG_WITH(lcddev,
 )
 if test x"$with_lcddev" != xno ; then
 	AC_DEFINE_UNQUOTED(LCD_DEV, "$withval", [Defines which device to use for lcd (e.g. /dev/fb1)])
-fi
-
-AC_ARG_WITH(amlogic,
-	AC_HELP_STRING([--with-amlogic], [use amlogic MPEG decoder]),
-	[[with_amlogic=$withval]],
-	[[with_amlogic=no]]
-)
-AM_CONDITIONAL(HAVE_AMLOGIC, test x"$with_amlogic" = xyes)
-if test x"$with_amlogic" = xyes ; then
-	AC_DEFINE(HAVE_AMLOGIC, 1,[Enables AMLOGIC decoder support])
-	PKG_CHECK_MODULES(AMCODEC, libamcodec)
-	PKG_CHECK_MODULES(AMADEC, libamadec)
-	PKG_CHECK_MODULES(DVBCSA, libdvbcsa)
 fi
 
 AC_ARG_WITH(alphablendingacceleration,

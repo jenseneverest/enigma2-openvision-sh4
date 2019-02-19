@@ -27,7 +27,10 @@ config.plugins.VFD_spark.redLed = ConfigSelection(default = "0", choices = [("0"
 config.plugins.VFD_spark.greenLed = ConfigSelection(default = "0", choices = [("0",_("Off")),("1",_("Standby only"))])
 
 def vfd_write(text):
-	open("/dev/dbox/oled0", "w").write(text)
+	try:
+		open("/dev/dbox/oled0", "w").write(text)
+	except:
+		open("/dev/vfd", "w").write(text)
 
 class Channelnumber:
 

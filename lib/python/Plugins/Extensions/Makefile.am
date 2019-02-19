@@ -6,7 +6,31 @@ if ENABLE_TF7700
 SUBDIRS += TopfieldVFD
 endif
 
-if IS_CUBEREVO
+if ENABLE_CUBEREVO
+SUBDIRS += CuberevoVFD
+endif
+
+if ENABLE_CUBEREVO_250HD
+SUBDIRS += CuberevoVFD
+endif
+
+if ENABLE_CUBEREVO_2000HD
+SUBDIRS += CuberevoVFD
+endif
+
+if ENABLE_CUBEREVO_3000HD
+SUBDIRS += CuberevoVFD
+endif
+
+if ENABLE_CUBEREVO_9500HD
+SUBDIRS += CuberevoVFD
+endif
+
+if ENABLE_CUBEREVO_MINI
+SUBDIRS += CuberevoVFD
+endif
+
+if ENABLE_CUBEREVO_MINI2
 SUBDIRS += CuberevoVFD
 endif
 

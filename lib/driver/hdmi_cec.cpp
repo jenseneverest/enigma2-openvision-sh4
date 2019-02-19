@@ -126,22 +126,13 @@ eHdmiCEC::eHdmiCEC()
 
 	if (!linuxCEC)
 	{
-#ifdef DREAMBOX
-#define HDMIDEV "/dev/misc/hdmi_cec0"
-#else
 #define HDMIDEV "/dev/hdmi_cec"
-#endif
 
 		hdmiFd = ::open(HDMIDEV, O_RDWR | O_NONBLOCK | O_CLOEXEC);
 		if (hdmiFd >= 0)
 		{
 
-#ifdef DREAMBOX
-			unsigned int val = 0;
-			::ioctl(hdmiFd, 4, &val);
-#else
 			::ioctl(hdmiFd, 0); /* flush old messages */
-#endif
 		}
 	}
 
@@ -185,22 +176,12 @@ void eHdmiCEC::getAddressInfo()
 	if (hdmiFd >= 0)
 	{
 		bool hasdata = false;
-#if DREAMBOX
-		struct
-		{
-			unsigned char physical[2];
-			unsigned char logical;
-			unsigned char type;
-		} addressinfo;
-
-#else
 		struct
 		{
 			unsigned char logical;
 			unsigned char physical[2];
 			unsigned char type;
 		} addressinfo;
-#endif 
 		if (::ioctl(hdmiFd, 1, &addressinfo) >= 0)
 		{
 			hasdata = true;
@@ -321,14 +302,6 @@ void eHdmiCEC::hdmiEvent(int what)
 		}
 		else
 		{
-#ifdef DREAMBOX
-			if (::ioctl(hdmiFd, 2, &rxmessage) >= 0)
-			{
-				hasdata = true;
-			}
-			unsigned int val = 0;
-			::ioctl(hdmiFd, 4, &val);
-#else
 			if (::read(hdmiFd, &rxmessage, 2) == 2)
 			{
 				if (::read(hdmiFd, &rxmessage.data, rxmessage.length) == rxmessage.length)
@@ -336,7 +309,6 @@ void eHdmiCEC::hdmiEvent(int what)
 					hasdata = true;
 				}
 			}
-#endif
 		}
 		bool hdmicec_enabled = eConfigManager::getConfigBoolValue("config.hdmicec.enabled", false);
 		if (hasdata && hdmicec_enabled)
@@ -518,12 +490,7 @@ void eHdmiCEC::sendMessage(struct cec_message &message)
 		}
 		else
 		{
-#ifdef DREAMBOX
-			message.flag = 1;
-			::ioctl(hdmiFd, 3, &message);
-#else
 			::write(hdmiFd, &message, 2 + message.length);
-#endif
 		}
 	}
 }

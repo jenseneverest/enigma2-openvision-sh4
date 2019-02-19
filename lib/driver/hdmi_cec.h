@@ -39,28 +39,6 @@ class eHdmiCEC : public eRCDriver
 {
 #ifndef SWIG
 public:
-#ifdef DREAMBOX
-	struct cec_message
-	{
-		unsigned char address;
-		unsigned char data[16];
-		unsigned char length;
-		unsigned char flag;
-	}__attribute__((packed));
-	struct cec_rx_message
-	{
-		unsigned char address;
-		unsigned char destination;
-		unsigned char data[16];
-		unsigned char length;
-	}__attribute__((packed));
-	struct addressinfo
-	{
-		unsigned char physical[2];
-		unsigned char logical;
-		unsigned char type;
-	};
-#else
 	struct cec_message
 	{
 		unsigned char address;
@@ -89,7 +67,6 @@ public:
 		int getData(char *data, int length);
 	};
 	void sendMessage(struct cec_message &message);
-#endif
 protected:
 	static eHdmiCEC *instance;
 	bool linuxCEC;

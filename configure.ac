@@ -371,10 +371,7 @@ if test "$enable_vitamin_hd5000" = "yes"; then
 	AC_DEFINE(ENABLE_VITAMIN_HD5000, 1, [enable vitamin_hd5000 stuff])
 fi
 
-AM_CONDITIONAL(IS_CUBEREVO, test `echo "$BOXTYPE" | cut -b 1-5` == "cuber")
-if test `echo "$BOXTYPE" | cut -b 1-5` == "cuber"; then
-	AC_DEFINE(IS_CUBEREVO, 1, [CubeRevo hardware])
-fi
+AM_CONDITIONAL(IS_CUBEREVO, test "$BOXTYPE" == "cuberevo" -o "$BOXTYPE" == "cuberevo_250hd" -o "$BOXTYPE" == "cuberevo_2000hd" -o "$BOXTYPE" == "cuberevo_3000hd" -o "$BOXTYPE" == "cuberevo_9500hd" -o "$BOXTYPE" == "cuberevo_mini" -o "$BOXTYPE" == "cuberevo_mini2")
 
 dnl versions of plugins-base
 PKG_CHECK_MODULES(TUXTXT, tuxbox-tuxtxt)

@@ -57,7 +57,7 @@
 #include <lib/driver/vfd.h>
 
 #ifdef ENABLE_TF7700
-#include "../../../apps/tools/tffpctl/frontpanel.h"
+#include "frontpanel.h"
 #endif
 
 #define VFD_DEVICE "/dev/vfd"

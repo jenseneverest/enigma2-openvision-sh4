@@ -7,7 +7,6 @@ from Components.SystemInfo import SystemInfo
 from Components.ConfigList import ConfigListScreen
 from Components.NimManager import nimmanager, getConfigSatlist
 from Components.Label import Label
-from Tools.HardwareInfo import HardwareInfo
 from Tools.Transponder import getChannelNumber, supportedChannels, channel2frequency
 from Screens.InfoBar import InfoBar
 from Screens.MessageBox import MessageBox
@@ -281,10 +280,7 @@ class CableTransponderSearchSupport:
 		except:
 			# older API
 			if nim_idx < 2:
-				if HardwareInfo().get_device_name() == "dm500hd":
-					bus = 2
-				else:
-					bus = nim_idx
+				bus = nim_idx
 			else:
 				if nim_idx == 2:
 					bus = 2 # DM8000 first nim is /dev/i2c/2

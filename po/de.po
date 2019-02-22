@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 13:03+0330\n"
+"POT-Creation-Date: 2019-02-22 14:19+0330\n"
 "PO-Revision-Date: 2018-10-22T21:44:30+02:00\n"
 "Last-Translator: daddelfalk <OpenPLi>\n"
 "Language-Team: Sfteam  angelo2807@hotmail.com\n"
@@ -1944,6 +1944,21 @@ msgstr "Konfigurationsmodus"
 msgid "Configuration..."
 msgstr "Konfiguration…"
 
+msgid "Configure DVB-ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Konfiguriere"
+
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Konfiguriere"
+
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Konfiguriere"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Konfiguriert eine zusätzliche Verzögerung zur besseren Synchronisation externer Untertitel."
 
@@ -3539,9 +3554,6 @@ msgstr "Zusätzliche Motor-Optionen"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Zusätzliche Startzeit, um den Inaktivitäts-Sleeptimer zu ignorieren"
 
-msgid "F1/F3/F4/F4-TURBO"
-msgstr "F1/F3/F4/F4-TURBO"
-
 msgid "FAILED"
 msgstr "FEHLGESCHLAGEN"
 
@@ -3993,9 +4005,6 @@ msgstr "Guyana"
 msgid "HD list"
 msgstr "HD Liste"
 
-msgid "HD2400"
-msgstr "HD2400"
-
 msgid "HDMI Colordepth"
 msgstr "HDMI Farbtiefe"
 
@@ -4022,9 +4031,6 @@ msgstr "HDR10"
 
 msgid "HDR10 support"
 msgstr "HDR10 Unterstützung"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
 
 msgid "HELP"
 msgstr "HILFE"
@@ -4151,6 +4157,14 @@ msgstr "Hotkey-Tastenbelegung"
 
 msgid "Hotkey zap"
 msgstr "Tastenkombination \"umschalten\""
+
+#, fuzzy
+msgid "Hotswitchable"
+msgstr "untestbar"
+
+#, fuzzy
+msgid "Hotswitchable tuner"
+msgstr "Umschaltbare Tuner-Typen:"
 
 msgid "How many minutes do you want add to the recording?"
 msgstr "Wie viele Minuten wollen Sie der Aufnahme hinzufügen?"
@@ -4458,6 +4472,10 @@ msgid "Invalid directory selected: %s"
 msgstr "Ungültiges Verzeichnis ausgewählt: %s"
 
 msgid "Invalid location"
+msgstr "Fehlerhafter Ort"
+
+#, fuzzy
+msgid "Invalid reason"
 msgstr "Fehlerhafter Ort"
 
 msgid "Invalid transponder data"
@@ -7219,6 +7237,18 @@ msgstr "Wählen Sie “A” oder “B”, wenn Ihr Antennensystem dies erfordert
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Wählen Sie “FBC SCR”, wenn dieser Tuner ein Unicable/SCR-Gerät verwendet. Für alle anderen Setups wählen Sie “FBC automatisch”."
 
+msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr "Wählen Sie “Band”, wenn Sie ein “universelles” LNB verwenden, andernfalls konsultieren Sie Ihr LNB-Datenblatt."
 
@@ -8680,7 +8710,8 @@ msgstr "Zum vorhergehenden Unterkanal schalten"
 msgid "Switch to radio mode"
 msgstr "Wechsel zum Radio Modus"
 
-msgid "Switchable tuner types:"
+#, fuzzy
+msgid "Switchable tuner types"
 msgstr "Umschaltbare Tuner-Typen:"
 
 msgid "Switzerland"
@@ -8991,8 +9022,8 @@ msgstr ""
 "Sie ist für den normalen Benutzer nicht relevant.\n"
 "Es besteht kein Grund zur Beunruhigung, wenn Werte angezeigt werden, die suspekt erscheinen!"
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
-msgstr "Dies ist ein Multitype-Tuner. Die verfügbaren Optionen hängen von der Hardware ab. Kabel und terrestrisch können nicht gleichzeitig konfiguriert werden. Wenn Sie als Kabel + Satellit oder terrestrisch + Satellit verwenden wollen, konfigurieren Sie zunächst Kabel / terrestrisch und speichern Sie dann. Erneut öffnen und als Satellit konfigurieren."
+msgid "This is a multitype tuner. Available options depend on the hardware."
+msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "In dieser Reihenfolge werden DiSEqC-Befehle an das Antennensystem gesendet. Die Reihenfolge muss genau der Reihenfolge entsprechen, in der die physikalischen Geräte entlang des Signalkabels angeordnet sind (ausgehend vom Empfängerende)."
@@ -9850,9 +9881,6 @@ msgstr "VOB Datei"
 
 msgid "VOB file"
 msgstr "VOB Datei"
-
-msgid "VU+"
-msgstr "VU+"
 
 msgid "Vanuatu"
 msgstr "Vanuatu"
@@ -10713,15 +10741,6 @@ msgstr "Zapped zum Timerdienst% s als PiP!"
 msgid "Zapped to timer service %s!"
 msgstr "Zapped zum Timerdienst% s!"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr "Zgemma H.S/H.2S/H.2H/H5/H7"
-
-msgid "Zgemma H9/i55 Plus"
-msgstr ""
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr "Zgemma Star S/2S/H1/H2"
-
 msgid "Zimbabwe"
 msgstr "Simbabwe"
 
@@ -10841,6 +10860,9 @@ msgstr "Kunst/Kultur (ohne Musik, Allgemeines)"
 
 msgid "arts/culture magazine"
 msgstr "Kunst/Kulturmagazine"
+
+msgid "atevio7500"
+msgstr ""
 
 msgid "athletics"
 msgstr "Leichtathletik (Sport)"
@@ -10976,6 +10998,9 @@ msgstr "In Bouquets kopieren"
 msgid "create directory"
 msgstr "Verzeichnis erstellen"
 
+msgid "cuberevo"
+msgstr ""
+
 msgid "daily"
 msgstr "Täglich"
 
@@ -11089,9 +11114,6 @@ msgstr "Unterhaltung (6-14 Jahre)"
 msgid "epg cache backup"
 msgstr "EPG-Cache Sicherung"
 
-msgid "equal to"
-msgstr "Gleich wie"
-
 msgid "equestrian"
 msgstr "Pferdesport"
 
@@ -11100,21 +11122,6 @@ msgstr "Fehler beim Starten des Scans"
 
 msgid "error while scanning"
 msgstr "Fehler während Suche"
-
-msgid "et4000"
-msgstr "et4000"
-
-msgid "et5000/6000"
-msgstr "et5000/6000"
-
-msgid "et8000/et10000"
-msgstr "et8000/et10000"
-
-msgid "et9000/et9100"
-msgstr "et9000/et9100"
-
-msgid "et9200/9500/6500"
-msgstr "et9200/9500/6500"
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "Filmschnitt ausführen (benötigt MovieCut Plugin)"
@@ -11230,8 +11237,14 @@ msgstr "Höhe"
 msgid "help..."
 msgstr "Hilfe…"
 
+msgid "hl101"
+msgstr ""
+
 msgid "horizontal"
 msgstr "Horizontal"
+
+msgid "hs7110"
+msgstr ""
 
 msgid "hs7110VFD control"
 msgstr ""
@@ -11362,9 +11375,6 @@ msgstr "gesperrt"
 msgid "long"
 msgstr "lang"
 
-msgid "loopthrough to"
-msgstr "Verbunden mit"
-
 msgid "magazines/reports/documentary"
 msgstr "Magazine/Reportagen/Dokumentationen"
 
@@ -11491,6 +11501,9 @@ msgstr "Nichts tun"
 
 msgid "nothing connected"
 msgstr "Nichts angeschlossen"
+
+msgid "octagon1008"
+msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "eines Doppelschicht-Mediums (Dual Layer) benutzt."
@@ -11684,9 +11697,6 @@ msgstr "Status"
 msgid "science fiction/fantasy/horror"
 msgstr "Science-Fiction/Fantasie/Horror"
 
-msgid "second cable of motorized LNB"
-msgstr "Zweites Kabel vom Rotor"
-
 msgid "seconds"
 msgstr "Sekunden"
 
@@ -11812,6 +11822,9 @@ msgstr "Sozial/Geisteswissenschaft"
 msgid "sorting of playlists"
 msgstr "Sortierung der Wiedergabeliste"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "Sondersendung"
 
@@ -11882,6 +11895,9 @@ msgstr "Tennis/Squash"
 msgid "terrestrial"
 msgstr "Terrestrisch"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "Dieses Bouquet ist durch einen Jugendschutz-PIN Code geschützt"
 
@@ -11919,6 +11935,9 @@ msgstr "Ja"
 
 msgid "type"
 msgstr "typ"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "Nicht verfügbar"
@@ -12015,9 +12034,6 @@ msgstr "mit_Fehlern"
 
 msgid "working"
 msgstr "Arbeite"
-
-msgid "xp1000"
-msgstr "xp1000"
 
 msgid "yellow"
 msgstr "Gelb"

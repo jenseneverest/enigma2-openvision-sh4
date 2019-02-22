@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 13:03+0330\n"
+"POT-Creation-Date: 2019-02-22 14:19+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -2218,6 +2218,24 @@ msgstr "Konfigurační mód"
 msgid "Configuration..."
 msgstr "Nastavení..."
 
+msgid "Configure DVB-ATSC"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Nastavuji"
+
+#
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Nastavuji"
+
+#
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Nastavuji"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Nastavení zpoždění pro lepší synchronizaci externích titulků."
 
@@ -4056,9 +4074,6 @@ msgstr "Další nastavení motoru"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Začátek dalšího úseku ignorování časovače vypnutí"
 
-msgid "F1/F3/F4/F4-TURBO"
-msgstr ""
-
 msgid "FAILED"
 msgstr ""
 
@@ -4562,9 +4577,6 @@ msgstr "Guyana"
 msgid "HD list"
 msgstr "Seznam HD"
 
-msgid "HD2400"
-msgstr ""
-
 msgid "HDMI Colordepth"
 msgstr "Barevná hloubka HDMI"
 
@@ -4593,9 +4605,6 @@ msgstr ""
 
 msgid "HDR10 support"
 msgstr "Podpora HDR10"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr ""
 
 msgid "HELP"
 msgstr ""
@@ -4733,6 +4742,16 @@ msgstr "Nastavení Hotkey"
 
 msgid "Hotkey zap"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Hotswitchable"
+msgstr "netestovatelné"
+
+#
+#, fuzzy
+msgid "Hotswitchable tuner"
+msgstr "Přepínatelné typy tunerů:"
 
 msgid "How many minutes do you want add to the recording?"
 msgstr "Kolik minut chcete přidat k nahrávání?"
@@ -5093,6 +5112,11 @@ msgstr "Zvolen neplatný adresář: %s"
 
 #
 msgid "Invalid location"
+msgstr "Neplatné umístění"
+
+#
+#, fuzzy
+msgid "Invalid reason"
 msgstr "Neplatné umístění"
 
 #
@@ -8321,6 +8345,18 @@ msgstr "Zvolte 'A' nebo 'B', pokud to Váš anténní systém vyžaduje, jinak z
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Jestliže tuner bude připojen k SRC zařízení (Unicable/JESS), nastavte 'FCB SRC'. Pro všechna ostatní nastavení zvolte 'FBC automatic'."
 
+msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr "Zvolte 'Pásmo', pokud používáte 'Univerzální LNB', jinak se podívejte do specifikace LNB."
 
@@ -9997,7 +10033,8 @@ msgid "Switch to radio mode"
 msgstr "Přepnout do Radio módu"
 
 #
-msgid "Switchable tuner types:"
+#, fuzzy
+msgid "Switchable tuner types"
 msgstr "Přepínatelné typy tunerů:"
 
 msgid "Switzerland"
@@ -10336,8 +10373,8 @@ msgstr ""
 "Pro běžné uživatele nejsou důležité.\n"
 "Nepanikařte, jestliže uvidíte nějaké podezřelé údaje!"
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
-msgstr "Jedná se o multi-typ tuner. Dostupné možnosti závisí na hardwaru. Kabelové a pozemní signály nelze konfigurovat současně. Chcete-li použít jako kabel + satelit nebo pozemní + satelit, nejprve nakonfigurujte kabel/terestriální a poté uložte. Znovu otevřete a nastavte znovu jako satelit."
+msgid "This is a multitype tuner. Available options depend on the hardware."
+msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Jde o pořadí ve kterém jsou příkazy DiSEqC odeslány do anténního systému. Pořadí musí přesně odpovídat pořadí fyzických zařízení na signálovém kabelu (začínající od konce přijímače)."
@@ -11312,9 +11349,6 @@ msgstr "VOB soubor"
 msgid "VOB file"
 msgstr "VOB soubor"
 
-msgid "VU+"
-msgstr ""
-
 #
 msgid "Vanuatu"
 msgstr "Vanuatu"
@@ -12264,15 +12298,6 @@ msgstr "Program %s přepnut časovačem do PiP"
 msgid "Zapped to timer service %s!"
 msgstr "Přepnuto časovačem na program %s!"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr ""
-
-msgid "Zgemma H9/i55 Plus"
-msgstr ""
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr ""
-
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
 
@@ -12416,6 +12441,9 @@ msgstr "umění/kultura (bez hudby, obecně)"
 
 msgid "arts/culture magazine"
 msgstr "umění/kulturní magazín"
+
+msgid "atevio7500"
+msgstr ""
 
 msgid "athletics"
 msgstr "atletika"
@@ -12573,6 +12601,9 @@ msgstr "Zkopírovat do přehledů"
 msgid "create directory"
 msgstr "Založit adresář"
 
+msgid "cuberevo"
+msgstr ""
+
 #
 msgid "daily"
 msgstr "Denně"
@@ -12710,10 +12741,6 @@ msgstr "zábavný (6-14 let)"
 msgid "epg cache backup"
 msgstr "Zálohovat EPG cache"
 
-#
-msgid "equal to"
-msgstr "stejné s"
-
 msgid "equestrian"
 msgstr "jezdectví"
 
@@ -12722,21 +12749,6 @@ msgstr "chyba při začátku prohledávání"
 
 msgid "error while scanning"
 msgstr "chyba při vyhledávání"
-
-msgid "et4000"
-msgstr ""
-
-msgid "et5000/6000"
-msgstr ""
-
-msgid "et8000/et10000"
-msgstr ""
-
-msgid "et9000/et9100"
-msgstr ""
-
-msgid "et9200/9500/6500"
-msgstr ""
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "provést střihy (vyžaduje MovieCut plugin)"
@@ -12874,9 +12886,15 @@ msgstr "výška"
 msgid "help..."
 msgstr "Nápověda..."
 
+msgid "hl101"
+msgstr ""
+
 #
 msgid "horizontal"
 msgstr "Horizontální"
+
+msgid "hs7110"
+msgstr ""
 
 msgid "hs7110VFD control"
 msgstr ""
@@ -13029,10 +13047,6 @@ msgstr "zamknuto"
 msgid "long"
 msgstr ""
 
-#
-msgid "loopthrough to"
-msgstr "propojeno s"
-
 msgid "magazines/reports/documentary"
 msgstr "magazíny/reportáže/dokumentární"
 
@@ -13183,6 +13197,9 @@ msgstr "Nedělat nic"
 #
 msgid "nothing connected"
 msgstr "Nepřipojeno"
+
+msgid "octagon1008"
+msgstr ""
 
 #
 msgid "of a DUAL layer medium used."
@@ -13412,10 +13429,6 @@ msgid "science fiction/fantasy/horror"
 msgstr "scifi/fantastický/horor"
 
 #
-msgid "second cable of motorized LNB"
-msgstr "druhý kabel z natáčeného LNB"
-
-#
 msgid "seconds"
 msgstr "sekund"
 
@@ -13559,6 +13572,9 @@ msgstr "sociální/duchovní vědy"
 msgid "sorting of playlists"
 msgstr "Třídění playlistů"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "zvláštní události"
 
@@ -13641,6 +13657,9 @@ msgstr "tenis/squash"
 msgid "terrestrial"
 msgstr "Pozemní"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "tento přehled je chráněn rodičovským PINem"
 
@@ -13684,6 +13703,9 @@ msgstr "ano"
 
 msgid "type"
 msgstr "typ"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "nedostupný"
@@ -13796,9 +13818,6 @@ msgstr "s_chybami"
 #
 msgid "working"
 msgstr "pracuji"
-
-msgid "xp1000"
-msgstr ""
 
 #
 msgid "yellow"

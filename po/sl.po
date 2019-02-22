@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project Slovenia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 13:03+0330\n"
+"POT-Creation-Date: 2019-02-22 14:19+0330\n"
 "PO-Revision-Date: 2015-08-30 09:00+0200\n"
 "Last-Translator: Taykun345 <support@satnigmo.com>\n"
 "Language-Team: Satnigmo <support@satnigmo.com>\n"
@@ -2238,6 +2238,24 @@ msgstr "Nastavitveni način: "
 msgid "Configuration..."
 msgstr "Dodatne nastavitve"
 
+msgid "Configure DVB-ATSC"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Nastavljam..."
+
+#
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Nastavljam..."
+
+#
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Nastavljam..."
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Določitev dodatnega zamika za izboljšanje sinhronizacije zunanjih podnapisov."
 
@@ -4079,9 +4097,6 @@ msgstr "Dodatne možnosti rotorja"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Dodatni začetni čas za ignoriranje časovnika neaktivnosti"
 
-msgid "F1/F3/F4/F4-TURBO"
-msgstr ""
-
 msgid "FAILED"
 msgstr ""
 
@@ -4591,9 +4606,6 @@ msgstr ""
 msgid "HD list"
 msgstr "HD seznam"
 
-msgid "HD2400"
-msgstr "HD2400"
-
 msgid "HDMI Colordepth"
 msgstr ""
 
@@ -4622,9 +4634,6 @@ msgstr ""
 #, fuzzy
 msgid "HDR10 support"
 msgstr "ni podprto"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr ""
 
 msgid "HELP"
 msgstr ""
@@ -4764,6 +4773,14 @@ msgstr ""
 
 msgid "Hotkey zap"
 msgstr ""
+
+msgid "Hotswitchable"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Hotswitchable tuner"
+msgstr "Preklopljive vrste kanalnikov:"
 
 #
 #, fuzzy
@@ -5125,6 +5142,11 @@ msgstr "Izbrana neveljavna mapa: %s"
 
 #
 msgid "Invalid location"
+msgstr "Neveljavna lokacija"
+
+#
+#, fuzzy
+msgid "Invalid reason"
 msgstr "Neveljavna lokacija"
 
 #
@@ -8378,6 +8400,18 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr ""
 
@@ -10105,7 +10139,8 @@ msgid "Switch to radio mode"
 msgstr "Preklop v način radio"
 
 #
-msgid "Switchable tuner types:"
+#, fuzzy
+msgid "Switchable tuner types"
 msgstr "Preklopljive vrste kanalnikov:"
 
 msgid "Switzerland"
@@ -10430,7 +10465,7 @@ msgid ""
 "Don't panic please when you see values being displayed that you think look suspicious!"
 msgstr ""
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
+msgid "This is a multitype tuner. Available options depend on the hardware."
 msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -11416,9 +11451,6 @@ msgstr ""
 msgid "VOB file"
 msgstr ""
 
-msgid "VU+"
-msgstr "VU+"
-
 #
 #, fuzzy
 msgid "Vanuatu"
@@ -12362,15 +12394,6 @@ msgstr ""
 msgid "Zapped to timer service %s!"
 msgstr "Pojdi na prvi kanal"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr ""
-
-msgid "Zgemma H9/i55 Plus"
-msgstr ""
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr ""
-
 msgid "Zimbabwe"
 msgstr ""
 
@@ -12512,6 +12535,9 @@ msgid "arts/culture (without music, general)"
 msgstr ""
 
 msgid "arts/culture magazine"
+msgstr ""
+
+msgid "atevio7500"
 msgstr ""
 
 msgid "athletics"
@@ -12670,6 +12696,9 @@ msgstr "Prenos v seznam priljubljenih paketov"
 msgid "create directory"
 msgstr "Ustvarite novo mapo"
 
+msgid "cuberevo"
+msgstr ""
+
 #
 msgid "daily"
 msgstr "vsak dan"
@@ -12806,10 +12835,6 @@ msgstr ""
 msgid "epg cache backup"
 msgstr "varnostno kopiranje epg podatkov"
 
-#
-msgid "equal to"
-msgstr "enako kot"
-
 msgid "equestrian"
 msgstr ""
 
@@ -12818,21 +12843,6 @@ msgstr ""
 
 msgid "error while scanning"
 msgstr ""
-
-msgid "et4000"
-msgstr "et4000"
-
-msgid "et5000/6000"
-msgstr "et5000/6000"
-
-msgid "et8000/et10000"
-msgstr "et8000/et10000"
-
-msgid "et9000/et9100"
-msgstr "et9000/et9100"
-
-msgid "et9200/9500/6500"
-msgstr "et9200/9500/6500"
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr ""
@@ -12967,9 +12977,15 @@ msgstr "višina"
 msgid "help..."
 msgstr "Pomoč"
 
+msgid "hl101"
+msgstr ""
+
 #
 msgid "horizontal"
 msgstr "Horizontalna"
+
+msgid "hs7110"
+msgstr ""
 
 msgid "hs7110VFD control"
 msgstr ""
@@ -13128,10 +13144,6 @@ msgstr "zaklenjen"
 msgid "long"
 msgstr ""
 
-#
-msgid "loopthrough to"
-msgstr "preskoči na"
-
 msgid "magazines/reports/documentary"
 msgstr ""
 
@@ -13280,6 +13292,9 @@ msgstr "Izhod"
 #
 msgid "nothing connected"
 msgstr "nič ni povezano"
+
+msgid "octagon1008"
+msgstr ""
 
 #
 msgid "of a DUAL layer medium used."
@@ -13508,10 +13523,6 @@ msgstr "stanje iskanja"
 msgid "science fiction/fantasy/horror"
 msgstr ""
 
-#
-msgid "second cable of motorized LNB"
-msgstr "drugi kabel motoriziranega LNB-a"
-
 msgid "seconds"
 msgstr "sekund"
 
@@ -13655,6 +13666,9 @@ msgstr ""
 msgid "sorting of playlists"
 msgstr "razvrščanje seznamov"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "posebni dogodki"
 
@@ -13738,6 +13752,9 @@ msgstr ""
 msgid "terrestrial"
 msgstr "Zemeljski"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "ta seznam kanalov je zaščiten s PIN kodo"
 
@@ -13780,6 +13797,9 @@ msgstr "pravilno"
 #, fuzzy
 msgid "type"
 msgstr "Tip seznama"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "ni na voljo"
@@ -13890,9 +13910,6 @@ msgstr ""
 #
 msgid "working"
 msgstr "deluje"
-
-msgid "xp1000"
-msgstr "xp1000"
 
 #
 msgid "yellow"

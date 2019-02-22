@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 13:03+0330\n"
+"POT-Creation-Date: 2019-02-22 14:19+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliotG <mcelliotg@gmail.com>\n"
 "Language-Team: MCelliotG <mcelliotg@gmail.com>\n"
@@ -1938,6 +1938,21 @@ msgstr "Τύπος ρύθμισης"
 msgid "Configuration..."
 msgstr "Παραμετροποίηση..."
 
+msgid "Configure DVB-ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Παραμετροποίηση"
+
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Παραμετροποίηση"
+
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Παραμετροποίηση"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Ρύθμιση πρόσθετης καθυστέρησης για βελτίωση του συγχρονισμού των εξωτερικών υποτίτλων."
 
@@ -3537,9 +3552,6 @@ msgstr "Πρόσθετες επιλογές μοτέρ"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Πρόσθετος χρόνος εκκίνησης για αγνόηση της αδράνειας του χρονοδιακόπτη ύπνου"
 
-msgid "F1/F3/F4/F4-TURBO"
-msgstr "F1/F3/F4/F4-TURBO"
-
 msgid "FAILED"
 msgstr "ΑΠΟΤΥΧΙΑ"
 
@@ -3991,9 +4003,6 @@ msgstr "Γουιάνα"
 msgid "HD list"
 msgstr "Λίστα HD"
 
-msgid "HD2400"
-msgstr "HD2400"
-
 msgid "HDMI Colordepth"
 msgstr "Βάθος χρώματος HDMI"
 
@@ -4020,9 +4029,6 @@ msgstr "HDR10"
 
 msgid "HDR10 support"
 msgstr "Υποστήριξη HDR10"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
 
 msgid "HELP"
 msgstr "ΒΟΗΘΕΙΑ"
@@ -4149,6 +4155,14 @@ msgstr "Ρυθμίσεις Hotkey"
 
 msgid "Hotkey zap"
 msgstr "Ζάπινγκ Hotkey"
+
+#, fuzzy
+msgid "Hotswitchable"
+msgstr "μη δυνατή δοκιμή"
+
+#, fuzzy
+msgid "Hotswitchable tuner"
+msgstr "Εναλλάξιμοι τύποι tuner: "
 
 msgid "How many minutes do you want add to the recording?"
 msgstr "Πόσα λεπτά θέλετε να προστεθούν στην εγγραφή;"
@@ -4456,6 +4470,10 @@ msgid "Invalid directory selected: %s"
 msgstr "Επιλέχθηκε μη έγκυρος φάκελος: %s"
 
 msgid "Invalid location"
+msgstr "Μη έγκυρη τοποθεσία"
+
+#, fuzzy
+msgid "Invalid reason"
 msgstr "Μη έγκυρη τοποθεσία"
 
 msgid "Invalid transponder data"
@@ -7211,6 +7229,18 @@ msgstr "Επιλέξτε 'A' ή 'B' αν το απαιτεί το κεραιοσ
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Επιλέξτε 'FBC SCR' αν αυτό το tuner θα χρησιμοποιήσει μία συσκευή SCR (Unicable/JESS). Για όλες τις άλλες ρυθμίσεις επιλέξτε 'FBC αυτόματο'."
 
+msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr "Επιλέξτε 'μπάντα' αν χρησιμοποιείτε ένα 'universal' LNB, αλλιώς ανατρέξτε στον πίνακα χαρακτηριστικών του LNB σας."
 
@@ -8672,7 +8702,8 @@ msgstr "Μετάβαση στην προηγούμενη υπό-υπηρεσία
 msgid "Switch to radio mode"
 msgstr "Αλλαγή σε λειτουργία ραδιοφώνου"
 
-msgid "Switchable tuner types:"
+#, fuzzy
+msgid "Switchable tuner types"
 msgstr "Εναλλάξιμοι τύποι tuner: "
 
 msgid "Switzerland"
@@ -8983,8 +9014,8 @@ msgstr ""
 "Δεν αφορά κοινούς χρήστες.\n"
 "Παρακαλούμε μη πανικοβάλλεστε όταν βλέπετε να απεικονίζονται τιμές που σας φαίνονται ύποπτες!"
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
-msgstr "Αυτό είναι ένα tuner πολλαπλών τύπων. Οι διαθέσιμες επιλογές εξαρτώνται από το υλικό. Ο καλωδιακός και ο επίγειος τύπος δεν μπορούν να ρυθμιστούν ταυτόχρονα. Αν θέλετε να χρησιμοποιήσετε το δέκτη σας ως καλωδιακό + δορυφορικό ή επίγειο + δορυφορικό, ρυθμίστε τον καλωδιακό/επίγειο τύπο πρώτα και αποθηκεύστε. Ανοίξτε ξανά και ρυθμίστε ως δορυφορικό."
+msgid "This is a multitype tuner. Available options depend on the hardware."
+msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Αυτή είναι η σειρά με την οποία αποστέλλονται οι εντολές DiSEqC στο κεραιοσύστημα. Η σειρά πρέπει να αντιστοιχεί ακριβώς στη σειρά με την οποία έχουν παραταχθεί οι φυσικές συσκευές στο καλώδιο σήματος (ξεκινώντας από τον τελευταίο δέκτη)."
@@ -9841,9 +9872,6 @@ msgstr "Αρχείο VOB"
 
 msgid "VOB file"
 msgstr "αρχείο VOB"
-
-msgid "VU+"
-msgstr "VU+"
 
 msgid "Vanuatu"
 msgstr "Βανουάτου"
@@ -10702,15 +10730,6 @@ msgstr "Έγινε μετάβαση στην υπηρεσία %s ως PiP!"
 msgid "Zapped to timer service %s!"
 msgstr "Έγινε μετάβαση στην υπηρεσία χρονοδιακόπτη %s!"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr "Zgemma H.S/H.2S/H.2H/H5/H7"
-
-msgid "Zgemma H9/i55 Plus"
-msgstr "Zgemma H9/i55 Plus"
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr "Zgemma Star S/2S/H1/H2"
-
 msgid "Zimbabwe"
 msgstr "Ζιμπάμπουε"
 
@@ -10830,6 +10849,9 @@ msgstr "τέχνες/πολιτισμός (χωρίς μουσική, γενικ
 
 msgid "arts/culture magazine"
 msgstr "τέχνες/πολιτιστικό μαγκαζίνο"
+
+msgid "atevio7500"
+msgstr ""
 
 msgid "athletics"
 msgstr "αθλητισμός"
@@ -10965,6 +10987,9 @@ msgstr "αντιγραφή στα μπουκέτα"
 msgid "create directory"
 msgstr "δημιουργία φακέλου"
 
+msgid "cuberevo"
+msgstr ""
+
 msgid "daily"
 msgstr "καθημερινά"
 
@@ -11078,9 +11103,6 @@ msgstr "ψυχαγωγία (6-14 ετών)"
 msgid "epg cache backup"
 msgstr "αντίγραφο ασφαλείας του cache του epg"
 
-msgid "equal to"
-msgstr "ίσο με"
-
 msgid "equestrian"
 msgstr "ιπποδρομίες"
 
@@ -11089,21 +11111,6 @@ msgstr "σφάλμα έναρξης ανίχνευσης"
 
 msgid "error while scanning"
 msgstr "σφάλμα κατά την ανίχνευση"
-
-msgid "et4000"
-msgstr "et4000"
-
-msgid "et5000/6000"
-msgstr "et5000/6000"
-
-msgid "et8000/et10000"
-msgstr "et8000/et10000"
-
-msgid "et9000/et9100"
-msgstr "et9000/et9100"
-
-msgid "et9200/9500/6500"
-msgstr "et9200/9500/6500"
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "εκτέλεση περικοπών (απαιτείται το πρόσθετο MovieCut)"
@@ -11219,8 +11226,14 @@ msgstr "ύψος"
 msgid "help..."
 msgstr "βοήθεια..."
 
+msgid "hl101"
+msgstr ""
+
 msgid "horizontal"
 msgstr "οριζόντια"
+
+msgid "hs7110"
+msgstr ""
 
 msgid "hs7110VFD control"
 msgstr ""
@@ -11351,9 +11364,6 @@ msgstr "κλειδωμένο"
 msgid "long"
 msgstr "παρατεταμένο"
 
-msgid "loopthrough to"
-msgstr "loopthrough σε"
-
 msgid "magazines/reports/documentary"
 msgstr "περιοδικά/εκθέσεις/ντοκιμαντέρ"
 
@@ -11480,6 +11490,9 @@ msgstr "Να μη γίνει τίποτα"
 
 msgid "nothing connected"
 msgstr "δεν έχει συνδεθεί τίποτα"
+
+msgid "octagon1008"
+msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "ενός μέσου ΔΙΠΛΗΣ στρώσης σε χρήση."
@@ -11673,9 +11686,6 @@ msgstr "κατάσταση ανίχνευσης"
 msgid "science fiction/fantasy/horror"
 msgstr "επιστημονικής φαντασίας/φαντασίας/τρόμου"
 
-msgid "second cable of motorized LNB"
-msgstr "δεύτερο καλώδιο σε κινούμενο LNB"
-
 msgid "seconds"
 msgstr "δευτερόλεπτα"
 
@@ -11801,6 +11811,9 @@ msgstr "κοινωνικά/διανόηση"
 msgid "sorting of playlists"
 msgstr "ταξινόμηση λιστών αναπαραγωγής"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "ειδικά προγράμματα"
 
@@ -11871,6 +11884,9 @@ msgstr "τένις/σκουώς"
 msgid "terrestrial"
 msgstr "Επίγειο"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "αυτό το μπουκέτο προστατεύεται με γονικό κωδικό pin"
 
@@ -11908,6 +11924,9 @@ msgstr "αληθές"
 
 msgid "type"
 msgstr "τύπος"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "μη διαθέσιμο"
@@ -12004,9 +12023,6 @@ msgstr "με_σφάλματα"
 
 msgid "working"
 msgstr "σε λειτουργία"
-
-msgid "xp1000"
-msgstr "xp1000"
 
 msgid "yellow"
 msgstr "κίτρινο"

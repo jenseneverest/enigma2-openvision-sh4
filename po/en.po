@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 13:03+0330\n"
+"POT-Creation-Date: 2019-02-22 14:19+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: satdreamgr\n"
 "Language-Team: \n"
@@ -1947,6 +1947,21 @@ msgstr "Configuration mode"
 msgid "Configuration..."
 msgstr "Configuration..."
 
+msgid "Configure DVB-ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Configuring"
+
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Configuring"
+
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Configuring"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Configure an additional delay to improve external subtitle synchronisation."
 
@@ -3563,9 +3578,6 @@ msgstr ""
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr ""
 
-msgid "F1/F3/F4/F4-TURBO"
-msgstr ""
-
 msgid "FAILED"
 msgstr ""
 
@@ -4014,9 +4026,6 @@ msgstr ""
 msgid "HD list"
 msgstr "HD list"
 
-msgid "HD2400"
-msgstr ""
-
 msgid "HDMI Colordepth"
 msgstr ""
 
@@ -4044,9 +4053,6 @@ msgstr ""
 #, fuzzy
 msgid "HDR10 support"
 msgstr "not supported"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr ""
 
 msgid "HELP"
 msgstr ""
@@ -4175,6 +4181,13 @@ msgstr ""
 
 msgid "Hotkey zap"
 msgstr ""
+
+msgid "Hotswitchable"
+msgstr ""
+
+#, fuzzy
+msgid "Hotswitchable tuner"
+msgstr "Switchable tuner types:"
 
 #, fuzzy
 msgid "How many minutes do you want add to the recording?"
@@ -4488,6 +4501,10 @@ msgid "Invalid directory selected: %s"
 msgstr "Invalid directory selected: %s"
 
 msgid "Invalid location"
+msgstr "Invalid location"
+
+#, fuzzy
+msgid "Invalid reason"
 msgstr "Invalid location"
 
 msgid "Invalid transponder data"
@@ -7282,6 +7299,18 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr ""
 
@@ -8770,7 +8799,8 @@ msgstr "Switch to previous sub service"
 msgid "Switch to radio mode"
 msgstr ""
 
-msgid "Switchable tuner types:"
+#, fuzzy
+msgid "Switchable tuner types"
 msgstr "Switchable tuner types:"
 
 msgid "Switzerland"
@@ -9068,7 +9098,7 @@ msgid ""
 "Don't panic please when you see values being displayed that you think look suspicious!"
 msgstr ""
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
+msgid "This is a multitype tuner. Available options depend on the hardware."
 msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -9939,9 +9969,6 @@ msgstr ""
 msgid "VOB file"
 msgstr ""
 
-msgid "VU+"
-msgstr ""
-
 #, fuzzy
 msgid "Vanuatu"
 msgstr "manual"
@@ -10797,15 +10824,6 @@ msgstr ""
 msgid "Zapped to timer service %s!"
 msgstr "Go to first service"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr ""
-
-msgid "Zgemma H9/i55 Plus"
-msgstr ""
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr ""
-
 msgid "Zimbabwe"
 msgstr ""
 
@@ -10925,6 +10943,9 @@ msgstr "arts/culture (without music, general)"
 
 msgid "arts/culture magazine"
 msgstr "arts/culture magazine"
+
+msgid "atevio7500"
+msgstr ""
 
 msgid "athletics"
 msgstr "athletics"
@@ -11059,6 +11080,9 @@ msgstr "copy to bouquets"
 msgid "create directory"
 msgstr "create directory"
 
+msgid "cuberevo"
+msgstr ""
+
 msgid "daily"
 msgstr "daily"
 
@@ -11172,9 +11196,6 @@ msgstr "entertainment (6-14 year old)"
 msgid "epg cache backup"
 msgstr ""
 
-msgid "equal to"
-msgstr "equal to"
-
 msgid "equestrian"
 msgstr "equestrian"
 
@@ -11182,21 +11203,6 @@ msgid "error starting scanning"
 msgstr ""
 
 msgid "error while scanning"
-msgstr ""
-
-msgid "et4000"
-msgstr ""
-
-msgid "et5000/6000"
-msgstr ""
-
-msgid "et8000/et10000"
-msgstr ""
-
-msgid "et9000/et9100"
-msgstr ""
-
-msgid "et9200/9500/6500"
 msgstr ""
 
 msgid "execute cuts (requires MovieCut plugin)"
@@ -11315,8 +11321,14 @@ msgstr "height"
 msgid "help..."
 msgstr "help..."
 
+msgid "hl101"
+msgstr ""
+
 msgid "horizontal"
 msgstr "horizontal"
+
+msgid "hs7110"
+msgstr ""
 
 msgid "hs7110VFD control"
 msgstr ""
@@ -11450,9 +11462,6 @@ msgstr "locked"
 msgid "long"
 msgstr ""
 
-msgid "loopthrough to"
-msgstr "loopthrough to"
-
 msgid "magazines/reports/documentary"
 msgstr "magazines/reports/documentary"
 
@@ -11580,6 +11589,9 @@ msgstr "Do nothing"
 
 msgid "nothing connected"
 msgstr "nothing connected"
+
+msgid "octagon1008"
+msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "of a DUAL layer medium used."
@@ -11774,9 +11786,6 @@ msgstr "scan state"
 msgid "science fiction/fantasy/horror"
 msgstr "science fiction/fantasy/horror"
 
-msgid "second cable of motorized LNB"
-msgstr "second cable of motorized LNB"
-
 msgid "seconds"
 msgstr "seconds"
 
@@ -11903,6 +11912,9 @@ msgstr "social/spiritual science"
 msgid "sorting of playlists"
 msgstr "sorting of playlists"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "special events"
 
@@ -11974,6 +11986,9 @@ msgstr "tennis/squash"
 msgid "terrestrial"
 msgstr "Terrestrial"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr ""
 
@@ -12011,6 +12026,9 @@ msgstr "true"
 #, fuzzy
 msgid "type"
 msgstr "List type"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "unavailable"
@@ -12107,9 +12125,6 @@ msgstr ""
 
 msgid "working"
 msgstr "working"
-
-msgid "xp1000"
-msgstr ""
 
 msgid "yellow"
 msgstr "yellow"

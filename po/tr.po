@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 13:03+0330\n"
+"POT-Creation-Date: 2019-02-22 14:19+0330\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -1951,6 +1951,21 @@ msgstr "Yapılandırma modu"
 msgid "Configuration..."
 msgstr "Yapılandırma..."
 
+msgid "Configure DVB-ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Ayarlanıyor"
+
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Ayarlanıyor"
+
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Ayarlanıyor"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Altyazı senkronizasyonu için gecikme yapılandırması."
 
@@ -3574,9 +3589,6 @@ msgstr "İlave motor seçenekleri"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "İlave başlatma saati için uyku zamanlayıcıyı görmezden gel"
 
-msgid "F1/F3/F4/F4-TURBO"
-msgstr ""
-
 msgid "FAILED"
 msgstr ""
 
@@ -4031,9 +4043,6 @@ msgstr ""
 msgid "HD list"
 msgstr "HD listesi"
 
-msgid "HD2400"
-msgstr "HD2400"
-
 msgid "HDMI Colordepth"
 msgstr ""
 
@@ -4062,9 +4071,6 @@ msgstr ""
 #, fuzzy
 msgid "HDR10 support"
 msgstr "Desteklenmiyor"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr ""
 
 msgid "HELP"
 msgstr ""
@@ -4194,6 +4200,13 @@ msgstr "Kurulum Tuşu"
 
 msgid "Hotkey zap"
 msgstr "ZAP Tuşu"
+
+msgid "Hotswitchable"
+msgstr ""
+
+#, fuzzy
+msgid "Hotswitchable tuner"
+msgstr "Seçilebilir tuner tipleri:"
 
 #, fuzzy
 msgid "How many minutes do you want add to the recording?"
@@ -4508,6 +4521,10 @@ msgid "Invalid directory selected: %s"
 msgstr "Seçilen klasör geçersiz: %s"
 
 msgid "Invalid location"
+msgstr "Geçersiz konum"
+
+#, fuzzy
+msgid "Invalid reason"
 msgstr "Geçersiz konum"
 
 msgid "Invalid transponder data"
@@ -7306,6 +7323,18 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr ""
 
@@ -8795,7 +8824,8 @@ msgstr "Önceki alt servise geç"
 msgid "Switch to radio mode"
 msgstr "Radyo modu"
 
-msgid "Switchable tuner types:"
+#, fuzzy
+msgid "Switchable tuner types"
 msgstr "Seçilebilir tuner tipleri:"
 
 msgid "Switzerland"
@@ -9096,7 +9126,7 @@ msgid ""
 "Don't panic please when you see values being displayed that you think look suspicious!"
 msgstr ""
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
+msgid "This is a multitype tuner. Available options depend on the hardware."
 msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -9982,9 +10012,6 @@ msgstr ""
 msgid "VOB file"
 msgstr ""
 
-msgid "VU+"
-msgstr "Vu+"
-
 #, fuzzy
 msgid "Vanuatu"
 msgstr "Elle"
@@ -10841,15 +10868,6 @@ msgstr ""
 msgid "Zapped to timer service %s!"
 msgstr "İlk servise git"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr ""
-
-msgid "Zgemma H9/i55 Plus"
-msgstr ""
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr ""
-
 msgid "Zimbabwe"
 msgstr ""
 
@@ -10970,6 +10988,9 @@ msgstr "Sanat/Kültür (Müziksiz, Genel)"
 
 msgid "arts/culture magazine"
 msgstr "Sanat/Kültür Magazin"
+
+msgid "atevio7500"
+msgstr ""
 
 msgid "athletics"
 msgstr "Atletizm"
@@ -11104,6 +11125,9 @@ msgstr "Buketlere Kopyala"
 msgid "create directory"
 msgstr "Klasör Oluştur"
 
+msgid "cuberevo"
+msgstr ""
+
 msgid "daily"
 msgstr "Günlük"
 
@@ -11217,9 +11241,6 @@ msgstr "Eğlence (6-14 yaş)"
 msgid "epg cache backup"
 msgstr "epg önbelleğini yedekle"
 
-msgid "equal to"
-msgstr "Eşit"
-
 msgid "equestrian"
 msgstr "Binicilik"
 
@@ -11228,21 +11249,6 @@ msgstr "Tarama başlayamıyor"
 
 msgid "error while scanning"
 msgstr "Tarama yapılırken hata"
-
-msgid "et4000"
-msgstr "et4000"
-
-msgid "et5000/6000"
-msgstr "et5000/6000"
-
-msgid "et8000/et10000"
-msgstr "et8000/et10000"
-
-msgid "et9000/et9100"
-msgstr "et9000/et9100"
-
-msgid "et9200/9500/6500"
-msgstr "et9200/9500/6500"
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr ""
@@ -11360,8 +11366,14 @@ msgstr "Yükseklik"
 msgid "help..."
 msgstr "Yardım..."
 
+msgid "hl101"
+msgstr ""
+
 msgid "horizontal"
 msgstr "Yatay (H)"
+
+msgid "hs7110"
+msgstr ""
 
 msgid "hs7110VFD control"
 msgstr ""
@@ -11495,9 +11507,6 @@ msgstr "Kilitli"
 msgid "long"
 msgstr "Uzun"
 
-msgid "loopthrough to"
-msgstr "Üzerinden bağla"
-
 msgid "magazines/reports/documentary"
 msgstr "Magazin/Belgesel"
 
@@ -11625,6 +11634,9 @@ msgstr "Hiçbir şey yapma"
 
 msgid "nothing connected"
 msgstr "Bağlı değil"
+
+msgid "octagon1008"
+msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "ÇİFT katmanlı medya kullanıldığında."
@@ -11819,9 +11831,6 @@ msgstr "Kanal arama durumu"
 msgid "science fiction/fantasy/horror"
 msgstr "Bilim Kurgu/Fantastik/Korku"
 
-msgid "second cable of motorized LNB"
-msgstr "Motorlu LNB'nin ikinci kablosu"
-
 msgid "seconds"
 msgstr "Saniye"
 
@@ -11948,6 +11957,9 @@ msgstr "Sosyal/Ruhasal"
 msgid "sorting of playlists"
 msgstr "Çalma listelerini sırala"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "Özel etkinlikler"
 
@@ -12019,6 +12031,9 @@ msgstr "Tenis"
 msgid "terrestrial"
 msgstr "Karasal"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "Bu buket Aile Koruma Şifresi ile Kilitlenmiş"
 
@@ -12057,6 +12072,9 @@ msgstr "Doğru"
 #, fuzzy
 msgid "type"
 msgstr "Liste tipi"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "Kullanılamaz"
@@ -12152,9 +12170,6 @@ msgstr ""
 
 msgid "working"
 msgstr "Çalışıyor"
-
-msgid "xp1000"
-msgstr "xp1000"
 
 msgid "yellow"
 msgstr "Sarı"

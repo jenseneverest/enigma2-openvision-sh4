@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 13:03+0330\n"
+"POT-Creation-Date: 2019-02-22 14:19+0330\n"
 "PO-Revision-Date: 2019-02-01 15:59+0100\n"
 "Last-Translator: GeirJ <dummy@dummy.com>\n"
 "Language-Team: GeirJ\n"
@@ -2151,6 +2151,24 @@ msgstr "Aktiveringsvalg"
 msgid "Configuration..."
 msgstr "Innstilling..."
 
+msgid "Configure DVB-ATSC"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Installerer"
+
+#
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Installerer"
+
+#
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Installerer"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Still inn ytterligere forsinkelse for å forbedre ekstern undertekst synkronisering."
 
@@ -3921,9 +3939,6 @@ msgstr "Ekstra motorinnstillinger"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Ekstra start tid til overstyring av inaktiv dvale timer"
 
-msgid "F1/F3/F4/F4-TURBO"
-msgstr "F1/F3/F4/F4-TURBO"
-
 msgid "FAILED"
 msgstr "FEILET"
 
@@ -4423,9 +4438,6 @@ msgstr "Guyana"
 msgid "HD list"
 msgstr "HD liste"
 
-msgid "HD2400"
-msgstr "HD2400"
-
 msgid "HDMI Colordepth"
 msgstr "HDMI fargedybde"
 
@@ -4452,9 +4464,6 @@ msgstr "HDR10"
 
 msgid "HDR10 support"
 msgstr "HDR10-støtte"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
 
 msgid "HELP"
 msgstr "HELP"
@@ -4590,6 +4599,16 @@ msgstr "Snarveistast innstilling"
 
 msgid "Hotkey zap"
 msgstr "Snarveistast zap"
+
+#
+#, fuzzy
+msgid "Hotswitchable"
+msgstr "lar seg ikke teste"
+
+#
+#, fuzzy
+msgid "Hotswitchable tuner"
+msgstr "Valgbar tuner:"
 
 #
 msgid "How many minutes do you want add to the recording?"
@@ -4937,6 +4956,11 @@ msgstr "Ugyldig mappe er valgt:%s"
 
 #
 msgid "Invalid location"
+msgstr "Ugyldig mappe"
+
+#
+#, fuzzy
+msgid "Invalid reason"
 msgstr "Ugyldig mappe"
 
 #
@@ -8046,6 +8070,18 @@ msgstr "Velg 'A' eller 'B' hvis antenne systemet krever dette, ellers, velger du
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Velg 'FBC SCR' hvis denne tuneren bruker en SCR (Unicable/JESS) enhet. Velg 'FBC automatisk' for alle andre oppsett."
 
+msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr "Velg 'band' hvis du bruker en universal LNB, ellers les din LNB bruksanvisning."
 
@@ -9681,7 +9717,8 @@ msgid "Switch to radio mode"
 msgstr "Gå til radiomodus"
 
 #
-msgid "Switchable tuner types:"
+#, fuzzy
+msgid "Switchable tuner types"
 msgstr "Valgbar tuner:"
 
 msgid "Switzerland"
@@ -10015,8 +10052,8 @@ msgstr ""
 "For en vanlig bruker er den uvesentlig.\n"
 "Vær vennlig ikke få panikk hvis det vises informasjon som ser mistenkelig ut!"
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
-msgstr "Dette er en multitype tuner. Tilgjengelige alternativer avhenger av maskinvaren. Kabel og bakkenett kan ikke konfigureres på samme tid. Hvis du vil bruke som kabel + satellitt eller bakkenett + satellitt, konfigurer kabel/bakkenett først og deretter lagre. Åpne på nytt og konfigurer som satellitt."
+msgid "This is a multitype tuner. Available options depend on the hardware."
+msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Dette er rekkefølgen som DiSEqC kommandoene sendes til antenne systemet. Rekkefølgen må tilsvare nøyaktig rekkefølgen de fysiske enhetene er ordnet langs signalkabelen (starter fra mottaker og utover)."
@@ -10974,9 +11011,6 @@ msgstr "VOB fil"
 msgid "VOB file"
 msgstr "VOB fil"
 
-msgid "VU+"
-msgstr "VU+"
-
 #
 msgid "Vanuatu"
 msgstr "Vanuatu"
@@ -11889,15 +11923,6 @@ msgstr "Timer skiftet til valgt kanal %s som bilde i bilde!"
 msgid "Zapped to timer service %s!"
 msgstr "Timer skiftet til valgt kanal %s!"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr "Zgemma H.S/H.2S/H.2H/H5/H7"
-
-msgid "Zgemma H9/i55 Plus"
-msgstr "Zgemma H9/i55 Plus"
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr "Zgemma Star S/2S/H1/H2"
-
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
 
@@ -12038,6 +12063,9 @@ msgstr "kunst/kultur (uten musikk, generelt)"
 
 msgid "arts/culture magazine"
 msgstr "kunst/kultur magasin"
+
+msgid "atevio7500"
+msgstr ""
 
 msgid "athletics"
 msgstr "friidrett"
@@ -12193,6 +12221,9 @@ msgstr "kopier til kanallister"
 msgid "create directory"
 msgstr "opprett mappe"
 
+msgid "cuberevo"
+msgstr ""
+
 #
 msgid "daily"
 msgstr "daglig"
@@ -12326,10 +12357,6 @@ msgstr "underholdning (6-14 år)"
 msgid "epg cache backup"
 msgstr "sikkerhetskopi av EPG-hurtigbuffer"
 
-#
-msgid "equal to"
-msgstr "lik"
-
 msgid "equestrian"
 msgstr "hestesport"
 
@@ -12338,21 +12365,6 @@ msgstr "feil ved start av søket"
 
 msgid "error while scanning"
 msgstr "feil under søket"
-
-msgid "et4000"
-msgstr "et4000"
-
-msgid "et5000/6000"
-msgstr "et5000/6000"
-
-msgid "et8000/et10000"
-msgstr "et8000/et10000"
-
-msgid "et9000/et9100"
-msgstr "et9000/et9100"
-
-msgid "et9200/9500/6500"
-msgstr "et9200/9500/6500"
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "bruk klipp og lim (må ha tillegget MovieCut)"
@@ -12485,9 +12497,15 @@ msgstr "høyde"
 msgid "help..."
 msgstr "hjelp..."
 
+msgid "hl101"
+msgstr ""
+
 #
 msgid "horizontal"
 msgstr "horisontal"
+
+msgid "hs7110"
+msgstr ""
 
 msgid "hs7110VFD control"
 msgstr ""
@@ -12636,9 +12654,6 @@ msgstr "låst"
 #
 msgid "long"
 msgstr "lang"
-
-msgid "loopthrough to"
-msgstr "gjennomgang til"
 
 msgid "magazines/reports/documentary"
 msgstr "magasiner/rapporter/dokumentarer"
@@ -12790,6 +12805,9 @@ msgstr "Ikke gjør noe"
 #
 msgid "nothing connected"
 msgstr "ikke noe er tilkoblet"
+
+msgid "octagon1008"
+msgstr ""
 
 #
 msgid "of a DUAL layer medium used."
@@ -13002,10 +13020,6 @@ msgid "science fiction/fantasy/horror"
 msgstr "science fiction/fantasi/skrekk"
 
 #
-msgid "second cable of motorized LNB"
-msgstr "sekundær kabel for motorisert LNB"
-
-#
 msgid "seconds"
 msgstr "sekunder"
 
@@ -13144,6 +13158,9 @@ msgstr "sosialt/åndsvitenskap"
 msgid "sorting of playlists"
 msgstr "sorter opptakslister"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "spesial program"
 
@@ -13219,6 +13236,9 @@ msgstr "tennis/squash"
 msgid "terrestrial"
 msgstr "Bakkenett"
 
+msgid "tf7700"
+msgstr ""
+
 #
 msgid "this bouquet is protected by a parental control pin"
 msgstr "denne kanalliste er beskyttet av en pin kode i foreldrekontrollen"
@@ -13259,6 +13279,9 @@ msgstr "sant"
 
 msgid "type"
 msgstr "type"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "utilgjengelig"
@@ -13368,9 +13391,6 @@ msgstr "med_feil"
 #
 msgid "working"
 msgstr "arbeider"
-
-msgid "xp1000"
-msgstr "xp1000"
 
 #
 msgid "yellow"

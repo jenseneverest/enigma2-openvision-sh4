@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 13:03+0330\n"
+"POT-Creation-Date: 2019-02-22 14:19+0330\n"
 "PO-Revision-Date: 2019-01-11 19:33+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -1956,6 +1956,21 @@ msgstr "Konfigūravimo būdas"
 msgid "Configuration..."
 msgstr "Konfigūracija..."
 
+msgid "Configure DVB-ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Konfigūruojama"
+
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Konfigūruojama"
+
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Konfigūruojama"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Nustatykite papildomą delsą, kad pagerinti išorinį subtitrų sinchronizavimą."
 
@@ -3561,9 +3576,6 @@ msgstr "Papildomos variklio nuostatos"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Papildomo laiko miego laikmačio neaktyvumo ignoravimui pradžia"
 
-msgid "F1/F3/F4/F4-TURBO"
-msgstr "F1/F3/F4/F4-TURBO"
-
 msgid "FAILED"
 msgstr "NEPAVYKO"
 
@@ -4011,9 +4023,6 @@ msgstr "Gajana"
 msgid "HD list"
 msgstr "HD sąrašas"
 
-msgid "HD2400"
-msgstr "HD2400"
-
 msgid "HDMI Colordepth"
 msgstr "HDMI spalvų erdvė"
 
@@ -4040,9 +4049,6 @@ msgstr "HDR10"
 
 msgid "HDR10 support"
 msgstr "HDR10 palaikymas"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
 
 msgid "HELP"
 msgstr "PAGALBA"
@@ -4169,6 +4175,14 @@ msgstr "Sparčiųjų klavišų valdymas"
 
 msgid "Hotkey zap"
 msgstr "Spartusis perjungimas"
+
+#, fuzzy
+msgid "Hotswitchable"
+msgstr "netikrintinas"
+
+#, fuzzy
+msgid "Hotswitchable tuner"
+msgstr "Perjungiami imtuvų tipai:"
 
 msgid "How many minutes do you want add to the recording?"
 msgstr "Kiek minučių norite pridėti prie įrašo?"
@@ -4479,6 +4493,10 @@ msgid "Invalid directory selected: %s"
 msgstr "Pasirinktas negaliojantis katalogas: %s"
 
 msgid "Invalid location"
+msgstr "Neteisinga vieta"
+
+#, fuzzy
+msgid "Invalid reason"
 msgstr "Neteisinga vieta"
 
 msgid "Invalid transponder data"
@@ -7237,6 +7255,18 @@ msgstr "Pasirinkite 'A' arba 'B', jei jūsų antenos sistema reikalauja to, kita
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Pasirinkite 'FBC SCR' jei šis imtuvas prisijungtas prie SCR (Unicable/JESS) įrenginio. Visiems kitiems nustatymams pasirinkite 'FBC automatinis'."
 
+msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr "Jei naudojate 'universalią' LNB, pasirinkite 'juosta', kitaip kreipkitės į savo LNB specifikacijų lapą."
 
@@ -8701,7 +8731,8 @@ msgstr "Perjungti į ankstesnį subkanalą"
 msgid "Switch to radio mode"
 msgstr "Perjungti į radiją"
 
-msgid "Switchable tuner types:"
+#, fuzzy
+msgid "Switchable tuner types"
 msgstr "Perjungiami imtuvų tipai:"
 
 msgid "Switzerland"
@@ -9012,8 +9043,8 @@ msgstr ""
 "Eiliniams vartotojams tai nėra svarbu.\n"
 "Nepulkit į paniką, perskaitę čia kokią nors jums nesuprantamą, ar įtartiną informaciją!"
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
-msgstr "Tai daugialustis imtuvas. Galimos parinktys priklauso nuo aparatūros. Kabelinės ir antžeminės negalima konfigūruoti vienu metu. Jei norite naudoti kabelinę + palydovinę arba antžeminę + palydovinę, pirmiausia sukonfigūruokite kabelinę/antžeminę ir tada išsaugokite. Dar kartą atidarykite ir konfigūruokite kaip palydovą."
+msgid "This is a multitype tuner. Available options depend on the hardware."
+msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Tai yra tvarka, kuria DiSEqC komandos siunčiamos į antenos sistemą. Užsakymas turi tiksliai atitikti tvarką, pagal kurią fiziniai įrenginiai išdėstomi palei signalo kabelį (pradedant imtuvo pabaigos)."
@@ -9873,9 +9904,6 @@ msgstr "VOB failas"
 
 msgid "VOB file"
 msgstr "VOB failas"
-
-msgid "VU+"
-msgstr "VU+"
 
 msgid "Vanuatu"
 msgstr "Vanuatu"
@@ -10738,15 +10766,6 @@ msgstr "Įjungta į laikmačio kanalą %s kaip PiP!"
 msgid "Zapped to timer service %s!"
 msgstr "Įjungta į laikmačio kanalą %s!"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr "Zgemma H.S/H.2S/H.2H/H5/H7"
-
-msgid "Zgemma H9/i55 Plus"
-msgstr "Zgemma H9/i55 Plus"
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr "Zgemma Star S/2S/H1/H2"
-
 msgid "Zimbabwe"
 msgstr "Zimbabvė"
 
@@ -10866,6 +10885,9 @@ msgstr "menas/kultūra (be muzikos, bendras)"
 
 msgid "arts/culture magazine"
 msgstr "menas/kultūrinis žurnalas"
+
+msgid "atevio7500"
+msgstr ""
 
 msgid "athletics"
 msgstr "atletika"
@@ -11001,6 +11023,9 @@ msgstr "kopijuoti į paketus"
 msgid "create directory"
 msgstr "sukurti katalogą"
 
+msgid "cuberevo"
+msgstr ""
+
 msgid "daily"
 msgstr "kasdien"
 
@@ -11114,9 +11139,6 @@ msgstr "pramogos (6-14 metų vaikams)"
 msgid "epg cache backup"
 msgstr "epg talpyklos atsarginė kopija"
 
-msgid "equal to"
-msgstr "lygus"
-
 msgid "equestrian"
 msgstr "jojimas"
 
@@ -11125,21 +11147,6 @@ msgstr "klaida, pradedant skenavimą"
 
 msgid "error while scanning"
 msgstr "klaida, skenuojant"
-
-msgid "et4000"
-msgstr "et4000"
-
-msgid "et5000/6000"
-msgstr "et5000/6000"
-
-msgid "et8000/et10000"
-msgstr "et8000/et10000"
-
-msgid "et9000/et9100"
-msgstr "et9000/et9100"
-
-msgid "et9200/9500/6500"
-msgstr "et9200/9500/6500"
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "vykdyti iškirpimus (reikia MovieCut priedo)"
@@ -11255,8 +11262,14 @@ msgstr "aukštis"
 msgid "help..."
 msgstr "pagalba..."
 
+msgid "hl101"
+msgstr ""
+
 msgid "horizontal"
 msgstr "horizontali"
+
+msgid "hs7110"
+msgstr ""
 
 msgid "hs7110VFD control"
 msgstr ""
@@ -11387,9 +11400,6 @@ msgstr "fiksuota"
 msgid "long"
 msgstr "ilgas paspaudimas"
 
-msgid "loopthrough to"
-msgstr "kilpa į"
-
 msgid "magazines/reports/documentary"
 msgstr "žurnalai, pranešimai, dokumentika"
 
@@ -11516,6 +11526,9 @@ msgstr "Nieko nedaryti"
 
 msgid "nothing connected"
 msgstr "nieko nepajungta"
+
+msgid "octagon1008"
+msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "iš DVIEJŲ sluoksnių naudojama."
@@ -11709,9 +11722,6 @@ msgstr "paieškos eiga"
 msgid "science fiction/fantasy/horror"
 msgstr "mokslinė fantastika, fantastika, siaubai"
 
-msgid "second cable of motorized LNB"
-msgstr "antras kabelis nuo motorizuotos LNB"
-
 msgid "seconds"
 msgstr "sekundžių"
 
@@ -11837,6 +11847,9 @@ msgstr "socialinis/dvasinis mokslas"
 msgid "sorting of playlists"
 msgstr "grojaraščių rūšiavimas"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "specialieji įvykiai"
 
@@ -11907,6 +11920,9 @@ msgstr "tenisas, skvošas"
 msgid "terrestrial"
 msgstr "Antžeminė TV"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "šis paketas apsaugotas tėvų kontrolės PIN kodu"
 
@@ -11944,6 +11960,9 @@ msgstr "tiesa"
 
 msgid "type"
 msgstr "tipas"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "nepasiekiamas"
@@ -12041,9 +12060,6 @@ msgstr "su klaidomis"
 
 msgid "working"
 msgstr "dirba"
-
-msgid "xp1000"
-msgstr "xp1000"
 
 msgid "yellow"
 msgstr "geltona"

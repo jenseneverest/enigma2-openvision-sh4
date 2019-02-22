@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-14 13:03+0330\n"
+"POT-Creation-Date: 2019-02-22 14:19+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -1974,6 +1974,21 @@ msgstr "Mode penyetelan"
 msgid "Configuration..."
 msgstr "Penyetelan..."
 
+msgid "Configure DVB-ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Pengaturan"
+
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Pengaturan"
+
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Pengaturan"
+
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Atur penundaan tambahan untuk memperbaiki sinkronisasi terjemahan dari luar."
 
@@ -3605,9 +3620,6 @@ msgstr "Pilihan motor tambahan"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Waktu mulai tambahan untuk mengambaikan pewaktu tidur yg tidak aktif"
 
-msgid "F1/F3/F4/F4-TURBO"
-msgstr ""
-
 msgid "FAILED"
 msgstr "Gagal"
 
@@ -4074,9 +4086,6 @@ msgstr ""
 msgid "HD list"
 msgstr "daftar HD"
 
-msgid "HD2400"
-msgstr "HD2400"
-
 msgid "HDMI Colordepth"
 msgstr "Kedalaman warna HDMI"
 
@@ -4105,9 +4114,6 @@ msgstr ""
 #, fuzzy
 msgid "HDR10 support"
 msgstr "mendukung HDR10"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr ""
 
 msgid "HELP"
 msgstr "TOLONG"
@@ -4236,6 +4242,14 @@ msgstr "Pengaturan Tombol Pintas"
 
 msgid "Hotkey zap"
 msgstr "Zap tombol pintas"
+
+#, fuzzy
+msgid "Hotswitchable"
+msgstr "takbisa dites"
+
+#, fuzzy
+msgid "Hotswitchable tuner"
+msgstr "Jenis penala bisa ditukar:"
 
 #, fuzzy
 msgid "How many minutes do you want add to the recording?"
@@ -4552,6 +4566,10 @@ msgid "Invalid directory selected: %s"
 msgstr "Direktori tidak valid dipilih: %s"
 
 msgid "Invalid location"
+msgstr "Lokasi tidak valid"
+
+#, fuzzy
+msgid "Invalid reason"
 msgstr "Lokasi tidak valid"
 
 msgid "Invalid transponder data"
@@ -7359,6 +7377,18 @@ msgstr "Pilih 'A' atau 'B' jika sistem antena anda memerlukan ini, sebaliknya pi
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Pilih 'FBC SCR' jika penala ini akan terhubung ke perangkat SCR (Unikabel/JESS). Untuk semua setelan lain pilih 'FBC otomatis'."
 
+msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr "Pilih 'band' jika anda menggunakan LNB 'universal', jika tidak periksa lembar spek LNB anda."
 
@@ -8853,7 +8883,8 @@ msgstr "Beralih ke sub layanan sebelumnya"
 msgid "Switch to radio mode"
 msgstr "Beralih ke mode radio"
 
-msgid "Switchable tuner types:"
+#, fuzzy
+msgid "Switchable tuner types"
 msgstr "Jenis penala bisa ditukar:"
 
 msgid "Switzerland"
@@ -9169,8 +9200,8 @@ msgstr ""
 "Bagi pengguna normal ia nya tidak relevan.\n"
 "Mohon jangan panik bila anda menemukan nilai ditampilkan yg menurut anda terlihat mencurigakan!"
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
-msgstr "Ini penala jenis multi. Pilihan yg tersedia tergantung perangkat keras. Kabel dan terrestrial tidak bisa disetel bersamaan. Jika anda ingin menggunakan sebagai kabel + satelit atau terrestrial + satelit, atur kabel/terrestrial dulu dan kemudian simpan. Buka lagi dan atur kembali sebagai satelit."
+msgid "This is a multitype tuner. Available options depend on the hardware."
+msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Ini urutan dimana perintah DiSEqC dikirim ke system antena. Urutannya harus sesuai secara tepat dengan urutan peralatan fisik yg disusun sepanjang kabel sinyal (mulai dari ujung Rx)."
@@ -10043,9 +10074,6 @@ msgstr "Berkas VOB"
 
 msgid "VOB file"
 msgstr "berkas VOB"
-
-msgid "VU+"
-msgstr ""
 
 #, fuzzy
 msgid "Vanuatu"
@@ -10921,15 +10949,6 @@ msgstr "Zap ke layanan pewaktu %s sebagai PiP!"
 msgid "Zapped to timer service %s!"
 msgstr "Zap ke layanan pewaktu %s!"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr ""
-
-msgid "Zgemma H9/i55 Plus"
-msgstr ""
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr ""
-
 msgid "Zimbabwe"
 msgstr ""
 
@@ -11050,6 +11069,9 @@ msgstr "seni/budaya (tanpa musik, umum)"
 
 msgid "arts/culture magazine"
 msgstr "seni/budaya majalah"
+
+msgid "atevio7500"
+msgstr ""
 
 msgid "athletics"
 msgstr "atletik"
@@ -11185,6 +11207,9 @@ msgstr "salin ke buket"
 msgid "create directory"
 msgstr "buat direktori"
 
+msgid "cuberevo"
+msgstr ""
+
 msgid "daily"
 msgstr "harian"
 
@@ -11298,9 +11323,6 @@ msgstr "hiburan (umur 6-14 tahun)"
 msgid "epg cache backup"
 msgstr "cadangan cache epg"
 
-msgid "equal to"
-msgstr "setara"
-
 msgid "equestrian"
 msgstr "equestrian"
 
@@ -11309,21 +11331,6 @@ msgstr "gagal memulai pindaian"
 
 msgid "error while scanning"
 msgstr "gagal saat memindai"
-
-msgid "et4000"
-msgstr ""
-
-msgid "et5000/6000"
-msgstr ""
-
-msgid "et8000/et10000"
-msgstr ""
-
-msgid "et9000/et9100"
-msgstr ""
-
-msgid "et9200/9500/6500"
-msgstr ""
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "eksekusi pemotongan (memerlukan plugin MovieCut)"
@@ -11441,8 +11448,14 @@ msgstr "tinggi"
 msgid "help..."
 msgstr "Bantuan"
 
+msgid "hl101"
+msgstr ""
+
 msgid "horizontal"
 msgstr "horizontal"
+
+msgid "hs7110"
+msgstr ""
 
 msgid "hs7110VFD control"
 msgstr ""
@@ -11576,9 +11589,6 @@ msgstr "terkunci"
 msgid "long"
 msgstr "panjang"
 
-msgid "loopthrough to"
-msgstr "loopthrough ke"
-
 msgid "magazines/reports/documentary"
 msgstr "majalah/laporan/dokumenter"
 
@@ -11706,6 +11716,9 @@ msgstr "Jangan lakukan"
 
 msgid "nothing connected"
 msgstr "tak ada yang tersambung"
+
+msgid "octagon1008"
+msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "dari media lapis DUA yg digunakan."
@@ -11900,9 +11913,6 @@ msgstr "keadaan pemindaian"
 msgid "science fiction/fantasy/horror"
 msgstr "science fiction/fantasy/horror"
 
-msgid "second cable of motorized LNB"
-msgstr "kabel sekunder LNB bermotor"
-
 msgid "seconds"
 msgstr "detik"
 
@@ -12029,6 +12039,9 @@ msgstr "social/spiritual science"
 msgid "sorting of playlists"
 msgstr "memilah daftarputar"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "acara khusus"
 
@@ -12100,6 +12113,9 @@ msgstr "tennis/squash"
 msgid "terrestrial"
 msgstr "Terrestrial"
 
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "buket ini dilindungi dgn pin pengawasan orangtua"
 
@@ -12138,6 +12154,9 @@ msgstr "benar"
 #, fuzzy
 msgid "type"
 msgstr "Jenis DVB"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "tidak tersedia"
@@ -12234,9 +12253,6 @@ msgstr "dgn_kesalahan"
 
 msgid "working"
 msgstr "berfungsi"
-
-msgid "xp1000"
-msgstr ""
 
 msgid "yellow"
 msgstr "kuning"

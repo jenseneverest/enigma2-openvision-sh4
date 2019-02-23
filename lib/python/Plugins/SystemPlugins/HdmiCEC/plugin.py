@@ -147,7 +147,7 @@ def startSetup(menuid):
 
 def Plugins(**kwargs):
 	from os import path
-	if path.exists("/dev/hdmi_cec") and path.exists("/lib/modules/cec.ko"):
+	if path.exists("/dev/hdmi_cec") or path.exists("/dev/misc/hdmi_cec0"):
 		import Components.HdmiCec
 		from Plugins.Plugin import PluginDescriptor
 		return [PluginDescriptor(where = PluginDescriptor.WHERE_MENU, fnc = startSetup)]

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-22 14:19+0330\n"
-"PO-Revision-Date: 2019-02-21 10:28+0100\n"
+"PO-Revision-Date: 2019-02-22 23:39+0100\n"
 "Last-Translator: Shadowman <shadowman@gtsystems.hu>\n"
 "Language-Team: mcfly82 & wysless\n"
 "Language: hu_HU\n"
@@ -1925,17 +1925,14 @@ msgstr "Beállítások..."
 msgid "Configure DVB-ATSC"
 msgstr ""
 
-#, fuzzy
 msgid "Configure DVB-C"
-msgstr "Konfigurálás"
+msgstr "DVB-C konfigurálása"
 
-#, fuzzy
 msgid "Configure DVB-S"
-msgstr "Konfigurálás"
+msgstr "DVB-S konfigurálása"
 
-#, fuzzy
 msgid "Configure DVB-T"
-msgstr "Konfigurálás"
+msgstr "DVB-T konfigurálása"
 
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Extra késleltetés beállítása külső feliratfájl esetén, szinkronizáció hibák korrigálásához."
@@ -4132,13 +4129,11 @@ msgstr "Hotkey beállítás"
 msgid "Hotkey zap"
 msgstr "Hotkey csatornaváltás"
 
-#, fuzzy
 msgid "Hotswitchable"
-msgstr "nem tesztelhető"
+msgstr "Cserélhető"
 
-#, fuzzy
 msgid "Hotswitchable tuner"
-msgstr "Cserélhető tuner típusok:"
+msgstr "Cserélhető tuner"
 
 msgid "How many minutes do you want add to the recording?"
 msgstr "Hány percet szeretne felvenni?"
@@ -4328,7 +4323,6 @@ msgstr "Információs sáv"
 msgid "Info bar timeout"
 msgstr "Információs sáv megjelenítési ideje"
 
-#, fuzzy
 msgid "InfoBar"
 msgstr "Információs sáv"
 
@@ -4450,9 +4444,8 @@ msgstr "A kiválasztott mappa érvénytelen: %s"
 msgid "Invalid location"
 msgstr "Érvénytelen hely"
 
-#, fuzzy
 msgid "Invalid reason"
-msgstr "Érvénytelen hely"
+msgstr "Érvénytelen indok"
 
 msgid "Invalid transponder data"
 msgstr "Érvénytelen transzponder adat"
@@ -5861,11 +5854,9 @@ msgstr "Kép lejátszó"
 msgid "Pillarbox"
 msgstr "Pillarbox (fekete csíkok oldalakon)"
 
-#, fuzzy
 msgid "Pillarbox/Just scale"
 msgstr "Skálázás (nyújtás)"
 
-#, fuzzy
 msgid "Pillarbox/Pan&Scan"
 msgstr "Pillarbox (fekete csíkok oldalakon)"
 
@@ -7089,7 +7080,6 @@ msgstr "Vezeték nélküli hálózat keresése"
 msgid "Scan your network for wireless access points and connect to them using your selected wireless device.\n"
 msgstr "Vezeték nélküli hálózatok keresése, és csatlakoztatása a kiválasztott vezeték nélküli adapter segítségével.\n"
 
-#, fuzzy
 msgid "Scanning"
 msgstr "Keresés..."
 
@@ -7188,17 +7178,21 @@ msgstr "Válassza az 'A'-t vagy 'B'-t, amennyiben a földfelszíni rendszere meg
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Válassza az 'Unicable'-t, ha az ön tunere Unicable eszközhöz csatlakozik. Minden egyéb összeállítás esetén válassza az 'FCB automata'-t."
 
+#, fuzzy
 msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
-msgstr ""
+msgstr "Válassza az \"Igen\" opciót, ha szeretné beállítani ezt a tunert DVB-ATSC vételre."
 
+#, fuzzy
 msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
-msgstr ""
+msgstr "Válassza az \"Igen\" opciót, ha szeretné beállítani ezt a tunert DVB-C vételre."
 
+#, fuzzy
 msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
-msgstr ""
+msgstr "Válassza az \"Igen\" opciót, ha szeretné beállítani ezt a tunert DVB-S vételre."
 
+#, fuzzy
 msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
-msgstr ""
+msgstr "Válassza az \"Igen\" opciót, ha szeretné beállítani ezt a tunert DVB-T vételre."
 
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr "Válassza a 'sáv'-ot, amennyiben univerzális fejet használ, egyéb esetekben nézze meg a fej technikai adatlapját."
@@ -8645,9 +8639,8 @@ msgstr "Ugrás az előző alcsatornára"
 msgid "Switch to radio mode"
 msgstr "Váltás rádió módba"
 
-#, fuzzy
 msgid "Switchable tuner types"
-msgstr "Cserélhető tuner típusok:"
+msgstr "Cserélhető tuner típusok"
 
 msgid "Switzerland"
 msgstr "Svájc"
@@ -8961,7 +8954,7 @@ msgstr ""
 "Ne aggódjon, ha valamilyen érték ön szerint nem megfelelő!"
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
-msgstr ""
+msgstr "Ez egy vegyes (kombinált) tuner. A beállítási lehetőségek hardverfüggőek."
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Ez a földfelszíni rendszerre küldött DiSEqC parancsok sorrendje. A sorrendnek teljesen meg kell egyeznie a jelkábelen található fizikai eszközök sorrendjével (a vevőkészüléktől indulva)."
@@ -9744,9 +9737,8 @@ msgstr "Alább beállított transzponderen"
 msgid "User interface"
 msgstr "Felhasználói felület"
 
-#, fuzzy
 msgid "Username"
-msgstr "Átnevezés"
+msgstr "Felhasználónév"
 
 #, python-format
 msgid "Using LNB %d"
@@ -10566,7 +10558,7 @@ msgid "Your receiver can use tone amplitude. Consult your receiver's manual for 
 msgstr "Az ön készüléke képes a tone erősítésre. További információért olvassa el a készülék használati útmutatóját."
 
 msgid "Your receiver does not have an internet connection"
-msgstr "A készüléknek nincs kapcsolata az internettel."
+msgstr "A készüléknek nincs kapcsolata az internettel"
 
 msgid ""
 "Your receiver is now ready to be used.\n"
@@ -11615,7 +11607,6 @@ msgstr "másodperc"
 msgid "select"
 msgstr "válasszon"
 
-#, fuzzy
 msgid "select "
 msgstr "válasszon"
 

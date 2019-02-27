@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-24 09:44+0330\n"
-"PO-Revision-Date: 2019-02-23 13:02+0200\n"
+"POT-Creation-Date: 2019-02-28 00:53+0330\n"
+"PO-Revision-Date: 2019-02-27 18:32+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -165,7 +165,7 @@ msgid " extensions."
 msgstr " plėtiniai."
 
 msgid " ms"
-msgstr " msek."
+msgstr " msek"
 
 msgid " packages selected."
 msgstr " išsirinkti paketai."
@@ -199,7 +199,7 @@ msgstr "%03d MB"
 
 #, python-format
 msgid "%2.1f sec"
-msgstr "%2.1f sek."
+msgstr "%2.1f sek"
 
 #. TRANSLATORS: default time format hour:minute
 #, python-format
@@ -303,7 +303,7 @@ msgstr "%d kB/s"
 
 #, python-format
 msgid "%d min"
-msgstr "%d min."
+msgstr "%d min"
 
 #, python-format
 msgid "%d minute"
@@ -318,7 +318,7 @@ msgstr "%d minutės"
 
 #, python-format
 msgid "%d ms"
-msgstr "%d msek."
+msgstr "%d msek"
 
 #, python-format
 msgid "%d pixel wide"
@@ -329,7 +329,7 @@ msgstr[2] "%d pikselių pločio"
 
 #, python-format
 msgid "%d sec"
-msgstr "%d sek."
+msgstr "%d sek"
 
 #, python-format
 msgid "%d second"
@@ -428,7 +428,7 @@ msgstr "%s%% Automatinis diegimas %s"
 
 #, python-format
 msgid "%s%d min"
-msgstr "%s%d min."
+msgstr "%s%d min"
 
 #, python-format
 msgid "%s%d%s"
@@ -751,7 +751,7 @@ msgid "APN"
 msgstr ""
 
 msgid "ASS File"
-msgstr "ASS failas"
+msgstr "ASS Failas"
 
 msgid "ASS file"
 msgstr "ASS failas"
@@ -1956,7 +1956,8 @@ msgstr "Konfigūravimo būdas"
 msgid "Configuration..."
 msgstr "Konfigūracija..."
 
-msgid "Configure DVB-ATSC"
+#, fuzzy
+msgid "Configure ATSC"
 msgstr "DVB-ATSC konfigūravimas"
 
 msgid "Configure DVB-C"
@@ -4652,8 +4653,9 @@ msgstr "Monitoriaus nustatymai"
 msgid "LED configuration"
 msgstr "Imtuvo konfigūravimas"
 
+#, fuzzy
 msgid "LED control"
-msgstr ""
+msgstr "LED normalus"
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -4661,8 +4663,9 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "LED nustatymas"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -5061,11 +5064,11 @@ msgstr "Trūkstamas "
 
 msgctxt "Satellite configuration mode"
 msgid "Mode"
-msgstr "Palydovo konfigūracija"
+msgstr "Režimas"
 
 msgctxt "Video output mode"
 msgid "Mode"
-msgstr "Vaizdo išvestis"
+msgstr "Režimas"
 
 msgid "Model"
 msgstr "Modelis"
@@ -5375,11 +5378,11 @@ msgstr "Naujienos, aktualijos"
 
 msgctxt "button label, 'next screen'"
 msgid "Next"
-msgstr "Kitas"
+msgstr "Sekantis"
 
 msgctxt "now/next: 'next' event label"
 msgid "Next"
-msgstr "Kitas"
+msgstr "Toliau programoje"
 
 msgid "Nicaragua"
 msgstr "Nikaragva"
@@ -5610,7 +5613,7 @@ msgstr "Dabar"
 
 msgctxt "now/next: 'now' event label"
 msgid "Now"
-msgstr "Dabar"
+msgstr "Dabar rodoma"
 
 msgid "Now playing"
 msgstr "Dabar rodoma"
@@ -6267,7 +6270,7 @@ msgstr "Pozicionieriaus sąrankos žurnalas"
 
 #, fuzzy
 msgid "Power"
-msgstr "Maitinimo LED"
+msgstr "Išjungimo meniu"
 
 msgid "Power LED"
 msgstr "Maitinimo LED"
@@ -7246,7 +7249,8 @@ msgstr "Pasirinkite 'A' arba 'B', jei jūsų antenos sistema reikalauja to, kita
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Pasirinkite 'FBC SCR' jei šis imtuvas prisijungtas prie SCR (Unicable/JESS) įrenginio. Visiems kitiems nustatymams pasirinkite 'FBC automatinis'."
 
-msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+#, fuzzy
+msgid "Select 'Yes' when you want to configure this tuner for ATSC"
 msgstr "Pasirinkite 'Taip', kai norite konfigūruoti šį imtuvą DVB-ATSC"
 
 msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
@@ -7944,7 +7948,7 @@ msgstr "Rodyti logotipus ekrane"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Priekinio LED spalva budėjimo režime"
+msgstr "Maitinimo LED būsena budėjimo režime."
 
 #, fuzzy
 msgid "Show on VFD"
@@ -7956,7 +7960,7 @@ msgstr "Rodyti logotipus ekrane"
 
 #, fuzzy
 msgid "Show on VFD display in standby"
-msgstr "Rodyti logotipus ekrane"
+msgstr "Rodyti ekrano piktogramas"
 
 msgid "Show packages to be upgraded"
 msgstr "Rodyti paketus, turinčius atnaujinimų"
@@ -8721,7 +8725,7 @@ msgid "Switch to radio mode"
 msgstr "Perjungti į radiją"
 
 msgid "Switchable tuner types"
-msgstr "Perjungiamų imtuvų tipai:"
+msgstr "Perjungiamų imtuvų tipai"
 
 msgid "Switzerland"
 msgstr "Šveicarų"
@@ -8754,7 +8758,7 @@ msgstr "T2MI RAW režimas"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "P&C Adga, adga45@gmail.com\n"
-"Pasvalys, 2019-02-23 versija"
+"Pasvalys, 2019-02-27 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"

@@ -123,6 +123,12 @@ def getCPUInfoString():
 	except:
 		return _("undefined")
 
+def getFlashType():
+	if SystemInfo["SmallFlash"]:
+		return _("Small flash STB")
+	else:
+		return _("Normal flash STB")
+
 def getDriverInstalledDate():
 	try:
 		from glob import glob

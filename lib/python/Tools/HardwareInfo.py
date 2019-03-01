@@ -1,5 +1,3 @@
-from Tools.Directories import SCOPE_SKIN, resolveFilename
-
 hw_info = None
 
 class HardwareInfo:
@@ -16,49 +14,15 @@ class HardwareInfo:
 		hw_info = self
 
 		print "[HardwareInfo] Scanning hardware info"
-		# Version
-		# Disable on spark because there is only a /proc/stb/info/model
-		#try:
-			#self.device_version = open("/proc/stb/info/version").read().strip()
-		#except:
-			#pass
 
-		# Revision
-		# Disable on spark because there is only a /proc/stb/info/model
-		#try:
-			#self.device_revision = open("/proc/stb/info/board_revision").read().strip()
-		#except:
-			#pass
-
-		# Name ... bit odd, but history prevails
 		try:
 			self.device_name = open("/proc/stb/info/model").read().strip()
 		except:
 			pass
 
-		# Model
-		# Disable on spark because there is only a /proc/stb/info/model
-		#for line in open((resolveFilename(SCOPE_SKIN, 'hw_info/hw_info.cfg')), 'r'):
-			#if not line.startswith('#') and not line.isspace():
-				#l = line.strip().replace('\t', ' ')
-				#if ' ' in l:
-					#infoFname, prefix = l.split()
-				#else:
-					#infoFname = l
-					#prefix = ""
-				#try:
-					#self.device_model = prefix + open("/proc/stb/info/" + infoFname).read().strip()
-					#break
-				#except:
-					#pass
+		self.device_model = self.device_name
 
-		self.device_model = self.device_model or self.device_name
-
-		# map for Xtrend device models to machine names
-		if self.device_model.startswith(("et9", "et4", "et5", "et6", "et7")):
-			self.machine_name = "%sx00" % self.device_model[:3]
-		else:
-			self.machine_name = self.device_model
+		self.machine_name = self.device_model
 
 		if self.device_revision:
 			self.device_string = "%s (%s-%s)" % (self.device_model, self.device_revision, self.device_version)
@@ -66,10 +30,6 @@ class HardwareInfo:
 			self.device_string = "%s (%s)" % (self.device_model, self.device_version)
 		else:
 			self.device_string = self.device_model
-
-		# only some early DMM boxes do not have HDMI hardware
-		# Disable on spark
-		#self.device_hdmi =  self.device_model not in ("dm7025", "dm800", "dm8000")
 
 		print "Detected: " + self.get_device_string()
 

@@ -14,111 +14,97 @@ from enigma import eServiceReference
 from Components.Pixmap import Pixmap
 import os
 
-
-class UsedKeys:
-	def __init__(self):
-		self.keys = [(_("Red") + " " + _("long"), "red_long", ""),
-			(_("Green") + " " + _("long"), "green_long", ""),
-			(_("Yellow") + " " + _("long"), "yellow_long", ""),
-			(_("Blue") + " " + _("long"), "blue_long", ""),
-			( "F1", "f1", ""),
-			( "F1 " + _("long"), "f1_long", ""),
-			( "F2", "f2", ""),
-			( "F2 " + _("long"), "f2_long", ""),
-			( "F3", "f3", ""),
-			( "F3 " + _("long"), "f3_long", ""),
-			( "F4", "f4", ""),
-			( "F4 " + _("long"), "f4_long", ""),
-			(_("Red"), "red", ""),
-			(_("Green"), "green", ""),
-			(_("Yellow"), "yellow", ""),
-			(_("Blue"), "blue", ""),
-			( "TV/Sat", "tvsat", ""),
-			( "Vformat", "vmode", ""),
-			( "Sleep", "sleep", ""),
-			( "Picasa", "picasa", ""),
-			( "Shoutcast", "shoutcast", ""),
-			( "Youtube", "youtube", ""),
-			( "Spark", "spark", ""),
-			( "Tv/Radio", "tv", ""),
-			( "Recall", "recall", ""),
-			( "Info", "info", "Infobar/openEventView"),
-			( "Sat", "sat", "Infobar/showSatellites"),
-			( "Sat " + _("long"), "sat_long", ""),
-			( "Ok", "ok", ""),
-			( "Channel up", "channelup", ""),
-			( "Channel down", "channeldown", ""),
-			( "Favorites", "favorites", "Infobar/openFavouritesList"),
-			( "Favorites" + " " + _("long"), "favorites_long", ""),
-			( "Epg", "epg", "Plugins/Extensions/GraphMultiEPG/1"),
-			( "Epg " + _("long"), "epg_long", "Infobar/showEventInfoPlugins"),
-			( "Menu", "menu", ""),
-			(_("Left"), "left", ""),
-			(_("Right"), "right", ""),
-			(_("Up"), "up", ""),
-			(_("Down"), "down", ""),
-			( "Find", "find", ""),
-			( "Record", "record", ""),
-			( "Play", "play", ""),
-			( "Stop", "stop", ""),
-			( "Pause", "pause", ""),
-			( "Rewind", "rewind", ""),
-			( "Fastforward", "fastforward", ""),
-			( "File", "file", ""),
-			( "Playmode", "playmode", ""),
-			( "Playmode" + _("long"), "playmode_long", ""),
-			( "USB", "usb", ""),
-			( "USB" + _("long"), "usb_long", ""),
-			( "Next", "next", ""),
-			( "Previous", "previous", ""),
-			( "Subtitle", "subtitle", "Infobar/subtitleSelection"),
-			( "Portal", "portal", ""),
-			( "Portal " + _("long"), "portal_long", ""),
-			( "Timeshift", "time", ""),
-			( "Slow", "slow", ""),
-			( "Fast", "fast", ""),
-			( "Power", "power", "Module/Screens.Standby/Standby"),
-			( "Power " + _("long"), "power_long", "Menu/shutdown"),
-			( "HDMIin" + " " + _("long"), "HDMIin_long", ""),
-			( "Media", "media", ""),
-			( "Media" + " " + _("long"), "media_long", ""),
-			( "WWW Portal", "www", ""),
-			( "WWW Portal" + " " + _("long"), "www_long", "")]
-
-
-
-		usedkeys = []
-		lircfile = "/etc/lircd.conf"
-		stbid = open("/proc/cmdline", "r").read()
-		if "STB_ID=" in stbid:
-			try:
-				stbid = stbid.split("STB_ID=", 1)[1][:8].replace(":", "_")
-			except:
-				stbid = ""
-		elif "ethaddr:" in stbid:
-			try:
-				stbid = stbid.split("ethaddr:", 1)[1][:8].replace("24", "09").replace(":", "_")
-			except:
-				stbid = ""
-		else:
-			stbid = ""
-		if stbid and os.path.exists(lircfile + "." + stbid):
-			lircfile += "." + stbid
-		for line in open(lircfile, "r").readlines():
-			if "KEY_" in line:
-				key = line.split("KEY_", 1)[1].replace("0x", " ").split(" ", 1)[0].replace("\t", "").lower()
-				if key not in usedkeys:
-					usedkeys.append(key)
-		self.keys = [key for key in self.keys if key[1].split("_")[0] in usedkeys]
-
-	def getHotkeys(self):
-		return self.keys
-
-used_keys = UsedKeys()
+def getHotkeys():
+	return [(_("Red") + " " + _("long"), "red_long", ""),
+		(_("Green") + " " + _("long"), "green_long", ""),
+		(_("Yellow") + " " + _("long"), "yellow_long", ""),
+		(_("Blue") + " " + _("long"), "blue_long", "SoftcamSetup"),
+		("F1/LAN", "f1", ""),
+		("F1" + " " + _("long"), "f1_long", ""),
+		("F2", "f2", ""),
+		("F2" + " " + _("long"), "f2_long", ""),
+		("F3", "f3", ""),
+		("F3" + " " + _("long"), "f3_long", ""),
+		(_("Red"), "red", ""),
+		(_("Green"), "green", ""),
+		(_("Yellow"), "yellow", ""),
+		(_("Blue"), "blue", ""),
+		("Rec", "rec", ""),
+		("Radio", "radio", ""),
+		("Radio" + " " + _("long"), "radio_long", ""),
+		("TV", "showTv", ""),
+		("TV" + " " + _("long"), "showTv_long", SystemInfo["LcdLiveTV"] and "Infobar/ToggleLCDLiveTV" or ""),
+		("TV2", "toggleTvRadio", ""),
+		("TV2" + " " + _("long"), "toggleTvRadio_long", SystemInfo["LcdLiveTV"] and "Infobar/ToggleLCDLiveTV" or ""),
+		("Teletext", "text", ""),
+		("Help", "displayHelp", ""),
+		("Help" + " " + _("long"), "displayHelp_long", ""),
+		("Subtitle", "subtitle", ""),
+		("Menu", "mainMenu", ""),
+		("Info (EPG)", "info", "Infobar/openEventView"),
+		("Info (EPG)" + " " + _("long"), "info_long", "Infobar/showEventInfoPlugins"),
+		("List/Fav/PVR", "list", ""),
+		("List/Fav/PVR" + " " + _("long"), "list_long", "Plugins/Extensions/Kodi/1"),
+		("Back/Recall", "back", ""),
+		("Back/Recall" + " " + _("long"), "back_long", ""),
+		("End", "end", ""),
+		("Epg/Guide", "epg", "Plugins/Extensions/GraphMultiEPG/1"),
+		("Epg/Guide" + " " + _("long"), "epg_long", "Infobar/showEventInfoPlugins"),
+		("Left", "cross_left", ""),
+		("Right", "cross_right", ""),
+		("Up", "cross_up", ""),
+		("Down", "cross_down", ""),
+		("Ok", "ok", ""),
+		("Channel up", "channelup", ""),
+		("Channel down", "channeldown", ""),
+		("Page up", "pageUp", ""),
+		("Page up"  + " " + _("long"), "pageUp_long", ""),
+		("Page down", "pageDown", ""),
+		("Page down" + " " + _("long"), "pageDown_long", ""),
+		("Next", "next", ""),
+		("Previous", "previous", ""),
+		("Audio", "audio", ""),
+		("Play", "play", ""),
+		("Playpause", "playpause", ""),
+		("Stop", "stop", ""),
+		("Pause", "pause", ""),
+		("Rewind", "rewind", ""),
+		("Fastforward", "fastforward", ""),
+		("Skip back", "skip_back", ""),
+		("Skip forward", "skip_forward", ""),
+		("activatePiP", "activatePiP", ""),
+		("Timer", "timer", ""),
+		("Timer" + " " + _("long"), "timer_long", ""),
+		("Playlist", "playlist", ""),
+		("Timeshift", "timeshift", ""),
+		("Search", "search", ""),
+		("Search" + " " + _("long"), "search_long", ""),
+		("Slow", "slow", ""),
+		("Mark/Portal/Playlist", "mark", ""),
+		("Mark/Portal/Playlist" + " " + _("long"), "mark_long", ""),
+		("Sleep", "sleep", ""),
+		("Sleep" + " " + _("long"), "sleep_long", ""),
+		("Context", "contextmenu", ""),
+		("Context" + " " + _("long"), "contextmenu_long", ""),
+		("Video Mode", "vmode", ""),
+		("Video Mode" + " " + _("long"), "vmode_long", ""),
+		("Home", "home", ""),
+		("Power", "power", "Module/Screens.Standby/Standby"),
+		("Power" + " " + _("long"), "power_long", "Menu/shutdown"),
+		("HDMIin", "HDMIin", "Infobar/HDMIIn"),
+		("HDMIin" + " " + _("long"), "HDMIin_long", ""),
+		("Media", "media", ""),
+		("Media" + " " + _("long"), "media_long", ""),
+		("Favorites", "favorites", "Infobar/openFavouritesList"),
+		("Favorites" + " " + _("long"), "favorites_long", ""),
+		("Mouse", "mouse", ""),
+		("Mouse" + " " + _("long"), "mouse_long", ""),
+		("WWW Portal", "www", ""),
+		("WWW Portal" + " " + _("long"), "www_long", "")]
 
 config.misc.hotkey = ConfigSubsection()
 config.misc.hotkey.additional_keys = ConfigYesNo(default=False)
-for x in used_keys.getHotkeys():
+for x in getHotkeys():
 	exec "config.misc.hotkey." + x[1] + " = ConfigText(default='" + x[2] + "')"
 
 def getHotkeyFunctions():
@@ -153,7 +139,6 @@ def getHotkeyFunctions():
 	hotkeyFunctions.append((_("Switch channel up"), "Infobar/switchChannelUp", "InfoBar"))
 	hotkeyFunctions.append((_("Switch channel down"), "Infobar/switchChannelDown", "InfoBar"))
 	hotkeyFunctions.append((_("Show service list"), "Infobar/openServiceList", "InfoBar"))
-	hotkeyFunctions.append((_("Show sattelites list"), "Infobar/showSatellites", "InfoBar"))
 	hotkeyFunctions.append((_("Show movies"), "Infobar/showMovies", "InfoBar"))
 	hotkeyFunctions.append((_("Show servicelist or movies"), "Infobar/showServiceListOrMovies", "InfoBar"))
 	hotkeyFunctions.append((_("Show favourites list"), "Infobar/openFavouritesList", "InfoBar"))
@@ -180,8 +165,6 @@ def getHotkeyFunctions():
 	hotkeyFunctions.append((_("Show InfoBar"), "Infobar/showFirstInfoBar", "InfoBar"))
 	hotkeyFunctions.append((_("Show second InfoBar"), "Infobar/showSecondInfoBar", "InfoBar"))
 	hotkeyFunctions.append((_("Toggle infoBar"), "Infobar/toggleShow", "InfoBar"))
-	hotkeyFunctions.append((_("Pillarbox/Pan&Scan"), "Infobar/PillarboxPanScanSelection", "InfoBar"))
-	hotkeyFunctions.append((_("Pillarbox/Just scale"), "Infobar/PillarboxScaleSelection", "InfoBar"))
 	hotkeyFunctions.append((_("Letterbox zoom"), "Infobar/vmodeSelection", "InfoBar"))
 	if SystemInfo["PIPAvailable"]:
 		hotkeyFunctions.append((_("Show PIP"), "Infobar/showPiP", "InfoBar"))
@@ -252,7 +235,7 @@ class HotkeySetup(Screen):
 		self.setTitle(_("Hotkey Setup"))
 		self["key_red"] = StaticText(_("Exit"))
 		self.list = []
-		self.hotkeys = used_keys.getHotkeys()
+		self.hotkeys = getHotkeys()
 		self.hotkeyFunctions = getHotkeyFunctions()
 		for x in self.hotkeys:
 			self.list.append(ChoiceEntryComponent('',(x[0], x[1])))
@@ -263,7 +246,6 @@ class HotkeySetup(Screen):
 			"ok": self.keyOk,
 			"cancel": self.close,
 			"red": self.close,
-			"green": self.toggleAdditionalKeys,
 			"up": self.keyUp,
 			"down": self.keyDown,
 			"left": self.keyLeft,
@@ -315,7 +297,7 @@ class HotkeySetup(Screen):
 
 	def setDefaultHotkey(self, answer):
 		if answer:
-			for x in used_keys.getHotkeys():
+			for x in getHotkeys():
 				current_config = eval("config.misc.hotkey." + x[1])
 				current_config.value = str(x[2])
 				current_config.save()
@@ -324,19 +306,14 @@ class HotkeySetup(Screen):
 	def keyNumberGlobal(self, number):
 		self.session.openWithCallback(self.setDefaultHotkey, MessageBox, _("Set all hotkey to default?"), MessageBox.TYPE_YESNO)
 
-	def toggleAdditionalKeys(self):
-		config.misc.hotkey.additional_keys.value = not config.misc.hotkey.additional_keys.value
-		config.misc.hotkey.additional_keys.save()
-		self["list"].setList(self.list[:config.misc.hotkey.additional_keys.value and len(self.hotkeys) or 10])
-
 	def getFunctions(self):
 		key = self["list"].l.getCurrentSelection()[0][1]
 		if key:
 			selected = []
 			for x in eval("config.misc.hotkey." + key + ".value.split(',')"):
-				if x[:8] == "ZapPanic":
+				if x.startswith("ZapPanic"):
 					selected.append(ChoiceEntryComponent('',((_("Panic to") + " " + ServiceReference(eServiceReference(x.split("/", 1)[1]).toString()).getServiceName()), x)))
-				elif x[:3] == "Zap":
+				elif x.startswith("Zap"):
 					selected.append(ChoiceEntryComponent('',((_("Zap to") + " " + ServiceReference(eServiceReference(x.split("/", 1)[1]).toString()).getServiceName()), x)))
 				else:
 					function = list(function for function in self.hotkeyFunctions if function[1] == x )
@@ -353,10 +330,6 @@ class HotkeySetupSelect(Screen):
 		self["key_red"] = StaticText(_("Cancel"))
 		self["key_green"] = StaticText(_("Save"))
 		self["key_yellow"] = StaticText("")
-		self["h_red"] = Pixmap()
-		self["h_green"] = Pixmap()
-		self["h_yellow"] = Pixmap()
-		self["h_yellow"].hide()
 		self["h_prev"] = Pixmap()
 		self["h_next"] = Pixmap()
 
@@ -366,9 +339,9 @@ class HotkeySetupSelect(Screen):
 		self.expanded = []
 		self.selected = []
 		for x in self.config.value.split(','):
-			if x[:8] == "ZapPanic":
+			if x.startswith("ZapPanic"):
 				self.selected.append(ChoiceEntryComponent('',((_("Panic to") + " " + ServiceReference(eServiceReference(x.split("/", 1)[1]).toString()).getServiceName()), x)))
-			elif x[:3] == "Zap":
+			elif x.startswith("Zap"):
 				self.selected.append(ChoiceEntryComponent('',((_("Zap to") + " " + ServiceReference(eServiceReference(x.split("/", 1)[1]).toString()).getServiceName()), x)))
 			else:
 				function = list(function for function in self.hotkeyFunctions if function[1] == x )
@@ -416,18 +389,16 @@ class HotkeySetupSelect(Screen):
 				catagories[function[2]] = []
 			catagories[function[2]].append(function)
 		for catagorie in sorted(list(catagories)):
-			localcatagorie = _(catagorie)
-			if localcatagorie in self.expanded:
-				functionslist.append(ChoiceEntryComponent('expanded',((localcatagorie), "Expander")))
+			if catagorie in self.expanded:
+				functionslist.append(ChoiceEntryComponent('expanded',((catagorie), "Expander")))
 				for function in catagories[catagorie]:
 					functionslist.append(ChoiceEntryComponent('verticalline',((function[0]), function[1])))
 				if catagorie == "InfoBar":
 					functionslist.append(ChoiceEntryComponent('verticalline',((_("Zap to")), "Zap")))
 					functionslist.append(ChoiceEntryComponent('verticalline',((_("Panic to")), "ZapPanic")))
 			else:
-				functionslist.append(ChoiceEntryComponent('expandable',((localcatagorie), "Expander")))
+				functionslist.append(ChoiceEntryComponent('expandable',((catagorie), "Expander")))
 		return functionslist
-
 
 	def toggleMode(self):
 		if self.mode == "list" and self.selected:
@@ -471,10 +442,10 @@ class HotkeySetupSelect(Screen):
 				if currentSelected[:2] in self.selected:
 					self.selected.remove(currentSelected[:2])
 				else:
-					if currentSelected[0][1][:8] == "ZapPanic":
+					if currentSelected[0][1].startswith("ZapPanic"):
 						from Screens.ChannelSelection import SimpleChannelSelection
 						self.session.openWithCallback(self.zaptoCallback, SimpleChannelSelection, _("Hotkey Panic") + " " + self.key[0][0], currentBouquet=True)
-					elif currentSelected[0][1][:3] == "Zap":
+					elif currentSelected[0][1].startswith("Zap"):
 						from Screens.ChannelSelection import SimpleChannelSelection
 						self.session.openWithCallback(self.zaptoCallback, SimpleChannelSelection, _("Hotkey zap") + " " + self.key[0][0], currentBouquet=True)
 					else:
@@ -542,7 +513,7 @@ class HotkeySetupSelect(Screen):
 
 class hotkeyActionMap(ActionMap):
 	def action(self, contexts, action):
-		if action in tuple(x[1] for x in used_keys.getHotkeys()) and action in self.actions:
+		if action in tuple(x[1] for x in getHotkeys()) and action in self.actions:
 			res = self.actions[action](action)
 			if res is not None:
 				return res
@@ -552,7 +523,7 @@ class hotkeyActionMap(ActionMap):
 
 class helpableHotkeyActionMap(HelpableActionMap):
 	def action(self, contexts, action):
-		if action in tuple(x[1] for x in used_keys.getHotkeys()) and action in self.actions:
+		if action in tuple(x[1] for x in getHotkeys()) and action in self.actions:
 			res = self.actions[action](action)
 			if res is not None:
 				return res
@@ -562,19 +533,19 @@ class helpableHotkeyActionMap(HelpableActionMap):
 
 class InfoBarHotkey():
 	def __init__(self):
-		self.hotkeys = used_keys.getHotkeys()
+		self.hotkeys = getHotkeys()
 		self["HotkeyButtonActions"] = helpableHotkeyActionMap(self, "HotkeyActions",
 			dict((x[1],(self.hotkeyGlobal, boundFunction(self.getHelpText, x[1]))) for x in self.hotkeys), -10)
 
 	def getKeyFunctions(self, key):
-		if key in ("play", "stop", "pause", "rewind", "fastforward", "next", "previous") and (self.__class__.__name__ == "MoviePlayer" or hasattr(self, "timeshiftActivated") and self.timeshiftActivated()):
+		if key in ("play", "playpause", "Stop", "stop", "pause", "rewind", "next", "previous", "fastforward", "skip_back", "skip_forward") and (self.__class__.__name__ == "MoviePlayer" or hasattr(self, "timeshiftActivated") and self.timeshiftActivated()):
 			return False
 		selection = eval("config.misc.hotkey." + key + ".value.split(',')")
 		selected = []
 		for x in selection:
-			if x[:8] == "ZapPanic":
+			if x.startswith("ZapPanic"):
 				selected.append(((_("Panic to") + " " + ServiceReference(eServiceReference(x.split("/", 1)[1]).toString()).getServiceName()), x))
-			elif x[:3] == "Zap":
+			elif x.startswith("Zap"):
 				selected.append(((_("Zap to") + " " + ServiceReference(eServiceReference(x.split("/", 1)[1]).toString()).getServiceName()), x))
 			else:
 				function = list(function for function in getHotkeyFunctions() if function[1] == x )
@@ -643,7 +614,7 @@ class InfoBarHotkey():
 					return 0
 			elif selected[0] == "Module":
 				try:
-					exec "from " + selected[1] + " import " + selected[2]
+					exec "from " + selected[1] + " import *"
 					exec "self.session.open(" + ",".join(selected[2:]) + ")"
 				except:
 					print "[Hotkey] error during executing module %s, screen %s" % (selected[1], selected[2])
@@ -653,9 +624,10 @@ class InfoBarHotkey():
 			elif selected[0] == "Setup":
 				from Screens.Setup import *
 				exec "self.session.open(Setup, \"" + selected[1] + "\")"
-			elif selected[0][:3] == "Zap":
+			elif selected[0].startswith("Zap"):
 				if selected[0] == "ZapPanic":
 					self.servicelist.history = []
+					self.pipShown() and self.showPiP()
 				self.servicelist.servicelist.setCurrent(eServiceReference("/".join(selected[1:])))
 				self.servicelist.zap(enable_pipzap = True)
 				if hasattr(self, "lastservice"):

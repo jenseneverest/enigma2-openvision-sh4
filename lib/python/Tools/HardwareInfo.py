@@ -20,7 +20,7 @@ class HardwareInfo:
 		except:
 			pass
 
-		self.device_model = self.device_name
+		self.device_model = self.device_model or self.device_name
 
 		self.machine_name = self.device_model
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-02 19:48+0330\n"
+"POT-Creation-Date: 2019-03-05 01:01+0330\n"
 "PO-Revision-Date: 2018-11-12 20:51+0200\n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: Bulgarian\n"
@@ -3276,6 +3276,10 @@ msgstr "Английски"
 msgid "Enigma (re)starts: %d\n"
 msgstr "Енигма (ре)стартирания: %d\n"
 
+#, python-format
+msgid "Enigma debug level: %d\n"
+msgstr ""
+
 msgid "Enigma version: "
 msgstr "Енигма версия: "
 
@@ -4510,10 +4514,6 @@ msgid "Invalid directory selected: %s"
 msgstr "Избрана грешна директория: %s"
 
 msgid "Invalid location"
-msgstr "Грешно Място"
-
-#, fuzzy
-msgid "Invalid reason"
 msgstr "Грешно Място"
 
 msgid "Invalid transponder data"
@@ -6848,6 +6848,10 @@ msgid "Restart enigma"
 msgstr "Рестарт енигма"
 
 msgid "Restart enigma in debug mode"
+msgstr "Рестарт енигма в режим за отстраняване на грешки"
+
+#, fuzzy
+msgid "Restart enigma in standard mode"
 msgstr "Рестарт енигма в режим за отстраняване на грешки"
 
 msgid "Restart network"

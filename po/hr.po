@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-02 19:48+0330\n"
+"POT-Creation-Date: 2019-03-05 01:01+0330\n"
 "PO-Revision-Date: 2019-02-18 17:28+0100\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -3280,6 +3280,10 @@ msgstr "Engleski"
 msgid "Enigma (re)starts: %d\n"
 msgstr "Enigma (rе)start: %d\n"
 
+#, python-format
+msgid "Enigma debug level: %d\n"
+msgstr ""
+
 msgid "Enigma version: "
 msgstr "Verzija enigme: "
 
@@ -4495,10 +4499,6 @@ msgid "Invalid directory selected: %s"
 msgstr "Odabran je nevažeći direktorij: %s"
 
 msgid "Invalid location"
-msgstr "Nevažeća lokacija"
-
-#, fuzzy
-msgid "Invalid reason"
 msgstr "Nevažeća lokacija"
 
 msgid "Invalid transponder data"
@@ -6825,6 +6825,10 @@ msgid "Restart enigma"
 msgstr "Restart enigma (Ponovno pokretanje enigme)"
 
 msgid "Restart enigma in debug mode"
+msgstr "Ponovno pokrenite enigmu u načinu za otklanjanje pogrešaka"
+
+#, fuzzy
+msgid "Restart enigma in standard mode"
 msgstr "Ponovno pokrenite enigmu u načinu za otklanjanje pogrešaka"
 
 msgid "Restart network"

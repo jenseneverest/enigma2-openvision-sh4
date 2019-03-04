@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi-enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-02 19:48+0330\n"
+"POT-Creation-Date: 2019-03-05 01:01+0330\n"
 "PO-Revision-Date: 2018-05-22 13:54+0200\n"
 "Last-Translator: Gringo <openpli@tiscali.it>\n"
 "Language-Team: www.linsat.net <spaeleus@croci.org>\n"
@@ -3280,6 +3280,10 @@ msgstr "Inglese"
 msgid "Enigma (re)starts: %d\n"
 msgstr "(Ri)avvii di Enigma: %d\n"
 
+#, python-format
+msgid "Enigma debug level: %d\n"
+msgstr ""
+
 msgid "Enigma version: "
 msgstr "Versione Enigma: "
 
@@ -4500,10 +4504,6 @@ msgid "Invalid directory selected: %s"
 msgstr "La cartella selezionata non è valida: %s"
 
 msgid "Invalid location"
-msgstr "Posizione non valida"
-
-#, fuzzy
-msgid "Invalid reason"
 msgstr "Posizione non valida"
 
 msgid "Invalid transponder data"
@@ -6841,6 +6841,10 @@ msgstr "Riavvio di Enigma2"
 
 #, fuzzy
 msgid "Restart enigma in debug mode"
+msgstr "Riavvio di Enigma2"
+
+#, fuzzy
+msgid "Restart enigma in standard mode"
 msgstr "Riavvio di Enigma2"
 
 msgid "Restart network"

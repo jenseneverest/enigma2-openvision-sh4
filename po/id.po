@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-02 19:48+0330\n"
+"POT-Creation-Date: 2019-03-05 01:01+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -3318,6 +3318,10 @@ msgstr "Inggris"
 msgid "Enigma (re)starts: %d\n"
 msgstr "Enigma (re)starts: %d\n"
 
+#, python-format
+msgid "Enigma debug level: %d\n"
+msgstr ""
+
 #, fuzzy
 msgid "Enigma version: "
 msgstr "Kernel version: "
@@ -4568,10 +4572,6 @@ msgid "Invalid directory selected: %s"
 msgstr "Direktori tidak valid dipilih: %s"
 
 msgid "Invalid location"
-msgstr "Lokasi tidak valid"
-
-#, fuzzy
-msgid "Invalid reason"
 msgstr "Lokasi tidak valid"
 
 msgid "Invalid transponder data"
@@ -6941,6 +6941,10 @@ msgstr "Mulai ulang enigma"
 
 #, fuzzy
 msgid "Restart enigma in debug mode"
+msgstr "Mulai ulang enigma pada mode debug"
+
+#, fuzzy
+msgid "Restart enigma in standard mode"
 msgstr "Mulai ulang enigma pada mode debug"
 
 msgid "Restart network"

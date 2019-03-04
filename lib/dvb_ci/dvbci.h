@@ -5,9 +5,7 @@
 
 #include <lib/base/ebase.h>
 #include <lib/service/iservice.h>
-#ifdef __sh__
 #include <lib/base/thread.h>
-#endif
 #include <lib/python/python.h>
 #include <set>
 #include <queue>
@@ -43,7 +41,6 @@ typedef std::set<providerPair> providerSet;
 typedef std::set<uint16_t> caidSet;
 typedef std::set<eServiceReference> serviceSet;
 
-#ifdef __sh__
 /* ********************************** */
 /* constants taken from dvb-apps 
  */
@@ -77,7 +74,6 @@ static inline int time_after(struct timespec oldtime, uint32_t delta_ms)
 	// check
 	return nowtime_ms > oldtime_ms;
 }
-#endif
 
 class eDVBCISlot: public iObject, public sigc::trackable
 {
@@ -102,13 +98,11 @@ class eDVBCISlot: public iObject, public sigc::trackable
 	bool user_mapped;
 	void data(int);
 	bool plugged;
-#ifdef __sh__
 	//dagobert
 	char connection_id;
 	bool mmi_active;
 	int receivedLen;
 	unsigned char* receivedData;
-#endif
 public:
 	enum {stateRemoved, stateInserted, stateInvalid, stateResetted};
 	eDVBCISlot(eMainloop *context, int nr);
@@ -139,7 +133,6 @@ public:
 	int setSource(const std::string &source);
 	int setClockRate(int);
 	static std::string getTunerLetter(int tuner_no) { return std::string(1, char(65 + tuner_no)); }
-#ifdef __sh__
 	bool checkQueueSize();
 	void thread();
 	void mmiOpened() { mmi_active = true; };
@@ -149,7 +142,6 @@ public:
 	eData sendData(unsigned char* data, int len);
 	struct timeval tx_time;
 	struct timespec last_poll_time;
-#endif
 };
 
 struct CIPmtHandler

@@ -1,10 +1,6 @@
 #ifndef __base_object_h
 #define __base_object_h
 
-#if !defined(__sh__)
-#include <ext/atomicity.h>
-#endif
-
 #include <assert.h>
 #include <lib/base/smartptr.h>
 #include <lib/base/elock.h>
@@ -36,39 +32,23 @@ public:
 
 class oRefCount
 {
-#if defined(__sh__)
-        int ref;
-#else
-	mutable _Atomic_word ref;
-#endif
+	int ref;
 public:
 	oRefCount(): ref(0) {}
 
 	int operator++()
-	{
-#if defined(__sh__)            
-                return ++ref;            
-#else
-                return __gnu_cxx::__exchange_and_add(&ref, 1) + 1;
-#endif
+	{          
+                return ++ref;
 	}
 
 	int operator--()
-	{
-#if defined(__sh__)             
+	{           
                 return --ref;
-#else
-                return __gnu_cxx::__exchange_and_add(&ref, -1) - 1;
-#endif
 	}
 
 	operator int() const
 	{
-#if defined(__sh__) 
                 return ref;
-#else
-		return __gnu_cxx::__exchange_and_add(&ref, 0);
-#endif
 	}
 };
 

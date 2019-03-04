@@ -15,11 +15,8 @@
 // #define ACCEL_DEBUG
 
 gAccel *gAccel::instance;
-#if not defined(__sh__)
-#define BCM_ACCEL
-#else
+
 #define STMFB_ACCEL
-#endif
 
 #ifdef STMFB_ACCEL
 extern int stmfb_accel_init(void);

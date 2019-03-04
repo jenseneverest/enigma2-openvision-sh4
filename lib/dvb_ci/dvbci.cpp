@@ -25,10 +25,8 @@
 
 #include <dvbsi++/ca_program_map_section.h>
 
-#ifdef __sh__
 #include <linux/dvb/ca.h>
 //#define x_debug
-#endif
 
 //#define CIDEBUG 1
 
@@ -150,7 +148,6 @@ bool eDVBCIInterfaces::isClientConnected()
 
 #define CIPLUS_SERVER_SOCKET "/tmp/.listen.ciplus.socket"
 
-#ifdef __sh__
 bool eDVBCISlot::checkQueueSize()
 {
 	return (sendqueue.size() > 0);
@@ -371,8 +368,6 @@ void eDVBCISlot::process_tpdu(unsigned char tpdu_tag, uint8_t* data, int asn_dat
 	}
 }
 
-#endif
-
 eDVBCIInterfaces::eDVBCIInterfaces()
  : eServerSocket(CIPLUS_SERVER_SOCKET, eApp)
 {
@@ -390,11 +385,7 @@ eDVBCIInterfaces::eDVBCIInterfaces()
 	{
 		path.str("");
 		path.clear();
-#ifdef __sh__
 		path << "/dev/dvb/adapter0/ci" << num_ci;
-#else
-		path << "/dev/ci" << num_ci;
-#endif
 
 		if(::access(path.str().c_str(), R_OK) < 0)
 			break;
@@ -1324,13 +1315,8 @@ int eDVBCISlot::send(const unsigned char *data, size_t len)
 	{
 		unsigned char *d = new unsigned char[len];
 		memcpy(d, data, len);
-#ifdef __sh__
 		sendData(d, len);
 		notifier->setRequested(eSocketNotifier::Read | eSocketNotifier::Priority | eSocketNotifier::Write);
-#else
-		sendqueue.push( queueData(d, len) );
-		notifier->setRequested(eSocketNotifier::Read | eSocketNotifier::Priority | eSocketNotifier::Write);
-#endif
 	}
 
 	return res;
@@ -1339,63 +1325,6 @@ int eDVBCISlot::send(const unsigned char *data, size_t len)
 void eDVBCISlot::data(int what)
 {
 	eDebugCI("[CI] Slot %d what %d\n", getSlotID(), what);
-#ifndef __sh__
-	if(what == eSocketNotifier::Priority) {
-		if(state != stateRemoved) {
-			state = stateRemoved;
-			while(sendqueue.size())
-			{
-				delete [] sendqueue.top().data;
-				sendqueue.pop();
-			}
-			eDVBCISession::deleteSessions(this);
-			eDVBCIInterfaces::getInstance()->ciRemoved(this);
-			notifier->setRequested(eSocketNotifier::Read);
-			eDVBCI_UI::getInstance()->setState(getSlotID(),0);
-		}
-		return;
-	}
-
-	if (state == stateInvalid)
-		reset();
-
-	if(state != stateInserted) {
-		eDebug("[CI] ci inserted in slot %d", getSlotID());
-		state = stateInserted;
-		eDVBCI_UI::getInstance()->setState(getSlotID(),1);
-		notifier->setRequested(eSocketNotifier::Read|eSocketNotifier::Priority);
-		/* enable PRI to detect removal or errors */
-	}
-
-	if (what & eSocketNotifier::Read) {
-		uint8_t data[4096];
-		int r;
-		r = ::read(fd, data, 4096);
-		if(r > 0) {
-//			int i;
-//			eDebugNoNewLineStart("> ");
-//			for(i=0;i<r;i++)
-//				eDebugNoNewLine("%02x ",data[i]);
-//			eDebugNoNewLine("\n");
-			eDVBCISession::receiveData(this, data, r);
-			eDVBCISession::pollAll();
-			return;
-		}
-	}
-	else if (what & eSocketNotifier::Write) {
-		if (!sendqueue.empty()) {
-			const queueData &qe = sendqueue.top();
-			int res = ::write(fd, qe.data, qe.len);
-			if (res >= 0 && (unsigned int)res == qe.len)
-			{
-				delete [] qe.data;
-				sendqueue.pop();
-			}
-		}
-		else
-			notifier->setRequested(eSocketNotifier::Read|eSocketNotifier::Priority);
-	}
-#else
 	unsigned char data[1024];
 	int len = 1024;
 	unsigned char* d;
@@ -1558,7 +1487,6 @@ void eDVBCISlot::data(int what)
 		break;
 	}
 	notifier->setRequested(eSocketNotifier::Read | eSocketNotifier::Priority | eSocketNotifier::Write);
-#endif
 }
 
 DEFINE_REF(eDVBCISlot);
@@ -1577,11 +1505,7 @@ eDVBCISlot::eDVBCISlot(eMainloop *context, int nr)
 
 	slotid = nr;
 
-#ifdef __sh__
 	sprintf(filename, "/dev/dvb/adapter0/ci%d", nr);
-#else
-	sprintf(filename, "/dev/ci%d", nr);
-#endif
 
 //	possible_caids.insert(0x1702);
 //	possible_providers.insert(providerPair("PREMIERE", 0xC00000));
@@ -1592,24 +1516,18 @@ eDVBCISlot::eDVBCISlot(eMainloop *context, int nr)
 	eDebugCI("[CI] Slot %d has fd %d", getSlotID(), fd);
 	state = stateInvalid;
 
-#ifdef __sh__
 	receivedLen = 0;
 	receivedData = NULL;
-#endif
 	if (fd >= 0)
 	{
-#ifdef __sh__
 		connection_id = slotid + 1;
 		tx_time.tv_sec = 0;
 		tx_time.tv_usec = 0;
 		last_poll_time.tv_sec = 0;
 		last_poll_time.tv_nsec = 0;
-#endif
 		notifier = eSocketNotifier::create(context, fd, eSocketNotifier::Read | eSocketNotifier::Priority | eSocketNotifier::Write);
 		CONNECT(notifier->activated, eDVBCISlot::data);
-#ifdef __sh__
 		reset();
-#endif
 	} else
 	{
 		perror(filename);
@@ -1645,21 +1563,11 @@ int eDVBCISlot::reset()
 {
 	eDebug("[CI] Slot %d: reset requested", getSlotID());
 
-#ifdef __sh__
 	state = stateInvalid;
 	mmi_active = false;
 	eDVBCI_UI::getInstance()->setAppName(getSlotID(), "");
 	eDVBCISession::deleteSessions(this);
 	eDVBCIInterfaces::getInstance()->ciRemoved(this);
-#else
-	if (state == stateInvalid)
-	{
-		unsigned char buf[256];
-		eDebug("[CI] flush");
-		while(::read(fd, buf, 256)>0);
-		state = stateResetted;
-	}
-#endif
 
 	while(sendqueue.size())
 	{
@@ -1667,12 +1575,8 @@ int eDVBCISlot::reset()
 		sendqueue.pop();
 	}
 
-#ifdef __sh__
 	if (ioctl(fd, CA_RESET, getSlotID()) < 0)
 		eDebug("IOCTL CA_RESET failed for slot %d\n", slotid);
-#else
-	ioctl(fd, 0);
-#endif
 
 	return 0;
 }

@@ -11,10 +11,8 @@
 #include <byteswap.h>
 #include <netinet/in.h>
 
-#if defined(__sh__)
 #include <sys/vfs.h>
 #include <linux/magic.h>
-#endif
 DEFINE_REF(eDVBServiceRecord);
 
 eDVBServiceRecord::eDVBServiceRecord(const eServiceReferenceDVB &ref, bool isstreamclient): m_ref(ref)
@@ -290,13 +288,10 @@ int eDVBServiceRecord::doRecord()
 
 	if (!m_record && m_tuned && !m_streaming && !m_simulate)
 	{
-#if defined(__sh__)
 		int flags = O_WRONLY|O_CREAT|O_LARGEFILE|O_CLOEXEC;
 		struct statfs sbuf;
-#endif
 		eDebug("[eDVBServiceRecord] Recording to %s...", m_filename.c_str());
 		::remove(m_filename.c_str());
-#if defined(__sh__)
 		//we must creat a file for statfs
 		int fd = ::open(m_filename.c_str(), flags, 0666);
 		::close(fd);
@@ -310,9 +305,6 @@ int eDVBServiceRecord::doRecord()
 			flags |= O_DIRECT;
 		}
 		fd = ::open(m_filename.c_str(), flags, 0666);
-#else
-		int fd = ::open(m_filename.c_str(), O_WRONLY | O_CREAT | O_LARGEFILE | O_CLOEXEC, 0666);
-#endif
 		if (fd == -1)
 		{
 			eDebug("[eDVBServiceRecord] can't open recording file: %m");

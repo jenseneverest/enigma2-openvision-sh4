@@ -2,6 +2,7 @@
 import sys, os, time
 import re
 from Tools.HardwareInfo import HardwareInfo
+from Components.SystemInfo import SystemInfo
 
 def getVersionString():
 	return getImageVersionString()

@@ -48,7 +48,6 @@ private:
 	int m_accel_phys_addr;
 	int m_accel_size; // in blocks
 	MemoryBlockList m_accel_allocation;
-	int m_bcm_accel_state;
 
 	static gAccel *instance;
 };

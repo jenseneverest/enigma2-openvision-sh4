@@ -65,3 +65,5 @@ void stmfb_accel_fill(
 		int dst_addr, int dst_width, int dst_height, int dst_stride,
 		int x, int y, int width, int height,
 		unsigned long color)
+{	
+}

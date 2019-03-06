@@ -3,6 +3,9 @@ import time
 from Directories import resolveFilename, SCOPE_CONFIG
 
 from enigma import evfd  # Used for fulan vfd
+from enigma import getBoxType
+
+boxtype = getBoxType()
 
 PERCENTAGE_START = 0
 PERCENTAGE_END = 100
@@ -42,8 +45,12 @@ def profile(id):
 			else:
 				perc = PERCENTAGE_START
 			try:
-				open("/proc/progress", "w").write("%d \n" % perc)
-				evfd.getInstance().vfd_write_string("-%02d-" % perc)  # Used for fulan vfd
+				if boxtype in ("hl101", "vip1_v2", "vip2_v1" ):
+					f = open("/dev/vfd", "w")
+					f.write("-%02d-" % perc)
+				else:
+					open("/proc/progress", "w").write("%d \n" % perc)
+					evfd.getInstance().vfd_write_string("-%02d-" % perc)  # Used for fulan vfd
 			except IOError:
 				pass
 

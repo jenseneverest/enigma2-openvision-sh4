@@ -1,11 +1,10 @@
 import os
 
-from Tools.HardwareInfo import HardwareInfo
 from Tools.BoundFunction import boundFunction
 
 from config import config, ConfigSubsection, ConfigSelection, ConfigFloat, ConfigSatlist, ConfigYesNo, ConfigInteger, ConfigSubList, ConfigNothing, ConfigSubDict, ConfigOnOff, ConfigDateTime, ConfigText
 
-from enigma import eDVBFrontendParametersSatellite, eDVBSatelliteEquipmentControl as secClass, eDVBSatelliteDiseqcParameters as diseqcParam, eDVBSatelliteSwitchParameters as switchParam, eDVBSatelliteRotorParameters as rotorParam, eDVBResourceManager, eDVBDB, eEnv
+from enigma import eDVBFrontendParametersSatellite, eDVBSatelliteEquipmentControl as secClass, eDVBSatelliteDiseqcParameters as diseqcParam, eDVBSatelliteSwitchParameters as switchParam, eDVBSatelliteRotorParameters as rotorParam, eDVBResourceManager, eDVBDB, eEnv, getBoxType
 
 from time import localtime, mktime
 from datetime import datetime
@@ -170,7 +169,7 @@ class SecConfigure:
 		for slot in nim_slots:
 			x = slot.slot
 			nim = slot.config
-			hw = HardwareInfo()
+			hw = getBoxType()
 			if slot.isCompatible("DVB-S"):
 				print "[SecConfigure] slot: " + str(x) + " configmode: " + str(nim.configMode.value)
 				if nim.configMode.value in ( "loopthrough", "satposdepends", "nothing" ):
@@ -1142,7 +1141,7 @@ def InitSecParams():
 # the configElement should be only visible when diseqc 1.2 is disabled
 
 def InitNimManager(nimmgr, update_slots = []):
-	hw = HardwareInfo()
+	hw = getBoxType()
 
 	if not hasattr(config, "Nims"):
 		InitSecParams()

@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 from Plugins.Plugin import PluginDescriptor
-from enigma import iPlayableService, evfd
+from enigma import iPlayableService, evfd, getBoxType
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
 from Components.ActionMap import ActionMap
 from Components.config import *
 from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Sources.StaticText import StaticText
-from Tools.HardwareInfo import HardwareInfo
 from Screens.Screen import Screen
 import gettext
 #Version 140128.3
-stb = HardwareInfo().get_device_name()+++
+stb = getBoxType()
 
 try:
 	DisplayType = evfd.getInstance().getVfdType()

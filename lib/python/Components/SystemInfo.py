@@ -1,4 +1,4 @@
-from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnigmaDebugLvl
+from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnigmaDebugLvl, getBoxType
 from Tools.Directories import fileExists, fileCheck, pathExists, fileHas
 from Tools.HardwareInfo import HardwareInfo
 
@@ -68,7 +68,7 @@ SystemInfo["3DMode"] = fileCheck("/proc/stb/fb/3dmode") or fileCheck("/proc/stb/
 SystemInfo["3DZNorm"] = fileCheck("/proc/stb/fb/znorm") or fileCheck("/proc/stb/fb/primary/zoffset")
 SystemInfo["Blindscan_t2_available"] = fileCheck("/proc/stb/info/vumodel")
 SystemInfo["RcTypeChangable"] = pathExists('/proc/stb/ir/rc/type')
-SystemInfo["HasFullHDSkinSupport"] = HardwareInfo().get_device_model() in ("spark", "spark7162", "atevio7500")
+SystemInfo["HasFullHDSkinSupport"] = getBoxType() in ("spark", "spark7162", "atevio7500")
 SystemInfo["HasBypassEdidChecking"] = fileCheck("/proc/stb/hdmi/bypass_edid_checking")
 SystemInfo["HasColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
 SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"]
@@ -85,7 +85,7 @@ SystemInfo["HasHDMIpreemphasis"] = fileCheck("/proc/stb/hdmi/preemphasis")
 SystemInfo["HasColorimetry"] = fileCheck("/proc/stb/video/hdmi_colorimetry")
 SystemInfo["HasHdrType"] = fileCheck("/proc/stb/video/hdmi_hdrtype")
 SystemInfo["HasHDMI-CEC"] = HardwareInfo().has_hdmi() and fileExists("/usr/lib/enigma2/python/Plugins/SystemPlugins/HdmiCEC/plugin.pyo") and (fileExists("/dev/cec0") or fileExists("/dev/hdmi_cec") or fileExists("/dev/misc/hdmi_cec0"))
-SystemInfo["HasYPbPr"] = HardwareInfo().get_device_model() in ("atevio7500", "fortis_hdbox", "octagon1008", "hs7420", "hs7429", "ufs912", "ufs913")
+SystemInfo["HasYPbPr"] = getBoxType() in ("atevio7500", "fortis_hdbox", "octagon1008", "hs7420", "hs7429", "ufs912", "ufs913")
 SystemInfo["HasScart"] = True
 SystemInfo["HasSVideo"] = False
 SystemInfo["HasComposite"] = True

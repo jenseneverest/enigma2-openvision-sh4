@@ -10,21 +10,19 @@ from Components.config import *
 from enigma import getDesktop
 from Components.Language import language
 from Components.Sources.StaticText import StaticText
-from Tools.HardwareInfo import HardwareInfo
 import gettext
 from ServiceReference import ServiceReference
 from Components.ServiceList import ServiceList
-from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, iRecordableService, eTimer, evfd, eDVBVolumecontrol, iFrontendInformation
+from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, iRecordableService, eTimer, evfd, eDVBVolumecontrol, iFrontendInformation, getBoxType
 from time import localtime, strftime, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from os import environ, statvfs
-from Tools.HardwareInfo import HardwareInfo
 import gettext
 #from __init__ import _
 #Version 160102.1
-stb = HardwareInfo().get_device_name()
+stb = getBoxType()
 lang = language.getLanguage()
 environ['LANGUAGE'] = lang[:2]
 gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))

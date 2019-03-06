@@ -46,8 +46,7 @@ def profile(id):
 				perc = PERCENTAGE_START
 			try:
 				if boxtype in ("hl101", "vip1_v2", "vip2_v1" ):
-					f = open("/dev/vfd", "w")
-					f.write("-%02d-" % perc)
+					open("/dev/vfd", "w").write("%d \n" % perc)
 				else:
 					open("/proc/progress", "w").write("%d \n" % perc)
 					evfd.getInstance().vfd_write_string("-%02d-" % perc)  # Used for fulan vfd

@@ -16,7 +16,6 @@ from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
 import gettext
 #Version 171118.1
-stb = getBoxType()
 lang = language.getLanguage()
 environ['LANGUAGE'] = lang[:2]
 gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))
@@ -44,7 +43,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if stb.lower() == 'atevio7500' or stb.lower() == 'hs8200':
+	if getBoxType() in ("atevio7500","hs8200"):
 		DisplayType = 5
 	else:
 		DisplayType = None

@@ -10,8 +10,6 @@ from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
 import gettext
 #Version 140128.3
-stb = getBoxType()
-
 try:
 	DisplayType = evfd.getInstance().getVfdType()
 	if DisplayType != 10:
@@ -21,7 +19,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if stb.lower() == 'hs7110':
+	if getBoxType() == "hs7110":
 		DisplayType = 10
 	else:
 		DisplayType = None

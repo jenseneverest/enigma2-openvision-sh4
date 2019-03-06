@@ -16,7 +16,6 @@ from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
 import gettext
 #Version 140114.1
-stb = getBoxType()
 lang = language.getLanguage()
 environ['LANGUAGE'] = lang[:2]
 gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))
@@ -44,7 +43,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if stb.lower() == 'octagon1008':
+	if getBoxType() == "octagon1008":
 		DisplayType = 7
 	else:
 		DisplayType = None

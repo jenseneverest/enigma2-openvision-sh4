@@ -22,7 +22,6 @@ from os import environ, statvfs
 import gettext
 #from __init__ import _
 #Version 160102.1
-stb = getBoxType()
 lang = language.getLanguage()
 environ['LANGUAGE'] = lang[:2]
 gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))
@@ -50,7 +49,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if stb.lower() == 'hs7420' or stb.lower() == 'hs7429':
+	if getBoxType() in ("hs7420","hs7429"):
 		DisplayType = 11
 	else:
 		DisplayType = None

@@ -1402,7 +1402,7 @@ def InitNimManager(nimmgr, update_slots = []):
 		nim.turningspeedH = ConfigFloat(default = [2,3], limits = [(0,9),(0,9)])
 		nim.turningspeedV = ConfigFloat(default = [1,7], limits = [(0,9),(0,9)])
 		nim.powerMeasurement = ConfigYesNo(True)
-		nim.powerThreshold = ConfigInteger(default=hw.get_device_name() == "dm8000" and 15 or 50, limits=(0, 100))
+		nim.powerThreshold = ConfigInteger(default=getBoxType() == "dm8000" and 15 or 50, limits=(0, 100))
 		nim.turningSpeed = ConfigSelection(turning_speed_choices, "fast")
 		btime = datetime(1970, 1, 1, 7, 0)
 		nim.fastTurningBegin = ConfigDateTime(default = mktime(btime.timetuple()), formatstring = _("%H:%M"), increment = 900)

@@ -6,9 +6,7 @@
 #include <signal.h>
 #include <sys/sysinfo.h>
 #include <sys/mman.h>
-
 #include <linux/dvb/dmx.h>
-
 #include <lib/base/eerror.h>
 #include <lib/base/cfile.h>
 #include <lib/dvb/idvb.h>

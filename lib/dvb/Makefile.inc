@@ -34,7 +34,6 @@ dvb_libenigma_dvb_a_SOURCES = \
 	dvb/fbc.cpp \
 	dvb/atsc.cpp
 
-
 dvbincludedir = $(pkgincludedir)/lib/dvb
 dvbinclude_HEADERS = \
 	dvb/absdiff.h \

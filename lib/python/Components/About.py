@@ -134,7 +134,7 @@ def getDriverInstalledDate():
 	try:
 		from glob import glob
 		try:
-			driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/fulan-dvb-modules.control")[0], "r") if x.startswith("Version:")][0]
+			driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/sh4-dvb-modules.control")[0], "r") if x.startswith("Version:")][0]
 			return  "%s" % driver[1].replace("\n","")
 		except:
 			try:

@@ -18,7 +18,11 @@ class VideoHardware:
 
 	rates["PAL"] =			{ "50Hz":	{ 50: "pal" } }
 
+	rates["480i"] =			{ "60Hz": 	{ 60: "480i60" } }
+
 	rates["576i"] =			{ "50Hz":	{ 50: "576i50" } }
+
+	rates["480p"] =			{ "60Hz": 	{ 60: "480p60" } }
 
 	rates["576p"] =			{ "50Hz":	{ 50: "576p50" } }
 

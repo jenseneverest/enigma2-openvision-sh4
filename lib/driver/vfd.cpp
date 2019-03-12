@@ -74,7 +74,7 @@
 bool startloop_running = false;
 static bool icon_onoff[45];
 //static bool icon_onoff[LAST_ICON];
-static int led_onoff[45];
+static int led_onoff[7];
 //static int led_onoff[LAST_LED];
 static pthread_t thread_start_loop = 0;
 void * start_loop (void *arg);
@@ -100,7 +100,8 @@ struct vfd_ioctl_data
 #elif defined (ENABLE_HS7810A) \
    || defined (ENABLE_HS7819) \
    || defined (ENABLE_HS7119) \
-   || defined (ENABLE_SPARK)
+   || defined (ENABLE_SPARK) \
+   || defined (ENABLE_CUBEREVO_250HD)
 	#define VFDLENGTH 4
 #elif defined (ENABLE_OCTAGON1008) \
    || defined(ENABLE_HS7420) \
@@ -117,8 +118,6 @@ struct vfd_ioctl_data
    || defined (ENABLE_CUBEREVO_9500HD) \
    || defined (ENABLE_CUBEREVO_2000HD)
 	#define VFDLENGTH 14
-#elif defined (ENABLE_CUBEREVO_250HD)
-	#define VFDLENGTH 4
 #else
 	#define VFDLENGTH 16
 #endif
@@ -156,10 +155,8 @@ evfd::evfd()
 	vfd_type = 11;
 #elif defined(ENABLE_UFS912) || defined(ENABLE_UFS913)
 	vfd_type = 12;
-#elif defined(ENABLE_CUBEREVO_250HD)
+#elif defined(ENABLE_CUBEREVO) || defined(ENABLE_CUBEREVO_MINI2) || defined(ENABLE_CUBEREVO_MINI) || defined(ENABLE_CUBEREVO_3000HD) || defined(ENABLE_CUBEREVO_9500HD) || defined(ENABLE_CUBEREVO_2000HD) || defined(ENABLE_CUBEREVO_250HD)
 	vfd_type = 13;
-#elif defined(ENABLE_CUBEREVO) || defined(ENABLE_CUBEREVO_MINI2) || defined(ENABLE_CUBEREVO_MINI) || defined(ENABLE_CUBEREVO_3000HD) || defined(ENABLE_CUBEREVO_9500HD) || defined(ENABLE_CUBEREVO_2000HD)
-	vfd_type = 14;
 #else
 	vfd_type = -1;
 #endif

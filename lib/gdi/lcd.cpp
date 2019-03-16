@@ -72,7 +72,6 @@ void eLCD::renderText(ePoint start, const char *text)
 	}
 }
 #endif
-#else
 void eLCD::renderText(const char *text)
 {
 	//eDebug("[LCD] text: %s", text);

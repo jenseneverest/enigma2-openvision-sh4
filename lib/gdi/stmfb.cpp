@@ -5,7 +5,11 @@
 #include <linux/fb.h>
 #include <sys/mman.h>
 #include <sys/ioctl.h>
+#ifdef __sh__
 #include <linux/stmfb.h>
+#else
+#include <lib/gdi/stmfb.h>
+#endif
 
 
 #include <lib/base/ebase.h>

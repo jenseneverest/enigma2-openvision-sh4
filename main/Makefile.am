@@ -46,25 +46,7 @@ enigma2_LDADD = \
 	@AVAHI_LIBS@ \
 	@LIBDL_LIBS@ \
 	-ltuxtxt32bpp \
-	-lpthread -lresolv
-
-if HAVE_SH4	
-enigma2_LDADD = \
-	@TUXTXT_LIBS@ \
-	@BASE_LIBS@ \
-	@LIBGIF_LIBS@ \
-	@LIBJPEG_LIBS@ \
-	@LIBSDL_LIBS@ \
-	@LIBXINE_LIBS@ \
-	@PTHREAD_LIBS@ \
-	@PYTHON_LDFLAGS@ \
-	@LIBDDVD_LIBS@ \
-	@ALSA_LIBS@ \
-	@AVAHI_LIBS@ \
-	@LIBDL_LIBS@ \
-	-ltuxtxt32bpp \
 	-lpthread -lresolv -lmmeimage
-endif
 
 if HAVE_GRAPHLCD
 enigma2_LDADD += -lglcddrivers -lglcdgraphics -lglcdskin

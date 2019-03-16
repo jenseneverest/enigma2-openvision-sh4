@@ -39,6 +39,16 @@ if test x"$with_sh4stb" = xyes ; then
 	AC_DEFINE(HAVE_SH4STB, 1,[Enables SH4 STB support])
 fi
 
+AC_ARG_WITH(cuberevostb,
+	AC_HELP_STRING([--with-cuberevostb], [use CubeRevo STB]),
+	[[with_cuberevostb=$withval]],
+	[[with_cuberevostb=no]]
+)
+AM_CONDITIONAL(HAVE_CubeRevoSTB, test x"$with_cuberevostb" = xyes)
+if test x"$with_cuberevostb" = xyes ; then
+	AC_DEFINE(HAVE_CubeRevoSTB, 1,[Enables CubeRevo STB support])
+fi
+
 AC_ARG_ENABLE(adb_box,
 	[  --enable-adb_box            enable adb_box stuff],
 	[AC_DEFINE(ENABLE_ADB_BOX, 1, [enable adb_box stuff])])

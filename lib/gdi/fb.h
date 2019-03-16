@@ -3,11 +3,7 @@
 
 #include <lib/base/eerror.h>
 #include <linux/fb.h>
-#ifdef __sh__
 #include <linux/stmfb.h>
-#else
-#include <lib/gdi/stmfb.h>
-#endif
 
 #ifndef FB_DEV
 # define FB_DEV "/dev/fb0"

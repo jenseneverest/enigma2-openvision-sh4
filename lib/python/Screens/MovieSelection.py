@@ -272,7 +272,7 @@ class MovieBrowserConfiguration(ConfigListScreen,Screen):
 			getConfigListEntry(_("Hide known extensions"), config.movielist.hide_extensions, _("Do not show file extensions for registered multimedia files.")),
 			getConfigListEntry(_("Automatic bookmarks"), config.movielist.add_bookmark, _("If is disabled, then after Copy/Move will not be target directory stored into bookmarks.")),
 			]
-		for btn in ('red', 'green', 'yellow', 'blue', 'TV/Radio', 'F1', 'F2', 'F3'):
+		for btn in ('red', 'green', 'yellow', 'blue', 'TV', 'Radio', 'Text', 'F1', 'F2', 'F3'):
 			configList.append(getConfigListEntry(_(btn), userDefinedButtons[btn]))
 		ConfigListScreen.__init__(self, configList, session=session, on_change = self.changedEntry)
 		self["key_red"] = Button(_("Cancel"))

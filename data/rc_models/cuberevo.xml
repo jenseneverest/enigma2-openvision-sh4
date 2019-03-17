@@ -1,60 +1,58 @@
 <rcs>
 	<!-- /cuberevo/cuberevo_2000hd/cuberevo_3000hd/cuberevo_mini/cuberevo_mini2/cuberevo_9500hd-->
 	<rc id="2">
-		<button name="POWER" pos="69,78" />
-		<button name="MUTE" pos="176,74" />
-		<button name="TV" pos="43,112" /> <!-- KEY_TV--> <!-- PLEASE FIX NAME-->
-		<button name="RADIO" pos="96,112" />
-		<button name="WWW" pos="149,112" />
-		<button name="STB" pos="202,112" /> <!-- KEY_STB--> <!-- PLEASE FIX NAME-->
-		<button name="PIP" pos="40,150" />
-		<!-- button name="PIP1" pos="94,150" /--> <!-- KEY_PIP1--> <!-- PLEASE FIX NAME-->
-		<!-- button name="PIP2" pos="151,150" /--> <!-- KEY_PIP2--> <!-- PLEASE FIX NAME-->
-		<!-- button name="SUBCH" pos="204,150" /--> <!-- KEY_SUBCH--> <!-- PLEASE FIX NAME-->
-		<button name="CHANNELUP" pos="73,197" />
-		<button name="CHANNELDOWN" pos="73,236" />
-		<button name="RECALL" pos="122,200" /> <!-- KEY_RECALL--> <!-- PLEASE FIX NAME-->
-		<button name="INFO" pos="122,241" />
-		<button name="VOLUMEUP" pos="171,197" />
-		<button name="VOLUMEDOWN" pos="171,236" />
-		<button name="FAVORITES" pos="41,289" />
-		<button name="BOOKMARKS" pos="92,284" />
-		<button name="FILE" pos="150,284" /> <!-- KEY_FILE--> <!-- PLEASE FIX NAME-->
-		<button name="EPG" pos="205,289" />
-		<button name="MENU" pos="38,371" />
-		<button name="OK" pos="122,371" />
-		<button name="EXIT" pos="207,371" />
-		<button name="UP" pos="122,329" />
-		<button name="RIGHT" pos="162,371" />
-		<button name="DOWN" pos="122,405" />
-		<button name="LEFT" pos="81,371" />
-		<button name="RED" pos="42,446" />
-		<button name="GREEN" pos="96,446" />
-		<button name="YELLOW" pos="150,446" />
-		<button name="BLUE" pos="202,446" />
-		<button name="1" pos="57,470" />
-		<button name="2" pos="123,470" />
-		<button name="3" pos="186,470" />
-		<button name="4" pos="57,493" />
-		<button name="5" pos="123,493" />
-		<button name="6" pos="186,493" />
-		<button name="7" pos="57,515" />
-		<button name="8" pos="123,515" />
-		<button name="9" pos="186,515" />
-		<button name="MUSIC" pos="57,540" /> <!-- KEY_MUSIC--> <!-- PLEASE FIX NAME-->
-		<button name="0" pos="123,540" />
-		<button name="PHOTO" pos="186,540" /> <!-- KEY_PHOTO--> <!-- PLEASE FIX NAME-->
-		<button name="RECORD" pos="52,570" />
-		<button name="REWIND" pos="99,570" />
-		<button name="PLAY" pos="146,570" />
-		<button name="FASTFORWARD" pos="193,570" />
-		<button name="REPEAT" pos="52,592" /> <!-- KEY_REPEAT--> <!-- PLEASE FIX NAME--> 
-		<button name="SLOW" pos="99,592" />
-		<button name="STOP" pos="146,592" />
-		<button name="PAUSE" pos="193,592" />
-		<button name="MULTIFEED" pos="99,618" /> <!-- MULTIFEED--> <!-- PLEASE FIX NAME--> 
-		<button name="SUBTITLE" pos="99,618" /> <!-- SUBTITLE--> <!-- PLEASE FIX NAME--> 
-		<button name="TEXT" pos="146,618" />
-		<button name="AUDIO" pos="193,618" />
+		<button name="POWER"       pos="41,38" />	<!-- KEY_POWER-->
+		<button name="MUTE"        pos="97,38" />	<!-- KEY_MUTE-->
+		<button name="TVRADIO"     pos="66,61" />	<!-- KEY_MODE-->
+		<button name="WWW"         pos="99,61" />	<!-- KEY_WWW-->
+		<button name="PIP"         pos="21,84" />	<!-- KEY_???-->
+		<button name="SWAP"        pos="53,84" />	<!-- KEY_???-->
+		<button name="PIP_SEL"     pos="84,84" />	<!-- KEY_???-->
+		<button name="SUBCH"       pos="112,84" />	<!-- KEY_???-->
+		<button name="CHANNELUP"   pos="34,111" />	<!-- KEY_CHANNELUP-->
+		<button name="RECALL"      pos="68,111" />	<!-- KEY_MEMO-->
+		<button name="VOLUMEUP"    pos="102,111" />	<!-- KEY_VOLUMEUP-->
+		<button name="CHANNELDOWN" pos="34,135" />	<!-- KEY_CHANNELDOWN-->
+		<button name="INFO"        pos="68,135" />	<!-- KEY_HELP THIS IS WRONG SHOULD BE KEY_INFO -->
+		<button name="VOLUMEDOWN"  pos="102,135" />	<!-- KEY_VOLUMEDOWN-->
+		<button name="FAVORITES"   pos="21,162" />	<!-- KEY_FAVORITES-->
+		<button name="CHECK"       pos="53,162" />	<!-- KEY_???-->
+		<button name="ARCHIVE"     pos="84,162" />	<!-- KEY_ARCHIVE-->
+		<button name="EPG"         pos="112,162" />	<!-- KEY_EPG-->
+		<button name="UP"          pos="68,188" />	<!-- KEY_UP-->
+		<button name="MENU"        pos="23,211" />	<!-- KEY_MENU-->
+		<button name="LEFT"        pos="45,211" />	<!-- KEY_LEFT-->
+		<button name="OK"          pos="68,211" />	<!-- KEY_OK-->
+		<button name="RIGHT"       pos="91,211" />	<!-- KEY_RIGHT-->
+		<button name="EXIT"        pos="113,211" />	<!-- KEY_HOME-->
+		<button name="DOWN"        pos="68,233" />	<!-- KEY_DOWN-->
+		<button name="RED"         pos="26,262" />	<!-- KEY_RED-->
+		<button name="GREEN"       pos="53,262" />	<!-- KEY_GREEN-->
+		<button name="YELLOW"      pos="81,262" />	<!-- KEY_YELLOW-->
+		<button name="BLUE"        pos="110,262" />	<!-- KEY_BLUE-->
+		<button name="1"           pos="35,284" />	<!-- KEY_1-->
+		<button name="2"           pos="69,284" />	<!-- KEY_2-->
+		<button name="3"           pos="103,284" />	<!-- KEY_3-->
+		<button name="4"           pos="35,299" />	<!-- KEY_4-->
+		<button name="5"           pos="69,299" />	<!-- KEY_5-->
+		<button name="6"           pos="103,299" />	<!-- KEY_6-->
+		<button name="7"           pos="35,317" />	<!-- KEY_7-->
+		<button name="8"           pos="69,317" />	<!-- KEY_8-->
+		<button name="9"           pos="103,317" />	<!-- KEY_9-->
+		<button name="MUSIC"       pos="35,333" />	<!-- KEY_???-->
+		<button name="0"           pos="69,330" />	<!-- KEY_0-->
+		<button name="PICTURE"     pos="103,330" />	<!-- KEY_???-->
+		<button name="RECORD"      pos="29,358" />	<!-- KEY_RECORD-->
+		<button name="REWIND"      pos="55,358" />	<!-- KEY_REWIND-->
+		<button name="PLAY"        pos="80,358" />	<!-- KEY_PLAY-->
+		<button name="FASTFORWARD" pos="104,358" />	<!-- KEY_FASTFORWARD-->
+		<button name="AGAIN"       pos="29,375" />	<!-- KEY_AGAIN-->
+		<button name="SLOW"        pos="55,375" />	<!-- KEY_SLOW-->
+		<button name="STOP"        pos="80,375" />	<!-- KEY_STOP-->
+		<button name="PAUSE"       pos="104,375" />	<!-- KEY_PAUSE-->
+		<button name="MULTIFEED"   pos="29,393" />	<!-- KEY_???-->
+		<button name="SUBTTLE"     pos="55,393" />	<!-- KEY_SUBTITLE-->
+		<button name="TEXT"        pos="80,393" />	<!-- KEY_TEXT-->
+		<button name="AUDIO"       pos="104,393" />	<!-- KEY_AUDIO-->
 	</rc>
 </rcs>

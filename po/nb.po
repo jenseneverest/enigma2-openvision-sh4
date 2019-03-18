@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-16 15:40+0330\n"
-"PO-Revision-Date: 2019-02-01 15:59+0100\n"
+"POT-Creation-Date: 2019-03-18 10:54+0330\n"
+"PO-Revision-Date: 2019-03-17 17:40+0100\n"
 "Last-Translator: GeirJ <dummy@dummy.com>\n"
 "Language-Team: GeirJ\n"
 "Language: nb\n"
@@ -173,6 +173,10 @@ msgstr " (overstyr nedre grense)"
 #
 msgid " extensions."
 msgstr " tillegg."
+
+#
+msgid " min"
+msgstr " min"
 
 msgid " ms"
 msgstr " ms"
@@ -437,10 +441,6 @@ msgid "%s%d min"
 msgstr "%s%d min"
 
 #, python-format
-msgid "%s%d%s"
-msgstr "%s%d%s"
-
-#, python-format
 msgid "%s/%s: %s"
 msgstr "%s/%s: %s"
 
@@ -694,7 +694,7 @@ msgstr ""
 "Skal siste versjon beholdes?"
 
 msgid "A file from media is in use!"
-msgstr ""
+msgstr "En media fil er i bruk!"
 
 msgid ""
 "A finished record timer wants to set your\n"
@@ -1323,8 +1323,9 @@ msgstr "Lyd valg..."
 msgid "Audio plugins"
 msgstr "Lyd tillegg"
 
+#, fuzzy
 msgid "Audio source"
-msgstr ""
+msgstr "HDMI-lydkilde"
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2155,24 +2156,20 @@ msgid "Configuration..."
 msgstr "Innstilling..."
 
 #
-#, fuzzy
 msgid "Configure ATSC"
-msgstr "Installerer"
+msgstr "Konfigurere ATSC"
 
 #
-#, fuzzy
 msgid "Configure DVB-C"
-msgstr "Installerer"
+msgstr "Konfigurere DVB-C"
 
 #
-#, fuzzy
 msgid "Configure DVB-S"
-msgstr "Installerer"
+msgstr "Konfigurere DVB-S"
 
 #
-#, fuzzy
 msgid "Configure DVB-T"
-msgstr "Installerer"
+msgstr "Konfigurere DVB-T"
 
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Still inn ytterligere forsinkelse for å forbedre ekstern undertekst synkronisering."
@@ -3609,7 +3606,7 @@ msgstr "Enigma (re)starter: %d\n"
 
 #, python-format
 msgid "Enigma debug level: %d\n"
-msgstr ""
+msgstr "Feilsøkingsnivå for Enigma: %d\n"
 
 #
 msgid "Enigma version: "
@@ -4608,14 +4605,12 @@ msgid "Hotkey zap"
 msgstr "Snarveistast zap"
 
 #
-#, fuzzy
 msgid "Hotswitchable"
-msgstr "lar seg ikke teste"
+msgstr "Hotswitchable"
 
 #
-#, fuzzy
 msgid "Hotswitchable tuner"
-msgstr "Valgbar tuner:"
+msgstr "Hotswitchable tuner"
 
 #
 msgid "How many minutes do you want add to the recording?"
@@ -5020,7 +5015,7 @@ msgid ""
 msgstr ""
 "Det ser ut til at du ikke så alle de åtte pilhodene. Dette betyr at din TV har overscan aktivert, og ikke er konfigurert riktig.\n"
 "\n"
-"Vennligst se i TV-håndboken din for å finne ut hvordan du kan deaktivere overscan på din TV. Se etter begreper som 'Just fit', 'Full width', etc. Hvis du ikke finner det, spør andre brukere på https://openvision.tech\n"
+"Vennligst se i TV-håndboken din for å finne ut hvordan du kan deaktivere overscan på din TV. Se etter begreper som 'Just fit', 'Full width', etc. Hvis du ikke finner det, spør andre brukere på http://forums.openpli.org.\n"
 "\n"
 
 #
@@ -5162,9 +5157,8 @@ msgstr ""
 msgid "LED display configuration"
 msgstr "Opptakslistevalg"
 
-#, fuzzy
 msgid "LED display configuration for Fortis HS7810A"
-msgstr "Opptakslistevalg"
+msgstr ""
 
 #
 msgid "LNB"
@@ -5632,10 +5626,9 @@ msgstr "Beskytt innstilling"
 msgid "Modem settings"
 msgstr "Rediger innstillinger"
 
-#
 #, fuzzy
 msgid "Modem type"
-msgstr "Testtype"
+msgstr "Softcam type"
 
 #
 msgid "Modulation"
@@ -6978,7 +6971,7 @@ msgstr "Posisjonerers oppsetts logg"
 
 #, fuzzy
 msgid "Power"
-msgstr "Strøm-LED"
+msgstr "Av/på meny"
 
 msgid "Power LED"
 msgstr "Strøm-LED"
@@ -7057,18 +7050,17 @@ msgstr "Forbereder.. Vent litt"
 msgid "Press '0' to toggle PiP mode"
 msgstr "Trykk '0' for å gå til neste PiP modus"
 
-#, fuzzy
 msgid "Press 'OK' for attach function."
-msgstr "Trykk OK for veksle valg."
+msgstr "Trykk på ' OK ' for å festefunksjonen."
 
 msgid "Press 'OK' for attach next function or 'CH+/-' for edit attached."
-msgstr ""
+msgstr "Trykk på 'OK' for neste funksjon eller 'CH +/-' for redigering."
 
 msgid "Press 'OK' for remove item or 'CH+/-' for toggle to list of features."
-msgstr ""
+msgstr "Trykk 'OK' for å fjerne elementet eller 'CH +/-' for å bytte til en liste over funksjoner."
 
 msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
-msgstr ""
+msgstr "Trykk på 'OK' for å fjerne elementet eller < > for å endre eller 'CH +/-' for å bytte til liste over funksjoner."
 
 msgid "Press INFO on your remote control for additional information."
 msgstr "Trykk INFO på fjernkontrollen for ytterligere informasjon."
@@ -7120,10 +7112,10 @@ msgid "Press OK, save and exit..."
 msgstr "Trykk OK, lagre og avslutt..."
 
 msgid "Press or select button and then press 'OK' for attach function."
-msgstr ""
+msgstr "Velg knapp, deretter trykk 'OK' for å lagre funksjonen."
 
 msgid "Press or select button and then press 'OK' for attach next function or edit attached."
-msgstr ""
+msgstr "Velg knapp, deretter trykk 'OK' for å lagre neste funksjon eller redigere."
 
 msgid "Press yellow to set this interface as default interface."
 msgstr "Trykk gul for å velge dette som standard grensesnitt."
@@ -7613,9 +7605,8 @@ msgstr "Start enigma2 på nytt"
 msgid "Restart enigma in debug mode"
 msgstr "Starte Enigma i feilsøkingsmodus"
 
-#, fuzzy
 msgid "Restart enigma in standard mode"
-msgstr "Starte Enigma i feilsøkingsmodus"
+msgstr "Restart Enigma i standard modus"
 
 msgid "Restart network"
 msgstr "Start nettverket på nytt"
@@ -8092,16 +8083,16 @@ msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) devi
 msgstr "Velg 'FBC SCR' hvis denne tuneren bruker en SCR (Unicable/JESS) enhet. Velg 'FBC automatisk' for alle andre oppsett."
 
 msgid "Select 'Yes' when you want to configure this tuner for ATSC"
-msgstr ""
+msgstr "Velg 'Ja' når du vil konfigurere denne tuneren for ATSC"
 
 msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
-msgstr ""
+msgstr "Velg 'Ja' når du vil konfigurere denne tuneren for DVB-C"
 
 msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
-msgstr ""
+msgstr "Velg 'Ja' når du vil konfigurere denne tuneren for DVB-S"
 
 msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
-msgstr ""
+msgstr "Velg 'Ja' når du vil konfigurere denne tuneren for DVB-T"
 
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr "Velg 'band' hvis du bruker en universal LNB, ellers les din LNB bruksanvisning."
@@ -9278,9 +9269,8 @@ msgstr "Spansk"
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
-#, fuzzy
 msgid "SparkUnionTunerType config"
-msgstr "Tunerinnstilling"
+msgstr ""
 
 msgid "Special 1"
 msgstr "Spesial 1"
@@ -9736,9 +9726,8 @@ msgid "Switch to radio mode"
 msgstr "Gå til radiomodus"
 
 #
-#, fuzzy
 msgid "Switchable tuner types"
-msgstr "Valgbar tuner:"
+msgstr "Valgbar tuner type"
 
 msgid "Switzerland"
 msgstr "Sveits"
@@ -9771,7 +9760,7 @@ msgstr "T2MI RAW-modus"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
-msgstr "Siste oversettelse til norsk bokmål utført: 01.02.2019"
+msgstr "Siste oversettelse til norsk bokmål utført: 17.03.2019"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -9819,7 +9808,7 @@ msgstr "Bakkenett"
 #
 #, fuzzy
 msgid "Test"
-msgstr "Testmodus"
+msgstr "Testtype"
 
 #
 msgid "Test DiSEqC settings"
@@ -10072,7 +10061,7 @@ msgstr ""
 "Vær vennlig ikke få panikk hvis det vises informasjon som ser mistenkelig ut!"
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
-msgstr ""
+msgstr "Dette er en multitype tuner. Tilgjengelige alternativer avhenger av maskinvaren."
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Dette er rekkefølgen som DiSEqC kommandoene sendes til antenne systemet. Rekkefølgen må tilsvare nøyaktig rekkefølgen de fysiske enhetene er ordnet langs signalkabelen (starter fra mottaker og utover)."
@@ -12470,14 +12459,11 @@ msgstr "ledig"
 msgid "from"
 msgstr "fra"
 
-#
-#, fuzzy
 msgid "fs9000VFD display"
-msgstr "DVD spiller"
+msgstr ""
 
-#, fuzzy
 msgid "fs9000VFD-Icons"
-msgstr "Framdriftsirkel"
+msgstr ""
 
 msgid "further education"
 msgstr "videreutdanning"
@@ -12526,46 +12512,32 @@ msgstr ""
 msgid "hs7110VFD control"
 msgstr ""
 
-#
-#, fuzzy
 msgid "hs7110VFD display"
-msgstr "DVD spiller"
+msgstr ""
 
-#
-#, fuzzy
 msgid "hs742xVFD display"
-msgstr "DVD spiller"
+msgstr ""
 
-#, fuzzy
 msgid "hs742xVFD-Icons"
-msgstr "Framdriftsirkel"
+msgstr ""
 
-#
-#, fuzzy
 msgid "hs7810aVFD display"
-msgstr "DVD spiller"
+msgstr ""
 
-#, fuzzy
 msgid "hs7810aVFD-Icons"
-msgstr "Framdriftsirkel"
+msgstr ""
 
-#
-#, fuzzy
 msgid "hs8200VFD display"
-msgstr "DVD spiller"
+msgstr ""
 
-#, fuzzy
 msgid "hs8200VFD-Icons"
-msgstr "Framdriftsirkel"
+msgstr ""
 
-#
-#, fuzzy
 msgid "hs9510VFD display"
-msgstr "DVD spiller"
+msgstr ""
 
-#, fuzzy
 msgid "hs9510VFD-Icons"
-msgstr "Framdriftsirkel"
+msgstr ""
 
 #
 msgid "in menu and plugins"
@@ -12861,8 +12833,9 @@ msgstr "bare fra helt avslått"
 msgid "only from standby"
 msgstr "bare fra avslått"
 
+#, fuzzy
 msgid "open Info..."
-msgstr ""
+msgstr "Kopier til..."
 
 #
 msgid "open nameserver configuration"

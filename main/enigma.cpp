@@ -31,7 +31,7 @@
 #include <lib/python/python.h>
 #include <lib/python/pythonconfig.h>
 #include <lib/service/servicepeer.h>
-
+// vfd class
 #include <lib/driver/vfd.h>
 #include "bsod.h"
 #include "version_info.h"
@@ -292,7 +292,7 @@ int main(int argc, char **argv)
 	gRC::getInstance()->setSpinnerDC(my_dc);
 
 	eRCInput::getInstance()->keyEvent.connect(sigc::ptr_fun(&keyEvent));
-
+// initialise the vfd class
 	evfd * vfd = new evfd;
 	vfd->init();
 	delete vfd;

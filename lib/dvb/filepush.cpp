@@ -3,6 +3,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
+// this allows filesystem tasks to be prioritised
 #include <sys/vfs.h>
 #define USBDEVICE_SUPER_MAGIC 0x9fa2
 #define EXT2_SUPER_MAGIC      0xEF53
@@ -77,6 +78,7 @@ void eFilePushThread::thread()
 	{
 		if (m_sg && !current_span_remaining)
 		{
+// tells the player to play in reverse
 #define VIDEO_DISCONTINUITY                   _IO('o', 84)
 #define DVB_DISCONTINUITY_SKIP                0x01
 #define DVB_DISCONTINUITY_CONTINUOUS_REVERSE  0x02
@@ -154,6 +156,7 @@ void eFilePushThread::thread()
 				{
 					case 0:
 						eDebug("[eFilePushThread] wait for driver eof timeout");
+// Fix to ensure that event evtEOF is called at end of playbackl part 2/3
 						if (already_empty)
 						{
 							break;
@@ -229,6 +232,7 @@ void eFilePushThread::thread()
 			}
 
 			eofcount = 0;
+// Fix to ensure that event evtEOF is called at end of playbackl part 3/3
 			already_empty=false;
 			m_current_position+=buf_end;
 			if (m_sg) {
@@ -237,6 +241,7 @@ void eFilePushThread::thread()
 			}
 		}
 	}
+// closes video device for the reverse playback workaround
 	close(fd_video);
 	sendEvent(evtStopped);
 

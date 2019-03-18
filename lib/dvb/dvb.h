@@ -272,6 +272,7 @@ public:
 		/* cannot be used for PVR channels. */
 	RESULT setChannel(const eDVBChannelID &id, ePtr<iDVBFrontendParameters> &feparam);
 	eDVBChannelID getChannelID() { return m_channel_id; }
+//see filepush.h
 	int getSkipMode() { return m_skipmode_m; }
 
 	RESULT connectStateChange(const sigc::slot1<void,iDVBChannel*> &stateChange, ePtr<eConnection> &connection);

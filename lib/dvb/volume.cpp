@@ -45,6 +45,7 @@ eDVBVolumecontrol::eDVBVolumecontrol()
 	openMixer();
 #endif
 	volumeUnMute();
+// dont reset volume on start
 }
 
 void eDVBVolumecontrol::closeMixer(int fd)

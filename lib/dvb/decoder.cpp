@@ -76,6 +76,7 @@ int eDVBAudio::startPid(int pid, int type)
 			pes.pes_type = DMX_PES_AUDIO3;
 			break;
 		}
+// increases zapping speed
 		pes.flags    = DMX_IMMEDIATE_START;
 		eDebugNoNewLineStart("[eDVBAudio%d] DMX_SET_PES_FILTER pid=0x%04x ", m_dev, pid);
 		if (::ioctl(m_fd_demux, DMX_SET_PES_FILTER, &pes) < 0)
@@ -84,6 +85,7 @@ int eDVBAudio::startPid(int pid, int type)
 			return -errno;
 		}
 		eDebugNoNewLine("ok\n");
+// already startet cause of DMX_IMMEDIATE_START
 	}
 
 	if (m_fd >= 0)
@@ -127,6 +129,8 @@ int eDVBAudio::startPid(int pid, int type)
 			eDebugNoNewLine("failed: %m\n");
 		else
 			eDebugNoNewLine("ok\n");
+// this is a hack which only matters for dm drivers
+// why freeze here?!? this is a problem when only a pid change is requested... because of the unfreeze logic in Decoder::setStatef
 		eDebugNoNewLineStart("[eDVBAudio%d] AUDIO_PLAY ", m_dev);
 		if (::ioctl(m_fd, AUDIO_PLAY) < 0)
 			eDebugNoNewLine("failed: %m\n");
@@ -360,6 +364,7 @@ int eDVBVideo::startPid(int pid, int type)
 			pes.pes_type = DMX_PES_VIDEO3;
 			break;
 		}
+// increases zapping speed
 		pes.flags    = DMX_IMMEDIATE_START;
 		eDebugNoNewLineStart("[eDVBVideo%d] DMX_SET_PES_FILTER pid=0x%04x ", m_dev, pid);
 		if (::ioctl(m_fd_demux, DMX_SET_PES_FILTER, &pes) < 0)
@@ -368,10 +373,13 @@ int eDVBVideo::startPid(int pid, int type)
 			return -errno;
 		}
 		eDebugNoNewLine("ok\n");
+// already startet cause of DMX_IMMEDIATE_START
 	}
 
 	if (m_fd >= 0)
 	{
+// this is a hack which only matters for dm drivers
+// why freeze here?!? this is a problem when only a pid change is requested... because of the unfreeze logic in Decoder::setState
 		eDebugNoNewLineStart("[eDVBVideo%d] VIDEO_PLAY ", m_dev);
 		if (::ioctl(m_fd, VIDEO_PLAY) < 0)
 			eDebugNoNewLine("failed: %m\n");
@@ -689,6 +697,7 @@ int eDVBPCR::startPid(int pid)
 		pes.pes_type = DMX_PES_PCR3;
 		break;
 	}
+// increases zapping speed
 	pes.flags    = DMX_IMMEDIATE_START;
 	eDebugNoNewLineStart("[eDVBPCR%d] DMX_SET_PES_FILTER pid=0x%04x ", m_dev, pid);
 	if (::ioctl(m_fd_demux, DMX_SET_PES_FILTER, &pes) < 0)
@@ -697,6 +706,7 @@ int eDVBPCR::startPid(int pid)
 		return -errno;
 	}
 	eDebugNoNewLine("ok\n");
+// already startet cause of DMX_IMMEDIATE_START
 	return 0;
 }
 
@@ -752,6 +762,7 @@ int eDVBTText::startPid(int pid)
 		pes.pes_type = DMX_PES_TELETEXT3;
 		break;
 	}
+// increases zapping speed
 	pes.flags    = DMX_IMMEDIATE_START;
 
 	eDebugNoNewLineStart("[eDVBText%d] DMX_SET_PES_FILTER pid=0x%04x ", m_dev, pid);
@@ -761,6 +772,7 @@ int eDVBTText::startPid(int pid)
 		return -errno;
 	}
 	eDebugNoNewLine("ok\n");
+// already startet cause of DMX_IMMEDIATE_START
 	return 0;
 }
 
@@ -897,6 +909,7 @@ int eTSMPEGDecoder::setState()
 		int *s = state_table[m_state];
 		if (changed & (changeState|changeVideo) && m_video)
 		{
+// see comment below
 			if (s[0])
 				m_video->unfreeze();
 			else
@@ -1213,6 +1226,7 @@ RESULT eTSMPEGDecoder::showSinglePic(const char *filename)
 		{
 			struct stat s;
 			fstat(f, &s);
+// our driver has a different behaviour for iframes
 			if (m_video_clip_fd >= 0)
 				finishShowSinglePic();
 			if (m_video_clip_fd == -1)

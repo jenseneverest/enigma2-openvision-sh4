@@ -646,6 +646,7 @@ eServiceFactoryDVB::eServiceFactoryDVB()
 	if (sc)
 	{
 		std::list<std::string> extensions;
+//Topfield original recording extension
 		extensions.push_back("rec");
 		extensions.push_back("ts");
 		extensions.push_back("trp");

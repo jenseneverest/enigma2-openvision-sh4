@@ -58,7 +58,7 @@
 #include <lib/base/eerror.h>
 #include <lib/driver/vfd.h>
 
-#ifdef ENABLE_TF7700
+#if defined (ENABLE_TF7700)
 #include "frontpanel.h"
 #endif
 
@@ -77,11 +77,11 @@ static bool icon_onoff[45];
 static int led_onoff[7];
 //static int led_onoff[LAST_LED];
 static pthread_t thread_start_loop = 0;
-void * start_loop (void *arg);
+void *start_loop (void *arg);
 bool blocked    = false;
 bool requested  = false;
 bool VFD_CENTER = false;
-int VFD_SCROLL  = 1;  // 1=scroll once
+int  VFD_SCROLL = 1;  // 1=scroll once
 bool scoll_loop = false;
 
 char chars[64];
@@ -94,7 +94,7 @@ struct vfd_ioctl_data
 	unsigned char length;
 };
 
-#if defined ENABLE_TF7700
+#if defined (ENABLE_TF7700)
 	#define MAX_CHARS 8
 	#define VFDLENGTH 8
 #elif defined (ENABLE_HS7810A) \
@@ -104,19 +104,20 @@ struct vfd_ioctl_data
    || defined (ENABLE_CUBEREVO_250HD)
 	#define VFDLENGTH 4
 #elif defined (ENABLE_OCTAGON1008) \
-   || defined(ENABLE_HS7420) \
-   || defined(ENABLE_HS7429) \
+   || defined (ENABLE_HS7420) \
+   || defined (ENABLE_HS7429) \
    || defined (ENABLE_SPARK7162)
 	#define VFDLENGTH 8
 #elif defined (ENABLE_FORTIS_HDBOX) \
-   || defined (ENABLE_ATEVIO7500)
+   || defined (ENABLE_ATEVIO7500) \
+   || defined (ENABLE_CUBEREVO)
 	#define VFDLENGTH 12
-#elif defined (ENABLE_CUBEREVO) \
-   || defined(ENABLE_CUBEREVO_MINI) \
-   || defined(ENABLE_CUBEREVO_MINI2) \
-   || defined (ENABLE_CUBEREVO_3000HD) \
-   || defined (ENABLE_CUBEREVO_9500HD) \
-   || defined (ENABLE_CUBEREVO_2000HD)
+#elif defined (ENABLE_CUBEREVO_9500HD)
+	#define VFDLENGTH 13
+#elif defined (ENABLE_CUBEREVO_MINI) \
+   || defined (ENABLE_CUBEREVO_MINI2) \
+   || defined (ENABLE_CUBEREVO_2000HD) \
+   || defined (ENABLE_CUBEREVO_3000HD)
 	#define VFDLENGTH 14
 #else
 	#define VFDLENGTH 16
@@ -136,27 +137,36 @@ evfd* evfd::getInstance()
 evfd::evfd()
 {
 	file_vfd = 0;
-	memset ( chars, ' ', 63 );
-#if defined(ENABLE_SPARK)
+	memset (chars, ' ', 63);
+#if defined (ENABLE_SPARK)
 	vfd_type = 4;
-#elif defined(ENABLE_ATEVIO7500)
+#elif defined (ENABLE_ATEVIO7500)
 	vfd_type = 5;
-#elif defined(ENABLE_FORTIS_HDBOX)
+#elif defined (ENABLE_FORTIS_HDBOX)
 	vfd_type = 6;
-#elif defined(ENABLE_OCTAGON1008)
+#elif defined (ENABLE_OCTAGON1008)
 	vfd_type = 7;
-#elif defined(ENABLE_SPARK7162)
+#elif defined (ENABLE_SPARK7162)
 	vfd_type = 8;
-#elif defined(ENABLE_HS7810A) || defined(ENABLE_HS7819) || defined(ENABLE_HS7119)
+#elif defined (ENABLE_HS7810A) || defined (ENABLE_HS7819) || defined (ENABLE_HS7119)
 	vfd_type = 9;
-#elif defined(ENABLE_HS7110)
+#elif defined (ENABLE_HS7110)
 	vfd_type = 10;
-#elif defined(ENABLE_HS7420) || defined(ENABLE_HS7429)
+#elif defined (ENABLE_HS7420) || defined (ENABLE_HS7429)
 	vfd_type = 11;
-#elif defined(ENABLE_UFS912) || defined(ENABLE_UFS913)
+#elif defined (ENABLE_UFS912) || defined (ENABLE_UFS913)
 	vfd_type = 12;
-#elif defined(ENABLE_CUBEREVO) || defined(ENABLE_CUBEREVO_MINI2) || defined(ENABLE_CUBEREVO_MINI) || defined(ENABLE_CUBEREVO_3000HD) || defined(ENABLE_CUBEREVO_9500HD) || defined(ENABLE_CUBEREVO_2000HD) || defined(ENABLE_CUBEREVO_250HD)
+#elif defined (ENABLE_CUBEREVO)
 	vfd_type = 13;
+#elif defined (ENABLE_CUBEREVO_250HD)
+	vfd_type = 14;
+#elif defined (ENABLE_CUBEREVO_MINI) \
+   || defined (ENABLE_CUBEREVO_MINI2) \
+   || defined (ENABLE_CUBEREVO_2000HD) \
+   || defined (ENABLE_CUBEREVO_3000HD)
+	vfd_type = 15;
+#elif defined (ENABLE_CUBEREVO_9500HD)
+	vfd_type = 16;
 #else
 	vfd_type = -1;
 #endif
@@ -172,7 +182,7 @@ evfd::~evfd()
 	//close (file_vfd);
 }
 
-#ifdef ENABLE_TF7700
+#if defined (ENABLE_TF7700)
 
 char * getProgress()
 {
@@ -218,7 +228,7 @@ void * start_loop (void *arg)
 	//ioctl(fpc, FRONTPANELSCROLLMODE, &scrollMode);
 
 	// display string
-	char str[] = "        TOPFIELD TF77X0 ENIGMA2";
+	char str[] = "SH4 OpenVision";
 	int length = strlen(str);
 	char dispData[MAX_CHARS + 1];
 	int offset = 0;
@@ -290,45 +300,45 @@ void * start_loop (void *arg)
 {
 	evfd vfd;
 	blocked = true;
-	#if defined ENABLE_SPARK7162
+	#if defined (ENABLE_SPARK7162)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_SPARK
+	#elif defined (ENABLE_SPARK)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_FORTIS_HDBOX
+	#elif defined (ENABLE_FORTIS_HDBOX)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_OCTAGON1008
+	#elif defined (ENABLE_OCTAGON1008)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_ATEVIO7500
+	#elif defined (ENABLE_ATEVIO7500)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_HS7119
+	#elif defined (ENABLE_HS7119)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_HS7420
+	#elif defined (ENABLE_HS7420)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_HS7810A
+	#elif defined (ENABLE_HS7810A)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_HS7429
+	#elif defined (ENABLE_HS7429)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_HS7819
+	#elif defined (ENABLE_HS7819)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_UFS910
+	#elif defined (ENABLE_UFS910)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_UFS912
+	#elif defined (ENABLE_UFS912)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_UFS913
+	#elif defined (ENABLE_UFS913)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_CUBEREVO
+	#elif defined (ENABLE_CUBEREVO)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_CUBEREVO_MINI2
+	#elif defined (ENABLE_CUBEREVO_250HD)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_CUBEREVO_MINI
+	#elif defined (ENABLE_CUBEREVO_MINI)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_CUBEREVO_3000HD
+	#elif defined (ENABLE_CUBEREVO_MINI2)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_CUBEREVO_9500HD
+	#elif defined (ENABLE_CUBEREVO_2000HD)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_CUBEREVO_2000HD
+	#elif defined (ENABLE_CUBEREVO_3000HD)
 		char str[] = "SH4 OpenVision";
-	#elif defined ENABLE_CUBEREVO_250HD
+	#elif defined (ENABLE_CUBEREVO_9500HD)
 		char str[] = "SH4 OpenVision";
 	#else
 		char str[] = "SH4 Enigma2";
@@ -338,25 +348,24 @@ void * start_loop (void *arg)
 	close(vfddev);
 
 	/*these boxes can control display brightness*/
-	#if !defined(ENABLE_FORTIS_HDBOX) \
-	 && !defined(ENABLE_OCTAGON1008) \
-	 && !defined(ENABLE_ATEVIO7500) \
-	 && !defined(ENABLE_CUBEREVO) \
-	 && !defined(ENABLE_CUBEREVO_MINI) \
-	 && !defined(ENABLE_CUBEREVO_MINI2) \
-	 && !defined(ENABLE_CUBEREVO_MINI_FTA) \
-	 && !defined(ENABLE_CUBEREVO_250HD) \
-	 && !defined(ENABLE_CUBEREVO_2000HD) \
-	 && !defined(ENABLE_CUBEREVO_3000HD) \
-	 && !defined(ENABLE_CUBEREVO_9500HD) \
-	 && !defined(ENABLE_SPARK7162) \
-	 && !defined ENABLE_UFS912 \
-	 && !defined ENABLE_UFS913 \
-	 && !defined(ENABLE_HS7119) \
-	 && !defined(ENABLE_HS7420) \
-	 && !defined(ENABLE_HS7429) \
-	 && !defined(ENABLE_HS7810A) \
-	 && !defined(ENABLE_HS7819)
+	#if !defined (ENABLE_FORTIS_HDBOX) \
+	 && !defined (ENABLE_OCTAGON1008) \
+	 && !defined (ENABLE_ATEVIO7500) \
+	 && !defined (ENABLE_CUBEREVO) \
+	 && !defined (ENABLE_CUBEREVO_250HD) \
+	 && !defined (ENABLE_CUBEREVO_MINI) \
+	 && !defined (ENABLE_CUBEREVO_MINI2) \
+	 && !defined (ENABLE_CUBEREVO_2000HD) \
+	 && !defined (ENABLE_CUBEREVO_3000HD) \
+	 && !defined (ENABLE_CUBEREVO_9500HD) \
+	 && !defined (ENABLE_SPARK7162) \
+	 && !defined (ENABLE_UFS912) \
+	 && !defined (ENABLE_UFS913) \
+	 && !defined (ENABLE_HS7119) \
+	 && !defined (ENABLE_HS7420) \
+	 && !defined (ENABLE_HS7429) \
+	 && !defined (ENABLE_HS7810A) \
+	 && !defined (ENABLE_HS7819)
 	/* Others cycle their icons */
 	for (int vloop = 0; vloop < 128; vloop++)
 	{
@@ -431,18 +440,17 @@ void * start_loop (void *arg)
 	vfd.vfd_set_brightness(7); // set final brightness
 	#endif
 	vfd.vfd_clear_icons();
-	#if !defined(ENABLE_FORTIS_HDBOX) \
-	 && !defined(ENABLE_OCTAGON1008) \
-	 && !defined(ENABLE_ATEVIO7500) \
-	 && !defined(ENABLE_CUBEREVO) \
-	 && !defined(ENABLE_CUBEREVO_MINI) \
-	 && !defined(ENABLE_CUBEREVO_MINI2) \
-	 && !defined(ENABLE_CUBEREVO_MINI_FTA) \
-	 && !defined(ENABLE_CUBEREVO_250HD) \
-	 && !defined(ENABLE_CUBEREVO_2000HD) \
-	 && !defined(ENABLE_CUBEREVO_3000HD) \
-	 && !defined(ENABLE_CUBEREVO_9500HD) \
-	 && !defined(ENABLE_SPARK7162)
+	#if !defined (ENABLE_FORTIS_HDBOX) \
+	 && !defined (ENABLE_OCTAGON1008) \
+	 && !defined (ENABLE_ATEVIO7500) \
+	 && !defined (ENABLE_CUBEREVO) \
+	 && !defined (ENABLE_CUBEREVO_250HD) \
+	 && !defined (ENABLE_CUBEREVO_MINI) \
+	 && !defined (ENABLE_CUBEREVO_MINI2) \
+	 && !defined (ENABLE_CUBEREVO_2000HD) \
+	 && !defined (ENABLE_CUBEREVO_3000HD) \
+	 && !defined (ENABLE_CUBEREVO_9500HD) \
+	 && !defined (ENABLE_SPARK7162)
 	//set all blocked icons
 	for (int id = 0x10; id < 0x20; id++)
 	{
@@ -454,24 +462,23 @@ void * start_loop (void *arg)
 }
 #endif
 
-#if defined(ENABLE_FORTIS_HDBOX) \
- || defined(ENABLE_OCTAGON1008) \
- || defined(ENABLE_ATEVIO7500) \
- || defined(ENABLE_CUBEREVO) \
- || defined(ENABLE_CUBEREVO_MINI) \
- || defined(ENABLE_CUBEREVO_MINI2) \
- || defined(ENABLE_CUBEREVO_MINI_FTA) \
- || defined(ENABLE_CUBEREVO_250HD) \
- || defined(ENABLE_CUBEREVO_2000HD) \
- || defined(ENABLE_CUBEREVO_3000HD) \
- || defined(ENABLE_CUBEREVO_9500HD) \
- || defined(ENABLE_SPARK) \
- || defined(ENABLE_SPARK7162) \
- || defined(ENABLE_HS7420) \
- || defined(ENABLE_HS7429) \
- || defined(ENABLE_HS7119) \
- || defined(ENABLE_HS7810A) \
- || defined(ENABLE_HS7819)
+#if defined (ENABLE_FORTIS_HDBOX) \
+ || defined (ENABLE_OCTAGON1008) \
+ || defined (ENABLE_ATEVIO7500) \
+ || defined (ENABLE_CUBEREVO) \
+ || defined (ENABLE_CUBEREVO_250HD) \
+ || defined (ENABLE_CUBEREVO_MINI) \
+ || defined (ENABLE_CUBEREVO_MINI2) \
+ || defined (ENABLE_CUBEREVO_2000HD) \
+ || defined (ENABLE_CUBEREVO_3000HD) \
+ || defined (ENABLE_CUBEREVO_9500HD) \
+ || defined (ENABLE_SPARK) \
+ || defined (ENABLE_SPARK7162) \
+ || defined (ENABLE_HS7420) \
+ || defined (ENABLE_HS7429) \
+ || defined (ENABLE_HS7119) \
+ || defined (ENABLE_HS7810A) \
+ || defined (ENABLE_HS7819)
 void evfd::vfd_write_string_scrollText(char* text)
 {
 	return;
@@ -564,7 +571,7 @@ void evfd::vfd_write_string(char *str, bool force)
 	if (VFD_CENTER)
 	{
 		if (i < VFDLENGTH)
-			ws=(VFDLENGTH-i)/2;
+			ws = (VFDLENGTH - i) / 2;
 		else
 			ws = 0;
 	}
@@ -601,7 +608,7 @@ void evfd::vfd_write_string(char *str, bool force)
 	}
 	memset (chars, ' ', 63);
 	memcpy (chars, str, i);
-#ifdef ENABLE_TF7700
+#if defined (ENABLE_TF7700)
 	// request the display to cancel the start loop
 	requested = true;
 	while(blocked)
@@ -634,18 +641,18 @@ void evfd::vfd_write_string_scrollText(char *text)
 		for (i = 0; i <= (len-16); i++)
 		{ // scroll text until end
 			memset(out, ' ', 16);
-			memcpy(out, text+i, 16);
+			memcpy(out, text + i, 16);
 			vfd_write_string(out);
 			usleep(200000);
 		}
 		for (i = 1; i < 16; i++)
 		{ // scroll text with whitespaces from right
 			memset(out, ' ', 16);
-			memcpy(out, text+len+i-16, 16-i);
+			memcpy(out, text + len +i - 16, 16 - i);
 			vfd_write_string(out);
 			usleep(200000);
 		}
-		memcpy(out, text, 16); // display first 16 chars after scrolling
+		memcpy(out, text, VFDLENGTH); //final: display first VFDLENGTH chars after scrolling
 		vfd_write_string(out);
 		free (out);
 	}
@@ -708,16 +715,20 @@ void evfd::vfd_clear_icons()
 {
 	int id;
 
-	#if defined ENABLE_SPARK7162
+	#if defined (ENABLE_SPARK7162)
 		for (id = 1; id < 46; id++)
-	#elif defined ENABLE_FORTIS_HDBOX
+	#elif defined (ENABLE_FORTIS_HDBOX)
 		for (id = 1; id < 40; id++)
-	#elif defined ENABLE_OCTAGON1008
+	#elif defined (ENABLE_OCTAGON1008)
 		for (id = 1; id < 29; id++)
-	#elif defined ENABLE_ATEVIO7500
+	#elif defined (ENABLE_ATEVIO7500)
 		for (id = 1; id < 23; id++);
-	#elif defined ENABLE_UFS912 || defined ENABLE_UFS913
+	#elif defined (ENABLE_UFS912) || defined (ENABLE_UFS913)
 		for (id = 1; id < 16; id++)
+	#elif defined (ENABLE_CUBEREVO)
+		for (id = 1; id < 28; id++)
+	#elif defined (ENABLE_CUBEREVO_MINI) || defined (ENABLE_CUBEREVO_MINI2) || defined (ENABLE_CUBEREVO_2000HD) || defined (ENABLE_CUBEREVO_3000HD)
+		for (id = 1; id < 7; id++)
 	#else
 		for (id = 0x10; id < 0x20; id++)
 	#endif
@@ -765,14 +776,13 @@ void evfd::vfd_set_light(bool onoff)
 
 void evfd::vfd_set_fan(bool onoff)
 {
-#if defined(ENABLE_CUBEREVO) \
- || defined(ENABLE_CUBEREVO_MINI) \
- || defined(ENABLE_CUBEREVO_MINI2) \
- || defined(ENABLE_CUBEREVO_MINI_FTA) \
- || defined(ENABLE_CUBEREVO_250HD) \
- || defined(ENABLE_CUBEREVO_2000HD) \
- || defined(ENABLE_CUBEREVO_3000HD) \
- || defined(ENABLE_CUBEREVO_9500HD)
+#if defined (ENABLE_CUBEREVO) \
+ || defined (ENABLE_CUBEREVO_250HD) \
+ || defined (ENABLE_CUBEREVO_MINI) \
+ || defined (ENABLE_CUBEREVO_MINI2) \
+ || defined (ENABLE_CUBEREVO_2000HD) \
+ || defined (ENABLE_CUBEREVO_3000HD) \
+ || defined (ENABLE_CUBEREVO_9500HD)
 	struct vfd_ioctl_data data;
 
 	memset(&data, 0, sizeof(struct vfd_ioctl_data));

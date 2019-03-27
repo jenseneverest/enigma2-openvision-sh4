@@ -4,7 +4,7 @@
 #define ICON_ON  1
 #define ICON_OFF 0
 
-//#if !defined(ENABLE_FORTIS_HDBOX)
+//#if !defined (ENABLE_FORTIS_HDBOX)
 typedef enum { USB = 0x10, HD, HDD, LOCK, BT, MP3, MUSIC, DD, MAIL, MUTE, PLAY, PAUSE, FF, FR, REC, CLOCK } tvfd_icon;
 typedef enum { RED_LED = 0, GREEN_LED } tvfd_led;
 //#else

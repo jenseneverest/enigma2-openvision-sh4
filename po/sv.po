@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 10:54+0330\n"
+"POT-Creation-Date: 2019-03-31 23:59+0430\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -862,6 +862,9 @@ msgstr "Aktivera timeshiftslut"
 msgid "Activate timeshift end and pause"
 msgstr "Aktivera timeshiftslut och pausa"
 
+msgid "Active"
+msgstr ""
+
 #, python-format
 msgid "Active Keymap: %s"
 msgstr ""
@@ -1454,6 +1457,16 @@ msgid "Automatically turn on external subtitles"
 msgstr "Automatisk aktivering av externa undertexter"
 
 #
+#, fuzzy
+msgid "Autostart"
+msgstr "håller på att starta"
+
+#
+#, fuzzy
+msgid "Autostart:"
+msgstr "håller på att starta"
+
+#
 msgid "Available format variables"
 msgstr "Tillgängliga format variabler"
 
@@ -1735,12 +1748,35 @@ msgstr ""
 msgid "CI (Common Interface) Setup"
 msgstr "CI (Common Interface) inställning"
 
+msgid "CI Legacy"
+msgstr ""
+
+#, fuzzy
+msgid "CI Operation Mode"
+msgstr "Konfigurationsläge"
+
+msgid "CI Plus 1.2"
+msgstr ""
+
+msgid "CI Plus 1.3"
+msgstr ""
+
 #
 msgid "CI assignment"
 msgstr "CI tilldelning"
 
 msgid "CI slot: "
 msgstr "CI plats :"
+
+#, fuzzy
+msgid "CIHelper Setup"
+msgstr "HotKey inställning"
+
+msgid "CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "CIHelper for SLOT CI1"
+msgstr ""
 
 msgid "CPU: "
 msgstr ""
@@ -2024,6 +2060,9 @@ msgstr "Välj tuner"
 msgid "Choose bouquet"
 msgstr "Välj kanallista"
 
+msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr "Välj vilken tuner som skall konfigureras."
 
@@ -2120,6 +2159,11 @@ msgstr "Färgformat"
 
 #
 msgid "Color format"
+msgstr "Färgformat"
+
+#
+#, fuzzy
+msgid "Combined"
 msgstr "Färgformat"
 
 msgid "Combo"
@@ -2710,6 +2754,11 @@ msgstr ""
 
 msgid "Current CEC address"
 msgstr "Nuvarande CEC adress"
+
+#
+#, fuzzy
+msgid "Current Status:"
+msgstr "Nuvarande inställningar :"
 
 msgid "Current device: "
 msgstr "Nuvarande enhet : "
@@ -3564,6 +3613,12 @@ msgstr "Aktivera 'neutrino' zapp kontroll"
 #
 msgid "Enable 5V for active antenna"
 msgstr "Aktivera 5V för aktiv antenn"
+
+msgid "Enable CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "Enable CIHelper for SLOT CI1"
+msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr "Aktivera EIT EPG"
@@ -4689,15 +4744,6 @@ msgid "Hotkey zap"
 msgstr "Hotkey zapp"
 
 #, fuzzy
-msgid "Hotswitchable"
-msgstr "omöjlig att testa"
-
-#
-#, fuzzy
-msgid "Hotswitchable tuner"
-msgstr "Växlingbara tunertyper :"
-
-#, fuzzy
 msgid "How many minutes do you want add to the recording?"
 msgstr "Hur många minuter vill du lägga till inspelning?"
 
@@ -5708,6 +5754,11 @@ msgid "Missing "
 msgstr "Saknad"
 
 #
+#, fuzzy
+msgid "Mode"
+msgstr "Läge "
+
+#
 msgctxt "Satellite configuration mode"
 msgid "Mode"
 msgstr "Läge "
@@ -5739,6 +5790,11 @@ msgstr "Ändra inställningar"
 #, fuzzy
 msgid "Modem type"
 msgstr "Testtyp"
+
+#
+#, fuzzy
+msgid "Modes"
+msgstr "Läge "
 
 #
 msgid "Modulation"
@@ -5895,6 +5951,11 @@ msgstr "Multikanals nedmixning"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG favoritlistsval"
+
+#
+#, fuzzy
+msgid "MultiType"
+msgstr "Multimedia"
 
 #
 #, fuzzy
@@ -6185,9 +6246,6 @@ msgstr "Inget viloläge"
 
 msgid "No stream clients"
 msgstr "inga strömningsklienter"
-
-msgid "No suitable sat tuner found!"
-msgstr "Ingen passande sat tuner hittad!"
 
 #
 msgid "No tags are set on these movies."
@@ -7895,6 +7953,10 @@ msgstr "Rotor :"
 msgid "Round start time on"
 msgstr "Avrunda starttid till"
 
+#, fuzzy
+msgid "Running"
+msgstr "Varning"
+
 #
 msgid "Russian"
 msgstr "Ryska"
@@ -9377,6 +9439,9 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Några plugins är inte tillgängliga :\n"
 
+msgid "Sorry CIHelper Config is Missing"
+msgstr ""
+
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -9582,6 +9647,11 @@ msgstr "Viloläge om"
 #, fuzzy
 msgid "Standby saver frequency"
 msgstr "Viloläge efter aktuellt program"
+
+#
+#, fuzzy
+msgid "Start"
+msgstr "Starta test"
 
 #
 #, fuzzy
@@ -9937,11 +10007,6 @@ msgstr "Växla till föregående underkanal"
 
 msgid "Switch to radio mode"
 msgstr "Växla till radioläge"
-
-#
-#, fuzzy
-msgid "Switchable tuner types"
-msgstr "Växlingbara tunertyper :"
 
 msgid "Switzerland"
 msgstr ""
@@ -12097,6 +12162,9 @@ msgstr ""
 "Vänta tills din mottagare startat om\n"
 "Detta kan ta några minuter!"
 
+msgid "Your hardware can detect CI mode itself or works only in legacy mode."
+msgstr ""
+
 #
 msgid ""
 "Your internet connection is not working!\n"
@@ -13647,6 +13715,10 @@ msgstr "omöjlig att testa"
 #
 msgid "until standby/restart"
 msgstr "tills viloläge / omstart"
+
+#, fuzzy
+msgid "update bookmarks"
+msgstr "Automatisk Sökning"
 
 #
 msgid "user defined"

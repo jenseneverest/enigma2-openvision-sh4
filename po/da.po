@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 10:54+0330\n"
+"POT-Creation-Date: 2019-03-31 23:59+0430\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -860,6 +860,9 @@ msgstr "Aktiver timeshift slut"
 msgid "Activate timeshift end and pause"
 msgstr "Aktiver timeshift slut og pause"
 
+msgid "Active"
+msgstr ""
+
 #, python-format
 msgid "Active Keymap: %s"
 msgstr ""
@@ -1453,6 +1456,16 @@ msgid "Automatically turn on external subtitles"
 msgstr "Tænd automatisk for eksterne undertekster"
 
 #
+#, fuzzy
+msgid "Autostart"
+msgstr "er ved at starte"
+
+#
+#, fuzzy
+msgid "Autostart:"
+msgstr "er ved at starte"
+
+#
 msgid "Available format variables"
 msgstr "Tilgængelige format variabler"
 
@@ -1736,12 +1749,36 @@ msgstr "CH%s"
 msgid "CI (Common Interface) Setup"
 msgstr "CI (Common Interface) Setup"
 
+msgid "CI Legacy"
+msgstr ""
+
+#
+#, fuzzy
+msgid "CI Operation Mode"
+msgstr "Konfigurations type"
+
+msgid "CI Plus 1.2"
+msgstr ""
+
+msgid "CI Plus 1.3"
+msgstr ""
+
 #
 msgid "CI assignment"
 msgstr "CI  tildeling"
 
 msgid "CI slot: "
 msgstr "CI port: "
+
+#, fuzzy
+msgid "CIHelper Setup"
+msgstr "HotKey Setup"
+
+msgid "CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "CIHelper for SLOT CI1"
+msgstr ""
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -2025,6 +2062,9 @@ msgstr "Vælg Tuner"
 msgid "Choose bouquet"
 msgstr "Vælg bouquet"
 
+msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr "Vælg hvilken tuner der skal konfigureres"
 
@@ -2121,6 +2161,11 @@ msgstr "Farve format"
 
 #
 msgid "Color format"
+msgstr "Farve format"
+
+#
+#, fuzzy
+msgid "Combined"
 msgstr "Farve format"
 
 msgid "Combo"
@@ -2716,6 +2761,11 @@ msgstr ""
 
 msgid "Current CEC address"
 msgstr "Nuværende CEC Adresse"
+
+#
+#, fuzzy
+msgid "Current Status:"
+msgstr "Nuværende indstillinger:"
 
 msgid "Current device: "
 msgstr "Nuværende enhed"
@@ -3575,6 +3625,12 @@ msgstr "Aktiver 'neutrino' zap styrings stil"
 #
 msgid "Enable 5V for active antenna"
 msgstr "Aktiver 5V for aktiv antenne"
+
+msgid "Enable CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "Enable CIHelper for SLOT CI1"
+msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr "Aktiver EIT EPG"
@@ -4703,15 +4759,6 @@ msgid "Hotkey zap"
 msgstr "Hotkey zap"
 
 #, fuzzy
-msgid "Hotswitchable"
-msgstr "ikke muligt at teste"
-
-#
-#, fuzzy
-msgid "Hotswitchable tuner"
-msgstr "Udskiftelige tuner typer"
-
-#, fuzzy
 msgid "How many minutes do you want add to the recording?"
 msgstr "Hvor mange minutter vil du tilføje til optagelsen?"
 
@@ -5728,6 +5775,11 @@ msgid "Missing "
 msgstr "Mangler"
 
 #
+#, fuzzy
+msgid "Mode"
+msgstr "Modus [ Satellit konfigurations modus]"
+
+#
 msgctxt "Satellite configuration mode"
 msgid "Mode"
 msgstr "Modus [ Satellit konfigurations modus]"
@@ -5759,6 +5811,11 @@ msgstr "Ændre indstillinger"
 #, fuzzy
 msgid "Modem type"
 msgstr "Test type"
+
+#
+#, fuzzy
+msgid "Modes"
+msgstr "Modus [ Satellit konfigurations modus]"
 
 #
 msgid "Modulation"
@@ -5915,6 +5972,11 @@ msgstr "Multi channel downmix"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG favoritliste valg"
+
+#
+#, fuzzy
+msgid "MultiType"
+msgstr "Multimedia"
 
 #
 #, fuzzy
@@ -6212,9 +6274,6 @@ msgstr "Ingen standby"
 
 msgid "No stream clients"
 msgstr "Ingen stream klienter"
-
-msgid "No suitable sat tuner found!"
-msgstr "Ingen brugbar sat tuner fundet"
 
 #
 msgid "No tags are set on these movies."
@@ -7931,6 +7990,10 @@ msgstr "Rotor:"
 msgid "Round start time on"
 msgstr "start tid på"
 
+#, fuzzy
+msgid "Running"
+msgstr "Advarsel"
+
 #
 msgid "Russian"
 msgstr "Russisk"
@@ -9414,6 +9477,9 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Nogle plugins er ikke tilstede:\n"
 
+msgid "Sorry CIHelper Config is Missing"
+msgstr ""
+
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -9619,6 +9685,11 @@ msgstr "Standby om"
 #, fuzzy
 msgid "Standby saver frequency"
 msgstr "Standby efter nuværende begivenhed"
+
+#
+#, fuzzy
+msgid "Start"
+msgstr "Start test"
 
 #
 #, fuzzy
@@ -9974,11 +10045,6 @@ msgstr "Skift til forrige underkanal"
 
 msgid "Switch to radio mode"
 msgstr "Skift til radio mode"
-
-#
-#, fuzzy
-msgid "Switchable tuner types"
-msgstr "Udskiftelige tuner typer"
 
 msgid "Switzerland"
 msgstr ""
@@ -12114,6 +12180,9 @@ msgstr ""
 "Vent venligst til din modtager genstarter\n"
 "Dette kan tage nogle minutter"
 
+msgid "Your hardware can detect CI mode itself or works only in legacy mode."
+msgstr ""
+
 #
 msgid ""
 "Your internet connection is not working!\n"
@@ -13666,6 +13735,10 @@ msgstr "ikke muligt at teste"
 #
 msgid "until standby/restart"
 msgstr "indtil standby/genstart"
+
+#, fuzzy
+msgid "update bookmarks"
+msgstr "Automatisk Skan"
 
 #
 msgid "user defined"

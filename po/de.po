@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 10:54+0330\n"
+"POT-Creation-Date: 2019-03-31 23:59+0430\n"
 "PO-Revision-Date: 2018-10-22T21:44:30+02:00\n"
 "Last-Translator: daddelfalk <OpenPLi>\n"
 "Language-Team: Sfteam  angelo2807@hotmail.com\n"
@@ -790,6 +790,9 @@ msgstr "Aktiviere TimeShift-Ende"
 msgid "Activate timeshift end and pause"
 msgstr "Aktiviere TimeShift-Ende und Pause"
 
+msgid "Active"
+msgstr ""
+
 #, python-format
 msgid "Active Keymap: %s"
 msgstr ""
@@ -1304,6 +1307,14 @@ msgstr "Automatischer Timeshift-Start nach"
 msgid "Automatically turn on external subtitles"
 msgstr "Externe Untertitel automatisch aktivieren"
 
+#, fuzzy
+msgid "Autostart"
+msgstr "Startet gleich"
+
+#, fuzzy
+msgid "Autostart:"
+msgstr "Startet gleich"
+
 msgid "Available format variables"
 msgstr "Verfügbare Formatierungsvariablen"
 
@@ -1546,11 +1557,34 @@ msgstr "CH%s"
 msgid "CI (Common Interface) Setup"
 msgstr "CI (Common Interface) Einstellungen"
 
+msgid "CI Legacy"
+msgstr ""
+
+#, fuzzy
+msgid "CI Operation Mode"
+msgstr "Konfigurationsmodus"
+
+msgid "CI Plus 1.2"
+msgstr ""
+
+msgid "CI Plus 1.3"
+msgstr ""
+
 msgid "CI assignment"
 msgstr "CI-Zuweisung"
 
 msgid "CI slot: "
 msgstr "CI-Slot: "
+
+#, fuzzy
+msgid "CIHelper Setup"
+msgstr "Tastenkombination Einstellungen"
+
+msgid "CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "CIHelper for SLOT CI1"
+msgstr ""
 
 msgid "CPU: "
 msgstr "Prozessor: "
@@ -1805,6 +1839,9 @@ msgstr "Wähle Tuner"
 msgid "Choose bouquet"
 msgstr "Favoritenliste auswählen"
 
+msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr "Wählen Sie den Tuner aus."
 
@@ -1887,6 +1924,10 @@ msgstr "Kolumbien"
 
 msgid "Color format"
 msgstr "Farbformat"
+
+#, fuzzy
+msgid "Combined"
+msgstr "Kolumbien"
 
 msgid "Combo"
 msgstr "Combo"
@@ -2420,6 +2461,10 @@ msgstr "Curacao"
 
 msgid "Current CEC address"
 msgstr "Aktuelle CEC-Adresse"
+
+#, fuzzy
+msgid "Current Status:"
+msgstr "Aktuelle Einstellungen:"
 
 msgid "Current device: "
 msgstr "Aktuelles Gerät: "
@@ -3147,6 +3192,12 @@ msgstr "Aktiviere Kanalumschaltverhalten im 'Neutrino'-Style"
 
 msgid "Enable 5V for active antenna"
 msgstr "5V für aktive Antenne"
+
+msgid "Enable CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "Enable CIHelper for SLOT CI1"
+msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr "Aktiviere EIT EPG"
@@ -4164,14 +4215,6 @@ msgstr "Hotkey-Tastenbelegung"
 msgid "Hotkey zap"
 msgstr "Tastenkombination \"umschalten\""
 
-#, fuzzy
-msgid "Hotswitchable"
-msgstr "untestbar"
-
-#, fuzzy
-msgid "Hotswitchable tuner"
-msgstr "Umschaltbare Tuner-Typen:"
-
 msgid "How many minutes do you want add to the recording?"
 msgstr "Wie viele Minuten wollen Sie der Aufnahme hinzufügen?"
 
@@ -5049,6 +5092,10 @@ msgstr "Sendeintervall Mininum"
 msgid "Missing "
 msgstr "Fehlend"
 
+#, fuzzy
+msgid "Mode"
+msgstr "Modus"
+
 msgctxt "Satellite configuration mode"
 msgid "Mode"
 msgstr "Modus"
@@ -5074,6 +5121,10 @@ msgstr "Einstellungen bearbeiten"
 #, fuzzy
 msgid "Modem type"
 msgstr "Testtyp"
+
+#, fuzzy
+msgid "Modes"
+msgstr "Modus"
 
 msgid "Modulation"
 msgstr "Modulation"
@@ -5216,6 +5267,10 @@ msgstr "Multi channel downmix"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG Bouquet Auswahl"
+
+#, fuzzy
+msgid "MultiType"
+msgstr "Multimedia"
 
 msgid "Multiboot"
 msgstr "Multi-Boot-System"
@@ -5469,9 +5524,6 @@ msgstr "Kein Standby"
 
 msgid "No stream clients"
 msgstr "Keine Stream-Clients"
-
-msgid "No suitable sat tuner found!"
-msgstr "Kein verwendbarer Sat Tuner gefunden!"
 
 msgid "No tags are set on these movies."
 msgstr "Keine Tags für diese Filme gesetzt."
@@ -6935,6 +6987,10 @@ msgstr "Rotor: "
 msgid "Round start time on"
 msgstr "Runde Startzeit auf"
 
+#, fuzzy
+msgid "Running"
+msgstr "Laufen"
+
 msgid "Russian"
 msgstr "Russisch"
 
@@ -8238,6 +8294,9 @@ msgstr "Somalia"
 msgid "Some plugins are not available:\n"
 msgstr "Einige Plugins sind nicht verfügbar:\n"
 
+msgid "Sorry CIHelper Config is Missing"
+msgstr ""
+
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -8420,6 +8479,10 @@ msgstr "Standby in"
 #, fuzzy
 msgid "Standby saver frequency"
 msgstr "Standby nach aktueller Sendung"
+
+#, fuzzy
+msgid "Start"
+msgstr "Test starten"
 
 #, fuzzy
 msgid "Start Boot Frequency"
@@ -8729,10 +8792,6 @@ msgstr "Zum vorhergehenden Unterkanal schalten"
 
 msgid "Switch to radio mode"
 msgstr "Wechsel zum Radio Modus"
-
-#, fuzzy
-msgid "Switchable tuner types"
-msgstr "Umschaltbare Tuner-Typen:"
 
 msgid "Switzerland"
 msgstr "Die Schweiz"
@@ -10630,6 +10689,9 @@ msgstr ""
 "Bitte warten Sie, bis Ihr Receiver neu startet\n"
 "Das kann einige Minuten dauern"
 
+msgid "Your hardware can detect CI mode itself or works only in legacy mode."
+msgstr ""
+
 msgid ""
 "Your internet connection is not working!\n"
 "Please choose what you want to do next."
@@ -11982,6 +12044,10 @@ msgstr "untestbar"
 
 msgid "until standby/restart"
 msgstr "Bis zum Standby/Neustart"
+
+#, fuzzy
+msgid "update bookmarks"
+msgstr "Automatische Lesezeichen"
 
 msgid "user defined"
 msgstr "Benutzerdefiniert"

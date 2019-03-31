@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 10:54+0330\n"
+"POT-Creation-Date: 2019-03-31 23:59+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -793,6 +793,9 @@ msgstr "Aktifkan Batas Akhir timeshift"
 msgid "Activate timeshift end and pause"
 msgstr "Aktifkan batas akhir dan jeda timeshift"
 
+msgid "Active"
+msgstr ""
+
 #, python-format
 msgid "Active Keymap: %s"
 msgstr ""
@@ -1319,6 +1322,14 @@ msgstr "Mulai timeshift otomatis setelah"
 msgid "Automatically turn on external subtitles"
 msgstr "Hidupkan otomatis terjemahan dari luar"
 
+#, fuzzy
+msgid "Autostart"
+msgstr "akan memulai"
+
+#, fuzzy
+msgid "Autostart:"
+msgstr "akan memulai"
+
 msgid "Available format variables"
 msgstr "Variabel format tersedia"
 
@@ -1567,11 +1578,34 @@ msgstr "CH%s"
 msgid "CI (Common Interface) Setup"
 msgstr "Pengaturan CI (Common Interface)"
 
+msgid "CI Legacy"
+msgstr ""
+
+#, fuzzy
+msgid "CI Operation Mode"
+msgstr "Mode penyetelan"
+
+msgid "CI Plus 1.2"
+msgstr ""
+
+msgid "CI Plus 1.3"
+msgstr ""
+
 msgid "CI assignment"
 msgstr "penetapan CI"
 
 msgid "CI slot: "
 msgstr "slot CI"
+
+#, fuzzy
+msgid "CIHelper Setup"
+msgstr "Pengaturan Tombol Pintas"
+
+msgid "CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "CIHelper for SLOT CI1"
+msgstr ""
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -1832,6 +1866,9 @@ msgstr "Pilih Penala"
 msgid "Choose bouquet"
 msgstr "Pilih buket"
 
+msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr "Pilih penala mana untuk disetel."
 
@@ -1916,6 +1953,10 @@ msgstr "Kolombia"
 
 msgid "Color format"
 msgstr "Format warna"
+
+#, fuzzy
+msgid "Combined"
+msgstr "Kolombia"
 
 msgid "Combo"
 msgstr "Kombo"
@@ -2458,6 +2499,10 @@ msgstr ""
 
 msgid "Current CEC address"
 msgstr "Alamat CEC saat ini"
+
+#, fuzzy
+msgid "Current Status:"
+msgstr "Pengaturan saat ini:"
 
 msgid "Current device: "
 msgstr "Perangkat saat ini: "
@@ -3205,6 +3250,12 @@ msgstr "Aktifkan kontrol zap gaya 'neutrino'"
 
 msgid "Enable 5V for active antenna"
 msgstr "Aktifkan 5V pada antena aktif"
+
+msgid "Enable CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "Enable CIHelper for SLOT CI1"
+msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr "Aktifkan EPG EIT"
@@ -4250,14 +4301,6 @@ msgid "Hotkey zap"
 msgstr "Zap tombol pintas"
 
 #, fuzzy
-msgid "Hotswitchable"
-msgstr "takbisa dites"
-
-#, fuzzy
-msgid "Hotswitchable tuner"
-msgstr "Jenis penala bisa ditukar:"
-
-#, fuzzy
 msgid "How many minutes do you want add to the recording?"
 msgstr "Berapa menit anda ingin tambahkan ke perekaman?"
 
@@ -5157,6 +5200,10 @@ msgstr "Selang waktu kirim minimum"
 msgid "Missing "
 msgstr "Hilang "
 
+#, fuzzy
+msgid "Mode"
+msgstr "Mode"
+
 msgctxt "Satellite configuration mode"
 msgid "Mode"
 msgstr "Mode"
@@ -5183,6 +5230,10 @@ msgstr "Ubah pengaturan"
 #, fuzzy
 msgid "Modem type"
 msgstr "Jeni tes"
+
+#, fuzzy
+msgid "Modes"
+msgstr "Mode"
 
 msgid "Modulation"
 msgstr "Modulasi"
@@ -5325,6 +5376,10 @@ msgstr "Turunkan kualitas multi kanal"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Pilihan buket Multi-EPG"
+
+#, fuzzy
+msgid "MultiType"
+msgstr "Multimedia"
 
 #, fuzzy
 msgid "Multiboot"
@@ -5578,9 +5633,6 @@ msgstr "Tidak bisa standby"
 
 msgid "No stream clients"
 msgstr "Tidak ada klien streaming"
-
-msgid "No suitable sat tuner found!"
-msgstr "Tidak ditemukan penala satelit yg cocok!"
 
 msgid "No tags are set on these movies."
 msgstr "Tidak ada label diset pada film ini."
@@ -7071,6 +7123,10 @@ msgstr "Rotor:"
 msgid "Round start time on"
 msgstr "Putaran waktu mulai"
 
+#, fuzzy
+msgid "Running"
+msgstr "Peringatan"
+
 msgid "Russian"
 msgstr "Rusia"
 
@@ -8403,6 +8459,9 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Beberapa plugin tidak tersedia:\n"
 
+msgid "Sorry CIHelper Config is Missing"
+msgstr ""
+
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -8589,6 +8648,10 @@ msgstr "Standby dalam"
 #, fuzzy
 msgid "Standby saver frequency"
 msgstr "Standby setelah acara saat ini"
+
+#, fuzzy
+msgid "Start"
+msgstr "Mulai pengecekan"
 
 #, fuzzy
 msgid "Start Boot Frequency"
@@ -8902,10 +8965,6 @@ msgstr "Beralih ke sub layanan sebelumnya"
 
 msgid "Switch to radio mode"
 msgstr "Beralih ke mode radio"
-
-#, fuzzy
-msgid "Switchable tuner types"
-msgstr "Jenis penala bisa ditukar:"
 
 msgid "Switzerland"
 msgstr "Swiss"
@@ -10839,6 +10898,9 @@ msgstr ""
 "Mohon tunggu sampai Rx anda reboot\n"
 "Ini bisa memakan waktu beberapa menit"
 
+msgid "Your hardware can detect CI mode itself or works only in legacy mode."
+msgstr ""
+
 msgid ""
 "Your internet connection is not working!\n"
 "Please choose what you want to do next."
@@ -12201,6 +12263,10 @@ msgstr "takbisa dites"
 
 msgid "until standby/restart"
 msgstr "sampai standby/mulai ulang"
+
+#, fuzzy
+msgid "update bookmarks"
+msgstr "Penanda buku otomatis"
 
 msgid "user defined"
 msgstr "ditentukan pengguna"

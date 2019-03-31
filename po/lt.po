@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 10:54+0330\n"
-"PO-Revision-Date: 2019-03-16 15:06+0200\n"
+"POT-Creation-Date: 2019-03-31 23:59+0430\n"
+"PO-Revision-Date: 2019-03-30 18:34+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -164,9 +164,8 @@ msgstr " (žemiau, nei bet koks auto)"
 msgid " extensions."
 msgstr " plėtiniai."
 
-#, fuzzy
 msgid " min"
-msgstr "%d min"
+msgstr "min"
 
 msgid " ms"
 msgstr " msek"
@@ -801,6 +800,9 @@ msgstr "Aktyvuoti laiko poslinkio pabaigą"
 msgid "Activate timeshift end and pause"
 msgstr "Aktyvuoti laiko poslinkio pabaigą ir pristabdyti"
 
+msgid "Active"
+msgstr "Aktyvus"
+
 #, python-format
 msgid "Active Keymap: %s"
 msgstr ""
@@ -1286,7 +1288,7 @@ msgstr "Automatinis SCART perjungimas"
 
 #, fuzzy
 msgid "Auto start"
-msgstr "apie pradžią"
+msgstr "Auto paleidimas"
 
 #, fuzzy
 msgid "Auto(not available)"
@@ -1315,6 +1317,12 @@ msgstr "Automatiškai paleisti laiko poslinkį po"
 
 msgid "Automatically turn on external subtitles"
 msgstr "Automatiškai įjungti išorinius subtitrus"
+
+msgid "Autostart"
+msgstr "Auto paleidimas"
+
+msgid "Autostart:"
+msgstr "Auto paleidimas:"
 
 msgid "Available format variables"
 msgstr "Galimi kintami formatai"
@@ -1558,11 +1566,34 @@ msgstr "KAN.%s"
 msgid "CI (Common Interface) Setup"
 msgstr "CI (įstatomo modulio) sąranka"
 
+msgid "CI Legacy"
+msgstr "CI įprastinis"
+
+msgid "CI Operation Mode"
+msgstr "CI veikimo būsena"
+
+msgid "CI Plus 1.2"
+msgstr "CI Plus 1.2"
+
+msgid "CI Plus 1.3"
+msgstr "CI Plus 1.3"
+
 msgid "CI assignment"
 msgstr "CI priskyrimas"
 
 msgid "CI slot: "
 msgstr "CI lizdas: "
+
+msgid "CIHelper Setup"
+msgstr "CI padėjėjo valdymas"
+
+#, fuzzy
+msgid "CIHelper for SLOT CI0"
+msgstr "CI padėjėjas lizdui CI0"
+
+#, fuzzy
+msgid "CIHelper for SLOT CI1"
+msgstr "CI padėjėjas lizdui CI1"
 
 msgid "CPU: "
 msgstr "Procesorius: "
@@ -1817,6 +1848,9 @@ msgstr "Pasirinkite imtuvą"
 msgid "Choose bouquet"
 msgstr "Pasirinkite paketą"
 
+msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
+msgstr "Pasirinkite CI protokolo veikimo režimą standartiniam CI arba CI Plus."
+
 msgid "Choose which tuner to configure."
 msgstr "Pasirinkti kurį imtuvą konfigūruoti."
 
@@ -1899,6 +1933,9 @@ msgstr "Kolumbija"
 
 msgid "Color format"
 msgstr "Spalvų formatas"
+
+msgid "Combined"
+msgstr "Kombinuotas"
 
 msgid "Combo"
 msgstr "Kombo"
@@ -2428,6 +2465,10 @@ msgstr "Kiurasao"
 
 msgid "Current CEC address"
 msgstr "Dabartinis CEC adresas"
+
+#, fuzzy
+msgid "Current Status:"
+msgstr "Dabartinė būsena:"
 
 msgid "Current device: "
 msgstr "Dabartinis įrenginys: "
@@ -3162,6 +3203,14 @@ msgstr "Įjungti 'neutrino' stiliaus perjungimo valdymą"
 
 msgid "Enable 5V for active antenna"
 msgstr "Įjungti 5V aktyviai antenai"
+
+#, fuzzy
+msgid "Enable CIHelper for SLOT CI0"
+msgstr "Įjungti CI padėjėją lizdui CI0"
+
+#, fuzzy
+msgid "Enable CIHelper for SLOT CI1"
+msgstr "Įjungti CI padėjėją lizdui CI1"
 
 msgid "Enable EIT EPG"
 msgstr "Įjungti EIT EPG"
@@ -4174,12 +4223,6 @@ msgstr "Sparčiųjų klavišų valdymas"
 msgid "Hotkey zap"
 msgstr "Spartusis perjungimas"
 
-msgid "Hotswitchable"
-msgstr "Greitai perjungiamas"
-
-msgid "Hotswitchable tuner"
-msgstr "Greitai perjungiamas imtuvas"
-
 msgid "How many minutes do you want add to the recording?"
 msgstr "Kiek minučių norite pridėti prie įrašo?"
 
@@ -5061,6 +5104,9 @@ msgstr "Minimalus siuntimo intervalas"
 msgid "Missing "
 msgstr "Trūkstamas "
 
+msgid "Mode"
+msgstr "Režimas"
+
 msgctxt "Satellite configuration mode"
 msgid "Mode"
 msgstr "Režimas"
@@ -5086,6 +5132,9 @@ msgstr "Redaguoti nustatymus"
 #, fuzzy
 msgid "Modem type"
 msgstr "Tikrinimo tipas"
+
+msgid "Modes"
+msgstr "Režimai"
 
 msgid "Modulation"
 msgstr "Moduliacija"
@@ -5228,6 +5277,9 @@ msgstr "Daugiakanalio garso suliejimas"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Daugiakanalio EPG paketo pasirinkimas"
+
+msgid "MultiType"
+msgstr "Multi tipas"
 
 msgid "Multiboot"
 msgstr "Daugiafunkcinė įkrova"
@@ -5479,9 +5531,6 @@ msgstr "Nebudėti"
 
 msgid "No stream clients"
 msgstr "Transliacijų klientų nėra"
-
-msgid "No suitable sat tuner found!"
-msgstr "Tinkamo palydovinio imtuvo nerasta!"
 
 msgid "No tags are set on these movies."
 msgstr "Jokios žymos šiems filmams nenustatytos."
@@ -6938,6 +6987,9 @@ msgstr "Rotorius: "
 msgid "Round start time on"
 msgstr "Apvalinti pradžios laiką"
 
+msgid "Running"
+msgstr "Veikiantis"
+
 msgid "Russian"
 msgstr "Rusų"
 
@@ -8246,6 +8298,10 @@ msgstr "Somalis"
 msgid "Some plugins are not available:\n"
 msgstr "Kai kurių priedų nėra:\n"
 
+#, fuzzy
+msgid "Sorry CIHelper Config is Missing"
+msgstr "Deja, trūksta CI padėjėjo konfigūracijos"
+
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -8427,6 +8483,9 @@ msgstr "Į budėjimo režimą po "
 #, fuzzy
 msgid "Standby saver frequency"
 msgstr "Po šio įvykio pereiti į budėjimo režimą"
+
+msgid "Start"
+msgstr "Pradėti"
 
 #, fuzzy
 msgid "Start Boot Frequency"
@@ -8737,9 +8796,6 @@ msgstr "Perjungti į ankstesnį subkanalą"
 msgid "Switch to radio mode"
 msgstr "Perjungti į radiją"
 
-msgid "Switchable tuner types"
-msgstr "Perjungiamų imtuvų tipai"
-
 msgid "Switzerland"
 msgstr "Šveicarų"
 
@@ -8771,7 +8827,7 @@ msgstr "T2MI RAW režimas"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "P&C Adga, adga45@gmail.com\n"
-"Pasvalys, 2019-03-16 versija"
+"Pasvalys, 2019-03-30 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -10639,6 +10695,9 @@ msgstr ""
 "Palaukite, kol imtuvas pasileis iš naujo\n"
 "Tai gali užtrukti kelias minutes"
 
+msgid "Your hardware can detect CI mode itself or works only in legacy mode."
+msgstr "Jūsų techninė įranga gali aptikti ci režimą savarankiškai arba dirbti tik standartiniame režime."
+
 msgid ""
 "Your internet connection is not working!\n"
 "Please choose what you want to do next."
@@ -11978,6 +12037,9 @@ msgstr "netikrintinas"
 
 msgid "until standby/restart"
 msgstr "iki budėjimo/paleidimo iš naujo"
+
+msgid "update bookmarks"
+msgstr "atnaujinti žymes"
 
 msgid "user defined"
 msgstr "naudotojo nustatytas"

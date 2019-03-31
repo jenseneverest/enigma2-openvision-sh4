@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 10:54+0330\n"
+"POT-Creation-Date: 2019-03-31 23:59+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -176,9 +176,8 @@ msgid " extensions."
 msgstr "rozšíření."
 
 #
-#, fuzzy
 msgid " min"
-msgstr "%d min"
+msgstr "min"
 
 msgid " ms"
 msgstr "ms"
@@ -889,6 +888,9 @@ msgstr "Aktivovat konec timeshiftu"
 msgid "Activate timeshift end and pause"
 msgstr "Aktivovat konec timeshiftu a pozastavit"
 
+msgid "Active"
+msgstr ""
+
 #, python-format
 msgid "Active Keymap: %s"
 msgstr ""
@@ -1489,6 +1491,16 @@ msgid "Automatically turn on external subtitles"
 msgstr "Automaticky zapínat externí titulky"
 
 #
+#, fuzzy
+msgid "Autostart"
+msgstr "právě začne"
+
+#
+#, fuzzy
+msgid "Autostart:"
+msgstr "právě začne"
+
+#
 msgid "Available format variables"
 msgstr "Použitelný formát proměnných"
 
@@ -1764,12 +1776,35 @@ msgstr "K%s"
 msgid "CI (Common Interface) Setup"
 msgstr "CI (Common Interface)"
 
+msgid "CI Legacy"
+msgstr ""
+
+#, fuzzy
+msgid "CI Operation Mode"
+msgstr "Konfigurační mód"
+
+msgid "CI Plus 1.2"
+msgstr ""
+
+msgid "CI Plus 1.3"
+msgstr ""
+
 #
 msgid "CI assignment"
 msgstr "CI přiřazení"
 
 #
 msgid "CI slot: "
+msgstr ""
+
+#, fuzzy
+msgid "CIHelper Setup"
+msgstr "Nastavení Hotkey"
+
+msgid "CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "CIHelper for SLOT CI1"
 msgstr ""
 
 msgid "CPU: "
@@ -2055,6 +2090,9 @@ msgstr "Zvolte tuner"
 msgid "Choose bouquet"
 msgstr "Zvolte přehled"
 
+msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr "Vyberte si, který tuner chcete nastavovat."
 
@@ -2151,6 +2189,10 @@ msgstr "Kolumbie"
 #
 msgid "Color format"
 msgstr "Formát barev"
+
+#
+msgid "Combined"
+msgstr "kombinovaný"
 
 msgid "Combo"
 msgstr ""
@@ -2740,6 +2782,11 @@ msgstr "Curaçao"
 
 msgid "Current CEC address"
 msgstr "Současná CEC adresa"
+
+#
+#, fuzzy
+msgid "Current Status:"
+msgstr "Aktuální nastavení:"
 
 msgid "Current device: "
 msgstr "Aktuální zařízení: "
@@ -3609,6 +3656,12 @@ msgstr "Povolit 'neutrino' styl přepínání"
 #
 msgid "Enable 5V for active antenna"
 msgstr "Povolit 5V pro aktivní anténu"
+
+msgid "Enable CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "Enable CIHelper for SLOT CI1"
+msgstr ""
 
 #
 msgid "Enable EIT EPG"
@@ -4659,7 +4712,7 @@ msgid "Hebrew"
 msgstr "Hebrejsky"
 
 msgid "Helps setting up your antenna"
-msgstr "Pomáhá nastavit vaší anténu"
+msgstr "Pomáhá nastavit Vaši anténu"
 
 msgid "Here you can change the screen positions with the arrow buttons on your remote control!"
 msgstr ""
@@ -4743,14 +4796,6 @@ msgid "Hotkey Setup"
 msgstr "Nastavení Hotkey"
 
 msgid "Hotkey zap"
-msgstr ""
-
-#
-msgid "Hotswitchable"
-msgstr ""
-
-#
-msgid "Hotswitchable tuner"
 msgstr ""
 
 msgid "How many minutes do you want add to the recording?"
@@ -5771,14 +5816,18 @@ msgid "Missing "
 msgstr "Chybí "
 
 #
+msgid "Mode"
+msgstr "Režim"
+
+#
 msgctxt "Satellite configuration mode"
 msgid "Mode"
-msgstr "Mód"
+msgstr "Režim"
 
 #
 msgctxt "Video output mode"
 msgid "Mode"
-msgstr "Mód"
+msgstr "Režim"
 
 msgid "Model"
 msgstr "Моdel"
@@ -5800,6 +5849,10 @@ msgstr "Upravit nastavení"
 #, fuzzy
 msgid "Modem type"
 msgstr "Typ testu"
+
+#
+msgid "Modes"
+msgstr "Režimy"
 
 #
 msgid "Modulation"
@@ -5959,6 +6012,10 @@ msgstr ""
 #
 msgid "Multi-EPG bouquet selection"
 msgstr "Volba přehledu při spuštění Multi-EPG"
+
+#
+msgid "MultiType"
+msgstr "multityp"
 
 msgid "Multiboot"
 msgstr "Multiboot"
@@ -6259,9 +6316,6 @@ msgstr "Neusínat"
 
 msgid "No stream clients"
 msgstr "Žádní klienti nepoužívají stream"
-
-msgid "No suitable sat tuner found!"
-msgstr "Nenalezen žádný vhodný tuner!"
 
 #
 msgid "No tags are set on these movies."
@@ -7666,7 +7720,7 @@ msgid "Relative"
 msgstr "Relativní"
 
 msgid "Relevant PIDs routing"
-msgstr ""
+msgstr "Relevantní směrování PID"
 
 #
 msgid "Reload"
@@ -7830,7 +7884,7 @@ msgstr "Nastavit pokročilá nastavení videa na výchozí nastavení?"
 
 #
 msgid "Reset video enhancement settings to your last configuration?"
-msgstr "Nastavit pokročilá nastavení videa na Vaší poslední konfiguraci?"
+msgstr "Nastavit pokročilá nastavení videa na Vaši poslední konfiguraci?"
 
 #
 msgid "Resolution"
@@ -7983,6 +8037,10 @@ msgstr ""
 
 msgid "Round start time on"
 msgstr "Zarovnat začátek na"
+
+#, fuzzy
+msgid "Running"
+msgstr "probíhá"
 
 #
 msgid "Russian"
@@ -8663,7 +8721,7 @@ msgid "Select your Skin"
 msgstr "Vyberte skin"
 
 msgid "Select your country. If not available select 'all'."
-msgstr "Vyberte Vaší zemi. Pokud není k dispozici, vyberte možnost 'Vše'."
+msgstr "Vyberte Vaši zemi. Pokud není k dispozici, vyberte možnost 'Vše'."
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Vyberte poskytovatele a region. Pokud nejsou v tomto seznamu k dispozici, budete muset vybrat jiný typ vyhledávání programů."
@@ -9471,6 +9529,9 @@ msgstr "Somálsko"
 msgid "Some plugins are not available:\n"
 msgstr "Některé pluginy nejsou dostupné:\n"
 
+msgid "Sorry CIHelper Config is Missing"
+msgstr ""
+
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -9676,6 +9737,11 @@ msgstr "Standby za "
 #, fuzzy
 msgid "Standby saver frequency"
 msgstr "Standby po této události"
+
+#
+#, fuzzy
+msgid "Start"
+msgstr "Spustit test"
 
 #
 #, fuzzy
@@ -10040,10 +10106,6 @@ msgstr "Předchozí podprogram"
 msgid "Switch to radio mode"
 msgstr "Přepnout do Radio módu"
 
-#
-msgid "Switchable tuner types"
-msgstr "Přepínatelný typ tuneru"
-
 msgid "Switzerland"
 msgstr "Švýcarsko"
 
@@ -10079,7 +10141,7 @@ msgstr ""
 "Pro případné korekce můžete kontaktovat autora\n"
 "na výše uvedené adrese.\n"
 "\n"
-"®11.3.2019"
+"®29.3.2019"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -10248,7 +10310,7 @@ msgid ""
 "\n"
 "Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
 msgstr ""
-"Overscan průvodce pomáhá správně nastavit Vaší televizi.\n"
+"Overscan průvodce pomáhá správně nastavit Vaši televizi.\n"
 "\n"
 "U většiny televizorů je ve výchozím továrním nastavení overscan povolen. To znamená, že vždy vidíte \"zvětšený\" obrázek namísto skutečného HD a části uživatelského rozhraní (skinu) nemohou být viditelné.\n"
 "\n"
@@ -10381,7 +10443,7 @@ msgstr ""
 "Nepanikařte, jestliže uvidíte nějaké podezřelé údaje!"
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
-msgstr "Jde o multitype tuner. Dostupné možnosti závisí na hardwaru."
+msgstr "Jde o multityp tuner. Dostupné možnosti závisí na hardwaru."
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Jde o pořadí ve kterém jsou příkazy DiSEqC odeslány do anténního systému. Pořadí musí přesně odpovídat pořadí fyzických zařízení na signálovém kabelu (začínající od konce přijímače)."
@@ -12167,6 +12229,9 @@ msgstr ""
 "Čekejte, dokud se přijímač nerestartuje\n"
 "To může trvat několik minut"
 
+msgid "Your hardware can detect CI mode itself or works only in legacy mode."
+msgstr ""
+
 #
 msgid ""
 "Your internet connection is not working!\n"
@@ -13720,6 +13785,10 @@ msgstr "netestovatelné"
 #
 msgid "until standby/restart"
 msgstr "do standby/restartu"
+
+#
+msgid "update bookmarks"
+msgstr "Aktualizovat záložky"
 
 #
 msgid "user defined"

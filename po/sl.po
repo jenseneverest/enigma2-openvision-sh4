@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project Slovenia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 10:54+0330\n"
+"POT-Creation-Date: 2019-03-31 23:59+0430\n"
 "PO-Revision-Date: 2015-08-30 09:00+0200\n"
 "Last-Translator: Taykun345 <support@satnigmo.com>\n"
 "Language-Team: Satnigmo <support@satnigmo.com>\n"
@@ -893,6 +893,9 @@ msgstr ""
 msgid "Activate timeshift end and pause"
 msgstr ""
 
+msgid "Active"
+msgstr ""
+
 #, python-format
 msgid "Active Keymap: %s"
 msgstr ""
@@ -1498,6 +1501,16 @@ msgid "Automatically turn on external subtitles"
 msgstr "Samodejni vklop zunanjih podnapisov"
 
 #
+#, fuzzy
+msgid "Autostart"
+msgstr "se bo zagnalo"
+
+#
+#, fuzzy
+msgid "Autostart:"
+msgstr "se bo zagnalo"
+
+#
 msgid "Available format variables"
 msgstr "Razpoložljive oblike"
 
@@ -1784,11 +1797,33 @@ msgstr "CH%s"
 msgid "CI (Common Interface) Setup"
 msgstr "CI vmesnik"
 
+msgid "CI Legacy"
+msgstr ""
+
+#, fuzzy
+msgid "CI Operation Mode"
+msgstr "Nastavitveni način: "
+
+msgid "CI Plus 1.2"
+msgstr ""
+
+msgid "CI Plus 1.3"
+msgstr ""
+
 #
 msgid "CI assignment"
 msgstr "CI dodelitev"
 
 msgid "CI slot: "
+msgstr ""
+
+msgid "CIHelper Setup"
+msgstr ""
+
+msgid "CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "CIHelper for SLOT CI1"
 msgstr ""
 
 msgid "CPU: "
@@ -2071,6 +2106,9 @@ msgstr "Izbor kanalnika"
 msgid "Choose bouquet"
 msgstr ""
 
+msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr "Izberite ustrezen kanalnik za nastavljanje."
 
@@ -2169,6 +2207,11 @@ msgstr "Barvni format"
 
 #
 msgid "Color format"
+msgstr "Barvni format"
+
+#
+#, fuzzy
+msgid "Combined"
 msgstr "Barvni format"
 
 msgid "Combo"
@@ -2763,6 +2806,11 @@ msgstr ""
 
 msgid "Current CEC address"
 msgstr "Trenutni CEC naslov"
+
+#
+#, fuzzy
+msgid "Current Status:"
+msgstr "Trenutne nastavitve:"
 
 msgid "Current device: "
 msgstr "Trenutna naprava:"
@@ -3638,6 +3686,12 @@ msgstr "Vklopi 'neutrino' način preklapljanja med kanali"
 #
 msgid "Enable 5V for active antenna"
 msgstr "Omogoči 5V za potrebe aktivne antene"
+
+msgid "Enable CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "Enable CIHelper for SLOT CI1"
+msgstr ""
 
 #
 msgid "Enable EIT EPG"
@@ -4783,14 +4837,6 @@ msgstr ""
 msgid "Hotkey zap"
 msgstr ""
 
-msgid "Hotswitchable"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Hotswitchable tuner"
-msgstr "Preklopljive vrste kanalnikov:"
-
 #
 #, fuzzy
 msgid "How many minutes do you want add to the recording?"
@@ -5816,6 +5862,11 @@ msgid "Missing "
 msgstr "Manjkajoče"
 
 #
+#, fuzzy
+msgid "Mode"
+msgstr "Način"
+
+#
 msgctxt "Satellite configuration mode"
 msgid "Mode"
 msgstr "Način"
@@ -5847,6 +5898,11 @@ msgstr "Spreminjanje nastavitev"
 #, fuzzy
 msgid "Modem type"
 msgstr "Vrsta testa"
+
+#
+#, fuzzy
+msgid "Modes"
+msgstr "Način"
 
 #
 msgid "Modulation"
@@ -6004,6 +6060,11 @@ msgstr "Pretvorba večkanalnega zvoka"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Izbirnik Multi-EPG seznamov kanalov"
+
+#
+#, fuzzy
+msgid "MultiType"
+msgstr "Multimedija"
 
 #
 #, fuzzy
@@ -6302,9 +6363,6 @@ msgstr "Ni stanja pripravljenosti"
 
 msgid "No stream clients"
 msgstr ""
-
-msgid "No suitable sat tuner found!"
-msgstr "Ni možno najti DVB-S/S2 kanalnika!"
 
 #
 msgid "No tags are set on these movies."
@@ -8046,6 +8104,11 @@ msgid "Round start time on"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Running"
+msgstr "Na začetku"
+
+#
 msgid "Russian"
 msgstr "Rusko"
 
@@ -9579,6 +9642,9 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Nekateri vtičniki niso na voljo:\n"
 
+msgid "Sorry CIHelper Config is Missing"
+msgstr ""
+
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -9790,6 +9856,11 @@ msgstr "Stanje pripravljenosti v"
 #, fuzzy
 msgid "Standby saver frequency"
 msgstr "Stanje pripravljenosti po trenutnem dogodku"
+
+#
+#, fuzzy
+msgid "Start"
+msgstr "Pričnite s preizkusom"
 
 #
 #, fuzzy
@@ -10160,11 +10231,6 @@ msgstr "Preklop na prejšnjo pod-storitev"
 
 msgid "Switch to radio mode"
 msgstr "Preklop v način radio"
-
-#
-#, fuzzy
-msgid "Switchable tuner types"
-msgstr "Preklopljive vrste kanalnikov:"
 
 msgid "Switzerland"
 msgstr ""
@@ -12278,6 +12344,9 @@ msgid ""
 "This may take a few minutes"
 msgstr ""
 
+msgid "Your hardware can detect CI mode itself or works only in legacy mode."
+msgstr ""
+
 #
 msgid ""
 "Your internet connection is not working!\n"
@@ -13851,6 +13920,10 @@ msgstr ""
 #
 msgid "until standby/restart"
 msgstr "do stanja pripravljenosti/resetiranja"
+
+#, fuzzy
+msgid "update bookmarks"
+msgstr "Samodejno iskanje "
 
 #
 msgid "user defined"

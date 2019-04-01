@@ -21,7 +21,7 @@ import NavigationInstance
 from Screens.SessionGlobals import SessionGlobals
 
 config.plugins.VFD_spark = ConfigSubsection()
-config.plugins.VFD_spark.showClock = ConfigSelection(default = "True_Switch", choices = [("NameOff",_("Channelname in Standby off")), ("NameOn",_("Channelname in Standby Clock")), ("False",_("Channelnumber in Standby off")),("True",_("Channelnumber in Standby Clock")), ("True_Switch",_("Channelnumber/Clock in Standby Clock")),("True_All",_("Clock always")),("Off",_("Always off"))])
+config.plugins.VFD_spark.showClock = ConfigSelection(default = "True_Switch", choices = [("NameOff",_("Channel name in standby off")), ("NameOn",_("Channel name in standby clock")), ("False",_("Channel number in standby off")),("True",_("Channel number in standby clock")), ("True_Switch",_("Channel number/clock in standby clock")),("True_All",_("Clock always")),("Off",_("Always off"))])
 config.plugins.VFD_spark.timeMode = ConfigSelection(default = "24h", choices = [("12h"),("24h")])
 config.plugins.VFD_spark.redLed = ConfigSelection(default = "0", choices = [("0",_("Off")),("1",_("Standby only")), ("2",_("Record only"))])
 config.plugins.VFD_spark.greenLed = ConfigSelection(default = "0", choices = [("0",_("Off")),("1",_("Standby only"))])

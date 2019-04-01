@@ -42,7 +42,12 @@ else
 	DEBUG_LVL=$ENIGMA_DEBUG_LVL
 fi
 
-LIBS=@libdir@/libopen.so.0.0.0
+#check for sundtek tuner helper lib
+if [ -e /opt/lib/libmediaclient.so ]; then
+	LIBS="/opt/lib/libmediaclient.so @libdir@/libopen.so.0.0.0"
+else
+	LIBS="@libdir@/libopen.so.0.0.0"
+fi
 
 # enigma main loop
 while : ; do
@@ -60,6 +65,11 @@ while : ; do
 	# hook to execute scripts always before enigma2 start
 	if [ -x @bindir@/enigma2_pre_start.sh ]; then
 		@bindir@/enigma2_pre_start.sh
+	fi
+
+	# dreamci
+	if [ -x @bindir@/enigma2_pre_start_ciplus.sh ]; then
+		@bindir@/enigma2_pre_start_ciplus.sh
 	fi
 
 	# start enigma
@@ -95,6 +105,9 @@ while : ; do
 			/sbin/halt
 			;;
 		2)
+			if [ -f /proc/stb/fp/force_restart ]; then
+				echo 1 > /proc/stb/fp/force_restart
+			fi
 			/sbin/reboot
 			;;
 		3)

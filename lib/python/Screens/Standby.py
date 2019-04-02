@@ -12,7 +12,7 @@ from Components.ImportChannels import ImportChannels
 from Tools.Directories import mediafilesInUse
 from Components.SystemInfo import SystemInfo
 from GlobalActions import globalActionMap
-from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer
+from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer, getBoxType
 from Components.Sources.StreamService import StreamServiceList
 
 inStandby = None
@@ -91,6 +91,12 @@ class Standby(Screen):
 			self.avswitch.setInput("SCART")
 		else:
 			self.avswitch.setInput("AUX")
+
+		if getBoxType().startswith("spark"):
+			try:
+				open("/proc/stb/hdmi/output", "w").write("off")
+			except:
+				pass
 
 		Console().ePopen("/bin/vdstandby -a &")
 

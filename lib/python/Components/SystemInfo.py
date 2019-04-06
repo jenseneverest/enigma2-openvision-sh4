@@ -98,6 +98,7 @@ SystemInfo["Has3DSurroundSoftLimiter"] = fileExists("/proc/stb/audio/3dsurround_
 SystemInfo["hasXcoreVFD"] = False
 SystemInfo["HasOfflineDecoding"] = True
 SystemInfo["canFlashWithOfgwrite"] = True
+SystemInfo["HasRootSubdir"] = fileHas("/proc/cmdline", "rootsubdir=")
 SystemInfo["canMultiBoot"] = False
 SystemInfo["canMode12"] = '192M' or '200M'
 SystemInfo["HDRSupport"] = fileExists("/proc/stb/hdmi/hlg_support_choices") and fileCheck("/proc/stb/hdmi/hlg_support")

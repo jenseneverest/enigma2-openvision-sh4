@@ -124,6 +124,9 @@ def getCPUInfoString():
 	except:
 		return _("undefined")
 
+def getCPUBrand():
+	return _("STMicroelectronics")
+
 def getFlashType():
 	if SystemInfo["SmallFlash"]:
 		return _("Small flash STB")

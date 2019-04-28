@@ -3,6 +3,7 @@ hw_info = None
 class HardwareInfo:
 	device_name = _("unavailable")
 	device_model = None
+	device_brand = None
 	device_version = ""
 	device_revision = ""
 	device_hdmi = True
@@ -17,6 +18,12 @@ class HardwareInfo:
 
 		try:
 			self.device_name = open("/proc/stb/info/model").read().strip()
+		except:
+			pass
+
+		# Brand
+		try:
+			self.device_brand = open("/etc/brand").read().strip()
 		except:
 			pass
 
@@ -38,6 +45,9 @@ class HardwareInfo:
 
 	def get_device_model(self):
 		return hw_info.device_model
+
+	def get_device_brand(self):
+		return hw_info.device_brand
 
 	def get_device_version(self):
 		return hw_info.device_version

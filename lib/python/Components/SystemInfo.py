@@ -1,4 +1,4 @@
-from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnigmaDebugLvl, getBoxType
+from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnigmaDebugLvl, getBoxType, getBoxBrand
 from Tools.Directories import fileExists, fileCheck, pathExists, fileHas
 from Tools.HardwareInfo import HardwareInfo
 
@@ -68,7 +68,7 @@ SystemInfo["3DMode"] = fileCheck("/proc/stb/fb/3dmode") or fileCheck("/proc/stb/
 SystemInfo["3DZNorm"] = fileCheck("/proc/stb/fb/znorm") or fileCheck("/proc/stb/fb/primary/zoffset")
 SystemInfo["Blindscan_t2_available"] = False
 SystemInfo["RcTypeChangable"] = pathExists('/proc/stb/ir/rc/type')
-SystemInfo["HasFullHDSkinSupport"] = getBoxType() in ("adb_box","atevio7500","cuberevo","cuberevo_250hd","cuberevo_mini","cuberevo_mini2","cuberevo_2000hd","cuberevo_3000hd","cuberevo_9500hd","hl101","spark","spark7162","vip1_v2","vip2_v1","octagon1008","fortis_hdbox","hs7110","hs7420","hs7810a","hs7119","hs7429","hs7819")
+SystemInfo["HasFullHDSkinSupport"] = getBoxBrand() in ("cuberevo","fulan","hs","edisionargus") or getBoxType() in ("adb_box","atevio7500","hl101","octagon1008","fortis_hdbox")
 SystemInfo["HasBypassEdidChecking"] = fileCheck("/proc/stb/hdmi/bypass_edid_checking")
 SystemInfo["HasColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
 SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"]
@@ -85,7 +85,7 @@ SystemInfo["HasHDMIpreemphasis"] = fileCheck("/proc/stb/hdmi/preemphasis")
 SystemInfo["HasColorimetry"] = fileCheck("/proc/stb/video/hdmi_colorimetry")
 SystemInfo["HasHdrType"] = fileCheck("/proc/stb/video/hdmi_hdrtype")
 SystemInfo["HasHDMI-CEC"] = HardwareInfo().has_hdmi() and fileExists("/usr/lib/enigma2/python/Plugins/SystemPlugins/HdmiCEC/plugin.pyo") and (fileExists("/dev/cec0") or fileExists("/dev/hdmi_cec") or fileExists("/dev/misc/hdmi_cec0"))
-SystemInfo["HasYPbPr"] = getBoxType() in ("adb_box","atevio7500","fortis_hdbox","hl101","hs7420","hs7429","octagon1008","tf7700","ufs912","ufs913","vip1_v2","vip2_v1","cuberevo","cuberevo_mini","cuberevo_mini2","cuberevo_2000hd","cuberevo_3000hd")
+SystemInfo["HasYPbPr"] = getBoxBrand() in ("edisionargus") or getBoxType() in ("adb_box","atevio7500","fortis_hdbox","hl101","hs7420","hs7429","octagon1008","tf7700","ufs912","ufs913","cuberevo","cuberevo_mini","cuberevo_mini2","cuberevo_2000hd","cuberevo_3000hd")
 SystemInfo["HasScart"] = getBoxType() not in ("hs7110","hs7119")
 SystemInfo["HasSVideo"] = getBoxType() in ("cuberevo")
 SystemInfo["HasComposite"] = getBoxType() not in ("cuberevo_250hd")

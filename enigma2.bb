@@ -1,5 +1,5 @@
 DESCRIPTION = "Enigma2 is an experimental, but useful framebuffer-based frontend for DVB functions"
-MAINTAINER = "OpenPLi team <info@openpli.org>"
+MAINTAINER = "Open Vision Developers"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=751419260aa954499f7abaabaa882bbe"
 
@@ -8,9 +8,8 @@ inherit gitpkgv externalsrc
 S = "${FILE_DIRNAME}"
 WORKDIR = "${S}/build"
 
-PV = "2.7+git"
-PKGV = "2.7+git${GITPKGV}"
-PR = "r26"
+PV = "sh4+git"
+PKGV = "sh4+git${GITPKGV}"
 
 FILES_${PN} += "${datadir}/keymaps"
 FILES_${PN}-meta = "${datadir}/meta"
@@ -49,6 +48,9 @@ EXTRA_OECONF = "\
 	--enable-maintainer-mode --with-target=native --with-libsdl=no --with-boxtype=${MACHINE} \
 	--enable-dependency-tracking \
 	${@bb.utils.contains("MACHINE_FEATURES", "textlcd", "--with-textlcd" , "", d)} \
+	--with-boxbrand="${BOX_BRAND}" \
+	${@bb.utils.contains("MACHINE_FEATURES", "7segment", "--with-7segment" , "", d)} \
+	${@bb.utils.contains("MACHINE_FEATURES", "7seg", "--with-7segment" , "", d)} \
 	BUILD_SYS=${BUILD_SYS} \
 	HOST_SYS=${HOST_SYS} \
 	STAGING_INCDIR=${STAGING_INCDIR} \

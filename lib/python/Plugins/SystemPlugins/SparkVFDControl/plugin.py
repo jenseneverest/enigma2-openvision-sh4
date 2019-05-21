@@ -404,4 +404,4 @@ def sessionstart(reason, **kwargs):
 
 def Plugins(**kwargs):
 		return [ PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], fnc=sessionstart),
-			PluginDescriptor(name="Spark LED Display Setup", description="Change VFD display settings",where = PluginDescriptor.WHERE_MENU, fnc = main) ]
+			PluginDescriptor(name = _("Spark LED Display Setup"), description = _("Change VFD display settings"), where = PluginDescriptor.WHERE_MENU, fnc = main) ]

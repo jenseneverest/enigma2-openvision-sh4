@@ -83,4 +83,4 @@ def menu(menuid, **kwargs):
 
 
 def Plugins(**kwargs):
-    return PluginDescriptor(name=_('UnionTunerType config'), description='Select spark7162 dvb-t/c tuner mode', where=PluginDescriptor.WHERE_MENU, fnc=menu)
+    return PluginDescriptor(name = _('UnionTunerType config'), description = _('Select spark7162 dvb-t/c tuner mode'), where=PluginDescriptor.WHERE_MENU, fnc=menu)

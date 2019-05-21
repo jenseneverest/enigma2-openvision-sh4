@@ -351,5 +351,5 @@ def autostart(reason, **kwargs):
 	controlcubeVfd()
 
 def Plugins(**kwargs):
-	return [ PluginDescriptor(name="CuberevoVFD", description="Change VFD display settings", where = PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
+	return [ PluginDescriptor(name = _("CuberevoVFD"), description = _("Change VFD display settings"), where = PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
 		PluginDescriptor(where = [PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc = autostart) ]

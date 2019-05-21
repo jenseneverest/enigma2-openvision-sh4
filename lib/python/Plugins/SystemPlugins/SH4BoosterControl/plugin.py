@@ -180,5 +180,5 @@ def sessionstart(reason, **kwargs):
 
 def Plugins(**kwargs):
 	return [ PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], fnc=sessionstart),
-		PluginDescriptor(name="SH4 Booster Control", description="Change CPU speed settings",where = PluginDescriptor.WHERE_MENU, fnc = main) ]
+		PluginDescriptor(name = _("SH4 Booster Control"), description = _("Change CPU speed settings"), where = PluginDescriptor.WHERE_MENU, fnc = main) ]
 

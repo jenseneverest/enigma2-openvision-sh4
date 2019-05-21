@@ -109,5 +109,5 @@ def KeymapSelSetup(menuid, **kwargs):
 		return []
 
 def Plugins(**kwargs):
-	return PluginDescriptor(name="Keymapselector", description="Select Your Keymap", where = PluginDescriptor.WHERE_MENU, fnc=KeymapSelSetup)
+	return PluginDescriptor(name = _("Keymap selector"), description = _("Select your keymap"), where = PluginDescriptor.WHERE_MENU, fnc=KeymapSelSetup)
 

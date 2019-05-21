@@ -460,5 +460,5 @@ def autostart(reason, **kwargs):
         controlTfVfd()
 
 def Plugins(**kwargs):
-        return [ PluginDescriptor(name="TopfieldVFD", description="Change VFD display settings", where = PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
+        return [ PluginDescriptor(name = _("TopfieldVFD"), description = _("Change VFD display settings"), where = PluginDescriptor.WHERE_PLUGINMENU, fnc=main),
                 PluginDescriptor(where = [PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc = autostart) ]

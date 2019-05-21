@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-20 09:22+0430\n"
-"PO-Revision-Date: 2019-05-12 00:00+0300\n"
+"POT-Creation-Date: 2019-05-21 20:25+0430\n"
+"PO-Revision-Date: 2019-05-20 19:20+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 
 msgid ""
 "\n"
@@ -1661,6 +1661,19 @@ msgid ""
 "\n"
 "Screens change with left/right buttons or use red, green, blue.\n"
 msgstr ""
+"Galima naudoti defektinių pikselių nustatymui televizoriaus ekrane.\n"
+"Galimi spalvų bandymo ekranai:\n"
+"\n"
+"raudona\n"
+"žalias\n"
+"mėlyna\n"
+"balta\n"
+"juoda\n"
+"cianas\n"
+"rausvai raudona\n"
+"geltona\n"
+"\n"
+"Ekranai keičiami kairiuoju / dešiniuoju mygtuku arba naudojant raudoną, žalią, mėlyną.\n"
 
 msgid "Can only find a network drive to store the backup this means after the flash the autorestore will not work. Alternativaly you can mount the network drive after the flash and perform a manufacurer reset to autorestore"
 msgstr "Galite rasti tinklo diską, kad išsaugotumėte atsarginę kopiją, tai reiškia, kad po atvaizdo įdiegimo auto atkūrimas neveiks. Arba galite prijungti tinklo diską po įdiegimo ir atlikti gamintojo atstatymą į auto atkūrimą"
@@ -1726,11 +1739,19 @@ msgstr "Centrinė Afrikos Respublika"
 msgid "Chad"
 msgstr "Čadas"
 
+#, fuzzy
+msgid "Change CPU speed settings"
+msgstr "Keisti pakartojimo ir delsos nustatymus?"
+
 msgid "Change Language"
 msgstr "Pakeisti kalbą"
 
 msgid "Change PIN"
 msgstr "Keisti PIN kodą"
+
+#, fuzzy
+msgid "Change VFD display settings"
+msgstr "Keisti pakartojimo ir delsos nustatymus?"
 
 msgid "Change bouquets in quickzap"
 msgstr "Keisti paketus greitai perjungiant"
@@ -2484,6 +2505,9 @@ msgstr "Šviesumas"
 
 msgid "Cuba"
 msgstr "Kuba"
+
+msgid "CuberevoVFD"
+msgstr ""
 
 msgid "Curacao"
 msgstr "Kiurasao"
@@ -4687,6 +4711,10 @@ msgstr "Klaviatūros valdymas"
 msgid "Keymap"
 msgstr ""
 
+#, fuzzy
+msgid "Keymap selector"
+msgstr "Enigma2 temos parinkėjas"
+
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
 
@@ -5751,7 +5779,7 @@ msgid "Oman"
 msgstr "Omanas"
 
 msgid "On"
-msgstr "Įj."
+msgstr "Įjungta"
 
 msgid "On end of movie"
 msgstr "Filmo pabaigoje"
@@ -5992,7 +6020,7 @@ msgid "Pitcairn"
 msgstr "Pitkernas"
 
 msgid "Pixels\n"
-msgstr ""
+msgstr "Pikseliai\n"
 
 msgid "Play"
 msgstr "Paleisti"
@@ -7056,6 +7084,9 @@ msgstr "SDR"
 msgid "SETUP"
 msgstr ""
 
+msgid "SH4 Booster Control"
+msgstr ""
+
 #, fuzzy
 msgid "SH4 OSD Position setup"
 msgstr "Pozicionieriaus sąranka"
@@ -7540,6 +7571,9 @@ msgstr "Pasirinkite lizdą"
 msgid "Select sort method:"
 msgstr "Pasirinkite rūšiavimo būdą:"
 
+msgid "Select spark7162 dvb-t/c tuner mode"
+msgstr ""
+
 msgid "Select target folder"
 msgstr "Pasirinkite paskirties katalogą"
 
@@ -7629,6 +7663,10 @@ msgstr "Pasirinkite norimą temą"
 
 msgid "Select your country. If not available select 'all'."
 msgstr "Pasirinkite savo šalį. Jei nėra pasirinkti 'visos'."
+
+#, fuzzy
+msgid "Select your keymap"
+msgstr "Pasirinkite norimą temą"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Pasirinkite tiekėją ir regioną. Jei šio sąrašo nėra, turėsite pasirinkti vieną iš kitų 'kanalų paieškos tipų'."
@@ -8429,6 +8467,10 @@ msgstr "Ispanija"
 msgid "Spanish"
 msgstr "Ispanų"
 
+#, fuzzy
+msgid "Spark LED Display Setup"
+msgstr "Monitoriaus nustatymai"
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -8877,7 +8919,7 @@ msgstr "T2MI RAW režimas"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
-msgstr "Adga, Pasvalys, 2019-05-12 versija"
+msgstr "Adga, Pasvalys, 2019-05-20 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -8920,7 +8962,7 @@ msgstr "Antžeminė TV"
 
 #, fuzzy
 msgid "Test"
-msgstr "Tikrinimo režimas"
+msgstr "Tikrinimo tipas"
 
 msgid "Test DiSEqC settings"
 msgstr "Tikrinkite DiSEqC nustatymus"
@@ -9500,6 +9542,9 @@ msgstr "Viršuje ir apačioje"
 
 msgid "Top and bottom"
 msgstr "Viršuje ir apačioje"
+
+msgid "TopfieldVFD"
+msgstr ""
 
 #, python-format
 msgid "Total clients streaming: %d (%s)"
@@ -11647,7 +11692,7 @@ msgid "offset is"
 msgstr "poslinkis yra"
 
 msgid "on"
-msgstr "įj."
+msgstr "įjungta"
 
 msgid "on READ ONLY medium."
 msgstr "diskas TIK SKAITYMUI."
@@ -11904,13 +11949,13 @@ msgstr "praleisti sukimą atgal"
 msgid "skip forward"
 msgstr "praleisti sukimą į priekį"
 
-#, fuzzy, python-format
+#, python-format
 msgid "slot%s - %s"
-msgstr "lizdas%s -%s režimas 1"
+msgstr "lizdas%s - %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "slot%s - %s (current image)"
-msgstr "lizdas%s -%s režimas 1 (dabartinis atvaizdas)"
+msgstr "lizdas%s -%s (dabartinis atvaizdas)"
 
 #, python-format
 msgid "slot%s - %s (current image) with, backup"

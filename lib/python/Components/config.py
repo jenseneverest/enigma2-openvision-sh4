@@ -29,6 +29,7 @@ from time import localtime, strftime
 #
 class ConfigElement(object):
 	def __init__(self):
+		self.extra_args = []
 		self.saved_value = None
 		self.save_forced = False
 		self.last_value = None
@@ -106,15 +107,25 @@ class ConfigElement(object):
 	def changed(self):
 		if self.__notifiers:
 			for x in self.notifiers:
-				x(self)
+				extra_args = self.__getExtraArgs(x)
+				if extra_args is not None:
+					x(self, extra_args)
+				else:
+					x(self)
 
 	def changedFinal(self):
 		if self.__notifiers_final:
 			for x in self.notifiers_final:
-				x(self)
+				extra_args = self.__getExtraArgs(x)
+				if extra_args is not None:
+					x(self, extra_args)
+				else:
+					x(self)
 
-	def addNotifier(self, notifier, initial_call=True, immediate_feedback=True):
+	def addNotifier(self, notifier, initial_call=True, immediate_feedback=True, extra_args=None):
 		assert callable(notifier), "notifiers must be callable"
+		if extra_args is not None:
+			self.__addExtraArgs(notifier, extra_args)
 		if immediate_feedback:
 			self.notifiers.append(notifier)
 		else:
@@ -128,11 +139,27 @@ class ConfigElement(object):
 		#    (though that's not so easy to detect.
 		#     the entry could just be new.)
 		if initial_call:
-			notifier(self)
+			if extra_args:
+				notifier(self,extra_args)
+			else:
+				notifier(self)
 
 	def removeNotifier(self, notifier):
 		notifier in self.notifiers and self.notifiers.remove(notifier)
 		notifier in self.notifiers_final and self.notifiers_final.remove(notifier)
+		self.__removeExtraArgs(notifier)
+		try:
+			del self.__notifiers[str(notifier)]
+		except BaseException:
+			pass
+		try:
+			del self.__notifiers_final[str(notifier)]
+		except BaseException:
+			pass
+
+	def clearNotifiers(self):
+		self.__notifiers = {}
+		self.__notifiers_final = {}
 
 	def disableSave(self):
 		self.save_disabled = True
@@ -153,6 +180,19 @@ class ConfigElement(object):
 
 	def showHelp(self, session):
 		pass
+
+	def __addExtraArgs(self, notifier, extra_args):
+		self.extra_args.append((notifier, extra_args))
+
+	def __removeExtraArgs(self, notifier):
+		for i in range(len(self.extra_args)):
+			if self.extra_args[i][0] == notifier:
+				del self.extra_args[i]
+
+	def __getExtraArgs(self, notifier):
+		for extra_arg in self.extra_args:
+			if extra_arg[0] == notifier:
+				return extra_arg[1]
 
 
 KEY_LEFT = 0
@@ -1092,7 +1132,14 @@ class ConfigNumber(ConfigText):
 		ConfigText.__init__(self, str(default), fixed_size=False)
 
 	def getValue(self):
-		return int(self.text)
+		try:
+			return int(self.text)
+		except ValueError:
+			if self.text == "true":
+				self.text = "1"
+			else:
+				self.text = str(default)
+			return int(self.text)
 
 	def setValue(self, val):
 		self.text = str(val)
@@ -1187,12 +1234,15 @@ class ConfigSlider(ConfigElement):
 		self.max = limits[1]
 		self.increment = increment
 
-	def checkValues(self):
-		if self.value < self.min:
-			self.value = self.min
-
-		if self.value > self.max:
-			self.value = self.max
+	def checkValues(self, value = None):
+		if value is None:
+			value = self.value
+		if value < self.min:
+			value = self.min
+		if value > self.max:
+			value = self.max
+		if self.value != value:		#avoid call of setter if value not changed
+			self.value = value
 
 	def handleKey(self, key):
 		if key == KEY_LEFT:
@@ -1232,7 +1282,9 @@ class ConfigSatlist(ConfigSelection):
 	orbital_position = property(getOrbitalPosition)
 
 class ConfigSet(ConfigElement):
-	def __init__(self, choices, default=[]):
+	def __init__(self, choices, default=None):
+		if not default:
+			default = []
 		ConfigElement.__init__(self)
 		if isinstance(choices, list):
 			choices.sort()
@@ -1386,7 +1438,9 @@ class ConfigDictionarySet(ConfigElement):
 		self.saved_value = self.tostring(self.dirs)
 
 class ConfigLocations(ConfigElement):
-	def __init__(self, default=[], visible_width=False):
+	def __init__(self, default=None, visible_width=False):
+		if not default:
+			default = []
 		ConfigElement.__init__(self)
 		self.visible_width = visible_width
 		self.pos = -1

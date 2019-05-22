@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 20:25+0430\n"
+"POT-Creation-Date: 2019-05-22 08:13+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -410,6 +410,10 @@ msgstr "%s %d.%d"
 msgid "%s %s free disk space"
 msgstr "%s %s brīva vieta uz diska"
 
+#, fuzzy, python-format
+msgid "%s ( %s Cards )"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
@@ -441,6 +445,13 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy
+msgid "( All readers)"
+msgstr "Visi vecumi"
+
+msgid "(Show only reader:"
+msgstr ""
 
 msgid "(VU+ type)"
 msgstr "(VU+ tips)"
@@ -881,6 +892,10 @@ msgstr "Papildu motora iespējas ļauj izmantot informāciju no sava motora spec
 
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move to another satellite."
 msgstr "Papildu motora iespējas ļauj izmantot informāciju no sava motora specifikācijas. Tāpēc enigma var noteikt, cik ilgs laiks būs nepieciešams, lai pārvietoties uz citu satelītu."
+
+#, fuzzy
+msgid "Address"
+msgstr "IP adrese"
 
 msgid "Adjust 3D settings"
 msgstr "Pielāgo 3D iestatījumus"
@@ -1327,6 +1342,9 @@ msgstr "Automātiski sākt laika aizturi pēc"
 msgid "Automatically turn on external subtitles"
 msgstr "Automātiski ieslēgt ārējos subtitrus"
 
+msgid "Automatically update Client/Server View?"
+msgstr ""
+
 #, fuzzy
 msgid "Autostart"
 msgstr "gatavojas sākt"
@@ -1570,6 +1588,12 @@ msgstr "C"
 msgid "C-Band"
 msgstr "C-josla"
 
+msgid "CAID"
+msgstr ""
+
+msgid "CAID:SrvID"
+msgstr ""
+
 msgid "CH"
 msgstr "CH"
 
@@ -1707,6 +1731,13 @@ msgid "Capacity: "
 msgstr "Ietilpība: "
 
 msgid "Card"
+msgstr "Karte"
+
+msgid "Card infos (CCcam-Reader)"
+msgstr ""
+
+#, fuzzy
+msgid "Cards:"
 msgstr "Karte"
 
 msgid "Cascade PiP"
@@ -1925,8 +1956,15 @@ msgstr "Dzēst žurnālu"
 msgid "Clear playlist"
 msgstr "Dzēst repertuāru"
 
+#, python-format
+msgid "Client Info ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Client is streaming from this box!"
 msgstr "Klients straumē no uztvērēja!"
+
+msgid "Clients"
+msgstr ""
 
 #, fuzzy
 msgid "Clock always"
@@ -3151,6 +3189,23 @@ msgstr "E"
 msgid "ECM Info"
 msgstr "ECM info"
 
+msgid "ECM Statistics"
+msgstr ""
+
+#, fuzzy
+msgid "ECM Time"
+msgstr "Laiks"
+
+msgid "ECM avg"
+msgstr ""
+
+msgid "ECM last"
+msgstr ""
+
+#, fuzzy
+msgid "ECM-Time"
+msgstr "Laiks"
+
 msgid "EPG"
 msgstr "EPG"
 
@@ -3791,6 +3846,11 @@ msgstr "Fidži"
 msgid "File appears to be busy.\n"
 msgstr "Fails šķiet aizņemts.\n"
 
+msgid ""
+"File oscam.conf not found.\n"
+"Please enter username/password manually."
+msgstr ""
+
 msgid "Filename"
 msgstr "Fails"
 
@@ -4244,6 +4304,9 @@ msgstr "Hondurasa"
 
 msgid "Hong Kong"
 msgstr "Honkonga"
+
+msgid "Hops"
+msgstr ""
 
 msgid "Horizontal"
 msgstr "Horizontālā"
@@ -4760,6 +4823,9 @@ msgstr ""
 msgid "LNB"
 msgstr "LNB"
 
+msgid "Label"
+msgstr ""
+
 msgid "Language"
 msgstr "Valoda"
 
@@ -4771,6 +4837,10 @@ msgstr "Laosas Tautas Demokrātiskā Republika"
 
 msgid "Large"
 msgstr "Liels"
+
+#, fuzzy
+msgid "Last Req."
+msgstr "Pēdējais ātrums"
 
 msgid "Last config"
 msgstr "Pēdējie iestatījumi"
@@ -4932,6 +5002,9 @@ msgstr "Noenkurošanās attiecība"
 
 msgid "Lock:"
 msgstr "Noenkuroties:"
+
+msgid "Log"
+msgstr ""
 
 msgid "Log results to /tmp"
 msgstr "Žurnalēt rezultātus /tmp"
@@ -5754,6 +5827,9 @@ msgstr "OSD iestatījumi"
 msgid "OSD transparency"
 msgstr "OSD caurspīdīgums"
 
+msgid "OScam Info"
+msgstr ""
+
 msgid "OVR"
 msgstr "OVR"
 
@@ -5840,6 +5916,17 @@ msgstr "Parastā"
 msgid "Original"
 msgstr "Oriģināls"
 
+#, fuzzy
+msgid "Oscam Info - Configuration"
+msgstr "Uztvērēja konfigurācija"
+
+msgid "Oscam Info - Main Menu"
+msgstr ""
+
+#, python-format
+msgid "Oscam Log ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Other"
 msgstr "Cits"
 
@@ -5878,6 +5965,10 @@ msgstr "PGS fails"
 
 msgid "PGS file"
 msgstr "PGS fails"
+
+#, fuzzy
+msgid "PID"
+msgstr "PDC"
 
 msgid "PIN code needed"
 msgstr "Vajadzīgs PIN kods"
@@ -5953,6 +6044,10 @@ msgid "Parental control setup"
 msgstr "Vecāku kontroles iestatījumi"
 
 msgid "Password"
+msgstr "Parole"
+
+#, fuzzy
+msgid "Password (httpwd)"
 msgstr "Parole"
 
 msgid "Pause"
@@ -6067,7 +6162,15 @@ msgstr "Lūdzu pievienot virsrakstus kompilācijai."
 msgid "Please change recording endtime"
 msgstr "Lūdzu nomainiet ieraksta beigu laiku"
 
+#, fuzzy
+msgid "Please choose CCcam-Reader"
+msgstr "Lūdzu izvēlieties paplašinājumu..."
+
 msgid "Please choose an extension..."
+msgstr "Lūdzu izvēlieties paplašinājumu..."
+
+#, fuzzy
+msgid "Please choose reader"
 msgstr "Lūdzu izvēlieties paplašinājumu..."
 
 msgid ""
@@ -6595,10 +6698,17 @@ msgstr "Aizsargāt gaidstāves izvēlni"
 msgid "Protect timer menu"
 msgstr "Aizsargāt taimeru izvēlni"
 
+msgid "Protocol"
+msgstr ""
+
 msgid "Provider"
 msgstr "Operators"
 
 msgid "Providers"
+msgstr "Operatori"
+
+#, fuzzy
+msgid "Providers: "
 msgstr "Operatori"
 
 msgid "Puerto Rico"
@@ -6653,6 +6763,15 @@ msgstr "Raidorganizācijas vērtējums - %d"
 
 msgid "Rating undefined"
 msgstr "Vērtējums nav definēts"
+
+msgid "Read Userdata from oscam.conf"
+msgstr ""
+
+msgid "Reader"
+msgstr ""
+
+msgid "Reader Statistics"
+msgstr ""
 
 msgid "Really close without saving settings?"
 msgstr "Vai tiešām aizvērt, nesaglabājot iestatījumus?"
@@ -6914,6 +7033,9 @@ msgstr "Atstatīt video uzlabošanas iestatījumus uz noklusējuma?"
 
 msgid "Reset video enhancement settings to your last configuration?"
 msgstr "Atstatīt video uzlabošanas iestatījumus uz pēdējiem konfigurētajiem?"
+
+msgid "Reshare"
+msgstr ""
 
 msgid "Resolution"
 msgstr "Izšķirtspēja"
@@ -7710,6 +7832,22 @@ msgstr "Serbija"
 msgid "Serbian"
 msgstr "Serbu"
 
+#, fuzzy
+msgid "Serv.Name"
+msgstr "Kanāla nosaukums"
+
+#, python-format
+msgid "Server Info ( Oscam-Version: %s )"
+msgstr ""
+
+#, fuzzy
+msgid "Server:"
+msgstr "Kanāls"
+
+#, fuzzy
+msgid "Servers"
+msgstr "Kanāli"
+
 msgid "Service"
 msgstr "Kanāls"
 
@@ -7919,11 +8057,19 @@ msgstr "Īsie failu nosaukumi"
 msgid "Show"
 msgstr "Rādīt"
 
+#, fuzzy
+msgid "Show /tmp/ecm.info"
+msgstr "Rādīt info"
+
 msgid "Show Audioselection"
 msgstr "Rādīt audio izvēlni"
 
 msgid "Show CI messages"
 msgstr "Rādīt CI paziņojumus"
+
+#, fuzzy
+msgid "Show Clients"
+msgstr "Rādīt kolonas"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Rādīt EIT pašreiz/nākamais infojoslā"
@@ -7944,8 +8090,15 @@ msgstr "Rādīt Games show"
 msgid "Show InfoBar"
 msgstr "Rādīt infojoslu"
 
+#, fuzzy
+msgid "Show Log"
+msgstr "Rādīt info"
+
 msgid "Show PIP"
 msgstr "Rādīt PIP"
+
+msgid "Show Readers/Proxies"
+msgstr ""
 
 msgid "Show SNR percentage instead of dB value"
 msgstr "Rādīt SNR procentos dB vietā"
@@ -8613,6 +8766,9 @@ msgstr "Ieslēdzot uztvērēju pāriet gaidstāvē"
 
 msgid "Startup to Standby"
 msgstr "Ieslēdzot pāriet gaidstāvē"
+
+msgid "Status"
+msgstr ""
 
 #, fuzzy
 msgid "Stby LED brightness"
@@ -9538,6 +9694,9 @@ msgstr "Vertikāli"
 msgid "TopfieldVFD"
 msgstr ""
 
+msgid "Total"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Straumē: %d (%s) klienti"
@@ -9836,6 +9995,10 @@ msgstr "Atjaunināšana pārtraukta. Uztvērējam nestrādā interneta savienoju
 msgid "Update has completed."
 msgstr "Atjaunināšana pabeigta."
 
+#, fuzzy
+msgid "Update interval (in seconds)"
+msgstr "Slīdrādes intervāls (sek.)"
+
 msgid "Updatefeed not available."
 msgstr "Barotnes nav pieejamas."
 
@@ -9982,6 +10145,9 @@ msgstr "Lietotāja interfeiss"
 #, fuzzy
 msgid "Username"
 msgstr "Pārsaukt"
+
+msgid "Username (httpuser)"
+msgstr ""
 
 #, python-format
 msgid "Using LNB %d"
@@ -11593,6 +11759,13 @@ msgstr "mūzika/balets/dejas (vispārīgi)"
 msgid "musical/opera"
 msgstr "mūzika/opera"
 
+#, fuzzy
+msgid "n/A"
+msgstr "N/A"
+
+msgid "n/a"
+msgstr ""
+
 msgid "nature/animals/environment"
 msgstr "daba/dzīvnieki/vide"
 
@@ -11707,6 +11880,10 @@ msgstr "oriģināls"
 
 msgid "original language"
 msgstr "oriģinālā valoda"
+
+#, fuzzy
+msgid "oscam webif disabled"
+msgstr "piespiedu izslēgts"
 
 msgid "partial"
 msgstr ""

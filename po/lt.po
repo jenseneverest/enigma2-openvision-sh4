@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 20:25+0430\n"
+"POT-Creation-Date: 2019-05-22 08:13+0430\n"
 "PO-Revision-Date: 2019-05-20 19:20+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -409,6 +409,10 @@ msgstr "%s %d.%d"
 msgid "%s %s free disk space"
 msgstr "%s %s laisvos vietos diske"
 
+#, fuzzy, python-format
+msgid "%s ( %s Cards )"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
@@ -440,6 +444,13 @@ msgstr "%s: %s,%s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy
+msgid "( All readers)"
+msgstr "Visų amžiaus grupių"
+
+msgid "(Show only reader:"
+msgstr ""
 
 msgid "(VU+ type)"
 msgstr "(VU+ tipas)"
@@ -879,6 +890,10 @@ msgstr "Papildomos variklio galimybės leidžia įvesti duomenis iš jūsų vari
 
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move to another satellite."
 msgstr "Papildomos variklio galimybės leidžia įvesti duomenis iš jūsų variklio specifikacijų lapo, taigi \"enigma\" gali išsiaiškinti, kiek laiko reikės perkelti į kitą palydovą."
+
+#, fuzzy
+msgid "Address"
+msgstr "IP adresas"
 
 msgid "Adjust 3D settings"
 msgstr "Sureguliuokite 3D nustatymus"
@@ -1324,6 +1339,9 @@ msgstr "Automatiškai paleisti laiko poslinkį po"
 msgid "Automatically turn on external subtitles"
 msgstr "Automatiškai įjungti išorinius subtitrus"
 
+msgid "Automatically update Client/Server View?"
+msgstr ""
+
 msgid "Autostart"
 msgstr "Auto paleidimas"
 
@@ -1565,6 +1583,12 @@ msgstr "C"
 msgid "C-Band"
 msgstr "C-juosta"
 
+msgid "CAID"
+msgstr ""
+
+msgid "CAID:SrvID"
+msgstr ""
+
 msgid "CH"
 msgstr "KAN."
 
@@ -1715,6 +1739,13 @@ msgid "Capacity: "
 msgstr "Talpa: "
 
 msgid "Card"
+msgstr "Kortelė"
+
+msgid "Card infos (CCcam-Reader)"
+msgstr ""
+
+#, fuzzy
+msgid "Cards:"
 msgstr "Kortelė"
 
 msgid "Cascade PiP"
@@ -1933,8 +1964,15 @@ msgstr "Išvalyti žurnalą"
 msgid "Clear playlist"
 msgstr "Išvalyti grojaraštį"
 
+#, python-format
+msgid "Client Info ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Client is streaming from this box!"
 msgstr "Klientas transliuoja iš šio imtuvo!"
+
+msgid "Clients"
+msgstr ""
 
 #, fuzzy
 msgid "Clock always"
@@ -3161,6 +3199,23 @@ msgstr "E"
 msgid "ECM Info"
 msgstr "ECM informacija"
 
+msgid "ECM Statistics"
+msgstr ""
+
+#, fuzzy
+msgid "ECM Time"
+msgstr "Laikas"
+
+msgid "ECM avg"
+msgstr ""
+
+msgid "ECM last"
+msgstr ""
+
+#, fuzzy
+msgid "ECM-Time"
+msgstr "Laikas"
+
 msgid "EPG"
 msgstr "Elektroninis programų vadovas"
 
@@ -3798,6 +3853,11 @@ msgstr "Fidži"
 msgid "File appears to be busy.\n"
 msgstr "Failas atrodo, užimtas.\n"
 
+msgid ""
+"File oscam.conf not found.\n"
+"Please enter username/password manually."
+msgstr ""
+
 msgid "Filename"
 msgstr "Failo pavadinimas"
 
@@ -4250,6 +4310,9 @@ msgstr "Hondūras"
 
 msgid "Hong Kong"
 msgstr "Honkongas"
+
+msgid "Hops"
+msgstr ""
 
 msgid "Horizontal"
 msgstr "Horizontalus"
@@ -4771,6 +4834,9 @@ msgstr ""
 msgid "LNB"
 msgstr "LNB konverteris"
 
+msgid "Label"
+msgstr ""
+
 msgid "Language"
 msgstr "Kalba"
 
@@ -4782,6 +4848,10 @@ msgstr "Laoso Liaudies Demokratinė Respublika"
 
 msgid "Large"
 msgstr "Didelis"
+
+#, fuzzy
+msgid "Last Req."
+msgstr "Paskutinis greitis"
 
 msgid "Last config"
 msgstr "Paskutinė konfigūracija"
@@ -4943,6 +5013,9 @@ msgstr "Fiksavimo santykis"
 
 msgid "Lock:"
 msgstr "Fiksuota:"
+
+msgid "Log"
+msgstr ""
 
 msgid "Log results to /tmp"
 msgstr "Žurnalo rezultatus į/tmp"
@@ -5763,6 +5836,9 @@ msgstr "OSD nustatymai"
 msgid "OSD transparency"
 msgstr "OSD skaidrumas"
 
+msgid "OScam Info"
+msgstr ""
+
 msgid "OVR"
 msgstr "OVR"
 
@@ -5849,6 +5925,17 @@ msgstr "Paprastieji"
 msgid "Original"
 msgstr "Originalus"
 
+#, fuzzy
+msgid "Oscam Info - Configuration"
+msgstr "Imtuvo konfigūravimas"
+
+msgid "Oscam Info - Main Menu"
+msgstr ""
+
+#, python-format
+msgid "Oscam Log ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Other"
 msgstr "Kiti"
 
@@ -5887,6 +5974,10 @@ msgstr "PGS failas"
 
 msgid "PGS file"
 msgstr "PGS failas"
+
+#, fuzzy
+msgid "PID"
+msgstr "PDC"
 
 msgid "PIN code needed"
 msgstr "Reikalingas PIN kodas"
@@ -5962,6 +6053,10 @@ msgid "Parental control setup"
 msgstr "Tėvų kontrolės sąranka"
 
 msgid "Password"
+msgstr "Slaptažodis"
+
+#, fuzzy
+msgid "Password (httpwd)"
 msgstr "Slaptažodis"
 
 msgid "Pause"
@@ -6076,7 +6171,15 @@ msgstr "Prašome pridėti pavadinimus į kompiliaciją."
 msgid "Please change recording endtime"
 msgstr "Pakeiskite įrašymo pabaigos laiką"
 
+#, fuzzy
+msgid "Please choose CCcam-Reader"
+msgstr "Prašome išsirinkti papildymus..."
+
 msgid "Please choose an extension..."
+msgstr "Prašome išsirinkti papildymus..."
+
+#, fuzzy
+msgid "Please choose reader"
 msgstr "Prašome išsirinkti papildymus..."
 
 msgid ""
@@ -6603,10 +6706,17 @@ msgstr "Apsaugoti išjungimo meniu"
 msgid "Protect timer menu"
 msgstr "Apsaugoti laikmačio meniu"
 
+msgid "Protocol"
+msgstr ""
+
 msgid "Provider"
 msgstr "Tiekėjas"
 
 msgid "Providers"
+msgstr "Tiekėjai"
+
+#, fuzzy
+msgid "Providers: "
 msgstr "Tiekėjai"
 
 msgid "Puerto Rico"
@@ -6661,6 +6771,15 @@ msgstr "Transliuotojo vertinimas - %d"
 
 msgid "Rating undefined"
 msgstr "Vertinimas nenurodytas"
+
+msgid "Read Userdata from oscam.conf"
+msgstr ""
+
+msgid "Reader"
+msgstr ""
+
+msgid "Reader Statistics"
+msgstr ""
 
 msgid "Really close without saving settings?"
 msgstr "Tikrai uždaryti be nustatymų išsaugojimo ?"
@@ -6922,6 +7041,9 @@ msgstr "Perjungti vaizdo stiprinimo nustatymus į sistemos numatytus?"
 
 msgid "Reset video enhancement settings to your last configuration?"
 msgstr "Perjungti vaizdo stiprinimo nustatymus į jūsų paskutinę vaizdo konfigūraciją?"
+
+msgid "Reshare"
+msgstr ""
 
 msgid "Resolution"
 msgstr "Skiriamoji geba"
@@ -7716,6 +7838,22 @@ msgstr "Serbija"
 msgid "Serbian"
 msgstr "Serbų"
 
+#, fuzzy
+msgid "Serv.Name"
+msgstr "Kanalo pavadinimas"
+
+#, python-format
+msgid "Server Info ( Oscam-Version: %s )"
+msgstr ""
+
+#, fuzzy
+msgid "Server:"
+msgstr "Apie kanalą"
+
+#, fuzzy
+msgid "Servers"
+msgstr "Kanalai"
+
 msgid "Service"
 msgstr "Apie kanalą"
 
@@ -7927,11 +8065,19 @@ msgstr "Trumpi failų pavadinimai"
 msgid "Show"
 msgstr "﻿Rodyti"
 
+#, fuzzy
+msgid "Show /tmp/ecm.info"
+msgstr "Rodyti informaciją"
+
 msgid "Show Audioselection"
 msgstr "Rodyti garso pasirinkimus"
 
 msgid "Show CI messages"
 msgstr "Rodyti CI pranešimus"
+
+#, fuzzy
+msgid "Show Clients"
+msgstr "Rodyti stulpelius"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Info juostoje rodyti EIT dabar/sekantis"
@@ -7952,8 +8098,15 @@ msgstr "Rodyti žaidimų šou"
 msgid "Show InfoBar"
 msgstr "Rodyti info juostą"
 
+#, fuzzy
+msgid "Show Log"
+msgstr "Rodyti informaciją"
+
 msgid "Show PIP"
 msgstr "Rodyti PiP"
+
+msgid "Show Readers/Proxies"
+msgstr ""
 
 msgid "Show SNR percentage instead of dB value"
 msgstr "Vietoje dB rodyti SNR procentus"
@@ -8621,6 +8774,9 @@ msgstr "Paleisti imtuvą laukimo režime"
 
 msgid "Startup to Standby"
 msgstr "Paleisti į budėjimo režimą"
+
+msgid "Status"
+msgstr ""
 
 #, fuzzy
 msgid "Stby LED brightness"
@@ -9546,6 +9702,9 @@ msgstr "Viršuje ir apačioje"
 msgid "TopfieldVFD"
 msgstr ""
 
+msgid "Total"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Iš viso srautu besinaudojančių klientų: %d ( %s)"
@@ -9845,6 +10004,10 @@ msgstr "Atnaujinimo klaida. Jūsų imtuvas neturi interneto ryšio."
 msgid "Update has completed."
 msgstr "Atnaujinimas baigtas."
 
+#, fuzzy
+msgid "Update interval (in seconds)"
+msgstr "Paveikslėlio rodymo trukmė (sеk.)"
+
 msgid "Updatefeed not available."
 msgstr "Atnaujinimo šaltinis nepasiekiamas."
 
@@ -9990,6 +10153,9 @@ msgstr "Vartotojo sąsaja"
 #, fuzzy
 msgid "Username"
 msgstr "Pervadinti"
+
+msgid "Username (httpuser)"
+msgstr ""
 
 #, python-format
 msgid "Using LNB %d"
@@ -11603,6 +11769,13 @@ msgstr "muzika/baletas/šokiai (bendra)"
 msgid "musical/opera"
 msgstr "muzikinė/opera"
 
+#, fuzzy
+msgid "n/A"
+msgstr "N/G"
+
+msgid "n/a"
+msgstr ""
+
 msgid "nature/animals/environment"
 msgstr "gamta/gyvūnai/aplinka"
 
@@ -11717,6 +11890,10 @@ msgstr "originalus"
 
 msgid "original language"
 msgstr "originalo kalba"
+
+#, fuzzy
+msgid "oscam webif disabled"
+msgstr "priverstinai išjungta"
 
 msgid "partial"
 msgstr ""

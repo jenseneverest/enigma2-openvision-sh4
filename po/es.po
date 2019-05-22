@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 20:25+0430\n"
+"POT-Creation-Date: 2019-05-22 08:13+0430\n"
 "PO-Revision-Date: 2018-12-29 02:52+0100\n"
 "Last-Translator: Jose Juan <jzapater@gmail.com>\n"
 "Language-Team: SFTEAM  angelo2807@hotmail.com\n"
@@ -423,6 +423,11 @@ msgid "%s %s free disk space"
 msgstr "%s %s espacio libre en disco"
 
 #
+#, fuzzy, python-format
+msgid "%s ( %s Cards )"
+msgstr "%s (%s)\n"
+
+#
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
@@ -455,6 +460,13 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy
+msgid "( All readers)"
+msgstr "Todas las edades"
+
+msgid "(Show only reader:"
+msgstr ""
 
 msgid "(VU+ type)"
 msgstr "(tipo VU+)"
@@ -976,6 +988,11 @@ msgstr "Las opciones de motor adicionales le permiten salir de la hoja de especi
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move to another satellite."
 msgstr "Las opciones de motor adicionales le permiten ingresar los detalles de la hoja de especificaciones del motor para que pueda calcular cuánto tiempo le tomará moverse a otro satélite."
 
+#
+#, fuzzy
+msgid "Address"
+msgstr "Dirección  Ip"
+
 msgid "Adjust 3D settings"
 msgstr "Ajustar configuración 3D"
 
@@ -1468,6 +1485,9 @@ msgstr "Arranque automáticamente el turno de tiempo después de"
 msgid "Automatically turn on external subtitles"
 msgstr "Activar automáticamente subtítulos externos"
 
+msgid "Automatically update Client/Server View?"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Autostart"
@@ -1744,6 +1764,12 @@ msgstr "C"
 msgid "C-Band"
 msgstr "Banda-C"
 
+msgid "CAID"
+msgstr ""
+
+msgid "CAID:SrvID"
+msgstr ""
+
 msgid "CH"
 msgstr "CANAL "
 
@@ -1891,6 +1917,14 @@ msgstr "Capacidad: "
 
 #
 msgid "Card"
+msgstr "Tarjeta"
+
+msgid "Card infos (CCcam-Reader)"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Cards:"
 msgstr "Tarjeta"
 
 msgid "Cascade PiP"
@@ -2131,7 +2165,14 @@ msgstr "Borrar log"
 msgid "Clear playlist"
 msgstr "limpiar lista"
 
+#, python-format
+msgid "Client Info ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Client is streaming from this box!"
+msgstr ""
+
+msgid "Clients"
 msgstr ""
 
 #, fuzzy
@@ -3510,6 +3551,25 @@ msgstr "E"
 msgid "ECM Info"
 msgstr "Información de ECM"
 
+msgid "ECM Statistics"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ECM Time"
+msgstr "Hora"
+
+msgid "ECM avg"
+msgstr ""
+
+msgid "ECM last"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ECM-Time"
+msgstr "Hora"
+
 msgid "EPG"
 msgstr "EPG"
 
@@ -4218,6 +4278,11 @@ msgstr "Fiji"
 msgid "File appears to be busy.\n"
 msgstr "El archivo parece estar ocupado.\n"
 
+msgid ""
+"File oscam.conf not found.\n"
+"Please enter username/password manually."
+msgstr ""
+
 msgid "Filename"
 msgstr "Nombre del archivo"
 
@@ -4710,6 +4775,9 @@ msgstr "Honduras"
 
 msgid "Hong Kong"
 msgstr "Hong Kong"
+
+msgid "Hops"
+msgstr ""
 
 #
 msgid "Horizontal"
@@ -5288,6 +5356,9 @@ msgstr "Configuración de la lista de películas"
 msgid "LNB"
 msgstr "LNB"
 
+msgid "Label"
+msgstr ""
+
 #
 msgid "Language"
 msgstr "Idioma"
@@ -5301,6 +5372,11 @@ msgstr "República Democrática Popular Lao"
 
 msgid "Large"
 msgstr "Grande"
+
+#
+#, fuzzy
+msgid "Last Req."
+msgstr "Última velocidad"
 
 #
 msgid "Last config"
@@ -5487,6 +5563,9 @@ msgstr "Relación de bloqueo"
 #
 msgid "Lock:"
 msgstr "Bloqueo:"
+
+msgid "Log"
+msgstr ""
 
 msgid "Log results to /tmp"
 msgstr "Registrar los resultados en / tmp"
@@ -6424,6 +6503,9 @@ msgstr "Configurar OSD"
 msgid "OSD transparency"
 msgstr "Transparencia OSD"
 
+msgid "OScam Info"
+msgstr ""
+
 msgid "OVR"
 msgstr "OVR"
 
@@ -6518,6 +6600,17 @@ msgstr "Ordinario"
 msgid "Original"
 msgstr "Original"
 
+#, fuzzy
+msgid "Oscam Info - Configuration"
+msgstr "Configuración del sintonizador"
+
+msgid "Oscam Info - Main Menu"
+msgstr ""
+
+#, python-format
+msgid "Oscam Log ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Other"
 msgstr "Otro"
 
@@ -6559,6 +6652,10 @@ msgstr "Archivo PGS"
 
 msgid "PGS file"
 msgstr "Archivo PGS"
+
+#, fuzzy
+msgid "PID"
+msgstr "PDC"
 
 #
 msgid "PIN code needed"
@@ -6643,6 +6740,9 @@ msgid "Parental control setup"
 msgstr "Configuración del control de adultos"
 
 msgid "Password"
+msgstr ""
+
+msgid "Password (httpwd)"
 msgstr ""
 
 #
@@ -6775,7 +6875,17 @@ msgid "Please change recording endtime"
 msgstr "Por favor, cambie la finalización de la grabación"
 
 #
+#, fuzzy
+msgid "Please choose CCcam-Reader"
+msgstr "Por favor, elija una extensión..."
+
+#
 msgid "Please choose an extension..."
+msgstr "Por favor, elija una extensión..."
+
+#
+#, fuzzy
+msgid "Please choose reader"
 msgstr "Por favor, elija una extensión..."
 
 #
@@ -7384,12 +7494,20 @@ msgstr "Proteger el menú de espera"
 msgid "Protect timer menu"
 msgstr "Proteger el menú del temporizador"
 
+msgid "Protocol"
+msgstr ""
+
 #
 msgid "Provider"
 msgstr "Proveedor"
 
 #
 msgid "Providers"
+msgstr "Proveedores"
+
+#
+#, fuzzy
+msgid "Providers: "
 msgstr "Proveedores"
 
 msgid "Puerto Rico"
@@ -7453,6 +7571,15 @@ msgstr "Calificación definida por el organismo de radiodifusión -% d"
 
 msgid "Rating undefined"
 msgstr "Clasificación undefined"
+
+msgid "Read Userdata from oscam.conf"
+msgstr ""
+
+msgid "Reader"
+msgstr ""
+
+msgid "Reader Statistics"
+msgstr ""
 
 #
 msgid "Really close without saving settings?"
@@ -7755,6 +7882,9 @@ msgstr "¿Resetear la configuración del sistema de video mejorado?"
 #
 msgid "Reset video enhancement settings to your last configuration?"
 msgstr "¿Resetar la configuración de video mejorado a la última configuración?"
+
+msgid "Reshare"
+msgstr ""
 
 #
 msgid "Resolution"
@@ -8641,6 +8771,24 @@ msgstr "Serbia"
 msgid "Serbian"
 msgstr "Servio"
 
+#, fuzzy
+msgid "Serv.Name"
+msgstr "Nombre del Servicio"
+
+#, python-format
+msgid "Server Info ( Oscam-Version: %s )"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Server:"
+msgstr "Canal"
+
+#
+#, fuzzy
+msgid "Servers"
+msgstr "Canales"
+
 #
 msgid "Service"
 msgstr "Canal"
@@ -8875,11 +9023,20 @@ msgstr "Nombres de ficheros cortos"
 msgid "Show"
 msgstr "mostrar"
 
+#
+#, fuzzy
+msgid "Show /tmp/ecm.info"
+msgstr "Mostrar información"
+
 msgid "Show Audioselection"
 msgstr "Mostrar Audioselección"
 
 msgid "Show CI messages"
 msgstr "Mostrar mensajes de CI"
+
+#, fuzzy
+msgid "Show Clients"
+msgstr "Mostrar columnas"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Mostrar EIT ahora / siguiente en infobar"
@@ -8903,8 +9060,16 @@ msgstr "Mostrar juegos"
 msgid "Show InfoBar"
 msgstr "Mostrar InfoBar"
 
+#
+#, fuzzy
+msgid "Show Log"
+msgstr "Mostrar información"
+
 msgid "Show PIP"
 msgstr "Mostrar PIP"
+
+msgid "Show Readers/Proxies"
+msgstr ""
 
 msgid "Show SNR percentage instead of dB value"
 msgstr "Mostrar el porcentaje de SNR en lugar del valor de dB"
@@ -9642,6 +9807,9 @@ msgstr "Inicio del decodificador en modo de espera"
 
 msgid "Startup to Standby"
 msgstr "Inicio para Standby"
+
+msgid "Status"
+msgstr ""
 
 #
 #, fuzzy
@@ -10688,6 +10856,9 @@ msgstr "Arriba y abajo"
 msgid "TopfieldVFD"
 msgstr ""
 
+msgid "Total"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Total de clientes que emiten:% d (% s)"
@@ -11018,6 +11189,11 @@ msgstr "Error en la actualización. Su receptor no tiene una conexión a Interne
 msgid "Update has completed."
 msgstr "Se ha completado la actualización."
 
+#
+#, fuzzy
+msgid "Update interval (in seconds)"
+msgstr "Intervalo de diapositivas (seg.)"
+
 msgid "Updatefeed not available."
 msgstr "Updatefeed no disponible."
 
@@ -11186,6 +11362,9 @@ msgstr "Interfaz de usuario"
 #, fuzzy
 msgid "Username"
 msgstr "Renombrar"
+
+msgid "Username (httpuser)"
+msgstr ""
 
 #, python-format
 msgid "Using LNB %d"
@@ -13001,6 +13180,14 @@ msgstr "Música / ballet / danza (general)"
 msgid "musical/opera"
 msgstr "musical/opera"
 
+#
+#, fuzzy
+msgid "n/A"
+msgstr "N/D"
+
+msgid "n/a"
+msgstr ""
+
 msgid "nature/animals/environment"
 msgstr "Naturaleza / animales / medio ambiente"
 
@@ -13131,6 +13318,11 @@ msgstr "original"
 
 msgid "original language"
 msgstr "original lenguaje"
+
+#
+#, fuzzy
+msgid "oscam webif disabled"
+msgstr "fuerza desactivada"
 
 msgid "partial"
 msgstr ""

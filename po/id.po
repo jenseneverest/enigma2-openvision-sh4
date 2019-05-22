@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 20:25+0430\n"
+"POT-Creation-Date: 2019-05-22 08:13+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -397,6 +397,10 @@ msgstr "%s %d.%d"
 msgid "%s %s free disk space"
 msgstr "%s %s sisa penyimpanan disk"
 
+#, fuzzy, python-format
+msgid "%s ( %s Cards )"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
@@ -427,6 +431,13 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy
+msgid "( All readers)"
+msgstr "Semua umur"
+
+msgid "(Show only reader:"
+msgstr ""
 
 #, fuzzy
 msgid "(VU+ type)"
@@ -873,6 +884,10 @@ msgstr ""
 
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move to another satellite."
 msgstr ""
+
+#, fuzzy
+msgid "Address"
+msgstr "Alamat IP"
 
 msgid "Adjust 3D settings"
 msgstr "Sesuaikan setelan 3D"
@@ -1330,6 +1345,9 @@ msgstr "Mulai timeshift otomatis setelah"
 msgid "Automatically turn on external subtitles"
 msgstr "Hidupkan otomatis terjemahan dari luar"
 
+msgid "Automatically update Client/Server View?"
+msgstr ""
+
 #, fuzzy
 msgid "Autostart"
 msgstr "akan memulai"
@@ -1579,6 +1597,12 @@ msgstr "C"
 msgid "C-Band"
 msgstr "C-Band"
 
+msgid "CAID"
+msgstr ""
+
+msgid "CAID:SrvID"
+msgstr ""
+
 msgid "CH"
 msgstr "CH"
 
@@ -1717,6 +1741,13 @@ msgid "Capacity: "
 msgstr "Kapasitas: "
 
 msgid "Card"
+msgstr "Kartu"
+
+msgid "Card infos (CCcam-Reader)"
+msgstr ""
+
+#, fuzzy
+msgid "Cards:"
 msgstr "Kartu"
 
 msgid "Cascade PiP"
@@ -1940,8 +1971,15 @@ msgstr "Bersihkan log"
 msgid "Clear playlist"
 msgstr "Bersihkan daftarputar"
 
+#, python-format
+msgid "Client Info ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Client is streaming from this box!"
 msgstr "Klien sedang streaming dari Rx ini!"
+
+msgid "Clients"
+msgstr ""
 
 #, fuzzy
 msgid "Clock always"
@@ -3196,6 +3234,23 @@ msgstr "E"
 msgid "ECM Info"
 msgstr "Info"
 
+msgid "ECM Statistics"
+msgstr ""
+
+#, fuzzy
+msgid "ECM Time"
+msgstr "Waktu"
+
+msgid "ECM avg"
+msgstr ""
+
+msgid "ECM last"
+msgstr ""
+
+#, fuzzy
+msgid "ECM-Time"
+msgstr "Waktu"
+
 msgid "EPG"
 msgstr "EPG"
 
@@ -3849,6 +3904,11 @@ msgstr ""
 msgid "File appears to be busy.\n"
 msgstr "Berkas tampaknya sedang sibuk.\n"
 
+msgid ""
+"File oscam.conf not found.\n"
+"Please enter username/password manually."
+msgstr ""
+
 msgid "Filename"
 msgstr "Nama berkas"
 
@@ -4315,6 +4375,9 @@ msgid "Honduras"
 msgstr ""
 
 msgid "Hong Kong"
+msgstr ""
+
+msgid "Hops"
 msgstr ""
 
 msgid "Horizontal"
@@ -4848,6 +4911,9 @@ msgstr "Pengaturan daftar film"
 msgid "LNB"
 msgstr "LNB"
 
+msgid "Label"
+msgstr ""
+
 msgid "Language"
 msgstr "Bahasa"
 
@@ -4859,6 +4925,10 @@ msgstr ""
 
 msgid "Large"
 msgstr "Besar"
+
+#, fuzzy
+msgid "Last Req."
+msgstr "Kecepatan terakhir"
 
 msgid "Last config"
 msgstr "Pengaturan terakhir"
@@ -5023,6 +5093,9 @@ msgstr "Ratio penguncian"
 
 msgid "Lock:"
 msgstr "Mengunci:"
+
+msgid "Log"
+msgstr ""
 
 msgid "Log results to /tmp"
 msgstr "Hasil log pada /tmp"
@@ -5864,6 +5937,9 @@ msgstr "penyetelan OSD"
 msgid "OSD transparency"
 msgstr "Transparansi OSD"
 
+msgid "OScam Info"
+msgstr ""
+
 msgid "OVR"
 msgstr "OVR"
 
@@ -5950,6 +6026,17 @@ msgstr "Biasa"
 msgid "Original"
 msgstr "Asli"
 
+#, fuzzy
+msgid "Oscam Info - Configuration"
+msgstr "Pengaturan Penala"
+
+msgid "Oscam Info - Main Menu"
+msgstr ""
+
+#, python-format
+msgid "Oscam Log ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Other"
 msgstr "Lainnya"
 
@@ -5988,6 +6075,10 @@ msgstr "Berkas PGS"
 
 msgid "PGS file"
 msgstr "Berkas PGS"
+
+#, fuzzy
+msgid "PID"
+msgstr "ID PLP"
 
 msgid "PIN code needed"
 msgstr "Kode PIN diperlukan"
@@ -6064,6 +6155,10 @@ msgid "Parental control setup"
 msgstr "Atur pengawasan orangtua"
 
 msgid "Password"
+msgstr "Katakunci"
+
+#, fuzzy
+msgid "Password (httpwd)"
 msgstr "Katakunci"
 
 msgid "Pause"
@@ -6180,7 +6275,15 @@ msgstr "Mohon tambahkan judul ke kompilasi."
 msgid "Please change recording endtime"
 msgstr "Mohon ubah waktu akhir perekaman"
 
+#, fuzzy
+msgid "Please choose CCcam-Reader"
+msgstr "Silakan pilih ekstensi..."
+
 msgid "Please choose an extension..."
+msgstr "Silakan pilih ekstensi..."
+
+#, fuzzy
+msgid "Please choose reader"
 msgstr "Silakan pilih ekstensi..."
 
 msgid ""
@@ -6719,10 +6822,17 @@ msgstr "Lindungi menu standby"
 msgid "Protect timer menu"
 msgstr "Lindungi menu pewaktu"
 
+msgid "Protocol"
+msgstr ""
+
 msgid "Provider"
 msgstr "Penyedia"
 
 msgid "Providers"
+msgstr "Penyedia"
+
+#, fuzzy
+msgid "Providers: "
 msgstr "Penyedia"
 
 msgid "Puerto Rico"
@@ -6777,6 +6887,15 @@ msgstr "Peringkat ditentukan oleh penyiar - %d"
 
 msgid "Rating undefined"
 msgstr "Peringkat takditentukan"
+
+msgid "Read Userdata from oscam.conf"
+msgstr ""
+
+msgid "Reader"
+msgstr ""
+
+msgid "Reader Statistics"
+msgstr ""
 
 msgid "Really close without saving settings?"
 msgstr "Yakin tutup tanpa menyimpan pengaturan?"
@@ -7042,6 +7161,9 @@ msgstr "Atur ulang penyetelan perbaikan video pada bawaan sistem?"
 
 msgid "Reset video enhancement settings to your last configuration?"
 msgstr "Atur ulang setelan perbaikan video pada setelan terakhir anda?"
+
+msgid "Reshare"
+msgstr ""
 
 msgid "Resolution"
 msgstr "Resolusi"
@@ -7859,6 +7981,22 @@ msgstr "Serbia"
 msgid "Serbian"
 msgstr "Serbia"
 
+#, fuzzy
+msgid "Serv.Name"
+msgstr "Nama layanan"
+
+#, python-format
+msgid "Server Info ( Oscam-Version: %s )"
+msgstr ""
+
+#, fuzzy
+msgid "Server:"
+msgstr "Kanal"
+
+#, fuzzy
+msgid "Servers"
+msgstr "Layanan"
+
 msgid "Service"
 msgstr "Kanal"
 
@@ -8075,11 +8213,19 @@ msgstr "Nama file pendek"
 msgid "Show"
 msgstr "Tampilkan"
 
+#, fuzzy
+msgid "Show /tmp/ecm.info"
+msgstr "Tampilkan info"
+
 msgid "Show Audioselection"
 msgstr "Tampilkan pilihan Audio"
 
 msgid "Show CI messages"
 msgstr "Tampilkan pesan CI"
+
+#, fuzzy
+msgid "Show Clients"
+msgstr "Tampilkan kolom"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Tampilkan EIT sekarang/berikutnya di infobar"
@@ -8100,8 +8246,15 @@ msgstr "Tampilkan permainan"
 msgid "Show InfoBar"
 msgstr "Tampilkan Bilah info"
 
+#, fuzzy
+msgid "Show Log"
+msgstr "Tampilkan info"
+
 msgid "Show PIP"
 msgstr "Tampilkan PIP"
+
+msgid "Show Readers/Proxies"
+msgstr ""
 
 msgid "Show SNR percentage instead of dB value"
 msgstr "Tampilkan persentase SNR ketimbang nilai dB"
@@ -8781,6 +8934,9 @@ msgstr "Saat dihidupkan, rx akan masuk ke posisi standby"
 
 msgid "Startup to Standby"
 msgstr "Mulai ke Standby"
+
+msgid "Status"
+msgstr ""
 
 #, fuzzy
 msgid "Stby LED brightness"
@@ -9720,6 +9876,9 @@ msgstr "Atas dan bawah"
 msgid "TopfieldVFD"
 msgstr ""
 
+msgid "Total"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Total klien streaming: %d (%s)"
@@ -10030,6 +10189,10 @@ msgstr "Pembaruan gagal. Rx anda tanpa koneksi internet."
 msgid "Update has completed."
 msgstr "Pembaruan telah selesai."
 
+#, fuzzy
+msgid "Update interval (in seconds)"
+msgstr "Interval tayangan slide (sec.)"
+
 msgid "Updatefeed not available."
 msgstr "Umpan pembaruan tidak tersedia."
 
@@ -10178,6 +10341,9 @@ msgstr "Antarmuka pengguna"
 #, fuzzy
 msgid "Username"
 msgstr "Ganti nama"
+
+msgid "Username (httpuser)"
+msgstr ""
 
 #, python-format
 msgid "Using LNB %d"
@@ -11822,6 +11988,13 @@ msgstr "musik/ballet/tari (umum)"
 msgid "musical/opera"
 msgstr "musik/opera"
 
+#, fuzzy
+msgid "n/A"
+msgstr "T/A"
+
+msgid "n/a"
+msgstr ""
+
 msgid "nature/animals/environment"
 msgstr "alam/binatang/lingkungan"
 
@@ -11937,6 +12110,10 @@ msgstr "asli"
 
 msgid "original language"
 msgstr "bahasa aslinya"
+
+#, fuzzy
+msgid "oscam webif disabled"
+msgstr "dimatikan"
 
 msgid "partial"
 msgstr ""

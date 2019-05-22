@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 20:25+0430\n"
+"POT-Creation-Date: 2019-05-22 08:13+0430\n"
 "PO-Revision-Date: 2018-12-17 02:51+0200\n"
 "Last-Translator: Hazem <moustafagamal@hotmail.com>\n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -451,6 +451,10 @@ msgstr ""
 msgid "%s %s free disk space"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%s ( %s Cards )"
+msgstr "%s (%s) \n"
+
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s) \n"
@@ -485,6 +489,12 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
+msgstr ""
+
+msgid "( All readers)"
+msgstr ""
+
+msgid "(Show only reader:"
 msgstr ""
 
 msgid "(VU+ type)"
@@ -948,6 +958,11 @@ msgstr ""
 
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move to another satellite."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Address"
+msgstr "عنوان IP"
 
 msgid "Adjust 3D settings"
 msgstr ""
@@ -1417,6 +1432,9 @@ msgstr ""
 msgid "Automatically turn on external subtitles"
 msgstr ""
 
+msgid "Automatically update Client/Server View?"
+msgstr ""
+
 #, fuzzy
 msgid "Autostart"
 msgstr "على وشك البدأ"
@@ -1679,6 +1697,12 @@ msgstr "سى"
 msgid "C-Band"
 msgstr "سي باند"
 
+msgid "CAID"
+msgstr ""
+
+msgid "CAID:SrvID"
+msgstr ""
+
 msgid "CH"
 msgstr ""
 
@@ -1821,6 +1845,13 @@ msgid "Capacity: "
 msgstr "السعة: "
 
 msgid "Card"
+msgstr "بطاقة"
+
+msgid "Card infos (CCcam-Reader)"
+msgstr ""
+
+#, fuzzy
+msgid "Cards:"
 msgstr "بطاقة"
 
 msgid "Cascade PiP"
@@ -2048,7 +2079,14 @@ msgstr "مسح السجل"
 msgid "Clear playlist"
 msgstr "مسح قائمة العرض"
 
+#, python-format
+msgid "Client Info ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Client is streaming from this box!"
+msgstr ""
+
+msgid "Clients"
 msgstr ""
 
 #, fuzzy
@@ -3323,6 +3361,25 @@ msgstr ""
 msgid "ECM Info"
 msgstr "معلومات"
 
+msgid "ECM Statistics"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ECM Time"
+msgstr "وقت"
+
+msgid "ECM avg"
+msgstr ""
+
+msgid "ECM last"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ECM-Time"
+msgstr "وقت"
+
 msgid "EPG"
 msgstr ""
 
@@ -3988,6 +4045,11 @@ msgstr ""
 msgid "File appears to be busy.\n"
 msgstr ""
 
+msgid ""
+"File oscam.conf not found.\n"
+"Please enter username/password manually."
+msgstr ""
+
 msgid "Filename"
 msgstr ""
 
@@ -4470,6 +4532,9 @@ msgstr "الهندوراس"
 
 msgid "Hong Kong"
 msgstr "هونغ كونغ"
+
+msgid "Hops"
+msgstr ""
 
 msgid "Horizontal"
 msgstr "أفقـى"
@@ -5028,6 +5093,9 @@ msgstr "تهيئة الموالف"
 msgid "LNB"
 msgstr ""
 
+msgid "Label"
+msgstr ""
+
 #
 msgid "Language"
 msgstr "اللغة"
@@ -5041,6 +5109,11 @@ msgstr "جمهورية لاو الديموقراطية الشعبية"
 
 msgid "Large"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Last Req."
+msgstr "السرعة السابقة"
 
 #
 msgid "Last config"
@@ -5232,6 +5305,9 @@ msgstr ""
 
 #
 msgid "Lock:"
+msgstr ""
+
+msgid "Log"
 msgstr ""
 
 msgid "Log results to /tmp"
@@ -6148,6 +6224,9 @@ msgstr "إعدادات OSD"
 msgid "OSD transparency"
 msgstr "شفافية OSD"
 
+msgid "OScam Info"
+msgstr ""
+
 msgid "OVR"
 msgstr ""
 
@@ -6240,6 +6319,17 @@ msgstr ""
 msgid "Original"
 msgstr "الأصلي"
 
+#, fuzzy
+msgid "Oscam Info - Configuration"
+msgstr "إعداد يدوي"
+
+msgid "Oscam Info - Main Menu"
+msgstr ""
+
+#, python-format
+msgid "Oscam Log ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Other"
 msgstr "أخرى"
 
@@ -6279,6 +6369,9 @@ msgid "PGS File"
 msgstr ""
 
 msgid "PGS file"
+msgstr ""
+
+msgid "PID"
 msgstr ""
 
 msgid "PIN code needed"
@@ -6361,6 +6454,9 @@ msgid "Parental control setup"
 msgstr "اعداد التحكم الابوى"
 
 msgid "Password"
+msgstr ""
+
+msgid "Password (httpwd)"
 msgstr ""
 
 #, fuzzy
@@ -6492,7 +6588,15 @@ msgstr "من فضلك أدخل عناوين للتأليف"
 msgid "Please change recording endtime"
 msgstr "من فضلك قم بتغيير وقت إنتهاء التسجيل"
 
+#, fuzzy
+msgid "Please choose CCcam-Reader"
+msgstr "من فضلك أختيار إضافه..."
+
 msgid "Please choose an extension..."
+msgstr "من فضلك أختيار إضافه..."
+
+#, fuzzy
+msgid "Please choose reader"
 msgstr "من فضلك أختيار إضافه..."
 
 msgid ""
@@ -7051,11 +7155,19 @@ msgstr "حماية قائمة وضع الاستعداد"
 msgid "Protect timer menu"
 msgstr "حماية قائمة المؤقت"
 
+msgid "Protocol"
+msgstr ""
+
 msgid "Provider"
 msgstr "مزود القنوات"
 
 #
 msgid "Providers"
+msgstr "مزودو القنوات"
+
+#
+#, fuzzy
+msgid "Providers: "
 msgstr "مزودو القنوات"
 
 msgid "Puerto Rico"
@@ -7111,6 +7223,15 @@ msgid "Rating defined by broadcaster - %d"
 msgstr ""
 
 msgid "Rating undefined"
+msgstr ""
+
+msgid "Read Userdata from oscam.conf"
+msgstr ""
+
+msgid "Reader"
+msgstr ""
+
+msgid "Reader Statistics"
 msgstr ""
 
 msgid "Really close without saving settings?"
@@ -7388,6 +7509,9 @@ msgstr "إعادة إعدادات تعزيز الفيديو الى إفتراض�
 
 msgid "Reset video enhancement settings to your last configuration?"
 msgstr "إعادة إعدادات تعزيز الفيديو الى التكوينات الاخيره الخاصه بك ؟"
+
+msgid "Reshare"
+msgstr ""
 
 #
 msgid "Resolution"
@@ -8258,6 +8382,25 @@ msgid "Serbian"
 msgstr "صريى"
 
 #
+#, fuzzy
+msgid "Serv.Name"
+msgstr "إسم القناة"
+
+#, python-format
+msgid "Server Info ( Oscam-Version: %s )"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Server:"
+msgstr "القناة"
+
+#
+#, fuzzy
+msgid "Servers"
+msgstr "قنوات/خدمات"
+
+#
 msgid "Service"
 msgstr "القناة"
 
@@ -8490,11 +8633,20 @@ msgstr ""
 msgid "Show"
 msgstr "أظهر المعلومات"
 
+#
+#, fuzzy
+msgid "Show /tmp/ecm.info"
+msgstr "أظهر المعلومات"
+
 msgid "Show Audioselection"
 msgstr ""
 
 msgid "Show CI messages"
 msgstr ""
+
+#, fuzzy
+msgid "Show Clients"
+msgstr "عرض الصفوف"
 
 msgid "Show EIT now/next in infobar"
 msgstr ""
@@ -8516,7 +8668,15 @@ msgstr ""
 msgid "Show InfoBar"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Show Log"
+msgstr "أظهر المعلومات"
+
 msgid "Show PIP"
+msgstr ""
+
+msgid "Show Readers/Proxies"
 msgstr ""
 
 msgid "Show SNR percentage instead of dB value"
@@ -9236,6 +9396,9 @@ msgid "Startup the set top box in standby"
 msgstr ""
 
 msgid "Startup to Standby"
+msgstr ""
+
+msgid "Status"
 msgstr ""
 
 #
@@ -10242,6 +10405,9 @@ msgstr ""
 msgid "TopfieldVFD"
 msgstr ""
 
+msgid "Total"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
@@ -10565,6 +10731,10 @@ msgstr "فشل التحديث، لا يوجد اتصال انترنت يعمل �
 msgid "Update has completed."
 msgstr "اكتمل التحديث."
 
+#, fuzzy
+msgid "Update interval (in seconds)"
+msgstr "الفاصل الزمنى بين عرض الرائح(ثانيه)"
+
 #
 msgid "Updatefeed not available."
 msgstr "تغذية التحديث غير متاحه"
@@ -10729,6 +10899,9 @@ msgstr "تفضيلات المستخدم"
 #, fuzzy
 msgid "Username"
 msgstr "إعادة التسميه"
+
+msgid "Username (httpuser)"
+msgstr ""
 
 #, python-format
 msgid "Using LNB %d"
@@ -12397,6 +12570,14 @@ msgstr ""
 msgid "musical/opera"
 msgstr ""
 
+#
+#, fuzzy
+msgid "n/A"
+msgstr "غير موجود"
+
+msgid "n/a"
+msgstr ""
+
 msgid "nature/animals/environment"
 msgstr ""
 
@@ -12520,6 +12701,10 @@ msgstr "الأصلي"
 
 msgid "original language"
 msgstr "اللغة الأصلية"
+
+#, fuzzy
+msgid "oscam webif disabled"
+msgstr "معطل اجباريا"
 
 msgid "partial"
 msgstr ""

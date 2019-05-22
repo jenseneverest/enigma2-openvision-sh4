@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 20:25+0430\n"
+"POT-Creation-Date: 2019-05-22 08:13+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliotG <mcelliotg@gmail.com>\n"
 "Language-Team: MCelliotG <mcelliotg@gmail.com>\n"
@@ -399,6 +399,10 @@ msgstr "%s %d.%d"
 msgid "%s %s free disk space"
 msgstr "%s %s ελεύθερος χώρος δίσκου"
 
+#, fuzzy, python-format
+msgid "%s ( %s Cards )"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
@@ -429,6 +433,13 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy
+msgid "( All readers)"
+msgstr "Όλες οι ηλικίες"
+
+msgid "(Show only reader:"
+msgstr ""
 
 msgid "(VU+ type)"
 msgstr "(VU + τύπος)"
@@ -870,6 +881,10 @@ msgstr "Οι πρόσθετες επιλογές μοτέρ σας επιτρέ�
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move to another satellite."
 msgstr "Οι πρόσθετες επιλογές μοτέρ σας επιτρέπουν να εισάγετε λεπτομέρειες από τον πίνακα χαρακτηριστικών του μοτέρ σας ώστε το enigma να υπολογίζει πόσος χρόνος θα χρειαστεί να μετακινηθεί το κάτοπτρο σε άλλο δορυφόρο."
 
+#, fuzzy
+msgid "Address"
+msgstr "Διεύθυνση IP"
+
 msgid "Adjust 3D settings"
 msgstr "Αλλαγή ρυθμίσεων 3D"
 
@@ -1306,6 +1321,9 @@ msgstr "Αυτόματη εκκίνηση της χρονομετατόπιση�
 msgid "Automatically turn on external subtitles"
 msgstr "Αυτόματη ενεργοποίηση των εξωτερικών υποτίτλων"
 
+msgid "Automatically update Client/Server View?"
+msgstr ""
+
 #, fuzzy
 msgid "Autostart"
 msgstr "έτοιμο για εκκίνηση"
@@ -1549,6 +1567,12 @@ msgstr "C"
 msgid "C-Band"
 msgstr "Μπάντα C"
 
+msgid "CAID"
+msgstr ""
+
+msgid "CAID:SrvID"
+msgstr ""
+
 msgid "CH"
 msgstr "Κ. "
 
@@ -1686,6 +1710,13 @@ msgid "Capacity: "
 msgstr "Χωρητικότητα: "
 
 msgid "Card"
+msgstr "Κάρτα"
+
+msgid "Card infos (CCcam-Reader)"
+msgstr ""
+
+#, fuzzy
+msgid "Cards:"
 msgstr "Κάρτα"
 
 msgid "Cascade PiP"
@@ -1904,8 +1935,15 @@ msgstr "Εκκαθάριση καταγραφολογίου"
 msgid "Clear playlist"
 msgstr "Εκκαθάριση λίστας αναπαραγωγής"
 
+#, python-format
+msgid "Client Info ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Client is streaming from this box!"
 msgstr "Υπάρχει πελάτης ροής από αυτό το δέκτη!"
+
+msgid "Clients"
+msgstr ""
 
 #, fuzzy
 msgid "Clock always"
@@ -3129,6 +3167,23 @@ msgstr "Ε"
 msgid "ECM Info"
 msgstr "Πληροφορίες ECM"
 
+msgid "ECM Statistics"
+msgstr ""
+
+#, fuzzy
+msgid "ECM Time"
+msgstr "Χρόνος"
+
+msgid "ECM avg"
+msgstr ""
+
+msgid "ECM last"
+msgstr ""
+
+#, fuzzy
+msgid "ECM-Time"
+msgstr "Χρόνος"
+
 msgid "EPG"
 msgstr "EPG"
 
@@ -3768,6 +3823,11 @@ msgstr "Φίτζι"
 msgid "File appears to be busy.\n"
 msgstr "Το αρχείο φαίνεται να είναι απασχολημένο. \n"
 
+msgid ""
+"File oscam.conf not found.\n"
+"Please enter username/password manually."
+msgstr ""
+
 msgid "Filename"
 msgstr "Όνομα αρχείου"
 
@@ -4221,6 +4281,9 @@ msgstr "Ονδούρα"
 
 msgid "Hong Kong"
 msgstr "Χονγκ Κονγκ"
+
+msgid "Hops"
+msgstr ""
 
 msgid "Horizontal"
 msgstr "Οριζόντια"
@@ -4739,6 +4802,9 @@ msgstr ""
 msgid "LNB"
 msgstr "LNB"
 
+msgid "Label"
+msgstr ""
+
 msgid "Language"
 msgstr "Γλώσσα"
 
@@ -4750,6 +4816,10 @@ msgstr "Λάο (Εθνική Δημοκρατία)"
 
 msgid "Large"
 msgstr "Μεγάλο"
+
+#, fuzzy
+msgid "Last Req."
+msgstr "Τελευταία ταχύτητα"
 
 msgid "Last config"
 msgstr "Τελευταία ρύθμιση"
@@ -4910,6 +4980,9 @@ msgstr "Κλείδωμα αναλογιών"
 
 msgid "Lock:"
 msgstr "Κλείδ:"
+
+msgid "Log"
+msgstr ""
 
 msgid "Log results to /tmp"
 msgstr "Καταγραφή αποτελεσμάτων στο /tmp"
@@ -5731,6 +5804,9 @@ msgstr "Ρυθμίσεις OSD"
 msgid "OSD transparency"
 msgstr "Διαφάνεια OSD"
 
+msgid "OScam Info"
+msgstr ""
+
 msgid "OVR"
 msgstr "OVR"
 
@@ -5817,6 +5893,17 @@ msgstr "Κοινός"
 msgid "Original"
 msgstr "Πρωτότυπο"
 
+#, fuzzy
+msgid "Oscam Info - Configuration"
+msgstr "Ρυθμίσεις Tuner"
+
+msgid "Oscam Info - Main Menu"
+msgstr ""
+
+#, python-format
+msgid "Oscam Log ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Other"
 msgstr "Άλλο"
 
@@ -5855,6 +5942,10 @@ msgstr "Αρχείο PGS"
 
 msgid "PGS file"
 msgstr "αρχείο PGS"
+
+#, fuzzy
+msgid "PID"
+msgstr "PDC"
 
 msgid "PIN code needed"
 msgstr "Απαιτείται κωδικός PIN"
@@ -5930,6 +6021,10 @@ msgid "Parental control setup"
 msgstr "Παραμετροποίηση γονικού ελέγχου"
 
 msgid "Password"
+msgstr "Κωδικός"
+
+#, fuzzy
+msgid "Password (httpwd)"
 msgstr "Κωδικός"
 
 msgid "Pause"
@@ -6044,7 +6139,15 @@ msgstr "Παρακαλώ προσθέστε τίτλους στη συλλογή
 msgid "Please change recording endtime"
 msgstr "Παρακαλώ αλλάξτε την ώρα τερματισμού"
 
+#, fuzzy
+msgid "Please choose CCcam-Reader"
+msgstr "Παρακαλώ επιλέξτε μία επέκταση..."
+
 msgid "Please choose an extension..."
+msgstr "Παρακαλώ επιλέξτε μία επέκταση..."
+
+#, fuzzy
+msgid "Please choose reader"
 msgstr "Παρακαλώ επιλέξτε μία επέκταση..."
 
 msgid ""
@@ -6572,10 +6675,17 @@ msgstr "Προστασία μενού αναμονής"
 msgid "Protect timer menu"
 msgstr "Προστασία μενού χρονοδιακοπτών"
 
+msgid "Protocol"
+msgstr ""
+
 msgid "Provider"
 msgstr "Πάροχος"
 
 msgid "Providers"
+msgstr "Πάροχοι"
+
+#, fuzzy
+msgid "Providers: "
 msgstr "Πάροχοι"
 
 msgid "Puerto Rico"
@@ -6630,6 +6740,15 @@ msgstr "Βαθμολογία καθορισμένη από τον πάροχο -
 
 msgid "Rating undefined"
 msgstr "Μη καθορισμένη βαθμολογία"
+
+msgid "Read Userdata from oscam.conf"
+msgstr ""
+
+msgid "Reader"
+msgstr ""
+
+msgid "Reader Statistics"
+msgstr ""
 
 msgid "Really close without saving settings?"
 msgstr "Έξοδος χωρίς αποθήκευση ρυθμίσεων;"
@@ -6891,6 +7010,9 @@ msgstr "Επαναφορά ρυθμίσεων βελτίωσης εικόνας 
 
 msgid "Reset video enhancement settings to your last configuration?"
 msgstr "Επαναφορά ρυθμίσεων βελτίωσης εικόνας στις τελευταίες ρυθμίσεις σας;"
+
+msgid "Reshare"
+msgstr ""
 
 msgid "Resolution"
 msgstr "Ανάλυση"
@@ -7683,6 +7805,22 @@ msgstr "Σερβία"
 msgid "Serbian"
 msgstr "Σερβικά"
 
+#, fuzzy
+msgid "Serv.Name"
+msgstr "Όνομα υπηρεσίας"
+
+#, python-format
+msgid "Server Info ( Oscam-Version: %s )"
+msgstr ""
+
+#, fuzzy
+msgid "Server:"
+msgstr "Υπηρεσία"
+
+#, fuzzy
+msgid "Servers"
+msgstr "Υπηρεσίες"
+
 msgid "Service"
 msgstr "Υπηρεσία"
 
@@ -7892,11 +8030,19 @@ msgstr "Σύντομα ονόματα"
 msgid "Show"
 msgstr "Εμφάνιση"
 
+#, fuzzy
+msgid "Show /tmp/ecm.info"
+msgstr "Εμφάνιση πληροφοριών"
+
 msgid "Show Audioselection"
 msgstr "Εμφάνιση επιλογής ήχου"
 
 msgid "Show CI messages"
 msgstr "Εμφάνιση μηνυμάτων CI"
+
+#, fuzzy
+msgid "Show Clients"
+msgstr "Εμφάνιση στηλών"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Εμφάνιση ΕΙΤ τρέχον/επόμενο στη μπάρα πληροφοριών"
@@ -7917,8 +8063,15 @@ msgstr "Εμφάνιση τηλεπαιχνιδιού"
 msgid "Show InfoBar"
 msgstr "Εμφάνιση μπάρας πληροφοριών"
 
+#, fuzzy
+msgid "Show Log"
+msgstr "Εμφάνιση πληροφοριών"
+
 msgid "Show PIP"
 msgstr "Εμφάνιση PIP"
+
+msgid "Show Readers/Proxies"
+msgstr ""
 
 msgid "Show SNR percentage instead of dB value"
 msgstr "Εμφάνιση τιμής SNR σε ποσοστό αντί για dB"
@@ -8586,6 +8739,9 @@ msgstr "Εκκίνηση του δέκτη από την αναμονή"
 
 msgid "Startup to Standby"
 msgstr "Εκκίνηση σε αναμονή"
+
+msgid "Status"
+msgstr ""
 
 #, fuzzy
 msgid "Stby LED brightness"
@@ -9513,6 +9669,9 @@ msgstr "Πάνω και Κάτω"
 msgid "TopfieldVFD"
 msgstr ""
 
+msgid "Total"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Συνολικοί πελάτες σε ροή: %d (%s)"
@@ -9810,6 +9969,10 @@ msgstr "Η ενημέρωση απέτυχε. Ο δέκτης σας δεν έχ
 msgid "Update has completed."
 msgstr "Η ενημέρωση έχει ολοκληρωθεί."
 
+#, fuzzy
+msgid "Update interval (in seconds)"
+msgstr "Μεσοδιάστημα παρουσίασης διαφανειών (δευτ.)"
+
 msgid "Updatefeed not available."
 msgstr "Η πηγή αναβάθμισης δεν είναι διαθέσιμη."
 
@@ -9956,6 +10119,9 @@ msgstr "Επιφάνεια χρήστη"
 #, fuzzy
 msgid "Username"
 msgstr "Μετονομασία"
+
+msgid "Username (httpuser)"
+msgstr ""
 
 #, python-format
 msgid "Using LNB %d"
@@ -11565,6 +11731,13 @@ msgstr "μουσική/μπαλέτο/χορός (γενικά)"
 msgid "musical/opera"
 msgstr "μιούζικαλ/όπερα"
 
+#, fuzzy
+msgid "n/A"
+msgstr "Μ/Δ"
+
+msgid "n/a"
+msgstr ""
+
 msgid "nature/animals/environment"
 msgstr "φύση/ζώα/περιβάλλον"
 
@@ -11679,6 +11852,10 @@ msgstr "αρχικό"
 
 msgid "original language"
 msgstr "αρχική γλώσσα"
+
+#, fuzzy
+msgid "oscam webif disabled"
+msgstr "αναγκαστική απενεργοποίηση"
 
 msgid "partial"
 msgstr ""

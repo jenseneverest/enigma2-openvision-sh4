@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 20:25+0430\n"
+"POT-Creation-Date: 2019-05-22 08:13+0430\n"
 "PO-Revision-Date: 2019-04-11 18:52+0200\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -408,6 +408,10 @@ msgstr "%s %d.%d"
 msgid "%s %s free disk space"
 msgstr "%s %s slobodnog prostora na disku"
 
+#, fuzzy, python-format
+msgid "%s ( %s Cards )"
+msgstr "%s (%s)\n"
+
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
@@ -439,6 +443,13 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy
+msgid "( All readers)"
+msgstr "Svi uzrasti"
+
+msgid "(Show only reader:"
+msgstr ""
 
 msgid "(VU+ type)"
 msgstr "(VU+ tip)"
@@ -879,6 +890,10 @@ msgstr "Dodatne opcije omogućuju unos dijelova iz specifikacije vašeg motora, 
 
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move to another satellite."
 msgstr "Dodatne opcije omogućuju unos dijelova iz specifikacije vašeg motora, tako da enigma može izračunati koliko je potrebno pomaknuti antenu prema željenom satelitu."
+
+#, fuzzy
+msgid "Address"
+msgstr "IP-adresa"
 
 msgid "Adjust 3D settings"
 msgstr "Podesite 3D postavke"
@@ -1322,6 +1337,9 @@ msgstr "Automatsko pokretanje vremenskog pomaka"
 msgid "Automatically turn on external subtitles"
 msgstr "Automatsko uključivanje vanjskih titlova"
 
+msgid "Automatically update Client/Server View?"
+msgstr ""
+
 #, fuzzy
 msgid "Autostart"
 msgstr "počinje"
@@ -1565,6 +1583,12 @@ msgstr "C"
 msgid "C-Band"
 msgstr "LNB C-opseg"
 
+msgid "CAID"
+msgstr ""
+
+msgid "CAID:SrvID"
+msgstr ""
+
 msgid "CH"
 msgstr "CH"
 
@@ -1702,6 +1726,13 @@ msgid "Capacity: "
 msgstr "Kapacitet: "
 
 msgid "Card"
+msgstr "Каrtica"
+
+msgid "Card infos (CCcam-Reader)"
+msgstr ""
+
+#, fuzzy
+msgid "Cards:"
 msgstr "Каrtica"
 
 msgid "Cascade PiP"
@@ -1920,8 +1951,15 @@ msgstr "Očisti log"
 msgid "Clear playlist"
 msgstr "Očisti popis pjesama"
 
+#, python-format
+msgid "Client Info ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Client is streaming from this box!"
 msgstr "Web prijenos klijenta iz ovog resivera!"
+
+msgid "Clients"
+msgstr ""
 
 #, fuzzy
 msgid "Clock always"
@@ -3148,6 +3186,23 @@ msgstr "E"
 msgid "ECM Info"
 msgstr "ECM info"
 
+msgid "ECM Statistics"
+msgstr ""
+
+#, fuzzy
+msgid "ECM Time"
+msgstr "Vrijeme"
+
+msgid "ECM avg"
+msgstr ""
+
+msgid "ECM last"
+msgstr ""
+
+#, fuzzy
+msgid "ECM-Time"
+msgstr "Vrijeme"
+
 msgid "EPG"
 msgstr "EPG"
 
@@ -3787,6 +3842,11 @@ msgstr "Fidži"
 msgid "File appears to be busy.\n"
 msgstr "Datoteka koja se trenutno koristi.\n"
 
+msgid ""
+"File oscam.conf not found.\n"
+"Please enter username/password manually."
+msgstr ""
+
 msgid "Filename"
 msgstr "Naziv datoteke"
 
@@ -4240,6 +4300,9 @@ msgstr "Honduras"
 
 msgid "Hong Kong"
 msgstr "Hong Kong"
+
+msgid "Hops"
+msgstr ""
 
 msgid "Horizontal"
 msgstr "Horizontalno"
@@ -4758,6 +4821,9 @@ msgstr ""
 msgid "LNB"
 msgstr "LNB"
 
+msgid "Label"
+msgstr ""
+
 msgid "Language"
 msgstr "Jezik"
 
@@ -4769,6 +4835,10 @@ msgstr "Laoška Narodna Demokratska Republika"
 
 msgid "Large"
 msgstr "Veliki"
+
+#, fuzzy
+msgid "Last Req."
+msgstr "Zadnja brzina"
 
 msgid "Last config"
 msgstr "Zadnja konfiguracija"
@@ -4930,6 +5000,9 @@ msgstr "Omjer zaključavanja"
 
 msgid "Lock:"
 msgstr "Zaključati:"
+
+msgid "Log"
+msgstr ""
 
 msgid "Log results to /tmp"
 msgstr "Rezultat zapisa u /tmp"
@@ -5752,6 +5825,9 @@ msgstr "OSD postavke"
 msgid "OSD transparency"
 msgstr "OSD transparentnost"
 
+msgid "OScam Info"
+msgstr ""
+
 msgid "OVR"
 msgstr "OVR"
 
@@ -5838,6 +5914,17 @@ msgstr "Običan"
 msgid "Original"
 msgstr "Original"
 
+#, fuzzy
+msgid "Oscam Info - Configuration"
+msgstr "Konfiguracija tjunera"
+
+msgid "Oscam Info - Main Menu"
+msgstr ""
+
+#, python-format
+msgid "Oscam Log ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Other"
 msgstr "Ostalo"
 
@@ -5876,6 +5963,10 @@ msgstr "PGS Fajl"
 
 msgid "PGS file"
 msgstr "PGS fajl"
+
+#, fuzzy
+msgid "PID"
+msgstr "PDC"
 
 msgid "PIN code needed"
 msgstr "Potreban je PIN kod"
@@ -5951,6 +6042,10 @@ msgid "Parental control setup"
 msgstr "Postavljanje roditeljske kontrole"
 
 msgid "Password"
+msgstr "Lozinka"
+
+#, fuzzy
+msgid "Password (httpwd)"
 msgstr "Lozinka"
 
 msgid "Pause"
@@ -6065,7 +6160,15 @@ msgstr "Dodajte naslove kompilaciji."
 msgid "Please change recording endtime"
 msgstr "Promijenite vrijeme završetka snimanja"
 
+#, fuzzy
+msgid "Please choose CCcam-Reader"
+msgstr "Odaberite proširenje..."
+
 msgid "Please choose an extension..."
+msgstr "Odaberite proširenje..."
+
+#, fuzzy
+msgid "Please choose reader"
 msgstr "Odaberite proširenje..."
 
 msgid ""
@@ -6593,10 +6696,17 @@ msgstr "Zaštita izbornika isključivanja"
 msgid "Protect timer menu"
 msgstr "Zaštita izbornika tajmera"
 
+msgid "Protocol"
+msgstr ""
+
 msgid "Provider"
 msgstr "Pružatelj usluge"
 
 msgid "Providers"
+msgstr "Pružatelji usluga"
+
+#, fuzzy
+msgid "Providers: "
 msgstr "Pružatelji usluga"
 
 msgid "Puerto Rico"
@@ -6651,6 +6761,15 @@ msgstr "Ocjena koju je odredio nakladnik - %d"
 
 msgid "Rating undefined"
 msgstr "Ocjena nedefinirana"
+
+msgid "Read Userdata from oscam.conf"
+msgstr ""
+
+msgid "Reader"
+msgstr ""
+
+msgid "Reader Statistics"
+msgstr ""
 
 msgid "Really close without saving settings?"
 msgstr "Stvarno želite zatvoriti bez spremanja postavki?"
@@ -6912,6 +7031,9 @@ msgstr "Vraćanje postavki poboljšanja videozapisa na zadane postavke sustava?"
 
 msgid "Reset video enhancement settings to your last configuration?"
 msgstr "Vraćanje postavki poboljšanja videozapisa na zadnju konfiguraciju?"
+
+msgid "Reshare"
+msgstr ""
 
 msgid "Resolution"
 msgstr "Rezolucija"
@@ -7707,6 +7829,22 @@ msgstr "Srbija"
 msgid "Serbian"
 msgstr "Srpski"
 
+#, fuzzy
+msgid "Serv.Name"
+msgstr "Naziv usluge"
+
+#, python-format
+msgid "Server Info ( Oscam-Version: %s )"
+msgstr ""
+
+#, fuzzy
+msgid "Server:"
+msgstr "Informacije o usluzi"
+
+#, fuzzy
+msgid "Servers"
+msgstr "Usluge"
+
 msgid "Service"
 msgstr "Informacije o usluzi"
 
@@ -7916,11 +8054,19 @@ msgstr "Kratka imena datoteka"
 msgid "Show"
 msgstr "Prikazati"
 
+#, fuzzy
+msgid "Show /tmp/ecm.info"
+msgstr "Prikažite informacije"
+
 msgid "Show Audioselection"
 msgstr "Prikažite audio izbor"
 
 msgid "Show CI messages"
 msgstr "Prikažite CI poruke"
+
+#, fuzzy
+msgid "Show Clients"
+msgstr "Prikažite stupce"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Prikažite EIT sada/sljedeće u info traci"
@@ -7941,8 +8087,15 @@ msgstr "Prikažite igre"
 msgid "Show InfoBar"
 msgstr "Prikažite info traku"
 
+#, fuzzy
+msgid "Show Log"
+msgstr "Prikažite informacije"
+
 msgid "Show PIP"
 msgstr "Prikažite PiP"
+
+msgid "Show Readers/Proxies"
+msgstr ""
 
 msgid "Show SNR percentage instead of dB value"
 msgstr "Prikažite postotke SNR umjesto dB vrijednosti"
@@ -8610,6 +8763,9 @@ msgstr "Pokrenite set-top box u stanje čekanja"
 
 msgid "Startup to Standby"
 msgstr "Pokretanje u stanje mirovanja"
+
+msgid "Status"
+msgstr ""
 
 #, fuzzy
 msgid "Stby LED brightness"
@@ -9535,6 +9691,9 @@ msgstr "Iznad i ispod"
 msgid "TopfieldVFD"
 msgstr ""
 
+msgid "Total"
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Ukupno klijenata web prijenosa: %d (%s)"
@@ -9833,6 +9992,10 @@ msgstr "Ažuriranje nije uspjelo. Vaš prijemnik nema aktivnu internetsku vezu."
 msgid "Update has completed."
 msgstr "Ažuriranje je dovršeno."
 
+#, fuzzy
+msgid "Update interval (in seconds)"
+msgstr "Interval dijaprojekcije (sek.)"
+
 msgid "Updatefeed not available."
 msgstr "Ažuriranje feeda nije dostupno."
 
@@ -9979,6 +10142,9 @@ msgstr "Korisničko sučelje"
 #, fuzzy
 msgid "Username"
 msgstr "Preimenovati"
+
+msgid "Username (httpuser)"
+msgstr ""
 
 #, python-format
 msgid "Using LNB %d"
@@ -11589,6 +11755,13 @@ msgstr "glazba/balet/ples (općenito)"
 msgid "musical/opera"
 msgstr "muzika/opera"
 
+#, fuzzy
+msgid "n/A"
+msgstr "N/A"
+
+msgid "n/a"
+msgstr ""
+
 msgid "nature/animals/environment"
 msgstr "priroda/životinje/okolina"
 
@@ -11703,6 +11876,10 @@ msgstr "izvornik"
 
 msgid "original language"
 msgstr "izvorni jezik"
+
+#, fuzzy
+msgid "oscam webif disabled"
+msgstr "prisilno onemogućen"
 
 msgid "partial"
 msgstr ""

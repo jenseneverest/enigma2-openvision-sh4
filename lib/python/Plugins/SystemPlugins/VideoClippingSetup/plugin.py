@@ -152,6 +152,6 @@ def Plugins(**kwargs):
 	from os import path
 	if path.exists("/proc/stb/vmpeg/0/dst_left"):
 		from Plugins.Plugin import PluginDescriptor
-		return [PluginDescriptor(name = _("Video clipping setup"), description = _("clip overscan / letterbox borders"), where = PluginDescriptor.WHERE_MENU, fnc = menu),
-				PluginDescriptor(where = PluginDescriptor.WHERE_SESSIONSTART, fnc = startup)]
+		return [PluginDescriptor(name = _("Video clipping setup"), description = _("clip overscan / letterbox borders"), where = PluginDescriptor.WHERE_PLUGINMENU, fnc = main),
+					PluginDescriptor(name = _("Video clipping setup"), description = "", where = PluginDescriptor.WHERE_SESSIONSTART, fnc = startup)]
 	return []

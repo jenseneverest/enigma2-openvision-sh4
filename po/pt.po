@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-24 19:28+0200\n"
+"POT-Creation-Date: 2019-05-27 09:53+0430\n"
 "PO-Revision-Date: 2014-12-15 19:38-0000\n"
 "Last-Translator: Phenom <phenomxy@gmail.com>\n"
 "Language-Team: Muaitai <muaitai@gmail.com>\n"
@@ -245,6 +245,10 @@ msgstr "%H:%M"
 #, fuzzy
 msgid "%a %e %B %Y"
 msgstr "%A %e %B %Y"
+
+#, fuzzy
+msgid "%a %e %b  %-H:%M"
+msgstr "%a %e/%m  %-H:%M"
 
 #. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
 msgid "%a %e/%m"
@@ -671,6 +675,9 @@ msgstr "??"
 
 msgid "A"
 msgstr "A"
+
+msgid "A background update check is in progress, please wait a few minutes and try again."
+msgstr ""
 
 #
 #, fuzzy, python-format
@@ -1108,6 +1115,9 @@ msgstr "Permitir legendas para deficientes auditivos"
 msgid "Allow unsupported modes"
 msgstr "não suportado"
 
+msgid "Allows you to set a schedule to import the EPG and channels list. The EPG and channels list will always be imported on reboot or GUI restart."
+msgstr ""
+
 #
 msgid "Alpha"
 msgstr "Alpha"
@@ -1261,6 +1271,13 @@ msgid ""
 msgstr ""
 "Tem a certeza que deseja apagar\n"
 "este Backup:\n"
+
+#
+#, fuzzy
+msgid ""
+"Are you sure you want to delete this:\n"
+" "
+msgstr "Tem a certeza que deseja sair deste assistente?"
 
 #
 msgid "Are you sure you want to exit this wizard?"
@@ -2037,13 +2054,11 @@ msgstr "Menu da Lista de Canais"
 msgid "Channel list type"
 msgstr "Tipo da Lista de Canais"
 
-#, fuzzy
 msgid "Channel name in standby clock"
-msgstr "Desligar quando em Standby"
+msgstr ""
 
-#, fuzzy
 msgid "Channel name in standby off"
-msgstr "Desligar quando em Standby"
+msgstr ""
 
 #
 msgid "Channel not in services list"
@@ -2051,15 +2066,14 @@ msgstr "O canal não está na Lista de Canais"
 
 #, fuzzy
 msgid "Channel number in standby clock"
-msgstr "Desligar quando em Standby"
+msgstr "Mostrar a numeração dos canais na Lista de Canais"
 
 #, fuzzy
 msgid "Channel number in standby off"
-msgstr "Desligar quando em Standby"
+msgstr "Mostrar a numeração dos canais na Lista de Canais"
 
-#, fuzzy
 msgid "Channel number/clock in standby clock"
-msgstr "Desligar quando em Standby"
+msgstr ""
 
 #
 #, fuzzy
@@ -2207,6 +2221,19 @@ msgstr ""
 msgid "Client is streaming from this box!"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Client mode"
+msgstr "iniciar módulo"
+
+msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
+msgstr ""
+
+#
+#, fuzzy
+msgid "Client tuner configuration"
+msgstr "Configuração do sintonizador"
+
 msgid "Clients"
 msgstr ""
 
@@ -2280,6 +2307,16 @@ msgstr "Execução de comando..."
 
 #
 msgid "Command order"
+msgstr "Ordem de comando"
+
+#
+#, fuzzy
+msgid "Command to run"
+msgstr "Ordem de comando"
+
+#
+#, fuzzy
+msgid "Command type"
 msgstr "Ordem de comando"
 
 msgid "Commit info"
@@ -2757,6 +2794,9 @@ msgstr ""
 msgid "Connection speed in kb/s"
 msgstr "Definições da colecção"
 
+msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
+msgstr ""
+
 msgid "Console"
 msgstr ""
 
@@ -2867,6 +2907,18 @@ msgstr "Croata"
 msgid "Croatian"
 msgstr "Croata"
 
+msgid "Cron Manager"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Cron manager"
+msgstr "Gestor de Pacotes"
+
+#, fuzzy
+msgid "Cron timers"
+msgstr "Alterar agendamento"
+
 #
 #, fuzzy
 msgid "Cross brightness"
@@ -2913,6 +2965,11 @@ msgstr "Definições actuais:"
 
 #
 #, fuzzy
+msgid "Current status:"
+msgstr "Definições actuais:"
+
+#
+#, fuzzy
 msgid "Current transponder"
 msgstr "Transponder actual"
 
@@ -2922,6 +2979,11 @@ msgstr "Valor actual: "
 
 msgid "Currently the commit log cannot be retrieved - please try later again"
 msgstr "Não é possível obter o LOG do commit - por favor, tente novamente mais tarde"
+
+#
+#, fuzzy
+msgid "Custom"
+msgstr "Personalizar"
 
 #
 #, fuzzy
@@ -3066,6 +3128,11 @@ msgstr "Lista de títulos do DVD"
 #, fuzzy
 msgid "DVDPlayer"
 msgstr "Reprodutor de DVD"
+
+#
+#, fuzzy
+msgid "Daily"
+msgstr "diário"
 
 #
 msgid "Danish"
@@ -3581,6 +3648,9 @@ msgstr "Deseja actualizar o pacote:\n"
 msgid "Dolby"
 msgstr ""
 
+msgid "Domain"
+msgstr ""
+
 msgid "Dominica"
 msgstr ""
 
@@ -3834,6 +3904,11 @@ msgstr "Activar a selecção de favoritos na vista Guia de Programação Múltip
 
 #
 #, fuzzy
+msgid "Enable client mode"
+msgstr "activar modo deslocar"
+
+#
+#, fuzzy
 msgid "Enable debug"
 msgstr "Activar"
 
@@ -3968,6 +4043,21 @@ msgstr ""
 msgid "Enter pin code"
 msgstr "Insira o código PIN"
 
+msgid "Enter the FTP password of the host receiver (normally just leave empty)."
+msgstr ""
+
+msgid "Enter the FTP port of the host receiver (normally '21')."
+msgstr ""
+
+msgid "Enter the FTP username of the host receiver (normally 'root')."
+msgstr ""
+
+msgid "Enter the IP address of the host receiver."
+msgstr ""
+
+msgid "Enter the domain of the host receiver. Do not include 'http://' or port number."
+msgstr ""
+
 msgid "Enter the frequency at which you LNB switches between low band and high band. For more information consult the spec sheet of your LNB."
 msgstr ""
 
@@ -3980,6 +4070,9 @@ msgstr ""
 #
 msgid "Enter the service pin"
 msgstr "Introduzir código PIN do canal"
+
+msgid "Enter the streaming port of the host receiver (normally '8001')."
+msgstr ""
 
 msgid "Enter your current latitude. This is the number of degrees you are from the equator as a decimal."
 msgstr ""
@@ -4101,6 +4194,25 @@ msgstr "Menu de programa"
 
 msgid "Events info menu"
 msgstr ""
+
+msgid "Every 12 hours"
+msgstr ""
+
+#, fuzzy
+msgid "Every 2 hours"
+msgstr "Todo o lado"
+
+#, fuzzy
+msgid "Every 3 hours"
+msgstr "Todo o lado"
+
+#, fuzzy
+msgid "Every 6 hours"
+msgstr "Todo o lado"
+
+#, fuzzy
+msgid "Every hour"
+msgstr "Todo o lado"
 
 msgid "Every known"
 msgstr ""
@@ -4287,6 +4399,15 @@ msgstr ""
 
 msgid "FTA"
 msgstr "FTA"
+
+#, fuzzy
+msgid "FTP connection failure"
+msgstr "Ligação LAN"
+
+#
+#, fuzzy
+msgid "FTP passive mode"
+msgstr "Modo de Transmissão"
 
 #
 msgid "Factory reset"
@@ -4583,6 +4704,15 @@ msgstr ""
 "A interface gráfica necessita reiniciar para aplicar o novo tema.\n"
 "Deseja reiniciar agora?"
 
+#
+#, fuzzy
+msgid ""
+"GUI needs a restart to switch modes\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"A interface gráfica necessita reiniciar para aplicar o novo tema.\n"
+"Deseja reiniciar agora?"
+
 msgid "Gabon"
 msgstr ""
 
@@ -4760,6 +4890,9 @@ msgstr ""
 msgid "Guyana"
 msgstr ""
 
+msgid "H: = Hourly / D: = Daily / W: = Weekly / M: = Monthly"
+msgstr ""
+
 msgid "HD list"
 msgstr "Lista HD"
 
@@ -4917,6 +5050,32 @@ msgstr "Horizontal"
 msgid "Horizontal turning speed"
 msgstr "Velocidade de viragem horizontal"
 
+#
+#, fuzzy
+msgid "Host domain"
+msgstr "desligar"
+
+msgid "Host receiver FTP password"
+msgstr ""
+
+msgid "Host receiver FTP port"
+msgstr ""
+
+msgid "Host receiver FTP username"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Host receiver IP address"
+msgstr "Endereço IP"
+
+msgid "Host receiver address type"
+msgstr ""
+
+#, fuzzy
+msgid "Host receiver streaming port"
+msgstr "O receptor está a reiniciar..."
+
 msgid "HotKey Setup"
 msgstr ""
 
@@ -4933,6 +5092,9 @@ msgid "Hotkey zap"
 msgstr ""
 
 msgid "Hotplug"
+msgstr ""
+
+msgid "Hourly"
 msgstr ""
 
 #
@@ -4969,6 +5131,9 @@ msgid "INFO"
 msgstr ""
 
 msgid "INS"
+msgstr ""
+
+msgid "IP"
 msgstr ""
 
 #
@@ -5252,6 +5417,11 @@ msgstr "A instalar"
 
 #
 #, fuzzy
+msgid "Installing service"
+msgstr "A instalar"
+
+#
+#, fuzzy
 msgid "Installing software..."
 msgstr "A instalar o software..."
 
@@ -5511,9 +5681,8 @@ msgstr ""
 msgid "LED display configuration"
 msgstr "Configuração da Lista de Vídeos"
 
-#, fuzzy
 msgid "LED display configuration for Fortis HS7810A"
-msgstr "Configuração da Lista de Vídeos"
+msgstr ""
 
 msgid "LNB"
 msgstr "LNB"
@@ -6072,6 +6241,11 @@ msgstr ""
 
 msgid "Montenegro"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Monthly"
+msgstr "mês"
 
 msgid "Montserrat"
 msgstr ""
@@ -7533,6 +7707,10 @@ msgstr ""
 msgid "PowerMenu"
 msgstr ""
 
+#, fuzzy
+msgid "Predefined"
+msgstr "indefinido"
+
 #
 msgid "Predefined transponder"
 msgstr "Transponder pré-definido"
@@ -7863,6 +8041,14 @@ msgstr ""
 msgid "Reader Statistics"
 msgstr ""
 
+#, python-format
+msgid "Ready to install \"%s\" ?"
+msgstr ""
+
+#, python-format
+msgid "Ready to remove \"%s\" ?"
+msgstr ""
+
 #
 msgid "Really close without saving settings?"
 msgstr "Deseja sair sem gravar as definições?"
@@ -8049,6 +8235,10 @@ msgstr "Remoção completa."
 msgid "Remove"
 msgstr "Remover"
 
+#, fuzzy
+msgid "Remove Confirmation"
+msgstr "Configuração temporizador"
+
 #
 msgid "Remove a mark"
 msgstr "Remover marcador"
@@ -8102,6 +8292,10 @@ msgstr "A remoção do directório %s falhou. (Talvez não esteja vazia.)"
 msgid "Removing partition table"
 msgstr "A remover tabela de partições"
 
+#, fuzzy
+msgid "Removing service"
+msgstr "Nenhum canal."
+
 #
 msgid "Rename"
 msgstr "Renomear"
@@ -8111,6 +8305,11 @@ msgstr ""
 
 msgid "Repeat"
 msgstr "Repetir"
+
+#
+#, fuzzy
+msgid "Repeat how often"
+msgstr "Tipo de repetição"
 
 msgid "Repeat leave standby messages"
 msgstr ""
@@ -8341,6 +8540,9 @@ msgstr ""
 
 msgid "Round start time on"
 msgstr "Arredondar o tempo de início em"
+
+msgid "Run how often ?"
+msgstr ""
 
 #, fuzzy
 msgid "Running"
@@ -8649,6 +8851,9 @@ msgstr "A pesquisar..."
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
 msgstr "Pesquisar Lamedbs por defeito ordenados por satélites com posicionador conectado"
 
+msgid "Schedule EPG and channel list import"
+msgstr ""
+
 msgid "Scroll delay"
 msgstr ""
 
@@ -8869,6 +9074,9 @@ msgstr "Seleccione os ficheiros de Backup"
 #, fuzzy
 msgid "Select backup location"
 msgstr "Seleccione o destino para o Backup"
+
+msgid "Select between entering an IP address or a domain."
+msgstr ""
 
 msgid "Select channel"
 msgstr ""
@@ -9320,6 +9528,13 @@ msgstr ""
 msgid "Set the port of the OpenWebif from your fallback tuner"
 msgstr ""
 
+#, fuzzy
+msgid "Set the repeat interval of the schedule."
+msgstr "Configurar a taxa de refrescamento do ecrã."
+
+msgid "Set the time of day to perform the import."
+msgstr ""
+
 #
 #, fuzzy
 msgid "Set the type of the progress indication in the channel selection screen."
@@ -9392,6 +9607,9 @@ msgstr ""
 
 msgid "Short filenames"
 msgstr "Nomes curtos de ficheiros"
+
+msgid "Should the FTP connection to the remote receiver be established in passive mode (normally 'no')?"
+msgstr ""
 
 #
 #, fuzzy
@@ -10054,10 +10272,8 @@ msgstr "Definições do ecrã"
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
-#
-#, fuzzy
 msgid "SparkUnionTunerType config"
-msgstr "Configuração do sintonizador"
+msgstr ""
 
 #, fuzzy
 msgid "Special 1"
@@ -11112,6 +11328,9 @@ msgstr "Quinta-feira"
 msgid "Time"
 msgstr "Hora"
 
+msgid "Time import should start"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Time mode"
@@ -11120,6 +11339,9 @@ msgstr "Modo de sintonia"
 #, fuzzy
 msgid "Time scale"
 msgstr "Escala de tempo"
+
+msgid "Time to execute command or script"
+msgstr ""
 
 #
 msgid "Timer"
@@ -11173,6 +11395,11 @@ msgstr "Selecção do agendamento..."
 #, fuzzy
 msgid "Timer type"
 msgstr "Tipo de agendamento"
+
+#
+#, fuzzy
+msgid "Timers"
+msgstr "Agendamentos"
 
 #
 msgid "Timeshift"
@@ -12201,6 +12428,11 @@ msgstr "Quarta-feira"
 msgid "Weekday"
 msgstr "Dia de semana"
 
+#
+#, fuzzy
+msgid "Weekly"
+msgstr "semanalmente"
+
 msgid "Weighted position"
 msgstr "Posição ponderada"
 
@@ -12255,6 +12487,12 @@ msgid "West limit set"
 msgstr "Definir o limite a Oeste"
 
 msgid "Western Sahara"
+msgstr ""
+
+msgid "What date of month ?"
+msgstr ""
+
+msgid "What day of week ?"
 msgstr ""
 
 msgid "What type of service scan do you want?"
@@ -13403,14 +13641,11 @@ msgstr "livre"
 msgid "from"
 msgstr "de"
 
-#
-#, fuzzy
 msgid "fs9000VFD display"
-msgstr "Reprodutor de DVD"
+msgstr ""
 
-#, fuzzy
 msgid "fs9000VFD-Icons"
-msgstr "Ícones"
+msgstr ""
 
 msgid "further education"
 msgstr "educação"
@@ -13460,46 +13695,32 @@ msgstr ""
 msgid "hs7110VFD control"
 msgstr ""
 
-#
-#, fuzzy
 msgid "hs7110VFD display"
-msgstr "Reprodutor de DVD"
+msgstr ""
 
-#
-#, fuzzy
 msgid "hs742xVFD display"
-msgstr "Reprodutor de DVD"
+msgstr ""
 
-#, fuzzy
 msgid "hs742xVFD-Icons"
-msgstr "Ícones"
+msgstr ""
 
-#
-#, fuzzy
 msgid "hs7810aVFD display"
-msgstr "Reprodutor de DVD"
+msgstr ""
 
-#, fuzzy
 msgid "hs7810aVFD-Icons"
-msgstr "Ícones"
+msgstr ""
 
-#
-#, fuzzy
 msgid "hs8200VFD display"
-msgstr "Reprodutor de DVD"
+msgstr ""
 
-#, fuzzy
 msgid "hs8200VFD-Icons"
-msgstr "Ícones"
+msgstr ""
 
-#
-#, fuzzy
 msgid "hs9510VFD display"
-msgstr "Reprodutor de DVD"
+msgstr ""
 
-#, fuzzy
 msgid "hs9510VFD-Icons"
-msgstr "Ícones"
+msgstr ""
 
 #
 #, fuzzy

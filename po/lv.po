@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-24 19:28+0200\n"
+"POT-Creation-Date: 2019-05-27 09:53+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -236,6 +236,10 @@ msgstr "%H:%M"
 #. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
 msgid "%a %e %B %Y"
 msgstr "%a %e.%B %Y"
+
+#, fuzzy
+msgid "%a %e %b  %-H:%M"
+msgstr "%a %e.%m  %-H:%M"
 
 #. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
 msgid "%a %e/%m"
@@ -646,6 +650,9 @@ msgstr "??"
 msgid "A"
 msgstr "A"
 
+msgid "A background update check is in progress, please wait a few minutes and try again."
+msgstr ""
+
 #, python-format
 msgid ""
 "A configuration file (%s) has been modified since it was installed.\n"
@@ -1006,6 +1013,9 @@ msgstr "Atļaut subtitrus dzirdes traucējumiem"
 msgid "Allow unsupported modes"
 msgstr "Izmantot neatbalstītus režīmus"
 
+msgid "Allows you to set a schedule to import the EPG and channels list. The EPG and channels list will always be imported on reboot or GUI restart."
+msgstr ""
+
 msgid "Alpha"
 msgstr "Alfa"
 
@@ -1139,6 +1149,12 @@ msgid ""
 msgstr ""
 "Vai tiešām vēlaties dzēst\n"
 "šo dublējumkopiju:\n"
+
+#, fuzzy
+msgid ""
+"Are you sure you want to delete this:\n"
+" "
+msgstr "Vai tiešām vēlaties iziet no šī veidņa?"
 
 msgid "Are you sure you want to exit this wizard?"
 msgstr "Vai tiešām vēlaties iziet no šī veidņa?"
@@ -1965,6 +1981,17 @@ msgstr ""
 msgid "Client is streaming from this box!"
 msgstr "Klients straumē no uztvērēja!"
 
+#, fuzzy
+msgid "Client mode"
+msgstr "inicializēt moduli"
+
+msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
+msgstr ""
+
+#, fuzzy
+msgid "Client tuner configuration"
+msgstr "Uztvērēja konfigurācija"
+
 msgid "Clients"
 msgstr ""
 
@@ -2025,6 +2052,14 @@ msgid "Command execution..."
 msgstr "Izpilda komandu..."
 
 msgid "Command order"
+msgstr "Komandu secība"
+
+#, fuzzy
+msgid "Command to run"
+msgstr "Komandu secība"
+
+#, fuzzy
+msgid "Command type"
 msgstr "Komandu secība"
 
 msgid "Commit info"
@@ -2438,6 +2473,9 @@ msgstr "Izmanto transkodēšanu, PiP nevar lietot!"
 msgid "Connection speed in kb/s"
 msgstr "Kolekcijas iestatījumi"
 
+msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
+msgstr ""
+
 msgid "Console"
 msgstr "Konsole"
 
@@ -2531,6 +2569,17 @@ msgstr "Horvātija"
 msgid "Croatian"
 msgstr "Horvātu"
 
+msgid "Cron Manager"
+msgstr ""
+
+#, fuzzy
+msgid "Cron manager"
+msgstr "nav resursu pārvaldnieka"
+
+#, fuzzy
+msgid "Cron timers"
+msgstr "Izmainīt taimeri"
+
 #, fuzzy
 msgid "Cross brightness"
 msgstr "Spilgtums"
@@ -2574,6 +2623,10 @@ msgstr "Pašreizējā rotora pozīcija: "
 msgid "Current settings:"
 msgstr "Pašreizējie iestatījumi:"
 
+#, fuzzy
+msgid "Current status:"
+msgstr "Pašreizējie iestatījumi:"
+
 msgid "Current transponder"
 msgstr "Pašreizējais transponderis"
 
@@ -2582,6 +2635,10 @@ msgstr "Pašreizējā vērtība: "
 
 msgid "Currently the commit log cannot be retrieved - please try later again"
 msgstr "Pašreiz izmaiņu žurnāls nav pieejams- lūdzu mēģiniet vēlāk"
+
+#, fuzzy
+msgid "Custom"
+msgstr "Iestatījumi"
 
 msgid "Custom skip time for '1'/'3' buttons"
 msgstr "Pārlēciena laiks '1'/'3' taustiņiem"
@@ -2700,6 +2757,10 @@ msgstr "DVD nosaukumi"
 #, fuzzy
 msgid "DVDPlayer"
 msgstr "DVD atskaņotājs"
+
+#, fuzzy
+msgid "Daily"
+msgstr "ik dienu"
 
 msgid "Danish"
 msgstr "Dāņu"
@@ -3131,6 +3192,9 @@ msgstr "Vai vēlaties atjaunināt pakotni:\n"
 msgid "Dolby"
 msgstr "Dolby"
 
+msgid "Domain"
+msgstr ""
+
 msgid "Dominica"
 msgstr "Dominika"
 
@@ -3351,6 +3415,10 @@ msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktivizēt buķešu izvēli multi-EPG"
 
 #, fuzzy
+msgid "Enable client mode"
+msgstr "aktivizēt pārvietošanas režīmu"
+
+#, fuzzy
 msgid "Enable debug"
 msgstr "Aktivizēts"
 
@@ -3468,6 +3536,22 @@ msgstr "Ievadiet patstāvīgo PIN kodu"
 msgid "Enter pin code"
 msgstr "Ievadiet PIN kodu"
 
+msgid "Enter the FTP password of the host receiver (normally just leave empty)."
+msgstr ""
+
+msgid "Enter the FTP port of the host receiver (normally '21')."
+msgstr ""
+
+msgid "Enter the FTP username of the host receiver (normally 'root')."
+msgstr ""
+
+#, fuzzy
+msgid "Enter the IP address of the host receiver."
+msgstr "Ievadiet, ja esat austrumu vai rietumu puslodē."
+
+msgid "Enter the domain of the host receiver. Do not include 'http://' or port number."
+msgstr ""
+
 msgid "Enter the frequency at which you LNB switches between low band and high band. For more information consult the spec sheet of your LNB."
 msgstr "Ievadiet frekvenci, kurā jūs LNB pārslēdzas no zemas joslas uz augstu joslu. Plašāku informāciju skatiet LNB specifikācijā."
 
@@ -3479,6 +3563,9 @@ msgstr "Ievadiet šī satelītam pozicionēšanas ierīcē saglabāto numuru."
 
 msgid "Enter the service pin"
 msgstr "Ievadiet kanāla PIN"
+
+msgid "Enter the streaming port of the host receiver (normally '8001')."
+msgstr ""
 
 msgid "Enter your current latitude. This is the number of degrees you are from the equator as a decimal."
 msgstr "Ievadiet pašreizējo platumu. Tas ir grādu skaits kā decimāldaļa, kādā attālumā esat no ekvatora."
@@ -3597,6 +3684,25 @@ msgstr "Notikuma apskata izvēlne"
 
 msgid "Events info menu"
 msgstr "Notikumu info izvēlne"
+
+msgid "Every 12 hours"
+msgstr ""
+
+#, fuzzy
+msgid "Every 2 hours"
+msgstr "Jebkur"
+
+#, fuzzy
+msgid "Every 3 hours"
+msgstr "Jebkur"
+
+#, fuzzy
+msgid "Every 6 hours"
+msgstr "Jebkur"
+
+#, fuzzy
+msgid "Every hour"
+msgstr "Jebkur"
 
 msgid "Every known"
 msgstr "Zināms"
@@ -3761,6 +3867,14 @@ msgstr "FEC:"
 
 msgid "FTA"
 msgstr "FTA"
+
+#, fuzzy
+msgid "FTP connection failure"
+msgstr "Tīkla savienojums"
+
+#, fuzzy
+msgid "FTP passive mode"
+msgstr "Pārraides režīms"
 
 msgid "Factory reset"
 msgstr "Rūpnīcas iestatījumi"
@@ -4023,6 +4137,14 @@ msgstr ""
 "Lai lietotu jauno noformējumu nepieciešams pārstartēt enigmu.\n"
 "Vai vēlaties pārstartēt?"
 
+#, fuzzy
+msgid ""
+"GUI needs a restart to switch modes\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"Lai lietotu jauno noformējumu nepieciešams pārstartēt enigmu.\n"
+"Vai vēlaties pārstartēt?"
+
 msgid "Gabon"
 msgstr "Gabona"
 
@@ -4179,6 +4301,9 @@ msgstr "Gvineja-Bisava"
 msgid "Guyana"
 msgstr "Gajana"
 
+msgid "H: = Hourly / D: = Daily / W: = Weekly / M: = Monthly"
+msgstr ""
+
 msgid "HD list"
 msgstr "HD saraksts"
 
@@ -4320,6 +4445,32 @@ msgstr "Horizontālā"
 msgid "Horizontal turning speed"
 msgstr "Horizontālais noskaņošanas ātrums"
 
+#, fuzzy
+msgid "Host domain"
+msgstr "izslēgt"
+
+msgid "Host receiver FTP password"
+msgstr ""
+
+#, fuzzy
+msgid "Host receiver FTP port"
+msgstr "Rezerves uztvērēja ports"
+
+msgid "Host receiver FTP username"
+msgstr ""
+
+#, fuzzy
+msgid "Host receiver IP address"
+msgstr "IP adrese"
+
+#, fuzzy
+msgid "Host receiver address type"
+msgstr "Vēl nav saņemti dati"
+
+#, fuzzy
+msgid "Host receiver streaming port"
+msgstr "Jūsu uztvērējs pārstartējas"
+
 msgid "HotKey Setup"
 msgstr "Ātro taustiņu iestatījumi"
 
@@ -4336,6 +4487,9 @@ msgid "Hotkey zap"
 msgstr "Pārslēgšana uz"
 
 msgid "Hotplug"
+msgstr ""
+
+msgid "Hourly"
 msgstr ""
 
 msgid "How many minutes do you want add to the recording?"
@@ -4364,6 +4518,10 @@ msgstr "Info"
 
 msgid "INS"
 msgstr "INS"
+
+#, fuzzy
+msgid "IP"
+msgstr "I"
 
 msgid "IP address"
 msgstr "IP adrese"
@@ -4606,6 +4764,10 @@ msgid "Installation or removal has completed."
 msgstr "Uzstādīšana vai noņemšana pabeigta."
 
 msgid "Installing"
+msgstr "Uzstāda"
+
+#, fuzzy
+msgid "Installing service"
 msgstr "Uzstāda"
 
 msgid "Installing software..."
@@ -5285,6 +5447,10 @@ msgstr "Mongolija"
 
 msgid "Montenegro"
 msgstr "Melnkalne"
+
+#, fuzzy
+msgid "Monthly"
+msgstr "mēnesis"
 
 msgid "Montserrat"
 msgstr "Montserrata"
@@ -6506,6 +6672,10 @@ msgstr "Barošanas robežvērtība. Lai iegūtu papildinformāciju, skatiet uztv
 msgid "PowerMenu"
 msgstr "Izslēgšana"
 
+#, fuzzy
+msgid "Predefined"
+msgstr "Nedefinēts"
+
 msgid "Predefined transponder"
 msgstr "Definēts transponderis"
 
@@ -6790,6 +6960,14 @@ msgstr ""
 msgid "Reader Statistics"
 msgstr ""
 
+#, python-format
+msgid "Ready to install \"%s\" ?"
+msgstr ""
+
+#, python-format
+msgid "Ready to remove \"%s\" ?"
+msgstr ""
+
 msgid "Really close without saving settings?"
 msgstr "Vai tiešām aizvērt, nesaglabājot iestatījumus?"
 
@@ -6941,6 +7119,10 @@ msgstr "Dzēšana pabeigta."
 msgid "Remove"
 msgstr "Dzēst"
 
+#, fuzzy
+msgid "Remove Confirmation"
+msgstr "Miega taimera iestatījumi"
+
 msgid "Remove a mark"
 msgstr "Dzēst iezīmi"
 
@@ -6981,6 +7163,10 @@ msgstr "Neizdevās izdzēst mapi %s. (Varbūt nav tukša.)"
 msgid "Removing partition table"
 msgstr "Dzēst partīciju tabulu"
 
+#, fuzzy
+msgid "Removing service"
+msgstr "Nav kanāla"
+
 msgid "Rename"
 msgstr "Pārsaukt"
 
@@ -6989,6 +7175,10 @@ msgstr "Jauniem notikumiem pārsaukt nosaukumu un aprakstu"
 
 msgid "Repeat"
 msgstr "Atkārtot"
+
+#, fuzzy
+msgid "Repeat how often"
+msgstr "Atkārtošanas veids"
 
 msgid "Repeat leave standby messages"
 msgstr "Atkārtot signālu iziet no gaidstāves"
@@ -7178,6 +7368,9 @@ msgstr "Rotors: "
 
 msgid "Round start time on"
 msgstr "Raunda sākuma laiks"
+
+msgid "Run how often ?"
+msgstr ""
 
 #, fuzzy
 msgid "Running"
@@ -7447,6 +7640,9 @@ msgstr "Meklēšana..."
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
 msgstr "Meklē noklusētos lamedbs, sakārtotus pēc pavadoņiem ar pievienotu pozicioniera antenu"
 
+msgid "Schedule EPG and channel list import"
+msgstr ""
+
 msgid "Scroll delay"
 msgstr "Ritināšanas aizture"
 
@@ -7628,6 +7824,9 @@ msgstr "Izvēlieties dublējumkopijas failus"
 
 msgid "Select backup location"
 msgstr "Izvēlieties dublējumkopijas atrašanās vietu"
+
+msgid "Select between entering an IP address or a domain."
+msgstr ""
 
 msgid "Select channel"
 msgstr "Izvēlieties kanālu"
@@ -8011,6 +8210,13 @@ msgstr "OpenWebif parole attālinātā uztvērējā"
 msgid "Set the port of the OpenWebif from your fallback tuner"
 msgstr "OpenWebif ports attālinātā uztvērējā"
 
+#, fuzzy
+msgid "Set the repeat interval of the schedule."
+msgstr "Uzstāda ekrāna atjaunošanas ātrumu."
+
+msgid "Set the time of day to perform the import."
+msgstr ""
+
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Iestatīt norises indikatora veidu kanālu pārslēgšanas logā."
 
@@ -8071,6 +8277,9 @@ msgstr "Skripti"
 msgid "Short filenames"
 msgstr "Īsie failu nosaukumi"
 
+msgid "Should the FTP connection to the remote receiver be established in passive mode (normally 'no')?"
+msgstr ""
+
 msgid "Show"
 msgstr "Rādīt"
 
@@ -8086,7 +8295,7 @@ msgstr "Rādīt CI paziņojumus"
 
 #, fuzzy
 msgid "Show Clients"
-msgstr "Rādīt kolonas"
+msgstr "Rādīt ierakstus"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Rādīt EIT pašreiz/nākamais infojoslā"
@@ -9567,12 +9776,18 @@ msgstr "Ceturtdiena"
 msgid "Time"
 msgstr "Laiks"
 
+msgid "Time import should start"
+msgstr ""
+
 #, fuzzy
 msgid "Time mode"
 msgstr "Toņa režīms"
 
 msgid "Time scale"
 msgstr "Laika skala"
+
+msgid "Time to execute command or script"
+msgstr ""
 
 msgid "Timer"
 msgstr "Taimeri"
@@ -9613,6 +9828,10 @@ msgstr "Taimeru izvēle..."
 
 msgid "Timer type"
 msgstr "Taimera veids"
+
+#, fuzzy
+msgid "Timers"
+msgstr "Taimeri"
 
 msgid "Timeshift"
 msgstr "Laika aizture"
@@ -10473,6 +10692,10 @@ msgstr "Trešdiena"
 msgid "Weekday"
 msgstr "Nedēļas diena"
 
+#, fuzzy
+msgid "Weekly"
+msgstr "ik nedēļu"
+
 msgid "Weighted position"
 msgstr "Pozīcijas nozīmīgums"
 
@@ -10524,6 +10747,12 @@ msgstr "Iestatīt rietumu limitu"
 
 msgid "Western Sahara"
 msgstr "Rietumsahāra"
+
+msgid "What date of month ?"
+msgstr ""
+
+msgid "What day of week ?"
+msgstr ""
 
 msgid "What type of service scan do you want?"
 msgstr "Kāda veida kanālu meklēšanu vēlaties veikt?"

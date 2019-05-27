@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-24 19:28+0200\n"
-"PO-Revision-Date: 2019-04-30 07:15+0300\n"
+"POT-Creation-Date: 2019-05-27 09:53+0430\n"
+"PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
 "Language: et_EE\n"
@@ -235,6 +235,10 @@ msgstr "%H:%M"
 #. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
 msgid "%a %e %B %Y"
 msgstr "%a %e %B %Y"
+
+#, fuzzy
+msgid "%a %e %b  %-H:%M"
+msgstr "%a %e/%m  %-H:%M"
 
 #. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
 msgid "%a %e/%m"
@@ -631,6 +635,9 @@ msgstr "??"
 msgid "A"
 msgstr "A"
 
+msgid "A background update check is in progress, please wait a few minutes and try again."
+msgstr ""
+
 #, python-format
 msgid ""
 "A configuration file (%s) has been modified since it was installed.\n"
@@ -992,6 +999,9 @@ msgstr "Luba vaegkuuljate subtiitrid"
 msgid "Allow unsupported modes"
 msgstr ""
 
+msgid "Allows you to set a schedule to import the EPG and channels list. The EPG and channels list will always be imported on reboot or GUI restart."
+msgstr ""
+
 msgid "Alpha"
 msgstr "Alfa"
 
@@ -1126,6 +1136,12 @@ msgid ""
 msgstr ""
 "Kas soovid kustutada \n"
 "selle varukoopia:\n"
+
+#, fuzzy
+msgid ""
+"Are you sure you want to delete this:\n"
+" "
+msgstr "Kas soovid väljuda seadistusabist?"
 
 msgid "Are you sure you want to exit this wizard?"
 msgstr "Kas soovid väljuda seadistusabist?"
@@ -1601,10 +1617,10 @@ msgid "CI Operation Mode"
 msgstr "Häälestamine"
 
 msgid "CI Plus 1.2"
-msgstr "CI Plus 1.2"
+msgstr ""
 
 msgid "CI Plus 1.3"
-msgstr "CI Plus 1.3"
+msgstr ""
 
 msgid "CI assignment"
 msgstr "CI määrangud"
@@ -1955,6 +1971,17 @@ msgstr ""
 msgid "Client is streaming from this box!"
 msgstr ""
 
+#, fuzzy
+msgid "Client mode"
+msgstr "käivita moodul"
+
+msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
+msgstr ""
+
+#, fuzzy
+msgid "Client tuner configuration"
+msgstr "Tuuneri seaded"
+
 msgid "Clients"
 msgstr ""
 
@@ -2015,6 +2042,14 @@ msgid "Command execution..."
 msgstr "Käskude täitmine"
 
 msgid "Command order"
+msgstr "Käskude järjekord"
+
+#, fuzzy
+msgid "Command to run"
+msgstr "Käskude järjekord"
+
+#, fuzzy
+msgid "Command type"
 msgstr "Käskude järjekord"
 
 msgid "Commit info"
@@ -2430,6 +2465,9 @@ msgstr "Ühendatud transkoodingu piirang - PIP ei ole võimalik!"
 msgid "Connection speed in kb/s"
 msgstr "Valiku seaded"
 
+msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
+msgstr ""
+
 msgid "Console"
 msgstr "Konsool"
 
@@ -2525,6 +2563,17 @@ msgstr "Horvaatia"
 msgid "Croatian"
 msgstr "Horvaatia"
 
+msgid "Cron Manager"
+msgstr ""
+
+#, fuzzy
+msgid "Cron manager"
+msgstr "pole ressursi juhti"
+
+#, fuzzy
+msgid "Cron timers"
+msgstr "Muuda taimerit"
+
 #, fuzzy
 msgid "Cross brightness"
 msgstr "Heledus"
@@ -2568,6 +2617,10 @@ msgstr "Ajami hetkeasend: "
 msgid "Current settings:"
 msgstr "Hetke seaded:"
 
+#, fuzzy
+msgid "Current status:"
+msgstr "Hetke seaded:"
+
 msgid "Current transponder"
 msgstr "Hetke transponder"
 
@@ -2576,6 +2629,10 @@ msgstr "Praegune väärtus: "
 
 msgid "Currently the commit log cannot be retrieved - please try later again"
 msgstr "Tehtud toimingute logi ei saa hetkel kätte - proovi hiljem uuesti"
+
+#, fuzzy
+msgid "Custom"
+msgstr "Kohandamine"
 
 msgid "Custom skip time for '1'/'3' buttons"
 msgstr "'1'/'3'-nuppude hüppe kohandatud pikkus"
@@ -2694,6 +2751,10 @@ msgstr "DVD nimekiri "
 #, fuzzy
 msgid "DVDPlayer"
 msgstr "DVD mängija"
+
+#, fuzzy
+msgid "Daily"
+msgstr "iga päev"
 
 msgid "Danish"
 msgstr "Taani"
@@ -3128,6 +3189,9 @@ msgstr "Kas soovid parendada paketti:\n"
 msgid "Dolby"
 msgstr "Dolby"
 
+msgid "Domain"
+msgstr ""
+
 msgid "Dominica"
 msgstr "Dominica"
 
@@ -3348,6 +3412,10 @@ msgid "Enable bouquet selection in multi-EPG"
 msgstr "Luba multiEPG-s nimekirjade valik."
 
 #, fuzzy
+msgid "Enable client mode"
+msgstr "luba liigutamine nimekirjades"
+
+#, fuzzy
 msgid "Enable debug"
 msgstr "Kasutusel"
 
@@ -3465,6 +3533,22 @@ msgstr "Sisesta püsiv PIN kood"
 msgid "Enter pin code"
 msgstr "Sisesta pin kood"
 
+msgid "Enter the FTP password of the host receiver (normally just leave empty)."
+msgstr ""
+
+msgid "Enter the FTP port of the host receiver (normally '21')."
+msgstr ""
+
+msgid "Enter the FTP username of the host receiver (normally 'root')."
+msgstr ""
+
+#, fuzzy
+msgid "Enter the IP address of the host receiver."
+msgstr "Sisesta, kas asud ida- või läänepoolkeral."
+
+msgid "Enter the domain of the host receiver. Do not include 'http://' or port number."
+msgstr ""
+
 msgid "Enter the frequency at which you LNB switches between low band and high band. For more information consult the spec sheet of your LNB."
 msgstr "Sisesta sagedus, millel LNB lülitub kõrgsagedusriba ja madalsagedusriba vahel. Enamat infot vaata LNB spetsifikatsioonist."
 
@@ -3476,6 +3560,9 @@ msgstr "Sisesta positioneeri salvestatud number, mis vastab sellele satelliidile
 
 msgid "Enter the service pin"
 msgstr "Sisesta teenuse pin kood"
+
+msgid "Enter the streaming port of the host receiver (normally '8001')."
+msgstr ""
 
 msgid "Enter your current latitude. This is the number of degrees you are from the equator as a decimal."
 msgstr "Sisesta asukoha laiuskraad. See on kraadide arv ekvaatorist kümnendväärtusena."
@@ -3592,6 +3679,25 @@ msgstr "Saateinfo menüü"
 
 msgid "Events info menu"
 msgstr "Saateinfo menüü"
+
+msgid "Every 12 hours"
+msgstr ""
+
+#, fuzzy
+msgid "Every 2 hours"
+msgstr "Igal pool"
+
+#, fuzzy
+msgid "Every 3 hours"
+msgstr "Igal pool"
+
+#, fuzzy
+msgid "Every 6 hours"
+msgstr "Igal pool"
+
+#, fuzzy
+msgid "Every hour"
+msgstr "Igal pool"
 
 msgid "Every known"
 msgstr "Iga tuntud"
@@ -3757,6 +3863,14 @@ msgstr "FEC:"
 
 msgid "FTA"
 msgstr "FTA"
+
+#, fuzzy
+msgid "FTP connection failure"
+msgstr "LAN ühendus"
+
+#, fuzzy
+msgid "FTP passive mode"
+msgstr "Edastamise moodus"
 
 msgid "Factory reset"
 msgstr "Algseadistus"
@@ -4017,6 +4131,14 @@ msgstr ""
 "Kas soovid taaskäivitada kasutajaliidest \n"
 "uue kujunduse aktiveerimiseks?"
 
+#, fuzzy
+msgid ""
+"GUI needs a restart to switch modes\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"Kas soovid taaskäivitada kasutajaliidest \n"
+"uue kujunduse aktiveerimiseks?"
+
 msgid "Gabon"
 msgstr "Gabon"
 
@@ -4173,6 +4295,9 @@ msgstr "Guinea-Bissau"
 msgid "Guyana"
 msgstr "Guajaana"
 
+msgid "H: = Hourly / D: = Daily / W: = Weekly / M: = Monthly"
+msgstr ""
+
 msgid "HD list"
 msgstr "HD nimekiri"
 
@@ -4314,6 +4439,31 @@ msgstr "Horisontaal"
 msgid "Horizontal turning speed"
 msgstr "Horisontaalse keeramise kiirus"
 
+#, fuzzy
+msgid "Host domain"
+msgstr "lülita välja"
+
+msgid "Host receiver FTP password"
+msgstr ""
+
+#, fuzzy
+msgid "Host receiver FTP port"
+msgstr "Kaugvastuvõtja Port"
+
+msgid "Host receiver FTP username"
+msgstr ""
+
+#, fuzzy
+msgid "Host receiver IP address"
+msgstr "Sisesta IP-aadress"
+
+msgid "Host receiver address type"
+msgstr ""
+
+#, fuzzy
+msgid "Host receiver streaming port"
+msgstr "Vastuvõtja taaskäivitub"
+
 msgid "HotKey Setup"
 msgstr "Kiirnuppude seadistus"
 
@@ -4330,6 +4480,9 @@ msgid "Hotkey zap"
 msgstr "Kiirnupu vahetus"
 
 msgid "Hotplug"
+msgstr ""
+
+msgid "Hourly"
 msgstr ""
 
 msgid "How many minutes do you want add to the recording?"
@@ -4358,6 +4511,10 @@ msgstr "INFO"
 
 msgid "INS"
 msgstr "INS"
+
+#, fuzzy
+msgid "IP"
+msgstr "I"
 
 msgid "IP address"
 msgstr "IP aadress"
@@ -4602,6 +4759,10 @@ msgstr "Paigaldamine või kustutamine on tehtud."
 msgid "Installing"
 msgstr "Paigaldamine"
 
+#, fuzzy
+msgid "Installing service"
+msgstr "Paigaldamine"
+
 msgid "Installing software..."
 msgstr "Tarkvara paigaldamine..."
 
@@ -4804,9 +4965,8 @@ msgstr "Esipaneeli seaded"
 msgid "LED configuration"
 msgstr "Tuuneri seaded"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Tavaline"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -4814,9 +4974,8 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display"
-msgstr "LED seaded"
+msgstr ""
 
 #, fuzzy
 msgid "LED display configuration"
@@ -5283,6 +5442,10 @@ msgstr "Mongoolia"
 msgid "Montenegro"
 msgstr "Montenegro"
 
+#, fuzzy
+msgid "Monthly"
+msgstr "kuu"
+
 msgid "Montserrat"
 msgstr "Montserrat"
 
@@ -5392,9 +5555,8 @@ msgstr "Mosambiik"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Mitme kanali PCM"
+msgstr "Mitmekanaline heli > stereo"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Lemmiknimekirjade valik kanalite saatekavas"
@@ -6509,6 +6671,10 @@ msgstr "Võimsuselävi. Uuri lähemalt vastuvõtja käsiraamatust."
 msgid "PowerMenu"
 msgstr "Toitemenüü"
 
+#, fuzzy
+msgid "Predefined"
+msgstr "Määramata"
+
 msgid "Predefined transponder"
 msgstr "Eelmääratud transponder"
 
@@ -6795,6 +6961,14 @@ msgstr ""
 msgid "Reader Statistics"
 msgstr ""
 
+#, python-format
+msgid "Ready to install \"%s\" ?"
+msgstr ""
+
+#, python-format
+msgid "Ready to remove \"%s\" ?"
+msgstr ""
+
 msgid "Really close without saving settings?"
 msgstr "Kas soovid seadeid salvestamata väljuda?"
 
@@ -6947,6 +7121,10 @@ msgstr "Eemaldamine on tehtud."
 msgid "Remove"
 msgstr "Eemalda"
 
+#, fuzzy
+msgid "Remove Confirmation"
+msgstr "Unetaimeri seadistamine"
+
 msgid "Remove a mark"
 msgstr "Kustuta märk"
 
@@ -6987,6 +7165,10 @@ msgstr "Kataloogi eemaldamine %s nurjus. (Ei ole tühi?)"
 msgid "Removing partition table"
 msgstr "Partitsioonitabeli eemaldamine"
 
+#, fuzzy
+msgid "Removing service"
+msgstr "Pole teenust"
+
 msgid "Rename"
 msgstr "Muuda nimi"
 
@@ -6995,6 +7177,10 @@ msgstr "Nimeta ümber uute sündmuste nimed ja kirjeldused"
 
 msgid "Repeat"
 msgstr "Korda"
+
+#, fuzzy
+msgid "Repeat how often"
+msgstr "Kordamise liik"
 
 msgid "Repeat leave standby messages"
 msgstr "Korda ootele jäämise sõnumeid"
@@ -7186,6 +7372,9 @@ msgstr "Mootor: "
 
 msgid "Round start time on"
 msgstr "Ligikaudne algusaeg sisse"
+
+msgid "Run how often ?"
+msgstr ""
 
 #, fuzzy
 msgid "Running"
@@ -7455,6 +7644,9 @@ msgstr "Otsing..."
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
 msgstr "Otsib algsed lamedb-d järjestatud satelliitide järgi ühendatud positsioneeriga"
 
+msgid "Schedule EPG and channel list import"
+msgstr ""
+
 msgid "Scroll delay"
 msgstr "Liigutamise viide"
 
@@ -7638,6 +7830,9 @@ msgstr "Vali varundamiseks failid"
 
 msgid "Select backup location"
 msgstr "Varukoopia asukoht"
+
+msgid "Select between entering an IP address or a domain."
+msgstr ""
 
 msgid "Select channel"
 msgstr "Vali kanal"
@@ -8029,6 +8224,13 @@ msgstr ""
 msgid "Set the port of the OpenWebif from your fallback tuner"
 msgstr ""
 
+#, fuzzy
+msgid "Set the repeat interval of the schedule."
+msgstr "Määra ekraani värskendussagedus."
+
+msgid "Set the time of day to perform the import."
+msgstr ""
+
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Määra saate edenemise näit kanalivalikus."
 
@@ -8089,6 +8291,9 @@ msgstr "Shellscript"
 msgid "Short filenames"
 msgstr "Lühikesed failinimed"
 
+msgid "Should the FTP connection to the remote receiver be established in passive mode (normally 'no')?"
+msgstr ""
+
 #, fuzzy
 msgid "Show"
 msgstr "Näita PiP"
@@ -8105,7 +8310,7 @@ msgstr "Näita CI teateid"
 
 #, fuzzy
 msgid "Show Clients"
-msgstr "Näita veergusid"
+msgstr "Näita filme"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Näita nüüd/järgmine inforibal"
@@ -8277,7 +8482,7 @@ msgstr "Näita piconid ekraanil"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Lülita ooteseisundi ajal sisse toite LED."
+msgstr "Näita piconid ekraanil"
 
 #, fuzzy
 msgid "Show on VFD"
@@ -8289,7 +8494,7 @@ msgstr "Näita piconid ekraanil"
 
 #, fuzzy
 msgid "Show on VFD display in standby"
-msgstr "Näita krüpto ikoone"
+msgstr "Näita piconid ekraanil"
 
 msgid "Show packages to be upgraded"
 msgstr "Näita pakette mida peaks uuendama"
@@ -9611,12 +9816,18 @@ msgstr "Neljapäev"
 msgid "Time"
 msgstr "Aeg"
 
+msgid "Time import should start"
+msgstr ""
+
 #, fuzzy
 msgid "Time mode"
 msgstr "22KHz-toon"
 
 msgid "Time scale"
 msgstr "Ajaskaala"
+
+msgid "Time to execute command or script"
+msgstr ""
 
 msgid "Timer"
 msgstr "Taimer"
@@ -9657,6 +9868,10 @@ msgstr "Taimeri valik..."
 
 msgid "Timer type"
 msgstr "Taimeri liik"
+
+#, fuzzy
+msgid "Timers"
+msgstr "Taimer"
 
 msgid "Timeshift"
 msgstr "Ajanihe"
@@ -10525,6 +10740,10 @@ msgstr "Kolmapäev"
 msgid "Weekday"
 msgstr "Nädalapäev"
 
+#, fuzzy
+msgid "Weekly"
+msgstr "iga nädal"
+
 msgid "Weighted position"
 msgstr "Korrigeeritud asukoht"
 
@@ -10576,6 +10795,12 @@ msgstr "Lääne piir on määratud"
 
 msgid "Western Sahara"
 msgstr "Lääne-Sahara"
+
+msgid "What date of month ?"
+msgstr ""
+
+msgid "What day of week ?"
+msgstr ""
 
 msgid "What type of service scan do you want?"
 msgstr "Mis tüüpi teenuse otsingut soovid?"

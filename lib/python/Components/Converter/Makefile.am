@@ -10,3 +10,4 @@ install_PYTHON = \
 	Combine.py SensorToText.py ValueToPixmap.py PliExtraInfo.py genre.py TransponderInfo.py \
 	VfdDisplay.py VfdNumberClock.py \
 	RotorPosition.py AnalogClock.py
+	ServiceName2.py

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-29 23:22+0430\n"
-"PO-Revision-Date: 2019-04-23 16:45+0200\n"
+"POT-Creation-Date: 2019-05-30 23:17+0430\n"
+"PO-Revision-Date: 2019-05-30 12:03+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
 "Language: hu_HU\n"
@@ -549,6 +549,9 @@ msgstr "24"
 
 msgid "25"
 msgstr "25"
+
+msgid "2678400000"
+msgstr ""
 
 msgid "29.97"
 msgstr "29.97"
@@ -1696,6 +1699,21 @@ msgid ""
 "Screens change with left/right buttons or use red, green, blue to toggle.\n"
 "Yellow for returning back to this intro"
 msgstr ""
+"A képernyő hibás pixeleinek tesztelésére szolgál.\n"
+"\n"
+"Elérhető színtesztek:\n"
+"\n"
+"vörös\n"
+"zöld\n"
+"kék\n"
+"fehér\n"
+"fekete\n"
+"cián\n"
+"magenta\n"
+"sárga\n"
+"\n"
+"A képek közötti váltás a balra/jobbra gombbal lehetséges, vagy válassza a vörös, zöld, kék kapcsolót.\n"
+"A sárga gomb megnyomásával térhet vissza ezen bemutatóhoz."
 
 msgid "Can only find a network drive to store the backup this means after the flash the autorestore will not work. Alternativaly you can mount the network drive after the flash and perform a manufacurer reset to autorestore"
 msgstr "Csak hálózati meghajtót találtunk a biztonsági mentés tárolásához, ez azt jelenti, hogy flashelés után nem lehetséges a biztonsági másolat automatikus visszaállítása. Alternatív megoldásként az automatikus visszaállításhoz a flashelés után csatolja fel a hálózati meghajtót, és hajtson végre egy gyári visszaállítást."
@@ -2740,7 +2758,6 @@ msgstr "DVD lejátszó"
 msgid "DVD titlelist"
 msgstr "DVD Címlista"
 
-#, fuzzy
 msgid "DVDPlayer"
 msgstr "DVD lejátszó"
 
@@ -4467,7 +4484,7 @@ msgid "Hotkey zap"
 msgstr "Hotkey csatornaváltás"
 
 msgid "Hotplug"
-msgstr ""
+msgstr "Hotplug"
 
 msgid "Hourly"
 msgstr ""
@@ -4492,6 +4509,9 @@ msgstr "Nem szeretnék csatornakeresést végezni"
 
 msgid "IDLE"
 msgstr "TÉTLEN"
+
+msgid "IGNORE"
+msgstr ""
 
 msgid "INFO"
 msgstr "INFO"
@@ -5741,9 +5761,8 @@ msgstr "Nincs elérhető EMCPid (FTA csatornák)"
 msgid "No HDD found or HDD not initialized!"
 msgstr "Nem észlelhető háttértár, vagy az nem lett inicializálva!"
 
-#, fuzzy
 msgid "No active subservices available."
-msgstr "Nincs elérhető frissítés"
+msgstr "Nincs elérhető alcsatorna"
 
 msgid "No age block"
 msgstr "Nincs korhatár"
@@ -6282,7 +6301,7 @@ msgid "Pitcairn"
 msgstr "Pitcairn-szigetek"
 
 msgid "Pixels\n"
-msgstr ""
+msgstr "Pixel\n"
 
 msgid "Play"
 msgstr "Lejátszás"
@@ -6290,9 +6309,8 @@ msgstr "Lejátszás"
 msgid "Play DVD"
 msgstr "DVD lejátszás"
 
-#, fuzzy
 msgid "Play DVDs"
-msgstr "DVD lejátszás"
+msgstr "DVD lejátszása"
 
 msgid "Play audio-CD..."
 msgstr "Audio-CD lejátszás..."
@@ -6511,9 +6529,8 @@ msgstr "Állítsa be a Q tunert"
 msgid "Please set up tuner R"
 msgstr "Állítsa be az R tunert"
 
-#, fuzzy
 msgid "Please set your time zone"
-msgstr "Állítsa be az A tunert"
+msgstr "Állítsa be az időzónát"
 
 msgid "Please setup the following basic configs!"
 msgstr "Kérjük, állítsa be a következő alapvető paramétereket!"
@@ -8672,7 +8689,7 @@ msgstr "Slideshow intervallum (mp.)"
 
 #, python-format
 msgid "Slot %d"
-msgstr "%d foglalat"
+msgstr "%d partíció"
 
 msgid "Slovak"
 msgstr "Szlovák"
@@ -8711,7 +8728,7 @@ msgid "Social/Political/Economics"
 msgstr "Szociális/Politika/Gazdaság"
 
 msgid "SocketMMI"
-msgstr ""
+msgstr "SocketMMI"
 
 msgid "SoftCam / CI"
 msgstr "SoftCam/CI"
@@ -8880,6 +8897,9 @@ msgid "Specify timeframe to ignore the shutdown in standby"
 msgstr "Készenlétből kikapcsolás figyelmen kívül hagyása a megadott időszakban"
 
 msgid "Speed"
+msgstr ""
+
+msgid "Speed up the performance"
 msgstr ""
 
 msgid "Split preview mode"
@@ -9300,7 +9320,7 @@ msgid "TRANSLATOR_INFO"
 msgstr ""
 "A fordítást készítette:\n"
 "mcfly82 & wysless\n"
-"Utolsó fordítás időpontja: 2019.04.23.\n"
+"Utolsó fordítás időpontja: 2019.05.30.\n"
 "Eredeti fordítás: MediaVox-Team, Robertut\n"
 "A magyar fordítás az OpenPLi projekthez készült.\n"
 "További információ: http://openpli.org"
@@ -11944,9 +11964,8 @@ msgstr "alapértelmezett lista stílus"
 msgid "list style single line"
 msgstr "egyvonalas lista stílus"
 
-#, fuzzy
 msgid "listens to hotplug events"
-msgstr "Események elrendezése"
+msgstr "Hotplug események figyelése"
 
 msgid "literature"
 msgstr "irodalom"
@@ -12374,13 +12393,13 @@ msgstr "visszaugrás"
 msgid "skip forward"
 msgstr "előre ugrás"
 
-#, fuzzy, python-format
+#, python-format
 msgid "slot%s - %s"
-msgstr "partíció%s - %s készülék mód: 1"
+msgstr "partíció%s - %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "slot%s - %s (current image)"
-msgstr "partíció%s - %s készülék mód: 1 (jelenlegi image)"
+msgstr "partíció%s - %s (jelenlegi image)"
 
 #, python-format
 msgid "slot%s - %s (current image) with, backup"

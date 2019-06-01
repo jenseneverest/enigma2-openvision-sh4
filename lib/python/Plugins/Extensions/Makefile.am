@@ -1,6 +1,10 @@
 installdir = $(pkglibdir)/python/Plugins/Extensions
 
-SUBDIRS = TuxboxPlugins CutListEditor DVDPlayer PicturePlayer MediaScanner MediaPlayer GraphMultiEPG SocketMMI
+SUBDIRS = TuxboxPlugins CutListEditor PicturePlayer MediaScanner MediaPlayer GraphMultiEPG SocketMMI FileCommander
+
+if HAVE_LIBDDVD
+SUBDIRS += DVDPlayer
+endif
 
 if ENABLE_TF7700
 SUBDIRS += TopfieldVFD

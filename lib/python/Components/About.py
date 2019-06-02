@@ -130,6 +130,9 @@ def getCPUInfoString():
 def getCPUBrand():
 	return _("STMicroelectronics")
 
+def getCPUArch():
+	return _("SH4")
+
 def getFlashType():
 	if SystemInfo["SmallFlash"]:
 		return _("Small - Lite image")

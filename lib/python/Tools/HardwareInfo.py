@@ -23,7 +23,7 @@ class HardwareInfo:
 
 		# Brand
 		try:
-			self.device_brand = open("/etc/brand").read().strip()
+			self.device_brand = open("/etc/brand").read().strip().upper()
 		except:
 			pass
 

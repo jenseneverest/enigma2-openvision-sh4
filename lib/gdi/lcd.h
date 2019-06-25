@@ -68,7 +68,7 @@ public:
 	virtual eSize size() { return res; };
 	virtual void update()=0;
 #ifndef NO_LCD
-#ifdef HAVE_TEXTLCD
+#if defined(HAVE_TEXTLCD) || defined(HAVE_7SEGMENT)
 	virtual void renderText(ePoint start, const char *text);
 #endif
 #else

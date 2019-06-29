@@ -12,7 +12,7 @@ from Components.ImportChannels import ImportChannels
 from Tools.Directories import mediafilesInUse
 from Components.SystemInfo import SystemInfo
 from GlobalActions import globalActionMap
-from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer, getBoxType
+from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer, getBoxBrand
 from Components.Sources.StreamService import StreamServiceList
 
 inStandby = None
@@ -31,6 +31,15 @@ class Standby(Screen):
 	def Power(self):
 		print "[Standby] leave standby"
 		self.close(True)
+
+		if os.path.exists("/usr/script/StandbyLeave.sh"):
+			Console().ePopen("/usr/script/StandbyLeave.sh")
+
+		if getBoxBrand() == "fulan":
+			try:
+				open("/proc/stb/hdmi/output", "w").write("on")
+			except:
+				pass
 
 	def setMute(self):
 		self.wasMuted = eDVBVolumecontrol.getInstance().isMuted()
@@ -102,7 +111,7 @@ class Standby(Screen):
 		else:
 			self.avswitch.setInput("AUX")
 
-		if getBoxType().startswith("spark"):
+		if getBoxBrand() == "fulan":
 			try:
 				open("/proc/stb/hdmi/output", "w").write("off")
 			except:

@@ -13,7 +13,6 @@ from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 from Components.Sources.Boolean import Boolean
 from Components.Sources.ServiceEvent import ServiceEvent
 from Components.Sources.StaticText import StaticText
-from Components.Console import Console
 import Components.Harddisk
 from Components.UsageConfig import preferredTimerPath
 from Screens.VirtualKeyBoard import VirtualKeyBoard
@@ -270,7 +269,7 @@ class MovieBrowserConfiguration(ConfigListScreen,Screen):
 			getConfigListEntry(_("Play audiofiles in list mode"), config.movielist.play_audio_internal, _("If set as 'Yes', then audiofiles are played in 'list mode' only, instead in full screen player.")),
 			getConfigListEntry(_("Root directory"), config.movielist.root, _("You can set selected directory as 'root' directory for movie player.")),
 			getConfigListEntry(_("Hide known extensions"), config.movielist.hide_extensions, _("Do not show file extensions for registered multimedia files.")),
-			getConfigListEntry(_("Automatic bookmarks"), config.movielist.add_bookmark, _("If enabled, bookmarks will be updated with the new location when you move or copy a recording.")),
+			getConfigListEntry(_("Automatic bookmarks"), config.movielist.add_bookmark, _("If is disabled, then after Copy/Move will not be target directory stored into bookmarks.")),
 			]
 		for btn in ('red', 'green', 'yellow', 'blue', 'TV', 'Radio', 'Text', 'F1', 'F2', 'F3'):
 			configList.append(getConfigListEntry(_(btn), userDefinedButtons[btn]))
@@ -406,12 +405,8 @@ class MovieContextMenu(Screen, ProtectedScreen):
 						append_to_menu(menu, (_("Reset playback position"), csel.do_reset))
 					if service.getPath().endswith('.ts'):
 						append_to_menu(menu, (_("Start offline decode"), csel.do_decode))
-				if service.type in [4097, 5001, 5003]:
-					append_to_menu(menu, (_("Play with exteplayer"), csel.playExteplayer))
-					append_to_menu(menu, (_("Play with gstreamer"), csel.playGstreamer))
-				# On spark with libeplayer there alredy exist bluray auto play
-				# elif BlurayPlayer is None and csel.isBlurayFolderAndFile(service):
-					# append_to_menu(menu, (_("Auto play blu-ray file"), csel.playBlurayFile))
+				elif BlurayPlayer is None and csel.isBlurayFolderAndFile(service):
+					append_to_menu(menu, (_("Auto play blu-ray file"), csel.playBlurayFile))
 				if config.ParentalControl.servicepin[0].value and config.ParentalControl.servicepinactive.value and config.ParentalControl.hideBlacklist.value and config.ParentalControl.storeservicepin.value != "never":
 					from Components.ParentalControl import parentalControl
 					if not parentalControl.sessionPinCached:
@@ -614,7 +609,7 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 
 		self["playbackActions"] = HelpableActionMap(self, "MoviePlayerActions",
 			{
-				"leavePlayer": (self.abort, _("Exit movie list")),
+				"leavePlayer": (self.playbackStop, _("Stop")),
 				"moveNext": (self.playNext, _("Play next")),
 				"movePrev": (self.playPrev, _("Play previous")),
 				"channelUp": (self.moveToFirstOrFirstFile, _("Go to first movie or top of list")),
@@ -916,7 +911,6 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 			pass
 
 	def createSummary(self):
-		return None
 		return MovieSelectionSummary
 
 	def updateDescription(self):
@@ -1148,12 +1142,13 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 		if current is not None:
 			path = current.getPath()
 			if current.flags & eServiceReference.mustDescent:
+				if BlurayPlayer is not None and os.path.isdir(os.path.join(path, 'BDMV/STREAM/')):
+					#force a BLU-RAY extention
+					Screens.InfoBar.InfoBar.instance.checkTimeshiftRunning(boundFunction(self.itemSelectedCheckTimeshiftCallback, 'bluray', path))
+					return
 				if os.path.isdir(os.path.join(path, 'VIDEO_TS/')) or os.path.exists(os.path.join(path, 'VIDEO_TS.IFO')):
 					#force a DVD extention
-					Screens.InfoBar.InfoBar.instance.checkTimeshiftRunning(boundFunction(self.itemSelectedCheckTimeshiftCallback, ".img", path))
-					return
-				if self.IsBluray(path):
-					Screens.InfoBar.InfoBar.instance.checkTimeshiftRunning(boundFunction(self.itemSelectedCheckTimeshiftCallback, "bluray", path))
+					Screens.InfoBar.InfoBar.instance.checkTimeshiftRunning(boundFunction(self.itemSelectedCheckTimeshiftCallback, '.img', path))
 					return
 				self.gotFilename(path)
 			else:
@@ -1206,9 +1201,8 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 			self.movieSelected()
 
 	# Note: DVDBurn overrides this method, hence the itemSelected indirection.
-	def movieSelected(self, current = None):
-		if not current:
-			current = self.getCurrent()
+	def movieSelected(self):
+		current = self.getCurrent()
 		if current is not None:
 			self.saveconfig()
 			self.close(current)
@@ -1313,9 +1307,6 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 			self.callLater(self.abort)
 			return
 		self.saveconfig()
-		if os.path.exists("/media/bludisc"):
-			Console().ePopen("umount -f /media/bludisc")
-			Console().ePopen("rmdir /media/bludisc")
 		self.close(None)
 
 	def saveconfig(self):
@@ -1550,17 +1541,6 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 		last_selected_dest.insert(0, where)
 		if len(last_selected_dest) > 5:
 			del last_selected_dest[-1]
-
-	def playExteplayer(self):
-		Screens.InfoBar.InfoBar.instance.checkTimeshiftRunning(boundFunction(self.changePlayerCheckTimeshiftCallback, 5002))
-
-	def playGstreamer(self):
-		Screens.InfoBar.InfoBar.instance.checkTimeshiftRunning(boundFunction(self.changePlayerCheckTimeshiftCallback, 5001))
-
-	def changePlayerCheckTimeshiftCallback(self, ref, answer):
-		if answer:
-			path = self.getCurrent().getPath()
-			self.close(eServiceReference(ref, 0, path))
 
 	def playBlurayFile(self):
 		if self.playfile:

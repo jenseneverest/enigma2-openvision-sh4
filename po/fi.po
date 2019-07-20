@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 02:36+0430\n"
+"POT-Creation-Date: 2019-07-20 21:28+0430\n"
 "PO-Revision-Date: 2019-02-13 20:52+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -2669,6 +2669,10 @@ msgstr "Määrittää kovalevyn sammutuksen asetetun toimettomuusajan jälkeen."
 msgid "Configure the horizontal alignment of the subtitles."
 msgstr "Määrittää tekstityksen vaakasijainnin."
 
+#, fuzzy
+msgid "Configure the infobar fading speed"
+msgstr "Määrittää hidastusnopeudet."
+
 msgid "Configure the initial fast forward speed. When you press the fast forward button, winding will start at this speed."
 msgstr "Määrittää eteenpäinkelauksen alkunopeuden. Kun painat kelausnäppäintä, alkaa kelaus tällä nopeudella."
 
@@ -4082,6 +4086,9 @@ msgstr "Ota käyttöön Freesat EPG"
 msgid "Enable import timer from fallback tuner"
 msgstr "Tuo ajastimet etävastaaottimelta"
 
+msgid "Enable infobar fade-out"
+msgstr ""
+
 #
 msgid "Enable multiple bouquets"
 msgstr "Salli useiden suosikkilistojen luonti ja käyttö"
@@ -4600,6 +4607,9 @@ msgid ""
 "Factory reset will restore your receiver to its default configuration. All user data including system settings, tuner configuration, bouquets, services and plugins will be DELETED. Recordings and other files stored on HDD and USB media will remain intact. After completion, the system will restart automatically!\n"
 "\n"
 "Do you really want to proceed?"
+msgstr ""
+
+msgid "Fade the infobar when hiding"
 msgstr ""
 
 #
@@ -5575,6 +5585,11 @@ msgstr "Tietopalkin näyttöaika"
 #, fuzzy
 msgid "InfoBar"
 msgstr "Tietopalkki"
+
+#
+#, fuzzy
+msgid "Infobar fade-out speed"
+msgstr "Tietopalkin näyttöaika"
 
 msgid "Infobar frontend data source"
 msgstr "Tietopalkin viritintiedon lähde"
@@ -7400,11 +7415,27 @@ msgid "Original"
 msgstr "Alkuperäinen"
 
 #, fuzzy
+msgid "Oscam Config info"
+msgstr "Virittimien asetukset"
+
+#, fuzzy
+msgid "Oscam ECM info"
+msgstr "ECM tietoja"
+
+#, fuzzy
 msgid "Oscam Info - Configuration"
 msgstr "Virittimien asetukset"
 
 msgid "Oscam Info - Main Menu"
 msgstr ""
+
+#, fuzzy
+msgid "Oscam Info Config Screen"
+msgstr "Virittimien asetukset"
+
+#, fuzzy
+msgid "Oscam Info Main Menu"
+msgstr "Virittimien asetukset"
 
 #, python-format
 msgid "Oscam Log ( Oscam-Version: %s )"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-17 02:36+0430\n"
+"POT-Creation-Date: 2019-07-20 21:28+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -2460,6 +2460,10 @@ msgstr "Uzstāda lai cietais disks dodas gaidstāvē pēc noteiktā laika."
 msgid "Configure the horizontal alignment of the subtitles."
 msgstr "Uzstāda subtitru horizontālo izlīdzināšanu."
 
+#, fuzzy
+msgid "Configure the infobar fading speed"
+msgstr "Uzstāda palēninātās kustības ātrumus."
+
 msgid "Configure the initial fast forward speed. When you press the fast forward button, winding will start at this speed."
 msgstr "Uzstāda sākotnējo pārtīšanas uz priekšu ātrumu. Kad nospiežat tīt uz priekšu pogu, pārtīšana sāksies ar šo ātrumu."
 
@@ -3723,6 +3727,9 @@ msgstr "Aktivizēt freesat EPG"
 msgid "Enable import timer from fallback tuner"
 msgstr "Importēt taimerus no attālinātā uztvērēja"
 
+msgid "Enable infobar fade-out"
+msgstr ""
+
 msgid "Enable multiple bouquets"
 msgstr "Aktivizēt vairāk-buķešu režīmu"
 
@@ -4214,6 +4221,9 @@ msgstr ""
 "Rūpnīcas iestatījumi atjaunos jūsu uztvērēju uz noklusējuma konfigurāciju. Visi lietotāja dati, tostarp sistēmas iestatījumi, uztvērēja konfigurācija, buķetes, kanāli un spraudņi tiks DZĒSTI. Ieraksti un citi faili, kas tiek saglabāti cietajā diskā un USB datu nesējos, paliks neskarti. Pēc pabeigšanas sistēma automātiski pārstartēsies!\n"
 "\n"
 "Vai tiešām vēlaties turpināt?"
+
+msgid "Fade the infobar when hiding"
+msgstr ""
 
 msgid "Failed"
 msgstr "Neizdevās"
@@ -5109,6 +5119,10 @@ msgstr "Infojoslas noildze"
 #, fuzzy
 msgid "InfoBar"
 msgstr "Infojosla"
+
+#, fuzzy
+msgid "Infobar fade-out speed"
+msgstr "Infojoslas noildze"
 
 msgid "Infobar frontend data source"
 msgstr "Infojoslas frontend datu avots"
@@ -6702,11 +6716,27 @@ msgid "Original"
 msgstr "Oriģināls"
 
 #, fuzzy
+msgid "Oscam Config info"
+msgstr "Uztvērēja konfigurācija"
+
+#, fuzzy
+msgid "Oscam ECM info"
+msgstr "ECM info"
+
+#, fuzzy
 msgid "Oscam Info - Configuration"
 msgstr "Uztvērēja konfigurācija"
 
 msgid "Oscam Info - Main Menu"
 msgstr ""
+
+#, fuzzy
+msgid "Oscam Info Config Screen"
+msgstr "Uztvērēja konfigurācija"
+
+#, fuzzy
+msgid "Oscam Info Main Menu"
+msgstr "Uztvērēja konfigurācija"
 
 #, python-format
 msgid "Oscam Log ( Oscam-Version: %s )"

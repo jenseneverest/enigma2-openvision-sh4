@@ -9,4 +9,4 @@ install_PYTHON = \
 	ValueBitTest.py TunerInfo.py ConfigEntryTest.py ClientsStreaming.py TemplatedMultiContent.py ProgressToText.py \
 	Combine.py SensorToText.py ValueToPixmap.py PliExtraInfo.py genre.py TransponderInfo.py \
 	VfdNumberClock.py RotorPosition.py VfdDisplay.py AnalogClock.py ServiceName2.py LayoutInfo.py \
-	HbbtvApplicationInfo.py BhAnalogic.py BhStreamInfo.py VNetSpeedInfo.py VisionCamInfo.py
+	HbbtvApplicationInfo.py BhAnalogic.py BhStreamInfo.py VNetSpeedInfo.py VisionCamInfo.py CaidInfo2.py

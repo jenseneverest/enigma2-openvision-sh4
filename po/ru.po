@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-26 14:32+0430\n"
+"POT-Creation-Date: 2019-08-01 20:21+0430\n"
 "PO-Revision-Date: 2019-07-25 17:52+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -2152,7 +2152,11 @@ msgid "Clear playlist"
 msgstr "Очистить список воспроизведения"
 
 #, python-format
-msgid "Client Info ( Oscam-Version: %s )"
+msgid "Client Info ( NCam-Version: %s )"
+msgstr ""
+
+#, python-format
+msgid "Client Info ( OScam-Version: %s )"
 msgstr ""
 
 msgid "Client is streaming from this box!"
@@ -3682,6 +3686,10 @@ msgstr "Включить ОК как превью, в списке выбора 
 
 msgid "Enable OK for channel selection"
 msgstr "Включить OK для списка выбора каналов"
+
+#, fuzzy
+msgid "Enable OpenTV EPG"
+msgstr "Включить EIT EPG"
 
 msgid "Enable ViaSat EPG"
 msgstr "Включить ViaSat EPG"
@@ -6155,6 +6163,32 @@ msgstr "Myanmar"
 msgid "N/A"
 msgstr "N/A"
 
+#, fuzzy
+msgid "NCam Config info"
+msgstr "ECM инфо"
+
+#, fuzzy
+msgid "NCam ECM info"
+msgstr "ECM инфо"
+
+#, fuzzy
+msgid "NCam Info - Configuration"
+msgstr "Конфигурация тюнера"
+
+msgid "NCam Info - Main Menu"
+msgstr ""
+
+msgid "NCam Info Main Menu"
+msgstr ""
+
+#, python-format
+msgid "NCam Log ( NCam-Version: %s )"
+msgstr ""
+
+#, fuzzy
+msgid "NCam webif disabled"
+msgstr "принудительно отключено"
+
 msgid "NEXT"
 msgstr "ДАЛЕЕ"
 
@@ -6591,8 +6625,35 @@ msgstr "Установки экранного меню (OSD)"
 msgid "OSD transparency"
 msgstr "Прозрачность экранного меню (OSD)"
 
+#, fuzzy
+msgid "OScam Config info"
+msgstr "ECM инфо"
+
+#, fuzzy
+msgid "OScam ECM info"
+msgstr "ECM инфо"
+
 msgid "OScam Info"
 msgstr ""
+
+#, fuzzy
+msgid "OScam Info - Configuration"
+msgstr "Конфигурация тюнера"
+
+#, fuzzy
+msgid "OScam Info - Main Menu"
+msgstr "Конфигурация тюнера"
+
+msgid "OScam Info Main Menu"
+msgstr ""
+
+#, python-format
+msgid "OScam Log ( OScam-Version: %s )"
+msgstr ""
+
+#, fuzzy
+msgid "OScam webif disabled"
+msgstr "принудительно отключено"
 
 msgid "OVR"
 msgstr "OVR"
@@ -6700,27 +6761,6 @@ msgstr "Обычный"
 
 msgid "Original"
 msgstr "Оригинал"
-
-msgid "Oscam Config info"
-msgstr ""
-
-#, fuzzy
-msgid "Oscam ECM info"
-msgstr "ECM инфо"
-
-#, fuzzy
-msgid "Oscam Info - Configuration"
-msgstr "Конфигурация тюнера"
-
-msgid "Oscam Info - Main Menu"
-msgstr ""
-
-msgid "Oscam Info Main Menu"
-msgstr ""
-
-#, python-format
-msgid "Oscam Log ( Oscam-Version: %s )"
-msgstr ""
 
 msgid "Other"
 msgstr "Другая"
@@ -8827,7 +8867,11 @@ msgid "Serv.Name"
 msgstr "Название сервиса"
 
 #, python-format
-msgid "Server Info ( Oscam-Version: %s )"
+msgid "Server Info ( NCam-Version: %s )"
+msgstr ""
+
+#, python-format
+msgid "Server Info ( OScam-Version: %s )"
 msgstr ""
 
 #, fuzzy
@@ -11227,6 +11271,10 @@ msgstr "Использовать информацию MHW EPG (Canal+), если
 msgid "Use Netmed EPG information when it is available."
 msgstr "Использовать информацию Netmed EPG (провайдеры 13E), если она доступна."
 
+#, fuzzy
+msgid "Use OpenTV EPG information when it is available."
+msgstr "Использовать информацию EIT EPG (сейчас/далее), если она доступна."
+
 msgid "Use TV remote control"
 msgstr "Использовать пульт ТВ для управления"
 
@@ -13133,10 +13181,6 @@ msgstr "оригинал"
 
 msgid "original language"
 msgstr "язык оригинала"
-
-#, fuzzy
-msgid "oscam webif disabled"
-msgstr "принудительно отключено"
 
 msgid "partial"
 msgstr ""

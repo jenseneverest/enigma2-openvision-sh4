@@ -139,6 +139,9 @@ def getFlashType():
 	else:
 		return _("Normal - Vision image")
 
+def getDVBAPI():
+	return _("Old")
+
 def getVisionVersion():
 	try:
 		return open("/etc/visionversion","r").read().strip()

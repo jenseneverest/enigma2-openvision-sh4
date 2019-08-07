@@ -617,6 +617,18 @@ AC_ARG_WITH(subttxtabnormalptsdiffs,
 
 AC_DEFINE_UNQUOTED(SUBT_TXT_ABNORMAL_PTS_DIFFS, $with_subttxtabnormalptsdiffs,[Configure abnormal pts for subtitle and teletext])
 
+AC_ARG_WITH(olde2api,
+	AS_HELP_STRING([--with-olde2api],[use olde2api, yes or no]),
+	[with_olde2api=$withval],[with_olde2api=no])
+if test "$with_olde2api" = "yes"; then
+	PKG_CHECK_MODULES(OLDE2API, [olde2api])
+	OLDE2API_CFLAGS="-DUSE_OLDE2API"
+fi
+
+if test x"$with_olde2api" != xno ; then
+	AC_DEFINE(HAVE_OLDE2_API, 1,[define add old api of enigma2])
+fi
+
 AC_CHECK_HEADERS([sys/klog.h])
 AC_CHECK_FUNCS([klogctl])
 AC_CHECK_HEADERS([shadow.h])

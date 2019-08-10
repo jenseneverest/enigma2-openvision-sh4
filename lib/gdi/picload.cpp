@@ -3,6 +3,7 @@
 #include <fcntl.h>
 
 #include <lib/base/cfile.h>
+#include <lib/base/wrappers.h>
 #include <lib/gdi/picload.h>
 #include <mmeimage/libmmeimage.h>
 
@@ -12,6 +13,12 @@ extern "C" {
 #include <jpeglib.h>
 #include <gif_lib.h>
 }
+
+#define NANOSVG_ALL_COLOR_KEYWORDS
+#define NANOSVG_IMPLEMENTATION
+#include <nanosvg.h>
+#define NANOSVGRAST_IMPLEMENTATION
+#include <nanosvgrast.h>
 
 extern const uint32_t crc32_table[256];
 
@@ -518,6 +525,74 @@ inline void m_rend_gif_decodecolormap(unsigned char *cmb, unsigned char *rgbb, C
 	}
 }
 
+static void svg_load(Cfilepara* filepara, bool forceRGB = false)
+{
+	NSVGimage *image = nullptr;
+	NSVGrasterizer *rast = nullptr;
+	unsigned char *pic_buffer = nullptr;
+	int w = 0;
+	int h = 0;
+	double xscale, yscale, scale;
+
+	image = nsvgParseFromFile(filepara->file, "px", 96.0f);
+	if (image == nullptr)
+	{
+		return;
+	}
+
+	rast = nsvgCreateRasterizer();
+	if (rast == nullptr)
+	{
+		nsvgDelete(image);
+		return;
+	}
+
+	xscale = ((double) filepara->max_x) / image->width;
+	yscale = ((double) filepara->max_y) / image->height;
+	scale =  xscale > yscale ? yscale : xscale;
+
+	w = image->width*scale;
+	h = image->height*scale;
+
+	pic_buffer = (unsigned char*)malloc(w*h*4);
+	if (pic_buffer == nullptr)
+	{
+		nsvgDeleteRasterizer(rast);
+		nsvgDelete(image);
+		return;
+	}
+
+	eDebug("[ePicLoad] svg_load max %dx%d from %dx%d scale %f new %dx%d", filepara->max_x, filepara->max_y, (int)image->width, (int)image->height, scale, w, h);
+	// Rasterizes SVG image, returns RGBA image (non-premultiplied alpha)
+	nsvgRasterize(rast, image, 0, 0, scale, pic_buffer, w, h, w*4);
+
+	filepara->pic_buffer = pic_buffer;
+	filepara->bits = 32;
+	filepara->ox = w;
+	filepara->oy = h;
+
+	nsvgDeleteRasterizer(rast);
+	nsvgDelete(image);
+
+	if(forceRGB) // convert 32bit RGBA to 24bit RGB
+	{
+		unsigned char *pic_buffer2 = (unsigned char*)malloc(w*h*3); // 24bit RGB
+		if (pic_buffer2 == nullptr)
+		{
+			return;
+		}
+		for (size_t i=0; i<w*h; i++)
+		{
+			pic_buffer2[3*i]   = pic_buffer[4*i];
+			pic_buffer2[3*i+1] = pic_buffer[4*i+1];
+			pic_buffer2[3*i+2] = pic_buffer[4*i+2];
+		}
+		filepara->bits = 24;
+		filepara->pic_buffer = pic_buffer2;
+		free(pic_buffer);
+	}
+}
+
 static void gif_load(Cfilepara* filepara, bool forceRGB = false)
 {
 	unsigned char *pic_buffer = NULL;
@@ -744,6 +819,8 @@ void ePicLoad::decodePic()
 				break;
 		case F_GIF:	gif_load(m_filepara);
 				break;
+		case F_SVG:	svg_load(m_filepara);
+				break;
 	}
 }
 
@@ -865,6 +942,8 @@ void ePicLoad::decodeThumb()
 		case F_BMP:	m_filepara->pic_buffer = bmp_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy);
 				break;
 		case F_GIF:	gif_load(m_filepara, true);
+				break;
+		case F_SVG:	svg_load(m_filepara, true);
 				break;
 		}
 	}
@@ -1443,6 +1522,8 @@ int ePicLoad::getFileType(const char * file)
 	else if (id[0] == 0xff && id[1] == 0xd8 && id[2] == 0xff)			return F_JPEG;
 	else if (id[0] == 'B'  && id[1] == 'M' )					return F_BMP;
 	else if (id[0] == 'G'  && id[1] == 'I'  && id[2] == 'F')			return F_GIF;
+	else if (id[0] == '<'  && id[1] == 's'  && id[2] == 'v' && id[3] == 'g')	return F_SVG;
+	else if (endsWith(file, ".svg"))						return F_SVG;
 	return -1;
 }
 

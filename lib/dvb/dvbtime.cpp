@@ -279,7 +279,7 @@ void eDVBLocalTimeHandler::setUseDVBTime(bool b)
 		if (!b)
 		{
 			time_t now = time(0);
-			if (now < 1072224000) /* 01.01.2004 */
+			if (now < timeOK) /* 01.01.2004 */
 			{
 				eDebug("[eDVBLocalTimeHandler] invalid system time, refuse to disable transponder time sync");
 				return;
@@ -391,34 +391,11 @@ void eDVBLocalTimeHandler::updateTime( time_t tp_time, eDVBChannel *chan, int up
 
 			if (time_difference)
 			{
-				if ((time_difference >= -15) && (time_difference <= 15))
-				{
-					timeval tdelta, tolddelta;
-
-					// Slew small diffs ...
-					// Even good transponders can differ by 0-5 sec, if we would step these
-					// the system clock would permanentely jump around when zapping.
-
-					tdelta.tv_sec = time_difference;
-
-					if(adjtime(&tdelta, &tolddelta) == 0)
-						eDebug("[eDVBLocalTimerHandler] slewing Linux Time by %03d seconds", time_difference);
-					else
-						eDebug("[eDVBLocalTimerHandler] slewing Linux Time by %03d seconds FAILED", time_difference);
-				}
-				else
-				{
-					timeval tnow;
-
-					// ... only step larger diffs
-
-					gettimeofday(&tnow, 0);
-					tnow.tv_sec = rtc_time;
-					settimeofday(&tnow, 0);
-					linuxTime = time(0);
-					localtime_r(&linuxTime, &now);
-					eDebug("[eDVBLocalTimerHandler] stepped Linux Time to %02d:%02d:%02d", now.tm_hour, now.tm_min, now.tm_sec);
-				}
+				eDebug("[eDVBLocalTimerHandler] set Linux Time to RTC Time");
+				timeval tnow;
+				gettimeofday(&tnow, 0);
+				tnow.tv_sec = rtc_time;
+				settimeofday(&tnow, 0);
 			}
 			else if ( !time_difference )
 				eDebug("[eDVBLocalTimerHandler] no change needed");

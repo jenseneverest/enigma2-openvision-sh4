@@ -85,10 +85,10 @@ SystemInfo["HasHDMIpreemphasis"] = fileCheck("/proc/stb/hdmi/preemphasis")
 SystemInfo["HasColorimetry"] = fileCheck("/proc/stb/video/hdmi_colorimetry")
 SystemInfo["HasHdrType"] = fileCheck("/proc/stb/video/hdmi_hdrtype")
 SystemInfo["HasHDMI-CEC"] = HardwareInfo().has_hdmi() and fileExists("/usr/lib/enigma2/python/Plugins/SystemPlugins/HdmiCEC/plugin.pyo") and (fileExists("/dev/cec0") or fileExists("/dev/hdmi_cec") or fileExists("/dev/misc/hdmi_cec0"))
-SystemInfo["HasYPbPr"] = getBoxBrand() in ("edisionargus") or getBoxType() in ("adb_box","atevio7500","fortis_hdbox","hl101","hs7420","hs7429","octagon1008","tf7700","ufs912","ufs913","cuberevo","cuberevo_mini","cuberevo_mini2","cuberevo_2000hd","cuberevo_3000hd")
+SystemInfo["HasYPbPr"] = getBoxBrand() == "edisionargus" or getBoxType() in ("adb_box","atevio7500","fortis_hdbox","hl101","hs7420","hs7429","octagon1008","tf7700","ufs912","ufs913","cuberevo","cuberevo_mini","cuberevo_mini2","cuberevo_2000hd","cuberevo_3000hd")
 SystemInfo["HasScart"] = getBoxType() not in ("hs7110","hs7119")
-SystemInfo["HasSVideo"] = getBoxType() in ("cuberevo")
-SystemInfo["HasComposite"] = getBoxType() not in ("cuberevo_250hd")
+SystemInfo["HasSVideo"] = getBoxType() == "cuberevo"
+SystemInfo["HasComposite"] = getBoxType() != "cuberevo_250hd"
 SystemInfo["HasAutoVolume"] = fileExists("/proc/stb/audio/avl_choices") and fileCheck("/proc/stb/audio/avl")
 SystemInfo["HasAutoVolumeLevel"] = fileExists("/proc/stb/audio/autovolumelevel_choices") and fileCheck("/proc/stb/audio/autovolumelevel")
 SystemInfo["Has3DSurround"] = fileExists("/proc/stb/audio/3d_surround_choices") and fileCheck("/proc/stb/audio/3d_surround")

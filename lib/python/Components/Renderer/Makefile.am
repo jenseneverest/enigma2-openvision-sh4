@@ -5,4 +5,4 @@ install_PYTHON = \
 	FixedLabel.py PositionGauge.py Canvas.py CiModuleControl.py Picon.py Pig.py \
 	FrontpanelLed.py ChannelNumber.py VideoSize.py NextEpgInfo.py \
 	NextEvent.py SingleEpgList.py GaugeRender.py \
-	RunningText.py NextEvents.py Bhclock.py VolumeText.py
+	RunningText.py NextEvents.py Bhclock.py VolumeText.py EmptyEpg.py

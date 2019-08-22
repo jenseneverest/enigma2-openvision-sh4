@@ -119,6 +119,8 @@ struct vfd_ioctl_data
    || defined (ENABLE_CUBEREVO_2000HD) \
    || defined (ENABLE_CUBEREVO_3000HD)
 	#define VFDLENGTH 14
+#elif defined (ENABLE_ADB_BOX)
+	#define VFDLENGTH 15
 #else
 	#define VFDLENGTH 16
 #endif

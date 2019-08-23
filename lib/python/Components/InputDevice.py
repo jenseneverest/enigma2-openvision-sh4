@@ -4,17 +4,11 @@ from fcntl import ioctl
 import os
 import struct
 
-# include/uapi/asm-generic/ioctl.h
-# asm-generic/ioctl.h for HAVE_OLDE2_API
+# asm-generic/ioctl.h
 IOC_NRBITS = 8L
 IOC_TYPEBITS = 8L
-
-if SystemInfo["OLDE2API"]:
-	IOC_SIZEBITS = 13L
-	IOC_DIRBITS = 3L
-else:
-	IOC_SIZEBITS = 14L
-	IOC_DIRBITS = 2L
+IOC_SIZEBITS = 14L
+IOC_DIRBITS = 2L
 
 IOC_NRSHIFT = 0L
 IOC_TYPESHIFT = IOC_NRSHIFT+IOC_NRBITS

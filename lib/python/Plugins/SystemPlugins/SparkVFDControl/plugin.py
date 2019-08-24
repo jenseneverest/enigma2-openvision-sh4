@@ -8,29 +8,24 @@ from Components.ActionMap import ActionMap
 from Components.ConfigList import ConfigList
 from Components.config import config, configfile, ConfigSubsection, getConfigListEntry, ConfigSelection
 from Components.ConfigList import ConfigListScreen
-from enigma import iPlayableService, eServiceCenter, eTimer, eActionMap
+from enigma import iPlayableService, eServiceCenter, eTimer, eActionMap, getBoxType
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.ServiceList import ServiceList
 from Screens.InfoBar import InfoBar
 from time import localtime, time
-from Tools.Directories import fileExists
-from enigma import pNavigation
 import Components.RecordingConfig
 import Screens.Standby
 import NavigationInstance
 from Screens.SessionGlobals import SessionGlobals
 
 config.plugins.VFD_spark = ConfigSubsection()
-config.plugins.VFD_spark.showClock = ConfigSelection(default = "True_Switch", choices = [("NameOff",_("Channel name in standby off")), ("NameOn",_("Channel name in standby clock")), ("False",_("Channel number in standby off")),("True",_("Channel number in standby clock")), ("True_Switch",_("Channel number/clock in standby clock")),("True_All",_("Clock always")),("Off",_("Always off"))])
+config.plugins.VFD_spark.showClock = ConfigSelection(default = "True_Switch", choices = [("NameOff",_("Channelname in Standby off")), ("NameOn",_("Channelname in Standby Clock")), ("False",_("Channelnumber in Standby off")),("True",_("Channelnumber in Standby Clock")), ("True_Switch",_("Channelnumber/Clock in Standby Clock")),("True_All",_("Clock always")),("Off",_("Always off"))])
 config.plugins.VFD_spark.timeMode = ConfigSelection(default = "24h", choices = [("12h"),("24h")])
 config.plugins.VFD_spark.redLed = ConfigSelection(default = "0", choices = [("0",_("Off")),("1",_("Standby only")), ("2",_("Record only"))])
 config.plugins.VFD_spark.greenLed = ConfigSelection(default = "0", choices = [("0",_("Off")),("1",_("Standby only"))])
 
 def vfd_write(text):
-	try:
-		open("/dev/dbox/oled0", "w").write(text)
-	except:
-		open("/dev/vfd", "w").write(text)
+	open("/dev/dbox/oled0", "w").write(text)
 
 class Channelnumber:
 
@@ -403,5 +398,8 @@ def sessionstart(reason, **kwargs):
 		SessionGlobals.__init__ = newSessionGlobals__init__
 
 def Plugins(**kwargs):
-		return [ PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], fnc=sessionstart),
-			PluginDescriptor(name = _("Spark LED Display Setup"), description = _("Change VFD display settings"), where = PluginDescriptor.WHERE_MENU, fnc = main) ]
+		if getBoxType() == "spark":
+			return [ PluginDescriptor(where=[PluginDescriptor.WHERE_AUTOSTART, PluginDescriptor.WHERE_SESSIONSTART], fnc=sessionstart),
+				PluginDescriptor(name="LED Display Setup", description="Change VFD display settings",where = PluginDescriptor.WHERE_MENU, fnc = main) ]
+		else:
+			return []

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-24 21:55+0430\n"
+"POT-Creation-Date: 2019-08-25 21:58+0430\n"
 "PO-Revision-Date: 2019-05-30 12:03+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -1325,6 +1325,9 @@ msgstr "Autofókusz kezdődik..."
 msgid "Auto language selection"
 msgstr "Automatikus nyelvválasztás"
 
+msgid "Auto play blu-ray file"
+msgstr ""
+
 msgid "Auto scart switching"
 msgstr "Automatikus SCART átkapcsolás"
 
@@ -1861,28 +1864,8 @@ msgstr "Csatornalista menü"
 msgid "Channel list type"
 msgstr "Csatornalista típusa"
 
-#, fuzzy
-msgid "Channel name in standby clock"
-msgstr "Csatornaszám és picon"
-
-#, fuzzy
-msgid "Channel name in standby off"
-msgstr "Csatornaszám és picon"
-
 msgid "Channel not in services list"
 msgstr "A csatorna nem szerepel a szolgáltatási listában"
-
-#, fuzzy
-msgid "Channel number in standby clock"
-msgstr "Csatornaszám és picon"
-
-#, fuzzy
-msgid "Channel number in standby off"
-msgstr "Csatornaszám és picon"
-
-#, fuzzy
-msgid "Channel number/clock in standby clock"
-msgstr "Csatornaszám és picon"
 
 msgid "Channel selection"
 msgstr "Csatorna választás"
@@ -1893,14 +1876,34 @@ msgstr "Csatorna:"
 msgid "Channellist menu"
 msgstr "Csatornalista menü"
 
+#, fuzzy
+msgid "Channelname in Standby Clock"
+msgstr "Csatornaszám és picon"
+
+#, fuzzy
+msgid "Channelname in Standby off"
+msgstr "Csatornaszám és picon"
+
 msgid "Channelnumber and picon"
 msgstr "Csatornaszám és picon"
 
 msgid "Channelnumber and servicename"
 msgstr "Csatornaszám és szolgáltatásnév"
 
+#, fuzzy
+msgid "Channelnumber in Standby Clock"
+msgstr "Csatornaszám és picon"
+
+#, fuzzy
+msgid "Channelnumber in Standby off"
+msgstr "Csatornaszám és picon"
+
 msgid "Channelnumber, picon and servicename"
 msgstr "Csatornaszám, picon és szolgáltatásnév"
+
+#, fuzzy
+msgid "Channelnumber/Clock in Standby Clock"
+msgstr "Csatornaszám és picon"
 
 #, fuzzy
 msgid "Channels"
@@ -4628,14 +4631,14 @@ msgstr "Izland"
 msgid "Icons"
 msgstr "Ikonok"
 
-msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
-msgstr "Ha engedélyezi, a könyvjelzők az új hely szerint lesznek frissítve amennyiben áthelyez vagy átmásol egy felvételt."
-
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr "Ha engedélyezi, a kijelző 12 karaktert jelenít meg 8 helyett, de csak latin-1/translit-et."
 
 msgid "If enabled, then there will be displayed icons for new/unseen items too."
 msgstr "Ha engedélyezi, az új (még nem megtekintett) eszközöket ikonokkal is megjelöli."
+
+msgid "If is disabled, then after Copy/Move will not be target directory stored into bookmarks."
+msgstr ""
 
 #
 msgid "If is enabled and movie playback is finished, then after return to movielist will not be automaticaly start service playback."
@@ -9040,10 +9043,6 @@ msgstr "Spanyolország"
 
 msgid "Spanish"
 msgstr "Spanyol"
-
-#, fuzzy
-msgid "Spark LED Display Setup"
-msgstr "Előlapi kijelző"
 
 msgid "Spark7162 select tuner mode"
 msgstr ""

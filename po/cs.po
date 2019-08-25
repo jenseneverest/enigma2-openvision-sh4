@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-24 21:55+0430\n"
+"POT-Creation-Date: 2019-08-25 21:58+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -1510,6 +1510,9 @@ msgstr "Auto fokus zahájen ..."
 msgid "Auto language selection"
 msgstr "Automatický výběr jazyka"
 
+msgid "Auto play blu-ray file"
+msgstr ""
+
 #
 msgid "Auto scart switching"
 msgstr "Automatické přepínání scart"
@@ -2114,29 +2117,9 @@ msgstr "Menu seznamu programů"
 msgid "Channel list type"
 msgstr "Typ seznamu programů"
 
-#, fuzzy
-msgid "Channel name in standby clock"
-msgstr "Číslo kanálu a pikona"
-
-#, fuzzy
-msgid "Channel name in standby off"
-msgstr "Číslo kanálu a pikona"
-
 #
 msgid "Channel not in services list"
 msgstr "Kanál není v seznamu služeb"
-
-#, fuzzy
-msgid "Channel number in standby clock"
-msgstr "Číslo kanálu a pikona"
-
-#, fuzzy
-msgid "Channel number in standby off"
-msgstr "Číslo kanálu a pikona"
-
-#, fuzzy
-msgid "Channel number/clock in standby clock"
-msgstr "Číslo kanálu a pikona"
 
 #
 msgid "Channel selection"
@@ -2150,14 +2133,34 @@ msgstr "Kanál:"
 msgid "Channellist menu"
 msgstr "Menu přehledu programů"
 
+#, fuzzy
+msgid "Channelname in Standby Clock"
+msgstr "Číslo kanálu a pikona"
+
+#, fuzzy
+msgid "Channelname in Standby off"
+msgstr "Číslo kanálu a pikona"
+
 msgid "Channelnumber and picon"
 msgstr "Číslo kanálu a pikona"
 
 msgid "Channelnumber and servicename"
 msgstr "Číslo kanálu a název programu"
 
+#, fuzzy
+msgid "Channelnumber in Standby Clock"
+msgstr "Číslo kanálu a pikona"
+
+#, fuzzy
+msgid "Channelnumber in Standby off"
+msgstr "Číslo kanálu a pikona"
+
 msgid "Channelnumber, picon and servicename"
 msgstr "Číslo kanálu, pikona a název programu"
+
+#, fuzzy
+msgid "Channelnumber/Clock in Standby Clock"
+msgstr "Číslo kanálu a pikona"
 
 #
 msgid "Channels"
@@ -5260,16 +5263,15 @@ msgstr "Island"
 msgid "Icons"
 msgstr "Ikony"
 
-#
-msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
-msgstr "Jestliže je povoleno, funkce Kopírovat/Přemístit budou ukládat cílový adresář do záložek."
-
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr "Jestliže je povoleno, displej zobrazuje 12 znaků místo 8, ale pouze v latin-1/translit."
 
 #
 msgid "If enabled, then there will be displayed icons for new/unseen items too."
 msgstr "Jestliže je povoleno, budou zobrazovány ikony také pro nové/neshlédnuté položky."
+
+msgid "If is disabled, then after Copy/Move will not be target directory stored into bookmarks."
+msgstr ""
 
 #
 msgid "If is enabled and movie playback is finished, then after return to movielist will not be automaticaly start service playback."
@@ -10349,11 +10351,6 @@ msgstr "Španělsko"
 #
 msgid "Spanish"
 msgstr "Španělsky"
-
-#
-#, fuzzy
-msgid "Spark LED Display Setup"
-msgstr "Nastavení displeje"
 
 msgid "Spark7162 select tuner mode"
 msgstr ""

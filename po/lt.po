@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-25 21:58+0430\n"
-"PO-Revision-Date: 2019-08-10 17:53+0300\n"
+"POT-Creation-Date: 2019-08-27 21:24+0430\n"
+"PO-Revision-Date: 2019-08-25 19:00+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -1021,6 +1021,9 @@ msgstr "Leisti subtitrus turintiems klausos sutrikimų"
 msgid "Allow unsupported modes"
 msgstr "Leisti nepalaikomus režimus"
 
+msgid "Allows you to enable the twisted log. It contains very detailed information of everything the twisted does."
+msgstr ""
+
 msgid "Allows you to set a schedule to import the EPG and channels list. The EPG and channels list will always be imported on reboot or GUI restart."
 msgstr "Leidžia nustatyti EPG ir kanalų sąrašo importo tvarkaraštį. EPG ir kanalų sąrašas visada bus importuojami sistemos/grafinės aplinkos paleidimo iš naujo metu."
 
@@ -1335,7 +1338,7 @@ msgid "Auto language selection"
 msgstr "Automatinis kalbos pasirinkimas"
 
 msgid "Auto play blu-ray file"
-msgstr ""
+msgstr "Bluray failo automatinis paleidimas"
 
 msgid "Auto scart switching"
 msgstr "Automatinis SCART perjungimas"
@@ -1508,9 +1511,8 @@ msgstr "Butanas"
 msgid "Big PiP"
 msgstr "Didelis PiP"
 
-#, fuzzy
 msgid "Bitrate"
-msgstr "Bitų sparta:"
+msgstr "Sparta bitais"
 
 msgid "Bitrate:"
 msgstr "Bitų sparta:"
@@ -2733,9 +2735,8 @@ msgstr "DVB CI delsa"
 msgid "DVB Subtitles PID & lang"
 msgstr "DVB subtitrai PID ir kalba"
 
-#, fuzzy
 msgid "DVB and Pango subtitle position"
-msgstr "Subtitrų padėtis"
+msgstr "DVB ir Pango subtitrų padėtis"
 
 msgid "DVB driver version: "
 msgstr "DVB tvarkyklės versija: "
@@ -3506,6 +3507,10 @@ msgstr "Įjungti laikmačio konfliktų aptikimą"
 msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
 msgstr "Įgalinti rodyti visas teisinga/klaidinga, taip/ne, įjungti/išjungti nustatymo parinktis kaip grafinį jungiklį."
 
+#, fuzzy
+msgid "Enable twisted log"
+msgstr "Įjungti Netmed EPG"
+
 msgid "Enable volume control with arrow buttons"
 msgstr "Įjungti garso reguliavimą rodyklių mygtukais"
 
@@ -3909,6 +3914,10 @@ msgstr "FEC"
 msgid "FEC:"
 msgstr "FEC:"
 
+#, fuzzy
+msgid "FFmpeg version: "
+msgstr "Enigmos versija: "
+
 msgid "FTA"
 msgstr "NEKODUOTI"
 
@@ -3993,9 +4002,8 @@ msgstr "Aušintuvo darbas"
 msgid "Fan speed"
 msgstr "Aušintuvo greitis"
 
-#, fuzzy
 msgid "Fan speed control"
-msgstr "Aušintuvo greitis"
+msgstr "Ventiliatoriaus greičio valdymas"
 
 msgid "Faroe Islands"
 msgstr "Farerų salos"
@@ -4105,9 +4113,8 @@ msgstr "Formatas"
 msgid "Forward volume keys"
 msgstr "Reguliuoti TV garsumą imtuvo pulteliu"
 
-#, fuzzy
 msgid "Frame rate"
-msgstr "Atnaujinimo norma"
+msgstr "Kadrų dažnis"
 
 msgid "Frame size in full view"
 msgstr "Kadro dydis viso ekrano režimu"
@@ -4381,9 +4388,8 @@ msgstr "HDMI spalvų erdvė"
 msgid "HDMI HDR Type"
 msgstr "HDMI HDR tipas"
 
-#, fuzzy
 msgid "HDMI recording"
-msgstr "Įrašas"
+msgstr "HDMI įrašymas"
 
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC veikiantys šaltiniai"
@@ -4442,9 +4448,8 @@ msgstr "Herdo ir Makdonaldo salos"
 msgid "Hebrew"
 msgstr "Hebrajų"
 
-#, fuzzy
 msgid "Height"
-msgstr "aukštis"
+msgstr "Aukštis"
 
 msgid "Helps setting up your antenna"
 msgstr "Padės jums suderinti anteną"
@@ -4701,7 +4706,7 @@ msgid "Import remote receiver URL"
 msgstr "Importuoti nuotolinio imtuvo URL"
 
 msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
+msgstr "Daugeliu atvejų tai turėtų būti nustatyta 'Ne'. Įjunkite tik jei turite labai konkretų poreikį."
 
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Pradėjus rašyti pagal pasirinktą laikmatį, TV bus perjungtas į įrašomą kanalą!\n"
@@ -4815,9 +4820,8 @@ msgstr "Įvesties įrenginio nustatymas"
 msgid "Input devices"
 msgstr "Įvesties įrenginiai"
 
-#, fuzzy
 msgid "Input scroll position"
-msgstr "Į poziciją"
+msgstr "Įveskite slinkties padėtį"
 
 msgid "Install"
 msgstr "Įdiegti"
@@ -4864,9 +4868,8 @@ msgstr "Momentinis įrašymas..."
 msgid "Interface: "
 msgstr "Sąsaja: "
 
-#, fuzzy
 msgid "Interlaced"
-msgstr "Sąsaja: "
+msgstr "Dvieilio pynimo"
 
 msgid "Internal"
 msgstr "Vidinis"
@@ -6035,9 +6038,8 @@ msgstr "Normalus režimas"
 msgid "Normal running frequency"
 msgstr ""
 
-#, fuzzy
 msgid "Normal speed"
-msgstr "Normalus režimas"
+msgstr "Normalus greitis"
 
 msgid "North"
 msgstr "Šiaurė"
@@ -8362,9 +8364,8 @@ msgstr "Nustatykite laiką importui atlikti."
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Nustatykite pasirinkto kanalo progreso indikacijos tipą ekrane."
 
-#, fuzzy
 msgid "Set the vertical position of subtitles, measured from the bottom of the screen."
-msgstr "Nustatykite vertikalią poziciją subtitruose, matuojant nuo ekrano apačios."
+msgstr "Nustatykite vertikalią subtitrų padėtį, matuojant nuo ekrano apačios."
 
 msgid "Set time window to 1 hour"
 msgstr "Nustatyti laiko langą 1 valandai"
@@ -9089,9 +9090,8 @@ msgstr "Į budėjimo režimą po "
 msgid "Standby saver frequency"
 msgstr "Po šio įvykio pereiti į budėjimo režimą"
 
-#, fuzzy
 msgid "Standby speed"
-msgstr "Aušintuvo greitis"
+msgstr "Budėjimo greitis"
 
 msgid "Start"
 msgstr "Pradėti"
@@ -9454,7 +9454,7 @@ msgstr "T2MI RAW režimas"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "Adga, Pasvalys, Lietuva\n"
-"2019-08-10 versija"
+"2019-08-25 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -9556,12 +9556,11 @@ msgstr "PIN kodas sėkmingai išsaugotas."
 msgid "The PIN codes you entered are different."
 msgstr "Jūsų įrašyti PIN kodai yra skirtingi."
 
-#, fuzzy
 msgid "The aspect ratio of the recording."
-msgstr "Nustatykite ekrano kraštinių proporcijas."
+msgstr "Įrašo vaizdo santykis."
 
 msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
+msgstr "Vaizdo kodavimo duomenų srautas. Didesnė reikšmė pagerina kokybę ir padidina failo dydį."
 
 #, python-format
 msgid ""
@@ -9583,10 +9582,10 @@ msgid "The following files were found..."
 msgstr "Kiti failai buvo surasti..."
 
 msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
+msgstr "Kadrų įrašymo dažnis. Geriausia, kad tai atitiktų pradinio kadravimo dažnį arba būtų sveikasis skaičius. Jei kyla abejonių, nustatykite 60, kuris turėtų dirbti su daugeliu šaltinių."
 
 msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
+msgstr "Vaizdo aukštis. Įvestis bus mažinama, kad atitiktų šią reikšmę."
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -9663,10 +9662,10 @@ msgstr ""
 "Įdiekite jį."
 
 msgid "The speed of the fan when the %s %s is in normal use."
-msgstr ""
+msgstr "Ventiliatoriaus greitis, kai normaliai naudojamas %s %s."
 
 msgid "The speed of the fan when the %s %s is in standby mode."
-msgstr ""
+msgstr "Ventiliatoriaus greitis, kai %s %s yra budėjimo režime."
 
 #, python-format
 msgid "The status of the current image could not be checked because %s can not be reached."
@@ -9692,7 +9691,7 @@ msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Jūsų imtuvo vartotojo sąsaja paleidžiama iš naujo derinimo režimu"
 
 msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
+msgstr "Vaizdo plotis. Įvestis bus mažinama, kad atitiktų šią reikšmę."
 
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -10780,9 +10779,9 @@ msgstr "Virtualus klaviatūros tekstas:"
 msgid "Virtual keyboard"
 msgstr "Virtuali klaviatūra"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Vol: %s"
-msgstr "Vaizdas: %s fps"
+msgstr "Gars: %s"
 
 msgid "Voltage mode"
 msgstr "Įtampos režimas"
@@ -11155,14 +11154,13 @@ msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stre
 msgstr "Kai turinys yra kraštinių santykis 4:3, pasirinkti, ar didinti mastelį/ištempti vaizdą."
 
 msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
-msgstr ""
+msgstr "Kai įvesties žymeklis pasiekia šį tašką (pločio procentas iš abiejų pusių), slinkite tekstu iki žymeklio."
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Kur saugoti laikinus laiko poslinkio įrašus?"
 
-#, fuzzy
 msgid "Width"
-msgstr "plotis"
+msgstr "Plotis"
 
 msgid "Wireless LAN"
 msgstr "Belaidis vietinis tinklas"

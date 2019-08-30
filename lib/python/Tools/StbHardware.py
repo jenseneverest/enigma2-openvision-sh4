@@ -8,7 +8,7 @@ from Tools.Directories import fileExists
 def getBoxProc():
 	procmodel = "unknown"
 	try:
-		elif fileExists("/proc/stb/info/boxtype"):
+		if fileExists("/proc/stb/info/boxtype"):
 			procmodel = open("/proc/stb/info/boxtype", "r").readline().strip().lower()
 		elif fileExists("/proc/boxtype"):
 			procmodel = open("/proc/boxtype", "r").readline().strip().lower()

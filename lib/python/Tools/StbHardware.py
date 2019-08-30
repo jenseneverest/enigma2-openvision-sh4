@@ -3,6 +3,21 @@ from fcntl import ioctl
 from struct import pack, unpack
 from time import time, localtime, gmtime
 from Components.config import config
+from Tools.Directories import fileExists
+
+def getBoxProc():
+	procmodel = "unknown"
+	try:
+		elif fileExists("/proc/stb/info/boxtype"):
+			procmodel = open("/proc/stb/info/boxtype", "r").readline().strip().lower()
+		elif fileExists("/proc/boxtype"):
+			procmodel = open("/proc/boxtype", "r").readline().strip().lower()
+
+		else:
+			procmodel = open("/proc/stb/info/model", "r").readline().strip().lower()
+	except IOError:
+		print "getBoxProc failed!"
+	return procmodel
 
 def getFPVersion():
 	ret = None

@@ -298,27 +298,27 @@ class InputDeviceSetup(Screen, ConfigListScreen):
 class RemoteControlType(Screen, ConfigListScreen):
 	rcList = [
 			("0", _("Default")),
-			("4", _("DMM normal")),
-			("6", _("DMM advanced")),
-			("7", _("atevio7500")),
-			("8", _("cuberevo")),
-			("9", _("hl101")),
-			("10", _("hs7110")),
-			("11", _("octagon1008")),
-			("12", _("spark")),
-			("13", _("tf7700")),
-			("14", _("ufs912"))
+			("1", _("atevio7500")),
+			("2", _("cuberevo")),
+			("3", _("hl101")),
+			("4", _("hs7110")),
+			("5", _("octagon1008")),
+			("6", _("spark")),
+			("7", _("tf7700")),
+			("8", _("ufs912")),
+			("9", _("adb"))
 		]
 
 	defaultRcList = [
-			("atevio7500", 7),
-			("cuberevo", 8),
-			("hl101", 9),
-			("hs7110", 10),
-			("octagon1008", 11),
-			("spark", 12),
-			("tf7700", 13),
-			("ufs912", 14)
+			("atevio7500", 1),
+			("cuberevo", 2),
+			("hl101", 3),
+			("hs7110", 4),
+			("octagon1008", 5),
+			("spark", 6),
+			("tf7700", 7),
+			("ufs912", 8),
+			("adb", 9)
 		]
 
 	def __init__(self, session):

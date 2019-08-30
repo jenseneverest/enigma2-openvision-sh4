@@ -15,7 +15,6 @@ class Rc:
 		self["arrowup2"] = MovingPixmap()
 
 		config.misc.rcused = ConfigInteger(default = 1)
-		self.isDefaultRc = rc_model.rcIsDefault()
 		self.rcheight = 500
 		self.rcheighthalf = 250
 
@@ -28,16 +27,10 @@ class Rc:
 		self.onShown.append(self.initRc)
 
 	def initRc(self):
-		if self.isDefaultRc:
-			self["rc"].setPixmapNum(config.misc.rcused.value)
-		else:
-			self["rc"].setPixmapNum(0)
+		self["rc"].setPixmapNum(0)
 
 	def readPositions(self):
-		if self.isDefaultRc:
-			target = resolveFilename(SCOPE_SKIN, "rcpositions.xml")
-		else:
-			target = rc_model.getRcPositions()
+		target = rc_model.getRcPositions()
 		tree = ElementTree(file = target)
 		rcs = tree.getroot()
 		self.rcs = {}
@@ -63,10 +56,7 @@ class Rc:
 		self["rc"].show()
 
 	def selectKey(self, key):
-		if self.isDefaultRc:
-			rc = self.rcs[config.misc.rcused.value]
-		else:
-			rc = self.rcs[2]
+		rc = self.rcs[2]
 		if key in rc:
 			rcpos = self["rc"].getPosition()
 			pos = rc[key]

@@ -2,6 +2,6 @@ installdir = $(pkgdatadir)/rc_models
 
 dist_install_DATA = \
 	rc_models.cfg \
-	atevio7500.png cuberevo.png hl101.png hs7110.png octagon1008.png spark.png tf7700.png ufs912.png \
-	atevio7500.xml cuberevo.xml hl101.xml hs7110.xml octagon1008.xml spark.xml tf7700.xml ufs912.xml \
-	adb.png adb.xml
+	adb.png adb.xml atevio7500.png atevio7500.xml cuberevo_uni.png cuberevo_uni.xml fs9000.png fs9000.xml \
+	hl101.png hl101.xml hs7110.png hs7110.xml hs9510.png hs9510.xml spark.png spark.xml \
+	tf7700.png tf7700.xml ufs912.png ufs912.xml vitamin.png vitamin.xml   

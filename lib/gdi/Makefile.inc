@@ -45,11 +45,9 @@ gdiinclude_HEADERS = \
 	gdi/region.h
 
 if HAVE_LIBSDL
-gdi_libenigma_gdi_a_SOURCES += \
-	gdi/sdl.cpp \
-	gdi/sdl.h
+gdi_libenigma_gdi_a_SOURCES += gdi/sdl.cpp
+gdiinclude_HEADERS += gdi/sdl.h
 else
-gdi_libenigma_gdi_a_SOURCES += \
-	gdi/gfbdc.cpp \
-	gdi/gfbdc.h
+gdi_libenigma_gdi_a_SOURCES += gdi/gfbdc.cpp
+gdiinclude_HEADERS += gdi/gfbdc.h
 endif

@@ -18,7 +18,6 @@ dvb_ci_libenigma_dvb_ci_a_SOURCES = \
 	dvb_ci/descrambler.cpp \
 	dvb_ci/res_content_ctrl.cpp
 
-
 dvbciincludedir = $(pkgincludedir)/lib/dvb_ci
 dvbciinclude_HEADERS = \
 	dvb_ci/dvbci.h \

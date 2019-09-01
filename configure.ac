@@ -573,6 +573,15 @@ AC_ARG_WITH(subttxtabnormalptsdiffs,
 )
 AC_DEFINE_UNQUOTED(SUBT_TXT_ABNORMAL_PTS_DIFFS, $with_subttxtabnormalptsdiffs,[Configure abnormal pts for subtitle and teletext])
 
+AC_ARG_WITH(oever,
+	[  --with-oever=NAME oe name [[7.2,...]]],
+	[OE_VER="$withval"],[OE_VER=""])
+AC_SUBST(OE_VER)
+AC_DEFINE_UNQUOTED(OE_VER,"$OE_VER",[oe name])
+if test `echo "$OE_VER" | cut -b 1-2` == "9."; then
+	AC_DEFINE(HAVE_NEWOE, 1,[enable new OpenEmbedded specific stuff])
+fi
+
 AC_CHECK_HEADERS([sys/klog.h])
 AC_CHECK_FUNCS([klogctl])
 AC_CHECK_HEADERS([shadow.h])

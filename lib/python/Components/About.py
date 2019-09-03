@@ -148,7 +148,7 @@ def getFlashType():
 		return _("Normal - Vision image")
 
 def getDVBAPI():
-	return _("Old")
+	return _("Old - SH4")
 
 def getVisionVersion():
 	try:

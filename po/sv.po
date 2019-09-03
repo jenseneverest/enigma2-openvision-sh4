@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 20:19+0430\n"
+"POT-Creation-Date: 2019-09-03 18:30+0430\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -205,10 +205,6 @@ msgid "%.2f GB"
 msgstr ""
 
 #, python-format
-msgid "%02d:%02d"
-msgstr ""
-
-#, python-format
 msgid "%03d MB"
 msgstr ""
 
@@ -367,10 +363,6 @@ msgstr[1] "%d trådlösa nätverk hittade!"
 
 msgid "%d-%m"
 msgstr "%d-%m"
-
-#, python-format
-msgid "%d.%02d. %02d:%02d"
-msgstr ""
 
 #, python-format
 msgid "%d.%03d GB"
@@ -1001,6 +993,9 @@ msgstr "Justera 3D-inställningar"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Justera färginställningarna så att alla färgnivåer är urskiljningsbara, men de ska vara så färgfulla som möjligt. När du är nöjd med resultatet, tryck OK för att stänga videoinställningarna eller tryck på nummerknapp för att välja annan testbild."
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr "Avancerad"
 
@@ -1456,6 +1451,11 @@ msgstr "Författarläge"
 msgid "Auto"
 msgstr "Auto"
 
+#
+#, fuzzy
+msgid "Auto Detect"
+msgstr "håller på att starta"
+
 msgid "Auto Diseqc"
 msgstr ""
 
@@ -1552,6 +1552,10 @@ msgstr ""
 #
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 #
 msgid "BER"
@@ -2168,7 +2172,15 @@ msgstr ""
 "Kontrollerar tuner %s\n"
 "DiSEqC port %s för %s"
 
+#, fuzzy
+msgid "Children"
+msgstr "barn / ungdom"
+
 msgid "Children/Youth"
+msgstr "barn / ungdom"
+
+#, fuzzy
+msgid "Childrens"
 msgstr "barn / ungdom"
 
 msgid "Chile"
@@ -2185,6 +2197,12 @@ msgstr ""
 
 msgid "Choose Tuner"
 msgstr "Välj tuner"
+
+msgid "Choose a country scheme for decoding genre information in EPG events."
+msgstr ""
+
+msgid "Choose a country scheme for decoding rating information in EPG events."
+msgstr ""
 
 msgid "Choose bouquet"
 msgstr "Välj kanallista"
@@ -2321,6 +2339,10 @@ msgstr "Färgformat"
 
 msgid "Combo"
 msgstr ""
+
+#, fuzzy
+msgid "Comedy"
+msgstr "komedi"
 
 #
 msgid "Command execution..."
@@ -2872,6 +2894,13 @@ msgstr "Kunde inte spela in på grund av ogiltig kanal %s"
 msgid "Country"
 msgstr "Montera"
 
+#, fuzzy
+msgid "Country for EPG event genre information"
+msgstr "Information om mjukvaruhanterare"
+
+msgid "Country for EPG event rating information"
+msgstr ""
+
 msgid "Cover dashed flickering line for this service"
 msgstr "Täck flimrande linje för denna kanal"
 
@@ -2930,6 +2959,10 @@ msgstr ""
 
 msgid "Curacao"
 msgstr ""
+
+#, fuzzy
+msgid "Current Affairs"
+msgstr "Nyheter / aktuella händelser"
 
 msgid "Current CEC address"
 msgstr "Nuvarande CEC adress"
@@ -3640,6 +3673,10 @@ msgstr "Vill du uppdatera din mottagare?"
 msgid "Do you want to upgrade the package:\n"
 msgstr "Vill du uppgradera paketet :\n"
 
+#, fuzzy
+msgid "Documentary"
+msgstr "dockumentär"
+
 msgid "Dolby"
 msgstr ""
 
@@ -3702,6 +3739,10 @@ msgstr "Laddar ner"
 #
 msgid "Downloading plugin information. Please wait..."
 msgstr "Hämtar plugininformation. Var vänlig vänta..."
+
+#, fuzzy
+msgid "Drama"
+msgstr "Film / Drama"
 
 #, fuzzy
 msgid "Drop unconfigured satellites"
@@ -3821,7 +3862,13 @@ msgstr "Ändra titel"
 msgid "Edit upgrade source url."
 msgstr "Ändra uppgraderingskällans url."
 
-msgid "Education/Science/..."
+#
+#, fuzzy
+msgid "Education/Information"
+msgstr "Information"
+
+#, fuzzy
+msgid "Education/Science/Factual"
 msgstr "Utbildning / Vetenskap / ..."
 
 msgid "Egypt"
@@ -4090,6 +4137,11 @@ msgstr ""
 
 msgid "Enter your low band local oscillator frequency. For more information consult the spec sheet of your LNB."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Entertainment"
+msgstr "Gå till huvudmeny..."
 
 msgid "Equal to"
 msgstr "Lika med"
@@ -4760,6 +4812,9 @@ msgstr ""
 msgid "Gateway"
 msgstr "Gateway"
 
+msgid "General"
+msgstr ""
+
 #
 msgid "General AC3 delay"
 msgstr "Generell AC3 fördröjning"
@@ -4767,6 +4822,9 @@ msgstr "Generell AC3 fördröjning"
 #
 msgid "General PCM delay"
 msgstr "Generell PCM fördröjning"
+
+msgid "Generic"
+msgstr ""
 
 #
 msgid "Genre"
@@ -5002,6 +5060,10 @@ msgstr "Hårddisk"
 
 msgid "Harddisk Setup"
 msgstr "Hårddiskinställningar"
+
+#, fuzzy
+msgid "Hardware serial: "
+msgstr "Hårdvara :"
 
 msgid "Hardware: "
 msgstr "Hårdvara :"
@@ -5370,6 +5432,11 @@ msgstr "Infobalk frontend datakälla"
 #
 msgid "Information"
 msgstr "Information"
+
+#
+#, fuzzy
+msgid "Infotainment"
+msgstr "Infobalk timeout"
 
 #
 msgid "Init"
@@ -5771,6 +5838,10 @@ msgstr "Föregående hastighet"
 msgid "Last upgrade: "
 msgstr "Senaste uppgradering :"
 
+msgctxt "third event: 'third' event label"
+msgid "Later"
+msgstr ""
+
 msgid "Latest Commits"
 msgstr "Senaste commits"
 
@@ -6110,6 +6181,12 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Mauritania"
@@ -6367,6 +6444,10 @@ msgstr "Flyttad till position vid index"
 msgid "Movement"
 msgstr "Rörelse"
 
+#, fuzzy
+msgid "Movie"
+msgstr "Flyttar"
+
 msgid "Movie list configuration"
 msgstr "Konfiguration av filmlista"
 
@@ -6441,6 +6522,9 @@ msgstr "Alla Multisat val"
 #, fuzzy
 msgid "Multistream"
 msgstr "Multisat"
+
+msgid "Music"
+msgstr ""
 
 msgid "Music/Ballet/Dance"
 msgstr "Musik / Balett / Dans"
@@ -6613,7 +6697,11 @@ msgstr ""
 msgid "New Zealand"
 msgstr ""
 
-msgid "News Current Affairs"
+msgid "News"
+msgstr ""
+
+#, fuzzy
+msgid "News/Current Affairs"
 msgstr "Nyheter / aktuella händelser"
 
 msgctxt "button label, 'next screen'"
@@ -6868,6 +6956,10 @@ msgstr "Norska"
 msgid "Norwegian"
 msgstr "Norska"
 
+#, fuzzy
+msgid "Not Classified"
+msgstr "Ej associerad"
+
 msgid "Not Defined"
 msgstr "Inte definerad"
 
@@ -6887,6 +6979,10 @@ msgstr "Ej associerad"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Inte tillräckligt med diskutrymme. Vänligen frigör diskutrymme och försök igen. (%d MB krävs, %d MB tillgängligt)"
+
+#, fuzzy
+msgid "Not running"
+msgstr "Timeout för motorkörning"
 
 msgid "Not tested:"
 msgstr "Inte testad :"
@@ -7219,6 +7315,9 @@ msgstr ""
 msgid "Parent directory"
 msgstr "Föräldrabibliotek"
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 #
 msgid "Parental control"
 msgstr "Föräldrakontroll"
@@ -7252,6 +7351,11 @@ msgstr "Pausa uppspelning"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "Pausa / Fortsätt uppspelning"
+
+#
+#, fuzzy
+msgid "Pausing"
+msgstr "Paus"
 
 msgid "Percentage left"
 msgstr "Procent Vänster"
@@ -7831,6 +7935,9 @@ msgstr "Föredragen tuner för inspelningar"
 msgid "Preparing... Please wait"
 msgstr "Förbereder... Vänligen vänta"
 
+msgid "Preschool"
+msgstr ""
+
 msgid "Press '0' to toggle PiP mode"
 msgstr "Tryck '0' för att växla BiB läge"
 
@@ -8399,6 +8506,9 @@ msgstr "Läser om partitionstabellen"
 msgid "Reserved"
 msgstr "Reserverad"
 
+msgid "Reserved for future use"
+msgstr ""
+
 #
 msgid "Reset"
 msgstr "Nollställ"
@@ -8491,6 +8601,9 @@ msgstr "Återskapa systeminställningar"
 #
 msgid "Restoring..."
 msgstr "Återställer..."
+
+msgid "Restricted 18+"
+msgstr ""
 
 #
 msgid "Resume from last position"
@@ -9442,6 +9555,10 @@ msgstr ""
 "Kanal inte funnen!\n"
 "(SID inte funnen i PAT)"
 
+#, fuzzy
+msgid "Service off-air"
+msgstr "Alla kanaloperatörer"
+
 msgid "Service reference"
 msgstr "Kanalreferens"
 
@@ -9663,9 +9780,6 @@ msgstr "Visa EPG..."
 msgid "Show Ethernet activity"
 msgstr "visa alternativ"
 
-msgid "Show Games show"
-msgstr "Visa Spel show"
-
 msgid "Show InfoBar"
 msgstr "Visa infobalk"
 
@@ -9730,6 +9844,10 @@ msgstr "Visa detaljerad programinfo"
 #
 msgid "Show event details"
 msgstr "Visa programdetaljer"
+
+#, fuzzy
+msgid "Show event genre information"
+msgstr "Information om mjukvaruhanterare"
 
 #
 msgid "Show event-progress in channel selection"
@@ -9936,6 +10054,10 @@ msgstr "Visa varning innan inställning av 'Ignorera konflikt'"
 
 msgid "Show warning when timeshift is stopped"
 msgstr "Visa varning när timeshift avslutas"
+
+#, fuzzy
+msgid "Show/Games show"
+msgstr "Visa Spel show"
 
 msgid "Show/hide window"
 msgstr "Visa / Dölj fönster"
@@ -10274,6 +10396,10 @@ msgid "SparkUnionTunerType config"
 msgstr ""
 
 #, fuzzy
+msgid "Special"
+msgstr "speciella evenemang"
+
+#, fuzzy
 msgid "Special 1"
 msgstr "speciella evenemang"
 
@@ -10323,6 +10449,10 @@ msgstr "Delat förvisningsläge"
 
 msgid "Splitscreen"
 msgstr "Delad skärm"
+
+#, fuzzy
+msgid "Sport"
+msgstr "Sport"
 
 msgid "Sports"
 msgstr "Sport"
@@ -10436,6 +10566,10 @@ msgstr "Börja med listskärmen"
 #
 msgid "Starting on"
 msgstr "Startar på"
+
+#, fuzzy
+msgid "Starts in a few seconds"
+msgstr "Starta avkodning offline"
 
 msgid "Startup the set top box in standby"
 msgstr "Starta upp mottagaren i viloläge"
@@ -11162,6 +11296,10 @@ msgstr "Detta val tillåter dig att visa menyvägar."
 
 #, fuzzy
 msgid "This option allows you to boost the green tones in the picture."
+msgstr "Detta val tillåter dig att stänga av displayen."
+
+#, fuzzy
+msgid "This option allows you to choose whether or not to display genre information for the event."
 msgstr "Detta val tillåter dig att stänga av displayen."
 
 #, fuzzy
@@ -13278,6 +13416,10 @@ msgstr "och välj föregående kanal"
 msgid "are you sure to cancel all changes"
 msgstr "är du säker på att avbryta alla ändringar"
 
+#, fuzzy
+msgid "arts/culture (general)"
+msgstr "konst / kultur (utan musik, allmänt)"
+
 msgid "arts/culture (without music, general)"
 msgstr "konst / kultur (utan musik, allmänt)"
 
@@ -13314,8 +13456,8 @@ msgid "ballet"
 msgstr "balett"
 
 #, python-format
-msgid "bc%s"
-msgstr "bc%s"
+msgid "bc%d"
+msgstr ""
 
 #
 msgid "better"
@@ -13391,7 +13533,12 @@ msgstr "Kanalnummer och kanalnamn"
 msgid "chapters"
 msgstr "kapitel"
 
-msgid "childrens's/youth program (general)"
+#, fuzzy
+msgid "children's/youth program (general)"
+msgstr "barn / ungdomsprogram (allmänt)"
+
+#, fuzzy
+msgid "childrens (general)"
 msgstr "barn / ungdomsprogram (allmänt)"
 
 #
@@ -13407,6 +13554,10 @@ msgstr "Ta bort överskanning / letterbox kanter"
 
 msgid "comedy"
 msgstr "komedi"
+
+#, fuzzy
+msgid "comedy (general)"
+msgstr "film / drama (allmänt)"
 
 #
 msgid "config menu"
@@ -13441,8 +13592,12 @@ msgstr "kopiera till favoritlista"
 msgid "create directory"
 msgstr "skapa bibliotek"
 
-msgid "cuberevo"
+msgid "cuberevo_uni"
 msgstr ""
+
+#, fuzzy
+msgid "current affairs (general)"
+msgstr "nyheter / aktuella frågor (allmänt)"
 
 #
 msgid "daily"
@@ -13505,12 +13660,20 @@ msgstr "gör inget"
 msgid "documentary"
 msgstr "dockumentär"
 
+#, fuzzy
+msgid "documentary (general)"
+msgstr "dockumentär"
+
 msgid "don't descramble, record ecm"
 msgstr "avkoda inte, spela in ecm"
 
 #
 msgid "done!"
 msgstr "klar!"
+
+#, fuzzy
+msgid "drama (general)"
+msgstr "film / drama (allmänt)"
 
 msgid "east"
 msgstr "öst"
@@ -13521,6 +13684,10 @@ msgstr "ekonomi / social rådgivning"
 #
 msgid "edit alternatives"
 msgstr "ändra alternativ"
+
+#, fuzzy
+msgid "education/information (general)"
+msgstr "utbildning / forskning / faktaämnen (allmänt)"
 
 msgid "education/science/factual topics (general)"
 msgstr "utbildning / forskning / faktaämnen (allmänt)"
@@ -13575,6 +13742,10 @@ msgid "entertainment (10-16 year old)"
 msgstr "underhållning (10-16 år)"
 
 msgid "entertainment (6-14 year old)"
+msgstr "underhållning (6-14 år)"
+
+#, fuzzy
+msgid "entertainment (general)"
 msgstr "underhållning (6-14 år)"
 
 msgid "epg cache backup"
@@ -13677,6 +13848,9 @@ msgstr "fri"
 msgid "from"
 msgstr "från"
 
+msgid "fs9000"
+msgstr ""
+
 msgid "fs9000VFD display"
 msgstr ""
 
@@ -13752,6 +13926,9 @@ msgstr ""
 msgid "hs8200VFD-Icons"
 msgstr ""
 
+msgid "hs9510"
+msgstr ""
+
 msgid "hs9510VFD display"
 msgstr ""
 
@@ -13774,6 +13951,10 @@ msgstr "Inga nya plugins hittade"
 
 msgid "information/education/school program"
 msgstr "information / utbildning / skolprogram"
+
+#, fuzzy
+msgid "infotainment (general)"
+msgstr "sport (allmänt)"
 
 #
 msgid "init module"
@@ -13921,6 +14102,10 @@ msgstr "flytta upp till första posten"
 msgid "move up to previous entry"
 msgstr "flytta upp till föregående post"
 
+#, fuzzy
+msgid "movie (general)"
+msgstr "film / drama (allmänt)"
+
 msgid "movie/drama (general)"
 msgstr "film / drama (allmänt)"
 
@@ -13930,6 +14115,10 @@ msgstr "multi"
 #
 msgid "multinorm"
 msgstr "multinorm"
+
+#, fuzzy
+msgid "music (general)"
+msgstr "sport (allmänt)"
 
 msgid "music/ballet/dance (general)"
 msgstr "musik / balett / dans (allmänt)"
@@ -13953,6 +14142,10 @@ msgstr "aldrig"
 
 msgid "new media"
 msgstr "nya medier"
+
+#, fuzzy
+msgid "news (general)"
+msgstr "sport (allmänt)"
 
 msgid "news magazine"
 msgstr "nyhetsmagasin"
@@ -14003,10 +14196,6 @@ msgstr "ej konfigurerad"
 msgid "not locked"
 msgstr "inte låst"
 
-#, fuzzy
-msgid "not running"
-msgstr "Timeout för motorkörning"
-
 msgid "not supported"
 msgstr "stöds ej"
 
@@ -14024,9 +14213,6 @@ msgstr "Gör inget"
 #
 msgid "nothing connected"
 msgstr "inget anslutet"
-
-msgid "octagon1008"
-msgstr ""
 
 #
 msgid "of a DUAL layer medium used."
@@ -14084,9 +14270,6 @@ msgstr ""
 #
 msgid "pass"
 msgstr "klart"
-
-msgid "pausing"
-msgstr ""
 
 msgid "performing arts"
 msgstr "scenkonst"
@@ -14200,9 +14383,6 @@ msgstr "upprepa spellista"
 msgid "repeated"
 msgstr "repeterande"
 
-msgid "reserved for future use"
-msgstr ""
-
 msgid "restore deleted userbouquets"
 msgstr "återställ borttagna favoritlistor"
 
@@ -14228,10 +14408,6 @@ msgstr "rock / pop"
 
 msgid "romance"
 msgstr "romantik"
-
-#, fuzzy
-msgid "running"
-msgstr "Varning"
 
 msgid "save"
 msgstr ""
@@ -14284,10 +14460,6 @@ msgstr "seriös / klassisk / religiös / historisk film / drama"
 
 msgid "service is in bouquet parental protection"
 msgstr "kanalen är i föräldraskyddad i kanallistan"
-
-#, fuzzy
-msgid "service off-air"
-msgstr "Alla kanaloperatörer"
 
 msgid "set as startup service"
 msgstr "använd som startkanal"
@@ -14386,7 +14558,8 @@ msgstr ""
 msgid "slot%s - %s, without backup"
 msgstr ""
 
-msgid "soap/melodram/folkloric"
+#, fuzzy
+msgid "soap/melodrama/folkloric"
 msgstr "såpa / melodrama / folkloristisk"
 
 msgid "social/political issues/economics (general)"
@@ -14401,11 +14574,19 @@ msgstr "sortering av spellistor"
 msgid "spark"
 msgstr ""
 
+#, fuzzy
+msgid "special (general)"
+msgstr "sport (allmänt)"
+
 msgid "special events"
 msgstr "speciella evenemang"
 
 msgid "special format data DVD (HDTV compatible)"
 msgstr "speciell format data DVD (HDTV kompatibel)"
+
+#, fuzzy
+msgid "sport (general)"
+msgstr "sport (allmänt)"
 
 msgid "sports (general)"
 msgstr "sport (allmänt)"
@@ -14424,10 +14605,6 @@ msgstr "startklipp här"
 #
 msgid "start directory"
 msgstr "startbibliotek"
-
-#, fuzzy
-msgid "starts in a few seconds"
-msgstr "Starta avkodning offline"
 
 msgid "stepsize"
 msgstr "stegstorlek"
@@ -14586,6 +14763,10 @@ msgstr "vertikal"
 
 msgid "vfddisplay.png"
 msgstr ""
+
+#, fuzzy
+msgid "vitamin"
+msgstr "Strömning"
 
 #
 msgid "wait for ci..."

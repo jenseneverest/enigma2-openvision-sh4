@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 20:19+0430\n"
+"POT-Creation-Date: 2019-09-03 18:30+0430\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -196,10 +196,6 @@ msgid "%.2f GB"
 msgstr ""
 
 #, python-format
-msgid "%02d:%02d"
-msgstr ""
-
-#, python-format
 msgid "%03d MB"
 msgstr ""
 
@@ -372,10 +368,6 @@ msgstr[1] "1 bežična mreža pronađena!"
 msgstr[2] "1 bežična mreža pronađena!"
 
 msgid "%d-%m"
-msgstr ""
-
-#, python-format
-msgid "%d.%02d. %02d:%02d"
 msgstr ""
 
 #, python-format
@@ -1018,6 +1010,9 @@ msgstr ""
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Podesi postavke boje,tako da su sve senke boja raspoznatljive,ali izgledaju maksimalno zasićene.Ako ste zadovoljni rezultatom,pritisnite OK da zatvorite fino video-podešavanje,ili koristite numeričke tipke da izaberete druge test ekrane. "
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr ""
 
@@ -1483,6 +1478,11 @@ msgstr "Autorski način"
 msgid "Auto"
 msgstr "Auto"
 
+#
+#, fuzzy
+msgid "Auto Detect"
+msgstr "spremni za početak"
+
 msgid "Auto Diseqc"
 msgstr ""
 
@@ -1582,6 +1582,10 @@ msgstr ""
 #
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 #
 msgid "BER"
@@ -2200,7 +2204,13 @@ msgid ""
 "DiSEqC port %s for %s"
 msgstr ""
 
+msgid "Children"
+msgstr ""
+
 msgid "Children/Youth"
+msgstr ""
+
+msgid "Childrens"
 msgstr ""
 
 msgid "Chile"
@@ -2216,6 +2226,12 @@ msgid "Chinese - Traditional"
 msgstr ""
 
 msgid "Choose Tuner"
+msgstr ""
+
+msgid "Choose a country scheme for decoding genre information in EPG events."
+msgstr ""
+
+msgid "Choose a country scheme for decoding rating information in EPG events."
 msgstr ""
 
 msgid "Choose bouquet"
@@ -2354,6 +2370,9 @@ msgid "Combined"
 msgstr "Kolor format"
 
 msgid "Combo"
+msgstr ""
+
+msgid "Comedy"
 msgstr ""
 
 #
@@ -2929,6 +2948,13 @@ msgstr "Snimanje nemoguće zbog nevaljanog kanala %s"
 msgid "Country"
 msgstr ""
 
+#, fuzzy
+msgid "Country for EPG event genre information"
+msgstr "Informacije upravljača softvera"
+
+msgid "Country for EPG event rating information"
+msgstr ""
+
 msgid "Cover dashed flickering line for this service"
 msgstr ""
 
@@ -2990,6 +3016,11 @@ msgstr ""
 
 msgid "Curacao"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Current Affairs"
+msgstr "Trenutne postavke"
 
 msgid "Current CEC address"
 msgstr ""
@@ -3715,6 +3746,9 @@ msgstr ""
 msgid "Do you want to upgrade the package:\n"
 msgstr "Da li želite da nadogradite paket:\n"
 
+msgid "Documentary"
+msgstr ""
+
 msgid "Dolby"
 msgstr ""
 
@@ -3779,6 +3813,9 @@ msgstr "Skidanje"
 #
 msgid "Downloading plugin information. Please wait..."
 msgstr "Skidanje informacija o dodacima. Molim pričekajte..."
+
+msgid "Drama"
+msgstr ""
 
 #
 #, fuzzy
@@ -3905,7 +3942,12 @@ msgstr "Urediti naslov"
 msgid "Edit upgrade source url."
 msgstr "Uredi url izvora nadogradnje."
 
-msgid "Education/Science/..."
+#
+#, fuzzy
+msgid "Education/Information"
+msgstr "Informacije"
+
+msgid "Education/Science/Factual"
 msgstr ""
 
 msgid "Egypt"
@@ -4178,6 +4220,11 @@ msgstr ""
 
 msgid "Enter your low band local oscillator frequency. For more information consult the spec sheet of your LNB."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Entertainment"
+msgstr "Uđi u glavni meni"
 
 msgid "Equal to"
 msgstr ""
@@ -4847,6 +4894,9 @@ msgstr ""
 msgid "Gateway"
 msgstr "Mrežni čvor"
 
+msgid "General"
+msgstr ""
+
 #
 #, fuzzy
 msgid "General AC3 delay"
@@ -4856,6 +4906,9 @@ msgstr "Opšte AC3 kašnjenje"
 #, fuzzy
 msgid "General PCM delay"
 msgstr "Opšte PCM kašnjenje"
+
+msgid "Generic"
+msgstr ""
 
 #
 msgid "Genre"
@@ -5101,6 +5154,9 @@ msgid "Harddisk"
 msgstr "Hard disk"
 
 msgid "Harddisk Setup"
+msgstr ""
+
+msgid "Hardware serial: "
 msgstr ""
 
 msgid "Hardware: "
@@ -5472,6 +5528,11 @@ msgstr ""
 #
 msgid "Information"
 msgstr "Informacije"
+
+#
+#, fuzzy
+msgid "Infotainment"
+msgstr "Vreme trajanja info trake"
 
 #
 msgid "Init"
@@ -5894,6 +5955,10 @@ msgstr "Poslednja brzina"
 msgid "Last upgrade: "
 msgstr ""
 
+msgctxt "third event: 'third' event label"
+msgid "Later"
+msgstr ""
+
 msgid "Latest Commits"
 msgstr ""
 
@@ -6250,6 +6315,12 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Mauritania"
@@ -6514,6 +6585,9 @@ msgstr ""
 msgid "Movement"
 msgstr ""
 
+msgid "Movie"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Movie list configuration"
@@ -6592,6 +6666,9 @@ msgstr ""
 #, fuzzy
 msgid "Multistream"
 msgstr "Multisat"
+
+msgid "Music"
+msgstr ""
 
 msgid "Music/Ballet/Dance"
 msgstr ""
@@ -6776,7 +6853,10 @@ msgstr ""
 msgid "New Zealand"
 msgstr ""
 
-msgid "News Current Affairs"
+msgid "News"
+msgstr ""
+
+msgid "News/Current Affairs"
 msgstr ""
 
 msgctxt "button label, 'next screen'"
@@ -7041,6 +7121,9 @@ msgstr "Norveški"
 msgid "Norwegian"
 msgstr "Norveški"
 
+msgid "Not Classified"
+msgstr ""
+
 msgid "Not Defined"
 msgstr ""
 
@@ -7059,6 +7142,10 @@ msgstr ""
 #, fuzzy, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nedovoljno prostora na disku. Molimo oslobodite nešto prostora i probajte ponovo. (%d MB potrebno,%d MB omogućeno)"
+
+#, fuzzy
+msgid "Not running"
+msgstr "na početku"
 
 msgid "Not tested:"
 msgstr ""
@@ -7409,6 +7496,9 @@ msgstr ""
 msgid "Parent directory"
 msgstr "Polazni direktorijum"
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 #
 msgid "Parental control"
 msgstr "Roditeljska zaštita"
@@ -7446,6 +7536,11 @@ msgstr "Nastavite reprodukciju"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "Nastaviti reprodukciju"
+
+#
+#, fuzzy
+msgid "Pausing"
+msgstr "pauza"
 
 msgid "Percentage left"
 msgstr ""
@@ -8042,6 +8137,9 @@ msgstr ""
 msgid "Preparing... Please wait"
 msgstr "Pripremam... Molim pričekajte"
 
+msgid "Preschool"
+msgstr ""
+
 msgid "Press '0' to toggle PiP mode"
 msgstr ""
 
@@ -8619,6 +8717,9 @@ msgstr ""
 msgid "Reserved"
 msgstr ""
 
+msgid "Reserved for future use"
+msgstr ""
+
 #
 msgid "Reset"
 msgstr "Resetujte"
@@ -8711,6 +8812,9 @@ msgstr "Vratite sistemske postavke"
 #, fuzzy
 msgid "Restoring..."
 msgstr "snimanje..."
+
+msgid "Restricted 18+"
+msgstr ""
 
 #
 msgid "Resume from last position"
@@ -9695,6 +9799,11 @@ msgstr ""
 "Kanal nije pronađen!\n"
 "(SID nije pronađen u PAT)"
 
+#
+#, fuzzy
+msgid "Service off-air"
+msgstr "dodaj kanal u favorite"
+
 msgid "Service reference"
 msgstr "Kanal referenca"
 
@@ -9927,9 +10036,6 @@ msgstr "prikaži EPG..."
 msgid "Show Ethernet activity"
 msgstr "prikaži alternative"
 
-msgid "Show Games show"
-msgstr ""
-
 msgid "Show InfoBar"
 msgstr ""
 
@@ -9999,6 +10105,10 @@ msgstr ""
 #, fuzzy
 msgid "Show event details"
 msgstr "prikaži proširene infor. "
+
+#, fuzzy
+msgid "Show event genre information"
+msgstr "Informacije upravljača softvera"
 
 #
 msgid "Show event-progress in channel selection"
@@ -10207,6 +10317,9 @@ msgid "Show warning before set 'Ignore conflict'"
 msgstr ""
 
 msgid "Show warning when timeshift is stopped"
+msgstr ""
+
+msgid "Show/Games show"
 msgstr ""
 
 msgid "Show/hide window"
@@ -10561,6 +10674,9 @@ msgstr ""
 msgid "SparkUnionTunerType config"
 msgstr ""
 
+msgid "Special"
+msgstr ""
+
 msgid "Special 1"
 msgstr ""
 
@@ -10608,6 +10724,9 @@ msgid "Split preview mode"
 msgstr "Podeli mod pregleda"
 
 msgid "Splitscreen"
+msgstr ""
+
+msgid "Sport"
 msgstr ""
 
 msgid "Sports"
@@ -10728,6 +10847,9 @@ msgstr ""
 #
 msgid "Starting on"
 msgstr "Pokrećem"
+
+msgid "Starts in a few seconds"
+msgstr ""
 
 msgid "Startup the set top box in standby"
 msgstr ""
@@ -11451,6 +11573,9 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to choose whether or not to display genre information for the event."
 msgstr ""
 
 msgid "This option allows you to configure the Colordepth for UHD"
@@ -13548,6 +13673,9 @@ msgstr ""
 msgid "are you sure to cancel all changes"
 msgstr ""
 
+msgid "arts/culture (general)"
+msgstr ""
+
 msgid "arts/culture (without music, general)"
 msgstr ""
 
@@ -13585,7 +13713,7 @@ msgid "ballet"
 msgstr ""
 
 #, python-format
-msgid "bc%s"
+msgid "bc%d"
 msgstr ""
 
 #
@@ -13665,7 +13793,10 @@ msgstr ""
 msgid "chapters"
 msgstr "Poglavlja"
 
-msgid "childrens's/youth program (general)"
+msgid "children's/youth program (general)"
+msgstr ""
+
+msgid "childrens (general)"
 msgstr ""
 
 #
@@ -13680,6 +13811,9 @@ msgid "clip overscan / letterbox borders"
 msgstr ""
 
 msgid "comedy"
+msgstr ""
+
+msgid "comedy (general)"
 msgstr ""
 
 #
@@ -13716,7 +13850,10 @@ msgstr "kopiraj u bukete"
 msgid "create directory"
 msgstr "Kreiraj direktorijum"
 
-msgid "cuberevo"
+msgid "cuberevo_uni"
+msgstr ""
+
+msgid "current affairs (general)"
 msgstr ""
 
 #
@@ -13780,12 +13917,18 @@ msgstr "ne čini ništa "
 msgid "documentary"
 msgstr ""
 
+msgid "documentary (general)"
+msgstr ""
+
 msgid "don't descramble, record ecm"
 msgstr ""
 
 #
 msgid "done!"
 msgstr "Učinjeno!"
+
+msgid "drama (general)"
+msgstr ""
 
 msgid "east"
 msgstr ""
@@ -13796,6 +13939,9 @@ msgstr ""
 #
 msgid "edit alternatives"
 msgstr "Uredi alternative"
+
+msgid "education/information (general)"
+msgstr ""
 
 msgid "education/science/factual topics (general)"
 msgstr ""
@@ -13850,6 +13996,9 @@ msgid "entertainment (10-16 year old)"
 msgstr ""
 
 msgid "entertainment (6-14 year old)"
+msgstr ""
+
+msgid "entertainment (general)"
 msgstr ""
 
 msgid "epg cache backup"
@@ -13954,6 +14103,9 @@ msgstr "slobodno"
 msgid "from"
 msgstr ""
 
+msgid "fs9000"
+msgstr ""
+
 msgid "fs9000VFD display"
 msgstr ""
 
@@ -14029,6 +14181,9 @@ msgstr ""
 msgid "hs8200VFD-Icons"
 msgstr ""
 
+msgid "hs9510"
+msgstr ""
+
 msgid "hs9510VFD display"
 msgstr ""
 
@@ -14051,6 +14206,9 @@ msgid "in plugins only"
 msgstr "Ovaj dodatak je instaliran."
 
 msgid "information/education/school program"
+msgstr ""
+
+msgid "infotainment (general)"
 msgstr ""
 
 #
@@ -14198,6 +14356,9 @@ msgstr "Pomeri gore na prvi unos"
 msgid "move up to previous entry"
 msgstr "Pomeri gore na prethodni unos"
 
+msgid "movie (general)"
+msgstr ""
+
 msgid "movie/drama (general)"
 msgstr ""
 
@@ -14207,6 +14368,9 @@ msgstr ""
 #
 msgid "multinorm"
 msgstr "multinorm"
+
+msgid "music (general)"
+msgstr ""
 
 msgid "music/ballet/dance (general)"
 msgstr ""
@@ -14230,6 +14394,9 @@ msgid "never"
 msgstr "nikad"
 
 msgid "new media"
+msgstr ""
+
+msgid "news (general)"
 msgstr ""
 
 msgid "news magazine"
@@ -14281,10 +14448,6 @@ msgstr "nije konfigurisano"
 msgid "not locked"
 msgstr "nije prihvaćen"
 
-#, fuzzy
-msgid "not running"
-msgstr "na početku"
-
 msgid "not supported"
 msgstr "nije podržano"
 
@@ -14302,9 +14465,6 @@ msgstr "ne čini ništa "
 #
 msgid "nothing connected"
 msgstr "ništa nije spojeno"
-
-msgid "octagon1008"
-msgstr ""
 
 #
 msgid "of a DUAL layer medium used."
@@ -14361,9 +14521,6 @@ msgstr ""
 #
 msgid "pass"
 msgstr "lozinka"
-
-msgid "pausing"
-msgstr ""
 
 msgid "performing arts"
 msgstr ""
@@ -14479,9 +14636,6 @@ msgstr "Ponovite listu za reprodukciju"
 msgid "repeated"
 msgstr "ponavljam"
 
-msgid "reserved for future use"
-msgstr ""
-
 msgid "restore deleted userbouquets"
 msgstr ""
 
@@ -14506,9 +14660,6 @@ msgid "rock/pop"
 msgstr ""
 
 msgid "romance"
-msgstr ""
-
-msgid "running"
 msgstr ""
 
 msgid "save"
@@ -14563,11 +14714,6 @@ msgstr ""
 
 msgid "service is in bouquet parental protection"
 msgstr ""
-
-#
-#, fuzzy
-msgid "service off-air"
-msgstr "dodaj kanal u favorite"
 
 msgid "set as startup service"
 msgstr ""
@@ -14665,7 +14811,7 @@ msgstr ""
 msgid "slot%s - %s, without backup"
 msgstr ""
 
-msgid "soap/melodram/folkloric"
+msgid "soap/melodrama/folkloric"
 msgstr ""
 
 msgid "social/political issues/economics (general)"
@@ -14680,10 +14826,16 @@ msgstr ""
 msgid "spark"
 msgstr ""
 
+msgid "special (general)"
+msgstr ""
+
 msgid "special events"
 msgstr ""
 
 msgid "special format data DVD (HDTV compatible)"
+msgstr ""
+
+msgid "sport (general)"
 msgstr ""
 
 msgid "sports (general)"
@@ -14703,9 +14855,6 @@ msgstr "počni rez ovde"
 #
 msgid "start directory"
 msgstr "Početni direktorijum"
-
-msgid "starts in a few seconds"
-msgstr ""
 
 msgid "stepsize"
 msgstr ""
@@ -14864,6 +15013,9 @@ msgid "vertical"
 msgstr "vertikalno"
 
 msgid "vfddisplay.png"
+msgstr ""
+
+msgid "vitamin"
 msgstr ""
 
 #

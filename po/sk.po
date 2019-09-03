@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 20:19+0430\n"
+"POT-Creation-Date: 2019-09-03 18:30+0430\n"
 "PO-Revision-Date: 2019-06-27 16:02+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -193,10 +193,6 @@ msgid "%.2f GB"
 msgstr "%.2f GB"
 
 #, python-format
-msgid "%02d:%02d"
-msgstr "%02d:%02d"
-
-#, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
 
@@ -361,10 +357,6 @@ msgstr[2] "Nájdených %d bezdrôtových sietí!"
 
 msgid "%d-%m"
 msgstr "%d-%m"
-
-#, python-format
-msgid "%d.%02d. %02d:%02d"
-msgstr "%d.%02d. %02d:%02d"
 
 #, python-format
 msgid "%d.%03d GB"
@@ -915,6 +907,9 @@ msgstr "Úprava 3D nastavenia"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Nastavte farby tak, aby boli jednotlivé odtiene dobre rozlíšiteľné, ale zároveň čo najsýtejšie. Ak ste s výsledkom spokojní, stlačením tlačidla OK ukončite jemné ladenie obrazu alebo číslicovými tlačidlami zvoľte iný testovací obrazec."
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr "Pokročilé"
 
@@ -1319,6 +1314,10 @@ msgstr "Režim autorizácie"
 msgid "Auto"
 msgstr "Auto"
 
+#, fuzzy
+msgid "Auto Detect"
+msgstr "Auto DiSEqC"
+
 msgid "Auto Diseqc"
 msgstr "Auto DiSEqC"
 
@@ -1400,6 +1399,10 @@ msgstr "Azerbajdžan"
 
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1962,8 +1965,16 @@ msgstr ""
 "Kontrolujem tuner %s\n"
 "DiSEqC port %s pre %s"
 
+#, fuzzy
+msgid "Children"
+msgstr "Čile"
+
 msgid "Children/Youth"
 msgstr "Deti/mládež"
+
+#, fuzzy
+msgid "Childrens"
+msgstr "Čile"
 
 msgid "Chile"
 msgstr "Čile"
@@ -1979,6 +1990,12 @@ msgstr "Čínština - tradičná"
 
 msgid "Choose Tuner"
 msgstr "Zvoľte tuner"
+
+msgid "Choose a country scheme for decoding genre information in EPG events."
+msgstr ""
+
+msgid "Choose a country scheme for decoding rating information in EPG events."
+msgstr ""
 
 msgid "Choose bouquet"
 msgstr "Zvoľte prehľad"
@@ -2096,6 +2113,10 @@ msgstr "Kombinované"
 
 msgid "Combo"
 msgstr "Kombo"
+
+#, fuzzy
+msgid "Comedy"
+msgstr "komédia"
 
 msgid "Command execution..."
 msgstr "Vykonávanie príkazu..."
@@ -2591,6 +2612,14 @@ msgstr "Nedalo sa nahrať pre neplatnú stanicu %s"
 msgid "Country"
 msgstr "Krajina"
 
+#, fuzzy
+msgid "Country for EPG event genre information"
+msgstr "Informácie správcu softvéru"
+
+#, fuzzy
+msgid "Country for EPG event rating information"
+msgstr "Pre informácie o SCR zariadení si preštudujte jeho špecifikáciu."
+
 msgid "Cover dashed flickering line for this service"
 msgstr "Zakryť čiarkovaný blikajúci riadok pre túto stanicu"
 
@@ -2642,6 +2671,10 @@ msgstr ""
 
 msgid "Curacao"
 msgstr "Curacao"
+
+#, fuzzy
+msgid "Current Affairs"
+msgstr "Aktuality"
 
 msgid "Current CEC address"
 msgstr "Súčasná CEC adresa"
@@ -3251,6 +3284,10 @@ msgstr "Chcete aktualizovať Váš prijímač?"
 msgid "Do you want to upgrade the package:\n"
 msgstr "Chcete aktualizovať balíček:\n"
 
+#, fuzzy
+msgid "Documentary"
+msgstr "dokumentárny"
+
 msgid "Dolby"
 msgstr "Dolby"
 
@@ -3305,6 +3342,10 @@ msgstr "Sťahuje sa image"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Sťahujem informácie o doplnkoch. Prosím čakajte..."
+
+#, fuzzy
+msgid "Drama"
+msgstr "Film/dráma"
 
 msgid "Drop unconfigured satellites"
 msgstr "Zrusiť nenakonfigurované satelity"
@@ -3407,7 +3448,12 @@ msgstr "Upraviť titul"
 msgid "Edit upgrade source url."
 msgstr "Upraviť URL zdroja aktualizácie."
 
-msgid "Education/Science/..."
+#, fuzzy
+msgid "Education/Information"
+msgstr "Informácie"
+
+#, fuzzy
+msgid "Education/Science/Factual"
 msgstr "Vzdelávanie/veda /..."
 
 msgid "Egypt"
@@ -3654,6 +3700,10 @@ msgstr "Vložte miestnu frekvenciu oscilátora vysokého pásma (high band). Pre
 
 msgid "Enter your low band local oscillator frequency. For more information consult the spec sheet of your LNB."
 msgstr "Vložte miestnu frekvenciu oscilátora nízkeho pásma (low band). Pre viac informácií si preštudujte špecifikáciu LNB."
+
+#, fuzzy
+msgid "Entertainment"
+msgstr "Otvoriť hlavné menu..."
 
 msgid "Equal to"
 msgstr "Rovná sa"
@@ -4261,11 +4311,17 @@ msgstr "Gambia"
 msgid "Gateway"
 msgstr "Brána"
 
+msgid "General"
+msgstr ""
+
 msgid "General AC3 delay"
 msgstr "Oneskorenie AC3"
 
 msgid "General PCM delay"
 msgstr "Oneskorenie PCM"
+
+msgid "Generic"
+msgstr ""
 
 msgid "Genre"
 msgstr "Žáner"
@@ -4477,6 +4533,10 @@ msgstr "Pevný disk"
 
 msgid "Harddisk Setup"
 msgstr "Nastavenie pevného disku"
+
+#, fuzzy
+msgid "Hardware serial: "
+msgstr "Hardvér: "
 
 msgid "Hardware: "
 msgstr "Hardvér: "
@@ -4816,6 +4876,10 @@ msgstr "Zdroj dát pre informačnú lištu"
 
 msgid "Information"
 msgstr "Informácie"
+
+#, fuzzy
+msgid "Infotainment"
+msgstr "Doba zobrazenia informačnej lišty"
 
 msgid "Init"
 msgstr "Inic."
@@ -5165,6 +5229,10 @@ msgstr "Posledná rýchlosť"
 msgid "Last upgrade: "
 msgstr "Posledná aktualizácia: "
 
+msgctxt "third event: 'third' event label"
+msgid "Later"
+msgstr ""
+
 msgid "Latest Commits"
 msgstr "Posledné zmeny"
 
@@ -5458,6 +5526,12 @@ msgstr "Marshall ostrovy"
 msgid "Martinique"
 msgstr "Martinique"
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 msgid "Mauritania"
 msgstr "Mauretánia"
 
@@ -5678,6 +5752,10 @@ msgstr "Otočené na východziu pozíciu"
 msgid "Movement"
 msgstr "Otáčanie motora"
 
+#, fuzzy
+msgid "Movie"
+msgstr "Otáčam"
+
 msgid "Movie list configuration"
 msgstr "Konfigurácia zoznamu filmov"
 
@@ -5740,6 +5818,9 @@ msgstr "Zvoliť všetky satelity"
 
 msgid "Multistream"
 msgstr "Multistream"
+
+msgid "Music"
+msgstr ""
 
 msgid "Music/Ballet/Dance"
 msgstr "Hudba/balet/tanec"
@@ -5891,7 +5972,11 @@ msgstr "Nová Kaledónia"
 msgid "New Zealand"
 msgstr "Nový Zéland"
 
-msgid "News Current Affairs"
+msgid "News"
+msgstr ""
+
+#, fuzzy
+msgid "News/Current Affairs"
 msgstr "Aktuality"
 
 msgctxt "button label, 'next screen'"
@@ -6110,6 +6195,10 @@ msgstr "Nórsko"
 msgid "Norwegian"
 msgstr "Nórčina"
 
+#, fuzzy
+msgid "Not Classified"
+msgstr "Nepriradené"
+
 msgid "Not Defined"
 msgstr "Nedefinované"
 
@@ -6125,6 +6214,10 @@ msgstr "Nepriradené"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nie je dostatok miesta na disku. Uvoľnite miesto na disku a a skúste to znova. (Potrebných je %d MB, ale voľných je len %d MB.)"
+
+#, fuzzy
+msgid "Not running"
+msgstr "nebeží"
 
 msgid "Not tested:"
 msgstr "Netestované:"
@@ -6428,6 +6521,9 @@ msgstr "Paraguay"
 msgid "Parent directory"
 msgstr "Nadradený adresár"
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 msgid "Parental control"
 msgstr "Rodičovská kontrola"
 
@@ -6455,6 +6551,10 @@ msgstr "Pauza/prehrávanie"
 
 msgid "Pause/Continue playback"
 msgstr "Pozastaviť/Pokračovať prehrávanie"
+
+#, fuzzy
+msgid "Pausing"
+msgstr "pozastavuje sa"
 
 msgid "Percentage left"
 msgstr "Percentá vľavo"
@@ -6942,6 +7042,9 @@ msgstr "Preferovaný tuner pre nahrávanie"
 
 msgid "Preparing... Please wait"
 msgstr "Pripravujem... Čakajte"
+
+msgid "Preschool"
+msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Stlačením '0' prepnete režim PiP"
@@ -7431,6 +7534,10 @@ msgstr "Znovunačítanie tabuľky partícií"
 msgid "Reserved"
 msgstr "Rezervované"
 
+#, fuzzy
+msgid "Reserved for future use"
+msgstr "rezervované pre budúce použitie"
+
 msgid "Reset"
 msgstr "Resetovať"
 
@@ -7502,6 +7609,9 @@ msgstr "Obnoviť nastavenia systému"
 
 msgid "Restoring..."
 msgstr "Obnovujem..."
+
+msgid "Restricted 18+"
+msgstr ""
 
 msgid "Resume from last position"
 msgstr "Pokračovať od poslednej pozície"
@@ -8334,6 +8444,10 @@ msgstr ""
 "Stanica nebola nájdená!\n"
 "(SID nenájdený v PAT)"
 
+#, fuzzy
+msgid "Service off-air"
+msgstr "Služby poskytovateľa"
+
 msgid "Service reference"
 msgstr "Referencia služby"
 
@@ -8534,9 +8648,6 @@ msgstr "Zobraziť EPG..."
 msgid "Show Ethernet activity"
 msgstr "zobraziť alternatívy"
 
-msgid "Show Games show"
-msgstr "Zobraziť prehliadku hier"
-
 msgid "Show InfoBar"
 msgstr "Zobraziť informačný panel"
 
@@ -8598,6 +8709,10 @@ msgstr "Zobraziť podrobné informácie o programe"
 
 msgid "Show event details"
 msgstr "Zobraziť detaily o programe"
+
+#, fuzzy
+msgid "Show event genre information"
+msgstr "Informácie správcu softvéru"
 
 msgid "Show event-progress in channel selection"
 msgstr "Vo výbere staníc zobraziť priebeh programu"
@@ -8790,6 +8905,10 @@ msgstr "Zobraziť varovanie pred použitím \"Ignorovať konflikt\""
 
 msgid "Show warning when timeshift is stopped"
 msgstr "Zobraziť varovanie, keď sa zastaví časový posun"
+
+#, fuzzy
+msgid "Show/Games show"
+msgstr "Zobraziť prehliadku hier"
 
 msgid "Show/hide window"
 msgstr "Zobraziť/skryť okno"
@@ -9077,6 +9196,10 @@ msgstr ""
 msgid "SparkUnionTunerType config"
 msgstr ""
 
+#, fuzzy
+msgid "Special"
+msgstr "Špeciálne 1"
+
 msgid "Special 1"
 msgstr "Špeciálne 1"
 
@@ -9124,6 +9247,10 @@ msgstr "Rozdeliť režim náhľadu"
 
 msgid "Splitscreen"
 msgstr "Rozdelenie obrazovky"
+
+#, fuzzy
+msgid "Sport"
+msgstr "Športy"
 
 msgid "Sports"
 msgstr "Športy"
@@ -9223,6 +9350,10 @@ msgstr "Začať zoznamom"
 
 msgid "Starting on"
 msgstr "Začína"
+
+#, fuzzy
+msgid "Starts in a few seconds"
+msgstr "začne o pár sekúnd"
 
 msgid "Startup the set top box in standby"
 msgstr "Po štarte prepne set top box do pohotovostného režimu"
@@ -9868,6 +9999,10 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr "Táto voľba umožňuje zosilniť modré tóny v obraze."
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr "Táto voľba umožňuje zosilniť zelené tóny v obraze."
+
+#, fuzzy
+msgid "This option allows you to choose whether or not to display genre information for the event."
 msgstr "Táto voľba umožňuje zosilniť zelené tóny v obraze."
 
 msgid "This option allows you to configure the Colordepth for UHD"
@@ -11735,6 +11870,10 @@ msgstr "a vybrať predchádzajúci kanál"
 msgid "are you sure to cancel all changes"
 msgstr "naozaj chcete zrušiť všetky zmeny"
 
+#, fuzzy
+msgid "arts/culture (general)"
+msgstr "umenie/kultúra (bez hudby, všeobecne)"
+
 msgid "arts/culture (without music, general)"
 msgstr "umenie/kultúra (bez hudby, všeobecne)"
 
@@ -11766,8 +11905,8 @@ msgid "ballet"
 msgstr "balet"
 
 #, python-format
-msgid "bc%s"
-msgstr "bc%s"
+msgid "bc%d"
+msgstr ""
 
 msgid "better"
 msgstr "lepšie"
@@ -11835,7 +11974,12 @@ msgstr "Číslo kanálu a názov služby"
 msgid "chapters"
 msgstr "kapitoly"
 
-msgid "childrens's/youth program (general)"
+#, fuzzy
+msgid "children's/youth program (general)"
+msgstr "pre deti a mládež (všeobecne)"
+
+#, fuzzy
+msgid "childrens (general)"
 msgstr "pre deti a mládež (všeobecne)"
 
 msgid "circular left"
@@ -11849,6 +11993,10 @@ msgstr "orezávanie / rámčeky letterboxu"
 
 msgid "comedy"
 msgstr "komédia"
+
+#, fuzzy
+msgid "comedy (general)"
+msgstr "film/dráma (všeobecne)"
 
 msgid "config menu"
 msgstr "menu nastavení"
@@ -11878,8 +12026,12 @@ msgstr "skopírovať do prehľadov"
 msgid "create directory"
 msgstr "vytvoriť adresár"
 
-msgid "cuberevo"
+msgid "cuberevo_uni"
 msgstr ""
+
+#, fuzzy
+msgid "current affairs (general)"
+msgstr "spravodajstvo/publicistika (všeobecne)"
 
 msgid "daily"
 msgstr "denne"
@@ -11931,11 +12083,19 @@ msgstr "nič nerobiť"
 msgid "documentary"
 msgstr "dokumentárny"
 
+#, fuzzy
+msgid "documentary (general)"
+msgstr "dokumentárny"
+
 msgid "don't descramble, record ecm"
 msgstr "nedekódovať, zaznamenávať ecm"
 
 msgid "done!"
 msgstr "Dokončené!"
+
+#, fuzzy
+msgid "drama (general)"
+msgstr "film/dráma (všeobecne)"
 
 msgid "east"
 msgstr "východne"
@@ -11945,6 +12105,10 @@ msgstr "ekonomika/sociálne poradenstvo"
 
 msgid "edit alternatives"
 msgstr "Upraviť alternatívy"
+
+#, fuzzy
+msgid "education/information (general)"
+msgstr "vzdelávanie/veda/vecné témy (všeobecne)"
 
 msgid "education/science/factual topics (general)"
 msgstr "vzdelávanie/veda/vecné témy (všeobecne)"
@@ -11989,6 +12153,10 @@ msgid "entertainment (10-16 year old)"
 msgstr "zábavný (10 až 16 rokov)"
 
 msgid "entertainment (6-14 year old)"
+msgstr "zábavný (6 až 14 rokov)"
+
+#, fuzzy
+msgid "entertainment (general)"
 msgstr "zábavný (6 až 14 rokov)"
 
 msgid "epg cache backup"
@@ -12079,6 +12247,9 @@ msgstr "voľných"
 msgid "from"
 msgstr "z"
 
+msgid "fs9000"
+msgstr ""
+
 msgid "fs9000VFD display"
 msgstr ""
 
@@ -12148,6 +12319,9 @@ msgstr ""
 msgid "hs8200VFD-Icons"
 msgstr ""
 
+msgid "hs9510"
+msgstr ""
+
 msgid "hs9510VFD display"
 msgstr ""
 
@@ -12165,6 +12339,10 @@ msgstr "iba v doplnkoch"
 
 msgid "information/education/school program"
 msgstr "informácie/vzdelanie/program pre školy"
+
+#, fuzzy
+msgid "infotainment (general)"
+msgstr "športy (všeobecne)"
 
 msgid "init module"
 msgstr "inic. doplnku"
@@ -12289,6 +12467,10 @@ msgstr "nahor na prvú položku"
 msgid "move up to previous entry"
 msgstr "nahor na predchádzajúcu položku"
 
+#, fuzzy
+msgid "movie (general)"
+msgstr "film/dráma (všeobecne)"
+
 msgid "movie/drama (general)"
 msgstr "film/dráma (všeobecne)"
 
@@ -12297,6 +12479,10 @@ msgstr "viac"
 
 msgid "multinorm"
 msgstr "viacnormový"
+
+#, fuzzy
+msgid "music (general)"
+msgstr "športy (všeobecne)"
 
 msgid "music/ballet/dance (general)"
 msgstr "hudba/balet/tanec (všeobecne)"
@@ -12319,6 +12505,10 @@ msgstr "nikdy"
 
 msgid "new media"
 msgstr "nové médiá"
+
+#, fuzzy
+msgid "news (general)"
+msgstr "športy (všeobecne)"
 
 msgid "news magazine"
 msgstr "spravodajský magazín"
@@ -12362,9 +12552,6 @@ msgstr "nenakonfigurované"
 msgid "not locked"
 msgstr "nie je signál"
 
-msgid "not running"
-msgstr "nebeží"
-
 msgid "not supported"
 msgstr "nepodporované"
 
@@ -12380,9 +12567,6 @@ msgstr "Žiadna akcia"
 
 msgid "nothing connected"
 msgstr "nič nie je pripojené"
-
-msgid "octagon1008"
-msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "dvojvrstvového média využitých."
@@ -12431,9 +12615,6 @@ msgstr ""
 
 msgid "pass"
 msgstr "prechod"
-
-msgid "pausing"
-msgstr "pozastavuje sa"
 
 msgid "performing arts"
 msgstr "hudobné umenie"
@@ -12531,9 +12712,6 @@ msgstr "zopakovať zoznam prehrávok"
 msgid "repeated"
 msgstr "opakované"
 
-msgid "reserved for future use"
-msgstr "rezervované pre budúce použitie"
-
 msgid "restore deleted userbouquets"
 msgstr "obnoviť zmazané užívateľské zoznamy staníc"
 
@@ -12557,9 +12735,6 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romantika"
-
-msgid "running"
-msgstr "Prebieha"
 
 msgid "save"
 msgstr ""
@@ -12604,9 +12779,6 @@ msgstr "vážny/klasický/náboženský/historický film/dráma"
 
 msgid "service is in bouquet parental protection"
 msgstr "stanica je v prehľade rodičovskej ochrany"
-
-msgid "service off-air"
-msgstr "Služby poskytovateľa"
 
 msgid "set as startup service"
 msgstr "nastaviť ako stanicu po spustení"
@@ -12697,7 +12869,8 @@ msgstr "slot%s - %s, so zálohou"
 msgid "slot%s - %s, without backup"
 msgstr "slot%s - %s, bez zálohy"
 
-msgid "soap/melodram/folkloric"
+#, fuzzy
+msgid "soap/melodrama/folkloric"
 msgstr "melodráma/folklór"
 
 msgid "social/political issues/economics (general)"
@@ -12712,11 +12885,19 @@ msgstr "usporiadanie playlistov"
 msgid "spark"
 msgstr ""
 
+#, fuzzy
+msgid "special (general)"
+msgstr "športy (všeobecne)"
+
 msgid "special events"
 msgstr "špeciálne podujatia"
 
 msgid "special format data DVD (HDTV compatible)"
 msgstr "DVD so špeciálnym formátom dát (kompatibilné s HDTV)"
+
+#, fuzzy
+msgid "sport (general)"
+msgstr "športy (všeobecne)"
 
 msgid "sports (general)"
 msgstr "športy (všeobecne)"
@@ -12732,9 +12913,6 @@ msgstr "začiatok strihu tu"
 
 msgid "start directory"
 msgstr "počiatočný adresár"
-
-msgid "starts in a few seconds"
-msgstr "začne o pár sekúnd"
 
 msgid "stepsize"
 msgstr "krok"
@@ -12871,6 +13049,10 @@ msgstr "vertikálna"
 
 msgid "vfddisplay.png"
 msgstr ""
+
+#, fuzzy
+msgid "vitamin"
+msgstr "Stream"
 
 msgid "wait for ci..."
 msgstr "čakať na ci..."

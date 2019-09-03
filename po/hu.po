@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 20:19+0430\n"
+"POT-Creation-Date: 2019-09-03 18:30+0430\n"
 "PO-Revision-Date: 2019-05-30 12:03+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -192,10 +192,6 @@ msgid "%.2f GB"
 msgstr "%.2f GB"
 
 #, python-format
-msgid "%02d:%02d"
-msgstr "%02d:%02d"
-
-#, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
 
@@ -350,10 +346,6 @@ msgstr[1] "%d elérhető vezeték nélküli hálózat!"
 
 msgid "%d-%m"
 msgstr "%d-%m"
-
-#, python-format
-msgid "%d.%02d. %02d:%02d"
-msgstr "%d.%02d. %02d:%02d"
 
 #, python-format
 msgid "%d.%03d GB"
@@ -903,6 +895,9 @@ msgstr "3D beállítások"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Állítsa be úgy a színeket, hogy a színcsíkok megkülönböztethetők legyenek, de a telítettség a lehető legmegfelelőbb legyen. Ha az eredménnyel elégedett, akkor nyomja meg az OK gombot a video finombeállítások bezárásához, vagy a számgombok segítségével válasszon másik teszt ábrát."
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr "Haladó"
 
@@ -1307,6 +1302,10 @@ msgstr "Authoring mód"
 msgid "Auto"
 msgstr "Automata"
 
+#, fuzzy
+msgid "Auto Detect"
+msgstr "Automatikus DiSEqC"
+
 msgid "Auto Diseqc"
 msgstr "Automatikus DiSEqC"
 
@@ -1388,6 +1387,10 @@ msgstr "Azerbajdzsán"
 
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1950,8 +1953,16 @@ msgstr ""
 "Tuner keresése %s\n"
 "DiSEqC port %s - %s"
 
+#, fuzzy
+msgid "Children"
+msgstr "Chile"
+
 msgid "Children/Youth"
 msgstr "Gyermek/Fiatalság"
+
+#, fuzzy
+msgid "Childrens"
+msgstr "Chile"
 
 msgid "Chile"
 msgstr "Chile"
@@ -1967,6 +1978,12 @@ msgstr "Kínai - Tradícionális"
 
 msgid "Choose Tuner"
 msgstr "Tuner kiválasztása"
+
+msgid "Choose a country scheme for decoding genre information in EPG events."
+msgstr ""
+
+msgid "Choose a country scheme for decoding rating information in EPG events."
+msgstr ""
 
 msgid "Choose bouquet"
 msgstr "Lista kiválasztása"
@@ -2084,6 +2101,10 @@ msgstr "Kombinált"
 
 msgid "Combo"
 msgstr "Kombó"
+
+#, fuzzy
+msgid "Comedy"
+msgstr "vígjáték"
 
 msgid "Command execution..."
 msgstr "Parancs végrehajtása..."
@@ -2579,6 +2600,14 @@ msgstr "Az %s érvénytelen csatorna miatt a felvétel nem lehetséges"
 msgid "Country"
 msgstr "Ország"
 
+#, fuzzy
+msgid "Country for EPG event genre information"
+msgstr "Szoftverkezeló információ"
+
+#, fuzzy
+msgid "Country for EPG event rating information"
+msgstr "Ezen információhoz nézze meg az Unicable eszköz technikai adatlapját."
+
 msgid "Cover dashed flickering line for this service"
 msgstr "A kép tetején lévő villogó csík eltakarása ezen csatornánál"
 
@@ -2630,6 +2659,10 @@ msgstr ""
 
 msgid "Curacao"
 msgstr "Curaçao"
+
+#, fuzzy
+msgid "Current Affairs"
+msgstr "Hírek/Gazdaság"
 
 msgid "Current CEC address"
 msgstr "Aktuális CEC cím"
@@ -3237,6 +3270,10 @@ msgstr "Szeretné frissíteni a készülék szoftverét?"
 msgid "Do you want to upgrade the package:\n"
 msgstr "Biztos benne, hogy frissíteni szeretné ezt a csomagot:\n"
 
+#, fuzzy
+msgid "Documentary"
+msgstr "dokumentum"
+
 msgid "Dolby"
 msgstr "Dolby"
 
@@ -3290,6 +3327,10 @@ msgstr "Image letöltése"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Bővítmények betöltése folyamatban. Kérem, várjon..."
+
+#, fuzzy
+msgid "Drama"
+msgstr "Mozi/Színház"
 
 msgid "Drop unconfigured satellites"
 msgstr "Nem beállított műholdak elvetése"
@@ -3392,7 +3433,12 @@ msgstr "Cím módosítása"
 msgid "Edit upgrade source url."
 msgstr "A frissítési forrás URL-jének szerkesztése."
 
-msgid "Education/Science/..."
+#, fuzzy
+msgid "Education/Information"
+msgstr "Információk"
+
+#, fuzzy
+msgid "Education/Science/Factual"
 msgstr "Oktatás/Tudomány/..."
 
 msgid "Egypt"
@@ -3639,6 +3685,10 @@ msgstr "Adja meg a frekvenciát, ahol a fej vált az alsó és a felső sáv kö
 
 msgid "Enter your low band local oscillator frequency. For more information consult the spec sheet of your LNB."
 msgstr "Adja meg a frekvenciát, ahol a fej vált az alsó és a felső sáv között. További információért nézze meg a fej technikai adatlapját."
+
+#, fuzzy
+msgid "Entertainment"
+msgstr "Belépés a főmenübe..."
 
 msgid "Equal to"
 msgstr "Egyenlő"
@@ -4242,11 +4292,17 @@ msgstr "Gambia"
 msgid "Gateway"
 msgstr "Átjáró IP címe"
 
+msgid "General"
+msgstr ""
+
 msgid "General AC3 delay"
 msgstr "Általános AC3 késleltetés"
 
 msgid "General PCM delay"
 msgstr "Általános PCM késleltetés"
+
+msgid "Generic"
+msgstr ""
 
 msgid "Genre"
 msgstr "Műfaj"
@@ -4458,6 +4514,10 @@ msgstr "Háttértár"
 
 msgid "Harddisk Setup"
 msgstr "Háttértár beállítások"
+
+#, fuzzy
+msgid "Hardware serial: "
+msgstr "Hardver: "
 
 msgid "Hardware: "
 msgstr "Hardver: "
@@ -4799,6 +4859,10 @@ msgstr "Információs sáv adat forrása"
 
 msgid "Information"
 msgstr "Információk"
+
+#, fuzzy
+msgid "Infotainment"
+msgstr "Információs sáv megjelenítési ideje"
 
 msgid "Init"
 msgstr "Inicializálás"
@@ -5148,6 +5212,10 @@ msgstr "Utolsó sebesség"
 msgid "Last upgrade: "
 msgstr "Utolsó frissítés: "
 
+msgctxt "third event: 'third' event label"
+msgid "Later"
+msgstr ""
+
 msgid "Latest Commits"
 msgstr "Utolsó módosítások"
 
@@ -5441,6 +5509,12 @@ msgstr "Marshall-szigetek"
 msgid "Martinique"
 msgstr "Martinique"
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 msgid "Mauritania"
 msgstr "Mauritánia"
 
@@ -5661,6 +5735,10 @@ msgstr "Mozgatás sorszámra"
 msgid "Movement"
 msgstr "Mozgás"
 
+#, fuzzy
+msgid "Movie"
+msgstr "Mozgatás"
+
 msgid "Movie list configuration"
 msgstr "Filmlista beállítása"
 
@@ -5723,6 +5801,9 @@ msgstr "Több műhold (mind kiválasztva)"
 
 msgid "Multistream"
 msgstr "Multistream"
+
+msgid "Music"
+msgstr ""
 
 msgid "Music/Ballet/Dance"
 msgstr "Zene/Balett/Tánc"
@@ -5874,7 +5955,11 @@ msgstr "Új-Kaledónia"
 msgid "New Zealand"
 msgstr "Új-Zéland"
 
-msgid "News Current Affairs"
+msgid "News"
+msgstr ""
+
+#, fuzzy
+msgid "News/Current Affairs"
 msgstr "Hírek/Gazdaság"
 
 msgctxt "button label, 'next screen'"
@@ -6093,6 +6178,10 @@ msgstr "Norvégia"
 msgid "Norwegian"
 msgstr "Norvég"
 
+#, fuzzy
+msgid "Not Classified"
+msgstr "Nem-csatlakozott"
+
 msgid "Not Defined"
 msgstr "Nincs megadva"
 
@@ -6110,6 +6199,10 @@ msgstr "Nem-csatlakozott"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nincs elég tárhely. Kérem, szabadítson fel némi helyet és próbálja meg újra. (%d MB területre lenne szükség, %d MB hely szabad jelenleg)"
+
+#, fuzzy
+msgid "Not running"
+msgstr "nem fut"
 
 msgid "Not tested:"
 msgstr "Nincs tesztelve:"
@@ -6416,6 +6509,9 @@ msgstr "Paraguay"
 msgid "Parent directory"
 msgstr "Szülő mappa"
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 msgid "Parental control"
 msgstr "Gyermekzár"
 
@@ -6443,6 +6539,10 @@ msgstr "Lejátszás megállítása"
 
 msgid "Pause/Continue playback"
 msgstr "Lejátszás megállítása/folytatása"
+
+#, fuzzy
+msgid "Pausing"
+msgstr "megállítás"
 
 msgid "Percentage left"
 msgstr "Százalék balra"
@@ -6930,6 +7030,9 @@ msgstr "Felvételek számára előnyben részesített tuner"
 
 msgid "Preparing... Please wait"
 msgstr "Előkészítés... Kérem, várjon"
+
+msgid "Preschool"
+msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Nyomja meg a '0'-t a Kép-a-Képben mód bekapcsolásához"
@@ -7419,6 +7522,10 @@ msgstr "Partíciótábla újraolvasása"
 msgid "Reserved"
 msgstr "Fenntartva"
 
+#, fuzzy
+msgid "Reserved for future use"
+msgstr "későbbi használatra fenntartva"
+
 msgid "Reset"
 msgstr "Visszaállítás"
 
@@ -7490,6 +7597,9 @@ msgstr "Rendszerbeállítás visszaállítása"
 
 msgid "Restoring..."
 msgstr "Visszaállítás..."
+
+msgid "Restricted 18+"
+msgstr ""
 
 msgid "Resume from last position"
 msgstr "Folytatás az utolsó pozíciótól"
@@ -8320,6 +8430,10 @@ msgstr ""
 "A csatorna nem található!\n"
 "(Nincs SID a PAT-ban)"
 
+#, fuzzy
+msgid "Service off-air"
+msgstr "szolgáltatás nem üzemel"
+
 msgid "Service reference"
 msgstr "Referencia szám"
 
@@ -8522,9 +8636,6 @@ msgstr "EPG megnyitása..."
 msgid "Show Ethernet activity"
 msgstr "alternatívák megjelenítése"
 
-msgid "Show Games show"
-msgstr "Játék/Show"
-
 msgid "Show InfoBar"
 msgstr "Infobar megjelenítése"
 
@@ -8586,6 +8697,10 @@ msgstr "Részletes esemény információ"
 
 msgid "Show event details"
 msgstr "Esemény részleteinek megjelenítése"
+
+#, fuzzy
+msgid "Show event genre information"
+msgstr "Szoftverkezeló információ"
 
 msgid "Show event-progress in channel selection"
 msgstr "Esemény-haladás megjelenítése csatornalistában"
@@ -8778,6 +8893,10 @@ msgstr "Figyelmeztetés küldése, amikor beállítja az ütközések figyelmen 
 
 msgid "Show warning when timeshift is stopped"
 msgstr "Figyelmeztetés időcsúsztatás megálításakor"
+
+#, fuzzy
+msgid "Show/Games show"
+msgstr "Játék/Show"
 
 msgid "Show/hide window"
 msgstr "Ablak elrejtése/mutatása"
@@ -9065,6 +9184,10 @@ msgstr ""
 msgid "SparkUnionTunerType config"
 msgstr ""
 
+#, fuzzy
+msgid "Special"
+msgstr "Speciális 1"
+
 msgid "Special 1"
 msgstr "Speciális 1"
 
@@ -9112,6 +9235,10 @@ msgstr "Megosztott előnézeti mód"
 
 msgid "Splitscreen"
 msgstr "Megosztott képernyő"
+
+#, fuzzy
+msgid "Sport"
+msgstr "Sport"
 
 msgid "Sports"
 msgstr "Sport"
@@ -9211,6 +9338,10 @@ msgstr "Indítás lista-nézettel"
 
 msgid "Starting on"
 msgstr "Mely dátumtól?"
+
+#, fuzzy
+msgid "Starts in a few seconds"
+msgstr "azonnal kezdődik"
 
 msgid "Startup the set top box in standby"
 msgstr "A vevőkészülék indítása készenléti módban"
@@ -9859,6 +9990,10 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr "A képernyőn lévő kék színek kiemelése."
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr "A képernyőn lévő zöld színek kiemelése."
+
+#, fuzzy
+msgid "This option allows you to choose whether or not to display genre information for the event."
 msgstr "A képernyőn lévő zöld színek kiemelése."
 
 msgid "This option allows you to configure the Colordepth for UHD"
@@ -11727,6 +11862,10 @@ msgstr "és az előző csatorna kiválasztása"
 msgid "are you sure to cancel all changes"
 msgstr "biztosan elvet minden változtatást"
 
+#, fuzzy
+msgid "arts/culture (general)"
+msgstr "művészet/kultúra (prózai, általános)"
+
 msgid "arts/culture (without music, general)"
 msgstr "művészet/kultúra (prózai, általános)"
 
@@ -11758,8 +11897,8 @@ msgid "ballet"
 msgstr "balett"
 
 #, python-format
-msgid "bc%s"
-msgstr "bc%s"
+msgid "bc%d"
+msgstr ""
 
 msgid "better"
 msgstr "jobb"
@@ -11827,7 +11966,12 @@ msgstr "Csatornaszám és szolgáltatásnév"
 msgid "chapters"
 msgstr "jelenetek"
 
-msgid "childrens's/youth program (general)"
+#, fuzzy
+msgid "children's/youth program (general)"
+msgstr "általános gyermekműsor"
+
+#, fuzzy
+msgid "childrens (general)"
 msgstr "általános gyermekműsor"
 
 msgid "circular left"
@@ -11841,6 +11985,10 @@ msgstr "overscan/letterbox szélek összekapcsolása"
 
 msgid "comedy"
 msgstr "vígjáték"
+
+#, fuzzy
+msgid "comedy (general)"
+msgstr "mozi/színház (általános)"
 
 msgid "config menu"
 msgstr "konfig. menü"
@@ -11870,8 +12018,12 @@ msgstr "másolás listába"
 msgid "create directory"
 msgstr "mappa létrehozása"
 
-msgid "cuberevo"
+msgid "cuberevo_uni"
 msgstr ""
+
+#, fuzzy
+msgid "current affairs (general)"
+msgstr "hírek/gazdaság (általános)"
 
 msgid "daily"
 msgstr "naponta"
@@ -11923,11 +12075,19 @@ msgstr "ne csináljon semmit"
 msgid "documentary"
 msgstr "dokumentum"
 
+#, fuzzy
+msgid "documentary (general)"
+msgstr "dokumentum"
+
 msgid "don't descramble, record ecm"
 msgstr "ECM felvétel dekódolás nélkül"
 
 msgid "done!"
 msgstr "kész!"
+
+#, fuzzy
+msgid "drama (general)"
+msgstr "mozi/színház (általános)"
 
 msgid "east"
 msgstr "kelet"
@@ -11937,6 +12097,10 @@ msgstr "gazdaság/szocilális"
 
 msgid "edit alternatives"
 msgstr "alternatívák módosítása"
+
+#, fuzzy
+msgid "education/information (general)"
+msgstr "oktatás/tudomány/tényszerü általános"
 
 msgid "education/science/factual topics (general)"
 msgstr "oktatás/tudomány/tényszerü általános"
@@ -11981,6 +12145,10 @@ msgid "entertainment (10-16 year old)"
 msgstr "szórakoztató (10-16 éves korosztály"
 
 msgid "entertainment (6-14 year old)"
+msgstr "szórakoztató (6-14 éves korosztály"
+
+#, fuzzy
+msgid "entertainment (general)"
 msgstr "szórakoztató (6-14 éves korosztály"
 
 msgid "epg cache backup"
@@ -12071,6 +12239,9 @@ msgstr "szabad"
 msgid "from"
 msgstr "ból"
 
+msgid "fs9000"
+msgstr ""
+
 msgid "fs9000VFD display"
 msgstr ""
 
@@ -12140,6 +12311,9 @@ msgstr ""
 msgid "hs8200VFD-Icons"
 msgstr ""
 
+msgid "hs9510"
+msgstr ""
+
 msgid "hs9510VFD display"
 msgstr ""
 
@@ -12157,6 +12331,10 @@ msgstr "csak a bővítményeknél"
 
 msgid "information/education/school program"
 msgstr "információ/oktatás/isklola"
+
+#, fuzzy
+msgid "infotainment (general)"
+msgstr "sport (általános)"
 
 msgid "init module"
 msgstr "modul inicializálása"
@@ -12281,6 +12459,10 @@ msgstr "ugrás az első tételhez"
 msgid "move up to previous entry"
 msgstr "ugrás az előző tételhez"
 
+#, fuzzy
+msgid "movie (general)"
+msgstr "mozi/színház (általános)"
+
 msgid "movie/drama (general)"
 msgstr "mozi/színház (általános)"
 
@@ -12289,6 +12471,10 @@ msgstr "multi"
 
 msgid "multinorm"
 msgstr "többnormás"
+
+#, fuzzy
+msgid "music (general)"
+msgstr "sport (általános)"
 
 msgid "music/ballet/dance (general)"
 msgstr "zene/balett/tánc (általános)"
@@ -12311,6 +12497,10 @@ msgstr "soha"
 
 msgid "new media"
 msgstr "új média"
+
+#, fuzzy
+msgid "news (general)"
+msgstr "sport (általános)"
 
 msgid "news magazine"
 msgstr "hírmagazin"
@@ -12354,9 +12544,6 @@ msgstr "nem konfigurált"
 msgid "not locked"
 msgstr "nem hangolt"
 
-msgid "not running"
-msgstr "nem fut"
-
 msgid "not supported"
 msgstr "nem támogatott"
 
@@ -12372,9 +12559,6 @@ msgstr "Ne csináljon semmit"
 
 msgid "nothing connected"
 msgstr "semmi sincs csatlakoztatva"
-
-msgid "octagon1008"
-msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "a kétréteges lemezből felhasználva."
@@ -12423,9 +12607,6 @@ msgstr ""
 
 msgid "pass"
 msgstr "művelet"
-
-msgid "pausing"
-msgstr "megállítás"
 
 msgid "performing arts"
 msgstr "előadóművészet"
@@ -12523,9 +12704,6 @@ msgstr "lejátszási lista ismétlése"
 msgid "repeated"
 msgstr "többszöri"
 
-msgid "reserved for future use"
-msgstr "későbbi használatra fenntartva"
-
 msgid "restore deleted userbouquets"
 msgstr "törölt felhasználói listák visszaállítása"
 
@@ -12549,9 +12727,6 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "románc"
-
-msgid "running"
-msgstr "futó"
 
 msgid "save"
 msgstr ""
@@ -12596,9 +12771,6 @@ msgstr "komolyzene/klasszikus/vallási/történelmi/dráma"
 
 msgid "service is in bouquet parental protection"
 msgstr "gyermekzárral védett csatorna lista"
-
-msgid "service off-air"
-msgstr "szolgáltatás nem üzemel"
 
 msgid "set as startup service"
 msgstr "beállítás indítási csatornának"
@@ -12689,7 +12861,8 @@ msgstr "partíció%s - %s, biztonsági mentéssel"
 msgid "slot%s - %s, without backup"
 msgstr "partíció%s - %s, biztonsági mentés nélkül"
 
-msgid "soap/melodram/folkloric"
+#, fuzzy
+msgid "soap/melodrama/folkloric"
 msgstr "szappanopera/melodráma"
 
 msgid "social/political issues/economics (general)"
@@ -12704,11 +12877,19 @@ msgstr "lejátszási listák rendezése"
 msgid "spark"
 msgstr ""
 
+#, fuzzy
+msgid "special (general)"
+msgstr "sport (általános)"
+
 msgid "special events"
 msgstr "különleges események"
 
 msgid "special format data DVD (HDTV compatible)"
 msgstr "speciális adat-DVD (HDTV-kompatibilis)"
+
+#, fuzzy
+msgid "sport (general)"
+msgstr "sport (általános)"
 
 msgid "sports (general)"
 msgstr "sport (általános)"
@@ -12724,9 +12905,6 @@ msgstr "vágás belépő pontja"
 
 msgid "start directory"
 msgstr "kiindulási mappa"
-
-msgid "starts in a few seconds"
-msgstr "azonnal kezdődik"
 
 msgid "stepsize"
 msgstr "lépték mérték"
@@ -12863,6 +13041,10 @@ msgstr "vertikális"
 
 msgid "vfddisplay.png"
 msgstr ""
+
+#, fuzzy
+msgid "vitamin"
+msgstr "Adatfolyam"
 
 msgid "wait for ci..."
 msgstr "várakozás modulra..."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 20:19+0430\n"
+"POT-Creation-Date: 2019-09-03 18:30+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -190,10 +190,6 @@ msgid "%.2f GB"
 msgstr "%.2f GB"
 
 #, python-format
-msgid "%02d:%02d"
-msgstr "%02d:%02d"
-
-#, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
 
@@ -349,10 +345,6 @@ msgstr[1] "%d jaringan nirkabel ditemukan!"
 
 msgid "%d-%m"
 msgstr "%d-%m"
-
-#, python-format
-msgid "%d.%02d. %02d:%02d"
-msgstr "%d.%02d. %02d:%02d"
 
 #, python-format
 msgid "%d.%03d GB"
@@ -909,6 +901,9 @@ msgstr "Sesuaikan setelan 3D"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Sesuaikan setelah warna sehingga semua nuansa warna mudah dibedakan, tapi terlihat sepenuh mungkin. Jika anda senang dengan hasilnya, tekan OK untuk menutup pengaturan video, atau gunakan tombol angka untuk memilih test layar lainnya."
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr "Tingkat mahir"
 
@@ -1324,6 +1319,10 @@ msgstr "Mode penulisan"
 msgid "Auto"
 msgstr "Auto"
 
+#, fuzzy
+msgid "Auto Detect"
+msgstr "DiSEqC otomatis"
+
 msgid "Auto Diseqc"
 msgstr "DiSEqC otomatis"
 
@@ -1408,6 +1407,10 @@ msgstr ""
 
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1965,7 +1968,15 @@ msgstr ""
 "Memeriksa penala %s\n"
 "DiSEqC port %s untuk %s"
 
+#, fuzzy
+msgid "Children"
+msgstr "Anak-anak/Pemuda"
+
 msgid "Children/Youth"
+msgstr "Anak-anak/Pemuda"
+
+#, fuzzy
+msgid "Childrens"
 msgstr "Anak-anak/Pemuda"
 
 msgid "Chile"
@@ -1983,6 +1994,12 @@ msgstr "Cina - Tradisional"
 
 msgid "Choose Tuner"
 msgstr "Pilih Penala"
+
+msgid "Choose a country scheme for decoding genre information in EPG events."
+msgstr ""
+
+msgid "Choose a country scheme for decoding rating information in EPG events."
+msgstr ""
 
 msgid "Choose bouquet"
 msgstr "Pilih buket"
@@ -2103,6 +2120,10 @@ msgstr "Kolombia"
 
 msgid "Combo"
 msgstr "Kombo"
+
+#, fuzzy
+msgid "Comedy"
+msgstr "lawak"
 
 msgid "Command execution..."
 msgstr "Menjalankan perintah..."
@@ -2609,6 +2630,14 @@ msgstr "Tidak bisa merekam karena layanan tidak valid %s"
 msgid "Country"
 msgstr "Negara"
 
+#, fuzzy
+msgid "Country for EPG event genre information"
+msgstr "Info pengelola perangkat lunak"
+
+#, fuzzy
+msgid "Country for EPG event rating information"
+msgstr "Periksa lembar spek peralatan SCR anda untuk informasi ini"
+
 msgid "Cover dashed flickering line for this service"
 msgstr "Tutup garis putus-putus berkedip untuk layanan ini"
 
@@ -2662,6 +2691,10 @@ msgstr ""
 
 msgid "Curacao"
 msgstr ""
+
+#, fuzzy
+msgid "Current Affairs"
+msgstr "News Current Affairs"
 
 msgid "Current CEC address"
 msgstr "Alamat CEC saat ini"
@@ -3284,6 +3317,10 @@ msgstr "Anda ingin memperbarui rx anda?"
 msgid "Do you want to upgrade the package:\n"
 msgstr "Anda ingin menaiktingkatkan paket:\n"
 
+#, fuzzy
+msgid "Documentary"
+msgstr "dokumenter"
+
 msgid "Dolby"
 msgstr ""
 
@@ -3338,6 +3375,10 @@ msgstr "Mengunduh Image"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Mengunduh informasi plugin. Mohon menunggu..."
+
+#, fuzzy
+msgid "Drama"
+msgstr "Film/Drama"
 
 #, fuzzy
 msgid "Drop unconfigured satellites"
@@ -3443,7 +3484,12 @@ msgstr "Ubah judul"
 msgid "Edit upgrade source url."
 msgstr "Ubah url sumber upgrade."
 
-msgid "Education/Science/..."
+#, fuzzy
+msgid "Education/Information"
+msgstr "Informasi"
+
+#, fuzzy
+msgid "Education/Science/Factual"
 msgstr "Edukasi/Sains/..."
 
 msgid "Egypt"
@@ -3695,6 +3741,10 @@ msgstr "Masukkan frekuensi oscilator lokal pita tinggi anda. Untuk informasi lan
 
 msgid "Enter your low band local oscillator frequency. For more information consult the spec sheet of your LNB."
 msgstr "Masukkan frekuensi oscilator lokal pita rendah anda. Untuk informasi lanjut, periksa lembar spek LNB anda."
+
+#, fuzzy
+msgid "Entertainment"
+msgstr "Masuk ke menu utama"
 
 msgid "Equal to"
 msgstr "Sama dgn"
@@ -4318,11 +4368,17 @@ msgstr ""
 msgid "Gateway"
 msgstr "Gateway"
 
+msgid "General"
+msgstr ""
+
 msgid "General AC3 delay"
 msgstr "Tunda AC3 umum"
 
 msgid "General PCM delay"
 msgstr "Tunda PCM umum"
+
+msgid "Generic"
+msgstr ""
 
 msgid "Genre"
 msgstr "Gaya"
@@ -4540,6 +4596,10 @@ msgstr "Harddisk"
 
 msgid "Harddisk Setup"
 msgstr "Pengaturan Harddisk"
+
+#, fuzzy
+msgid "Hardware serial: "
+msgstr "Perangkat keras: "
 
 msgid "Hardware: "
 msgstr "Perangkat keras: "
@@ -4886,6 +4946,10 @@ msgstr "Sumber data frontend pada bilah info"
 
 msgid "Information"
 msgstr "Informasi"
+
+#, fuzzy
+msgid "Infotainment"
+msgstr "Batas waktu bilah info"
 
 msgid "Init"
 msgstr "Init"
@@ -5240,6 +5304,10 @@ msgstr "Kecepatan terakhir"
 msgid "Last upgrade: "
 msgstr "Peningkatan terakhir: "
 
+msgctxt "third event: 'third' event label"
+msgid "Later"
+msgstr ""
+
 msgid "Latest Commits"
 msgstr "Pengerjaan Terbaru"
 
@@ -5540,6 +5608,12 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 #, fuzzy
 msgid "Mauritania"
 msgstr "Mauritania"
@@ -5766,6 +5840,10 @@ msgstr "Bergerak ke posisi pada indeks"
 msgid "Movement"
 msgstr "Pergerakan"
 
+#, fuzzy
+msgid "Movie"
+msgstr "Bergerak"
+
 msgid "Movie list configuration"
 msgstr "Pengaturan daftar film"
 
@@ -5831,6 +5909,9 @@ msgstr "Banyak satelit dipilih semua"
 #, fuzzy
 msgid "Multistream"
 msgstr "Banyak satelit"
+
+msgid "Music"
+msgstr ""
 
 msgid "Music/Ballet/Dance"
 msgstr "Musik/Ballet/Tari"
@@ -5982,7 +6063,11 @@ msgstr ""
 msgid "New Zealand"
 msgstr ""
 
-msgid "News Current Affairs"
+msgid "News"
+msgstr ""
+
+#, fuzzy
+msgid "News/Current Affairs"
 msgstr "News Current Affairs"
 
 msgctxt "button label, 'next screen'"
@@ -6207,6 +6292,10 @@ msgstr "Norwegia"
 msgid "Norwegian"
 msgstr "Norwegia"
 
+#, fuzzy
+msgid "Not Classified"
+msgstr "Tak diasosiasikan"
+
 msgid "Not Defined"
 msgstr "Tak ditetapkan"
 
@@ -6224,6 +6313,10 @@ msgstr "Tak diasosiasikan"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Tidak cukup ruang simpan disk. Mohon kosongkan beberapa ruang disk dan coba lagi. (%d MB diperlukan, %d MB tersedia)"
+
+#, fuzzy
+msgid "Not running"
+msgstr "Di awal"
 
 msgid "Not tested:"
 msgstr "Tidak teruji:"
@@ -6532,6 +6625,9 @@ msgstr ""
 msgid "Parent directory"
 msgstr "Direktori induk"
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 msgid "Parental control"
 msgstr "Pengawasan Orangtua"
 
@@ -6560,6 +6656,10 @@ msgstr "Jeda pemutaran"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "Lanjut mainkan"
+
+#, fuzzy
+msgid "Pausing"
+msgstr "jeda"
 
 msgid "Percentage left"
 msgstr "Persentase di kiri"
@@ -7060,6 +7160,9 @@ msgstr "Penala diutamakan untuk merekam"
 msgid "Preparing... Please wait"
 msgstr "Mempersiapkan... Silakan tunggu"
 
+msgid "Preschool"
+msgstr ""
+
 msgid "Press '0' to toggle PiP mode"
 msgstr "Tekan '0' untuk alihkan mode PiP"
 
@@ -7556,6 +7659,10 @@ msgstr "Baca ulang tabel partisi"
 msgid "Reserved"
 msgstr "Dialokasikan"
 
+#, fuzzy
+msgid "Reserved for future use"
+msgstr "tandai untuk kegunaan di masa mendatang"
+
 msgid "Reset"
 msgstr "Atur ulang"
 
@@ -7632,6 +7739,9 @@ msgstr "Pulihkan setelan sistem"
 
 msgid "Restoring..."
 msgstr "Memulihkan..."
+
+msgid "Restricted 18+"
+msgstr ""
 
 msgid "Resume from last position"
 msgstr "Mulai dari posisi terakhir"
@@ -8484,6 +8594,10 @@ msgstr ""
 "Kanal tidak ditemukan\n"
 "(SID tidak ditemukan di PAT)"
 
+#, fuzzy
+msgid "Service off-air"
+msgstr "Semua penyedia layanan"
+
 msgid "Service reference"
 msgstr "Referensi layanan"
 
@@ -8688,9 +8802,6 @@ msgstr "Tampilkan EPG..."
 msgid "Show Ethernet activity"
 msgstr "tampilkan alternatif"
 
-msgid "Show Games show"
-msgstr "Tampilkan permainan"
-
 msgid "Show InfoBar"
 msgstr "Tampilkan Bilah info"
 
@@ -8752,6 +8863,10 @@ msgstr "Tampilkan info acara terperinci"
 
 msgid "Show event details"
 msgstr "Tampilkan acara terperinci"
+
+#, fuzzy
+msgid "Show event genre information"
+msgstr "Info pengelola perangkat lunak"
 
 msgid "Show event-progress in channel selection"
 msgstr "Tampilkan progress acara pada pemilihan kanal"
@@ -8945,6 +9060,10 @@ msgstr "Tampilkan peringatan sebelum atur 'Abaikan konflik'"
 
 msgid "Show warning when timeshift is stopped"
 msgstr "Tampilkan peringatan ketika timeshift berhenti"
+
+#, fuzzy
+msgid "Show/Games show"
+msgstr "Tampilkan permainan"
 
 msgid "Show/hide window"
 msgstr "Tampilkan/sembunyikan jendela"
@@ -9240,6 +9359,10 @@ msgid "SparkUnionTunerType config"
 msgstr ""
 
 #, fuzzy
+msgid "Special"
+msgstr "Spesial 1"
+
+#, fuzzy
 msgid "Special 1"
 msgstr "Spesial 1"
 
@@ -9288,6 +9411,10 @@ msgstr "Mode pratinjau terpisah"
 
 msgid "Splitscreen"
 msgstr "Layar terpisah"
+
+#, fuzzy
+msgid "Sport"
+msgstr "Olahraga"
 
 msgid "Sports"
 msgstr "Olahraga"
@@ -9388,6 +9515,10 @@ msgstr "Mulai dgn layar daftar"
 
 msgid "Starting on"
 msgstr "Mulai dari"
+
+#, fuzzy
+msgid "Starts in a few seconds"
+msgstr "mulai dalam beberap detik"
 
 msgid "Startup the set top box in standby"
 msgstr "Saat dihidupkan, rx akan masuk ke posisi standby"
@@ -10043,6 +10174,10 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr "Pilihan ini memungkinakn anda untuk menaikkan warna biru pada gambar."
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr "Pilihan ini memungkinkan anda untuk menaikkan warna hijau pada gambar."
+
+#, fuzzy
+msgid "This option allows you to choose whether or not to display genre information for the event."
 msgstr "Pilihan ini memungkinkan anda untuk menaikkan warna hijau pada gambar."
 
 msgid "This option allows you to configure the Colordepth for UHD"
@@ -11945,6 +12080,10 @@ msgstr "dan pilih kanal sebelumnya"
 msgid "are you sure to cancel all changes"
 msgstr "anda yakin untuk membatalkan semua perubahan"
 
+#, fuzzy
+msgid "arts/culture (general)"
+msgstr "seni/budaya (tanpa musik, umum)"
+
 msgid "arts/culture (without music, general)"
 msgstr "seni/budaya (tanpa musik, umum)"
 
@@ -11976,8 +12115,8 @@ msgid "ballet"
 msgstr "ballet"
 
 #, python-format
-msgid "bc%s"
-msgstr "bc%s"
+msgid "bc%d"
+msgstr ""
 
 msgid "better"
 msgstr "bagus"
@@ -12045,7 +12184,12 @@ msgstr "Nomor kanal dan nama layanan"
 msgid "chapters"
 msgstr "bab"
 
-msgid "childrens's/youth program (general)"
+#, fuzzy
+msgid "children's/youth program (general)"
+msgstr "acara anak-anak/pemuda (umum)"
+
+#, fuzzy
+msgid "childrens (general)"
 msgstr "acara anak-anak/pemuda (umum)"
 
 msgid "circular left"
@@ -12059,6 +12203,10 @@ msgstr "overscan klip / batas kotaksurat"
 
 msgid "comedy"
 msgstr "lawak"
+
+#, fuzzy
+msgid "comedy (general)"
+msgstr "film/drama (umum)"
 
 msgid "config menu"
 msgstr "menu setelan"
@@ -12088,8 +12236,12 @@ msgstr "salin ke buket"
 msgid "create directory"
 msgstr "buat direktori"
 
-msgid "cuberevo"
+msgid "cuberevo_uni"
 msgstr ""
+
+#, fuzzy
+msgid "current affairs (general)"
+msgstr "berita/kejadian terkini (umum)"
 
 msgid "daily"
 msgstr "harian"
@@ -12141,11 +12293,19 @@ msgstr "jangan lakukan apapun"
 msgid "documentary"
 msgstr "dokumenter"
 
+#, fuzzy
+msgid "documentary (general)"
+msgstr "dokumenter"
+
 msgid "don't descramble, record ecm"
 msgstr "jangan descramble, rekam ecm"
 
 msgid "done!"
 msgstr "selesai!"
+
+#, fuzzy
+msgid "drama (general)"
+msgstr "film/drama (umum)"
 
 msgid "east"
 msgstr "timur"
@@ -12155,6 +12315,10 @@ msgstr "ekonomi/nasihat sosial"
 
 msgid "edit alternatives"
 msgstr "ubah alternatif"
+
+#, fuzzy
+msgid "education/information (general)"
+msgstr "edukasi/sains/topik faktual (umum)"
 
 msgid "education/science/factual topics (general)"
 msgstr "edukasi/sains/topik faktual (umum)"
@@ -12199,6 +12363,10 @@ msgid "entertainment (10-16 year old)"
 msgstr "hiburan (umur 10-16 tahun)"
 
 msgid "entertainment (6-14 year old)"
+msgstr "hiburan (umur 6-14 tahun)"
+
+#, fuzzy
+msgid "entertainment (general)"
 msgstr "hiburan (umur 6-14 tahun)"
 
 msgid "epg cache backup"
@@ -12291,6 +12459,9 @@ msgstr "bebas"
 msgid "from"
 msgstr "dari"
 
+msgid "fs9000"
+msgstr ""
+
 msgid "fs9000VFD display"
 msgstr ""
 
@@ -12360,6 +12531,9 @@ msgstr ""
 msgid "hs8200VFD-Icons"
 msgstr ""
 
+msgid "hs9510"
+msgstr ""
+
 msgid "hs9510VFD display"
 msgstr ""
 
@@ -12380,6 +12554,10 @@ msgstr "Plugin audio"
 
 msgid "information/education/school program"
 msgstr "program informasi/pendidikan/sekolah"
+
+#, fuzzy
+msgid "infotainment (general)"
+msgstr "olahraga (umum)"
 
 msgid "init module"
 msgstr "init module"
@@ -12505,6 +12683,10 @@ msgstr "gerak ke atas menuju entri pertama"
 msgid "move up to previous entry"
 msgstr "gerak ke atas menuju entri sebelumnya"
 
+#, fuzzy
+msgid "movie (general)"
+msgstr "film/drama (umum)"
+
 msgid "movie/drama (general)"
 msgstr "film/drama (umum)"
 
@@ -12513,6 +12695,10 @@ msgstr ""
 
 msgid "multinorm"
 msgstr "multinorm"
+
+#, fuzzy
+msgid "music (general)"
+msgstr "olahraga (umum)"
 
 msgid "music/ballet/dance (general)"
 msgstr "musik/ballet/tari (umum)"
@@ -12535,6 +12721,10 @@ msgstr "takpernah"
 
 msgid "new media"
 msgstr "media baru"
+
+#, fuzzy
+msgid "news (general)"
+msgstr "olahraga (umum)"
 
 msgid "news magazine"
 msgstr "majalah berita"
@@ -12578,10 +12768,6 @@ msgstr "tidak dikonfigurasi"
 msgid "not locked"
 msgstr "tidak dikunci"
 
-#, fuzzy
-msgid "not running"
-msgstr "Di awal"
-
 msgid "not supported"
 msgstr "tidak didukung"
 
@@ -12597,9 +12783,6 @@ msgstr "Jangan lakukan"
 
 msgid "nothing connected"
 msgstr "tak ada yang tersambung"
-
-msgid "octagon1008"
-msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "dari media lapis DUA yg digunakan."
@@ -12648,9 +12831,6 @@ msgstr ""
 
 msgid "pass"
 msgstr "lewatkan"
-
-msgid "pausing"
-msgstr "jeda"
 
 msgid "performing arts"
 msgstr "seni pertunjukan"
@@ -12748,9 +12928,6 @@ msgstr "ulang daftar putar"
 msgid "repeated"
 msgstr "diulang"
 
-msgid "reserved for future use"
-msgstr "tandai untuk kegunaan di masa mendatang"
-
 msgid "restore deleted userbouquets"
 msgstr "kembalikan buketpengguna yg dihapus"
 
@@ -12774,10 +12951,6 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romansa"
-
-#, fuzzy
-msgid "running"
-msgstr "Peringatan"
 
 msgid "save"
 msgstr ""
@@ -12822,10 +12995,6 @@ msgstr "serious/classical/religious/historical movie/drama"
 
 msgid "service is in bouquet parental protection"
 msgstr "layanan dalam buket proteksi orangtua"
-
-#, fuzzy
-msgid "service off-air"
-msgstr "Semua penyedia layanan"
 
 msgid "set as startup service"
 msgstr "atur sbg layanan saat mulai"
@@ -12916,7 +13085,8 @@ msgstr "slot%s - %s, dgn cadangan"
 msgid "slot%s - %s, without backup"
 msgstr "slot%s - %s, tanpa cadangan"
 
-msgid "soap/melodram/folkloric"
+#, fuzzy
+msgid "soap/melodrama/folkloric"
 msgstr "soap/melodram/folkloric"
 
 msgid "social/political issues/economics (general)"
@@ -12931,11 +13101,19 @@ msgstr "memilah daftarputar"
 msgid "spark"
 msgstr ""
 
+#, fuzzy
+msgid "special (general)"
+msgstr "olahraga (umum)"
+
 msgid "special events"
 msgstr "acara khusus"
 
 msgid "special format data DVD (HDTV compatible)"
 msgstr "format khusus DVD data(HDTV kompatibel)"
+
+#, fuzzy
+msgid "sport (general)"
+msgstr "olahraga (umum)"
 
 msgid "sports (general)"
 msgstr "olahraga (umum)"
@@ -12951,10 +13129,6 @@ msgstr "mulai potong di sini"
 
 msgid "start directory"
 msgstr "direktori mulai"
-
-#, fuzzy
-msgid "starts in a few seconds"
-msgstr "mulai dalam beberap detik"
 
 msgid "stepsize"
 msgstr "ukuranjangka"
@@ -13093,6 +13267,10 @@ msgstr "vertical"
 
 msgid "vfddisplay.png"
 msgstr ""
+
+#, fuzzy
+msgid "vitamin"
+msgstr "Stream"
 
 msgid "wait for ci..."
 msgstr "mengunggu ci..."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 20:19+0430\n"
+"POT-Creation-Date: 2019-09-03 18:30+0430\n"
 "PO-Revision-Date: 2019-08-25 19:00+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -193,10 +193,6 @@ msgid "%.2f GB"
 msgstr "%.2f GB"
 
 #, python-format
-msgid "%02d:%02d"
-msgstr "%02d:%02d"
-
-#, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
 
@@ -360,10 +356,6 @@ msgstr[2] "surasta %d belaidžių tinklų!"
 
 msgid "%d-%m"
 msgstr "%m-%d"
-
-#, python-format
-msgid "%d.%02d. %02d:%02d"
-msgstr "%d.%02d. %02d:%02d"
 
 #, python-format
 msgid "%d.%03d GB"
@@ -912,6 +904,9 @@ msgstr "Sureguliuokite 3D nustatymus"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Sureguliuokite spalvas taip, kad visos spalvos ir atspalviai būtų atskiriami, bet atrodytų taip prisotinti, kiek galima. Jei jūs esate patenkinti rezultatu, spauskite OK, kad uždarytumėte vaizdo tikslų suderinimą, ar pasinaudokite skaičių mygtukais, kad išrinktumėte kitus bandomuosius ekranus."
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr "Išplėstinis"
 
@@ -1316,6 +1311,10 @@ msgstr "Kūrimas"
 msgid "Auto"
 msgstr "Automatinis"
 
+#, fuzzy
+msgid "Auto Detect"
+msgstr "Automatinis Diseqc"
+
 msgid "Auto Diseqc"
 msgstr "Automatinis Diseqc"
 
@@ -1395,6 +1394,10 @@ msgstr "Azerbaidžanas"
 
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1954,8 +1957,16 @@ msgstr ""
 "Tikrinama imtuvo %s\n"
 "DiSEqC jungtis %s dėl %s"
 
+#, fuzzy
+msgid "Children"
+msgstr "Čilė"
+
 msgid "Children/Youth"
 msgstr "Vaikams, jaunimui"
+
+#, fuzzy
+msgid "Childrens"
+msgstr "Čilė"
 
 msgid "Chile"
 msgstr "Čilė"
@@ -1971,6 +1982,12 @@ msgstr "Kiniečių tradicinė"
 
 msgid "Choose Tuner"
 msgstr "Pasirinkite imtuvą"
+
+msgid "Choose a country scheme for decoding genre information in EPG events."
+msgstr ""
+
+msgid "Choose a country scheme for decoding rating information in EPG events."
+msgstr ""
 
 msgid "Choose bouquet"
 msgstr "Pasirinkite paketą"
@@ -2086,6 +2103,10 @@ msgstr "Kombinuotas"
 
 msgid "Combo"
 msgstr "Kombo"
+
+#, fuzzy
+msgid "Comedy"
+msgstr "komedija"
 
 msgid "Command execution..."
 msgstr "Vykdoma komanda..."
@@ -2578,6 +2599,14 @@ msgstr "Nepavyko įrašyti dėl neveikiančių kanalų %s"
 msgid "Country"
 msgstr "Šalis"
 
+#, fuzzy
+msgid "Country for EPG event genre information"
+msgstr "Programinės įrangos valdymo informacija"
+
+#, fuzzy
+msgid "Country for EPG event rating information"
+msgstr "Dėl šios informacijos kreipkitės į savo SCR įrenginio specifikacijų lapą."
+
 msgid "Cover dashed flickering line for this service"
 msgstr "Uždengti punktyrinę, mirgančią liniją šiam kanalui"
 
@@ -2627,6 +2656,10 @@ msgstr ""
 
 msgid "Curacao"
 msgstr "Kiurasao"
+
+#, fuzzy
+msgid "Current Affairs"
+msgstr "Naujienos, aktualijos"
 
 msgid "Current CEC address"
 msgstr "Dabartinis CEC adresas"
@@ -3230,6 +3263,10 @@ msgstr "Ar norite atnaujinti imtuvo įrangą?"
 msgid "Do you want to upgrade the package:\n"
 msgstr "Ar norite atnaujinti paketą:\n"
 
+#, fuzzy
+msgid "Documentary"
+msgstr "dokumentika"
+
 msgid "Dolby"
 msgstr "Dolby"
 
@@ -3284,6 +3321,10 @@ msgstr "Parsiunčiamas atvaizdas"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Parsiunčiama informacija apie priedus. Prašome laukti..."
+
+#, fuzzy
+msgid "Drama"
+msgstr "Filmas/drama"
 
 msgid "Drop unconfigured satellites"
 msgstr "Pašalinti nesukonfigūruotus palydovus"
@@ -3383,7 +3424,12 @@ msgstr "Redaguoti pavadinimą"
 msgid "Edit upgrade source url."
 msgstr "Redaguoti atnaujinimo šaltinio internetinį adresą."
 
-msgid "Education/Science/..."
+#, fuzzy
+msgid "Education/Information"
+msgstr "Informacija"
+
+#, fuzzy
+msgid "Education/Science/Factual"
 msgstr "Švietimas, mokslas, ..."
 
 msgid "Egypt"
@@ -3629,6 +3675,10 @@ msgstr "Įrašykite savo aukštos juostos heterodino dažnį. Daugiau informacij
 
 msgid "Enter your low band local oscillator frequency. For more information consult the spec sheet of your LNB."
 msgstr "Įrašykite savo žemos juostos heterodino dažnį. Daugiau informacijos rasite LNB specifikacijų lape."
+
+#, fuzzy
+msgid "Entertainment"
+msgstr "Įeikite į pagrindinį meniu..."
 
 msgid "Equal to"
 msgstr "Toks, kaip šis"
@@ -4221,11 +4271,17 @@ msgstr "Gambija"
 msgid "Gateway"
 msgstr "Šliuzas"
 
+msgid "General"
+msgstr ""
+
 msgid "General AC3 delay"
 msgstr "Bendra AC3 delsa"
 
 msgid "General PCM delay"
 msgstr "Bendra PCM delsa"
+
+msgid "Generic"
+msgstr ""
 
 msgid "Genre"
 msgstr "Žanras"
@@ -4436,6 +4492,10 @@ msgstr "Kietas diskas"
 
 msgid "Harddisk Setup"
 msgstr "HDD valdymas"
+
+#, fuzzy
+msgid "Hardware serial: "
+msgstr "Techninė įranga: "
 
 msgid "Hardware: "
 msgstr "Techninė įranga: "
@@ -4769,6 +4829,10 @@ msgstr "Infojuostos duomenų šaltinis"
 
 msgid "Information"
 msgstr "Informacija"
+
+#, fuzzy
+msgid "Infotainment"
+msgstr "Infojuosta išsijungs po"
 
 msgid "Init"
 msgstr "Inicializacija"
@@ -5114,6 +5178,10 @@ msgstr "Paskutinis greitis"
 msgid "Last upgrade: "
 msgstr "Paskutinis atnaujinimas: "
 
+msgctxt "third event: 'third' event label"
+msgid "Later"
+msgstr ""
+
 msgid "Latest Commits"
 msgstr "Rodyti paskutinius veiksmus"
 
@@ -5406,6 +5474,12 @@ msgstr "Maršalo salos"
 msgid "Martinique"
 msgstr "Martinika"
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 msgid "Mauritania"
 msgstr "Mauritanija"
 
@@ -5625,6 +5699,10 @@ msgstr "Pasukta į poziciją ties žyme"
 msgid "Movement"
 msgstr "Judėjimas"
 
+#, fuzzy
+msgid "Movie"
+msgstr "Sukama"
+
 msgid "Movie list configuration"
 msgstr "Filmų sąrašo konfigūracija"
 
@@ -5688,6 +5766,9 @@ msgstr "Pasirinkti visus"
 
 msgid "Multistream"
 msgstr "Daugialypis srautas"
+
+msgid "Music"
+msgstr ""
 
 msgid "Music/Ballet/Dance"
 msgstr "Muzika, baletas, šokiai"
@@ -5833,7 +5914,11 @@ msgstr "Naujoji Kaledonija"
 msgid "New Zealand"
 msgstr "Naujoji Zelandija"
 
-msgid "News Current Affairs"
+msgid "News"
+msgstr ""
+
+#, fuzzy
+msgid "News/Current Affairs"
 msgstr "Naujienos, aktualijos"
 
 msgctxt "button label, 'next screen'"
@@ -6051,6 +6136,10 @@ msgstr "Norvegija"
 msgid "Norwegian"
 msgstr "Norvegų"
 
+#, fuzzy
+msgid "Not Classified"
+msgstr "Nesusieta"
+
 msgid "Not Defined"
 msgstr "Neapibrėžta"
 
@@ -6066,6 +6155,10 @@ msgstr "Nesusieta"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Diske nepakanka vietos. Atlaisvinkite vietos diske ir bandykite dar kartą (reikia %d MB, laisva %d MB)"
+
+#, fuzzy
+msgid "Not running"
+msgstr "neveikia"
 
 msgid "Not tested:"
 msgstr "Netikrinta:"
@@ -6361,6 +6454,9 @@ msgstr "Paragvajus"
 msgid "Parent directory"
 msgstr "Pagrindinis katalogas"
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 msgid "Parental control"
 msgstr "Tėvų kontrolė"
 
@@ -6387,6 +6483,10 @@ msgstr "Sustabdyti atkūrimą"
 
 msgid "Pause/Continue playback"
 msgstr "Pristabdyti/tęsti atkūrimą"
+
+#, fuzzy
+msgid "Pausing"
+msgstr "pristabdymas"
 
 msgid "Percentage left"
 msgstr "Procentai kairėje"
@@ -6872,6 +6972,9 @@ msgstr "Pirmenybinis imtuvas įrašams"
 
 msgid "Preparing... Please wait"
 msgstr "Ruošiama... prašome laukti"
+
+msgid "Preschool"
+msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "PiP langams sukeisti spauskite '0'"
@@ -7359,6 +7462,10 @@ msgstr "Skaidinių lentelė nuskaitoma iš naujo"
 msgid "Reserved"
 msgstr "Rezervuota"
 
+#, fuzzy
+msgid "Reserved for future use"
+msgstr "skirta naudoti ateityje"
+
 msgid "Reset"
 msgstr "Nustatyti iš naujo"
 
@@ -7430,6 +7537,9 @@ msgstr "Atkurti sistemos nustatymus"
 
 msgid "Restoring..."
 msgstr "Atkuriama..."
+
+msgid "Restricted 18+"
+msgstr ""
 
 msgid "Resume from last position"
 msgstr "Tęsti nuo paskutinės pozicijos"
@@ -8259,6 +8369,10 @@ msgstr ""
 "Kanalas nerastas!\n"
 "(SID nerastas PAT)"
 
+#, fuzzy
+msgid "Service off-air"
+msgstr "kanalas ne eteryje"
+
 msgid "Service reference"
 msgstr "Kanalo nuoroda"
 
@@ -8457,9 +8571,6 @@ msgstr "Rodyti EPG..."
 msgid "Show Ethernet activity"
 msgstr "rodyti alternatyvas"
 
-msgid "Show Games show"
-msgstr "Rodyti žaidimų šou"
-
 msgid "Show InfoBar"
 msgstr "Rodyti info juostą"
 
@@ -8520,6 +8631,10 @@ msgstr "Rodyti išsamią įvykio informaciją"
 
 msgid "Show event details"
 msgstr "Rodyti įvykio detales"
+
+#, fuzzy
+msgid "Show event genre information"
+msgstr "Programinės įrangos valdymo informacija"
 
 msgid "Show event-progress in channel selection"
 msgstr "Rodyti įvykių eigą kanalų pasirinkimo sąrašo lange"
@@ -8712,6 +8827,10 @@ msgstr "Prieš nustatant 'Ignoruoti konfliktą' rodyti perspėjimą"
 
 msgid "Show warning when timeshift is stopped"
 msgstr "Perspėti, prieš sustabdant laiko poslinkį"
+
+#, fuzzy
+msgid "Show/Games show"
+msgstr "Rodyti žaidimų šou"
 
 msgid "Show/hide window"
 msgstr "Rodyti/slėpti langą"
@@ -8999,6 +9118,10 @@ msgstr ""
 msgid "SparkUnionTunerType config"
 msgstr ""
 
+#, fuzzy
+msgid "Special"
+msgstr "Simboliai 1"
+
 msgid "Special 1"
 msgstr "Simboliai 1"
 
@@ -9046,6 +9169,10 @@ msgstr "Padalinto ekrano peržiūros būdas"
 
 msgid "Splitscreen"
 msgstr "Perskirtas ekranas"
+
+#, fuzzy
+msgid "Sport"
+msgstr "Sportas"
 
 msgid "Sports"
 msgstr "Sportas"
@@ -9143,6 +9270,10 @@ msgstr "Pradėti, atveriant sąrašo langą"
 
 msgid "Starting on"
 msgstr "Pradedama"
+
+#, fuzzy
+msgid "Starts in a few seconds"
+msgstr "prasidės po kelių sekundžių"
 
 msgid "Startup the set top box in standby"
 msgstr "Paleisti imtuvą laukimo režime"
@@ -9784,6 +9915,10 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr "Ši parinktis leidžia padidinti mėlyną toną paveikslėlyje."
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr "Ši parinktis leidžia padidinti žalią toną paveikslėlyje."
+
+#, fuzzy
+msgid "This option allows you to choose whether or not to display genre information for the event."
 msgstr "Ši parinktis leidžia padidinti žalią toną paveikslėlyje."
 
 msgid "This option allows you to configure the Colordepth for UHD"
@@ -11650,6 +11785,10 @@ msgstr "ir pasirinkite ankstesnį kanalą"
 msgid "are you sure to cancel all changes"
 msgstr "jūs tikrai norite atšaukti visus pakeitimus"
 
+#, fuzzy
+msgid "arts/culture (general)"
+msgstr "menas/kultūra (be muzikos, bendras)"
+
 msgid "arts/culture (without music, general)"
 msgstr "menas/kultūra (be muzikos, bendras)"
 
@@ -11681,8 +11820,8 @@ msgid "ballet"
 msgstr "baletas"
 
 #, python-format
-msgid "bc%s"
-msgstr "bc%s"
+msgid "bc%d"
+msgstr ""
 
 msgid "better"
 msgstr "geriau"
@@ -11750,7 +11889,12 @@ msgstr "Kanalo numeris ir pavadinimas"
 msgid "chapters"
 msgstr "skyriai"
 
-msgid "childrens's/youth program (general)"
+#, fuzzy
+msgid "children's/youth program (general)"
+msgstr "vaikų, jaunimo programa (bendra)"
+
+#, fuzzy
+msgid "childrens (general)"
 msgstr "vaikų, jaunimo programa (bendra)"
 
 msgid "circular left"
@@ -11764,6 +11908,10 @@ msgstr "kirpti netelpančias sritis / juostos kraštuose"
 
 msgid "comedy"
 msgstr "komedija"
+
+#, fuzzy
+msgid "comedy (general)"
+msgstr "filmas/drama (bendras)"
 
 msgid "config menu"
 msgstr "konfigūruoti meniu"
@@ -11793,8 +11941,12 @@ msgstr "kopijuoti į paketus"
 msgid "create directory"
 msgstr "sukurti katalogą"
 
-msgid "cuberevo"
+msgid "cuberevo_uni"
 msgstr ""
+
+#, fuzzy
+msgid "current affairs (general)"
+msgstr "naujienos/aktualijos (bendra)"
 
 msgid "daily"
 msgstr "kasdien"
@@ -11846,11 +11998,19 @@ msgstr "nieko nedaryti"
 msgid "documentary"
 msgstr "dokumentika"
 
+#, fuzzy
+msgid "documentary (general)"
+msgstr "dokumentika"
+
 msgid "don't descramble, record ecm"
 msgstr "nereikia dekoduoti, įrašyti ecm"
 
 msgid "done!"
 msgstr "padaryta!"
+
+#, fuzzy
+msgid "drama (general)"
+msgstr "filmas/drama (bendras)"
 
 msgid "east"
 msgstr "rytai"
@@ -11860,6 +12020,10 @@ msgstr "ekonomika, socialiniai mokslai"
 
 msgid "edit alternatives"
 msgstr "redaguoti alternatyvas"
+
+#, fuzzy
+msgid "education/information (general)"
+msgstr "švietimas, mokslas, faktai (bendra)"
 
 msgid "education/science/factual topics (general)"
 msgstr "švietimas, mokslas, faktai (bendra)"
@@ -11904,6 +12068,10 @@ msgid "entertainment (10-16 year old)"
 msgstr "pramogos (10-16 metų vaikams)"
 
 msgid "entertainment (6-14 year old)"
+msgstr "pramogos (6-14 metų vaikams)"
+
+#, fuzzy
+msgid "entertainment (general)"
 msgstr "pramogos (6-14 metų vaikams)"
 
 msgid "epg cache backup"
@@ -11994,6 +12162,9 @@ msgstr "laisvi"
 msgid "from"
 msgstr "nuo"
 
+msgid "fs9000"
+msgstr ""
+
 msgid "fs9000VFD display"
 msgstr ""
 
@@ -12063,6 +12234,9 @@ msgstr ""
 msgid "hs8200VFD-Icons"
 msgstr ""
 
+msgid "hs9510"
+msgstr ""
+
 msgid "hs9510VFD display"
 msgstr ""
 
@@ -12080,6 +12254,10 @@ msgstr "tik prieduose"
 
 msgid "information/education/school program"
 msgstr "informacija, švietimas, mokyklos programa"
+
+#, fuzzy
+msgid "infotainment (general)"
+msgstr "sportas (bendrai)"
 
 msgid "init module"
 msgstr "aptinkamas modulis"
@@ -12204,6 +12382,10 @@ msgstr "perkelti aukštyn prie pirmo įrašo"
 msgid "move up to previous entry"
 msgstr "perkelti aukštyn prie ankstesnio įrašo"
 
+#, fuzzy
+msgid "movie (general)"
+msgstr "filmas/drama (bendras)"
+
 msgid "movie/drama (general)"
 msgstr "filmas/drama (bendras)"
 
@@ -12212,6 +12394,10 @@ msgstr "daugialypis"
 
 msgid "multinorm"
 msgstr "multinorma"
+
+#, fuzzy
+msgid "music (general)"
+msgstr "sportas (bendrai)"
 
 msgid "music/ballet/dance (general)"
 msgstr "muzika/baletas/šokiai (bendra)"
@@ -12233,6 +12419,10 @@ msgstr "niekada"
 
 msgid "new media"
 msgstr "nauja media laikmena"
+
+#, fuzzy
+msgid "news (general)"
+msgstr "sportas (bendrai)"
 
 msgid "news magazine"
 msgstr "naujienų žurnalas"
@@ -12276,9 +12466,6 @@ msgstr "nesukonfigūruotas"
 msgid "not locked"
 msgstr "nefiksuota"
 
-msgid "not running"
-msgstr "neveikia"
-
 msgid "not supported"
 msgstr "nepalaikomas"
 
@@ -12294,9 +12481,6 @@ msgstr "Nieko nedaryti"
 
 msgid "nothing connected"
 msgstr "nieko nepajungta"
-
-msgid "octagon1008"
-msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "iš DVIEJŲ sluoksnių naudojama."
@@ -12345,9 +12529,6 @@ msgstr ""
 
 msgid "pass"
 msgstr "praeina"
-
-msgid "pausing"
-msgstr "pristabdymas"
 
 msgid "performing arts"
 msgstr "scenos menas"
@@ -12445,9 +12626,6 @@ msgstr "pakartoti grojaraštį"
 msgid "repeated"
 msgstr "pakartotinis"
 
-msgid "reserved for future use"
-msgstr "skirta naudoti ateityje"
-
 msgid "restore deleted userbouquets"
 msgstr "atkurti ištrintus vartotojo paketus"
 
@@ -12471,9 +12649,6 @@ msgstr "rokas, pop muzika"
 
 msgid "romance"
 msgstr "romansai"
-
-msgid "running"
-msgstr "veikia"
 
 msgid "save"
 msgstr ""
@@ -12518,9 +12693,6 @@ msgstr "rimtas/klasikinis/religinis/istorinis filmas/drama"
 
 msgid "service is in bouquet parental protection"
 msgstr "kanalas yra tėvų kontrolės pakete"
-
-msgid "service off-air"
-msgstr "kanalas ne eteryje"
 
 msgid "set as startup service"
 msgstr "naudoti kaip paleisties kanalą"
@@ -12611,7 +12783,8 @@ msgstr "lizdas%s -%s, su atsargine kopija"
 msgid "slot%s - %s, without backup"
 msgstr "lizdas%s - %s, be atsarginės kopijos"
 
-msgid "soap/melodram/folkloric"
+#, fuzzy
+msgid "soap/melodrama/folkloric"
 msgstr "muilo opera/melodrama/folkloras"
 
 msgid "social/political issues/economics (general)"
@@ -12626,11 +12799,19 @@ msgstr "grojaraščių rūšiavimas"
 msgid "spark"
 msgstr ""
 
+#, fuzzy
+msgid "special (general)"
+msgstr "sportas (bendrai)"
+
 msgid "special events"
 msgstr "specialieji įvykiai"
 
 msgid "special format data DVD (HDTV compatible)"
 msgstr "specialaus formato duomenų DVD (suderinama su HDTV)"
+
+#, fuzzy
+msgid "sport (general)"
+msgstr "sportas (bendrai)"
 
 msgid "sports (general)"
 msgstr "sportas (bendrai)"
@@ -12646,9 +12827,6 @@ msgstr "iškirpimo pradžia"
 
 msgid "start directory"
 msgstr "pradinis katalogas"
-
-msgid "starts in a few seconds"
-msgstr "prasidės po kelių sekundžių"
 
 msgid "stepsize"
 msgstr "žingsnio dydis"
@@ -12786,6 +12964,10 @@ msgstr "vertikali"
 
 msgid "vfddisplay.png"
 msgstr ""
+
+#, fuzzy
+msgid "vitamin"
+msgstr "Srautinis perdavimas"
 
 msgid "wait for ci..."
 msgstr "laukite CI atsako..."

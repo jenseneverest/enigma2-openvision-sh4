@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 20:19+0430\n"
+"POT-Creation-Date: 2019-09-03 18:30+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -193,10 +193,6 @@ msgid "%.2f GB"
 msgstr "%.2f GB"
 
 #, python-format
-msgid "%02d:%02d"
-msgstr "%02d:%02d"
-
-#, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
 
@@ -351,10 +347,6 @@ msgstr[1] "%d wifi võrku leitud!"
 
 msgid "%d-%m"
 msgstr "%d-%m"
-
-#, python-format
-msgid "%d.%02d. %02d:%02d"
-msgstr "%d.%02d. %02d:%02d"
 
 #, python-format
 msgid "%d.%03d GB"
@@ -903,6 +895,9 @@ msgstr "Kohanda 3D seadeid"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Sea värvuse sätted nii, et kõik värvivarjundid oleks eristatavad ja paistaks nii küllastatuna kui võimalik. Kui oled tulemusega rahul, vajuta OK video peenhäälestuse sulgemiseks või kasuta numbrinuppe teiste testipiltide valikuks."
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr "Lisavalikud"
 
@@ -1310,6 +1305,10 @@ msgstr "DVD loomine"
 msgid "Auto"
 msgstr "Automaatne"
 
+#, fuzzy
+msgid "Auto Detect"
+msgstr "Auto Diseqc"
+
 msgid "Auto Diseqc"
 msgstr "Auto Diseqc"
 
@@ -1393,6 +1392,10 @@ msgstr "Aserbaidžaan"
 
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1941,8 +1944,16 @@ msgstr ""
 "Kontrollitakse tuuneri %s\n"
 "DiSEqC porti %s / %s"
 
+#, fuzzy
+msgid "Children"
+msgstr "Tšiili"
+
 msgid "Children/Youth"
 msgstr "Lapsed/Noored"
+
+#, fuzzy
+msgid "Childrens"
+msgstr "Tšiili"
 
 msgid "Chile"
 msgstr "Tšiili"
@@ -1958,6 +1969,12 @@ msgstr "Hiina - traditsionaalne"
 
 msgid "Choose Tuner"
 msgstr "Vali tuuner"
+
+msgid "Choose a country scheme for decoding genre information in EPG events."
+msgstr ""
+
+msgid "Choose a country scheme for decoding rating information in EPG events."
+msgstr ""
 
 msgid "Choose bouquet"
 msgstr "Vali lemmiknimekiri"
@@ -2075,6 +2092,10 @@ msgstr "Kombineeritud"
 
 msgid "Combo"
 msgstr "Kombo"
+
+#, fuzzy
+msgid "Comedy"
+msgstr "komöödia"
 
 msgid "Command execution..."
 msgstr "Käskude täitmine"
@@ -2574,6 +2595,14 @@ msgstr "Kehtetu kanal %s. Salvestamine nurjus."
 msgid "Country"
 msgstr "Riik"
 
+#, fuzzy
+msgid "Country for EPG event genre information"
+msgstr "Tarkvarahalduri informatsioon"
+
+#, fuzzy
+msgid "Country for EPG event rating information"
+msgstr "Seda infot otsi unicable seadme spetsifikatsioonilehelt."
+
 msgid "Cover dashed flickering line for this service"
 msgstr "Peida võbeleva katkendjoonega joon selle teenuse jaoks"
 
@@ -2625,6 +2654,10 @@ msgstr ""
 
 msgid "Curacao"
 msgstr "Curacao"
+
+#, fuzzy
+msgid "Current Affairs"
+msgstr "Praeguste sündmuste uudised"
 
 msgid "Current CEC address"
 msgstr "Praegune CEC aadress"
@@ -3238,6 +3271,10 @@ msgstr "Kas soovid uuendada vastuvõtja tarkvara?"
 msgid "Do you want to upgrade the package:\n"
 msgstr "Kas soovid parendada paketti:\n"
 
+#, fuzzy
+msgid "Documentary"
+msgstr "dokumentaal"
+
 msgid "Dolby"
 msgstr "Dolby"
 
@@ -3291,6 +3328,10 @@ msgstr "Tarkvara alla laadimas"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Laeme alla laienduste infot. Palun oota."
+
+#, fuzzy
+msgid "Drama"
+msgstr "Film/Draama"
 
 msgid "Drop unconfigured satellites"
 msgstr "Kaota konfigureerimata satelliidid"
@@ -3393,7 +3434,12 @@ msgstr "Muuda pealkirja"
 msgid "Edit upgrade source url."
 msgstr "Muuda uuenduste allika url."
 
-msgid "Education/Science/..."
+#, fuzzy
+msgid "Education/Information"
+msgstr "Info"
+
+#, fuzzy
+msgid "Education/Science/Factual"
 msgstr "Haridus/teadus"
 
 msgid "Egypt"
@@ -3642,6 +3688,10 @@ msgstr "Sisesta kõrgsagedusriba ostsillaatori sagedus. Enamat infot vaata LNB s
 
 msgid "Enter your low band local oscillator frequency. For more information consult the spec sheet of your LNB."
 msgstr "Sisesta madalsagedusriba ostsillaatori sagedus. Enamat infot vaata LNB spetsifikatsioonist."
+
+#, fuzzy
+msgid "Entertainment"
+msgstr "Mine peamenüüsse"
 
 msgid "Equal to"
 msgstr "Võrdne"
@@ -4246,11 +4296,17 @@ msgstr "Gambia"
 msgid "Gateway"
 msgstr "Lüüs"
 
+msgid "General"
+msgstr ""
+
 msgid "General AC3 delay"
 msgstr "Üldine AC3 viide"
 
 msgid "General PCM delay"
 msgstr "Üldine PCM viide"
+
+msgid "Generic"
+msgstr ""
 
 msgid "Genre"
 msgstr "Žanr"
@@ -4462,6 +4518,10 @@ msgstr "Kõvaketas"
 
 msgid "Harddisk Setup"
 msgstr "Kõvaketta seadistamine"
+
+#, fuzzy
+msgid "Hardware serial: "
+msgstr "Riistvara: "
 
 msgid "Hardware: "
 msgstr "Riistvara: "
@@ -4800,6 +4860,10 @@ msgstr "Inforiba sisendandmete allikas"
 
 msgid "Information"
 msgstr "Info"
+
+#, fuzzy
+msgid "Infotainment"
+msgstr "Inforiba kuvamise aeg"
 
 msgid "Init"
 msgstr "Init"
@@ -5147,6 +5211,10 @@ msgstr "Eelmine kiirus"
 msgid "Last upgrade: "
 msgstr "Uuendatud: "
 
+msgctxt "third event: 'third' event label"
+msgid "Later"
+msgstr ""
+
 msgid "Latest Commits"
 msgstr "Viimased kanded"
 
@@ -5439,6 +5507,12 @@ msgstr "Marshalli Saared"
 msgid "Martinique"
 msgstr "Martinique"
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 msgid "Mauritania"
 msgstr "Mauritaania"
 
@@ -5661,6 +5735,10 @@ msgstr "Liigutatud indeksi asendisse"
 msgid "Movement"
 msgstr "Liikumine"
 
+#, fuzzy
+msgid "Movie"
+msgstr "Liikuv"
+
 msgid "Movie list configuration"
 msgstr "Filmilisti seaded"
 
@@ -5724,6 +5802,9 @@ msgstr "Paljude satelliitide valik"
 
 msgid "Multistream"
 msgstr "Multistream"
+
+msgid "Music"
+msgstr ""
 
 msgid "Music/Ballet/Dance"
 msgstr "Muusika/Ballett/Tants"
@@ -5875,7 +5956,11 @@ msgstr "Uus-Kaledoonia"
 msgid "New Zealand"
 msgstr "Uus-Meremaa"
 
-msgid "News Current Affairs"
+msgid "News"
+msgstr ""
+
+#, fuzzy
+msgid "News/Current Affairs"
 msgstr "Praeguste sündmuste uudised"
 
 msgctxt "button label, 'next screen'"
@@ -6096,6 +6181,10 @@ msgstr "Norra"
 msgid "Norwegian"
 msgstr "Norra"
 
+#, fuzzy
+msgid "Not Classified"
+msgstr "Pole seotud"
+
 msgid "Not Defined"
 msgstr "Määramata"
 
@@ -6113,6 +6202,10 @@ msgstr "Pole seotud"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Kõvakettal pole piisavalt ruumi. Kustuta ebavajalik ja proovi uuesti. (%d MB vaja, %d MB saadaval)"
+
+#, fuzzy
+msgid "Not running"
+msgstr "ei tööta"
 
 msgid "Not tested:"
 msgstr "Pole testitud:"
@@ -6420,6 +6513,9 @@ msgstr "Paraguay"
 msgid "Parent directory"
 msgstr "Ülemkataloog"
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 msgid "Parental control"
 msgstr "Lapselukk"
 
@@ -6446,6 +6542,10 @@ msgstr "Peata taasesitus"
 
 msgid "Pause/Continue playback"
 msgstr "Peata/Jätka taasesitust"
+
+#, fuzzy
+msgid "Pausing"
+msgstr "on pausil"
 
 msgid "Percentage left"
 msgstr "Protsent vasakul"
@@ -6937,6 +7037,9 @@ msgstr "Eelistatud tuuner salvestusteks"
 
 msgid "Preparing... Please wait"
 msgstr "Ettevalmistus...Oota"
+
+msgid "Preschool"
+msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "PiP-režiimi vahetamiseks vajuta '0'."
@@ -7431,6 +7534,10 @@ msgstr "Partitsioonitabeli värskendamine"
 msgid "Reserved"
 msgstr "Varutud"
 
+#, fuzzy
+msgid "Reserved for future use"
+msgstr "reserveeritud tulevikus kasutamiseks"
+
 msgid "Reset"
 msgstr "Lähtesta"
 
@@ -7504,6 +7611,9 @@ msgstr "Taasta seaded"
 
 msgid "Restoring..."
 msgstr "Taastamine..."
+
+msgid "Restricted 18+"
+msgstr ""
 
 msgid "Resume from last position"
 msgstr "Jätka katkestatud kohalt"
@@ -8346,6 +8456,10 @@ msgstr ""
 "Valitud kanalit ei leitud!\n"
 "(SID ei leitud PAT-st)"
 
+#, fuzzy
+msgid "Service off-air"
+msgstr "saateid ei edastata"
+
 msgid "Service reference"
 msgstr "Kanali referents"
 
@@ -8547,9 +8661,6 @@ msgstr "Näita saatekava..."
 msgid "Show Ethernet activity"
 msgstr "näita asenduskanaleid"
 
-msgid "Show Games show"
-msgstr "Näita telemängu"
-
 msgid "Show InfoBar"
 msgstr "Näita inforiba"
 
@@ -8611,6 +8722,10 @@ msgstr "Näita üksikasjalikku saatetutvustust"
 
 msgid "Show event details"
 msgstr "Näita saatetutvustust"
+
+#, fuzzy
+msgid "Show event genre information"
+msgstr "Tarkvarahalduri informatsioon"
 
 msgid "Show event-progress in channel selection"
 msgstr "Näita saate edenemist kanalivalikus"
@@ -8804,6 +8919,10 @@ msgstr "Kuva hoiatust enne 'Ignoreeri konflikti' seadmist"
 
 msgid "Show warning when timeshift is stopped"
 msgstr "Näita hoiatust kui ajanihe on peatunud"
+
+#, fuzzy
+msgid "Show/Games show"
+msgstr "Näita telemängu"
 
 msgid "Show/hide window"
 msgstr "Näita/peida aken"
@@ -9092,6 +9211,9 @@ msgstr ""
 msgid "SparkUnionTunerType config"
 msgstr ""
 
+msgid "Special"
+msgstr ""
+
 msgid "Special 1"
 msgstr ""
 
@@ -9139,6 +9261,10 @@ msgstr "Poolitatud eelvaate režiim"
 
 msgid "Splitscreen"
 msgstr "Jagatud ekraanipilt"
+
+#, fuzzy
+msgid "Sport"
+msgstr "Sport"
 
 msgid "Sports"
 msgstr "Sport"
@@ -9239,6 +9365,10 @@ msgstr "Alga nimekirjade ekraanipildiga"
 
 msgid "Starting on"
 msgstr "Alates"
+
+#, fuzzy
+msgid "Starts in a few seconds"
+msgstr "algab mõne sekudi jooksul"
 
 msgid "Startup the set top box in standby"
 msgstr "Vastuvõtja käivitamine ooterežiimis."
@@ -9895,6 +10025,10 @@ msgstr ""
 
 #, fuzzy
 msgid "This option allows you to boost the green tones in the picture."
+msgstr "See valik lubab näidiku välja lülitada."
+
+#, fuzzy
+msgid "This option allows you to choose whether or not to display genre information for the event."
 msgstr "See valik lubab näidiku välja lülitada."
 
 msgid "This option allows you to configure the Colordepth for UHD"
@@ -11787,6 +11921,10 @@ msgstr "vali eelmine kanal"
 msgid "are you sure to cancel all changes"
 msgstr "kas tühistada kõik muutused?"
 
+#, fuzzy
+msgid "arts/culture (general)"
+msgstr "Kunst/kultuur (välja arvatud muusika)"
+
 msgid "arts/culture (without music, general)"
 msgstr "Kunst/kultuur (välja arvatud muusika)"
 
@@ -11818,8 +11956,8 @@ msgid "ballet"
 msgstr "ballett"
 
 #, python-format
-msgid "bc%s"
-msgstr "bc%s"
+msgid "bc%d"
+msgstr ""
 
 msgid "better"
 msgstr "parem"
@@ -11887,7 +12025,12 @@ msgstr "Kanali number ja teenuse nimi"
 msgid "chapters"
 msgstr "peatükid"
 
-msgid "childrens's/youth program (general)"
+#, fuzzy
+msgid "children's/youth program (general)"
+msgstr "laste/noortesaade"
+
+#, fuzzy
+msgid "childrens (general)"
 msgstr "laste/noortesaade"
 
 msgid "circular left"
@@ -11901,6 +12044,10 @@ msgstr "lõika overscan / letterboxi äärised"
 
 msgid "comedy"
 msgstr "komöödia"
+
+#, fuzzy
+msgid "comedy (general)"
+msgstr "film/draama (üldine)"
 
 msgid "config menu"
 msgstr "seadete menüü"
@@ -11930,8 +12077,12 @@ msgstr "kopeeri nimekirjadesse"
 msgid "create directory"
 msgstr "Loo kataloog"
 
-msgid "cuberevo"
+msgid "cuberevo_uni"
 msgstr ""
+
+#, fuzzy
+msgid "current affairs (general)"
+msgstr "uudised/sündmused (üldine)"
 
 msgid "daily"
 msgstr "iga päev"
@@ -11983,11 +12134,19 @@ msgstr "ära tee midagi"
 msgid "documentary"
 msgstr "dokumentaal"
 
+#, fuzzy
+msgid "documentary (general)"
+msgstr "dokumentaal"
+
 msgid "don't descramble, record ecm"
 msgstr "ära dekodeeri, salvesta ecm"
 
 msgid "done!"
 msgstr "valmis!"
+
+#, fuzzy
+msgid "drama (general)"
+msgstr "film/draama (üldine)"
 
 msgid "east"
 msgstr "ida"
@@ -11997,6 +12156,10 @@ msgstr "majandus/hoolekanne"
 
 msgid "edit alternatives"
 msgstr "asenduskanalite muutmine"
+
+#, fuzzy
+msgid "education/information (general)"
+msgstr "haridus/teadus"
 
 msgid "education/science/factual topics (general)"
 msgstr "haridus/teadus"
@@ -12041,6 +12204,10 @@ msgid "entertainment (10-16 year old)"
 msgstr "meelelahutus (10-16 aastastele)"
 
 msgid "entertainment (6-14 year old)"
+msgstr "meelelahutus (6-14 aastastele)"
+
+#, fuzzy
+msgid "entertainment (general)"
 msgstr "meelelahutus (6-14 aastastele)"
 
 msgid "epg cache backup"
@@ -12131,6 +12298,9 @@ msgstr "vaba"
 msgid "from"
 msgstr "pärit"
 
+msgid "fs9000"
+msgstr ""
+
 msgid "fs9000VFD display"
 msgstr ""
 
@@ -12200,6 +12370,9 @@ msgstr ""
 msgid "hs8200VFD-Icons"
 msgstr ""
 
+msgid "hs9510"
+msgstr ""
+
 msgid "hs9510VFD display"
 msgstr ""
 
@@ -12220,6 +12393,10 @@ msgstr "Pole uusi laiendusi"
 
 msgid "information/education/school program"
 msgstr "teave/haridus/kooliprogramm"
+
+#, fuzzy
+msgid "infotainment (general)"
+msgstr "sport (üldiselt)"
 
 msgid "init module"
 msgstr "käivita moodul"
@@ -12345,6 +12522,10 @@ msgstr "liigu esimesele reale"
 msgid "move up to previous entry"
 msgstr "liigu eelmisele reale"
 
+#, fuzzy
+msgid "movie (general)"
+msgstr "film/draama (üldine)"
+
 msgid "movie/drama (general)"
 msgstr "film/draama (üldine)"
 
@@ -12353,6 +12534,10 @@ msgstr "multi"
 
 msgid "multinorm"
 msgstr "multinorm"
+
+#, fuzzy
+msgid "music (general)"
+msgstr "sport (üldiselt)"
 
 msgid "music/ballet/dance (general)"
 msgstr "muusika/ballett/tants (üldine)"
@@ -12375,6 +12560,10 @@ msgstr "mitte kunagi"
 
 msgid "new media"
 msgstr "uus meedia"
+
+#, fuzzy
+msgid "news (general)"
+msgstr "sport (üldiselt)"
 
 msgid "news magazine"
 msgstr "uudismagasin"
@@ -12418,9 +12607,6 @@ msgstr "ei ole häälestatud"
 msgid "not locked"
 msgstr "pole lukustatud"
 
-msgid "not running"
-msgstr "ei tööta"
-
 msgid "not supported"
 msgstr "pole toetatud"
 
@@ -12436,9 +12622,6 @@ msgstr "Ära tee midagi"
 
 msgid "nothing connected"
 msgstr "pole ühendatud"
-
-msgid "octagon1008"
-msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "kasutatud kahekihilisest kettast."
@@ -12487,9 +12670,6 @@ msgstr ""
 
 msgid "pass"
 msgstr "lubatud"
-
-msgid "pausing"
-msgstr "on pausil"
 
 msgid "performing arts"
 msgstr "esituskunstid"
@@ -12587,9 +12767,6 @@ msgstr "korda esitusloendit"
 msgid "repeated"
 msgstr "korduvalt"
 
-msgid "reserved for future use"
-msgstr "reserveeritud tulevikus kasutamiseks"
-
 msgid "restore deleted userbouquets"
 msgstr "taasta kustutatud lemmiknimekirjad"
 
@@ -12613,9 +12790,6 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romantika"
-
-msgid "running"
-msgstr "töötab"
 
 msgid "save"
 msgstr ""
@@ -12660,9 +12834,6 @@ msgstr "tõsielu/klassika/usklik/ajalooline film/draama"
 
 msgid "service is in bouquet parental protection"
 msgstr "Kanal on lapselukuga kaitstud lemmiknimekirjas"
-
-msgid "service off-air"
-msgstr "saateid ei edastata"
 
 msgid "set as startup service"
 msgstr "käivita vastuvõtja sellel kanalil"
@@ -12753,7 +12924,8 @@ msgstr "slot%s - %s, koos varukoopiaga"
 msgid "slot%s - %s, without backup"
 msgstr "slot%s - %s, ilma varukoopiata"
 
-msgid "soap/melodram/folkloric"
+#, fuzzy
+msgid "soap/melodrama/folkloric"
 msgstr "seep/melodraama/folkloor"
 
 msgid "social/political issues/economics (general)"
@@ -12768,11 +12940,19 @@ msgstr "esitusloendite järjestamine."
 msgid "spark"
 msgstr ""
 
+#, fuzzy
+msgid "special (general)"
+msgstr "sport (üldiselt)"
+
 msgid "special events"
 msgstr "erisündmused"
 
 msgid "special format data DVD (HDTV compatible)"
 msgstr "eri vormingus data DVD (sobiv HDTV jaoks)"
+
+#, fuzzy
+msgid "sport (general)"
+msgstr "sport (üldiselt)"
 
 msgid "sports (general)"
 msgstr "sport (üldiselt)"
@@ -12788,9 +12968,6 @@ msgstr "alusta lõiget siit"
 
 msgid "start directory"
 msgstr "juurkaust"
-
-msgid "starts in a few seconds"
-msgstr "algab mõne sekudi jooksul"
 
 msgid "stepsize"
 msgstr "sammu suurus"
@@ -12928,6 +13105,10 @@ msgstr "vertikaal"
 
 msgid "vfddisplay.png"
 msgstr ""
+
+#, fuzzy
+msgid "vitamin"
+msgstr "Voog"
 
 msgid "wait for ci..."
 msgstr "ci ootel..."

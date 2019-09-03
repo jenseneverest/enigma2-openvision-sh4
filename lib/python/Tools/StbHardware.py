@@ -26,6 +26,7 @@ def getFPVersion():
 		try:
 			fp = open("/dev/dbox/fp0")
 			ret = ioctl(fp.fileno(),0)
+			fp.close()
 		except IOError:
 			try:
 				ret = open("/sys/firmware/devicetree/base/bolt/tag", "r").read().rstrip("\0")
@@ -35,9 +36,7 @@ def getFPVersion():
 
 def setFPWakeuptime(wutime):
 	try:
-		f = open("/proc/stb/fp/wakeup_time", "w")
-		f.write(str(wutime))
-		f.close()
+		open("/proc/stb/fp/wakeup_time", "w").write(str(wutime))
 	except IOError:
 		try:
 			fp = open("/dev/dbox/fp0")
@@ -46,11 +45,19 @@ def setFPWakeuptime(wutime):
 		except IOError:
 			print "setFPWakeupTime failed!"
 
-def setRTCoffset():
-	forsleep = (localtime(time()).tm_hour-gmtime(time()).tm_hour)*3600
-	print "[RTC] set RTC offset to %s sec." % (forsleep)
+def setRTCoffset(forsleep=None):
+	import time
+	if time.localtime().tm_isdst == 0:
+		forsleep = 7200+time.timezone
+	else:
+		forsleep = 3600-time.timezone
+
+	t_local = time.localtime(int(time.time()))
+
+	# Set RTC OFFSET (diff. between UTC and Local Time)
 	try:
 		open("/proc/stb/fp/rtc_offset", "w").write(str(forsleep))
+		print "[RTC] set RTC offset to %s sec." % (forsleep)
 	except IOError:
 		print "setRTCoffset failed!"
 
@@ -58,9 +65,7 @@ def setRTCtime(wutime):
 	if path.exists("/proc/stb/fp/rtc_offset"):
 		setRTCoffset()
 	try:
-		f = open("/proc/stb/fp/rtc", "w")
-		f.write(str(wutime))
-		f.close()
+		open("/proc/stb/fp/rtc", "w").write(str(wutime))
 	except IOError:
 		try:
 			fp = open("/dev/dbox/fp0")
@@ -72,9 +77,7 @@ def setRTCtime(wutime):
 def getFPWakeuptime():
 	ret = 0
 	try:
-		f = open("/proc/stb/fp/wakeup_time", "r")
-		ret = long(f.read())
-		f.close()
+		ret = long(open("/proc/stb/fp/wakeup_time", "r").read())
 	except IOError:
 		try:
 			fp = open("/dev/dbox/fp0")
@@ -86,22 +89,13 @@ def getFPWakeuptime():
 
 wasTimerWakeup = None
 
-def getFPWasTimerWakeup(check = False):
+def getFPWasTimerWakeup():
 	global wasTimerWakeup
-	isError = False
 	if wasTimerWakeup is not None:
-		if check:
-			return wasTimerWakeup, isError
 		return wasTimerWakeup
 	wasTimerWakeup = False
 	try:
-		f = open("/proc/stb/fp/was_timer_wakeup", "r")
-		file = f.read()
-		f.close()
-		wasTimerWakeup = int(file) and True or False
-		f = open("/tmp/was_timer_wakeup.txt", "w")
-		file = f.write(str(wasTimerWakeup))
-		f.close()
+		wasTimerWakeup = int(open("/proc/stb/fp/was_timer_wakeup", "r").read()) and True or False
 	except:
 		try:
 			fp = open("/dev/dbox/fp0")
@@ -109,20 +103,14 @@ def getFPWasTimerWakeup(check = False):
 			fp.close()
 		except IOError:
 			print "wasTimerWakeup failed!"
-			isError = True
-
 	if wasTimerWakeup:
 		# clear hardware status
 		clearFPWasTimerWakeup()
-	if check:
-		return wasTimerWakeup, isError
 	return wasTimerWakeup
 
 def clearFPWasTimerWakeup():
 	try:
-		f = open("/proc/stb/fp/was_timer_wakeup", "w")
-		f.write('0')
-		f.close()
+		open("/proc/stb/fp/was_timer_wakeup", "w").write('0')
 	except:
 		try:
 			fp = open("/dev/dbox/fp0")

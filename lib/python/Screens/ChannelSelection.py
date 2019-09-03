@@ -1352,7 +1352,6 @@ class ChannelSelectionBase(Screen):
 				"keyLeft": self.keyLeft,
 				"keyRight": self.keyRight,
 				"keyRecord": self.keyRecord,
-				"toggleTwoLines": self.toggleTwoLines,
 				"1": self.keyNumberGlobal,
 				"2": self.keyNumberGlobal,
 				"3": self.keyNumberGlobal,
@@ -1746,13 +1745,6 @@ class ChannelSelectionBase(Screen):
 		if ref and not(ref.flags & (eServiceReference.isMarker|eServiceReference.isDirectory)):
 			Screens.InfoBar.InfoBar.instance.instantRecord(serviceRef=ref)
 
-	def toggleTwoLines(self):
-		if self.servicelist.mode == self.servicelist.MODE_FAVOURITES:
-			config.usage.servicelist_twolines.value = not config.usage.servicelist_twolines.value
-			config.usage.servicelist_twolines.save()
-		else:
-			return 0
-
 	def showFavourites(self):
 		if not self.pathChangeDisabled:
 			if not self.preEnterPath(self.bouquet_rootstr):
@@ -2142,10 +2134,9 @@ class ChannelSelection(ChannelSelectionBase, ChannelSelectionEdit, ChannelSelect
 			if ref is None or ref != nref:
 				if nref:
 					if not checkParentalControl or Components.ParentalControl.parentalControl.isServicePlayable(nref, boundFunction(self.zap, enable_pipzap=True, checkParentalControl=False)):
-						self.session.pip.playService(self.session.pip.resolveAlternatePipService(nref))
+						self.session.pip.playService(nref)
 						self.__evServiceStart()
 						self.showPipzapMessage()
-						self.setStartRoot(self.curRoot)
 						self.setCurrentSelection(nref)
 				else:
 					self.setStartRoot(self.curRoot)

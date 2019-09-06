@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2016-11-17 12:51+0200\n"
 "Last-Translator: vovan43<vovan43@ex.ua>, sety <tim1065@mail.ru>, Irkoff <irkoff@gmail.com>\n"
 "Language-Team: gisclub.tv <http://gisclub.tv/>\n"
@@ -4456,6 +4456,10 @@ msgstr "Тип ключа шифрування"
 msgid "Encryption:"
 msgstr "Кодування:"
 
+#, fuzzy
+msgid "End cut"
+msgstr "Час закінчення"
+
 msgid "End time"
 msgstr "Час закінчення"
 
@@ -4688,6 +4692,9 @@ msgstr "Скрізь"
 
 msgid "Exceeds dual layer medium!"
 msgstr "Перевищує двошаровий носій"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 msgid "Execution finished!!"
 msgstr "Виконання закінчено!"
@@ -5576,6 +5583,11 @@ msgstr "Скільки хвилин ви хочете додати до запи
 msgid "How many minutes do you want to record?"
 msgstr "Скільки хвилин ви хочете записати?"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 msgid "Hue"
 msgstr "Відтінок"
 
@@ -6402,6 +6414,14 @@ msgstr "Відзначити цю точку як 'кінець'"
 
 msgid "Make this mark just a mark"
 msgstr "Створити просту мітку"
+
+#, fuzzy
+msgid "Make this mark the final 'out' point"
+msgstr "Відзначити цю точку як 'кінець'"
+
+#, fuzzy
+msgid "Make this mark the initial 'in' point"
+msgstr "Відзначити цю точку як 'початок'"
 
 msgid "Malawi"
 msgstr ""
@@ -8247,6 +8267,9 @@ msgstr "Питання"
 msgid "Quick"
 msgstr "Швидко"
 
+msgid "Quick execute..."
+msgstr ""
+
 msgid "Quick zap"
 msgstr "Швидке перемикання"
 
@@ -8629,6 +8652,14 @@ msgstr "Відновити"
 
 msgid "Restore backups"
 msgstr "Відновлення резрвних копій"
+
+#, fuzzy
+msgid "Restore cuts"
+msgstr "Відновлення резрвних копій"
+
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "Повернутися на Попередній сервіс"
 
 msgid "Restore system settings"
 msgstr "Відновлення системних налаштувань"
@@ -9222,10 +9253,6 @@ msgstr "Виберіть дію"
 #, fuzzy
 msgid "Select hard disk"
 msgstr "Вибрати скін"
-
-#, fuzzy
-msgid "Select horizontal resolution:"
-msgstr "Впорядкувати по:"
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr ""
@@ -10417,6 +10444,10 @@ msgstr "Частота"
 msgid "Start boot frequency"
 msgstr "Всі частоти"
 
+#, fuzzy
+msgid "Start cut"
+msgstr "Почати тест"
+
 msgid "Start from the beginning"
 msgstr "Почати з самого початку"
 
@@ -10470,8 +10501,16 @@ msgstr ""
 msgid "Stby LED brightness"
 msgstr "Яскравість"
 
+#, fuzzy
+msgid "Step back"
+msgstr "Крок на схід"
+
 msgid "Step east"
 msgstr "Крок на схід"
+
+#, fuzzy
+msgid "Step forward"
+msgstr "Перемотка вперед"
 
 msgid "Step west"
 msgstr "Крок на захід"
@@ -10922,6 +10961,12 @@ msgstr "Решта до кінця події %d хв."
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD стандарт не підтримує H.264 (HDTV) відео потоків. Ви хочете створити спеціальний формат DVD (який можливо не програватиметься в стаціонарних DVD програвачах)?"
+
+#, fuzzy
+msgid "The MovieCut plugin is not installed."
+msgstr ""
+"Плагін Witeless LAN не встановлений!\n"
+"Будь ласка, встановіть його."
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN-код успішно змінений."
@@ -12370,12 +12415,13 @@ msgstr "щотижня"
 msgid "Weighted position"
 msgstr "Аналізуємо позицію"
 
+#, fuzzy
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 "Ласкаво просимо в редактор відео.\n"
 "\n"
@@ -13212,6 +13258,9 @@ msgstr ""
 msgid "blue"
 msgstr "синій"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr "низ"
 
@@ -13339,6 +13388,10 @@ msgstr "за замовчуванням"
 msgid "delete cut"
 msgstr "видалити вирізане"
 
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr "(вимкнено)"
+
 msgid "descramble and record ecm"
 msgstr "декодування і запис ECM (відкл. декодування)"
 
@@ -13348,8 +13401,9 @@ msgstr "детектив/трилер"
 msgid "disable"
 msgstr "вимкнути"
 
-msgid "disable intro screen"
-msgstr "відключити початковий екран"
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr "увімкнути редагування фаворита"
 
 msgid "disable move mode"
 msgstr "вимкнути режим переміщення"
@@ -13411,11 +13465,12 @@ msgstr "увімкнути"
 msgid "enable bouquet edit"
 msgstr "увімкнути редагування фаворита"
 
+#, fuzzy
+msgid "enable cuts (preview)"
+msgstr "увімкнути редагування фаворита"
+
 msgid "enable favourite edit"
 msgstr "увімкнути редагування фаворитів"
-
-msgid "enable intro screen"
-msgstr "включити початковий екран"
 
 msgid "enable move mode"
 msgstr "увімкнути режим переміщення"
@@ -13426,10 +13481,18 @@ msgstr "увімкнено"
 msgid "end alternatives edit"
 msgstr "закінчити редагування альтернативи"
 
+#, fuzzy
+msgid "end at this position"
+msgstr "видалити після цієї позиції"
+
 msgid "end bouquet edit"
 msgstr "закінчити редагування букета"
 
 msgid "end cut here"
+msgstr "кінець редагування"
+
+#, fuzzy
+msgid "end cut here (reset)"
 msgstr "кінець редагування"
 
 msgid "end favourites edit"
@@ -13457,8 +13520,8 @@ msgstr "помилка при запуску сканування"
 msgid "error while scanning"
 msgstr "помилка під час сканування"
 
-msgid "execute cuts (requires MovieCut plugin)"
-msgstr "виконання скорочень (потрібно MovieCut плагін)"
+msgid "execute cuts and exit"
+msgstr ""
 
 #, fuzzy
 msgid "exit "
@@ -13676,6 +13739,10 @@ msgstr "init модуль"
 
 msgid "init modules"
 msgstr "init модуль"
+
+#, fuzzy
+msgid "insert mark after each in"
+msgstr "вставити мітку"
 
 msgid "insert mark here"
 msgstr "вставити мітку"
@@ -13968,8 +14035,14 @@ msgstr "популярні культура/традиції мистецтва"
 msgid "pre-school children's program"
 msgstr "дошкільні дитячі програми"
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
 msgstr "очистити віддалені  букети користувача"
+
+msgid "quick execute"
+msgstr ""
 
 msgid "receiver software because updates are available."
 msgstr "доступне оновлення для вашого ресивера."
@@ -13992,6 +14065,10 @@ msgstr "чудові люди"
 msgid "remove after this position"
 msgstr "видалити після цієї позиції"
 
+#, fuzzy
+msgid "remove all"
+msgstr "видалити закладку"
+
 msgid "remove all alternatives"
 msgstr "видалити всі альтернативи"
 
@@ -14010,6 +14087,10 @@ msgstr "видалити букет з батьківського контрол
 msgid "remove cable services"
 msgstr "видалити кабельні послуги"
 
+#, fuzzy
+msgid "remove cuts (preserve marks)"
+msgstr "видалити мітку"
+
 msgid "remove directory"
 msgstr "видалити каталог"
 
@@ -14018,6 +14099,10 @@ msgstr "видалити обране"
 
 msgid "remove from parental protection"
 msgstr "видалити з батьківського контролю"
+
+#, fuzzy
+msgid "remove marks (preserve cuts)"
+msgstr "видалити кабельні послуги"
 
 msgid "remove new found flag"
 msgstr "видалити прапор новий знайдений "
@@ -14042,6 +14127,14 @@ msgstr "повторний"
 
 msgid "restore deleted userbouquets"
 msgstr "відновити видалені  букети  користувача"
+
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "назад на попередній розділ"
+
+#, fuzzy
+msgid "restore previous cuts & exit"
+msgstr "назад на попередній розділ"
 
 msgid "reverse by date"
 msgstr "повторний"
@@ -14237,6 +14330,10 @@ msgid "standard"
 msgstr "стандарт"
 
 msgid "start cut here"
+msgstr "початок редагування"
+
+#, fuzzy
+msgid "start cut here (reset)"
 msgstr "початок редагування"
 
 msgid "start directory"

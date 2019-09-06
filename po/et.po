@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -4399,6 +4399,10 @@ msgstr "Kodeeringu võtme tüüp"
 msgid "Encryption:"
 msgstr "Kodeering:"
 
+#, fuzzy
+msgid "End cut"
+msgstr "Lõpetamise aeg"
+
 msgid "End time"
 msgstr "Lõpetamise aeg"
 
@@ -4634,6 +4638,9 @@ msgstr "Igal pool"
 
 msgid "Exceeds dual layer medium!"
 msgstr "Liiga suur kahekihilise ketta jaoks!"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 msgid "Execution finished!!"
 msgstr "Käivitus lõppenud!!"
@@ -5513,6 +5520,11 @@ msgstr "Mitu minutit soovid salvestusele lisada?"
 msgid "How many minutes do you want to record?"
 msgstr "Mitu minutit soovid salvestada?"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 msgid "Hue"
 msgstr "Värvitoon"
 
@@ -6316,6 +6328,14 @@ msgstr "Tee see märk lõpupunktiks"
 
 msgid "Make this mark just a mark"
 msgstr "Tee see märk lihtsalt märgiks"
+
+#, fuzzy
+msgid "Make this mark the final 'out' point"
+msgstr "Tee see märk lõpupunktiks"
+
+#, fuzzy
+msgid "Make this mark the initial 'in' point"
+msgstr "Tee see märk alguspunktiks"
 
 msgid "Malawi"
 msgstr "Malaavi"
@@ -8141,6 +8161,9 @@ msgstr "Küsimus"
 msgid "Quick"
 msgstr "Kiire"
 
+msgid "Quick execute..."
+msgstr ""
+
 msgid "Quick zap"
 msgstr "Kiire kanalivalik"
 
@@ -8518,6 +8541,14 @@ msgstr "Taasta"
 
 msgid "Restore backups"
 msgstr "Taasta varukoopia"
+
+#, fuzzy
+msgid "Restore cuts"
+msgstr "Taasta varukoopia"
+
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "Tagasi eelmise teenuse juurde"
 
 msgid "Restore system settings"
 msgstr "Taasta seaded"
@@ -9095,9 +9126,6 @@ msgstr "Vali funktsioon"
 
 msgid "Select hard disk"
 msgstr "Vali kõvaketas"
-
-msgid "Select horizontal resolution:"
-msgstr "Vali horisontaalne resolutsioon:"
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr "Vali antenni satelliitide vahel liikumise kiirus."
@@ -10280,6 +10308,10 @@ msgstr "Sagedus"
 msgid "Start boot frequency"
 msgstr "Kõik sagedused"
 
+#, fuzzy
+msgid "Start cut"
+msgstr "Käivita test"
+
 msgid "Start from the beginning"
 msgstr "Alusta algusest"
 
@@ -10333,8 +10365,16 @@ msgstr ""
 msgid "Stby LED brightness"
 msgstr "Heledus"
 
+#, fuzzy
+msgid "Step back"
+msgstr "Samm itta"
+
 msgid "Step east"
 msgstr "Samm itta"
+
+#, fuzzy
+msgid "Step forward"
+msgstr "Keri edasi"
 
 msgid "Step west"
 msgstr "Samm läände"
@@ -10786,6 +10826,10 @@ msgstr "On jäänud %d minutit  sündmuse lõpuni."
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standard ei toeta H.264 (HDTV) video voogesitust. Kas soovite luua eri vormingus andmete (data) DVD, mida teised DVD mängijad ei mängi?"
+
+#, fuzzy
+msgid "The MovieCut plugin is not installed."
+msgstr "See laiendus pole paigaldatud."
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN kood on muudetud."
@@ -12214,12 +12258,13 @@ msgstr "iga nädal"
 msgid "Weighted position"
 msgstr "Korrigeeritud asukoht"
 
+#, fuzzy
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 "Tere tulemast salvestise lõikajasse.\n"
 "\n"
@@ -13038,6 +13083,9 @@ msgstr ""
 msgid "blue"
 msgstr "sinine"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr "all"
 
@@ -13165,6 +13213,10 @@ msgstr "vaikimisi"
 msgid "delete cut"
 msgstr "kustuta lõige"
 
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr " (keelatud)"
+
 msgid "descramble and record ecm"
 msgstr "dekodeeri ja salvesta ecm"
 
@@ -13174,8 +13226,9 @@ msgstr "detektiiv/triller"
 msgid "disable"
 msgstr "keela"
 
-msgid "disable intro screen"
-msgstr "keela tervitusaken"
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr "luba nimekirjade muutmine"
 
 msgid "disable move mode"
 msgstr "keela liigutamine nimekirjades"
@@ -13237,11 +13290,12 @@ msgstr "luba"
 msgid "enable bouquet edit"
 msgstr "luba nimekirjade muutmine"
 
+#, fuzzy
+msgid "enable cuts (preview)"
+msgstr "luba nimekirjade muutmine"
+
 msgid "enable favourite edit"
 msgstr "luba lemmikute muutmine"
-
-msgid "enable intro screen"
-msgstr "luba tervitusaken"
 
 msgid "enable move mode"
 msgstr "luba liigutamine nimekirjades"
@@ -13252,10 +13306,18 @@ msgstr "lubatud"
 msgid "end alternatives edit"
 msgstr "salvesta muudatused ja välju"
 
+#, fuzzy
+msgid "end at this position"
+msgstr "kustuta selle koha järel"
+
 msgid "end bouquet edit"
 msgstr "salvesta muudatused ja välju"
 
 msgid "end cut here"
+msgstr "lõpeta lõige siin"
+
+#, fuzzy
+msgid "end cut here (reset)"
 msgstr "lõpeta lõige siin"
 
 msgid "end favourites edit"
@@ -13283,8 +13345,8 @@ msgstr "otsingu alustamise viga"
 msgid "error while scanning"
 msgstr "viga otsingu teostamisel"
 
-msgid "execute cuts (requires MovieCut plugin)"
-msgstr "teosta lõiked (nõuab MovieCut laiendust)"
+msgid "execute cuts and exit"
+msgstr ""
 
 #, fuzzy
 msgid "exit "
@@ -13500,6 +13562,10 @@ msgstr "käivita moodul"
 
 msgid "init modules"
 msgstr "käivita moodulid"
+
+#, fuzzy
+msgid "insert mark after each in"
+msgstr "pane märk siia"
 
 msgid "insert mark here"
 msgstr "pane märk siia"
@@ -13792,8 +13858,14 @@ msgstr "populaarkultuur/pärimuskunst"
 msgid "pre-school children's program"
 msgstr "koolieelikute saade"
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
 msgstr "kustutatud lemmiknimekirjade puhastamine"
+
+msgid "quick execute"
+msgstr ""
 
 msgid "receiver software because updates are available."
 msgstr "vastuvõtja tarkvara, sest uuendused on saadaval."
@@ -13816,6 +13888,10 @@ msgstr "tähelepanuväärsed inimesed"
 msgid "remove after this position"
 msgstr "kustuta selle koha järel"
 
+#, fuzzy
+msgid "remove all"
+msgstr "kustuta järjehoidja"
+
 msgid "remove all alternatives"
 msgstr "kustuta kõik asenduskanalid"
 
@@ -13834,6 +13910,10 @@ msgstr "eemalda lemmiknimekirja lukustus"
 msgid "remove cable services"
 msgstr "kustuta kaabelTV teenused"
 
+#, fuzzy
+msgid "remove cuts (preserve marks)"
+msgstr "eemalda see märk"
+
 msgid "remove directory"
 msgstr "kustuta kataloog"
 
@@ -13842,6 +13922,10 @@ msgstr "kustuta kirje"
 
 msgid "remove from parental protection"
 msgstr "eemalda lapselukk"
+
+#, fuzzy
+msgid "remove marks (preserve cuts)"
+msgstr "kustuta kaabelTV teenused"
 
 msgid "remove new found flag"
 msgstr "eemalda uus kanal-tunnus"
@@ -13866,6 +13950,14 @@ msgstr "korduvalt"
 
 msgid "restore deleted userbouquets"
 msgstr "taasta kustutatud lemmiknimekirjad"
+
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "tagasi eelmisele peatükile"
+
+#, fuzzy
+msgid "restore previous cuts & exit"
+msgstr "tagasi eelmisele peatükile"
 
 msgid "reverse by date"
 msgstr "tagurpidi kuupäevajärj."
@@ -14061,6 +14153,10 @@ msgid "standard"
 msgstr "tavaline"
 
 msgid "start cut here"
+msgstr "alusta lõiget siit"
+
+#, fuzzy
+msgid "start cut here (reset)"
 msgstr "alusta lõiget siit"
 
 msgid "start directory"

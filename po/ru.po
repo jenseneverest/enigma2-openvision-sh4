@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2019-07-25 17:52+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -4392,6 +4392,10 @@ msgstr "Тип ключа шифрования"
 msgid "Encryption:"
 msgstr "Шифрование:"
 
+#, fuzzy
+msgid "End cut"
+msgstr "Время окончания"
+
 msgid "End time"
 msgstr "Время окончания"
 
@@ -4628,6 +4632,9 @@ msgstr "Везде"
 
 msgid "Exceeds dual layer medium!"
 msgstr "Превышает dual layer (два слоя) носитель!"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 msgid "Execution finished!!"
 msgstr "Выполнение закончено!"
@@ -5506,6 +5513,11 @@ msgstr "Сколько минут Вы хотите добавить к запи
 msgid "How many minutes do you want to record?"
 msgstr "Сколько минут Вы хотите записать?"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 msgid "Hue"
 msgstr "Оттенок"
 
@@ -6312,6 +6324,14 @@ msgstr "Сделать эту метку как точку 'из'"
 
 msgid "Make this mark just a mark"
 msgstr "Сделать эту метку как простая метка"
+
+#, fuzzy
+msgid "Make this mark the final 'out' point"
+msgstr "Сделать эту метку как точку 'из'"
+
+#, fuzzy
+msgid "Make this mark the initial 'in' point"
+msgstr "Сделать эту метку как точку 'в'"
 
 msgid "Malawi"
 msgstr "Malawi"
@@ -8120,6 +8140,9 @@ msgstr "Вопрос"
 msgid "Quick"
 msgstr "Быстро"
 
+msgid "Quick execute..."
+msgstr ""
+
 msgid "Quick zap"
 msgstr "Быстрое переключение"
 
@@ -8496,6 +8519,14 @@ msgstr "Восстановить"
 
 msgid "Restore backups"
 msgstr "Востановление бэкапов"
+
+#, fuzzy
+msgid "Restore cuts"
+msgstr "Востановление бэкапов"
+
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "Возврат на предыдущий сервис"
 
 msgid "Restore system settings"
 msgstr "Восстановить системные настройки"
@@ -9070,9 +9101,6 @@ msgstr "Выбор функции"
 
 msgid "Select hard disk"
 msgstr "Выбор жесткого диска"
-
-msgid "Select horizontal resolution:"
-msgstr "Выбор горизонтального разрешения:"
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr "Выбор скорости перемещения мотоподвеса между спутниками."
@@ -10245,6 +10273,10 @@ msgstr "Частота"
 msgid "Start boot frequency"
 msgstr "Все частоты"
 
+#, fuzzy
+msgid "Start cut"
+msgstr "Начать тест"
+
 msgid "Start from the beginning"
 msgstr "Начать с самого начала"
 
@@ -10298,8 +10330,16 @@ msgstr ""
 msgid "Stby LED brightness"
 msgstr "Яркость"
 
+#, fuzzy
+msgid "Step back"
+msgstr "Шаг на восток"
+
 msgid "Step east"
 msgstr "Шаг на восток"
+
+#, fuzzy
+msgid "Step forward"
+msgstr "Перемотка вперед"
 
 msgid "Step west"
 msgstr "Шаг на запад"
@@ -10742,6 +10782,10 @@ msgstr "Осталось %d мин до окончания текущего со
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD стандарт не поддерживает H.264 (HDTV) видео потоков. Вы хотите создать специальный формат DVD (который возможно не будет проигрываться в стационарных DVD проигрывателях)?"
+
+#, fuzzy
+msgid "The MovieCut plugin is not installed."
+msgstr "Это плагин  не установлен."
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN-код был успешно изменен."
@@ -12145,12 +12189,13 @@ msgstr "еженедельно"
 msgid "Weighted position"
 msgstr "Анализируем позицию"
 
+#, fuzzy
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 "Добро пожаловать в видео редактор списка сокращений.\n"
 "\n"
@@ -12962,6 +13007,9 @@ msgstr ""
 msgid "blue"
 msgstr "синий"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr "снизу"
 
@@ -13089,6 +13137,10 @@ msgstr "по умолчанию"
 msgid "delete cut"
 msgstr "удалить сокращение"
 
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr " (отключен)"
+
 msgid "descramble and record ecm"
 msgstr "декодирование и запись ECM (отл. декодирование)"
 
@@ -13098,8 +13150,9 @@ msgstr "детектив/триллер"
 msgid "disable"
 msgstr "выключить"
 
-msgid "disable intro screen"
-msgstr "выключить окно помощи"
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr "включить редактирование букета"
 
 msgid "disable move mode"
 msgstr "выключить режим перемещения"
@@ -13161,11 +13214,12 @@ msgstr "включить"
 msgid "enable bouquet edit"
 msgstr "включить редактирование букета"
 
+#, fuzzy
+msgid "enable cuts (preview)"
+msgstr "включить редактирование букета"
+
 msgid "enable favourite edit"
 msgstr "включить редактирование фаворитов"
-
-msgid "enable intro screen"
-msgstr "включить окно помощи"
 
 msgid "enable move mode"
 msgstr "включить режим перемещения"
@@ -13176,10 +13230,18 @@ msgstr "включено"
 msgid "end alternatives edit"
 msgstr "закончить редактирование альтернативы"
 
+#, fuzzy
+msgid "end at this position"
+msgstr "удалить после этой позиции"
+
 msgid "end bouquet edit"
 msgstr "закончить редактирование букета"
 
 msgid "end cut here"
+msgstr "окончание сокращения здесь"
+
+#, fuzzy
+msgid "end cut here (reset)"
 msgstr "окончание сокращения здесь"
 
 msgid "end favourites edit"
@@ -13207,8 +13269,8 @@ msgstr "ошибка при старте сканирования"
 msgid "error while scanning"
 msgstr "ошибка при сканировании"
 
-msgid "execute cuts (requires MovieCut plugin)"
-msgstr "выполнить сокращения (необходим плагин MovieCut)"
+msgid "execute cuts and exit"
+msgstr ""
 
 #, fuzzy
 msgid "exit "
@@ -13421,6 +13483,10 @@ msgstr "инициализация модуля"
 
 msgid "init modules"
 msgstr "инициализация модулей"
+
+#, fuzzy
+msgid "insert mark after each in"
+msgstr "вставить метку здесь"
 
 msgid "insert mark here"
 msgstr "вставить метку здесь"
@@ -13712,8 +13778,14 @@ msgstr "популярные культура/традиции искусств�
 msgid "pre-school children's program"
 msgstr "дошкольные детские программы"
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
 msgstr "очистить удаленные пользовательские букеты"
+
+msgid "quick execute"
+msgstr ""
 
 msgid "receiver software because updates are available."
 msgstr "доступно обновление для вашего ресивера."
@@ -13736,6 +13808,10 @@ msgstr "замечательные люди"
 msgid "remove after this position"
 msgstr "удалить после этой позиции"
 
+#, fuzzy
+msgid "remove all"
+msgstr "удалить закладку"
+
 msgid "remove all alternatives"
 msgstr "удалить все альтернативы"
 
@@ -13754,6 +13830,10 @@ msgstr "удалить букет из родительского контрол
 msgid "remove cable services"
 msgstr "удалить кабельные сервисы"
 
+#, fuzzy
+msgid "remove cuts (preserve marks)"
+msgstr "удалить эту метку"
+
 msgid "remove directory"
 msgstr "удалить директорию"
 
@@ -13762,6 +13842,10 @@ msgstr "удалить выбранное"
 
 msgid "remove from parental protection"
 msgstr "удалить из родительского контроля"
+
+#, fuzzy
+msgid "remove marks (preserve cuts)"
+msgstr "удалить кабельные сервисы"
 
 msgid "remove new found flag"
 msgstr "удалить флаг - новый найденный"
@@ -13786,6 +13870,14 @@ msgstr "повторный"
 
 msgid "restore deleted userbouquets"
 msgstr "восстановить удаленные пользовательские букеты"
+
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "назад на предыдущую главу"
+
+#, fuzzy
+msgid "restore previous cuts & exit"
+msgstr "назад на предыдущую главу"
 
 msgid "reverse by date"
 msgstr "по обратной дате"
@@ -13981,6 +14073,10 @@ msgid "standard"
 msgstr "стандарт"
 
 msgid "start cut here"
+msgstr "начало сокращения здесь"
+
+#, fuzzy
+msgid "start cut here (reset)"
 msgstr "начало сокращения здесь"
 
 msgid "start directory"

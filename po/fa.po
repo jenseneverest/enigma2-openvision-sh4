@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2018-02-14 16:51+0330\n"
 "Last-Translator: Persian Prince <persianprince@pe4k.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -4448,6 +4448,10 @@ msgstr "نوع کد رمزگذاری"
 msgid "Encryption:"
 msgstr "رمزگذاری"
 
+#, fuzzy
+msgid "End cut"
+msgstr "زمان پایان"
+
 msgid "End time"
 msgstr "زمان پایان"
 
@@ -4679,6 +4683,9 @@ msgstr "در همه جا"
 
 msgid "Exceeds dual layer medium!"
 msgstr "بیش از رسانه دو لایه"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 msgid "Execution finished!!"
 msgstr "عملیات اجرایی پایان یافت"
@@ -5572,6 +5579,11 @@ msgstr "چند دقیقه میخواهید ضبط کنید؟"
 msgid "How many minutes do you want to record?"
 msgstr "چند دقیقه میخواهید ضبط کنید؟"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 msgid "Hue"
 msgstr "رنگ"
 
@@ -6402,6 +6414,12 @@ msgid "Make this mark an 'out' point"
 msgstr ""
 
 msgid "Make this mark just a mark"
+msgstr ""
+
+msgid "Make this mark the final 'out' point"
+msgstr ""
+
+msgid "Make this mark the initial 'in' point"
 msgstr ""
 
 msgid "Malawi"
@@ -8265,6 +8283,9 @@ msgstr ""
 msgid "Quick"
 msgstr "سریع"
 
+msgid "Quick execute..."
+msgstr ""
+
 #, fuzzy
 msgid "Quick zap"
 msgstr "جابجایی سریع"
@@ -8657,6 +8678,14 @@ msgstr "بازگردانی"
 
 msgid "Restore backups"
 msgstr "بازگردانی نسخه های پشتیبان"
+
+#, fuzzy
+msgid "Restore cuts"
+msgstr "بازگردانی نسخه های پشتیبان"
+
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "بازگشت به کانال قبلی"
 
 msgid "Restore system settings"
 msgstr "بازگردانی تنظیمات سیستم"
@@ -9248,9 +9277,6 @@ msgstr "انتخاب محل نسخه پشتیبان"
 #, fuzzy
 msgid "Select hard disk"
 msgstr "انتخاب فیلم"
-
-msgid "Select horizontal resolution:"
-msgstr ""
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr ""
@@ -10466,6 +10492,10 @@ msgstr "فرکانس"
 msgid "Start boot frequency"
 msgstr ""
 
+#, fuzzy
+msgid "Start cut"
+msgstr "شروع تست"
+
 msgid "Start from the beginning"
 msgstr "شروع از ابتدای کار"
 
@@ -10521,8 +10551,15 @@ msgstr ""
 msgid "Stby LED brightness"
 msgstr "روشنایی"
 
+#, fuzzy
+msgid "Step back"
+msgstr "یک درجه به شرق"
+
 msgid "Step east"
 msgstr "یک درجه به شرق"
+
+msgid "Step forward"
+msgstr ""
 
 msgid "Step west"
 msgstr "یک درجه به غرب"
@@ -10988,6 +11025,9 @@ msgid "The %d min remaining before the end of the event."
 msgstr ""
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
+msgstr ""
+
+msgid "The MovieCut plugin is not installed."
 msgstr ""
 
 msgid "The PIN code has been changed successfully."
@@ -12331,9 +12371,9 @@ msgstr ""
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 
 msgid ""
@@ -13096,6 +13136,9 @@ msgstr ""
 msgid "blue"
 msgstr "آبی"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr ""
 
@@ -13216,6 +13259,10 @@ msgstr "پیش فرض"
 msgid "delete cut"
 msgstr ""
 
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr " (غیر فعال)"
+
 msgid "descramble and record ecm"
 msgstr ""
 
@@ -13225,8 +13272,9 @@ msgstr ""
 msgid "disable"
 msgstr ""
 
-msgid "disable intro screen"
-msgstr ""
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr " (غیر فعال)"
 
 msgid "disable move mode"
 msgstr ""
@@ -13285,10 +13333,10 @@ msgstr "فعال"
 msgid "enable bouquet edit"
 msgstr ""
 
-msgid "enable favourite edit"
+msgid "enable cuts (preview)"
 msgstr ""
 
-msgid "enable intro screen"
+msgid "enable favourite edit"
 msgstr ""
 
 msgid "enable move mode"
@@ -13300,10 +13348,17 @@ msgstr "فعال شد"
 msgid "end alternatives edit"
 msgstr ""
 
+#, fuzzy
+msgid "end at this position"
+msgstr "به موقعیت 0 جابجا شد"
+
 msgid "end bouquet edit"
 msgstr ""
 
 msgid "end cut here"
+msgstr ""
+
+msgid "end cut here (reset)"
 msgstr ""
 
 msgid "end favourites edit"
@@ -13330,7 +13385,7 @@ msgstr ""
 msgid "error while scanning"
 msgstr ""
 
-msgid "execute cuts (requires MovieCut plugin)"
+msgid "execute cuts and exit"
 msgstr ""
 
 #, fuzzy
@@ -13546,6 +13601,9 @@ msgid "init module"
 msgstr ""
 
 msgid "init modules"
+msgstr ""
+
+msgid "insert mark after each in"
 msgstr ""
 
 msgid "insert mark here"
@@ -13835,7 +13893,13 @@ msgstr ""
 msgid "pre-school children's program"
 msgstr ""
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
+msgstr ""
+
+msgid "quick execute"
 msgstr ""
 
 msgid "receiver software because updates are available."
@@ -13859,6 +13923,10 @@ msgstr ""
 msgid "remove after this position"
 msgstr ""
 
+#, fuzzy
+msgid "remove all"
+msgstr "حذف عنوان"
+
 msgid "remove all alternatives"
 msgstr ""
 
@@ -13877,6 +13945,9 @@ msgstr ""
 msgid "remove cable services"
 msgstr ""
 
+msgid "remove cuts (preserve marks)"
+msgstr ""
+
 msgid "remove directory"
 msgstr ""
 
@@ -13884,6 +13955,9 @@ msgid "remove entry"
 msgstr ""
 
 msgid "remove from parental protection"
+msgstr ""
+
+msgid "remove marks (preserve cuts)"
 msgstr ""
 
 msgid "remove new found flag"
@@ -13908,6 +13982,13 @@ msgid "repeated"
 msgstr ""
 
 msgid "restore deleted userbouquets"
+msgstr ""
+
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "مراجعه به رخداد قبلی"
+
+msgid "restore previous cuts & exit"
 msgstr ""
 
 msgid "reverse by date"
@@ -14101,6 +14182,9 @@ msgid "standard"
 msgstr "استاندارد"
 
 msgid "start cut here"
+msgstr ""
+
+msgid "start cut here (reset)"
 msgstr ""
 
 msgid "start directory"

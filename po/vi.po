@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2019-07-22 20:15+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -4390,6 +4390,10 @@ msgstr "Loại khóa mã hóa"
 msgid "Encryption:"
 msgstr "Mã hóa:"
 
+#, fuzzy
+msgid "End cut"
+msgstr "Thời gian kết thúc"
+
 msgid "End time"
 msgstr "Thời gian kết thúc"
 
@@ -4626,6 +4630,9 @@ msgstr "Mọi nơi"
 
 msgid "Exceeds dual layer medium!"
 msgstr "Vượt quá hai lớp vừa!"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 msgid "Execution finished!!"
 msgstr "Thi công xong !!"
@@ -5504,6 +5511,11 @@ msgstr "Bạn muốn thêm bao nhiêu phút để ghi âm?"
 msgid "How many minutes do you want to record?"
 msgstr "Bạn muốn ghi lại bao nhiêu phút?"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 msgid "Hue"
 msgstr "Màu sắc"
 
@@ -6308,6 +6320,14 @@ msgstr "Đặt dấu này thành một điểm 'ra'"
 
 msgid "Make this mark just a mark"
 msgstr "Làm cho dấu này chỉ là một dấu"
+
+#, fuzzy
+msgid "Make this mark the final 'out' point"
+msgstr "Đặt dấu này thành một điểm 'ra'"
+
+#, fuzzy
+msgid "Make this mark the initial 'in' point"
+msgstr "Đặt dấu này thành một điểm 'trong'"
 
 msgid "Malawi"
 msgstr "Ma-rốc"
@@ -8114,6 +8134,9 @@ msgstr "Câu hỏi"
 msgid "Quick"
 msgstr "Nhanh chóng"
 
+msgid "Quick execute..."
+msgstr ""
+
 msgid "Quick zap"
 msgstr "Nhanh chóng"
 
@@ -8488,6 +8511,14 @@ msgstr "Khôi phục"
 
 msgid "Restore backups"
 msgstr "Khôi phục bản sao lưu"
+
+#, fuzzy
+msgid "Restore cuts"
+msgstr "Khôi phục bản sao lưu"
+
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "Nhớ lại dịch vụ trước"
 
 msgid "Restore system settings"
 msgstr "Khôi phục cài đặt hệ thống"
@@ -9059,9 +9090,6 @@ msgstr "Chọn chức năng"
 
 msgid "Select hard disk"
 msgstr "Chọn đĩa cứng"
-
-msgid "Select horizontal resolution:"
-msgstr "Chọn độ phân giải ngang:"
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr "Chọn cách nhanh chóng các chảo nên di chuyển giữa các vệ tinh."
@@ -10234,6 +10262,10 @@ msgstr "Tần số"
 msgid "Start boot frequency"
 msgstr "Tất cả tần số"
 
+#, fuzzy
+msgid "Start cut"
+msgstr "Bắt đầu kiểm tra"
+
 msgid "Start from the beginning"
 msgstr "Bắt đầu từ đầu"
 
@@ -10287,8 +10319,16 @@ msgstr ""
 msgid "Stby LED brightness"
 msgstr "Độ sáng"
 
+#, fuzzy
+msgid "Step back"
+msgstr "Bước về phía đông"
+
 msgid "Step east"
 msgstr "Bước về phía đông"
+
+#, fuzzy
+msgid "Step forward"
+msgstr "Tìm kiếm về phía trước"
 
 msgid "Step west"
 msgstr "Step west"
@@ -10731,6 +10771,10 @@ msgstr "%d phút còn lại trước khi kết thúc sự kiện."
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "Chuẩn DVD không hỗ trợ luồng video H.264 (HDTV). Bạn có muốn tạo một DVD dữ liệu định dạng đặc biệt (thay vào đó sẽ không phát trong các đầu DVD độc lập) không?"
+
+#, fuzzy
+msgid "The MovieCut plugin is not installed."
+msgstr "Plugin này chưa được cài đặt."
 
 msgid "The PIN code has been changed successfully."
 msgstr "Mã PIN đã được thay đổi thành công."
@@ -12135,12 +12179,13 @@ msgstr "hàng tuần"
 msgid "Weighted position"
 msgstr "Vị trí trọng số"
 
+#, fuzzy
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 "Chào mừng bạn đến với trình soạn thảo danh sách cắt.\n"
 "\n"
@@ -12951,6 +12996,9 @@ msgstr ""
 msgid "blue"
 msgstr "màu xanh da trời"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr "dưới cùng"
 
@@ -13078,6 +13126,10 @@ msgstr "mặc định"
 msgid "delete cut"
 msgstr "xóa cắt"
 
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr " (cho phép/không cho phép)"
+
 msgid "descramble and record ecm"
 msgstr "giải mã và ghi lại ecm"
 
@@ -13087,8 +13139,9 @@ msgstr "thám tử / phim kinh dị"
 msgid "disable"
 msgstr "vô hiệu hóa"
 
-msgid "disable intro screen"
-msgstr "tắt màn hình giới thiệu"
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr "cho phép chỉnh sửa gói kênh"
 
 msgid "disable move mode"
 msgstr "tắt chế độ di chuyển"
@@ -13150,11 +13203,12 @@ msgstr "cho phép"
 msgid "enable bouquet edit"
 msgstr "cho phép chỉnh sửa gói kênh"
 
+#, fuzzy
+msgid "enable cuts (preview)"
+msgstr "cho phép chỉnh sửa gói kênh"
+
 msgid "enable favourite edit"
 msgstr "cho phép chỉnh sửa yêu thích"
-
-msgid "enable intro screen"
-msgstr "bật màn hình giới thiệu"
 
 msgid "enable move mode"
 msgstr "cho phép chế độ di chuyển"
@@ -13165,10 +13219,18 @@ msgstr "kích hoạt"
 msgid "end alternatives edit"
 msgstr "kết thúc thay thế chỉnh sửa"
 
+#, fuzzy
+msgid "end at this position"
+msgstr "loại bỏ sau vị trí này"
+
 msgid "end bouquet edit"
 msgstr "kết thúc chỉnh sửa gói kênh"
 
 msgid "end cut here"
+msgstr "kết thúc cắt ở đây"
+
+#, fuzzy
+msgid "end cut here (reset)"
 msgstr "kết thúc cắt ở đây"
 
 msgid "end favourites edit"
@@ -13196,8 +13258,8 @@ msgstr "lỗi bắt đầu quét"
 msgid "error while scanning"
 msgstr "lỗi trong khi quét"
 
-msgid "execute cuts (requires MovieCut plugin)"
-msgstr "thực hiện cắt giảm (yêu cầu plugin MovieCut)"
+msgid "execute cuts and exit"
+msgstr ""
 
 #, fuzzy
 msgid "exit "
@@ -13410,6 +13472,10 @@ msgstr "mô-đun init"
 
 msgid "init modules"
 msgstr "mô-đun init"
+
+#, fuzzy
+msgid "insert mark after each in"
+msgstr "chèn dấu ở đây"
 
 msgid "insert mark here"
 msgstr "chèn dấu ở đây"
@@ -13701,8 +13767,14 @@ msgstr "văn hóa đại chúng / nghệ thuật truyền thống"
 msgid "pre-school children's program"
 msgstr "chương trình trẻ em mẫu giáo"
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
 msgstr "thanh lọc người dùng đã xóa"
+
+msgid "quick execute"
+msgstr ""
 
 msgid "receiver software because updates are available."
 msgstr "phần mềm đầu thu vì cập nhật có sẵn."
@@ -13725,6 +13797,10 @@ msgstr "người đáng chú ý"
 msgid "remove after this position"
 msgstr "loại bỏ sau vị trí này"
 
+#, fuzzy
+msgid "remove all"
+msgstr "xóa dấu trang"
+
 msgid "remove all alternatives"
 msgstr "loại bỏ tất cả các lựa chọn thay thế"
 
@@ -13743,6 +13819,10 @@ msgstr "loại bỏ bó hoa khỏi sự bảo vệ của cha mẹ"
 msgid "remove cable services"
 msgstr "loại bỏ dịch vụ cáp"
 
+#, fuzzy
+msgid "remove cuts (preserve marks)"
+msgstr "xóa dấu này"
+
 msgid "remove directory"
 msgstr "xóa thư mục"
 
@@ -13751,6 +13831,10 @@ msgstr "xoá mục nhập"
 
 msgid "remove from parental protection"
 msgstr "loại bỏ khỏi sự bảo vệ của cha mẹ"
+
+#, fuzzy
+msgid "remove marks (preserve cuts)"
+msgstr "loại bỏ dịch vụ cáp"
 
 msgid "remove new found flag"
 msgstr "xóa cờ mới tìm thấy"
@@ -13775,6 +13859,14 @@ msgstr "lặp đi lặp lại"
 
 msgid "restore deleted userbouquets"
 msgstr "khôi phục lại những người dùng đã xóa"
+
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "tua lại chương trước"
+
+#, fuzzy
+msgid "restore previous cuts & exit"
+msgstr "tua lại chương trước"
 
 msgid "reverse by date"
 msgstr "đảo ngược theo ngày"
@@ -13970,6 +14062,10 @@ msgid "standard"
 msgstr "tiêu chuẩn"
 
 msgid "start cut here"
+msgstr "bắt đầu cắt ở đây"
+
+#, fuzzy
+msgid "start cut here (reset)"
 msgstr "bắt đầu cắt ở đây"
 
 msgid "start directory"

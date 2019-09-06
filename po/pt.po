@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2014-12-15 19:38-0000\n"
 "Last-Translator: Phenom <phenomxy@gmail.com>\n"
 "Language-Team: Muaitai <muaitai@gmail.com>\n"
@@ -4903,6 +4903,11 @@ msgid "Encryption:"
 msgstr "Encriptação:"
 
 #
+#, fuzzy
+msgid "End cut"
+msgstr "Tempo final"
+
+#
 msgid "End time"
 msgstr "Tempo final"
 
@@ -5152,6 +5157,9 @@ msgstr "Todo o lado"
 #
 msgid "Exceeds dual layer medium!"
 msgstr "Excede um media de dupla face!"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 #
 msgid "Execution finished!!"
@@ -6127,6 +6135,11 @@ msgstr "Quantos minutos deseja gravar?"
 msgid "How many minutes do you want to record?"
 msgstr "Quantos minutos deseja gravar?"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 #
 msgid "Hue"
 msgstr "Tom"
@@ -7075,6 +7088,16 @@ msgstr "Marcar como ponto de saída"
 #
 msgid "Make this mark just a mark"
 msgstr "Marcar somente"
+
+#
+#, fuzzy
+msgid "Make this mark the final 'out' point"
+msgstr "Marcar como ponto de saída"
+
+#
+#, fuzzy
+msgid "Make this mark the initial 'in' point"
+msgstr "Marcar como ponto de entrada"
 
 msgid "Malawi"
 msgstr ""
@@ -9213,6 +9236,9 @@ msgstr ""
 msgid "Quick"
 msgstr "Rápido"
 
+msgid "Quick execute..."
+msgstr ""
+
 #
 #, fuzzy
 msgid "Quick zap"
@@ -9670,6 +9696,16 @@ msgstr "Restaurar"
 #
 msgid "Restore backups"
 msgstr "Restauro de Backups"
+
+#
+#, fuzzy
+msgid "Restore cuts"
+msgstr "Restauro de Backups"
+
+#
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "Voltar ao canal anterior"
 
 #
 msgid "Restore system settings"
@@ -10346,10 +10382,6 @@ msgstr "Seleccionar acção"
 #, fuzzy
 msgid "Select hard disk"
 msgstr "Seleccione um tema"
-
-#, fuzzy
-msgid "Select horizontal resolution:"
-msgstr "Seleccione método de ordenação:"
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr ""
@@ -11702,6 +11734,11 @@ msgid "Start boot frequency"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Start cut"
+msgstr "Iniciar teste"
+
+#
 msgid "Start from the beginning"
 msgstr "Começar do início"
 
@@ -11764,8 +11801,18 @@ msgid "Stby LED brightness"
 msgstr "Brilho"
 
 #
+#, fuzzy
+msgid "Step back"
+msgstr "Rodar para este"
+
+#
 msgid "Step east"
 msgstr "Rodar para este"
+
+#
+#, fuzzy
+msgid "Step forward"
+msgstr "Avançar"
 
 #
 msgid "Step west"
@@ -12287,6 +12334,11 @@ msgstr ""
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "A norma DVD não suporta fluxos H.264 (HDTV) de vídeo. Deseja criar um DVD de dados? Note que o mesmo não poderá ser reproduzido em leitores de DVD convencionais."
+
+#
+#, fuzzy
+msgid "The MovieCut plugin is not installed."
+msgstr "Este Plugin não está instalado."
 
 msgid "The PIN code has been changed successfully."
 msgstr "O código PIN foi alterado com sucesso."
@@ -13900,9 +13952,9 @@ msgstr "Posição ponderada"
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 "Bem-vindo ao editor Cutlist.\n"
 "\n"
@@ -14784,6 +14836,9 @@ msgstr ""
 msgid "blue"
 msgstr "azul"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr ""
 
@@ -14930,6 +14985,10 @@ msgstr "padrão"
 msgid "delete cut"
 msgstr "eliminar corte"
 
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr " (desactivado)"
+
 msgid "descramble and record ecm"
 msgstr "desencriptar e gravar ECM"
 
@@ -14940,8 +14999,10 @@ msgstr "detective/thriller"
 msgid "disable"
 msgstr "desactivar"
 
-msgid "disable intro screen"
-msgstr ""
+#
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr "activar a edição dos Bouquets"
 
 #
 msgid "disable move mode"
@@ -15013,11 +15074,13 @@ msgid "enable bouquet edit"
 msgstr "activar a edição dos Bouquets"
 
 #
+#, fuzzy
+msgid "enable cuts (preview)"
+msgstr "activar a edição dos Bouquets"
+
+#
 msgid "enable favourite edit"
 msgstr "activar a edição dos favoritos"
-
-msgid "enable intro screen"
-msgstr ""
 
 #
 msgid "enable move mode"
@@ -15032,11 +15095,21 @@ msgid "end alternatives edit"
 msgstr "terminar edições alternativas"
 
 #
+#, fuzzy
+msgid "end at this position"
+msgstr "remover depois desta posição"
+
+#
 msgid "end bouquet edit"
 msgstr "terminar edição de Bouquet"
 
 #
 msgid "end cut here"
+msgstr "terminar corte aqui"
+
+#
+#, fuzzy
+msgid "end cut here (reset)"
 msgstr "terminar corte aqui"
 
 #
@@ -15065,7 +15138,7 @@ msgstr ""
 msgid "error while scanning"
 msgstr ""
 
-msgid "execute cuts (requires MovieCut plugin)"
+msgid "execute cuts and exit"
 msgstr ""
 
 #, fuzzy
@@ -15306,6 +15379,11 @@ msgstr "iniciar módulo"
 #
 msgid "init modules"
 msgstr "módulos de início"
+
+#
+#, fuzzy
+msgid "insert mark after each in"
+msgstr "inserir marcador"
 
 #
 msgid "insert mark here"
@@ -15639,7 +15717,13 @@ msgstr "cultura popular/artes tradicionais"
 msgid "pre-school children's program"
 msgstr "pré-escola"
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
+msgstr ""
+
+msgid "quick execute"
 msgstr ""
 
 msgid "receiver software because updates are available."
@@ -15668,6 +15752,11 @@ msgid "remove after this position"
 msgstr "remover depois desta posição"
 
 #
+#, fuzzy
+msgid "remove all"
+msgstr "apagar marcador"
+
+#
 msgid "remove all alternatives"
 msgstr "remover todas alternativas"
 
@@ -15690,6 +15779,11 @@ msgid "remove cable services"
 msgstr ""
 
 #
+#, fuzzy
+msgid "remove cuts (preserve marks)"
+msgstr "remover este marcador"
+
+#
 msgid "remove directory"
 msgstr "apagar directório"
 
@@ -15700,6 +15794,11 @@ msgstr "remover entrada"
 #
 msgid "remove from parental protection"
 msgstr "remover do controle paternal"
+
+#
+#, fuzzy
+msgid "remove marks (preserve cuts)"
+msgstr "Remover entrada de servidor de DNS"
 
 #
 msgid "remove new found flag"
@@ -15729,6 +15828,16 @@ msgstr "repetido"
 
 msgid "restore deleted userbouquets"
 msgstr ""
+
+#
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "voltar ao capítulo anterior"
+
+#
+#, fuzzy
+msgid "restore previous cuts & exit"
+msgstr "voltar ao capítulo anterior"
 
 msgid "reverse by date"
 msgstr "reservar por data"
@@ -15944,6 +16053,11 @@ msgstr "standard"
 
 #
 msgid "start cut here"
+msgstr "iniciar o corte aqui"
+
+#
+#, fuzzy
+msgid "start cut here (reset)"
 msgstr "iniciar o corte aqui"
 
 #

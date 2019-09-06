@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -4425,6 +4425,10 @@ msgstr "Şifreleme tipi"
 msgid "Encryption:"
 msgstr "Şifreleme:"
 
+#, fuzzy
+msgid "End cut"
+msgstr "Bitiş zamanı"
+
 msgid "End time"
 msgstr "Bitiş zamanı"
 
@@ -4656,6 +4660,9 @@ msgstr "Heryerde"
 
 msgid "Exceeds dual layer medium!"
 msgstr "Çift katman orta ölçeği aşıyor!"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 msgid "Execution finished!!"
 msgstr "Uygulama bitti!!"
@@ -5545,6 +5552,11 @@ msgstr "Kaç dakika kayıt eklemek istiyorsunuz?"
 msgid "How many minutes do you want to record?"
 msgstr "Kaç dakikalık kayıt başlatmak istiyorsunuz?"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 msgid "Hue"
 msgstr "Renk tonu"
 
@@ -6357,6 +6369,14 @@ msgstr "'dışında' olarak işaretle"
 
 msgid "Make this mark just a mark"
 msgstr "Bu işareti sadece bir işaret olarak kullan"
+
+#, fuzzy
+msgid "Make this mark the final 'out' point"
+msgstr "'dışında' olarak işaretle"
+
+#, fuzzy
+msgid "Make this mark the initial 'in' point"
+msgstr "'içinde' olarak işaretle"
 
 msgid "Malawi"
 msgstr ""
@@ -8200,6 +8220,9 @@ msgstr "Soru"
 msgid "Quick"
 msgstr "Hızlı"
 
+msgid "Quick execute..."
+msgstr ""
+
 msgid "Quick zap"
 msgstr "Hızlı kanal değiştirme"
 
@@ -8581,6 +8604,14 @@ msgstr "Geri Yükle"
 
 msgid "Restore backups"
 msgstr "Yedekten geri yükle"
+
+#, fuzzy
+msgid "Restore cuts"
+msgstr "Yedekten geri yükle"
+
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "Önceki servisi çağır"
 
 msgid "Restore system settings"
 msgstr "Sistem ayarlarını geri yükle"
@@ -9165,10 +9196,6 @@ msgstr "Eylem seçimi"
 #, fuzzy
 msgid "Select hard disk"
 msgstr "Bir Arayüz seçin"
-
-#, fuzzy
-msgid "Select horizontal resolution:"
-msgstr "Seçileni sıralama yöntemi:"
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr ""
@@ -10357,6 +10384,10 @@ msgstr "Frekans"
 msgid "Start boot frequency"
 msgstr "Tüm frekanslar"
 
+#, fuzzy
+msgid "Start cut"
+msgstr "Test'i başlat"
+
 msgid "Start from the beginning"
 msgstr "En baştan başla"
 
@@ -10410,8 +10441,16 @@ msgstr ""
 msgid "Stby LED brightness"
 msgstr "Parlaklık"
 
+#, fuzzy
+msgid "Step back"
+msgstr "Doğu adımı"
+
 msgid "Step east"
 msgstr "Doğu adımı"
+
+#, fuzzy
+msgid "Step forward"
+msgstr "İleride ara"
 
 msgid "Step west"
 msgstr "Batı adımı"
@@ -10869,6 +10908,10 @@ msgstr "Kalan süre %d"
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standardı H.264 (HDTV) video akışını desteklemiyor. Bunun yerine özel bir biçimde veri DVD (standar DVD oynatıcılarda oynatılamayabilir) oluşturmak istiyor musunuz?"
+
+#, fuzzy
+msgid "The MovieCut plugin is not installed."
+msgstr "Bu eklenti yüklü değil."
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN kodu başarıyla değiştirildi."
@@ -12281,12 +12324,13 @@ msgstr "Haftalık"
 msgid "Weighted position"
 msgstr "Ağırlıklı pozisyon"
 
+#, fuzzy
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 "Kesme listesi düzenleyicisine hoş geldiniz.\n"
 "\n"
@@ -13096,6 +13140,9 @@ msgstr ""
 msgid "blue"
 msgstr "Mavi"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr ""
 
@@ -13222,6 +13269,10 @@ msgstr "Öntanımlı"
 msgid "delete cut"
 msgstr "Kesimi Sil"
 
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr " (Devre Dışı)"
+
 msgid "descramble and record ecm"
 msgstr "Çözmeden ECM kaydet"
 
@@ -13231,8 +13282,9 @@ msgstr "Dedektif/Gerilim"
 msgid "disable"
 msgstr "Pasif"
 
-msgid "disable intro screen"
-msgstr ""
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr "Buket düzenlemeyi aç"
 
 msgid "disable move mode"
 msgstr "Taşıma Kipini Kapat"
@@ -13294,11 +13346,12 @@ msgstr "Etkin"
 msgid "enable bouquet edit"
 msgstr "Buket düzenlemeyi aç"
 
+#, fuzzy
+msgid "enable cuts (preview)"
+msgstr "Buket düzenlemeyi aç"
+
 msgid "enable favourite edit"
 msgstr "Favori düzenlemeyi aç"
-
-msgid "enable intro screen"
-msgstr ""
 
 msgid "enable move mode"
 msgstr "Taşıma kipini aç"
@@ -13309,10 +13362,18 @@ msgstr "Etkin"
 msgid "end alternatives edit"
 msgstr "Alternatif düzenlemeyi bitir"
 
+#, fuzzy
+msgid "end at this position"
+msgstr "Bu noktadan sonrasını kaldır"
+
 msgid "end bouquet edit"
 msgstr "Buket düzenlemeyi bitir"
 
 msgid "end cut here"
+msgstr "Kesimi burada bitir"
+
+#, fuzzy
+msgid "end cut here (reset)"
 msgstr "Kesimi burada bitir"
 
 msgid "end favourites edit"
@@ -13340,7 +13401,7 @@ msgstr "Tarama başlayamıyor"
 msgid "error while scanning"
 msgstr "Tarama yapılırken hata"
 
-msgid "execute cuts (requires MovieCut plugin)"
+msgid "execute cuts and exit"
 msgstr ""
 
 #, fuzzy
@@ -13559,6 +13620,10 @@ msgstr "Modülü Başlat"
 
 msgid "init modules"
 msgstr "Modülleri Başlat"
+
+#, fuzzy
+msgid "insert mark after each in"
+msgstr "Buraya işaret koy"
 
 msgid "insert mark here"
 msgstr "Buraya işaret koy"
@@ -13851,8 +13916,14 @@ msgstr "Popüler Kültür/Geleneksel Sanatlar"
 msgid "pre-school children's program"
 msgstr "Okul Öncesi Çocuk Programı"
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
 msgstr "Buketleri Sil"
+
+msgid "quick execute"
+msgstr ""
 
 msgid "receiver software because updates are available."
 msgstr "Yazılım güncellemesi var."
@@ -13875,6 +13946,10 @@ msgstr "Önemli İnsanlar"
 msgid "remove after this position"
 msgstr "Bu noktadan sonrasını kaldır"
 
+#, fuzzy
+msgid "remove all"
+msgstr "Yer işaretini sil"
+
 msgid "remove all alternatives"
 msgstr "Alternatiflerin tümünü kaldır"
 
@@ -13893,6 +13968,10 @@ msgstr "Aile korumasından çıkar"
 msgid "remove cable services"
 msgstr "Kablo servisleri sil"
 
+#, fuzzy
+msgid "remove cuts (preserve marks)"
+msgstr "Sil"
+
 msgid "remove directory"
 msgstr "Klasörü sil"
 
@@ -13901,6 +13980,10 @@ msgstr "Seçili Kanalı/Buketi Sil"
 
 msgid "remove from parental protection"
 msgstr "Aile korumasından çıkar"
+
+#, fuzzy
+msgid "remove marks (preserve cuts)"
+msgstr "Kablo servisleri sil"
 
 msgid "remove new found flag"
 msgstr "Yeni bulundu işaretini kaldır"
@@ -13925,6 +14008,14 @@ msgstr "Tekrarla"
 
 msgid "restore deleted userbouquets"
 msgstr "Silinen buketleri geri yükle"
+
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "Önceki bölüme geri git"
+
+#, fuzzy
+msgid "restore previous cuts & exit"
+msgstr "Önceki bölüme geri git"
 
 msgid "reverse by date"
 msgstr "Tarihe Göre, Tersine"
@@ -14120,6 +14211,10 @@ msgid "standard"
 msgstr "Standart"
 
 msgid "start cut here"
+msgstr "Buradan kes"
+
+#, fuzzy
+msgid "start cut here (reset)"
 msgstr "Buradan kes"
 
 msgid "start directory"

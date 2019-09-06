@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2019-05-30 12:03+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -4398,6 +4398,10 @@ msgstr "Kódolási kulcstípus"
 msgid "Encryption:"
 msgstr "Kódolás:"
 
+#, fuzzy
+msgid "End cut"
+msgstr "Vége időpont"
+
 msgid "End time"
 msgstr "Vége időpont"
 
@@ -4630,6 +4634,9 @@ msgstr "Mindenhonnan"
 
 msgid "Exceeds dual layer medium!"
 msgstr "Meghaladja a kétrétegű hordozó kapacitását!"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 msgid "Execution finished!!"
 msgstr "Végrehajtás befejezve!"
@@ -5511,6 +5518,11 @@ msgstr "Hány percet szeretne felvenni?"
 msgid "How many minutes do you want to record?"
 msgstr "Hány percet szeretne felvenni?"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 msgid "Hue"
 msgstr "Színárnyalat"
 
@@ -6318,6 +6330,14 @@ msgstr "Legyen ez a vége pont"
 
 msgid "Make this mark just a mark"
 msgstr "Legyen ez csak egy jelölőpont"
+
+#, fuzzy
+msgid "Make this mark the final 'out' point"
+msgstr "Legyen ez a vége pont"
+
+#, fuzzy
+msgid "Make this mark the initial 'in' point"
+msgstr "Legyen ez a kezdési pont"
 
 msgid "Malawi"
 msgstr "Malawi"
@@ -8133,6 +8153,9 @@ msgstr "Kérdés"
 msgid "Quick"
 msgstr "Gyors"
 
+msgid "Quick execute..."
+msgstr ""
+
 msgid "Quick zap"
 msgstr "Gyors ugrás"
 
@@ -8505,6 +8528,14 @@ msgstr "Visszaállítás"
 
 msgid "Restore backups"
 msgstr "Mentések visszaállítása"
+
+#, fuzzy
+msgid "Restore cuts"
+msgstr "Mentések visszaállítása"
+
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "Előző csatornára váltás"
 
 msgid "Restore system settings"
 msgstr "Rendszerbeállítás visszaállítása"
@@ -9076,9 +9107,6 @@ msgstr "Művelet kiválasztása"
 
 msgid "Select hard disk"
 msgstr "Háttértár kiválasztása"
-
-msgid "Select horizontal resolution:"
-msgstr "Válasszon függőleges felbontást:"
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr "Adja meg, hogy a forgatómotor milyen gyorsan mozogjon a műholdak között."
@@ -10254,6 +10282,10 @@ msgstr "Frekvencia"
 msgid "Start boot frequency"
 msgstr "Minden frekvencia"
 
+#, fuzzy
+msgid "Start cut"
+msgstr "Teszt indítása"
+
 msgid "Start from the beginning"
 msgstr "Indítsa az elejétől"
 
@@ -10307,8 +10339,16 @@ msgstr ""
 msgid "Stby LED brightness"
 msgstr "Fényerő"
 
+#, fuzzy
+msgid "Step back"
+msgstr "Léptetés kelet felé"
+
 msgid "Step east"
 msgstr "Léptetés kelet felé"
+
+#, fuzzy
+msgid "Step forward"
+msgstr "Előre kihagyása"
 
 msgid "Step west"
 msgstr "Léptetés nyugat felé"
@@ -10757,6 +10797,10 @@ msgstr "%d perc van hátra az esemény végéig."
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "A DVD szabvány nem támogatja a H.264 (HDTV) videó streamet. Szeretne ehelyett létrehozni egy speciális formátumú adat DVD-t (mely azonban nem játszható le a hagyományos lejátszókban)?"
+
+#, fuzzy
+msgid "The MovieCut plugin is not installed."
+msgstr "A bővítmény nincs telepítve."
 
 msgid "The PIN code has been changed successfully."
 msgstr "A PIN-kódot sikeresen megváltoztatta."
@@ -12159,12 +12203,13 @@ msgstr "hetente"
 msgid "Weighted position"
 msgstr "Kiegyensúlyzozott pozíció"
 
+#, fuzzy
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 "Üdvözlöm a Vágólista szerkesztőben.\n"
 "\n"
@@ -12980,6 +13025,9 @@ msgstr ""
 msgid "blue"
 msgstr "kék"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr "alsó"
 
@@ -13107,6 +13155,10 @@ msgstr "alapértelmezett"
 msgid "delete cut"
 msgstr "vágópont törlése"
 
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr " (kikapcsolva)"
+
 msgid "descramble and record ecm"
 msgstr "ECM felvétel és dekódolás"
 
@@ -13116,8 +13168,9 @@ msgstr "dekektív/thriller"
 msgid "disable"
 msgstr "letiltás"
 
-msgid "disable intro screen"
-msgstr "bejelentkező képernyő kikapcsolása"
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr "lista szerkesztés engedélyezése"
 
 msgid "disable move mode"
 msgstr "mozgatási mód letiltása"
@@ -13179,11 +13232,12 @@ msgstr "engedélyezés"
 msgid "enable bouquet edit"
 msgstr "lista szerkesztés engedélyezése"
 
+#, fuzzy
+msgid "enable cuts (preview)"
+msgstr "lista szerkesztés engedélyezése"
+
 msgid "enable favourite edit"
 msgstr "kedvencek módosításának engedélyezése"
-
-msgid "enable intro screen"
-msgstr "intor képernyő engedélyezése"
 
 msgid "enable move mode"
 msgstr "mozgatási mód engedélyezése"
@@ -13194,10 +13248,18 @@ msgstr "engedélyezve"
 msgid "end alternatives edit"
 msgstr "alternatívák módosításának vége"
 
+#, fuzzy
+msgid "end at this position"
+msgstr "e pont után mindent töröljön"
+
 msgid "end bouquet edit"
 msgstr "lista szerkesztés befejezése"
 
 msgid "end cut here"
+msgstr "vágás kilépő pontja"
+
+#, fuzzy
+msgid "end cut here (reset)"
 msgstr "vágás kilépő pontja"
 
 msgid "end favourites edit"
@@ -13225,8 +13287,8 @@ msgstr "hiba a keresés indításakor"
 msgid "error while scanning"
 msgstr "hiba a keresés közben"
 
-msgid "execute cuts (requires MovieCut plugin)"
-msgstr "vágások végrehajtása (MovieCut bővítmény szükséges)"
+msgid "execute cuts and exit"
+msgstr ""
 
 #, fuzzy
 msgid "exit "
@@ -13439,6 +13501,10 @@ msgstr "modul inicializálása"
 
 msgid "init modules"
 msgstr "modul inicializálás"
+
+#, fuzzy
+msgid "insert mark after each in"
+msgstr "jelző elhelyezése ide"
 
 msgid "insert mark here"
 msgstr "jelző elhelyezése ide"
@@ -13730,8 +13796,14 @@ msgstr "néprajz"
 msgid "pre-school children's program"
 msgstr "óvodásoknak"
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
 msgstr "törölt felhasználói listák végleges eltávolítása"
+
+msgid "quick execute"
+msgstr ""
 
 msgid "receiver software because updates are available."
 msgstr "készülék szoftvere, mert frissítések elérhetők."
@@ -13754,6 +13826,10 @@ msgstr "nevezetes emberek"
 msgid "remove after this position"
 msgstr "e pont után mindent töröljön"
 
+#, fuzzy
+msgid "remove all"
+msgstr "könyvjelző eltávolítása"
+
 msgid "remove all alternatives"
 msgstr "összes alternatíva törlése"
 
@@ -13772,6 +13848,10 @@ msgstr "lista eltávolítása a gyermekzár védelem alól"
 msgid "remove cable services"
 msgstr "kábeles szolgáltatás eltávolítása"
 
+#, fuzzy
+msgid "remove cuts (preserve marks)"
+msgstr "e jelzö eltávolítása"
+
 msgid "remove directory"
 msgstr "mappa eltávolítása"
 
@@ -13780,6 +13860,10 @@ msgstr "bejegyzés törlése"
 
 msgid "remove from parental protection"
 msgstr "eltávolítás a gyermekzár védelem alól"
+
+#, fuzzy
+msgid "remove marks (preserve cuts)"
+msgstr "kábeles szolgáltatás eltávolítása"
 
 msgid "remove new found flag"
 msgstr "'új' jelző eltávolítása"
@@ -13804,6 +13888,14 @@ msgstr "többszöri"
 
 msgid "restore deleted userbouquets"
 msgstr "törölt felhasználói listák visszaállítása"
+
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "visszatekerés az előző chapterhez"
+
+#, fuzzy
+msgid "restore previous cuts & exit"
+msgstr "visszatekerés az előző chapterhez"
 
 msgid "reverse by date"
 msgstr "dátum szerint csökkenő"
@@ -13999,6 +14091,10 @@ msgid "standard"
 msgstr "hagyományos"
 
 msgid "start cut here"
+msgstr "vágás belépő pontja"
+
+#, fuzzy
+msgid "start cut here (reset)"
 msgstr "vágás belépő pontja"
 
 msgid "start directory"

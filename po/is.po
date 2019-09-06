@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2011-05-07 12:23+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -4689,6 +4689,11 @@ msgid "Encryption:"
 msgstr "Kóðun:"
 
 #
+#, fuzzy
+msgid "End cut"
+msgstr "Loka tími"
+
+#
 msgid "End time"
 msgstr "Loka tími"
 
@@ -4930,6 +4935,9 @@ msgstr ""
 
 msgid "Exceeds dual layer medium!"
 msgstr "Þarf meira en tveggja laga disk!"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 msgid "Execution finished!!"
 msgstr "Keyrslu lokið!!"
@@ -5900,6 +5908,11 @@ msgstr "Í hvað margar mínútur viltu taka upp?"
 msgid "How many minutes do you want to record?"
 msgstr "Í hvað margar mínútur viltu taka upp?"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 #
 msgid "Hue"
 msgstr "Litatónn"
@@ -6837,6 +6850,16 @@ msgstr "Gera þetta merki að 'út' merki"
 #
 msgid "Make this mark just a mark"
 msgstr "Gera þetta merki bara að merki"
+
+#
+#, fuzzy
+msgid "Make this mark the final 'out' point"
+msgstr "Gera þetta merki að 'út' merki"
+
+#
+#, fuzzy
+msgid "Make this mark the initial 'in' point"
+msgstr "Gera þetta merki að 'inn' merki"
 
 msgid "Malawi"
 msgstr ""
@@ -8945,6 +8968,9 @@ msgstr ""
 msgid "Quick"
 msgstr "Hratt"
 
+msgid "Quick execute..."
+msgstr ""
+
 #
 #, fuzzy
 msgid "Quick zap"
@@ -9391,6 +9417,16 @@ msgstr "Setja inn"
 #
 msgid "Restore backups"
 msgstr "Setja inn afrit"
+
+#
+#, fuzzy
+msgid "Restore cuts"
+msgstr "Setja inn afrit"
+
+#
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "Til  baka á síðustu rás"
 
 #
 msgid "Restore system settings"
@@ -10059,9 +10095,6 @@ msgstr "Veldu stað fyrir afrit"
 #, fuzzy
 msgid "Select hard disk"
 msgstr "Veldu mynd"
-
-msgid "Select horizontal resolution:"
-msgstr ""
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr ""
@@ -11399,6 +11432,11 @@ msgid "Start boot frequency"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Start cut"
+msgstr "Byrja prófun"
+
+#
 msgid "Start from the beginning"
 msgstr "Byrja frá byrjun"
 
@@ -11459,8 +11497,18 @@ msgid "Stby LED brightness"
 msgstr "Birta"
 
 #
+#, fuzzy
+msgid "Step back"
+msgstr "Skref austur"
+
+#
 msgid "Step east"
 msgstr "Skref austur"
+
+#
+#, fuzzy
+msgid "Step forward"
+msgstr "fara áfram"
 
 #
 msgid "Step west"
@@ -11984,6 +12032,10 @@ msgstr ""
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr ""
+
+#, fuzzy
+msgid "The MovieCut plugin is not installed."
+msgstr "Þetta íforrit er ekki sett upp."
 
 msgid "The PIN code has been changed successfully."
 msgstr "Það tókst að breyta PIN kóðanum."
@@ -13555,9 +13607,9 @@ msgstr ""
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 "Velkominn í klippinga stjórann.\n"
 "\n"
@@ -14399,6 +14451,9 @@ msgstr ""
 msgid "blue"
 msgstr "blár"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr ""
 
@@ -14541,6 +14596,11 @@ msgstr "Venjulegt"
 msgid "delete cut"
 msgstr "eyða klippingu"
 
+#
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr "eyða klippingu"
+
 msgid "descramble and record ecm"
 msgstr ""
 
@@ -14551,8 +14611,10 @@ msgstr ""
 msgid "disable"
 msgstr "óvirkt"
 
-msgid "disable intro screen"
-msgstr ""
+#
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr "byrja féttu breytingu"
 
 #
 msgid "disable move mode"
@@ -14620,11 +14682,13 @@ msgstr "virkt"
 msgid "enable bouquet edit"
 msgstr "byrja féttu breytingu"
 
+#
+#, fuzzy
+msgid "enable cuts (preview)"
+msgstr "byrja féttu breytingu"
+
 msgid "enable favourite edit"
 msgstr "virkja breytingu eftirlætis lista"
-
-msgid "enable intro screen"
-msgstr ""
 
 #
 msgid "enable move mode"
@@ -14639,11 +14703,21 @@ msgid "end alternatives edit"
 msgstr "hætta breytingum valkosta"
 
 #
+#, fuzzy
+msgid "end at this position"
+msgstr "eyða fyrir aftan þetta"
+
+#
 msgid "end bouquet edit"
 msgstr "hætta að breyta fléttu"
 
 #
 msgid "end cut here"
+msgstr "enda klippingu hér"
+
+#
+#, fuzzy
+msgid "end cut here (reset)"
 msgstr "enda klippingu hér"
 
 msgid "end favourites edit"
@@ -14670,7 +14744,7 @@ msgstr ""
 msgid "error while scanning"
 msgstr ""
 
-msgid "execute cuts (requires MovieCut plugin)"
+msgid "execute cuts and exit"
 msgstr ""
 
 msgid "exit "
@@ -14909,6 +14983,11 @@ msgstr "stilli einingu"
 #
 msgid "init modules"
 msgstr "stilla einingar"
+
+#
+#, fuzzy
+msgid "insert mark after each in"
+msgstr "setja merki hér"
 
 #
 msgid "insert mark here"
@@ -15238,7 +15317,13 @@ msgstr ""
 msgid "pre-school children's program"
 msgstr ""
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
+msgstr ""
+
+msgid "quick execute"
 msgstr ""
 
 msgid "receiver software because updates are available."
@@ -15267,6 +15352,11 @@ msgid "remove after this position"
 msgstr "eyða fyrir aftan þetta"
 
 #
+#, fuzzy
+msgid "remove all"
+msgstr "eyða bókamerki"
+
+#
 msgid "remove all alternatives"
 msgstr "taka út alla valkosti"
 
@@ -15289,6 +15379,11 @@ msgid "remove cable services"
 msgstr ""
 
 #
+#, fuzzy
+msgid "remove cuts (preserve marks)"
+msgstr "taka út þetta merki"
+
+#
 msgid "remove directory"
 msgstr "eyða möppu"
 
@@ -15299,6 +15394,11 @@ msgstr "taka út"
 #
 msgid "remove from parental protection"
 msgstr "taka foreldralæsingu af"
+
+#
+#, fuzzy
+msgid "remove marks (preserve cuts)"
+msgstr "taka út nafnaþjón"
 
 #
 msgid "remove new found flag"
@@ -15328,6 +15428,16 @@ msgstr "endurtekinn"
 
 msgid "restore deleted userbouquets"
 msgstr ""
+
+#
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "fara til baka á fyrri kafla"
+
+#
+#, fuzzy
+msgid "restore previous cuts & exit"
+msgstr "fara til baka á fyrri kafla"
 
 msgid "reverse by date"
 msgstr ""
@@ -15540,6 +15650,10 @@ msgid "standard"
 msgstr "venjulegt"
 
 msgid "start cut here"
+msgstr "byrja klippingu hér"
+
+#, fuzzy
+msgid "start cut here (reset)"
 msgstr "byrja klippingu hér"
 
 #

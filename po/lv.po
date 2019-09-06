@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-04 02:25+0430\n"
+"POT-Creation-Date: 2019-09-07 00:27+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -4404,6 +4404,10 @@ msgstr "Šifrēšanas atslēgas veids"
 msgid "Encryption:"
 msgstr "Šifrēšana:"
 
+#, fuzzy
+msgid "End cut"
+msgstr "Beigu laiks"
+
 msgid "End time"
 msgstr "Beigu laiks"
 
@@ -4641,6 +4645,9 @@ msgstr "Jebkur"
 
 msgid "Exceeds dual layer medium!"
 msgstr "Pārsniedz divslāņu datu nesēja ietilpību!"
+
+msgid "Execute cuts and exit"
+msgstr ""
 
 msgid "Execution finished!!"
 msgstr "Izpilde pabeigta!!"
@@ -5522,6 +5529,11 @@ msgstr "Cik minūšu vēlaties pievienot ierakstam?"
 msgid "How many minutes do you want to record?"
 msgstr "Cik minūšu vēlaties ierakstīt?"
 
+msgid ""
+"How would you like to modify the movie?\n"
+"Warning: This operation cannot be undone!"
+msgstr ""
+
 msgid "Hue"
 msgstr "Tonis"
 
@@ -6326,6 +6338,14 @@ msgstr "Padarīt šo zīmi par 'izejas' punktu"
 
 msgid "Make this mark just a mark"
 msgstr "Padarīt šo atzīmi vienkārši par atzīmi"
+
+#, fuzzy
+msgid "Make this mark the final 'out' point"
+msgstr "Padarīt šo zīmi par 'izejas' punktu"
+
+#, fuzzy
+msgid "Make this mark the initial 'in' point"
+msgstr "Padarīt šo zīmi par 'ieejas' punktu"
 
 msgid "Malawi"
 msgstr "Malāvija"
@@ -8143,6 +8163,9 @@ msgstr "Jautājums"
 msgid "Quick"
 msgstr "Ātrais"
 
+msgid "Quick execute..."
+msgstr ""
+
 msgid "Quick zap"
 msgstr "Ātrā pārslēgšana"
 
@@ -8517,6 +8540,14 @@ msgstr "Atjaunot"
 
 msgid "Restore backups"
 msgstr "Atjaunot dublējumkopiju"
+
+#, fuzzy
+msgid "Restore cuts"
+msgstr "Atjaunot dublējumkopiju"
+
+#, fuzzy
+msgid "Restore previous cuts..."
+msgstr "Atgriezties uz iepriekšējo kanālu"
 
 msgid "Restore system settings"
 msgstr "Atjaunot sistēmas iestatījumus"
@@ -9092,9 +9123,6 @@ msgstr "Darbība"
 
 msgid "Select hard disk"
 msgstr "Izvēlieties cieto disku"
-
-msgid "Select horizontal resolution:"
-msgstr "Izvēlieties izšķirtspēju:"
 
 msgid "Select how quickly the dish should move between satellites."
 msgstr "Izvēlieties, cik ātri satelītantenai pārvietot starp satelītiem."
@@ -10268,6 +10296,10 @@ msgstr "Frekvence"
 msgid "Start boot frequency"
 msgstr "Visas frekvences"
 
+#, fuzzy
+msgid "Start cut"
+msgstr "Sākt pārbaudi"
+
 msgid "Start from the beginning"
 msgstr "Sākt no sākuma"
 
@@ -10321,8 +10353,16 @@ msgstr ""
 msgid "Stby LED brightness"
 msgstr "Spilgtums"
 
+#, fuzzy
+msgid "Step back"
+msgstr "Soli uz austrumiem"
+
 msgid "Step east"
 msgstr "Soli uz austrumiem"
+
+#, fuzzy
+msgid "Step forward"
+msgstr "Pārlēkt uz priekšu"
 
 msgid "Step west"
 msgstr "Solis uz rietumiem"
@@ -10767,6 +10807,10 @@ msgstr "Līdz pārraides beigām atlikušas %d minūtes."
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standarts neatbalsta H.264 (HDTV) video. Vai jūs vēlaties izveidot īpaša formāta datu DVD (kuru nevarēs atskaņot standarta DVD atskaņotāji)?"
+
+#, fuzzy
+msgid "The MovieCut plugin is not installed."
+msgstr "Šis spraudnis nav instalēts."
 
 msgid "The PIN code has been changed successfully."
 msgstr "PIN kods nomainīts veiksmīgi."
@@ -12172,12 +12216,13 @@ msgstr "ik nedēļu"
 msgid "Weighted position"
 msgstr "Pozīcijas nozīmīgums"
 
+#, fuzzy
 msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
-"Seek to the start of the stuff you want to cut away. Press OK, select 'start cut'.\n"
+"Seek to the start of the stuff you want to cut away, press RED.\n"
 "\n"
-"Then seek to the end, press OK, select 'end cut'. That's it."
+"Then seek to the end, press GREEN. That's it."
 msgstr ""
 "Sveicināti griešanas redaktorā.\n"
 "\n"
@@ -12990,6 +13035,9 @@ msgstr ""
 msgid "blue"
 msgstr "zilā"
 
+msgid "both"
+msgstr ""
+
 msgid "bottom"
 msgstr "apakšā"
 
@@ -13117,6 +13165,10 @@ msgstr "noklusētais"
 msgid "delete cut"
 msgstr "dzēst griezumu"
 
+#, fuzzy
+msgid "delete cut (disabled)"
+msgstr " (izslēgts)"
+
 msgid "descramble and record ecm"
 msgstr "dekodēt un ierakstīt ecm"
 
@@ -13126,8 +13178,9 @@ msgstr "detektīvs/trilleris"
 msgid "disable"
 msgstr "izslēgt"
 
-msgid "disable intro screen"
-msgstr "izslēgt pamācību uzsākot"
+#, fuzzy
+msgid "disable cuts (edit)"
+msgstr "aktivizēt buķešu rediģēšanu"
 
 msgid "disable move mode"
 msgstr "izslēgt pārvietošanas režīmu"
@@ -13189,11 +13242,12 @@ msgstr "aktivizēt"
 msgid "enable bouquet edit"
 msgstr "aktivizēt buķešu rediģēšanu"
 
+#, fuzzy
+msgid "enable cuts (preview)"
+msgstr "aktivizēt buķešu rediģēšanu"
+
 msgid "enable favourite edit"
 msgstr "aktivizēt favorītu rediģēšanu"
-
-msgid "enable intro screen"
-msgstr "aktivizēt pamācību uzsākot"
 
 msgid "enable move mode"
 msgstr "aktivizēt pārvietošanas režīmu"
@@ -13204,10 +13258,18 @@ msgstr "aktivizēts"
 msgid "end alternatives edit"
 msgstr "beigt alternatīvu rediģēšanu"
 
+#, fuzzy
+msgid "end at this position"
+msgstr "dzēst pēc šīs pozīcijas"
+
 msgid "end bouquet edit"
 msgstr "beigt buķešu rediģēšanu"
 
 msgid "end cut here"
+msgstr "beigt griešanu šeit"
+
+#, fuzzy
+msgid "end cut here (reset)"
 msgstr "beigt griešanu šeit"
 
 msgid "end favourites edit"
@@ -13235,8 +13297,8 @@ msgstr "kļūda uzsākot skenēšanu"
 msgid "error while scanning"
 msgstr "kļūda skenējot"
 
-msgid "execute cuts (requires MovieCut plugin)"
-msgstr "izpildīt griešanu (izmanto spraudni MovieCut)"
+msgid "execute cuts and exit"
+msgstr ""
 
 #, fuzzy
 msgid "exit "
@@ -13449,6 +13511,10 @@ msgstr "inicializēt moduli"
 
 msgid "init modules"
 msgstr "inicializēt moduļus"
+
+#, fuzzy
+msgid "insert mark after each in"
+msgstr "ievietot iezīmi"
 
 msgid "insert mark here"
 msgstr "ievietot iezīmi"
@@ -13741,8 +13807,14 @@ msgstr "tautas kultūra/tradicionālā māksla"
 msgid "pre-school children's program"
 msgstr "pirmsskolas bērnu programma"
 
+msgid "punch cuts"
+msgstr ""
+
 msgid "purge deleted userbouquets"
 msgstr "iztīrīt dzēstās buķetes"
+
+msgid "quick execute"
+msgstr ""
 
 msgid "receiver software because updates are available."
 msgstr "uztvērēja programmatūru jo atjauninājumi pieejami."
@@ -13765,6 +13837,10 @@ msgstr "ievērojami cilvēki"
 msgid "remove after this position"
 msgstr "dzēst pēc šīs pozīcijas"
 
+#, fuzzy
+msgid "remove all"
+msgstr "noņemt"
+
 msgid "remove all alternatives"
 msgstr "dzēst visas alternatīvas"
 
@@ -13783,6 +13859,10 @@ msgstr "dzēst buķeti no vecāku kontroles"
 msgid "remove cable services"
 msgstr "dzēst kabeļu kanālus"
 
+#, fuzzy
+msgid "remove cuts (preserve marks)"
+msgstr "dzēst iezīmi"
+
 msgid "remove directory"
 msgstr "dzēst mapi"
 
@@ -13791,6 +13871,10 @@ msgstr "dzēst ierakstu"
 
 msgid "remove from parental protection"
 msgstr "dzēst no vecāku kontroles"
+
+#, fuzzy
+msgid "remove marks (preserve cuts)"
+msgstr "dzēst kabeļu kanālus"
 
 msgid "remove new found flag"
 msgstr "dzēst 'jaunatrasts' marķējumu"
@@ -13815,6 +13899,14 @@ msgstr "atkārtots"
 
 msgid "restore deleted userbouquets"
 msgstr "atjaunot dzēstās buķetes"
+
+#, fuzzy
+msgid "restore previous cuts"
+msgstr "atgriezties uz iepriekšējo nodaļu"
+
+#, fuzzy
+msgid "restore previous cuts & exit"
+msgstr "atgriezties uz iepriekšējo nodaļu"
 
 msgid "reverse by date"
 msgstr "otrādi pēc datuma"
@@ -14010,6 +14102,10 @@ msgid "standard"
 msgstr "standarta"
 
 msgid "start cut here"
+msgstr "sākt griešanu šeit"
+
+#, fuzzy
+msgid "start cut here (reset)"
 msgstr "sākt griešanu šeit"
 
 msgid "start directory"

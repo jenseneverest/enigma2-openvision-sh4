@@ -5,6 +5,7 @@ from SystemInfo import SystemInfo
 from Components.Console import Console
 import Task
 from boxbranding import getMachineMtdRoot
+import re
 
 def readFile(filename):
 	file = open(filename)

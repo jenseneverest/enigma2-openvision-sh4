@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 00:27+0430\n"
+"POT-Creation-Date: 2019-09-09 14:21+0430\n"
 "PO-Revision-Date: 2018-11-12 20:51+0200\n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: Bulgarian\n"
@@ -2145,6 +2145,12 @@ msgstr "Черен екран"
 msgid "Black screen till locked"
 msgstr "Черен екран до получаване на сигнал"
 
+msgid "Blinking REC"
+msgstr ""
+
+msgid "Blinking REC Symbol"
+msgstr ""
+
 msgid "Block noise reduction"
 msgstr "Блокиране на филтъра за MPEG шум"
 
@@ -2495,6 +2501,10 @@ msgid "Channellist menu"
 msgstr "Меню списък с канали"
 
 #, fuzzy
+msgid "Channelname"
+msgstr "Информация за канала"
+
+#, fuzzy
 msgid "Channelname in Standby Clock"
 msgstr "Номер на канала и пикон"
 
@@ -2541,10 +2551,6 @@ msgstr "Глава"
 
 msgid "Chapter:"
 msgstr "Глава:"
-
-#, fuzzy
-msgid "Chatham Islands"
-msgstr "Кайманови Острови"
 
 msgid "Check"
 msgstr "Проверка"
@@ -4202,10 +4208,6 @@ msgstr "Изток"
 msgid "East limit set"
 msgstr "Източен лимит"
 
-#, fuzzy
-msgid "Easter Island"
-msgstr "Фарьорски Острови"
-
 msgid "Ecuador"
 msgstr "Еквадор"
 
@@ -4329,6 +4331,9 @@ msgstr "Активиране на бързо автосканиране"
 #, python-format
 msgid "Enable auto fast scan for %s"
 msgstr "Вкл. на бързо автосканиране за %s"
+
+msgid "Enable blinking REC symbol on the LCD display"
+msgstr ""
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Разреши избор на букет в multi-EPG"
@@ -4934,9 +4939,6 @@ msgstr "Скорости за превъртане напред"
 msgid "Favourites"
 msgstr "Предпочитани"
 
-msgid "Fernando de Noronha"
-msgstr ""
-
 msgid "Fiji"
 msgstr "Фиджи"
 
@@ -5136,16 +5138,8 @@ msgstr ""
 msgid "Gabon"
 msgstr "Габон"
 
-#, fuzzy
-msgid "Galapagos Islands"
-msgstr "Острови Алан"
-
 msgid "Gambia"
 msgstr "Гамбия"
-
-#, fuzzy
-msgid "Gambier Islands"
-msgstr "Фарьорски Острови"
 
 msgid "Gateway"
 msgstr "Шлюз"
@@ -5451,9 +5445,6 @@ msgstr "История на каналите - назад"
 msgid "History next"
 msgstr "История на каналите - напред"
 
-msgid "Ho Chi Minh City"
-msgstr ""
-
 msgid "Hold screen"
 msgstr "Задържане на екрана"
 
@@ -5696,6 +5687,9 @@ msgstr ""
 
 msgid "In progress"
 msgstr "В ход"
+
+msgid "In the Standby record on the LCD display"
+msgstr ""
 
 msgid "Inactivity Sleeptimer"
 msgstr "Таймер за Бездействие"
@@ -5972,9 +5966,6 @@ msgstr "Джързи"
 
 msgid "Job overview"
 msgstr "Преглед на задачата"
-
-msgid "Johnston Atoll"
-msgstr ""
 
 msgid "Jordan"
 msgstr "Йордания"
@@ -6419,10 +6410,6 @@ msgstr "Обедини преди записа (в минути)"
 msgid "Mark service as dedicated 3D service"
 msgstr "Маркиране на канала като 3D канал"
 
-#, fuzzy
-msgid "Marquesas Islands"
-msgstr "Маршалски Острови"
-
 msgid "Marshall Islands"
 msgstr "Маршалски Острови"
 
@@ -6508,10 +6495,6 @@ msgstr "Мексико"
 
 msgid "Micronesia (Federated States of)"
 msgstr "Микронезия (Федерален Щат)"
-
-#, fuzzy
-msgid "Midway Islands"
-msgstr "Кайманови Острови"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -7159,6 +7142,10 @@ msgstr "Не е тестван:"
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Отбележете: ако е активирано и Вие искате да преминете в режим готовност след включване, изберете опция 'Режим готовност при старт' като 'Не, с изключение на таймера за включване'."
 
+#, fuzzy
+msgid "Nothing"
+msgstr "Не прави нищо"
+
 msgid ""
 "Nothing to scan!\n"
 "Please setup your tuner settings before you start a service scan."
@@ -7543,10 +7530,6 @@ msgstr "Пилот"
 
 msgid "Pitcairn"
 msgstr "Питкерн"
-
-#, fuzzy
-msgid "Pitcairn Islands"
-msgstr "Острови Алан"
 
 msgid "Pixels\n"
 msgstr ""
@@ -8202,6 +8185,20 @@ msgstr "Бързо превключване"
 #, fuzzy
 msgid "RC command set"
 msgstr "Ред на команди"
+
+#, fuzzy
+msgid "REC"
+msgstr "FEC"
+
+msgid "REC Symbol"
+msgstr ""
+
+#, fuzzy
+msgid "REC symbol in Standby"
+msgstr "В режим готовност също"
+
+msgid "REC symbol in use"
+msgstr ""
 
 msgid "RF output"
 msgstr "RF изход"
@@ -9758,6 +9755,10 @@ msgstr "Покажи икона за нови/негледани елемент�
 msgid "Show icons"
 msgstr "Показвай колонки"
 
+#, fuzzy
+msgid "Show in Standby"
+msgstr "Изключване от режим готовност"
+
 msgid "Show in extensions menu"
 msgstr "Покажи в менюто с разширенията"
 
@@ -11099,6 +11100,10 @@ msgstr "Тази опция позволява да подсилите зеле�
 msgid "This option allows you choose how to display the remaining/elapsed time for live TV."
 msgstr "Тази опция позволява да подсилите зелените тонове в картината."
 
+#, fuzzy
+msgid "This option allows you choose how to display the time or nothing in Standby"
+msgstr "Тази опция позволява да подсилите зелените тонове в картината."
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "Тази опция позволява да активирате филтър за контролиране на размиването и получаване на по-естествен звук."
 
@@ -12217,10 +12222,6 @@ msgstr "Изчакване за монтиране"
 
 msgid "Waiting for partition"
 msgstr "Изчакване за дял"
-
-#, fuzzy
-msgid "Wake Island"
-msgstr "Фарьорски Острови"
 
 msgid "Wake On LAN"
 msgstr "Wake On LAN (включване през мрежата)"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 22:21+0430\n"
+"POT-Creation-Date: 2019-09-09 14:21+0430\n"
 "PO-Revision-Date: 2019-09-07 13:01+0200\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
@@ -2141,6 +2141,12 @@ msgstr "Ecran noir"
 msgid "Black screen till locked"
 msgstr "Ecran noir jusqu'au verrouillage"
 
+msgid "Blinking REC"
+msgstr ""
+
+msgid "Blinking REC Symbol"
+msgstr ""
+
 msgid "Block noise reduction"
 msgstr "Bloc réduction bruit"
 
@@ -2504,6 +2510,10 @@ msgid "Channellist menu"
 msgstr "Liste des chaînes"
 
 #, fuzzy
+msgid "Channelname"
+msgstr "Info chaîne"
+
+#, fuzzy
 msgid "Channelname in Standby Clock"
 msgstr "Numéro de la chaîne et picon"
 
@@ -2549,10 +2559,6 @@ msgstr "Chapitre"
 
 msgid "Chapter:"
 msgstr "Chapitre:"
-
-#, fuzzy
-msgid "Chatham Islands"
-msgstr "Îles Caïmans"
 
 msgid "Check"
 msgstr "Vérification"
@@ -4195,10 +4201,6 @@ msgstr "Est"
 msgid "East limit set"
 msgstr "Fixer limite Est"
 
-#, fuzzy
-msgid "Easter Island"
-msgstr "Îles Féroé"
-
 msgid "Ecuador"
 msgstr "Équateur"
 
@@ -4318,6 +4320,9 @@ msgstr "Activer la recherche rapide automatique"
 #, python-format
 msgid "Enable auto fast scan for %s"
 msgstr "Activer la recherche rapide automatique pour %s"
+
+msgid "Enable blinking REC symbol on the LCD display"
+msgstr ""
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Activer la sélection du bouquet en multi-EPG"
@@ -4912,9 +4917,6 @@ msgstr "Vitesses avance rapide"
 msgid "Favourites"
 msgstr "Favoris"
 
-msgid "Fernando de Noronha"
-msgstr ""
-
 msgid "Fiji"
 msgstr "Fidji"
 
@@ -5111,16 +5113,8 @@ msgstr ""
 msgid "Gabon"
 msgstr "Gabon"
 
-#, fuzzy
-msgid "Galapagos Islands"
-msgstr "Iles Aland"
-
 msgid "Gambia"
 msgstr "Gambie"
-
-#, fuzzy
-msgid "Gambier Islands"
-msgstr "Îles Féroé"
 
 msgid "Gateway"
 msgstr "Passerelle"
@@ -5423,9 +5417,6 @@ msgstr "Historique précédent"
 msgid "History next"
 msgstr "Historique suivant"
 
-msgid "Ho Chi Minh City"
-msgstr ""
-
 msgid "Hold screen"
 msgstr "Verrouiller l'écran"
 
@@ -5661,6 +5652,9 @@ msgstr "Afin d'enregistrer une émission programmée, la TV zappera sur la chaî
 
 msgid "In progress"
 msgstr "En cours"
+
+msgid "In the Standby record on the LCD display"
+msgstr ""
 
 msgid "Inactivity Sleeptimer"
 msgstr "Arrêt automatique en cas d'inactivité"
@@ -5938,9 +5932,6 @@ msgstr "Jersey"
 
 msgid "Job overview"
 msgstr "Vue travail"
-
-msgid "Johnston Atoll"
-msgstr ""
 
 msgid "Jordan"
 msgstr "Jordanie"
@@ -6382,10 +6373,6 @@ msgstr "Marge avant l'enregistrement (min)"
 msgid "Mark service as dedicated 3D service"
 msgstr "Marquer le service comme un service dédié à la 3D"
 
-#, fuzzy
-msgid "Marquesas Islands"
-msgstr "Îles Marshall"
-
 msgid "Marshall Islands"
 msgstr "Îles Marshall"
 
@@ -6471,10 +6458,6 @@ msgstr "Mexique"
 
 msgid "Micronesia (Federated States of)"
 msgstr "Micronésie (Etats fédérés de)"
-
-#, fuzzy
-msgid "Midway Islands"
-msgstr "Îles Caïmans"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -7112,6 +7095,10 @@ msgstr "Pas testé:"
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Note: lorsqu’activé, et que vous voulez mettre votre récepteur en veille après un réveil, mettre l’option ‘Démarrer en mode veille ‘ sur ‘Non, excepté la minuterie de réveil’."
 
+#, fuzzy
+msgid "Nothing"
+msgstr "Ne rien faire"
+
 msgid ""
 "Nothing to scan!\n"
 "Please setup your tuner settings before you start a service scan."
@@ -7489,10 +7476,6 @@ msgstr "Pilote"
 
 msgid "Pitcairn"
 msgstr "Pitcairn"
-
-#, fuzzy
-msgid "Pitcairn Islands"
-msgstr "Iles Aland"
 
 msgid "Pixels\n"
 msgstr "Pixels\n"
@@ -8142,6 +8125,20 @@ msgstr "Zapping rapide"
 #, fuzzy
 msgid "RC command set"
 msgstr "Ordre de la commande"
+
+#, fuzzy
+msgid "REC"
+msgstr "FEC"
+
+msgid "REC Symbol"
+msgstr ""
+
+#, fuzzy
+msgid "REC symbol in Standby"
+msgstr "Aussi en veille"
+
+msgid "REC symbol in use"
+msgstr ""
 
 msgid "RF output"
 msgstr "Sortie RF"
@@ -9673,6 +9670,10 @@ msgstr "Afficher l'icône pour les nouveaux éléments"
 msgid "Show icons"
 msgstr "Afficher colonnes"
 
+#, fuzzy
+msgid "Show in Standby"
+msgstr "Éteindre lorsqu'il est en veille"
+
 msgid "Show in extensions menu"
 msgstr "Afficher dans le menu des extensions"
 
@@ -11014,6 +11015,10 @@ msgstr "Cette option vous permet de désactiver ou modifier la position des haut
 msgid "This option allows you choose how to display the remaining/elapsed time for live TV."
 msgstr "Cette option vous permet d'augmenter les tons verts dans l'image."
 
+#, fuzzy
+msgid "This option allows you choose how to display the time or nothing in Standby"
+msgstr "Cette option vous permet d'éteindre l'affichage avant."
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "Cette option vous permet d'activer le filtre de lissage pour contrôler le processus de tramage."
 
@@ -12122,10 +12127,6 @@ msgstr "Attendre pour monter"
 
 msgid "Waiting for partition"
 msgstr "Attendre pour partitionner"
-
-#, fuzzy
-msgid "Wake Island"
-msgstr "Îles Féroé"
 
 msgid "Wake On LAN"
 msgstr "Réveil sur réseau (Wake on LAN)"

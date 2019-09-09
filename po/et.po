@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 00:27+0430\n"
+"POT-Creation-Date: 2019-09-09 14:21+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -2145,6 +2145,12 @@ msgstr "Must ekraan"
 msgid "Black screen till locked"
 msgstr "Must ekraan lukustumiseni"
 
+msgid "Blinking REC"
+msgstr ""
+
+msgid "Blinking REC Symbol"
+msgstr ""
+
 msgid "Block noise reduction"
 msgstr "Plokkmüra vähendamine"
 
@@ -2494,6 +2500,10 @@ msgid "Channellist menu"
 msgstr "Kanalinimekirja menüü"
 
 #, fuzzy
+msgid "Channelname"
+msgstr "Kanali info"
+
+#, fuzzy
 msgid "Channelname in Standby Clock"
 msgstr "Kanali number ja picon"
 
@@ -2540,10 +2550,6 @@ msgstr "Peatükk"
 
 msgid "Chapter:"
 msgstr "Peatükk:"
-
-#, fuzzy
-msgid "Chatham Islands"
-msgstr "Kaimanisaared"
 
 msgid "Check"
 msgstr "Kontrolli"
@@ -4197,10 +4203,6 @@ msgstr "Ida"
 msgid "East limit set"
 msgstr "Ida piir on määratud"
 
-#, fuzzy
-msgid "Easter Island"
-msgstr "Fääri saared"
-
 msgid "Ecuador"
 msgstr "Ecuador"
 
@@ -4323,6 +4325,9 @@ msgstr "Luba automaatne kiirotsing"
 #, python-format
 msgid "Enable auto fast scan for %s"
 msgstr "Luba kiire automaatotsing %s jaoks"
+
+msgid "Enable blinking REC symbol on the LCD display"
+msgstr ""
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Luba multiEPG-s nimekirjade valik."
@@ -4918,9 +4923,6 @@ msgstr "Edasikerimise kiirused"
 msgid "Favourites"
 msgstr "Lemmikud"
 
-msgid "Fernando de Noronha"
-msgstr ""
-
 msgid "Fiji"
 msgstr "Fidži"
 
@@ -5117,16 +5119,8 @@ msgstr ""
 msgid "Gabon"
 msgstr "Gabon"
 
-#, fuzzy
-msgid "Galapagos Islands"
-msgstr "Ahvenamaa"
-
 msgid "Gambia"
 msgstr "Gambia"
-
-#, fuzzy
-msgid "Gambier Islands"
-msgstr "Fääri saared"
 
 msgid "Gateway"
 msgstr "Lüüs"
@@ -5429,9 +5423,6 @@ msgstr "Ajaloo tagasivaade"
 msgid "History next"
 msgstr "Ajaloo edasivaade"
 
-msgid "Ho Chi Minh City"
-msgstr ""
-
 msgid "Hold screen"
 msgstr "Hoia pilti"
 
@@ -5669,6 +5660,9 @@ msgstr "Sunnitud kanalivahetus. Taimeri salvestus just käivitus ja vajas seda t
 
 msgid "In progress"
 msgstr "Toimumas"
+
+msgid "In the Standby record on the LCD display"
+msgstr ""
 
 msgid "Inactivity Sleeptimer"
 msgstr "Jõudeoleku taimer"
@@ -5944,9 +5938,6 @@ msgstr "Jersey"
 
 msgid "Job overview"
 msgstr "Töövaade"
-
-msgid "Johnston Atoll"
-msgstr ""
 
 msgid "Jordan"
 msgstr "Jordaania"
@@ -6388,10 +6379,6 @@ msgstr "Salvestuse algusesse lisatakse (minutit)"
 msgid "Mark service as dedicated 3D service"
 msgstr "märgi teenus 3D suunatud teenuseks"
 
-#, fuzzy
-msgid "Marquesas Islands"
-msgstr "Marshalli Saared"
-
 msgid "Marshall Islands"
 msgstr "Marshalli Saared"
 
@@ -6477,10 +6464,6 @@ msgstr "Mehhiko"
 
 msgid "Micronesia (Federated States of)"
 msgstr "Mikroneesia Liiduriigid"
-
-#, fuzzy
-msgid "Midway Islands"
-msgstr "Kaimanisaared"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -7128,6 +7111,10 @@ msgstr "Pole testitud:"
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Märkus: kui lubatud, ja sa tahad ooterežiimi pärast äratust, sea valik 'Ooterežiimis alustamine' kui 'Ei, välja arvatud äratustaimer'."
 
+#, fuzzy
+msgid "Nothing"
+msgstr "Ära tee midagi"
+
 msgid ""
 "Nothing to scan!\n"
 "Please setup your tuner settings before you start a service scan."
@@ -7511,10 +7498,6 @@ msgstr "Pilot"
 
 msgid "Pitcairn"
 msgstr "Pitcairn"
-
-#, fuzzy
-msgid "Pitcairn Islands"
-msgstr "Ahvenamaa"
 
 msgid "Pixels\n"
 msgstr ""
@@ -8170,6 +8153,20 @@ msgstr "Kiire kanalivalik"
 #, fuzzy
 msgid "RC command set"
 msgstr "Käskude järjekord"
+
+#, fuzzy
+msgid "REC"
+msgstr "FEC"
+
+msgid "REC Symbol"
+msgstr ""
+
+#, fuzzy
+msgid "REC symbol in Standby"
+msgstr "Ka ooteseisundis"
+
+msgid "REC symbol in use"
+msgstr ""
 
 msgid "RF output"
 msgstr "RF-väljund"
@@ -9718,6 +9715,10 @@ msgstr "Tähista uus/vaatamata salvestis"
 msgid "Show icons"
 msgstr "Näita veergusid"
 
+#, fuzzy
+msgid "Show in Standby"
+msgstr "Ooterežiimis lülita välja"
+
 msgid "Show in extensions menu"
 msgstr "Näita laienduste menüüs"
 
@@ -11064,6 +11065,10 @@ msgid "This option allows you choose how to display the remaining/elapsed time f
 msgstr "See valik lubab näidiku välja lülitada."
 
 #, fuzzy
+msgid "This option allows you choose how to display the time or nothing in Standby"
+msgstr "See valik lubab näidiku välja lülitada."
+
+#, fuzzy
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "See valikuvõimalus lubab rakendada 3D surround pehmet piirajat."
 
@@ -12189,10 +12194,6 @@ msgstr "Oodatakse haakimist"
 
 msgid "Waiting for partition"
 msgstr "Oodatakse partitsiooni"
-
-#, fuzzy
-msgid "Wake Island"
-msgstr "Fääri saared"
 
 msgid "Wake On LAN"
 msgstr "Kohtvõrgus äratamine WOL"

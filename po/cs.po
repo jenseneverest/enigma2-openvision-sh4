@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 00:27+0430\n"
+"POT-Creation-Date: 2019-09-09 14:21+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -2358,6 +2358,12 @@ msgstr "Černá obrazovka"
 msgid "Black screen till locked"
 msgstr "Černá obrazovka do uzamčení"
 
+msgid "Blinking REC"
+msgstr ""
+
+msgid "Blinking REC Symbol"
+msgstr ""
+
 #
 msgid "Block noise reduction"
 msgstr "Bloková redukce šumu (BNR)"
@@ -2762,6 +2768,10 @@ msgid "Channellist menu"
 msgstr "Menu přehledu programů"
 
 #, fuzzy
+msgid "Channelname"
+msgstr "Informace o programu"
+
+#, fuzzy
 msgid "Channelname in Standby Clock"
 msgstr "Číslo kanálu a pikona"
 
@@ -2811,10 +2821,6 @@ msgstr "Kapitola"
 #
 msgid "Chapter:"
 msgstr "Kapitola:"
-
-#, fuzzy
-msgid "Chatham Islands"
-msgstr "Kajmanské ostrovy"
 
 #
 msgid "Check"
@@ -4680,10 +4686,6 @@ msgstr "Východní"
 msgid "East limit set"
 msgstr "Východní limit nastaven"
 
-#, fuzzy
-msgid "Easter Island"
-msgstr "Faerské ostrovy"
-
 msgid "Ecuador"
 msgstr "Ekvádor"
 
@@ -4821,6 +4823,9 @@ msgstr "Povolit automatický Fast scan"
 #, python-format
 msgid "Enable auto fast scan for %s"
 msgstr "Povolit automatický Fast scan pro %s"
+
+msgid "Enable blinking REC symbol on the LCD display"
+msgstr ""
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Povolí výběr přehledu při spuštění multi-EPG."
@@ -5491,9 +5496,6 @@ msgstr "Rychlosti přetáčení vpřed"
 msgid "Favourites"
 msgstr "Oblíbené"
 
-msgid "Fernando de Noronha"
-msgstr ""
-
 msgid "Fiji"
 msgstr "Fidži"
 
@@ -5713,16 +5715,8 @@ msgstr ""
 msgid "Gabon"
 msgstr "Gabon"
 
-#, fuzzy
-msgid "Galapagos Islands"
-msgstr "Ålandy"
-
 msgid "Gambia"
 msgstr "Gambie"
-
-#, fuzzy
-msgid "Gambier Islands"
-msgstr "Faerské ostrovy"
 
 #
 msgid "Gateway"
@@ -6053,9 +6047,6 @@ msgstr "Historie zpět"
 msgid "History next"
 msgstr "Historie další"
 
-msgid "Ho Chi Minh City"
-msgstr ""
-
 msgid "Hold screen"
 msgstr "Zadržet obrazovku"
 
@@ -6313,6 +6304,9 @@ msgstr "Aby mohla být zaznamenána událost z časovače, bylo přepnuto na nah
 #
 msgid "In progress"
 msgstr "Průběh"
+
+msgid "In the Standby record on the LCD display"
+msgstr ""
 
 msgid "Inactivity Sleeptimer"
 msgstr "Časovač neaktivity"
@@ -6641,9 +6635,6 @@ msgstr "Jersey"
 #
 msgid "Job overview"
 msgstr "Přehled práce"
-
-msgid "Johnston Atoll"
-msgstr ""
 
 msgid "Jordan"
 msgstr "Jordánsko"
@@ -7156,10 +7147,6 @@ msgstr "Rezerva před nahráváním (minuty)"
 msgid "Mark service as dedicated 3D service"
 msgstr "Označit program jako 3D program"
 
-#, fuzzy
-msgid "Marquesas Islands"
-msgstr "Marshallovy ostrovy"
-
 msgid "Marshall Islands"
 msgstr "Marshallovy ostrovy"
 
@@ -7257,10 +7244,6 @@ msgstr "Mexiko"
 
 msgid "Micronesia (Federated States of)"
 msgstr "Mikronésie"
-
-#, fuzzy
-msgid "Midway Islands"
-msgstr "Kajmanské ostrovy"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -7999,6 +7982,11 @@ msgid "Note: when enabled, and you do want standby mode after wake up, set optio
 msgstr "Poznámka: chcete-li, aby po probouzení přijímač přecházel do Standby, nastavte v 'Přizpůsobení' volbu 'Po startu přepnout do Standby' na 'Ne, kromě časovače probouzení'."
 
 #
+#, fuzzy
+msgid "Nothing"
+msgstr "Nedělat nic"
+
+#
 msgid ""
 "Nothing to scan!\n"
 "Please setup your tuner settings before you start a service scan."
@@ -8417,10 +8405,6 @@ msgstr "Pilot"
 
 msgid "Pitcairn"
 msgstr "Pitcairnovy ostrovy"
-
-#, fuzzy
-msgid "Pitcairn Islands"
-msgstr "Ålandy"
 
 msgid "Pixels\n"
 msgstr "Pixely\n"
@@ -9201,6 +9185,21 @@ msgstr "Rychlé přepínání"
 #, fuzzy
 msgid "RC command set"
 msgstr "Pořadí příkazů"
+
+#
+#, fuzzy
+msgid "REC"
+msgstr "FEC"
+
+msgid "REC Symbol"
+msgstr ""
+
+#, fuzzy
+msgid "REC symbol in Standby"
+msgstr "Také při standby"
+
+msgid "REC symbol in use"
+msgstr ""
 
 #
 msgid "RF output"
@@ -10954,6 +10953,10 @@ msgstr "Ikona u nových/neshlédnutých položek"
 msgid "Show icons"
 msgstr "Zobrazovat sloupce"
 
+#, fuzzy
+msgid "Show in Standby"
+msgstr "Vypínat přijímač ve Standby"
+
 msgid "Show in extensions menu"
 msgstr "Zobrazovat v menu rozšíření"
 
@@ -12452,6 +12455,10 @@ msgstr "Umožňuje zesílit zelené tóny v obrazu."
 msgid "This option allows you choose how to display the remaining/elapsed time for live TV."
 msgstr "Umožňuje zesílit zelené tóny v obrazu."
 
+#, fuzzy
+msgid "This option allows you choose how to display the time or nothing in Standby"
+msgstr "Umožňuje zesílit zelené tóny v obrazu."
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "Povoluje vyhlazovací filtr pro řízení ditheringu."
 
@@ -13718,10 +13725,6 @@ msgstr "Čeká se na připojení"
 
 msgid "Waiting for partition"
 msgstr "Čeká se na oddíl"
-
-#, fuzzy
-msgid "Wake Island"
-msgstr "Faerské ostrovy"
 
 msgid "Wake On LAN"
 msgstr "Wake On LAN"

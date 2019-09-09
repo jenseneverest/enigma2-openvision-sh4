@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 00:27+0430\n"
+"POT-Creation-Date: 2019-09-09 14:21+0430\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -2328,6 +2328,12 @@ msgstr "Svart skärm"
 msgid "Black screen till locked"
 msgstr "Svart skärm tills låsning"
 
+msgid "Blinking REC"
+msgstr ""
+
+msgid "Blinking REC Symbol"
+msgstr ""
+
 #
 msgid "Block noise reduction"
 msgstr "Blockera brusreducering"
@@ -2715,6 +2721,10 @@ msgid "Channellist menu"
 msgstr "Meny för kanallista"
 
 #, fuzzy
+msgid "Channelname"
+msgstr "Kanal info"
+
+#, fuzzy
 msgid "Channelname in Standby Clock"
 msgstr "Kanalnummer och picon"
 
@@ -2767,9 +2777,6 @@ msgstr "Kapitel"
 #
 msgid "Chapter:"
 msgstr "Kapitel :"
-
-msgid "Chatham Islands"
-msgstr ""
 
 #
 msgid "Check"
@@ -4620,9 +4627,6 @@ msgstr "Öst"
 msgid "East limit set"
 msgstr "Östra gränsen satt"
 
-msgid "Easter Island"
-msgstr ""
-
 msgid "Ecuador"
 msgstr ""
 
@@ -4757,6 +4761,9 @@ msgstr "Aktivera auto snabbskanning"
 #, python-format
 msgid "Enable auto fast scan for %s"
 msgstr "Aktivera auto snabbskanning för %s"
+
+msgid "Enable blinking REC symbol on the LCD display"
+msgstr ""
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktivera favoritlistsval i multi EPG"
@@ -5407,9 +5414,6 @@ msgstr "Hastigheter för snabbspolning framåt"
 msgid "Favourites"
 msgstr "Favoriter"
 
-msgid "Fernando de Noronha"
-msgstr ""
-
 msgid "Fiji"
 msgstr ""
 
@@ -5635,13 +5639,7 @@ msgstr ""
 msgid "Gabon"
 msgstr ""
 
-msgid "Galapagos Islands"
-msgstr ""
-
 msgid "Gambia"
-msgstr ""
-
-msgid "Gambier Islands"
 msgstr ""
 
 #
@@ -5974,9 +5972,6 @@ msgstr "Kanal tillbaka i historiken"
 msgid "History next"
 msgstr "Nästa kanal i historiken"
 
-msgid "Ho Chi Minh City"
-msgstr ""
-
 msgid "Hold screen"
 msgstr "Stoppa bild"
 
@@ -6232,6 +6227,9 @@ msgstr "För att göra en timerinspelning, växlade TV:n till inspelande kanal!\
 #
 msgid "In progress"
 msgstr "Pågående"
+
+msgid "In the Standby record on the LCD display"
+msgstr ""
 
 msgid "Inactivity Sleeptimer"
 msgstr "Inaktiv Insomningstimer"
@@ -6552,9 +6550,6 @@ msgstr ""
 #
 msgid "Job overview"
 msgstr "Arbets Vy"
-
-msgid "Johnston Atoll"
-msgstr ""
 
 msgid "Jordan"
 msgstr ""
@@ -7062,9 +7057,6 @@ msgstr "Marginal innan inspelning (i minuter)"
 msgid "Mark service as dedicated 3D service"
 msgstr "Markera kanal som dedikerad 3D kanal"
 
-msgid "Marquesas Islands"
-msgstr ""
-
 msgid "Marshall Islands"
 msgstr ""
 
@@ -7163,9 +7155,6 @@ msgid "Mexico"
 msgstr ""
 
 msgid "Micronesia (Federated States of)"
-msgstr ""
-
-msgid "Midway Islands"
 msgstr ""
 
 #, python-format
@@ -7904,6 +7893,11 @@ msgid "Note: when enabled, and you do want standby mode after wake up, set optio
 msgstr "Obs : Vid aktiverad, om du vill ha viloläge efter uppstart, ställ in alternativet 'Uppstart till viloläge' som 'Nej, förutom uppstartstimer'."
 
 #
+#, fuzzy
+msgid "Nothing"
+msgstr "Gör inget"
+
+#
 msgid ""
 "Nothing to scan!\n"
 "Please setup your tuner settings before you start a service scan."
@@ -8323,9 +8317,6 @@ msgid "Pilot"
 msgstr "Pilot"
 
 msgid "Pitcairn"
-msgstr ""
-
-msgid "Pitcairn Islands"
 msgstr ""
 
 msgid "Pixels\n"
@@ -9091,6 +9082,21 @@ msgstr "Snabb zapp"
 #, fuzzy
 msgid "RC command set"
 msgstr "Kommandoordning"
+
+#
+#, fuzzy
+msgid "REC"
+msgstr "FEC"
+
+msgid "REC Symbol"
+msgstr ""
+
+#, fuzzy
+msgid "REC symbol in Standby"
+msgstr "Också vid viloläge"
+
+msgid "REC symbol in use"
+msgstr ""
 
 #
 msgid "RF output"
@@ -10840,6 +10846,10 @@ msgstr "Visa ikoner för nya / osedda objekt"
 msgid "Show icons"
 msgstr "Visa Kolumner"
 
+#, fuzzy
+msgid "Show in Standby"
+msgstr "Stäng av vid viloläge"
+
 msgid "Show in extensions menu"
 msgstr "Visa i utökningsmeny"
 
@@ -12336,6 +12346,10 @@ msgstr "Detta val tillåter dig att stänga av displayen."
 msgid "This option allows you choose how to display the remaining/elapsed time for live TV."
 msgstr "Detta val tillåter dig att stänga av displayen."
 
+#, fuzzy
+msgid "This option allows you choose how to display the time or nothing in Standby"
+msgstr "Detta val tillåter dig att stänga av displayen."
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -13621,9 +13635,6 @@ msgstr "Vänta på montering"
 
 msgid "Waiting for partition"
 msgstr "Vänta på partition"
-
-msgid "Wake Island"
-msgstr ""
 
 msgid "Wake On LAN"
 msgstr ""

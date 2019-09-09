@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 00:27+0430\n"
+"POT-Creation-Date: 2019-09-09 14:21+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -2161,6 +2161,12 @@ msgstr "Layar hitam"
 msgid "Black screen till locked"
 msgstr "Layar hitam sampai terkunci"
 
+msgid "Blinking REC"
+msgstr ""
+
+msgid "Blinking REC Symbol"
+msgstr ""
+
 msgid "Block noise reduction"
 msgstr "Pengurangan nois blok"
 
@@ -2515,6 +2521,10 @@ msgid "Channellist menu"
 msgstr "Menu daftar kanal"
 
 #, fuzzy
+msgid "Channelname"
+msgstr "Info Kanal"
+
+#, fuzzy
 msgid "Channelname in Standby Clock"
 msgstr "Nomor kanal dan pikon"
 
@@ -2563,10 +2573,6 @@ msgstr "Bab"
 
 msgid "Chapter:"
 msgstr "Bab:"
-
-#, fuzzy
-msgid "Chatham Islands"
-msgstr "Pulau Cayman"
 
 msgid "Check"
 msgstr "Periksa"
@@ -4245,10 +4251,6 @@ msgstr "Timur"
 msgid "East limit set"
 msgstr "Setel batas timur"
 
-#, fuzzy
-msgid "Easter Island"
-msgstr "Pulau Natal"
-
 msgid "Ecuador"
 msgstr "Ekuador"
 
@@ -4372,6 +4374,9 @@ msgstr "Aktifkan pelacakan cepat otomatis"
 #, python-format
 msgid "Enable auto fast scan for %s"
 msgstr "Aktifkan pelacakan cepat otomatis pada %s"
+
+msgid "Enable blinking REC symbol on the LCD display"
+msgstr ""
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktifkan pemilihan buket pada Multi-EPG"
@@ -4982,9 +4987,6 @@ msgstr "Kecepatan maju cepat"
 msgid "Favourites"
 msgstr "Favorit"
 
-msgid "Fernando de Noronha"
-msgstr ""
-
 msgid "Fiji"
 msgstr ""
 
@@ -5188,16 +5190,8 @@ msgstr ""
 msgid "Gabon"
 msgstr ""
 
-#, fuzzy
-msgid "Galapagos Islands"
-msgstr "Pulau Aland"
-
 msgid "Gambia"
 msgstr ""
-
-#, fuzzy
-msgid "Gambier Islands"
-msgstr "Pulau Cayman"
 
 msgid "Gateway"
 msgstr "Gateway"
@@ -5506,9 +5500,6 @@ msgstr "Riwayan sebelumnya"
 msgid "History next"
 msgstr "Riwayan berikutnya"
 
-msgid "Ho Chi Minh City"
-msgstr ""
-
 msgid "Hold screen"
 msgstr "Tahan layar"
 
@@ -5753,6 +5744,9 @@ msgstr "Dalam hal merekam pewaktu, TV dialihkan ke layanan perekaman!\n"
 
 msgid "In progress"
 msgstr "Sedang berlangsung"
+
+msgid "In the Standby record on the LCD display"
+msgstr ""
 
 msgid "Inactivity Sleeptimer"
 msgstr "Pewaktutidur Tak aktif"
@@ -6034,9 +6028,6 @@ msgstr ""
 
 msgid "Job overview"
 msgstr "Ikhtisar pekerjaan"
-
-msgid "Johnston Atoll"
-msgstr ""
 
 msgid "Jordan"
 msgstr "Yordania"
@@ -6488,10 +6479,6 @@ msgstr "Batas sebelum merekam (menit)"
 msgid "Mark service as dedicated 3D service"
 msgstr "Tandai layanan sebagai layanan 3D khusus"
 
-#, fuzzy
-msgid "Marquesas Islands"
-msgstr "Pulau Natal"
-
 msgid "Marshall Islands"
 msgstr ""
 
@@ -6580,10 +6567,6 @@ msgstr ""
 
 msgid "Micronesia (Federated States of)"
 msgstr ""
-
-#, fuzzy
-msgid "Midway Islands"
-msgstr "Pulau Cayman"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -7238,6 +7221,10 @@ msgstr "Tidak teruji:"
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Catatan: jika diaktifkan, dan anda tidak ingin ke mode standby setelah bangun, set pilihan 'Mulai ke Standby' menjadi 'Tidak, kecuali pewaktu bangun'."
 
+#, fuzzy
+msgid "Nothing"
+msgstr "Jangan lakukan"
+
 msgid ""
 "Nothing to scan!\n"
 "Please setup your tuner settings before you start a service scan."
@@ -7624,10 +7611,6 @@ msgstr "Pilot"
 
 msgid "Pitcairn"
 msgstr ""
-
-#, fuzzy
-msgid "Pitcairn Islands"
-msgstr "Pulau Aland"
 
 msgid "Pixels\n"
 msgstr ""
@@ -8291,6 +8274,20 @@ msgstr "Zap cepat"
 #, fuzzy
 msgid "RC command set"
 msgstr "Urutan perintah"
+
+#, fuzzy
+msgid "REC"
+msgstr "FEC"
+
+msgid "REC Symbol"
+msgstr ""
+
+#, fuzzy
+msgid "REC symbol in Standby"
+msgstr "Juga pada standby"
+
+msgid "REC symbol in use"
+msgstr ""
 
 msgid "RF output"
 msgstr "Keluaran RF"
@@ -9858,6 +9855,10 @@ msgstr "Tampilkan ikon pada item baru/belum dilihat"
 msgid "Show icons"
 msgstr "Tampilkan kolom"
 
+#, fuzzy
+msgid "Show in Standby"
+msgstr "Matikan saat Standby"
+
 msgid "Show in extensions menu"
 msgstr "Tampilkan pada menu ekstensi"
 
@@ -11214,6 +11215,10 @@ msgstr "Pilihan ini memungkinkan anda untuk menaikkan warna hijau pada gambar."
 msgid "This option allows you choose how to display the remaining/elapsed time for live TV."
 msgstr "Pilihan ini memungkinkan anda untuk menaikkan warna hijau pada gambar."
 
+#, fuzzy
+msgid "This option allows you choose how to display the time or nothing in Standby"
+msgstr "Pilihan ini memungkinkan anda untuk menaikkan warna hijau pada gambar."
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "Pilihan ini memungkinkan anda mengaktifkan saringan lembut untuk mengontrol proses dithering."
 
@@ -12341,10 +12346,6 @@ msgstr "Menunggu mount"
 
 msgid "Waiting for partition"
 msgstr "Menunggu partisi"
-
-#, fuzzy
-msgid "Wake Island"
-msgstr "Kepulauan Koki"
 
 msgid "Wake On LAN"
 msgstr ""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 00:27+0430\n"
+"POT-Creation-Date: 2019-09-09 14:21+0430\n"
 "PO-Revision-Date: 2019-05-30 12:03+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -2141,6 +2141,12 @@ msgstr "Fekete képernyő"
 msgid "Black screen till locked"
 msgstr "Fekete képernyő hangolásig"
 
+msgid "Blinking REC"
+msgstr ""
+
+msgid "Blinking REC Symbol"
+msgstr ""
+
 msgid "Block noise reduction"
 msgstr "Blokk-zaj csökkentés"
 
@@ -2504,6 +2510,10 @@ msgid "Channellist menu"
 msgstr "Csatornalista menü"
 
 #, fuzzy
+msgid "Channelname"
+msgstr "Csatorna információ"
+
+#, fuzzy
 msgid "Channelname in Standby Clock"
 msgstr "Csatornaszám és picon"
 
@@ -2550,10 +2560,6 @@ msgstr "Fejezet"
 
 msgid "Chapter:"
 msgstr "Fejezet:"
-
-#, fuzzy
-msgid "Chatham Islands"
-msgstr "Kajmán-szigetek"
 
 msgid "Check"
 msgstr "Ellenőrzés"
@@ -4197,10 +4203,6 @@ msgstr "Kelet"
 msgid "East limit set"
 msgstr "Keleti limit beállítás"
 
-#, fuzzy
-msgid "Easter Island"
-msgstr "Feröer-szigetek"
-
 msgid "Ecuador"
 msgstr "Ecuador"
 
@@ -4322,6 +4324,9 @@ msgstr "Automatikus gyorskeresés engedélyezése"
 #, python-format
 msgid "Enable auto fast scan for %s"
 msgstr "Automatikus gyorskeresés engedélyezése ehhez: %s"
+
+msgid "Enable blinking REC symbol on the LCD display"
+msgstr ""
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Lista választás lehetősége a Multi-EPG-ben"
@@ -4916,9 +4921,6 @@ msgstr "Előretekerési sebességek"
 msgid "Favourites"
 msgstr "Kedvencek"
 
-msgid "Fernando de Noronha"
-msgstr ""
-
 msgid "Fiji"
 msgstr "Fidzsi"
 
@@ -5114,16 +5116,8 @@ msgstr ""
 msgid "Gabon"
 msgstr "Gabon"
 
-#, fuzzy
-msgid "Galapagos Islands"
-msgstr "Åland-szigetek"
-
 msgid "Gambia"
 msgstr "Gambia"
-
-#, fuzzy
-msgid "Gambier Islands"
-msgstr "Feröer-szigetek"
 
 msgid "Gateway"
 msgstr "Átjáró IP címe"
@@ -5426,9 +5420,6 @@ msgstr "Előzmények előző"
 msgid "History next"
 msgstr "Előzmények következő"
 
-msgid "Ho Chi Minh City"
-msgstr ""
-
 msgid "Hold screen"
 msgstr "Képernyő megtartás"
 
@@ -5669,6 +5660,9 @@ msgstr "Az időzítés esedékessége miatt átkapcsoltam a beprogramozott csato
 
 msgid "In progress"
 msgstr "Folyamatban"
+
+msgid "In the Standby record on the LCD display"
+msgstr ""
 
 msgid "Inactivity Sleeptimer"
 msgstr "Elalvás inaktivitás miatt"
@@ -5946,9 +5940,6 @@ msgstr "Jersey"
 
 msgid "Job overview"
 msgstr "Folyamat nézet"
-
-msgid "Johnston Atoll"
-msgstr ""
 
 msgid "Jordan"
 msgstr "Jordánia"
@@ -6391,10 +6382,6 @@ msgstr "Felvétel előtti ráhagyás (perc)"
 msgid "Mark service as dedicated 3D service"
 msgstr "A csatorna megjelölése mint 'dedikált 3D csatorna'"
 
-#, fuzzy
-msgid "Marquesas Islands"
-msgstr "Marshall-szigetek"
-
 msgid "Marshall Islands"
 msgstr "Marshall-szigetek"
 
@@ -6480,10 +6467,6 @@ msgstr "Mexikó"
 
 msgid "Micronesia (Federated States of)"
 msgstr "Mikronézia"
-
-#, fuzzy
-msgid "Midway Islands"
-msgstr "Kajmán-szigetek"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -7126,6 +7109,10 @@ msgstr "Nincs tesztelve:"
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Megjegyzés: ha engedélyezi, és a felébresztés után készenléti módot szeretne, állítsa az 'Indításkor készenléti módba\" lehetőséget erre: 'Nem, kivéve Felébresztés időzítő'."
 
+#, fuzzy
+msgid "Nothing"
+msgstr "Ne csináljon semmit"
+
 msgid ""
 "Nothing to scan!\n"
 "Please setup your tuner settings before you start a service scan."
@@ -7509,10 +7496,6 @@ msgstr "Pilot"
 
 msgid "Pitcairn"
 msgstr "Pitcairn-szigetek"
-
-#, fuzzy
-msgid "Pitcairn Islands"
-msgstr "Åland-szigetek"
 
 msgid "Pixels\n"
 msgstr "Pixel\n"
@@ -8162,6 +8145,20 @@ msgstr "Gyors ugrás"
 #, fuzzy
 msgid "RC command set"
 msgstr "Parancs sorrend"
+
+#, fuzzy
+msgid "REC"
+msgstr "FEC"
+
+msgid "REC Symbol"
+msgstr ""
+
+#, fuzzy
+msgid "REC symbol in Standby"
+msgstr "Készenlét alatt is"
+
+msgid "REC symbol in use"
+msgstr ""
 
 msgid "RF output"
 msgstr "RF kimenet"
@@ -9694,6 +9691,10 @@ msgstr "Új elemeknél ikon megjelenítése"
 msgid "Show icons"
 msgstr "Oszlopok megjelenítése"
 
+#, fuzzy
+msgid "Show in Standby"
+msgstr "Kikapcsolás készenlétbe lépés után"
+
 msgid "Show in extensions menu"
 msgstr "Megjelenítés a bővítmények menüjében"
 
@@ -11032,6 +11033,10 @@ msgstr "A képernyőn lévő zöld színek kiemelése."
 msgid "This option allows you choose how to display the remaining/elapsed time for live TV."
 msgstr "A képernyőn lévő zöld színek kiemelése."
 
+#, fuzzy
+msgid "This option allows you choose how to display the time or nothing in Standby"
+msgstr "A képernyőn lévő zöld színek kiemelése."
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "A szürkeárnyalat lágyabbá tétele."
 
@@ -12137,10 +12142,6 @@ msgstr "Várakozás a megosztás csatlakozására"
 
 msgid "Waiting for partition"
 msgstr "Várakozás a partícióra"
-
-#, fuzzy
-msgid "Wake Island"
-msgstr "Feröer-szigetek"
 
 msgid "Wake On LAN"
 msgstr "Ébresztés LAN-on"

@@ -3,6 +3,7 @@ from Tools.Directories import fileExists, fileCheck, pathExists, fileHas
 from Tools.HardwareInfo import HardwareInfo
 import os
 from os import access, R_OK
+from boxbranding import getDisplayType
 
 SystemInfo = {}
 
@@ -116,3 +117,4 @@ SystemInfo["OScamIsActive"] = SystemInfo["OScamInstalled"] and fileExists("/tmp/
 SystemInfo["NCamInstalled"] = fileExists("/usr/bin/ncam")
 SystemInfo["NCamIsActive"] = SystemInfo["NCamInstalled"] and fileExists("/tmp/.ncam/ncam.version")
 SystemInfo["OpenVisionModule"] = fileCheck("/proc/stb/info/openvision")
+SystemInfo["7segment"] = getDisplayType() == "7segment"

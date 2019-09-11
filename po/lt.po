@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-09 14:21+0430\n"
-"PO-Revision-Date: 2019-09-07 10:36+0300\n"
+"POT-Creation-Date: 2019-09-11 21:25+0430\n"
+"PO-Revision-Date: 2019-09-09 18:23+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -2053,10 +2053,10 @@ msgid "Black screen till locked"
 msgstr "Juodas ekranas blokuojamas iki"
 
 msgid "Blinking REC"
-msgstr ""
+msgstr "Mirksintis REC"
 
 msgid "Blinking REC Symbol"
-msgstr ""
+msgstr "Mirksintis REC simbolis"
 
 msgid "Block noise reduction"
 msgstr "\"Kvadratavimosi\" triukšmų šalinimas"
@@ -2419,9 +2419,8 @@ msgstr "Kanalas:"
 msgid "Channellist menu"
 msgstr "Kanalų sąrašo meniu"
 
-#, fuzzy
 msgid "Channelname"
-msgstr "Kanalo informacija"
+msgstr "Kanalo pavadinimas"
 
 #, fuzzy
 msgid "Channelname in Standby Clock"
@@ -4205,7 +4204,7 @@ msgid "Enable auto fast scan for %s"
 msgstr "Įjungti automatinę sparčią paiešką %s"
 
 msgid "Enable blinking REC symbol on the LCD display"
-msgstr ""
+msgstr "Čia galite nustatyti, ar įrašymo metu imtuvo LCD ekrane rodyti mirksintį REC simbolį"
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Įjungti paketų pasirinkimą multi-EPG režime"
@@ -4781,6 +4780,9 @@ msgstr "Greito prasukimo greičiai"
 
 msgid "Favourites"
 msgstr "Mėgstami"
+
+msgid "Feed URL: "
+msgstr ""
 
 msgid "Fiji"
 msgstr "Fidži"
@@ -5474,6 +5476,10 @@ msgstr "Ignoruoti DVB-T pavadinimų potinklį"
 msgid "Ignore conflict"
 msgstr "Ignoruoti konfliktą"
 
+#, fuzzy
+msgid "Image architecture: "
+msgstr "CPU architektūra: "
+
 #, python-format
 msgid ""
 "Image to install is invalid\n"
@@ -5514,7 +5520,7 @@ msgid "In progress"
 msgstr "Vykdyma"
 
 msgid "In the Standby record on the LCD display"
-msgstr ""
+msgstr "Budėjimo režime įrašymą rodyti LCD ekrane"
 
 msgid "Inactivity Sleeptimer"
 msgstr "Miego laikmatis po neveiklumo"
@@ -6506,6 +6512,14 @@ msgstr "Daugiakanalis PCM"
 msgid "Multi-EPG bouquet selection"
 msgstr "Daugiakanalių EPG paketų pasirinkimas"
 
+#, fuzzy
+msgid "MultiTranscoding: No"
+msgstr "Perkodavimas: "
+
+#, fuzzy
+msgid "MultiTranscoding: Yes"
+msgstr "Perkodavimas: "
+
 msgid "MultiType"
 msgstr "Multi tipas"
 
@@ -6935,9 +6949,8 @@ msgstr "Netikrinta:"
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Pastaba: kai čia įjungta ir po imtuvo pažadinimo, norite pervesti į  budėjimo būseną, pasirinkite 'Startuoti imtuvą į budėjimo būseną', kaip 'Ne, išskyrus pažadinimo laikmatį'."
 
-#, fuzzy
 msgid "Nothing"
-msgstr "Nieko nedaryti"
+msgstr "Nieko"
 
 msgid ""
 "Nothing to scan!\n"
@@ -7852,6 +7865,10 @@ msgstr "Geriausias laikas"
 msgid "Priority"
 msgstr "Pirmenybė"
 
+#, fuzzy
+msgid "Proc model: "
+msgstr "Modelis: "
+
 msgid "Process"
 msgstr "Procesas"
 
@@ -7955,19 +7972,17 @@ msgstr "Greitas perjungimas"
 msgid "RC command set"
 msgstr "Komandų tipas"
 
-#, fuzzy
 msgid "REC"
-msgstr "FEC"
+msgstr "REC"
 
 msgid "REC Symbol"
-msgstr ""
+msgstr "REC simbolis"
 
-#, fuzzy
 msgid "REC symbol in Standby"
-msgstr "Ir budėjimo būsenoje"
+msgstr "REC simbolis budėjimo režime"
 
 msgid "REC symbol in use"
-msgstr ""
+msgstr "Naudojamas REC simbolis"
 
 msgid "RF output"
 msgstr "RF išvestis"
@@ -9486,9 +9501,8 @@ msgstr "Naujus/nežiūrėtus įvykius pažymėti logotipu"
 msgid "Show icons"
 msgstr "Rodyti stulpelius"
 
-#, fuzzy
 msgid "Show in Standby"
-msgstr "Išjungti, esant budėjimo būsenoje"
+msgstr "Rodyti budėjimo režime"
 
 msgid "Show in extensions menu"
 msgstr "Rodyti išplėstiniame meniu"
@@ -10441,7 +10455,7 @@ msgstr "T2MI RAW režimas"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "Adga, Pasvalys, Lietuva\n"
-"2019-09-07 versija"
+"2019-09-09 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -10802,9 +10816,8 @@ msgstr "Ši pasirinktis leidžia jums pasirinkti, kaip rodyti likusį laiką, ar
 msgid "This option allows you choose how to display the remaining/elapsed time for live TV."
 msgstr "Ši parinktis leidžia pasirinkti, kaip parodyti likusį/praėjusį laiką tiesioginei televizijai."
 
-#, fuzzy
 msgid "This option allows you choose how to display the time or nothing in Standby"
-msgstr "Ši parinktis leidžia pasirinkti, kaip rodyti praėjusį laiką kaip + arba -"
+msgstr "Ši parinktis leidžia pasirinkti, kaip rodyti laiką arba nieko, budėjimo režime"
 
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "Ši parinktis leidžia įjungti glotninimo filtrą, kad kontroliuoti vaizdų išlyginimo procesą."
@@ -11185,6 +11198,14 @@ msgid "Track"
 msgstr "Takelis"
 
 msgid "Transcoding: "
+msgstr "Perkodavimas: "
+
+#, fuzzy
+msgid "Transcoding: No"
+msgstr "Perkodavimas: "
+
+#, fuzzy
+msgid "Transcoding: Yes"
 msgstr "Perkodavimas: "
 
 msgid "Translation"
@@ -12819,11 +12840,11 @@ msgstr "Keisti laikmatį"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Kanalo informacija"
+msgstr "Kanalo pavadinimas"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Kanalo numeris ir logotipas"
+msgstr "Kanalo pavadinimas"
 
 #, fuzzy
 msgid "channel number and name"
@@ -13456,7 +13477,7 @@ msgstr "netikrinta"
 
 #, fuzzy
 msgid "nothing"
-msgstr "Nieko nedaryti"
+msgstr "Nieko"
 
 msgid "nothing connected"
 msgstr "nieko nepajungta"
@@ -14035,6 +14056,9 @@ msgstr "taip"
 
 msgid "yes (keep feeds)"
 msgstr "taip (saugoti šaltinius)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 msgid "yuv"
 msgstr ""

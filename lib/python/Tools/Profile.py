@@ -32,8 +32,8 @@ except IOError:
 def profile(id):
 	now = time.time() - profile_start
 
-	if getBoxBrand() == "fegasus":
-		dev_fmt = ("/proc/progress", "Loading %d %%")
+	if getBoxBrand() == "spiderbox":
+		dev_fmt = ("/proc/progress", "Load %d %%")
 	elif getBoxBrand() in ("fulan","cuberevo","fortis","atevio","hs","octagon","kathrein"):
 		dev_fmt = ("/proc/vfd", "%d \n)
 	else:

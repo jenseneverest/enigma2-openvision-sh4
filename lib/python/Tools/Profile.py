@@ -1,7 +1,8 @@
 # the implementation here is a bit crappy.
 import time
 from Directories import resolveFilename, SCOPE_CONFIG
-from enigma import getBoxBrand
+
+from enigma import evfd
 
 PERCENTAGE_START = 0
 PERCENTAGE_END = 100
@@ -31,15 +32,6 @@ except IOError:
 
 def profile(id):
 	now = time.time() - profile_start
-
-	if getBoxBrand() == "spiderbox":
-		dev_fmt = ("/proc/progress", "Load %d %%")
-	elif getBoxBrand() in ("fulan","cuberevo","fortis","atevio","hs","octagon","kathrein"):
-		dev_fmt = ("/proc/vfd", "%d \n")
-	else:
-		dev_fmt = ("/proc/progress", "%d \n")
-	(dev, fmt) = dev_fmt
-
 	if profile_file:
 		profile_file.write("%7.3f\t%s\n" % (now, id))
 
@@ -50,7 +42,8 @@ def profile(id):
 			else:
 				perc = PERCENTAGE_START
 			try:
-				open(dev, "w").write(fmt % perc)
+				open("/proc/progress", "w").write("%d \n" % perc)
+				evfd.getInstance().vfd_write_string("-%02d-" % perc)
 			except IOError:
 				pass
 

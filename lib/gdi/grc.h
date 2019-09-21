@@ -86,8 +86,6 @@ struct gOpcode
 			int flags;
 			int border;
 			gRGB bordercolor;
-			int markedpos;
-			int scrollpos;
 		} *renderText;
 
 		struct prenderPara
@@ -234,7 +232,7 @@ public:
 
 		RT_WRAP = 64
 	};
-	void renderText(const eRect &position, const std::string &string, int flags=0, gRGB bordercolor=gRGB(), int border=0, int markedpos=-1);
+	void renderText(const eRect &position, const std::string &string, int flags=0, gRGB bordercolor=gRGB(), int border=0);
 
 	void renderPara(eTextPara *para, ePoint offset=ePoint(0, 0));
 
@@ -292,7 +290,6 @@ protected:
 	gRGB m_foreground_color_rgb, m_background_color_rgb;
 	ePtr<gFont> m_current_font;
 	ePoint m_current_offset;
-	int m_text_offset;
 
 	std::stack<gRegion> m_clip_stack;
 	gRegion m_current_clip;

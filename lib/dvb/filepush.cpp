@@ -138,6 +138,9 @@ void eFilePushThread::thread()
 				continue;
 			}
 			eDebug("[eFilePushThread] read error: %m");
+			sleep(1);
+			sendEvent(evtReadError);
+			break;
 		}
 
 			/* a read might be mis-aligned in case of a short read. */
@@ -191,7 +194,7 @@ void eFilePushThread::thread()
 			else
 				sendEvent(evtUser); // start of file event
 
-			if (m_stream_mode)
+			if (m_stream_mode && ++eofcount < 5)
 			{
 				eDebug("[eFilePushThread] reached EOF, but we are in stream mode. delaying 1 second.");
 				sleep(1);
@@ -203,6 +206,7 @@ void eFilePushThread::thread()
 				sleep(1);
 				continue;
 			}
+			sendEvent(evtReadError);
 			break;
 		} else
 		{
@@ -219,6 +223,13 @@ void eFilePushThread::thread()
 
 				if (w <= 0)
 				{
+					/* HACK: we can't control it (for now) inside the drivers
+					   because we need it only for streaming (not for recordings)
+					   so we let flush the decoder to enigma2 */
+					if (w < 0 && m_stream_mode) {
+						eDebug("[eFilePushThread] error writing on demuxer. Flush the decoder!");
+						sendEvent(evtFlush);
+					}
 					/* Check m_stop after interrupted syscall. */
 					if (m_stop) {
 						w = 0;

@@ -398,3 +398,9 @@ off_t eHttpStream::offset()
 {
 	return 0;
 }
+
+int eHttpStream::reconnect()
+{
+	close();
+	return open(streamUrl.c_str());
+}

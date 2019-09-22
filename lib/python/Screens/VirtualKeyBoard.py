@@ -8,7 +8,7 @@ from Components.Input import Input
 from Components.Label import Label
 from Components.Language import language
 from Components.MenuList import MenuList
-from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixmapAlphaTest
+from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixmapAlphaTest, MultiContentEntryPixmapAlphaBlend
 from Components.Sources.StaticText import StaticText
 from Screens.ChoiceBox import ChoiceBox
 from Screens.HelpMenu import HelpableScreen
@@ -1031,13 +1031,13 @@ class VirtualKeyBoard(Screen, HelpableScreen):
 		start, width = self.findStartAndWidth(self.selectedKey)
 		x = start * self.width
 		w = self.sel_l.size().width()
-		self.list[self.selectedKey / self.keyboardWidth].append(MultiContentEntryPixmapAlphaTest(pos=(x, 0), size=(w, self.height), png=self.sel_l))
+		self.list[self.selectedKey / self.keyboardWidth].append(MultiContentEntryPixmapAlphaBlend(pos=(x, 0), size=(w, self.height), png=self.sel_l))
 		x += w
 		w = self.sel_m.size().width() + (self.width * (width - 1))
-		self.list[self.selectedKey / self.keyboardWidth].append(MultiContentEntryPixmapAlphaTest(pos=(x, 0), size=(w, self.height), png=self.sel_m, flags = BT_SCALE))
+		self.list[self.selectedKey / self.keyboardWidth].append(MultiContentEntryPixmapAlphaBlend(pos=(x, 0), size=(w, self.height), png=self.sel_m, flags = BT_SCALE))
 		x += w
 		w = self.sel_r.size().width()
-		self.list[self.selectedKey / self.keyboardWidth].append(MultiContentEntryPixmapAlphaTest(pos=(x, 0), size=(w, self.height), png=self.sel_r))
+		self.list[self.selectedKey / self.keyboardWidth].append(MultiContentEntryPixmapAlphaBlend(pos=(x, 0), size=(w, self.height), png=self.sel_r))
 		self.previousSelectedKey = self.selectedKey
 		self["list"].setList(self.list)
 

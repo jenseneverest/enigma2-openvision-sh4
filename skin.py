@@ -50,7 +50,7 @@ def addSkin(name, scope = SCOPE_CURRENT_SKIN):
 		try:
 			dom_skins.append((mpath, xml.etree.cElementTree.parse(filename).getroot()))
 		except:
-			print "[SKIN ERROR] error in %s" % filename
+			print "[Skin] Error in %s" % filename
 			return False
 		else:
 			return True
@@ -112,7 +112,7 @@ try:
 	if not addSkin(config.skin.primary_skin.value):
 		raise SkinError, "primary skin not found"
 except Exception, err:
-	print "SKIN ERROR:", err
+	print "[Skin] Error:", err
 	skin = DEFAULT_SKIN
 	if config.skin.primary_skin.value == skin:
 		skin = 'skin.xml'
@@ -147,7 +147,10 @@ profile("LoadSkinDefaultDone")
 def parseCoordinate(s, e, size=0, font=None):
 	s = s.strip()
 	if s == "center":		# for speed, can be common case
-		val = (e - size)/2
+		if not size:
+			val = 0
+		else:
+			val = (e - size)/2
 	elif s == '*':
 		return None
 	else:
@@ -371,7 +374,7 @@ class AttributeParser:
 					"orRightToLeft": (self.guiObject.orHorizontal, True),
 				}[value])
 		except KeyError:
-			print "oprientation must be either orVertical or orHorizontal!"
+			print "[Skin] Orientation must be either vertical or horizontal!"
 	def valign(self, value):
 		try:
 			self.guiObject.setVAlign(
@@ -380,7 +383,7 @@ class AttributeParser:
 					"bottom": self.guiObject.alignBottom
 				}[value])
 		except KeyError:
-			print "valign must be either top, center or bottom!"
+			print "[Skin] Valign must be either top, center or bottom!"
 	def halign(self, value):
 		try:
 			self.guiObject.setHAlign(
@@ -390,7 +393,7 @@ class AttributeParser:
 					"block": self.guiObject.alignBlock
 				}[value])
 		except KeyError:
-			print "halign must be either left, center, right or block!"
+			print "[Skin] Halign must be either left, center, right or block!"
 	def textOffset(self, value):
 		x, y = value.split(',')
 		self.guiObject.setTextOffset(ePoint(int(x) * self.scaleTuple[0][0] / self.scaleTuple[0][1], int(y) * self.scaleTuple[1][0] / self.scaleTuple[1][1]))
@@ -410,6 +413,18 @@ class AttributeParser:
 		self.guiObject.setForegroundColor(parseColor(value))
 	def foregroundColorSelected(self, value):
 		self.guiObject.setForegroundColorSelected(parseColor(value))
+	def foregroundNotCrypted(self, value):
+		self.guiObject.setForegroundColor(parseColor(value))
+	def backgroundNotCrypted(self, value):
+		self.guiObject.setBackgroundColor(parseColor(value))
+	def foregroundCrypted(self, value):
+		self.guiObject.setForegroundColor(parseColor(value))
+	def backgroundCrypted(self, value):
+		self.guiObject.setBackgroundColor(parseColor(value))
+	def foregroundEncrypted(self, value):
+		self.guiObject.setForegroundColor(parseColor(value))
+	def backgroundEncrypted(self, value):
+		self.guiObject.setBackgroundColor(parseColor(value))
 	def shadowColor(self, value):
 		self.guiObject.setShadowColor(parseColor(value))
 	def selectionDisabled(self, value):
@@ -676,7 +691,7 @@ def loadSingleSkinData(desktop, skin, path_prefix):
 			offset = parseSize(get_attr("offset"), ((1,1),(1,1)))
 			font = parseFont(get_attr("font"), ((1,1),(1,1)))
 
-		style.setTitleFont(font);
+		style.setTitleFont(font)
 		style.setTitleOffset(offset)
 		#print "  ", font, offset
 		for borderset in windowstyle.findall("borderset"):

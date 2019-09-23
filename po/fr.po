@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-20 00:02+0430\n"
+"POT-Creation-Date: 2019-09-23 05:35+0330\n"
 "PO-Revision-Date: 2019-09-07 13:01+0200\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
@@ -2307,16 +2307,6 @@ msgstr "Assignation CI"
 msgid "CI slot: "
 msgstr "Slot CI: "
 
-#, fuzzy
-msgid "CIHelper Setup"
-msgstr "Configurer Hotkey"
-
-msgid "CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "CIHelper for SLOT CI1"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -3292,10 +3282,6 @@ msgstr "Impossible de trouver un média qui convient - Veuillez effacer certaine
 msgid "Could not load medium! No disc inserted?"
 msgstr "Impossible de charger le support! Aucun disque inséré?"
 
-#, fuzzy
-msgid "Could not locate epg file on fallback tuner"
-msgstr "Importer les programmations du récepteur distant de repli"
-
 msgid "Could not open Picture in Picture"
 msgstr "Impossible d’ouvrir l’incrustation d’image (PiP)"
 
@@ -4231,6 +4217,10 @@ msgstr "Paramètres EPG"
 msgid "ERROR - failed to scan (%s)!"
 msgstr "ERREUR - échec lors de la recherche (%s)!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 msgid "East"
 msgstr "Est"
 
@@ -4313,12 +4303,6 @@ msgstr "Activer le contrôle du zapping du style 'neutrino'"
 
 msgid "Enable 5V for active antenna"
 msgstr "Activer 5V pour l'antenne active"
-
-msgid "Enable CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "Enable CIHelper for SLOT CI1"
-msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr "Activer EPG EIT"
@@ -4554,6 +4538,10 @@ msgstr "Eritrée"
 msgid "Error"
 msgstr "Erreur"
 
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "Erreur"
+
 msgid "Error code"
 msgstr "Code d'erreur"
 
@@ -4589,10 +4577,25 @@ msgstr "Erreur d'exécution de l'extension"
 msgid "Error stop stream!"
 msgstr "Erreur arrêt du stream (diffusion)!"
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+#, fuzzy
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+"Erreur lors de la récupération des informations de programmation de repli\n"
+"%s"
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+"Erreur lors de la récupération des informations de programmation de repli\n"
+"%s"
+
+#, fuzzy
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 "Erreur lors de la récupération des informations de programmation de repli\n"
 "%s"
@@ -5800,10 +5803,6 @@ msgstr "Paramètres du périphérique d’entrée"
 msgid "Input devices"
 msgstr "Périphériques d’entrée"
 
-#, fuzzy
-msgid "Input scroll position"
-msgstr "Aller à la position"
-
 msgid "Install"
 msgstr "Installer"
 
@@ -6968,6 +6967,9 @@ msgstr "Description non disponible."
 msgid "No displayable files on this medium found!"
 msgstr "Aucun fichier affichable trouvé sur ce support!"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 msgid "No event info found, recording indefinitely."
 msgstr "Aucune information sur l’événement trouvée, enregistrement indéfini."
 
@@ -7009,9 +7011,6 @@ msgstr "Pas de service"
 
 msgid "No services/providers selected"
 msgstr "Aucun services/opérateurs sélectionnés"
-
-msgid "No settings files to download on fallback tuner"
-msgstr ""
 
 msgid "No standby"
 msgstr "Pas de veille"
@@ -10119,9 +10118,6 @@ msgstr "Somalie"
 msgid "Some plugins are not available:\n"
 msgstr "Certains plugins ne sont pas disponibles:\n"
 
-msgid "Sorry CIHelper Config is Missing"
-msgstr ""
-
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -12540,9 +12536,6 @@ msgstr "Lorsque le contenu a un format d'image 16:9, choisir de redimensionner/�
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Lorsque le contenu a un format d'image 4:3, choisir de redimensionner/étirer l'image."
-
-msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
-msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Où sauver les enregistrements temporaires PauseDirect?"

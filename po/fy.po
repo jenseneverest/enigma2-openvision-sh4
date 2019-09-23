@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-20 00:02+0430\n"
+"POT-Creation-Date: 2019-09-23 05:35+0330\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -2485,15 +2485,6 @@ msgstr ""
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIHelper Setup"
-msgstr ""
-
-msgid "CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "CIHelper for SLOT CI1"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -3562,9 +3553,6 @@ msgstr ""
 #, fuzzy
 msgid "Could not load medium! No disc inserted?"
 msgstr "Koe medium net lade ! Is der wol in disc oanwezig ?"
-
-msgid "Could not locate epg file on fallback tuner"
-msgstr ""
 
 #
 msgid "Could not open Picture in Picture"
@@ -4643,6 +4631,10 @@ msgstr ""
 msgid "ERROR - failed to scan (%s)!"
 msgstr "Flater - Sykjen mislearre (%s)!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 #
 msgid "East"
 msgstr "East"
@@ -4741,12 +4733,6 @@ msgstr ""
 #
 msgid "Enable 5V for active antenna"
 msgstr "5V ynskeakelje foar hjoeddeiske antenne"
-
-msgid "Enable CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "Enable CIHelper for SLOT CI1"
-msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr ""
@@ -5009,6 +4995,11 @@ msgstr ""
 msgid "Error"
 msgstr "Flater"
 
+#
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "Flater"
+
 msgid "Error code"
 msgstr ""
 
@@ -5038,10 +5029,19 @@ msgstr "Flater by útfieren fan ynstekker"
 msgid "Error stop stream!"
 msgstr ""
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #
@@ -6388,11 +6388,6 @@ msgstr ""
 
 msgid "Input devices"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Input scroll position"
-msgstr "Gjin nei posysje"
 
 #
 msgid "Install"
@@ -7772,6 +7767,9 @@ msgstr ""
 msgid "No displayable files on this medium found!"
 msgstr ""
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 #
 msgid "No event info found, recording indefinitely."
 msgstr "Gjin barren ynfo fûn, giit foar altiid troch mei opnimmen.."
@@ -7820,9 +7818,6 @@ msgid "No service"
 msgstr ""
 
 msgid "No services/providers selected"
-msgstr ""
-
-msgid "No settings files to download on fallback tuner"
 msgstr ""
 
 #
@@ -11473,9 +11468,6 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Inkele ynstekkers binne net anwêzig:\n"
 
-msgid "Sorry CIHelper Config is Missing"
-msgstr ""
-
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -14168,9 +14160,6 @@ msgid "When the content has an aspect ratio of 16:9, choose whether to scale/str
 msgstr ""
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
-msgstr ""
-
-msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
 msgstr ""
 
 #

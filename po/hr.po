@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-20 00:02+0430\n"
+"POT-Creation-Date: 2019-09-23 05:35+0330\n"
 "PO-Revision-Date: 2019-07-28 21:06+0200\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -2319,16 +2319,6 @@ msgstr "CI dodjela"
 msgid "CI slot: "
 msgstr "CI utor: "
 
-#, fuzzy
-msgid "CIHelper Setup"
-msgstr "HotKey postavke za postavljanje"
-
-msgid "CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "CIHelper for SLOT CI1"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -3304,10 +3294,6 @@ msgstr "Nije moguće pronaći odgovarajući medij. Uklonite neke preuzete image 
 msgid "Could not load medium! No disc inserted?"
 msgstr "Nije moguće učitati medij! Dali je umetnut disk?"
 
-#, fuzzy
-msgid "Could not locate epg file on fallback tuner"
-msgstr "Omogućite uvoz tajmera iz zamjenskog tjunera"
-
 msgid "Could not open Picture in Picture"
 msgstr "Nije moguće otvoriti sliku u slici"
 
@@ -4246,6 +4232,10 @@ msgstr "EPG postavke"
 msgid "ERROR - failed to scan (%s)!"
 msgstr "POGREŠKA - nije uspjelo skeniranje (%s)!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 msgid "East"
 msgstr "Istok"
 
@@ -4328,12 +4318,6 @@ msgstr "Omogućite 'neutrino' stil kontrole prebacivanja"
 
 msgid "Enable 5V for active antenna"
 msgstr "Omogućite 5V za aktivnu antenu"
-
-msgid "Enable CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "Enable CIHelper for SLOT CI1"
-msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr "Omogućite EIT EPG"
@@ -4570,6 +4554,10 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Greška"
 
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "Greška"
+
 msgid "Error code"
 msgstr "Greška koda"
 
@@ -4605,10 +4593,25 @@ msgstr "Pogreška pri pokretanju dodatka"
 msgid "Error stop stream!"
 msgstr "Pogreška pri zaustavljanju web prijenosa!"
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+#, fuzzy
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+"Pogreška pri dohvaćanju informacija tajmera sigurnosne kopije\n"
+"%s"
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+"Pogreška pri dohvaćanju informacija tajmera sigurnosne kopije\n"
+"%s"
+
+#, fuzzy
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 "Pogreška pri dohvaćanju informacija tajmera sigurnosne kopije\n"
 "%s"
@@ -5818,10 +5821,6 @@ msgstr "Postavljanje uređaja za unos"
 msgid "Input devices"
 msgstr "Ulazni uređaji"
 
-#, fuzzy
-msgid "Input scroll position"
-msgstr "Idi na položaj"
-
 msgid "Install"
 msgstr "Instaliranje"
 
@@ -6989,6 +6988,9 @@ msgstr "Opis nije dostupan."
 msgid "No displayable files on this medium found!"
 msgstr "Nema pronađenih datoteka na ovom mediju!"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 msgid "No event info found, recording indefinitely."
 msgstr "Nije pronađen nijedan podatak o događaju, snimanje na neodređeno vrijeme."
 
@@ -7030,9 +7032,6 @@ msgstr "Nema usluge"
 
 msgid "No services/providers selected"
 msgstr "Nisu odabrane usluge/pružatelji usluga"
-
-msgid "No settings files to download on fallback tuner"
-msgstr ""
 
 msgid "No standby"
 msgstr "Nema stanja mirovanja"
@@ -10145,9 +10144,6 @@ msgstr "Somalija"
 msgid "Some plugins are not available:\n"
 msgstr "Neki dodaci nisu dostupni:\n"
 
-msgid "Sorry CIHelper Config is Missing"
-msgstr ""
-
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -12554,9 +12550,6 @@ msgstr "Kada sadržaj ima omjer 16:9, odaberite želite li skalirati/rastezati s
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Kada sadržaj ima omjer 4:3, odaberite želite li skalirati/rastezati sliku."
-
-msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
-msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Gdje želite spremiti privremene datoteke vremenskog pomaka?"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-20 00:02+0430\n"
+"POT-Creation-Date: 2019-09-23 05:35+0330\n"
 "PO-Revision-Date: 2014-12-15 19:38-0000\n"
 "Last-Translator: Phenom <phenomxy@gmail.com>\n"
 "Language-Team: Muaitai <muaitai@gmail.com>\n"
@@ -2524,15 +2524,6 @@ msgstr "Escolha de CI"
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIHelper Setup"
-msgstr ""
-
-msgid "CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "CIHelper for SLOT CI1"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -3630,9 +3621,6 @@ msgstr ""
 msgid "Could not load medium! No disc inserted?"
 msgstr "Foi impossível carregar a media! Disco não inserido?"
 
-msgid "Could not locate epg file on fallback tuner"
-msgstr ""
-
 #
 msgid "Could not open Picture in Picture"
 msgstr "Não foi possível abrir o Picture in Picture"
@@ -4713,6 +4701,10 @@ msgstr "Definições de Guia de Programação"
 msgid "ERROR - failed to scan (%s)!"
 msgstr "ERRO - falha na pesquisa (%s)!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 #
 msgid "East"
 msgstr "Este"
@@ -4812,12 +4804,6 @@ msgstr "Activar estilo 'neutrino' no controlo do zapping"
 #
 msgid "Enable 5V for active antenna"
 msgstr "Activar saída de 5V para a antena"
-
-msgid "Enable CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "Enable CIHelper for SLOT CI1"
-msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr "Activar Guia de Programação EIT"
@@ -5080,6 +5066,11 @@ msgstr "Stream"
 msgid "Error"
 msgstr "Erro"
 
+#
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "Erro"
+
 msgid "Error code"
 msgstr "Código de erro"
 
@@ -5109,10 +5100,19 @@ msgstr "Erro ao executar o Plugin"
 msgid "Error stop stream!"
 msgstr ""
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #
@@ -6462,11 +6462,6 @@ msgstr "Definições dos dispositivos de entrada"
 
 msgid "Input devices"
 msgstr "Dispositivos de entrada"
-
-#
-#, fuzzy
-msgid "Input scroll position"
-msgstr "Ir para posição"
 
 #
 msgid "Install"
@@ -7849,6 +7844,9 @@ msgstr "Descrição não disponível."
 msgid "No displayable files on this medium found!"
 msgstr "Não foram encontrados ficheiros reproduzíveis!"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 #
 msgid "No event info found, recording indefinitely."
 msgstr "Não foi encontrada informação do programa, a gravar indefinidamente."
@@ -7900,9 +7898,6 @@ msgstr "Nenhum canal."
 #, fuzzy
 msgid "No services/providers selected"
 msgstr "Nenhum Serviço/Operador seleccionado"
-
-msgid "No settings files to download on fallback tuner"
-msgstr ""
 
 #
 #, fuzzy
@@ -11573,9 +11568,6 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Alguns Plugins não estão disponíveis:\n"
 
-msgid "Sorry CIHelper Config is Missing"
-msgstr ""
-
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -14320,9 +14312,6 @@ msgstr "Quando o conteúdo tem uma relação de aspecto de 16:9, escolher se des
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Quando o conteúdo tem uma relação de aspecto de 4:3, escolha se deseja dimensionar/esticar a imagem."
-
-msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
-msgstr ""
 
 #
 msgid "Where to save temporary timeshift recordings?"

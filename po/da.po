@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-20 00:02+0430\n"
+"POT-Creation-Date: 2019-09-23 05:35+0330\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -2510,16 +2510,6 @@ msgstr "CI  tildeling"
 msgid "CI slot: "
 msgstr "CI port: "
 
-#, fuzzy
-msgid "CIHelper Setup"
-msgstr "HotKey Setup"
-
-msgid "CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "CIHelper for SLOT CI1"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -3590,9 +3580,6 @@ msgstr ""
 #
 msgid "Could not load medium! No disc inserted?"
 msgstr "Kunne ikke indlæse medie! Ingen disk isat?"
-
-msgid "Could not locate epg file on fallback tuner"
-msgstr ""
 
 #
 msgid "Could not open Picture in Picture"
@@ -4665,6 +4652,10 @@ msgstr "EPG indstillinger"
 msgid "ERROR - failed to scan (%s)!"
 msgstr "FEJL - kan ikke søge (%s)!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 #
 msgid "East"
 msgstr "Øst"
@@ -4763,12 +4754,6 @@ msgstr "Aktiver 'neutrino' zap styrings stil"
 #
 msgid "Enable 5V for active antenna"
 msgstr "Aktiver 5V for aktiv antenne"
-
-msgid "Enable CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "Enable CIHelper for SLOT CI1"
-msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr "Aktiver EIT EPG"
@@ -5030,6 +5015,11 @@ msgstr "Stream"
 msgid "Error"
 msgstr "Fejl"
 
+#
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "Fejl"
+
 msgid "Error code"
 msgstr "Fejlkode"
 
@@ -5059,10 +5049,19 @@ msgstr "Fejl ved kørsel af plugin"
 msgid "Error stop stream!"
 msgstr ""
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #
@@ -6408,11 +6407,6 @@ msgstr "Opsætning af enhed"
 
 msgid "Input devices"
 msgstr "Enheder"
-
-#
-#, fuzzy
-msgid "Input scroll position"
-msgstr "Gå til position"
 
 #
 msgid "Install"
@@ -7766,6 +7760,9 @@ msgstr "Ingen tilgængelig beskrivelse."
 msgid "No displayable files on this medium found!"
 msgstr "Der findes ingen visbare filer på dette medie!"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 #
 msgid "No event info found, recording indefinitely."
 msgstr "Ingen program-data fundet, optagelse startet."
@@ -7816,9 +7813,6 @@ msgstr "Ingen kanal."
 #
 msgid "No services/providers selected"
 msgstr "Ingen kanaler/udbydere er valgt"
-
-msgid "No settings files to download on fallback tuner"
-msgstr ""
 
 #
 msgid "No standby"
@@ -11391,9 +11385,6 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Nogle plugins er ikke tilstede:\n"
 
-msgid "Sorry CIHelper Config is Missing"
-msgstr ""
-
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -14105,9 +14096,6 @@ msgstr "Når indholdet har et billedformat på 16:9 vælg om billedet skal skale
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Når indholdet har et billedformat på 4:3 vælg om billedet skal skaleres eller strækkes."
-
-msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
-msgstr ""
 
 #
 msgid "Where to save temporary timeshift recordings?"

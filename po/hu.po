@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-20 00:02+0430\n"
+"POT-Creation-Date: 2019-09-23 05:35+0330\n"
 "PO-Revision-Date: 2019-09-13 23:02+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -2306,16 +2306,6 @@ msgstr "CI hozzárendelés"
 msgid "CI slot: "
 msgstr "CI foglalat: "
 
-#, fuzzy
-msgid "CIHelper Setup"
-msgstr "HotKey beállítás"
-
-msgid "CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "CIHelper for SLOT CI1"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -3291,10 +3281,6 @@ msgstr "Nem található megfelelő adathordozó. Kérem, töröljön néhány le
 msgid "Could not load medium! No disc inserted?"
 msgstr "Nem lehet betölteni a hordozót! Van bennt lemez?"
 
-#, fuzzy
-msgid "Could not locate epg file on fallback tuner"
-msgstr "Csatornák importálása a tartalék tunerből"
-
 msgid "Could not open Picture in Picture"
 msgstr "A Kép-a-Képben funkció nem indítható el"
 
@@ -4228,6 +4214,10 @@ msgstr "EPG beállítások"
 msgid "ERROR - failed to scan (%s)!"
 msgstr "HIBA - nem sikerült a keresés (%s)!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 msgid "East"
 msgstr "Kelet"
 
@@ -4310,12 +4300,6 @@ msgstr "Neutrino-stílusú csatornaváltás engedélyezése"
 
 msgid "Enable 5V for active antenna"
 msgstr "5V kimenet az akítv antennához engedélyezve"
-
-msgid "Enable CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "Enable CIHelper for SLOT CI1"
-msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr "EIT EPG engedélyezése"
@@ -4551,6 +4535,10 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Hiba"
 
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "Hiba"
+
 msgid "Error code"
 msgstr "Hibakód"
 
@@ -4582,10 +4570,25 @@ msgstr "Bővítmény indítási hiba"
 msgid "Error stop stream!"
 msgstr "A stream leállítása sikertelen!"
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+#, fuzzy
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+"Hiba történt a tartalék tuner időzítők letöltésekor\n"
+"%s"
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+"Hiba történt a tartalék tuner időzítők letöltésekor\n"
+"%s"
+
+#, fuzzy
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 "Hiba történt a tartalék tuner időzítők letöltésekor\n"
 "%s"
@@ -5797,10 +5800,6 @@ msgstr "Beviteli eszközök beállítása"
 msgid "Input devices"
 msgstr "Beviteli eszközök"
 
-#, fuzzy
-msgid "Input scroll position"
-msgstr "Pozícióra ugrás"
-
 msgid "Install"
 msgstr "Telepítés"
 
@@ -6965,6 +6964,9 @@ msgstr "Nincs elérhető leírás."
 msgid "No displayable files on this medium found!"
 msgstr "A hordozón nem található lejátszható fájl!"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 msgid "No event info found, recording indefinitely."
 msgstr "Nincs esemény infó, felvétel korlátlanul."
 
@@ -7006,9 +7008,6 @@ msgstr "Nincs csatorna"
 
 msgid "No services/providers selected"
 msgstr "Nincs szolgáltató kiválasztva"
-
-msgid "No settings files to download on fallback tuner"
-msgstr ""
 
 msgid "No standby"
 msgstr "Nincs kikapcsolás"
@@ -10116,9 +10115,6 @@ msgstr "Szomália"
 msgid "Some plugins are not available:\n"
 msgstr "Egyes bővítmények nem elérhetőek:\n"
 
-msgid "Sorry CIHelper Config is Missing"
-msgstr ""
-
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -12526,9 +12522,6 @@ msgstr "Egy 16:9-es kép méretarányú tartalom nagyítva vagy széthúzva legy
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Egy 4:3-as kép méretarányú tartalom nagyítva vagy széthúzva legyen."
-
-msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
-msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Hová kerüljenek az átmeneti időcsúsztatás felvételek?"

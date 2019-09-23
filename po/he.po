@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-20 00:02+0430\n"
+"POT-Creation-Date: 2019-09-23 05:35+0330\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -2364,15 +2364,6 @@ msgstr ""
 msgid "CI slot: "
 msgstr ""
 
-msgid "CIHelper Setup"
-msgstr ""
-
-msgid "CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "CIHelper for SLOT CI1"
-msgstr ""
-
 msgid "CPU architecture: "
 msgstr ""
 
@@ -3376,9 +3367,6 @@ msgstr ""
 msgid "Could not load medium! No disc inserted?"
 msgstr "Could not load Medium! No disc inserted?"
 
-msgid "Could not locate epg file on fallback tuner"
-msgstr ""
-
 msgid "Could not open Picture in Picture"
 msgstr "לא יכול לפתוח תמונה בתוך תמונה"
 
@@ -4377,6 +4365,10 @@ msgstr ""
 msgid "ERROR - failed to scan (%s)!"
 msgstr "(%s) !שגיאה - נכשל בסריקה"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 #
 msgid "East"
 msgstr "מזרח"
@@ -4469,12 +4461,6 @@ msgstr ""
 
 msgid "Enable 5V for active antenna"
 msgstr "Enable 5V for active antenna"
-
-msgid "Enable CIHelper for SLOT CI0"
-msgstr ""
-
-msgid "Enable CIHelper for SLOT CI1"
-msgstr ""
 
 msgid "Enable EIT EPG"
 msgstr ""
@@ -4726,6 +4712,10 @@ msgstr ""
 msgid "Error"
 msgstr "שגיאה"
 
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "שגיאה"
+
 msgid "Error code"
 msgstr ""
 
@@ -4754,10 +4744,19 @@ msgstr "שגיאה בהרצת הפלאגין"
 msgid "Error stop stream!"
 msgstr ""
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #, python-format
@@ -6037,10 +6036,6 @@ msgstr ""
 
 msgid "Input devices"
 msgstr ""
-
-#, fuzzy
-msgid "Input scroll position"
-msgstr "Goto position"
 
 #
 msgid "Install"
@@ -7347,6 +7342,9 @@ msgstr "אין מידע נוסף"
 msgid "No displayable files on this medium found!"
 msgstr "!לא נמצאו קבצים מתאימים לתצוגה על המדיה הזו"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 #
 msgid "No event info found, recording indefinitely."
 msgstr ""
@@ -7394,9 +7392,6 @@ msgid "No service"
 msgstr ""
 
 msgid "No services/providers selected"
-msgstr ""
-
-msgid "No settings files to download on fallback tuner"
 msgstr ""
 
 #, fuzzy
@@ -10812,9 +10807,6 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "מספר פלאגינים לא זמינים:\n"
 
-msgid "Sorry CIHelper Config is Missing"
-msgstr ""
-
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -13390,9 +13382,6 @@ msgid "When the content has an aspect ratio of 16:9, choose whether to scale/str
 msgstr ""
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
-msgstr ""
-
-msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
 msgstr ""
 
 #

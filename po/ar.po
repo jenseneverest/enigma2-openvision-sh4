@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-24 22:23+0330\n"
+"POT-Creation-Date: 2019-09-25 23:33+0330\n"
 "PO-Revision-Date: 2018-12-17 02:51+0200\n"
 "Last-Translator: Hazem <moustafagamal@hotmail.com>\n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -1281,9 +1281,6 @@ msgstr "؟؟"
 msgid "A"
 msgstr "أ"
 
-msgid "A background update check is in progress, please wait a few minutes and try again."
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "A configuration file (%s) has been modified since it was installed.\n"
@@ -1391,6 +1388,18 @@ msgstr ""
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
+msgid "AFP"
+msgstr ""
+
+#
+#, fuzzy
+msgid "AFP Setup"
+msgstr "إعدادات"
+
+#, fuzzy
+msgid "AFP setup"
+msgstr "ضبط صوره داخل صوره"
+
 msgid "AGC:"
 msgstr ""
 
@@ -1441,8 +1450,16 @@ msgstr "نقطة وصول:"
 msgid "Activate HbbTV (Redbutton)"
 msgstr "تنشيط HbbTV (الزر الأحمر)"
 
+#, fuzzy
+msgid "Activate IPv6 configuration"
+msgstr "تنشيط الإعدادات الحالية"
+
 msgid "Activate Keymap now?"
 msgstr ""
+
+#, fuzzy
+msgid "Activate MAC address configuration"
+msgstr "تنشيط الإعدادات الحالية"
 
 #
 msgid "Activate Picture in Picture"
@@ -1622,6 +1639,9 @@ msgstr "البوم"
 
 msgid "Algeria"
 msgstr "الجزائر"
+
+msgid "Alias"
+msgstr ""
 
 msgid "Alignment of events"
 msgstr ""
@@ -2392,6 +2412,9 @@ msgstr ""
 msgid "CI slot: "
 msgstr ""
 
+msgid "CIFS/Samba"
+msgstr ""
+
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2668,6 +2691,10 @@ msgstr ""
 msgid "Check the internet connection again"
 msgstr ""
 
+#, fuzzy
+msgid "Checking feeds"
+msgstr "فحص ملفات النظام...."
+
 msgid "Checking filesystem..."
 msgstr "فحص ملفات النظام...."
 
@@ -2893,6 +2920,9 @@ msgid "Compress"
 msgstr "ضغط"
 
 msgid "Config Scan Details"
+msgstr ""
+
+msgid "Config file name (ok to change):"
 msgstr ""
 
 msgid "Config resolution of pictures"
@@ -3458,10 +3488,6 @@ msgstr "الاعدادات الحالية:"
 msgid "Current CEC address"
 msgstr ""
 
-#, fuzzy
-msgid "Current Status:"
-msgstr "الاعدادات الحالية:"
-
 msgid "Current device: "
 msgstr "القناة الحالية:"
 
@@ -3541,6 +3567,10 @@ msgstr "د"
 
 msgid "DHCP"
 msgstr "بروتوكول DHCP"
+
+#, fuzzy
+msgid "DLNA support"
+msgstr "دعم HLG"
 
 msgid "DTS downmix"
 msgstr ""
@@ -3951,6 +3981,11 @@ msgstr "يوجد قرص صلب:"
 msgid "Detected NIMs:"
 msgstr "موجود موالف:"
 
+#
+#, fuzzy
+msgid "Device"
+msgstr "القناة"
+
 msgid "Devicename:"
 msgstr ""
 
@@ -4161,6 +4196,11 @@ msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "هل تريد فعلا مسح %s ؟"
 
 msgid "Do you want this?"
+msgstr ""
+
+msgid ""
+"Do you want to also install samba client ?\n"
+"This allows you to mount your windows shares on this device."
 msgstr ""
 
 msgid "Do you want to autorestore settings?"
@@ -4521,6 +4561,9 @@ msgstr ""
 msgid "Enable multiple bouquets"
 msgstr "تفعيل باقات متعددة"
 
+msgid "Enable or disable IPv6"
+msgstr ""
+
 msgid "Enable parental protection"
 msgstr "تفعيل الحماية الأبوية"
 
@@ -4552,6 +4595,13 @@ msgstr ""
 
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
+
+msgid "Enable/Disable IPv6"
+msgstr ""
+
+#, fuzzy
+msgid "Enable/Disable IPv6 support of your receiver.\n"
+msgstr "تحرير تهيئة خادم DNS لجهاز الاستقبال الخاص بك.\n"
 
 #
 msgid "Enabled"
@@ -4832,7 +4882,19 @@ msgstr "خروج"
 msgid "Exit EPG"
 msgstr ""
 
+#, fuzzy
+msgid "Exit IPv6 configuration"
+msgstr "خروج من تكوين أسم الخادم"
+
+#, fuzzy
+msgid "Exit MAC address configuration"
+msgstr "خروج من تكوين أسم الخادم"
+
 msgid "Exit editor"
+msgstr "خروج من المحرر"
+
+#, fuzzy
+msgid "Exit inetd recovery"
 msgstr "خروج من المحرر"
 
 msgid "Exit input device selection."
@@ -4844,6 +4906,10 @@ msgstr ""
 #, fuzzy
 msgid "Exit mediaplayer"
 msgstr "خروج من مشغل الوسائط"
+
+#, fuzzy
+msgid "Exit mounts setup menu"
+msgstr "خروج من قائمة اعداد محول الشبكة"
 
 #, fuzzy
 msgid "Exit movie list"
@@ -4862,6 +4928,10 @@ msgstr "خروج من قائمة واجهة الشبكة"
 
 msgid "Exit network wizard"
 msgstr "خروج من نافذة إعدادات الشبكة"
+
+#, fuzzy
+msgid "Exit networkadapter setup menu"
+msgstr "خروج من قائمة اعداد محول الشبكة"
 
 msgid "Exit the wizard"
 msgstr "خروج من نافذة الاعدادات"
@@ -4898,8 +4968,16 @@ msgstr "برنامج تشغيل متقدم"
 msgid "Extended Software Plugin"
 msgstr "إضافة النظام الملحقة"
 
+#, fuzzy
+msgid "Extended network setup plugin"
+msgstr "إضافة إعدادات الشبكة المتقدمة."
+
 msgid "Extended network setup plugin..."
 msgstr "إضافة إعدادات الشبكة المتقدمة."
+
+#, fuzzy
+msgid "Extended setup"
+msgstr "إعدادات متقدمة..."
 
 msgid "Extended setup..."
 msgstr "إعدادات متقدمة..."
@@ -4980,6 +5058,9 @@ msgstr "إصدار الانيجما: "
 msgid "FTA"
 msgstr ""
 
+msgid "FTP"
+msgstr ""
+
 #, fuzzy
 msgid "FTP connection failure"
 msgstr "اتصال Lan"
@@ -4988,6 +5069,10 @@ msgstr "اتصال Lan"
 #, fuzzy
 msgid "FTP passive mode"
 msgstr "وضع النقل"
+
+#, fuzzy
+msgid "FTP setup"
+msgstr "ضبط صوره داخل صوره"
 
 msgid "Factory reset"
 msgstr "إستعادة ضبط المصنع"
@@ -5106,6 +5191,11 @@ msgstr "المفضلات"
 
 msgid "Feed URL: "
 msgstr ""
+
+#
+#, fuzzy
+msgid "Feeds are not accessible, please try again later."
+msgstr "حدث خطأ ما. من فضلك حاول لاحقا"
 
 msgid "Fiji"
 msgstr ""
@@ -5770,6 +5860,13 @@ msgstr "عنوان IP"
 msgid "IP of fallback remote receiver"
 msgstr "عنوان IP لريموت الطوارئ"
 
+msgid "IPv6"
+msgstr ""
+
+#, fuzzy
+msgid "IPv6 support"
+msgstr "دعم HLG"
+
 msgid "ISO file is too large for this filesystem!"
 msgstr "ملف الايزو كبير جدا على نوع ملفات النظام !"
 
@@ -5892,6 +5989,20 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr ""
 
+msgid "Inadyn"
+msgstr ""
+
+msgid "Inadyn config is missing!"
+msgstr ""
+
+msgid "Inadyn log"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Inadyn setup"
+msgstr "ضبط معالج الاعداد"
+
 msgid "Include AIT in http streams"
 msgstr ""
 
@@ -5926,6 +6037,10 @@ msgstr ""
 
 msgid "Indonesian"
 msgstr ""
+
+#, fuzzy
+msgid "Inetd recovery"
+msgstr "تسجيل سريع"
 
 #
 msgid "Info"
@@ -5997,6 +6112,9 @@ msgstr "تفعيل البدأ"
 msgid "Initializing storage device..."
 msgstr ""
 
+msgid "Inotify monitoring"
+msgstr ""
+
 msgid "Input"
 msgstr "مدخل"
 
@@ -6004,6 +6122,9 @@ msgid "Input "
 msgstr "مدخل "
 
 msgid "Input Stream ID"
+msgstr ""
+
+msgid "Input config file name:"
 msgstr ""
 
 msgid "Input device setup"
@@ -6055,6 +6176,10 @@ msgstr "موقع  التسجيل السريع"
 
 msgid "Instant recording..."
 msgstr "تسجيل سريع..."
+
+#, fuzzy
+msgid "Interface"
+msgstr "واجهة:"
 
 msgid "Interface: "
 msgstr "واجهة:"
@@ -6577,6 +6702,16 @@ msgstr "لوكسمبرغ"
 msgid "Luxembourgish"
 msgstr "لوكسمبرغ"
 
+#
+#, fuzzy
+msgid "MAC address"
+msgstr "عنوان IP"
+
+#
+#, fuzzy
+msgid "MAC address settings"
+msgstr "تحرير الاعدادات"
+
 msgid "MENU"
 msgstr ""
 
@@ -6793,6 +6928,19 @@ msgstr ""
 msgid "Micronesia (Federated States of)"
 msgstr ""
 
+msgid "MiniDLNA"
+msgstr ""
+
+msgid "MiniDLNA config is missing!"
+msgstr ""
+
+msgid "MiniDLNA log"
+msgstr ""
+
+#, fuzzy
+msgid "MiniDLNA setup"
+msgstr "ضبط صوره داخل صوره"
+
 #, python-format
 msgid "Minimum age %d years"
 msgstr ""
@@ -6909,6 +7057,14 @@ msgstr ""
 msgid "Mount"
 msgstr ""
 
+#, fuzzy
+msgid "Mounts"
+msgstr "الدولة"
+
+#, fuzzy
+msgid "Mounts setup"
+msgstr "إعدادات السوفتكام"
+
 msgid "Move"
 msgstr ""
 
@@ -6929,6 +7085,14 @@ msgstr "الانتقال لأسفل الى البند الاخير"
 #, fuzzy
 msgid "Move down a page"
 msgstr "الانتقال لأسفل الى البند الاخير"
+
+#, fuzzy
+msgid "Move down to last entry"
+msgstr "الانتقال لأسفل الى البند الاخير"
+
+#, fuzzy
+msgid "Move down to next entry"
+msgstr "الانتقال لاسفل الى البند التالى"
 
 msgid "Move east"
 msgstr "تحرك شرقا"
@@ -6969,6 +7133,14 @@ msgstr ""
 
 msgid "Move up a page"
 msgstr ""
+
+#, fuzzy
+msgid "Move up to first entry"
+msgstr "الانتقال لاعلى الى البند الاول"
+
+#, fuzzy
+msgid "Move up to previous entry"
+msgstr "الانتقال لاعلى الى البند السابق"
 
 msgid "Move west"
 msgstr "تحرك للغرب"
@@ -7114,6 +7286,14 @@ msgstr "معطل اجباريا"
 msgid "NEXT"
 msgstr "التالى"
 
+msgid "NFS"
+msgstr ""
+
+#
+#, fuzzy
+msgid "NFS setup"
+msgstr "إعدادات"
+
 msgid "NIM & Type"
 msgstr ""
 
@@ -7179,6 +7359,11 @@ msgstr ""
 msgid "Network Info:"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Network MAC settings"
+msgstr "تنشيط إعدادات الشبكة"
+
 msgid "Network configuration"
 msgstr ""
 
@@ -7235,6 +7420,9 @@ msgid "New Caledonia"
 msgstr ""
 
 msgid "New Zealand"
+msgstr ""
+
+msgid "New password"
 msgstr ""
 
 msgid "News"
@@ -7719,6 +7907,16 @@ msgstr ""
 msgid "Open the movie list"
 msgstr "العودة الى قائمة الأفلام"
 
+msgid "OpenVPN"
+msgstr ""
+
+msgid "OpenVPN log"
+msgstr ""
+
+#, fuzzy
+msgid "OpenVPN setup"
+msgstr "ضبط صوره داخل صوره"
+
 msgid "Options disable timer"
 msgstr ""
 
@@ -7862,6 +8060,14 @@ msgstr ""
 
 msgid "Password (httpwd)"
 msgstr ""
+
+msgid "Password changed."
+msgstr ""
+
+#
+#, fuzzy
+msgid "Password setup"
+msgstr "ضبط معالج الاعداد"
 
 #, fuzzy
 msgid "Pause"
@@ -8214,6 +8420,10 @@ msgstr "رجاء الانتظار... جارى تحميل الصوره"
 msgid "Please wait for activation of your network configuration..."
 msgstr "رجاء الانتظار حتى يتم تنشيط تكوينات الشبكة"
 
+#, fuzzy
+msgid "Please wait while feeds state is being checked."
+msgstr "رجاء الانتظار حيث جارى البحث..."
+
 msgid "Please wait while scanning is in progress..."
 msgstr "رجاء الانتظار حيث جارى البحث..."
 
@@ -8480,6 +8690,10 @@ msgstr ""
 msgid "Press OK to select/deselect a CAId."
 msgstr "إضغط موافق لاختيار/الغاء اختيار CAId"
 
+#, fuzzy
+msgid "Press OK to set the MAC address."
+msgstr "أضغط موافق لتحرير الاعدادات."
+
 msgid "Press OK to toggle the selection"
 msgstr ""
 
@@ -8664,6 +8878,9 @@ msgstr "قرص ذاكرة تخزين عشوائي"
 msgid "Random"
 msgstr "عشوائى"
 
+msgid "Random password"
+msgstr ""
+
 #, python-format
 msgid "Rating defined by broadcaster - %d"
 msgstr ""
@@ -8684,9 +8901,17 @@ msgstr ""
 msgid "Ready to install \"%s\" ?"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Ready to install %s ?"
+msgstr "تراجع عن التثبيت"
+
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Ready to remove %s ?"
+msgstr "العودة الى قائمة الأفلام"
 
 msgid "Really close without saving settings?"
 msgstr "هل تريد الرجوع بدون حفظ الاعدادات ؟"
@@ -8776,6 +9001,15 @@ msgstr "تسجيلات"
 
 msgid "Recordings always have priority"
 msgstr "التسجيلات لها الأوليه دائما"
+
+#
+#, fuzzy
+msgid "Recover"
+msgstr "تسجيل"
+
+#, fuzzy
+msgid "Recover inetd"
+msgstr "إعدادات التسجيل"
 
 msgid "Red"
 msgstr "أحمر"
@@ -8886,6 +9120,10 @@ msgstr ""
 
 msgid "Remove plugins"
 msgstr "حذف اضافات"
+
+#, fuzzy
+msgid "Remove service"
+msgstr "جارى الحذف"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
@@ -9044,6 +9282,14 @@ msgid "Restore cuts"
 msgstr "استعادة نسخ احتياطية"
 
 #, fuzzy
+msgid "Restore inetd"
+msgstr "استعادة نسخ احتياطية"
+
+#, fuzzy
+msgid "Restore inetd.conf"
+msgstr "إعادة تشغيل الشبكة"
+
+#, fuzzy
 msgid "Restore previous cuts..."
 msgstr "العودة الى الخدمه القناه السابقه"
 
@@ -9159,6 +9405,17 @@ msgstr ""
 msgid "S-Video"
 msgstr "S-Video"
 
+msgid "SABnzbd"
+msgstr ""
+
+msgid "SABnzbd Setup"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SABnzbd setup"
+msgstr "ضبط معالج الاعداد"
+
 msgid "SCAN"
 msgstr ""
 
@@ -9248,6 +9505,13 @@ msgstr ""
 
 msgid "Saint Vincent and the Grenadines"
 msgstr ""
+
+msgid "Samba log"
+msgstr ""
+
+#, fuzzy
+msgid "Samba setup"
+msgstr "إعدادات السوفتكام"
 
 #
 msgid "Same as stream"
@@ -9518,6 +9782,9 @@ msgstr "تخطى للأمام"
 msgid "Seek forward (enter time)"
 msgstr "تخطى للأمام (أدخل الوقت)"
 
+msgid "Seems a background update check is in progress, please try again later."
+msgstr ""
+
 msgid "Select"
 msgstr "إختيار"
 
@@ -9671,6 +9938,11 @@ msgstr "اختيار ملفات ليتم نسخها احتياطيا."
 msgid "Select files/folders to backup"
 msgstr "أختيار ملفات/مجلدات النسخه الاحتياطيه"
 
+#
+#, fuzzy
+msgid "Select folders"
+msgstr "أختيار المجلد الهدف"
+
 msgid "Select function"
 msgstr "إختر وظيفة"
 
@@ -9695,6 +9967,11 @@ msgstr "أختيار واجهة"
 
 msgid "Select location"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Select menu entry"
+msgstr "أختيار مدخل قائمة"
 
 #
 msgid "Select movie"
@@ -9882,6 +10159,10 @@ msgstr "صربيا"
 msgid "Serbian"
 msgstr "صريى"
 
+#, fuzzy
+msgid "Serial"
+msgstr "الجزائر"
+
 #
 #, fuzzy
 msgid "Serv.Name"
@@ -10063,6 +10344,15 @@ msgstr ""
 msgid "Set startup service"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Set system"
+msgstr "النـظام"
+
+#, fuzzy
+msgid "Set the MAC address of your receiver.\n"
+msgstr "أدخل إذا كنت في نصف الكرة الغربي أو الغرب."
+
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr ""
 
@@ -10147,6 +10437,15 @@ msgstr "من فضلك أضبط الموالف A"
 msgid "Seychelles"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Share folder"
+msgstr "أختيار المجلد الهدف"
+
+#, fuzzy
+msgid "Shares"
+msgstr "الحده"
+
 msgid "Sharpness"
 msgstr "الحده"
 
@@ -10198,11 +10497,6 @@ msgstr "إظهار البدائل"
 
 msgid "Show InfoBar"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Show Log"
-msgstr "أظهر المعلومات"
 
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
@@ -10336,6 +10630,11 @@ msgstr ""
 
 msgid "Show latest upgrade log"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Show log"
+msgstr "أظهر المعلومات"
 
 msgid "Show menu or plugin numbers"
 msgstr ""
@@ -11133,6 +11432,9 @@ msgstr ""
 msgid "Streaming clients info"
 msgstr ""
 
+msgid "Strict DLNA"
+msgstr ""
+
 msgid "Strongest position"
 msgstr ""
 
@@ -11199,6 +11501,9 @@ msgstr "اعدادات الترجمة"
 
 msgid "Succeeded:"
 msgstr "نجح:"
+
+msgid "Successfully restored /etc/inetd.conf!"
+msgstr ""
 
 msgid "Sudan"
 msgstr "السودان"
@@ -11438,6 +11743,20 @@ msgstr "من فضلك أختار الخدمة الفرعية..."
 msgid "Teletext subtitle color"
 msgstr ""
 
+msgid "Telnet"
+msgstr ""
+
+#, fuzzy
+msgid "Telnet interface"
+msgstr "أختيار واجهة"
+
+msgid "Telnet port"
+msgstr ""
+
+#, fuzzy
+msgid "Telnet setup"
+msgstr "ضبط الشبكة"
+
 msgid "Temperature and fan control"
 msgstr "درجة الحرارة والتحكم في المروحة"
 
@@ -11591,6 +11910,9 @@ msgstr ""
 "إذا رأيت تلميحات جميع رؤوس الأسهم الثمانية ، فسيتم تعطيل شاشة التلفزيون الخاص بك.\n"
 "\n"
 "اختبار نمط من TigerDave - www.tigerdave.com/ht_menu.htm"
+
+msgid "The password can not be blank!"
+msgstr ""
 
 #, python-format
 msgid "The path %s already exists."
@@ -11943,6 +12265,10 @@ msgstr ""
 msgid "Thursday"
 msgstr "الخميس"
 
+#, fuzzy
+msgid "TiVo support"
+msgstr "غير مدعوم"
+
 #
 msgid "Time"
 msgstr "وقت"
@@ -11966,6 +12292,12 @@ msgid "Time style"
 msgstr "إختيار المؤقت"
 
 msgid "Time to execute command or script"
+msgstr ""
+
+msgid "Time update in minutes"
+msgstr ""
+
+msgid "Time update in minutes:"
 msgstr ""
 
 #
@@ -12359,6 +12691,9 @@ msgstr ""
 msgid "Unable to backup settings as the AutoBackup plugin is missing, do you want to continue?"
 msgstr ""
 
+msgid "Unable to change password!"
+msgstr ""
+
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
@@ -12677,6 +13012,9 @@ msgstr ""
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr ""
 
+msgid "Utilities"
+msgstr ""
+
 msgid "Uzbekistan"
 msgstr ""
 
@@ -12987,6 +13325,10 @@ msgstr "عرض الافلام المسجله"
 
 msgid "Watch recordings..."
 msgstr "مشاهدة التسجيلات..."
+
+#, fuzzy
+msgid "Web interface"
+msgstr "استخدم الواجهه"
 
 #
 msgid "Wed"
@@ -13324,6 +13666,10 @@ msgstr "فشلت الكتابة !"
 msgid "Write to /tmp/positionersetup.log"
 msgstr ""
 
+#, fuzzy
+msgid "XBox support"
+msgstr "غير مدعوم"
+
 msgid "YCbCr420"
 msgstr ""
 
@@ -13483,6 +13829,9 @@ msgstr ""
 msgid "You have to wait %s!"
 msgstr "يجب أن تنتظر %s !"
 
+msgid "You must set a root password in order to be able to use network services, such as FTP, telnet or ssh."
+msgstr ""
+
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
@@ -13528,6 +13877,9 @@ msgstr "يمكن لجهاز الاستقبال الخاص بك استخدام س
 msgid "Your receiver does not have an internet connection"
 msgstr "لا يوجد إتصال بالإنترنت في جهاز الإستقبال"
 
+msgid "Your receiver is not connected to the internet, please check your network settings and try again."
+msgstr ""
+
 msgid ""
 "Your receiver is now ready to be used.\n"
 "\n"
@@ -13560,6 +13912,18 @@ msgstr "جاري إيقاف تشغيل جهاز الاستقبال"
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 msgstr "قد يكون جهاز الاستقبال غير قابل للاستخدام الآن. يرجى الرجوع إلى دليل الاستخدام لمزيد من المساعدة قبل إعادة تشغيل جهاز الاستقبال الخاص بك."
+
+#, fuzzy, python-format
+msgid ""
+"Your receiver will be restarted after the installation of service\n"
+"Ready to install %s ?"
+msgstr "سيتم إعادة تشغيل جهاز الاستقبال بعد الضغط على \"موافق\" في الريموت."
+
+#, fuzzy
+msgid ""
+"Your receiver will be restarted after the removal of service\n"
+"Do you want to remove now ?"
+msgstr "سيتم إعادة تشغيل جهاز الاستقبال بعد الضغط على \"موافق\" في الريموت."
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
 msgstr ""
@@ -14608,6 +14972,10 @@ msgstr "من فضلك أضغط موافق عندما تكون مستعد"
 msgid "please wait, loading picture..."
 msgstr "رجاء الانتظار... جارى تحميل الصوره"
 
+#, fuzzy
+msgid "please wait..."
+msgstr "رجاء الانتظار...."
+
 msgid "popular culture/traditional arts"
 msgstr ""
 
@@ -15014,6 +15382,31 @@ msgstr "صحيح"
 #
 msgid "type"
 msgstr "النوع"
+
+#, fuzzy
+msgid "uShare"
+msgstr "الحده"
+
+msgid "uShare config is missing!"
+msgstr ""
+
+#
+#, fuzzy
+msgid "uShare log"
+msgstr "مسح السجل"
+
+#
+#, fuzzy
+msgid "uShare name"
+msgstr "إسم القناة"
+
+msgid "uShare port"
+msgstr ""
+
+#
+#, fuzzy
+msgid "uShare setup"
+msgstr "ضبط معالج الاعداد"
 
 msgid "ufs912"
 msgstr ""

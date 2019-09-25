@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-24 22:23+0330\n"
+"POT-Creation-Date: 2019-09-25 23:33+0330\n"
 "PO-Revision-Date: 2019-06-27 16:02+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -1268,9 +1268,6 @@ msgstr "??"
 msgid "A"
 msgstr "A"
 
-msgid "A background update check is in progress, please wait a few minutes and try again."
-msgstr ""
-
 #, python-format
 msgid ""
 "A configuration file (%s) has been modified since it was installed.\n"
@@ -1382,6 +1379,17 @@ msgstr "AC3 downmix"
 msgid "ACQUIRING TSID/ONID"
 msgstr "ZÍSKANIE TSID / ONID"
 
+msgid "AFP"
+msgstr ""
+
+#, fuzzy
+msgid "AFP Setup"
+msgstr "Nastavenie"
+
+#, fuzzy
+msgid "AFP setup"
+msgstr "Nastavenie PiP"
+
 msgid "AGC:"
 msgstr "AGC:"
 
@@ -1428,8 +1436,16 @@ msgstr "Prístupový bod:"
 msgid "Activate HbbTV (Redbutton)"
 msgstr "Aktivovať HbbTV (červené tlačidlo)"
 
+#, fuzzy
+msgid "Activate IPv6 configuration"
+msgstr "Aktivovať aktuálnu konfiguráciu"
+
 msgid "Activate Keymap now?"
 msgstr ""
+
+#, fuzzy
+msgid "Activate MAC address configuration"
+msgstr "Aktivovať aktuálnu konfiguráciu"
 
 msgid "Activate Picture in Picture"
 msgstr "Zapnúť obraz v obraze"
@@ -1591,6 +1607,9 @@ msgstr "Album"
 
 msgid "Algeria"
 msgstr "Alžírsko"
+
+msgid "Alias"
+msgstr ""
 
 msgid "Alignment of events"
 msgstr "Zoradenie relácií"
@@ -2324,6 +2343,9 @@ msgstr "Priradenie CI"
 msgid "CI slot: "
 msgstr "CI slot: "
 
+msgid "CIFS/Samba"
+msgstr ""
+
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2601,6 +2623,10 @@ msgstr "Skontrolujte pripojenie k internetu"
 msgid "Check the internet connection again"
 msgstr "Znovu skontrolujte pripojenie k internetu"
 
+#, fuzzy
+msgid "Checking feeds"
+msgstr "Kontrolujem systém súborov..."
+
 msgid "Checking filesystem..."
 msgstr "Kontrolujem systém súborov..."
 
@@ -2826,6 +2852,9 @@ msgstr "Komprimovať"
 
 msgid "Config Scan Details"
 msgstr "Detaily o konfigurácii skenovania"
+
+msgid "Config file name (ok to change):"
+msgstr ""
 
 msgid "Config resolution of pictures"
 msgstr "Nastavenie rozlíšenia obrázkov"
@@ -3381,10 +3410,6 @@ msgstr "Aktuality"
 msgid "Current CEC address"
 msgstr "Súčasná CEC adresa"
 
-#, fuzzy
-msgid "Current Status:"
-msgstr "Aktuálne nastavenia:"
-
 msgid "Current device: "
 msgstr "Aktuálne zariadenie: "
 
@@ -3466,6 +3491,10 @@ msgstr "D"
 
 msgid "DHCP"
 msgstr "DHCP"
+
+#, fuzzy
+msgid "DLNA support"
+msgstr "Podpora HLG"
 
 msgid "DTS downmix"
 msgstr "DTS downmix"
@@ -3863,6 +3892,10 @@ msgstr "Zistený pevný disk:"
 msgid "Detected NIMs:"
 msgstr "Zistené tunery:"
 
+#, fuzzy
+msgid "Device"
+msgstr "O stanici"
+
 msgid "Devicename:"
 msgstr "Názov zariadenia:"
 
@@ -4061,6 +4094,11 @@ msgstr "Naozaj chcete zastaviť aktuálnu udalosť a zmazať časovač %s?"
 
 msgid "Do you want this?"
 msgstr "Chcete to?"
+
+msgid ""
+"Do you want to also install samba client ?\n"
+"This allows you to mount your windows shares on this device."
+msgstr ""
 
 msgid "Do you want to autorestore settings?"
 msgstr "Prajete si automatickú obnovu nastavení?"
@@ -4394,6 +4432,10 @@ msgstr ""
 msgid "Enable multiple bouquets"
 msgstr "Zapnúť viacnásobné prehľady"
 
+#, fuzzy
+msgid "Enable or disable IPv6"
+msgstr "Povoliť automatické prehľadávanie káblového rozvodu"
+
 msgid "Enable parental protection"
 msgstr "Zapnúť rodičovskú ochranu"
 
@@ -4424,6 +4466,13 @@ msgstr "Povoliť časovač prebudenia prijímača"
 
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Povoliť prepínanie pomcou tlačidiel CH+/-, B+/-, P+/-"
+
+msgid "Enable/Disable IPv6"
+msgstr ""
+
+#, fuzzy
+msgid "Enable/Disable IPv6 support of your receiver.\n"
+msgstr "Upraviť DNS nastavenie prijímača.\n"
 
 msgid "Enabled"
 msgstr "Povolené"
@@ -4708,7 +4757,19 @@ msgstr "Ukončiť"
 msgid "Exit EPG"
 msgstr "Ukončiť EPG"
 
+#, fuzzy
+msgid "Exit IPv6 configuration"
+msgstr "Ukončiť konfiguráciu DNS"
+
+#, fuzzy
+msgid "Exit MAC address configuration"
+msgstr "Ukončiť konfiguráciu DNS"
+
 msgid "Exit editor"
+msgstr "Ukončiť editor"
+
+#, fuzzy
+msgid "Exit inetd recovery"
 msgstr "Ukončiť editor"
 
 msgid "Exit input device selection."
@@ -4719,6 +4780,10 @@ msgstr "Ukončit prehrávač médií?"
 
 msgid "Exit mediaplayer"
 msgstr "Ukončiť prehrávač médií"
+
+#, fuzzy
+msgid "Exit mounts setup menu"
+msgstr "zatvoriť menu nastavení sieťových rozhraní"
 
 msgid "Exit movie list"
 msgstr "Zatvoriť zoznam filmov"
@@ -4734,6 +4799,10 @@ msgstr "Zatvoriť zoznam sieťových adaptérov"
 
 msgid "Exit network wizard"
 msgstr "Ukončiť sprievodcu sieťou"
+
+#, fuzzy
+msgid "Exit networkadapter setup menu"
+msgstr "zatvoriť menu nastavení sieťových rozhraní"
 
 msgid "Exit the wizard"
 msgstr "Ukončiť sprievodcu"
@@ -4769,8 +4838,16 @@ msgstr "Rozšírený softvér"
 msgid "Extended Software Plugin"
 msgstr "Doplnok rozšíreného softvéru"
 
+#, fuzzy
+msgid "Extended network setup plugin"
+msgstr "Doplnok pre rozšírené nastavenie siete..."
+
 msgid "Extended network setup plugin..."
 msgstr "Doplnok pre rozšírené nastavenie siete..."
+
+#, fuzzy
+msgid "Extended setup"
+msgstr "Rozšírené nastavenie..."
 
 msgid "Extended setup..."
 msgstr "Rozšírené nastavenie..."
@@ -4857,12 +4934,20 @@ msgid "FTA"
 msgstr "Nekódované"
 
 #, fuzzy
+msgid "FTP"
+msgstr "Nekódované"
+
+#, fuzzy
 msgid "FTP connection failure"
 msgstr "Pripojenie LAN"
 
 #, fuzzy
 msgid "FTP passive mode"
 msgstr "Režim prenosu"
+
+#, fuzzy
+msgid "FTP setup"
+msgstr "Nastavenie PiP"
 
 msgid "Factory reset"
 msgstr "Továrenské nastavenia"
@@ -4973,6 +5058,10 @@ msgstr "Obľúbené"
 
 msgid "Feed URL: "
 msgstr ""
+
+#, fuzzy
+msgid "Feeds are not accessible, please try again later."
+msgstr "Žiadne dostupné aktualizácie. Skúste to neskôr."
 
 msgid "Fiji"
 msgstr "Fidži"
@@ -5605,6 +5694,13 @@ msgstr "Adresa IP"
 msgid "IP of fallback remote receiver"
 msgstr "IP adresa záložného vzdialeného prijímača"
 
+msgid "IPv6"
+msgstr ""
+
+#, fuzzy
+msgid "IPv6 support"
+msgstr "Podpora HLG"
+
 msgid "ISO file is too large for this filesystem!"
 msgstr "Súbor ISO je pre tento súborový systém príliš veľký!"
 
@@ -5725,6 +5821,19 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr "Časovač nekativity"
 
+msgid "Inadyn"
+msgstr ""
+
+msgid "Inadyn config is missing!"
+msgstr ""
+
+msgid "Inadyn log"
+msgstr ""
+
+#, fuzzy
+msgid "Inadyn setup"
+msgstr "Sprievodca nastavením"
+
 msgid "Include AIT in http streams"
 msgstr "Zahrnúť AIT (HbbTV) do http streamov"
 
@@ -5757,6 +5866,10 @@ msgstr "Indonézia"
 
 msgid "Indonesian"
 msgstr "Indonézsky"
+
+#, fuzzy
+msgid "Inetd recovery"
+msgstr "Okamžité nahrávanie"
 
 msgid "Info"
 msgstr "Info"
@@ -5818,6 +5931,10 @@ msgstr "Inicializovať"
 msgid "Initializing storage device..."
 msgstr "Inicializujem pamäťové zariadenie..."
 
+#, fuzzy
+msgid "Inotify monitoring"
+msgstr "motorizmus"
+
 msgid "Input"
 msgstr "Vstup"
 
@@ -5826,6 +5943,10 @@ msgstr "Vstup "
 
 msgid "Input Stream ID"
 msgstr "Vstupný Stream ID"
+
+#, fuzzy
+msgid "Input config file name:"
+msgstr "Dlhé názvy súborov"
 
 msgid "Input device setup"
 msgstr "Nastavenie vstupného zariadenia"
@@ -5875,6 +5996,10 @@ msgstr "Umiestnenie okamžitej nahrávky"
 
 msgid "Instant recording..."
 msgstr "Okamžité nahrávanie..."
+
+#, fuzzy
+msgid "Interface"
+msgstr "Rozhranie: "
 
 msgid "Interface: "
 msgstr "Rozhranie: "
@@ -6338,6 +6463,14 @@ msgstr "Luxembursko"
 msgid "Luxembourgish"
 msgstr "Luxembursky"
 
+#, fuzzy
+msgid "MAC address"
+msgstr "Adresa IP"
+
+#, fuzzy
+msgid "MAC address settings"
+msgstr "Upraviť nastavenia"
+
 msgid "MENU"
 msgstr ""
 
@@ -6529,6 +6662,19 @@ msgstr "Mexiko"
 msgid "Micronesia (Federated States of)"
 msgstr "Micronézia (Federated States of)"
 
+msgid "MiniDLNA"
+msgstr ""
+
+msgid "MiniDLNA config is missing!"
+msgstr ""
+
+msgid "MiniDLNA log"
+msgstr ""
+
+#, fuzzy
+msgid "MiniDLNA setup"
+msgstr "Nastavenie PiP"
+
 #, python-format
 msgid "Minimum age %d years"
 msgstr "Minimálny vek %d rokov"
@@ -6626,6 +6772,14 @@ msgstr "Čas pre beh motora vypršal"
 msgid "Mount"
 msgstr "Prípojný bod"
 
+#, fuzzy
+msgid "Mounts"
+msgstr "Prípojný bod"
+
+#, fuzzy
+msgid "Mounts setup"
+msgstr "Nastavenie Softcamu"
+
 msgid "Move"
 msgstr "Premiestniť"
 
@@ -6645,6 +6799,14 @@ msgstr "Prechádzať v zozname nadol"
 #, fuzzy
 msgid "Move down a page"
 msgstr "nadol na poslednú položku"
+
+#, fuzzy
+msgid "Move down to last entry"
+msgstr "nadol na poslednú položku"
+
+#, fuzzy
+msgid "Move down to next entry"
+msgstr "nadol na nasledujúcu položku"
 
 msgid "Move east"
 msgstr "Pootočiť východne"
@@ -6686,6 +6848,14 @@ msgstr "Otočené na východziu pozíciu"
 
 msgid "Move up a page"
 msgstr ""
+
+#, fuzzy
+msgid "Move up to first entry"
+msgstr "nahor na prvú položku"
+
+#, fuzzy
+msgid "Move up to previous entry"
+msgstr "nahor na predchádzajúcu položku"
 
 msgid "Move west"
 msgstr "Pootočiť západne"
@@ -6820,6 +6990,14 @@ msgstr "vynútiť zakázanie"
 msgid "NEXT"
 msgstr "NASL."
 
+#, fuzzy
+msgid "NFS"
+msgstr "INS"
+
+#, fuzzy
+msgid "NFS setup"
+msgstr "Nastavenie"
+
 msgid "NIM & Type"
 msgstr "NIM a Typ"
 
@@ -6882,6 +7060,10 @@ msgstr "ID siete"
 msgid "Network Info:"
 msgstr "Info siete:"
 
+#, fuzzy
+msgid "Network MAC settings"
+msgstr "Aktivovať nastavenia siete"
+
 msgid "Network configuration"
 msgstr "Nastavenie siete"
 
@@ -6933,6 +7115,10 @@ msgstr "Nová Kaledónia"
 
 msgid "New Zealand"
 msgstr "Nový Zéland"
+
+#, fuzzy
+msgid "New password"
+msgstr "Heslo"
 
 msgid "News"
 msgstr ""
@@ -7375,6 +7561,16 @@ msgstr "Otvoriť nastavenia tunera "
 msgid "Open the movie list"
 msgstr "Otvoriť zoznam filmov"
 
+msgid "OpenVPN"
+msgstr ""
+
+msgid "OpenVPN log"
+msgstr ""
+
+#, fuzzy
+msgid "OpenVPN setup"
+msgstr "Otvoriť nastavenia tunera "
+
 msgid "Options disable timer"
 msgstr "Možnosti zakázať časovač"
 
@@ -7511,6 +7707,14 @@ msgstr "Heslo"
 
 #, fuzzy
 msgid "Password (httpwd)"
+msgstr "Heslo"
+
+#, fuzzy
+msgid "Password changed."
+msgstr "Heslo"
+
+#, fuzzy
+msgid "Password setup"
 msgstr "Heslo"
 
 msgid "Pause"
@@ -7835,6 +8039,10 @@ msgstr "Prosím čakajte (aktualizujú sa balíčky)"
 msgid "Please wait for activation of your network configuration..."
 msgstr "Prosím čakajte na aktivovanie nastavenia siete..."
 
+#, fuzzy
+msgid "Please wait while feeds state is being checked."
+msgstr "Čakajte, kým prebieha vyhľadávanie..."
+
 msgid "Please wait while scanning is in progress..."
 msgstr "Čakajte, kým prebieha vyhľadávanie..."
 
@@ -8078,6 +8286,10 @@ msgstr "Stlačením OK zvolíte satelity"
 msgid "Press OK to select/deselect a CAId."
 msgstr "Stlačením OK zvoľte alebo zrušte CAId."
 
+#, fuzzy
+msgid "Press OK to set the MAC address."
+msgstr "Stlačte OK pre zmenu nastavení."
+
 msgid "Press OK to toggle the selection"
 msgstr "Stlačte OK pre prepnutie výberu"
 
@@ -8258,6 +8470,10 @@ msgstr "Ram disk"
 msgid "Random"
 msgstr "Náhodne"
 
+#, fuzzy
+msgid "Random password"
+msgstr "Heslo"
+
 #, python-format
 msgid "Rating defined by broadcaster - %d"
 msgstr "Hodnotenie poskytnuté vysielateľom - %d"
@@ -8278,9 +8494,17 @@ msgstr ""
 msgid "Ready to install \"%s\" ?"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Ready to install %s ?"
+msgstr "Zrušiť inštaláciu"
+
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Ready to remove %s ?"
+msgstr "Návrat do zoznamu filmov"
 
 msgid "Really close without saving settings?"
 msgstr "Naozaj zatvoriť bez uloženia nastavení?"
@@ -8363,6 +8587,14 @@ msgstr "Nahrávky"
 
 msgid "Recordings always have priority"
 msgstr "Nahrávanie má vždy prednosť"
+
+#, fuzzy
+msgid "Recover"
+msgstr "Nahrávanie"
+
+#, fuzzy
+msgid "Recover inetd"
+msgstr "Nastavenie nahrávania"
 
 msgid "Red"
 msgstr "Červená"
@@ -8467,6 +8699,10 @@ msgstr "Odstránenie položiek z koša po (dni)"
 
 msgid "Remove plugins"
 msgstr "Odstrániť doplnky"
+
+#, fuzzy
+msgid "Remove service"
+msgstr "Žiadna stanica"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
@@ -8617,6 +8853,14 @@ msgid "Restore cuts"
 msgstr "Obnoviť zálohy"
 
 #, fuzzy
+msgid "Restore inetd"
+msgstr "Obnoviť zálohy"
+
+#, fuzzy
+msgid "Restore inetd.conf"
+msgstr "Reštartovať sieť"
+
+#, fuzzy
 msgid "Restore previous cuts..."
 msgstr "Návrat na predchádzajúcu stanicu"
 
@@ -8725,6 +8969,16 @@ msgstr "Rwanda"
 msgid "S-Video"
 msgstr "S-Video"
 
+msgid "SABnzbd"
+msgstr ""
+
+msgid "SABnzbd Setup"
+msgstr ""
+
+#, fuzzy
+msgid "SABnzbd setup"
+msgstr "Sprievodca nastavením"
+
 msgid "SCAN"
 msgstr ""
 
@@ -8807,6 +9061,13 @@ msgstr "Svätý Pierre a Miquelon"
 
 msgid "Saint Vincent and the Grenadines"
 msgstr "Svätý Vincent a Grenadines"
+
+msgid "Samba log"
+msgstr ""
+
+#, fuzzy
+msgid "Samba setup"
+msgstr "Nastavenie Softcamu"
 
 msgid "Same as stream"
 msgstr "Rovnaké ako stream"
@@ -9046,6 +9307,10 @@ msgstr "Hľadať dopredu"
 msgid "Seek forward (enter time)"
 msgstr "Hľadať dopredu (zadajte čas)"
 
+#, fuzzy
+msgid "Seems a background update check is in progress, please try again later."
+msgstr "Žiadne dostupné aktualizácie. Skúste to neskôr."
+
 msgid "Select"
 msgstr "Zvoliť"
 
@@ -9188,6 +9453,10 @@ msgstr "Vyberte súbory na zálohovanie."
 msgid "Select files/folders to backup"
 msgstr "Vyberte súbory a adresáre na zálohovanie"
 
+#, fuzzy
+msgid "Select folders"
+msgstr "Zvoliť cieľový adresár"
+
 msgid "Select function"
 msgstr "Zvoliť funkciu"
 
@@ -9211,6 +9480,10 @@ msgstr "Zvoľte rozhranie"
 
 msgid "Select location"
 msgstr "Zvoľte umiestnenie"
+
+#, fuzzy
+msgid "Select menu entry"
+msgstr "zvoliť položku menu"
 
 msgid "Select movie"
 msgstr "Vybrať film"
@@ -9388,6 +9661,10 @@ msgid "Serbian"
 msgstr "Srbčina"
 
 #, fuzzy
+msgid "Serial"
+msgstr "Alžírsko"
+
+#, fuzzy
 msgid "Serv.Name"
 msgstr "Názov služby"
 
@@ -9548,6 +9825,14 @@ msgstr "Nastavte opakovanie sekvencie pokiaľ to vyžaduje anténny systém. Pok
 msgid "Set startup service"
 msgstr "Nastaviť stanicu po spustení"
 
+#, fuzzy
+msgid "Set system"
+msgstr "Systém"
+
+#, fuzzy
+msgid "Set the MAC address of your receiver.\n"
+msgstr "Vojdite, ak sa nachádzate vo východnej alebo západnej hemisfére."
+
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "Nastaviť User ID rozhrania OpenWeb záložného tuneru"
 
@@ -9629,6 +9914,14 @@ msgstr "Nastavte si pozicionér"
 msgid "Seychelles"
 msgstr "Seyšeli"
 
+#, fuzzy
+msgid "Share folder"
+msgstr "Zvoliť cieľový adresár"
+
+#, fuzzy
+msgid "Shares"
+msgstr "Ostrosť"
+
 msgid "Sharpness"
 msgstr "Ostrosť"
 
@@ -9676,10 +9969,6 @@ msgstr "zobraziť alternatívy"
 
 msgid "Show InfoBar"
 msgstr "Zobraziť informačný panel"
-
-#, fuzzy
-msgid "Show Log"
-msgstr "Zobraziť info"
 
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
@@ -9807,6 +10096,10 @@ msgstr "Zobraziť posledné zmeny"
 
 msgid "Show latest upgrade log"
 msgstr "Zobraziť protokol z poslednej aktualizácie"
+
+#, fuzzy
+msgid "Show log"
+msgstr "Zobraziť info"
 
 msgid "Show menu or plugin numbers"
 msgstr "Zobraziť čísla menu alebo doplnkov"
@@ -10550,6 +10843,9 @@ msgstr "Stream"
 msgid "Streaming clients info"
 msgstr "Info o streamujúcich klientoch"
 
+msgid "Strict DLNA"
+msgstr ""
+
 msgid "Strongest position"
 msgstr "Najsilnejšia pozícia"
 
@@ -10609,6 +10905,9 @@ msgstr "Nastavenie titulkov"
 
 msgid "Succeeded:"
 msgstr "Uspelo:"
+
+msgid "Successfully restored /etc/inetd.conf!"
+msgstr ""
 
 msgid "Sudan"
 msgstr "Sudán"
@@ -10830,6 +11129,21 @@ msgstr "Voľba horizontálneho rozlíšenia:"
 msgid "Teletext subtitle color"
 msgstr "Farba teletextových titulkov"
 
+msgid "Telnet"
+msgstr ""
+
+#, fuzzy
+msgid "Telnet interface"
+msgstr "Zvoľte rozhranie"
+
+#, fuzzy
+msgid "Telnet port"
+msgstr "zimné športy"
+
+#, fuzzy
+msgid "Telnet setup"
+msgstr "Nastavenie siete"
+
 msgid "Temperature and fan control"
 msgstr "Teplota a nastavenie ventilátora"
 
@@ -10979,6 +11293,9 @@ msgstr ""
 "Ak vidíte hroty všetkých ôsmych šípiek, potom má váš TV vypnuté roztiahnutie obrazu.\n"
 "\n"
 "Testovací vzor od TigerDave - www.tigerdave.com/ht_menu.htm"
+
+msgid "The password can not be blank!"
+msgstr ""
 
 #, python-format
 msgid "The path %s already exists."
@@ -11335,6 +11652,10 @@ msgstr "Náhľady"
 msgid "Thursday"
 msgstr "Štvrtok"
 
+#, fuzzy
+msgid "TiVo support"
+msgstr "nepodporované"
+
 msgid "Time"
 msgstr "Čas"
 
@@ -11353,6 +11674,12 @@ msgid "Time style"
 msgstr "Časová mierka"
 
 msgid "Time to execute command or script"
+msgstr ""
+
+msgid "Time update in minutes"
+msgstr ""
+
+msgid "Time update in minutes:"
 msgstr ""
 
 msgid "Timer"
@@ -11700,6 +12027,9 @@ msgstr "Ukrajinčina"
 msgid "Unable to backup settings as the AutoBackup plugin is missing, do you want to continue?"
 msgstr "Nie je možné zálohovať nastavenia z dôvodu chýbajúceho doplnku AutoBackup. Chcete pokračovať?"
 
+msgid "Unable to change password!"
+msgstr ""
+
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr "Nebolo možné vytvoriť požadované zložky na disku (napr. USB kľúč alebo pevný disk) - skontrolujte prosím médium a skúste to znovu!"
 
@@ -11996,6 +12326,10 @@ msgstr "Používa sa tuner %s"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "Zvyčajne, ak je jazyk titulkov rovnaký ako jazyk zvuku, nebudú použité titulky. Povoľte toto nastavenie, aby sa tieto titulky použili ."
 
+#, fuzzy
+msgid "Utilities"
+msgstr "Schopnosti: "
+
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
@@ -12278,6 +12612,10 @@ msgstr "Sledovať filmy..."
 
 msgid "Watch recordings..."
 msgstr "Sledovať nahrávky..."
+
+#, fuzzy
+msgid "Web interface"
+msgstr "Použiť sieťové rozhranie"
 
 msgid "Wed"
 msgstr "St"
@@ -12621,6 +12959,10 @@ msgstr "Zápis zlyhal!"
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Zapísať do /tmp/positionersetup.log"
 
+#, fuzzy
+msgid "XBox support"
+msgstr "nepodporované"
+
 msgid "YCbCr420"
 msgstr "YCbCr420"
 
@@ -12785,6 +13127,9 @@ msgstr "Nezvolili ste stanicu, z ktorej sa má nahrávať."
 msgid "You have to wait %s!"
 msgstr "Musíte čakať %s!"
 
+msgid "You must set a root password in order to be able to use network services, such as FTP, telnet or ssh."
+msgstr ""
+
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Prepnite na stanicu %s (%s - '%s')\n"
@@ -12830,6 +13175,9 @@ msgstr "Váš prijímač dokáže využiť tónovú amplitúdu. Pre viac inform�
 msgid "Your receiver does not have an internet connection"
 msgstr "Váš prijímač nemá pripojenie k internetu"
 
+msgid "Your receiver is not connected to the internet, please check your network settings and try again."
+msgstr ""
+
 msgid ""
 "Your receiver is now ready to be used.\n"
 "\n"
@@ -12862,6 +13210,18 @@ msgstr "Prijímač sa vypína..."
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 msgstr "Váš prijímač môže byť teraz nepoužiteľný. Pred reštartom prijímača nájdite v manuáli ďalšiu pomoc."
+
+#, fuzzy, python-format
+msgid ""
+"Your receiver will be restarted after the installation of service\n"
+"Ready to install %s ?"
+msgstr "Váš prijímač bude reštartovaný po stlačení tlačidla OK na diaľkovom ovládači."
+
+#, fuzzy
+msgid ""
+"Your receiver will be restarted after the removal of service\n"
+"Do you want to remove now ?"
+msgstr "Váš prijímač bude reštartovaný po stlačení tlačidla OK na diaľkovom ovládači."
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
 msgstr "Prijímač prejde do pohotovostného režimu kvôli nastaveniu časovača."
@@ -13876,6 +14236,10 @@ msgstr "Ak budete pripravený, stlačte tlačidlo OK."
 msgid "please wait, loading picture..."
 msgstr "Čakajte prosím, načítavam obraz..."
 
+#, fuzzy
+msgid "please wait..."
+msgstr "Prosím čakajte..."
+
 msgid "popular culture/traditional arts"
 msgstr "populárna kultúra/tradičné umenie"
 
@@ -14272,6 +14636,29 @@ msgstr "áno"
 
 msgid "type"
 msgstr "typ"
+
+#, fuzzy
+msgid "uShare"
+msgstr "Ostrosť"
+
+msgid "uShare config is missing!"
+msgstr ""
+
+#, fuzzy
+msgid "uShare log"
+msgstr "Vymazať log"
+
+#, fuzzy
+msgid "uShare name"
+msgstr "Názov stanice"
+
+#, fuzzy
+msgid "uShare port"
+msgstr "vodné športy"
+
+#, fuzzy
+msgid "uShare setup"
+msgstr "Sprievodca nastavením"
 
 msgid "ufs912"
 msgstr ""

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-24 22:23+0330\n"
+"POT-Creation-Date: 2019-09-25 23:33+0330\n"
 "PO-Revision-Date: 2013-10-23 19:15+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -1196,9 +1196,6 @@ msgstr ""
 msgid "A"
 msgstr ""
 
-msgid "A background update check is in progress, please wait a few minutes and try again."
-msgstr ""
-
 #
 #, python-format
 msgid ""
@@ -1316,6 +1313,19 @@ msgstr "AC3 blanding"
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
+msgid "AFP"
+msgstr ""
+
+#
+#, fuzzy
+msgid "AFP Setup"
+msgstr "Innstilling"
+
+#
+#, fuzzy
+msgid "AFP setup"
+msgstr "PiP-bilde i bilde oppsett"
+
 msgid "AGC:"
 msgstr ""
 
@@ -1367,8 +1377,18 @@ msgstr "Tilgangspunkt:"
 msgid "Activate HbbTV (Redbutton)"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Activate IPv6 configuration"
+msgstr "Aktivere gjeldende konfigurasjon"
+
 msgid "Activate Keymap now?"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Activate MAC address configuration"
+msgstr "Aktivere gjeldende konfigurasjon"
 
 #
 msgid "Activate Picture in Picture"
@@ -1553,6 +1573,9 @@ msgid "Album"
 msgstr "Album"
 
 msgid "Algeria"
+msgstr ""
+
+msgid "Alias"
 msgstr ""
 
 msgid "Alignment of events"
@@ -2367,6 +2390,9 @@ msgstr "CI tildeling"
 msgid "CI slot: "
 msgstr ""
 
+msgid "CIFS/Samba"
+msgstr ""
+
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2661,6 +2687,11 @@ msgid "Check the internet connection again"
 msgstr "Undersøk internett forbindelsen igjen"
 
 #
+#, fuzzy
+msgid "Checking feeds"
+msgstr "Undersøker filsystem..."
+
+#
 msgid "Checking filesystem..."
 msgstr "Undersøker filsystem..."
 
@@ -2909,6 +2940,9 @@ msgid "Compress"
 msgstr "Komplett"
 
 msgid "Config Scan Details"
+msgstr ""
+
+msgid "Config file name (ok to change):"
 msgstr ""
 
 msgid "Config resolution of pictures"
@@ -3503,11 +3537,6 @@ msgstr "Nyheter aktuelle saker"
 msgid "Current CEC address"
 msgstr "Gjeldende CEC adresse"
 
-#
-#, fuzzy
-msgid "Current Status:"
-msgstr "Nåværende innstilling:"
-
 msgid "Current device: "
 msgstr "Gjeldende enhet:"
 
@@ -3600,6 +3629,10 @@ msgstr ""
 #
 msgid "DHCP"
 msgstr ""
+
+#, fuzzy
+msgid "DLNA support"
+msgstr "ikke støttet"
 
 msgid "DTS downmix"
 msgstr ""
@@ -4025,6 +4058,11 @@ msgstr "Gjenkjent lagring:"
 msgid "Detected NIMs:"
 msgstr "Gjenkjent modul:"
 
+#
+#, fuzzy
+msgid "Device"
+msgstr "Kanal"
+
 msgid "Devicename:"
 msgstr "Enhetsnavn:"
 
@@ -4251,6 +4289,11 @@ msgstr "Er du sikker på at du vil slette %s"
 #
 msgid "Do you want this?"
 msgstr "Ønsker du dette?"
+
+msgid ""
+"Do you want to also install samba client ?\n"
+"This allows you to mount your windows shares on this device."
+msgstr ""
 
 msgid "Do you want to autorestore settings?"
 msgstr ""
@@ -4623,6 +4666,10 @@ msgstr ""
 msgid "Enable multiple bouquets"
 msgstr "Aktivere flere kanallister"
 
+#, fuzzy
+msgid "Enable or disable IPv6"
+msgstr "Aktivere freesat EPG"
+
 msgid "Enable parental protection"
 msgstr ""
 
@@ -4653,6 +4700,13 @@ msgstr ""
 
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
+
+msgid "Enable/Disable IPv6"
+msgstr ""
+
+#, fuzzy
+msgid "Enable/Disable IPv6 support of your receiver.\n"
+msgstr "Endre mottakerens navneserverinnstilling.\n"
 
 #
 msgid "Enabled"
@@ -4955,7 +5009,22 @@ msgid "Exit EPG"
 msgstr "Avslutte EPG"
 
 #
+#, fuzzy
+msgid "Exit IPv6 configuration"
+msgstr "Avslutte innstilling for navnetjener"
+
+#
+#, fuzzy
+msgid "Exit MAC address configuration"
+msgstr "Avslutte innstilling for navnetjener"
+
+#
 msgid "Exit editor"
+msgstr "Avslutte redigerer"
+
+#
+#, fuzzy
+msgid "Exit inetd recovery"
 msgstr "Avslutte redigerer"
 
 msgid "Exit input device selection."
@@ -4968,6 +5037,11 @@ msgstr "Avslutte mediespiller?"
 #
 msgid "Exit mediaplayer"
 msgstr "Avslutte mediespiller"
+
+#
+#, fuzzy
+msgid "Exit mounts setup menu"
+msgstr "avslutt nettverksmeny"
 
 msgid "Exit movie list"
 msgstr "Avslutte opptaksliste"
@@ -4986,6 +5060,11 @@ msgstr "Avslutte nettverksgrensesnitt"
 #
 msgid "Exit network wizard"
 msgstr "Avslutte nettverksveiviseren"
+
+#
+#, fuzzy
+msgid "Exit networkadapter setup menu"
+msgstr "avslutt nettverksmeny"
 
 #
 msgid "Exit the wizard"
@@ -5028,8 +5107,18 @@ msgid "Extended Software Plugin"
 msgstr "Utvidet programvaretillegg"
 
 #
+#, fuzzy
+msgid "Extended network setup plugin"
+msgstr "Utvidet innstilling for nettverksoppsett..."
+
+#
 msgid "Extended network setup plugin..."
 msgstr "Utvidet innstilling for nettverksoppsett..."
+
+#
+#, fuzzy
+msgid "Extended setup"
+msgstr "Utvidet oppsett..."
 
 #
 msgid "Extended setup..."
@@ -5114,6 +5203,9 @@ msgstr "Linuxkjerne versjon: "
 msgid "FTA"
 msgstr ""
 
+msgid "FTP"
+msgstr ""
+
 #, fuzzy
 msgid "FTP connection failure"
 msgstr "LAN oppkobling"
@@ -5122,6 +5214,11 @@ msgstr "LAN oppkobling"
 #, fuzzy
 msgid "FTP passive mode"
 msgstr "Sendingstype"
+
+#
+#, fuzzy
+msgid "FTP setup"
+msgstr "PiP-bilde i bilde oppsett"
 
 msgid "Factory reset"
 msgstr "Gjenopprette mottaker"
@@ -5234,6 +5331,10 @@ msgstr "Favorittliste"
 
 msgid "Feed URL: "
 msgstr ""
+
+#, fuzzy
+msgid "Feeds are not accessible, please try again later."
+msgstr "Det finnes ingen nye oppdateringer. Vennligst prøv igjen senere."
 
 msgid "Fiji"
 msgstr ""
@@ -5917,6 +6018,13 @@ msgstr "IP adresse"
 msgid "IP of fallback remote receiver"
 msgstr ""
 
+msgid "IPv6"
+msgstr ""
+
+#, fuzzy
+msgid "IPv6 support"
+msgstr "ikke støttet"
+
 #
 msgid "ISO file is too large for this filesystem!"
 msgstr "ISO-fil er for stor til dette filsystemet!"
@@ -6040,6 +6148,20 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr "Inaktivitets tidtaker"
 
+msgid "Inadyn"
+msgstr ""
+
+msgid "Inadyn config is missing!"
+msgstr ""
+
+msgid "Inadyn log"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Inadyn setup"
+msgstr "Videooppsett"
+
 msgid "Include AIT in http streams"
 msgstr "Inkludere AIT i http dataprotokoll"
 
@@ -6075,6 +6197,9 @@ msgid "Indonesia"
 msgstr ""
 
 msgid "Indonesian"
+msgstr ""
+
+msgid "Inetd recovery"
 msgstr ""
 
 #
@@ -6150,6 +6275,10 @@ msgstr "Igangkjøre"
 msgid "Initializing storage device..."
 msgstr "Igangkjører lagringsenhet ..."
 
+#, fuzzy
+msgid "Inotify monitoring"
+msgstr "kjører"
+
 #
 msgid "Input"
 msgstr "Inngang"
@@ -6161,6 +6290,10 @@ msgstr "Inngang"
 
 msgid "Input Stream ID"
 msgstr ""
+
+#, fuzzy
+msgid "Input config file name:"
+msgstr "Lange filnavn"
 
 msgid "Input device setup"
 msgstr "Inndata oppsett"
@@ -6219,6 +6352,11 @@ msgstr "Plassering for direkteopptak"
 #
 msgid "Instant recording..."
 msgstr "Direkte opptak..."
+
+#
+#, fuzzy
+msgid "Interface"
+msgstr "Grensesnitt:"
 
 #
 msgid "Interface: "
@@ -6739,6 +6877,15 @@ msgstr "Luxemburgsk"
 msgid "Luxembourgish"
 msgstr "Luxemburgsk"
 
+#
+#, fuzzy
+msgid "MAC address"
+msgstr "IP adresse"
+
+#, fuzzy
+msgid "MAC address settings"
+msgstr "Redigere innstillinger"
+
 msgid "MENU"
 msgstr ""
 
@@ -6952,6 +7099,20 @@ msgstr ""
 msgid "Micronesia (Federated States of)"
 msgstr ""
 
+msgid "MiniDLNA"
+msgstr ""
+
+msgid "MiniDLNA config is missing!"
+msgstr ""
+
+msgid "MiniDLNA log"
+msgstr ""
+
+#
+#, fuzzy
+msgid "MiniDLNA setup"
+msgstr "PiP-bilde i bilde oppsett"
+
 #, python-format
 msgid "Minimum age %d years"
 msgstr "Minimumsalder %d år"
@@ -7066,6 +7227,14 @@ msgstr ""
 msgid "Mount"
 msgstr "Montere"
 
+#, fuzzy
+msgid "Mounts"
+msgstr "Montere"
+
+#, fuzzy
+msgid "Mounts setup"
+msgstr "Programvare oppsett"
+
 msgid "Move"
 msgstr "Kjøre"
 
@@ -7088,6 +7257,16 @@ msgstr "Gå nedover listen"
 #, fuzzy
 msgid "Move down a page"
 msgstr "gå til til siste oppføring"
+
+#
+#, fuzzy
+msgid "Move down to last entry"
+msgstr "gå til til siste oppføring"
+
+#
+#, fuzzy
+msgid "Move down to next entry"
+msgstr "gå til til neste oppføring"
 
 #
 msgid "Move east"
@@ -7131,6 +7310,16 @@ msgstr "Flyttet til startposisjon"
 
 msgid "Move up a page"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Move up to first entry"
+msgstr "gå til til første oppføring"
+
+#
+#, fuzzy
+msgid "Move up to previous entry"
+msgstr "gå til til forrige oppføring"
 
 #
 msgid "Move west"
@@ -7280,6 +7469,14 @@ msgstr "deaktivert"
 msgid "NEXT"
 msgstr "NESTE"
 
+msgid "NFS"
+msgstr ""
+
+#
+#, fuzzy
+msgid "NFS setup"
+msgstr "Innstilling"
+
 msgid "NIM & Type"
 msgstr ""
 
@@ -7352,6 +7549,11 @@ msgstr "Nettverks ID"
 msgid "Network Info:"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Network MAC settings"
+msgstr "Aktivere nettverksinnstillinger"
+
 msgid "Network configuration"
 msgstr ""
 
@@ -7411,6 +7613,9 @@ msgid "New Caledonia"
 msgstr ""
 
 msgid "New Zealand"
+msgstr ""
+
+msgid "New password"
 msgstr ""
 
 msgid "News"
@@ -7908,6 +8113,17 @@ msgstr ""
 msgid "Open the movie list"
 msgstr "Åpne spillisten"
 
+msgid "OpenVPN"
+msgstr ""
+
+msgid "OpenVPN log"
+msgstr ""
+
+#
+#, fuzzy
+msgid "OpenVPN setup"
+msgstr "PiP-bilde i bilde oppsett"
+
 msgid "Options disable timer"
 msgstr ""
 
@@ -8052,6 +8268,14 @@ msgstr ""
 
 msgid "Password (httpwd)"
 msgstr ""
+
+msgid "Password changed."
+msgstr ""
+
+#
+#, fuzzy
+msgid "Password setup"
+msgstr "Videooppsett"
 
 #
 msgid "Pause"
@@ -8417,6 +8641,10 @@ msgstr "Vennligst vent (oppdaterer pakker)"
 msgid "Please wait for activation of your network configuration..."
 msgstr "Vennligst vent til nettverksaktivering er klar..."
 
+#, fuzzy
+msgid "Please wait while feeds state is being checked."
+msgstr "Vennligst vent mens søking pågår..."
+
 msgid "Please wait while scanning is in progress..."
 msgstr "Vennligst vent mens søking pågår..."
 
@@ -8689,6 +8917,10 @@ msgstr ""
 msgid "Press OK to select/deselect a CAId."
 msgstr "Trykk OK for å velge/fjerne en CAId."
 
+#, fuzzy
+msgid "Press OK to set the MAC address."
+msgstr "Trykk OK for å endre innstillinger."
+
 msgid "Press OK to toggle the selection"
 msgstr ""
 
@@ -8886,6 +9118,9 @@ msgstr ""
 msgid "Random"
 msgstr "Tilfeldig"
 
+msgid "Random password"
+msgstr ""
+
 #, python-format
 msgid "Rating defined by broadcaster - %d"
 msgstr "Rangering definert av kringkasteren -%d"
@@ -8906,9 +9141,18 @@ msgstr ""
 msgid "Ready to install \"%s\" ?"
 msgstr ""
 
+#
+#, fuzzy, python-format
+msgid "Ready to install %s ?"
+msgstr "Angre installering"
+
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Ready to remove %s ?"
+msgstr "Gå tilbake til spilliste"
 
 #
 msgid "Really close without saving settings?"
@@ -8999,6 +9243,15 @@ msgstr "Opptak innstilling"
 
 msgid "Recordings always have priority"
 msgstr "Opptak har alltid prioritet"
+
+#, fuzzy
+msgid "Recover"
+msgstr "Opptaks innstilling"
+
+#
+#, fuzzy
+msgid "Recover inetd"
+msgstr "Tar opp"
 
 msgid "Red"
 msgstr ""
@@ -9114,6 +9367,11 @@ msgstr "Tøm papirkurven etter (dager)"
 #
 msgid "Remove plugins"
 msgstr "Slette programtillegg"
+
+#
+#, fuzzy
+msgid "Remove service"
+msgstr "Ingen service"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
@@ -9287,6 +9545,15 @@ msgstr "Gjenopprette sikkerhetskopier"
 msgid "Restore cuts"
 msgstr "Gjenopprette sikkerhetskopier"
 
+#
+#, fuzzy
+msgid "Restore inetd"
+msgstr "Gjenopprette sikkerhetskopier"
+
+#, fuzzy
+msgid "Restore inetd.conf"
+msgstr "Starte nettverk på nytt"
+
 #, fuzzy
 msgid "Restore previous cuts..."
 msgstr "Gå tilbake til forrige kanal"
@@ -9409,6 +9676,17 @@ msgstr ""
 msgid "S-Video"
 msgstr ""
 
+msgid "SABnzbd"
+msgstr ""
+
+msgid "SABnzbd Setup"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SABnzbd setup"
+msgstr "Videooppsett"
+
 msgid "SCAN"
 msgstr ""
 
@@ -9497,6 +9775,13 @@ msgstr ""
 
 msgid "Saint Vincent and the Grenadines"
 msgstr ""
+
+msgid "Samba log"
+msgstr ""
+
+#, fuzzy
+msgid "Samba setup"
+msgstr "Programvare oppsett"
 
 #
 #, fuzzy
@@ -9755,6 +10040,10 @@ msgstr "Søk framover"
 msgid "Seek forward (enter time)"
 msgstr "Søk framover (skriv inn tid)"
 
+#, fuzzy
+msgid "Seems a background update check is in progress, please try again later."
+msgstr "Det finnes ingen nye oppdateringer. Vennligst prøv igjen senere."
+
 #
 msgid "Select"
 msgstr "Velg"
@@ -9912,6 +10201,11 @@ msgstr "Velg filer for sikkerhetskopiering."
 msgid "Select files/folders to backup"
 msgstr "Velg filer/mapper for sikkerhetskopiering"
 
+#
+#, fuzzy
+msgid "Select folders"
+msgstr "Velg målmappe"
+
 #, fuzzy
 msgid "Select function"
 msgstr "Velg sikkerhetskopi"
@@ -9939,6 +10233,11 @@ msgstr "Velg grensesnitt"
 
 msgid "Select location"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Select menu entry"
+msgstr "velg meny"
 
 msgid "Select movie"
 msgstr "Velg opptak"
@@ -10128,6 +10427,9 @@ msgstr "Serbisk"
 msgid "Serbian"
 msgstr "Serbisk"
 
+msgid "Serial"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Serv.Name"
@@ -10302,6 +10604,15 @@ msgstr ""
 msgid "Set startup service"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Set system"
+msgstr "System"
+
+#, fuzzy
+msgid "Set the MAC address of your receiver.\n"
+msgstr "Test nettverksinnstillinger til mottakeren.\n"
+
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr ""
 
@@ -10387,6 +10698,16 @@ msgid "Seychelles"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Share folder"
+msgstr "Velg målmappe"
+
+#
+#, fuzzy
+msgid "Shares"
+msgstr "Skarphet"
+
+#
 msgid "Sharpness"
 msgstr "Skarphet"
 
@@ -10441,11 +10762,6 @@ msgstr "vis alternativer"
 
 msgid "Show InfoBar"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Show Log"
-msgstr "Vis info"
 
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
@@ -10585,6 +10901,11 @@ msgstr ""
 
 msgid "Show latest upgrade log"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Show log"
+msgstr "Vis info"
 
 msgid "Show menu or plugin numbers"
 msgstr ""
@@ -11405,6 +11726,9 @@ msgstr "Datastrøm"
 msgid "Streaming clients info"
 msgstr ""
 
+msgid "Strict DLNA"
+msgstr ""
+
 msgid "Strongest position"
 msgstr "Sterkeste posisjon"
 
@@ -11465,6 +11789,9 @@ msgid "Subtitles Settings"
 msgstr ""
 
 msgid "Succeeded:"
+msgstr ""
+
+msgid "Successfully restored /etc/inetd.conf!"
 msgstr ""
 
 msgid "Sudan"
@@ -11706,6 +12033,23 @@ msgstr "Vennligst velg en underkanal"
 msgid "Teletext subtitle color"
 msgstr "Tekst-TV undertekstfarge"
 
+msgid "Telnet"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Telnet interface"
+msgstr "Velg grensesnitt"
+
+#, fuzzy
+msgid "Telnet port"
+msgstr "Vintersport"
+
+#
+#, fuzzy
+msgid "Telnet setup"
+msgstr "Nettverksinstillinger"
+
 #
 msgid "Temperature and fan control"
 msgstr "Temperatur og viftestyring"
@@ -11846,6 +12190,9 @@ msgid ""
 "If you see the tips of all eight arrowheads, then your TV has overscan disabled.\n"
 "\n"
 "Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
+msgstr ""
+
+msgid "The password can not be blank!"
 msgstr ""
 
 #
@@ -12220,6 +12567,10 @@ msgstr "Miniatyrbilder"
 msgid "Thursday"
 msgstr "Torsdag"
 
+#, fuzzy
+msgid "TiVo support"
+msgstr "ikke støttet"
+
 #
 msgid "Time"
 msgstr "Tid"
@@ -12241,6 +12592,12 @@ msgid "Time style"
 msgstr "Tids måler"
 
 msgid "Time to execute command or script"
+msgstr ""
+
+msgid "Time update in minutes"
+msgstr ""
+
+msgid "Time update in minutes:"
 msgstr ""
 
 #
@@ -12640,6 +12997,9 @@ msgstr ""
 msgid "Unable to backup settings as the AutoBackup plugin is missing, do you want to continue?"
 msgstr ""
 
+msgid "Unable to change password!"
+msgstr ""
+
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
@@ -12968,6 +13328,9 @@ msgstr "Bruker tuner %s"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "Når undertekstspråket er det samme som lydspråket vil tekstingen normalt ikke brukes. Aktiver dette for å tillate bruk av undertekstene."
 
+msgid "Utilities"
+msgstr ""
+
 msgid "Uzbekistan"
 msgstr ""
 
@@ -13278,6 +13641,11 @@ msgstr "Se filmer..."
 
 msgid "Watch recordings..."
 msgstr "Se på opptak..."
+
+#
+#, fuzzy
+msgid "Web interface"
+msgstr "Bruk nettverkskort"
 
 #
 msgid "Wed"
@@ -13637,6 +14005,10 @@ msgstr "Skriving feilet!"
 msgid "Write to /tmp/positionersetup.log"
 msgstr ""
 
+#, fuzzy
+msgid "XBox support"
+msgstr "ikke støttet"
+
 msgid "YCbCr420"
 msgstr ""
 
@@ -13804,6 +14176,9 @@ msgstr "Du har ikke valgt kanal for opptak."
 msgid "You have to wait %s!"
 msgstr "Du må vente %s!"
 
+msgid "You must set a root password in order to be able to use network services, such as FTP, telnet or ssh."
+msgstr ""
+
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
@@ -13852,6 +14227,9 @@ msgstr ""
 msgid "Your receiver does not have an internet connection"
 msgstr "Mottakeren mangler internettforbindelse"
 
+msgid "Your receiver is not connected to the internet, please check your network settings and try again."
+msgstr ""
+
 msgid ""
 "Your receiver is now ready to be used.\n"
 "\n"
@@ -13884,6 +14262,18 @@ msgstr "Mottakeren blir slått av"
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 msgstr "Mottakeren kan være ubrukelig. Slå opp i håndboken for å få hjelp før omstart av mottakeren."
+
+#, fuzzy, python-format
+msgid ""
+"Your receiver will be restarted after the installation of service\n"
+"Ready to install %s ?"
+msgstr "Mottakeren starter på nytt når du har trykket OK på fjernkontrollen."
+
+#, fuzzy
+msgid ""
+"Your receiver will be restarted after the removal of service\n"
+"Do you want to remove now ?"
+msgstr "Mottakeren starter på nytt når du har trykket OK på fjernkontrollen."
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
 msgstr "Mottakeren vil nå bli slått av etter fastsatt tidtakerinnstilling"
@@ -15026,6 +15416,11 @@ msgstr "vennligst trykk OK for å fortsette"
 msgid "please wait, loading picture..."
 msgstr "vennligst vent, henter bilde"
 
+#
+#, fuzzy
+msgid "please wait..."
+msgstr "Vennligst vent..."
+
 msgid "popular culture/traditional arts"
 msgstr "populær kultur/tradisjonell kunst"
 
@@ -15454,6 +15849,33 @@ msgstr "sant"
 #, fuzzy
 msgid "type"
 msgstr "Vis type"
+
+#
+#, fuzzy
+msgid "uShare"
+msgstr "Skarphet"
+
+msgid "uShare config is missing!"
+msgstr ""
+
+#
+#, fuzzy
+msgid "uShare log"
+msgstr "Tøm logg"
+
+#
+#, fuzzy
+msgid "uShare name"
+msgstr "Kanalnavn"
+
+#, fuzzy
+msgid "uShare port"
+msgstr "Vannsport"
+
+#
+#, fuzzy
+msgid "uShare setup"
+msgstr "Videooppsett"
 
 msgid "ufs912"
 msgstr ""

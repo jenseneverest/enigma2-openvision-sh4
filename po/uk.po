@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-24 22:23+0330\n"
+"POT-Creation-Date: 2019-09-25 23:33+0330\n"
 "PO-Revision-Date: 2016-11-17 12:51+0200\n"
 "Last-Translator: vovan43<vovan43@ex.ua>, sety <tim1065@mail.ru>, Irkoff <irkoff@gmail.com>\n"
 "Language-Team: gisclub.tv <http://gisclub.tv/>\n"
@@ -1263,9 +1263,6 @@ msgstr "??"
 msgid "A"
 msgstr "A"
 
-msgid "A background update check is in progress, please wait a few minutes and try again."
-msgstr ""
-
 #, python-format
 msgid ""
 "A configuration file (%s) has been modified since it was installed.\n"
@@ -1380,6 +1377,17 @@ msgstr "AC3 мікшування"
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
+msgid "AFP"
+msgstr ""
+
+#, fuzzy
+msgid "AFP Setup"
+msgstr "Налаштування"
+
+#, fuzzy
+msgid "AFP setup"
+msgstr "Налаштування PiP"
+
 msgid "AGC:"
 msgstr "AGC:"
 
@@ -1427,8 +1435,16 @@ msgstr "Точка доступу:"
 msgid "Activate HbbTV (Redbutton)"
 msgstr "Активувати HbbTV (Червона Кнопка)"
 
+#, fuzzy
+msgid "Activate IPv6 configuration"
+msgstr "Активувати поточні налаштування"
+
 msgid "Activate Keymap now?"
 msgstr ""
+
+#, fuzzy
+msgid "Activate MAC address configuration"
+msgstr "Активувати поточні налаштування"
 
 msgid "Activate Picture in Picture"
 msgstr "Включити картинку в картинці"
@@ -1589,6 +1605,9 @@ msgid "Album"
 msgstr "Альбом"
 
 msgid "Algeria"
+msgstr ""
+
+msgid "Alias"
 msgstr ""
 
 msgid "Alignment of events"
@@ -2341,6 +2360,9 @@ msgstr "Призначення CI"
 msgid "CI slot: "
 msgstr "CI слот: "
 
+msgid "CIFS/Samba"
+msgstr ""
+
 msgid "CPU architecture: "
 msgstr ""
 
@@ -2608,6 +2630,10 @@ msgstr "Перевірте інтернет-з'єднання"
 msgid "Check the internet connection again"
 msgstr "Перевірте інтернет-з'єднання знову"
 
+#, fuzzy
+msgid "Checking feeds"
+msgstr "Перевірка Файлової системи..."
+
 msgid "Checking filesystem..."
 msgstr "Перевірка Файлової системи..."
 
@@ -2837,6 +2863,9 @@ msgstr "Повний"
 
 msgid "Config Scan Details"
 msgstr "Деталі конфігурації сканування"
+
+msgid "Config file name (ok to change):"
+msgstr ""
 
 msgid "Config resolution of pictures"
 msgstr "Опції роздільної здатності зображень"
@@ -3405,10 +3434,6 @@ msgstr "Новини поточної події"
 msgid "Current CEC address"
 msgstr "Поточна адреса CEC"
 
-#, fuzzy
-msgid "Current Status:"
-msgstr "Поточні налаштування:"
-
 msgid "Current device: "
 msgstr "Поточний пристрій:"
 
@@ -3491,6 +3516,10 @@ msgstr "D"
 
 msgid "DHCP"
 msgstr "DHCP"
+
+#, fuzzy
+msgid "DLNA support"
+msgstr "невідома"
 
 msgid "DTS downmix"
 msgstr "DTS downmix"
@@ -3895,6 +3924,10 @@ msgstr "Знайдено HDD:"
 msgid "Detected NIMs:"
 msgstr "Знайдено тюнер:"
 
+#, fuzzy
+msgid "Device"
+msgstr "Сервіс"
+
 msgid "Devicename:"
 msgstr "Ім'я пристрою:"
 
@@ -4100,6 +4133,11 @@ msgstr "Ви дійсно хочете видалити %s?"
 
 msgid "Do you want this?"
 msgstr "Ви хочете це зробити?"
+
+msgid ""
+"Do you want to also install samba client ?\n"
+"This allows you to mount your windows shares on this device."
+msgstr ""
 
 msgid "Do you want to autorestore settings?"
 msgstr "Ви хочете автоматично відновити настройки?"
@@ -4438,6 +4476,10 @@ msgstr ""
 msgid "Enable multiple bouquets"
 msgstr "Дозволити мульти-букети"
 
+#, fuzzy
+msgid "Enable or disable IPv6"
+msgstr "Увімкнути автоматичне сканування кабельної мережі"
+
 msgid "Enable parental protection"
 msgstr "Включити батьківський контроль"
 
@@ -4468,6 +4510,13 @@ msgstr "Включити таймер пробудження"
 
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Включити перемикання кнопками на пульті CH+/-, B+/-, P+/-"
+
+msgid "Enable/Disable IPv6"
+msgstr ""
+
+#, fuzzy
+msgid "Enable/Disable IPv6 support of your receiver.\n"
+msgstr "Редагувати сервер DNS вашого ресивера.\n"
 
 msgid "Enabled"
 msgstr "Увімкнено"
@@ -4742,7 +4791,19 @@ msgstr "Вийти"
 msgid "Exit EPG"
 msgstr "Вихід із EPG"
 
+#, fuzzy
+msgid "Exit IPv6 configuration"
+msgstr "Закрити конфігуратор DNS"
+
+#, fuzzy
+msgid "Exit MAC address configuration"
+msgstr "Закрити конфігуратор DNS"
+
 msgid "Exit editor"
+msgstr "Вийти з редактора"
+
+#, fuzzy
+msgid "Exit inetd recovery"
 msgstr "Вийти з редактора"
 
 msgid "Exit input device selection."
@@ -4753,6 +4814,10 @@ msgstr "Вихід з медіаплеєру?"
 
 msgid "Exit mediaplayer"
 msgstr "Закрити медіаплеєр"
+
+#, fuzzy
+msgid "Exit mounts setup menu"
+msgstr "закрити налаштування мережевого адаптера"
 
 msgid "Exit movie list"
 msgstr "Закрити список фільмів"
@@ -4768,6 +4833,10 @@ msgstr "Закрити список мережевих інтерфейсів"
 
 msgid "Exit network wizard"
 msgstr "Вийти з майстра"
+
+#, fuzzy
+msgid "Exit networkadapter setup menu"
+msgstr "закрити налаштування мережевого адаптера"
 
 msgid "Exit the wizard"
 msgstr "Вийти з майстра налаштувань"
@@ -4805,8 +4874,16 @@ msgstr "Розширене П/З"
 msgid "Extended Software Plugin"
 msgstr "Розширений плагін налаштувань мережі..."
 
+#, fuzzy
+msgid "Extended network setup plugin"
+msgstr "Розширений плагін налаштувань мережі..."
+
 msgid "Extended network setup plugin..."
 msgstr "Розширений плагін налаштувань мережі..."
+
+#, fuzzy
+msgid "Extended setup"
+msgstr "Розширені налаштування..."
 
 msgid "Extended setup..."
 msgstr "Розширені налаштування..."
@@ -4887,12 +4964,20 @@ msgid "FTA"
 msgstr "FTA"
 
 #, fuzzy
+msgid "FTP"
+msgstr "FTA"
+
+#, fuzzy
 msgid "FTP connection failure"
 msgstr "LAN з'єднання"
 
 #, fuzzy
 msgid "FTP passive mode"
 msgstr "Режим передачі"
+
+#, fuzzy
+msgid "FTP setup"
+msgstr "Налаштування PiP"
 
 msgid "Factory reset"
 msgstr "Заводські параметри"
@@ -5005,6 +5090,10 @@ msgstr "Фаворити"
 
 msgid "Feed URL: "
 msgstr ""
+
+#, fuzzy
+msgid "Feeds are not accessible, please try again later."
+msgstr "Оновлень поки немає. Будь ласка спробуйте пізніше."
 
 msgid "Fiji"
 msgstr ""
@@ -5651,6 +5740,13 @@ msgstr "IP адреса"
 msgid "IP of fallback remote receiver"
 msgstr "Адреса запасного варіанту віддаленого приймача"
 
+msgid "IPv6"
+msgstr ""
+
+#, fuzzy
+msgid "IPv6 support"
+msgstr "невідома"
+
 msgid "ISO file is too large for this filesystem!"
 msgstr "ISO файл занадто великий для цієї файлової системи!"
 
@@ -5774,6 +5870,19 @@ msgstr ""
 msgid "Inactivity Sleeptimer"
 msgstr "Таймер неактивності"
 
+msgid "Inadyn"
+msgstr ""
+
+msgid "Inadyn config is missing!"
+msgstr ""
+
+msgid "Inadyn log"
+msgstr ""
+
+#, fuzzy
+msgid "Inadyn setup"
+msgstr "Налаштування відео"
+
 msgid "Include AIT in http streams"
 msgstr "Вмикати AIT в http стрім"
 
@@ -5807,6 +5916,10 @@ msgstr ""
 
 msgid "Indonesian"
 msgstr ""
+
+#, fuzzy
+msgid "Inetd recovery"
+msgstr "Миттєвий запис"
 
 msgid "Info"
 msgstr "Інфо"
@@ -5868,6 +5981,10 @@ msgstr "Ініціалізація"
 msgid "Initializing storage device..."
 msgstr "Ініціалізація жорсткого диску..."
 
+#, fuzzy
+msgid "Inotify monitoring"
+msgstr "автомобілі"
+
 msgid "Input"
 msgstr "Вхід"
 
@@ -5877,6 +5994,10 @@ msgstr "Вхід"
 
 msgid "Input Stream ID"
 msgstr ""
+
+#, fuzzy
+msgid "Input config file name:"
+msgstr "Довга назва"
 
 msgid "Input device setup"
 msgstr "Налаштування пристрою введення"
@@ -5926,6 +6047,10 @@ msgstr "Місце негайного запису"
 
 msgid "Instant recording..."
 msgstr "Меню негайного запису..."
+
+#, fuzzy
+msgid "Interface"
+msgstr "Інтерфейс: "
 
 msgid "Interface: "
 msgstr "Інтерфейс: "
@@ -6401,6 +6526,14 @@ msgstr "Люксембургський"
 msgid "Luxembourgish"
 msgstr "Люксембургський"
 
+#, fuzzy
+msgid "MAC address"
+msgstr "IP адреса"
+
+#, fuzzy
+msgid "MAC address settings"
+msgstr "Редагувати налаштування"
+
 msgid "MENU"
 msgstr ""
 
@@ -6595,6 +6728,19 @@ msgstr ""
 msgid "Micronesia (Federated States of)"
 msgstr ""
 
+msgid "MiniDLNA"
+msgstr ""
+
+msgid "MiniDLNA config is missing!"
+msgstr ""
+
+msgid "MiniDLNA log"
+msgstr ""
+
+#, fuzzy
+msgid "MiniDLNA setup"
+msgstr "Налаштування PiP"
+
 #, python-format
 msgid "Minimum age %d years"
 msgstr "Категорія мінімум %d років"
@@ -6695,6 +6841,14 @@ msgstr "Швидкість обертання мотора"
 msgid "Mount"
 msgstr "Перегляд підключень"
 
+#, fuzzy
+msgid "Mounts"
+msgstr "Перегляд підключень"
+
+#, fuzzy
+msgid "Mounts setup"
+msgstr "Тип емулятора"
+
 msgid "Move"
 msgstr "Переміщення"
 
@@ -6714,6 +6868,14 @@ msgstr "Перемістити вниз до останнього запису"
 #, fuzzy
 msgid "Move down a page"
 msgstr "перемістити вниз до останнього запису"
+
+#, fuzzy
+msgid "Move down to last entry"
+msgstr "перемістити вниз до останнього запису"
+
+#, fuzzy
+msgid "Move down to next entry"
+msgstr "перемістити вниз до наступного запису"
 
 msgid "Move east"
 msgstr "Переміщення на схід"
@@ -6755,6 +6917,14 @@ msgstr "Переміщення до позиції номера"
 
 msgid "Move up a page"
 msgstr ""
+
+#, fuzzy
+msgid "Move up to first entry"
+msgstr "перемістити вгору до першого запису"
+
+#, fuzzy
+msgid "Move up to previous entry"
+msgstr "перемістити вгору до попереднього запису"
 
 msgid "Move west"
 msgstr "Переміщення на захід"
@@ -6892,6 +7062,13 @@ msgstr "вимкнено"
 msgid "NEXT"
 msgstr "ДАЛІ"
 
+msgid "NFS"
+msgstr ""
+
+#, fuzzy
+msgid "NFS setup"
+msgstr "Налаштування"
+
 msgid "NIM & Type"
 msgstr "NIM і Тип тюнера"
 
@@ -6954,6 +7131,10 @@ msgstr "ID мережі"
 msgid "Network Info:"
 msgstr "Мережа інформація:"
 
+#, fuzzy
+msgid "Network MAC settings"
+msgstr "Активувати мережеві установки"
+
 msgid "Network configuration"
 msgstr "Конфігурація мережі"
 
@@ -7004,6 +7185,9 @@ msgid "New Caledonia"
 msgstr ""
 
 msgid "New Zealand"
+msgstr ""
+
+msgid "New password"
 msgstr ""
 
 msgid "News"
@@ -7458,6 +7642,16 @@ msgstr "Відкрити налаштування тюнера"
 msgid "Open the movie list"
 msgstr "Відкрити список відео"
 
+msgid "OpenVPN"
+msgstr ""
+
+msgid "OpenVPN log"
+msgstr ""
+
+#, fuzzy
+msgid "OpenVPN setup"
+msgstr "Відкрити налаштування тюнера"
+
 msgid "Options disable timer"
 msgstr "Функції таймера відключення"
 
@@ -7598,6 +7792,13 @@ msgstr ""
 
 msgid "Password (httpwd)"
 msgstr ""
+
+msgid "Password changed."
+msgstr ""
+
+#, fuzzy
+msgid "Password setup"
+msgstr "Налаштування відео"
 
 msgid "Pause"
 msgstr "Пауза"
@@ -7928,6 +8129,10 @@ msgstr "Зачекайте (оновлюємо пакети)"
 msgid "Please wait for activation of your network configuration..."
 msgstr "Зачекайте, йде активація вашої мережевої конфігурації ..."
 
+#, fuzzy
+msgid "Please wait while feeds state is being checked."
+msgstr "Будь ласка почекайте, поки йде сканування..."
+
 msgid "Please wait while scanning is in progress..."
 msgstr "Будь ласка почекайте, поки йде сканування..."
 
@@ -8180,6 +8385,10 @@ msgstr "Натисніть OK для вибору супутника"
 msgid "Press OK to select/deselect a CAId."
 msgstr "Натисніть OK, щоб вибрати/відмінити CAId."
 
+#, fuzzy
+msgid "Press OK to set the MAC address."
+msgstr "Натисніть OK, щоб змінити настройки."
+
 msgid "Press OK to toggle the selection"
 msgstr "Натисніть OK для перемикання вибору"
 
@@ -8360,6 +8569,9 @@ msgstr "Ram диск"
 msgid "Random"
 msgstr "Випадково"
 
+msgid "Random password"
+msgstr ""
+
 #, python-format
 msgid "Rating defined by broadcaster - %d"
 msgstr "Рейтинг визначено - %d"
@@ -8380,9 +8592,17 @@ msgstr ""
 msgid "Ready to install \"%s\" ?"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Ready to install %s ?"
+msgstr "Скасування установки"
+
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Ready to remove %s ?"
+msgstr "Повернутися до списку фільмів"
 
 msgid "Really close without saving settings?"
 msgstr "Дійсно вийти без збереження налаштувань?"
@@ -8466,6 +8686,14 @@ msgstr "Записи"
 
 msgid "Recordings always have priority"
 msgstr "Записи завжди мають приорітет"
+
+#, fuzzy
+msgid "Recover"
+msgstr "Запис"
+
+#, fuzzy
+msgid "Recover inetd"
+msgstr "Налаштування запису"
 
 msgid "Red"
 msgstr "Червоний"
@@ -8572,6 +8800,10 @@ msgstr "Видаляти записи з кошика через (в днях)"
 
 msgid "Remove plugins"
 msgstr "Видалення плагінів"
+
+#, fuzzy
+msgid "Remove service"
+msgstr "Немає сервісу"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
@@ -8729,6 +8961,14 @@ msgid "Restore cuts"
 msgstr "Відновлення резрвних копій"
 
 #, fuzzy
+msgid "Restore inetd"
+msgstr "Відновлення резрвних копій"
+
+#, fuzzy
+msgid "Restore inetd.conf"
+msgstr "Перезапустити мережу"
+
+#, fuzzy
 msgid "Restore previous cuts..."
 msgstr "Повернутися на Попередній сервіс"
 
@@ -8841,6 +9081,16 @@ msgstr ""
 msgid "S-Video"
 msgstr "S-Video"
 
+msgid "SABnzbd"
+msgstr ""
+
+msgid "SABnzbd Setup"
+msgstr ""
+
+#, fuzzy
+msgid "SABnzbd setup"
+msgstr "Налаштування відео"
+
 msgid "SCAN"
 msgstr ""
 
@@ -8926,6 +9176,13 @@ msgstr ""
 
 msgid "Saint Vincent and the Grenadines"
 msgstr ""
+
+msgid "Samba log"
+msgstr ""
+
+#, fuzzy
+msgid "Samba setup"
+msgstr "Тип емулятора"
 
 #, fuzzy
 msgid "Same as stream"
@@ -9170,6 +9427,10 @@ msgstr "Перемотка вперед"
 msgid "Seek forward (enter time)"
 msgstr "Перемотати вперед (введіть час)"
 
+#, fuzzy
+msgid "Seems a background update check is in progress, please try again later."
+msgstr "Оновлень поки немає. Будь ласка спробуйте пізніше."
+
 msgid "Select"
 msgstr "Вибрати"
 
@@ -9318,6 +9579,10 @@ msgid "Select files/folders to backup"
 msgstr "Вибір файлів/папок для резервного копіювання."
 
 #, fuzzy
+msgid "Select folders"
+msgstr "Вибрати цільову папку"
+
+#, fuzzy
 msgid "Select function"
 msgstr "Виберіть дію"
 
@@ -9342,6 +9607,10 @@ msgstr "Виберіть інтерфейс"
 
 msgid "Select location"
 msgstr "Вибір місця"
+
+#, fuzzy
+msgid "Select menu entry"
+msgstr "вибрати із меню"
 
 msgid "Select movie"
 msgstr "Вибір відео"
@@ -9521,6 +9790,9 @@ msgstr "Сербський"
 msgid "Serbian"
 msgstr "Сербський"
 
+msgid "Serial"
+msgstr ""
+
 #, fuzzy
 msgid "Serv.Name"
 msgstr "Назва сервісу"
@@ -9687,6 +9959,14 @@ msgstr ""
 msgid "Set startup service"
 msgstr "Встановити службу запуску "
 
+#, fuzzy
+msgid "Set system"
+msgstr "Система"
+
+#, fuzzy
+msgid "Set the MAC address of your receiver.\n"
+msgstr "Тест мережевої конфігурації вашого ресивера.\n"
+
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr ""
 
@@ -9769,6 +10049,14 @@ msgstr "Налаштування вашого позиціонера"
 msgid "Seychelles"
 msgstr ""
 
+#, fuzzy
+msgid "Share folder"
+msgstr "Вибрати цільову папку"
+
+#, fuzzy
+msgid "Shares"
+msgstr "Різкість"
+
 msgid "Sharpness"
 msgstr "Різкість"
 
@@ -9817,10 +10105,6 @@ msgstr "показати альтернативу"
 
 msgid "Show InfoBar"
 msgstr "Показати Інфобар"
-
-#, fuzzy
-msgid "Show Log"
-msgstr "Показати інфо"
 
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
@@ -9948,6 +10232,10 @@ msgstr "Показати останні зміни"
 
 msgid "Show latest upgrade log"
 msgstr "Показати останній журнал оновлення"
+
+#, fuzzy
+msgid "Show log"
+msgstr "Показати інфо"
 
 #, fuzzy
 msgid "Show menu or plugin numbers"
@@ -10702,6 +10990,9 @@ msgstr "Порт стрімінгу"
 msgid "Streaming clients info"
 msgstr "Потокові клієнти інфо"
 
+msgid "Strict DLNA"
+msgstr ""
+
 msgid "Strongest position"
 msgstr "Краща позиція"
 
@@ -10761,6 +11052,9 @@ msgstr "Налаштування субтитрів"
 
 msgid "Succeeded:"
 msgstr "Наступне:"
+
+msgid "Successfully restored /etc/inetd.conf!"
+msgstr ""
 
 msgid "Sudan"
 msgstr ""
@@ -10984,6 +11278,21 @@ msgstr "Впорядкувати по:"
 msgid "Teletext subtitle color"
 msgstr "Колір телетексту субтитрів"
 
+msgid "Telnet"
+msgstr ""
+
+#, fuzzy
+msgid "Telnet interface"
+msgstr "Виберіть інтерфейс"
+
+#, fuzzy
+msgid "Telnet port"
+msgstr "зимовий спорт"
+
+#, fuzzy
+msgid "Telnet setup"
+msgstr "Налаштування мережі"
+
 msgid "Temperature and fan control"
 msgstr "Батьківський контроль"
 
@@ -11138,6 +11447,9 @@ msgstr ""
 "Якщо ви бачите кінчики всіх восьми наконечників, то на вашому телевізорі розтягнення відключено.\n"
 "\n"
 "Тестовий зразок за допомогою TigerDave - www.tigerdave.com/ht_menu.htm"
+
+msgid "The password can not be blank!"
+msgstr ""
 
 #, python-format
 msgid "The path %s already exists."
@@ -11512,6 +11824,10 @@ msgstr "Ескізи"
 msgid "Thursday"
 msgstr "Четвер"
 
+#, fuzzy
+msgid "TiVo support"
+msgstr "невідома"
+
 msgid "Time"
 msgstr "Час"
 
@@ -11530,6 +11846,12 @@ msgid "Time style"
 msgstr "Тимчасовий масштаб сітки"
 
 msgid "Time to execute command or script"
+msgstr ""
+
+msgid "Time update in minutes"
+msgstr ""
+
+msgid "Time update in minutes:"
 msgstr ""
 
 msgid "Timer"
@@ -11885,6 +12207,9 @@ msgstr "Українська"
 msgid "Unable to backup settings as the AutoBackup plugin is missing, do you want to continue?"
 msgstr ""
 
+msgid "Unable to change password!"
+msgstr ""
+
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
@@ -12189,6 +12514,10 @@ msgstr "Використовується тюнер %s"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "Зазвичай коли мова субтитрів збігається з мовою Аудіо, субтитри НЕ показуються. Цей вибір дозволяє показувати субтитри, коли вони збігаються."
 
+#, fuzzy
+msgid "Utilities"
+msgstr "Можливості:"
+
 msgid "Uzbekistan"
 msgstr ""
 
@@ -12480,6 +12809,10 @@ msgstr "Відтворити записане відео..."
 
 msgid "Watch recordings..."
 msgstr "Дивитись записи..."
+
+#, fuzzy
+msgid "Web interface"
+msgstr "Використовувати інтерфейс"
 
 msgid "Wed"
 msgstr "Середа"
@@ -12840,6 +13173,10 @@ msgstr "Запис невдалий!"
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Запис в /tmp/positionersetup.log"
 
+#, fuzzy
+msgid "XBox support"
+msgstr "невідома"
+
 msgid "YCbCr420"
 msgstr ""
 
@@ -13006,6 +13343,9 @@ msgstr "Ви не обрали канал запису."
 msgid "You have to wait %s!"
 msgstr "Необхідно зачекати %s!"
 
+msgid "You must set a root password in order to be able to use network services, such as FTP, telnet or ssh."
+msgstr ""
+
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
@@ -13053,6 +13393,9 @@ msgstr ""
 msgid "Your receiver does not have an internet connection"
 msgstr "Оновлення не вдалося. У вашому ресивері немає працюючого інтернет-з'єднання."
 
+msgid "Your receiver is not connected to the internet, please check your network settings and try again."
+msgstr ""
+
 msgid ""
 "Your receiver is now ready to be used.\n"
 "\n"
@@ -13086,6 +13429,18 @@ msgstr "Ваш ресивер переходить в глибокий режи�
 
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 msgstr "Зараз ваш ресивер може бути непридатним для використання. Зверніться доінструкції для отримання додаткової допомоги до його перезавантаження."
+
+#, fuzzy, python-format
+msgid ""
+"Your receiver will be restarted after the installation of service\n"
+"Ready to install %s ?"
+msgstr "Ваш ресивер буде перезавантажений після натискання кнопки OK на пульті."
+
+#, fuzzy
+msgid ""
+"Your receiver will be restarted after the removal of service\n"
+"Do you want to remove now ?"
+msgstr "Ваш ресивер буде перезавантажений після натискання кнопки OK на пульті."
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
 msgstr "Ваш ресивер буде вимкнений за таймером сну."
@@ -14108,6 +14463,10 @@ msgstr "будь ласка, натисніть OK коли будете гот�
 msgid "please wait, loading picture..."
 msgstr "зачекайте, завантаження зображень..."
 
+#, fuzzy
+msgid "please wait..."
+msgstr "Будь ласка зачекайте..."
+
 msgid "popular culture/traditional arts"
 msgstr "популярні культура/традиції мистецтва"
 
@@ -14505,6 +14864,29 @@ msgstr "так"
 #, fuzzy
 msgid "type"
 msgstr "DVB тип"
+
+#, fuzzy
+msgid "uShare"
+msgstr "Різкість"
+
+msgid "uShare config is missing!"
+msgstr ""
+
+#, fuzzy
+msgid "uShare log"
+msgstr "Очистити лог"
+
+#, fuzzy
+msgid "uShare name"
+msgstr "Назва сервісу"
+
+#, fuzzy
+msgid "uShare port"
+msgstr "водний спорт"
+
+#, fuzzy
+msgid "uShare setup"
+msgstr "Налаштування відео"
 
 msgid "ufs912"
 msgstr ""

@@ -1445,6 +1445,8 @@ void eEPGCache::load()
 
 void eEPGCache::save()
 {
+	if (!load_epg)
+		return;
 	const char* EPGDAT = m_filename.c_str();
 	if (eventData::isCacheCorrupt)
 		return;

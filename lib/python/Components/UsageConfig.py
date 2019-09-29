@@ -308,6 +308,8 @@ def InitUsageConfig():
 		elif x.isCompatible("ATSC"):
 			atsc_nims.append((str(x.slot), x.getSlotName()))
 		nims.append((str(x.slot), x.getSlotName()))
+		
+	config.usage.menutype = ConfigSelection(default='standard', choices=[('horzanim', _('Horizontal menu')), ('horzicon', _('Horizontal icons')), ('standard', _('Standard menu'))])
 
 	SystemInfo["priority_tuner_available"] = len(nims) > 2
 	config.usage.frontend_priority = ConfigSelection(default = "-1", choices = list(nims))

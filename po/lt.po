@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-25 23:33+0330\n"
-"PO-Revision-Date: 2019-09-23 20:11+0300\n"
+"POT-Creation-Date: 2019-09-29 04:03+0330\n"
+"PO-Revision-Date: 2019-09-26 21:05+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -275,11 +275,11 @@ msgstr "%.0f kB"
 
 #, python-format
 msgid "%.1f°E"
-msgstr ""
+msgstr "%.1f°E"
 
 #, python-format
 msgid "%.1f°W"
-msgstr ""
+msgstr "%.1f°W"
 
 #, python-format
 msgid "%.2f GB"
@@ -1285,15 +1285,10 @@ msgid "ACQUIRING TSID/ONID"
 msgstr "GAUNAMAS TSID/ONID"
 
 msgid "AFP"
-msgstr ""
+msgstr "AFP"
 
-#, fuzzy
-msgid "AFP Setup"
-msgstr "Valdymas"
-
-#, fuzzy
 msgid "AFP setup"
-msgstr "PiP sąranka"
+msgstr "AFP nustatymas"
 
 msgid "AGC:"
 msgstr "AGC:"
@@ -1307,8 +1302,9 @@ msgstr "ANNEX-B: "
 msgid "ANNEX-C: "
 msgstr "ANNEX-C: "
 
+#, fuzzy
 msgid "APN"
-msgstr ""
+msgstr "AFP"
 
 msgid "ASS File"
 msgstr "ASS Failas"
@@ -1340,16 +1336,14 @@ msgstr "Prieigos taškas:"
 msgid "Activate HbbTV (Redbutton)"
 msgstr "Aktyvuoti HbbTV (raudonas mygtukas)"
 
-#, fuzzy
 msgid "Activate IPv6 configuration"
-msgstr "Aktyvuoti dabartinę konfigūraciją"
+msgstr "Suaktyvinkite IPv6 konfigūraciją"
 
 msgid "Activate Keymap now?"
 msgstr ""
 
-#, fuzzy
 msgid "Activate MAC address configuration"
-msgstr "Aktyvuoti dabartinę konfigūraciją"
+msgstr "Įjunkite MAC adreso konfigūraciją"
 
 msgid "Activate Picture in Picture"
 msgstr "Įjungti vaizdą vaizde"
@@ -1510,7 +1504,7 @@ msgid "Algeria"
 msgstr "Alžyras"
 
 msgid "Alias"
-msgstr ""
+msgstr "Sąsaja"
 
 msgid "Alignment of events"
 msgstr "Įvykių rikiavimas"
@@ -1681,6 +1675,10 @@ msgstr "Arabų"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Ar tikrai norite išvalyti visus ištrintus vartotojo paketus?"
+
+#, fuzzy
+msgid "Are you sure to reboot to"
+msgstr "Ar tikrai norite pašalinti šį įrašą?"
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -2240,7 +2238,7 @@ msgid "CI slot: "
 msgstr "CI lizdas: "
 
 msgid "CIFS/Samba"
-msgstr ""
+msgstr "CIFS / Samba"
 
 msgid "CPU architecture: "
 msgstr "CPU architektūra: "
@@ -2515,9 +2513,8 @@ msgstr "Patikrinkite interneto ryšį"
 msgid "Check the internet connection again"
 msgstr "Tikrinkite interneto ryšį dar kartą"
 
-#, fuzzy
 msgid "Checking feeds"
-msgstr "Failų sistemos tikrinimas..."
+msgstr "Šaltinių tikrinimas"
 
 msgid "Checking filesystem..."
 msgstr "Failų sistemos tikrinimas..."
@@ -2739,7 +2736,7 @@ msgid "Config Scan Details"
 msgstr "Išsamus paieškos nustatymas"
 
 msgid "Config file name (ok to change):"
-msgstr ""
+msgstr "Konfigūruoti failo pavadinimą (ok, kad keisti):"
 
 msgid "Config resolution of pictures"
 msgstr "Nustatykite paveikslėlių rezoliuciją"
@@ -3362,9 +3359,8 @@ msgstr "D"
 msgid "DHCP"
 msgstr "DHCP"
 
-#, fuzzy
 msgid "DLNA support"
-msgstr "HLG palaikymas"
+msgstr "DLNA palaikymas"
 
 msgid "DTS downmix"
 msgstr "DTS suliejimas"
@@ -3753,9 +3749,8 @@ msgstr "Aptiktas HDD:"
 msgid "Detected NIMs:"
 msgstr "Aptikti imtuvai:"
 
-#, fuzzy
 msgid "Device"
-msgstr "Apie kanalą"
+msgstr "Įrenginys"
 
 msgid "Devicename:"
 msgstr "Įrenginio pavadinimas:"
@@ -3962,6 +3957,8 @@ msgid ""
 "Do you want to also install samba client ?\n"
 "This allows you to mount your windows shares on this device."
 msgstr ""
+"Ar norite įdiegti ir samba klientą?\n"
+"Tai leis pajungti bendrus windows resursus šiame įrenginyje."
 
 msgid "Do you want to autorestore settings?"
 msgstr "Ar norite automatiškai atkurti nuostatas?"
@@ -4286,9 +4283,8 @@ msgstr "Įjungti info uostos tolygų išnykimą"
 msgid "Enable multiple bouquets"
 msgstr "Įjungti daugiau paketų"
 
-#, fuzzy
 msgid "Enable or disable IPv6"
-msgstr "Įjungti kabelinės TV auto paiešką"
+msgstr "Įjungti arba išjungti IPv6"
 
 msgid "Enable parental protection"
 msgstr "Įjungti tėvų kontrolę"
@@ -4321,11 +4317,10 @@ msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Įjunti kanalų perjungimą su CH+/-, B+/-, P+/-"
 
 msgid "Enable/Disable IPv6"
-msgstr ""
+msgstr "Įjungti/išjungti IPv6"
 
-#, fuzzy
 msgid "Enable/Disable IPv6 support of your receiver.\n"
-msgstr "Redaguoti imtuvo vardų serverių konfigūraciją.\n"
+msgstr "Įjungti/išjungti imtuvo IPv6 palaikymą.\n"
 
 msgid "Enabled"
 msgstr "Įjungta"
@@ -4597,20 +4592,17 @@ msgstr "Užverti"
 msgid "Exit EPG"
 msgstr "Užverti EPG"
 
-#, fuzzy
 msgid "Exit IPv6 configuration"
-msgstr "Užverti DNS konfigūravimą"
+msgstr "Užverti IPv6 konfigūraciją"
 
-#, fuzzy
 msgid "Exit MAC address configuration"
-msgstr "Užverti DNS konfigūravimą"
+msgstr "Užverti MAC adreso konfigūravimą"
 
 msgid "Exit editor"
 msgstr "Užverti redaktorių"
 
-#, fuzzy
 msgid "Exit inetd recovery"
-msgstr "Užverti redaktorių"
+msgstr "Užverti inetd atkūrimą"
 
 msgid "Exit input device selection."
 msgstr "Užverti įvesties įrenginio pasirinkimą."
@@ -4621,9 +4613,8 @@ msgstr "Užverti media grotuvą?"
 msgid "Exit mediaplayer"
 msgstr "Užverti media grotuvą"
 
-#, fuzzy
 msgid "Exit mounts setup menu"
-msgstr "užverti tinklo adapterio sąrankos meniu"
+msgstr "Užverti pajungimų nustatymų meniu"
 
 msgid "Exit movie list"
 msgstr "Užverti filmų sąrašą"
@@ -4640,9 +4631,8 @@ msgstr "Užverti tinklo sąsajos sąrašą"
 msgid "Exit network wizard"
 msgstr "Užverti tinklo vedlį"
 
-#, fuzzy
 msgid "Exit networkadapter setup menu"
-msgstr "užverti tinklo adapterio sąrankos meniu"
+msgstr "Išeiti iš tinklo adapterio nustatymų meniu"
 
 msgid "Exit the wizard"
 msgstr "Užverti vedlį"
@@ -4677,16 +4667,8 @@ msgstr "Išplėstinė programinė įranga"
 msgid "Extended Software Plugin"
 msgstr "Išplėstinis programinės įrangos priedas"
 
-#, fuzzy
-msgid "Extended network setup plugin"
-msgstr "Išplėstinis tinklo valdymo priedas..."
-
 msgid "Extended network setup plugin..."
 msgstr "Išplėstinis tinklo valdymo priedas..."
-
-#, fuzzy
-msgid "Extended setup"
-msgstr "Išplėstinis valdymas..."
 
 msgid "Extended setup..."
 msgstr "Išplėstinis valdymas..."
@@ -4767,9 +4749,8 @@ msgstr "FFmpeg versija: "
 msgid "FTA"
 msgstr "NEKODUOTI"
 
-#, fuzzy
 msgid "FTP"
-msgstr "NEKODUOTI"
+msgstr "FTP"
 
 msgid "FTP connection failure"
 msgstr "FTP prisijungimas nepavyko"
@@ -4777,9 +4758,8 @@ msgstr "FTP prisijungimas nepavyko"
 msgid "FTP passive mode"
 msgstr "Pasyvus FTP režimas"
 
-#, fuzzy
 msgid "FTP setup"
-msgstr "PiP sąranka"
+msgstr "FTP nustatymas"
 
 msgid "Factory reset"
 msgstr "Atkurti gamyklines nuostatas"
@@ -4886,9 +4866,8 @@ msgstr "Mėgstami"
 msgid "Feed URL: "
 msgstr "Šaltinių URL: "
 
-#, fuzzy
 msgid "Feeds are not accessible, please try again later."
-msgstr "Atnaujinimų nėra. Bandykite patikrinti vėliau."
+msgstr "Šaltiniai nepasiekiami, bandykite dar kartą vėliau."
 
 msgid "Fiji"
 msgstr "Fidži"
@@ -5028,7 +5007,6 @@ msgstr "Pen"
 msgid "Friday"
 msgstr "Penktadienis"
 
-#, fuzzy
 msgid "From:"
 msgstr "Nuo:"
 
@@ -5190,9 +5168,8 @@ msgstr "Į geriausią laiką / dabar"
 msgid "Goto specific date/time"
 msgstr "Į konkrečią datą/laiką"
 
-#, fuzzy
 msgid "Goto:"
-msgstr "Eiti į :"
+msgstr "Eiti į:"
 
 msgid "GotoX calibration"
 msgstr "Eiti į X kalibravimą"
@@ -5514,11 +5491,14 @@ msgid "IP of fallback remote receiver"
 msgstr "Atsarginio nuotolinio imtuvo IP"
 
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #, fuzzy
+msgid "IPv6 setup"
+msgstr "AFP nustatymas"
+
 msgid "IPv6 support"
-msgstr "HLG palaikymas"
+msgstr "IPv6 palaikymas"
 
 msgid "ISO file is too large for this filesystem!"
 msgstr "ISO failas per didelis šiai failų sistemai!"
@@ -5643,17 +5623,16 @@ msgid "Inactivity Sleeptimer"
 msgstr "Miego laikmatis po neveiklumo"
 
 msgid "Inadyn"
-msgstr ""
+msgstr "Inadyn"
 
 msgid "Inadyn config is missing!"
-msgstr ""
+msgstr "Inadyn konfigūracijos nėra!"
 
 msgid "Inadyn log"
-msgstr ""
+msgstr "Inadyn žurnalas"
 
-#, fuzzy
 msgid "Inadyn setup"
-msgstr "Vedlio sąranka"
+msgstr "Inadyn sąranka"
 
 msgid "Include AIT in http streams"
 msgstr "Įtraukti AIT http srautus"
@@ -5688,9 +5667,8 @@ msgstr "Indonezija"
 msgid "Indonesian"
 msgstr "Indoneziečių"
 
-#, fuzzy
 msgid "Inetd recovery"
-msgstr "Momentinis įrašymas"
+msgstr "Inetd atkūrimas"
 
 msgid "Info"
 msgstr "Informacija"
@@ -5750,9 +5728,8 @@ msgstr "Inicializuoti"
 msgid "Initializing storage device..."
 msgstr "Inicializuojamas saugojimo įrenginys..."
 
-#, fuzzy
 msgid "Inotify monitoring"
-msgstr "automobilizmas"
+msgstr "Pranešti apie pokyčius"
 
 msgid "Input"
 msgstr "Įvestis"
@@ -5763,9 +5740,8 @@ msgstr "Įvestis "
 msgid "Input Stream ID"
 msgstr "Srauto įvesties ID"
 
-#, fuzzy
 msgid "Input config file name:"
-msgstr "Ilgi failų pavadinimai"
+msgstr "Įrašykite konfigūracijos failo pavadinimą:"
 
 msgid "Input device setup"
 msgstr "Įvesties įrenginio nustatymas"
@@ -5815,9 +5791,8 @@ msgstr "Momentinio įrašymo vieta"
 msgid "Instant recording..."
 msgstr "Momentinis įrašymas..."
 
-#, fuzzy
 msgid "Interface"
-msgstr "Sąsaja: "
+msgstr "Sąsaja"
 
 msgid "Interface: "
 msgstr "Sąsaja: "
@@ -6276,13 +6251,15 @@ msgstr "Liuksemburgas"
 msgid "Luxembourgish"
 msgstr "Liuksemburgiečių"
 
-#, fuzzy
 msgid "MAC address"
-msgstr "Adresas"
+msgstr "MAC address"
+
+msgid "MAC address settings"
+msgstr "MAC adreso nustatymai"
 
 #, fuzzy
-msgid "MAC address settings"
-msgstr "Redaguoti nustatymus"
+msgid "MAC address setup"
+msgstr "MAC adreso nustatymai"
 
 msgid "MENU"
 msgstr ""
@@ -6473,17 +6450,16 @@ msgid "Micronesia (Federated States of)"
 msgstr "Mikronezijos Federacinės Valstijos"
 
 msgid "MiniDLNA"
-msgstr ""
+msgstr "MiniDLNA"
 
 msgid "MiniDLNA config is missing!"
-msgstr ""
+msgstr "Trūksta MiniDLNA konfigūracijos!"
 
 msgid "MiniDLNA log"
-msgstr ""
+msgstr "MiniDLNA žurnalas"
 
-#, fuzzy
 msgid "MiniDLNA setup"
-msgstr "PiP sąranka"
+msgstr "MiniDLNA sąranka"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -6581,13 +6557,11 @@ msgstr "Variklio paleidimo delsa"
 msgid "Mount"
 msgstr "Prijungti"
 
-#, fuzzy
 msgid "Mounts"
-msgstr "Prijungti"
+msgstr "Prijungimai"
 
-#, fuzzy
 msgid "Mounts setup"
-msgstr "Emuliatoriaus tvarkyklė"
+msgstr "Pajungimų nustatymas"
 
 msgid "Move"
 msgstr "Perkelti"
@@ -6607,13 +6581,11 @@ msgstr "Judėkite linija žemyn"
 msgid "Move down a page"
 msgstr "Perkelkite puslapį žemyn"
 
-#, fuzzy
 msgid "Move down to last entry"
-msgstr "perkelti žemyn prie paskutinio įrašo"
+msgstr "Perkelti žemyn prie paskutinio įrašo"
 
-#, fuzzy
 msgid "Move down to next entry"
-msgstr "perkelti žemyn prie kito įrašo"
+msgstr "Perkelti žemyn prie kito įrašo"
 
 msgid "Move east"
 msgstr "Sukti į rytus"
@@ -6655,13 +6627,11 @@ msgstr "Judėkite linija aukštyn"
 msgid "Move up a page"
 msgstr "Pereikite aukštyn puslapiu"
 
-#, fuzzy
 msgid "Move up to first entry"
-msgstr "perkelti aukštyn prie pirmo įrašo"
+msgstr "Perkelti aukštyn prie pirmo įrašo"
 
-#, fuzzy
 msgid "Move up to previous entry"
-msgstr "perkelti aukštyn prie ankstesnio įrašo"
+msgstr "Perkelti aukštyn prie ankstesnio įrašo"
 
 msgid "Move west"
 msgstr "Sukti į vakarus"
@@ -6788,13 +6758,11 @@ msgstr "NCam webif išjungtas"
 msgid "NEXT"
 msgstr "KITAS"
 
-#, fuzzy
 msgid "NFS"
-msgstr "INS"
+msgstr "NFS"
 
-#, fuzzy
 msgid "NFS setup"
-msgstr "Valdymas"
+msgstr "NFS nustatymas"
 
 msgid "NIM & Type"
 msgstr "IMTUVAS IR TIPAS"
@@ -6857,9 +6825,8 @@ msgstr "Tinklo ID"
 msgid "Network Info:"
 msgstr "Tinklo informacija:"
 
-#, fuzzy
 msgid "Network MAC settings"
-msgstr "Aktyvuoti tinklo nustatymus"
+msgstr "Tinklo MAC nustatymai"
 
 msgid "Network configuration"
 msgstr "Tinklo konfigūracija"
@@ -6913,9 +6880,8 @@ msgstr "Naujoji Kaledonija"
 msgid "New Zealand"
 msgstr "Naujoji Zelandija"
 
-#, fuzzy
 msgid "New password"
-msgstr "Slaptažodis"
+msgstr "Naujas slaptažodis"
 
 msgid "News"
 msgstr "Naujienos"
@@ -7346,14 +7312,13 @@ msgid "Open the movie list"
 msgstr "Atidaryti filmų sąrašą"
 
 msgid "OpenVPN"
-msgstr ""
+msgstr "OpenVPN"
 
 msgid "OpenVPN log"
-msgstr ""
+msgstr "OpenVpn loginis žurnalas"
 
-#, fuzzy
 msgid "OpenVPN setup"
-msgstr "Atidaryti imtuvo konfigūravimą "
+msgstr "OpenVpn valdymas"
 
 msgid "Options disable timer"
 msgstr "Nustatymai laikmačiui išjungti"
@@ -7491,13 +7456,11 @@ msgstr "Slaptažodis"
 msgid "Password (httpwd)"
 msgstr "Slaptažodis (httpwd)"
 
-#, fuzzy
 msgid "Password changed."
-msgstr "Slaptažodis (httpwd)"
+msgstr "Slaptažodis pakeistas."
 
-#, fuzzy
 msgid "Password setup"
-msgstr "Slaptažodis"
+msgstr "Slaptažodžio valdymas"
 
 msgid "Pause"
 msgstr "Pauzė"
@@ -7817,9 +7780,8 @@ msgstr "Prašome laukti (atnaujinami paketai)"
 msgid "Please wait for activation of your network configuration..."
 msgstr "Prašome laukti jūsų tinklo konfigūracijos aktyvavimo..."
 
-#, fuzzy
 msgid "Please wait while feeds state is being checked."
-msgstr "Prašome laukti kol vyksta paieška..."
+msgstr "Palaukite, kol bus patikrinta informacijos santrauka."
 
 msgid "Please wait while scanning is in progress..."
 msgstr "Prašome laukti kol vyksta paieška..."
@@ -8063,9 +8025,8 @@ msgstr "Paspauskite OK norėdami pasirinkti palydovus"
 msgid "Press OK to select/deselect a CAId."
 msgstr "Spauskite OK, kad pasirinkti/nepasirinkti CAId."
 
-#, fuzzy
 msgid "Press OK to set the MAC address."
-msgstr "Spauskite OK ir redaguokite nustatymus."
+msgstr "Paspauskite OK, kad nustatytumėte MAC adresą."
 
 msgid "Press OK to toggle the selection"
 msgstr "Kad sukeisti pasirinkimus, spauskite OK"
@@ -8102,9 +8063,6 @@ msgid "Primary DNS"
 msgstr "Pirminis DNS"
 
 msgid "Prime time"
-msgstr "Geriausias laikas"
-
-msgid "PrimeTime"
 msgstr "Geriausias laikas"
 
 msgid "Priority"
@@ -8243,9 +8201,8 @@ msgstr "Operatyvinė atmintis"
 msgid "Random"
 msgstr "Atsitiktinis"
 
-#, fuzzy
 msgid "Random password"
-msgstr "Slaptažodis"
+msgstr "Atsitiktinis slaptažodis"
 
 #, python-format
 msgid "Rating defined by broadcaster - %d"
@@ -8267,17 +8224,17 @@ msgstr "Skaitytojo statistika"
 msgid "Ready to install \"%s\" ?"
 msgstr "Pasirengę įdiegti \"%s\" ?"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Ready to install %s ?"
-msgstr "Pasirengę įdiegti \"%s\" ?"
+msgstr "Pasirengę įdiegti %s ?"
 
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr "Pasirengę pašalinti \"%s\" ?"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Ready to remove %s ?"
-msgstr "Pasirengę pašalinti \"%s\" ?"
+msgstr "Pasirengę pašalinti %s ?"
 
 msgid "Really close without saving settings?"
 msgstr "Tikrai uždaryti be nustatymų išsaugojimo ?"
@@ -8361,13 +8318,11 @@ msgstr "Įrašai"
 msgid "Recordings always have priority"
 msgstr "Pirmenybę skirti vaizdo įrašymui"
 
-#, fuzzy
 msgid "Recover"
-msgstr "Įrašymo nustatymai"
+msgstr "Atkurti"
 
-#, fuzzy
 msgid "Recover inetd"
-msgstr "Įrašymo valdymas"
+msgstr "Atkurti inetd"
 
 msgid "Red"
 msgstr "Raudonas"
@@ -8471,9 +8426,8 @@ msgstr "Pašalinti iš šiukšliadėžės po (dienų)"
 msgid "Remove plugins"
 msgstr "Pašalinti priedus"
 
-#, fuzzy
 msgid "Remove service"
-msgstr "Paslaugos pašalinimas"
+msgstr "Pašalinti paslaugą"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr "Pašalinti tekstus, skirtus turintiems klausos sutrikimų, iš išorinių subtitrų (instrumentinė muzika, ar aplinkos garsai, pvz., kai skamba durų skambutis, arba girdimas ginklo šūvis)."
@@ -8621,13 +8575,11 @@ msgstr "Atkurti atsargines kopijas"
 msgid "Restore cuts"
 msgstr "Atkurkite iškirpimus"
 
-#, fuzzy
 msgid "Restore inetd"
-msgstr "Atkurkite iškirpimus"
+msgstr "Atkurti intetd"
 
-#, fuzzy
 msgid "Restore inetd.conf"
-msgstr "Paleisti tinklą iš naujo"
+msgstr "Atkurti inetd.conf"
 
 msgid "Restore previous cuts..."
 msgstr "Atkurkite ankstesnius iškirpimus..."
@@ -8737,14 +8689,10 @@ msgid "S-Video"
 msgstr "S-Video"
 
 msgid "SABnzbd"
-msgstr ""
+msgstr "SABnzbd"
 
-msgid "SABnzbd Setup"
-msgstr ""
-
-#, fuzzy
 msgid "SABnzbd setup"
-msgstr "Vedlio sąranka"
+msgstr "SABnzbd nustatymas"
 
 msgid "SCAN"
 msgstr ""
@@ -8830,11 +8778,10 @@ msgid "Saint Vincent and the Grenadines"
 msgstr "Šv. Vincento ir Grenadinų salos"
 
 msgid "Samba log"
-msgstr ""
+msgstr "Samba žurnalas"
 
-#, fuzzy
 msgid "Samba setup"
-msgstr "Emuliatoriaus tvarkyklė"
+msgstr "Samba valdymas"
 
 msgid "Same as stream"
 msgstr "Tas pats kaip srautas"
@@ -9074,9 +9021,8 @@ msgstr "Persukti pirmyn"
 msgid "Seek forward (enter time)"
 msgstr "Persukti pirmyn (įrašykite laiką)"
 
-#, fuzzy
 msgid "Seems a background update check is in progress, please try again later."
-msgstr "Fone vyksta atnaujinimų paieška, palaukite ir po kelių minučių bandykite dar kartą."
+msgstr "Panašu, kad vykdomas foninio atnaujinimo patikrinimas, bandykite vėliau dar kartą."
 
 msgid "Select"
 msgstr "Pasirinkti"
@@ -9220,9 +9166,8 @@ msgstr "Pasirinkite failus atsarginei kopijai."
 msgid "Select files/folders to backup"
 msgstr "Pasirinkite failus ir katalogus atsarginei kopijai"
 
-#, fuzzy
 msgid "Select folders"
-msgstr "Pasirinkite paskirties katalogą"
+msgstr "Pasirinkite katalogus"
 
 msgid "Select function"
 msgstr "Pasirinkite funkciją"
@@ -9248,9 +9193,8 @@ msgstr "Pasrinkite sąsają"
 msgid "Select location"
 msgstr "Pasirinkite vietą"
 
-#, fuzzy
 msgid "Select menu entry"
-msgstr "pasirinkite meniu įrašą"
+msgstr "Pasirinkite meniu elementą"
 
 msgid "Select movie"
 msgstr "Pasirinkite filmą"
@@ -9378,7 +9322,7 @@ msgstr "Pasirinkite savo šalį. Jei nėra pasirinkti 'visos'."
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Pasirinkite atvaizdą"
+msgstr "Pasirinkite meniu elementą"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Pasirinkite tiekėją ir regioną. Jei šio sąrašo nėra, turėsite pasirinkti vieną iš kitų 'kanalų paieškos tipų'."
@@ -9428,9 +9372,8 @@ msgstr "Serbija"
 msgid "Serbian"
 msgstr "Serbų"
 
-#, fuzzy
 msgid "Serial"
-msgstr "Alžyras"
+msgstr "Serialas"
 
 msgid "Serv.Name"
 msgstr "Serv.pavadinimas"
@@ -9590,13 +9533,11 @@ msgstr "Nustatyti seka pakartoja, jei jūsų antenos sistema to reikalauja. Papr
 msgid "Set startup service"
 msgstr "Nustatykite kaip paleidimo kanalą"
 
-#, fuzzy
 msgid "Set system"
-msgstr "Sistema"
+msgstr "Nustatykite sistemą"
 
-#, fuzzy
 msgid "Set the MAC address of your receiver.\n"
-msgstr "Įrašykite pagrindinio imtuvo IP adresą."
+msgstr "Nustatykite imtuvo MAC adresą.\n"
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "Nustatykite OpenWebif naudotojo ID iš atsarginio imtuvo"
@@ -9677,13 +9618,11 @@ msgstr "Nustatykite laiko juostos sritį."
 msgid "Seychelles"
 msgstr "Seišeliai"
 
-#, fuzzy
 msgid "Share folder"
-msgstr "Pasirinkite paskirties katalogą"
+msgstr "Bendrinti aplanką"
 
-#, fuzzy
 msgid "Shares"
-msgstr "Ryškumas"
+msgstr "Bendrinimai"
 
 msgid "Sharpness"
 msgstr "Ryškumas"
@@ -9856,7 +9795,6 @@ msgstr "Rodyti paskutinius veiksmus"
 msgid "Show latest upgrade log"
 msgstr "Rodyti paskutinio atnaujinimo žurnalą"
 
-#, fuzzy
 msgid "Show log"
 msgstr "Rodyti žurnalą"
 
@@ -10588,7 +10526,7 @@ msgid "Streaming clients info"
 msgstr "Srauto transliacijų klientai"
 
 msgid "Strict DLNA"
-msgstr ""
+msgstr "Тikslus DLNA"
 
 msgid "Strongest position"
 msgstr "Stipriausia padėtis"
@@ -10651,7 +10589,7 @@ msgid "Succeeded:"
 msgstr "Pavyko:"
 
 msgid "Successfully restored /etc/inetd.conf!"
-msgstr ""
+msgstr "Sėkmingai atkurta /etc/inetd.conf!"
 
 msgid "Sudan"
 msgstr "Sudanas"
@@ -10789,7 +10727,7 @@ msgstr "T2MI RAW režimas"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "Adga, Pasvalys, Lietuva\n"
-"2019-09-23 versija"
+"2019-09-26 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -10870,19 +10808,16 @@ msgid "Teletext subtitle color"
 msgstr "Teleteksto subtitrų spalva"
 
 msgid "Telnet"
-msgstr ""
+msgstr "Telnet"
 
-#, fuzzy
 msgid "Telnet interface"
-msgstr "Pasrinkite sąsają"
+msgstr "Telnet sąsaja"
 
-#, fuzzy
 msgid "Telnet port"
-msgstr "žiemos sportas"
+msgstr "Telnet jungtis"
 
-#, fuzzy
 msgid "Telnet setup"
-msgstr "Tinklo sąranka"
+msgstr "Telnet sąranka"
 
 msgid "Temperature and fan control"
 msgstr "Temperatūros ir aušintuvo valdymas"
@@ -11033,7 +10968,7 @@ msgstr ""
 "Bandymo šablonas pagal TigerDave - www.tigerdave.com/ht_menu.htm"
 
 msgid "The password can not be blank!"
-msgstr ""
+msgstr "Slaptažodis negali būti tuščias!"
 
 #, python-format
 msgid "The path %s already exists."
@@ -11380,9 +11315,8 @@ msgstr "Miniatūros"
 msgid "Thursday"
 msgstr "Ketvirtadienis"
 
-#, fuzzy
 msgid "TiVo support"
-msgstr "nepalaikomas"
+msgstr "TiVo palaikymas"
 
 msgid "Time"
 msgstr "Laikas"
@@ -11404,10 +11338,10 @@ msgid "Time to execute command or script"
 msgstr "Laikas vykdyti komandą, arba scenarijų"
 
 msgid "Time update in minutes"
-msgstr ""
+msgstr "Atnaujinimas minutėmis"
 
 msgid "Time update in minutes:"
-msgstr ""
+msgstr "Laiko atnaujinimas minutėmis:"
 
 msgid "Timer"
 msgstr "Laikmatis"
@@ -11752,7 +11686,7 @@ msgid "Unable to backup settings as the AutoBackup plugin is missing, do you wan
 msgstr "Atsarginio kopijavimo parametrų, kaip ir AutoBackup, neįmanoma įjungti, nėra priedo, ar norite tęsti?"
 
 msgid "Unable to change password!"
-msgstr ""
+msgstr "Neįmanoma pakeisti slaptažodžio!"
 
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr "Nepavyko sukurti reikiamų katalogų laikmenose (pvz., USB atmintinėje arba kietame diske) - patikrinkite laikmeną ir bandykite dar kartą!"
@@ -12029,9 +11963,8 @@ msgstr "Vartotojo pasirinktas transponderis"
 msgid "User interface"
 msgstr "Vartotojo sąsaja"
 
-#, fuzzy
 msgid "Username"
-msgstr "Pervadinti"
+msgstr "Vartotojo vardas"
 
 msgid "Username (httpuser)"
 msgstr "Vartotojo vardas (httpuser)"
@@ -12050,9 +11983,8 @@ msgstr "Naudojamas imtuvas %s"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "Paprastai, kai subtitrų kalba yra ta pati kaip garso kalbą, nebus naudojami subtitruose. Įjunkite šią funkciją, kad šie subtitrai būtų naudojami."
 
-#, fuzzy
 msgid "Utilities"
-msgstr "Galimybės: "
+msgstr "Įrankiai"
 
 msgid "Uzbekistan"
 msgstr "Uzbekistanas"
@@ -12339,9 +12271,8 @@ msgstr "Žiūrėti filmus..."
 msgid "Watch recordings..."
 msgstr "Žiūrėti įrašus..."
 
-#, fuzzy
 msgid "Web interface"
-msgstr "Naudokite sąsają"
+msgstr "Internetinė sąsaja"
 
 msgid "Wed"
 msgstr "Tre"
@@ -12681,9 +12612,8 @@ msgstr "Įrašyti nepavyko!"
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Rašyti į /tmp/positionersetup.log"
 
-#, fuzzy
 msgid "XBox support"
-msgstr "nepalaikomas"
+msgstr "XBox palaikymas"
 
 msgid "YCbCr420"
 msgstr "YCbCr420"
@@ -12852,7 +12782,7 @@ msgid "You have to wait %s!"
 msgstr "Jūs turite laukti %s!"
 
 msgid "You must set a root password in order to be able to use network services, such as FTP, telnet or ssh."
-msgstr ""
+msgstr "Kad galėtumėte naudotis tinklo paslaugomis, pvz., FTP, telnet arba ssh, turite nustatyti pagrindinį (root) slaptažodį."
 
 #, python-format
 msgid "You must switch to the service %s (%s - '%s')!\n"
@@ -12900,7 +12830,7 @@ msgid "Your receiver does not have an internet connection"
 msgstr "Jūsų imtuvas neturi interneto ryšio"
 
 msgid "Your receiver is not connected to the internet, please check your network settings and try again."
-msgstr ""
+msgstr "Imtuvas neprijungtas prie interneto, patikrinkite tinklo nustatymus ir bandykite dar kartą."
 
 msgid ""
 "Your receiver is now ready to be used.\n"
@@ -12935,17 +12865,20 @@ msgstr "Jūsų Imtuvas išjungiamas"
 msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
 msgstr "Jūsų imtuvas gali tapti netinkamu naudoti. Vadovaukitės vartotojo vadovu, prieš paleisdami imtuvą iš naujo."
 
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Your receiver will be restarted after the installation of service\n"
 "Ready to install %s ?"
-msgstr "Jūsų imtuvas bus paleistas iš naujo paspaudus OK."
+msgstr ""
+"Įdiegus paslaugą, jūsų imtuvas bus paleistas iš naujo\n"
+"Pasiruošę įdiegti %s?"
 
-#, fuzzy
 msgid ""
 "Your receiver will be restarted after the removal of service\n"
 "Do you want to remove now ?"
-msgstr "Jūsų imtuvas bus paleistas iš naujo paspaudus OK."
+msgstr ""
+"Pašalinus paslaugą, jūsų imtuvas bus paleistas iš naujo\n"
+"Ar norite pašalinti dabar?"
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
 msgstr "Jūsų imtuvas pagal miego laikmatį dabar persijungs į budėjimo režimą."
@@ -13938,9 +13871,8 @@ msgstr "kai būsite pasiruošę, spauskite OK"
 msgid "please wait, loading picture..."
 msgstr "laukite, užkraunamas paveikslėlis..."
 
-#, fuzzy
 msgid "please wait..."
-msgstr "Prašome laukti..."
+msgstr "prašome laukti..."
 
 msgid "popular culture/traditional arts"
 msgstr "populiarioji kultūra/tradiciniai menai"
@@ -14332,28 +14264,23 @@ msgstr "tiesa"
 msgid "type"
 msgstr "tipas"
 
-#, fuzzy
 msgid "uShare"
-msgstr "Ryškumas"
+msgstr "uShare"
 
 msgid "uShare config is missing!"
-msgstr ""
+msgstr "Trūksta uShare konfigūracijos!"
 
-#, fuzzy
 msgid "uShare log"
-msgstr "Išvalyti žurnalą"
+msgstr "uShare žurnalas"
 
-#, fuzzy
 msgid "uShare name"
-msgstr "Kanalo pavadinimas"
+msgstr "uShare pavadinimas"
 
-#, fuzzy
 msgid "uShare port"
-msgstr "vandens sportas"
+msgstr "uShare jugtis"
 
-#, fuzzy
 msgid "uShare setup"
-msgstr "Vedlio sąranka"
+msgstr "uShare nustatymas"
 
 msgid "ufs912"
 msgstr ""

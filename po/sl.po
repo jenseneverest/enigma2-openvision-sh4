@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project Slovenia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-29 15:37+0330\n"
+"POT-Creation-Date: 2019-10-03 01:38+0330\n"
 "PO-Revision-Date: 2015-08-30 09:00+0200\n"
 "Last-Translator: Taykun345 <support@satnigmo.com>\n"
 "Language-Team: Satnigmo <support@satnigmo.com>\n"
@@ -1131,9 +1131,6 @@ msgstr "(prikaz opcijskega DVD avdio menija)"
 msgid "(unknown)"
 msgstr "neznano"
 
-msgid "(used)"
-msgstr ""
-
 #
 msgid "* Only available if more than one interface is active."
 msgstr "* Na voljo samo kadar je hkrati aktivnih več vmesnikov."
@@ -1780,6 +1777,9 @@ msgstr "Vsi sateliti 4 (USALS)"
 msgid "All services provider"
 msgstr ""
 
+msgid "All slots"
+msgstr ""
+
 msgid "Allocate"
 msgstr ""
 
@@ -1929,6 +1929,16 @@ msgstr "Katerakoli aktivnost"
 #
 msgid "Arabic"
 msgstr "Arabsko"
+
+#
+#, fuzzy, python-format
+msgid "Are you ready to install \"%s\" ?"
+msgstr "Preklic namestitve"
+
+#
+#, fuzzy, python-format
+msgid "Are you ready to remove \"%s\" ?"
+msgstr "Nazaj na seznam datotek"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Ali si prepričan, da želiš dokončno izbrisati vse priljubljene sezname kanalov?"
@@ -4566,11 +4576,6 @@ msgstr "Res želite odstraniti: %s?"
 #
 msgid "Do you want this?"
 msgstr "Ali res želite to?"
-
-msgid ""
-"Do you want to also install samba client ?\n"
-"This allows you to mount your windows shares on this device."
-msgstr ""
 
 msgid "Do you want to autorestore settings?"
 msgstr ""
@@ -9619,19 +9624,9 @@ msgstr ""
 msgid "Ready to install \"%s\" ?"
 msgstr ""
 
-#
-#, fuzzy, python-format
-msgid "Ready to install %s ?"
-msgstr "Preklic namestitve"
-
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr ""
-
-#
-#, fuzzy, python-format
-msgid "Ready to remove %s ?"
-msgstr "Nazaj na seznam datotek"
 
 #
 msgid "Really close without saving settings?"
@@ -10586,6 +10581,10 @@ msgstr "Preskok naprej (vnos časa)"
 
 #, fuzzy
 msgid "Seems a background update check is in progress, please try again later."
+msgstr "Posodobitve niso na voljo. Prosim, če poizkusite kasneje!"
+
+#, fuzzy
+msgid "Seems a background update check is in progress, please wait a few minutes and then try again."
 msgstr "Posodobitve niso na voljo. Prosim, če poizkusite kasneje!"
 
 #
@@ -15000,14 +14999,14 @@ msgstr "Sprejemnik je pripravljen za uporabo. Pred ponovnim zagonom sprejemnika 
 
 #, fuzzy, python-format
 msgid ""
-"Your receiver will be restarted after the installation of service\n"
-"Ready to install %s ?"
+"Your receiver will be restarted after the installation of the service\n"
+"Are you ready to install \"%s\" ?"
 msgstr "Sprejemnik se bo po pritisku tipke OK ponovno zagnal."
 
 #, fuzzy
 msgid ""
-"Your receiver will be restarted after the removal of service\n"
-"Do you want to remove now ?"
+"Your receiver will be restarted after the removal of the service\n"
+"Do you want to remove the service now ?"
 msgstr "Sprejemnik se bo po pritisku tipke OK ponovno zagnal."
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
@@ -15141,6 +15140,10 @@ msgstr "se bo zagnalo"
 msgid "activate network adapter configuration"
 msgstr "aktiviranje omrežnih nastavitev"
 
+#, fuzzy
+msgid "active"
+msgstr "Relativno"
+
 msgid "actual time only"
 msgstr "samo trenutni čas"
 
@@ -15204,6 +15207,14 @@ msgid "alphabetic"
 msgstr "razvrščanje po abecedi"
 
 msgid "alphabetic reverse"
+msgstr "razvrščanje po abecedi (obratno)"
+
+#, fuzzy
+msgid "alphabetic then newest"
+msgstr "razvrščanje po abecedi (obratno)"
+
+#, fuzzy
+msgid "alphabetic then oldest"
 msgstr "razvrščanje po abecedi (obratno)"
 
 msgid "alphabetical"
@@ -15924,6 +15935,9 @@ msgstr "zaklenjen"
 msgid "long"
 msgstr ""
 
+msgid "longest"
+msgstr ""
+
 msgid "magazines/reports/documentary"
 msgstr ""
 
@@ -16164,11 +16178,6 @@ msgstr "pritisnite OK"
 msgid "please wait, loading picture..."
 msgstr "poteka nalaganje slike, prosim počakajte ..."
 
-#
-#, fuzzy
-msgid "please wait..."
-msgstr "Prosim počakajte!"
-
 msgid "popular culture/traditional arts"
 msgstr ""
 
@@ -16380,6 +16389,11 @@ msgstr "Izbira zagonskega kanala"
 #, fuzzy
 msgid "set default"
 msgstr "Nastavi kot privzeto"
+
+#
+#, fuzzy
+msgid "shortest"
+msgstr "Preizkus omrežja"
 
 #
 msgid "show DVD main menu"

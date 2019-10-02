@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-29 15:37+0330\n"
+"POT-Creation-Date: 2019-10-03 01:38+0330\n"
 "PO-Revision-Date: 2018-11-12 20:51+0200\n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: Bulgarian\n"
@@ -1075,9 +1075,6 @@ msgstr "(покажи DVD аудио меню)"
 msgid "(unknown)"
 msgstr "(непознат)"
 
-msgid "(used)"
-msgstr ""
-
 msgid "* Only available if more than one interface is active."
 msgstr "* На разположение само ако е активен повече от един интерфейс."
 
@@ -1630,6 +1627,10 @@ msgstr "Всички спътници 4 (USALS)"
 msgid "All services provider"
 msgstr "Всички услуги на провайдер"
 
+#, fuzzy
+msgid "All slots"
+msgstr "Избор на слот"
+
 msgid "Allocate"
 msgstr "Разпредели"
 
@@ -1764,6 +1765,14 @@ msgstr "Което и да е действие"
 
 msgid "Arabic"
 msgstr "Арабски"
+
+#, fuzzy, python-format
+msgid "Are you ready to install \"%s\" ?"
+msgstr "Отмяна на инсталацията"
+
+#, fuzzy, python-format
+msgid "Are you ready to remove \"%s\" ?"
+msgstr "Връщане към списъка с филми"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Наистина ли искате да премахнете всички изтрити букети?"
@@ -4096,11 +4105,6 @@ msgstr "Наистина ли искате да изтриете %s?"
 
 msgid "Do you want this?"
 msgstr "Искате ли да извършите това?"
-
-msgid ""
-"Do you want to also install samba client ?\n"
-"This allows you to mount your windows shares on this device."
-msgstr ""
 
 msgid "Do you want to autorestore settings?"
 msgstr "Искате ли автоматично да възстановите настройките?"
@@ -8529,17 +8533,9 @@ msgstr ""
 msgid "Ready to install \"%s\" ?"
 msgstr ""
 
-#, fuzzy, python-format
-msgid "Ready to install %s ?"
-msgstr "Отмяна на инсталацията"
-
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr ""
-
-#, fuzzy, python-format
-msgid "Ready to remove %s ?"
-msgstr "Връщане към списъка с филми"
 
 msgid "Really close without saving settings?"
 msgstr "Да затворя ли без запис на настройките?"
@@ -9349,6 +9345,10 @@ msgstr "Превъртане напред (въведете време)"
 
 #, fuzzy
 msgid "Seems a background update check is in progress, please try again later."
+msgstr "Няма налични актуализации. Моля опитайте по-късно."
+
+#, fuzzy
+msgid "Seems a background update check is in progress, please wait a few minutes and then try again."
 msgstr "Няма налични актуализации. Моля опитайте по-късно."
 
 msgid "Select"
@@ -13286,14 +13286,14 @@ msgstr "Вашия приемник вероятно сега няма да мо
 
 #, fuzzy, python-format
 msgid ""
-"Your receiver will be restarted after the installation of service\n"
-"Ready to install %s ?"
+"Your receiver will be restarted after the installation of the service\n"
+"Are you ready to install \"%s\" ?"
 msgstr "Вашия приемник ще се рестартира след натискане ОK на дистанционното."
 
 #, fuzzy
 msgid ""
-"Your receiver will be restarted after the removal of service\n"
-"Do you want to remove now ?"
+"Your receiver will be restarted after the removal of the service\n"
+"Do you want to remove the service now ?"
 msgstr "Вашия приемник ще се рестартира след натискане ОK на дистанционното."
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
@@ -13410,6 +13410,10 @@ msgstr "стартирам"
 msgid "activate network adapter configuration"
 msgstr "активиране конфигурацията на мрежовия адаптер"
 
+#, fuzzy
+msgid "active"
+msgstr "Относително"
+
 msgid "actual time only"
 msgstr "само реалното време"
 
@@ -13463,6 +13467,14 @@ msgid "alphabetic"
 msgstr "сортиране по азбучен ред"
 
 msgid "alphabetic reverse"
+msgstr "обратно по азбучен ред"
+
+#, fuzzy
+msgid "alphabetic then newest"
+msgstr "обратно по азбучен ред"
+
+#, fuzzy
+msgid "alphabetic then oldest"
 msgstr "обратно по азбучен ред"
 
 msgid "alphabetical"
@@ -14107,6 +14119,10 @@ msgstr "заключен"
 msgid "long"
 msgstr "дълго"
 
+#, fuzzy
+msgid "longest"
+msgstr "дълго"
+
 msgid "magazines/reports/documentary"
 msgstr "списания/репортажи/документални"
 
@@ -14316,10 +14332,6 @@ msgstr "моля натиснете ОК когато е готово"
 msgid "please wait, loading picture..."
 msgstr "моля изчакайте, зареждам снимка..."
 
-#, fuzzy
-msgid "please wait..."
-msgstr "Моля изчакайте..."
-
 msgid "popular culture/traditional arts"
 msgstr "популярна култура/традиционни изкуства"
 
@@ -14498,6 +14510,10 @@ msgstr "задаване като стартиращ канал"
 #, fuzzy
 msgid "set default"
 msgstr "Задаване по подразбиране"
+
+#, fuzzy
+msgid "shortest"
+msgstr "Тест на мрежата"
 
 msgid "show DVD main menu"
 msgstr "покажи главното DVD mеню"

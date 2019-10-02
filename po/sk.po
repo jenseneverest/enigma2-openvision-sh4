@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-29 15:37+0330\n"
+"POT-Creation-Date: 2019-10-03 01:38+0330\n"
 "PO-Revision-Date: 2019-06-27 16:02+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -1097,9 +1097,6 @@ msgstr "(zobraziť voliteľné menu zvuku DVD)"
 msgid "(unknown)"
 msgstr "(neznáme)"
 
-msgid "(used)"
-msgstr ""
-
 msgid "* Only available if more than one interface is active."
 msgstr "* Dostupné, len ak je aktívnych viac rozhraní než jedno."
 
@@ -1648,6 +1645,10 @@ msgstr "Všetky satelity 4 (USALS)"
 msgid "All services provider"
 msgstr "Všetky služby poskytovateľa"
 
+#, fuzzy
+msgid "All slots"
+msgstr "Zvoľte slot"
+
 msgid "Allocate"
 msgstr "Prideliť"
 
@@ -1778,6 +1779,14 @@ msgstr "Akákoľvek aktivita"
 
 msgid "Arabic"
 msgstr "Arabčina"
+
+#, fuzzy, python-format
+msgid "Are you ready to install \"%s\" ?"
+msgstr "Zrušiť inštaláciu"
+
+#, fuzzy, python-format
+msgid "Are you ready to remove \"%s\" ?"
+msgstr "Návrat do zoznamu filmov"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Naozaj chcete natrvalo odstrániť všetky zmazané zoznamy staníc?"
@@ -4105,11 +4114,6 @@ msgstr "Naozaj chcete zastaviť aktuálnu udalosť a zmazať časovač %s?"
 
 msgid "Do you want this?"
 msgstr "Chcete to?"
-
-msgid ""
-"Do you want to also install samba client ?\n"
-"This allows you to mount your windows shares on this device."
-msgstr ""
 
 msgid "Do you want to autorestore settings?"
 msgstr "Prajete si automatickú obnovu nastavení?"
@@ -8510,17 +8514,9 @@ msgstr ""
 msgid "Ready to install \"%s\" ?"
 msgstr ""
 
-#, fuzzy, python-format
-msgid "Ready to install %s ?"
-msgstr "Zrušiť inštaláciu"
-
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr ""
-
-#, fuzzy, python-format
-msgid "Ready to remove %s ?"
-msgstr "Návrat do zoznamu filmov"
 
 msgid "Really close without saving settings?"
 msgstr "Naozaj zatvoriť bez uloženia nastavení?"
@@ -9322,6 +9318,10 @@ msgstr "Hľadať dopredu (zadajte čas)"
 
 #, fuzzy
 msgid "Seems a background update check is in progress, please try again later."
+msgstr "Žiadne dostupné aktualizácie. Skúste to neskôr."
+
+#, fuzzy
+msgid "Seems a background update check is in progress, please wait a few minutes and then try again."
 msgstr "Žiadne dostupné aktualizácie. Skúste to neskôr."
 
 msgid "Select"
@@ -13234,14 +13234,14 @@ msgstr "Váš prijímač môže byť teraz nepoužiteľný. Pred reštartom prij
 
 #, fuzzy, python-format
 msgid ""
-"Your receiver will be restarted after the installation of service\n"
-"Ready to install %s ?"
+"Your receiver will be restarted after the installation of the service\n"
+"Are you ready to install \"%s\" ?"
 msgstr "Váš prijímač bude reštartovaný po stlačení tlačidla OK na diaľkovom ovládači."
 
 #, fuzzy
 msgid ""
-"Your receiver will be restarted after the removal of service\n"
-"Do you want to remove now ?"
+"Your receiver will be restarted after the removal of the service\n"
+"Do you want to remove the service now ?"
 msgstr "Váš prijímač bude reštartovaný po stlačení tlačidla OK na diaľkovom ovládači."
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
@@ -13357,6 +13357,10 @@ msgstr "hneď začne"
 msgid "activate network adapter configuration"
 msgstr "aktivovať konfiguráciu sieťového adaptéra"
 
+#, fuzzy
+msgid "active"
+msgstr "Relatívne"
+
 msgid "actual time only"
 msgstr "iba aktuálny čas"
 
@@ -13410,6 +13414,14 @@ msgid "alphabetic"
 msgstr "podľa abecedy"
 
 msgid "alphabetic reverse"
+msgstr "podľa abecedy v opačnom poradí"
+
+#, fuzzy
+msgid "alphabetic then newest"
+msgstr "podľa abecedy v opačnom poradí"
+
+#, fuzzy
+msgid "alphabetic then oldest"
 msgstr "podľa abecedy v opačnom poradí"
 
 msgid "alphabetical"
@@ -14048,6 +14060,10 @@ msgstr "zachytený"
 msgid "long"
 msgstr "dlhý"
 
+#, fuzzy
+msgid "longest"
+msgstr "dlhý"
+
 msgid "magazines/reports/documentary"
 msgstr "časopisy/správy/dokumentárne"
 
@@ -14257,10 +14273,6 @@ msgstr "Ak budete pripravený, stlačte tlačidlo OK."
 msgid "please wait, loading picture..."
 msgstr "Čakajte prosím, načítavam obraz..."
 
-#, fuzzy
-msgid "please wait..."
-msgstr "Prosím čakajte..."
-
 msgid "popular culture/traditional arts"
 msgstr "populárna kultúra/tradičné umenie"
 
@@ -14439,6 +14451,10 @@ msgstr "nastaviť ako stanicu po spustení"
 #, fuzzy
 msgid "set default"
 msgstr "Nastaviť predvolené"
+
+#, fuzzy
+msgid "shortest"
+msgstr "Test siete"
 
 msgid "show DVD main menu"
 msgstr "zobraziť hlavné menu DVD"

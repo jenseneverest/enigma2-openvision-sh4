@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-29 15:37+0330\n"
+"POT-Creation-Date: 2019-10-03 01:38+0330\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -1105,9 +1105,6 @@ msgstr "(Vis ekstra DVD lyd menu)"
 msgid "(unknown)"
 msgstr "ukendt"
 
-msgid "(used)"
-msgstr ""
-
 #
 msgid "* Only available if more than one interface is active."
 msgstr "* Kun tilgængelig hvis mere end et interface er aktivt."
@@ -1744,6 +1741,9 @@ msgstr "Alle satellitter 4 (USALS)"
 msgid "All services provider"
 msgstr "Alle services udbyder"
 
+msgid "All slots"
+msgstr ""
+
 msgid "Allocate"
 msgstr "Alloker"
 
@@ -1890,6 +1890,16 @@ msgstr "Enhver aktivitet"
 #
 msgid "Arabic"
 msgstr "Arabisk"
+
+#
+#, fuzzy, python-format
+msgid "Are you ready to install \"%s\" ?"
+msgstr "Fortryd afinstallering"
+
+#
+#, fuzzy, python-format
+msgid "Are you ready to remove \"%s\" ?"
+msgstr "Tilbage til filmliste"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Er du sikker på du vil fjerne alle slettede userbouquets?"
@@ -4501,11 +4511,6 @@ msgstr "Vil du virkelig slette %s?"
 
 msgid "Do you want this?"
 msgstr "Vil du dette?"
-
-msgid ""
-"Do you want to also install samba client ?\n"
-"This allows you to mount your windows shares on this device."
-msgstr ""
 
 msgid "Do you want to autorestore settings?"
 msgstr "Vil du autogendanne indstillinger?"
@@ -9506,19 +9511,9 @@ msgstr ""
 msgid "Ready to install \"%s\" ?"
 msgstr ""
 
-#
-#, fuzzy, python-format
-msgid "Ready to install %s ?"
-msgstr "Fortryd afinstallering"
-
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr ""
-
-#
-#, fuzzy, python-format
-msgid "Ready to remove %s ?"
-msgstr "Tilbage til filmliste"
 
 #
 msgid "Really close without saving settings?"
@@ -10455,6 +10450,10 @@ msgstr "Søg forlæns (skriv tid)"
 
 #, fuzzy
 msgid "Seems a background update check is in progress, please try again later."
+msgstr "Ingen opdateringer tilgængelig. Prøv venligst senere."
+
+#, fuzzy
+msgid "Seems a background update check is in progress, please wait a few minutes and then try again."
 msgstr "Ingen opdateringer tilgængelig. Prøv venligst senere."
 
 #
@@ -14832,14 +14831,14 @@ msgstr "Din receiver er måske ubrugelig nu. Referer venligst til manualen for y
 
 #, fuzzy, python-format
 msgid ""
-"Your receiver will be restarted after the installation of service\n"
-"Ready to install %s ?"
+"Your receiver will be restarted after the installation of the service\n"
+"Are you ready to install \"%s\" ?"
 msgstr "Din receiver vil genstarte efter at du trykke OK på fjernbetjeningen."
 
 #, fuzzy
 msgid ""
-"Your receiver will be restarted after the removal of service\n"
-"Do you want to remove now ?"
+"Your receiver will be restarted after the removal of the service\n"
+"Do you want to remove the service now ?"
 msgstr "Din receiver vil genstarte efter at du trykke OK på fjernbetjeningen."
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
@@ -14971,6 +14970,10 @@ msgstr "er ved at starte"
 msgid "activate network adapter configuration"
 msgstr "aktiver opsætning for netværksadapter"
 
+#, fuzzy
+msgid "active"
+msgstr "Relativ"
+
 msgid "actual time only"
 msgstr "Aktuel tid kun"
 
@@ -15034,6 +15037,14 @@ msgid "alphabetic"
 msgstr "alfabetisk"
 
 msgid "alphabetic reverse"
+msgstr "omvendt alfabet"
+
+#, fuzzy
+msgid "alphabetic then newest"
+msgstr "omvendt alfabet"
+
+#, fuzzy
+msgid "alphabetic then oldest"
 msgstr "omvendt alfabet"
 
 msgid "alphabetical"
@@ -15759,6 +15770,9 @@ msgstr "låst "
 msgid "long"
 msgstr ""
 
+msgid "longest"
+msgstr ""
+
 msgid "magazines/reports/documentary"
 msgstr "magasiner/reporter/dokumentar"
 
@@ -15999,11 +16013,6 @@ msgstr "tryk venligst OK når du er klar"
 msgid "please wait, loading picture..."
 msgstr "vent venligst, henter billede..."
 
-#
-#, fuzzy
-msgid "please wait..."
-msgstr "Vent venligst..."
-
 msgid "popular culture/traditional arts"
 msgstr "populær kultur/traditionel kunst"
 
@@ -16212,6 +16221,11 @@ msgstr "Sæt som startkanal"
 #, fuzzy
 msgid "set default"
 msgstr "Sæt standard"
+
+#
+#, fuzzy
+msgid "shortest"
+msgstr "Netværks test"
 
 #
 msgid "show DVD main menu"

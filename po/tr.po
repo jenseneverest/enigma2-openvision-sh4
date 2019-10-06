@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-03 01:38+0330\n"
+"POT-Creation-Date: 2019-10-06 14:19+0330\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -2268,6 +2268,9 @@ msgstr ""
 msgid "Buffering %d%%"
 msgstr "Ara bellek %d%%"
 
+msgid "Buffers:"
+msgstr ""
+
 #, fuzzy
 msgid "Build date: "
 msgstr "Bit Hızı:"
@@ -2301,10 +2304,19 @@ msgstr ""
 msgid "Bus: "
 msgstr "Yol: "
 
+msgid "By Team OpenVision"
+msgstr ""
+
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr "Varsayılan olarak; SNR, dB olarak (Tuner tarafından destekleniyorsa) gösterilecektir. Bu ayar SNR yerine yüzde işareti gösterir."
 
 msgid "Bypass HDMI EDID checking"
+msgstr ""
+
+msgid "Bytes received:"
+msgstr ""
+
+msgid "Bytes sent:"
 msgstr ""
 
 msgid "C"
@@ -2374,6 +2386,9 @@ msgstr ""
 
 msgid "Cache thumbnails"
 msgstr "Küçük resim önbelleği"
+
+msgid "Cached:"
+msgstr ""
 
 msgid "Calculate"
 msgstr "Hesapla"
@@ -3917,11 +3932,23 @@ msgid "Detected NIMs:"
 msgstr "TUNER:"
 
 #, fuzzy
+msgid "Detected devices:"
+msgstr "TUNER:"
+
+#, fuzzy
+msgid "Detected tuners:"
+msgstr "TUNER:"
+
+#, fuzzy
 msgid "Device"
 msgstr "Kanal"
 
 msgid "Devicename:"
 msgstr "Aygıt Adı​​:"
+
+#, fuzzy
+msgid "Devices"
+msgstr "Kanal"
 
 msgid "DiSEqC"
 msgstr "DiSEqC"
@@ -4935,6 +4962,9 @@ msgstr "FEC:"
 msgid "FFmpeg version: "
 msgstr "Çekirdek sürümü:"
 
+msgid "FLASH"
+msgstr ""
+
 msgid "FTA"
 msgstr "FTA"
 
@@ -5171,6 +5201,18 @@ msgstr "Tam ekranda çerçeve boyutu"
 msgid "France"
 msgstr "Romantik"
 
+msgid "Free memory:"
+msgstr ""
+
+msgid "Free swap:"
+msgstr ""
+
+msgid "Free:"
+msgstr ""
+
+msgid "Free: "
+msgstr ""
+
 msgid "French"
 msgstr "Fransızca"
 
@@ -5237,6 +5279,10 @@ msgstr "Ek Seçenekler"
 
 msgid "Further options"
 msgstr ""
+
+#, fuzzy
+msgid "GB"
+msgstr "RGB"
 
 #, fuzzy
 msgid "GStreamer version: "
@@ -5645,6 +5691,9 @@ msgstr ""
 msgid "Host receiver streaming port"
 msgstr "Uydu Alıcınız yeniden baştatılıyor."
 
+msgid "Hostname:"
+msgstr ""
+
 msgid "HotKey Setup"
 msgstr "Kısayol Tuşu Ayarla"
 
@@ -5722,6 +5771,9 @@ msgstr "IP adresi"
 #, fuzzy
 msgid "IP of fallback remote receiver"
 msgstr "Yedek cihaz  URL"
+
+msgid "IP:"
+msgstr ""
 
 msgid "IPv6"
 msgstr ""
@@ -5806,6 +5858,10 @@ msgstr ""
 
 msgid "Ignore conflict"
 msgstr ""
+
+#, fuzzy
+msgid "Image OpenVision"
+msgstr "Eklentileri yönet"
 
 msgid "Image architecture: "
 msgstr ""
@@ -6512,6 +6568,13 @@ msgstr "Ayarları düzenle"
 msgid "MAC address setup"
 msgstr "Ayarları düzenle"
 
+msgid "MAC:"
+msgstr ""
+
+#, fuzzy
+msgid "MB"
+msgstr "B"
+
 msgid "MENU"
 msgstr ""
 
@@ -6643,6 +6706,9 @@ msgid "Maybe the reason that recording is currently running. Please stop the rec
 msgstr "Kayıt devam ediyor. Lütfen pozisyoner yapılandırmasını denemeden önce kaydı durdurun."
 
 msgid "Mayotte"
+msgstr ""
+
+msgid "Mb/s"
 msgstr ""
 
 msgid "Media playback Remaining/Elapsed as"
@@ -7099,6 +7165,10 @@ msgstr ""
 msgid "Netmask"
 msgstr "Alt ağ maskesi"
 
+#, fuzzy
+msgid "Netmask:"
+msgstr "Alt ağ maskesi"
+
 msgid "Network"
 msgstr "Ağ"
 
@@ -7130,6 +7200,10 @@ msgstr "Ağ adı(SSID)"
 
 msgid "Network scan"
 msgstr "Ağ arama"
+
+#, fuzzy
+msgid "Network servers:"
+msgstr "Ağ testi: "
 
 msgid "Network setup"
 msgstr "Ağ kurulumu"
@@ -7215,6 +7289,10 @@ msgstr "Güncelleme yok"
 
 msgid "No age block"
 msgstr "Yaş Engeli Yok"
+
+#, fuzzy
+msgid "No connection"
+msgstr "Bağlantı yok"
 
 msgid ""
 "No data on transponder!\n"
@@ -7422,11 +7500,19 @@ msgid "Not enough disk space. Please free up some disk space and try again. (%d 
 msgstr "Yetersiz disk alanı. Disk alanı boşaltarak tekrar deneyin. (%d MB gerekli, kullanılabilir %d MB)"
 
 #, fuzzy
+msgid "Not mounted"
+msgstr "Ağ bağlantısı"
+
+#, fuzzy
 msgid "Not running"
 msgstr "Motor çalışma zaman aşımı"
 
 msgid "Not tested:"
 msgstr ""
+
+#, fuzzy
+msgid "Not-Associated"
+msgstr "İlişkili değil"
 
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Not:  "
@@ -8109,6 +8195,10 @@ msgstr "Ağ yapılandırmanızın etkinleştirilmesi için lütfen bekleyin..."
 msgid "Please wait while feeds state is being checked."
 msgstr "Lütfen arama yapılırken bekleyin..."
 
+#, fuzzy
+msgid "Please wait while scanning for devices..."
+msgstr "Lütfen arama yapılırken bekleyin..."
+
 msgid "Please wait while scanning is in progress..."
 msgstr "Lütfen arama yapılırken bekleyin..."
 
@@ -8507,6 +8597,9 @@ msgstr ""
 
 msgid "Quick zap"
 msgstr "Hızlı kanal değiştirme"
+
+msgid "RAM"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10428,6 +10521,9 @@ msgstr "Sayfa enlemi"
 msgid "Site longitude"
 msgstr "Sayfa boylamı"
 
+msgid "Size: "
+msgstr ""
+
 msgid "Skin"
 msgstr "Arayüz"
 
@@ -10687,6 +10783,9 @@ msgid "Speed"
 msgstr ""
 
 msgid "Speed up the performance"
+msgstr ""
+
+msgid "Speed:"
 msgstr ""
 
 msgid "Split preview mode"
@@ -11025,6 +11124,10 @@ msgstr "Pz"
 msgid "Sunday"
 msgstr "Pazar"
 
+#, fuzzy, python-format
+msgid "Support at %s"
+msgstr "Spor"
+
 #, fuzzy
 msgid "Suriname"
 msgstr "Kanal adı"
@@ -11151,6 +11254,10 @@ msgstr "PLP ID"
 
 msgid "T2MI RAW Mode"
 msgstr ""
+
+#, fuzzy
+msgid "TB"
+msgstr "B"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -11942,6 +12049,15 @@ msgstr ""
 
 #, python-format
 msgid "Total clients streaming: %d (%s)"
+msgstr ""
+
+msgid "Total memory:"
+msgstr ""
+
+msgid "Total swap:"
+msgstr ""
+
+msgid "Total:"
 msgstr ""
 
 msgid "Track"
@@ -13951,6 +14067,9 @@ msgid "fs9000VFD display"
 msgstr ""
 
 msgid "fs9000VFD-Icons"
+msgstr ""
+
+msgid "full"
 msgstr ""
 
 msgid "further education"

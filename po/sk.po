@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-03 01:38+0330\n"
+"POT-Creation-Date: 2019-10-06 14:19+0330\n"
 "PO-Revision-Date: 2019-06-27 16:02+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -2277,6 +2277,9 @@ msgstr "Brunei Darussalam"
 msgid "Buffering %d%%"
 msgstr "Ukladanie do vyrovnávacej pamäte %d%%"
 
+msgid "Buffers:"
+msgstr ""
+
 msgid "Build date: "
 msgstr "Dátum buildu: "
 
@@ -2308,11 +2311,20 @@ msgstr "Burundi"
 msgid "Bus: "
 msgstr "Zbernica: "
 
+msgid "By Team OpenVision"
+msgstr ""
+
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr "Predvolene je SNR zobrazené v dB (ak je podporované tunerom). Toto nastavenie zmení zobrazenie SNR na percentá."
 
 msgid "Bypass HDMI EDID checking"
 msgstr "Vynechať kontrolu HDMI EDID"
+
+msgid "Bytes received:"
+msgstr ""
+
+msgid "Bytes sent:"
+msgstr ""
 
 msgid "C"
 msgstr "C"
@@ -2381,6 +2393,9 @@ msgstr "Cabo Verde"
 
 msgid "Cache thumbnails"
 msgstr "Uchovať zmenšeniny"
+
+msgid "Cached:"
+msgstr ""
 
 msgid "Calculate"
 msgstr "Prepočítať"
@@ -3913,11 +3928,23 @@ msgid "Detected NIMs:"
 msgstr "Zistené tunery:"
 
 #, fuzzy
+msgid "Detected devices:"
+msgstr "Zistené tunery:"
+
+#, fuzzy
+msgid "Detected tuners:"
+msgstr "Zistené tunery:"
+
+#, fuzzy
 msgid "Device"
 msgstr "O stanici"
 
 msgid "Devicename:"
 msgstr "Názov zariadenia:"
+
+#, fuzzy
+msgid "Devices"
+msgstr "O stanici"
 
 msgid "DiSEqC"
 msgstr "DiSEqC"
@@ -4937,6 +4964,9 @@ msgstr "Korekcia chybovosti (FEC):"
 msgid "FFmpeg version: "
 msgstr "Verzia Enigmy: "
 
+msgid "FLASH"
+msgstr ""
+
 msgid "FTA"
 msgstr "Nekódované"
 
@@ -5169,6 +5199,18 @@ msgstr "Veľkosť obrazu pri plnom zobrazení"
 msgid "France"
 msgstr "Francúzsko"
 
+msgid "Free memory:"
+msgstr ""
+
+msgid "Free swap:"
+msgstr ""
+
+msgid "Free:"
+msgstr ""
+
+msgid "Free: "
+msgstr ""
+
 msgid "French"
 msgstr "Francúzština"
 
@@ -5233,6 +5275,10 @@ msgstr "Ďalšie možnosti"
 
 msgid "Further options"
 msgstr "Ďalšie možnosti"
+
+#, fuzzy
+msgid "GB"
+msgstr "RGB"
 
 msgid "GStreamer version: "
 msgstr "Verzia GStreamer: "
@@ -5634,6 +5680,9 @@ msgstr "Údaje neboli zatiaľ načítané"
 msgid "Host receiver streaming port"
 msgstr "Prijímač sa reštartuje..."
 
+msgid "Hostname:"
+msgstr ""
+
 msgid "HotKey Setup"
 msgstr "Nastavenie klávesových skratiek"
 
@@ -5708,6 +5757,10 @@ msgstr "Adresa IP"
 
 msgid "IP of fallback remote receiver"
 msgstr "IP adresa záložného vzdialeného prijímača"
+
+#, fuzzy
+msgid "IP:"
+msgstr "I"
 
 msgid "IPv6"
 msgstr ""
@@ -5791,6 +5844,10 @@ msgstr "Ignorovať DVB-T namespace sub network"
 
 msgid "Ignore conflict"
 msgstr "Ignorovať konflikt"
+
+#, fuzzy
+msgid "Image OpenVision"
+msgstr "Spravovať rozšírenia"
 
 msgid "Image architecture: "
 msgstr ""
@@ -6494,6 +6551,13 @@ msgstr "Upraviť nastavenia"
 msgid "MAC address setup"
 msgstr "Upraviť nastavenia"
 
+msgid "MAC:"
+msgstr ""
+
+#, fuzzy
+msgid "MB"
+msgstr "B"
+
 msgid "MENU"
 msgstr ""
 
@@ -6624,6 +6688,9 @@ msgstr "Práve sa nahráva. Zastavte nahrávanie pred nastavovaním motora."
 
 msgid "Mayotte"
 msgstr "Mayotte"
+
+msgid "Mb/s"
+msgstr ""
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7074,6 +7141,10 @@ msgstr "Holandsko"
 msgid "Netmask"
 msgstr "Maska siete"
 
+#, fuzzy
+msgid "Netmask:"
+msgstr "Maska siete"
+
 msgid "Network"
 msgstr "Sieť"
 
@@ -7105,6 +7176,10 @@ msgstr "Názov siete (SSID)"
 
 msgid "Network scan"
 msgstr "Vyhľadať sieť"
+
+#, fuzzy
+msgid "Network servers:"
+msgstr "Test siete: "
 
 msgid "Network setup"
 msgstr "Nastavenie siete"
@@ -7190,6 +7265,10 @@ msgstr "Žiadne aktívne podslužby nie sú dostupné."
 
 msgid "No age block"
 msgstr "Bez obmedzenia veku"
+
+#, fuzzy
+msgid "No connection"
+msgstr "Nie je spojenie"
 
 msgid ""
 "No data on transponder!\n"
@@ -7391,11 +7470,19 @@ msgid "Not enough disk space. Please free up some disk space and try again. (%d 
 msgstr "Nie je dostatok miesta na disku. Uvoľnite miesto na disku a a skúste to znova. (Potrebných je %d MB, ale voľných je len %d MB.)"
 
 #, fuzzy
+msgid "Not mounted"
+msgstr "Sieťový prípojný bod"
+
+#, fuzzy
 msgid "Not running"
 msgstr "nebeží"
 
 msgid "Not tested:"
 msgstr "Netestované:"
+
+#, fuzzy
+msgid "Not-Associated"
+msgstr "Nepriradené"
 
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Poznámka: Ak je povolené, a chcete prejsť do pohotovostného režimu po prebudení prijímača, nastavte voľbu \"Prebudenie do pohotovostného režimu\" na \"Nie, s výnimkou časovača prebudenia\"."
@@ -8066,6 +8153,10 @@ msgstr "Prosím čakajte na aktivovanie nastavenia siete..."
 msgid "Please wait while feeds state is being checked."
 msgstr "Čakajte, kým prebieha vyhľadávanie..."
 
+#, fuzzy
+msgid "Please wait while scanning for devices..."
+msgstr "Čakajte, kým prebieha vyhľadávanie..."
+
 msgid "Please wait while scanning is in progress..."
 msgstr "Čakajte, kým prebieha vyhľadávanie..."
 
@@ -8456,6 +8547,9 @@ msgstr ""
 
 msgid "Quick zap"
 msgstr "Rýchle prepnutie"
+
+msgid "RAM"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10351,6 +10445,9 @@ msgstr "Zemepisná šírka"
 msgid "Site longitude"
 msgstr "Zemepisná dĺžka"
 
+msgid "Size: "
+msgstr ""
+
 msgid "Skin"
 msgstr "Vzhľad"
 
@@ -10604,6 +10701,9 @@ msgid "Speed"
 msgstr ""
 
 msgid "Speed up the performance"
+msgstr ""
+
+msgid "Speed:"
 msgstr ""
 
 msgid "Split preview mode"
@@ -10939,6 +11039,10 @@ msgstr "Ne"
 msgid "Sunday"
 msgstr "Nedeľa"
 
+#, fuzzy, python-format
+msgid "Support at %s"
+msgstr "Športy"
+
 msgid "Suriname"
 msgstr "Surinam"
 
@@ -11061,6 +11165,10 @@ msgstr "T2MI PLP ID"
 
 msgid "T2MI RAW Mode"
 msgstr "Režim T2MI RAW"
+
+#, fuzzy
+msgid "TB"
+msgstr "B"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -11857,6 +11965,15 @@ msgstr ""
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Celkovo streamujúcich  klientov: %d (%s)"
+
+msgid "Total memory:"
+msgstr ""
+
+msgid "Total swap:"
+msgstr ""
+
+msgid "Total:"
+msgstr ""
 
 msgid "Track"
 msgstr "Stopa"
@@ -13849,6 +13966,9 @@ msgid "fs9000VFD display"
 msgstr ""
 
 msgid "fs9000VFD-Icons"
+msgstr ""
+
+msgid "full"
 msgstr ""
 
 msgid "further education"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-03 01:38+0330\n"
+"POT-Creation-Date: 2019-10-06 14:19+0330\n"
 "PO-Revision-Date: 2019-09-13 23:02+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -2264,6 +2264,9 @@ msgstr "Brunei"
 msgid "Buffering %d%%"
 msgstr "Pufferelés %d%%"
 
+msgid "Buffers:"
+msgstr ""
+
 msgid "Build date: "
 msgstr "Képfájl dátuma: "
 
@@ -2295,11 +2298,20 @@ msgstr "Burundi"
 msgid "Bus: "
 msgstr "Busz: "
 
+msgid "By Team OpenVision"
+msgstr ""
+
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr "Alapértelmezetten, a Jel/Zaj viszony (SNR) decibelben jeleník meg (ha a tuner támogatja). Ezzel a beállítással mindenképp százalékra kényszerítheti a megjelenítést."
 
 msgid "Bypass HDMI EDID checking"
 msgstr "HDMI EDID ellenőrzés kihagyása"
+
+msgid "Bytes received:"
+msgstr ""
+
+msgid "Bytes sent:"
+msgstr ""
 
 msgid "C"
 msgstr "C"
@@ -2368,6 +2380,9 @@ msgstr "Zöld-foki Köztársaság"
 
 msgid "Cache thumbnails"
 msgstr "Cache ikonok"
+
+msgid "Cached:"
+msgstr ""
 
 msgid "Calculate"
 msgstr "Számítás"
@@ -3894,11 +3909,23 @@ msgid "Detected NIMs:"
 msgstr "Csatlakoztatott tunerek:"
 
 #, fuzzy
+msgid "Detected devices:"
+msgstr "Csatlakoztatott tunerek:"
+
+#, fuzzy
+msgid "Detected tuners:"
+msgstr "Csatlakoztatott tunerek:"
+
+#, fuzzy
 msgid "Device"
 msgstr "Csatorna információ"
 
 msgid "Devicename:"
 msgstr "Eszköznév:"
+
+#, fuzzy
+msgid "Devices"
+msgstr "Csatorna információ"
 
 msgid "DiSEqC"
 msgstr "DiSEqC"
@@ -4911,6 +4938,9 @@ msgstr "FEC:"
 msgid "FFmpeg version: "
 msgstr "Kezelőfelület verzió: "
 
+msgid "FLASH"
+msgstr ""
+
 msgid "FTA"
 msgstr "FTA"
 
@@ -5139,6 +5169,18 @@ msgstr "Képméret teljesképernyő nézetbe"
 msgid "France"
 msgstr "Franciaország"
 
+msgid "Free memory:"
+msgstr ""
+
+msgid "Free swap:"
+msgstr ""
+
+msgid "Free:"
+msgstr ""
+
+msgid "Free: "
+msgstr ""
+
 msgid "French"
 msgstr "Francia"
 
@@ -5203,6 +5245,10 @@ msgstr "További beállítások"
 
 msgid "Further options"
 msgstr "További beállítások"
+
+#, fuzzy
+msgid "GB"
+msgstr "RGB"
 
 msgid "GStreamer version: "
 msgstr "GStreamer verzió: "
@@ -5604,6 +5650,9 @@ msgstr "Még nincs fogadott adat"
 msgid "Host receiver streaming port"
 msgstr "A készülék most újraindul"
 
+msgid "Hostname:"
+msgstr ""
+
 msgid "HotKey Setup"
 msgstr "HotKey beállítás"
 
@@ -5678,6 +5727,10 @@ msgstr "IP cím"
 
 msgid "IP of fallback remote receiver"
 msgstr "Tartalék távoli vevő IP címe"
+
+#, fuzzy
+msgid "IP:"
+msgstr "I"
 
 msgid "IPv6"
 msgstr ""
@@ -5763,6 +5816,10 @@ msgstr "DVB-T alhálózati azonosító figyelmen kívül hagyása"
 
 msgid "Ignore conflict"
 msgstr "Hagyja figyelmen kívül az ütközést"
+
+#, fuzzy
+msgid "Image OpenVision"
+msgstr "Bővítmények kezelése"
 
 msgid "Image architecture: "
 msgstr ""
@@ -6465,6 +6522,13 @@ msgstr "Beállítások módosítása"
 msgid "MAC address setup"
 msgstr "Beállítások módosítása"
 
+msgid "MAC:"
+msgstr ""
+
+#, fuzzy
+msgid "MB"
+msgstr "B"
+
 msgid "MENU"
 msgstr ""
 
@@ -6595,6 +6659,9 @@ msgstr "Talán egy felvétel folyamatban van. Állítsa le a felvételt, mielőt
 
 msgid "Mayotte"
 msgstr "Mayotte"
+
+msgid "Mb/s"
+msgstr ""
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7042,6 +7109,10 @@ msgstr "Hollandia"
 msgid "Netmask"
 msgstr "Alhál. maszk"
 
+#, fuzzy
+msgid "Netmask:"
+msgstr "Alhál. maszk"
+
 msgid "Network"
 msgstr "Hálózat"
 
@@ -7073,6 +7144,10 @@ msgstr "Hálózatnév (SSID)"
 
 msgid "Network scan"
 msgstr "Hálózat keresése"
+
+#, fuzzy
+msgid "Network servers:"
+msgstr "Hálózati teszt: "
 
 msgid "Network setup"
 msgstr "Hálózati beállítások"
@@ -7158,6 +7233,10 @@ msgstr "Nincs elérhető alcsatorna"
 
 msgid "No age block"
 msgstr "Nincs korhatár"
+
+#, fuzzy
+msgid "No connection"
+msgstr "Nincs kapcsolat"
 
 msgid ""
 "No data on transponder!\n"
@@ -7359,11 +7438,19 @@ msgid "Not enough disk space. Please free up some disk space and try again. (%d 
 msgstr "Nincs elég tárhely. Kérem, szabadítson fel némi helyet és próbálja meg újra. (%d MB területre lenne szükség, %d MB hely szabad jelenleg)"
 
 #, fuzzy
+msgid "Not mounted"
+msgstr "Hálózat felépítése"
+
+#, fuzzy
 msgid "Not running"
 msgstr "nem fut"
 
 msgid "Not tested:"
 msgstr "Nincs tesztelve:"
+
+#, fuzzy
+msgid "Not-Associated"
+msgstr "Nem-csatlakozott"
 
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Megjegyzés: ha engedélyezi, és a felébresztés után készenléti módot szeretne, állítsa az 'Indításkor készenléti módba\" lehetőséget erre: 'Nem, kivéve Felébresztés időzítő'."
@@ -8033,6 +8120,10 @@ msgstr "Kérem várjon, ameddig a hálózati konfiguráció élesedik..."
 msgid "Please wait while feeds state is being checked."
 msgstr "Kérem várjon, ameddig a keresés folyamatban van..."
 
+#, fuzzy
+msgid "Please wait while scanning for devices..."
+msgstr "Kérem várjon, ameddig a keresés folyamatban van..."
+
 msgid "Please wait while scanning is in progress..."
 msgstr "Kérem várjon, ameddig a keresés folyamatban van..."
 
@@ -8423,6 +8514,9 @@ msgstr ""
 
 msgid "Quick zap"
 msgstr "Gyors ugrás"
+
+msgid "RAM"
+msgstr ""
 
 #, fuzzy
 msgid "RC command set"
@@ -10315,6 +10409,9 @@ msgstr "Földrajzi szélességi fok"
 msgid "Site longitude"
 msgstr "Földrajzi hosszúsági fok"
 
+msgid "Size: "
+msgstr ""
+
 msgid "Skin"
 msgstr "Kinézet"
 
@@ -10568,6 +10665,9 @@ msgid "Speed"
 msgstr ""
 
 msgid "Speed up the performance"
+msgstr ""
+
+msgid "Speed:"
 msgstr ""
 
 msgid "Split preview mode"
@@ -10903,6 +11003,10 @@ msgstr "Vas"
 msgid "Sunday"
 msgstr "Vasárnap"
 
+#, fuzzy, python-format
+msgid "Support at %s"
+msgstr "Sport"
+
 msgid "Suriname"
 msgstr "Suriname"
 
@@ -11025,6 +11129,10 @@ msgstr "T2MI PLP ID"
 
 msgid "T2MI RAW Mode"
 msgstr "T2MI RAW mód"
+
+#, fuzzy
+msgid "TB"
+msgstr "B"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -11823,6 +11931,15 @@ msgstr ""
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Streamelő kliensek száma: %d (%s)"
+
+msgid "Total memory:"
+msgstr ""
+
+msgid "Total swap:"
+msgstr ""
+
+msgid "Total:"
+msgstr ""
 
 msgid "Track"
 msgstr "Sáv"
@@ -13815,6 +13932,9 @@ msgid "fs9000VFD display"
 msgstr ""
 
 msgid "fs9000VFD-Icons"
+msgstr ""
+
+msgid "full"
 msgstr ""
 
 msgid "further education"

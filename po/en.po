@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-06 14:19+0330\n"
+"POT-Creation-Date: 2019-10-09 03:59+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: satdreamgr\n"
 "Language-Team: \n"
@@ -1263,6 +1263,32 @@ msgstr ""
 msgid "A file from media is in use!"
 msgstr ""
 
+#, fuzzy
+msgid "A finished powertimer wants to reboot your receiver. Do that now?"
+msgstr ""
+"A finished record timer wants to set your\n"
+"receiver to standby. Do that now?"
+
+#, fuzzy
+msgid ""
+"A finished powertimer wants to restart the user interface.\n"
+"Do that now?"
+msgstr ""
+"A finished record timer wants to set your\n"
+"receiver to standby. Do that now?"
+
+#, fuzzy
+msgid "A finished powertimer wants to set your receiver to standby. Do that now?"
+msgstr ""
+"A finished record timer wants to set your\n"
+"receiver to standby. Do that now?"
+
+#, fuzzy
+msgid "A finished powertimer wants to shutdown your receiver. Do that now?"
+msgstr ""
+"A finished record timer wants to shut down\n"
+"your receiver. Shutdown now?"
+
 msgid ""
 "A finished record timer wants to set your\n"
 "receiver to standby. Do that now?"
@@ -1889,6 +1915,9 @@ msgstr "Assigned CAIds:"
 msgid "Assigned services/provider:"
 msgstr "Assigned services/provider:"
 
+msgid "At End:"
+msgstr ""
+
 msgid "At beginning"
 msgstr "At beginning"
 
@@ -1986,6 +2015,10 @@ msgstr ""
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Auto chapter split every ? minutes (0=never)"
 
+#, fuzzy
+msgid "Auto deep standby"
+msgstr "go to deep standby"
+
 msgid "Auto flesh"
 msgstr "Auto flesh"
 
@@ -2003,6 +2036,10 @@ msgstr ""
 
 msgid "Auto scart switching"
 msgstr "Auto scart switching"
+
+#, fuzzy
+msgid "Auto standby"
+msgstr "No standby"
 
 #, fuzzy
 msgid "Auto start"
@@ -2303,9 +2340,6 @@ msgstr ""
 
 msgid "Bus: "
 msgstr "Bus: "
-
-msgid "By Team OpenVision"
-msgstr ""
 
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
@@ -3840,6 +3874,9 @@ msgstr ""
 msgid "Delay in miliseconds between scrolling characters on display."
 msgstr ""
 
+msgid "Delay:"
+msgstr ""
+
 msgid "Delete"
 msgstr "Delete"
 
@@ -4099,6 +4136,10 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr "Do you really want to delete %s?"
 
+#, fuzzy
+msgid "Do you really want to delete this timer?"
+msgstr "Do you really want to delete %s?"
+
 #, python-format
 msgid ""
 "Do you really want to download\n"
@@ -4219,6 +4260,10 @@ msgid "Don't save and stop timeshift"
 msgstr ""
 
 msgid "Don't stop current event but disable coming events"
+msgstr "Don't stop current event but disable coming events"
+
+#, fuzzy
+msgid "Don't stop current event but disable future events"
 msgstr "Don't stop current event but disable coming events"
 
 msgid "Don't zap"
@@ -4765,6 +4810,9 @@ msgstr "Everywhere"
 msgid "Every known"
 msgstr ""
 
+msgid "Everyday"
+msgstr ""
+
 msgid "Everywhere"
 msgstr "Everywhere"
 
@@ -4949,9 +4997,6 @@ msgstr ""
 msgid "FFmpeg version: "
 msgstr "Kernel version: "
 
-msgid "FLASH"
-msgstr ""
-
 msgid "FTA"
 msgstr "FTA"
 
@@ -5131,6 +5176,10 @@ msgstr "Fixed"
 
 msgid "Fixed X11 font (SD)"
 msgstr ""
+
+#, fuzzy
+msgid "Flash"
+msgstr "Flash"
 
 #, fuzzy
 msgid "Flash Image"
@@ -5832,10 +5881,6 @@ msgstr ""
 
 msgid "Ignore conflict"
 msgstr ""
-
-#, fuzzy
-msgid "Image OpenVision"
-msgstr "Manage extensions"
 
 msgid "Image architecture: "
 msgstr ""
@@ -7624,6 +7669,10 @@ msgstr ""
 msgid "One"
 msgstr "One"
 
+#, fuzzy
+msgid "Only active when in standby"
+msgstr "Put receiver in standby"
+
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
 
@@ -7644,6 +7693,10 @@ msgstr ""
 
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision enigma2 image"
+msgstr "Kernel version: "
 
 #, fuzzy
 msgid "Open Vision module: "
@@ -8298,8 +8351,16 @@ msgstr "Power threshold in mA"
 msgid "Power threshold. Consult your receiver's manual for more information."
 msgstr ""
 
+#, fuzzy
+msgid "PowerManager entry"
+msgstr "Remove a nameserver entry"
+
 msgid "PowerMenu"
 msgstr ""
+
+#, fuzzy
+msgid "PowerTimer list"
+msgstr "Timer edit"
 
 #, fuzzy
 msgid "Predefined"
@@ -8632,6 +8693,10 @@ msgstr ""
 msgid "Really close without saving settings?"
 msgstr "Really close without saving settings?"
 
+#, fuzzy
+msgid "Really delete completed timers?"
+msgstr "Really delete done timers?"
+
 msgid "Really delete done timers?"
 msgstr "Really delete done timers?"
 
@@ -8880,6 +8945,10 @@ msgstr ""
 msgid "Repeating event currently recording... What do you want to do?"
 msgstr "Repeating event currently recording... What do you want to do?"
 
+#, fuzzy
+msgid "Repeating the event currently recording... What do you want to do?"
+msgstr "Repeating event currently recording... What do you want to do?"
+
 msgid "Repeats"
 msgstr "Repeats"
 
@@ -8937,6 +9006,10 @@ msgstr "Resolution"
 
 msgid "Restart"
 msgstr "Restart"
+
+#, fuzzy
+msgid "Restart GUI"
+msgstr "Restart GUI now?"
 
 msgid "Restart GUI now?"
 msgstr "Restart GUI now?"
@@ -10511,6 +10584,10 @@ msgstr "Skip empty services"
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Skip internet connection check (disables automatic package installation)"
 
+#, fuzzy
+msgid "Sleep delay"
+msgstr "Sleep timer"
+
 msgid "Sleep timer"
 msgstr "Sleep timer"
 
@@ -10937,7 +11014,15 @@ msgstr ""
 msgid "Stop current event and disable coming events"
 msgstr "Stop current event and disable coming events"
 
+#, fuzzy
+msgid "Stop current event and disable future events"
+msgstr "Stop current event and disable coming events"
+
 msgid "Stop current event but not coming events"
+msgstr "Stop current event but not coming events"
+
+#, fuzzy
+msgid "Stop current event but not future events"
 msgstr "Stop current event but not coming events"
 
 #, fuzzy
@@ -11503,6 +11588,10 @@ msgstr ""
 msgid "The status of the current image could not be checked because %s can not be reached."
 msgstr "The status of the current beta image could not be checked because %s can not be reached."
 
+#, fuzzy
+msgid "The timer file (pm_timers.xml) is corrupt and could not be loaded."
+msgstr "The timer file (timers.xml) is corrupt and could not be loaded."
+
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "The timer file (timers.xml) is corrupt and could not be loaded."
 
@@ -11856,6 +11945,14 @@ msgstr "Timer entry"
 
 msgid "Timer log"
 msgstr "Timer log"
+
+#, fuzzy
+msgid ""
+"Timer overlap in pm_timers.xml detected!\n"
+"Please recheck it!"
+msgstr ""
+"Timer overlap in timers.xml detected!\n"
+"Please recheck it!"
 
 msgid ""
 "Timer overlap in timers.xml detected!\n"
@@ -12752,6 +12849,14 @@ msgstr "Waiting for partition"
 msgid "Wake On LAN"
 msgstr ""
 
+#, fuzzy
+msgid "Wake up"
+msgstr "Wakeup"
+
+#, fuzzy
+msgid "Wake up to standby"
+msgstr "Wakeup TV from standby"
+
 msgid "Wakeup"
 msgstr "Wakeup"
 
@@ -12805,6 +12910,10 @@ msgid "Wednesday"
 msgstr "Wednesday"
 
 msgid "Weekday"
+msgstr "Weekday"
+
+#, fuzzy
+msgid "Weekend"
 msgstr "Weekday"
 
 #, fuzzy
@@ -13625,6 +13734,14 @@ msgstr "audio tracks"
 msgid "auto"
 msgstr "auto"
 
+#, fuzzy
+msgid "auto deepstandby"
+msgstr "go to deep standby"
+
+#, fuzzy
+msgid "auto standby"
+msgstr "No standby"
+
 msgid "automatic"
 msgstr "automatic"
 
@@ -13667,6 +13784,10 @@ msgstr ""
 
 msgid "broadcasting/press"
 msgstr "broadcasting/press"
+
+#, fuzzy
+msgid "by Open Vision developers"
+msgstr "Kernel version: "
 
 msgid "by date"
 msgstr "by date"
@@ -14449,6 +14570,10 @@ msgstr ""
 msgid "quick execute"
 msgstr ""
 
+#, fuzzy
+msgid "reboot system"
+msgstr "System"
+
 msgid "receiver software because updates are available."
 msgstr "receiver software because updates are available."
 
@@ -14530,6 +14655,10 @@ msgstr "repeat playlist"
 msgid "repeated"
 msgstr "repeated"
 
+#, fuzzy
+msgid "restart GUI"
+msgstr "Restart GUI now?"
+
 msgid "restore deleted userbouquets"
 msgstr ""
 
@@ -14561,6 +14690,10 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romance"
+
+#, fuzzy
+msgid "running..."
+msgstr "Scanning..."
 
 msgid "save"
 msgstr ""
@@ -14920,6 +15053,14 @@ msgstr "wait for mmi..."
 
 msgid "waiting"
 msgstr "waiting"
+
+#, fuzzy
+msgid "wakeup"
+msgstr "Wakeup"
+
+#, fuzzy
+msgid "wakeup to standby"
+msgstr "Wakeup TV from standby"
 
 msgid "water sport"
 msgstr "water sport"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project Slovenia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-06 14:19+0330\n"
+"POT-Creation-Date: 2019-10-09 03:59+0330\n"
 "PO-Revision-Date: 2015-08-30 09:00+0200\n"
 "Last-Translator: Taykun345 <support@satnigmo.com>\n"
 "Language-Team: Satnigmo <support@satnigmo.com>\n"
@@ -1362,6 +1362,32 @@ msgstr ""
 msgid "A file from media is in use!"
 msgstr ""
 
+#, fuzzy
+msgid "A finished powertimer wants to reboot your receiver. Do that now?"
+msgstr ""
+"Zaključen časovnik želi vaš sprejemnik\n"
+"poslati v stanje pripravljenosti. Naj to stori sedaj?"
+
+#, fuzzy
+msgid ""
+"A finished powertimer wants to restart the user interface.\n"
+"Do that now?"
+msgstr ""
+"Zaključen časovnik želi vaš sprejemnik\n"
+"poslati v stanje pripravljenosti. Naj to stori sedaj?"
+
+#, fuzzy
+msgid "A finished powertimer wants to set your receiver to standby. Do that now?"
+msgstr ""
+"Zaključen časovnik želi vaš sprejemnik\n"
+"poslati v stanje pripravljenosti. Naj to stori sedaj?"
+
+#, fuzzy
+msgid "A finished powertimer wants to shutdown your receiver. Do that now?"
+msgstr ""
+"Zaključen časovnik želi vaš sprejemnik\n"
+"poslati v globoko spanje. Naj to stori sedaj?"
+
 msgid ""
 "A finished record timer wants to set your\n"
 "receiver to standby. Do that now?"
@@ -2073,6 +2099,9 @@ msgstr "Dodeljeni CAIdi:"
 msgid "Assigned services/provider:"
 msgstr "Dodeljeni kanali/ponudniki:"
 
+msgid "At End:"
+msgstr ""
+
 #
 msgid "At beginning"
 msgstr "Na začetku"
@@ -2188,6 +2217,11 @@ msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Samodejna delitev poglavja vsakih ? minut (0=vedno)"
 
 #
+#, fuzzy
+msgid "Auto deep standby"
+msgstr "pojdi v globoko spanje"
+
+#
 msgid "Auto flesh"
 msgstr ""
 
@@ -2207,6 +2241,11 @@ msgstr ""
 #
 msgid "Auto scart switching"
 msgstr "Samodejno preklapljanje SCART"
+
+#
+#, fuzzy
+msgid "Auto standby"
+msgstr "Ni stanja pripravljenosti"
 
 #
 #, fuzzy
@@ -2550,9 +2589,6 @@ msgstr ""
 #
 msgid "Bus: "
 msgstr "Vodilo:"
-
-msgid "By Team OpenVision"
-msgstr ""
 
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr "V osnovi je SNR vrednost prikazana v dB (če je to podprto). Ta nastavitev pa omogoči, da se SNR vrednost prikazuje v odstotkih."
@@ -4246,6 +4282,9 @@ msgstr ""
 msgid "Delay in miliseconds between scrolling characters on display."
 msgstr ""
 
+msgid "Delay:"
+msgstr ""
+
 #
 msgid "Delete"
 msgstr "Izbris"
@@ -4560,6 +4599,11 @@ msgid "Do you really want to delete %s?"
 msgstr "Res želite odstraniti: %s?"
 
 #
+#, fuzzy
+msgid "Do you really want to delete this timer?"
+msgstr "Res želite odstraniti: %s?"
+
+#
 #, python-format
 msgid ""
 "Do you really want to download\n"
@@ -4697,6 +4741,11 @@ msgstr "Ne shrani in ustavi časovni zamik"
 
 #
 msgid "Don't stop current event but disable coming events"
+msgstr "Ne ustavi trenutnega dogodka. Onemogoči pa prihodnje dogodke"
+
+#
+#, fuzzy
+msgid "Don't stop current event but disable future events"
 msgstr "Ne ustavi trenutnega dogodka. Onemogoči pa prihodnje dogodke"
 
 msgid "Don't zap"
@@ -5316,6 +5365,9 @@ msgstr "Povsod"
 msgid "Every known"
 msgstr ""
 
+msgid "Everyday"
+msgstr ""
+
 msgid "Everywhere"
 msgstr "Povsod"
 
@@ -5530,9 +5582,6 @@ msgstr ""
 msgid "FFmpeg version: "
 msgstr "Verzija jedra: "
 
-msgid "FLASH"
-msgstr ""
-
 msgid "FTA"
 msgstr "FTA"
 
@@ -5741,6 +5790,11 @@ msgstr "Popravljeno"
 
 msgid "Fixed X11 font (SD)"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Flash"
+msgstr "Nadgradi"
 
 #
 #, fuzzy
@@ -6514,11 +6568,6 @@ msgstr ""
 
 msgid "Ignore conflict"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Image OpenVision"
-msgstr "Upravljanje vtičnikov"
 
 msgid "Image architecture: "
 msgstr ""
@@ -8561,6 +8610,10 @@ msgstr ""
 msgid "One"
 msgstr "En"
 
+#, fuzzy
+msgid "Only active when in standby"
+msgstr "Pošlji sprejemnik v stanje pripravljenosti"
+
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
 
@@ -8583,6 +8636,10 @@ msgstr ""
 
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision enigma2 image"
+msgstr "Verzija pythona:"
 
 #, fuzzy
 msgid "Open Vision module: "
@@ -9348,8 +9405,17 @@ msgstr "Prag moči v mA"
 msgid "Power threshold. Consult your receiver's manual for more information."
 msgstr ""
 
+#
+#, fuzzy
+msgid "PowerManager entry"
+msgstr "Preimenovanje vnosa"
+
 msgid "PowerMenu"
 msgstr ""
+
+#, fuzzy
+msgid "PowerTimer list"
+msgstr "Prikaz seznama kanalov"
 
 #, fuzzy
 msgid "Predefined"
@@ -9736,6 +9802,11 @@ msgid "Really close without saving settings?"
 msgstr "Želite zapreti ne da bi shranili nastavitve?"
 
 #
+#, fuzzy
+msgid "Really delete completed timers?"
+msgstr "Želite izbrisati končane časovnike?"
+
+#
 msgid "Really delete done timers?"
 msgstr "Želite izbrisati končane časovnike?"
 
@@ -10032,6 +10103,11 @@ msgid "Repeating event currently recording... What do you want to do?"
 msgstr "Snemanje ponavljajočega dogodka v teku ... Kaj želite storiti?"
 
 #
+#, fuzzy
+msgid "Repeating the event currently recording... What do you want to do?"
+msgstr "Snemanje ponavljajočega dogodka v teku ... Kaj želite storiti?"
+
+#
 msgid "Repeats"
 msgstr "Ponovitve"
 
@@ -10096,6 +10172,11 @@ msgstr "Ločljivost"
 #
 msgid "Restart"
 msgstr "Ponovni zagon"
+
+#
+#, fuzzy
+msgid "Restart GUI"
+msgstr "Ponoven zagon uporabniškega vmesnika (GUI)?"
 
 #
 msgid "Restart GUI now?"
@@ -11899,6 +11980,11 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Preskok preverbe internetne povezave (izklop samodejne namestitve paketov)"
 
 #
+#, fuzzy
+msgid "Sleep delay"
+msgstr "Časovnik spanja"
+
+#
 msgid "Sleep timer"
 msgstr "Časovnik spanja"
 
@@ -12392,7 +12478,17 @@ msgid "Stop current event and disable coming events"
 msgstr "Ustavite trenutni dogodek in onemogočite prihodnje dogodke."
 
 #
+#, fuzzy
+msgid "Stop current event and disable future events"
+msgstr "Ustavite trenutni dogodek in onemogočite prihodnje dogodke."
+
+#
 msgid "Stop current event but not coming events"
+msgstr "Ustavite trenutni dogodek, ne pa prihodnjih dogodkov"
+
+#
+#, fuzzy
+msgid "Stop current event but not future events"
 msgstr "Ustavite trenutni dogodek, ne pa prihodnjih dogodkov"
 
 #, fuzzy
@@ -13025,6 +13121,11 @@ msgid "The status of the current image could not be checked because %s can not b
 msgstr "Ni možno preveriti statusa trenutne beta OpenPLi slike, ker je spletna stran %s nedosegljiva!"
 
 #
+#, fuzzy
+msgid "The timer file (pm_timers.xml) is corrupt and could not be loaded."
+msgstr "Datoteka s časovniki (timers.xml) je okvarjena in je ni možno namestiti."
+
+#
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "Datoteka s časovniki (timers.xml) je okvarjena in je ni možno namestiti."
 
@@ -13409,6 +13510,15 @@ msgstr "Vnos časovnika"
 #
 msgid "Timer log"
 msgstr "Dnevnik časovnika"
+
+#
+#, fuzzy
+msgid ""
+"Timer overlap in pm_timers.xml detected!\n"
+"Please recheck it!"
+msgstr ""
+"Zaznano je bilo prekrivanje časovnikov v timers.xml!\n"
+"Ponovno preverite vnose!"
 
 #
 msgid ""
@@ -14445,6 +14555,15 @@ msgstr "Počakajte na particijo"
 msgid "Wake On LAN"
 msgstr "Zbujanje preko mreže (WOL)"
 
+#, fuzzy
+msgid "Wake up"
+msgstr "Obuditev"
+
+#
+#, fuzzy
+msgid "Wake up to standby"
+msgstr "Vklop in prehod v stanje pripravljenosti"
+
 msgid "Wakeup"
 msgstr "Obuditev"
 
@@ -14505,6 +14624,11 @@ msgstr "Sreda"
 
 #
 msgid "Weekday"
+msgstr "Delovni dan"
+
+#
+#, fuzzy
+msgid "Weekend"
 msgstr "Delovni dan"
 
 #
@@ -15395,6 +15519,16 @@ msgid "auto"
 msgstr "Samodejno"
 
 #
+#, fuzzy
+msgid "auto deepstandby"
+msgstr "pojdi v globoko spanje"
+
+#
+#, fuzzy
+msgid "auto standby"
+msgstr "Ni stanja pripravljenosti"
+
+#
 msgid "automatic"
 msgstr "Samodejno"
 
@@ -15443,6 +15577,10 @@ msgstr ""
 
 msgid "broadcasting/press"
 msgstr ""
+
+#, fuzzy
+msgid "by Open Vision developers"
+msgstr "Verzija pythona:"
 
 #
 msgid "by date"
@@ -16323,6 +16461,11 @@ msgstr "popoln izbris že izbrisanih seznamov kanalov"
 msgid "quick execute"
 msgstr ""
 
+#
+#, fuzzy
+msgid "reboot system"
+msgstr "Sistem "
+
 msgid "receiver software because updates are available."
 msgstr ""
 
@@ -16423,6 +16566,11 @@ msgstr "ponovitev seznama predvjanja"
 msgid "repeated"
 msgstr "ponavljam"
 
+#
+#, fuzzy
+msgid "restart GUI"
+msgstr "Ponoven zagon uporabniškega vmesnika (GUI)?"
+
 msgid "restore deleted userbouquets"
 msgstr "obnova že izbrisanih seznamov kanalov"
 
@@ -16458,6 +16606,10 @@ msgstr ""
 
 msgid "romance"
 msgstr ""
+
+#, fuzzy
+msgid "running..."
+msgstr "Pregledovanje..."
 
 msgid "save"
 msgstr ""
@@ -16866,6 +17018,15 @@ msgstr "čakam mmi..."
 #
 msgid "waiting"
 msgstr "čakam"
+
+#, fuzzy
+msgid "wakeup"
+msgstr "Obuditev"
+
+#
+#, fuzzy
+msgid "wakeup to standby"
+msgstr "Vklop in prehod v stanje pripravljenosti"
 
 msgid "water sport"
 msgstr "vodni športi"

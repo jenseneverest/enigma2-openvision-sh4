@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-06 14:19+0330\n"
+"POT-Creation-Date: 2019-10-09 03:59+0330\n"
 "PO-Revision-Date: 2007-08-14 10:23+0200\n"
 "Last-Translator: Oriol Pellicer <oriol@elsud.org>\n"
 "Language-Team: \n"
@@ -1303,6 +1303,20 @@ msgstr ""
 msgid "A file from media is in use!"
 msgstr ""
 
+msgid "A finished powertimer wants to reboot your receiver. Do that now?"
+msgstr ""
+
+msgid ""
+"A finished powertimer wants to restart the user interface.\n"
+"Do that now?"
+msgstr ""
+
+msgid "A finished powertimer wants to set your receiver to standby. Do that now?"
+msgstr ""
+
+msgid "A finished powertimer wants to shutdown your receiver. Do that now?"
+msgstr ""
+
 msgid ""
 "A finished record timer wants to set your\n"
 "receiver to standby. Do that now?"
@@ -1991,6 +2005,9 @@ msgstr ""
 msgid "Assigned services/provider:"
 msgstr ""
 
+msgid "At End:"
+msgstr ""
+
 msgid "At beginning"
 msgstr ""
 
@@ -2098,6 +2115,11 @@ msgid "Auto chapter split every ? minutes (0=never)"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Auto deep standby"
+msgstr "aturar completament"
+
+#
 msgid "Auto flesh"
 msgstr ""
 
@@ -2116,6 +2138,11 @@ msgstr ""
 #
 msgid "Auto scart switching"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Auto standby"
+msgstr "sense standby"
 
 #
 #, fuzzy
@@ -2448,9 +2475,6 @@ msgstr ""
 #
 msgid "Bus: "
 msgstr "Bus: "
-
-msgid "By Team OpenVision"
-msgstr ""
 
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr ""
@@ -4105,6 +4129,9 @@ msgstr ""
 msgid "Delay in miliseconds between scrolling characters on display."
 msgstr ""
 
+msgid "Delay:"
+msgstr ""
+
 #
 msgid "Delete"
 msgstr "Esborrar"
@@ -4411,6 +4438,11 @@ msgid "Do you really want to delete %s?"
 msgstr "Segur que vols esborrar %s?"
 
 #
+#, fuzzy
+msgid "Do you really want to delete this timer?"
+msgstr "Segur que vols esborrar %s?"
+
+#
 #, python-format
 msgid ""
 "Do you really want to download\n"
@@ -4543,6 +4575,11 @@ msgstr ""
 
 #
 msgid "Don't stop current event but disable coming events"
+msgstr "No aturar el programa en curs, però deshabilitar els següents"
+
+#
+#, fuzzy
+msgid "Don't stop current event but disable future events"
 msgstr "No aturar el programa en curs, però deshabilitar els següents"
 
 msgid "Don't zap"
@@ -5129,6 +5166,9 @@ msgstr ""
 msgid "Every known"
 msgstr ""
 
+msgid "Everyday"
+msgstr ""
+
 msgid "Everywhere"
 msgstr ""
 
@@ -5348,9 +5388,6 @@ msgstr ""
 msgid "FFmpeg version: "
 msgstr "Nova versió:"
 
-msgid "FLASH"
-msgstr ""
-
 msgid "FTA"
 msgstr ""
 
@@ -5543,6 +5580,9 @@ msgid "Fixed"
 msgstr ""
 
 msgid "Fixed X11 font (SD)"
+msgstr ""
+
+msgid "Flash"
 msgstr ""
 
 msgid "Flash Image"
@@ -6295,9 +6335,6 @@ msgid "Ignore DVB-T namespace sub network"
 msgstr ""
 
 msgid "Ignore conflict"
-msgstr ""
-
-msgid "Image OpenVision"
 msgstr ""
 
 msgid "Image architecture: "
@@ -8322,6 +8359,9 @@ msgstr ""
 msgid "One"
 msgstr "Un"
 
+msgid "Only active when in standby"
+msgstr ""
+
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
 
@@ -8345,6 +8385,11 @@ msgstr ""
 
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision enigma2 image"
+msgstr "Nova versió:"
 
 #
 #, fuzzy
@@ -9106,8 +9151,16 @@ msgstr "Llindar de corrent en mA"
 msgid "Power threshold. Consult your receiver's manual for more information."
 msgstr ""
 
+msgid "PowerManager entry"
+msgstr ""
+
 msgid "PowerMenu"
 msgstr ""
+
+#
+#, fuzzy
+msgid "PowerTimer list"
+msgstr "Editar hora"
 
 #
 #, fuzzy
@@ -9482,6 +9535,11 @@ msgid "Really close without saving settings?"
 msgstr "Sortir sense guardar els canvis?"
 
 #
+#, fuzzy
+msgid "Really delete completed timers?"
+msgstr "Vols esborrar les programacions ja finalitzades?"
+
+#
 msgid "Really delete done timers?"
 msgstr "Vols esborrar les programacions ja finalitzades?"
 
@@ -9770,6 +9828,11 @@ msgid "Repeating event currently recording... What do you want to do?"
 msgstr "S'està gravant un canal programat repetidament... Què vols fer?"
 
 #
+#, fuzzy
+msgid "Repeating the event currently recording... What do you want to do?"
+msgstr "S'està gravant un canal programat repetidament... Què vols fer?"
+
+#
 msgid "Repeats"
 msgstr ""
 
@@ -9833,6 +9896,11 @@ msgstr ""
 #
 msgid "Restart"
 msgstr "Reiniciar"
+
+#
+#, fuzzy
+msgid "Restart GUI"
+msgstr "Reengegar la IGU ara?"
 
 #
 msgid "Restart GUI now?"
@@ -11600,6 +11668,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Sleep delay"
+msgstr "Programació d'apagada"
+
+#
+#, fuzzy
 msgid "Sleep timer"
 msgstr "Programació d'apagada"
 
@@ -12072,7 +12145,17 @@ msgid "Stop current event and disable coming events"
 msgstr "Aturar el programa actual i deshabilitar els següents"
 
 #
+#, fuzzy
+msgid "Stop current event and disable future events"
+msgstr "Aturar el programa actual i deshabilitar els següents"
+
+#
 msgid "Stop current event but not coming events"
+msgstr "Aturar el programa actual però no els següents"
+
+#
+#, fuzzy
+msgid "Stop current event but not future events"
 msgstr "Aturar el programa actual però no els següents"
 
 #
@@ -12681,6 +12764,9 @@ msgstr ""
 msgid "The status of the current image could not be checked because %s can not be reached."
 msgstr ""
 
+msgid "The timer file (pm_timers.xml) is corrupt and could not be loaded."
+msgstr ""
+
 #
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr ""
@@ -13032,6 +13118,11 @@ msgstr "Gravació"
 #
 msgid "Timer log"
 msgstr "Registre de gravació"
+
+msgid ""
+"Timer overlap in pm_timers.xml detected!\n"
+"Please recheck it!"
+msgstr ""
 
 #
 msgid ""
@@ -14056,6 +14147,14 @@ msgstr ""
 msgid "Wake On LAN"
 msgstr ""
 
+msgid "Wake up"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Wake up to standby"
+msgstr "posar en repòs"
+
 msgid "Wakeup"
 msgstr ""
 
@@ -14117,6 +14216,11 @@ msgstr "Dimecres"
 
 #
 msgid "Weekday"
+msgstr "DiaSetmana"
+
+#
+#, fuzzy
+msgid "Weekend"
 msgstr "DiaSetmana"
 
 #
@@ -14941,6 +15045,16 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "auto deepstandby"
+msgstr "aturar completament"
+
+#
+#, fuzzy
+msgid "auto standby"
+msgstr "sense standby"
+
+#
+#, fuzzy
 msgid "automatic"
 msgstr "Recerca automàtica"
 
@@ -14989,6 +15103,11 @@ msgstr ""
 
 msgid "broadcasting/press"
 msgstr ""
+
+#
+#, fuzzy
+msgid "by Open Vision developers"
+msgstr "Nova versió:"
 
 msgid "by date"
 msgstr ""
@@ -15853,6 +15972,11 @@ msgstr ""
 msgid "quick execute"
 msgstr ""
 
+#
+#, fuzzy
+msgid "reboot system"
+msgstr "Sistema"
+
 msgid "receiver software because updates are available."
 msgstr ""
 
@@ -15951,6 +16075,11 @@ msgstr ""
 msgid "repeated"
 msgstr "repetit"
 
+#
+#, fuzzy
+msgid "restart GUI"
+msgstr "Reengegar la IGU ara?"
+
 msgid "restore deleted userbouquets"
 msgstr ""
 
@@ -15984,6 +16113,11 @@ msgstr ""
 
 msgid "romance"
 msgstr ""
+
+#
+#, fuzzy
+msgid "running..."
+msgstr "gravant..."
 
 msgid "save"
 msgstr ""
@@ -16381,6 +16515,14 @@ msgstr ""
 #
 msgid "waiting"
 msgstr "esperant"
+
+msgid "wakeup"
+msgstr ""
+
+#
+#, fuzzy
+msgid "wakeup to standby"
+msgstr "posar en repòs"
 
 msgid "water sport"
 msgstr ""

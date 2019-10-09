@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-06 14:19+0330\n"
+"POT-Creation-Date: 2019-10-09 03:59+0330\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -1261,6 +1261,32 @@ msgstr ""
 msgid "A file from media is in use!"
 msgstr ""
 
+#, fuzzy
+msgid "A finished powertimer wants to reboot your receiver. Do that now?"
+msgstr ""
+"Kayıt süresi dolmuş. Alıcı bekleme konumuna\n"
+"geçecek. Şimdi yapılsın mı?"
+
+#, fuzzy
+msgid ""
+"A finished powertimer wants to restart the user interface.\n"
+"Do that now?"
+msgstr ""
+"Kayıt süresi dolmuş. Alıcı bekleme konumuna\n"
+"geçecek. Şimdi yapılsın mı?"
+
+#, fuzzy
+msgid "A finished powertimer wants to set your receiver to standby. Do that now?"
+msgstr ""
+"Kayıt süresi dolmuş. Alıcı bekleme konumuna\n"
+"geçecek. Şimdi yapılsın mı?"
+
+#, fuzzy
+msgid "A finished powertimer wants to shutdown your receiver. Do that now?"
+msgstr ""
+"Kayıt süresi dolmuş. Alıcı kapatılacak\n"
+"Şimdi Kapatılsın mı?"
+
 msgid ""
 "A finished record timer wants to set your\n"
 "receiver to standby. Do that now?"
@@ -1888,6 +1914,9 @@ msgstr "Atanan CalDS:"
 msgid "Assigned services/provider:"
 msgstr "Atanan Servisler/Sağlayıcılar:"
 
+msgid "At End:"
+msgstr ""
+
 msgid "At beginning"
 msgstr "Başlangıçta"
 
@@ -1986,6 +2015,10 @@ msgstr "Otomatik EXIF Oryantasyon Rotasyon/Çevirme"
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Otomatik bölümlere ayrılsın mı? Dakika (0=ayırma)"
 
+#, fuzzy
+msgid "Auto deep standby"
+msgstr "Derin uyku"
+
 msgid "Auto flesh"
 msgstr "Otomatik"
 
@@ -2003,6 +2036,10 @@ msgstr ""
 
 msgid "Auto scart switching"
 msgstr "Otomatik scart değiştirme"
+
+#, fuzzy
+msgid "Auto standby"
+msgstr "Beklemede değil"
 
 #, fuzzy
 msgid "Auto start"
@@ -2303,9 +2340,6 @@ msgstr ""
 
 msgid "Bus: "
 msgstr "Yol: "
-
-msgid "By Team OpenVision"
-msgstr ""
 
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr "Varsayılan olarak; SNR, dB olarak (Tuner tarafından destekleniyorsa) gösterilecektir. Bu ayar SNR yerine yüzde işareti gösterir."
@@ -3848,6 +3882,9 @@ msgstr "Ekranda yazı kaydırken, geçiş/bekleme zamanını milisaniye..."
 msgid "Delay in miliseconds between scrolling characters on display."
 msgstr "Ekranda yazı kaydırken, geçiş/bekleme zamanını milisaniye..."
 
+msgid "Delay:"
+msgstr ""
+
 msgid "Delete"
 msgstr "Sil"
 
@@ -4112,6 +4149,10 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr "%s 'i silmek istediğinizden emin misiniz?"
 
+#, fuzzy
+msgid "Do you really want to delete this timer?"
+msgstr "%s 'i silmek istediğinizden emin misiniz?"
+
 #, python-format
 msgid ""
 "Do you really want to download\n"
@@ -4232,6 +4273,10 @@ msgid "Don't save and stop timeshift"
 msgstr "Kayıt olmuyor ve Zaman Kaydı durdurulmuyor"
 
 msgid "Don't stop current event but disable coming events"
+msgstr "Geçerli olayı devre dışı bırakmayın ancak gelecek olayları durdur"
+
+#, fuzzy
+msgid "Don't stop current event but disable future events"
 msgstr "Geçerli olayı devre dışı bırakmayın ancak gelecek olayları durdur"
 
 msgid "Don't zap"
@@ -4777,6 +4822,9 @@ msgstr "Heryerde"
 msgid "Every known"
 msgstr ""
 
+msgid "Everyday"
+msgstr ""
+
 msgid "Everywhere"
 msgstr "Heryerde"
 
@@ -4961,9 +5009,6 @@ msgstr "FEC:"
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Çekirdek sürümü:"
-
-msgid "FLASH"
-msgstr ""
 
 msgid "FTA"
 msgstr "FTA"
@@ -5152,6 +5197,10 @@ msgstr "Sabit"
 
 msgid "Fixed X11 font (SD)"
 msgstr ""
+
+#, fuzzy
+msgid "Flash"
+msgstr "Flaş"
 
 #, fuzzy
 msgid "Flash Image"
@@ -5858,10 +5907,6 @@ msgstr ""
 
 msgid "Ignore conflict"
 msgstr ""
-
-#, fuzzy
-msgid "Image OpenVision"
-msgstr "Eklentileri yönet"
 
 msgid "Image architecture: "
 msgstr ""
@@ -7650,6 +7695,10 @@ msgstr ""
 msgid "One"
 msgstr "Bir"
 
+#, fuzzy
+msgid "Only active when in standby"
+msgstr "Alıcıyı bekleme konumuna al"
+
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
 
@@ -7670,6 +7719,10 @@ msgstr "Yalnız başlangıçta"
 
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision enigma2 image"
+msgstr "Python versiyonu: "
 
 #, fuzzy
 msgid "Open Vision module: "
@@ -8328,8 +8381,16 @@ msgstr "Güç eşiği (mA)"
 msgid "Power threshold. Consult your receiver's manual for more information."
 msgstr ""
 
+#, fuzzy
+msgid "PowerManager entry"
+msgstr "Ad değiştir "
+
 msgid "PowerMenu"
 msgstr ""
+
+#, fuzzy
+msgid "PowerTimer list"
+msgstr "Servis listesini göster"
 
 #, fuzzy
 msgid "Predefined"
@@ -8664,6 +8725,10 @@ msgstr ""
 msgid "Really close without saving settings?"
 msgstr "Ayarlarınızı kaydetmeden çıkmak istediğinizden emin misiniz?"
 
+#, fuzzy
+msgid "Really delete completed timers?"
+msgstr "Tamamlanan zamanlayıcıları silmek istiyor musunuz?"
+
 msgid "Really delete done timers?"
 msgstr "Tamamlanan zamanlayıcıları silmek istiyor musunuz?"
 
@@ -8914,6 +8979,10 @@ msgstr ""
 msgid "Repeating event currently recording... What do you want to do?"
 msgstr "Tekrarlama görevi verilmiş kayıt işlemi yapılıyor. Ne yapmak istersiniz?"
 
+#, fuzzy
+msgid "Repeating the event currently recording... What do you want to do?"
+msgstr "Tekrarlama görevi verilmiş kayıt işlemi yapılıyor. Ne yapmak istersiniz?"
+
 msgid "Repeats"
 msgstr "Tekrarlama"
 
@@ -8971,6 +9040,10 @@ msgstr "Çözünürlük"
 
 msgid "Restart"
 msgstr "Yeniden Başlat"
+
+#, fuzzy
+msgid "Restart GUI"
+msgstr "GUI'yi yeniden başlatmak istiyor musunuz?"
 
 msgid "Restart GUI now?"
 msgstr "GUI'yi yeniden başlatmak istiyor musunuz?"
@@ -10544,6 +10617,10 @@ msgstr "Boş kanalları atla"
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Internet bağlantı kontrolünü atla. (otomatik paket yükleme devre dışı bırakır)"
 
+#, fuzzy
+msgid "Sleep delay"
+msgstr "Kaydırma gecikme"
+
 msgid "Sleep timer"
 msgstr "Uyku zamanlayıcı"
 
@@ -10971,7 +11048,15 @@ msgstr "Dur ve mevcut kayıtları sil:"
 msgid "Stop current event and disable coming events"
 msgstr "Geçerli programı durdur ve gelecek programları devre dışı bırak"
 
+#, fuzzy
+msgid "Stop current event and disable future events"
+msgstr "Geçerli programı durdur ve gelecek programları devre dışı bırak"
+
 msgid "Stop current event but not coming events"
+msgstr "Geçerli eylemi durdur ama gelecek eylemlere dokunma"
+
+#, fuzzy
+msgid "Stop current event but not future events"
 msgstr "Geçerli eylemi durdur ama gelecek eylemlere dokunma"
 
 #, fuzzy
@@ -11541,6 +11626,10 @@ msgstr ""
 msgid "The status of the current image could not be checked because %s can not be reached."
 msgstr "%s erişilemiyor çünkü mevcut beta imaj durumu kontrol edilemedi."
 
+#, fuzzy
+msgid "The timer file (pm_timers.xml) is corrupt and could not be loaded."
+msgstr "Zamanlayıcı dosyası (timers.xml) bozuk ve yüklenemiyor."
+
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "Zamanlayıcı dosyası (timers.xml) bozuk ve yüklenemiyor."
 
@@ -11910,6 +11999,14 @@ msgstr "Zamanlayıcı girişi"
 
 msgid "Timer log"
 msgstr "Zamanlayıcı günlüğü"
+
+#, fuzzy
+msgid ""
+"Timer overlap in pm_timers.xml detected!\n"
+"Please recheck it!"
+msgstr ""
+"timers.xml zamanlayıcı çakışması saptanmıştır!\n"
+"Bunu tekrar kontrol edin!"
 
 msgid ""
 "Timer overlap in timers.xml detected!\n"
@@ -12812,6 +12909,14 @@ msgstr "Bölümleme bekleniyor"
 msgid "Wake On LAN"
 msgstr "LAN etkinse uyandır."
 
+#, fuzzy
+msgid "Wake up"
+msgstr "Wake Up"
+
+#, fuzzy
+msgid "Wake up to standby"
+msgstr "TV'nin bekleme modundan çıkmasını bekle"
+
 msgid "Wakeup"
 msgstr "Wake Up"
 
@@ -12865,6 +12970,10 @@ msgid "Wednesday"
 msgstr "Çarşamba"
 
 msgid "Weekday"
+msgstr "Haftaiçi"
+
+#, fuzzy
+msgid "Weekend"
 msgstr "Haftaiçi"
 
 #, fuzzy
@@ -13687,6 +13796,14 @@ msgstr "Ses İzleri"
 msgid "auto"
 msgstr "Oto."
 
+#, fuzzy
+msgid "auto deepstandby"
+msgstr "Derin uyku"
+
+#, fuzzy
+msgid "auto standby"
+msgstr "Beklemede değil"
+
 msgid "automatic"
 msgstr "Otomatik"
 
@@ -13729,6 +13846,10 @@ msgstr ""
 
 msgid "broadcasting/press"
 msgstr "Basın/Yayın"
+
+#, fuzzy
+msgid "by Open Vision developers"
+msgstr "Python versiyonu: "
 
 msgid "by date"
 msgstr "Tarih sıralı"
@@ -14513,6 +14634,10 @@ msgstr "Buketleri Sil"
 msgid "quick execute"
 msgstr ""
 
+#, fuzzy
+msgid "reboot system"
+msgstr "Sistem"
+
 msgid "receiver software because updates are available."
 msgstr "Yazılım güncellemesi var."
 
@@ -14594,6 +14719,10 @@ msgstr "Oynatma Listesini Tekrarla"
 msgid "repeated"
 msgstr "Tekrarla"
 
+#, fuzzy
+msgid "restart GUI"
+msgstr "GUI'yi yeniden başlatmak istiyor musunuz?"
+
 msgid "restore deleted userbouquets"
 msgstr "Silinen buketleri geri yükle"
 
@@ -14625,6 +14754,10 @@ msgstr "Rok/Pop"
 
 msgid "romance"
 msgstr "Romantik"
+
+#, fuzzy
+msgid "running..."
+msgstr "Taranıyor..."
 
 msgid "save"
 msgstr ""
@@ -14985,6 +15118,14 @@ msgstr "MMI bekleniyor..."
 
 msgid "waiting"
 msgstr "Bekleniyor"
+
+#, fuzzy
+msgid "wakeup"
+msgstr "Wake Up"
+
+#, fuzzy
+msgid "wakeup to standby"
+msgstr "TV'nin bekleme modundan çıkmasını bekle"
 
 msgid "water sport"
 msgstr "Su Sporları"

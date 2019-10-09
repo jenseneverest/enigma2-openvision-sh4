@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-06 14:19+0330\n"
+"POT-Creation-Date: 2019-10-09 03:59+0330\n"
 "PO-Revision-Date: 2018-02-14 16:51+0330\n"
 "Last-Translator: Persian Prince <persianprince@pe4k.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -1252,6 +1252,20 @@ msgstr ""
 msgid "A file from media is in use!"
 msgstr ""
 
+msgid "A finished powertimer wants to reboot your receiver. Do that now?"
+msgstr ""
+
+msgid ""
+"A finished powertimer wants to restart the user interface.\n"
+"Do that now?"
+msgstr ""
+
+msgid "A finished powertimer wants to set your receiver to standby. Do that now?"
+msgstr ""
+
+msgid "A finished powertimer wants to shutdown your receiver. Do that now?"
+msgstr ""
+
 msgid ""
 "A finished record timer wants to set your\n"
 "receiver to standby. Do that now?"
@@ -1893,6 +1907,9 @@ msgstr ""
 msgid "Assigned services/provider:"
 msgstr ""
 
+msgid "At End:"
+msgstr ""
+
 #, fuzzy
 msgid "At beginning"
 msgstr "شروع از ابتدای کار"
@@ -1991,6 +2008,10 @@ msgstr ""
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "ایجاد فصل به صورت خودکار بر حسب دقیقه ؟ صفر به معنی هیچ وقت است"
 
+#, fuzzy
+msgid "Auto deep standby"
+msgstr "خاموشی کامل"
+
 #
 msgid "Auto flesh"
 msgstr "خودکار flesh"
@@ -2009,6 +2030,10 @@ msgstr ""
 
 msgid "Auto scart switching"
 msgstr "جایگزینی خودکار scart"
+
+#, fuzzy
+msgid "Auto standby"
+msgstr "خاموشی موقت"
 
 #, fuzzy
 msgid "Auto start"
@@ -2315,9 +2340,6 @@ msgstr ""
 
 msgid "Bus: "
 msgstr "گذرگاه:"
-
-msgid "By Team OpenVision"
-msgstr ""
 
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr ""
@@ -3874,6 +3896,9 @@ msgstr ""
 msgid "Delay in miliseconds between scrolling characters on display."
 msgstr ""
 
+msgid "Delay:"
+msgstr ""
+
 msgid "Delete"
 msgstr "حذف"
 
@@ -4140,6 +4165,10 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr "آیا واقعا قصد حذف کردن %s را دارید؟ "
 
+#, fuzzy
+msgid "Do you really want to delete this timer?"
+msgstr "آیا واقعا قصد حذف کردن %s را دارید؟ "
+
 #, python-format
 msgid ""
 "Do you really want to download\n"
@@ -4256,6 +4285,10 @@ msgid "Don't save and stop timeshift"
 msgstr ""
 
 msgid "Don't stop current event but disable coming events"
+msgstr "رخداد فعلی متوقف نشود اما رخداد های بعدی غیر فعال شوند"
+
+#, fuzzy
+msgid "Don't stop current event but disable future events"
 msgstr "رخداد فعلی متوقف نشود اما رخداد های بعدی غیر فعال شوند"
 
 msgid "Don't zap"
@@ -4798,6 +4831,9 @@ msgstr "در همه جا"
 msgid "Every known"
 msgstr ""
 
+msgid "Everyday"
+msgstr ""
+
 msgid "Everywhere"
 msgstr "در همه جا"
 
@@ -4988,9 +5024,6 @@ msgstr ""
 msgid "FFmpeg version: "
 msgstr "نسخه انیگما: "
 
-msgid "FLASH"
-msgstr ""
-
 msgid "FTA"
 msgstr "FTA"
 
@@ -5171,6 +5204,10 @@ msgstr ""
 
 msgid "Fixed X11 font (SD)"
 msgstr ""
+
+#, fuzzy
+msgid "Flash"
+msgstr "فلش"
 
 #, fuzzy
 msgid "Flash Image"
@@ -5877,10 +5914,6 @@ msgstr ""
 
 msgid "Ignore conflict"
 msgstr ""
-
-#, fuzzy
-msgid "Image OpenVision"
-msgstr "مدیریت بسته ها"
 
 msgid "Image architecture: "
 msgstr ""
@@ -7692,6 +7725,10 @@ msgstr ""
 msgid "One"
 msgstr "یک"
 
+#, fuzzy
+msgid "Only active when in standby"
+msgstr "قرار دادن دستگاه در خاموشی موقت"
+
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
 
@@ -7713,6 +7750,10 @@ msgstr ""
 
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision enigma2 image"
+msgstr "نسخه انیگما: "
 
 #, fuzzy
 msgid "Open Vision module: "
@@ -8374,7 +8415,14 @@ msgstr "آستانه قدرت به میلی آمپر"
 msgid "Power threshold. Consult your receiver's manual for more information."
 msgstr ""
 
+#, fuzzy
+msgid "PowerManager entry"
+msgstr "تنظیمات مدیریت نرم افزار"
+
 msgid "PowerMenu"
+msgstr ""
+
+msgid "PowerTimer list"
 msgstr ""
 
 #, fuzzy
@@ -8715,6 +8763,10 @@ msgstr ""
 msgid "Really close without saving settings?"
 msgstr "خروج بدون ذخیره کردن تنظیمات ؟"
 
+#, fuzzy
+msgid "Really delete completed timers?"
+msgstr "زمان های انجام شده حذف شوند ؟"
+
 msgid "Really delete done timers?"
 msgstr "زمان های انجام شده حذف شوند ؟"
 
@@ -8970,6 +9022,12 @@ msgstr ""
 msgid "Repeating event currently recording... What do you want to do?"
 msgstr ""
 
+#, fuzzy
+msgid "Repeating the event currently recording... What do you want to do?"
+msgstr ""
+"یک عمل ضبط کردن در حال اجرا است\n"
+"قصد انجام چه کاری را دارید ؟"
+
 msgid "Repeats"
 msgstr "تکرار ها"
 
@@ -9030,6 +9088,10 @@ msgstr "تفکیک پذیری و دقت"
 
 msgid "Restart"
 msgstr "راه اندازی دوباره"
+
+#, fuzzy
+msgid "Restart GUI"
+msgstr "راه اندازی مجدد رابط گرافیک کاربری؟"
 
 msgid "Restart GUI now?"
 msgstr "راه اندازی مجدد رابط گرافیک کاربری؟"
@@ -10631,6 +10693,10 @@ msgstr "نادیده گرفتن کانال خالی"
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
 
+#, fuzzy
+msgid "Sleep delay"
+msgstr "زمان خواب"
+
 msgid "Sleep timer"
 msgstr "زمان خواب"
 
@@ -11065,7 +11131,15 @@ msgstr ""
 msgid "Stop current event and disable coming events"
 msgstr "توقف رخداد فعلی و غیر فعال کردن رخداد های بعدی"
 
+#, fuzzy
+msgid "Stop current event and disable future events"
+msgstr "توقف رخداد فعلی و غیر فعال کردن رخداد های بعدی"
+
 msgid "Stop current event but not coming events"
+msgstr "توقف رخداد فعلی بدون توجه به رخداد های بعدی"
+
+#, fuzzy
+msgid "Stop current event but not future events"
 msgstr "توقف رخداد فعلی بدون توجه به رخداد های بعدی"
 
 #, fuzzy
@@ -11640,6 +11714,9 @@ msgstr ""
 msgid "The status of the current image could not be checked because %s can not be reached."
 msgstr ""
 
+msgid "The timer file (pm_timers.xml) is corrupt and could not be loaded."
+msgstr ""
+
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr ""
 
@@ -11965,6 +12042,11 @@ msgid "Timer entry"
 msgstr ""
 
 msgid "Timer log"
+msgstr ""
+
+msgid ""
+"Timer overlap in pm_timers.xml detected!\n"
+"Please recheck it!"
 msgstr ""
 
 msgid ""
@@ -12837,6 +12919,13 @@ msgstr ""
 msgid "Wake On LAN"
 msgstr "بیدار شدن با LAN"
 
+msgid "Wake up"
+msgstr ""
+
+#, fuzzy
+msgid "Wake up to standby"
+msgstr "خاموشی کامل"
+
 msgid "Wakeup"
 msgstr ""
 
@@ -12891,6 +12980,10 @@ msgstr "چهارشنبه"
 
 msgid "Weekday"
 msgstr ""
+
+#, fuzzy
+msgid "Weekend"
+msgstr "هفتگی"
 
 #, fuzzy
 msgid "Weekly"
@@ -13659,6 +13752,14 @@ msgstr ""
 msgid "auto"
 msgstr ""
 
+#, fuzzy
+msgid "auto deepstandby"
+msgstr "خاموشی کامل"
+
+#, fuzzy
+msgid "auto standby"
+msgstr "خاموشی موقت"
+
 msgid "automatic"
 msgstr "خودکار"
 
@@ -13701,6 +13802,10 @@ msgstr ""
 
 msgid "broadcasting/press"
 msgstr ""
+
+#, fuzzy
+msgid "by Open Vision developers"
+msgstr "نسخه انیگما: "
 
 msgid "by date"
 msgstr ""
@@ -14465,6 +14570,10 @@ msgstr ""
 msgid "quick execute"
 msgstr ""
 
+#, fuzzy
+msgid "reboot system"
+msgstr "سیستم"
+
 msgid "receiver software because updates are available."
 msgstr ""
 
@@ -14544,6 +14653,10 @@ msgstr ""
 msgid "repeated"
 msgstr ""
 
+#, fuzzy
+msgid "restart GUI"
+msgstr "راه اندازی مجدد رابط گرافیک کاربری؟"
+
 msgid "restore deleted userbouquets"
 msgstr ""
 
@@ -14574,6 +14687,10 @@ msgstr ""
 
 msgid "romance"
 msgstr "رمانتیک"
+
+#, fuzzy
+msgid "running..."
+msgstr "در حال اسکن"
 
 msgid "save"
 msgstr ""
@@ -14927,6 +15044,13 @@ msgstr ""
 
 msgid "waiting"
 msgstr ""
+
+msgid "wakeup"
+msgstr ""
+
+#, fuzzy
+msgid "wakeup to standby"
+msgstr "خاموشی کامل"
 
 msgid "water sport"
 msgstr ""

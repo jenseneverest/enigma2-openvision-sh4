@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-06 14:19+0330\n"
+"POT-Creation-Date: 2019-10-09 03:59+0330\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -1335,6 +1335,20 @@ msgstr ""
 msgid "A file from media is in use!"
 msgstr ""
 
+msgid "A finished powertimer wants to reboot your receiver. Do that now?"
+msgstr ""
+
+msgid ""
+"A finished powertimer wants to restart the user interface.\n"
+"Do that now?"
+msgstr ""
+
+msgid "A finished powertimer wants to set your receiver to standby. Do that now?"
+msgstr ""
+
+msgid "A finished powertimer wants to shutdown your receiver. Do that now?"
+msgstr ""
+
 msgid ""
 "A finished record timer wants to set your\n"
 "receiver to standby. Do that now?"
@@ -2058,6 +2072,9 @@ msgstr "dodeljeni CAIdi:"
 msgid "Assigned services/provider:"
 msgstr "Dodeljeni kanali/Provajder:"
 
+msgid "At End:"
+msgstr ""
+
 #, fuzzy
 msgid "At beginning"
 msgstr "na početku"
@@ -2169,6 +2186,11 @@ msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatska podela delova svakih ? minuta (0=nikad)"
 
 #
+#, fuzzy
+msgid "Auto deep standby"
+msgstr "pokreni isključivanje drimboxa"
+
+#
 msgid "Auto flesh"
 msgstr "Auto fleš"
 
@@ -2187,6 +2209,11 @@ msgstr ""
 #
 msgid "Auto scart switching"
 msgstr "Automatsko uključenje skarta"
+
+#
+#, fuzzy
+msgid "Auto standby"
+msgstr "ne stanje pripravnosti"
 
 #
 #, fuzzy
@@ -2533,9 +2560,6 @@ msgstr ""
 #
 msgid "Bus: "
 msgstr "Bus:"
-
-msgid "By Team OpenVision"
-msgstr ""
 
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr ""
@@ -4243,6 +4267,9 @@ msgstr ""
 msgid "Delay in miliseconds between scrolling characters on display."
 msgstr ""
 
+msgid "Delay:"
+msgstr ""
+
 #
 msgid "Delete"
 msgstr "Obriši"
@@ -4557,6 +4584,11 @@ msgid "Do you really want to delete %s?"
 msgstr "Jeste li sigurni da želite obrisati %s?"
 
 #
+#, fuzzy
+msgid "Do you really want to delete this timer?"
+msgstr "Jeste li sigurni da želite obrisati %s?"
+
+#
 #, python-format
 msgid ""
 "Do you really want to download\n"
@@ -4691,6 +4723,11 @@ msgstr ""
 
 #
 msgid "Don't stop current event but disable coming events"
+msgstr "Ne zaustavljaj trenutni događaj ali onemogući nadolazeće događaje"
+
+#
+#, fuzzy
+msgid "Don't stop current event but disable future events"
 msgstr "Ne zaustavljaj trenutni događaj ali onemogući nadolazeće događaje"
 
 msgid "Don't zap"
@@ -5296,6 +5333,9 @@ msgstr ""
 msgid "Every known"
 msgstr ""
 
+msgid "Everyday"
+msgstr ""
+
 msgid "Everywhere"
 msgstr ""
 
@@ -5517,9 +5557,6 @@ msgstr ""
 msgid "FFmpeg version: "
 msgstr "Nova verzija:"
 
-msgid "FLASH"
-msgstr ""
-
 msgid "FTA"
 msgstr ""
 
@@ -5719,6 +5756,11 @@ msgstr ""
 
 msgid "Fixed X11 font (SD)"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Flash"
+msgstr "Fleš"
 
 #
 #, fuzzy
@@ -6493,11 +6535,6 @@ msgstr ""
 
 msgid "Ignore conflict"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Image OpenVision"
-msgstr "Rukuj proširenjima"
 
 msgid "Image architecture: "
 msgstr ""
@@ -8593,6 +8630,9 @@ msgstr ""
 msgid "One"
 msgstr "Jedan"
 
+msgid "Only active when in standby"
+msgstr ""
+
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
 
@@ -8616,6 +8656,11 @@ msgstr ""
 
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision enigma2 image"
+msgstr "Nova verzija:"
 
 #
 #, fuzzy
@@ -9402,8 +9447,18 @@ msgstr "Granica snage u mA"
 msgid "Power threshold. Consult your receiver's manual for more information."
 msgstr ""
 
+#
+#, fuzzy
+msgid "PowerManager entry"
+msgstr "Uklonite unos nejmservera"
+
 msgid "PowerMenu"
 msgstr ""
+
+#
+#, fuzzy
+msgid "PowerTimer list"
+msgstr "Uređivanje tajmera"
 
 #
 #, fuzzy
@@ -9778,6 +9833,11 @@ msgid "Really close without saving settings?"
 msgstr "Želite li stvarno zatvoriti bez čuvanja postavki ?"
 
 #
+#, fuzzy
+msgid "Really delete completed timers?"
+msgstr "Želite li stvarno obrisati završene tajmere?"
+
+#
 msgid "Really delete done timers?"
 msgstr "Želite li stvarno obrisati završene tajmere?"
 
@@ -10075,6 +10135,11 @@ msgid "Repeating event currently recording... What do you want to do?"
 msgstr "Snimanje ponovljenog događaja je u toku...Šta želite da učinite?"
 
 #
+#, fuzzy
+msgid "Repeating the event currently recording... What do you want to do?"
+msgstr "Snimanje ponovljenog događaja je u toku...Šta želite da učinite?"
+
+#
 msgid "Repeats"
 msgstr "Ponavljanja"
 
@@ -10138,6 +10203,11 @@ msgstr "Rezolucija"
 #
 msgid "Restart"
 msgstr "Restart"
+
+#
+#, fuzzy
+msgid "Restart GUI"
+msgstr "Restart GUI sada?"
 
 #
 msgid "Restart GUI now?"
@@ -11952,6 +12022,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Sleep delay"
+msgstr "Tajmer spavanja"
+
+#
+#, fuzzy
 msgid "Sleep timer"
 msgstr "Tajmer spavanja"
 
@@ -12445,7 +12520,17 @@ msgid "Stop current event and disable coming events"
 msgstr "Zaustavi trenutni događaj i onemogući ostale dolazeće."
 
 #
+#, fuzzy
+msgid "Stop current event and disable future events"
+msgstr "Zaustavi trenutni događaj i onemogući ostale dolazeće."
+
+#
 msgid "Stop current event but not coming events"
+msgstr "Zaustavi trenutni događaj ali ne i ostale dolazeće"
+
+#
+#, fuzzy
+msgid "Stop current event but not future events"
 msgstr "Zaustavi trenutni događaj ali ne i ostale dolazeće"
 
 #
@@ -13080,6 +13165,11 @@ msgid "The status of the current image could not be checked because %s can not b
 msgstr ""
 
 #
+#, fuzzy
+msgid "The timer file (pm_timers.xml) is corrupt and could not be loaded."
+msgstr "Tajmer datoteka (timers.xml) je nepravilna i ne može biti ubačena."
+
+#
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "Tajmer datoteka (timers.xml) je nepravilna i ne može biti ubačena."
 
@@ -13470,6 +13560,15 @@ msgstr "Unos Tajmera"
 #
 msgid "Timer log"
 msgstr "Tajmer log"
+
+#
+#, fuzzy
+msgid ""
+"Timer overlap in pm_timers.xml detected!\n"
+"Please recheck it!"
+msgstr ""
+"Otkriveno preklapanje tajmera u timers.xml!\n"
+"Molimo ponovo proverite!"
 
 #
 msgid ""
@@ -14517,6 +14616,14 @@ msgstr ""
 msgid "Wake On LAN"
 msgstr ""
 
+msgid "Wake up"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Wake up to standby"
+msgstr "pođi u pripravnost"
+
 msgid "Wakeup"
 msgstr ""
 
@@ -14578,6 +14685,11 @@ msgstr "Sreda"
 
 #
 msgid "Weekday"
+msgstr "Nedeljnii dan"
+
+#
+#, fuzzy
+msgid "Weekend"
 msgstr "Nedeljnii dan"
 
 #
@@ -15442,6 +15554,16 @@ msgstr "Auto"
 
 #
 #, fuzzy
+msgid "auto deepstandby"
+msgstr "pokreni isključivanje drimboxa"
+
+#
+#, fuzzy
+msgid "auto standby"
+msgstr "ne stanje pripravnosti"
+
+#
+#, fuzzy
 msgid "automatic"
 msgstr "Automatski"
 
@@ -15490,6 +15612,11 @@ msgstr ""
 
 msgid "broadcasting/press"
 msgstr ""
+
+#
+#, fuzzy
+msgid "by Open Vision developers"
+msgstr "Nova verzija:"
 
 #
 #, fuzzy
@@ -16370,6 +16497,11 @@ msgstr ""
 msgid "quick execute"
 msgstr ""
 
+#
+#, fuzzy
+msgid "reboot system"
+msgstr "Sistem "
+
 msgid "receiver software because updates are available."
 msgstr ""
 
@@ -16470,6 +16602,11 @@ msgstr "Ponovite listu za reprodukciju"
 msgid "repeated"
 msgstr "ponavljam"
 
+#
+#, fuzzy
+msgid "restart GUI"
+msgstr "Restart GUI sada?"
+
 msgid "restore deleted userbouquets"
 msgstr ""
 
@@ -16505,6 +16642,10 @@ msgstr ""
 
 msgid "romance"
 msgstr ""
+
+#, fuzzy
+msgid "running..."
+msgstr "na početku"
 
 msgid "save"
 msgstr ""
@@ -16909,6 +17050,14 @@ msgstr "čekam mmi..."
 #
 msgid "waiting"
 msgstr "čekam"
+
+msgid "wakeup"
+msgstr ""
+
+#
+#, fuzzy
+msgid "wakeup to standby"
+msgstr "pođi u pripravnost"
 
 msgid "water sport"
 msgstr ""

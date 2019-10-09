@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-06 14:19+0330\n"
+"POT-Creation-Date: 2019-10-09 03:59+0330\n"
 "PO-Revision-Date: 2019-09-13 23:02+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -1273,6 +1273,32 @@ msgstr ""
 msgid "A file from media is in use!"
 msgstr "A médián lévő egyik fájl használatban van!"
 
+#, fuzzy
+msgid "A finished powertimer wants to reboot your receiver. Do that now?"
+msgstr ""
+"Egy befejezett időzítés le akarja kapcsolni\n"
+"a készüléket készenléti módba. Engedélyezi?"
+
+#, fuzzy
+msgid ""
+"A finished powertimer wants to restart the user interface.\n"
+"Do that now?"
+msgstr ""
+"Egy befejezett időzítés le akarja kapcsolni\n"
+"a készüléket készenléti módba. Engedélyezi?"
+
+#, fuzzy
+msgid "A finished powertimer wants to set your receiver to standby. Do that now?"
+msgstr ""
+"Egy befejezett időzítés le akarja kapcsolni\n"
+"a készüléket készenléti módba. Engedélyezi?"
+
+#, fuzzy
+msgid "A finished powertimer wants to shutdown your receiver. Do that now?"
+msgstr ""
+"Egy befejezett időzítés ki akarja kapcsolni\n"
+"a készüléket. Engedélyezi?"
+
 msgid ""
 "A finished record timer wants to set your\n"
 "receiver to standby. Do that now?"
@@ -1892,6 +1918,9 @@ msgstr "Hozzárendelt CAId:"
 msgid "Assigned services/provider:"
 msgstr "Hozzárendelt szolgáltató:"
 
+msgid "At End:"
+msgstr ""
+
 msgid "At beginning"
 msgstr "Az elején"
 
@@ -1988,6 +2017,10 @@ msgstr "Automatikus EXIF elrendezés forgatása/tükrözése"
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatikus fejezet készítés ? percenként (0=soha)"
 
+#, fuzzy
+msgid "Auto deep standby"
+msgstr "kikapcsolás"
+
 msgid "Auto flesh"
 msgstr "Auto-flash"
 
@@ -2005,6 +2038,10 @@ msgstr "Automatikus blu-ray lejátszás"
 
 msgid "Auto scart switching"
 msgstr "Automatikus SCART átkapcsolás"
+
+#, fuzzy
+msgid "Auto standby"
+msgstr "Nincs kikapcsolás"
 
 #, fuzzy
 msgid "Auto start"
@@ -2297,9 +2334,6 @@ msgstr "Burundi"
 
 msgid "Bus: "
 msgstr "Busz: "
-
-msgid "By Team OpenVision"
-msgstr ""
 
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr "Alapértelmezetten, a Jel/Zaj viszony (SNR) decibelben jeleník meg (ha a tuner támogatja). Ezzel a beállítással mindenképp százalékra kényszerítheti a megjelenítést."
@@ -3830,6 +3864,9 @@ msgstr "A kijelzőn a görgetett szöveg indítása előtti késleltetés (ms)."
 msgid "Delay in miliseconds between scrolling characters on display."
 msgstr "A kijelzőn az egyes karakterek görgetése közötti késleltetés (ms)."
 
+msgid "Delay:"
+msgstr ""
+
 msgid "Delete"
 msgstr "Törlés"
 
@@ -4084,6 +4121,10 @@ msgstr ""
 msgid "Do you really want to delete %s?"
 msgstr "Biztos benne, hogy törölni szeretné ezt a tételt: %s?"
 
+#, fuzzy
+msgid "Do you really want to delete this timer?"
+msgstr "Biztos benne, hogy törölni szeretné ezt a tételt: %s?"
+
 #, python-format
 msgid ""
 "Do you really want to download\n"
@@ -4203,6 +4244,10 @@ msgid "Don't save and stop timeshift"
 msgstr "Ne mentse, és állítsa meg az időcsúsztatást"
 
 msgid "Don't stop current event but disable coming events"
+msgstr "Ne állítsa le a futó eseményt, inkább kapcsolja le a következőt"
+
+#, fuzzy
+msgid "Don't stop current event but disable future events"
 msgstr "Ne állítsa le a futó eseményt, inkább kapcsolja le a következőt"
 
 msgid "Don't zap"
@@ -4749,6 +4794,9 @@ msgstr "Mindenhonnan"
 msgid "Every known"
 msgstr "Minden ismert"
 
+msgid "Everyday"
+msgstr ""
+
 msgid "Everywhere"
 msgstr "Mindenhonnan"
 
@@ -4938,9 +4986,6 @@ msgstr "FEC:"
 msgid "FFmpeg version: "
 msgstr "Kezelőfelület verzió: "
 
-msgid "FLASH"
-msgstr ""
-
 msgid "FTA"
 msgstr "FTA"
 
@@ -5122,6 +5167,10 @@ msgstr "Fix"
 
 msgid "Fixed X11 font (SD)"
 msgstr ""
+
+#, fuzzy
+msgid "Flash"
+msgstr "Flash Image"
 
 msgid "Flash Image"
 msgstr "Flash Image"
@@ -5816,10 +5865,6 @@ msgstr "DVB-T alhálózati azonosító figyelmen kívül hagyása"
 
 msgid "Ignore conflict"
 msgstr "Hagyja figyelmen kívül az ütközést"
-
-#, fuzzy
-msgid "Image OpenVision"
-msgstr "Bővítmények kezelése"
 
 msgid "Image architecture: "
 msgstr ""
@@ -7584,6 +7629,10 @@ msgstr ""
 msgid "One"
 msgstr "Egy"
 
+#, fuzzy
+msgid "Only active when in standby"
+msgstr "Készülék kikapcsolása"
+
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr "Csak akkor változtassa meg ez a beállítást, ha olyan Unicable eszközt használ, amely egy egyedi programozóval újra lett programozva. További információkért keresse fel az újraprogramozást végző személyt."
 
@@ -7604,6 +7653,10 @@ msgstr "Csak indításkor"
 
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Csak akkor válassza az 'igen'-t, ha olyan multiswich-et használ, amely megköveteli a DiSEqC Port-A parancs jelet. Minden egyéb esetben válassza a 'nem'-et."
+
+#, fuzzy
+msgid "Open Vision enigma2 image"
+msgstr "Python verzió: "
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8248,8 +8301,16 @@ msgstr "Áram határérték (mA)"
 msgid "Power threshold. Consult your receiver's manual for more information."
 msgstr "Áram határérték. További információkért olvassa el készüléke használati útmutatóját."
 
+#, fuzzy
+msgid "PowerManager entry"
+msgstr "átnevezés"
+
 msgid "PowerMenu"
 msgstr "Kikapcsolási menü"
+
+#, fuzzy
+msgid "PowerTimer list"
+msgstr "Csatornalista megjelenítése"
 
 #, fuzzy
 msgid "Predefined"
@@ -8581,6 +8642,10 @@ msgstr ""
 msgid "Really close without saving settings?"
 msgstr "Bezárjam mentés nélkül?"
 
+#, fuzzy
+msgid "Really delete completed timers?"
+msgstr "Töröljem a befejezett időzítéseket?"
+
 msgid "Really delete done timers?"
 msgstr "Töröljem a befejezett időzítéseket?"
 
@@ -8826,6 +8891,10 @@ msgstr "Ismétlődő felvétel megy. Mit csináljak?"
 msgid "Repeating event currently recording... What do you want to do?"
 msgstr "Ismétlődő felvétel megy... Mit csináljak?"
 
+#, fuzzy
+msgid "Repeating the event currently recording... What do you want to do?"
+msgstr "Ismétlődő felvétel megy... Mit csináljak?"
+
 msgid "Repeats"
 msgstr "Ismétlések"
 
@@ -8883,6 +8952,10 @@ msgstr "Felbontás"
 
 msgid "Restart"
 msgstr "Újraindítás"
+
+#, fuzzy
+msgid "Restart GUI"
+msgstr "Újraindítja most a kezelőfelületet?"
 
 msgid "Restart GUI now?"
 msgstr "Újraindítja most a kezelőfelületet?"
@@ -10432,6 +10505,10 @@ msgstr "Üres csatornák átugrása"
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Internet-kapcsolat ellenőrzésének mellőzése (automatikus csomag-telepítés is tiltva lesz)"
 
+#, fuzzy
+msgid "Sleep delay"
+msgstr "Görgetés késleltetése"
+
 msgid "Sleep timer"
 msgstr "Elalvás időzítő"
 
@@ -10851,7 +10928,15 @@ msgstr "Megállítás és felvételek törlése:"
 msgid "Stop current event and disable coming events"
 msgstr "Futó időzítés és a soron következők leállítása"
 
+#, fuzzy
+msgid "Stop current event and disable future events"
+msgstr "Futó időzítés és a soron következők leállítása"
+
 msgid "Stop current event but not coming events"
+msgstr "Futó időzítés leállítása de a soron következők futtatása"
+
+#, fuzzy
+msgid "Stop current event but not future events"
 msgstr "Futó időzítés leállítása de a soron következők futtatása"
 
 msgid "Stop current stream"
@@ -11430,6 +11515,10 @@ msgstr ""
 msgid "The status of the current image could not be checked because %s can not be reached."
 msgstr "Az aktuális image állapota nem ellenőrizhető, mert a %s oldal nem elérhető."
 
+#, fuzzy
+msgid "The timer file (pm_timers.xml) is corrupt and could not be loaded."
+msgstr "A timer fájl (timers.xml) sérült és nem lehet betölteni."
+
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "A timer fájl (timers.xml) sérült és nem lehet betölteni."
 
@@ -11791,6 +11880,14 @@ msgstr "Időzítés megadása"
 
 msgid "Timer log"
 msgstr "Időzítő lognapló"
+
+#, fuzzy
+msgid ""
+"Timer overlap in pm_timers.xml detected!\n"
+"Please recheck it!"
+msgstr ""
+"Időzítési átfedést találtam a timers.xml fájlban!\n"
+"Kérem, ellenőrizze!"
 
 msgid ""
 "Timer overlap in timers.xml detected!\n"
@@ -12672,6 +12769,14 @@ msgstr "Várakozás a partícióra"
 msgid "Wake On LAN"
 msgstr "Ébresztés LAN-on"
 
+#, fuzzy
+msgid "Wake up"
+msgstr "Felébresztés"
+
+#, fuzzy
+msgid "Wake up to standby"
+msgstr "A TV felébresztése készenléti módból"
+
 msgid "Wakeup"
 msgstr "Felébresztés"
 
@@ -12725,6 +12830,10 @@ msgid "Wednesday"
 msgstr "Szerda"
 
 msgid "Weekday"
+msgstr "Hétköznap"
+
+#, fuzzy
+msgid "Weekend"
 msgstr "Hétköznap"
 
 #, fuzzy
@@ -13553,6 +13662,14 @@ msgstr "hangsávok"
 msgid "auto"
 msgstr "auto"
 
+#, fuzzy
+msgid "auto deepstandby"
+msgstr "kikapcsolás"
+
+#, fuzzy
+msgid "auto standby"
+msgstr "Nincs kikapcsolás"
+
 msgid "automatic"
 msgstr "automatikus"
 
@@ -13595,6 +13712,10 @@ msgstr "alsó"
 
 msgid "broadcasting/press"
 msgstr "közvetítés/sajtó"
+
+#, fuzzy
+msgid "by Open Vision developers"
+msgstr "Python verzió: "
 
 msgid "by date"
 msgstr "rendezés dátum szerint"
@@ -14374,6 +14495,10 @@ msgstr "törölt felhasználói listák végleges eltávolítása"
 msgid "quick execute"
 msgstr ""
 
+#, fuzzy
+msgid "reboot system"
+msgstr "Rendszer"
+
 msgid "receiver software because updates are available."
 msgstr "készülék szoftvere, mert frissítések elérhetők."
 
@@ -14455,6 +14580,10 @@ msgstr "lejátszási lista ismétlése"
 msgid "repeated"
 msgstr "többszöri"
 
+#, fuzzy
+msgid "restart GUI"
+msgstr "Újraindítja most a kezelőfelületet?"
+
 msgid "restore deleted userbouquets"
 msgstr "törölt felhasználói listák visszaállítása"
 
@@ -14486,6 +14615,10 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "románc"
+
+#, fuzzy
+msgid "running..."
+msgstr "Keresés..."
 
 msgid "save"
 msgstr ""
@@ -14842,6 +14975,14 @@ msgstr "várakozás mmi-re..."
 
 msgid "waiting"
 msgstr "várakozás"
+
+#, fuzzy
+msgid "wakeup"
+msgstr "Felébresztés"
+
+#, fuzzy
+msgid "wakeup to standby"
+msgstr "A TV felébresztése készenléti módból"
 
 msgid "water sport"
 msgstr "vizi sport"

@@ -93,6 +93,7 @@ class MediaPlayerSettings(Screen, ConfigListScreen):
 			self.list.append(getConfigListEntry(_("Sorting of playlists"), config.mediaplayer.sortPlaylists))
 			self.list.append(getConfigListEntry(_("Always hide infobar"), config.mediaplayer.alwaysHideInfoBar))
 			self.list.append(getConfigListEntry(_("Show media player on main menu"), config.mediaplayer.onMainMenu))
+			self.list.append(getConfigListEntry(_("Play file when add in empty playlist"), config.mediaplayer.playIfEmptyPlaylists))
 			self["config"].setList(self.list)
 		except KeyError:
 			print "keyError"

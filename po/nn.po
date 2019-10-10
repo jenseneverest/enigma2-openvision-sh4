@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 03:59+0330\n"
+"POT-Creation-Date: 2019-10-10 20:00+0330\n"
 "PO-Revision-Date: 2013-10-23 19:15+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -44,9 +44,10 @@ msgid ""
 "Conflict detection disabled!"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 "Endre oppdateringsadresse."
@@ -4445,16 +4446,17 @@ msgid "Do you want to select a different skin?"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Do you want to update the package:\n"
+msgstr "Vil du oppdatere pakken:\n"
+
+#
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Vil du oppdatere mottaker til %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Vil du oppdatere din mottaker?"
-
-#
-msgid "Do you want to upgrade the package:\n"
-msgstr "Vil du oppdatere pakken:\n"
 
 #, fuzzy
 msgid "Documentary"
@@ -4495,9 +4497,9 @@ msgid "Done"
 msgstr ""
 
 #
-#, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+#, fuzzy, python-format
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Ferdig - Installert, oppdatert eller fjernet %d pakke (%s)"
 msgstr[1] "Ferdig - Installert, oppdatert eller fjernet %d pakker (%s)"
 
@@ -4641,7 +4643,8 @@ msgstr ""
 msgid "Edit title"
 msgstr "Endre navn"
 
-msgid "Edit upgrade source url."
+#, fuzzy
+msgid "Edit update source url."
 msgstr "Endre oppdateringens internettadresse."
 
 #
@@ -6768,7 +6771,8 @@ msgstr "Siste innstilling"
 msgid "Last speed"
 msgstr "Siste hastighet"
 
-msgid "Last upgrade: "
+#, fuzzy
+msgid "Last update: "
 msgstr "Siste oppdatering:"
 
 msgctxt "third event: 'third' event label"
@@ -6779,7 +6783,7 @@ msgid "Latest Commits"
 msgstr ""
 
 #, fuzzy
-msgid "Latest upgrade log"
+msgid "Latest update log"
 msgstr "Siste oppdatering:"
 
 #
@@ -8326,7 +8330,8 @@ msgstr ""
 msgid "Overscan wizard"
 msgstr ""
 
-msgid "Overwrite configuration files during software upgrade?"
+#, fuzzy
+msgid "Overwrite configuration files during software update?"
 msgstr "Overskrive konfigurerte filer under programvareoppdateringen?"
 
 #
@@ -9368,10 +9373,12 @@ msgstr "Slå av nå?"
 msgid "Really store at index %2d for current position?"
 msgstr ""
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+#, fuzzy
+msgid "Really update the frontprocessor and reboot now?"
 msgstr "Vil du oppdatere frontprosessor og starte på nytt nå?"
 
-msgid "Really upgrade your settop box and reboot now?"
+#, fuzzy
+msgid "Really update your settop box and reboot now?"
 msgstr "Vil du oppdatere mottakeren og starte på nytt nå?"
 
 msgid "Reboot"
@@ -9601,6 +9608,11 @@ msgstr "Gjentagelsestype"
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Repeat playlist"
+msgstr "gjenta spilliste"
 
 #
 msgid "Repeat type"
@@ -10047,8 +10059,16 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
+#, fuzzy
+msgid "Save last directory on exit"
+msgstr "lagre siste katalog ved avslutning"
+
 msgid "Save playlist"
 msgstr "Lagre spilliste"
+
+#, fuzzy
+msgid "Save playlist on exit"
+msgstr "lagre spilliste ved avslutning"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -10537,10 +10557,12 @@ msgstr ""
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr ""
 
-msgid "Select upgrade source"
+#, fuzzy
+msgid "Select update source"
 msgstr "Velg oppdateringssted"
 
-msgid "Select upgrade source to edit."
+#, fuzzy
+msgid "Select update source to edit."
 msgstr "Velg og endre oppdateringssted."
 
 msgid "Select video input with up/down buttons"
@@ -11097,13 +11119,18 @@ msgstr "Vis informasjonslinje ved kanalhopp framover/bakover"
 msgid "Show latest commits"
 msgstr ""
 
-msgid "Show latest upgrade log"
-msgstr ""
+#, fuzzy
+msgid "Show latest update log"
+msgstr "Siste oppdatering:"
 
 #
 #, fuzzy
 msgid "Show log"
 msgstr "Vis info"
+
+#, fuzzy
+msgid "Show media player on main menu"
+msgstr "vis mediespiller på hovedmeny"
 
 msgid "Show menu or plugin numbers"
 msgstr ""
@@ -11152,8 +11179,10 @@ msgstr ""
 msgid "Show on VFD display in standby"
 msgstr ""
 
-msgid "Show packages to be upgraded"
-msgstr ""
+#
+#, fuzzy
+msgid "Show packages to be updated"
+msgstr "Oppdaterer programvare"
 
 msgid "Show picons in channel selection list"
 msgstr ""
@@ -11554,6 +11583,10 @@ msgstr ""
 msgid "Sort time"
 msgstr "Sortere tid"
 
+#, fuzzy
+msgid "Sorting of playlists"
+msgstr "sortering av spillister"
+
 #
 msgid "Sound"
 msgstr "Lyd"
@@ -11737,6 +11770,10 @@ msgstr ""
 #, fuzzy
 msgid "Start cut"
 msgstr "Starttid"
+
+#, fuzzy
+msgid "Start directory"
+msgstr "start katalog"
 
 #
 msgid "Start from the beginning"
@@ -13256,8 +13293,9 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
+#, fuzzy
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -13398,13 +13436,13 @@ msgstr "Bildevisnings intervall (sek.)"
 msgid "Updatefeed not available."
 msgstr "Oppdateringsstedet er ikke tilgjengelig."
 
+#, fuzzy
+msgid "Updating"
+msgstr "Oppdater"
+
 #
 msgid "Updating software catalog"
 msgstr "Oppdaterer programvare katalog"
-
-#
-msgid "Upgrading"
-msgstr "Oppdaterer"
 
 msgid "Upper case"
 msgstr ""
@@ -13998,7 +14036,7 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr ""
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -14456,8 +14494,9 @@ msgstr "Samlingen din overstiger plassen du har tilgjengelig på enkeltlagsplate
 msgid "Your current collection will get lost!"
 msgstr "Din nåværende samling vil gå tapt!"
 
+#, fuzzy
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -15702,9 +15741,6 @@ msgstr "scenekunst"
 msgid "play as picture in picture"
 msgstr "Vis som bilde i bilde"
 
-msgid "play file when add in empty playlist"
-msgstr ""
-
 msgid "play in mainwindow"
 msgstr "spill av i hovedvinduet"
 
@@ -15814,10 +15850,6 @@ msgid "rename entry"
 msgstr "endre navn i oppføringen"
 
 #
-msgid "repeat playlist"
-msgstr "gjenta spilliste"
-
-#
 msgid "repeated"
 msgstr "gjentatt"
 
@@ -15867,12 +15899,6 @@ msgstr "Søker..."
 
 msgid "save"
 msgstr ""
-
-msgid "save last directory on exit"
-msgstr "lagre siste katalog ved avslutning"
-
-msgid "save playlist on exit"
-msgstr "lagre spilliste ved avslutning"
 
 msgid "scan state"
 msgstr "søkestatus"
@@ -15942,9 +15968,6 @@ msgstr "vis alternativer"
 #
 msgid "show event details"
 msgstr "vis programdetaljer"
-
-msgid "show mediaplayer on mainmenu"
-msgstr "vis mediespiller på hovedmeny"
 
 msgid "show softwaremanager in setup menu"
 msgstr "vis programvareoppsett"
@@ -16027,9 +16050,6 @@ msgstr "sosial/politiske spørsmål/økonomi (generelt)"
 msgid "social/spiritual science"
 msgstr "sosial/åndsvitenskap"
 
-msgid "sorting of playlists"
-msgstr "sortering av spillister"
-
 msgid "spark"
 msgstr ""
 
@@ -16065,9 +16085,6 @@ msgstr "start klipp her"
 #, fuzzy
 msgid "start cut here (reset)"
 msgstr "start klipp her"
-
-msgid "start directory"
-msgstr "start katalog"
 
 msgid "stepsize"
 msgstr "steg størrelse"

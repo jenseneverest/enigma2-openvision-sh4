@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 03:59+0330\n"
+"POT-Creation-Date: 2019-10-10 20:00+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -45,9 +45,10 @@ msgstr ""
 "Detekce konfliktů zakázána!"
 
 #
+#, fuzzy
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 "Upravit adresy aktualizačních zdrojů."
@@ -4697,16 +4698,17 @@ msgstr "Chcete obnovit přehrávání?"
 msgid "Do you want to select a different skin?"
 msgstr "Chcete vybrat jiný skin?"
 
+#
+#, fuzzy
+msgid "Do you want to update the package:\n"
+msgstr "Chcete aktualizovat balíček:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Chcete zaktualizovat Váš přijímač na %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Chcete zaktualizovat Váš přijímač?"
-
-#
-msgid "Do you want to upgrade the package:\n"
-msgstr "Chcete aktualizovat balíček:\n"
 
 #, fuzzy
 msgid "Documentary"
@@ -4749,9 +4751,9 @@ msgid "Done"
 msgstr "Dokončeno"
 
 #
-#, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+#, fuzzy, python-format
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Dokončeno - instalován, aktualizován nebo odstraněn %d balíček (%s)"
 msgstr[1] "Dokončeno - instalovány, aktualizovány nebo odstraněny %d balíčky (%s)"
 msgstr[2] "Dokončeno - instalováno, aktualizováno nebo odstraněno %d balíčků (%s)"
@@ -4900,7 +4902,8 @@ msgid "Edit title"
 msgstr "Upravit titul"
 
 #
-msgid "Edit upgrade source url."
+#, fuzzy
+msgid "Edit update source url."
 msgstr "Upravit url zdroje aktualizací."
 
 #
@@ -7094,7 +7097,8 @@ msgstr "Poslední konfigurace"
 msgid "Last speed"
 msgstr "Poslední rychlost"
 
-msgid "Last upgrade: "
+#, fuzzy
+msgid "Last update: "
 msgstr "Poslední aktualizace: "
 
 msgctxt "third event: 'third' event label"
@@ -7105,7 +7109,8 @@ msgstr ""
 msgid "Latest Commits"
 msgstr "Poslední změny"
 
-msgid "Latest upgrade log"
+#, fuzzy
+msgid "Latest update log"
 msgstr "Log poslední aktualizace"
 
 #
@@ -8681,7 +8686,8 @@ msgstr "Celkový průběh:"
 msgid "Overscan wizard"
 msgstr "Overscan průvodce"
 
-msgid "Overwrite configuration files during software upgrade?"
+#, fuzzy
+msgid "Overwrite configuration files during software update?"
 msgstr "Přepsat konfigurační soubory při aktualizaci software ?"
 
 msgid "Overwrite configuration files?"
@@ -9789,10 +9795,12 @@ msgstr "Opravdu nyní vypnout?"
 msgid "Really store at index %2d for current position?"
 msgstr "Opravdu uložit současnou pozici pod index %2d?"
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+#, fuzzy
+msgid "Really update the frontprocessor and reboot now?"
 msgstr "Skutečně aktualizovat frontprocesor a restartovat?"
 
-msgid "Really upgrade your settop box and reboot now?"
+#, fuzzy
+msgid "Really update your settop box and reboot now?"
 msgstr "Skutečně aktualizovat přijímač a restartovat"
 
 msgid "Reboot"
@@ -10033,6 +10041,11 @@ msgstr "Druh opakování"
 
 msgid "Repeat leave standby messages"
 msgstr "Opakovat odeslání probuzení ze standby"
+
+#
+#, fuzzy
+msgid "Repeat playlist"
+msgstr "Opakovat playlist"
 
 #
 msgid "Repeat type"
@@ -10496,8 +10509,18 @@ msgid "Save changes"
 msgstr "Uložit změny"
 
 #
+#, fuzzy
+msgid "Save last directory on exit"
+msgstr "Uložit poslední adresář při ukončení"
+
+#
 msgid "Save playlist"
 msgstr "Uložit playlist"
+
+#
+#, fuzzy
+msgid "Save playlist on exit"
+msgstr "Při ukončení uložit playlist"
 
 msgid "Save settings and EPG data"
 msgstr "Uložit nastavení a EPG data"
@@ -11008,11 +11031,13 @@ msgid "Select the virtual keyboard shifted character set for the next character 
 msgstr "Shift pro následující znak"
 
 #
-msgid "Select upgrade source"
+#, fuzzy
+msgid "Select update source"
 msgstr "Vyberte zdroje pro aktualizaci"
 
 #
-msgid "Select upgrade source to edit."
+#, fuzzy
+msgid "Select update source to edit."
 msgstr "Výběr zdroje pro aktualizaci k úpravě."
 
 #
@@ -11588,12 +11613,18 @@ msgstr "Zobrazit infobar při přeskočení dopředu/zpět"
 msgid "Show latest commits"
 msgstr "Zobrazit poslední změny"
 
-msgid "Show latest upgrade log"
+#, fuzzy
+msgid "Show latest update log"
 msgstr "Zobrazit log poslední aktualizace"
 
 #, fuzzy
 msgid "Show log"
 msgstr "Nápověda"
+
+#
+#, fuzzy
+msgid "Show media player on main menu"
+msgstr "Zobrazovat Mediaplayer v hlavním menu"
 
 msgid "Show menu or plugin numbers"
 msgstr "Zobrazovat čísla v menu nebo pluginech"
@@ -11647,7 +11678,8 @@ msgstr "Zobrazovat pikony na displeji"
 msgid "Show on VFD display in standby"
 msgstr "Zobrazovat pikony na displeji"
 
-msgid "Show packages to be upgraded"
+#, fuzzy
+msgid "Show packages to be updated"
 msgstr "Zobrazit aktualizované balíčky"
 
 #
@@ -12061,6 +12093,11 @@ msgid "Sort time"
 msgstr "Setřídit dle času"
 
 #
+#, fuzzy
+msgid "Sorting of playlists"
+msgstr "Třídění playlistů"
+
+#
 msgid "Sound"
 msgstr "Zvuk"
 
@@ -12247,6 +12284,11 @@ msgstr "Všechny frekvence"
 #, fuzzy
 msgid "Start cut"
 msgstr "Spustit test"
+
+#
+#, fuzzy
+msgid "Start directory"
+msgstr "Výchozí adresář"
 
 #
 msgid "Start from the beginning"
@@ -13819,8 +13861,9 @@ msgstr "Nelze nastavit požadované adresáře na médiu (např. na USB nebo HDD
 
 #
 #
+#, fuzzy
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -13964,12 +14007,13 @@ msgid "Updatefeed not available."
 msgstr "Zdroj aktualizací není k dispozici."
 
 #
-msgid "Updating software catalog"
-msgstr "Aktualizace katalogu programů"
+#, fuzzy
+msgid "Updating"
+msgstr "Aktualizace"
 
 #
-msgid "Upgrading"
-msgstr "Aktualizace"
+msgid "Updating software catalog"
+msgstr "Aktualizace katalogu programů"
 
 msgid "Upper case"
 msgstr "Velká písmena"
@@ -14591,7 +14635,8 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr "Jaký typ vyhledání programů chcete?"
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+#, fuzzy
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Enigma2 bude načítat odstraněné uživatelské přehledy. To znamená, že uživatelské přehledy, které jsou k dispozici, ale nejsou zahrnuty v bouquets.tv nebo bouquets.radio, budou načteny. To například umožňuje zachovat vlastní uživatelské přehledy, zatímco instalovaná nastavení jsou aktualizována."
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -15069,8 +15114,9 @@ msgstr "Vaše kompilace přesahuje kapacitu jednovrstvého DVD. Budete potřebov
 msgid "Your current collection will get lost!"
 msgstr "Vaše současná kompilace bude ztracena!"
 
+#, fuzzy
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -16342,9 +16388,6 @@ msgstr "scénické umění"
 msgid "play as picture in picture"
 msgstr "Přehrát jako obraz v obraze"
 
-msgid "play file when add in empty playlist"
-msgstr ""
-
 msgid "play in mainwindow"
 msgstr "Přehrát v hlavním okně"
 
@@ -16468,10 +16511,6 @@ msgid "rename entry"
 msgstr "Přejmenovat"
 
 #
-msgid "repeat playlist"
-msgstr "Opakovat playlist"
-
-#
 msgid "repeated"
 msgstr "Opakování"
 
@@ -16524,14 +16563,6 @@ msgstr "prohledávání..."
 
 msgid "save"
 msgstr ""
-
-#
-msgid "save last directory on exit"
-msgstr "Uložit poslední adresář při ukončení"
-
-#
-msgid "save playlist on exit"
-msgstr "Při ukončení uložit playlist"
 
 #
 msgid "scan state"
@@ -16602,10 +16633,6 @@ msgstr "Zobrazit alternativy"
 #
 msgid "show event details"
 msgstr "Zobrazit podrobnosti"
-
-#
-msgid "show mediaplayer on mainmenu"
-msgstr "Zobrazovat Mediaplayer v hlavním menu"
 
 msgid "show softwaremanager in setup menu"
 msgstr "Správa software v menu Nastavení"
@@ -16690,10 +16717,6 @@ msgstr "společensko politické problémy/ekonomie (obecně)"
 msgid "social/spiritual science"
 msgstr "sociální/duchovní vědy"
 
-#
-msgid "sorting of playlists"
-msgstr "Třídění playlistů"
-
 msgid "spark"
 msgstr ""
 
@@ -16729,10 +16752,6 @@ msgstr "začátek střihu zde"
 #, fuzzy
 msgid "start cut here (reset)"
 msgstr "začátek střihu zde"
-
-#
-msgid "start directory"
-msgstr "Výchozí adresář"
 
 msgid "stepsize"
 msgstr "krok"

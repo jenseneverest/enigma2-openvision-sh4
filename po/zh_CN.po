@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 03:59+0330\n"
+"POT-Creation-Date: 2019-10-10 20:00+0330\n"
 "PO-Revision-Date: 2016-06-17 12:13+0800\n"
 "Last-Translator: nx111 <gdzdz@163.com>\n"
 "Language-Team: NEWBOLT\n"
@@ -39,9 +39,10 @@ msgid ""
 "Conflict detection disabled!"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 "编辑升级源地址。"
@@ -4122,15 +4123,16 @@ msgstr " 是否继续上次播放?"
 msgid "Do you want to select a different skin?"
 msgstr ""
 
+#, fuzzy
+msgid "Do you want to update the package:\n"
+msgstr " 是否升级软件包:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr ""
 
 msgid "Do you want to update your receiver?"
 msgstr ""
-
-msgid "Do you want to upgrade the package:\n"
-msgstr " 是否升级软件包:\n"
 
 msgid "Documentary"
 msgstr ""
@@ -4170,8 +4172,8 @@ msgid "Done"
 msgstr ""
 
 #, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -4299,7 +4301,8 @@ msgstr ""
 msgid "Edit title"
 msgstr "修改标题"
 
-msgid "Edit upgrade source url."
+#, fuzzy
+msgid "Edit update source url."
 msgstr "修改升级源地址."
 
 #, fuzzy
@@ -6236,8 +6239,9 @@ msgstr "上次配置"
 msgid "Last speed"
 msgstr "上次速度"
 
-msgid "Last upgrade: "
-msgstr ""
+#, fuzzy
+msgid "Last update: "
+msgstr "上次升级:"
 
 msgctxt "third event: 'third' event label"
 msgid "Later"
@@ -6247,7 +6251,7 @@ msgid "Latest Commits"
 msgstr ""
 
 #, fuzzy
-msgid "Latest upgrade log"
+msgid "Latest update log"
 msgstr "上次升级:"
 
 msgid "Latitude"
@@ -7628,7 +7632,7 @@ msgstr ""
 msgid "Overscan wizard"
 msgstr ""
 
-msgid "Overwrite configuration files during software upgrade?"
+msgid "Overwrite configuration files during software update?"
 msgstr ""
 
 msgid "Overwrite configuration files?"
@@ -8573,10 +8577,10 @@ msgstr "立即关机?"
 msgid "Really store at index %2d for current position?"
 msgstr ""
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+msgid "Really update the frontprocessor and reboot now?"
 msgstr ""
 
-msgid "Really upgrade your settop box and reboot now?"
+msgid "Really update your settop box and reboot now?"
 msgstr ""
 
 msgid "Reboot"
@@ -8785,6 +8789,10 @@ msgstr ""
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+#, fuzzy
+msgid "Repeat playlist"
+msgstr "重复播放列表"
 
 msgid "Repeat type"
 msgstr ""
@@ -9194,8 +9202,16 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
+#, fuzzy
+msgid "Save last directory on exit"
+msgstr "退出时保存目录"
+
 msgid "Save playlist"
 msgstr ""
+
+#, fuzzy
+msgid "Save playlist on exit"
+msgstr "退出时保存播放列表"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -9650,10 +9666,12 @@ msgstr ""
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr ""
 
-msgid "Select upgrade source"
-msgstr ""
+#, fuzzy
+msgid "Select update source"
+msgstr "选泽升级源进行编辑."
 
-msgid "Select upgrade source to edit."
+#, fuzzy
+msgid "Select update source to edit."
 msgstr "选泽升级源进行编辑."
 
 msgid "Select video input with up/down buttons"
@@ -10163,12 +10181,16 @@ msgstr "快退 / 快进时显示信息条"
 msgid "Show latest commits"
 msgstr ""
 
-msgid "Show latest upgrade log"
-msgstr ""
+#, fuzzy
+msgid "Show latest update log"
+msgstr "上次升级:"
 
 #, fuzzy
 msgid "Show log"
 msgstr "无信号"
+
+msgid "Show media player on main menu"
+msgstr ""
 
 msgid "Show menu or plugin numbers"
 msgstr ""
@@ -10215,8 +10237,9 @@ msgstr ""
 msgid "Show on VFD display in standby"
 msgstr ""
 
-msgid "Show packages to be upgraded"
-msgstr ""
+#, fuzzy
+msgid "Show packages to be updated"
+msgstr "更新软件列表"
 
 msgid "Show picons in channel selection list"
 msgstr ""
@@ -10575,6 +10598,10 @@ msgstr ""
 msgid "Sort time"
 msgstr ""
 
+#, fuzzy
+msgid "Sorting of playlists"
+msgstr "播放列表排序"
+
 msgid "Sound"
 msgstr "声音"
 
@@ -10739,6 +10766,10 @@ msgstr ""
 #, fuzzy
 msgid "Start cut"
 msgstr "重新测试"
+
+#, fuzzy
+msgid "Start directory"
+msgstr "开始目录"
 
 msgid "Start from the beginning"
 msgstr "重头开始"
@@ -12096,7 +12127,7 @@ msgid "Unable to create the required directories on the media (e.g. USB stick or
 msgstr ""
 
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -12223,11 +12254,12 @@ msgstr ""
 msgid "Updatefeed not available."
 msgstr "更新资源无效"
 
+#, fuzzy
+msgid "Updating"
+msgstr "更新"
+
 msgid "Updating software catalog"
 msgstr ""
-
-msgid "Upgrading"
-msgstr "升级"
 
 msgid "Upper case"
 msgstr ""
@@ -12754,7 +12786,7 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr ""
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -13185,7 +13217,7 @@ msgid "Your current collection will get lost!"
 msgstr ""
 
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -14272,9 +14304,6 @@ msgstr ""
 msgid "play as picture in picture"
 msgstr "以画中画播放"
 
-msgid "play file when add in empty playlist"
-msgstr ""
-
 msgid "play in mainwindow"
 msgstr "在主窗口中播放"
 
@@ -14377,9 +14406,6 @@ msgstr "移除这个标记"
 msgid "rename entry"
 msgstr ""
 
-msgid "repeat playlist"
-msgstr "重复播放列表"
-
 msgid "repeated"
 msgstr "重复"
 
@@ -14425,12 +14451,6 @@ msgstr "正在扫描..."
 
 msgid "save"
 msgstr ""
-
-msgid "save last directory on exit"
-msgstr "退出时保存目录"
-
-msgid "save playlist on exit"
-msgstr "退出时保存播放列表"
 
 msgid "scan state"
 msgstr "扫描状态"
@@ -14489,9 +14509,6 @@ msgstr "显示选项"
 
 msgid "show event details"
 msgstr "显示事件详细内容"
-
-msgid "show mediaplayer on mainmenu"
-msgstr ""
 
 msgid "show softwaremanager in setup menu"
 msgstr ""
@@ -14569,9 +14586,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "sorting of playlists"
-msgstr "播放列表排序"
-
 msgid "spark"
 msgstr ""
 
@@ -14602,9 +14616,6 @@ msgstr "从这里开始剪接"
 #, fuzzy
 msgid "start cut here (reset)"
 msgstr "从这里开始剪接"
-
-msgid "start directory"
-msgstr "开始目录"
 
 msgid "stepsize"
 msgstr "步长"

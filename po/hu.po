@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 03:59+0330\n"
+"POT-Creation-Date: 2019-10-10 20:00+0330\n"
 "PO-Revision-Date: 2019-09-13 23:02+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -41,9 +41,10 @@ msgstr ""
 "\n"
 "Az ütközések figyelése ki van kapcsolva!"
 
+#, fuzzy
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 "A szoftver-frissítési forrás címének módosítása."
@@ -4214,15 +4215,16 @@ msgstr "Szeretné folytatni ezt a lejátszást?"
 msgid "Do you want to select a different skin?"
 msgstr "Szeretne másik kinézetet választani?"
 
+#, fuzzy
+msgid "Do you want to update the package:\n"
+msgstr "Biztos benne, hogy frissíteni szeretné ezt a csomagot:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Szeretné frissíteni a készülék szoftverét %s-re?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Szeretné frissíteni a készülék szoftverét?"
-
-msgid "Do you want to upgrade the package:\n"
-msgstr "Biztos benne, hogy frissíteni szeretné ezt a csomagot:\n"
 
 #, fuzzy
 msgid "Documentary"
@@ -4262,9 +4264,9 @@ msgstr "Ne váltson csatornát és törölje az időzítőt"
 msgid "Done"
 msgstr "Kész"
 
-#, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+#, fuzzy, python-format
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "%d szoftvercsomag telepítése, frissítése vagy eltávolítása elkészült (%s)"
 msgstr[1] "%d szoftvercsomag telepítése, frissítése vagy eltávolítása elkészült (%s)"
 
@@ -4387,7 +4389,8 @@ msgstr "Időzítő módosítása"
 msgid "Edit title"
 msgstr "Cím módosítása"
 
-msgid "Edit upgrade source url."
+#, fuzzy
+msgid "Edit update source url."
 msgstr "A frissítési forrás URL-jének szerkesztése."
 
 #, fuzzy
@@ -6348,7 +6351,8 @@ msgstr "Utolsó konfiguráció"
 msgid "Last speed"
 msgstr "Utolsó sebesség"
 
-msgid "Last upgrade: "
+#, fuzzy
+msgid "Last update: "
 msgstr "Utolsó frissítés: "
 
 msgctxt "third event: 'third' event label"
@@ -6358,7 +6362,8 @@ msgstr ""
 msgid "Latest Commits"
 msgstr "Utolsó módosítások"
 
-msgid "Latest upgrade log"
+#, fuzzy
+msgid "Latest update log"
 msgstr "Utolsó frissítés jegyzéke"
 
 msgid "Latitude"
@@ -7728,7 +7733,8 @@ msgstr "Összes folyamat:"
 msgid "Overscan wizard"
 msgstr "Képernyőbeállító"
 
-msgid "Overwrite configuration files during software upgrade?"
+#, fuzzy
+msgid "Overwrite configuration files during software update?"
 msgstr "Konfigurációs fájlok felülírása szoftverfrissítése alkalmával?"
 
 msgid "Overwrite configuration files?"
@@ -8668,10 +8674,12 @@ msgstr "Biztos lekapcsoljam most?"
 msgid "Really store at index %2d for current position?"
 msgstr "Valóban tárolja a jelenlegi pozíciót a %d indexben?"
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+#, fuzzy
+msgid "Really update the frontprocessor and reboot now?"
 msgstr "Biztos benne, hogy frissíteni szeretné a frontprocesszort, majd újraindítani a készüléket?"
 
-msgid "Really upgrade your settop box and reboot now?"
+#, fuzzy
+msgid "Really update your settop box and reboot now?"
 msgstr "Indulhat a frissítés, majd újraindítás?"
 
 msgid "Reboot"
@@ -8879,6 +8887,10 @@ msgstr "Ismétlés típusa"
 
 msgid "Repeat leave standby messages"
 msgstr "Készenléti üzenetek ismétlése"
+
+#, fuzzy
+msgid "Repeat playlist"
+msgstr "lejátszási lista ismétlése"
 
 msgid "Repeat type"
 msgstr "Ismétlés típusa"
@@ -9277,8 +9289,16 @@ msgstr "Mentés és időcsúsztatás leállítása"
 msgid "Save changes"
 msgstr "Változások mentése"
 
+#, fuzzy
+msgid "Save last directory on exit"
+msgstr "az utolsó mappa mentése kilépéskor"
+
 msgid "Save playlist"
 msgstr "Lejátszási lista mentése"
+
+#, fuzzy
+msgid "Save playlist on exit"
+msgstr "lejátszási lista mentése kilépéskor"
 
 msgid "Save settings and EPG data"
 msgstr "Beállítások és EPG adat mentése"
@@ -9727,10 +9747,12 @@ msgstr "Váltás a virtuális billentyűzeten a 'shift' karakterkiosztásra"
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr "Váltás a virtuális billentyűzeten a 'shift' karakterkiosztásra csak a következő karakterre vonatkozóan"
 
-msgid "Select upgrade source"
+#, fuzzy
+msgid "Select update source"
 msgstr "Válasszon szerkesztendő frissítési forrást"
 
-msgid "Select upgrade source to edit."
+#, fuzzy
+msgid "Select update source to edit."
 msgstr "Válasszon szerkesztendő frissítési forrást."
 
 msgid "Select video input with up/down buttons"
@@ -10242,12 +10264,17 @@ msgstr "Információs sáv megjelenítése Előre/Hátra ugrás esetén"
 msgid "Show latest commits"
 msgstr "Legutóbbi módosítások mutatása"
 
-msgid "Show latest upgrade log"
+#, fuzzy
+msgid "Show latest update log"
 msgstr "Utolsó frissítési naplófájl"
 
 #, fuzzy
 msgid "Show log"
 msgstr "Info megjelenítése"
+
+#, fuzzy
+msgid "Show media player on main menu"
+msgstr "Médialejátszó megjelenítése a főmenüben"
 
 msgid "Show menu or plugin numbers"
 msgstr "Menü vagy bővítmény számának mutatása"
@@ -10299,7 +10326,8 @@ msgstr "Piconok mutatása a kijelzőn"
 msgid "Show on VFD display in standby"
 msgstr "Piconok mutatása a kijelzőn"
 
-msgid "Show packages to be upgraded"
+#, fuzzy
+msgid "Show packages to be updated"
 msgstr "Frissítendő csomagok mutatása"
 
 msgid "Show picons in channel selection list"
@@ -10661,6 +10689,10 @@ msgstr "Bővítménylista rendezése alapértelmezetten?"
 msgid "Sort time"
 msgstr "Rendez: Idő"
 
+#, fuzzy
+msgid "Sorting of playlists"
+msgstr "lejátszási listák rendezése"
+
 msgid "Sound"
 msgstr "Hang"
 
@@ -10827,6 +10859,10 @@ msgstr "Minden frekvencia"
 #, fuzzy
 msgid "Start cut"
 msgstr "Teszt indítása"
+
+#, fuzzy
+msgid "Start directory"
+msgstr "kiindulási mappa"
 
 msgid "Start from the beginning"
 msgstr "Indítsa az elejétől"
@@ -12234,8 +12270,9 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr "Néhány könyvtárlétrehozása a médián (pl. USB meghajtó) nem sikerült. Ellenőrizze a médiát, majd próbálja újra!"
 
+#, fuzzy
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -12363,11 +12400,12 @@ msgstr "Slideshow intervallum (mp.)"
 msgid "Updatefeed not available."
 msgstr "Frissítő szerver nem elérhető."
 
+#, fuzzy
+msgid "Updating"
+msgstr "Frissítés"
+
 msgid "Updating software catalog"
 msgstr "Szoftver-katalógus frissítése"
-
-msgid "Upgrading"
-msgstr "Frissítés"
 
 msgid "Upper case"
 msgstr "Nagybetű"
@@ -12906,7 +12944,8 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr "Milyen típusú szolgáltatást szeretne keresni?"
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+#, fuzzy
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Ha engedélyezi, a leválasztott listák is betöltődnek. Ez azt jelenti, hogy az olyan felhasználói listák is betöltődnek, amelyek léteznek, de nincsnek benne a bouquets.tv vagy bouquets.radio fájlban. Ez lehetőséget ad arra, hogy a saját listáit megtartsa, ha a csatornák frissülnek."
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -13353,8 +13392,9 @@ msgstr "A gyüjteményének mérete meghaladja egy sima rétegű DVD kapacitás�
 msgid "Your current collection will get lost!"
 msgstr "Az aktuális kapcsolata meg fog szűnni!"
 
+#, fuzzy
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -14468,9 +14508,6 @@ msgstr "előadóművészet"
 msgid "play as picture in picture"
 msgstr "megjelenítés Kép-a-Képben"
 
-msgid "play file when add in empty playlist"
-msgstr ""
-
 msgid "play in mainwindow"
 msgstr "lejátszás a főképernyőn"
 
@@ -14574,9 +14611,6 @@ msgstr "e jelzö eltávolítása"
 msgid "rename entry"
 msgstr "átnevezés"
 
-msgid "repeat playlist"
-msgstr "lejátszási lista ismétlése"
-
 msgid "repeated"
 msgstr "többszöri"
 
@@ -14622,12 +14656,6 @@ msgstr "Keresés..."
 
 msgid "save"
 msgstr ""
-
-msgid "save last directory on exit"
-msgstr "az utolsó mappa mentése kilépéskor"
-
-msgid "save playlist on exit"
-msgstr "lejátszási lista mentése kilépéskor"
 
 msgid "scan state"
 msgstr "keresési állapot"
@@ -14686,9 +14714,6 @@ msgstr "alternatívák megjelenítése"
 
 msgid "show event details"
 msgstr "részletes adatok megjelenítése"
-
-msgid "show mediaplayer on mainmenu"
-msgstr "Médialejátszó megjelenítése a főmenüben"
 
 msgid "show softwaremanager in setup menu"
 msgstr "Szoftverkezelő megjelenítése a beállítások menüben"
@@ -14767,9 +14792,6 @@ msgstr "szociális/politikai/gazdasági (általános)"
 msgid "social/spiritual science"
 msgstr "szociális/spirituális"
 
-msgid "sorting of playlists"
-msgstr "lejátszási listák rendezése"
-
 msgid "spark"
 msgstr ""
 
@@ -14802,9 +14824,6 @@ msgstr "vágás belépő pontja"
 #, fuzzy
 msgid "start cut here (reset)"
 msgstr "vágás belépő pontja"
-
-msgid "start directory"
-msgstr "kiindulási mappa"
 
 msgid "stepsize"
 msgstr "lépték mérték"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 03:59+0330\n"
+"POT-Creation-Date: 2019-10-10 20:00+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliotG <mcelliotg@gmail.com>\n"
 "Language-Team: MCelliotG <mcelliotg@gmail.com>\n"
@@ -42,9 +42,10 @@ msgstr ""
 "\n"
 "Η ανίχνευση διενέξεων είναι ανενεργή!"
 
+#, fuzzy
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 " Επεξεργασία διεύθυνσης πηγής αναβαθμίσεων."
@@ -4209,15 +4210,16 @@ msgstr "Θέλετε να επανασυνεχίσετε την αναπαραγ
 msgid "Do you want to select a different skin?"
 msgstr "Θέλετε να επιλέξετε ένα διαφορετικό θέμα;"
 
+#, fuzzy
+msgid "Do you want to update the package:\n"
+msgstr "Θέλετε να αναβαθμίσετε το πακέτο:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Θέλετε να γίνει ενημέρωση του δέκτη σας στο %s;"
 
 msgid "Do you want to update your receiver?"
 msgstr "Θέλετε να γίνει ενημέρωση του δέκτη σας;"
-
-msgid "Do you want to upgrade the package:\n"
-msgstr "Θέλετε να αναβαθμίσετε το πακέτο:\n"
 
 #, fuzzy
 msgid "Documentary"
@@ -4257,9 +4259,9 @@ msgstr "Μη μετάβαση και αφαίρεση χρονοδιακόπτη
 msgid "Done"
 msgstr "Ολοκληρώθηκε"
 
-#, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+#, fuzzy, python-format
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Τέλος - Εγκαταστάθηκε, αναβαθμίστηκε ή αφαιρέθηκε %d πακέτο (%s)"
 msgstr[1] "Τέλος - Εγκαταστάθηκαν, αναβαθμίστηκαν ή αφαιρέθηκαν %d πακέτα (%s)"
 
@@ -4382,7 +4384,8 @@ msgstr "Επεξεργασία χρονοδιακόπτη"
 msgid "Edit title"
 msgstr "Επεξεργασία τίτλου"
 
-msgid "Edit upgrade source url."
+#, fuzzy
+msgid "Edit update source url."
 msgstr "Επιλέξτε πηγή αναβάθμισης για επεξεργασία."
 
 #, fuzzy
@@ -6339,7 +6342,8 @@ msgstr "Τελευταία ρύθμιση"
 msgid "Last speed"
 msgstr "Τελευταία ταχύτητα"
 
-msgid "Last upgrade: "
+#, fuzzy
+msgid "Last update: "
 msgstr "Τελευταία αναβάθμιση: "
 
 msgctxt "third event: 'third' event label"
@@ -6349,7 +6353,8 @@ msgstr ""
 msgid "Latest Commits"
 msgstr "Τελευταίες αλλαγές"
 
-msgid "Latest upgrade log"
+#, fuzzy
+msgid "Latest update log"
 msgstr "Kαταγραφής τελευταίας αναβάθμισης"
 
 msgid "Latitude"
@@ -7717,7 +7722,8 @@ msgstr "Συνολική πρόοδος:"
 msgid "Overscan wizard"
 msgstr "Οδηγός υπερσάρωσης"
 
-msgid "Overwrite configuration files during software upgrade?"
+#, fuzzy
+msgid "Overwrite configuration files during software update?"
 msgstr "Να αντικατασταθούν τα αρχεία ρυθμίσεων κατά την αναβάθμιση λογισμικού;"
 
 msgid "Overwrite configuration files?"
@@ -8657,10 +8663,12 @@ msgstr "Τερματισμός τώρα;"
 msgid "Really store at index %2d for current position?"
 msgstr "Να γίνει αποθήκευση στη θέση μνήμης %2d για την τρέχουσα θέση;"
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+#, fuzzy
+msgid "Really update the frontprocessor and reboot now?"
 msgstr "Να γίνει σίγουρα αναβάθμιση του μετωπιαίου επεξεργαστή και επανεκκίνηση;"
 
-msgid "Really upgrade your settop box and reboot now?"
+#, fuzzy
+msgid "Really update your settop box and reboot now?"
 msgstr "Να γίνει σίγουρα αναβάθμιση του δέκτη και επανεκκίνηση;"
 
 msgid "Reboot"
@@ -8868,6 +8876,10 @@ msgstr "Τύπος επανάληψης"
 
 msgid "Repeat leave standby messages"
 msgstr "Επανάληψη μηνυμάτων τερματισμού αναμονής"
+
+#, fuzzy
+msgid "Repeat playlist"
+msgstr "επανάληψη λίστας αναπαραγωγής"
 
 msgid "Repeat type"
 msgstr "Τύπος επανάληψης"
@@ -9268,8 +9280,16 @@ msgstr "Αποθήκευση και διακοπή χρονομετατόπισ�
 msgid "Save changes"
 msgstr "Αποθήκευση αλλαγών"
 
+#, fuzzy
+msgid "Save last directory on exit"
+msgstr "αποθήκευση τελευταίου φακέλου κατά την έξοδο"
+
 msgid "Save playlist"
 msgstr "Αποθήκευση λίστας αναπαραγωγής"
+
+#, fuzzy
+msgid "Save playlist on exit"
+msgstr "αποθήκευση λίστας αναπαραγωγής κατά την έξοδο"
 
 msgid "Save settings and EPG data"
 msgstr "Αποθήκευση ρυθμίσεων και δεδομένων EPG"
@@ -9717,10 +9737,12 @@ msgstr "Επιλογή του σετ χαρακτήρων με shift"
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr "Επιλογή του σετ χαρακτήρων με shift του εικονικού πληκτρολογίου μόνο για τον επόμενο χαρακτήρα"
 
-msgid "Select upgrade source"
+#, fuzzy
+msgid "Select update source"
 msgstr "Επιλογή πηγής αναβαθμίσεων"
 
-msgid "Select upgrade source to edit."
+#, fuzzy
+msgid "Select update source to edit."
 msgstr "Επιλογή πηγής αναβάθμισης για επεξεργασία."
 
 msgid "Select video input with up/down buttons"
@@ -10231,12 +10253,17 @@ msgstr "Εμφάνιση της μπάρας πληροφοριών κατά τ�
 msgid "Show latest commits"
 msgstr "Εμφάνιση τελευταίων αλλαγών"
 
-msgid "Show latest upgrade log"
+#, fuzzy
+msgid "Show latest update log"
 msgstr "Εμφάνιση καταγραφής τελευταίας αναβάθμισης"
 
 #, fuzzy
 msgid "Show log"
 msgstr "Εμφάνιση βοήθειας"
+
+#, fuzzy
+msgid "Show media player on main menu"
+msgstr "εμφάνιση της αναπαραγωγής πολυμέσων στο κύριο μενού"
 
 msgid "Show menu or plugin numbers"
 msgstr "Εμφάνιση αριθμών μενού ή προσθέτων"
@@ -10288,7 +10315,8 @@ msgstr "Εμφάνιση λογότυπων (picons) στην οθόνη πρό�
 msgid "Show on VFD display in standby"
 msgstr "Εμφάνιση λογότυπων (picons) στην οθόνη πρόσοψης"
 
-msgid "Show packages to be upgraded"
+#, fuzzy
+msgid "Show packages to be updated"
 msgstr "Εμφάνιση πακέτων προς αναβάθμιση"
 
 msgid "Show picons in channel selection list"
@@ -10650,6 +10678,10 @@ msgstr "Ταξινόμηση λίστας προσθέτων στις προεπ
 msgid "Sort time"
 msgstr "Ταξινόμηση κατά χρόνο"
 
+#, fuzzy
+msgid "Sorting of playlists"
+msgstr "ταξινόμηση λιστών αναπαραγωγής"
+
 msgid "Sound"
 msgstr "Ήχος"
 
@@ -10816,6 +10848,10 @@ msgstr "Όλες οι συχνότητες"
 #, fuzzy
 msgid "Start cut"
 msgstr "Έναρξη ελέγχου"
+
+#, fuzzy
+msgid "Start directory"
+msgstr "φάκελος εκκίνησης"
 
 msgid "Start from the beginning"
 msgstr "Έναρξη  από την αρχή"
@@ -12219,8 +12255,9 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr "Αδυναμία δημιουργίας των απαιτούμενων φακέλων στο μέσο (π.χ. USB στικ ή σκληρός δίσκος) - Παρακαλώ ελέγξτε το μέσο και προσπαθήστε ξανά!"
 
+#, fuzzy
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -12348,11 +12385,12 @@ msgstr "Μεσοδιάστημα παρουσίασης διαφανειών (δ
 msgid "Updatefeed not available."
 msgstr "Η πηγή ενημερώσεων δεν είναι διαθέσιμη."
 
+#, fuzzy
+msgid "Updating"
+msgstr "Ενημέρωση"
+
 msgid "Updating software catalog"
 msgstr "Ενημέρωση καταλόγου λογισμικού"
-
-msgid "Upgrading"
-msgstr "Εκτελείται αναβάθμιση"
 
 msgid "Upper case"
 msgstr "Κεφαλαία"
@@ -12895,7 +12933,8 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr "Ποιον τύπο ανίχνευσης επιθυμείτε;"
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+#, fuzzy
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Όταν είναι ενεργό, το enigma2 θα φορτώνει τα ασύνδετα μπουκέτα χρήστη. Αυτό σημαίνει ότι τα μπουκέτα που είναι διαθέσιμα, αλλά δεν συμπεριλαμβάνονται στα αρχεία bouquets.tv ή bouquets.radio, θα φορτώνονται επίσης. Αυτό σας επιτρέπει για παράδειγμα να διατηρείτε το δικό σας μπουκέτον χρήστη όταν τα εγκατεστημένα θα αναβαθμίζονται"
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -13339,8 +13378,9 @@ msgstr "Η συλλογή σας υπερβαίνει το μέγεθος ενό
 msgid "Your current collection will get lost!"
 msgstr "Η τρέχουσα συλλογή σας θα χαθεί!"
 
+#, fuzzy
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -14452,9 +14492,6 @@ msgstr "τέχνες και θεάματα"
 msgid "play as picture in picture"
 msgstr "αναπαραγωγή ως PiP"
 
-msgid "play file when add in empty playlist"
-msgstr ""
-
 msgid "play in mainwindow"
 msgstr "αναπαραγωγή στο κεντρικό παράθυρο"
 
@@ -14558,9 +14595,6 @@ msgstr "διαγραφή αυτού του σημειωτή"
 msgid "rename entry"
 msgstr "μετονομασία στοιχείου"
 
-msgid "repeat playlist"
-msgstr "επανάληψη λίστας αναπαραγωγής"
-
 msgid "repeated"
 msgstr "επαναλαμβανόμενο"
 
@@ -14606,12 +14640,6 @@ msgstr "Ανίχνευση..."
 
 msgid "save"
 msgstr ""
-
-msgid "save last directory on exit"
-msgstr "αποθήκευση τελευταίου φακέλου κατά την έξοδο"
-
-msgid "save playlist on exit"
-msgstr "αποθήκευση λίστας αναπαραγωγής κατά την έξοδο"
 
 msgid "scan state"
 msgstr "κατάσταση ανίχνευσης"
@@ -14670,9 +14698,6 @@ msgstr "εμφάνιση εναλλακτικών"
 
 msgid "show event details"
 msgstr "εμφάνιση λεπτομερειών προγράμματος"
-
-msgid "show mediaplayer on mainmenu"
-msgstr "εμφάνιση της αναπαραγωγής πολυμέσων στο κύριο μενού"
 
 msgid "show softwaremanager in setup menu"
 msgstr "εμφάνιση της διαχείρισης λογισμικού στο μενού εγκατάστασης"
@@ -14751,9 +14776,6 @@ msgstr "κοινωνικά/πολιτική επικαιρότητα/οικον�
 msgid "social/spiritual science"
 msgstr "κοινωνικά/διανόηση"
 
-msgid "sorting of playlists"
-msgstr "ταξινόμηση λιστών αναπαραγωγής"
-
 msgid "spark"
 msgstr ""
 
@@ -14786,9 +14808,6 @@ msgstr "εκκίνηση αποκοπής εδώ"
 #, fuzzy
 msgid "start cut here (reset)"
 msgstr "εκκίνηση αποκοπής εδώ"
-
-msgid "start directory"
-msgstr "φάκελος εκκίνησης"
 
 msgid "stepsize"
 msgstr "μέγεθος βήματος"

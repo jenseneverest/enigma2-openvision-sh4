@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 03:59+0330\n"
+"POT-Creation-Date: 2019-10-10 20:00+0330\n"
 "PO-Revision-Date: 2019-10-07 09:58+0200\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -41,9 +41,10 @@ msgstr ""
 "\n"
 "Otkrivanje sukoba je onemogućeno!"
 
+#, fuzzy
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 "Uredite adresu za nadogradnje."
@@ -4226,15 +4227,16 @@ msgstr "Želite li nastaviti s reprodukcijom?"
 msgid "Do you want to select a different skin?"
 msgstr "Želite li odabrati drugi skin?"
 
+#, fuzzy
+msgid "Do you want to update the package:\n"
+msgstr "Želite li nadograditi paket:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Želite li ažurirati svoj prijemnik na %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Želite li ažurirati svoj prijemnik?"
-
-msgid "Do you want to upgrade the package:\n"
-msgstr "Želite li nadograditi paket:\n"
 
 #, fuzzy
 msgid "Documentary"
@@ -4278,9 +4280,9 @@ msgstr "Nemojte prebacivati i brisati tajmer"
 msgid "Done"
 msgstr "Gotovo"
 
-#, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+#, fuzzy, python-format
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Gotovo - Instaliran, ažuriran ili uklonjen  %d paket (%s)"
 msgstr[1] "Gotovo - Instalirane, ažurirane ili uklonjene  %d pakete (%s)"
 msgstr[2] "Gotovo - Instalirani, ažurirani ili uklonjeni  %d paketi (%s)"
@@ -4404,7 +4406,8 @@ msgstr "Uredite tajmer"
 msgid "Edit title"
 msgstr "Uredite titlove"
 
-msgid "Edit upgrade source url."
+#, fuzzy
+msgid "Edit update source url."
 msgstr "Uredite url izvornog ažuriranja."
 
 #, fuzzy
@@ -6360,7 +6363,8 @@ msgstr "Zadnja konfiguracija"
 msgid "Last speed"
 msgstr "Zadnja brzina"
 
-msgid "Last upgrade: "
+#, fuzzy
+msgid "Last update: "
 msgstr "Zadnja nadogradnja: "
 
 msgctxt "third event: 'third' event label"
@@ -6370,7 +6374,8 @@ msgstr ""
 msgid "Latest Commits"
 msgstr "Najnovije objave"
 
-msgid "Latest upgrade log"
+#, fuzzy
+msgid "Latest update log"
 msgstr "Zadnjii dnevnik nadogradnje"
 
 msgid "Latitude"
@@ -7738,7 +7743,8 @@ msgstr "Opći napredak:"
 msgid "Overscan wizard"
 msgstr "Vodič za postavljanje skaliranja"
 
-msgid "Overwrite configuration files during software upgrade?"
+#, fuzzy
+msgid "Overwrite configuration files during software update?"
 msgstr "Prebrisati konfiguracijske datoteke tijekom ažuriranja softvera?"
 
 msgid "Overwrite configuration files?"
@@ -8678,10 +8684,12 @@ msgstr "Dali stvarno želite sada isključiti?"
 msgid "Really store at index %2d for current position?"
 msgstr "Dali stvarno želite pohraniti u indeksu %2d za trenutnu poziciju?"
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+#, fuzzy
+msgid "Really update the frontprocessor and reboot now?"
 msgstr "Dali stvarno želite nadograditi frontprocessor i ponovno pokrenuti sustav?"
 
-msgid "Really upgrade your settop box and reboot now?"
+#, fuzzy
+msgid "Really update your settop box and reboot now?"
 msgstr "Dali stvarno želite nadograditi svoj STB i ponovno pokrenuti sustav?"
 
 msgid "Reboot"
@@ -8889,6 +8897,10 @@ msgstr "Vrsta ponavljanja"
 
 msgid "Repeat leave standby messages"
 msgstr "Ponovite naredbe za buđenje"
+
+#, fuzzy
+msgid "Repeat playlist"
+msgstr "ponovite popis pjesama"
 
 msgid "Repeat type"
 msgstr "Vrsta ponavljanja"
@@ -9289,8 +9301,16 @@ msgstr "Spremite i zaustavite vremenski pomak"
 msgid "Save changes"
 msgstr "Spremite promjene"
 
+#, fuzzy
+msgid "Save last directory on exit"
+msgstr "spremite zadnji direktorij na izlazu"
+
 msgid "Save playlist"
 msgstr "Spremite popis pjesama"
+
+#, fuzzy
+msgid "Save playlist on exit"
+msgstr "spremite popis za reprodukciju na izlazu"
 
 msgid "Save settings and EPG data"
 msgstr "Spremite postavke i EPG podatke"
@@ -9741,10 +9761,12 @@ msgstr "Odaberite skup znakova pomaknutih virtualnom tipkovnicom"
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr "Odaberite skup znakova virtualne tipkovnice pomaknut samo za sljedeći znak"
 
-msgid "Select upgrade source"
+#, fuzzy
+msgid "Select update source"
 msgstr "Odaberite izvor ažuriranja"
 
-msgid "Select upgrade source to edit."
+#, fuzzy
+msgid "Select update source to edit."
 msgstr "Odaberite izvor ažuriranja za uređivanje."
 
 msgid "Select video input with up/down buttons"
@@ -10255,12 +10277,17 @@ msgstr "Prikažite info traku pri preskakanju naprijed/natrag"
 msgid "Show latest commits"
 msgstr "Prikažite najnovije objave"
 
-msgid "Show latest upgrade log"
+#, fuzzy
+msgid "Show latest update log"
 msgstr "Prikažite posljednji log ažuriranja"
 
 #, fuzzy
 msgid "Show log"
 msgstr "Prikažite pomoć"
+
+#, fuzzy
+msgid "Show media player on main menu"
+msgstr "pokaži media player na glavnom izborniku"
 
 msgid "Show menu or plugin numbers"
 msgstr "Prikažite izbornik ili brojeve dodataka"
@@ -10312,7 +10339,8 @@ msgstr "Prikažite pikone na zaslonu"
 msgid "Show on VFD display in standby"
 msgstr "Prikažite pikone na zaslonu"
 
-msgid "Show packages to be upgraded"
+#, fuzzy
+msgid "Show packages to be updated"
 msgstr "Prikažite pakete koje treba nadograditi"
 
 msgid "Show picons in channel selection list"
@@ -10674,6 +10702,10 @@ msgstr "Sortiranje popisa dodataka prema zadanim postavkama?"
 msgid "Sort time"
 msgstr "Sortiranje po vremenu"
 
+#, fuzzy
+msgid "Sorting of playlists"
+msgstr "sortiranje popisa za reprodukciju"
+
 msgid "Sound"
 msgstr "Zvuk"
 
@@ -10840,6 +10872,10 @@ msgstr "Sve frekvencije"
 #, fuzzy
 msgid "Start cut"
 msgstr "Pokrenite test"
+
+#, fuzzy
+msgid "Start directory"
+msgstr "početi imenik"
 
 msgid "Start from the beginning"
 msgstr "Počnite od početka"
@@ -12241,8 +12277,9 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr "Nije moguće kreirati potrebne direktorije na mediju (npr. USB stick ili HDD) - Provjerite medije i pokušajte ponovo!"
 
+#, fuzzy
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -12371,11 +12408,12 @@ msgstr "Interval dijaprojekcije (sek.)"
 msgid "Updatefeed not available."
 msgstr "Ažuriranje feeda nije dostupno."
 
+#, fuzzy
+msgid "Updating"
+msgstr "Ažuriranje"
+
 msgid "Updating software catalog"
 msgstr "Ažuriranje kataloga softvera"
-
-msgid "Upgrading"
-msgstr "Ažuriranje"
 
 msgid "Upper case"
 msgstr "Velika slova"
@@ -12918,7 +12956,8 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr "Koju vrstu skeniranja usluga želite?"
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+#, fuzzy
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Kada je omogućeno enigma2 učitat će nepovezane korisničke pakete. To znači da će korisnički paketi koji su dostupni, ali nisu uključeni u bouquets.tv ili bouquets.radio datoteke, i dalje biti učitani. To vam omogućuje, primjerice, da zadržite vlastiti korisnički paket dok su instalirane postavke nadograđene."
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -13362,8 +13401,9 @@ msgstr "Vaša zbirka premašuje veličinu jednog sloja medija, trebat će vam pr
 msgid "Your current collection will get lost!"
 msgstr "Vaša trenutna kolekcija će se izgubiti!"
 
+#, fuzzy
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -14475,9 +14515,6 @@ msgstr "izvedbene umjetnosti"
 msgid "play as picture in picture"
 msgstr "prikazati kao slika u slici"
 
-msgid "play file when add in empty playlist"
-msgstr ""
-
 msgid "play in mainwindow"
 msgstr "igrati u glavnom prozoru"
 
@@ -14581,9 +14618,6 @@ msgstr "izbrišite ovu oznaku"
 msgid "rename entry"
 msgstr "preimenuj unos"
 
-msgid "repeat playlist"
-msgstr "ponovite popis pjesama"
-
 msgid "repeated"
 msgstr "ponavljati"
 
@@ -14629,12 +14663,6 @@ msgstr "pokrenut"
 
 msgid "save"
 msgstr ""
-
-msgid "save last directory on exit"
-msgstr "spremite zadnji direktorij na izlazu"
-
-msgid "save playlist on exit"
-msgstr "spremite popis za reprodukciju na izlazu"
 
 msgid "scan state"
 msgstr "status pretraživanja"
@@ -14693,9 +14721,6 @@ msgstr "prikaži alternative"
 
 msgid "show event details"
 msgstr "prikaži pojedinosti o događaju"
-
-msgid "show mediaplayer on mainmenu"
-msgstr "pokaži media player na glavnom izborniku"
 
 msgid "show softwaremanager in setup menu"
 msgstr "pokaži upravitelja softvera u izborniku postavki"
@@ -14774,9 +14799,6 @@ msgstr "društvena/politička pitanja/ekonomija (općenito)"
 msgid "social/spiritual science"
 msgstr "društvena/duhovna znanost"
 
-msgid "sorting of playlists"
-msgstr "sortiranje popisa za reprodukciju"
-
 msgid "spark"
 msgstr ""
 
@@ -14809,9 +14831,6 @@ msgstr "počnite izrezivati ovdje"
 #, fuzzy
 msgid "start cut here (reset)"
 msgstr "počnite izrezivati ovdje"
-
-msgid "start directory"
-msgstr "početi imenik"
 
 msgid "stepsize"
 msgstr "veličina koraka"

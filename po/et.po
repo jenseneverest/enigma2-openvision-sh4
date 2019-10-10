@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 03:59+0330\n"
+"POT-Creation-Date: 2019-10-10 20:00+0330\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -42,9 +42,10 @@ msgstr ""
 "\n"
 "Konflikti avastamine keelatud!"
 
+#, fuzzy
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 "Muuda uuenduste allika aadressi."
@@ -4218,15 +4219,16 @@ msgstr "Kas soovid jätkata vaatamist katkestatud kohalt?"
 msgid "Do you want to select a different skin?"
 msgstr "Kas soovid valida teistsuguse kujunduse?"
 
+#, fuzzy
+msgid "Do you want to update the package:\n"
+msgstr "Kas soovid parendada paketti:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Kas soovid uuendada vastuvõtja tarkvara %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Kas soovid uuendada vastuvõtja tarkvara?"
-
-msgid "Do you want to upgrade the package:\n"
-msgstr "Kas soovid parendada paketti:\n"
 
 #, fuzzy
 msgid "Documentary"
@@ -4266,9 +4268,9 @@ msgstr "Ära vaheta kanalit ja eemalda taimer"
 msgid "Done"
 msgstr ""
 
-#, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+#, fuzzy, python-format
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Valmis - paigaldatud, täiendatud või eemaldatud %d pakett (%s)"
 msgstr[1] "Valmis - paigaldatud, täiendatud või eemaldatud %d paketti (%s)"
 
@@ -4392,7 +4394,8 @@ msgstr "Muuda taimerit"
 msgid "Edit title"
 msgstr "Muuda pealkirja"
 
-msgid "Edit upgrade source url."
+#, fuzzy
+msgid "Edit update source url."
 msgstr "Muuda uuenduste allika url."
 
 #, fuzzy
@@ -6350,7 +6353,8 @@ msgstr "Viimane seadistus"
 msgid "Last speed"
 msgstr "Eelmine kiirus"
 
-msgid "Last upgrade: "
+#, fuzzy
+msgid "Last update: "
 msgstr "Uuendatud: "
 
 msgctxt "third event: 'third' event label"
@@ -6360,7 +6364,8 @@ msgstr ""
 msgid "Latest Commits"
 msgstr "Viimased kanded"
 
-msgid "Latest upgrade log"
+#, fuzzy
+msgid "Latest update log"
 msgstr "Viimase uuenduse logi"
 
 msgid "Latitude"
@@ -7743,7 +7748,8 @@ msgstr "Üldine edenemine:"
 msgid "Overscan wizard"
 msgstr "Üleskaneerimise abiline"
 
-msgid "Overwrite configuration files during software upgrade?"
+#, fuzzy
+msgid "Overwrite configuration files during software update?"
 msgstr "Kas tarkvara uuendamisel kirjutada üle konfiguratsioonifailid?"
 
 msgid "Overwrite configuration files?"
@@ -8689,10 +8695,12 @@ msgstr "Lülitame välja?"
 msgid "Really store at index %2d for current position?"
 msgstr "Kas salvestada indeks %2d  selle asukoha jaoks?"
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+#, fuzzy
+msgid "Really update the frontprocessor and reboot now?"
 msgstr "Uuendad esiprotsessori ja taaskäivitad vastuvõtja?"
 
-msgid "Really upgrade your settop box and reboot now?"
+#, fuzzy
+msgid "Really update your settop box and reboot now?"
 msgstr "Kas uuendad ja taaskäivitad vastuvõtja?"
 
 msgid "Reboot"
@@ -8900,6 +8908,10 @@ msgstr "Kordamise liik"
 
 msgid "Repeat leave standby messages"
 msgstr "Korda ootele jäämise sõnumeid"
+
+#, fuzzy
+msgid "Repeat playlist"
+msgstr "korda esitusloendit"
 
 msgid "Repeat type"
 msgstr "Kordamise liik"
@@ -9305,8 +9317,16 @@ msgstr "Salvesta ajanihe ja peata see"
 msgid "Save changes"
 msgstr "Salvesta muutused"
 
+#, fuzzy
+msgid "Save last directory on exit"
+msgstr "pea väljumisel asukoht meeles"
+
 msgid "Save playlist"
 msgstr "Salvesta esitusloend"
+
+#, fuzzy
+msgid "Save playlist on exit"
+msgstr "salvesta esitusloend"
 
 msgid "Save settings and EPG data"
 msgstr "Salvesta asetused ja EPG andmed"
@@ -9763,10 +9783,12 @@ msgstr ""
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr ""
 
-msgid "Select upgrade source"
+#, fuzzy
+msgid "Select update source"
 msgstr "Vali uuenduste allikas"
 
-msgid "Select upgrade source to edit."
+#, fuzzy
+msgid "Select update source to edit."
 msgstr "Vali uuenduste allikas muutmiseks."
 
 msgid "Select video input with up/down buttons"
@@ -10280,12 +10302,17 @@ msgstr "Näita kerimisel inforiba"
 msgid "Show latest commits"
 msgstr "Näita viimaseid kandeid"
 
-msgid "Show latest upgrade log"
+#, fuzzy
+msgid "Show latest update log"
 msgstr "Näita viimast uuenduslogi"
 
 #, fuzzy
 msgid "Show log"
 msgstr "Näita infot"
+
+#, fuzzy
+msgid "Show media player on main menu"
+msgstr "näita meediaesitajat peamenüüs"
 
 #, fuzzy
 msgid "Show menu or plugin numbers"
@@ -10338,7 +10365,8 @@ msgstr "Näita piconid ekraanil"
 msgid "Show on VFD display in standby"
 msgstr "Näita piconid ekraanil"
 
-msgid "Show packages to be upgraded"
+#, fuzzy
+msgid "Show packages to be updated"
 msgstr "Näita pakette mida peaks uuendama"
 
 msgid "Show picons in channel selection list"
@@ -10701,6 +10729,10 @@ msgstr "Järjestada laienduste nimekiri vaikimisi?"
 msgid "Sort time"
 msgstr "Aja järgi"
 
+#, fuzzy
+msgid "Sorting of playlists"
+msgstr "esitusloendite järjestamine."
+
 msgid "Sound"
 msgstr "Heli"
 
@@ -10867,6 +10899,10 @@ msgstr "Kõik sagedused"
 #, fuzzy
 msgid "Start cut"
 msgstr "Käivita test"
+
+#, fuzzy
+msgid "Start directory"
+msgstr "juurkaust"
 
 msgid "Start from the beginning"
 msgstr "Alusta algusest"
@@ -12294,8 +12330,9 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
+#, fuzzy
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -12427,11 +12464,12 @@ msgstr "Piltide näitamise aeg (sekundit)"
 msgid "Updatefeed not available."
 msgstr "Uuenduslink pole saadaval."
 
+#, fuzzy
+msgid "Updating"
+msgstr "Uuendus"
+
 msgid "Updating software catalog"
 msgstr "Uuendan tarkvara kataloogi"
-
-msgid "Upgrading"
-msgstr "Uuendan"
 
 msgid "Upper case"
 msgstr "Suurtähed"
@@ -12977,7 +13015,8 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr "Mis tüüpi teenuse otsingut soovid?"
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+#, fuzzy
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Määrates 'jah', laeb enigma2 ka sidumata lemmiknimekirjad. See tähendab, et lemmiknimekirjad, mis on olemas, aga puuduvad bouquets.tv või bouquets.radio failides, laetakse ikkagi. Nii on võimalik oma lemmiknimekirjad säilitada ka paigaldatud kanalinimekirjade uuendamisel."
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -13427,8 +13466,9 @@ msgstr "Kogu valik ei mahu ühekihilisele plaadile, vaja on tühja kahekihilist 
 msgid "Your current collection will get lost!"
 msgstr "Praegune valik kustutatakse!"
 
+#, fuzzy
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -14546,9 +14586,6 @@ msgstr "esituskunstid"
 msgid "play as picture in picture"
 msgstr "näita kanal pilt-pildis"
 
-msgid "play file when add in empty playlist"
-msgstr ""
-
 msgid "play in mainwindow"
 msgstr "näita peaaknas"
 
@@ -14652,9 +14689,6 @@ msgstr "eemalda see märk"
 msgid "rename entry"
 msgstr "nimeta nimekiri ümber"
 
-msgid "repeat playlist"
-msgstr "korda esitusloendit"
-
 msgid "repeated"
 msgstr "korduvalt"
 
@@ -14700,12 +14734,6 @@ msgstr "Otsing..."
 
 msgid "save"
 msgstr ""
-
-msgid "save last directory on exit"
-msgstr "pea väljumisel asukoht meeles"
-
-msgid "save playlist on exit"
-msgstr "salvesta esitusloend"
 
 msgid "scan state"
 msgstr "otsingu seis"
@@ -14764,9 +14792,6 @@ msgstr "näita asenduskanaleid"
 
 msgid "show event details"
 msgstr "näita saatetutvustust"
-
-msgid "show mediaplayer on mainmenu"
-msgstr "näita meediaesitajat peamenüüs"
 
 msgid "show softwaremanager in setup menu"
 msgstr "näita tarkvarahaldurit seadistusmenüüs"
@@ -14845,9 +14870,6 @@ msgstr "ühiskondlikud/poliitilised asjad/majandus (üldiselt)"
 msgid "social/spiritual science"
 msgstr "ühiskonna/hingeteadus"
 
-msgid "sorting of playlists"
-msgstr "esitusloendite järjestamine."
-
 msgid "spark"
 msgstr ""
 
@@ -14880,9 +14902,6 @@ msgstr "alusta lõiget siit"
 #, fuzzy
 msgid "start cut here (reset)"
 msgstr "alusta lõiget siit"
-
-msgid "start directory"
-msgstr "juurkaust"
 
 msgid "stepsize"
 msgstr "sammu suurus"

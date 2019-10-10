@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 03:59+0330\n"
+"POT-Creation-Date: 2019-10-10 20:00+0330\n"
 "PO-Revision-Date: 2019-06-27 16:02+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -42,9 +42,10 @@ msgstr ""
 "\n"
 "Zisťovanie konfliktov zakázané!"
 
+#, fuzzy
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 "Upraviť adresu zdroja aktualizácií."
@@ -4233,15 +4234,16 @@ msgstr "Chcete pokračovať v prehrávaní?"
 msgid "Do you want to select a different skin?"
 msgstr "Chcete zvoliť iný vzhľad?"
 
+#, fuzzy
+msgid "Do you want to update the package:\n"
+msgstr "Chcete aktualizovať balíček:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Chcete aktualizovať Váš prijímač na %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Chcete aktualizovať Váš prijímač?"
-
-msgid "Do you want to upgrade the package:\n"
-msgstr "Chcete aktualizovať balíček:\n"
 
 #, fuzzy
 msgid "Documentary"
@@ -4281,9 +4283,9 @@ msgstr "Neprepnúť a odobrať časovač"
 msgid "Done"
 msgstr "Hotovo"
 
-#, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+#, fuzzy, python-format
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Hotovo - Nainštalovaný, aktualizovaný alebo odstránený %d balíček (%s)"
 msgstr[1] "Hotovo - Nainštalové, aktualizované alebo odstránené %d balíčky (%s)"
 msgstr[2] "Hotovo - Nainštalovaných, aktualizovaných alebo odstránených %d balíčkov (%s)"
@@ -4408,7 +4410,8 @@ msgstr "Úpraviť časovač"
 msgid "Edit title"
 msgstr "Upraviť titul"
 
-msgid "Edit upgrade source url."
+#, fuzzy
+msgid "Edit update source url."
 msgstr "Upraviť URL zdroja aktualizácie."
 
 #, fuzzy
@@ -6376,7 +6379,8 @@ msgstr "Posledné nastavenie"
 msgid "Last speed"
 msgstr "Posledná rýchlosť"
 
-msgid "Last upgrade: "
+#, fuzzy
+msgid "Last update: "
 msgstr "Posledná aktualizácia: "
 
 msgctxt "third event: 'third' event label"
@@ -6386,7 +6390,8 @@ msgstr ""
 msgid "Latest Commits"
 msgstr "Posledné zmeny"
 
-msgid "Latest upgrade log"
+#, fuzzy
+msgid "Latest update log"
 msgstr "Protokol poslednej aktualizácie"
 
 msgid "Latitude"
@@ -7761,7 +7766,8 @@ msgstr "Celkový priebeh:"
 msgid "Overscan wizard"
 msgstr "Nastavenie veľkosti obrazu (Overscan)"
 
-msgid "Overwrite configuration files during software upgrade?"
+#, fuzzy
+msgid "Overwrite configuration files during software update?"
 msgstr "Prepísať konfiguračné súbory pri aktualizácii softvéru?"
 
 msgid "Overwrite configuration files?"
@@ -8702,10 +8708,12 @@ msgstr "Naozaj teraz vypnúť?"
 msgid "Really store at index %2d for current position?"
 msgstr "Naozaj uložiť na indexe %2d pre aktuálnu pozíciu?"
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+#, fuzzy
+msgid "Really update the frontprocessor and reboot now?"
 msgstr "Naozaj aktualizovať frontprocessor a reštartovať prijímač?"
 
-msgid "Really upgrade your settop box and reboot now?"
+#, fuzzy
+msgid "Really update your settop box and reboot now?"
 msgstr "Naozaj aktualizovať a reštartovať prijímač?"
 
 msgid "Reboot"
@@ -8913,6 +8921,10 @@ msgstr "Druh opakovania"
 
 msgid "Repeat leave standby messages"
 msgstr "Opakovať správu pohotovostného režimu"
+
+#, fuzzy
+msgid "Repeat playlist"
+msgstr "zopakovať zoznam prehrávok"
 
 msgid "Repeat type"
 msgstr "Druh opakovania"
@@ -9311,8 +9323,16 @@ msgstr "Uložiť a ukončiť časový posun"
 msgid "Save changes"
 msgstr "Uložiť zmeny"
 
+#, fuzzy
+msgid "Save last directory on exit"
+msgstr "pri ukončení uložiť posledný adresár"
+
 msgid "Save playlist"
 msgstr "Uložiť zoznam prehrávok"
+
+#, fuzzy
+msgid "Save playlist on exit"
+msgstr "pri ukončení uložiť zoznam prehrávok"
 
 msgid "Save settings and EPG data"
 msgstr "Uložiť nastavenia a EPG údaje"
@@ -9764,10 +9784,12 @@ msgstr "Vyberte znakovú sadu virtuálnej klávesnice po stlačení klávesy Shi
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr "Vyberte znakovú sadu virtuálnej klávesnice po stlačení klávesy Shift iba pre ďalší znak"
 
-msgid "Select upgrade source"
+#, fuzzy
+msgid "Select update source"
 msgstr "Zvoľte zdroj aktualizácie"
 
-msgid "Select upgrade source to edit."
+#, fuzzy
+msgid "Select update source to edit."
 msgstr "Zvoľte zdroj aktualizácie, ktorý chcete upraviť."
 
 msgid "Select video input with up/down buttons"
@@ -10278,12 +10300,17 @@ msgstr "Zobraziť infopanel pri skoku vpred/vzad"
 msgid "Show latest commits"
 msgstr "Zobraziť posledné zmeny"
 
-msgid "Show latest upgrade log"
+#, fuzzy
+msgid "Show latest update log"
 msgstr "Zobraziť protokol z poslednej aktualizácie"
 
 #, fuzzy
 msgid "Show log"
 msgstr "Zobraziť info"
+
+#, fuzzy
+msgid "Show media player on main menu"
+msgstr "zobrazovať prehrávač médií v hlavnom menu"
 
 msgid "Show menu or plugin numbers"
 msgstr "Zobraziť čísla menu alebo doplnkov"
@@ -10335,7 +10362,8 @@ msgstr "Zobraziť picony na obrazovke"
 msgid "Show on VFD display in standby"
 msgstr "Zobraziť picony na obrazovke"
 
-msgid "Show packages to be upgraded"
+#, fuzzy
+msgid "Show packages to be updated"
 msgstr "Zobraziť balíčky dostupnej aktualizácie"
 
 msgid "Show picons in channel selection list"
@@ -10697,6 +10725,10 @@ msgstr "Vykonať predvolené zoradenie zoznamu modulov?"
 msgid "Sort time"
 msgstr "Triediť podľa času"
 
+#, fuzzy
+msgid "Sorting of playlists"
+msgstr "usporiadanie playlistov"
+
 msgid "Sound"
 msgstr "Zvuk"
 
@@ -10863,6 +10895,10 @@ msgstr "Všetky frekvencie"
 #, fuzzy
 msgid "Start cut"
 msgstr "Spustiť test"
+
+#, fuzzy
+msgid "Start directory"
+msgstr "počiatočný adresár"
 
 msgid "Start from the beginning"
 msgstr "Spustiť od začiatku"
@@ -12268,8 +12304,9 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr "Nebolo možné vytvoriť požadované zložky na disku (napr. USB kľúč alebo pevný disk) - skontrolujte prosím médium a skúste to znovu!"
 
+#, fuzzy
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -12398,11 +12435,12 @@ msgstr "Interval prezentácie (sek.)"
 msgid "Updatefeed not available."
 msgstr "Zdroj aktualizácií nie je k dispozícií."
 
+#, fuzzy
+msgid "Updating"
+msgstr "Aktualizovať"
+
 msgid "Updating software catalog"
 msgstr "Aktualizácia katalógu softvéru"
-
-msgid "Upgrading"
-msgstr "Aktualizujem"
 
 msgid "Upper case"
 msgstr "Veľké písmená"
@@ -12943,7 +12981,8 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr "Aký typ staníc chcete prehľadať?"
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+#, fuzzy
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Ak je povolené, enigma2 načíta neprepojené užívateľské prehľady. To znamená, že užívateľské prehľady, ktoré sú k dispozícii, ale nie sú zahrnuté v bouquets.tv alebo bouquets.radio súboroch sa aj napriek tomu načítajú. To Vám umožňuje napríklad zachovať Vaše vlastné užívateľské prehľady po inštalácii a inovácii nastavení."
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -13387,8 +13426,9 @@ msgstr "Zostava presahuje kapacitu jednovrstvového média. Budete potrebovať p
 msgid "Your current collection will get lost!"
 msgstr "Vaša aktuálna zostava bude stratená!"
 
+#, fuzzy
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -14502,9 +14542,6 @@ msgstr "hudobné umenie"
 msgid "play as picture in picture"
 msgstr "prehrať ako obraz v obraze"
 
-msgid "play file when add in empty playlist"
-msgstr ""
-
 msgid "play in mainwindow"
 msgstr "prehrať v hlavnom okne"
 
@@ -14608,9 +14645,6 @@ msgstr "odstrániť túto značku"
 msgid "rename entry"
 msgstr "premenovať položku"
 
-msgid "repeat playlist"
-msgstr "zopakovať zoznam prehrávok"
-
 msgid "repeated"
 msgstr "opakované"
 
@@ -14656,12 +14690,6 @@ msgstr "Prehľadávanie..."
 
 msgid "save"
 msgstr ""
-
-msgid "save last directory on exit"
-msgstr "pri ukončení uložiť posledný adresár"
-
-msgid "save playlist on exit"
-msgstr "pri ukončení uložiť zoznam prehrávok"
 
 msgid "scan state"
 msgstr "stav vyhľadávania"
@@ -14720,9 +14748,6 @@ msgstr "zobraziť alternatívy"
 
 msgid "show event details"
 msgstr "zobraziť detaily o programe"
-
-msgid "show mediaplayer on mainmenu"
-msgstr "zobrazovať prehrávač médií v hlavnom menu"
 
 msgid "show softwaremanager in setup menu"
 msgstr "zobraziť manažér softvéru v menu nastavení"
@@ -14801,9 +14826,6 @@ msgstr "sociálne/politické problémy/ekonómia (všeobecne)"
 msgid "social/spiritual science"
 msgstr "sociálne/duchovnej vedy"
 
-msgid "sorting of playlists"
-msgstr "usporiadanie playlistov"
-
 msgid "spark"
 msgstr ""
 
@@ -14836,9 +14858,6 @@ msgstr "začiatok strihu tu"
 #, fuzzy
 msgid "start cut here (reset)"
 msgstr "začiatok strihu tu"
-
-msgid "start directory"
-msgstr "počiatočný adresár"
 
 msgid "stepsize"
 msgstr "krok"

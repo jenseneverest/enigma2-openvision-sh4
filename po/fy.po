@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 03:59+0330\n"
+"POT-Creation-Date: 2019-10-10 20:00+0330\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -42,10 +42,9 @@ msgid ""
 "Conflict detection disabled!"
 msgstr ""
 
-#
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 
 msgid ""
@@ -4613,15 +4612,16 @@ msgid "Do you want to select a different skin?"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Do you want to update the package:\n"
+msgstr "Wolle jo dit opnimmen fjierder ôfspielje ?"
+
+#
 #, fuzzy, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Wolle jo jo ynstellingen wêrom sette ?"
 
 msgid "Do you want to update your receiver?"
-msgstr ""
-
-#
-msgid "Do you want to upgrade the package:\n"
 msgstr ""
 
 msgid "Documentary"
@@ -4665,8 +4665,8 @@ msgstr ""
 
 #
 #, fuzzy, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Dien - %d paket(ten) ynstalllearre of bywurke"
 msgstr[1] "Dien - %d paket(ten) ynstalllearre of bywurke"
 
@@ -4818,8 +4818,7 @@ msgstr ""
 msgid "Edit title"
 msgstr "Bewukje titel"
 
-#
-msgid "Edit upgrade source url."
+msgid "Edit update source url."
 msgstr ""
 
 #
@@ -7001,8 +7000,10 @@ msgstr ""
 msgid "Last speed"
 msgstr "Lêste faasje"
 
-msgid "Last upgrade: "
-msgstr ""
+#
+#, fuzzy
+msgid "Last update: "
+msgstr "Kies fideo moadus"
 
 msgctxt "third event: 'third' event label"
 msgid "Later"
@@ -7013,7 +7014,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Latest upgrade log"
+msgid "Latest update log"
 msgstr "Kies fideo moadus"
 
 #
@@ -8621,8 +8622,10 @@ msgstr ""
 msgid "Overscan wizard"
 msgstr ""
 
-msgid "Overwrite configuration files during software upgrade?"
-msgstr ""
+#
+#, fuzzy
+msgid "Overwrite configuration files during software update?"
+msgstr "Tuner ynstellingen"
 
 #
 #, fuzzy
@@ -9733,10 +9736,10 @@ msgstr "Wier no kompleet útskeakelje ?"
 msgid "Really store at index %2d for current position?"
 msgstr ""
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+msgid "Really update the frontprocessor and reboot now?"
 msgstr ""
 
-msgid "Really upgrade your settop box and reboot now?"
+msgid "Really update your settop box and reboot now?"
 msgstr ""
 
 #
@@ -9988,6 +9991,11 @@ msgstr "Herhelje Type"
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Repeat playlist"
+msgstr "ôfspyllyst opnei spylje"
 
 #
 #, fuzzy
@@ -10458,8 +10466,18 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Save last directory on exit"
+msgstr "Lêste map opslaan by ôfsluten"
+
+#
+#, fuzzy
 msgid "Save playlist"
 msgstr "ofspiellyst opslaan"
+
+#
+#, fuzzy
+msgid "Save playlist on exit"
+msgstr "Ofspiellyst opslaan by ôfsluten"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -10991,12 +11009,13 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Select upgrade source"
+msgid "Select update source"
 msgstr "Kies fideo moadus"
 
 #
-msgid "Select upgrade source to edit."
-msgstr ""
+#, fuzzy
+msgid "Select update source to edit."
+msgstr "Kies fideo moadus"
 
 #
 msgid "Select video input with up/down buttons"
@@ -11589,13 +11608,18 @@ msgstr "Ynfobalke sjen by rap foarút / efterút"
 msgid "Show latest commits"
 msgstr ""
 
-msgid "Show latest upgrade log"
-msgstr ""
+#
+#, fuzzy
+msgid "Show latest update log"
+msgstr "Kies fideo moadus"
 
 #
 #, fuzzy
 msgid "Show log"
 msgstr "Ynformaasje sjen litte"
+
+msgid "Show media player on main menu"
+msgstr ""
 
 msgid "Show menu or plugin numbers"
 msgstr ""
@@ -11646,8 +11670,10 @@ msgstr ""
 msgid "Show on VFD display in standby"
 msgstr ""
 
-msgid "Show packages to be upgraded"
-msgstr ""
+#
+#, fuzzy
+msgid "Show packages to be updated"
+msgstr "Bywurkje pakketlyst  "
 
 msgid "Show picons in channel selection list"
 msgstr ""
@@ -12059,6 +12085,11 @@ msgid "Sort time"
 msgstr "Sorteer op Tiid"
 
 #
+#, fuzzy
+msgid "Sorting of playlists"
+msgstr "skeakelje nei ofspiellyst"
+
+#
 msgid "Sound"
 msgstr "Lûd"
 
@@ -12243,6 +12274,11 @@ msgstr ""
 #, fuzzy
 msgid "Start cut"
 msgstr "Start test"
+
+#
+#, fuzzy
+msgid "Start directory"
+msgstr "start map"
 
 #
 msgid "Start from the beginning"
@@ -13810,7 +13846,7 @@ msgid "Unable to create the required directories on the media (e.g. USB stick or
 msgstr ""
 
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -13951,12 +13987,13 @@ msgid "Updatefeed not available."
 msgstr ""
 
 #
-msgid "Updating software catalog"
-msgstr ""
+#, fuzzy
+msgid "Updating"
+msgstr "Bywurkje"
 
 #
-msgid "Upgrading"
-msgstr "An it bywurkjen"
+msgid "Updating software catalog"
+msgstr ""
 
 msgid "Upper case"
 msgstr ""
@@ -14586,7 +14623,7 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr ""
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -15043,7 +15080,7 @@ msgid "Your current collection will get lost!"
 msgstr ""
 
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -16270,9 +16307,6 @@ msgstr ""
 msgid "play as picture in picture"
 msgstr ""
 
-msgid "play file when add in empty playlist"
-msgstr ""
-
 msgid "play in mainwindow"
 msgstr ""
 
@@ -16397,10 +16431,6 @@ msgid "rename entry"
 msgstr ""
 
 #
-msgid "repeat playlist"
-msgstr "ôfspyllyst opnei spylje"
-
-#
 msgid "repeated"
 msgstr "herhelle"
 
@@ -16452,14 +16482,6 @@ msgstr "Start fanôf it begjin"
 
 msgid "save"
 msgstr ""
-
-#
-msgid "save last directory on exit"
-msgstr "Lêste map opslaan by ôfsluten"
-
-#
-msgid "save playlist on exit"
-msgstr "Ofspiellyst opslaan by ôfsluten"
 
 #
 msgid "scan state"
@@ -16530,9 +16552,6 @@ msgstr "alternatieven sjen litte"
 #
 msgid "show event details"
 msgstr "EPG details sjen litte"
-
-msgid "show mediaplayer on mainmenu"
-msgstr ""
 
 msgid "show softwaremanager in setup menu"
 msgstr ""
@@ -16615,9 +16634,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "sorting of playlists"
-msgstr ""
-
 msgid "spark"
 msgstr ""
 
@@ -16651,10 +16667,6 @@ msgstr "start stik hjirre"
 #, fuzzy
 msgid "start cut here (reset)"
 msgstr "start stik hjirre"
-
-#
-msgid "start directory"
-msgstr "start map"
 
 msgid "stepsize"
 msgstr ""

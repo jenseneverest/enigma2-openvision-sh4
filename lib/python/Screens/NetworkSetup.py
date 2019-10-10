@@ -592,6 +592,7 @@ class IPv6Setup(Screen, ConfigListScreen, HelpableScreen):
 		self.session.open(MessageBox, _("Successfully restored /etc/inetd.conf!"), type = MessageBox.TYPE_INFO,timeout = 10 )
 
 	def ok(self):
+		ipv6 = "/etc/enigma2/ipv6"
 		if self.IPv6ConfigEntry.value == False:
 			open("/proc/sys/net/ipv6/conf/all/disable_ipv6", "w").write("1")
 			open("/etc/enigma2/ipv6", "w").write("1")
@@ -2087,9 +2088,9 @@ class NetworkFtp(NSCommon,Screen):
 
 	def FtpStartStop(self):
 		commands = []
-		if not fileExists('/etc/pam.d/vsftpd'):
+		if not self.my_ftp_run:
 			commands.append('mv /etc/pam.d/vsftpdd /etc/pam.d/vsftpd')
-		if fileExists('/etc/pam.d/vsftpd'):
+		elif self.my_ftp_run:
 			commands.append('killall vsftpd ; mv /etc/pam.d/vsftpd /etc/pam.d/vsftpdd')
 		self.Console.eBatch(commands, self.StartStopCallback, debug=True)
 

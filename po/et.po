@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-17 11:02+0330\n"
+"POT-Creation-Date: 2019-10-21 09:13+0330\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -814,6 +814,10 @@ msgid "%d GB"
 msgstr "%d GB"
 
 #, python-format
+msgid "%d KB"
+msgstr ""
+
+#, python-format
 msgid "%d MB"
 msgstr "%d MB"
 
@@ -852,12 +856,6 @@ msgid "%d core"
 msgid_plural "%d cores"
 msgstr[0] "%d tuumaga"
 msgstr[1] "%d tuumaga"
-
-#, python-format
-msgid "%d file"
-msgid_plural "%d files"
-msgstr[0] "%d fail"
-msgstr[1] "%d failid"
 
 #, python-format
 msgid "%d fps"
@@ -902,6 +900,14 @@ msgid "%d ms"
 msgstr "%d ms"
 
 #, python-format
+msgid "%d of %d Bytes"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "%d of %d KB"
+msgstr "%A %d %B"
+
+#, python-format
 msgid "%d pixel wide"
 msgid_plural "%d pixels wide"
 msgstr[0] "laius %d piksel"
@@ -916,12 +922,6 @@ msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d sekund"
 msgstr[1] "%d sekundit"
-
-#, python-format
-msgid "%d subdirectory"
-msgid_plural "%d subdirectories"
-msgstr[0] "%d alamkataloog"
-msgstr[1] "%d alamkataloogid"
 
 #, python-format
 msgid "%d wireless network found!"
@@ -991,6 +991,10 @@ msgid "%m/%d/%Y"
 msgstr ""
 
 #, fuzzy, python-format
+msgid "%s"
+msgstr "CH%s"
+
+#, fuzzy, python-format
 msgid ""
 "%s\n"
 "Do you still want to flash image\n"
@@ -1028,6 +1032,14 @@ msgid "%s is no longer used. Should it be deleted?"
 msgstr "%s ei ole enam kasutuses. Kas see tuleks kustutada?"
 
 #, python-format
+msgid "%s of %s GB"
+msgstr ""
+
+#, python-format
+msgid "%s of %s MB"
+msgstr ""
+
+#, python-format
 msgid "%s updated package available"
 msgid_plural "%s updated packages available"
 msgstr[0] " %s uuendatud pakett saadaval "
@@ -1049,6 +1061,10 @@ msgstr "%s/%s: %s"
 msgid "%s:%s"
 msgstr "%s:%s"
 
+#, python-format
+msgid "'%s' contains %d file(s) and %d sub-directories.\n"
+msgstr ""
+
 #, fuzzy
 msgid "( All readers)"
 msgstr "Kõik vanused"
@@ -1058,6 +1074,9 @@ msgstr ""
 
 msgid "(VU+ type)"
 msgstr "(VU+ tüüp)"
+
+msgid "(You are currently using a temporary sort method)"
+msgstr ""
 
 msgid "(ZAP as PiP)"
 msgstr "(PiP kanalivahetus)"
@@ -1484,7 +1503,7 @@ msgstr ""
 msgid "Adapter settings"
 msgstr "Võrgukaardi seaded"
 
-msgid "Adaptive date display allows recent dates to be displayed as 'Today' or 'Yesterday'.  It hides the year for recordings made this year.  It hides the day of the week for recordings made in previous years."
+msgid "Adaptive date display allows recent dates to be displayed as 'Today' or 'Yesterday'.  It hides the year for recordings made this year.\t It hides the day of the week for recordings made in previous years."
 msgstr ""
 
 msgid "Add"
@@ -1683,9 +1702,6 @@ msgstr "Luba 12bit"
 msgid "Allow quit movieplayer with exit"
 msgstr "Taasesituse lõpetamine EXIT nupuga"
 
-msgid "Allow quitting movieplayer with exit"
-msgstr "Luba väljumise EXIT nupuga"
-
 msgid "Allow subtitle language to equal audio language"
 msgstr "Luba subtiitrid heli keele valiku järgi"
 
@@ -1704,7 +1720,13 @@ msgstr ""
 msgid "Allows you to enable the twisted log. It contains very detailed information of everything the twisted does."
 msgstr ""
 
+msgid "Allows you to hide the extensions of known file types."
+msgstr ""
+
 msgid "Allows you to set a schedule to import the EPG and channels list. The EPG and channels list will always be imported on reboot or GUI restart."
+msgstr ""
+
+msgid "Allows you to setup the button to do what you choose."
 msgstr ""
 
 msgid "Alpha"
@@ -1929,6 +1951,12 @@ msgstr "Nagu välimuse poolt määratud"
 msgid "Ask user"
 msgstr "Küsi kasutajalt"
 
+msgid "Ask user (with default as 'no')"
+msgstr ""
+
+msgid "Ask user (with default as 'yes')"
+msgstr ""
+
 #, fuzzy
 msgid "Aspect list..."
 msgstr "Alamteenuste nimekiri"
@@ -2087,9 +2115,6 @@ msgstr "Automaatne"
 
 msgid "Automatic Scan"
 msgstr "Automaatotsing"
-
-msgid "Automatic bookmarks"
-msgstr "Automaatne järjehoidjad"
 
 #, fuzzy
 msgid "Automatic refresh"
@@ -2283,6 +2308,10 @@ msgstr "Sinine"
 msgid "Blue LED brightness"
 msgstr "Heledus"
 
+#, fuzzy
+msgid "Blue long"
+msgstr "Kustuta logi"
+
 msgid "Bolivia (Plurinational State of)"
 msgstr "Boliivia"
 
@@ -2368,6 +2397,9 @@ msgstr "Burundi"
 
 msgid "Bus: "
 msgstr "Siin: "
+
+msgid "Button"
+msgstr ""
 
 msgid "By default, SNR will be shown in dB (when supported by the tuner). This setting forces SNR to be shown as a percentage instead."
 msgstr "Vaikimisi näidatakse SNR väärtust dB-s (kui tuuner seda toetab). See valik annab SNR näidu protsentides dB asemel."
@@ -2514,6 +2546,10 @@ msgstr "Tühistatud kasutaja nõudmisel"
 msgid "Cannot delete downloaded image"
 msgstr "Kustutame möödunud taimerid?"
 
+#, fuzzy
+msgid "Cannot delete file"
+msgstr "Ei saa määrata"
+
 msgid "Cannot determine"
 msgstr "Ei saa määrata"
 
@@ -2523,8 +2559,9 @@ msgstr "Mingit signaali ei leita..., katkestame!"
 msgid "Cannot find images - please try later"
 msgstr "Ei leia tarkvarasid - proovi hiljem"
 
-msgid "Cannot move files on a different disk or system to the trash can"
-msgstr "Failide liigutamine prügikasti väliselt kettalt ei ole võimalik"
+#, fuzzy
+msgid "Cannot move to the trash can"
+msgstr "Prügikasti saatmine ei ole võimalik"
 
 msgid "Cannot move to trash can"
 msgstr "Prügikasti saatmine ei ole võimalik"
@@ -2783,6 +2820,10 @@ msgstr "Ringpolarisatsioon vasak"
 
 msgid "Circular right"
 msgstr "Ringpolarisatsioon parem"
+
+#, fuzzy
+msgid "Clean network trash cans"
+msgstr "Prügikasti saatmine ei ole võimalik"
 
 msgid "Cleanup"
 msgstr "Puhastus"
@@ -3165,6 +3206,12 @@ msgstr "Seadista nimeserver (DNS)."
 msgid "Configure the netmask."
 msgstr "Seadista võrgumask."
 
+#, fuzzy
+msgid ""
+"Configure the number of days after which items are automatically removed from the trash can.\n"
+"A setting of 0 disables this."
+msgstr "Määra päevade arv, pärast mida salvestised kustutatakse automaatselt prügikastist."
+
 msgid "Configure the number of days after which items are automaticaly removed from the trash can."
 msgstr "Määra päevade arv, pärast mida salvestised kustutatakse automaatselt prügikastist."
 
@@ -3399,6 +3446,10 @@ msgstr "Cooki saared"
 msgid "Copy"
 msgstr "Kopeeri"
 
+#, fuzzy
+msgid "Copying files"
+msgstr "Pikad failinimed"
+
 msgid "Costa Rica"
 msgstr "Costa Rica"
 
@@ -3414,6 +3465,9 @@ msgstr "Ei leidnud sobivat salvestuskeskkonda - sisesta näiteks USB pulk ja pro
 
 msgid "Could not load medium! No disc inserted?"
 msgstr "Ei saa plaati avada! Plaati pole sisestatud?"
+
+msgid "Could not locate epg file on fallback tuner"
+msgstr ""
 
 msgid "Could not open Picture in Picture"
 msgstr "PiP avamine ei õnnestunud"
@@ -3943,6 +3997,10 @@ msgstr "Kustutati"
 msgid "Deleted items"
 msgstr "Prügikast"
 
+#, fuzzy
+msgid "Deleting files"
+msgstr "Kustuta fail"
+
 msgid "Denmark"
 msgstr "Taani"
 
@@ -3998,6 +4056,10 @@ msgstr "Leitud tuunerid:"
 
 #, fuzzy
 msgid "Device"
+msgstr "Kanaliinfo"
+
+#, fuzzy
+msgid "Device mounts"
 msgstr "Kanaliinfo"
 
 msgid "Devicename:"
@@ -4060,10 +4122,6 @@ msgstr "Kataloogi %s ei eksisteeri."
 msgid "Directory browser"
 msgstr "Kataloogi brauser"
 
-#, python-format
-msgid "Directory contains %s and %s."
-msgstr "Kataloog sisaldab %s ja %s."
-
 msgid "Disable"
 msgstr "Keela"
 
@@ -4114,9 +4172,6 @@ msgstr "Esipaneel ja kasutajaliides"
 msgid "Display message before playing next movie"
 msgstr "Teavita enne järgmise filmi alustamist"
 
-msgid "Display movie length in movielist (except single line style)."
-msgstr ""
-
 msgid "Display setup"
 msgstr "Esipaneeli seaded"
 
@@ -4151,9 +4206,6 @@ msgstr "Ära muuda"
 msgid "Do not record"
 msgstr "Ära salvesta"
 
-msgid "Do not show file extensions for registered multimedia files."
-msgstr ""
-
 msgid "Do nothing"
 msgstr "Ära tee midagi"
 
@@ -4164,8 +4216,16 @@ msgstr ""
 "Kas soovid failisüsteemi kontrollida?\n"
 "Selleks võib minna palju aega!"
 
+#, fuzzy, python-format
+msgid "Do you really want to delete %s ?"
+msgstr "Kas soovid kustutada %s?"
+
 #, python-format
 msgid "Do you really want to delete %s?"
+msgstr "Kas soovid kustutada %s?"
+
+#, fuzzy
+msgid "Do you really want to delete ?"
 msgstr "Kas soovid kustutada %s?"
 
 #, fuzzy
@@ -4189,6 +4249,20 @@ msgid ""
 msgstr ""
 "Kas soovid vormindada andmekandja?\n"
 "Kogu ketta sisu läheb kaduma!"
+
+#, fuzzy
+msgid "Do you really want to move to the trash can ?"
+msgstr ""
+"Kas soovid eemaldada \n"
+"laienduse \"%s\"?"
+
+#, fuzzy, python-format
+msgid "Do you really want to permamently remove '%s' from the trash can ?"
+msgstr "Kas soovid kustutada kataloogi %s kõvakettalt?"
+
+#, fuzzy
+msgid "Do you really want to permanently remove from the trash can ?"
+msgstr "Kas soovid kustutada kataloogi %s kõvakettalt?"
 
 #, python-format
 msgid ""
@@ -4404,10 +4478,6 @@ msgstr "Saatekava seaded"
 #, python-format
 msgid "ERROR - failed to scan (%s)!"
 msgstr "VIGA - (%s) otsing nurjus!"
-
-#, python-format
-msgid "ERROR downloading file %s"
-msgstr ""
 
 msgid "East"
 msgstr "Ida"
@@ -4743,10 +4813,6 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Viga"
 
-#, fuzzy, python-format
-msgid "Error %s"
-msgstr "Viga"
-
 msgid "Error code"
 msgstr "Veakood"
 
@@ -4782,19 +4848,10 @@ msgstr "Viga laienduse käivitamisel"
 msgid "Error stop stream!"
 msgstr "Viga, peata voog!"
 
-msgid "Error when writing epg.dat on server"
-msgstr ""
-
-msgid "Error while retreiving epg.dat from server"
-msgstr ""
-
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
-msgstr ""
-
-msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #, python-format
@@ -5008,6 +5065,18 @@ msgstr "Mootori ekstravõimalused"
 
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Lisatud alustamise aeg tegevusetuse unetaimeri vältimiseks"
+
+#, fuzzy
+msgid "F1"
+msgstr "1"
+
+#, fuzzy
+msgid "F2"
+msgstr "2"
+
+#, fuzzy
+msgid "F3"
+msgstr "3"
 
 msgid "FAILED"
 msgstr "NURJUS"
@@ -5264,6 +5333,9 @@ msgstr ""
 
 msgid "Following tasks will be done after you press OK!"
 msgstr "Järgmised toimingud tehakse pärast OK vajutamist!"
+
+msgid "Font size"
+msgstr ""
 
 msgid "Force legacy signal stats"
 msgstr "Kasuta aegunud signaalistatistikat"
@@ -5524,6 +5596,10 @@ msgstr ""
 
 msgid "Green"
 msgstr "Roheline"
+
+#, fuzzy
+msgid "Green long"
+msgstr "Gröönimaa"
 
 msgid "Greenland"
 msgstr "Gröönimaa"
@@ -5871,18 +5947,6 @@ msgstr "Ikoonid"
 
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr "Kui on lubatud, näitab näidik 12 sümbolit 8 asemel, aga ainult latin-1/translit."
-
-msgid "If enabled, then there will be displayed icons for new/unseen items too."
-msgstr ""
-
-msgid "If is disabled, then after Copy/Move will not be target directory stored into bookmarks."
-msgstr ""
-
-msgid "If is enabled and movie playback is finished, then after return to movielist will not be automaticaly start service playback."
-msgstr ""
-
-msgid "If set as 'Yes', then audiofiles are played in 'list mode' only, instead in full screen player."
-msgstr ""
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "Määrates 'jah', arvutatakse signaali väärused (SNR, jms.) API V3 põhjal. See on vana API versioon, mis on nüüd asendatud uuega."
@@ -6306,6 +6370,9 @@ msgstr "Kasahstan"
 msgid "Keep service"
 msgstr "Jää teenusele"
 
+msgid "Keeps the movie list open whilst playing audio files."
+msgstr ""
+
 msgid "Kenya"
 msgstr "Keenia"
 
@@ -6516,9 +6583,6 @@ msgstr "Nimekirja laad"
 msgid "List of storage devices"
 msgstr "Andmekandjate loetelu"
 
-msgid "List type"
-msgstr "Nimekirja tüüp"
-
 #, python-format
 msgid "List version %d, found %d channel"
 msgid_plural "List version %d, found %d channels"
@@ -6546,9 +6610,6 @@ msgstr "Laadi"
 #, fuzzy
 msgid "Load EPG"
 msgstr "Laadi"
-
-msgid "Load length of movies in movie list"
-msgstr "Näita filmi pikkust "
 
 msgid "Load playlist"
 msgstr "Lae esitusloend"
@@ -7049,8 +7110,9 @@ msgstr "Liikumine"
 msgid "Movie"
 msgstr "Liikuv"
 
-msgid "Movie list configuration"
-msgstr "Filmilisti seaded"
+#, fuzzy
+msgid "Movie List Setup"
+msgstr "Salvestiste menüü"
 
 msgid "Movie location"
 msgstr "Salvestiste asukoht"
@@ -7069,6 +7131,10 @@ msgstr "Liikuv"
 
 msgid "Moving east ..."
 msgstr "Keerab itta ..."
+
+#, fuzzy
+msgid "Moving files"
+msgstr "Pikad failinimed"
 
 msgid "Moving to position"
 msgstr "Liigub asukohta"
@@ -7258,6 +7324,10 @@ msgstr "Võrgu haakepunkt"
 msgid "Network mount %s"
 msgstr "Võrgu haakepunkt %s"
 
+#, fuzzy
+msgid "Network mounts"
+msgstr "Võrgu haakepunkt"
+
 msgid "Network name (SSID)"
 msgstr "Võrgu nimi (SSID)"
 
@@ -7376,9 +7446,6 @@ msgstr "Saatetutvustust ei ole."
 msgid "No displayable files on this medium found!"
 msgstr "Sellel andmekandjal pole kuvatavaid faile!"
 
-msgid "No epg.dat file found server"
-msgstr ""
-
 msgid "No event info found, recording indefinitely."
 msgstr "Saatel pole teada lõppaeg. Salvestatakse pidevalt."
 
@@ -7421,6 +7488,9 @@ msgstr "Pole teenust"
 
 msgid "No services/providers selected"
 msgstr "Kanalit/levitajat pole valitud"
+
+msgid "No settings files to download on fallback tuner"
+msgstr ""
 
 msgid "No standby"
 msgstr "Ooteseisundita"
@@ -7542,6 +7612,10 @@ msgid "Not Classified"
 msgstr "Pole seotud"
 
 #, fuzzy
+msgid "Not Defined"
+msgstr "Määramata"
+
+#, fuzzy
 msgid "Not Installed"
 msgstr "Paigalda"
 
@@ -7551,10 +7625,6 @@ msgstr "Määramata"
 
 msgid "Not associated"
 msgstr "Pole seotud"
-
-#, fuzzy
-msgid "Not defined"
-msgstr "Määramata"
 
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
@@ -7615,6 +7685,13 @@ msgid "Number of channels shown in channel selection list"
 msgstr "Kanalinimekirjas kuvatav kanalite arv"
 
 msgid "Number of repeating text on display."
+msgstr "Näidikul korduva teksti arv."
+
+msgid "Number of rows"
+msgstr ""
+
+#, fuzzy
+msgid "Number of rows to display"
 msgstr "Näidikul korduva teksti arv."
 
 msgid "Number or SMS style data entry"
@@ -7952,6 +8029,9 @@ msgstr "Protsent vasakul"
 msgid "Percentage right"
 msgstr "Protsent paremal"
 
+msgid "Permanent sort key changes"
+msgstr ""
+
 msgid "Permanently delete all recordings in the trash can?"
 msgstr "Kustutad lõplikult kõik failid prügikastist?"
 
@@ -7971,6 +8051,14 @@ msgid "PiP setup"
 msgstr "PiP seaded"
 
 msgid "Picon"
+msgstr "Kanalilogo"
+
+#, fuzzy
+msgid "Picon Size"
+msgstr "Kanalilogo"
+
+#, fuzzy
+msgid "Picon Width"
 msgstr "Kanalilogo"
 
 msgid "Picon and servicename"
@@ -8002,11 +8090,11 @@ msgstr "Taasesita"
 msgid "Play DVDs"
 msgstr "Taasesita"
 
+msgid "Play audio in background"
+msgstr ""
+
 msgid "Play audio-CD..."
 msgstr "Mängi heliplaat..."
-
-msgid "Play audiofiles in list mode"
-msgstr ""
 
 msgid "Play back media files"
 msgstr "Esita meediafaile"
@@ -8112,6 +8200,10 @@ msgstr "Sisesta uus nimi:"
 msgid "Please enter the correct pin code"
 msgstr "Sisesta õige kood"
 
+#, fuzzy
+msgid "Please enter the name of the new directory"
+msgstr "Palun sisesta uue kausta nimi"
+
 msgid "Please enter the new PIN code"
 msgstr "Sisesta uus PIN kood"
 
@@ -8163,9 +8255,6 @@ msgstr "Vali andmekandja"
 msgid "Please select medium to use as backup location"
 msgstr "Vali asukoht varukoopiale"
 
-msgid "Please select tag to filter..."
-msgstr "Vali otsingusõna"
-
 msgid "Please select the movie path..."
 msgstr "Vali salvestise kataloog"
 
@@ -8177,6 +8266,10 @@ msgstr ""
 "Vali võrguliides, mida  soovid kasutada interneti ühenduseks.\n"
 "\n"
 "Jätkamiseks vajuta OK ."
+
+#, fuzzy
+msgid "Please select the tag to filter..."
+msgstr "Vali otsingusõna"
 
 msgid ""
 "Please select the wireless network that you want to connect to.\n"
@@ -8792,9 +8885,6 @@ msgstr "Salvestus"
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Salvestusaeg on piiratud teise taimeri %s tõttu"
 
-msgid "Recorded files..."
-msgstr "Salvestised"
-
 msgid "Recording"
 msgstr "Salvestus"
 
@@ -8836,6 +8926,10 @@ msgstr "Punane nupp..."
 msgid "Red colored"
 msgstr "Punast värvi"
 
+#, fuzzy
+msgid "Red long"
+msgstr "pikalt"
+
 msgid "Reenter PIN"
 msgstr "Sisesta PIN uuesti"
 
@@ -8853,9 +8947,6 @@ msgstr "Värskendussagedus"
 
 msgid "Refresh rate selection."
 msgstr "Värskendussageduse valik."
-
-msgid "Refusing to move to the same directory"
-msgstr "Keeldub liigutamast samasse kausta"
 
 msgid "Regard deep standby as standby"
 msgstr "Käsitle sügavooterežiimi tavalise ooterežiimina"
@@ -9997,6 +10088,10 @@ msgstr "Teenus ja PIDid"
 msgid "Service ID"
 msgstr "Teenuse ID"
 
+#, fuzzy
+msgid "Service Title mode"
+msgstr "Kanalinime kuju"
+
 msgid "Service has been added to the favourites."
 msgstr "Kanal on lisatud lemmiknimekirja."
 
@@ -10075,8 +10170,8 @@ msgstr ""
 msgid "Set PIN"
 msgstr "Määra PIN"
 
-msgid "Set action when movie playback is finished."
-msgstr "Määra käitumine, kui filmi taasesitus on lõppenud."
+msgid "Set a temporary sort method for this directory"
+msgstr ""
 
 msgid "Set all hotkey to default?"
 msgstr "Kas seada kõik kiirnupud vaikeseadesse?"
@@ -10106,9 +10201,6 @@ msgstr "Määra püsiaadress"
 msgid "Set fps for external subtitles"
 msgstr "Määra väliste subtiitrite kaadrisagedus"
 
-msgid "Set if You want see status icons, progress bars or nothing."
-msgstr ""
-
 msgid "Set interface as default Interface"
 msgstr "Määra vaikimisi võrguliideseks"
 
@@ -10118,9 +10210,6 @@ msgstr "Määra püsiaadress"
 
 msgid "Set limits"
 msgstr "Määra piirid"
-
-msgid "Set movielist type."
-msgstr "Seadke filmide nimekirja tüüp."
 
 msgid "Set pin code persistent"
 msgstr "Sea PIN kood püsivaks"
@@ -10142,6 +10231,14 @@ msgstr "Sisesta, kas asud ida- või läänepoolkeral."
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr ""
 
+#, fuzzy
+msgid "Set the default sorting method."
+msgstr "Määrata vaikimisi seaded?"
+
+#, fuzzy
+msgid "Set the global sort method"
+msgstr "Vali järjestusviis:"
+
 msgid "Set the password of the OpenWebif from your fallback tuner"
 msgstr ""
 
@@ -10151,6 +10248,10 @@ msgstr ""
 #, fuzzy
 msgid "Set the repeat interval of the schedule."
 msgstr "Määra ekraani värskendussagedus."
+
+#, fuzzy
+msgid "Set the sort method for this directory"
+msgstr "Keeldub liigutamast samasse kausta"
 
 msgid "Set the time of day to perform the import."
 msgstr ""
@@ -10186,11 +10287,11 @@ msgstr ""
 msgid "Set voltage and 22KHz"
 msgstr "Määra pinge ja 22 KHz"
 
+msgid "Sets the root directory of movie list, to remove the '..' from being shown in that folder."
+msgstr ""
+
 msgid "Settings"
 msgstr "Seaded"
-
-msgid "Settings can be different for each directory separately (for non removeable devices only)."
-msgstr ""
 
 msgid "Setup"
 msgstr "Seadistamine"
@@ -10410,6 +10511,10 @@ msgid "Show latest update log"
 msgstr "Näita viimast uuenduslogi"
 
 #, fuzzy
+msgid "Show live tv when movie stopped"
+msgstr "Tegevus taasesituse peatamisel"
+
+#, fuzzy
 msgid "Show log"
 msgstr "Näita infot"
 
@@ -10426,6 +10531,10 @@ msgstr "Kuva asukoht menüüs"
 
 msgid "Show message when recording starts"
 msgstr "Teavita salvestuse algamisest"
+
+#, fuzzy
+msgid "Show movie lengths in movie list"
+msgstr "Näita filminimekirjas filmi pikkust"
 
 msgid "Show movie lengths in movielist"
 msgstr "Näita filminimekirjas filmi pikkust"
@@ -10469,6 +10578,10 @@ msgid "Show on VFD display in standby"
 msgstr "Näita piconid ekraanil"
 
 #, fuzzy
+msgid "Show or hide the extended description, (skin dependant)."
+msgstr "Näita pikemat saatetutvustust"
+
+#, fuzzy
 msgid "Show packages to be updated"
 msgstr "Näita pakette mida peaks uuendama"
 
@@ -10477,6 +10590,10 @@ msgstr "Näita piconeid kanalivaliku nimekirjas"
 
 msgid "Show picons in display"
 msgstr "Näita piconid ekraanil"
+
+#, fuzzy
+msgid "Show picons in the movie list."
+msgstr "Oleku tähistus salvestiste nimekirjas"
 
 msgid "Show positioner movement"
 msgstr "Näita positsioneeri liikumist"
@@ -10576,8 +10693,15 @@ msgstr "Näita/peida aken"
 msgid "Shows live tv or informations on LCD."
 msgstr "Näitab TV pilti või informatsiooni LCD peal."
 
+msgid "Shows the icons when new/unseen, otherwise it will not show an icon."
+msgstr ""
+
 msgid "Shows the state of your wireless LAN connection.\n"
 msgstr "Näitab WiFi olekut.\n"
+
+#, fuzzy
+msgid "Shows the watched status of the movie."
+msgstr "Salvestisele pole märksõnu määratud."
 
 msgid "Shuffle playlist"
 msgstr "Juhuslik esitusloend"
@@ -10783,9 +10907,6 @@ msgstr ""
 msgid "Sorry, %s has not been installed!"
 msgstr "%s ei  paigaldatud!"
 
-msgid "Sorry, deleting directories can (for now) only be done through the trash can."
-msgstr "Kataloogide kustutamine on võimalik ainult läbi prügikasti."
-
 msgid "Sorry, no backups found!"
 msgstr "Varukoopiat ei leitud!"
 
@@ -10809,8 +10930,15 @@ msgstr "Järjesta"
 msgid "Sort A-Z"
 msgstr "Tähestikujärj."
 
+msgid "Sort Trash by deletion time"
+msgstr ""
+
 msgid "Sort by"
 msgstr "Järjesta "
+
+#, fuzzy
+msgid "Sort by default"
+msgstr "Sea vaikeseadesse"
 
 msgid "Sort list to default and exit?"
 msgstr "Järjestada nimekiri vaikimisi ja väljuda?"
@@ -11130,6 +11258,10 @@ msgstr "Peata telekanali esitus"
 msgid "Stop playing this movie?"
 msgstr "Kas lõpetan taasesituse?"
 
+#, fuzzy
+msgid "Stop previous broadcasted service on return to movie list."
+msgstr "Peata teenus filminimekirja tagasi pöördumisel"
+
 msgid "Stop recording"
 msgstr "Peata salvestamine"
 
@@ -11434,6 +11566,9 @@ msgstr "TSID"
 msgid "TUNING"
 msgstr "HÄÄLESTUS"
 
+msgid "TV"
+msgstr ""
+
 msgid "TV physical address report"
 msgstr "TV füüsilise aadressi raport"
 
@@ -11549,6 +11684,9 @@ msgstr "Testtabelid"
 
 msgid "Testscreens that are helpfull to fine-tune your display"
 msgstr "Testtabelid aitavad häälestada ekraani"
+
+msgid "Text"
+msgstr ""
 
 msgid "Text color"
 msgstr "Teksti värv"
@@ -11798,6 +11936,9 @@ msgstr ""
 
 msgid "This DVD RW medium is already formatted - reformatting will erase all content on the disc."
 msgstr "DVD RW ketas on formaaditud.Uuesti formaatimisel kustutatakse kõik, mis plaadile kirjutatud."
+
+msgid "This allows you change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size"
+msgstr ""
 
 #, python-format
 msgid "This field allows you to search an additional symbol rate up to %s."
@@ -12294,6 +12435,10 @@ msgstr "Transpordivoo tüüp"
 msgid "Trash can"
 msgstr "Prügikast"
 
+#, fuzzy
+msgid "Trashcan:"
+msgstr "Prügikast"
+
 msgid "Tries left:"
 msgstr "Katseid järel:"
 
@@ -12698,6 +12843,19 @@ msgstr "Kasuta algset teleteksti asukohta"
 msgid "Use power measurement"
 msgstr "Kasuta võimsuse mõõtmist"
 
+#, fuzzy
+msgid "Use slim screen"
+msgstr "Täisekraan"
+
+#, fuzzy
+msgid "Use the alternative screen"
+msgstr "asenduskanalite muutmine"
+
+msgid ""
+"Use the deletion time to sort Trash directories.\n"
+"Most recently deleted at the top."
+msgstr ""
+
 msgid "Use the network wizard to configure selected network adapter"
 msgstr "Kasuta abilist valitud võrgukaardi seadmiseks"
 
@@ -12718,6 +12876,10 @@ msgstr "Kasutad neid seadeid?"
 
 msgid "Use this video enhancement settings?"
 msgstr "Kasuta neid pildiparanduse seadeid?"
+
+#, fuzzy
+msgid "Use trash can in movie list"
+msgstr "Kasuta filmilistis prügikasti"
 
 msgid "Use trash can in movielist"
 msgstr "Kasuta filmilistis prügikasti"
@@ -13274,6 +13436,9 @@ msgstr "Määrates 'jah' saab väljuda filmimängijast EXIT nupuga."
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Määrates 'jah', mõõdetakse energia kulu, tuvastamaks mootori pööramise lõppemist (kui vastuvõtja seda toetab)."
 
+msgid "When enabled, network trash cans are probed for cleaning."
+msgstr ""
+
 msgid "When enabled, number markers will be hidden."
 msgstr "Määrates 'jah' peidetakse numbrimärgid."
 
@@ -13316,6 +13481,10 @@ msgstr "Määrates 'jah', kuvatakse meediafailide esitusel edasi/tagasi hüpates
 msgid "When enabled, the lenght of each recording will be shown in the movielist (this might cause some additional loading time)."
 msgstr "Määrates 'jah', näidatakse filmilistis salvestuse kestust (laadimine võib kesta veidi kauem)."
 
+#, fuzzy
+msgid "When enabled, the length of each recording will be shown in the movielist (this might cause some additional loading time)."
+msgstr "Määrates 'jah', näidatakse filmilistis salvestuse kestust (laadimine võib kesta veidi kauem)."
+
 msgid "When enabled, the receiver will automatically use the audio track which you selected before."
 msgstr "Määrates 'jah', kasutab vastuvõtja automaatselt varem valitud heliriba."
 
@@ -13355,11 +13524,23 @@ msgstr "Salvestamine lõpetatakse pärast saatekavas näidatud aega."
 msgid "When selected this allows video modes to be selected even if they are not reported as supported."
 msgstr ""
 
+msgid "When set the PIG will return to live after a movie has stopped playing."
+msgstr ""
+
+msgid "When set, each directory will show the previous state used. When off, the default values will be shown."
+msgstr ""
+
+msgid "When set, sort changes via the sort key will be permanent."
+msgstr ""
+
 msgid "When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture."
 msgstr "Määra, kas 16:9 pildisuhtega sisu tuleb skaleerida/venitada."
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Määra, kas 4:3 pildisuhtega sisu tuleb skaleerida/venitada."
+
+msgid "When unset, sort changes will be temporary - just for this view of a directory."
+msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Kuhu salvestada ajanihke sisu?"
@@ -13449,6 +13630,10 @@ msgstr "Kollane"
 msgid "Yellow DVB subtitles"
 msgstr "Kollased DVB subtiitrid"
 
+#, fuzzy
+msgid "Yellow long"
+msgstr "Kollane"
+
 msgid "Yemen"
 msgstr "Jeemen"
 
@@ -13488,6 +13673,14 @@ msgstr "Jah, ainult ootelt"
 msgid "Yes, returning to movie list"
 msgstr "Jah, tagasi salvestiste nimekirja"
 
+#, fuzzy
+msgid "Yes, show delete time"
+msgstr "Jah, kustuta see salvestis"
+
+#, fuzzy
+msgid "Yes, show record time"
+msgstr "Muuda salvestamise lõpuaega"
+
 msgid "Yes, with backup"
 msgstr "Jah, koos varukoopiaga"
 
@@ -13519,9 +13712,6 @@ msgstr "Eemaldamise saab tühistada."
 msgid "You can continue watching TV etc. while this is running."
 msgstr "Samal ajal võib vaadata TV-d jne."
 
-msgid "You can enable if will be displayed extended EPG description for item."
-msgstr ""
-
 msgid "You can install this plugin."
 msgstr "Selle laienduse saab paigaldada."
 
@@ -13530,15 +13720,6 @@ msgstr "Plaadile saab kirjutada ainult vastuvõtja salvestusi!"
 
 msgid "You can remove this plugin."
 msgstr "Selle laienduse saab eemaldada."
-
-msgid "You can set how will be finished movieplayer with 'Exit' button."
-msgstr ""
-
-msgid "You can set selected directory as 'root' directory for movie player."
-msgstr ""
-
-msgid "You can set sorting type for items in movielist."
-msgstr ""
 
 msgid "You cannot delete this!"
 msgstr "Seda ei saa kustutada!"
@@ -13846,22 +14027,22 @@ msgstr "pärast "
 msgid "all"
 msgstr "kõik"
 
+#, fuzzy
+msgid "alpha then oldest"
+msgstr "tagurpidi tähestikujärjekord"
+
 msgid "alphabetic"
 msgstr "tähestikujärjekord"
 
 msgid "alphabetic reverse"
 msgstr "tagurpidi tähestikujärjekord"
 
-#, fuzzy
-msgid "alphabetic then newest"
-msgstr "tagurpidi tähestikujärjekord"
-
-#, fuzzy
-msgid "alphabetic then oldest"
-msgstr "tagurpidi tähestikujärjekord"
-
 msgid "alphabetical"
 msgstr "tähestikuline"
+
+#, fuzzy
+msgid "alpharev then newest"
+msgstr "tagurpidi tähestikujärjekord"
 
 msgid "alternative"
 msgstr "alternatiivne"
@@ -14082,6 +14263,12 @@ msgstr "kustuta lõige"
 #, fuzzy
 msgid "delete cut (disabled)"
 msgstr " (keelatud)"
+
+msgid "delete time - show delete time (Trash ONLY)"
+msgstr ""
+
+msgid "delete time - show record time (Trash ONLY)"
+msgstr ""
 
 msgid "descramble and record ecm"
 msgstr "dekodeeri ja salvesta ecm"
@@ -14483,18 +14670,6 @@ msgstr "pikkus"
 
 msgid "limit ..., aborting !"
 msgstr "piir ..., katkestame!"
-
-msgid "list style compact"
-msgstr "nimekirja stiil: kompaktne"
-
-msgid "list style compact with description"
-msgstr "nimekirja stiil: kompaktne saatetutvustusega"
-
-msgid "list style default"
-msgstr "nimekirja stiil: vaikeseaded"
-
-msgid "list style single line"
-msgstr "nimekirja stiil: üks rida"
 
 #, fuzzy
 msgid "listens to hotplug events"

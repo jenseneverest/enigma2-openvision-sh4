@@ -293,7 +293,7 @@ class EPGList(GUIComponent):
 				res.extend((
 					(eListboxPythonMultiContent.TYPE_TEXT, r2.x, r2.y, split, r2.h, 0, RT_HALIGN_RIGHT|RT_VALIGN_CENTER, strftime(config.usage.time.short.value + "- ", begin)),
 					(eListboxPythonMultiContent.TYPE_TEXT, r2.x + split, r2.y, r2.w - split, r2.h, 0, RT_HALIGN_LEFT|RT_VALIGN_CENTER, strftime(config.usage.time.short.value, end)),
-					(eListboxPythonMultiContent.TYPE_TEXT, r3.x + self.tw, r3.y, r3.w, r3.h, 0, RT_HALIGN_LEFT, EventName)
+					(eListboxPythonMultiContent.TYPE_TEXT, r3.x + self.tw, r3.y, r3.w, r3.h, 0, RT_HALIGN_LEFT|RT_VALIGN_CENTER, EventName)
 				))
 			else:
 				percent = (nowTime - beginTime) * 100 / duration
@@ -304,7 +304,7 @@ class EPGList(GUIComponent):
 				res.extend((
 					(eListboxPythonMultiContent.TYPE_PROGRESS, r2.x, r2.y, self.tw, r2.h, percent),
 					(eListboxPythonMultiContent.TYPE_TEXT, r3.x, r3.y, self.gap(self.tw), r3.h, 1, RT_HALIGN_CENTER, _("%s%d min") % (prefix, remaining)),
-					(eListboxPythonMultiContent.TYPE_TEXT, r3.x + self.tw, r3.y, r3.w, r3.h, 0, RT_HALIGN_LEFT, EventName)
+					(eListboxPythonMultiContent.TYPE_TEXT, r3.x + self.tw, r3.y, r3.w, r3.h, 0, RT_HALIGN_LEFT|RT_VALIGN_CENTER, EventName)
 				))
 		return res
 

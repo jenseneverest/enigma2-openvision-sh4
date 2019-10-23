@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 09:13+0330\n"
+"POT-Creation-Date: 2019-10-23 17:08+0330\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -2280,6 +2280,10 @@ msgstr "Automatisk"
 msgid "Automatic Scan"
 msgstr "Automatisk Sökning"
 
+#, fuzzy
+msgid "Automatic bookmarks"
+msgstr "Automatisk Sökning"
+
 #
 #, fuzzy
 msgid "Automatic refresh"
@@ -3779,9 +3783,6 @@ msgstr ""
 msgid "Could not load medium! No disc inserted?"
 msgstr "Kunde inte ladda media! Ingen disk istoppad?"
 
-msgid "Could not locate epg file on fallback tuner"
-msgstr ""
-
 #
 msgid "Could not open Picture in Picture"
 msgstr "Gick inte att öppna Bild i Bild"
@@ -4933,6 +4934,10 @@ msgstr "EPG inställningar"
 msgid "ERROR - failed to scan (%s)!"
 msgstr "FEL - misslyckad sökning (%s)!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 #
 msgid "East"
 msgstr "Öst"
@@ -5300,6 +5305,11 @@ msgstr "Strömning"
 msgid "Error"
 msgstr "Fel"
 
+#
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "Fel"
+
 msgid "Error code"
 msgstr "Felkod"
 
@@ -5329,10 +5339,19 @@ msgstr "Fel vid körning av plugin"
 msgid "Error stop stream!"
 msgstr ""
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #
@@ -6549,6 +6568,9 @@ msgstr ""
 msgid "Icons"
 msgstr "Ikoner"
 
+msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
+msgstr ""
+
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr ""
 
@@ -6810,10 +6832,6 @@ msgstr "Installera kanallistan"
 
 msgid "Install extensions"
 msgstr "Installera utökningar"
-
-#
-msgid "Install extensions."
-msgstr "Installera utökningar."
 
 #
 msgid "Install local extension"
@@ -8257,6 +8275,9 @@ msgstr "Ingen beskrivning tillgänglig."
 msgid "No displayable files on this medium found!"
 msgstr "Inga visningsbara filer hittade på detta media!"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 #
 msgid "No event info found, recording indefinitely."
 msgstr "Ingen programinfo hittades, inspelning oändlig."
@@ -8306,9 +8327,6 @@ msgstr "Ingen kanal"
 #
 msgid "No services/providers selected"
 msgstr "Ingen kanal / operatör vald"
-
-msgid "No settings files to download on fallback tuner"
-msgstr ""
 
 #
 msgid "No standby"
@@ -13197,6 +13215,9 @@ msgstr "Resultatet har skrivits till %s"
 
 msgid "The saved PIN was cleared."
 msgstr "Den sparade PIN-koden har tagits bort."
+
+msgid "The selected langugage is unavailable - using en_EN"
+msgstr ""
 
 #
 msgid "The sleep timer has been activated."

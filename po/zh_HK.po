@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 09:13+0330\n"
+"POT-Creation-Date: 2019-10-23 17:08+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -2019,6 +2019,10 @@ msgid "Automatic Scan"
 msgstr "自動掃描"
 
 #, fuzzy
+msgid "Automatic bookmarks"
+msgstr "自動掃描"
+
+#, fuzzy
 msgid "Automatic refresh"
 msgstr "自動"
 
@@ -3360,9 +3364,6 @@ msgstr ""
 msgid "Could not load medium! No disc inserted?"
 msgstr ""
 
-msgid "Could not locate epg file on fallback tuner"
-msgstr ""
-
 msgid "Could not open Picture in Picture"
 msgstr "不能打開畫中畫."
 
@@ -4367,6 +4368,10 @@ msgstr ""
 msgid "ERROR - failed to scan (%s)!"
 msgstr "錯誤 - 掃描 (%s)失敗!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 msgid "East"
 msgstr "東方"
 
@@ -4695,6 +4700,10 @@ msgstr ""
 msgid "Error"
 msgstr "錯誤"
 
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "錯誤"
+
 msgid "Error code"
 msgstr ""
 
@@ -4724,10 +4733,19 @@ msgstr "執行插件發生錯誤"
 msgid "Error stop stream!"
 msgstr "連續的流"
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #, python-format
@@ -5805,6 +5823,9 @@ msgstr "冰島"
 msgid "Icons"
 msgstr ""
 
+msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
+msgstr ""
+
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr ""
 
@@ -6033,9 +6054,6 @@ msgstr ""
 
 msgid "Install extensions"
 msgstr ""
-
-msgid "Install extensions."
-msgstr "安裝附件."
 
 msgid "Install local extension"
 msgstr "安裝本地附件"
@@ -7295,6 +7313,9 @@ msgstr "無可用的描述."
 msgid "No displayable files on this medium found!"
 msgstr "在這個媒介上未發現檔!"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 msgid "No event info found, recording indefinitely."
 msgstr "EPG資料沒有發現,無限制錄製."
 
@@ -7336,9 +7357,6 @@ msgid "No service"
 msgstr ""
 
 msgid "No services/providers selected"
-msgstr ""
-
-msgid "No settings files to download on fallback tuner"
 msgstr ""
 
 msgid "No standby"
@@ -11627,6 +11645,9 @@ msgid "The results have been written to %s"
 msgstr ""
 
 msgid "The saved PIN was cleared."
+msgstr ""
+
+msgid "The selected langugage is unavailable - using en_EN"
 msgstr ""
 
 msgid "The sleep timer has been activated."

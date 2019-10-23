@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 09:13+0330\n"
+"POT-Creation-Date: 2019-10-23 17:08+0330\n"
 "PO-Revision-Date: 2019-10-07 09:58+0200\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -2122,6 +2122,10 @@ msgid "Automatic Scan"
 msgstr "Automatska pretraga"
 
 #, fuzzy
+msgid "Automatic bookmarks"
+msgstr "ažurirati oznake"
+
+#, fuzzy
 msgid "Automatic refresh"
 msgstr "Automatska pretraga"
 
@@ -3479,10 +3483,6 @@ msgstr "Nije moguće pronaći odgovarajući medij. Uklonite neke preuzete image 
 msgid "Could not load medium! No disc inserted?"
 msgstr "Nije moguće učitati medij! Dali je umetnut disk?"
 
-#, fuzzy
-msgid "Could not locate epg file on fallback tuner"
-msgstr "Omogućite uvoz tajmera iz zamjenskog tjunera"
-
 msgid "Could not open Picture in Picture"
 msgstr "Nije moguće otvoriti sliku u slici"
 
@@ -4491,6 +4491,10 @@ msgstr "EPG postavke"
 msgid "ERROR - failed to scan (%s)!"
 msgstr "POGREŠKA - nije uspjelo skeniranje (%s)!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 msgid "East"
 msgstr "Istok"
 
@@ -4821,6 +4825,10 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Greška"
 
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "Greška"
+
 msgid "Error code"
 msgstr "Greška koda"
 
@@ -4856,10 +4864,25 @@ msgstr "Pogreška pri pokretanju dodatka"
 msgid "Error stop stream!"
 msgstr "Pogreška pri zaustavljanju web prijenosa!"
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+#, fuzzy
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+"Pogreška pri dohvaćanju informacija tajmera sigurnosne kopije\n"
+"%s"
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+"Pogreška pri dohvaćanju informacija tajmera sigurnosne kopije\n"
+"%s"
+
+#, fuzzy
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 "Pogreška pri dohvaćanju informacija tajmera sigurnosne kopije\n"
 "%s"
@@ -5952,6 +5975,9 @@ msgstr "Island"
 msgid "Icons"
 msgstr "Ikone"
 
+msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
+msgstr ""
+
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr "Ako je omogućeno, zaslon prikazuje 12 znakova umjesto 8, ali samo za latin-1 ili transliteraciju."
 
@@ -6188,9 +6214,6 @@ msgstr "Instaliranje popisa kanala"
 
 msgid "Install extensions"
 msgstr "Instaliranje proširenja"
-
-msgid "Install extensions."
-msgstr "Instaliranje proširenja."
 
 msgid "Install local extension"
 msgstr "Instaliranje lokalnih proširenja"
@@ -7450,6 +7473,9 @@ msgstr "Opis nije dostupan."
 msgid "No displayable files on this medium found!"
 msgstr "Nema pronađenih datoteka na ovom mediju!"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 msgid "No event info found, recording indefinitely."
 msgstr "Nije pronađen nijedan podatak o događaju, snimanje na neodređeno vrijeme."
 
@@ -7491,9 +7517,6 @@ msgstr "Nema usluge"
 
 msgid "No services/providers selected"
 msgstr "Nisu odabrane usluge/pružatelji usluga"
-
-msgid "No settings files to download on fallback tuner"
-msgstr ""
 
 msgid "No standby"
 msgstr "Nema stanja mirovanja"
@@ -11805,6 +11828,9 @@ msgstr "Rezultati su zapisani u %s"
 
 msgid "The saved PIN was cleared."
 msgstr "Spremljeni PIN je izbrisan."
+
+msgid "The selected langugage is unavailable - using en_EN"
+msgstr ""
 
 msgid "The sleep timer has been activated."
 msgstr "Aktiviran je tajmer za isključivanje."

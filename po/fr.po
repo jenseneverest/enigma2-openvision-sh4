@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 09:13+0330\n"
+"POT-Creation-Date: 2019-10-23 17:08+0330\n"
 "PO-Revision-Date: 2019-09-29 09:29+0200\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
@@ -2114,6 +2114,10 @@ msgid "Automatic Scan"
 msgstr "Recherche automatique"
 
 #, fuzzy
+msgid "Automatic bookmarks"
+msgstr "mettre à jour les signets"
+
+#, fuzzy
 msgid "Automatic refresh"
 msgstr "Recherche automatique"
 
@@ -3471,10 +3475,6 @@ msgstr "Impossible de trouver un média qui convient - Veuillez effacer certaine
 msgid "Could not load medium! No disc inserted?"
 msgstr "Impossible de charger le support! Aucun disque inséré?"
 
-#, fuzzy
-msgid "Could not locate epg file on fallback tuner"
-msgstr "Importer les programmations du récepteur distant de repli"
-
 msgid "Could not open Picture in Picture"
 msgstr "Impossible d’ouvrir l’incrustation d’image (PiP)"
 
@@ -4478,6 +4478,10 @@ msgstr "Paramètres EPG"
 msgid "ERROR - failed to scan (%s)!"
 msgstr "ERREUR - échec lors de la recherche (%s)!"
 
+#, python-format
+msgid "ERROR downloading file %s"
+msgstr ""
+
 msgid "East"
 msgstr "Est"
 
@@ -4808,6 +4812,10 @@ msgstr "Eritrée"
 msgid "Error"
 msgstr "Erreur"
 
+#, fuzzy, python-format
+msgid "Error %s"
+msgstr "Erreur"
+
 msgid "Error code"
 msgstr "Code d'erreur"
 
@@ -4843,10 +4851,25 @@ msgstr "Erreur d'exécution de l'extension"
 msgid "Error stop stream!"
 msgstr "Erreur arrêt du stream (diffusion)!"
 
+msgid "Error when writing epg.dat on server"
+msgstr ""
+
+#, fuzzy
+msgid "Error while retreiving epg.dat from server"
+msgstr ""
+"Erreur lors de la récupération des informations de programmation de repli\n"
+"%s"
+
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
+msgstr ""
+"Erreur lors de la récupération des informations de programmation de repli\n"
+"%s"
+
+#, fuzzy
+msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 "Erreur lors de la récupération des informations de programmation de repli\n"
 "%s"
@@ -5941,6 +5964,9 @@ msgstr "Islande"
 msgid "Icons"
 msgstr "Icônes"
 
+msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
+msgstr ""
+
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr "Si activé, l’affichage montre 12 caractères à la place de 8, mais en latin-1/translit uniquement."
 
@@ -6175,9 +6201,6 @@ msgstr "Installer la liste des chaînes"
 
 msgid "Install extensions"
 msgstr "Installer des extensions"
-
-msgid "Install extensions."
-msgstr "Installer des extensions."
 
 msgid "Install local extension"
 msgstr "Installer extension locale"
@@ -7435,6 +7458,9 @@ msgstr "Description non disponible."
 msgid "No displayable files on this medium found!"
 msgstr "Aucun fichier affichable trouvé sur ce support!"
 
+msgid "No epg.dat file found server"
+msgstr ""
+
 msgid "No event info found, recording indefinitely."
 msgstr "Aucune information sur l’événement trouvée, enregistrement indéfini."
 
@@ -7476,9 +7502,6 @@ msgstr "Pas de service"
 
 msgid "No services/providers selected"
 msgstr "Aucun services/opérateurs sélectionnés"
-
-msgid "No settings files to download on fallback tuner"
-msgstr ""
 
 msgid "No standby"
 msgstr "Pas de veille"
@@ -11798,6 +11821,9 @@ msgstr "Les résultats ont été écrit sur %s."
 
 msgid "The saved PIN was cleared."
 msgstr "Le code PIN sauvegardé a été effacé."
+
+msgid "The selected langugage is unavailable - using en_EN"
+msgstr ""
 
 msgid "The sleep timer has been activated."
 msgstr "La veille programmée a été activée."

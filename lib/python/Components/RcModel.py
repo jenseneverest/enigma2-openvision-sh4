@@ -7,7 +7,7 @@ class RcModel:
 
 	def __init__(self):
 		self.model = getBoxType()
-		# cfg files has modelname  rcname entries.
+		# cfg files has modelname rcname entries.
 		# modelname is boxname optionally followed by .rctype
 		for line in open((resolveFilename(SCOPE_SKIN, 'rc_models/rc_models.cfg')), 'r'):
 			if line.startswith(self.model):
@@ -15,19 +15,10 @@ class RcModel:
 				self.RcModels[m] = r
 
 	def getRcFile(self, ext):
-		# check for rc/type every time so rctype changes will be noticed
-		if os.path.exists('/proc/stb/ir/rc/type'):
-			rc = open('/proc/stb/ir/rc/type').read().strip()
-			modeltype = '%s.%s' % (self.model, rc)
-		else:
-			modeltype = None
-
-		if modeltype is not None and modeltype in self.RcModels.keys():
-			remote = self.RcModels[modeltype]
-		elif self.model in self.RcModels.keys():
+		if self.model in self.RcModels.keys():
 			remote = self.RcModels[self.model]
 		else:
-			remote = 'spark'
+			remote = "spark"
 		f = resolveFilename(SCOPE_SKIN, 'rc_models/' + remote + '.' + ext)
 		if not os.path.exists(f):
 			f = resolveFilename(SCOPE_SKIN, 'rc_models/spark.' + ext)

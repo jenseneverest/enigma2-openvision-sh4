@@ -1137,7 +1137,7 @@ def InitUsageConfig():
 		("fin", _("Finnish")),
 		("fra fre", _("French")),
 		("deu ger", _("German")),
-		("ell gre", _("Greek")),
+		("ell gre grc", _("Greek")),
 		("heb", _("Hebrew")),
 		("hun", _("Hungarian")),
 		("ind", _("Indonesian")),

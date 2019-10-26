@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-23 17:08+0330\n"
+"POT-Creation-Date: 2019-10-26 19:02+0330\n"
 "PO-Revision-Date: 2019-07-25 17:52+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -41,7 +41,6 @@ msgstr ""
 "\n"
 "Обнаружение конфликтов отключено!"
 
-#, fuzzy
 msgid ""
 "\n"
 "Edit the update source address."
@@ -1505,8 +1504,9 @@ msgstr "Конец активации таймшифта"
 msgid "Activate timeshift end and pause"
 msgstr "Конец активации таймшифта и пауза"
 
+#, fuzzy
 msgid "Active"
-msgstr ""
+msgstr "активно"
 
 #, python-format
 msgid "Active Keymap: %s"
@@ -1892,7 +1892,9 @@ msgstr ""
 
 #, fuzzy
 msgid "Are you sure you want to delete the EPG data from:\n"
-msgstr "Вы уверены, что хотите выйти из этого мастера настройки?"
+msgstr ""
+"Вы уверены, что хотите удалить\n"
+"этот бэкап:\n"
 
 #, fuzzy
 msgid ""
@@ -2121,9 +2123,8 @@ msgstr "Автоматически"
 msgid "Automatic Scan"
 msgstr "Автоматическое сканирование"
 
-#, fuzzy
 msgid "Automatic bookmarks"
-msgstr "обновить закладки"
+msgstr "Автоматически создавать закладки"
 
 #, fuzzy
 msgid "Automatic refresh"
@@ -2318,7 +2319,7 @@ msgstr "Яркость"
 
 #, fuzzy
 msgid "Blue long"
-msgstr "Очистить лог"
+msgstr "Синяя"
 
 msgid "Bolivia (Plurinational State of)"
 msgstr "Bolivia (Plurinational State of)"
@@ -2804,7 +2805,7 @@ msgstr "Выбор букета"
 
 #, fuzzy
 msgid "Choose style of main menus"
-msgstr "Показать 'Видеомагнитофон' в главном меню"
+msgstr "Показать медиаплеер в главном меню"
 
 msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
 msgstr ""
@@ -3511,9 +3512,8 @@ msgstr "скрыть мигающую строку для этого серви�
 msgid "Create DVD-ISO"
 msgstr "Создать DVD-ISO"
 
-#, fuzzy
 msgid "Create directory"
-msgstr "создать директорию"
+msgstr "Создать директорию"
 
 msgid "Create new folder and exit"
 msgstr "Создать новую папку и выйти"
@@ -4067,16 +4067,15 @@ msgstr "Обнаружены NIMs (тюнера):"
 msgid "Device"
 msgstr "Сервис"
 
-#, fuzzy
 msgid "Device mounts"
-msgstr "Сервис"
+msgstr ""
 
 msgid "Devicename:"
 msgstr "Имя устройства:"
 
 #, fuzzy
 msgid "Devices"
-msgstr "Сервис"
+msgstr "Сервисы"
 
 msgid "DiSEqC"
 msgstr "DiSEqC"
@@ -4344,7 +4343,6 @@ msgstr "Вы хотите продолжить это воспроизведен
 msgid "Do you want to select a different skin?"
 msgstr "Вы действительно хотите выбрать другой скин?"
 
-#, fuzzy
 msgid "Do you want to update the package:\n"
 msgstr "Вы хотите обновить пакеты:\n"
 
@@ -4393,7 +4391,7 @@ msgstr "Не переключать и удалить таймер"
 msgid "Done"
 msgstr "Готово"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Done - Installed, updated or removed %d package (%s)"
 msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Выполнено - Установлен, обновлен или удален %d пакет (%s)"
@@ -4489,7 +4487,7 @@ msgstr "ОШИБКА - сканирование не удалось (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr ""
+msgstr "Ошибка загрузки файла %s"
 
 msgid "East"
 msgstr "Восток"
@@ -4530,7 +4528,6 @@ msgstr "Редактировать таймер"
 msgid "Edit title"
 msgstr "Редактировать название"
 
-#, fuzzy
 msgid "Edit update source url."
 msgstr "Редактировать URL-адрес источника обновления"
 
@@ -4821,9 +4818,9 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Ошибка"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Error %s"
-msgstr "Ошибка"
+msgstr "Ошибка %s"
 
 msgid "Error code"
 msgstr "Код ошибки"
@@ -4861,13 +4858,10 @@ msgid "Error stop stream!"
 msgstr "Ошибка при остановке стрима!"
 
 msgid "Error when writing epg.dat on server"
-msgstr ""
+msgstr "Ошибка при записи epg.dat на сервере"
 
-#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr ""
-"Ошибка получения информации о резервных таймерах\n"
-"%s"
+msgstr "Ошибка при получении epg.dat с сервера"
 
 #, python-format
 msgid ""
@@ -4877,11 +4871,8 @@ msgstr ""
 "Ошибка получения информации о резервных таймерах\n"
 "%s"
 
-#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
-msgstr ""
-"Ошибка получения информации о резервных таймерах\n"
-"%s"
+msgstr "Ошибка получения расположения файла epg.dat с сервера"
 
 #, python-format
 msgid ""
@@ -5617,9 +5608,6 @@ msgstr "Greece"
 msgid "Greek"
 msgstr "Греческий"
 
-msgid "Greek (Modern)"
-msgstr "Greek (Modern)"
-
 msgid "Green"
 msgstr "Зеленая"
 
@@ -5945,9 +5933,8 @@ msgstr "IP-адрес"
 msgid "IP of fallback remote receiver"
 msgstr "IP запасного удаленного ресивера"
 
-#, fuzzy
 msgid "IP:"
-msgstr "I"
+msgstr ""
 
 msgid "IPv6"
 msgstr ""
@@ -5973,7 +5960,7 @@ msgid "Icons"
 msgstr "Иконка"
 
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
-msgstr ""
+msgstr "Если включено, закладки будут обновляться в соответствии с новым местоположением при перемещении или копировании записи."
 
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr "Если включено, на дисплее отображается 12 символов вместо 8, но только для кодировки latin-1 или транслита."
@@ -6509,7 +6496,6 @@ msgstr "Последнии настройки"
 msgid "Last speed"
 msgstr "Последняя скорость"
 
-#, fuzzy
 msgid "Last update: "
 msgstr "Последнее обновление: "
 
@@ -6520,7 +6506,6 @@ msgstr ""
 msgid "Latest Commits"
 msgstr "Последние изменения"
 
-#, fuzzy
 msgid "Latest update log"
 msgstr "Показать последний лог обновления"
 
@@ -7471,7 +7456,7 @@ msgid "No displayable files on this medium found!"
 msgstr "Нет отображаемых файлов на этом носителе!"
 
 msgid "No epg.dat file found server"
-msgstr ""
+msgstr "Не найден сервер с epg.dat"
 
 msgid "No event info found, recording indefinitely."
 msgstr "Информация о событии не найдена, запись на неопределенное время."
@@ -7827,9 +7812,8 @@ msgstr "Только при старте"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Выберите 'да', тоьлко если вы используете мультисвич, для которого требуется командный сигнал DiSEqC Port-A. Для всех других установок выберите 'нет'."
 
-#, fuzzy
 msgid "Open Vision enigma2 image"
-msgstr "Версия пайтон: "
+msgstr ""
 
 msgid "Open Vision module: "
 msgstr ""
@@ -7901,7 +7885,6 @@ msgstr "Общий прогресс:"
 msgid "Overscan wizard"
 msgstr "Мастер настройки переразвертки"
 
-#, fuzzy
 msgid "Overwrite configuration files during software update?"
 msgstr "Переписывать файлы конфигурации во время обновления ПО?"
 
@@ -8865,11 +8848,9 @@ msgstr "Действительно выполнить выключение се�
 msgid "Really store at index %2d for current position?"
 msgstr "Действительно сохранить номер %2d для текущей позиции?"
 
-#, fuzzy
 msgid "Really update the frontprocessor and reboot now?"
 msgstr "Обновить фронтпроцессор и выполнить перезагрузку сейчас?"
 
-#, fuzzy
 msgid "Really update your settop box and reboot now?"
 msgstr "Действительно обновить Ваш ресивер и выполнить перезагрузку сейчас?"
 
@@ -9035,9 +9016,8 @@ msgstr "Удаление завершенных таймеров через (в 
 msgid "Remove currently selected title"
 msgstr "Удалить выбранный заголовок"
 
-#, fuzzy
 msgid "Remove directory"
-msgstr "удалить директорию"
+msgstr "Удалить директорию"
 
 msgid "Remove items from trash can after (days)"
 msgstr "Удалять файлы из корзины через (в днях)"
@@ -9088,9 +9068,8 @@ msgstr "Тип повтора"
 msgid "Repeat leave standby messages"
 msgstr "Повтор команд выхода из режима ожидания"
 
-#, fuzzy
 msgid "Repeat playlist"
-msgstr "повторить плейлист"
+msgstr "Повторить плейлист"
 
 msgid "Repeat type"
 msgstr "Тип повтора"
@@ -9499,20 +9478,17 @@ msgstr "Сохранить и остановить таймшифт"
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
-#, fuzzy
 msgid "Save every (in hours)"
-msgstr "Везде"
+msgstr ""
 
-#, fuzzy
 msgid "Save last directory on exit"
-msgstr "сохранить последний каталог при выходе"
+msgstr "Сохранить последний каталог при выходе"
 
 msgid "Save playlist"
 msgstr "Сохранить плейлист"
 
-#, fuzzy
 msgid "Save playlist on exit"
-msgstr "сохранить плейлист при выходе"
+msgstr "Сохранить плейлист при выходе"
 
 msgid "Save settings and EPG data"
 msgstr "Сохранить настройки и данные EPG"
@@ -9983,11 +9959,9 @@ msgstr "Выберите набор символов с виртуальной �
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr "Выберите набор символов со сдвигом виртуальной клавиатуры только для следующего символа"
 
-#, fuzzy
 msgid "Select update source"
 msgstr "Выбор источника обновления"
 
-#, fuzzy
 msgid "Select update source to edit."
 msgstr "Выбор источника обновления для редактирования."
 
@@ -10509,7 +10483,6 @@ msgstr "Показать инфобар при перемотке вперед/�
 msgid "Show latest commits"
 msgstr "Показать последние изменения на гите"
 
-#, fuzzy
 msgid "Show latest update log"
 msgstr "Показать последний лог обновления"
 
@@ -10521,9 +10494,8 @@ msgstr "Поведение при остановке видео"
 msgid "Show log"
 msgstr "Показать помощь"
 
-#, fuzzy
 msgid "Show media player on main menu"
-msgstr "показать медиаплеер в главном меню"
+msgstr "Показать медиаплеер в главном меню"
 
 msgid "Show menu or plugin numbers"
 msgstr "Показать номера меню или плагинов"
@@ -10583,7 +10555,6 @@ msgstr "Показать пиконы на дисплее"
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "показать расширенное описание"
 
-#, fuzzy
 msgid "Show packages to be updated"
 msgstr "Показать пакеты, которые будут обновлены"
 
@@ -10660,8 +10631,9 @@ msgstr "Показать радио плеер..."
 msgid "Show the tv player..."
 msgstr "Показать тв плеер..."
 
+#, fuzzy
 msgid "Show this plugin in plugin menu"
-msgstr ""
+msgstr "Показать медиаплеер в главном меню"
 
 msgid "Show time elapsed as positive"
 msgstr ""
@@ -10961,9 +10933,8 @@ msgstr "Сортировать список плагинов по умолчан
 msgid "Sort time"
 msgstr "По времени"
 
-#, fuzzy
 msgid "Sorting of playlists"
-msgstr "сортировка плейлистов"
+msgstr "Сортировка плейлистов"
 
 msgid "Sound"
 msgstr "Звук"
@@ -11132,9 +11103,8 @@ msgstr "Все частоты"
 msgid "Start cut"
 msgstr "Начать тест"
 
-#, fuzzy
 msgid "Start directory"
-msgstr "начальный каталог"
+msgstr "Начальный каталог"
 
 msgid "Start from the beginning"
 msgstr "Начать с самого начала"
@@ -11449,9 +11419,8 @@ msgstr "Сменить канал вверх"
 msgid "Switch to TV mode"
 msgstr "Перейти к режиму ТВ"
 
-#, fuzzy
 msgid "Switch to bookmarks"
-msgstr "перейти на закладки"
+msgstr "Перейти на закладки"
 
 msgid "Switch to filelist"
 msgstr "переключить на список файлов"
@@ -12583,7 +12552,6 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr "Невозможно создать необходимые каталоги на носителе (например, USB-накопитель или жесткий диск). Пожалуйста, проверьте носитель и попробуйте снова!"
 
-#, fuzzy
 msgid ""
 "Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
@@ -12688,9 +12656,8 @@ msgstr "Обновить и перезагрузить"
 msgid "Update and reboot (recommended)"
 msgstr "Обновить и перезагрузить (рекомендуется)"
 
-#, fuzzy
 msgid "Update bookmarks"
-msgstr "обновить закладки"
+msgstr "Обновить закладки"
 
 msgid "Update channel list only"
 msgstr "Обновить только список каналов"
@@ -12718,7 +12685,6 @@ msgstr "Интервал слайдшоу (сек.)"
 msgid "Updatefeed not available."
 msgstr "Обновления с фида не доступны."
 
-#, fuzzy
 msgid "Updating"
 msgstr "Обновление"
 
@@ -12818,7 +12784,7 @@ msgstr "Использовать измерение питания"
 
 #, fuzzy
 msgid "Use slim screen"
-msgstr "Полный экран"
+msgstr "выключить окно помощи"
 
 #, fuzzy
 msgid "Use the alternative screen"
@@ -13283,7 +13249,6 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr "Какой тип сканирования Вы хотите выбрать?"
 
-#, fuzzy
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Если это включено, то при старте энигма2 будут загружены доступные букеты, которые не включены в списки bouquets.tv или bouquets.radio."
 
@@ -13744,7 +13709,6 @@ msgstr "Ваша коллекция превышает размер односл
 msgid "Your current collection will get lost!"
 msgstr "Ваша текущая коллекция будет утеряна!"
 
-#, fuzzy
 msgid ""
 "Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
@@ -13940,9 +13904,8 @@ msgstr "стартует"
 msgid "activate network adapter configuration"
 msgstr "активировать конфигурацию сетевого адаптера"
 
-#, fuzzy
 msgid "active"
-msgstr "относительная"
+msgstr "активно"
 
 msgid "actual time only"
 msgstr "только фактическое время"
@@ -13990,9 +13953,8 @@ msgstr "через "
 msgid "all"
 msgstr "все"
 
-#, fuzzy
 msgid "alpha then oldest"
-msgstr "по обратному алфавиту"
+msgstr ""
 
 msgid "alphabetic"
 msgstr "сортировать по алфавиту"
@@ -14003,9 +13965,8 @@ msgstr "по обратному алфавиту"
 msgid "alphabetical"
 msgstr "по алфавиту"
 
-#, fuzzy
 msgid "alpharev then newest"
-msgstr "по обратному алфавиту"
+msgstr ""
 
 msgid "alternative"
 msgstr "альтернативный"
@@ -14101,9 +14062,8 @@ msgstr "снизу"
 msgid "broadcasting/press"
 msgstr "вещание/пресса"
 
-#, fuzzy
 msgid "by Open Vision developers"
-msgstr "Версия пайтон: "
+msgstr ""
 
 msgid "by date"
 msgstr "по дате"
@@ -14873,7 +14833,7 @@ msgstr ""
 
 #, fuzzy
 msgid "reboot system"
-msgstr "Система"
+msgstr "Создание файловой системы"
 
 msgid "receiver software because updates are available."
 msgstr "доступно обновление для вашего ресивера."
@@ -14898,7 +14858,7 @@ msgstr "удалить после этой позиции"
 
 #, fuzzy
 msgid "remove all"
-msgstr "удалить закладку"
+msgstr "удалить выбранное"
 
 msgid "remove all alternatives"
 msgstr "удалить все альтернативы"
@@ -14985,7 +14945,7 @@ msgstr "романс"
 
 #, fuzzy
 msgid "running..."
-msgstr "Сканирование..."
+msgstr "запущено"
 
 msgid "save"
 msgstr ""
@@ -15001,7 +14961,7 @@ msgstr "секунд"
 
 #, fuzzy
 msgid "select "
-msgstr "выбрать"
+msgstr "Не выбирать"
 
 msgid "select CAId's"
 msgstr "выбрать CAId's"

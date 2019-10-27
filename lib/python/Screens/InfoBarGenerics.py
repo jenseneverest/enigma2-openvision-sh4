@@ -307,7 +307,7 @@ class InfoBarShowHide(InfoBarScreenSaver):
 			self.actualSecondInfoBarScreen.hide()
 		for x in self.onShowHideNotifiers:
 			x(False)
-	
+
 	def resetAlpha(self):
 		if config.usage.show_infobar_do_dimming.value and self.lastResetAlpha is False:
 			self.unDimmingTimer.start(300, True)
@@ -389,15 +389,12 @@ class InfoBarShowHide(InfoBarScreenSaver):
 
 	def doShow(self):
 		self.show()
-		self.hideTimer.stop()
-		self.DimmingTimer.stop()
-		self.doWriteAlpha(config.av.osd_alpha.value)
 		self.startHideTimer()
 
 	def doTimerHide(self):
 		self.hideTimer.stop()
-		self.DimmingTimer.start(70, True)
-		self.dimmed = config.usage.show_infobar_dimming_speed.value
+		if self.__state == self.STATE_SHOWN:
+			self.hide()
 
 	def doHide(self):
 		if self.__state != self.STATE_HIDDEN:

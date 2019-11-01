@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-26 19:02+0330\n"
+"POT-Creation-Date: 2019-11-01 18:37+0330\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -42,6 +42,7 @@ msgid ""
 "Conflict detection disabled!"
 msgstr ""
 
+#
 msgid ""
 "\n"
 "Edit the update source address."
@@ -1868,10 +1869,8 @@ msgstr ""
 msgid "Always off"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Always select OK"
-msgstr "kies"
+msgstr ""
 
 msgid "American Samoa"
 msgstr ""
@@ -1918,22 +1917,18 @@ msgstr "Arabysk"
 #
 #, fuzzy, python-format
 msgid "Are you ready to install \"%s\" ?"
-msgstr "Oan it ynstallearjen"
+msgstr "Wolle jo no nei kanalen sykje ?"
 
 #
 #, fuzzy, python-format
 msgid "Are you ready to remove \"%s\" ?"
-msgstr "Werom nei de film lyst"
+msgstr "Wolle jo wier de plugin \"%s\" binnenhelje ?"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Are you sure to reboot to"
 msgstr ""
-"witte jo seker dizze werom te setten\n"
-"de extra kopie:\n"
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -2182,7 +2177,7 @@ msgstr "Auto"
 #
 #, fuzzy
 msgid "Auto Detect"
-msgstr "op it punt om te starten"
+msgstr "Automatysk"
 
 msgid "Auto Diseqc"
 msgstr ""
@@ -2475,10 +2470,8 @@ msgstr ""
 msgid "Blue LED brightness"
 msgstr "Helderens"
 
-#
-#, fuzzy
 msgid "Blue long"
-msgstr "Log wiskje"
+msgstr ""
 
 msgid "Bolivia (Plurinational State of)"
 msgstr ""
@@ -2880,7 +2873,7 @@ msgstr "Kanaal-lyst menu"
 #
 #, fuzzy
 msgid "Channelname"
-msgstr "%d services fûn"
+msgstr "Kanaal"
 
 msgid "Channelname in Standby Clock"
 msgstr ""
@@ -2915,11 +2908,6 @@ msgstr "Kanaal"
 #, fuzzy
 msgid "Channels and EPG"
 msgstr "Kanaal-lyst menu"
-
-#
-#, fuzzy
-msgid "Channels only"
-msgstr "Kanaal"
 
 #
 msgid "Chap."
@@ -3223,9 +3211,6 @@ msgid "Config"
 msgstr "Oan it ynstellen"
 
 msgid "Config Scan Details"
-msgstr ""
-
-msgid "Config file name (ok to change):"
 msgstr ""
 
 msgid "Config resolution of pictures"
@@ -3784,9 +3769,8 @@ msgid "Create DVD-ISO"
 msgstr "Meitsje DVD-ISO"
 
 #
-#, fuzzy
 msgid "Create directory"
-msgstr "map meitsje"
+msgstr "Map meitsje"
 
 msgid "Create new folder and exit"
 msgstr ""
@@ -4417,10 +4401,8 @@ msgstr "Fûne Tuners:"
 msgid "Device"
 msgstr "Kanaal ynfo"
 
-#
-#, fuzzy
 msgid "Device mounts"
-msgstr "Kanaal ynfo"
+msgstr ""
 
 msgid "Devicename:"
 msgstr ""
@@ -4428,7 +4410,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Devices"
-msgstr "Kanaal ynfo"
+msgstr "Kanalen"
 
 #
 msgid "DiSEqC"
@@ -4747,9 +4729,8 @@ msgid "Do you want to select a different skin?"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Do you want to update the package:\n"
-msgstr "Wolle jo dit opnimmen fjierder ôfspielje ?"
+msgstr ""
 
 #
 #, fuzzy, python-format
@@ -4895,9 +4876,6 @@ msgstr ""
 msgid "EPG location"
 msgstr "EPG Seleksje"
 
-msgid "EPG only"
-msgstr ""
-
 #
 #, fuzzy
 msgid "EPG selection"
@@ -4966,6 +4944,7 @@ msgstr ""
 msgid "Edit title"
 msgstr "Bewukje titel"
 
+#
 msgid "Edit update source url."
 msgstr ""
 
@@ -5105,10 +5084,8 @@ msgstr ""
 msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
 msgstr ""
 
-#
-#, fuzzy
 msgid "Enable twisted log"
-msgstr "ferpleatsen mode oan"
+msgstr ""
 
 msgid "Enable volume control with arrow buttons"
 msgstr ""
@@ -6232,7 +6209,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "HDMI recording"
-msgstr "An it opnimmen"
+msgstr "dit opnimmen"
 
 msgid "HDMI-CEC Source Active"
 msgstr ""
@@ -6610,10 +6587,10 @@ msgstr ""
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr ""
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
+msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr ""
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
+msgid "Import channels from remote receiver URL when receiver is booted"
 msgstr ""
 
 #, python-format
@@ -6790,9 +6767,6 @@ msgstr "Ynfier"
 msgid "Input Stream ID"
 msgstr ""
 
-msgid "Input config file name:"
-msgstr ""
-
 msgid "Input device setup"
 msgstr ""
 
@@ -6859,7 +6833,7 @@ msgstr "In direct opnimmen..."
 #
 #, fuzzy
 msgid "Interface"
-msgstr "Common Interface"
+msgstr "Brûk ynterface"
 
 #
 msgid "Interface: "
@@ -7161,10 +7135,8 @@ msgstr ""
 msgid "Last speed"
 msgstr "Lêste faasje"
 
-#
-#, fuzzy
 msgid "Last update: "
-msgstr "Kies fideo moadus"
+msgstr ""
 
 msgctxt "third event: 'third' event label"
 msgid "Later"
@@ -7410,12 +7382,12 @@ msgstr "IP Adres"
 #
 #, fuzzy
 msgid "MAC address settings"
-msgstr "Wyzigje ynstellingen"
+msgstr "Adapter ynstellingen"
 
 #
 #, fuzzy
 msgid "MAC address setup"
-msgstr "Wyzigje ynstellingen"
+msgstr "Hurde skiif ynstellingen"
 
 msgid "MAC:"
 msgstr ""
@@ -8004,30 +7976,22 @@ msgstr ""
 msgid "N/A"
 msgstr "Net oanwêzig"
 
-#
-#, fuzzy
 msgid "NCam Config info"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
-#
-#, fuzzy
 msgid "NCam ECM info"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
 #
 #, fuzzy
 msgid "NCam Info - Configuration"
 msgstr "Tuner ynstellingen"
 
-#
-#, fuzzy
 msgid "NCam Info - Main Menu"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
-#
-#, fuzzy
 msgid "NCam Info Main Menu"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
 #, python-format
 msgid "NCam Log ( NCam-Version: %s )"
@@ -8260,6 +8224,9 @@ msgid "No active subservices available."
 msgstr ""
 
 msgid "No age block"
+msgstr ""
+
+msgid "No config to start, please check /etc/openvpn/ and try again."
 msgstr ""
 
 #
@@ -8605,15 +8572,11 @@ msgstr "OSD-ynstellingen"
 msgid "OSD transparency"
 msgstr ""
 
-#
-#, fuzzy
 msgid "OScam Config info"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
-#
-#, fuzzy
 msgid "OScam ECM info"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
 msgid "OScam Info"
 msgstr ""
@@ -8623,15 +8586,11 @@ msgstr ""
 msgid "OScam Info - Configuration"
 msgstr "Tuner ynstellingen"
 
-#
-#, fuzzy
 msgid "OScam Info - Main Menu"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
-#
-#, fuzzy
 msgid "OScam Info Main Menu"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
 #, python-format
 msgid "OScam Log ( OScam-Version: %s )"
@@ -8705,15 +8664,11 @@ msgstr ""
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
-#
-#, fuzzy
 msgid "Open Vision enigma2 image"
-msgstr "Nije ferzje:"
+msgstr ""
 
-#
-#, fuzzy
 msgid "Open Vision module: "
-msgstr "Nije ferzje:"
+msgstr ""
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -8790,10 +8745,8 @@ msgstr ""
 msgid "Overscan wizard"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Overwrite configuration files during software update?"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
 #
 #, fuzzy
@@ -9825,10 +9778,8 @@ msgstr ""
 msgid "RC command set"
 msgstr "Kommando folgoarde"
 
-#
-#, fuzzy
 msgid "REC"
-msgstr "FEC"
+msgstr ""
 
 msgid "REC Symbol"
 msgstr ""
@@ -10059,10 +10010,8 @@ msgstr ""
 msgid "Reloading bouquets and services..."
 msgstr ""
 
-#
-#, fuzzy
 msgid "Remaining"
-msgstr "Start fanôf it begjin"
+msgstr ""
 
 msgid "Remaining & Elapsed"
 msgstr ""
@@ -10123,9 +10072,8 @@ msgid "Remove currently selected title"
 msgstr "Ferwiderje it selektearre bestan"
 
 #
-#, fuzzy
 msgid "Remove directory"
-msgstr "map ferwiderje"
+msgstr "Map ferwiderje"
 
 msgid "Remove items from trash can after (days)"
 msgstr ""
@@ -10137,7 +10085,7 @@ msgstr "Ferwiderje ynstekker"
 #
 #, fuzzy
 msgid "Remove service"
-msgstr "unbeneame kanaal"
+msgstr "Ferwiderje de titel"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
@@ -10187,7 +10135,6 @@ msgid "Repeat leave standby messages"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Repeat playlist"
 msgstr "ôfspyllyst opnei spylje"
 
@@ -10667,7 +10614,6 @@ msgid "Save every (in hours)"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Save last directory on exit"
 msgstr "Lêste map opslaan by ôfsluten"
 
@@ -10677,7 +10623,6 @@ msgid "Save playlist"
 msgstr "ofspiellyst opslaan"
 
 #
-#, fuzzy
 msgid "Save playlist on exit"
 msgstr "Ofspiellyst opslaan by ôfsluten"
 
@@ -11235,9 +11180,8 @@ msgid "Select update source"
 msgstr "Kies fideo moadus"
 
 #
-#, fuzzy
 msgid "Select update source to edit."
-msgstr "Kies fideo moadus"
+msgstr ""
 
 #
 msgid "Select video input with up/down buttons"
@@ -11688,7 +11632,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Show Main Menu as"
-msgstr "Tuner ynstellingen"
+msgstr "DVD haadmenu sjen litte"
 
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
@@ -11836,10 +11780,8 @@ msgstr "Ynfobalke sjen by rap foarút / efterút"
 msgid "Show latest commits"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Show latest update log"
-msgstr "Kies fideo moadus"
+msgstr ""
 
 #
 #, fuzzy
@@ -11913,10 +11855,8 @@ msgstr ""
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "útbreide beskriuwing sjen litte"
 
-#
-#, fuzzy
 msgid "Show packages to be updated"
-msgstr "Bywurkje pakketlyst  "
+msgstr ""
 
 msgid "Show picons in channel selection list"
 msgstr ""
@@ -12345,10 +12285,8 @@ msgstr ""
 msgid "Sort time"
 msgstr "Sorteer op Tiid"
 
-#
-#, fuzzy
 msgid "Sorting of playlists"
-msgstr "skeakelje nei ofspiellyst"
+msgstr ""
 
 #
 msgid "Sound"
@@ -12537,9 +12475,8 @@ msgid "Start cut"
 msgstr "Start test"
 
 #
-#, fuzzy
 msgid "Start directory"
-msgstr "start map"
+msgstr "Start map"
 
 #
 msgid "Start from the beginning"
@@ -12908,9 +12845,8 @@ msgid "Switch to TV mode"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Switch to bookmarks"
-msgstr "skeakelje nei boekmerkers"
+msgstr "Skeakelje nei boekmerkers"
 
 #
 #, fuzzy
@@ -13107,10 +13043,8 @@ msgstr ""
 msgid "Teletext base visibility"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Teletext font and resolution"
-msgstr "Selektearje in undersender..."
+msgstr ""
 
 msgid "Teletext subtitle color"
 msgstr ""
@@ -13948,7 +13882,7 @@ msgstr "Transponder"
 #
 #, fuzzy
 msgid "Transponder time"
-msgstr "transponder ynfo sjen litte"
+msgstr "Transponder"
 
 #
 #, fuzzy
@@ -14302,9 +14236,8 @@ msgid "Updatefeed not available."
 msgstr ""
 
 #
-#, fuzzy
 msgid "Updating"
-msgstr "Bywurkje"
+msgstr "An it bywurkjen"
 
 #
 msgid "Updating software catalog"
@@ -15279,10 +15212,8 @@ msgstr ""
 msgid "Yellow DVB subtitles"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Yellow long"
-msgstr "Ynformaasje sjen litte"
+msgstr ""
 
 msgid "Yemen"
 msgstr ""
@@ -15678,10 +15609,8 @@ msgstr ""
 msgid "all"
 msgstr ""
 
-#
-#, fuzzy
 msgid "alpha then oldest"
-msgstr "sortearje op alfabet"
+msgstr ""
 
 #
 #, fuzzy
@@ -15694,10 +15623,8 @@ msgstr ""
 msgid "alphabetical"
 msgstr ""
 
-#
-#, fuzzy
 msgid "alpharev then newest"
-msgstr "sortearje op alfabet"
+msgstr ""
 
 msgid "alternative"
 msgstr ""
@@ -15804,10 +15731,8 @@ msgstr ""
 msgid "broadcasting/press"
 msgstr ""
 
-#
-#, fuzzy
 msgid "by Open Vision developers"
-msgstr "Nije ferzje:"
+msgstr ""
 
 #
 #, fuzzy
@@ -15930,9 +15855,6 @@ msgstr "dei"
 #, fuzzy
 msgid "day and date"
 msgstr "sortearje op datum"
-
-msgid "default"
-msgstr ""
 
 #
 msgid "delete cut"
@@ -16667,7 +16589,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "reboot system"
-msgstr "Systeem"
+msgstr "Bestânsysteem neisjen"
 
 msgid "receiver software because updates are available."
 msgstr ""
@@ -16697,7 +16619,7 @@ msgstr "nei dizze posysje alles ferwiderje"
 #
 #, fuzzy
 msgid "remove all"
-msgstr "boekmerk ferwiderje"
+msgstr "ferwiderje yngong"
 
 #
 msgid "remove all alternatives"
@@ -16820,16 +16742,14 @@ msgstr "seconden"
 #
 #, fuzzy
 msgid "select "
-msgstr "kies"
+msgstr "Kies hurde skiif"
 
 #
 msgid "select CAId's"
 msgstr ""
 
-#
-#, fuzzy
 msgid "select Info..."
-msgstr "kies"
+msgstr ""
 
 #
 msgid "select menu entry"

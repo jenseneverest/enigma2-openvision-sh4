@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-26 19:02+0330\n"
+"POT-Creation-Date: 2019-11-01 18:37+0330\n"
 "PO-Revision-Date: 2013-10-20 19:13-0300\n"
 "Last-Translator: Diogo <pingflood@gmail.com>\n"
 "Language-Team: Traduzido por Frank Viana <franksrviana@gmail.com>\n"
@@ -43,7 +43,6 @@ msgid ""
 "Conflict detection disabled!"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "\n"
 "Edit the update source address."
@@ -958,9 +957,9 @@ msgstr ""
 msgid "%m/%d/%Y"
 msgstr ""
 
-#, python-format
+#, fuzzy, python-format
 msgid "%s"
-msgstr ""
+msgstr "bc%s"
 
 #, fuzzy, python-format
 msgid ""
@@ -1461,8 +1460,9 @@ msgstr ""
 msgid "Activate timeshift end and pause"
 msgstr ""
 
+#, fuzzy
 msgid "Active"
-msgstr ""
+msgstr "Relativo"
 
 #, python-format
 msgid "Active Keymap: %s"
@@ -1798,18 +1798,19 @@ msgstr "Árabe"
 
 #, fuzzy, python-format
 msgid "Are you ready to install \"%s\" ?"
-msgstr "Reverter instalação"
+msgstr "Deseja instalar uma lista de canais?"
 
 #, fuzzy, python-format
 msgid "Are you ready to remove \"%s\" ?"
-msgstr "Voltar à lista de vídeos"
+msgstr ""
+"Deseja realmente remover\n"
+"o plugin \"%s\"?"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr ""
 
-#, fuzzy
 msgid "Are you sure to reboot to"
-msgstr "Sair do assistente?"
+msgstr ""
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -1852,7 +1853,7 @@ msgstr "Remover o seguinte backup:\n"
 
 #, fuzzy
 msgid "Are you sure you want to delete the EPG data from:\n"
-msgstr "Sair do assistente?"
+msgstr "Remover o seguinte backup:\n"
 
 #, fuzzy
 msgid ""
@@ -2025,7 +2026,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Auto Detect"
-msgstr "iniciando em breve"
+msgstr "Automático"
 
 msgid "Auto Diseqc"
 msgstr ""
@@ -2281,9 +2282,8 @@ msgstr ""
 msgid "Blue LED brightness"
 msgstr "Brilho"
 
-#, fuzzy
 msgid "Blue long"
-msgstr "Limpar registro"
+msgstr ""
 
 msgid "Bolivia (Plurinational State of)"
 msgstr ""
@@ -2646,15 +2646,14 @@ msgstr "Menu da lista de canais"
 
 #, fuzzy
 msgid "Channelname"
-msgstr "Informação do canal"
+msgstr "Canal"
 
-#, fuzzy
 msgid "Channelname in Standby Clock"
-msgstr "Exibir numeração dos canais na lista de canais"
+msgstr ""
 
 #, fuzzy
 msgid "Channelname in Standby off"
-msgstr "Exibir numeração dos canais na lista de canais"
+msgstr "Desligar quando em espera"
 
 msgid "Channelnumber and picon"
 msgstr ""
@@ -2662,20 +2661,17 @@ msgstr ""
 msgid "Channelnumber and servicename"
 msgstr ""
 
-#, fuzzy
 msgid "Channelnumber in Standby Clock"
-msgstr "Exibir numeração dos canais na lista de canais"
+msgstr ""
 
-#, fuzzy
 msgid "Channelnumber in Standby off"
-msgstr "Exibir numeração dos canais na lista de canais"
+msgstr ""
 
 msgid "Channelnumber, picon and servicename"
 msgstr ""
 
-#, fuzzy
 msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Exibir numeração dos canais na lista de canais"
+msgstr ""
 
 #, fuzzy
 msgid "Channels"
@@ -2683,10 +2679,6 @@ msgstr "Canal"
 
 #, fuzzy
 msgid "Channels and EPG"
-msgstr "Informação do canal"
-
-#, fuzzy
-msgid "Channels only"
 msgstr "Informação do canal"
 
 msgid "Chap."
@@ -2760,7 +2752,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Choose style of main menus"
-msgstr "Exibir VCR Scart no menu"
+msgstr "Exibir reprodutor de mídia no menu principal"
 
 msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
 msgstr ""
@@ -2954,9 +2946,6 @@ msgid "Config"
 msgstr "Configurando"
 
 msgid "Config Scan Details"
-msgstr ""
-
-msgid "Config file name (ok to change):"
 msgstr ""
 
 msgid "Config resolution of pictures"
@@ -3478,7 +3467,6 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Criar DVD-ISO"
 
-#, fuzzy
 msgid "Create directory"
 msgstr "Criar diretório"
 
@@ -4036,16 +4024,15 @@ msgstr "NIMs detectado:"
 msgid "Device"
 msgstr "Canal"
 
-#, fuzzy
 msgid "Device mounts"
-msgstr "Canal"
+msgstr ""
 
 msgid "Devicename:"
 msgstr "Dispositivo:"
 
 #, fuzzy
 msgid "Devices"
-msgstr "Canal"
+msgstr "Serviços"
 
 msgid "DiSEqC"
 msgstr ""
@@ -4319,7 +4306,6 @@ msgstr "Continuar da posição anterior?"
 msgid "Do you want to select a different skin?"
 msgstr ""
 
-#, fuzzy
 msgid "Do you want to update the package:\n"
 msgstr "Deseja atualizar o pacote:\n"
 
@@ -4368,7 +4354,7 @@ msgstr ""
 msgid "Done"
 msgstr ""
 
-#, fuzzy, python-format
+#, python-format
 msgid "Done - Installed, updated or removed %d package (%s)"
 msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Terminado - Instalado, atualizado ou removido %d pacote (%s)"
@@ -4451,9 +4437,6 @@ msgstr "Idioma de EPG 2"
 msgid "EPG location"
 msgstr "Selecionar EPG"
 
-msgid "EPG only"
-msgstr ""
-
 msgid "EPG selection"
 msgstr "Selecionar EPG"
 
@@ -4509,7 +4492,6 @@ msgstr ""
 msgid "Edit title"
 msgstr "Editar título"
 
-#, fuzzy
 msgid "Edit update source url."
 msgstr "Editar URL da fonte de atualização."
 
@@ -5642,7 +5624,7 @@ msgstr ""
 
 #, fuzzy
 msgid "HDMI recording"
-msgstr "Gravando..."
+msgstr "Parar gravação"
 
 msgid "HDMI-CEC Source Active"
 msgstr ""
@@ -5998,10 +5980,10 @@ msgstr "Imagem:"
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr ""
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
+msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr ""
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
+msgid "Import channels from remote receiver URL when receiver is booted"
 msgstr ""
 
 #, python-format
@@ -6152,10 +6134,6 @@ msgstr "Entrada"
 
 msgid "Input Stream ID"
 msgstr ""
-
-#, fuzzy
-msgid "Input config file name:"
-msgstr "Nomes longos de arquivos"
 
 msgid "Input device setup"
 msgstr "Configurar dispositivos de entrada"
@@ -6467,7 +6445,6 @@ msgstr "Última configuração"
 msgid "Last speed"
 msgstr "Última velocidade"
 
-#, fuzzy
 msgid "Last update: "
 msgstr "Última atualização:"
 
@@ -6680,11 +6657,11 @@ msgstr "Endereço IP"
 
 #, fuzzy
 msgid "MAC address settings"
-msgstr "Editar configurações"
+msgstr "Configurar adaptador"
 
 #, fuzzy
 msgid "MAC address setup"
-msgstr "Editar configurações"
+msgstr "Configurar disco rígido"
 
 msgid "MAC:"
 msgstr ""
@@ -7196,9 +7173,8 @@ msgstr ""
 msgid "N/A"
 msgstr ""
 
-#, fuzzy
 msgid "NCam Config info"
-msgstr "Configuração manual"
+msgstr ""
 
 #, fuzzy
 msgid "NCam ECM info"
@@ -7208,13 +7184,11 @@ msgstr "Informações"
 msgid "NCam Info - Configuration"
 msgstr "Configuração manual"
 
-#, fuzzy
 msgid "NCam Info - Main Menu"
-msgstr "Configuração manual"
+msgstr ""
 
-#, fuzzy
 msgid "NCam Info Main Menu"
-msgstr "Configuração manual"
+msgstr ""
 
 #, python-format
 msgid "NCam Log ( NCam-Version: %s )"
@@ -7416,6 +7390,9 @@ msgstr "Nenhuma atualização disponível."
 msgid "No age block"
 msgstr ""
 
+msgid "No config to start, please check /etc/openvpn/ and try again."
+msgstr ""
+
 #, fuzzy
 msgid "No connection"
 msgstr "Sem conexão"
@@ -7609,7 +7586,7 @@ msgstr "Não associado"
 
 #, fuzzy
 msgid "Not Defined"
-msgstr "Indefinido"
+msgstr "Manual"
 
 #, fuzzy
 msgid "Not Installed"
@@ -7715,9 +7692,8 @@ msgstr "Configurar OSD"
 msgid "OSD transparency"
 msgstr "Transparência OSD"
 
-#, fuzzy
 msgid "OScam Config info"
-msgstr "Configuração manual"
+msgstr ""
 
 #, fuzzy
 msgid "OScam ECM info"
@@ -7730,13 +7706,11 @@ msgstr ""
 msgid "OScam Info - Configuration"
 msgstr "Configuração manual"
 
-#, fuzzy
 msgid "OScam Info - Main Menu"
-msgstr "Configuração manual"
+msgstr ""
 
-#, fuzzy
 msgid "OScam Info Main Menu"
-msgstr "Configuração manual"
+msgstr ""
 
 #, python-format
 msgid "OScam Log ( OScam-Version: %s )"
@@ -7804,13 +7778,11 @@ msgstr ""
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision enigma2 image"
-msgstr "Versão do Kernel:"
+msgstr ""
 
-#, fuzzy
 msgid "Open Vision module: "
-msgstr "Versão do Kernel:"
+msgstr ""
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -7879,7 +7851,6 @@ msgstr ""
 msgid "Overscan wizard"
 msgstr ""
 
-#, fuzzy
 msgid "Overwrite configuration files during software update?"
 msgstr "Substituir os arquivos de configuração durante a atualização de software?"
 
@@ -8051,9 +8022,8 @@ msgstr ""
 msgid "Picon Size"
 msgstr ""
 
-#, fuzzy
 msgid "Picon Width"
-msgstr "largura"
+msgstr ""
 
 msgid "Picon and servicename"
 msgstr ""
@@ -8852,11 +8822,9 @@ msgstr "Desligar agora?"
 msgid "Really store at index %2d for current position?"
 msgstr ""
 
-#, fuzzy
 msgid "Really update the frontprocessor and reboot now?"
 msgstr "Atualizar o processador e reiniciar agora?"
 
-#, fuzzy
 msgid "Really update your settop box and reboot now?"
 msgstr "Atualizar o receptor e reiniciar agora?"
 
@@ -8971,9 +8939,8 @@ msgstr "Recarregando a lista de canais..."
 msgid "Reloading bouquets and services..."
 msgstr "Recarregando a lista de canais..."
 
-#, fuzzy
 msgid "Remaining"
-msgstr "Jardinagem"
+msgstr ""
 
 msgid "Remaining & Elapsed"
 msgstr ""
@@ -9022,7 +8989,6 @@ msgstr "Remover gravações concluídas após (dias)"
 msgid "Remove currently selected title"
 msgstr "Remover o título atualmente selecionado"
 
-#, fuzzy
 msgid "Remove directory"
 msgstr "Remover diretório"
 
@@ -9075,7 +9041,6 @@ msgstr "Repetição"
 msgid "Repeat leave standby messages"
 msgstr ""
 
-#, fuzzy
 msgid "Repeat playlist"
 msgstr "Repetir lista de reprodução"
 
@@ -9203,7 +9168,7 @@ msgstr "Restaurar backups"
 
 #, fuzzy
 msgid "Restore inetd"
-msgstr "Restaurar backups"
+msgstr "Restaurar"
 
 #, fuzzy
 msgid "Restore inetd.conf"
@@ -9489,18 +9454,15 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
-#, fuzzy
 msgid "Save every (in hours)"
-msgstr "Em tudo"
+msgstr ""
 
-#, fuzzy
 msgid "Save last directory on exit"
 msgstr "Lembrar diretório ao sair"
 
 msgid "Save playlist"
 msgstr "Salvar lista de reprodução"
 
-#, fuzzy
 msgid "Save playlist on exit"
 msgstr "Salvar lista de reprodução ao sair"
 
@@ -9691,9 +9653,8 @@ msgstr "Avançar (inserir tempo)"
 msgid "Seems a background update check is in progress, please try again later."
 msgstr "Nenhuma atualização disponível. Tente novamente mais tarde."
 
-#, fuzzy
 msgid "Seems a background update check is in progress, please wait a few minutes and then try again."
-msgstr "Nenhuma atualização disponível. Tente novamente mais tarde."
+msgstr ""
 
 msgid "Seems internet connection down, Or TMBD Plugin not on feed."
 msgstr ""
@@ -9979,11 +9940,9 @@ msgstr ""
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr ""
 
-#, fuzzy
 msgid "Select update source"
 msgstr "Servidores de atualizações"
 
-#, fuzzy
 msgid "Select update source to edit."
 msgstr "Selecione a fonte de atualizações para editar"
 
@@ -10383,7 +10342,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Show Main Menu as"
-msgstr "Configuração manual"
+msgstr "Exibir menu de DVD"
 
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
@@ -10509,9 +10468,8 @@ msgstr "Barra de informações ao avançar/retornar"
 msgid "Show latest commits"
 msgstr ""
 
-#, fuzzy
 msgid "Show latest update log"
-msgstr "Última atualização:"
+msgstr ""
 
 #, fuzzy
 msgid "Show live tv when movie stopped"
@@ -10521,7 +10479,6 @@ msgstr "Comportamento ao parar um vídeo"
 msgid "Show log"
 msgstr "Exibir informações"
 
-#, fuzzy
 msgid "Show media player on main menu"
 msgstr "Exibir reprodutor de mídia no menu principal"
 
@@ -10579,9 +10536,8 @@ msgstr ""
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "Exibir descrição estendida"
 
-#, fuzzy
 msgid "Show packages to be updated"
-msgstr "Atualizando a lista de pacotes."
+msgstr ""
 
 msgid "Show picons in channel selection list"
 msgstr ""
@@ -10657,8 +10613,9 @@ msgstr "Reprodutor de rádio"
 msgid "Show the tv player..."
 msgstr "Reprodutor de TV"
 
+#, fuzzy
 msgid "Show this plugin in plugin menu"
-msgstr ""
+msgstr "Exibir reprodutor de mídia no menu principal"
 
 msgid "Show time elapsed as positive"
 msgstr ""
@@ -10943,7 +10900,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Sort by default"
-msgstr "Padrão"
+msgstr "Lista normal"
 
 msgid "Sort list to default and exit?"
 msgstr ""
@@ -10964,7 +10921,6 @@ msgstr ""
 msgid "Sort time"
 msgstr "Cronológico"
 
-#, fuzzy
 msgid "Sorting of playlists"
 msgstr "Ordenar listas de reprodução"
 
@@ -11138,7 +11094,6 @@ msgstr ""
 msgid "Start cut"
 msgstr "Iniciar teste"
 
-#, fuzzy
 msgid "Start directory"
 msgstr "Diretório inicial"
 
@@ -11457,7 +11412,6 @@ msgstr ""
 msgid "Switch to TV mode"
 msgstr ""
 
-#, fuzzy
 msgid "Switch to bookmarks"
 msgstr "Ir para favoritos"
 
@@ -11635,9 +11589,8 @@ msgstr ""
 msgid "Teletext base visibility"
 msgstr ""
 
-#, fuzzy
 msgid "Teletext font and resolution"
-msgstr "Selecione um subserviço"
+msgstr ""
 
 msgid "Teletext subtitle color"
 msgstr "Cor da legenda de teletexto"
@@ -12574,7 +12527,6 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
@@ -12711,9 +12663,8 @@ msgstr "Intervalo na troca de imagens (seg)"
 msgid "Updatefeed not available."
 msgstr "Servidor de atualizações não disponível."
 
-#, fuzzy
 msgid "Updating"
-msgstr "Atualizar"
+msgstr "Atualizando..."
 
 msgid "Updating software catalog"
 msgstr "Atualizando o catálogo de software..."
@@ -13596,9 +13547,8 @@ msgstr ""
 msgid "Yellow DVB subtitles"
 msgstr "Legendas DVB em amarelo"
 
-#, fuzzy
 msgid "Yellow long"
-msgstr "Exibir informações"
+msgstr ""
 
 #, fuzzy
 msgid "Yemen"
@@ -13735,7 +13685,6 @@ msgstr "A coleção excede o tamanho de um DVD de camada simples. Será necessá
 msgid "Your current collection will get lost!"
 msgstr "A coleção atual será descartada!"
 
-#, fuzzy
 msgid ""
 "Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
@@ -13983,9 +13932,8 @@ msgstr "após "
 msgid "all"
 msgstr ""
 
-#, fuzzy
 msgid "alpha then oldest"
-msgstr "Ordem alfabética invertida"
+msgstr ""
 
 msgid "alphabetic"
 msgstr "Ordenar alfabeticamente"
@@ -13996,9 +13944,8 @@ msgstr "Ordem alfabética invertida"
 msgid "alphabetical"
 msgstr ""
 
-#, fuzzy
 msgid "alpharev then newest"
-msgstr "Ordem alfabética invertida"
+msgstr ""
 
 msgid "alternative"
 msgstr "Alternativo"
@@ -14094,9 +14041,8 @@ msgstr ""
 msgid "broadcasting/press"
 msgstr "Transmissão/Imprensa"
 
-#, fuzzy
 msgid "by Open Vision developers"
-msgstr "Versão do Kernel:"
+msgstr ""
 
 msgid "by date"
 msgstr "Por data"
@@ -14208,9 +14154,6 @@ msgstr "Dia"
 #, fuzzy
 msgid "day and date"
 msgstr "Por data"
-
-msgid "default"
-msgstr "Padrão"
 
 msgid "delete cut"
 msgstr "Eliminar corte"
@@ -14869,7 +14812,7 @@ msgstr ""
 
 #, fuzzy
 msgid "reboot system"
-msgstr "Sistema"
+msgstr "Criando sistema de arquivos"
 
 msgid "receiver software because updates are available."
 msgstr "software do receptor porque há atualizações disponíveis."
@@ -14894,7 +14837,7 @@ msgstr "Remover após esta posição"
 
 #, fuzzy
 msgid "remove all"
-msgstr "Remover favorito"
+msgstr "Remover item"
 
 msgid "remove all alternatives"
 msgstr "Remover todas as alternativas"
@@ -14981,7 +14924,7 @@ msgstr "Romance"
 
 #, fuzzy
 msgid "running..."
-msgstr "Buscando..."
+msgstr "Jardinagem"
 
 msgid "save"
 msgstr ""
@@ -14997,7 +14940,7 @@ msgstr "Segundos"
 
 #, fuzzy
 msgid "select "
-msgstr "Selecionar"
+msgstr "Desmarcar"
 
 msgid "select CAId's"
 msgstr "Selecionar CAID's"

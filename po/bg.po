@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-26 19:02+0330\n"
+"POT-Creation-Date: 2019-11-01 18:37+0330\n"
 "PO-Revision-Date: 2018-11-12 20:51+0200\n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: Bulgarian\n"
@@ -41,7 +41,6 @@ msgstr ""
 "\n"
 "Откриването на конфликти е изключено!"
 
-#, fuzzy
 msgid ""
 "\n"
 "Edit the update source address."
@@ -621,7 +620,7 @@ msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %Y %b %-d"
-msgstr "%a %e/%m  %-Ч:%М"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %Y %b %d"
@@ -659,7 +658,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %b %-d"
-msgstr "%a %e/%m  %-Ч:%М"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %b %-d %Y"
@@ -1489,8 +1488,9 @@ msgstr "Активиране Край за таймшифт"
 msgid "Activate timeshift end and pause"
 msgstr "Активиране Край и Пауза за таймшифт"
 
+#, fuzzy
 msgid "Active"
-msgstr ""
+msgstr "Относително"
 
 #, python-format
 msgid "Active Keymap: %s"
@@ -1826,11 +1826,11 @@ msgstr "Арабски"
 
 #, fuzzy, python-format
 msgid "Are you ready to install \"%s\" ?"
-msgstr "Отмяна на инсталацията"
+msgstr "Искате ли да инсталирате плъгините?"
 
 #, fuzzy, python-format
 msgid "Are you ready to remove \"%s\" ?"
-msgstr "Връщане към списъка с филми"
+msgstr "Наистина ли искате да изтриете избраното?"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Наистина ли искате да премахнете всички изтрити букети?"
@@ -1882,7 +1882,9 @@ msgstr ""
 
 #, fuzzy
 msgid "Are you sure you want to delete the EPG data from:\n"
-msgstr "Сигурни ли сте,че искате да излезете от помощника?"
+msgstr ""
+"Сигурни ли сте, че искате да изтриете\n"
+"следния backup:\n"
 
 #, fuzzy
 msgid ""
@@ -2084,7 +2086,7 @@ msgid "Auto language selection"
 msgstr "Автоматичен избор на език"
 
 msgid "Auto play blu-ray file"
-msgstr ""
+msgstr "Авто възпроизвеждане на blu-ray файл"
 
 msgid "Auto scart switching"
 msgstr "Автом.скарт превключване"
@@ -2313,7 +2315,7 @@ msgstr "Яркост"
 
 #, fuzzy
 msgid "Blue long"
-msgstr "Изтрий лога"
+msgstr "Син"
 
 msgid "Bolivia (Plurinational State of)"
 msgstr "Боливия"
@@ -2673,7 +2675,7 @@ msgstr "Меню списък с канали"
 
 #, fuzzy
 msgid "Channelname"
-msgstr "Информация за канала"
+msgstr "Канал"
 
 #, fuzzy
 msgid "Channelname in Standby Clock"
@@ -2710,9 +2712,6 @@ msgstr "Канал"
 
 msgid "Channels and EPG"
 msgstr "Канали и EPG"
-
-msgid "Channels only"
-msgstr "Само канали"
 
 msgid "Chap."
 msgstr "Глава."
@@ -2787,7 +2786,7 @@ msgstr "Избор на букет"
 
 #, fuzzy
 msgid "Choose style of main menus"
-msgstr "Покажи VCR scart в главното меню"
+msgstr "покажи медиаплеъра в главното меню"
 
 msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
 msgstr ""
@@ -2980,9 +2979,6 @@ msgstr "Конфигуриране"
 
 msgid "Config Scan Details"
 msgstr "Детайлни сведения за сканиране"
-
-msgid "Config file name (ok to change):"
-msgstr ""
 
 msgid "Config resolution of pictures"
 msgstr "Настройка на резолюцията на изображенията"
@@ -3501,9 +3497,8 @@ msgstr "Скрийте мигащата линия за този канал"
 msgid "Create DVD-ISO"
 msgstr "Създай DVD-ISO"
 
-#, fuzzy
 msgid "Create directory"
-msgstr "създай директория"
+msgstr "Създай директория"
 
 msgid "Create new folder and exit"
 msgstr "Създаване на нова папка и изход"
@@ -4064,9 +4059,8 @@ msgstr "Открит NIMs:"
 msgid "Device"
 msgstr "Канали"
 
-#, fuzzy
 msgid "Device mounts"
-msgstr "Канали"
+msgstr ""
 
 msgid "Devicename:"
 msgstr "Име на устройството:"
@@ -4341,7 +4335,6 @@ msgstr "Да продължа ли с възпроизвеждането?"
 msgid "Do you want to select a different skin?"
 msgstr "Искате ли да изберете друг скин?"
 
-#, fuzzy
 msgid "Do you want to update the package:\n"
 msgstr "Искате ли да ъпгрейднете този пакет:\n"
 
@@ -4390,7 +4383,7 @@ msgstr "Не превключвай и премахни таймера"
 msgid "Done"
 msgstr ""
 
-#, fuzzy, python-format
+#, python-format
 msgid "Done - Installed, updated or removed %d package (%s)"
 msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Изпълнено - Инсталиран, обновен или изтрит %d пакет (%s)"
@@ -4471,9 +4464,6 @@ msgstr "EPG избор на език 2"
 msgid "EPG location"
 msgstr "EPG избор"
 
-msgid "EPG only"
-msgstr "Само EPG"
-
 msgid "EPG selection"
 msgstr "EPG избор"
 
@@ -4486,7 +4476,7 @@ msgstr "Грешка при сканиране (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr ""
+msgstr "Грешка при изтегляне на файл %s"
 
 msgid "East"
 msgstr "Изток"
@@ -4528,7 +4518,6 @@ msgstr "Редактиране на таймер"
 msgid "Edit title"
 msgstr "Редакт.заглавие"
 
-#, fuzzy
 msgid "Edit update source url."
 msgstr "Редакция на адреса за актуализации(url)."
 
@@ -4826,9 +4815,9 @@ msgstr "Еритрея"
 msgid "Error"
 msgstr "Грешка"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Error %s"
-msgstr "Грешка"
+msgstr "Грешка %s"
 
 msgid "Error code"
 msgstr "Грешен код"
@@ -4866,11 +4855,10 @@ msgid "Error stop stream!"
 msgstr "Грешка при спиране на стрийма!"
 
 msgid "Error when writing epg.dat on server"
-msgstr ""
+msgstr "Грешка при записване epg.dat на сървъра"
 
-#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr "Грешка при получаване местоположението на файла epg.dat от сървъра"
+msgstr "Грешка при получаване на epg.dat от сървъра"
 
 #, fuzzy, python-format
 msgid ""
@@ -4878,7 +4866,6 @@ msgid ""
 "%s"
 msgstr "Грешка при получаване местоположението на файла epg.dat от сървъра"
 
-#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
 msgstr "Грешка при получаване местоположението на файла epg.dat от сървъра"
 
@@ -5693,7 +5680,7 @@ msgstr "NIM & Тип на тунера"
 
 #, fuzzy
 msgid "HDMI recording"
-msgstr "Запис"
+msgstr "Спри запис"
 
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC Източник Активен"
@@ -5958,9 +5945,8 @@ msgstr "IP адрес"
 msgid "IP of fallback remote receiver"
 msgstr "Въведете URL на резервния приемник"
 
-#, fuzzy
 msgid "IP:"
-msgstr "I"
+msgstr ""
 
 msgid "IPv6"
 msgstr ""
@@ -6053,11 +6039,12 @@ msgstr "Имидж: "
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr "Импортиране на канали/EPG от резервния приемник при изход от режим готовност"
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
-msgstr "Импортиране на канали/EPG от резервния приемник при стартиране на приемника"
-
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr "Импортиране на канали/EPG от резервния приемник при рестарт на приемника или enigma2"
+
+#, fuzzy
+msgid "Import channels from remote receiver URL when receiver is booted"
+msgstr "Импортиране на канали/EPG от резервния приемник при стартиране на приемника"
 
 #, fuzzy, python-format
 msgid "Import from fallback tuner failed, %s"
@@ -6208,10 +6195,6 @@ msgstr "Вход "
 
 msgid "Input Stream ID"
 msgstr "Входящ стрийм ID"
-
-#, fuzzy
-msgid "Input config file name:"
-msgstr "Дълго наименование"
 
 msgid "Input device setup"
 msgstr "Настройка на устройствата за въвеждане"
@@ -6524,7 +6507,6 @@ msgstr "Последни настройки"
 msgid "Last speed"
 msgstr "Последна скорост"
 
-#, fuzzy
 msgid "Last update: "
 msgstr "Последна актуализация: "
 
@@ -6535,7 +6517,6 @@ msgstr ""
 msgid "Latest Commits"
 msgstr "Последни Изменения"
 
-#, fuzzy
 msgid "Latest update log"
 msgstr "Лог на последната актуализация"
 
@@ -6735,11 +6716,11 @@ msgstr "IP адрес"
 
 #, fuzzy
 msgid "MAC address settings"
-msgstr "Редакт.настройки"
+msgstr "Настройки на адаптера"
 
 #, fuzzy
 msgid "MAC address setup"
-msgstr "Редакт.настройки"
+msgstr "Настройки на HDD"
 
 msgid "MAC:"
 msgstr ""
@@ -7248,9 +7229,8 @@ msgstr "Бирма"
 msgid "N/A"
 msgstr "N/A"
 
-#, fuzzy
 msgid "NCam Config info"
-msgstr "Тунер Конфигурация"
+msgstr ""
 
 #, fuzzy
 msgid "NCam ECM info"
@@ -7260,13 +7240,11 @@ msgstr "ECM Инфо"
 msgid "NCam Info - Configuration"
 msgstr "Тунер Конфигурация"
 
-#, fuzzy
 msgid "NCam Info - Main Menu"
-msgstr "Тунер Конфигурация"
+msgstr ""
 
-#, fuzzy
 msgid "NCam Info Main Menu"
-msgstr "Тунер Конфигурация"
+msgstr ""
 
 #, python-format
 msgid "NCam Log ( NCam-Version: %s )"
@@ -7468,6 +7446,9 @@ msgstr "Няма налични актуализации"
 msgid "No age block"
 msgstr "Няма възрастово ограничение"
 
+msgid "No config to start, please check /etc/openvpn/ and try again."
+msgstr ""
+
 #, fuzzy
 msgid "No connection"
 msgstr "Няма Връзка!"
@@ -7492,7 +7473,7 @@ msgid "No displayable files on this medium found!"
 msgstr "Няма поддържани файлове на този носител!"
 
 msgid "No epg.dat file found server"
-msgstr ""
+msgstr "Не е открит сървър с epg.dat"
 
 msgid "No event info found, recording indefinitely."
 msgstr "Няма инфо за предаването, незабавен запис."
@@ -7763,9 +7744,8 @@ msgstr "OSD Настройки"
 msgid "OSD transparency"
 msgstr "OSD прозрачност"
 
-#, fuzzy
 msgid "OScam Config info"
-msgstr "Тунер Конфигурация"
+msgstr ""
 
 #, fuzzy
 msgid "OScam ECM info"
@@ -7778,13 +7758,11 @@ msgstr ""
 msgid "OScam Info - Configuration"
 msgstr "Тунер Конфигурация"
 
-#, fuzzy
 msgid "OScam Info - Main Menu"
-msgstr "Тунер Конфигурация"
+msgstr ""
 
-#, fuzzy
 msgid "OScam Info Main Menu"
-msgstr "Тунер Конфигурация"
+msgstr ""
 
 #, python-format
 msgid "OScam Log ( OScam-Version: %s )"
@@ -7853,13 +7831,11 @@ msgstr "Само при старт"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Изберете ‘да’ само ако използвате мултиключ който изисква сигнал от DiSEqC Порт-A. За всички останали конфигурации изберете ‘не’."
 
-#, fuzzy
 msgid "Open Vision enigma2 image"
-msgstr "Питон версия: "
+msgstr ""
 
-#, fuzzy
 msgid "Open Vision module: "
-msgstr "Питон версия: "
+msgstr ""
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -7929,7 +7905,6 @@ msgstr "Общ прогрес:"
 msgid "Overscan wizard"
 msgstr "Помощник за Свръхсканиране"
 
-#, fuzzy
 msgid "Overwrite configuration files during software update?"
 msgstr "Презаписване на конфигурационните файлове по време на актуализация?"
 
@@ -8813,9 +8788,8 @@ msgstr ""
 msgid "RC command set"
 msgstr "Ред на команди"
 
-#, fuzzy
 msgid "REC"
-msgstr "FEC"
+msgstr "REC"
 
 msgid "REC Symbol"
 msgstr ""
@@ -8899,11 +8873,9 @@ msgstr "Да изключа ли приемника?"
 msgid "Really store at index %2d for current position?"
 msgstr "Да съхраня ли с номер %2d текущата позиция?"
 
-#, fuzzy
 msgid "Really update the frontprocessor and reboot now?"
 msgstr "Да обновя ли фронтпроцесора и да рестартирам сега?"
 
-#, fuzzy
 msgid "Really update your settop box and reboot now?"
 msgstr "Да обновя ли Вашия приемник и да рестартирам сега?"
 
@@ -9021,7 +8993,7 @@ msgstr "Презаревдане на букетите и каналите..."
 
 #, fuzzy
 msgid "Remaining"
-msgstr "тече"
+msgstr "Внимание"
 
 msgid "Remaining & Elapsed"
 msgstr ""
@@ -9069,9 +9041,8 @@ msgstr "Премахване на завършените таймери след
 msgid "Remove currently selected title"
 msgstr "Премахни избраното заглавие"
 
-#, fuzzy
 msgid "Remove directory"
-msgstr "премахни директория"
+msgstr "Премахни директория"
 
 msgid "Remove items from trash can after (days)"
 msgstr "Премахни файловете от кошчето след (дни)"
@@ -9081,7 +9052,7 @@ msgstr "Премахни Плъгини"
 
 #, fuzzy
 msgid "Remove service"
-msgstr "Няма канал"
+msgstr "Задръж на канала"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
@@ -9122,7 +9093,6 @@ msgstr "Тип повторения"
 msgid "Repeat leave standby messages"
 msgstr "Повтори командата за изход от режим готовност"
 
-#, fuzzy
 msgid "Repeat playlist"
 msgstr "повтори плейлиста"
 
@@ -9248,7 +9218,7 @@ msgstr "Възстановяване backups"
 
 #, fuzzy
 msgid "Restore inetd"
-msgstr "Възстановяване backups"
+msgstr "Възстановаване"
 
 #, fuzzy
 msgid "Restore inetd.conf"
@@ -9535,18 +9505,15 @@ msgstr "Запази и спри таймшифт"
 msgid "Save changes"
 msgstr "Запази измененията"
 
-#, fuzzy
 msgid "Save every (in hours)"
-msgstr "Навсякъде"
+msgstr ""
 
-#, fuzzy
 msgid "Save last directory on exit"
 msgstr "запис на последната директория при изход"
 
 msgid "Save playlist"
 msgstr "Запази плейлист"
 
-#, fuzzy
 msgid "Save playlist on exit"
 msgstr "запис на плейлист при изход"
 
@@ -9739,9 +9706,8 @@ msgstr "Превъртане напред (въведете време)"
 msgid "Seems a background update check is in progress, please try again later."
 msgstr "Няма налични актуализации. Моля опитайте по-късно."
 
-#, fuzzy
 msgid "Seems a background update check is in progress, please wait a few minutes and then try again."
-msgstr "Няма налични актуализации. Моля опитайте по-късно."
+msgstr ""
 
 msgid "Seems internet connection down, Or TMBD Plugin not on feed."
 msgstr ""
@@ -10026,11 +9992,9 @@ msgstr ""
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr ""
 
-#, fuzzy
 msgid "Select update source"
 msgstr "Избор на източника за обновяване"
 
-#, fuzzy
 msgid "Select update source to edit."
 msgstr "Редактиране на източника за обновяване."
 
@@ -10276,7 +10240,7 @@ msgstr "Система"
 
 #, fuzzy
 msgid "Set the MAC address of your receiver.\n"
-msgstr "Въведете ако се намирате в източното или западното полукълбо."
+msgstr "Тест на мрежовите настройки на вашия приемник.\n"
 
 #, fuzzy
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
@@ -10559,7 +10523,6 @@ msgstr "Показвай инфо-лентата при прескачане н�
 msgid "Show latest commits"
 msgstr "Покажи последните изменения"
 
-#, fuzzy
 msgid "Show latest update log"
 msgstr "Покажи последния лог от обновяването"
 
@@ -10569,9 +10532,8 @@ msgstr "Действие при спиране на филм"
 
 #, fuzzy
 msgid "Show log"
-msgstr "Покажи Инфо"
+msgstr "Покажи помощ"
 
-#, fuzzy
 msgid "Show media player on main menu"
 msgstr "покажи медиаплеъра в главното меню"
 
@@ -10634,7 +10596,6 @@ msgstr "Показвай пикони на дисплея"
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "Покажи разширено описание"
 
-#, fuzzy
 msgid "Show packages to be updated"
 msgstr "Покажи пакетите, които ще бъдат обновени"
 
@@ -10711,8 +10672,9 @@ msgstr "Покажи радио плеъра..."
 msgid "Show the tv player..."
 msgstr "Покажи ТВ плеъра..."
 
+#, fuzzy
 msgid "Show this plugin in plugin menu"
-msgstr ""
+msgstr "покажи медиаплеъра в главното меню"
 
 msgid "Show time elapsed as positive"
 msgstr ""
@@ -11012,7 +10974,6 @@ msgstr "Подреждане на списъка с плъгини по подр
 msgid "Sort time"
 msgstr "По време"
 
-#, fuzzy
 msgid "Sorting of playlists"
 msgstr "подреждане на плейлисти"
 
@@ -11186,7 +11147,6 @@ msgstr "Всички частоти"
 msgid "Start cut"
 msgstr "Старт тест"
 
-#, fuzzy
 msgid "Start directory"
 msgstr "стартова директория"
 
@@ -11503,9 +11463,8 @@ msgstr "Смяна на канал нагоре"
 msgid "Switch to TV mode"
 msgstr "Превключи към режим ТВ"
 
-#, fuzzy
 msgid "Switch to bookmarks"
-msgstr "превкл. към отметки"
+msgstr "Превкл. към отметки"
 
 msgid "Switch to filelist"
 msgstr "Превключи към списък с файлове"
@@ -12020,11 +11979,11 @@ msgstr "Тази опция позволява да се настрои ниво
 
 #, fuzzy
 msgid "This option allows you choose how to display elapsed time as + or -"
-msgstr "Тази опция позволява да подсилите зелените тонове в картината."
+msgstr "Тази опция позволява да изключите дисплейя."
 
 #, fuzzy
 msgid "This option allows you choose how to display remaining time, or elapsed time, or both."
-msgstr "Тази опция позволява да подсилите зелените тонове в картината."
+msgstr "Тази опция позволява да спрете или промените позицията на виртуалната динамика."
 
 #, fuzzy
 msgid "This option allows you choose how to display the remaining/elapsed time for live TV."
@@ -12032,7 +11991,7 @@ msgstr "Тази опция позволява да подсилите зеле�
 
 #, fuzzy
 msgid "This option allows you choose how to display the time or nothing in Standby"
-msgstr "Тази опция позволява да подсилите зелените тонове в картината."
+msgstr "Тази опция позволява да се показват всички символи на дисплея."
 
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "Тази опция позволява да активирате филтър за контролиране на размиването и получаване на по-естествен звук."
@@ -12054,11 +12013,11 @@ msgstr "Тази опция позволява да подсилите зеле�
 
 #, fuzzy
 msgid "This option allows you to choose how to display elapsed time. As + or -"
-msgstr "Тази опция позволява да подсилите зелените тонове в картината."
+msgstr "Тази опция позволява да изключите дисплейя."
 
 #, fuzzy
 msgid "This option allows you to choose how to display the remaining/elapsed time for Media playback."
-msgstr "Тази опция позволява да подсилите зелените тонове в картината."
+msgstr "Тази опция позволява да се показват всички символи на дисплея."
 
 #, fuzzy
 msgid "This option allows you to choose how to display the remaining/elapsed time for live TV."
@@ -12066,7 +12025,7 @@ msgstr "Тази опция позволява да подсилите зеле�
 
 #, fuzzy
 msgid "This option allows you to choose how to display the remaining/elapsed time for media playback."
-msgstr "Тази опция позволява да подсилите зелените тонове в картината."
+msgstr "Тази опция позволява да се показват всички символи на дисплея."
 
 #, fuzzy
 msgid "This option allows you to choose whether or not to display genre information for the event."
@@ -12468,7 +12427,7 @@ msgstr "Транспондер"
 
 #, fuzzy
 msgid "Transponder time"
-msgstr "покажи инфо за транспондер"
+msgstr "Транспондер"
 
 msgid "Transport Stream Type"
 msgstr "Тип на транспортния стрийм"
@@ -12648,7 +12607,6 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
@@ -12787,9 +12745,8 @@ msgstr "Слайдшоу интервал (сек.)"
 msgid "Updatefeed not available."
 msgstr "Няма наличен фийд за актуализации."
 
-#, fuzzy
 msgid "Updating"
-msgstr "Актуализация"
+msgstr "Ъпгрейдвам"
 
 msgid "Updating software catalog"
 msgstr "Актуализирам софтуер каталога"
@@ -12887,7 +12844,7 @@ msgstr "Използвай мерител на напрежение"
 
 #, fuzzy
 msgid "Use slim screen"
-msgstr "Задържане на екрана"
+msgstr "изключи интро екрана"
 
 #, fuzzy
 msgid "Use the alternative screen"
@@ -13357,7 +13314,6 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr "Какъв тип на търсене искате да изберете?"
 
-#, fuzzy
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Ако е включено, при старт на енигма2 ще бъдат заредени достъпни букети, които на са включени в списъка bouquets.tv или bouquets.radio. Това Ви позволява например да запазите Вашите букети при актуализация на настройките"
 
@@ -13807,7 +13763,6 @@ msgstr "Ваашата колекция надвишава размера на �
 msgid "Your current collection will get lost!"
 msgstr "Вашата текуща колекция ще бъде изтрита!"
 
-#, fuzzy
 msgid ""
 "Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
@@ -14054,9 +14009,8 @@ msgstr "след "
 msgid "all"
 msgstr "всички"
 
-#, fuzzy
 msgid "alpha then oldest"
-msgstr "обратно по азбучен ред"
+msgstr ""
 
 msgid "alphabetic"
 msgstr "сортиране по азбучен ред"
@@ -14067,9 +14021,8 @@ msgstr "обратно по азбучен ред"
 msgid "alphabetical"
 msgstr "по азбучен ред"
 
-#, fuzzy
 msgid "alpharev then newest"
-msgstr "обратно по азбучен ред"
+msgstr ""
 
 msgid "alternative"
 msgstr "алтернативен"
@@ -14165,9 +14118,8 @@ msgstr "долу"
 msgid "broadcasting/press"
 msgstr "предаване/преса"
 
-#, fuzzy
 msgid "by Open Vision developers"
-msgstr "Питон версия: "
+msgstr ""
 
 msgid "by date"
 msgstr "по дата"
@@ -14280,9 +14232,6 @@ msgstr "ден"
 #, fuzzy
 msgid "day and date"
 msgstr "по дата"
-
-msgid "default"
-msgstr "по подразбиране"
 
 msgid "delete cut"
 msgstr "изтрий изрязаното"
@@ -14943,7 +14892,7 @@ msgstr ""
 
 #, fuzzy
 msgid "reboot system"
-msgstr "Система"
+msgstr "Създаване на файлова система"
 
 msgid "receiver software because updates are available."
 msgstr "достъпна е актуализация за вашия приемник."
@@ -14968,7 +14917,7 @@ msgstr "премахни след тази позиция"
 
 #, fuzzy
 msgid "remove all"
-msgstr "премахни отметка"
+msgstr "премахни"
 
 msgid "remove all alternatives"
 msgstr "премахни всички алтернативи"
@@ -15055,7 +15004,7 @@ msgstr "романс"
 
 #, fuzzy
 msgid "running..."
-msgstr "Търсене..."
+msgstr "тече"
 
 msgid "save"
 msgstr ""
@@ -15071,7 +15020,7 @@ msgstr "секунди"
 
 #, fuzzy
 msgid "select "
-msgstr "избор"
+msgstr "Отмяна Избор"
 
 msgid "select CAId's"
 msgstr "избор CAId's"
@@ -15375,9 +15324,8 @@ msgstr "вертикална"
 msgid "vfddisplay.png"
 msgstr ""
 
-#, fuzzy
 msgid "vitamin"
-msgstr "Стрим"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "изчакай за ci..."

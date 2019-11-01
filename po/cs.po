@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-26 19:02+0330\n"
+"POT-Creation-Date: 2019-11-01 18:37+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -45,7 +45,6 @@ msgstr ""
 "Detekce konfliktů zakázána!"
 
 #
-#, fuzzy
 msgid ""
 "\n"
 "Edit the update source address."
@@ -1598,8 +1597,10 @@ msgstr "Aktivovat konec timeshiftu"
 msgid "Activate timeshift end and pause"
 msgstr "Aktivovat konec timeshiftu a pozastavit"
 
+#
+#, fuzzy
 msgid "Active"
-msgstr ""
+msgstr "Relativní"
 
 #, python-format
 msgid "Active Keymap: %s"
@@ -2043,7 +2044,9 @@ msgstr ""
 #
 #, fuzzy
 msgid "Are you sure you want to delete the EPG data from:\n"
-msgstr "Opravdu chcete ukončit tohoto průvodce?"
+msgstr ""
+"Opravdu chcete smazat následující zálohu:\n"
+"\n"
 
 #
 #, fuzzy
@@ -2311,9 +2314,8 @@ msgid "Automatic Scan"
 msgstr "Automatické prohledávání"
 
 #
-#, fuzzy
 msgid "Automatic bookmarks"
-msgstr "Aktualizovat záložky"
+msgstr "Automatické záložky"
 
 #
 #, fuzzy
@@ -2537,10 +2539,8 @@ msgstr ""
 msgid "Blue LED brightness"
 msgstr "Jas"
 
-#
-#, fuzzy
 msgid "Blue long"
-msgstr "Smazat log"
+msgstr ""
 
 msgid "Bolivia (Plurinational State of)"
 msgstr "Bolívie"
@@ -2992,9 +2992,6 @@ msgstr "Kanály"
 msgid "Channels and EPG"
 msgstr "Programy a EPG"
 
-msgid "Channels only"
-msgstr "Pouze programy"
-
 #
 msgid "Chap."
 msgstr "Kap."
@@ -3072,9 +3069,10 @@ msgstr ""
 msgid "Choose bouquet"
 msgstr "Zvolte přehled"
 
+#
 #, fuzzy
 msgid "Choose style of main menus"
-msgstr "Zobrazovat VCR scart v hlavním menu"
+msgstr "Zobrazovat Mediaplayer v hlavním menu"
 
 msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
 msgstr ""
@@ -3294,9 +3292,6 @@ msgstr "Nastavuji"
 
 msgid "Config Scan Details"
 msgstr "Konfigurovat detaily prohledávání"
-
-msgid "Config file name (ok to change):"
-msgstr ""
 
 #
 msgid "Config resolution of pictures"
@@ -3858,7 +3853,6 @@ msgid "Create DVD-ISO"
 msgstr "vytvořit DVD-ISO"
 
 #
-#, fuzzy
 msgid "Create directory"
 msgstr "Založit adresář"
 
@@ -4487,10 +4481,8 @@ msgstr "Detekované tunery:"
 msgid "Device"
 msgstr "O programu"
 
-#
-#, fuzzy
 msgid "Device mounts"
-msgstr "O programu"
+msgstr ""
 
 #
 msgid "Devicename:"
@@ -4499,7 +4491,7 @@ msgstr "Název zařízení:"
 #
 #, fuzzy
 msgid "Devices"
-msgstr "O programu"
+msgstr "Programy"
 
 #
 msgid "DiSEqC"
@@ -4828,7 +4820,6 @@ msgid "Do you want to select a different skin?"
 msgstr "Chcete vybrat jiný skin?"
 
 #
-#, fuzzy
 msgid "Do you want to update the package:\n"
 msgstr "Chcete aktualizovat balíček:\n"
 
@@ -4880,7 +4871,7 @@ msgid "Done"
 msgstr "Dokončeno"
 
 #
-#, fuzzy, python-format
+#, python-format
 msgid "Done - Installed, updated or removed %d package (%s)"
 msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Dokončeno - instalován, aktualizován nebo odstraněn %d balíček (%s)"
@@ -4977,9 +4968,6 @@ msgstr "EPG jazyk 2"
 msgid "EPG location"
 msgstr "Výběr EPG"
 
-msgid "EPG only"
-msgstr "Pouze EPG"
-
 #
 msgid "EPG selection"
 msgstr "Výběr EPG"
@@ -4994,7 +4982,7 @@ msgstr "CHYBA - prohledávání selhalo (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr ""
+msgstr "Chyba při stahování souboru %s"
 
 #
 msgid "East"
@@ -5044,7 +5032,6 @@ msgid "Edit title"
 msgstr "Upravit titul"
 
 #
-#, fuzzy
 msgid "Edit update source url."
 msgstr "Upravit url zdroje aktualizací."
 
@@ -5370,10 +5357,9 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Chyba"
 
-#
-#, fuzzy, python-format
+#, python-format
 msgid "Error %s"
-msgstr "Chyba"
+msgstr "Chyba %s"
 
 #
 msgid "Error code"
@@ -5413,13 +5399,10 @@ msgid "Error stop stream!"
 msgstr "Chyba při zrušení streamu!"
 
 msgid "Error when writing epg.dat on server"
-msgstr ""
+msgstr "Chyba při zápisu epg.dat na serveru"
 
-#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr ""
-"Chyba při získávání informací o záložních časovačích\n"
-"%s"
+msgstr "Chyba při načítání epg.dat na serveru"
 
 #, python-format
 msgid ""
@@ -5429,11 +5412,8 @@ msgstr ""
 "Chyba při získávání informací o záložních časovačích\n"
 "%s"
 
-#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
-msgstr ""
-"Chyba při získávání informací o záložních časovačích\n"
-"%s"
+msgstr "Chyba při načítání umístění epg.dat na serveru"
 
 #
 #, python-format
@@ -6615,9 +6595,8 @@ msgstr "IP adresa"
 msgid "IP of fallback remote receiver"
 msgstr "IP adresa vzdáleného záložního přijímače"
 
-#, fuzzy
 msgid "IP:"
-msgstr "I"
+msgstr ""
 
 msgid "IPv6"
 msgstr ""
@@ -6646,8 +6625,9 @@ msgstr "Island"
 msgid "Icons"
 msgstr "Ikony"
 
+#
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
-msgstr ""
+msgstr "Jestliže je povoleno, funkce Kopírovat/Přemístit budou ukládat cílový adresář do záložek."
 
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr "Jestliže je povoleno, displej zobrazuje 12 znaků místo 8, ale pouze v latin-1/translit."
@@ -6716,11 +6696,12 @@ msgstr ""
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr "Ze záložního přijímače se importují programy a/nebo EPG také v případě probuzení z pohotovostního režimu."
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
-msgstr "Ze záložního přijímače se importují programy a/nebo EPG po spuštění přijímače."
-
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr "Ze záložního přijímače se importují programy a/nebo EPG také v případě, že jsou přijímač nebo enigma2 zrestartovány."
+
+#, fuzzy
+msgid "Import channels from remote receiver URL when receiver is booted"
+msgstr "Ze záložního přijímače se importují programy a/nebo EPG po spuštění přijímače."
 
 #, python-format
 msgid "Import from fallback tuner failed, %s"
@@ -6894,10 +6875,6 @@ msgstr "Zadání "
 
 msgid "Input Stream ID"
 msgstr "Input Stream ID"
-
-#, fuzzy
-msgid "Input config file name:"
-msgstr "Dlouhé názvy souborů"
 
 msgid "Input device setup"
 msgstr "Nastavení vstupního zařízení"
@@ -7258,7 +7235,6 @@ msgstr "Poslední konfigurace"
 msgid "Last speed"
 msgstr "Poslední rychlost"
 
-#, fuzzy
 msgid "Last update: "
 msgstr "Poslední aktualizace: "
 
@@ -7270,7 +7246,6 @@ msgstr ""
 msgid "Latest Commits"
 msgstr "Poslední změny"
 
-#, fuzzy
 msgid "Latest update log"
 msgstr "Log poslední aktualizace"
 
@@ -8344,6 +8319,9 @@ msgstr "Nejsou dostupné žádné podprogramy."
 msgid "No age block"
 msgstr "neblokovat"
 
+msgid "No config to start, please check /etc/openvpn/ and try again."
+msgstr ""
+
 #
 #, fuzzy
 msgid "No connection"
@@ -8373,7 +8351,7 @@ msgid "No displayable files on this medium found!"
 msgstr "Žádné zobrazitelné soubory na tomto médiu nebyly nalezeny!"
 
 msgid "No epg.dat file found server"
-msgstr ""
+msgstr "Nenalezen soubor epg.dat na serveru"
 
 #
 msgid "No event info found, recording indefinitely."
@@ -8776,9 +8754,8 @@ msgstr "Pouze při startu"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Zvolte pouze 'Ano', pokud používáte multiswitch, který vyžaduje DiSEqC Port-A příkazový signál. Pro všechna ostatní nastavení zvolte 'Ne'."
 
-#, fuzzy
 msgid "Open Vision enigma2 image"
-msgstr "Python: "
+msgstr ""
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8858,7 +8835,6 @@ msgstr "Celkový průběh:"
 msgid "Overscan wizard"
 msgstr "Overscan průvodce"
 
-#, fuzzy
 msgid "Overwrite configuration files during software update?"
 msgstr "Přepsat konfigurační soubory při aktualizaci software ?"
 
@@ -9991,11 +9967,9 @@ msgstr "Opravdu nyní vypnout?"
 msgid "Really store at index %2d for current position?"
 msgstr "Opravdu uložit současnou pozici pod index %2d?"
 
-#, fuzzy
 msgid "Really update the frontprocessor and reboot now?"
 msgstr "Skutečně aktualizovat frontprocesor a restartovat?"
 
-#, fuzzy
 msgid "Really update your settop box and reboot now?"
 msgstr "Skutečně aktualizovat přijímač a restartovat"
 
@@ -10186,7 +10160,6 @@ msgid "Remove currently selected title"
 msgstr "Odstranit vybraný titul"
 
 #
-#, fuzzy
 msgid "Remove directory"
 msgstr "Smazat adresář"
 
@@ -10247,7 +10220,6 @@ msgid "Repeat leave standby messages"
 msgstr "Opakovat odeslání probuzení ze standby"
 
 #
-#, fuzzy
 msgid "Repeat playlist"
 msgstr "Opakovat playlist"
 
@@ -10717,13 +10689,10 @@ msgstr "Uložit a zastavit timeshift"
 msgid "Save changes"
 msgstr "Uložit změny"
 
-#
-#, fuzzy
 msgid "Save every (in hours)"
-msgstr "Všude"
+msgstr ""
 
 #
-#, fuzzy
 msgid "Save last directory on exit"
 msgstr "Uložit poslední adresář při ukončení"
 
@@ -10732,7 +10701,6 @@ msgid "Save playlist"
 msgstr "Uložit playlist"
 
 #
-#, fuzzy
 msgid "Save playlist on exit"
 msgstr "Při ukončení uložit playlist"
 
@@ -11265,12 +11233,10 @@ msgid "Select the virtual keyboard shifted character set for the next character 
 msgstr "Shift pro následující znak"
 
 #
-#, fuzzy
 msgid "Select update source"
 msgstr "Vyberte zdroje pro aktualizaci"
 
 #
-#, fuzzy
 msgid "Select update source to edit."
 msgstr "Výběr zdroje pro aktualizaci k úpravě."
 
@@ -11856,7 +11822,6 @@ msgstr "Zobrazit infobar při přeskočení dopředu/zpět"
 msgid "Show latest commits"
 msgstr "Zobrazit poslední změny"
 
-#, fuzzy
 msgid "Show latest update log"
 msgstr "Zobrazit log poslední aktualizace"
 
@@ -11870,7 +11835,6 @@ msgid "Show log"
 msgstr "Nápověda"
 
 #
-#, fuzzy
 msgid "Show media player on main menu"
 msgstr "Zobrazovat Mediaplayer v hlavním menu"
 
@@ -11935,7 +11899,6 @@ msgstr "Zobrazovat pikony na displeji"
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "Zobrazit rozšířený popis"
 
-#, fuzzy
 msgid "Show packages to be updated"
 msgstr "Zobrazit aktualizované balíčky"
 
@@ -12019,8 +11982,10 @@ msgstr "Zobrazit přehrávač rádií"
 msgid "Show the tv player..."
 msgstr "Zobrazit TV..."
 
+#
+#, fuzzy
 msgid "Show this plugin in plugin menu"
-msgstr ""
+msgstr "Zobrazovat Mediaplayer v hlavním menu"
 
 msgid "Show time elapsed as positive"
 msgstr ""
@@ -12367,7 +12332,6 @@ msgid "Sort time"
 msgstr "Setřídit dle času"
 
 #
-#, fuzzy
 msgid "Sorting of playlists"
 msgstr "Třídění playlistů"
 
@@ -12560,7 +12524,6 @@ msgid "Start cut"
 msgstr "Spustit test"
 
 #
-#, fuzzy
 msgid "Start directory"
 msgstr "Výchozí adresář"
 
@@ -12930,7 +12893,6 @@ msgid "Switch to TV mode"
 msgstr "Přepnout do TV módu"
 
 #
-#, fuzzy
 msgid "Switch to bookmarks"
 msgstr "Přepnout do záložek"
 
@@ -14188,7 +14150,6 @@ msgstr "Nelze nastavit požadované adresáře na médiu (např. na USB nebo HDD
 
 #
 #
-#, fuzzy
 msgid ""
 "Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
@@ -14305,7 +14266,6 @@ msgid "Update and reboot (recommended)"
 msgstr "Aktualizovat a restartovat (doporučeno)"
 
 #
-#, fuzzy
 msgid "Update bookmarks"
 msgstr "Aktualizovat záložky"
 
@@ -14339,7 +14299,6 @@ msgid "Updatefeed not available."
 msgstr "Zdroj aktualizací není k dispozici."
 
 #
-#, fuzzy
 msgid "Updating"
 msgstr "Aktualizace"
 
@@ -14448,9 +14407,10 @@ msgstr "Použít původní pozici teletextu"
 msgid "Use power measurement"
 msgstr "Použít měření proudu"
 
+#
 #, fuzzy
 msgid "Use slim screen"
-msgstr "Celá obrazovka"
+msgstr "zakázat úvodní obrazovku"
 
 #
 #, fuzzy
@@ -14986,7 +14946,6 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr "Jaký typ vyhledání programů chcete?"
 
-#, fuzzy
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Enigma2 bude načítat odstraněné uživatelské přehledy. To znamená, že uživatelské přehledy, které jsou k dispozici, ale nejsou zahrnuty v bouquets.tv nebo bouquets.radio, budou načteny. To například umožňuje zachovat vlastní uživatelské přehledy, zatímco instalovaná nastavení jsou aktualizována."
 
@@ -15312,9 +15271,8 @@ msgstr ""
 msgid "Yellow DVB subtitles"
 msgstr "Žluté DVB titulky"
 
-#, fuzzy
 msgid "Yellow long"
-msgstr "Nápověda"
+msgstr ""
 
 msgid "Yemen"
 msgstr "Jemen"
@@ -15479,7 +15437,6 @@ msgstr "Vaše kompilace přesahuje kapacitu jednovrstvého DVD. Budete potřebov
 msgid "Your current collection will get lost!"
 msgstr "Vaše současná kompilace bude ztracena!"
 
-#, fuzzy
 msgid ""
 "Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
@@ -15756,10 +15713,8 @@ msgstr "Po "
 msgid "all"
 msgstr "Všechny"
 
-#
-#, fuzzy
 msgid "alpha then oldest"
-msgstr "Podle abecedy v opačném pořadí"
+msgstr ""
 
 #
 msgid "alphabetic"
@@ -15773,10 +15728,8 @@ msgstr "Podle abecedy v opačném pořadí"
 msgid "alphabetical"
 msgstr "Abecedně"
 
-#
-#, fuzzy
 msgid "alpharev then newest"
-msgstr "Podle abecedy v opačném pořadí"
+msgstr ""
 
 msgid "alternative"
 msgstr "Alternativní"
@@ -15883,9 +15836,8 @@ msgstr "dole"
 msgid "broadcasting/press"
 msgstr "vysílání/tisk"
 
-#, fuzzy
 msgid "by Open Vision developers"
-msgstr "Python: "
+msgstr ""
 
 #
 msgid "by date"
@@ -16015,10 +15967,6 @@ msgstr "den"
 #, fuzzy
 msgid "day and date"
 msgstr "Podle data"
-
-#
-msgid "default"
-msgstr "Výchozí"
 
 #
 msgid "delete cut"
@@ -16764,7 +16712,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "reboot system"
-msgstr "Systém"
+msgstr "Zakládá se souborový systém"
 
 msgid "receiver software because updates are available."
 msgstr "software přijímače, jelikož aktualizace jsou dostupné."
@@ -16794,7 +16742,7 @@ msgstr "odebrat po této pozici"
 #
 #, fuzzy
 msgid "remove all"
-msgstr "Smazat záložku"
+msgstr "Odstranit položku"
 
 #
 msgid "remove all alternatives"
@@ -16895,10 +16843,9 @@ msgstr "rock/pop"
 msgid "romance"
 msgstr "romance"
 
-#
 #, fuzzy
 msgid "running..."
-msgstr "prohledávání..."
+msgstr "probíhá"
 
 msgid "save"
 msgstr ""
@@ -16917,7 +16864,7 @@ msgstr "sekund"
 #
 #, fuzzy
 msgid "select "
-msgstr "výběr"
+msgstr "Odebrat"
 
 #
 msgid "select CAId's"

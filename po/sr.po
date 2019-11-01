@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-26 19:02+0330\n"
+"POT-Creation-Date: 2019-11-01 18:37+0330\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -45,7 +45,6 @@ msgid ""
 msgstr ""
 
 #
-#, fuzzy
 msgid ""
 "\n"
 "Edit the update source address."
@@ -1958,20 +1957,20 @@ msgstr "Arapski"
 #
 #, fuzzy, python-format
 msgid "Are you ready to install \"%s\" ?"
-msgstr "Poništi instaliranje"
+msgstr "Da li želite da instalirate paket:\n"
 
 #
 #, fuzzy, python-format
 msgid "Are you ready to remove \"%s\" ?"
-msgstr "Vratite se na listu filmova"
+msgstr ""
+"Da li stvarno želite da skinete\n"
+"dodatak \"%s\"?"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Are you sure to reboot to"
-msgstr "Da li ste sigurni da želite izaći iz ovog čarobnjaka?"
+msgstr ""
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -2022,7 +2021,9 @@ msgstr ""
 #
 #, fuzzy
 msgid "Are you sure you want to delete the EPG data from:\n"
-msgstr "Da li ste sigurni da želite izaći iz ovog čarobnjaka?"
+msgstr ""
+"Da li ste sigurni da želite da izbrišete\n"
+"sledeću rezervnu kopiju:\n"
 
 #
 #, fuzzy
@@ -2223,7 +2224,7 @@ msgstr "Auto"
 #
 #, fuzzy
 msgid "Auto Detect"
-msgstr "spremni za početak"
+msgstr "Automatski"
 
 msgid "Auto Diseqc"
 msgstr ""
@@ -2522,10 +2523,8 @@ msgstr ""
 msgid "Blue LED brightness"
 msgstr "Osvetljenje"
 
-#
-#, fuzzy
 msgid "Blue long"
-msgstr "Obriši log"
+msgstr ""
 
 msgid "Bolivia (Plurinational State of)"
 msgstr ""
@@ -2927,7 +2926,7 @@ msgstr "Meni liste kanala"
 #
 #, fuzzy
 msgid "Channelname"
-msgstr "%d kanala pronađeno!"
+msgstr "Kanal"
 
 msgid "Channelname in Standby Clock"
 msgstr ""
@@ -2962,11 +2961,6 @@ msgstr "Kanal"
 #, fuzzy
 msgid "Channels and EPG"
 msgstr "Meni liste kanala"
-
-#
-#, fuzzy
-msgid "Channels only"
-msgstr "Kanal"
 
 #
 msgid "Chap."
@@ -3270,9 +3264,6 @@ msgid "Config"
 msgstr "Konfigurišem"
 
 msgid "Config Scan Details"
-msgstr ""
-
-msgid "Config file name (ok to change):"
 msgstr ""
 
 msgid "Config resolution of pictures"
@@ -3846,7 +3837,6 @@ msgid "Create DVD-ISO"
 msgstr "Napravi DVD-ISO"
 
 #
-#, fuzzy
 msgid "Create directory"
 msgstr "Kreiraj direktorijum"
 
@@ -4483,10 +4473,8 @@ msgstr "Primećeni NIMs:"
 msgid "Device"
 msgstr "Kanal"
 
-#
-#, fuzzy
 msgid "Device mounts"
-msgstr "Kanal"
+msgstr ""
 
 msgid "Devicename:"
 msgstr ""
@@ -4494,7 +4482,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Devices"
-msgstr "Kanal"
+msgstr "Kanali"
 
 #
 msgid "DiSEqC"
@@ -4822,7 +4810,6 @@ msgid "Do you want to select a different skin?"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Do you want to update the package:\n"
 msgstr "Da li želite da nadogradite paket:\n"
 
@@ -4972,9 +4959,6 @@ msgstr ""
 msgid "EPG location"
 msgstr "EPG selektor "
 
-msgid "EPG only"
-msgstr ""
-
 #
 #, fuzzy
 msgid "EPG selection"
@@ -5044,7 +5028,6 @@ msgid "Edit title"
 msgstr "Urediti naslov"
 
 #
-#, fuzzy
 msgid "Edit update source url."
 msgstr "Uredi url izvora nadogradnje."
 
@@ -5184,10 +5167,8 @@ msgstr ""
 msgid "Enable to display all true/false, yes/no, on/off and enable/disable set up options as a graphical switch."
 msgstr ""
 
-#
-#, fuzzy
 msgid "Enable twisted log"
-msgstr "uključi mod za premeštanje"
+msgstr ""
 
 msgid "Enable volume control with arrow buttons"
 msgstr ""
@@ -6321,7 +6302,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "HDMI recording"
-msgstr "Snimanje"
+msgstr "ovo snimanje"
 
 msgid "HDMI-CEC Source Active"
 msgstr ""
@@ -6704,10 +6685,10 @@ msgstr ""
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr ""
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
+msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr ""
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
+msgid "Import channels from remote receiver URL when receiver is booted"
 msgstr ""
 
 #, python-format
@@ -6881,10 +6862,6 @@ msgstr "Ulaz "
 
 msgid "Input Stream ID"
 msgstr ""
-
-#, fuzzy
-msgid "Input config file name:"
-msgstr "Dugačka imena datoteka"
 
 msgid "Input device setup"
 msgstr "Podešavanje ulaznog uređaja "
@@ -7262,10 +7239,8 @@ msgstr "Zadnji konfig"
 msgid "Last speed"
 msgstr "Poslednja brzina"
 
-#
-#, fuzzy
 msgid "Last update: "
-msgstr "Izaberi izvor nadodradnje za uređivanje."
+msgstr ""
 
 msgctxt "third event: 'third' event label"
 msgid "Later"
@@ -7518,12 +7493,12 @@ msgstr "IP Adresa"
 #
 #, fuzzy
 msgid "MAC address settings"
-msgstr "Urediti postavke"
+msgstr "Postavke adaptera"
 
 #
 #, fuzzy
 msgid "MAC address setup"
-msgstr "Urediti postavke"
+msgstr "Postavke hard diska"
 
 msgid "MAC:"
 msgstr ""
@@ -8116,10 +8091,8 @@ msgstr ""
 msgid "N/A"
 msgstr "N/A"
 
-#
-#, fuzzy
 msgid "NCam Config info"
-msgstr "Konfiguracija tjunera"
+msgstr ""
 
 #
 #, fuzzy
@@ -8131,15 +8104,11 @@ msgstr "Info"
 msgid "NCam Info - Configuration"
 msgstr "Konfiguracija tjunera"
 
-#
-#, fuzzy
 msgid "NCam Info - Main Menu"
-msgstr "Konfiguracija tjunera"
+msgstr ""
 
-#
-#, fuzzy
 msgid "NCam Info Main Menu"
-msgstr "Konfiguracija tjunera"
+msgstr ""
 
 #, python-format
 msgid "NCam Log ( NCam-Version: %s )"
@@ -8374,6 +8343,9 @@ msgid "No active subservices available."
 msgstr "ažuriranja dostupna."
 
 msgid "No age block"
+msgstr ""
+
+msgid "No config to start, please check /etc/openvpn/ and try again."
 msgstr ""
 
 #
@@ -8722,10 +8694,8 @@ msgstr "Postavke OSD"
 msgid "OSD transparency"
 msgstr ""
 
-#
-#, fuzzy
 msgid "OScam Config info"
-msgstr "Konfiguracija tjunera"
+msgstr ""
 
 #
 #, fuzzy
@@ -8740,15 +8710,11 @@ msgstr ""
 msgid "OScam Info - Configuration"
 msgstr "Konfiguracija tjunera"
 
-#
-#, fuzzy
 msgid "OScam Info - Main Menu"
-msgstr "Konfiguracija tjunera"
+msgstr ""
 
-#
-#, fuzzy
 msgid "OScam Info Main Menu"
-msgstr "Konfiguracija tjunera"
+msgstr ""
 
 #, python-format
 msgid "OScam Log ( OScam-Version: %s )"
@@ -8822,15 +8788,11 @@ msgstr ""
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
-#
-#, fuzzy
 msgid "Open Vision enigma2 image"
-msgstr "Nova verzija:"
+msgstr ""
 
-#
-#, fuzzy
 msgid "Open Vision module: "
-msgstr "Nova verzija:"
+msgstr ""
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -8907,7 +8869,6 @@ msgstr ""
 msgid "Overscan wizard"
 msgstr ""
 
-#, fuzzy
 msgid "Overwrite configuration files during software update?"
 msgstr "Prepiši konfiguracione datoteke za vreme nadograđivanja softvera?"
 
@@ -9953,10 +9914,8 @@ msgstr ""
 msgid "RC command set"
 msgstr "Redosled komandi"
 
-#
-#, fuzzy
 msgid "REC"
-msgstr "FEC"
+msgstr ""
 
 msgid "REC Symbol"
 msgstr ""
@@ -10184,9 +10143,8 @@ msgstr ""
 msgid "Reloading bouquets and services..."
 msgstr ""
 
-#, fuzzy
 msgid "Remaining"
-msgstr "na početku"
+msgstr ""
 
 msgid "Remaining & Elapsed"
 msgstr ""
@@ -10249,7 +10207,6 @@ msgid "Remove currently selected title"
 msgstr "Ukloni trenutno odabrani titl"
 
 #
-#, fuzzy
 msgid "Remove directory"
 msgstr "Uklonite direktorijum"
 
@@ -10260,10 +10217,9 @@ msgstr ""
 msgid "Remove plugins"
 msgstr "Obriši dodatke"
 
-#
 #, fuzzy
 msgid "Remove service"
-msgstr "Uklanjanje"
+msgstr "Zapamti PIN kanala"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
@@ -10313,7 +10269,6 @@ msgid "Repeat leave standby messages"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Repeat playlist"
 msgstr "Ponovite listu za reprodukciju"
 
@@ -10462,7 +10417,7 @@ msgstr "Vrati bekape"
 #
 #, fuzzy
 msgid "Restore inetd"
-msgstr "Vrati bekape"
+msgstr "Vrati "
 
 #
 #, fuzzy
@@ -10792,7 +10747,6 @@ msgid "Save every (in hours)"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Save last directory on exit"
 msgstr "Sačuvajte poslednji direktorijum kod izlaska"
 
@@ -10802,7 +10756,6 @@ msgid "Save playlist"
 msgstr "sačuvaj plejlistu"
 
 #
-#, fuzzy
 msgid "Save playlist on exit"
 msgstr "Sačuvajte listu za reprodukciju kod izlaska "
 
@@ -11362,7 +11315,6 @@ msgid "Select update source"
 msgstr "Izaberi izvor nadodradnje za uređivanje."
 
 #
-#, fuzzy
 msgid "Select update source to edit."
 msgstr "Izaberi izvor nadodradnje za uređivanje."
 
@@ -11823,7 +11775,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Show Main Menu as"
-msgstr "Konfiguracija tjunera"
+msgstr "Pokaži glavni DVD meni"
 
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
@@ -11970,10 +11922,8 @@ msgstr "Prikaži info traku na preskakanju napred/nazad"
 msgid "Show latest commits"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Show latest update log"
-msgstr "Izaberi izvor nadodradnje za uređivanje."
+msgstr ""
 
 #
 #, fuzzy
@@ -12049,10 +11999,8 @@ msgstr ""
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "prikaži proširene informacije"
 
-#
-#, fuzzy
 msgid "Show packages to be updated"
-msgstr "Nadogradnja liste paketa"
+msgstr ""
 
 msgid "Show picons in channel selection list"
 msgstr ""
@@ -12469,9 +12417,10 @@ msgstr ""
 msgid "Sort by"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Sort by default"
-msgstr "Standardno"
+msgstr "standardne postavke stila liste"
 
 msgid "Sort list to default and exit?"
 msgstr ""
@@ -12494,10 +12443,8 @@ msgstr ""
 msgid "Sort time"
 msgstr "Vreme sortiranja"
 
-#
-#, fuzzy
 msgid "Sorting of playlists"
-msgstr "prebaci u plejlistu"
+msgstr ""
 
 #
 msgid "Sound"
@@ -12688,7 +12635,6 @@ msgid "Start cut"
 msgstr "Počnite test"
 
 #
-#, fuzzy
 msgid "Start directory"
 msgstr "Početni direktorijum"
 
@@ -13059,7 +13005,6 @@ msgid "Switch to TV mode"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Switch to bookmarks"
 msgstr "Prebaci na oznake"
 
@@ -13260,10 +13205,8 @@ msgstr ""
 msgid "Teletext base visibility"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Teletext font and resolution"
-msgstr "Molim odaberite podkanal..."
+msgstr ""
 
 msgid "Teletext subtitle color"
 msgstr ""
@@ -14111,7 +14054,7 @@ msgstr "Transponder"
 #
 #, fuzzy
 msgid "Transponder time"
-msgstr "prikaži info transpondera"
+msgstr "Transponder"
 
 #
 #, fuzzy
@@ -14468,9 +14411,8 @@ msgid "Updatefeed not available."
 msgstr "Fid ažuriranja nije dostupan."
 
 #
-#, fuzzy
 msgid "Updating"
-msgstr "Ažuriranje"
+msgstr "Nadograđujem"
 
 #
 msgid "Updating software catalog"
@@ -15447,10 +15389,8 @@ msgstr ""
 msgid "Yellow DVB subtitles"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Yellow long"
-msgstr "Prikaži info"
+msgstr ""
 
 msgid "Yemen"
 msgstr ""
@@ -15864,10 +15804,8 @@ msgstr ""
 msgid "all"
 msgstr ""
 
-#
-#, fuzzy
 msgid "alpha then oldest"
-msgstr "sortiraj abecedno"
+msgstr ""
 
 #
 #, fuzzy
@@ -15880,10 +15818,8 @@ msgstr ""
 msgid "alphabetical"
 msgstr ""
 
-#
-#, fuzzy
 msgid "alpharev then newest"
-msgstr "sortiraj abecedno"
+msgstr ""
 
 msgid "alternative"
 msgstr ""
@@ -15990,10 +15926,8 @@ msgstr ""
 msgid "broadcasting/press"
 msgstr ""
 
-#
-#, fuzzy
 msgid "by Open Vision developers"
-msgstr "Nova verzija:"
+msgstr ""
 
 #
 #, fuzzy
@@ -16120,10 +16054,6 @@ msgstr "Dan"
 #, fuzzy
 msgid "day and date"
 msgstr "sortiraj po datumu"
-
-#, fuzzy
-msgid "default"
-msgstr "Standardno"
 
 #
 msgid "delete cut"
@@ -16860,7 +16790,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "reboot system"
-msgstr "Sistem "
+msgstr "Kontrola sistema datoteka"
 
 msgid "receiver software because updates are available."
 msgstr ""
@@ -16890,7 +16820,7 @@ msgstr "obriši posle ove pozicije"
 #
 #, fuzzy
 msgid "remove all"
-msgstr "uklonite oznaku"
+msgstr "obriši unos"
 
 #
 msgid "remove all alternatives"
@@ -16991,9 +16921,10 @@ msgstr ""
 msgid "romance"
 msgstr ""
 
+#
 #, fuzzy
 msgid "running..."
-msgstr "na početku"
+msgstr "Bekap u toku..."
 
 msgid "save"
 msgstr ""
@@ -17012,16 +16943,14 @@ msgstr "sekundi"
 #
 #, fuzzy
 msgid "select "
-msgstr "Izaberite"
+msgstr "Deselektuj"
 
 #
 msgid "select CAId's"
 msgstr "Izaberite CAId-e"
 
-#
-#, fuzzy
 msgid "select Info..."
-msgstr "Izaberite"
+msgstr ""
 
 #
 msgid "select menu entry"

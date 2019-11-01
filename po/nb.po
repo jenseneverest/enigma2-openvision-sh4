@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-26 19:02+0330\n"
+"POT-Creation-Date: 2019-11-01 18:37+0330\n"
 "PO-Revision-Date: 2019-10-19 14:24+0200\n"
 "Last-Translator: GeirJ <dummy@dummy.com>\n"
 "Language-Team: GeirJ\n"
@@ -232,9 +232,8 @@ msgstr ""
 msgid "%-d-%b"
 msgstr ""
 
-#, fuzzy
 msgid "%-d-%b-%Y"
-msgstr "%d-%b-%Y %-H:%M"
+msgstr ""
 
 msgid "%-d/%-m"
 msgstr ""
@@ -521,21 +520,17 @@ msgstr ""
 msgid "%Y %b %d"
 msgstr ""
 
-#, fuzzy
 msgid "%Y-%B-%-d"
-msgstr "%d.%m.%Y %H:%M"
+msgstr ""
 
-#, fuzzy
 msgid "%Y-%B-%d"
-msgstr "%d.%m.%Y %H:%M"
+msgstr ""
 
-#, fuzzy
 msgid "%Y-%b-%-d"
-msgstr "%d.%m.%Y %H:%M"
+msgstr ""
 
-#, fuzzy
 msgid "%Y-%b-%d"
-msgstr "%d.%m.%Y %H:%M"
+msgstr ""
 
 msgid "%Y/%-m/%-d"
 msgstr ""
@@ -961,7 +956,7 @@ msgstr "%d-%m"
 
 #, fuzzy
 msgid "%d-%b-%Y"
-msgstr "%d-%b-%Y %-H:%M"
+msgstr "%d-%m"
 
 msgid "%d-%m"
 msgstr "%d-%m"
@@ -2149,9 +2144,8 @@ msgstr "Lyd valg..."
 msgid "Audio plugins"
 msgstr "Lyd tillegg"
 
-#, fuzzy
 msgid "Audio source"
-msgstr "HDMI-lydkilde"
+msgstr ""
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2255,9 +2249,8 @@ msgstr "Automatisk"
 msgid "Automatic Scan"
 msgstr "Automatisk søk"
 
-#, fuzzy
 msgid "Automatic bookmarks"
-msgstr "Oppdatere bokmerker"
+msgstr "Huskeliste"
 
 #, fuzzy
 msgid "Automatic refresh"
@@ -2477,7 +2470,7 @@ msgstr "Lysstyrke"
 #
 #, fuzzy
 msgid "Blue long"
-msgstr "Slett logg"
+msgstr "Blå"
 
 msgid "Bolivia (Plurinational State of)"
 msgstr "Bolivia"
@@ -2929,10 +2922,6 @@ msgid "Channels and EPG"
 msgstr "Kanaler og EPG"
 
 #
-msgid "Channels only"
-msgstr "Bare kanaler"
-
-#
 msgid "Chap."
 msgstr "Kap."
 
@@ -3229,9 +3218,6 @@ msgstr "Installerer"
 
 msgid "Config Scan Details"
 msgstr "Still inn søkedetaljer"
-
-msgid "Config file name (ok to change):"
-msgstr ""
 
 msgid "Config resolution of pictures"
 msgstr "Still inn oppløsning for bildeframviser"
@@ -3796,15 +3782,12 @@ msgstr "Kroatia"
 msgid "Croatian"
 msgstr "Kroatisk"
 
-#
-#, fuzzy
 msgid "Cron Manager"
-msgstr "Filmbehandling"
+msgstr ""
 
-#
 #, fuzzy
 msgid "Cron manager"
-msgstr "Filmbehandling"
+msgstr "ingen ressursforvalter"
 
 #
 #, fuzzy
@@ -4377,10 +4360,8 @@ msgstr "Tuner type:"
 msgid "Device"
 msgstr "Kanal"
 
-#
-#, fuzzy
 msgid "Device mounts"
-msgstr "Kanaler"
+msgstr ""
 
 msgid "Devicename:"
 msgstr "Enhetsnavn:"
@@ -4843,9 +4824,6 @@ msgstr "EPG språkvalg 2"
 msgid "EPG location"
 msgstr "EPG valg"
 
-msgid "EPG only"
-msgstr "Kun EPG"
-
 #
 msgid "EPG selection"
 msgstr "EPG valg"
@@ -4859,7 +4837,7 @@ msgstr "FEIL - kunne ikke søke (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr ""
+msgstr "FEIL under nedlasting av fil %s"
 
 #
 msgid "East"
@@ -5223,9 +5201,9 @@ msgid "Error"
 msgstr "Feil"
 
 #
-#, fuzzy, python-format
+#, python-format
 msgid "Error %s"
-msgstr "Feil"
+msgstr "Feil %s"
 
 msgid "Error code"
 msgstr "Feil kode"
@@ -5265,13 +5243,10 @@ msgid "Error stop stream!"
 msgstr "Feil stopp stream!"
 
 msgid "Error when writing epg.dat on server"
-msgstr ""
+msgstr "Feil ved skriving av EPG på server"
 
-#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr ""
-"Feil ved henting av reserve timer informasjon\n"
-"%s"
+msgstr "Feil ved henting av EPG fra server"
 
 #, python-format
 msgid ""
@@ -5281,11 +5256,8 @@ msgstr ""
 "Feil ved henting av reserve timer informasjon\n"
 "%s"
 
-#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
-msgstr ""
-"Feil ved henting av reserve timer informasjon\n"
-"%s"
+msgstr "Feil ved henting av EPG lokasjon på server"
 
 #
 #, python-format
@@ -6488,7 +6460,7 @@ msgid "Icons"
 msgstr "Framdriftsirkel"
 
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
-msgstr ""
+msgstr "Hvis aktivert, vil bokmerker bli oppdatert med den nye plasseringen når du flytter eller kopierer et opptak."
 
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr "Hvis aktivert, display viser 12 tegn istedenfor 8, men bare i latin-1/overs."
@@ -6555,11 +6527,12 @@ msgstr "Operativsystem: "
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr "Importer kanaler og/eller EPG fra ekstern mottakeradresse også når mottakeren blir slått på"
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
-msgstr "Importer kanaler og/eller EPG fra ekstern mottakeradresse når mottakeren er oppstartet"
-
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr "Importer kanaler og/eller EPG fra ekstern mottakeradresse når mottakeren eller enigma2 har startet på nytt"
+
+#, fuzzy
+msgid "Import channels from remote receiver URL when receiver is booted"
+msgstr "Importer kanaler og/eller EPG fra ekstern mottakeradresse når mottakeren er oppstartet"
 
 #, python-format
 msgid "Import from fallback tuner failed, %s"
@@ -6730,10 +6703,6 @@ msgstr "Inngang "
 
 msgid "Input Stream ID"
 msgstr "Still inn Stream ID"
-
-#, fuzzy
-msgid "Input config file name:"
-msgstr "Lange filnavn"
 
 msgid "Input device setup"
 msgstr "Enhetsinnstilling"
@@ -7571,7 +7540,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "MiniDLNA setup"
-msgstr "Oppsett utseende"
+msgstr "PiP-bilde i bilde oppsett"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -7619,9 +7588,10 @@ msgstr "Beskytt innstilling"
 msgid "Modem settings"
 msgstr "Rediger innstillinger"
 
+#
 #, fuzzy
 msgid "Modem type"
-msgstr "Softcam type"
+msgstr "Testtype"
 
 #
 msgid "Modes"
@@ -7932,7 +7902,7 @@ msgstr "INS"
 #
 #, fuzzy
 msgid "NFS setup"
-msgstr "Oppsett utseende"
+msgstr "Innstilling"
 
 msgid "NIM & Type"
 msgstr "Tuner modul - type"
@@ -8143,6 +8113,9 @@ msgstr "Ingen aktive subservices er tilgjengelige."
 msgid "No age block"
 msgstr "Ingen aldersgrense"
 
+msgid "No config to start, please check /etc/openvpn/ and try again."
+msgstr ""
+
 #
 #, fuzzy
 msgid "No connection"
@@ -8171,7 +8144,7 @@ msgid "No displayable files on this medium found!"
 msgstr "Ingen visbare filer på dette mediet funnet!"
 
 msgid "No epg.dat file found server"
-msgstr ""
+msgstr "Fant ikke noe EPG på server"
 
 #
 msgid "No event info found, recording indefinitely."
@@ -8669,10 +8642,9 @@ msgstr "PGS fil"
 msgid "PGS file"
 msgstr "PGS fil"
 
-#
 #, fuzzy
 msgid "PID"
-msgstr "PIDs"
+msgstr "PDC"
 
 #
 msgid "PIN code needed"
@@ -9305,7 +9277,7 @@ msgstr "Posisjonerers oppsetts logg"
 
 #, fuzzy
 msgid "Power"
-msgstr "Av/på meny"
+msgstr "Strøm-LED"
 
 msgid "Power LED"
 msgstr "Strøm-LED"
@@ -10249,7 +10221,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "SABnzbd setup"
-msgstr "Oppsett utseende"
+msgstr "Veiviser oppsett"
 
 msgid "SCAN"
 msgstr ""
@@ -12802,7 +12774,7 @@ msgstr "Bakkenett"
 #
 #, fuzzy
 msgid "Test"
-msgstr "Testtype"
+msgstr "Testmodus"
 
 #
 msgid "Test DiSEqC settings"
@@ -14073,7 +14045,7 @@ msgstr "Bruk strøm-måling"
 
 #, fuzzy
 msgid "Use slim screen"
-msgstr "Full skjerm"
+msgstr "deaktiver intro skjerm"
 
 #, fuzzy
 msgid "Use the alternative screen"
@@ -14377,9 +14349,10 @@ msgstr "Virtuell tastatur tekst:"
 msgid "Virtual keyboard"
 msgstr "Virtuelt tastatur"
 
+#
 #, fuzzy, python-format
 msgid "Vol: %s"
-msgstr ": %s"
+msgstr "Video: %s bilder per sekund"
 
 #
 msgid "Voltage mode"
@@ -15334,9 +15307,8 @@ msgstr "etter "
 msgid "all"
 msgstr "alle"
 
-#, fuzzy
 msgid "alpha then oldest"
-msgstr "alfabetisk bakover"
+msgstr ""
 
 #
 msgid "alphabetic"
@@ -15349,9 +15321,8 @@ msgstr "alfabetisk bakover"
 msgid "alphabetical"
 msgstr "alfabetisk"
 
-#, fuzzy
 msgid "alpharev then newest"
-msgstr "alfabetisk bakover"
+msgstr ""
 
 #
 msgid "alternative"
@@ -15588,10 +15559,6 @@ msgstr "dag"
 #, fuzzy
 msgid "day and date"
 msgstr "etter dato"
-
-#
-msgid "default"
-msgstr "standard"
 
 #
 msgid "delete cut"
@@ -16274,9 +16241,8 @@ msgstr "bare fra helt avslått"
 msgid "only from standby"
 msgstr "bare fra avslått"
 
-#, fuzzy
 msgid "open Info..."
-msgstr "Kopier til..."
+msgstr ""
 
 #
 msgid "open nameserver configuration"
@@ -16357,7 +16323,7 @@ msgstr "slett etter denne posisjon"
 
 #, fuzzy
 msgid "remove all"
-msgstr "fjern bokmerke"
+msgstr "fjern denne kanal fra kanallisten"
 
 msgid "remove all alternatives"
 msgstr "slett alle alternativer"
@@ -16470,7 +16436,7 @@ msgstr "sekunder"
 #
 #, fuzzy
 msgid "select "
-msgstr "velg"
+msgstr "Angre"
 
 #
 msgid "select CAId's"

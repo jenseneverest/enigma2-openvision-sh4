@@ -772,12 +772,14 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 				'copy': _("Copy"),
 				'reset': _("Reset"),
 				'tags': _("Tags"),
+				"createdir": _("Create directory"),
 				'addbookmark': _("Add bookmark"),
 				'bookmarks': _("Location"),
 				'rename': _("Rename"),
 				'gohome': _("Home"),
 				'sort': _("Sort"),
 				'sortby': _("Sort by"),
+				'sortdefault': _("Sort by default"),
 				'listtype': _("List type"),
 				'preview': _("Preview"),
 				'movieoff': _("On end of movie"),
@@ -794,7 +796,11 @@ class MovieSelection(Screen, HelpableScreen, SelectionEventInfo, InfoBarBase, Pr
 			config.movielist.btn_red = ConfigSelection(default='delete', choices=userDefinedActions)
 			config.movielist.btn_green = ConfigSelection(default='move', choices=userDefinedActions)
 			config.movielist.btn_yellow = ConfigSelection(default='bookmarks', choices=userDefinedActions)
-			config.movielist.btn_blue = ConfigSelection(default='sort', choices=userDefinedActions)
+			config.movielist.btn_blue = ConfigSelection(default='sortby', choices=userDefinedActions)
+			config.movielist.btn_redlong = ConfigSelection(default='rename', choices=userDefinedActions)
+			config.movielist.btn_greenlong = ConfigSelection(default='copy', choices=userDefinedActions)
+			config.movielist.btn_yellowlong = ConfigSelection(default='tags', choices=userDefinedActions)
+			config.movielist.btn_bluelong = ConfigSelection(default='sortdefault', choices=userDefinedActions)
 			config.movielist.btn_radio = ConfigSelection(default='tags', choices=userDefinedActions)
 			config.movielist.btn_tv = ConfigSelection(default='gohome', choices=userDefinedActions)
 			config.movielist.btn_text = ConfigSelection(default='movieoff', choices=userDefinedActions)

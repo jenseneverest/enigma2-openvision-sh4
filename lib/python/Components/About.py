@@ -178,9 +178,11 @@ def getCPUArch():
 
 def getFlashType():
 	if SystemInfo["SmallFlash"]:
-		return _("Small - Lite image")
+		return _("Small - Tiny image")
+	elif SystemInfo["MiddleFlash"]:
+		return _("Middle - Lite image")
 	else:
-		return _("Normal - Vision image")
+		return _("Full - Vision image")
 
 def getDVBAPI():
 	return _("Old - SH4")

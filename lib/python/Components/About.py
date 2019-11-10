@@ -170,6 +170,13 @@ def getCPUInfoString():
 	except:
 		return _("undefined")
 
+def getChipSetString():
+	try:
+		chipset = open("/proc/stb/info/chipset", "r").read()
+		return str(chipset.lower().replace('\n',''))
+	except IOError:
+		return _("undefined")
+
 def getCPUBrand():
 	return _("STMicroelectronics")
 

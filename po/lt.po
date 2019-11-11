@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-01 18:37+0330\n"
-"PO-Revision-Date: 2019-10-23 18:04+0300\n"
+"POT-Creation-Date: 2019-11-11 11:20+0330\n"
+"PO-Revision-Date: 2019-11-01 20:02+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -28,9 +28,6 @@ msgstr ""
 "\n"
 "Paspaudus OK, prašome laukti!"
 
-msgid "Backup your receiver settings."
-msgstr "Atsarginė imtuvo nustatymų kopija."
-
 msgid ""
 "\n"
 "Conflict detection disabled!"
@@ -44,12 +41,6 @@ msgid ""
 msgstr ""
 "\n"
 "Redaguokite atnaujinimo šaltinio adresą."
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr "Valdykite savo imtuvo priedus ir išplėtimus."
-
-msgid "Online update of your receiver software."
-msgstr "Atnaujinti imtuvo programinę įrangą internetu."
 
 msgid ""
 "\n"
@@ -78,12 +69,6 @@ msgid ""
 msgstr ""
 "\n"
 "Atkurti atsarginę kopiją pagal datą."
-
-msgid "Restore your receiver settings."
-msgstr "Atkurti imtuvo nustatymus."
-
-msgid "Scan for local extensions and install them."
-msgstr "Ieškoti vietinių išplėtimų ir juos įdiegti."
 
 msgid ""
 "\n"
@@ -2077,6 +2062,12 @@ msgstr "Atsarginio kopijavimo nustatymai"
 
 msgid "Backup system settings"
 msgstr "Atsarginė sistemos nustatymų kopija"
+
+#, fuzzy
+msgid "Backup your receiver settings."
+msgstr ""
+"\n"
+"Atsarginė imtuvo nustatymų kopija."
 
 msgid "Bahamas"
 msgstr "Bahamai"
@@ -4510,6 +4501,10 @@ msgstr "Enigmos versija: "
 msgid "Enigma2 skin selector"
 msgstr "Enigma2 temos parinkėjas"
 
+#, fuzzy
+msgid "Enough - Vision image"
+msgstr "Normalus - Vision atvaizdas"
+
 msgid "Enter"
 msgstr "Įrašykite"
 
@@ -5768,9 +5763,8 @@ msgstr "Importuoti kanalus ir/arba EPG iš nuotolinio imtuvo URL taip pat, kai i
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr "Importuoti kanalus ir/arba EPG iš nuotolinio imtuvo URL, kai imtuvas arba enigma2 yra paleidžiami iš naujo"
 
-#, fuzzy
 msgid "Import channels from remote receiver URL when receiver is booted"
-msgstr "Importuoti kanalus ir/arba EPG iš nuotolinio imtuvo URL, kai imtuvas yra paleistas"
+msgstr "Importuokite kanalus iš nuotolinio imtuvo URL, kai imtuvas paleidžiamas"
 
 #, python-format
 msgid "Import from fallback tuner failed, %s"
@@ -6188,7 +6182,7 @@ msgstr "Ekrano tema"
 
 #, fuzzy
 msgid "LED display configuration"
-msgstr "Užverti IPv6 konfigūraciją"
+msgstr "Filmų sąrašo konfigūracija"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
@@ -6320,6 +6314,9 @@ msgstr "Sąrašo režimas"
 
 msgid "List of storage devices"
 msgstr "Saugojimo įrenginių sąrašas"
+
+msgid "List type"
+msgstr "Sąrašo tipas"
 
 #, python-format
 msgid "List version %d, found %d channel"
@@ -6501,6 +6498,12 @@ msgstr "Malta"
 msgid "Manage extensions"
 msgstr "Plėtinių valdymas"
 
+#, fuzzy
+msgid "Manage extensions or plugins for your receiver."
+msgstr ""
+"\n"
+"Valdykite savo imtuvo priedus ir išplėtimus"
+
 msgid "Manage your receiver's software"
 msgstr "Valdykite savo imtuvo programinę įrangą"
 
@@ -6625,6 +6628,10 @@ msgstr "Meksika"
 
 msgid "Micronesia (Federated States of)"
 msgstr "Mikronezijos Federacinės Valstijos"
+
+#, fuzzy
+msgid "Middle - Lite image"
+msgstr "Mažas - mažasis atvaizdas"
 
 msgid "MiniDLNA"
 msgstr "MiniDLNA"
@@ -7120,7 +7127,7 @@ msgid "No age block"
 msgstr "Be amžiaus ribojimo"
 
 msgid "No config to start, please check /etc/openvpn/ and try again."
-msgstr ""
+msgstr "Negalima pradėti konfigūracijos, patikrinkite /etc/openvpn/ ir bandykite dar kartą."
 
 msgid "No connection"
 msgstr "Nėra ryšio"
@@ -7274,9 +7281,6 @@ msgstr "Norfolko sala"
 
 msgid "Normal"
 msgstr "Normalus"
-
-msgid "Normal - Vision image"
-msgstr "Normalus - Vision atvaizdas"
 
 msgid "Normal mode"
 msgstr "Normalus režimas"
@@ -7461,6 +7465,12 @@ msgstr "Kartą per dieną"
 
 msgid "One"
 msgstr "Vienas"
+
+#, fuzzy
+msgid "Online update of your receiver software."
+msgstr ""
+"\n"
+"Atnaujinti imtuvo programinę įrangą internetu."
 
 msgid "Only active when in standby"
 msgstr "Tik budėjimo režime"
@@ -8837,6 +8847,12 @@ msgstr "Atkurkite ankstesnius iškirpimus..."
 msgid "Restore system settings"
 msgstr "Atkurti sistemos nustatymus"
 
+#, fuzzy
+msgid "Restore your receiver settings."
+msgstr ""
+"\n"
+"Atkurti imtuvo nustatymus."
+
 msgid "Restoring..."
 msgstr "Atkuriama..."
 
@@ -9178,6 +9194,12 @@ msgstr "Paieška nepavyko!"
 
 msgid "Scan files..."
 msgstr "Failų paieška..."
+
+#, fuzzy
+msgid "Scan for local extensions and install them."
+msgstr ""
+"\n"
+"Ieškoti vietinių išplėtimų ir juos įdiegti."
 
 msgid "Scan options"
 msgstr "Paieškos parinktys"
@@ -10409,7 +10431,8 @@ msgstr "Sulėtinimo greičiai"
 msgid "Small"
 msgstr "Mažas"
 
-msgid "Small - Lite image"
+#, fuzzy
+msgid "Small - Tiny image"
 msgstr "Mažas - mažasis atvaizdas"
 
 msgid "Small progress"
@@ -11089,7 +11112,7 @@ msgstr "TMBD informacija apie įvykį"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "Adga, Pasvalys, Lietuva\n"
-"2019-10-23 versija"
+"2019-11-01 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -12437,7 +12460,7 @@ msgstr "DVD grotuvas"
 
 #, fuzzy
 msgid "VFD display configuration"
-msgstr "Rankinis konfigūravimas"
+msgstr "Filmų sąrašo konfigūracija"
 
 msgid "VFD display configuration for Fortis HS742X"
 msgstr ""
@@ -13399,6 +13422,21 @@ msgstr "Perjungta į laikmačio kanalą %s kaip PiP!"
 #, python-format
 msgid "Zapped to timer service %s!"
 msgstr "Perjungta į laikmačio kanalą %s!"
+
+#, fuzzy
+msgid "ZeroTier Setup"
+msgstr "CI padėjėjo valdymas"
+
+#, fuzzy
+msgid "ZeroTier log"
+msgstr "Laikmačio žurnalas"
+
+#, fuzzy
+msgid "ZeroTier setup"
+msgstr "Serverio pavadinimo valdymas"
+
+msgid "ZeroTierVPN"
+msgstr ""
 
 msgid "Zimbabwe"
 msgstr "Zimbabvė"
@@ -14461,7 +14499,7 @@ msgstr "sekundžių"
 
 #, fuzzy
 msgid "select "
-msgstr "Atšaukti pasirinkimą"
+msgstr "pasirinkti"
 
 msgid "select CAId's"
 msgstr "pasirinkite CAId"

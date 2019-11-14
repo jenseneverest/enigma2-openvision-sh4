@@ -257,6 +257,22 @@ if test "$enable_pace7241" = "yes"; then
 	AC_DEFINE(ENABLE_PACE7241, 1, [enable pace7241 stuff])
 fi
 
+AC_ARG_ENABLE(qboxhd,
+	[  --enable-qboxhd            enable qboxhd stuff],
+	[AC_DEFINE(ENABLE_QBOXHD, 1, [enable qboxhd stuff])])
+AM_CONDITIONAL(ENABLE_QBOXHD, test "$enable_qboxhd" = "yes")
+if test "$enable_qboxhd" = "yes"; then
+	AC_DEFINE(ENABLE_QBOXHD, 1, [enable qboxhd stuff])
+fi
+
+AC_ARG_ENABLE(qboxhd_mini,
+	[  --enable-qboxhd_mini            enable qboxhd_mini stuff],
+	[AC_DEFINE(ENABLE_QBOXHDMINI, 1, [enable qboxhd_mini stuff])])
+AM_CONDITIONAL(ENABLE_QBOXHDMINI, test "$enable_qboxhd_mini" = "yes")
+if test "$enable_qboxhd_mini" = "yes"; then
+	AC_DEFINE(ENABLE_QBOXHDMINI, 1, [enable qboxhd_mini stuff])
+fi
+
 AC_ARG_ENABLE(sagemcom88,
 	[  --enable-sagemcom88            enable sagemcom88 stuff],
 	[AC_DEFINE(ENABLE_SAGEMCOM88, 1, [enable sagemcom88 stuff])])

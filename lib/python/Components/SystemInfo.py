@@ -1,7 +1,7 @@
 from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnigmaDebugLvl, getBoxType, getBoxBrand
 from Tools.Directories import fileExists, fileCheck, pathExists, fileHas
 from Tools.HardwareInfo import HardwareInfo
-import os
+import os, re
 from os import access, R_OK
 from boxbranding import getDisplayType
 
@@ -22,6 +22,11 @@ def countFrontpanelLEDs():
 def hassoftcaminstalled():
 	from Tools.camcontrol import CamControl
 	return len(CamControl('softcam').getList()) > 1
+
+# parse the boot commandline
+cmdline = open("/proc/cmdline", "r").read()
+cmdline = {k:v.strip('"') for k,v in re.findall(r'(\S+)=(".*?"|\S+)', cmdline)}
+model = getBoxType()
 
 SystemInfo["InDebugMode"] = eGetEnigmaDebugLvl() >= 4
 SystemInfo["CommonInterface"] = eDVBCIInterfaces.getInstance().getNumOfSlots()
@@ -74,7 +79,7 @@ SystemInfo["HasBypassEdidChecking"] = fileCheck("/proc/stb/hdmi/bypass_edid_chec
 SystemInfo["HasColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
 SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"]
 SystemInfo["HasMultichannelPCM"] = fileCheck("/proc/stb/audio/multichannel_pcm")
-SystemInfo["HasMMC"] = fileExists("/proc/cmdline") and "root=/dev/mmcblk" in open("/proc/cmdline", "r").read()
+SystemInfo["HasMMC"] = "root" in cmdline and cmdline["root"].startswith('/dev/mmcblk')
 SystemInfo["HasTranscoding"] = pathExists("/proc/stb/encoder/0") or fileCheck("/dev/bcm_enc0")
 SystemInfo["HasH265Encoder"] = fileHas("/proc/stb/encoder/0/vcodec_choices", "h265")
 SystemInfo["CanNotDoSimultaneousTranscodeAndPIP"] = False
@@ -98,9 +103,9 @@ SystemInfo["Has3DSurroundSpeaker"] = fileExists("/proc/stb/audio/3dsurround_choi
 SystemInfo["Has3DSurroundSoftLimiter"] = fileExists("/proc/stb/audio/3dsurround_softlimiter_choices") and fileCheck("/proc/stb/audio/3dsurround_softlimiter")
 SystemInfo["hasXcoreVFD"] = False
 SystemInfo["HasOfflineDecoding"] = True
-SystemInfo["HasRootSubdir"] = fileHas("/proc/cmdline", "rootsubdir=")
+SystemInfo["HasRootSubdir"] = "rootsubdir" in cmdline
 SystemInfo["canMultiBoot"] = False
-SystemInfo["canMode12"] = fileHas("/proc/cmdline", "_4.boxmode=1 ") and '192M' or fileHas("/proc/cmdline", "_4.boxmode=12") and '192M'
+SystemInfo["canMode12"] = "%s_4.boxmode" % model in cmdline and cmdline["%s_4.boxmode" % model] in ("1","12") and "192M"
 SystemInfo["canFlashWithOfgwrite"] = True
 SystemInfo["HDRSupport"] = fileExists("/proc/stb/hdmi/hlg_support_choices") and fileCheck("/proc/stb/hdmi/hlg_support")
 SystemInfo["CanDownmixAC3"] = fileHas("/proc/stb/audio/ac3_choices", "downmix")
@@ -119,3 +124,8 @@ SystemInfo["NCamIsActive"] = SystemInfo["NCamInstalled"] and fileExists("/tmp/.n
 SystemInfo["OpenVisionModule"] = fileCheck("/proc/stb/info/openvision")
 SystemInfo["7segment"] = getDisplayType() == "7segment"
 SystemInfo["CanFadeOut"] = False
+
+dev = ("root" in cmdline and cmdline['root'].startswith('/dev/')) and cmdline['root'][5:]
+while dev and not fileExists('/sys/block/' + dev):
+    dev = dev[:-1]
+SystemInfo["BootDevice"] = dev

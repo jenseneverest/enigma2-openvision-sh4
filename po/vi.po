@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-11 11:20+0330\n"
-"PO-Revision-Date: 2019-07-22 20:15+0700\n"
+"POT-Creation-Date: 2019-11-23 17:54+0330\n"
+"PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
 "Language: vi\n"
@@ -12,13 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Poedit 2.2.3\n"
-
-msgid ""
-"\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"Tùy chọn và cài đặt nâng cao."
 
 msgid ""
 "\n"
@@ -33,13 +26,6 @@ msgid ""
 msgstr ""
 "\n"
 "Phát hiện xung đột bị vô hiệu hóa!"
-
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"Chỉnh sửa địa chỉ nguồn nâng cấp."
 
 msgid ""
 "\n"
@@ -62,22 +48,6 @@ msgstr ""
 "\n"
 "Ghi âm trong tiến trình."
 
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"Khôi phục bản sao lưu của bạn theo ngày."
-
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"Chọn thiết bị sao lưu của bạn.\n"
-"Thiêt bị hiện tại: "
-
 #, python-format
 msgid ""
 "\n"
@@ -85,13 +55,6 @@ msgid ""
 msgstr ""
 "\n"
 "Hẹn giờ '%s' bị vô hiệu hóa!"
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Xem, cài đặt và loại bỏ các gói có sẵn hoặc cài đặt."
 
 msgid " (0 - all networks)"
 msgstr " (0 - tất cả các mạng)"
@@ -242,11 +205,11 @@ msgstr "%.0f kB"
 
 #, python-format
 msgid "%.1f°E"
-msgstr ""
+msgstr "%.1f°E"
 
 #, python-format
 msgid "%.1f°W"
-msgstr ""
+msgstr "%.1f°W"
 
 #, python-format
 msgid "%.2f GB"
@@ -1072,7 +1035,7 @@ msgid "* Only available if more than one interface is active."
 msgstr "* Chỉ khả dụng nếu có nhiều giao diện được kích hoạt."
 
 msgid "-NO SERVICE\n"
-msgstr "-KHÔNG PHỤC VỤ\n"
+msgstr "-KHÔNG DỊCH VỤ\n"
 
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
@@ -1231,7 +1194,7 @@ msgid "<unknown>"
 msgstr "<không rõ>"
 
 msgid "=NO STREAM\n"
-msgstr "= KHÔNG CÓ ĐƯỜNG\n"
+msgstr "= KHÔNG TRỰC TIẾP\n"
 
 msgid "??"
 msgstr "??"
@@ -1461,7 +1424,7 @@ msgstr "Kích hoạt kết thúc timeshift và tạm dừng"
 
 #, fuzzy
 msgid "Active"
-msgstr "Quan hệ"
+msgstr "hoạt động"
 
 #, python-format
 msgid "Active Keymap: %s"
@@ -1492,6 +1455,9 @@ msgstr "Thêm một tiêu đề mới"
 msgid "Add bookmark"
 msgstr "Thêm dấu trang"
 
+msgid "Add bouquet"
+msgstr "Thêm gói kênh"
+
 msgid "Add directory to playlist"
 msgstr "Thêm thư mục vào danh sách phát"
 
@@ -1518,6 +1484,9 @@ msgstr "Thêm ghi âm (dừng sau sự kiện hiện tại)"
 
 msgid "Add service"
 msgstr "Thêm dịch vụ"
+
+msgid "Add services to this bouquet?"
+msgstr "Thêm dịch vụ vào gói kênh?"
 
 msgid "Add timer"
 msgstr "Thêm bộ đếm thời gian"
@@ -1572,6 +1541,9 @@ msgstr "Nâng cao"
 
 msgid "Advanced options"
 msgstr "Tùy chọn nâng cao"
+
+msgid "Advanced options and settings."
+msgstr "Tùy chọn và cài đặt nâng cao."
 
 msgid "Advanced restore"
 msgstr "Khôi phục nâng cao"
@@ -1647,9 +1619,8 @@ msgstr "Tất cả các vệ tinh 4 (USALS)"
 msgid "All services provider"
 msgstr "Tất cả các nhà cung cấp dịch vụ"
 
-#, fuzzy
 msgid "All slots"
-msgstr "Chọn vị trí"
+msgstr "Tất cả các khe"
 
 msgid "Allocate"
 msgstr "Chỉ định"
@@ -1802,9 +1773,8 @@ msgstr "Bạn có chắc chắn để loại bỏ mục này?"
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Bạn có chắc chắn để xóa tất cả các userbouquets đã xóa?"
 
-#, fuzzy
 msgid "Are you sure to reboot to"
-msgstr "Bạn có chắc chắn để loại bỏ mục này?"
+msgstr "Bạn có chắc để khởi động lại"
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -2684,6 +2654,9 @@ msgstr "Kênh truyền hình"
 msgid "Channels and EPG"
 msgstr "Kênh và EPG"
 
+msgid "Channels only"
+msgstr "Chỉ các kênh"
+
 msgid "Chap."
 msgstr "Chap."
 
@@ -2824,6 +2797,10 @@ msgstr ""
 #, python-format
 msgid "Client Info ( OScam-Version: %s )"
 msgstr ""
+
+#, fuzzy
+msgid "Client Mode"
+msgstr "Chế độ người dùng"
 
 msgid "Client is streaming from this box!"
 msgstr "Khách hàng đang phát trực tuyến từ hộp này!"
@@ -4420,6 +4397,9 @@ msgstr "Lựa chọn ngôn ngữ EPG 2"
 msgid "EPG location"
 msgstr "Lựa chọn EPG"
 
+msgid "EPG only"
+msgstr "Chỉ EPG"
+
 msgid "EPG selection"
 msgstr "Lựa chọn EPG"
 
@@ -4467,14 +4447,17 @@ msgstr "Chỉnh sửa cấu hình máy chủ tên của máy thu của bạn.\n"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr "Chỉnh sửa cấu hình mạng của máy thu của bạn.\n"
 
+msgid "Edit the update source address."
+msgstr "Chỉnh sửa địa chỉ nguồn nâng cấp."
+
 msgid "Edit timer"
 msgstr "Chỉnh sửa bộ đếm thời gian"
 
 msgid "Edit title"
 msgstr "Chỉnh sửa tiêu đề"
 
-msgid "Edit update source url."
-msgstr "Chỉnh sửa url nguồn nâng cấp."
+msgid "Edit update source url"
+msgstr "Chỉnh sửa url nguồn nâng cấp"
 
 #, fuzzy
 msgid "Education/Information"
@@ -4539,9 +4522,8 @@ msgstr "Cho phép OK làm bản xem trước trong lựa chọn kênh"
 msgid "Enable OK for channel selection"
 msgstr "Cho phép OK để chọn kênh"
 
-#, fuzzy
 msgid "Enable OpenTV EPG"
-msgstr "Kích hoạt EIT EPG"
+msgstr "Kích hoạt OpenTV EPG"
 
 msgid "Enable ViaSat EPG"
 msgstr "Kích hoạt ViaSat EPG"
@@ -4960,9 +4942,6 @@ msgstr "thoát khỏi menu cài đặt bộ điều hợp mạng"
 msgid "Exit the wizard"
 msgstr "Thoát khỏi trình hướng dẫn"
 
-msgid "Exit/OK"
-msgstr "Thoát / Đồng ý"
-
 msgid "Expand"
 msgstr "Mở rộng"
 
@@ -5163,9 +5142,8 @@ msgstr "Dự phòng thiết lập máy thu từ xa"
 msgid "Fallback tuner setup"
 msgstr "Thiết lập điều chỉnh dự phòng"
 
-#, fuzzy
 msgid "False"
-msgstr "sai"
+msgstr "Sai trái"
 
 #, python-format
 msgid "Fan %d"
@@ -5212,10 +5190,6 @@ msgstr "Yêu thích"
 
 msgid "Feed URL: "
 msgstr ""
-
-#, fuzzy
-msgid "Feeds are not accessible, please try again later."
-msgstr "Không có bảng cập nhật có sẵn. Vui lòng thử lại sau."
 
 msgid "Fiji"
 msgstr "Phi-gi"
@@ -5909,6 +5883,9 @@ msgstr "Iceland"
 msgid "Icons"
 msgstr "Biểu tượng"
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr "Nếu bị tắt, các ký tự gạch chân trong tên tệp và thư mục sẽ không được hiển thị và được thay thế bằng dấu cách."
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr "Nếu được bật, dấu trang sẽ được cập nhật với vị trí mới khi bạn di chuyển hoặc sao chép bản ghi."
 
@@ -5917,6 +5894,9 @@ msgstr "Nếu được bật, màn hình hiển thị 12 ký tự thay vì 8, nh
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "Nếu được đặt thành giá trị tín hiệu 'có' (SNR, v.v.) sẽ được tính từ API V3. Đây là một phiên bản API cũ đã được thay thế."
+
+msgid "If there is a return to network utilities menu, then feeds have are not avaliables. Checking please wait..."
+msgstr ""
 
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr "Nếu sử dụng nhiều chuyển mạch không được cam kết, các lệnh DiSEqC phải được gửi nhiều lần. Đặt thành số lượng công tắc không được cam kết trong chuỗi trừ đi một."
@@ -5975,24 +5955,23 @@ msgid "Image: "
 msgstr "Hình ảnh: "
 
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
-msgstr "Nhập kênh và / hoặc EPG từ URL người nhận từ xa cũng khi người nhận thoát khỏi chế độ chờ"
+msgstr "Nhập kênh và / hoặc EPG từ URLmáy thu từ xa cũng khi máy thu thoát khỏi chế độ chờ"
+
+msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
+msgstr "Nhập kênh và / hoặc EPG từ URL máy thu từ xa khi máy thu được khởi động"
 
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
-msgstr "Nhập kênh và / hoặc EPG từ URL người nhận từ xa khi người nhận hoặc enigma2 được khởi động lại"
-
-#, fuzzy
-msgid "Import channels from remote receiver URL when receiver is booted"
-msgstr "Nhập kênh và / hoặc EPG từ URL người nhận từ xa khi người nhận được khởi động"
+msgstr "Nhập kênh và / hoặc EPG từ URL máy thu từ xa khi máy thu hoặc enigma2 được khởi động lại"
 
 #, python-format
 msgid "Import from fallback tuner failed, %s"
 msgstr "Nhập từ bộ điều chỉnh dự phòng không thành công,%s"
 
 msgid "Import from remote receiver URL"
-msgstr "Nhập từ URL người nhận từ xa"
+msgstr "Nhập từ URL máy thu từ xa"
 
 msgid "Import remote receiver URL"
-msgstr "Nhập URL người nhận từ xa"
+msgstr "Nhập URL máy thu từ xa"
 
 msgid "In most cases this should be set to No. Only enable if you have a very specific need."
 msgstr ""
@@ -6139,7 +6118,7 @@ msgid "Input devices"
 msgstr "Thiết bị đầu vào"
 
 msgid "Install"
-msgstr "Ráp vào"
+msgstr "Cài vào"
 
 msgid "Install channel list"
 msgstr "Cài đặt danh sách kênh"
@@ -9161,6 +9140,9 @@ msgstr "Nhớ lại dịch vụ trước"
 msgid "Restore system settings"
 msgstr "Khôi phục cài đặt hệ thống"
 
+msgid "Restore your backups by date."
+msgstr "Khôi phục bản sao lưu của bạn theo ngày."
+
 msgid "Restore your receiver settings."
 msgstr "Khôi phục cài đặt máy thu của bạn."
 
@@ -9215,13 +9197,13 @@ msgid "Rewrap subtitles"
 msgstr "Viết lại phụ đề"
 
 msgid "Right"
-msgstr "Đúng"
+msgstr "Phải"
 
 msgid "Right from servicename"
 msgstr "Ngay từ tên dịch vụ"
 
 msgid "Roll-off"
-msgstr "Lăn khỏi"
+msgstr "Đảo ngược"
 
 msgid "Romania"
 msgstr "Romania"
@@ -9230,7 +9212,7 @@ msgid "Romanian"
 msgstr "Romanian"
 
 msgid "Root"
-msgstr "Nguồn gốc"
+msgstr "Thư mục gốc"
 
 msgid "Root directory"
 msgstr "Thư mục gốc"
@@ -9379,7 +9361,7 @@ msgid "Sao Tome and Principe"
 msgstr "Sao Tome và Principe"
 
 msgid "Sat"
-msgstr "Ngồi"
+msgstr "Trình tìm kiếm Sat"
 
 msgid "Satellite"
 msgstr "Vệ tinh"
@@ -9400,7 +9382,7 @@ msgid "Satellites"
 msgstr "Vệ tinh"
 
 msgid "Sats"
-msgstr "Sats"
+msgstr "Tìm kiếm Sats"
 
 msgid "Saturation"
 msgstr "Độ bão hòa"
@@ -9917,8 +9899,8 @@ msgstr "Chọn bộ ký tự dịch chuyển bàn phím ảo cho chỉ ký tự 
 msgid "Select update source"
 msgstr "Chọn nguồn nâng cấp"
 
-msgid "Select update source to edit."
-msgstr "Chọn nguồn nâng cấp để chỉnh sửa."
+msgid "Select update source to edit"
+msgstr "Chọn nguồn nâng cấp để chỉnh sửa"
 
 msgid "Select video input with up/down buttons"
 msgstr "Chọn đầu vào video với các nút lên / xuống"
@@ -9934,6 +9916,13 @@ msgstr "Chọn nhà cung cấp ATSC của bạn."
 
 msgid "Select your Skin"
 msgstr "Chọn làn da của bạn"
+
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"Chọn thiết bị sao lưu của bạn.\n"
+"Thiêt bị hiện tại: "
 
 msgid "Select your country. If not available select 'all'."
 msgstr "Chọn đất nước của bạn. Nếu không có sẵn, chọn 'tất cả'."
@@ -10603,6 +10592,9 @@ msgstr "hiển thị thông tin transponder"
 msgid "Show two lines per entry"
 msgstr ""
 
+msgid "Show underline characters in filenames"
+msgstr "Hiển thị các ký tự gạch chân trong tên tệp"
+
 msgid "Show vertical timelines"
 msgstr "Hiển thị các mốc thời gian dọc"
 
@@ -10685,7 +10677,7 @@ msgid "Singapore"
 msgstr "Singapore"
 
 msgid "Single"
-msgstr "Độc thân"
+msgstr "Đơn"
 
 msgid "Single EPG"
 msgstr "EPG đơn"
@@ -11471,7 +11463,7 @@ msgstr "Chi tiết cho plugin: "
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
-msgstr "THÔNG TIN TRUYỀN THÔNG"
+msgstr "THÔNG TIN TRUYỀN THÔNG (QUỐC OAI  BMT)"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "Tệp TS quá lớn so với ISO9660 cấp 1!"
@@ -12353,7 +12345,7 @@ msgid "Troubleshoot"
 msgstr "Khắc phục sự cố"
 
 msgid "True"
-msgstr ""
+msgstr "Đúng"
 
 msgid "TrueType font (HD)"
 msgstr ""
@@ -12999,6 +12991,9 @@ msgstr "Xem teletext ..."
 
 msgid "View video CD..."
 msgstr "Xem CD video ..."
+
+msgid "View, install and remove available or installed packages."
+msgstr "Xem, cài đặt và loại bỏ các gói có sẵn hoặc cài đặt."
 
 msgid "Virgin Islands (British)"
 msgstr "Xem video CD ..."
@@ -13873,9 +13868,8 @@ msgstr "về để bắt đầu"
 msgid "activate network adapter configuration"
 msgstr "kích hoạt cấu hình bộ điều hợp mạng"
 
-#, fuzzy
 msgid "active"
-msgstr "Quan hệ"
+msgstr "hoạt động"
 
 msgid "actual time only"
 msgstr "chỉ thời gian thực tế"
@@ -15309,7 +15303,7 @@ msgid "yes (keep feeds)"
 msgstr "có (giữ thức ăn)"
 
 msgid "yes, but not in multi selections"
-msgstr ""
+msgstr "có, nhưng không có nhiều lựa chọn"
 
 msgid "yuv"
 msgstr ""

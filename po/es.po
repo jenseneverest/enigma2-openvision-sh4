@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-11 11:20+0330\n"
+"POT-Creation-Date: 2019-11-23 17:54+0330\n"
 "PO-Revision-Date: 2019-05-15 22:50+0200\n"
 "Last-Translator: Jose Juan <jzapater@gmail.com>\n"
 "Language-Team: ANGELODOS  angelo2807@hotmail.com\n"
@@ -15,14 +15,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2.2\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
-
-#
-msgid ""
-"\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"Opciones avanzadas y configuración."
 
 #
 msgid ""
@@ -38,14 +30,6 @@ msgid ""
 msgstr ""
 "\n"
 "Desactivada la deteccion de conflictos!"
-
-#
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"Editar la dirección fuente de actualización."
 
 #
 msgid ""
@@ -70,24 +54,6 @@ msgstr ""
 "\n"
 "Grabacion en progreso."
 
-#
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"Restaurar su backup for fecha."
-
-#
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"Seleccione su dispositivo de backup.\n"
-"Dispositivo actual:"
-
 #, python-format
 msgid ""
 "\n"
@@ -95,14 +61,6 @@ msgid ""
 msgstr ""
 "\n"
 "¡El temporizador '%s' está deshabilitado!"
-
-#
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Ver, instalar y eliminar paquetes disponibles o instalados."
 
 msgid " (0 - all networks)"
 msgstr "(0 - todas las redes)"
@@ -1589,6 +1547,11 @@ msgid "Add bookmark"
 msgstr "añadir marcador"
 
 #
+#, fuzzy
+msgid "Add bouquet"
+msgstr "añadir lista"
+
+#
 msgid "Add directory to playlist"
 msgstr "añadir el directorio a la lista"
 
@@ -1623,6 +1586,11 @@ msgstr "añadir grabación (sólo evento actual)"
 #
 msgid "Add service"
 msgstr "añadir Canal"
+
+#
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "añadir canal a la lista"
 
 #
 msgid "Add timer"
@@ -1685,6 +1653,10 @@ msgstr "Avanzado"
 #
 msgid "Advanced options"
 msgstr "Opciones avanzadas"
+
+#
+msgid "Advanced options and settings."
+msgstr "Opciones avanzadas y configuración."
 
 #
 msgid "Advanced restore"
@@ -2902,6 +2874,11 @@ msgid "Channels and EPG"
 msgstr "Canales y EPG"
 
 #
+#, fuzzy
+msgid "Channels only"
+msgstr "Canal"
+
+#
 msgid "Chap."
 msgstr "Cap."
 
@@ -3053,6 +3030,11 @@ msgstr ""
 #, python-format
 msgid "Client Info ( OScam-Version: %s )"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Client Mode"
+msgstr "Modo de usuario"
 
 msgid "Client is streaming from this box!"
 msgstr "¡El cliente está transmitiendo desde esta caja!"
@@ -4828,6 +4810,9 @@ msgstr "Selección del idioma EPG 2"
 msgid "EPG location"
 msgstr "Selección de EPG"
 
+msgid "EPG only"
+msgstr ""
+
 #
 msgid "EPG selection"
 msgstr "Selección de EPG"
@@ -4884,6 +4869,10 @@ msgstr "Edite la configuración del servidor de nombres de su receptor.\n"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr "Edite la configuración de red de su receptor.\n"
 
+#
+msgid "Edit the update source address."
+msgstr "Editar la dirección fuente de actualización."
+
 msgid "Edit timer"
 msgstr "Editar temporizador"
 
@@ -4892,8 +4881,8 @@ msgid "Edit title"
 msgstr "Editar título"
 
 #
-msgid "Edit update source url."
-msgstr "Editar url de fuente de actualización."
+msgid "Edit update source url"
+msgstr "Editar url de fuente de actualización"
 
 #
 #, fuzzy
@@ -5426,9 +5415,6 @@ msgstr "salir del menú de configuración de adaptador de red"
 msgid "Exit the wizard"
 msgstr "Salir del asistente"
 
-msgid "Exit/OK"
-msgstr "Salir/OK"
-
 msgid "Expand"
 msgstr "Expandir"
 
@@ -5705,10 +5691,6 @@ msgstr "Favoritos"
 
 msgid "Feed URL: "
 msgstr ""
-
-#, fuzzy
-msgid "Feeds are not accessible, please try again later."
-msgstr "No hay actualizaciones disponibles. Por favor, inténtelo de nuevo más tarde"
 
 msgid "Fiji"
 msgstr "Fiji"
@@ -6456,6 +6438,9 @@ msgstr "Islandia"
 msgid "Icons"
 msgstr "Iconos"
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr "Si está habilitado, los marcadores se actualizarán con la nueva ubicación cuando mueva o copie una grabación."
 
@@ -6464,6 +6449,9 @@ msgstr "Si está habilitado, la pantalla muestra 12 caracteres en lugar de 8, pe
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "Si se establece en ‘sí’, los valores de señal (SNR, etc.) se calcularán a partir de la API V3. Esta es una versión antigua de API que ahora ha sido reemplazada."
+
+msgid "If there is a return to network utilities menu, then feeds have are not avaliables. Checking please wait..."
+msgstr ""
 
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr "Si utiliza múltiples interruptores no comprometidos, los comandos DiSEqC se deben enviar varias veces. Establezca la cantidad de interruptores no asignados en la cadena menos uno."
@@ -6526,12 +6514,12 @@ msgstr "Imagen"
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr "Importe canales y / o EPG desde la URL del receptor remoto también cuando el receptor salga del modo de espera"
 
+#, fuzzy
+msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
+msgstr "Importe canales y / o EPG desde la URL del receptor remoto cuando se inicia el receptor"
+
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr "Importe canales y / o EPG desde la URL del receptor remoto cuando se reinicie el receptor o enigma2"
-
-#, fuzzy
-msgid "Import channels from remote receiver URL when receiver is booted"
-msgstr "Importe canales y / o EPG desde la URL del receptor remoto cuando se inicia el receptor"
 
 #, fuzzy, python-format
 msgid "Import from fallback tuner failed, %s"
@@ -10132,6 +10120,10 @@ msgstr "Recordar el servicio anterior"
 msgid "Restore system settings"
 msgstr "Configuración del sistema de restauración"
 
+#
+msgid "Restore your backups by date."
+msgstr "Restaurar su backup for fecha."
+
 msgid "Restore your receiver settings."
 msgstr "Restaurar la configuracion de su receptor."
 
@@ -10967,8 +10959,8 @@ msgid "Select update source"
 msgstr "Seleccionar fuente de actualización"
 
 #
-msgid "Select update source to edit."
-msgstr "Seleccione fuente de actualización a editar."
+msgid "Select update source to edit"
+msgstr "Seleccione fuente de actualización a editar"
 
 #
 msgid "Select video input with up/down buttons"
@@ -10987,6 +10979,14 @@ msgstr "Seleccione su proveedor de ATSC."
 
 msgid "Select your Skin"
 msgstr "Seleccione su piel"
+
+#
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"Seleccione su dispositivo de backup.\n"
+"Dispositivo actual:"
 
 msgid "Select your country. If not available select 'all'."
 msgstr "Selecciona tu pais. Si no está disponible, seleccione ‘todo’."
@@ -11707,6 +11707,11 @@ msgstr "mostrar info del transpondedor"
 
 msgid "Show two lines per entry"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "Charset limitado para la grabación de nombres de fichero"
 
 msgid "Show vertical timelines"
 msgstr "Mostrar líneas de tiempo verticales"
@@ -14378,6 +14383,10 @@ msgstr "Ver teletexto..."
 #
 msgid "View video CD..."
 msgstr "Ver video CD …"
+
+#
+msgid "View, install and remove available or installed packages."
+msgstr "Ver, instalar y eliminar paquetes disponibles o instalados."
 
 msgid "Virgin Islands (British)"
 msgstr "Islas Vírgenes (británicas)"

@@ -420,7 +420,7 @@ long eHdmiCEC::translateKey(unsigned char code)
 			key = 0xa8; //KEY_REWIND
 			break;
 		case 0x53:
-			key = 0x166; //KEY_INFO
+			key = 0x16d; //KEY_EPG
 			break;
 		case 0x54:
 			key = 0x16a; //KEY_PROGRAM

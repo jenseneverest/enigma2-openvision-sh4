@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 17:54+0330\n"
+"POT-Creation-Date: 2019-11-28 02:46+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -1465,6 +1465,18 @@ msgid "Abort"
 msgstr "Zrušit"
 
 #
+msgid "Abort alternatives edit"
+msgstr "Zrušit úpravu alternativ"
+
+#
+msgid "Abort bouquet edit"
+msgstr "Zrušit úpravu přehledu"
+
+#
+msgid "Abort favourites edit"
+msgstr "Zrušit úpravu oblíbených"
+
+#
 msgid "About"
 msgstr "O přijímači"
 
@@ -1557,12 +1569,20 @@ msgid "Add a new title"
 msgstr "Přidat nový titul"
 
 #
+msgid "Add alternatives"
+msgstr "Přidat alternativy"
+
+#
 msgid "Add bookmark"
 msgstr "Přidat záložku"
 
 #
 msgid "Add bouquet"
 msgstr "Přidat přehled"
+
+#
+msgid "Add bouquet to parental protection"
+msgstr "Přidat přehled do rodičovské ochrany"
 
 #
 msgid "Add directory to playlist"
@@ -1575,6 +1595,10 @@ msgstr "Přidat soubor do playlistu"
 #
 msgid "Add files to playlist"
 msgstr "Přidat soubory do playlistu"
+
+#
+msgid "Add marker"
+msgstr "Přidat značku"
 
 #
 msgid "Add provider"
@@ -1601,6 +1625,14 @@ msgid "Add service"
 msgstr "Přidat program"
 
 #
+msgid "Add service to bouquet"
+msgstr "Přidat program do přehledu"
+
+#
+msgid "Add service to favourites"
+msgstr "Přidat program do oblíbených"
+
+#
 msgid "Add services to this bouquet?"
 msgstr "Přidat programy do tohoto přehledu?"
 
@@ -1619,6 +1651,10 @@ msgstr "Přidat do přehledu"
 #
 msgid "Add to favourites"
 msgstr "Přidat do oblíbených"
+
+#
+msgid "Add to parental protection"
+msgstr "Přidat do rodičovské ochrany"
 
 msgid "Add/remove change timer for current event"
 msgstr "Přidat/odstranit časovač pro aktuální událost"
@@ -1923,7 +1959,7 @@ msgstr "Chcete nainstalovat pluginy?"
 msgid "Are you ready to remove \"%s\" ?"
 msgstr "Opravdu chcete odstranit tuto položku?"
 
-msgid "Are you sure to purge all deleted userbouquets?"
+msgid "Are you sure to purge all deleted user bouquets?"
 msgstr "Opravdu chcete odstranit všechny smazané přehledy?"
 
 #
@@ -3243,6 +3279,10 @@ msgstr "Konfigurovat detaily prohledávání"
 msgid "Config resolution of pictures"
 msgstr "Nastavení rozlišení obrázků"
 
+#
+msgid "Configuration"
+msgstr "Nastavení"
+
 msgid "Configuration mode"
 msgstr "Konfigurační mód"
 
@@ -3253,10 +3293,6 @@ msgstr "Konfigurační mód:  %s"
 #, fuzzy
 msgid "Configuration saved!"
 msgstr "Konfigurační mód"
-
-#
-msgid "Configuration..."
-msgstr "Nastavení..."
 
 msgid "Configure ATSC"
 msgstr "Konfigurovat ATSC"
@@ -3746,6 +3782,10 @@ msgstr "Cookovy ostrovy"
 
 msgid "Copy"
 msgstr "Kopírovat"
+
+#
+msgid "Copy to bouquets"
+msgstr "Zkopírovat do přehledů"
 
 #, fuzzy
 msgid "Copying files"
@@ -4523,6 +4563,10 @@ msgid "Disable current event but not coming events"
 msgstr "Zakázat aktuální událost, nikoliv blížící se událost"
 
 #
+msgid "Disable move mode"
+msgstr "Zakázat přesun"
+
+#
 msgid "Disable timer"
 msgstr "Zakázat časovač"
 
@@ -4952,6 +4996,10 @@ msgid "Edit DNS"
 msgstr "Upravit DNS"
 
 #
+msgid "Edit alternatives"
+msgstr "Upravit alternativy"
+
+#
 msgid "Edit chapters of current title"
 msgstr "Upravit kapitoly zvoleného titulu"
 
@@ -5083,6 +5131,10 @@ msgstr "Povolit automatický Fast scan pro %s"
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
 
+#
+msgid "Enable bouquet edit"
+msgstr "Povolit úpravu přehledu"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Povolí výběr přehledu při spuštění multi-EPG."
 
@@ -5099,11 +5151,19 @@ msgstr "Povolen"
 msgid "Enable fallback remote receiver"
 msgstr "Povolit záložní přijímač"
 
+#
+msgid "Enable favourites edit"
+msgstr "Povolit úpravu oblíbených"
+
 msgid "Enable import timer from fallback tuner"
 msgstr "Importovat časovače ze záložního přijímače"
 
 msgid "Enable infobar fade-out"
 msgstr ""
+
+#
+msgid "Enable move mode"
+msgstr "Povolit přesun"
 
 #
 msgid "Enable multiple bouquets"
@@ -5178,9 +5238,21 @@ msgid "Encryption:"
 msgstr "Zabezpečení:"
 
 #
+msgid "End alternatives edit"
+msgstr "Ukončit úpravu alternativ"
+
+#
+msgid "End bouquet edit"
+msgstr "Ukončit úpravu přehledu"
+
+#
 #, fuzzy
 msgid "End cut"
 msgstr "Čas konce"
+
+#
+msgid "End favourites edit"
+msgstr "Ukončit úpravu oblíbených"
 
 #
 msgid "End time"
@@ -5839,6 +5911,11 @@ msgstr "Konečná pozice na indexu"
 
 msgid "Final scroll delay"
 msgstr "Celkové zpoždění přetáčení"
+
+#
+#, fuzzy
+msgid "Find currently played service"
+msgstr "Najít právě přehrávaný program"
 
 msgid "Fine movement"
 msgstr "Jemné natáčení"
@@ -6586,9 +6663,6 @@ msgstr "Jestliže je povoleno, displej zobrazuje 12 znaků místo 8, ale pouze v
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "Pokud je nastaveno 'Ano', hodnoty signálu (SNR, atd.) budou počítány z API V3. To je stará verze rozhraní API, která byla již nahrazena."
 
-msgid "If there is a return to network utilities menu, then feeds have are not avaliables. Checking please wait..."
-msgstr ""
-
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr "Pokud používáte více uncommited přepínačů, musí být příkazy DiSEqC odesílány několikrát. Nastavte počet uncommited přepínačů v řetězci zmenšený o jeden."
 
@@ -7133,7 +7207,7 @@ msgstr "Nastavení displeje"
 #
 #, fuzzy
 msgid "LED configuration"
-msgstr "Konfigurace tuneru"
+msgstr "Nastavení"
 
 msgid "LED control"
 msgstr ""
@@ -8035,9 +8109,10 @@ msgstr ""
 msgid "NCam ECM info"
 msgstr "ECM Info"
 
+#
 #, fuzzy
 msgid "NCam Info - Configuration"
-msgstr "Konfigurace tuneru"
+msgstr "Nastavení"
 
 msgid "NCam Info - Main Menu"
 msgstr ""
@@ -9026,6 +9101,11 @@ msgstr "přehrát DVD"
 
 #
 #, fuzzy
+msgid "Play as picture in picture"
+msgstr "Přehrát jako obraz v obraze"
+
+#
+#, fuzzy
 msgid "Play audio in background"
 msgstr "Přehrávat audio soubory v režimu seznamu"
 
@@ -9050,6 +9130,9 @@ msgstr "Přehrát od další značky/položky v playlistu"
 #
 msgid "Play from previous mark or playlist entry"
 msgstr "Přehrát od předchozí značky/položky v playlistu"
+
+msgid "Play in main window"
+msgstr "Přehrát v hlavním okně"
 
 #
 msgid "Play music..."
@@ -9788,6 +9871,9 @@ msgstr "Poskytovatelé"
 msgid "Puerto Rico"
 msgstr "Portoriko"
 
+msgid "Purge deleted user bouquets"
+msgstr "Odstranit smazané přehledy"
+
 msgid "Put TV in standby"
 msgstr "Přepínat TV do standby"
 
@@ -10108,12 +10194,26 @@ msgstr "Odstranit značku"
 msgid "Remove a nameserver entry"
 msgstr "Odstranit DNS položku"
 
+#
+msgid "Remove all alternatives"
+msgstr "Odstranit všechny alternativy"
+
 msgid "Remove all logfiles"
 msgstr "Odstranit protokoly"
 
 #
+msgid "Remove all new found flags"
+msgstr "Odstranit příznak 'nově nalezeno'"
+
+#
 msgid "Remove bookmark"
 msgstr "Smazat záložku"
+
+msgid "Remove bouquet from parental protection"
+msgstr "Odstranit přehled z rodičovské ochrany"
+
+msgid "Remove cable services"
+msgstr "Odstranit programy kabelové televize"
 
 msgid "Remove completed timers after (days)"
 msgstr "Dokončené časovače odstraňovat po (dnech)"
@@ -10126,17 +10226,35 @@ msgstr "Odstranit vybraný titul"
 msgid "Remove directory"
 msgstr "Smazat adresář"
 
+#
+msgid "Remove entry"
+msgstr "Odstranit položku"
+
+#
+msgid "Remove from parental protection"
+msgstr "Odebrat z rodičovské ochrany"
+
 msgid "Remove items from trash can after (days)"
 msgstr "Položky z koše odstraňovat po (dnech)"
+
+#
+msgid "Remove new found flag"
+msgstr "Odebrat příznak 'nově nalezeno'"
 
 #
 msgid "Remove plugins"
 msgstr "Odstranit pluginy"
 
 #
+msgid "Remove selected satellite"
+msgstr "Odstranit vybraný satelit"
+
 #, fuzzy
 msgid "Remove service"
-msgstr "Zůstat na programu"
+msgstr "Odstranit programy kabelové televize"
+
+msgid "Remove terrestrial services"
+msgstr "Odstranit programy pozemního vysílání"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
@@ -10162,10 +10280,13 @@ msgstr "Odstraňuje se tabulka rozdělení disku"
 
 #, fuzzy
 msgid "Removing service"
-msgstr "Žádný kanál"
+msgstr "Odstranit programy kabelové televize"
 
 #
 msgid "Rename"
+msgstr "Přejmenovat"
+
+msgid "Rename entry"
 msgstr "Přejmenovat"
 
 msgid "Rename name and description for new events"
@@ -10328,6 +10449,9 @@ msgstr "Obnovit zálohu"
 #, fuzzy
 msgid "Restore cuts"
 msgstr "Obnovit zálohu"
+
+msgid "Restore deleted user bouquets"
+msgstr "Obnovit smazané přehledy"
 
 #
 #, fuzzy
@@ -11345,6 +11469,9 @@ msgstr "Service ID"
 msgid "Service Title mode"
 msgstr "Názvy programů"
 
+msgid "Service belongs to a parental protected bouquet"
+msgstr "Program je v přehledu rodičovské ochrany"
+
 #
 msgid "Service has been added to the favourites."
 msgstr "Program byl přidán do oblíbených."
@@ -11438,6 +11565,9 @@ msgstr "Výchozí nastavení hotkey?"
 
 msgid "Set alternative fallback tuners for DVB-T/C or ATSC"
 msgstr "Nastavení záložního přijímače pro DVB-T/C nebo ATSC"
+
+msgid "Set as startup service"
+msgstr "Nastavit jako program po spuštění"
 
 msgid "Set blocktimes by weekday"
 msgstr "Nastavit časy blokování podle dnů"
@@ -11679,8 +11809,10 @@ msgstr "Zobrazovat SNR v procentech místo v dB"
 msgid "Show Time Remaining/Elapsed"
 msgstr ""
 
+#
+#, fuzzy
 msgid "Show Transponder Remaining/Elapsed as"
-msgstr ""
+msgstr "Zobrazit info o transpondéru"
 
 msgid "Show True/False as graphical switch"
 msgstr "Používat grafický přepínač"
@@ -11691,6 +11823,10 @@ msgstr "Zobrazovat VCR scart v hlavním menu"
 #
 msgid "Show WLAN status"
 msgstr "Zobrazit stav WLAN"
+
+#
+msgid "Show alternatives"
+msgstr "Zobrazit alternativy"
 
 msgid "Show animation while busy"
 msgstr "Zobrazovat animaci při zaneprázdnění"
@@ -11974,6 +12110,10 @@ msgstr ""
 
 msgid "Show time remaining/elapsed"
 msgstr ""
+
+#
+msgid "Show transponder info"
+msgstr "Zobrazit info o transpondéru"
 
 #
 #, fuzzy
@@ -12704,6 +12844,9 @@ msgstr "Ukončit timeshift"
 #
 msgid "Stop timeshift?"
 msgstr "Ukončit timeshift?"
+
+msgid "Stop using as startup service"
+msgstr "Zrušit nastavení po spuštění"
 
 msgid "Stopped"
 msgstr "Zastaveno"
@@ -14402,6 +14545,9 @@ msgstr "zakázat úvodní obrazovku"
 msgid "Use the alternative screen"
 msgstr "Upravit alternativy"
 
+msgid "Use the cursor keys to select an installed image and then press Reboot button."
+msgstr ""
+
 msgid ""
 "Use the deletion time to sort Trash directories.\n"
 "Most recently deleted at the top."
@@ -15640,18 +15786,6 @@ msgid "a gui to assign services/providers/caids to common interface modules"
 msgstr "Menu přiřazení kanálů/poskytovatelů/caids k CI modulům"
 
 #
-msgid "abort alternatives edit"
-msgstr "Zrušit úpravu alternativ"
-
-#
-msgid "abort bouquet edit"
-msgstr "Zrušit úpravu přehledu"
-
-#
-msgid "abort favourites edit"
-msgstr "Zrušit úpravu oblíbených"
-
-#
 msgid "about to start"
 msgstr "právě začne"
 
@@ -15670,34 +15804,6 @@ msgstr "Pouze aktuální čas"
 #, fuzzy
 msgid "adb"
 msgstr "Pohotovostní režim"
-
-#
-msgid "add alternatives"
-msgstr "Přidat alternativy"
-
-#
-msgid "add bouquet"
-msgstr "Přidat přehled"
-
-#
-msgid "add bouquet to parental protection"
-msgstr "Přidat přehled do rodičovské ochrany"
-
-#
-msgid "add marker"
-msgstr "Přidat značku"
-
-#
-msgid "add service to bouquet"
-msgstr "Přidat program do přehledu"
-
-#
-msgid "add service to favourites"
-msgstr "Přidat program do oblíbených"
-
-#
-msgid "add to parental protection"
-msgstr "Přidat do rodičovské ochrany"
 
 msgid "adult movie/drama"
 msgstr "pro dospělé/drama"
@@ -15944,10 +16050,6 @@ msgstr "řízeno pomocí HDMI"
 msgid "cooking"
 msgstr "vaření"
 
-#
-msgid "copy to bouquets"
-msgstr "Zkopírovat do přehledů"
-
 msgid "cuberevo_uni"
 msgstr ""
 
@@ -16001,11 +16103,7 @@ msgstr "Zakázat"
 #
 #, fuzzy
 msgid "disable cuts (edit)"
-msgstr "Povolit úpravu přehledu"
-
-#
-msgid "disable move mode"
-msgstr "Zakázat přesun"
+msgstr "Povolit úpravu oblíbených"
 
 #
 msgid "disabled"
@@ -16046,10 +16144,6 @@ msgstr "východ"
 msgid "economics/social advisory"
 msgstr "ekonomika/sociální poradenství"
 
-#
-msgid "edit alternatives"
-msgstr "Upravit alternativy"
-
 #, fuzzy
 msgid "education/information (general)"
 msgstr "vzdělávání/věda/věcná témata (obecně)"
@@ -16068,39 +16162,18 @@ msgstr "prázdné"
 msgid "enable"
 msgstr "Povolit"
 
-#
-msgid "enable bouquet edit"
-msgstr "Povolit úpravu přehledu"
-
-#
 #, fuzzy
 msgid "enable cuts (preview)"
-msgstr "Povolit úpravu přehledu"
-
-#
-msgid "enable favourite edit"
-msgstr "Povolit úpravu oblíbených"
-
-#
-msgid "enable move mode"
-msgstr "Povolit přesun"
+msgstr "povolit úvodní obrazovku"
 
 #
 msgid "enabled"
 msgstr "Povoleno"
 
 #
-msgid "end alternatives edit"
-msgstr "Ukončit úpravu alternativ"
-
-#
 #, fuzzy
 msgid "end at this position"
 msgstr "odebrat po této pozici"
-
-#
-msgid "end bouquet edit"
-msgstr "Ukončit úpravu přehledu"
 
 #
 msgid "end cut here"
@@ -16110,10 +16183,6 @@ msgstr "konec střihu zde"
 #, fuzzy
 msgid "end cut here (reset)"
 msgstr "konec střihu zde"
-
-#
-msgid "end favourites edit"
-msgstr "Ukončit úpravu oblíbených"
 
 msgid "entertainment (10-16 year old)"
 msgstr "zábavný (10-16 let)"
@@ -16180,10 +16249,6 @@ msgstr "Název souboru"
 
 msgid "film/cinema"
 msgstr "film/kino"
-
-#
-msgid "find currently played service"
-msgstr "Najít právě přehrávaný program"
 
 msgid "fine arts"
 msgstr "výtvarné umění"
@@ -16685,13 +16750,6 @@ msgid "performing arts"
 msgstr "scénické umění"
 
 #
-msgid "play as picture in picture"
-msgstr "Přehrát jako obraz v obraze"
-
-msgid "play in mainwindow"
-msgstr "Přehrát v hlavním okně"
-
-#
 msgid "please press OK when ready"
 msgstr "stiskněte OK až budete připraveni"
 
@@ -16707,9 +16765,6 @@ msgstr "program pro předškolní děti"
 
 msgid "punch cuts"
 msgstr ""
-
-msgid "purge deleted userbouquets"
-msgstr "Odstranit smazané přehledy"
 
 msgid "quick execute"
 msgstr ""
@@ -16747,25 +16802,11 @@ msgstr "odebrat po této pozici"
 #
 #, fuzzy
 msgid "remove all"
-msgstr "Odstranit položku"
-
-#
-msgid "remove all alternatives"
-msgstr "Odstranit všechny alternativy"
-
-#
-msgid "remove all new found flags"
-msgstr "Odstranit příznak 'nově nalezeno'"
+msgstr "Odebrat titul"
 
 #
 msgid "remove before this position"
 msgstr "odebrat před touto pozicí"
-
-msgid "remove bouquet from parental protection"
-msgstr "Odstranit přehled z rodičovské ochrany"
-
-msgid "remove cable services"
-msgstr "Odstranit programy kabelové televize"
 
 #
 #, fuzzy
@@ -16773,34 +16814,13 @@ msgid "remove cuts (preserve marks)"
 msgstr "odebrat tuto značku"
 
 #
-msgid "remove entry"
-msgstr "Odstranit položku"
-
-#
-msgid "remove from parental protection"
-msgstr "Odebrat z rodičovské ochrany"
-
 #, fuzzy
 msgid "remove marks (preserve cuts)"
-msgstr "Odstranit programy kabelové televize"
-
-#
-msgid "remove new found flag"
-msgstr "Odebrat příznak 'nově nalezeno'"
-
-#
-msgid "remove selected satellite"
-msgstr "Odstranit vybraný satelit"
-
-msgid "remove terrestrial services"
-msgstr "Odstranit programy pozemního vysílání"
+msgstr "Odstranit DNS položku"
 
 #
 msgid "remove this mark"
 msgstr "odebrat tuto značku"
-
-msgid "rename entry"
-msgstr "Přejmenovat"
 
 #
 msgid "repeated"
@@ -16810,9 +16830,6 @@ msgstr "Opakování"
 #, fuzzy
 msgid "restart GUI"
 msgstr "Restartovat GUI nyní?"
-
-msgid "restore deleted userbouquets"
-msgstr "Obnovit smazané přehledy"
 
 #
 #, fuzzy
@@ -16889,12 +16906,6 @@ msgstr "vážná hudba/klasická muzika"
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "závažný/klasický/náboženský/historický film/drama"
 
-msgid "service is in bouquet parental protection"
-msgstr "Program je v přehledu rodičovské ochrany"
-
-msgid "set as startup service"
-msgstr "Nastavit jako program po spuštění"
-
 #
 #, fuzzy
 msgid "set default"
@@ -16914,10 +16925,6 @@ msgid "show all tags"
 msgstr "Zobrazit všechny tagy"
 
 #
-msgid "show alternatives"
-msgstr "Zobrazit alternativy"
-
-#
 msgid "show event details"
 msgstr "Zobrazit podrobnosti"
 
@@ -16926,10 +16933,6 @@ msgstr "Správa software v menu Nastavení"
 
 msgid "show softwaremanager on blue button"
 msgstr "Správa software v Extended menu"
-
-#
-msgid "show transponder info"
-msgstr "Zobrazit info o transpondéru"
 
 msgid "show/game show (general)"
 msgstr "show/game show (obecně)"
@@ -17046,9 +17049,6 @@ msgstr "krok"
 #
 msgid "stereo"
 msgstr "Stereo"
-
-msgid "stop using as startup service"
-msgstr "Zrušit nastavení po spuštění"
 
 msgid "successful"
 msgstr "úspěšné"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 17:54+0330\n"
+"POT-Creation-Date: 2019-11-28 02:46+0330\n"
 "PO-Revision-Date: 2013-10-23 19:15+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -1324,6 +1324,17 @@ msgstr ""
 msgid "Abort"
 msgstr "Avbryt"
 
+msgid "Abort alternatives edit"
+msgstr "Avbryt alternativ redigering"
+
+#
+msgid "Abort bouquet edit"
+msgstr "Avbryt redigering av kanalliste"
+
+#
+msgid "Abort favourites edit"
+msgstr "Avbryt favorittliste redigering"
+
 #
 msgid "About"
 msgstr "Om"
@@ -1415,13 +1426,19 @@ msgid "Add a new title"
 msgstr "Legge til nytt navn"
 
 #
+msgid "Add alternatives"
+msgstr "Legge til alternativer"
+
+#
 msgid "Add bookmark"
 msgstr "Legge til bokmerke"
 
 #
-#, fuzzy
 msgid "Add bouquet"
-msgstr "legge til kanalliste"
+msgstr "Legge til kanalliste"
+
+msgid "Add bouquet to parental protection"
+msgstr ""
 
 msgid "Add directory to playlist"
 msgstr "Legge til katalog i spilliste"
@@ -1433,6 +1450,9 @@ msgstr "Legge til fil i spilliste"
 #
 msgid "Add files to playlist"
 msgstr "Legge til filer i spilliste"
+
+msgid "Add marker"
+msgstr "Legge til markør"
 
 #
 msgid "Add provider"
@@ -1456,6 +1476,12 @@ msgstr "Legge til opptak (stop etter nåværende program)"
 msgid "Add service"
 msgstr "Legge til kanal"
 
+msgid "Add service to bouquet"
+msgstr "Legge til kanal i kanalliste"
+
+msgid "Add service to favourites"
+msgstr "Legge til kanal i favorittliste"
+
 #, fuzzy
 msgid "Add services to this bouquet?"
 msgstr "legge til kanal i kanalliste"
@@ -1475,6 +1501,10 @@ msgstr "Legge til i kanalliste"
 #
 msgid "Add to favourites"
 msgstr "Legge til i favoritter"
+
+#
+msgid "Add to parental protection"
+msgstr "Legge til i foreldrekontrollen"
 
 msgid "Add/remove change timer for current event"
 msgstr ""
@@ -1771,7 +1801,7 @@ msgstr ""
 "Er du sikker på at du vil slette\n"
 "dette programtillegg\"%s\"?"
 
-msgid "Are you sure to purge all deleted userbouquets?"
+msgid "Are you sure to purge all deleted user bouquets?"
 msgstr ""
 
 msgid "Are you sure to reboot to"
@@ -3044,6 +3074,10 @@ msgstr ""
 msgid "Config resolution of pictures"
 msgstr ""
 
+#
+msgid "Configuration"
+msgstr "Konfigurasjon"
+
 msgid "Configuration mode"
 msgstr "Oppsettstype"
 
@@ -3055,10 +3089,6 @@ msgstr "Oppsettstype: %s"
 #, fuzzy
 msgid "Configuration saved!"
 msgstr "Oppsettstype"
-
-#
-msgid "Configuration..."
-msgstr "Konfigurasjon..."
 
 #
 #, fuzzy
@@ -3535,6 +3565,10 @@ msgstr ""
 
 msgid "Copy"
 msgstr "Kopi"
+
+#
+msgid "Copy to bouquets"
+msgstr "Kopiere til kanallister"
 
 #, fuzzy
 msgid "Copying files"
@@ -4270,6 +4304,9 @@ msgstr "Deaktivere bakgrunnssøk"
 msgid "Disable current event but not coming events"
 msgstr ""
 
+msgid "Disable move mode"
+msgstr "Slå av flytte modus"
+
 msgid "Disable timer"
 msgstr ""
 
@@ -4690,6 +4727,9 @@ msgstr "Endre"
 msgid "Edit DNS"
 msgstr "Endre DNS"
 
+msgid "Edit alternatives"
+msgstr "Alternativer"
+
 msgid "Edit chapters of current title"
 msgstr "Redigere gjeldende navn i katalog"
 
@@ -4816,13 +4856,17 @@ msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
 
 #
+msgid "Enable bouquet edit"
+msgstr "Aktivere kanalliste redigering"
+
+#
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktivere kanalliste utvalg i multi-EPG"
 
 #
 #, fuzzy
 msgid "Enable client mode"
-msgstr "aktivere flytte modus"
+msgstr "Aktivere flytte modus"
 
 #
 #, fuzzy
@@ -4832,11 +4876,19 @@ msgstr "Aktivert"
 msgid "Enable fallback remote receiver"
 msgstr ""
 
+#
+msgid "Enable favourites edit"
+msgstr "Aktivere favorittliste redigering"
+
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
 msgid "Enable infobar fade-out"
 msgstr ""
+
+#
+msgid "Enable move mode"
+msgstr "Aktivere flytte modus"
 
 #
 msgid "Enable multiple bouquets"
@@ -4909,9 +4961,21 @@ msgid "Encryption:"
 msgstr "Kryptering:"
 
 #
+msgid "End alternatives edit"
+msgstr "Avslutte redigering"
+
+#
+msgid "End bouquet edit"
+msgstr "Avslutt redigering av kanalliste"
+
+#
 #, fuzzy
 msgid "End cut"
 msgstr "Slutt tid"
+
+#
+msgid "End favourites edit"
+msgstr "Avslutte favorittliste redigering"
 
 #
 msgid "End time"
@@ -5534,6 +5598,9 @@ msgid "Final position at index"
 msgstr "Siste posisjon i liste"
 
 msgid "Final scroll delay"
+msgstr ""
+
+msgid "Find currently played service"
 msgstr ""
 
 msgid "Fine movement"
@@ -6269,9 +6336,6 @@ msgstr ""
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr ""
 
-msgid "If there is a return to network utilities menu, then feeds have are not avaliables. Checking please wait..."
-msgstr ""
-
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr ""
 
@@ -6795,9 +6859,10 @@ msgstr "LAN oppkobling"
 msgid "LED Display Setup"
 msgstr "Frontpanel"
 
+#
 #, fuzzy
 msgid "LED configuration"
-msgstr "Tuneroppsett"
+msgstr "Konfigurasjon"
 
 msgid "LED control"
 msgstr ""
@@ -7683,9 +7748,10 @@ msgstr ""
 msgid "NCam ECM info"
 msgstr "Info"
 
+#
 #, fuzzy
 msgid "NCam Info - Configuration"
-msgstr "Manuell innstilling"
+msgstr "Konfigurasjon"
 
 msgid "NCam Info - Main Menu"
 msgstr ""
@@ -8264,9 +8330,10 @@ msgstr "Info"
 msgid "OScam Info"
 msgstr ""
 
+#
 #, fuzzy
 msgid "OScam Info - Configuration"
-msgstr "Manuell innstilling"
+msgstr "Konfigurasjon"
 
 msgid "OScam Info - Main Menu"
 msgstr ""
@@ -8648,6 +8715,10 @@ msgid "Play DVDs"
 msgstr "Spille DVD"
 
 #, fuzzy
+msgid "Play as picture in picture"
+msgstr "Vis som bilde i bilde"
+
+#, fuzzy
 msgid "Play audio in background"
 msgstr "Spille av lyd i bakgrunnen"
 
@@ -8671,6 +8742,9 @@ msgstr "Spille fra neste markør i spilliste"
 #
 msgid "Play from previous mark or playlist entry"
 msgstr "Spille fra siste markør i spilliste"
+
+msgid "Play in main window"
+msgstr "Spill av i hovedvinduet"
 
 msgid "Play music..."
 msgstr "Spille musikk..."
@@ -9092,7 +9166,7 @@ msgstr ""
 
 #, fuzzy
 msgid "PowerManager entry"
-msgstr "endre navn i oppføringen"
+msgstr "Endre navn i oppføringen"
 
 msgid "PowerMenu"
 msgstr ""
@@ -9352,6 +9426,9 @@ msgid "Providers: "
 msgstr "Leverandører"
 
 msgid "Puerto Rico"
+msgstr ""
+
+msgid "Purge deleted user bouquets"
 msgstr ""
 
 msgid "Put TV in standby"
@@ -9653,12 +9730,24 @@ msgstr "Slette en markør"
 msgid "Remove a nameserver entry"
 msgstr "Slette en navnetjener"
 
+msgid "Remove all alternatives"
+msgstr "Slette alle alternativer"
+
 msgid "Remove all logfiles"
 msgstr ""
+
+msgid "Remove all new found flags"
+msgstr "Slette nye flagg"
 
 #
 msgid "Remove bookmark"
 msgstr "Slett bokmerke"
+
+msgid "Remove bouquet from parental protection"
+msgstr ""
+
+msgid "Remove cable services"
+msgstr ""
 
 msgid "Remove completed timers after (days)"
 msgstr "Slette fullførte tidtakere etter (dager)"
@@ -9670,17 +9759,32 @@ msgstr "Slette den valgte tittelen"
 msgid "Remove directory"
 msgstr "Slette katalog"
 
+msgid "Remove entry"
+msgstr "Fjerne denne"
+
+msgid "Remove from parental protection"
+msgstr "Fjerne fra foreldrekontroll"
+
 msgid "Remove items from trash can after (days)"
 msgstr "Tøm papirkurven etter (dager)"
+
+msgid "Remove new found flag"
+msgstr "Slette nye flagg"
 
 #
 msgid "Remove plugins"
 msgstr "Slette programtillegg"
 
+msgid "Remove selected satellite"
+msgstr "Slett valgt satellitt"
+
 #
 #, fuzzy
 msgid "Remove service"
 msgstr "Ingen service"
+
+msgid "Remove terrestrial services"
+msgstr ""
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
@@ -9711,6 +9815,9 @@ msgstr "Ingen service"
 #
 msgid "Rename"
 msgstr "Gi nytt navn"
+
+msgid "Rename entry"
+msgstr "Endre navn i oppføringen"
 
 msgid "Rename name and description for new events"
 msgstr ""
@@ -9866,6 +9973,9 @@ msgstr "Gjenopprette sikkerhetskopier"
 #, fuzzy
 msgid "Restore cuts"
 msgstr "Gjenopprette sikkerhetskopier"
+
+msgid "Restore deleted user bouquets"
+msgstr ""
 
 #
 #, fuzzy
@@ -10840,6 +10950,9 @@ msgstr ""
 msgid "Service Title mode"
 msgstr "Kanalvalg"
 
+msgid "Service belongs to a parental protected bouquet"
+msgstr ""
+
 msgid "Service has been added to the favourites."
 msgstr "Kanalen ble lagt til i favorittlisten."
 
@@ -10930,6 +11043,9 @@ msgstr ""
 
 msgid "Set alternative fallback tuners for DVB-T/C or ATSC"
 msgstr ""
+
+msgid "Set as startup service"
+msgstr "Sett som oppstartskanal"
 
 msgid "Set blocktimes by weekday"
 msgstr ""
@@ -11121,7 +11237,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Show Clients"
-msgstr "Vis info"
+msgstr "Vis alternativer"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Vis EIT nå/neste på informasjonslinjen"
@@ -11137,7 +11253,7 @@ msgstr "Vis EPG..."
 #
 #, fuzzy
 msgid "Show Ethernet activity"
-msgstr "vis alternativer"
+msgstr "Vis alternativer"
 
 msgid "Show InfoBar"
 msgstr ""
@@ -11162,8 +11278,10 @@ msgstr "Vis SNR i prosent i stedenfor dB i verdi"
 msgid "Show Time Remaining/Elapsed"
 msgstr ""
 
+#
+#, fuzzy
 msgid "Show Transponder Remaining/Elapsed as"
-msgstr ""
+msgstr "Vis transponder info"
 
 msgid "Show True/False as graphical switch"
 msgstr ""
@@ -11175,6 +11293,10 @@ msgstr "Vis VCR scart på hovedmenyen"
 #
 msgid "Show WLAN status"
 msgstr "Vis WLAN status"
+
+#
+msgid "Show alternatives"
+msgstr "Vis alternativer"
 
 msgid "Show animation while busy"
 msgstr "Vis varsel når opptatt"
@@ -11447,9 +11569,13 @@ msgid "Show time remaining/elapsed"
 msgstr ""
 
 #
+msgid "Show transponder info"
+msgstr "Vis transponder info"
+
+#
 #, fuzzy
 msgid "Show transponder remaining/elapsed as"
-msgstr "vis transponder info"
+msgstr "Vis transponder info"
 
 msgid "Show two lines per entry"
 msgstr ""
@@ -12147,6 +12273,9 @@ msgstr "Stoppe tidsskift"
 #
 msgid "Stop timeshift?"
 msgstr "Stoppe tidsskift?"
+
+msgid "Stop using as startup service"
+msgstr "Slutt og bruke som oppstarttjeneste"
 
 msgid "Stopped"
 msgstr "Stoppet"
@@ -13330,7 +13459,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Transponder time"
-msgstr "vis transponder info"
+msgstr "Vis transponder info"
 
 msgid "Transport Stream Type"
 msgstr ""
@@ -13785,7 +13914,10 @@ msgstr "Hold skjermen"
 
 #, fuzzy
 msgid "Use the alternative screen"
-msgstr "alternativer"
+msgstr "Alternativer"
+
+msgid "Use the cursor keys to select an installed image and then press Reboot button."
+msgstr ""
 
 msgid ""
 "Use the deletion time to sort Trash directories.\n"
@@ -14980,17 +15112,6 @@ msgstr "et grafisk brukergrensesnitt for å tildele kanaler/leverandører til co
 msgid "a gui to assign services/providers/caids to common interface modules"
 msgstr "et grafisk brukergrensesnitt for å tildele kanaler/leverandører/caids til common interface moduler"
 
-msgid "abort alternatives edit"
-msgstr "avbryt alternativ redigering"
-
-#
-msgid "abort bouquet edit"
-msgstr "avbryt redigering av kanalliste"
-
-#
-msgid "abort favourites edit"
-msgstr "avbryt favorittliste redigering"
-
 #
 msgid "about to start"
 msgstr "starter opp"
@@ -15009,30 +15130,6 @@ msgstr ""
 #, fuzzy
 msgid "adb"
 msgstr "Slå av"
-
-#
-msgid "add alternatives"
-msgstr "legge til alternativer"
-
-#
-msgid "add bouquet"
-msgstr "legge til kanalliste"
-
-msgid "add bouquet to parental protection"
-msgstr ""
-
-msgid "add marker"
-msgstr "legge til markør"
-
-msgid "add service to bouquet"
-msgstr "legge til kanal i kanalliste"
-
-msgid "add service to favourites"
-msgstr "legge til kanal i favorittliste"
-
-#
-msgid "add to parental protection"
-msgstr "legge til i foreldrekontrollen"
 
 msgid "adult movie/drama"
 msgstr "voksenfilm/drama"
@@ -15276,10 +15373,6 @@ msgstr ""
 msgid "cooking"
 msgstr "matlaging"
 
-#
-msgid "copy to bouquets"
-msgstr "kopiere til kanallister"
-
 msgid "cuberevo_uni"
 msgstr ""
 
@@ -15332,10 +15425,7 @@ msgstr "deaktivere"
 #
 #, fuzzy
 msgid "disable cuts (edit)"
-msgstr "aktivere kanalliste redigering"
-
-msgid "disable move mode"
-msgstr "slå av flytte modus"
+msgstr "Aktivere favorittliste redigering"
 
 #
 msgid "disabled"
@@ -15376,9 +15466,6 @@ msgstr "øst"
 msgid "economics/social advisory"
 msgstr "økonomi/sosial rådgivende"
 
-msgid "edit alternatives"
-msgstr "alternativer"
-
 #, fuzzy
 msgid "education/information (general)"
 msgstr "utdanning/vitenskap/faktaprogram (generelt)"
@@ -15397,38 +15484,16 @@ msgstr "tom"
 msgid "enable"
 msgstr "aktivere"
 
-#
-msgid "enable bouquet edit"
-msgstr "aktivere kanalliste redigering"
-
-#
-#, fuzzy
 msgid "enable cuts (preview)"
-msgstr "aktivere kanalliste redigering"
-
-#
-msgid "enable favourite edit"
-msgstr "aktivere favorittliste redigering"
-
-#
-msgid "enable move mode"
-msgstr "aktivere flytte modus"
+msgstr ""
 
 #
 msgid "enabled"
 msgstr "aktivert"
 
-#
-msgid "end alternatives edit"
-msgstr "avslutte redigering"
-
 #, fuzzy
 msgid "end at this position"
 msgstr "slette etter denne posisjon"
-
-#
-msgid "end bouquet edit"
-msgstr "avslutt redigering av kanalliste"
 
 #
 msgid "end cut here"
@@ -15438,10 +15503,6 @@ msgstr "avslutt klippet her"
 #, fuzzy
 msgid "end cut here (reset)"
 msgstr "avslutt klippet her"
-
-#
-msgid "end favourites edit"
-msgstr "avslutte favorittliste redigering"
 
 msgid "entertainment (10-16 year old)"
 msgstr "underholdning (10-16 år)"
@@ -15506,9 +15567,6 @@ msgstr "filnavn"
 
 msgid "film/cinema"
 msgstr "film/kino"
-
-msgid "find currently played service"
-msgstr ""
 
 msgid "fine arts"
 msgstr "kunst"
@@ -16005,12 +16063,6 @@ msgstr "klart"
 msgid "performing arts"
 msgstr "scenekunst"
 
-msgid "play as picture in picture"
-msgstr "Vis som bilde i bilde"
-
-msgid "play in mainwindow"
-msgstr "spill av i hovedvinduet"
-
 msgid "please press OK when ready"
 msgstr "vennligst trykk OK for å fortsette"
 
@@ -16025,9 +16077,6 @@ msgid "pre-school children's program"
 msgstr "førskolebarn/barneprogram"
 
 msgid "punch cuts"
-msgstr ""
-
-msgid "purge deleted userbouquets"
 msgstr ""
 
 msgid "quick execute"
@@ -16062,53 +16111,24 @@ msgstr "bemerkelsesverdige mennesker"
 msgid "remove after this position"
 msgstr "slette etter denne posisjon"
 
+#
 #, fuzzy
 msgid "remove all"
-msgstr "fjerne denne"
-
-msgid "remove all alternatives"
-msgstr "slette alle alternativer"
-
-msgid "remove all new found flags"
-msgstr "slette nye flagg"
+msgstr "Slette overskrift"
 
 msgid "remove before this position"
 msgstr "fjerne før denne posisjonen"
-
-msgid "remove bouquet from parental protection"
-msgstr ""
-
-msgid "remove cable services"
-msgstr ""
 
 #, fuzzy
 msgid "remove cuts (preserve marks)"
 msgstr "slett markøren"
 
-msgid "remove entry"
-msgstr "fjerne denne"
-
-msgid "remove from parental protection"
-msgstr "fjerne fra foreldrekontroll"
-
 #, fuzzy
 msgid "remove marks (preserve cuts)"
 msgstr "Slette en navnetjener"
 
-msgid "remove new found flag"
-msgstr "slette nye flagg"
-
-msgid "remove selected satellite"
-msgstr "slett valgt satellitt"
-
-msgid "remove terrestrial services"
-msgstr ""
-
 msgid "remove this mark"
 msgstr "slett markøren"
-
-msgid "rename entry"
-msgstr "endre navn i oppføringen"
 
 #
 msgid "repeated"
@@ -16117,9 +16137,6 @@ msgstr "gjentatt"
 #, fuzzy
 msgid "restart GUI"
 msgstr "Starte GUI på nytt?"
-
-msgid "restore deleted userbouquets"
-msgstr ""
 
 #
 #, fuzzy
@@ -16195,12 +16212,6 @@ msgstr "seriøs musikk/klassisk musikk"
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "seriøs/klassisk/religiøs/historisk film/drama"
 
-msgid "service is in bouquet parental protection"
-msgstr ""
-
-msgid "set as startup service"
-msgstr "sett som oppstartskanal"
-
 #
 #, fuzzy
 msgid "set default"
@@ -16219,10 +16230,6 @@ msgid "show all tags"
 msgstr "vis alle tagger"
 
 #
-msgid "show alternatives"
-msgstr "vis alternativer"
-
-#
 msgid "show event details"
 msgstr "vis programdetaljer"
 
@@ -16231,10 +16238,6 @@ msgstr "vis programvareoppsett"
 
 msgid "show softwaremanager on blue button"
 msgstr "vis programvareoppsett med blå knapp"
-
-#
-msgid "show transponder info"
-msgstr "vis transponder info"
 
 msgid "show/game show (general)"
 msgstr "underholdning/game show (generelt)"
@@ -16349,9 +16352,6 @@ msgstr "steg størrelse"
 #
 msgid "stereo"
 msgstr ""
-
-msgid "stop using as startup service"
-msgstr "slutt og bruke som oppstarttjeneste"
 
 msgid "successful"
 msgstr ""

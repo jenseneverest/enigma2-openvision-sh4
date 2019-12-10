@@ -145,6 +145,38 @@ if test "$enable_cuberevo_mini2" = "yes"; then
 	AC_DEFINE(ENABLE_CUBEREVO_MINI2, 1, [enable cuberevo_mini2 stuff])
 fi
 
+AC_ARG_ENABLE(forever_2424hd,
+	[  --enable-forever_2424hd            enable forever_2424hd stuff],
+	[AC_DEFINE(ENABLE_FOREVER2424HD, 1, [enable forever_2424hd stuff])])
+AM_CONDITIONAL(ENABLE_FOREVER2424HD, test "$enable_forever_2424hd" = "yes")
+if test "$enable_forever_2424hd" = "yes"; then
+	AC_DEFINE(ENABLE_FOREVER2424HD, 1, [enable forever_2424hd stuff])
+fi
+
+AC_ARG_ENABLE(forever_3434hd,
+	[  --enable-forever_3434hd            enable forever_3434hd stuff],
+	[AC_DEFINE(ENABLE_FOREVER3434HD, 1, [enable forever_3434hd stuff])])
+AM_CONDITIONAL(ENABLE_FOREVER3434HD, test "$enable_forever_3434hd" = "yes")
+if test "$enable_forever_3434hd" = "yes"; then
+	AC_DEFINE(ENABLE_FOREVER3434HD, 1, [enable forever_3434hd stuff])
+fi
+
+AC_ARG_ENABLE(forever_9898hd,
+	[  --enable-forever_9898hd            enable forever_9898hd stuff],
+	[AC_DEFINE(ENABLE_FOREVER9898HD, 1, [enable forever_9898hd stuff])])
+AM_CONDITIONAL(ENABLE_FOREVER9898HD, test "$enable_forever_9898hd" = "yes")
+if test "$enable_forever_9898hd" = "yes"; then
+	AC_DEFINE(ENABLE_FOREVER9898HD, 1, [enable forever_9898hd stuff])
+fi
+
+AC_ARG_ENABLE(forever_smart,
+	[  --enable-forever_smart            enable forever_smart stuff],
+	[AC_DEFINE(ENABLE_FOREVERSMART, 1, [enable forever_smart stuff])])
+AM_CONDITIONAL(ENABLE_FOREVERSMART, test "$enable_forever_smart" = "yes")
+if test "$enable_forever_smart" = "yes"; then
+	AC_DEFINE(ENABLE_FOREVERSMART, 1, [enable forever_smart stuff])
+fi
+
 AC_ARG_ENABLE(fortis_hdbox,
 	[  --enable-fortis_hdbox            enable fortis_hdbox stuff],
 	[AC_DEFINE(ENABLE_FORTIS_HDBOX, 1, [enable fortis_hdbox stuff])])

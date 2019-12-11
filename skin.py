@@ -255,7 +255,7 @@ def parseParameter(s):
 		return int(s)
 
 def collectAttributes(skinAttributes, node, context, skin_path_prefix=None, ignore=(), filenames=frozenset(("pixmap", "pointer", "seek_pointer", "backgroundPixmap", "selectionPixmap", "sliderPixmap", "scrollbarSliderPicture", "scrollbarbackgroundPixmap", "scrollbarBackgroundPicture"))):
-	# walk all attributes
+	# Walk all attributes.
 	size = None
 	pos = None
 	font = None

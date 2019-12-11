@@ -8,7 +8,7 @@ from enigma import eSize, ePoint, eRect, gFont, eWindow, eLabel, ePixmap, eWindo
 from Components.config import ConfigSubsection, ConfigText, config
 from Components.Converter.Converter import Converter
 from Components.Sources.Source import Source, ObsoleteSource
-from Tools.Directories import resolveFilename, SCOPE_SKIN, SCOPE_FONTS, SCOPE_CURRENT_SKIN, SCOPE_CURRENT_LCDSKIN, SCOPE_CONFIG, fileExists
+from Tools.Directories import resolveFilename, SCOPE_SKIN, SCOPE_FONTS, SCOPE_CURRENT_SKIN, SCOPE_CONFIG, fileExists
 from Tools.Import import my_import
 from Tools.LoadPixmap import LoadPixmap
 from Components.RcModel import rc_model
@@ -39,13 +39,6 @@ class SkinError(Exception):
 
 	def __str__(self):
 		return "[Skin] {%s}: %s!  Please contact the skin's author!" % (config.skin.primary_skin.value, self.msg)
-
-class DisplaySkinError(Exception):
-	def __init__(self, message):
-		self.msg = message
-
-	def __str__(self):
-		return "[Skin] {%s}: %s!  Please contact the skin's author!" % (config.skin.display_skin.value, self.msg)
 
 dom_skins = [ ]
 
@@ -99,11 +92,6 @@ else:
 if not fileExists(resolveFilename(SCOPE_SKIN, DEFAULT_SKIN)):
 	DEFAULT_SKIN = "skin.xml"
 config.skin.primary_skin = ConfigText(default=DEFAULT_SKIN)
-if SystemInfo["grautec"]:
-	DEFAULT_DISPLAY_SKIN = "skin_display_grautec.xml"
-else:
-	DEFAULT_DISPLAY_SKIN = "skin_display.xml"
-config.skin.display_skin = ConfigText(default=DEFAULT_DISPLAY_SKIN)
 
 profile("LoadSkin")
 
@@ -122,21 +110,8 @@ addSkin("skin_box.xml")
 addSkin("skin_second_infobar.xml")
 
 display_skin_id = 1
-
-try:
-	if not addSkin(os.path.join("display", config.skin.display_skin.value)):
-		raise DisplaySkinError, "display skin not found"
-except Exception, err:
-	print "[Skin] Error:", err
-	skin = DEFAULT_DISPLAY_SKIN
-	if config.skin.display_skin.value == skin:
-		skin = "skin_display.xml"
-	print "defaulting to standard display skin...", skin
-	config.skin.display_skin.value = skin
-	skin = os.path.join("display", skin)
-	addSkin(skin)
-	del skin
-
+addSkin("skin_display.xml")
+addSkin("skin_text.xml")
 addSkin("skin_subtitles.xml")
 
 try:
@@ -280,17 +255,17 @@ def parseParameter(s):
 		return int(s)
 
 def collectAttributes(skinAttributes, node, context, skin_path_prefix=None, ignore=(), filenames=frozenset(("pixmap", "pointer", "seek_pointer", "backgroundPixmap", "selectionPixmap", "sliderPixmap", "scrollbarSliderPicture", "scrollbarbackgroundPixmap", "scrollbarBackgroundPicture"))):
-	# Walk all attributes.
+	# walk all attributes
 	size = None
 	pos = None
 	font = None
 	for attrib, value in node.items():
 		if attrib not in ignore:
 			if attrib in filenames:
-				pngfile = resolveFilename(SCOPE_CURRENT_SKIN, value, path_prefix=skin_path_prefix)
-				if not fileExists(pngfile) and fileExists(resolveFilename(SCOPE_CURRENT_LCDSKIN, value, path_prefix=skin_path_prefix)):
-					pngfile = resolveFilename(SCOPE_CURRENT_LCDSKIN, value, path_prefix=skin_path_prefix)
-				value = pngfile
+				if "pointer" in attrib:
+					value = "%s%s%s" % (resolveFilename(SCOPE_CURRENT_SKIN, value.split(":")[0], path_prefix=skin_path_prefix), ":", value.split(":")[1])
+				else:
+					value = resolveFilename(SCOPE_CURRENT_SKIN, value, path_prefix=skin_path_prefix)
 			# Bit of a hack this, really. When a window has a flag (e.g. wfNoBorder)
 			# it needs to be set at least before the size is set, in order for the
 			# window dimensions to be calculated correctly in all situations.
@@ -363,36 +338,6 @@ class AttributeParser:
 			self.guiObject.resize(eSize(*value))
 		else:
 			self.guiObject.resize(parseSize(value, self.scaleTuple, self.guiObject, self.desktop))
-
-	def animationPaused(self, value):
-		pass
-
-	def NoAnimationAfter(self, value):
-		pass
-
-	def Animation(self, value):
-		self.guiObject.setAnimationMode(
-			{ "disable": 0x00,
-				"off": 0x00,
-				"offshow": 0x10,
-				"offhide": 0x01,
-				"onshow": 0x01,
-				"onhide": 0x10,
-				"disable_onshow": 0x10,
-				"disable_onhide": 0x01,
-			}[value])
-
-	def animationMode(self, value):
-		self.guiObject.setAnimationMode(
-			{ "disable": 0x00,
-				"off": 0x00,
-				"offshow": 0x10,
-				"offhide": 0x01,
-				"onshow": 0x01,
-				"onhide": 0x10,
-				"disable_onshow": 0x10,
-				"disable_onhide": 0x01,
-			}[value])
 
 	def title(self, value):
 		self.guiObject.setTitle(_(value))
@@ -733,11 +678,12 @@ def loadSingleSkinData(desktop, skin, path_prefix):
 				render = 0
 			resolved_font = resolveFilename(SCOPE_FONTS, filename, path_prefix=path_prefix)
 			if not fileExists(resolved_font): # When font is not available look at current skin path
-				resolved_font = resolveFilename(SCOPE_CURRENT_SKIN, filename)
-				if not fileExists(resolved_font) and fileExists(resolveFilename(SCOPE_CURRENT_LCDSKIN, filename)):
-					resolved_font = resolveFilename(SCOPE_CURRENT_LCDSKIN, filename)
+				skin_path = resolveFilename(SCOPE_CURRENT_SKIN, filename)
+				if fileExists(skin_path):
+					resolved_font = skin_path
 			addFont(resolved_font, name, scale, is_replacement, render)
 			# print "Font: ", resolved_font, name, scale, is_replacement
+
 		fallbackFont = resolveFilename(SCOPE_FONTS, "fallback.font", path_prefix=path_prefix)
 		if fileExists(fallbackFont):
 			addFont(fallbackFont, "Fallback", 100, -1, 0)

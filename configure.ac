@@ -169,12 +169,12 @@ if test "$enable_forever_9898hd" = "yes"; then
 	AC_DEFINE(ENABLE_FOREVER9898HD, 1, [enable forever_9898hd stuff])
 fi
 
-AC_ARG_ENABLE(forever_smart,
-	[  --enable-forever_smart            enable forever_smart stuff],
-	[AC_DEFINE(ENABLE_FOREVERSMART, 1, [enable forever_smart stuff])])
-AM_CONDITIONAL(ENABLE_FOREVERSMART, test "$enable_forever_smart" = "yes")
-if test "$enable_forever_smart" = "yes"; then
-	AC_DEFINE(ENABLE_FOREVERSMART, 1, [enable forever_smart stuff])
+AC_ARG_ENABLE(forever_nanosmart,
+	[  --enable-forever_nanosmart            enable forever_nanosmart stuff],
+	[AC_DEFINE(ENABLE_FOREVERNANOSMART, 1, [enable forever_nanosmart stuff])])
+AM_CONDITIONAL(ENABLE_FOREVERNANOSMART, test "$enable_forever_nanosmart" = "yes")
+if test "$enable_forever_nanosmart" = "yes"; then
+	AC_DEFINE(ENABLE_FOREVERNANOSMART, 1, [enable forever_nanosmart stuff])
 fi
 
 AC_ARG_ENABLE(fortis_hdbox,

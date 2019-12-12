@@ -1,7 +1,6 @@
 from Components.config import config, ConfigSelection, ConfigSubDict, ConfigYesNo
 from Components.SystemInfo import SystemInfo
 from Tools.CList import CList
-from Tools.HardwareInfo import HardwareInfo
 from os import path
 
 # The "VideoHardware" is the interface to /proc/stb/video.
@@ -256,7 +255,6 @@ class VideoHardware:
 		return res
 
 	def createConfig(self, *args):
-		has_hdmi = HardwareInfo().has_hdmi()
 		lst = []
 
 		config.av.videomode = ConfigSubDict()
@@ -266,9 +264,9 @@ class VideoHardware:
 		portlist = self.getPortList()
 		for port in portlist:
 			descr = port
-			if descr == 'DVI' and has_hdmi:
+			if descr == 'DVI':
 				descr = 'HDMI'
-			elif descr == 'DVI-PC' and has_hdmi:
+			elif descr == 'DVI-PC':
 				descr = 'HDMI-PC'
 			lst.append((port, descr))
 

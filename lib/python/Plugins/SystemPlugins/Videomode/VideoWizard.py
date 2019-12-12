@@ -8,7 +8,6 @@ from Components.config import config, ConfigBoolean, configfile
 from Components.SystemInfo import SystemInfo
 from enigma import getBoxType
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS
-from Tools.HardwareInfo import HardwareInfo
 
 config.misc.showtestcard = ConfigBoolean(default = False)
 
@@ -73,14 +72,12 @@ class VideoWizard(WizardLanguage, Rc):
 		configfile.save()
 
 	def listInputChannels(self):
-		hw_type = getBoxType()
-		has_hdmi = HardwareInfo().has_hdmi()
 		list = []
 
 		for port in self.hw.getPortList():
 			if self.hw.isPortUsed(port):
 				descr = port
-				if descr == 'DVI' and has_hdmi:
+				if descr == 'DVI':
 					descr = 'HDMI'
 				if port != "DVI-PC":
 					list.append((descr,port))
@@ -94,13 +91,11 @@ class VideoWizard(WizardLanguage, Rc):
 		self.inputSelect(index)
 
 	def inputSelectionMoved(self):
-		hw_type = getBoxType()
-		has_hdmi = HardwareInfo().has_hdmi()
 		print "[VideoWizard] input selection moved:", self.selection
 		self.inputSelect(self.selection)
 		if self["portpic"].instance is not None:
 			picname = self.selection
-			if picname == 'DVI' and has_hdmi:
+			if picname == 'DVI':
 				picname = "HDMI"
 			self["portpic"].instance.setPixmapFromFile(resolveFilename(SCOPE_PLUGINS, "SystemPlugins/Videomode/" + picname + ".png"))
 

@@ -94,7 +94,7 @@ SystemInfo["HasHDMI-CEC"] = fileExists("/usr/lib/enigma2/python/Plugins/SystemPl
 SystemInfo["HasYPbPr"] = brand == "edisionargus" or model in ("adb_box","atevio7500","fortis_hdbox","hl101","hs7420","hs7429","octagon1008","tf7700","ufs912","ufs913","cuberevo","cuberevo_mini","cuberevo_mini2","cuberevo_2000hd","cuberevo_3000hd")
 SystemInfo["HasScart"] = model not in ("hs7110","hs7119","forever_2424hd","forever_3434hd","forever_nanosmart")
 SystemInfo["HasSVideo"] = model == "cuberevo"
-SystemInfo["HasComposite"] = model not in ("cuberevo_250hd","forever_nanosmart")
+SystemInfo["HasComposite"] = model != "cuberevo_250hd"
 SystemInfo["HasAutoVolume"] = fileExists("/proc/stb/audio/avl_choices") and fileCheck("/proc/stb/audio/avl")
 SystemInfo["HasAutoVolumeLevel"] = fileExists("/proc/stb/audio/autovolumelevel_choices") and fileCheck("/proc/stb/audio/autovolumelevel")
 SystemInfo["Has3DSurround"] = fileExists("/proc/stb/audio/3d_surround_choices") and fileCheck("/proc/stb/audio/3d_surround")

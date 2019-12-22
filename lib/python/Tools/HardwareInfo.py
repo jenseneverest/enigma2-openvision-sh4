@@ -17,7 +17,7 @@ class HardwareInfo:
 		print "[HardwareInfo] Scanning hardware info"
 
 		try:
-			self.device_name = open("/proc/stb/info/model").read().strip()
+			self.device_name = open("/etc/model").read().strip()
 		except:
 			pass
 

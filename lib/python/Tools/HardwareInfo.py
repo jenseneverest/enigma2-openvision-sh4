@@ -38,7 +38,7 @@ class HardwareInfo:
 		else:
 			self.device_string = self.device_model
 
-		print "Detected: " + self.get_device_string()
+		print "[HardwareInfo] Detected: " + self.get_device_string()
 
 	def get_device_name(self):
 		return hw_info.device_name

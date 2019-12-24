@@ -1,12 +1,4 @@
 # -*- coding: utf-8 -*-
-#===============================================================================
-# Keymap Selector Plugin by DarkVolli 2009-2012
-#
-# This is free software; you can redistribute it and/or modify it under
-# the terms of the GNU General Public License as published by the Free
-# Software Foundation; either version 2, or (at your option) any later
-# version.
-#===============================================================================
 
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen

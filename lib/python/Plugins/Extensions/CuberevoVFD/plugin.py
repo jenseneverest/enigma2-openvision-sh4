@@ -73,7 +73,7 @@ class CuberevoVFDSetup(ConfigListScreen, Screen):
 		}, -2)
 
 	def abort(self):
-		print "aborting"
+		print "[CuberevoVFD] aborting"
 
 	def save(self):
 		# save all settings
@@ -207,28 +207,28 @@ class CuberevoVFD:
 		try:
 			os.popen("/usr/bin/fp_control -dt 1")
 		except OSError:
-			print "no memory"
+			print "[CuberevoVFD] no memory"
 
 	def disableClock(self):
 		self.clockEnabled = False
 		try:
 			os.popen("/usr/bin/fp_control -dt 0")
 		except OSError:
-			print "no memory"
+			print "[CuberevoVFD] no memory"
 
 	def enableTimeMode(self):
 		self.timeModeEnabled = 1
 		try:
 			os.popen("/usr/bin/fp_control -tm 1")
 		except OSError:
-			print "no memory"
+			print "[CuberevoVFD] no memory"
 
 	def disableTimeMode(self):
 		self.timeModeEnabled = 0
 		try:
 			os.popen("/usr/bin/fp_control -tm 0")
 		except OSError:
-			print "no memory"
+			print "[CuberevoVFD] no memory"
 
 # konfetti: what that?
 #	def enableDaylight(self):
@@ -258,28 +258,28 @@ class CuberevoVFD:
 		try:
 			os.popen("/usr/bin/fp_control -l 0 1")
 		except OSError:
-			print "no memory"
+			print "[CuberevoVFD] no memory"
 
 	def disableLed(self):
 		self.ledEnabled = False
 		try:
 			os.popen("/usr/bin/fp_control -l 0 0")
 		except OSError:
-			print "no memory"
+			print "[CuberevoVFD] no memory"
 
 	def enableFan(self):
 		self.fanEnabled = True
 		try:
 			os.popen("/usr/bin/fp_control -sf 1")
 		except OSError:
-			print "no memory"
+			print "[CuberevoVFD] no memory"
 
 	def disableFan(self):
 		self.fanEnabled = False
 		try:
 			os.popen("/usr/bin/fp_control -sf 0")
 		except OSError:
-			print "no memory"
+			print "[CuberevoVFD] no memory"
 
 	def regExpMatch(self, pattern, string):
 		if string is None:
@@ -306,10 +306,10 @@ class CuberevoVFD:
 		if tmp == self.tsEnabled:
 			return
 		if tmp:
-			print "[Timeshift enabled]"
+			print "[CuberevoVFD] Timeshift enabled"
 			evfd.getInstance().vfd_set_icon(0x1A,True)
 		else:
-			print "[Timeshift disabled]"
+			print "[CuberevoVFD] Timeshift disabled"
 			evfd.getInstance().vfd_set_icon(0x1A,False)
 		self.tsEnabled = tmp
 		
@@ -317,7 +317,7 @@ class CuberevoVFD:
 		self.abort()
 
 	def abort(self):
-		print "CuberevoVFD aborting"
+		print "[CuberevoVFD] aborting"
 
 def main(session, **kwargs):
 	session.open(CuberevoVFDSetup)
@@ -332,10 +332,10 @@ def controlcubeVfd():
 	global mySession
 
 	if gReason == 0 and mySession != None and cubeVfd == None:
-		print "Starting CuberevoVFD"
+		print "[CuberevoVFD] Starting CuberevoVFD"
 		cubeVfd = CuberevoVFD(mySession)
 	elif gReason == 1 and cubeVfd != None:
-		print "Stopping CuberevoVFD"
+		print "[CuberevoVFD] Stopping CuberevoVFD"
 		cubeVfd = None
 
 def autostart(reason, **kwargs):

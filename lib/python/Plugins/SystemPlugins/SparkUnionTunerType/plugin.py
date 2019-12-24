@@ -33,7 +33,7 @@ class UnionTunerType(Screen, ConfigListScreen):
                     try:
                         t = s[len(option)]
                     except IndexError:
-                        print '[UnionTunerType] bad format in modprobe config'
+                        print '[SparkUnionTunerType] bad format in modprobe config'
 
                     break
 

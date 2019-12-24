@@ -133,7 +133,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 			Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.recredled.value))
 		elif (stb.lower() == 'hs7810a' or stb.lower() == 'hs7819') and (self["config"].getCurrent()[1] == config.plugins.vfdicon.logoled):
 			Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.logoled.value))
-		print "newConfig", self["config"].getCurrent()
+		print "[hs7810aVFD] newConfig", self["config"].getCurrent()
 		self.createSetup()
 
 	def cancel(self):
@@ -147,12 +147,12 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[VFD-Icons] set text scroll", config.plugins.vfdicon.textscroll.value
+		print "[hs7810aVFD] set text scroll", config.plugins.vfdicon.textscroll.value
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print "[VFD-Icons] set text centering", config.plugins.vfdicon.textcenter.value
+		print "[hs7810aVFD] set text centering", config.plugins.vfdicon.textcenter.value
 		if stb.lower() == 'hs7810a' or stb.lower() == 'hs7819':
 			Console().ePopen("fp_control -l 0 0 -l 1 " + str(config.plugins.vfdicon.logoled.value)) # red LED off, logo on
 		else:
@@ -190,7 +190,7 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print '[VFD-Icons] Start'
+		print '[hs7810aVFD] Start'
 		self.record = False
 		self.standby = False
 		self.dolbyAvailable = False
@@ -204,8 +204,8 @@ class VFDIcons:
 		else:
 			Console().ePopen("fp_control -l 0 0") # red LED off
 		global DisplayType
-		print '[VFD-Icons] Hardware displaytype:', DisplayType
-		print '[VFD-Icons] VFD displaytype     :', DisplayTypevfd
+		print '[hs7810aVFD] Hardware displaytype:', DisplayType
+		print '[hs7810aVFD] VFD displaytype     :', DisplayTypevfd
 		if DisplayType == 9:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
@@ -220,28 +220,28 @@ class VFDIcons:
 				{
 					iPlayableService.evStart: self.writeName,
 				})
-		print '[VFD-Icons] Set text scrolling option'
+		print '[hs7810aVFD] Set text scrolling option'
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[VFD-Icons] Set text centering option"
+		print "[hs7810aVFD] Set text centering option"
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print '[VFD-Icons] End initialisation'
+		print '[hs7810aVFD] End initialisation'
 
 	def __evStart(self):
-		print '[VFD-Icons] __evStart'
+		print '[hs7810aVFD] __evStart'
 #		... and do nothing else
 
 	def __evUpdatedEventInfo(self):
-		print '[VFD-Icons] __evUpdatedEventInfo'
+		print '[hs7810aVFD] __evUpdatedEventInfo'
 #		... and do nothing else
 
 	def UpdatedInfo(self):
-		print '[VFD-Icons] __evUpdatedInfo'
+		print '[hs7810aVFD] __evUpdatedInfo'
 		self.checkAudioTracks()
 		self.writeName()
 
@@ -349,7 +349,7 @@ class VFDIcons:
 			Console().ePopen("fp_control -l 0 0 -l 1 " + str(config.plugins.vfdicon.logoled.value)) # LED off, logo on
 		else:
 			Console().ePopen("fp_control -l 0 0") # LED off
-		print "[VFD-Icons] set LEDs on Leave Standby"
+		print "[hs7810aVFD] set LEDs on Leave Standby"
 		self.timerEvent()
 #		self.timer.start(60000, False) # start one minute timer
 
@@ -368,7 +368,7 @@ class VFDIcons:
 		else:
 			evfd.getInstance().vfd_write_string("    ")
 		self.standby = True
-		print "[VFD-Icons] set display & icons on Enter Standby"
+		print "[hs7810aVFD] set display & icons on Enter Standby"
 
 VFDIconsInstance = None
 

@@ -46,7 +46,7 @@ class VFDIcons:
                 else:
                     servicename = servicename
             else:
-                print 'no Service found'
+                print '[VFD-Icons] no Service found'
         evfd.getInstance().vfd_write_string(servicename[0:63])
         return 1
 
@@ -76,13 +76,13 @@ class VFDIcons:
         return
 
     def showDolby(self):
-        print '[showDolby]'
+        print '[VFD-Icons] showDolby'
 
     def showMp3(self):
-        print '[showMp3]'
+        print '[VFD-Icons] showMp3'
 
     def __evUpdatedEventInfo(self):
-        print '[__evUpdatedEventInfo]'
+        print '[VFD-Icons] __evUpdatedEventInfo'
 
     def getSeekState(self):
         service = self.session.nav.getCurrentService()
@@ -95,7 +95,7 @@ class VFDIcons:
             return seek.isCurrentlySeekable()
 
     def __evSeekableStatusChanged(self):
-        print 'vfd [__evSeekableStatusChanged]'
+        print '[VFD-Icons] __evSeekableStatusChanged'
 
     def __evVideoSizeChanged(self):
         service = self.session.nav.getCurrentService()

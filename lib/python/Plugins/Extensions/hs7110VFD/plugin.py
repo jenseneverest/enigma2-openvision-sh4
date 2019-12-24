@@ -67,7 +67,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 #			Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.dstandbyredled.value))
 		else:
 			Console().ePopen("fp_control -l 0 0")
-		print "newConfig", self["config"].getCurrent()
+		print "[hs7110VFD] newConfig", self["config"].getCurrent()
 		self.createSetup()
 
 	def cancel(self):
@@ -111,21 +111,21 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print '[VFD-Icons] Start'
+		print '[hs7110VFD] Start'
 		self.standby = False
 		global DisplayType
-		print '[VFD-Icons] Hardware displaytype:', DisplayType
-		print '[VFD-Icons] VFD displaytype     :', DisplayTypevfd
+		print '[hs7110VFD] Hardware displaytype:', DisplayType
+		print '[hs7110VFD] VFD displaytype     :', DisplayTypevfd
 		if DisplayType == 10:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
 					iPlayableService.evStart: self.__evStart
 				})
 			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
-		print '[VFD-Icons] End initialisation'
+		print '[hs7110VFD] End initialisation'
 
 	def __evStart(self):
-		print '[VFD-Icons] __evStart'
+		print '[hs7110VFD] __evStart'
 #		... and do nothing else
 
 #	def __evUpdatedEventInfo(self):

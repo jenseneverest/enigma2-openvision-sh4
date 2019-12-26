@@ -4,6 +4,8 @@ prefix=@prefix@
 exec_prefix=@exec_prefix@
 datarootdir=@datarootdir@
 
+export PATH=$PATH:/usr/script
+
 # write -E2- on vfd display
 echo "-E2-" > /dev/vfd
 
@@ -47,6 +49,10 @@ if [ -e /opt/lib/libmediaclient.so ]; then
 	LIBS="/opt/lib/libmediaclient.so @libdir@/libopen.so.0.0.0"
 else
 	LIBS="@libdir@/libopen.so.0.0.0"
+fi
+
+if [ ! -e /etc/enigma2/settings ]; then
+	touch /etc/enigma2/settings
 fi
 
 # enigma main loop

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 05:58+0330\n"
-"PO-Revision-Date: 2019-12-01 12:20+0200\n"
+"POT-Creation-Date: 2020-01-01 14:21+0330\n"
+"PO-Revision-Date: 2019-12-23 00:03+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -1056,7 +1056,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Nustatykite numatytuoju"
+msgstr "numatytasis"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1075,7 +1075,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Nustatykite numatytuoju"
+msgstr "numatytasis"
 
 msgid "6"
 msgstr "6"
@@ -1265,10 +1265,6 @@ msgstr "ANNEX-B: "
 msgid "ANNEX-C: "
 msgstr "ANNEX-C: "
 
-#, fuzzy
-msgid "APN"
-msgstr "AFP"
-
 msgid "ASS File"
 msgstr "ASS Failas"
 
@@ -1434,10 +1430,6 @@ msgstr "Pridėti, pašalinti, pakeisti šio įvykio laikmatį"
 
 msgid "Adding schedule..."
 msgstr "Pridedamas tvarkaraštis..."
-
-#, fuzzy
-msgid "Additional PPPD options"
-msgstr "Garso parinktys..."
 
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr "Papildomos variklio galimybės leidžia įvesti duomenis iš jūsų variklio specifikacijų, taigi \"enigma\" gali išsiaiškinti, kiek laiko reikės perkelti lėkštę iš vieno palydovo į kitą palydovą."
@@ -1717,14 +1709,6 @@ msgid ""
 "\n"
 msgstr "Tikrinkite savo imtuvo tinklo konfigūraciją.\n"
 
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration?\n"
-"\n"
-msgstr ""
-"Ar tikrai norite aktyvuoti šią tinklo konfigūraciją?\n"
-"\n"
-
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
 "\n"
@@ -1946,10 +1930,6 @@ msgstr "Automatinis SCART perjungimas"
 
 msgid "Auto standby"
 msgstr "Auto budėjimas"
-
-#, fuzzy
-msgid "Auto start"
-msgstr "Auto paleidimas"
 
 #, fuzzy
 msgid "Auto(not available)"
@@ -2838,10 +2818,6 @@ msgstr "Konfigūravimo būdas"
 msgid "Configuration mode: %s"
 msgstr "Konfigūravimo būdas: %s"
 
-#, fuzzy
-msgid "Configuration saved!"
-msgstr "Konfigūravimo būdas"
-
 msgid "Configure ATSC"
 msgstr "ATSC konfigūravimas"
 
@@ -2906,10 +2882,10 @@ msgid "Configure if the subtitle should switch between normal, italic, bold and 
 msgstr "Nustatykite, ar subtitrai persijunginės į 'normalus', 'kursyvu', 'paryškintas' ir 'paryškintas kursyvu'"
 
 msgid "Configure if you need to swap the EN300743 mapping table."
-msgstr ""
+msgstr "Konfigūruokite, jei reikia sukeisti EN300743 susiejimo lentelę."
 
 msgid "Configure if you need to swap the EN300743 palette table."
-msgstr ""
+msgstr "Konfigūruokite, jei jums reikia sukeisti EN300743 paletės lentelę."
 
 msgid "Configure interface"
 msgstr "Konfigūruoti sąsają"
@@ -3913,9 +3889,6 @@ msgstr "DiSEqC jungtis %s: %s"
 msgid "DiSEqC-tester settings"
 msgstr "DiSEqC testerio nustatymai"
 
-msgid "Dial number"
-msgstr ""
-
 msgid "Did you see all eight arrow heads?"
 msgstr "Ar matote visas aštuonias rodykles?"
 
@@ -4422,10 +4395,6 @@ msgstr "Įjungti paketų pasirinkimą multi-EPG režime"
 msgid "Enable client mode"
 msgstr "Įjungti kliento režimą"
 
-#, fuzzy
-msgid "Enable debug"
-msgstr "Įjungta"
-
 msgid "Enable fallback remote receiver"
 msgstr "Įjungti atsarginį nuotolinį imtuvą"
 
@@ -4924,6 +4893,10 @@ msgstr "FEC:"
 
 msgid "FFmpeg version: "
 msgstr "FFmpeg versija: "
+
+#, fuzzy
+msgid "FPU: "
+msgstr "Procesorius: "
 
 msgid "FTA"
 msgstr "NEKODUOTI"
@@ -6013,10 +5986,6 @@ msgstr "Tik vidinis hdd"
 msgid "Internet"
 msgstr "Internetas"
 
-#, fuzzy
-msgid "Internet connection sharing"
-msgstr "Tikrinkite interneto ryšį dar kartą"
-
 msgid "Interval between keys when repeating:"
 msgstr "Intervalas tarp mygtukų paspaudimų, dėl pakartojimo:"
 
@@ -6217,7 +6186,7 @@ msgstr "Ekrano tema"
 
 #, fuzzy
 msgid "LED display configuration"
-msgstr "Užverti IPv6 konfigūraciją"
+msgstr "Filmų sąrašo konfigūracija"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
@@ -6476,12 +6445,6 @@ msgstr "MMC laikmena"
 msgid "MORE"
 msgstr "DAUGIAU"
 
-msgid "MRU"
-msgstr ""
-
-msgid "MTU"
-msgstr ""
-
 msgid "Macao"
 msgstr "Makao"
 
@@ -6708,18 +6671,6 @@ msgstr "Modelis"
 
 msgid "Model: "
 msgstr "Modelis: "
-
-#, fuzzy
-msgid "Modem configuration"
-msgstr "Apsaugoti konfigūraciją"
-
-#, fuzzy
-msgid "Modem settings"
-msgstr "Redaguoti nustatymus"
-
-#, fuzzy
-msgid "Modem type"
-msgstr "Komandų tipas"
 
 msgid "Modes"
 msgstr "Režimai"
@@ -8098,9 +8049,6 @@ msgstr "Priedų tvarkyklės aktyvumo informacija"
 msgid "Plugin manager help"
 msgstr "Priedų tvarkyklės pagalba"
 
-msgid "Plugin to set settings for modem connection."
-msgstr ""
-
 msgid "Plugins"
 msgstr "Priedai"
 
@@ -8903,9 +8851,8 @@ msgstr "Atkurti atsargines kopijas"
 msgid "Restore cuts"
 msgstr "Atkurkite iškirpimus"
 
-#, fuzzy
 msgid "Restore defaults"
-msgstr "Atkurkite iškirpimus"
+msgstr "Atkurti numatytąsias reikšmes"
 
 msgid "Restore deleted user bouquets"
 msgstr "Atkurti ištrintus vartotojo paketus"
@@ -9150,10 +9097,6 @@ msgstr "Palydovinės antenos konfigūravimas"
 
 msgid "Satellite equipment"
 msgstr "Palydovinė įranga"
-
-#, fuzzy
-msgid "Satellite equipment control setup"
-msgstr "Palydovinės įrangos nustatymas"
 
 msgid "Satellite equipment setup"
 msgstr "Palydovinės įrangos nustatymas"
@@ -10715,10 +10658,6 @@ msgstr "Laiko tarpas, kuriame, nesant aktyvumo, bus ignoruojamas miego laikmatis
 msgid "Specify timeframe to ignore the shutdown in standby"
 msgstr "Laiko tarpas, kuriame nebus išsijungiama, kai sistema budėjimo būsenoje"
 
-#, fuzzy
-msgid "Speed"
-msgstr "Greitis:"
-
 msgid "Speed up the performance"
 msgstr "Spartinti našumą"
 
@@ -11074,10 +11013,10 @@ msgid "Svalbard and Jan Mayen"
 msgstr "Svalbardas ir Jan Majenas"
 
 msgid "Swap EN300743 mapping table"
-msgstr ""
+msgstr "Sukeiskite EN300743 susiejimo lentelę"
 
 msgid "Swap EN300743 palette table"
-msgstr ""
+msgstr "Sukeiskite EN300743 paletės lentelę"
 
 msgid "Swap PIP"
 msgstr "Sukeisti PiP"
@@ -11215,7 +11154,7 @@ msgstr "TMBD informacija apie įvykį"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "Adga, Pasvalys, Lietuva\n"
-"2019-12-01 versija"
+"2019-12-23 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -12569,7 +12508,7 @@ msgstr "DVD grotuvas"
 
 #, fuzzy
 msgid "VFD display configuration"
-msgstr "Rankinis konfigūravimas"
+msgstr "Filmų sąrašo konfigūracija"
 
 msgid "VFD display configuration for Fortis HS742X"
 msgstr ""
@@ -14503,7 +14442,7 @@ msgstr "sekundžių"
 
 #, fuzzy
 msgid "select "
-msgstr "Atšaukti pasirinkimą"
+msgstr "pasirinkti"
 
 msgid "select CAId's"
 msgstr "pasirinkite CAId"
@@ -14678,7 +14617,7 @@ msgid "terrestrial"
 msgstr "Antžeminė TV"
 
 msgid "testing"
-msgstr "dirba"
+msgstr "testuojama"
 
 msgid "tf7700"
 msgstr ""

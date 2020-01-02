@@ -1423,6 +1423,13 @@ def InitNimManager(nimmgr, update_slots = []):
 		nim.diseqc13V = ConfigYesNo(False)
 		nim.diseqcMode = ConfigSelection(diseqc_mode_choices, "diseqc_a_b")
 		nim.connectedTo = ConfigSelection([(str(id), nimmgr.getNimDescription(id)) for id in nimmgr.getNimListOfType("DVB-S") if id != slot_id])
+		# FIXME: str(id) doesn't always work as it should be.
+		# Make sure nim.connectedTo is not empty.
+		try:
+			x= int(nim.connectedTo)
+		except:
+			nim.connectedTo = ConfigSelection([(str(0), nimmgr.getNimDescription(0))])
+
 		nim.simpleSingleSendDiSEqC = ConfigYesNo(False)
 		nim.simpleDiSEqCSetVoltageTone = ConfigYesNo(True)
 		nim.simpleDiSEqCOnlyOnSatChange = ConfigYesNo(False)

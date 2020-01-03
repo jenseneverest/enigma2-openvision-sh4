@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from config import config, ConfigSubsection, ConfigSlider, ConfigYesNo, ConfigNothing
 from enigma import eDBoxLCD
 from Components.SystemInfo import SystemInfo

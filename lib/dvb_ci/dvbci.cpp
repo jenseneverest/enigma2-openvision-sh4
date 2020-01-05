@@ -714,7 +714,7 @@ void eDVBCIInterfaces::recheckPMTHandlers()
 							if (it != ci_it->possible_services.end())
 							{
 								eDebug("[CI] parent '%s' of '%s' is in service list of slot %d... so use it",
-									parent_ref.toString().c_str(), ref.toString().c_str(), ci_it->getSlotID());
+								parent_ref.toString().c_str(), ref.toString().c_str(), ci_it->getSlotID());
 								useThis = true;
 							}
 						}
@@ -1768,14 +1768,14 @@ int eDVBCISlot::sendCAPMT(eDVBServicePMTHandler *pmthandler, const std::vector<u
 			unsigned char raw_data[2048];
 
 //			eDebug("[CI] send %s capmt for service %04x to slot %d",
-//				it != running_services.end() ? "UPDATE" : running_services.empty() ? "ONLY" : "ADD",
-//				program_number, slotid);
+//			it != running_services.end() ? "UPDATE" : running_services.empty() ? "ONLY" : "ADD",
+//			program_number, slotid);
 
 			CaProgramMapSection capmt(*i++,
 				it != running_services.end() ? 0x05 /*update*/ : running_services.empty() ? 0x03 /*only*/ : 0x04 /*add*/, 0x01, caids );
 			while( i != ptr->getSections().end() )
 			{
-		//			eDebug("[CI] append");
+//				eDebug("[CI] append");
 				capmt.append(*i++);
 			}
 			capmt.writeToBuffer(raw_data);

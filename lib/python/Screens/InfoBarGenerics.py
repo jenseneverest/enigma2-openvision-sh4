@@ -3120,15 +3120,13 @@ class InfoBarResolutionSelection:
 			yresString = open("/proc/stb/vmpeg/0/yres", "r").read()
 		except:
 			print"[InfoBarGenerics] Error open /proc/stb/vmpeg/0/yres!"
-		if getBoxBrand() == "azbox":
+
+		try:
+			fpsString = open("/proc/stb/vmpeg/0/framerate", "r").read()
+		except:
+			print"[InfoBarGenerics] Error open /proc/stb/vmpeg/0/framerate!"
+			print"[InfoBarGenerics] Set fpsString to 50000 to avoid further problems!"
 			fpsString = '50000'
-		else:
-			try:
-				fpsString = open("/proc/stb/vmpeg/0/framerate", "r").read()
-			except:
-				print"[InfoBarGenerics] Error open /proc/stb/vmpeg/0/framerate!"
-				print"[InfoBarGenerics] Set fpsString to 50000 to avoid further problems!"
-				fpsString = '50000'
 
 		xres = int(xresString, 16)
 		yres = int(yresString, 16)

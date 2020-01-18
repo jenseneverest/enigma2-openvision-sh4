@@ -21,6 +21,14 @@ enigma.eTimer = eBaseImpl.eTimer
 enigma.eSocketNotifier = eBaseImpl.eSocketNotifier
 enigma.eConsoleAppContainer = eConsoleImpl.eConsoleAppContainer
 
+from Components.SystemInfo import SystemInfo
+if not SystemInfo["OpenVisionModule"]:
+	print "[mytest] Open Vision in multiboot! Now we have to remove what relies on our kernel module!"
+	from Components.Console import Console
+	Console = Console()
+	Console.ePopen('opkg remove enigma2-plugin-extensions-e2iplayer')
+	print "[mytest] Removed, this is on you not us!"
+
 from traceback import print_exc
 
 profile("ClientMode")
@@ -30,8 +38,6 @@ Components.ClientMode.InitClientMode()
 profile("SimpleSummary")
 from Screens import InfoBar
 from Screens.SimpleSummary import SimpleSummary
-
-from sys import stdout
 
 profile("Bouquets")
 from Components.config import config, configfile, ConfigText, ConfigYesNo, ConfigInteger, ConfigSelection, NoSave
@@ -416,7 +422,6 @@ class PowerKey:
 				except:
 					print "[mytest] error during executing module %s, screen %s" % (selected[1], selected[2])
 			elif selected[0] == "Menu":
-				from Screens.Menu import MainMenu, mdom
 				root = mdom.getroot()
 				for x in root.findall("menu"):
 					y = x.find("id")
@@ -527,7 +532,7 @@ def runScreenTest():
 	runReactor()
 
 	profile("wakeup")
-	from time import time, strftime, localtime
+	from time import strftime, localtime
 	from Tools.StbHardware import setFPWakeuptime, setRTCtime
 	from Screens.SleepTimerEdit import isNextWakeupTime
 	#get currentTime

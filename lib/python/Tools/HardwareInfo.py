@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 hw_info = None
 
 class HardwareInfo:
@@ -14,7 +16,7 @@ class HardwareInfo:
 			return
 		hw_info = self
 
-		print "[HardwareInfo] Scanning hardware info"
+		print("[HardwareInfo] Scanning hardware info")
 
 		try:
 			self.device_name = open("/etc/model").read().strip()
@@ -38,7 +40,7 @@ class HardwareInfo:
 		else:
 			self.device_string = self.device_model
 
-		print "[HardwareInfo] Detected: " + self.get_device_string()
+		print("[HardwareInfo] Detected: " + self.get_device_string())
 
 	def get_device_name(self):
 		return hw_info.device_name

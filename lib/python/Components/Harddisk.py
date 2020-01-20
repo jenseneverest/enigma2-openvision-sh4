@@ -32,7 +32,7 @@ def isFileSystemSupported(filesystem):
 			if fs.strip().endswith(filesystem):
 				return True
 		return False
-	except Exception, ex:
+	except Exception as ex:
 		print("[Harddisk] Failed to read /proc/filesystems:", ex)
 
 def findMountPoint(path):
@@ -180,7 +180,7 @@ class Harddisk:
 				return readFile(self.sysfsPath('device/name'))
 			else:
 				raise Exception, "[Harddisk] no hdX or sdX or mmcX"
-		except Exception, e:
+		except Exception as e:
 			print("[Harddisk] Failed to get model:", e)
 			return "-?-"
 
@@ -378,7 +378,7 @@ class Harddisk:
 						# Linux version 3.2 supports bigalloc and -C option, use 256k blocks
 						task.args += ["-C", "262144"]
 						big_o_options.append("bigalloc")
-				except Exception, ex:
+				except Exception as ex:
 					print("[Harddisk] Failed to detect Linux version:", ex)
 		else:
 			task.setTool("mkfs.ext3")
@@ -852,7 +852,7 @@ class HarddiskManager:
 			cd = open(device)
 			ioctl(cd.fileno(), ioctl_flag, speed)
 			cd.close()
-		except Exception, ex:
+		except Exception as ex:
 			print("[Harddisk] Failed to set %s speed to %s" % (device, speed), ex)
 
 class UnmountTask(Task.LoggingTask):
@@ -864,7 +864,7 @@ class UnmountTask(Task.LoggingTask):
 		try:
 			dev = self.hdd.disk_path.split('/')[-1]
 			open('/dev/nomount.%s' % dev, "wb").close()
-		except Exception, e:
+		except Exception as e:
 			print("[Harddisk] ERROR: Failed to create /dev/nomount file:", e)
 		self.setTool('umount')
 		self.args.append('-f')
@@ -880,7 +880,7 @@ class UnmountTask(Task.LoggingTask):
 		for path in self.mountpoints:
 			try:
 				os.rmdir(path)
-			except Exception, ex:
+			except Exception as ex:
 				print("[Harddisk] Failed to remove path '%s':" % path, ex)
 
 class MountTask(Task.LoggingTask):
@@ -891,7 +891,7 @@ class MountTask(Task.LoggingTask):
 		try:
 			dev = self.hdd.disk_path.split('/')[-1]
 			os.unlink('/dev/nomount.%s' % dev)
-		except Exception, e:
+		except Exception as e:
 			print("[Harddisk] ERROR: Failed to remove /dev/nomount file:", e)
 		# try mounting through fstab first
 		if self.hdd.mount_device is None:
@@ -936,7 +936,7 @@ class MkfsTask(Task.LoggingTask):
 					if '\x08' in d[1]:
 						d[1] = d[1].split('\x08',1)[0]
 					self.setProgress(80*int(d[0])/int(d[1]))
-				except Exception, e:
+				except Exception as e:
 					print("[Harddisk] Mkfs E:", e)
 				return # don't log the progess
 		self.log.append(data)

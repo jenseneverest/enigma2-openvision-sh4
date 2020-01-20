@@ -1,3 +1,4 @@
+from __future__ import print_function
 import time
 import os
 import enigma
@@ -28,7 +29,7 @@ def getTrashFolder(path=None):
 def createTrashFolder(path=None):
 	print('[Trashcan]] DeBug path', path)
 	trash = getTrashFolder(path)
-	print '[Trashcan] DeBug', trash
+	print('[Trashcan] DeBug', trash)
 	if trash and os.access(os.path.split(trash)[0], os.W_OK):
 		if not os.path.isdir(trash):
 			try:
@@ -103,7 +104,7 @@ class Trashcan:
 		if not self.dirty:
 			return
 		if self.isCleaning:
-			print "[Trashcan] Cleanup already running"
+			print("[Trashcan] Cleanup already running")
 			return
 		if (self.session is not None) and self.session.nav.getRecordings():
 			return
@@ -120,7 +121,7 @@ class Trashcan:
 		self.cleanIfIdle()
 
 	def cleanFail(self, failure):
-		print "[Trashcan] ERROR in clean:", failure
+		print("[Trashcan] ERROR in clean:", failure)
 		self.isCleaning = False
 
 def purge(cleanset, ctimeLimit, reserveBytes):
@@ -128,13 +129,13 @@ def purge(cleanset, ctimeLimit, reserveBytes):
 	# reserveBytes of free disk space.
 	for trash in cleanset:
 		if not os.path.isdir(trash):
-			print "[Trashcan] No trash.", trash
+			print("[Trashcan] No trash.", trash)
 			return 0
 		diskstat = os.statvfs(trash)
 		free = diskstat.f_bfree * diskstat.f_bsize
 		bytesToRemove = reserveBytes - free
 		candidates = []
-		print "[Trashcan] bytesToRemove", bytesToRemove, trash
+		print("[Trashcan] bytesToRemove", bytesToRemove, trash)
 		size = 0
 		for root, dirs, files in os.walk(trash, topdown=False):
 			for name in files:
@@ -142,14 +143,14 @@ def purge(cleanset, ctimeLimit, reserveBytes):
 					fn = os.path.join(root, name)
 					st = os.stat(fn)
 					if st.st_ctime < ctimeLimit:
-						print "[Trashcan] Too old:", name, st.st_ctime
+						print("[Trashcan] Too old:", name, st.st_ctime)
 						enigma.eBackgroundFileEraser.getInstance().erase(fn)
 						bytesToRemove -= st.st_size
 					else:
 						candidates.append((st.st_ctime, fn, st.st_size))
 						size += st.st_size
 				except Exception as e:
-					print "[Trashcan] Failed to stat %s:"% name, e
+					print("[Trashcan] Failed to stat %s:"% name, e)
 			# Remove empty directories if possible
 			for name in dirs:
 				try:
@@ -158,18 +159,18 @@ def purge(cleanset, ctimeLimit, reserveBytes):
 					pass
 		candidates.sort()
 		# Now we have a list of ctime, candidates, size. Sorted by ctime (=deletion time)
-		print "[Trashcan] Bytes to remove remaining:", bytesToRemove, trash
+		print("[Trashcan] Bytes to remove remaining:", bytesToRemove, trash)
 		for st_ctime, fn, st_size in candidates:
 			if bytesToRemove < 0:
 				break
 			enigma.eBackgroundFileEraser.getInstance().erase(fn)
 			bytesToRemove -= st_size
 			size -= st_size
-		print "[Trashcan] Size after purging:", size, trash
+		print("[Trashcan] Size after purging:", size, trash)
 
 def cleanAll(trash):
 	if not os.path.isdir(trash):
-		print "[Trashcan] No trash.", trash
+		print("[Trashcan] No trash.", trash)
 		return 0
 	for root, dirs, files in os.walk(trash, topdown=False):
 		for name in files:
@@ -177,7 +178,7 @@ def cleanAll(trash):
 			try:
 				enigma.eBackgroundFileEraser.getInstance().erase(fn)
 			except Exception as e:
-				print "[Trashcan] Failed to erase %s:"% name, e
+				print("[Trashcan] Failed to erase %s:"% name, e)
 		# Remove empty directories if possible
 		for name in dirs:
 			try:
@@ -197,7 +198,7 @@ class CleanTrashTask(Components.Task.PythonTask):
 	def work(self):
 		mounts=[]
 		matches = []
-		print "[Trashcan] probing folders"
+		print("[Trashcan] probing folders")
 		f = open('/proc/mounts', 'r')
 		for line in f.readlines():
 			parts = line.strip().split()
@@ -217,10 +218,10 @@ class CleanTrashTask(Components.Task.PythonTask):
 			if os.path.isdir(os.path.join(mount,'movie/.Trash')):
 				matches.append(os.path.join(mount,'movie/.Trash'))
 
-		print "[Trashcan] found following trashcan's:",matches
+		print("[Trashcan] found following trashcan's:",matches)
 		if len(matches):
 			for trashfolder in matches:
-				print "[Trashcan] looking in trashcan",trashfolder
+				print("[Trashcan] looking in trashcan",trashfolder)
 				trashsize = get_size(trashfolder)
 				diskstat = os.statvfs(trashfolder)
 				free = diskstat.f_bfree * diskstat.f_bsize

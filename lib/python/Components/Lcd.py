@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 from config import config, ConfigSubsection, ConfigSlider, ConfigYesNo, ConfigNothing
 from enigma import eDBoxLCD
 from Components.SystemInfo import SystemInfo

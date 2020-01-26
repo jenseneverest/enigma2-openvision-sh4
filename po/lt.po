@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 09:56+0330\n"
-"PO-Revision-Date: 2020-01-14 18:08+0200\n"
+"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"PO-Revision-Date: 2020-01-23 23:24+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -1797,7 +1797,7 @@ msgstr "Klausti vartotojo (numatytasis - 'taip')"
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Subkanalų sąrašas..."
+msgstr "Kraštinių santykio sąrašas..."
 
 msgid "Aspect ratio"
 msgstr "Vaizdo kraštinių santykis"
@@ -1933,7 +1933,7 @@ msgstr "Auto budėjimas"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "nepasiekiamas"
+msgstr "Automatinis (negalimas)"
 
 msgid "Autoinstalling Completed"
 msgstr "Automatinis diegimas baigtas"
@@ -6534,6 +6534,11 @@ msgstr "Rankiniu būdu importuoti iš nuotolinio imtuvo"
 msgid "Manufacturer"
 msgstr "Gamintojas"
 
+msgid ""
+"Manufacturer reset in progress\n"
+"Pease wait until enigma2 restarts"
+msgstr ""
+
 msgid "Margin after recording (minutes)"
 msgstr "Intarpas po įrašymo (min.)"
 
@@ -6649,12 +6654,6 @@ msgstr "MiniDLNA žurnalas"
 
 msgid "MiniDLNA setup"
 msgstr "MiniDLNA sąranka"
-
-msgid "MiniTV"
-msgstr "MiniTV"
-
-msgid "MiniTV with OSD"
-msgstr "MiniTV su OSD"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -7392,9 +7391,6 @@ msgstr "Gerai"
 msgid "ONID"
 msgstr "ONID"
 
-msgid "OSD"
-msgstr "OSD"
-
 msgid "OSD 3D setup"
 msgstr "OSD 3D sąranka"
 
@@ -7595,12 +7591,6 @@ msgstr "PID"
 
 msgid "PIN code needed"
 msgstr "Reikalingas PIN kodas"
-
-msgid "PIP"
-msgstr "PIP"
-
-msgid "PIP with OSD"
-msgstr "PiP su OSD"
 
 msgid "PLAY"
 msgstr ""
@@ -7910,9 +7900,8 @@ msgstr "Prašome pasirinkti grojaraštį, kurį norite ištrinti..."
 msgid "Please select a playlist..."
 msgstr "Prašome išsirinkti grojaraštį..."
 
-#, fuzzy
 msgid "Please select a resolution..."
-msgstr "Prašome išsirinkti subkanalą..."
+msgstr "Pasirinkite rezoliuciją..."
 
 msgid "Please select a sub service..."
 msgstr "Prašome pasirinkti subkanalus ..."
@@ -7925,11 +7914,10 @@ msgstr "Prašome išsirinkti subkanalą..."
 
 #, fuzzy
 msgid "Please select an 3D modus..."
-msgstr "Prašome išsirinkti subkanalą..."
+msgstr "Pasirinkite rezoliuciją..."
 
-#, fuzzy
 msgid "Please select an aspect ratio..."
-msgstr "Prašome išsirinkti subkanalą..."
+msgstr "Pasirinkite vaizdo formato santykį..."
 
 msgid "Please select medium to be scanned"
 msgstr "Pasirinkite laikmeną, kurioje ieškosite"
@@ -8501,6 +8489,10 @@ msgstr "Tikrai ištrinti baigtus laikmačius?"
 
 msgid "Really exit the subservices quickzap?"
 msgstr "Tikrai užverti greitą subkanalų perjungimą?"
+
+#, fuzzy
+msgid "Really perform a manufacturer reset now?"
+msgstr "Apsaugoti ekrano nustatymą iš naujo"
 
 msgid "Really reboot now?"
 msgstr "Tikrai perjungti dabar?"
@@ -11180,7 +11172,7 @@ msgstr "TMBD informacija apie įvykį"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "Adga, Pasvalys, Lietuva\n"
-"2020-01-14 versija"
+"2020-01-23 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -12632,7 +12624,7 @@ msgid "VideoMode"
 msgstr "Vaizdo režimas"
 
 msgid "Videocodec, size & format"
-msgstr "Kodavimas, dydis ir formatas"
+msgstr "Vaizdo kodekas, dydis ir formatas"
 
 msgid "Viet Nam"
 msgstr "Vietnamas"
@@ -13919,9 +13911,6 @@ msgstr "klaidingas"
 msgid "fashion"
 msgstr "mada"
 
-msgid "fast"
-msgstr "greitai"
-
 msgid "fileformats (BMP, PNG, JPG, GIF)"
 msgstr "failų formatai (BMP, PNG, JPG, GIF)"
 
@@ -14194,9 +14183,6 @@ msgstr "meniu"
 
 msgid "mins"
 msgstr "min"
-
-msgid "minute"
-msgstr "minutė"
 
 msgid "minutes"
 msgstr "minutės"
@@ -14574,9 +14560,6 @@ msgstr "lizdas%s -%s, su atsargine kopija"
 #, python-format
 msgid "slot%s - %s, without backup"
 msgstr "lizdas%s - %s, be atsarginės kopijos"
-
-msgid "slow"
-msgstr "lėtas"
 
 msgid "soap/melodrama/folkloric"
 msgstr "muilo opera/melodrama/folkloras"

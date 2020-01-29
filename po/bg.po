@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: 2018-11-12 20:51+0200\n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: Bulgarian\n"
@@ -468,24 +468,28 @@ msgid "%a %-d %B %Y"
 msgstr "%A %e %B %Y"
 
 #. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+#, fuzzy
 msgid "%a %-d %b"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 #. TRANSLATORS: long date representation short dayname daynum short monthname year in strftime() format! See 'man strftime'
+#, fuzzy
 msgid "%a %-d %b %Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 msgid "%a %-d+%b_"
 msgstr ""
 
+#, fuzzy
 msgid "%a %-d-%B-%Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 msgid "%a %-d-%b"
 msgstr ""
 
+#, fuzzy
 msgid "%a %-d-%b-%Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %-d/%-m"
@@ -516,7 +520,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %-m/%d/%Y"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %B %-d %Y"
@@ -526,11 +530,13 @@ msgstr "%A %e %B %Y"
 msgid "%a %B %d %Y"
 msgstr "%A %e %B %Y"
 
+#, fuzzy
 msgid "%a %B-%-d-%Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
+#, fuzzy
 msgid "%a %B-%d-%Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %Y %B %-d"
@@ -540,17 +546,21 @@ msgstr "%A %e %B %Y"
 msgid "%a %Y %B %d"
 msgstr "%A %e %B %Y"
 
+#, fuzzy
 msgid "%a %Y %b %-d"
-msgstr ""
+msgstr "%A %e %B %Y"
 
+#, fuzzy
 msgid "%a %Y %b %d"
-msgstr ""
+msgstr "%A %e %B %Y"
 
+#, fuzzy
 msgid "%a %Y-%B-%-d"
-msgstr ""
+msgstr "%A %e %B %Y"
 
+#, fuzzy
 msgid "%a %Y-%B-%d"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 msgid "%a %Y-%b-%-d"
 msgstr ""
@@ -574,32 +584,36 @@ msgstr "%a %e/%m"
 msgid "%a %Y/%m/%d"
 msgstr "%a %e/%m"
 
+#, fuzzy
 msgid "%a %b %-d"
-msgstr ""
+msgstr "%A %e %B %Y"
 
+#, fuzzy
 msgid "%a %b %-d %Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %b %d"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %b %d %Y"
-msgstr "%A %d %B"
+msgstr "%A %e %B %Y"
 
 msgid "%a %b-%-d"
 msgstr ""
 
+#, fuzzy
 msgid "%a %b-%-d-%Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %b-%d"
 msgstr "%a %e/%m"
 
+#, fuzzy
 msgid "%a %b-%d-%Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d"
@@ -615,17 +629,19 @@ msgstr "%A %d %B"
 
 #, fuzzy
 msgid "%a %d %b %Y"
-msgstr "%A %d %B"
+msgstr "%A %e %B %Y"
 
+#, fuzzy
 msgid "%a %d-%B-%Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d-%b"
 msgstr "%a %e/%m"
 
+#, fuzzy
 msgid "%a %d-%b-%Y"
-msgstr ""
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d/%-m"
@@ -653,7 +669,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %m/%-d/%Y"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %m/%d"
@@ -661,7 +677,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %m/%d/%Y"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 msgid "%b %-d"
 msgstr ""
@@ -1070,6 +1086,9 @@ msgstr "16:9 Letterbox"
 msgid "16:9 always"
 msgstr "16:9 винаги"
 
+msgid "16K"
+msgstr ""
+
 msgid "18 V"
 msgstr "18 V"
 
@@ -1125,6 +1144,10 @@ msgstr "4:3 Letterbox"
 msgid "4:3 PanScan"
 msgstr "4:3 PanScan"
 
+#, fuzzy
+msgid "4K"
+msgstr "4"
+
 msgid "5"
 msgstr "5"
 
@@ -1144,6 +1167,10 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+#, fuzzy
+msgid "8K"
+msgstr "8"
+
 msgid "8bit"
 msgstr "8bit"
 
@@ -1153,12 +1180,26 @@ msgstr "9"
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - по подразбиране (деактивиран)"
 
-msgid "<Current movielist location>"
-msgstr "<Текущо местоположение на списъка с филми>"
+#, fuzzy
+msgid "< Current >"
+msgstr "Моментна стойност: "
 
 #, fuzzy
-msgid "<Default Skin>"
-msgstr "Стандартни Настройки"
+msgid "< Default + Picon >"
+msgstr "<По подразбиране>"
+
+#, fuzzy
+msgid "< Default >"
+msgstr "По подразбиране"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
+msgid "<Current movielist location>"
+msgstr "<Текущо местоположение на списъка с филми>"
 
 msgid "<Default movie location>"
 msgstr "<По подразбиране>"
@@ -1364,8 +1405,9 @@ msgstr "Прекъсни редактирането на предпочитан�
 msgid "About"
 msgstr "Относно"
 
+#, fuzzy
 msgid "About..."
-msgstr "Относно..."
+msgstr "Относно"
 
 #, fuzzy
 msgid "Accept the current selection"
@@ -1406,8 +1448,9 @@ msgstr "Активиране Край за таймшифт"
 msgid "Activate timeshift end and pause"
 msgstr "Активиране Край и Пауза за таймшифт"
 
+#, fuzzy
 msgid "Active"
-msgstr ""
+msgstr "Относително"
 
 #, python-format
 msgid "Active Keymap: %s"
@@ -2466,6 +2509,12 @@ msgstr "Канада"
 msgid "Cancel"
 msgstr "Отказ"
 
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
+
 msgid "Cancel any text changes and exit"
 msgstr ""
 
@@ -3437,8 +3486,9 @@ msgstr "Страна"
 msgid "Country for EPG event genre information"
 msgstr "Информация за софтуер мениджъра"
 
+#, fuzzy
 msgid "Country for EPG event rating information"
-msgstr ""
+msgstr "Консултирайте се със спецификацията на Вашия мотор за тази информация, или оставете настройките по подразбиране."
 
 msgid "Cover dashed flickering line for this service"
 msgstr "Скрийте мигащата линия за този канал"
@@ -4119,6 +4169,10 @@ msgstr "Запази таймшифт само за текущото събит�
 msgid "Display EPG list for current channel"
 msgstr "Покажи EPG за текущия канал..."
 
+#, fuzzy
+msgid "Display Skin"
+msgstr "Настройки Дисплей"
+
 msgid "Display and userinterface"
 msgstr "Дисплей и потребителски интерфейс"
 
@@ -4693,9 +4747,6 @@ msgstr "Енигма ниво отстраняване на грешки: %d\n"
 msgid "Enigma version: "
 msgstr "Енигма версия: "
 
-msgid "Enigma2 skin selector"
-msgstr "Енигма2 избор на скин"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -4823,9 +4874,6 @@ msgid ""
 msgstr ""
 "Грешка при разархивиране на имиджа\n"
 "%s"
-
-msgid "Error executing plugin"
-msgstr "Грешка при стартиране на плъгина"
 
 msgid "Error stop stream!"
 msgstr "Грешка при спиране на стрийма!"
@@ -5106,6 +5154,9 @@ msgstr "FEC:"
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Енигма версия: "
+
+msgid "FHD"
+msgstr ""
 
 #, fuzzy
 msgid "FPU: "
@@ -5445,6 +5496,10 @@ msgstr "GStreamer версия: "
 msgid "GUI Settings"
 msgstr "GUI Настройки"
 
+#, fuzzy
+msgid "GUI Skin"
+msgstr "GUI Настройки"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
@@ -5452,19 +5507,12 @@ msgstr ""
 "GUI трябва да се рестартира за прилагането на новия език\n"
 "Искате ли да рестартирате GUI сега?"
 
-msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr ""
-"GUI трябва да се рестартира за прилагането на новия скин\n"
-"Искате ли да рестартирате GUI сега?"
-
 #, fuzzy
 msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"GUI трябва да се рестартира за прилагането на новия скин\n"
+"GUI трябва да се рестартира за прилагането на новия език\n"
 "Искате ли да рестартирате GUI сега?"
 
 msgid "Gabon"
@@ -5638,6 +5686,10 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr "HD списък"
@@ -5824,15 +5876,16 @@ msgstr "изключи"
 msgid "Host receiver FTP password"
 msgstr ""
 
+#, fuzzy
 msgid "Host receiver FTP port"
-msgstr ""
+msgstr "Настройки на резервен приемник"
 
 msgid "Host receiver FTP username"
 msgstr ""
 
 #, fuzzy
 msgid "Host receiver IP address"
-msgstr "Настройка на IP адрес."
+msgstr "IP адрес"
 
 msgid "Host receiver address type"
 msgstr ""
@@ -6063,7 +6116,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Inadyn setup"
-msgstr "Настройки Дисплей"
+msgstr "Видео Настройка"
 
 msgid "Include AIT in http streams"
 msgstr "Включи AIT в http стриймове"
@@ -6278,9 +6331,6 @@ msgstr "Инверсия, Pilot & Roll-off"
 msgid "Invert"
 msgstr "Обърнете"
 
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr "Иран (Ислямска Република)"
 
@@ -6401,7 +6451,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Енигма2 избор на скин"
+msgstr "Отмяна Избор"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6444,8 +6494,9 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "Настройки Дисплей"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -6891,8 +6942,9 @@ msgstr "Съобщение"
 msgid "Message..."
 msgstr "Съобщение..."
 
+#, fuzzy
 msgid "MessageBox Functions"
-msgstr ""
+msgstr "Виртуална клавиатура"
 
 msgid "Messages"
 msgstr "Съобщения"
@@ -7033,7 +7085,7 @@ msgstr "Отидете в края списъка"
 
 #, fuzzy
 msgid "Move down a page"
-msgstr "премести надолу към последния запис"
+msgstr "превкл. на следващ ъгъл"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7078,11 +7130,28 @@ msgid "Move to position X"
 msgstr "Завърти към позиция Х"
 
 #, fuzzy
+msgid "Move to the next page"
+msgstr "превкл. на следващ ъгъл"
+
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "премести надолу към следващия запис"
+
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "превърти до предишната глава"
+
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "премести нагоре към предишен запис"
+
+#, fuzzy
 msgid "Move up a line"
 msgstr "Завъртян към позиция с номер"
 
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "превкл. на следващ ъгъл"
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -7223,7 +7292,7 @@ msgstr ""
 
 #, fuzzy
 msgid "NCam webif disabled"
-msgstr " (деактивиран)"
+msgstr "спрян"
 
 msgid "NEXT"
 msgstr "СЛЕДВАЩ"
@@ -7736,8 +7805,9 @@ msgstr ""
 msgid "OScam Log ( OScam-Version: %s )"
 msgstr ""
 
+#, fuzzy
 msgid "OScam webif disabled"
-msgstr ""
+msgstr "спрян"
 
 msgid "OVR"
 msgstr ""
@@ -7845,6 +7915,9 @@ msgstr ""
 #, fuzzy
 msgid "OpenVPN setup"
 msgstr "Отвори настройки на тунера "
+
+msgid "Opkg"
+msgstr ""
 
 msgid "Options disable timer"
 msgstr "Варианти за спиране на таймера"
@@ -7991,7 +8064,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Password setup"
-msgstr "Настройки на Мрежа"
+msgstr "Видео Настройка"
 
 msgid "Pause"
 msgstr "Пауза"
@@ -8571,7 +8644,8 @@ msgstr "Натиснете бутон MENU на Вашето дистанцио�
 msgid "Press OK on your remote control to continue."
 msgstr "Натиснете ОК на Вашето дистанционно за да продължите."
 
-msgid "Press OK to activate the selected skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
 msgstr "Натиснете OK за активиране на избрания скин."
 
 msgid "Press OK to activate the settings."
@@ -8583,6 +8657,10 @@ msgstr "Натиснете ОК за да редактирате настрой�
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "Натиснете ОК за повече детайли относно %s"
+
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "Натиснете OK за активиране на избрания скин."
 
 msgid "Press OK to scan"
 msgstr "Натиснете ОК за търсене"
@@ -9243,7 +9321,7 @@ msgstr "Рестарт мрежа"
 
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "Връщане към предишния канал"
+msgstr "премести нагоре към предишен запис"
 
 msgid "Restore system settings"
 msgstr "Възстановяване на системните настройки"
@@ -9359,8 +9437,9 @@ msgstr "S-Видео"
 msgid "SABnzbd"
 msgstr ""
 
+#, fuzzy
 msgid "SABnzbd setup"
-msgstr ""
+msgstr "Видео Настройка"
 
 msgid "SCAN"
 msgstr ""
@@ -9514,6 +9593,10 @@ msgstr "Запази и излез"
 #, fuzzy
 msgid "Save EPG"
 msgstr "ЕПГ на канал"
+
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "Натиснете OK за активиране на избрания скин."
 
 msgid "Save and exit"
 msgstr "Запази и излез"
@@ -9677,7 +9760,7 @@ msgstr "Търсене"
 
 #, fuzzy
 msgid "Search TMBD"
-msgstr "Търсене на изток"
+msgstr "Търсене"
 
 msgid "Search east"
 msgstr "Търсене на изток"
@@ -10030,9 +10113,6 @@ msgstr "Изберете безжична мрежа"
 msgid "Select your ATSC provider."
 msgstr "Изберете Вашия ATSC провайдър."
 
-msgid "Select your Skin"
-msgstr "Изберете Вашия Скин"
-
 msgid ""
 "Select your backup device.\n"
 "Current device: "
@@ -10045,7 +10125,7 @@ msgstr "Изберете Вашата страна. Ако не е наличн�
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Изберете Вашия Скин"
+msgstr "Избор на Имидж"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Изберете Вашия провайдър и регион. Ако не е наличен в този списък, ще трябва да изберете един от другите 'методи за търсене на канали'."
@@ -10277,7 +10357,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Set the default sorting method."
-msgstr "Задаване на настройките по подразбиране?"
+msgstr "Избор на метод за подреждане:"
 
 #, fuzzy
 msgid "Set the global sort method"
@@ -10831,16 +10911,20 @@ msgstr "Географска Дължина"
 msgid "Size: "
 msgstr ""
 
-msgid "Skin"
-msgstr "Скин"
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr "Резолюция на скина: %s (%sx%s)\n"
 
 #, fuzzy
+msgid "Skin Selection Actions"
+msgstr "Изберете действие"
+
+#, fuzzy
 msgid "Skin Setting"
 msgstr "Настройки"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 msgid "Skins"
 msgstr "Скинове"
@@ -11050,8 +11134,9 @@ msgstr ""
 msgid "SparkUnionTunerType config"
 msgstr ""
 
+#, fuzzy
 msgid "Special"
-msgstr ""
+msgstr "специално събитие"
 
 #, fuzzy
 msgid "Special 1"
@@ -11595,8 +11680,9 @@ msgstr "B"
 msgid "TMBD Details"
 msgstr ""
 
+#, fuzzy
 msgid "TMBD Not Installed"
-msgstr ""
+msgstr "Инсталирай"
 
 #, fuzzy
 msgid "TMBD details for event"
@@ -12359,8 +12445,16 @@ msgstr "Заглавие свойства"
 msgid "Titleset mode"
 msgstr "Режим за задаване на заглавие"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
 msgstr "Към избор на аудио"
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
+msgstr ""
 
 msgid "To subtitle selection"
 msgstr "Към избор на субтитри"
@@ -15216,7 +15310,7 @@ msgstr "водни спортове"
 
 #, fuzzy
 msgid "uShare setup"
-msgstr "Настройка на DNS"
+msgstr "Видео Настройка"
 
 msgid "ufs912"
 msgstr ""

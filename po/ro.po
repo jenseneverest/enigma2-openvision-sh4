@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: 2010-03-09 21:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: HDTV ROMANIA(superonic,costel_mbc,neutrin,otheitis,cipy_1982,neutrin,runcanion)\n"
@@ -991,6 +991,9 @@ msgstr ""
 msgid "16:9 always"
 msgstr "16:9 mereu"
 
+msgid "16K"
+msgstr ""
+
 msgid "18 V"
 msgstr ""
 
@@ -1045,6 +1048,9 @@ msgstr ""
 msgid "4:3 PanScan"
 msgstr ""
 
+msgid "4K"
+msgstr ""
+
 msgid "5"
 msgstr ""
 
@@ -1063,6 +1069,9 @@ msgstr ""
 msgid "8"
 msgstr ""
 
+msgid "8K"
+msgstr ""
+
 msgid "8bit"
 msgstr ""
 
@@ -1072,12 +1081,25 @@ msgstr ""
 msgid ": 0000 - default (disabled)"
 msgstr ""
 
-msgid "<Current movielist location>"
+msgid "< Current >"
 msgstr ""
 
 #, fuzzy
-msgid "<Default Skin>"
+msgid "< Default + Picon >"
 msgstr "Setari implicite"
+
+#, fuzzy
+msgid "< Default >"
+msgstr "Setari implicite"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
+msgid "<Current movielist location>"
+msgstr ""
 
 msgid "<Default movie location>"
 msgstr ""
@@ -1261,8 +1283,9 @@ msgstr "Renunta la editarea favoritelor"
 msgid "About"
 msgstr "Despre"
 
+#, fuzzy
 msgid "About..."
-msgstr "Despre..."
+msgstr "Despre"
 
 #, fuzzy
 msgid "Accept the current selection"
@@ -2391,6 +2414,12 @@ msgstr ""
 
 msgid "Cancel"
 msgstr "Anuleaza"
+
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
 
 msgid "Cancel any text changes and exit"
 msgstr ""
@@ -4057,6 +4086,10 @@ msgid "Display EPG list for current channel"
 msgstr "Arata bara de informatii la schimbarea evenimentelor"
 
 #, fuzzy
+msgid "Display Skin"
+msgstr "Configurare afisaj"
+
+#, fuzzy
 msgid "Display and userinterface"
 msgstr "Afisaj si interfata utilizator"
 
@@ -4641,10 +4674,6 @@ msgstr ""
 msgid "Enigma version: "
 msgstr "Versiune noua:"
 
-#, fuzzy
-msgid "Enigma2 skin selector"
-msgstr "enigma2 si retea"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -4762,9 +4791,6 @@ msgid ""
 "Error during unzipping image\n"
 "%s"
 msgstr ""
-
-msgid "Error executing plugin"
-msgstr "Eroare la executia pluginului"
 
 msgid "Error stop stream!"
 msgstr ""
@@ -5042,6 +5068,9 @@ msgstr ""
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Versiune noua:"
+
+msgid "FHD"
+msgstr ""
 
 msgid "FPU: "
 msgstr ""
@@ -5368,21 +5397,19 @@ msgstr "Versiune noua:"
 msgid "GUI Settings"
 msgstr "Setari"
 
+#, fuzzy
+msgid "GUI Skin"
+msgstr "Setari"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
 msgstr ""
 
 msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr "Interfata grafica necesita repornirea pentru aplicarea noilor decoratiuniDoriti repornirea interfetei grafice acum?"
-
-#, fuzzy
-msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
-msgstr "Interfata grafica necesita repornirea pentru aplicarea noilor decoratiuniDoriti repornirea interfetei grafice acum?"
+msgstr ""
 
 msgid "Gabon"
 msgstr ""
@@ -5564,6 +5591,10 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr ""
@@ -6204,9 +6235,6 @@ msgstr ""
 msgid "Invert"
 msgstr ""
 
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr ""
 
@@ -6334,7 +6362,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "enigma2 si retea"
+msgstr "Deselectare"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6379,8 +6407,9 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "Configurare afisaj"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -6988,7 +7017,7 @@ msgstr "muta jos la ultima intrare"
 
 #, fuzzy
 msgid "Move down a page"
-msgstr "muta jos la ultima intrare"
+msgstr "mergi la urmatorul unghi"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7032,11 +7061,28 @@ msgstr ""
 msgid "Move to position X"
 msgstr ""
 
+#, fuzzy
+msgid "Move to the next page"
+msgstr "mergi la urmatorul unghi"
+
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "muta jos la urmatoarea intrare"
+
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "deruleaza la capitolul anterior"
+
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "muta sus la anterioara intrare"
+
 msgid "Move up a line"
 msgstr ""
 
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "mergi la urmatorul unghi"
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -7811,6 +7857,9 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Configurare PiP"
 
+msgid "Opkg"
+msgstr ""
+
 msgid "Options disable timer"
 msgstr ""
 
@@ -8546,8 +8595,9 @@ msgstr ""
 msgid "Press OK on your remote control to continue."
 msgstr "Va rugam apasati OK de pe telecomanda pentru a continua"
 
-msgid "Press OK to activate the selected skin."
-msgstr ""
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
+msgstr "Apasati OK pentru a activa setarile"
 
 msgid "Press OK to activate the settings."
 msgstr "Apasati OK pentru a activa setarile"
@@ -8558,6 +8608,10 @@ msgstr "Apasati OK pentru a edita setarile."
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "Apasati OK pentru a primi detaliile urmatoare pentru %s"
+
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "Apasati OK pentru a edita setarile."
 
 msgid "Press OK to scan"
 msgstr "Apasati OK pentru scanare"
@@ -9204,11 +9258,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Restore cuts"
-msgstr "Revenire"
+msgstr "listeaza stilul default"
 
 #, fuzzy
 msgid "Restore defaults"
-msgstr "Revenire"
+msgstr "listeaza stilul default"
 
 msgid "Restore deleted user bouquets"
 msgstr ""
@@ -9223,7 +9277,7 @@ msgstr "Restart retea"
 
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "Revenire la serviciul anterior"
+msgstr "muta sus la anterioara intrare"
 
 msgid "Restore system settings"
 msgstr "Revenire la setarile sistemului"
@@ -9497,6 +9551,10 @@ msgstr ""
 #, fuzzy
 msgid "Save EPG"
 msgstr "EPG Individual"
+
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "Eliminare titlu curent selectat"
 
 msgid "Save and exit"
 msgstr ""
@@ -10036,9 +10094,6 @@ msgstr ""
 #, fuzzy
 msgid "Select your ATSC provider."
 msgstr "Alegeti furnizor pentru a fi adaugat..."
-
-msgid "Select your Skin"
-msgstr ""
 
 msgid ""
 "Select your backup device.\n"
@@ -10846,16 +10901,20 @@ msgstr ""
 msgid "Size: "
 msgstr ""
 
-msgid "Skin"
-msgstr ""
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr ""
 
 #, fuzzy
+msgid "Skin Selection Actions"
+msgstr "Alege locatia copiei de siguranta"
+
+#, fuzzy
 msgid "Skin Setting"
 msgstr "Setari"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 msgid "Skins"
 msgstr "Skinuri"
@@ -12375,7 +12434,15 @@ msgstr "Proprietati titlu"
 msgid "Titleset mode"
 msgstr "Mod titlu"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
+msgstr ""
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
 msgstr ""
 
 msgid "To subtitle selection"

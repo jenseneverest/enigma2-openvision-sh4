@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -1119,6 +1119,9 @@ msgstr "16:9 Letterbox"
 msgid "16:9 always"
 msgstr "16:9 alltid"
 
+msgid "16K"
+msgstr ""
+
 #
 msgid "18 V"
 msgstr "18 V"
@@ -1183,6 +1186,11 @@ msgid "4:3 PanScan"
 msgstr "4:3 PanScan"
 
 #
+#, fuzzy
+msgid "4K"
+msgstr "4"
+
+#
 msgid "5"
 msgstr "5"
 
@@ -1206,6 +1214,11 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+#
+#, fuzzy
+msgid "8K"
+msgstr "8"
+
 msgid "8bit"
 msgstr ""
 
@@ -1217,13 +1230,29 @@ msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - standard (avstängd)"
 
 #
-msgid "<Current movielist location>"
-msgstr "<Filmlistans aktuella plats>"
+#, fuzzy
+msgid "< Current >"
+msgstr "Nuvarande värde : "
 
 #
 #, fuzzy
-msgid "<Default Skin>"
+msgid "< Default + Picon >"
 msgstr "Grundinställningar"
+
+#
+#, fuzzy
+msgid "< Default >"
+msgstr "Grundinställningar"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
+#
+msgid "<Current movielist location>"
+msgstr "<Filmlistans aktuella plats>"
 
 #
 msgid "<Default movie location>"
@@ -1453,8 +1482,9 @@ msgid "About"
 msgstr "Om"
 
 #
+#, fuzzy
 msgid "About..."
-msgstr "Om..."
+msgstr "Om"
 
 #
 #, fuzzy
@@ -2698,6 +2728,12 @@ msgstr ""
 #
 msgid "Cancel"
 msgstr "Avbryt"
+
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
 
 msgid "Cancel any text changes and exit"
 msgstr ""
@@ -4534,6 +4570,11 @@ msgid "Display EPG list for current channel"
 msgstr "Visa EPG för aktuell kanal ..."
 
 #
+#, fuzzy
+msgid "Display Skin"
+msgstr "Displayinställningar"
+
+#
 msgid "Display and userinterface"
 msgstr "Display och Användargränssnitt"
 
@@ -5199,9 +5240,6 @@ msgstr ""
 msgid "Enigma version: "
 msgstr "Kernel Version : "
 
-msgid "Enigma2 skin selector"
-msgstr "Val av utseende"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -5328,10 +5366,6 @@ msgid ""
 "Error during unzipping image\n"
 "%s"
 msgstr ""
-
-#
-msgid "Error executing plugin"
-msgstr "Fel vid körning av plugin"
 
 msgid "Error stop stream!"
 msgstr ""
@@ -5644,6 +5678,9 @@ msgstr "FEC :"
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Kernel Version : "
+
+msgid "FHD"
+msgstr ""
 
 msgid "FPU: "
 msgstr ""
@@ -6018,6 +6055,11 @@ msgstr "Kernel Version : "
 msgid "GUI Settings"
 msgstr "Inställningar"
 
+#
+#, fuzzy
+msgid "GUI Skin"
+msgstr "Inställningar"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
@@ -6025,21 +6067,12 @@ msgstr ""
 "GUI måste startas om för att aktivera ett nytt språk\n"
 "Vill du starta om GUI nu?"
 
-#
-msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr ""
-"GUI måste startas om för att aktivera ett nytt utseende\n"
-"Vill du starta om GUI nu?"
-
-#
 #, fuzzy
 msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"GUI måste startas om för att aktivera ett nytt utseende\n"
+"GUI måste startas om för att aktivera ett nytt språk\n"
 "Vill du starta om GUI nu?"
 
 msgid "Gabon"
@@ -6228,6 +6261,11 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr "HD lista"
@@ -6929,10 +6967,6 @@ msgstr ""
 msgid "Invert"
 msgstr "Invertera"
 
-#
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr ""
 
@@ -7067,9 +7101,10 @@ msgstr "Tangentbordsinställning"
 msgid "Keymap"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Val av utseende"
+msgstr "Avmarkera"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -7117,8 +7152,10 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "Displayinställningar"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -7796,7 +7833,7 @@ msgstr "Gå ner i listan"
 #
 #, fuzzy
 msgid "Move down a page"
-msgstr "flytta ner till sista posten"
+msgstr "byt till nästa position"
 
 #
 #, fuzzy
@@ -7844,12 +7881,34 @@ msgstr ""
 msgid "Move to position X"
 msgstr "Flytta till position X"
 
+#
+#, fuzzy
+msgid "Move to the next page"
+msgstr "byt till nästa position"
+
+#
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "flytta ner till nästa post"
+
+#
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "spola bakåt till föregående kapitel"
+
+#
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "flytta upp till föregående post"
+
 #, fuzzy
 msgid "Move up a line"
 msgstr "Flyttad till position vid index"
 
+#
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "byt till nästa position"
 
 #
 #, fuzzy
@@ -8713,6 +8772,9 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Öppna inställning för tuner"
 
+msgid "Opkg"
+msgstr ""
+
 msgid "Options disable timer"
 msgstr "Val stäng av timer"
 
@@ -9547,7 +9609,8 @@ msgid "Press OK on your remote control to continue."
 msgstr "Tryck OK på din fjärrkontroll för att fortsätta."
 
 #
-msgid "Press OK to activate the selected skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
 msgstr "Tryck OK för aktivera valt utseende."
 
 #
@@ -9562,6 +9625,11 @@ msgstr "Tryck OK för att ändra inställningar."
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "Tryck OK för att få utförligare information om %s"
+
+#
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "Tryck OK för aktivera valt utseende."
 
 #
 msgid "Press OK to scan"
@@ -10301,10 +10369,9 @@ msgstr "Återställ säkerhetskopia"
 msgid "Restore cuts"
 msgstr "Återställ säkerhetskopia"
 
-#
 #, fuzzy
 msgid "Restore defaults"
-msgstr "Återställ säkerhetskopia"
+msgstr "Ange standard"
 
 msgid "Restore deleted user bouquets"
 msgstr "Återställ borttagna favoritlistor"
@@ -10319,9 +10386,10 @@ msgstr "Återställ"
 msgid "Restore inetd.conf"
 msgstr "Startar om nätverk"
 
+#
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "Återkalla till föregående kanal"
+msgstr "flytta upp till föregående post"
 
 #
 msgid "Restore system settings"
@@ -10633,6 +10701,11 @@ msgstr "Spara och avsluta"
 #, fuzzy
 msgid "Save EPG"
 msgstr "Singel EPG"
+
+#
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "Tryck OK för aktivera valt utseende."
 
 msgid "Save and exit"
 msgstr "Spara och avsluta"
@@ -11212,9 +11285,6 @@ msgstr "Välj trådlöst nätverk"
 msgid "Select your ATSC provider."
 msgstr "ATSC operatör"
 
-msgid "Select your Skin"
-msgstr "Välj ditt utseende (Skin)"
-
 #
 msgid ""
 "Select your backup device.\n"
@@ -11226,9 +11296,10 @@ msgstr ""
 msgid "Select your country. If not available select 'all'."
 msgstr ""
 
+#
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Välj ditt utseende (Skin)"
+msgstr "Välj en film"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr ""
@@ -11480,7 +11551,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Set the default sorting method."
-msgstr "Ange standardinställningar?"
+msgstr "Välj sorteringsmetod :"
 
 #, fuzzy
 msgid "Set the global sort method"
@@ -12090,18 +12161,21 @@ msgstr "Platsens longitud"
 msgid "Size: "
 msgstr ""
 
-#
-msgid "Skin"
-msgstr "Utseende"
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr ""
+
+#, fuzzy
+msgid "Skin Selection Actions"
+msgstr "Välj åtgärd"
 
 #
 #, fuzzy
 msgid "Skin Setting"
 msgstr "Inställningar"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 #
 msgid "Skins"
@@ -13817,8 +13891,16 @@ msgstr "Titel egenskaper"
 msgid "Titleset mode"
 msgstr "Titelset läge"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
 msgstr "Till ljudval"
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
+msgstr ""
 
 msgid "To subtitle selection"
 msgstr "Till undertextval"

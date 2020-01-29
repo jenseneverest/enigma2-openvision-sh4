@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -1107,6 +1107,9 @@ msgstr "16:9 platekrāns"
 msgid "16:9 always"
 msgstr "16:9 vienmēr"
 
+msgid "16K"
+msgstr ""
+
 msgid "18 V"
 msgstr "18 V"
 
@@ -1162,6 +1165,10 @@ msgstr "4:3 platekrāns"
 msgid "4:3 PanScan"
 msgstr "4:3 panorāma"
 
+#, fuzzy
+msgid "4K"
+msgstr "4"
+
 msgid "5"
 msgstr "5"
 
@@ -1181,6 +1188,10 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+#, fuzzy
+msgid "8K"
+msgstr "8"
+
 msgid "8bit"
 msgstr "8bit"
 
@@ -1190,11 +1201,26 @@ msgstr "9"
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - pēc noklusējuma (nedarbosies)"
 
+#, fuzzy
+msgid "< Current >"
+msgstr "Pašreizējā vērtība: "
+
+#, fuzzy
+msgid "< Default + Picon >"
+msgstr "Pēc noklusējuma"
+
+#, fuzzy
+msgid "< Default >"
+msgstr "Pēc noklusējuma"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
 msgid "<Current movielist location>"
 msgstr "<Tekošā mediju saraksta atrašanās vieta>"
-
-msgid "<Default Skin>"
-msgstr "Pēc noklusējuma"
 
 msgid "<Default movie location>"
 msgstr "<Mediju atrašanās vieta pēc noklusējuma>"
@@ -1398,8 +1424,9 @@ msgstr "Pārtraukt favorītu rediģēšanu"
 msgid "About"
 msgstr "Par"
 
+#, fuzzy
 msgid "About..."
-msgstr "Par..."
+msgstr "Par"
 
 #, fuzzy
 msgid "Accept the current selection"
@@ -2493,6 +2520,12 @@ msgstr "Kanāda"
 
 msgid "Cancel"
 msgstr "Atcelt"
+
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
 
 msgid "Cancel any text changes and exit"
 msgstr "Atcelt teksta izmaiņas un iziet"
@@ -4134,6 +4167,10 @@ msgstr "Rādīt EPG informāciju pašreizējai pārraidei."
 msgid "Display EPG list for current channel"
 msgstr "Rādīt EPG sarakstu pašreizējai pārraidei."
 
+#, fuzzy
+msgid "Display Skin"
+msgstr "Displeja iestatījumi"
+
 msgid "Display and userinterface"
 msgstr "Attēla un lietotāja interfeiss"
 
@@ -4709,9 +4746,6 @@ msgstr "Atkļūdošanas līmenis: %d\n"
 msgid "Enigma version: "
 msgstr "Enigmas versija: "
 
-msgid "Enigma2 skin selector"
-msgstr "Noformējuma izvēle"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -4837,9 +4871,6 @@ msgid ""
 msgstr ""
 "Kļūda atarhivējot imidžu\n"
 "%s"
-
-msgid "Error executing plugin"
-msgstr "Kļūda, palaižot spraudni"
 
 msgid "Error stop stream!"
 msgstr "Kļūda apturot straumēšanu!"
@@ -5121,6 +5152,9 @@ msgstr "FEC:"
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Enigmas versija: "
+
+msgid "FHD"
+msgstr ""
 
 #, fuzzy
 msgid "FPU: "
@@ -5452,6 +5486,10 @@ msgstr "GStreamer versija: "
 msgid "GUI Settings"
 msgstr "Personīgie iestatījumi"
 
+#, fuzzy
+msgid "GUI Skin"
+msgstr "Personīgie iestatījumi"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
@@ -5459,19 +5497,12 @@ msgstr ""
 "Lai lietotu jauno valodu nepieciešams pārstartēt enigmu.\n"
 "Vai vēlaties pārstartēt?"
 
-msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr ""
-"Lai lietotu jauno noformējumu nepieciešams pārstartēt enigmu.\n"
-"Vai vēlaties pārstartēt?"
-
 #, fuzzy
 msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"Lai lietotu jauno noformējumu nepieciešams pārstartēt enigmu.\n"
+"Lai lietotu jauno valodu nepieciešams pārstartēt enigmu.\n"
 "Vai vēlaties pārstartēt?"
 
 msgid "Gabon"
@@ -5645,6 +5676,10 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr "HD saraksts"
@@ -6280,9 +6315,6 @@ msgstr "Inversija, Pilot un Roll-off"
 msgid "Invert"
 msgstr "Invertēt"
 
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr "Irāna"
 
@@ -6401,7 +6433,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Noformējuma izvēle"
+msgstr "Atcelt izvēli"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6444,8 +6476,9 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "Displeja iestatījumi"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -7033,7 +7066,7 @@ msgstr "Iet uz saraksta leju"
 
 #, fuzzy
 msgid "Move down a page"
-msgstr "pārvietot lejup uz pēdējo ierakstu"
+msgstr "pārslēgt uz nākamo leņķi"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7078,11 +7111,28 @@ msgid "Move to position X"
 msgstr "Griezt uz pozīciju X"
 
 #, fuzzy
+msgid "Move to the next page"
+msgstr "pārslēgt uz nākamo leņķi"
+
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "pārvietot lejup uz nākamo ierakstu"
+
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "atgriezties uz iepriekšējo nodaļu"
+
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "pārvietot augšup uz iepriekšējo ierakstu"
+
+#, fuzzy
 msgid "Move up a line"
 msgstr "Griezt uz pozīciju indeksā"
 
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "pārslēgt uz nākamo leņķi"
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -7848,6 +7898,9 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Atvērt iestatījumus uztvērējam "
 
+msgid "Opkg"
+msgstr ""
+
 msgid "Options disable timer"
 msgstr "Iespēja izslēgt taimeri"
 
@@ -8570,7 +8623,8 @@ msgstr "Papildus iespējām spiediet MENU uz tālvadības pults."
 msgid "Press OK on your remote control to continue."
 msgstr "Spiediet OK uz tālvadības pults, lai turpinātu."
 
-msgid "Press OK to activate the selected skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
 msgstr "Spiediet OK lai aktivizētu izvēlēto noformējumu."
 
 msgid "Press OK to activate the settings."
@@ -8582,6 +8636,10 @@ msgstr "Spiediet OK, lai rediģētu iestatījumus."
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "Spiediet OK turpmākai informācijai %s"
+
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "Spiediet OK lai aktivizētu izvēlēto noformējumu."
 
 msgid "Press OK to scan"
 msgstr "Spiediet OK, lai meklētu"
@@ -9225,7 +9283,7 @@ msgstr "Atjaunot dublējumkopiju"
 
 #, fuzzy
 msgid "Restore defaults"
-msgstr "Atjaunot dublējumkopiju"
+msgstr "Pēc noklusējuma"
 
 msgid "Restore deleted user bouquets"
 msgstr "Atjaunot dzēstās buķetes"
@@ -9240,7 +9298,7 @@ msgstr "Pārstartēt tīklu"
 
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "Atgriezties uz iepriekšējo kanālu"
+msgstr "pārvietot augšup uz iepriekšējo ierakstu"
 
 msgid "Restore system settings"
 msgstr "Atjaunot sistēmas iestatījumus"
@@ -9507,6 +9565,10 @@ msgstr "Saglabāt vai ievadīt tekstu un iziet"
 #, fuzzy
 msgid "Save EPG"
 msgstr "Kanāla EPG"
+
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "Spiediet OK lai aktivizētu izvēlēto noformējumu."
 
 msgid "Save and exit"
 msgstr "Saglabāt un iziet"
@@ -10024,9 +10086,6 @@ msgstr "Izvēlieties bezvadu tīklu"
 msgid "Select your ATSC provider."
 msgstr "Izvēlieties ATSC operatoru."
 
-msgid "Select your Skin"
-msgstr "Izvēlieties noformējumu"
-
 msgid ""
 "Select your backup device.\n"
 "Current device: "
@@ -10039,7 +10098,7 @@ msgstr "Izvēlieties savu valsti. Ja nav pieejams, izvēlieties 'visam'"
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Izvēlieties noformējumu"
+msgstr "Izvēlieties imidžu"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Izvēlieties pakalpojumu sniedzēju un reģionu. Ja tie nav šajā sarakstā, jums jāizvēlas cits kanālu meklēšanas veids."
@@ -10268,7 +10327,7 @@ msgstr "OpenWebif lietotāja ID attālinātā uztvērējā"
 
 #, fuzzy
 msgid "Set the default sorting method."
-msgstr "Iestatīt pēc noklusējuma?"
+msgstr "Izvēlieties kārtošanas metodi:"
 
 #, fuzzy
 msgid "Set the global sort method"
@@ -10821,16 +10880,20 @@ msgstr "Vietas garums"
 msgid "Size: "
 msgstr ""
 
-msgid "Skin"
-msgstr "Noformējums"
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr "Noformējums: %s (%sx%s)\n"
 
 #, fuzzy
+msgid "Skin Selection Actions"
+msgstr "Izvēlieties darbību"
+
+#, fuzzy
 msgid "Skin Setting"
 msgstr "Iestatījumi"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 msgid "Skins"
 msgstr "Noformējumi"
@@ -12349,8 +12412,16 @@ msgstr "Nosaukuma parametri"
 msgid "Titleset mode"
 msgstr "Nosaukuma iestatīšanas režīms"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
 msgstr "Uz audio iestatīšanu"
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
+msgstr ""
 
 msgid "To subtitle selection"
 msgstr "Uz subtitru iestatīšanu"

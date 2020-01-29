@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -1094,6 +1094,9 @@ msgstr "Kotaksurat 16:9"
 msgid "16:9 always"
 msgstr "selalu 16:9"
 
+msgid "16K"
+msgstr ""
+
 msgid "18 V"
 msgstr "18 V"
 
@@ -1149,6 +1152,10 @@ msgstr "Kotaksurat 4:3"
 msgid "4:3 PanScan"
 msgstr "PanScan 4:3"
 
+#, fuzzy
+msgid "4K"
+msgstr "4"
+
 msgid "5"
 msgstr "5"
 
@@ -1168,6 +1175,10 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+#, fuzzy
+msgid "8K"
+msgstr "8"
+
 msgid "8bit"
 msgstr ""
 
@@ -1177,12 +1188,26 @@ msgstr "9"
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - bawaan (dimatikan)"
 
-msgid "<Current movielist location>"
-msgstr "<Lokasi daftar film saat ini>"
+#, fuzzy
+msgid "< Current >"
+msgstr "Nilai saat ini: "
 
 #, fuzzy
-msgid "<Default Skin>"
+msgid "< Default + Picon >"
 msgstr "Pengaturan bawaan"
+
+#, fuzzy
+msgid "< Default >"
+msgstr "Pengaturan bawaan"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
+msgid "<Current movielist location>"
+msgstr "<Lokasi daftar film saat ini>"
 
 msgid "<Default movie location>"
 msgstr "<Lokasi film bawaan>"
@@ -1389,8 +1414,9 @@ msgstr "Batalkan ubah favorit"
 msgid "About"
 msgstr "Tentang"
 
+#, fuzzy
 msgid "About..."
-msgstr "Tentang..."
+msgstr "Tentang"
 
 #, fuzzy
 msgid "Accept the current selection"
@@ -2500,6 +2526,12 @@ msgstr "Kanada"
 
 msgid "Cancel"
 msgstr "Batal"
+
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
 
 msgid "Cancel any text changes and exit"
 msgstr "Batalkan semua perubahan teks lalu keluar"
@@ -4169,6 +4201,10 @@ msgstr "Tampilkan info EPG pada acara saat ini"
 msgid "Display EPG list for current channel"
 msgstr "Tampilkan EPG pada kanal sekarang..."
 
+#, fuzzy
+msgid "Display Skin"
+msgstr "Atur display"
+
 msgid "Display and userinterface"
 msgstr "Display dan antarmuka pengguna"
 
@@ -4753,9 +4789,6 @@ msgstr ""
 msgid "Enigma version: "
 msgstr "Kernel version: "
 
-msgid "Enigma2 skin selector"
-msgstr "Pilih tampilan Enigma2"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -4883,9 +4916,6 @@ msgid ""
 msgstr ""
 "Kesalahan saat mengunzip image\n"
 "%s"
-
-msgid "Error executing plugin"
-msgstr "Kesalahan eksekusi plugin"
 
 msgid "Error stop stream!"
 msgstr "Kesalahan, hentikan stream!"
@@ -5170,6 +5200,9 @@ msgstr ""
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Kernel version: "
+
+msgid "FHD"
+msgstr ""
 
 #, fuzzy
 msgid "FPU: "
@@ -5514,6 +5547,10 @@ msgstr "Versi Gstreamer: "
 msgid "GUI Settings"
 msgstr "Penyetelan GUI"
 
+#, fuzzy
+msgid "GUI Skin"
+msgstr "Penyetelan GUI"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
@@ -5521,19 +5558,12 @@ msgstr ""
 "GUI perlu direstart untuk menerapkan bahasa baru\n"
 "Apakah anda ingin merestart GUI sekarang?"
 
-msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr ""
-"GUI perlu direstart untuk menerapkan tampilan baru\n"
-"Apakah anda ingin merestart GUI sekarang?"
-
 #, fuzzy
 msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"GUI perlu direstart untuk menerapkan tampilan baru\n"
+"GUI perlu direstart untuk menerapkan bahasa baru\n"
 "Apakah anda ingin merestart GUI sekarang?"
 
 msgid "Gabon"
@@ -5709,6 +5739,10 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr "daftar HD"
@@ -6355,9 +6389,6 @@ msgstr "Inversi, Pilot & Roll-off"
 msgid "Invert"
 msgstr "Invert"
 
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr "Republik Islam Iran"
 
@@ -6481,7 +6512,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Pilih tampilan Enigma2"
+msgstr "Tidak dipilih"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6525,8 +6556,9 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "Atur display"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -7126,7 +7158,7 @@ msgstr "Menuju bawah daftar"
 
 #, fuzzy
 msgid "Move down a page"
-msgstr "gerak ke bawah menuju entri terakhir"
+msgstr "ganti ke sudut berikutnya"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7171,11 +7203,28 @@ msgid "Move to position X"
 msgstr "Bergerak ke posisi X"
 
 #, fuzzy
+msgid "Move to the next page"
+msgstr "ganti ke sudut berikutnya"
+
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "gerak ke bawah menuju entri selanjutnya"
+
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "mundur ke bab sebelumnya"
+
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "gerak ke atas menuju entri sebelumnya"
+
+#, fuzzy
 msgid "Move up a line"
 msgstr "Bergerak ke posisi pada indeks"
 
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "ganti ke sudut berikutnya"
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -7949,6 +7998,9 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Buka pengaturan penala"
 
+msgid "Opkg"
+msgstr ""
+
 msgid "Options disable timer"
 msgstr "Pilihan mematikan pewaktu"
 
@@ -8683,7 +8735,8 @@ msgstr "Tekan MENU pada remote kontrol anda untuk opsi tambahan."
 msgid "Press OK on your remote control to continue."
 msgstr "Tekan OK pada remote kontrol anda untuk melanjutkan."
 
-msgid "Press OK to activate the selected skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
 msgstr "Tekan OK untuk mengaktifkan tampilan."
 
 msgid "Press OK to activate the settings."
@@ -8695,6 +8748,10 @@ msgstr "Tekan OK untuk merubah pengaturan."
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "Tekan OK untuk mendapatkan rincian lanjut pada %s"
+
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "Tekan OK untuk mengaktifkan tampilan."
 
 msgid "Press OK to scan"
 msgstr "Tekan OK untuk melacak"
@@ -9347,7 +9404,7 @@ msgstr "Pulihkan cadangan"
 
 #, fuzzy
 msgid "Restore defaults"
-msgstr "Pulihkan cadangan"
+msgstr "Atur bawaan"
 
 msgid "Restore deleted user bouquets"
 msgstr "Kembalikan buketpengguna yg dihapus"
@@ -9362,7 +9419,7 @@ msgstr "Mulai ulang jaringan"
 
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "Kembali ke layanan sebelumnya"
+msgstr "gerak ke atas menuju entri sebelumnya"
 
 msgid "Restore system settings"
 msgstr "Pulihkan setelan sistem"
@@ -9635,6 +9692,10 @@ msgstr "Masukkan teks lalau keluar"
 #, fuzzy
 msgid "Save EPG"
 msgstr "EPG Tunggal"
+
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "Tekan OK untuk mengaktifkan tampilan."
 
 msgid "Save and exit"
 msgstr "Simpan dan keluar"
@@ -10160,9 +10221,6 @@ msgstr "Pilih jaringan nirkabel"
 msgid "Select your ATSC provider."
 msgstr "Pilih penyedia ATSC anda."
 
-msgid "Select your Skin"
-msgstr "Pilih tampilan anda"
-
 msgid ""
 "Select your backup device.\n"
 "Current device: "
@@ -10175,7 +10233,7 @@ msgstr "Pilih negara anda. Jika tidak tersedia, pilih 'semua'."
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Pilih tampilan anda"
+msgstr "Pilih Image"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Pilih provder dan wilayah anda. Jika tidak ada dalam daftar, anda perlu pilih satu dari 'jenis lacak layanan' lain."
@@ -10408,7 +10466,7 @@ msgstr "Atur ID Pengguna OpenWebif dari penala terpakai anda"
 
 #, fuzzy
 msgid "Set the default sorting method."
-msgstr "Atur setelan bawaan?"
+msgstr "Pilih metode sortir:"
 
 #, fuzzy
 msgid "Set the global sort method"
@@ -10966,16 +11024,20 @@ msgstr "Bujur tempat"
 msgid "Size: "
 msgstr ""
 
-msgid "Skin"
-msgstr "Tampilan"
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr "Tampilan & Resolusi: %s (%sx%s)\n"
 
 #, fuzzy
+msgid "Skin Selection Actions"
+msgstr "Pilih tindakan"
+
+#, fuzzy
 msgid "Skin Setting"
 msgstr "Penyetelan"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 msgid "Skins"
 msgstr "Beberapa tampilan"
@@ -12516,8 +12578,16 @@ msgstr "Properti judul"
 msgid "Titleset mode"
 msgstr "Mode set judul"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
 msgstr "Ke pemilihan audio"
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
+msgstr ""
 
 msgid "To subtitle selection"
 msgstr "Ke pemilihan terjemahan"

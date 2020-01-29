@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: 2019-12-02 21:50+0100\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -1094,6 +1094,9 @@ msgstr "16:9 Letterbox"
 msgid "16:9 always"
 msgstr "mindig 16:9"
 
+msgid "16K"
+msgstr ""
+
 msgid "18 V"
 msgstr "18 V"
 
@@ -1149,6 +1152,10 @@ msgstr "4:3 Letterbox"
 msgid "4:3 PanScan"
 msgstr "4:3 PanScan"
 
+#, fuzzy
+msgid "4K"
+msgstr "4"
+
 msgid "5"
 msgstr "5"
 
@@ -1168,6 +1175,10 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+#, fuzzy
+msgid "8K"
+msgstr "8"
+
 msgid "8bit"
 msgstr "8bit"
 
@@ -1177,11 +1188,26 @@ msgstr "9"
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - alapértelmezett (kikapcsolva)"
 
+#, fuzzy
+msgid "< Current >"
+msgstr "Aktuális érték: "
+
+#, fuzzy
+msgid "< Default + Picon >"
+msgstr "<Alapértelmezett Kinézet>"
+
+#, fuzzy
+msgid "< Default >"
+msgstr "<Alapértelmezett Kinézet>"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
 msgid "<Current movielist location>"
 msgstr "<Filmlista aktuális tárhelye>"
-
-msgid "<Default Skin>"
-msgstr "<Alapértelmezett Kinézet>"
 
 msgid "<Default movie location>"
 msgstr "<Felvételek tárhelye>"
@@ -1385,8 +1411,9 @@ msgstr "Kedvencek módosításának megszakítása"
 msgid "About"
 msgstr "Névjegy"
 
+#, fuzzy
 msgid "About..."
-msgstr "Névjegy..."
+msgstr "Névjegy"
 
 #, fuzzy
 msgid "Accept the current selection"
@@ -2490,6 +2517,12 @@ msgstr "Kanada"
 
 msgid "Cancel"
 msgstr "Mégse"
+
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
 
 msgid "Cancel any text changes and exit"
 msgstr "Szöveg változások elvetése és kilépés"
@@ -4123,6 +4156,10 @@ msgstr "Az aktuális műsor EPG-információ megjelenítése"
 msgid "Display EPG list for current channel"
 msgstr "Az aktuális csatorna EPG-jének megjelenítése"
 
+#, fuzzy
+msgid "Display Skin"
+msgstr "Előlapi kijelző"
+
 msgid "Display and userinterface"
 msgstr "Képernyő és felhasználói felület"
 
@@ -4693,9 +4730,6 @@ msgstr "Enigma hibakeresési szint: %d\n"
 msgid "Enigma version: "
 msgstr "Kezelőfelület verzió: "
 
-msgid "Enigma2 skin selector"
-msgstr "Kinézet választó"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -4816,9 +4850,6 @@ msgid ""
 "Error during unzipping image\n"
 "%s"
 msgstr "Hiba az image kicsomagolása során %s"
-
-msgid "Error executing plugin"
-msgstr "Bővítmény indítási hiba"
 
 msgid "Error stop stream!"
 msgstr "A stream leállítása sikertelen!"
@@ -5100,6 +5131,9 @@ msgstr "FEC:"
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Kezelőfelület verzió: "
+
+msgid "FHD"
+msgstr ""
 
 #, fuzzy
 msgid "FPU: "
@@ -5427,6 +5461,10 @@ msgstr "GStreamer verzió: "
 msgid "GUI Settings"
 msgstr "Kezelőfelület beállítása"
 
+#, fuzzy
+msgid "GUI Skin"
+msgstr "Kezelőfelület beállítása"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
@@ -5434,19 +5472,12 @@ msgstr ""
 "Az új nyelv betöltéséhez újra kell indítani a kezelőfelületet.\n"
 "Újraindítja most?"
 
-msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr ""
-"Az új kinézet betöltéséhez újra kell indítani a kezelőfelületet.\n"
-"Újraindítja most?"
-
 #, fuzzy
 msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"Az új kinézet betöltéséhez újra kell indítani a kezelőfelületet.\n"
+"Az új nyelv betöltéséhez újra kell indítani a kezelőfelületet.\n"
 "Újraindítja most?"
 
 msgid "Gabon"
@@ -5620,6 +5651,10 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr "HD csatornák"
@@ -6254,9 +6289,6 @@ msgstr "Inverzió, pilot & roll-off"
 msgid "Invert"
 msgstr "Invertálás"
 
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr "Iran"
 
@@ -6377,7 +6409,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Kinézet választó"
+msgstr "Kijelölés törlése"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6420,8 +6452,9 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "Előlapi kijelző"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -7007,7 +7040,7 @@ msgstr "A listán lefelé"
 
 #, fuzzy
 msgid "Move down a page"
-msgstr "ugrás a legutolsó tételhez"
+msgstr "váltás a következő nézőszögre"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7052,11 +7085,28 @@ msgid "Move to position X"
 msgstr "Mozgatás az X pozícióra"
 
 #, fuzzy
+msgid "Move to the next page"
+msgstr "váltás a következő nézőszögre"
+
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "ugrás a következő tételhez"
+
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "visszatekerés az előző chapterhez"
+
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "ugrás az előző tételhez"
+
+#, fuzzy
 msgid "Move up a line"
 msgstr "Mozgatás sorszámra"
 
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "váltás a következő nézőszögre"
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -7820,6 +7870,9 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Tuner beállító megnyitása "
 
+msgid "Opkg"
+msgstr ""
+
 msgid "Options disable timer"
 msgstr "Időzítő letiltási beállítások"
 
@@ -8540,7 +8593,8 @@ msgstr "Nyomja le a MENÜ gombot a távírányítón további opciókért."
 msgid "Press OK on your remote control to continue."
 msgstr "Nyomja le az OK gombot a távirányítón a folytatáshoz."
 
-msgid "Press OK to activate the selected skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
 msgstr "Nyomja le az OK gombot az új kinézet aktiválásához."
 
 msgid "Press OK to activate the settings."
@@ -8552,6 +8606,10 @@ msgstr "Az OK gombbal módosíthatja a beállításokat."
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "Nyomja le az OK gombot több részletért %s kapcsán"
+
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "Nyomja le az OK gombot az új kinézet aktiválásához."
 
 msgid "Press OK to scan"
 msgstr "Az OK gombbal indíthatja a keresést"
@@ -9193,7 +9251,7 @@ msgstr "Mentések visszaállítása"
 
 #, fuzzy
 msgid "Restore defaults"
-msgstr "Mentések visszaállítása"
+msgstr "Alapértelmezett"
 
 msgid "Restore deleted user bouquets"
 msgstr "Törölt felhasználói listák visszaállítása"
@@ -9208,7 +9266,7 @@ msgstr "Hálózat újraindítása"
 
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "Előző csatornára váltás"
+msgstr "ugrás az előző tételhez"
 
 msgid "Restore system settings"
 msgstr "Rendszerbeállítás visszaállítása"
@@ -9475,6 +9533,10 @@ msgstr "Szöveg bevitele/mentése és kilépés"
 #, fuzzy
 msgid "Save EPG"
 msgstr "Műsorújság"
+
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "Nyomja le az OK gombot az új kinézet aktiválásához."
 
 msgid "Save and exit"
 msgstr "Mentés és kilépés"
@@ -9987,9 +10049,6 @@ msgstr "Válasszon vezeték nélküli hálózatot"
 msgid "Select your ATSC provider."
 msgstr "Válassza ki az ATSC szolgáltatóját."
 
-msgid "Select your Skin"
-msgstr "Kinézet kiválasztása"
-
 msgid ""
 "Select your backup device.\n"
 "Current device: "
@@ -10002,7 +10061,7 @@ msgstr "Válassza ki az országát. Amennyiben nem elérhető, válassza a 'mind
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Kinézet kiválasztása"
+msgstr "Image kiválasztása"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Válasszon szolgáltatót és régiót. Ha nincs a listában, válasszon egyet a többi 'csatornakeresés' lehetőség közül."
@@ -10231,7 +10290,7 @@ msgstr "Állítsa be az OpenWebIf felhasználói azonosítót a tartalék tunerb
 
 #, fuzzy
 msgid "Set the default sorting method."
-msgstr "Alapértelmezett beállítások?"
+msgstr "Rendezési módszer választása:"
 
 #, fuzzy
 msgid "Set the global sort method"
@@ -10783,16 +10842,20 @@ msgstr "Földrajzi hosszúsági fok"
 msgid "Size: "
 msgstr ""
 
-msgid "Skin"
-msgstr "Kinézet"
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr "Kinézet és felbontás: %s (%sx%s)\n"
 
 #, fuzzy
+msgid "Skin Selection Actions"
+msgstr "Művelet kiválasztása"
+
+#, fuzzy
 msgid "Skin Setting"
 msgstr "Beállítások"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 msgid "Skins"
 msgstr "Kinézetek"
@@ -12316,8 +12379,16 @@ msgstr "Tétel tulajdonságai"
 msgid "Titleset mode"
 msgstr "Tétel-szett mód"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
 msgstr "Hangcsatorna kiválasztása"
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
+msgstr ""
 
 msgid "To subtitle selection"
 msgstr "Felirat kiválasztása"

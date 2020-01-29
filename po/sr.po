@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -1134,6 +1134,9 @@ msgstr "16:9 Letterbox"
 msgid "16:9 always"
 msgstr "16:9 uvek"
 
+msgid "16K"
+msgstr ""
+
 #
 msgid "18 V"
 msgstr "18 V"
@@ -1195,6 +1198,10 @@ msgstr "4:3 Letterbox"
 msgid "4:3 PanScan"
 msgstr "4:3 PanScan"
 
+#, fuzzy
+msgid "4K"
+msgstr "4"
+
 #
 msgid "5"
 msgstr "5"
@@ -1218,6 +1225,11 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+#
+#, fuzzy
+msgid "8K"
+msgstr "8"
+
 msgid "8bit"
 msgstr ""
 
@@ -1229,13 +1241,29 @@ msgid ": 0000 - default (disabled)"
 msgstr ""
 
 #
-msgid "<Current movielist location>"
-msgstr "<Trenutna lokacija liste filmova>"
+#, fuzzy
+msgid "< Current >"
+msgstr "Trenutna vrednost:"
 
 #
 #, fuzzy
-msgid "<Default Skin>"
+msgid "< Default + Picon >"
 msgstr "Standardne postavke"
+
+#
+#, fuzzy
+msgid "< Default >"
+msgstr "Standardne postavke"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
+#
+msgid "<Current movielist location>"
+msgstr "<Trenutna lokacija liste filmova>"
 
 #
 msgid "<Default movie location>"
@@ -1446,8 +1474,9 @@ msgid "About"
 msgstr "O programu"
 
 #
+#, fuzzy
 msgid "About..."
-msgstr "O programu..."
+msgstr "O programu"
 
 #
 #, fuzzy
@@ -2722,6 +2751,12 @@ msgstr ""
 #
 msgid "Cancel"
 msgstr "Odustani"
+
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
 
 msgid "Cancel any text changes and exit"
 msgstr ""
@@ -4587,6 +4622,11 @@ msgstr "Prikaži info traku pri promeni događaja"
 
 #
 #, fuzzy
+msgid "Display Skin"
+msgstr "Postavke displeja"
+
+#
+#, fuzzy
 msgid "Display and userinterface"
 msgstr "Displej i korisnički interfejs"
 
@@ -5262,11 +5302,6 @@ msgstr ""
 msgid "Enigma version: "
 msgstr "Nova verzija:"
 
-#
-#, fuzzy
-msgid "Enigma2 skin selector"
-msgstr "Enigma2 i mreža"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -5391,10 +5426,6 @@ msgid ""
 "Error during unzipping image\n"
 "%s"
 msgstr ""
-
-#
-msgid "Error executing plugin"
-msgstr "Greška u izvršenju dodatka"
 
 msgid "Error stop stream!"
 msgstr ""
@@ -5713,6 +5744,9 @@ msgstr ""
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Nova verzija:"
+
+msgid "FHD"
+msgstr ""
 
 msgid "FPU: "
 msgstr ""
@@ -6081,27 +6115,20 @@ msgstr "Nova verzija:"
 msgid "GUI Settings"
 msgstr "Postavke"
 
+#
+#, fuzzy
+msgid "GUI Skin"
+msgstr "Postavke"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
 msgstr ""
 
-#
-msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr ""
-"GUI se treba restartovati da se primeni nova maska\n"
-" Želite li restartovati GUI sada ?"
-
-#
-#, fuzzy
 msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"GUI se treba restartovati da se primeni nova maska\n"
-" Želite li restartovati GUI sada ?"
 
 msgid "Gabon"
 msgstr ""
@@ -6301,6 +6328,11 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr ""
@@ -7016,10 +7048,6 @@ msgstr ""
 msgid "Invert"
 msgstr "Invertni"
 
-#
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr ""
 
@@ -7163,7 +7191,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Enigma2 i mreža"
+msgstr "Deselektuj"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -7212,8 +7240,10 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "Postavke displeja"
 
 #
 #, fuzzy
@@ -7916,7 +7946,7 @@ msgstr "Pomeri dole na poslednji unos"
 #
 #, fuzzy
 msgid "Move down a page"
-msgstr "Pomeri dole na poslednji unos"
+msgstr "Prebaci na sledeći ugao"
 
 #
 #, fuzzy
@@ -7964,11 +7994,33 @@ msgstr ""
 msgid "Move to position X"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Move to the next page"
+msgstr "Prebaci na sledeći ugao"
+
+#
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "Pomeri dole na naredni unos"
+
+#
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "Premotaj na prethodno poglavlje"
+
+#
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "Pomeri gore na prethodni unos"
+
 msgid "Move up a line"
 msgstr ""
 
+#
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "Prebaci na sledeći ugao"
 
 #
 #, fuzzy
@@ -8855,6 +8907,9 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "SuS postavke"
 
+msgid "Opkg"
+msgstr ""
+
 msgid "Options disable timer"
 msgstr ""
 
@@ -9715,7 +9770,8 @@ msgid "Press OK on your remote control to continue."
 msgstr "Pritisnite OK na daljinskom upravljaču da nastavite."
 
 #
-msgid "Press OK to activate the selected skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
 msgstr "Pritisnite OK za aktiviranje izabrane maske."
 
 #
@@ -9730,6 +9786,11 @@ msgstr "Pritisnite OK da uredite postavke."
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "Pritisnite OK da dobijete dodatne detalje za %s"
+
+#
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "Pritisnite OK za aktiviranje izabrane maske."
 
 #
 msgid "Press OK to scan"
@@ -10495,7 +10556,7 @@ msgstr "Restartujte mrežu"
 #
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "Vratite se na prethodni kanal"
+msgstr "Pomeri gore na prethodni unos"
 
 #
 msgid "Restore system settings"
@@ -10805,6 +10866,11 @@ msgstr ""
 #, fuzzy
 msgid "Save EPG"
 msgstr "Jedan EPG"
+
+#
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "Pritisnite OK za aktiviranje izabrane maske."
 
 msgid "Save and exit"
 msgstr ""
@@ -11413,9 +11479,6 @@ msgstr "Izaberite bežičnu mrežu"
 #, fuzzy
 msgid "Select your ATSC provider."
 msgstr "Izaberi provajdera za dodavanje"
-
-msgid "Select your Skin"
-msgstr ""
 
 #
 msgid ""
@@ -12325,18 +12388,22 @@ msgstr ""
 msgid "Size: "
 msgstr ""
 
-#
-msgid "Skin"
-msgstr "Maska"
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr ""
 
 #
 #, fuzzy
+msgid "Skin Selection Actions"
+msgstr "Izaberite snimljenu lokaciju"
+
+#
+#, fuzzy
 msgid "Skin Setting"
 msgstr "Postavke"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 #
 msgid "Skins"
@@ -14049,7 +14116,15 @@ msgstr "Svojstva naziva"
 msgid "Titleset mode"
 msgstr "Način postavki naziva"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
+msgstr ""
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
 msgstr ""
 
 msgid "To subtitle selection"

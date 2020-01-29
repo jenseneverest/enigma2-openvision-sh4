@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: 2011-05-07 12:23+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -1122,6 +1122,9 @@ msgstr "16:9 Letterbox"
 msgid "16:9 always"
 msgstr "16:9 alltaf"
 
+msgid "16K"
+msgstr ""
+
 #
 msgid "18 V"
 msgstr "18 V"
@@ -1186,6 +1189,11 @@ msgid "4:3 PanScan"
 msgstr "4:3 PanScan"
 
 #
+#, fuzzy
+msgid "4K"
+msgstr "4"
+
+#
 msgid "5"
 msgstr "5"
 
@@ -1209,6 +1217,11 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+#
+#, fuzzy
+msgid "8K"
+msgstr "8"
+
 msgid "8bit"
 msgstr ""
 
@@ -1219,13 +1232,28 @@ msgstr "9"
 msgid ": 0000 - default (disabled)"
 msgstr ""
 
-msgid "<Current movielist location>"
-msgstr "<Núverandi staður bíómyndalista>"
+#, fuzzy
+msgid "< Current >"
+msgstr "Núverandi val:"
 
 #
 #, fuzzy
-msgid "<Default Skin>"
+msgid "< Default + Picon >"
 msgstr "Upphafs stillingar"
+
+#
+#, fuzzy
+msgid "< Default >"
+msgstr "Upphafs stillingar"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
+msgid "<Current movielist location>"
+msgstr "<Núverandi staður bíómyndalista>"
 
 msgid "<Default movie location>"
 msgstr "<Sjálfgefinn staður bíómynda>"
@@ -1425,8 +1453,9 @@ msgstr "Hætta við að breyta eftirlætis lista"
 msgid "About"
 msgstr "Um"
 
+#, fuzzy
 msgid "About..."
-msgstr "Um..."
+msgstr "Um"
 
 #
 #, fuzzy
@@ -2614,6 +2643,12 @@ msgstr ""
 
 msgid "Cancel"
 msgstr "Hætta við"
+
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
 
 msgid "Cancel any text changes and exit"
 msgstr ""
@@ -4368,6 +4403,11 @@ msgstr "Sýna upplýsinga borða við breytingu á atriði"
 
 #
 #, fuzzy
+msgid "Display Skin"
+msgstr "Uppsetning skjás"
+
+#
+#, fuzzy
 msgid "Display and userinterface"
 msgstr "Skjár og notenda viðmót"
 
@@ -5023,11 +5063,6 @@ msgstr ""
 msgid "Enigma version: "
 msgstr "Ný útgáfa:"
 
-#
-#, fuzzy
-msgid "Enigma2 skin selector"
-msgstr "enigma2 og netkerfi"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -5150,9 +5185,6 @@ msgid ""
 "Error during unzipping image\n"
 "%s"
 msgstr ""
-
-msgid "Error executing plugin"
-msgstr "Villa við keyrslu íforrits"
 
 msgid "Error stop stream!"
 msgstr ""
@@ -5462,6 +5494,9 @@ msgstr ""
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Ný útgáfa:"
+
+msgid "FHD"
+msgstr ""
 
 msgid "FPU: "
 msgstr ""
@@ -5823,27 +5858,20 @@ msgstr "Ný útgáfa:"
 msgid "GUI Settings"
 msgstr "Stillingar"
 
+#
+#, fuzzy
+msgid "GUI Skin"
+msgstr "Stillingar"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
 msgstr ""
 
-#
-msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr ""
-"Gluggakerfi þarf að endurræsa til að virkja nýtt skinn\n"
-"Viltu endurræsa gluggakerfi núna?"
-
-#
-#, fuzzy
 msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"Gluggakerfi þarf að endurræsa til að virkja nýtt skinn\n"
-"Viltu endurræsa gluggakerfi núna?"
 
 msgid "Gabon"
 msgstr ""
@@ -6041,6 +6069,10 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr ""
@@ -6745,10 +6777,6 @@ msgstr ""
 msgid "Invert"
 msgstr "Snúa við"
 
-#
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr ""
 
@@ -6892,7 +6920,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Keymap selector"
-msgstr "enigma2 og netkerfi"
+msgstr "Ekki velja"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6941,8 +6969,10 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "Uppsetning skjás"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -7634,7 +7664,7 @@ msgstr "fara niður í síðasta atriði"
 #
 #, fuzzy
 msgid "Move down a page"
-msgstr "fara niður í síðasta atriði"
+msgstr "skipta í næstu sýn"
 
 #
 #, fuzzy
@@ -7682,11 +7712,33 @@ msgstr ""
 msgid "Move to position X"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Move to the next page"
+msgstr "skipta í næstu sýn"
+
+#
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "fara niður í næsta atriði"
+
+#
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "fara til baka á fyrri kafla"
+
+#
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "fara upp í næsta atriði"
+
 msgid "Move up a line"
 msgstr ""
 
+#
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "skipta í næstu sýn"
 
 #
 #, fuzzy
@@ -8568,6 +8620,9 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Uppsetning Mynd í Mynd"
 
+msgid "Opkg"
+msgstr ""
+
 msgid "Options disable timer"
 msgstr ""
 
@@ -9408,7 +9463,8 @@ msgid "Press OK on your remote control to continue."
 msgstr "Ýttu á OK á fjarstýringunni til að halda áfram."
 
 #
-msgid "Press OK to activate the selected skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
 msgstr "Ýttu á OK til að velja valið skinn."
 
 #
@@ -9423,6 +9479,11 @@ msgstr "Ýttu á OK til að breyta stillingum."
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "Ýttu á OK til að fá nánari upplýsingar um %s"
+
+#
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "Ýttu á OK til að velja valið skinn."
 
 #
 msgid "Press OK to scan"
@@ -10184,7 +10245,7 @@ msgstr "Endurræsi netkort"
 #
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "Til  baka á síðustu rás"
+msgstr "fara upp í næsta atriði"
 
 #
 msgid "Restore system settings"
@@ -10488,6 +10549,11 @@ msgstr ""
 #, fuzzy
 msgid "Save EPG"
 msgstr "Eitt EPG"
+
+#
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "Ýttu á OK til að velja valið skinn."
 
 msgid "Save and exit"
 msgstr ""
@@ -11082,9 +11148,6 @@ msgstr "Veldu þráðlaust net"
 #, fuzzy
 msgid "Select your ATSC provider."
 msgstr "Veldu sendanda til að bæta við..."
-
-msgid "Select your Skin"
-msgstr ""
 
 #
 msgid ""
@@ -11980,18 +12043,21 @@ msgstr ""
 msgid "Size: "
 msgstr ""
 
-#
-msgid "Skin"
-msgstr "Skinn"
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr ""
+
+#, fuzzy
+msgid "Skin Selection Actions"
+msgstr "Veldu stað fyrir afrit"
 
 #
 #, fuzzy
 msgid "Skin Setting"
 msgstr "Stillingar"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 #
 msgid "Skins"
@@ -13689,7 +13755,15 @@ msgstr "Upplýsingar titils"
 msgid "Titleset mode"
 msgstr "Titla stillingar"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
+msgstr ""
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
 msgstr ""
 
 msgid "To subtitle selection"

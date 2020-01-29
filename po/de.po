@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: 2019-11-28 17:53+0100\n"
 "Last-Translator: Pike_Bishop <alfredzngr023@gmail.com>\n"
 "Language-Team: Sfteam  angelo2807@hotmail.com\n"
@@ -1096,6 +1096,9 @@ msgstr "16:9 Letterbox"
 msgid "16:9 always"
 msgstr "immer 16:9"
 
+msgid "16K"
+msgstr ""
+
 msgid "18 V"
 msgstr "18 V"
 
@@ -1151,6 +1154,10 @@ msgstr "4:3 Letterbox"
 msgid "4:3 PanScan"
 msgstr "4:3 PanScan"
 
+#, fuzzy
+msgid "4K"
+msgstr "4"
+
 msgid "5"
 msgstr "5"
 
@@ -1170,6 +1177,10 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+#, fuzzy
+msgid "8K"
+msgstr "8"
+
 msgid "8bit"
 msgstr "8bit"
 
@@ -1179,11 +1190,26 @@ msgstr "9"
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - Standard (deaktiviert)"
 
+#, fuzzy
+msgid "< Current >"
+msgstr "Aktueller Wert: "
+
+#, fuzzy
+msgid "< Default + Picon >"
+msgstr "Voreinstellungen"
+
+#, fuzzy
+msgid "< Default >"
+msgstr "Voreinstellungen"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
 msgid "<Current movielist location>"
 msgstr "<Aktuelles Filmlisten-Verzeichnis>"
-
-msgid "<Default Skin>"
-msgstr "Voreinstellungen"
 
 msgid "<Default movie location>"
 msgstr "<Standard Filmlisten-Verzeichnis>"
@@ -1387,8 +1413,9 @@ msgstr "Favoriteneditor abbrechen"
 msgid "About"
 msgstr "Über"
 
+#, fuzzy
 msgid "About..."
-msgstr "Über…"
+msgstr "Über"
 
 #, fuzzy
 msgid "Accept the current selection"
@@ -2491,6 +2518,12 @@ msgstr "Kanada"
 
 msgid "Cancel"
 msgstr "Abbrechen"
+
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
 
 msgid "Cancel any text changes and exit"
 msgstr "Brechen Sie alle Textänderungen ab und beenden Sie sie"
@@ -4130,6 +4163,10 @@ msgstr "Timeshift nur für aktuelle Sendung speichern"
 msgid "Display EPG list for current channel"
 msgstr "EPG für aktuellen Kanal anzeigen…"
 
+#, fuzzy
+msgid "Display Skin"
+msgstr "Display-Einstellungen"
+
 msgid "Display and userinterface"
 msgstr "Display und Benutzeroberfläche"
 
@@ -4699,9 +4736,6 @@ msgstr "Enigma Debug Level: %d\n"
 msgid "Enigma version: "
 msgstr "Enigma-Version:"
 
-msgid "Enigma2 skin selector"
-msgstr "Enigma2 Skin-Auswahl"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -4826,9 +4860,6 @@ msgid ""
 msgstr ""
 "Fehler beim Entpacken des Images\n"
 "% s"
-
-msgid "Error executing plugin"
-msgstr "Ausführen des Plugins fehlgeschlagen"
 
 msgid "Error stop stream!"
 msgstr "Fehler beim Stoppen des Streams!"
@@ -5110,6 +5141,9 @@ msgstr "FEC:"
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "Enigma-Version:"
+
+msgid "FHD"
+msgstr ""
 
 #, fuzzy
 msgid "FPU: "
@@ -5437,6 +5471,10 @@ msgstr "GStreamer-Version:"
 msgid "GUI Settings"
 msgstr "GUI-Einstellungen"
 
+#, fuzzy
+msgid "GUI Skin"
+msgstr "GUI-Einstellungen"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
@@ -5444,19 +5482,12 @@ msgstr ""
 "Zur Übernahme der neuen Sprache muss die Benutzerobfläche neu gestartet werden\n"
 "Wollen Sie die Benutzerobfläche neu starten?"
 
-msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr ""
-"Zur Übernahme des neuen Skins muss die Benutzerobfläche neu gestartet werden\n"
-"Wollen Sie die Benutzerobfläche neu starten?"
-
 #, fuzzy
 msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"Zur Übernahme des neuen Skins muss die Benutzerobfläche neu gestartet werden\n"
+"Zur Übernahme der neuen Sprache muss die Benutzerobfläche neu gestartet werden\n"
 "Wollen Sie die Benutzerobfläche neu starten?"
 
 msgid "Gabon"
@@ -5630,6 +5661,10 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr "HD Liste"
@@ -6264,9 +6299,6 @@ msgstr "Inversion, Pilot & Roll-off"
 msgid "Invert"
 msgstr "Umkehren"
 
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr "Iran (Islamische Republik)"
 
@@ -6387,7 +6419,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Enigma2 Skin-Auswahl"
+msgstr "Markierung aufheben"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6430,8 +6462,9 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "Display-Einstellungen"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -7017,7 +7050,7 @@ msgstr "Liste nach unten durchgehen"
 
 #, fuzzy
 msgid "Move down a page"
-msgstr "Zum letzten Eintrag gehen"
+msgstr "Zur nächsten Kameraperspektive wechseln"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7062,11 +7095,28 @@ msgid "Move to position X"
 msgstr "Drehe zur Position X"
 
 #, fuzzy
+msgid "Move to the next page"
+msgstr "Zur nächsten Kameraperspektive wechseln"
+
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "Zum nächsten Eintrag gehen"
+
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "Zum vorherigen Kapitel zurück"
+
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "Zum vorherigen Eintrag gehen"
+
+#, fuzzy
 msgid "Move up a line"
 msgstr "Zur Index Position bewegt"
 
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "Zur nächsten Kameraperspektive wechseln"
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -7830,6 +7880,9 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Öffnen Sie den Setup-Tuner"
 
+msgid "Opkg"
+msgstr ""
+
 msgid "Options disable timer"
 msgstr "Optionen deaktivieren Zeit"
 
@@ -8551,7 +8604,8 @@ msgstr "MENU drücken für zusätzliche Optionen."
 msgid "Press OK on your remote control to continue."
 msgstr "OK drücken zum Fortfahren."
 
-msgid "Press OK to activate the selected skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
 msgstr "OK drücken, um den markierten Skin zu aktivieren."
 
 msgid "Press OK to activate the settings."
@@ -8563,6 +8617,10 @@ msgstr "OK drücken zum Editieren."
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "Drücken Sie OK, um weitere Details zu %s zu erhalten."
+
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "OK drücken, um den markierten Skin zu aktivieren."
 
 msgid "Press OK to scan"
 msgstr "Zum Starten der Suche OK drücken."
@@ -9211,7 +9269,7 @@ msgstr "Einstellungen wiederherstellen"
 
 #, fuzzy
 msgid "Restore defaults"
-msgstr "Einstellungen wiederherstellen"
+msgstr "Als Standard setzen"
 
 msgid "Restore deleted user bouquets"
 msgstr "Gelöschte Userbouquets wiederherstellen"
@@ -9226,7 +9284,7 @@ msgstr "Netzwerk neu starten"
 
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "Zurück zum letzten Sender"
+msgstr "Zum vorherigen Eintrag gehen"
 
 msgid "Restore system settings"
 msgstr "Einstellungen wiederherstellen"
@@ -9493,6 +9551,10 @@ msgstr "Text eingeben und speichern, danach beenden."
 #, fuzzy
 msgid "Save EPG"
 msgstr "Einfach-EPG"
+
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "OK drücken, um den markierten Skin zu aktivieren."
 
 msgid "Save and exit"
 msgstr "Speichern und beenden"
@@ -10005,9 +10067,6 @@ msgstr "Funk-Netzwerk auswählen"
 msgid "Select your ATSC provider."
 msgstr "Wählen Sie Ihren ATSC-Anbieter aus."
 
-msgid "Select your Skin"
-msgstr "Ihren Skin auswählen"
-
 msgid ""
 "Select your backup device.\n"
 "Current device: "
@@ -10020,7 +10079,7 @@ msgstr "Wähle dein Land. Wenn nicht verfügbar, wählen Sie “Alle”."
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Ihren Skin auswählen"
+msgstr "Image auswählen"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Wählen Sie Ihren Anbieter und die Region aus. Wenn Sie in dieser Liste nicht vorhanden sind, müssen Sie einen der anderen Service-Scan-Typen auswählen."
@@ -10249,7 +10308,7 @@ msgstr "Fügen Sie die User ID des OpenWebIf vom Reserve-Tuner ein"
 
 #, fuzzy
 msgid "Set the default sorting method."
-msgstr "Standardeinstellungen festlegen?"
+msgstr "Sortierungmodus festlegen:"
 
 #, fuzzy
 msgid "Set the global sort method"
@@ -10801,16 +10860,20 @@ msgstr "Längengrad ausrichten"
 msgid "Size: "
 msgstr ""
 
-msgid "Skin"
-msgstr "Skin"
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr "Skin & Auflösung: %s (%sx%s)\n"
 
 #, fuzzy
+msgid "Skin Selection Actions"
+msgstr "Wähle Vorgang"
+
+#, fuzzy
 msgid "Skin Setting"
 msgstr "Einstellungen"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 msgid "Skins"
 msgstr "Skins"
@@ -12336,8 +12399,16 @@ msgstr "Titeldetails"
 msgid "Titleset mode"
 msgstr "Titelsatz-Modus"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
 msgstr "Zur Ton-Auswahl"
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
+msgstr ""
 
 msgid "To subtitle selection"
 msgstr "Zur Untertitel-Auswahl"

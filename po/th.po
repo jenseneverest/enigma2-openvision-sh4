@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 11:40+0330\n"
+"POT-Creation-Date: 2020-01-29 22:53+0330\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -1042,6 +1042,9 @@ msgstr "16:9 Letterbox"
 msgid "16:9 always"
 msgstr "16:9 ตลอดเวลา"
 
+msgid "16K"
+msgstr ""
+
 msgid "18 V"
 msgstr "18 V"
 
@@ -1097,6 +1100,10 @@ msgstr "4:3 Letterbox"
 msgid "4:3 PanScan"
 msgstr "4:3 PanScan"
 
+#, fuzzy
+msgid "4K"
+msgstr "4"
+
 msgid "5"
 msgstr "5"
 
@@ -1116,6 +1123,10 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+#, fuzzy
+msgid "8K"
+msgstr "8"
+
 msgid "8bit"
 msgstr ""
 
@@ -1125,12 +1136,26 @@ msgstr "9"
 msgid ": 0000 - default (disabled)"
 msgstr ""
 
-msgid "<Current movielist location>"
-msgstr ""
+#, fuzzy
+msgid "< Current >"
+msgstr "ค่าปัจจุบัน:"
 
 #, fuzzy
-msgid "<Default Skin>"
+msgid "< Default + Picon >"
 msgstr "ตั้งค่าเริ่มต้น"
+
+#, fuzzy
+msgid "< Default >"
+msgstr "ตั้งค่าเริ่มต้น"
+
+msgid "< Emergency >"
+msgstr ""
+
+msgid "< Pending restart >"
+msgstr ""
+
+msgid "<Current movielist location>"
+msgstr ""
 
 msgid "<Default movie location>"
 msgstr ""
@@ -1314,8 +1339,9 @@ msgstr "ยกเลิกการแก้ไขรายการโปรด
 msgid "About"
 msgstr "เกี่ยวกับ"
 
+#, fuzzy
 msgid "About..."
-msgstr "เกี่ยวกับ..."
+msgstr "เกี่ยวกับ"
 
 #, fuzzy
 msgid "Accept the current selection"
@@ -2442,6 +2468,12 @@ msgstr ""
 
 msgid "Cancel"
 msgstr "ยกเลิก"
+
+msgid "Cancel any changes to the currently active skin"
+msgstr ""
+
+msgid "Cancel any changes to the currently active skin and exit all menus"
+msgstr ""
 
 msgid "Cancel any text changes and exit"
 msgstr ""
@@ -4116,6 +4148,10 @@ msgid "Display EPG list for current channel"
 msgstr "แสดงแถบรายการเมื่อมีการเปลี่ยนรายการ"
 
 #, fuzzy
+msgid "Display Skin"
+msgstr "ตั้งค่าการแสดงผล"
+
+#, fuzzy
 msgid "Display and userinterface"
 msgstr "การแสดงผลและส่วนติดต่อผู้ใช้"
 
@@ -4701,10 +4737,6 @@ msgstr ""
 msgid "Enigma version: "
 msgstr "เวอร์ชั่นใหม่:"
 
-#, fuzzy
-msgid "Enigma2 skin selector"
-msgstr "Enigma 2 และเครือข่าย"
-
 msgid "Enough - Vision image"
 msgstr ""
 
@@ -4822,9 +4854,6 @@ msgid ""
 "Error during unzipping image\n"
 "%s"
 msgstr ""
-
-msgid "Error executing plugin"
-msgstr "เรียกใช้งาน Plugin ผิดพลาด"
 
 msgid "Error stop stream!"
 msgstr ""
@@ -5106,6 +5135,9 @@ msgstr ""
 #, fuzzy
 msgid "FFmpeg version: "
 msgstr "เวอร์ชั่นใหม่:"
+
+msgid "FHD"
+msgstr ""
 
 msgid "FPU: "
 msgstr ""
@@ -5432,25 +5464,19 @@ msgstr "เวอร์ชั่นใหม่:"
 msgid "GUI Settings"
 msgstr "การตั้งค่า"
 
+#, fuzzy
+msgid "GUI Skin"
+msgstr "การตั้งค่า"
+
 msgid ""
 "GUI needs a restart to apply a new language\n"
 "Do you want to restart the GUI now?"
 msgstr ""
 
 msgid ""
-"GUI needs a restart to apply a new skin\n"
-"Do you want to restart the GUI now?"
-msgstr ""
-"ต้องเริ่มงานโปรแกรม (GUI) ใหม่  จึงจะใช้สกินนี้ได้\n"
-"ต้องการเริ่มโปรแกรมใหม่หรือไม่?"
-
-#, fuzzy
-msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"ต้องเริ่มงานโปรแกรม (GUI) ใหม่  จึงจะใช้สกินนี้ได้\n"
-"ต้องการเริ่มโปรแกรมใหม่หรือไม่?"
 
 msgid "Gabon"
 msgstr ""
@@ -5632,6 +5658,10 @@ msgstr ""
 
 msgid "H:mm:ss"
 msgstr ""
+
+#, fuzzy
+msgid "HD"
+msgstr "D"
 
 msgid "HD list"
 msgstr ""
@@ -6278,9 +6308,6 @@ msgstr ""
 msgid "Invert"
 msgstr ""
 
-msgid "Ipkg"
-msgstr "Ipkg"
-
 msgid "Iran (Islamic Republic of)"
 msgstr ""
 
@@ -6409,7 +6436,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Enigma 2 และเครือข่าย"
+msgstr "ไม่เลือก"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6454,8 +6481,9 @@ msgstr ""
 msgid "LED control for Fortis HS7810A"
 msgstr ""
 
+#, fuzzy
 msgid "LED display"
-msgstr ""
+msgstr "ตั้งค่าการแสดงผล"
 
 #, fuzzy
 msgid "LED display configuration"
@@ -7065,7 +7093,7 @@ msgstr "ย้ายลงไปท้ายสุด"
 
 #, fuzzy
 msgid "Move down a page"
-msgstr "ย้ายลงไปท้ายสุด"
+msgstr "เลือกมุมมองอันต่อไป"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -7109,11 +7137,28 @@ msgstr ""
 msgid "Move to position X"
 msgstr ""
 
+#, fuzzy
+msgid "Move to the next page"
+msgstr "เลือกมุมมองอันต่อไป"
+
+#, fuzzy
+msgid "Move to the next skin"
+msgstr "ย้ายลงไป"
+
+#, fuzzy
+msgid "Move to the previous page"
+msgstr "กลับไปตอนที่แล้ว"
+
+#, fuzzy
+msgid "Move to the previous skin"
+msgstr "ย้ายไปก่อนหน้านี้"
+
 msgid "Move up a line"
 msgstr ""
 
+#, fuzzy
 msgid "Move up a page"
-msgstr ""
+msgstr "เลือกมุมมองอันต่อไป"
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -7891,6 +7936,9 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "ตั้งค่า PIP"
 
+msgid "Opkg"
+msgstr ""
+
 msgid "Options disable timer"
 msgstr ""
 
@@ -8636,7 +8684,8 @@ msgstr ""
 msgid "Press OK on your remote control to continue."
 msgstr "กดปุ่ม OK ที่รีโมทเพื่อทำงานต่อ"
 
-msgid "Press OK to activate the selected skin."
+#, fuzzy, python-format
+msgid "Press OK to activate the selected%s skin."
 msgstr "กดปุ่ม OK เพื่อเริ่มใช้สกินที่เลือกไว้"
 
 msgid "Press OK to activate the settings."
@@ -8648,6 +8697,10 @@ msgstr "กดปุ่ม OK เพื่อแก้ไข"
 #, python-format
 msgid "Press OK to get further details for %s"
 msgstr "กดปุ่ม OK เพื่อดูข้อมูลอื่นของ %s เพิ่มเติม"
+
+#, fuzzy, python-format
+msgid "Press OK to keep the currently selected%s skin."
+msgstr "กดปุ่ม OK เพื่อเริ่มใช้สกินที่เลือกไว้"
 
 msgid "Press OK to scan"
 msgstr "กดปุ่ม OK เพื่อเริ่มค้นหา"
@@ -9314,7 +9367,7 @@ msgstr "เริ่มการทำงานเครือข่ายให
 
 #, fuzzy
 msgid "Restore previous cuts..."
-msgstr "กลับไปยังบริการก่อนหน้า"
+msgstr "ย้ายไปก่อนหน้านี้"
 
 msgid "Restore system settings"
 msgstr "นำสำรองการตั้งค่าต่างๆ กลับมาใช้"
@@ -9588,6 +9641,10 @@ msgstr ""
 #, fuzzy
 msgid "Save EPG"
 msgstr "ผังรายการเดี่ยว"
+
+#, fuzzy
+msgid "Save and activate the currently selected skin"
+msgstr "กดปุ่ม OK เพื่อเริ่มใช้สกินที่เลือกไว้"
 
 msgid "Save and exit"
 msgstr ""
@@ -10127,9 +10184,6 @@ msgstr "เลือกเครือข่ายไร้สาย"
 #, fuzzy
 msgid "Select your ATSC provider."
 msgstr "เลือกผู้ให้บริการที่ต้องการเพิ่ม..."
-
-msgid "Select your Skin"
-msgstr ""
 
 msgid ""
 "Select your backup device.\n"
@@ -10941,16 +10995,20 @@ msgstr ""
 msgid "Size: "
 msgstr ""
 
-msgid "Skin"
-msgstr "สกิน"
-
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
 msgstr ""
 
 #, fuzzy
+msgid "Skin Selection Actions"
+msgstr "เลือกที่ที่จะสำรอง"
+
+#, fuzzy
 msgid "Skin Setting"
 msgstr "การตั้งค่า"
+
+msgid "SkinSelector: Restart GUI"
+msgstr ""
 
 msgid "Skins"
 msgstr "สกิน"
@@ -12472,7 +12530,15 @@ msgstr "คุณลักษณะของเรื่อง"
 msgid "Titleset mode"
 msgstr "โหมดตั้งชื่อเรื่อง"
 
+#, python-format
+msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgstr ""
+
 msgid "To audio selection"
+msgstr ""
+
+#, python-format
+msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
 msgstr ""
 
 msgid "To subtitle selection"

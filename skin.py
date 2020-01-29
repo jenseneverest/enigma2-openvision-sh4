@@ -95,23 +95,23 @@ def addSkin(name, scope=SCOPE_CURRENT_SKIN):
 				domSkins.append((scope, "%s/" % os.path.dirname(filename), xml.etree.cElementTree.parse(fd).getroot()))
 				print("[skin] Skin '%s' added successfully." % filename)
 				return True
-			except xml.etree.cElementTree.ParseError as e:
+			except xml.etree.cElementTree.ParseError as err:
 				fd.seek(0)
 				content = fd.readlines()
-				line, column = e.position
-				print("[skin] XML Parse Error: '%s' in '%s'!" % (e, filename))
+				line, column = err.position
+				print("[skin] XML Parse Error: '%s' in '%s'!" % (err, filename))
 				data = content[line - 1].replace("\t", " ").rstrip()
 				print("[skin] XML Parse Error: '%s'" % data)
 				print("[skin] XML Parse Error: '%s^%s'" % ("-" * column, " " * (len(data) - column - 1)))
-			except Exception as e:
-				print("[skin] Error: Unable to parse skin data in '%s' - '%s'!" % (filename, e))
-	except IOError as e:
-		if e.errno == errno.ENOENT:  #  No such file or directory
+			except Exception as err:
+				print("[skin] Error: Unable to parse skin data in '%s' - '%s'!" % (filename, err))
+	except (IOError, OSError) as err:
+		if err.errno == errno.ENOENT:  #  No such file or directory
 			print("[skin] Warning: Skin file '%s' does not exist!" % filename)
 		else:
-			print("[skin] Error %d: Opening skin file '%s'! (%s)" % (e.errno, filename, os.strerror(e.errno)))
-	except Exception as e:
-		print("[skin] Error: Unexpected error opening skin file '%s'! (%s)" % (filename, e))
+			print("[skin] Error %d: Opening skin file '%s'! (%s)" % (err.errno, filename, err.strerror))
+	except Exception as err:
+		print("[skin] Error: Unexpected error opening skin file '%s'! (%s)" % (filename, err))
 	return False
 
 
@@ -364,8 +364,8 @@ class AttributeParser:
 			getattr(self, attrib)(value)
 		except AttributeError:
 			print("[skin] Attribute '%s' (with value of '%s') not implemented!" % (attrib, value))
-		except SkinError as ex:
-			print("[skin] Error:", ex)
+		except SkinError as err:
+			print("[skin] Error:", err)
 
 	def applyAll(self, attrs):
 		for attrib, value in attrs:
@@ -747,16 +747,16 @@ def loadSingleSkinData(desktop, domSkin, pathSkin, scope=SCOPE_CURRENT_SKIN):
 				width = int(alias.attrib.get("width", size))
 				fonts[name] = (font, size, height, width)
 				# print("[Skin] Add font alias: name='%s', font='%s', size=%d, height=%s, width=%d." % (name, font, size, height, width))
-			except Exception as ex:
-				print("[skin] Error: Bad font alias -", ex)
+			except Exception as err:
+				print("[skin] Error: Bad font alias -", err)
 	for tag in domSkin.findall("parameters"):
 		for parameter in tag.findall("parameter"):
 			try:
 				name = parameter.attrib.get("name")
 				value = parameter.attrib.get("value")
 				parameters[name] = "," in value and map(parseParameter, value.split(",")) or parseParameter(value)
-			except Exception as ex:
-				print("[skin] Bad parameter:", ex)
+			except Exception as err:
+				print("[skin] Bad parameter:", err)
 	for tag in domSkin.findall("menus"):
 		for setup in tag.findall("menu"):
 			key = setup.attrib.get("key")
@@ -880,23 +880,23 @@ def loadSkin(filename, desktop=None, scope=SCOPE_SKIN):
 						element.clear()
 					else:
 						domScreens[name] = (element, "%s/" % os.path.dirname(filename))
-			except xml.etree.cElementTree.ParseError as e:
+			except xml.etree.cElementTree.ParseError as err:
 				fd.seek(0)
 				content = fd.readlines()
-				line, column = e.position
-				print("[skin] XML Parse Error: '%s' in '%s'!" % (e, filename))
+				line, column = err.position
+				print("[skin] XML Parse Error: '%s' in '%s'!" % (err, filename))
 				data = content[line - 1].replace("\t", " ").rstrip()
 				print("[skin] XML Parse Error: '%s'" % data)
 				print("[skin] XML Parse Error: '%s^%s'" % ("-" * column, " " * (len(data) - column - 1)))
-			except Exception as e:
-				print("[skin] Error: Unable to parse skin data in '%s' - '%s'!" % (filename, e))
-	except IOError as e:
-		if e.errno == errno.ENOENT:  #  No such file or directory
+			except Exception as err:
+				print("[skin] Error: Unable to parse skin data in '%s' - '%s'!" % (filename, err))
+	except (IOError, OSError) as err:
+		if err.errno == errno.ENOENT:  #  No such file or directory
 			print("[skin] Warning: Skin file '%s' does not exist!" % filename)
 		else:
-			print("[skin] Error %d: Opening skin file '%s'! (%s)" % (e.errno, filename, os.strerror(e.errno)))
-	except Exception as e:
-		print("[skin] Error: Unexpected error opening skin file '%s'! (%s)" % (filename, e))
+			print("[skin] Error %d: Opening skin file '%s'! (%s)" % (err.errno, filename, err.strerror))
+	except Exception as err:
+		print("[skin] Error: Unexpected error opening skin file '%s'! (%s)" % (filename, err))
 
 # Kinda hackish, but this is called once by mytest.py.
 #
@@ -1157,8 +1157,8 @@ def readSkin(screen, skin, names, desktop):
 			codeText = widget.text.strip()
 			widgetType = widget.attrib.get("type")
 			code = compile(codeText, "skin applet", "exec")
-		except Exception as ex:
-			raise SkinError("Applet failed to compile: '%s'" % str(ex))
+		except Exception as err:
+			raise SkinError("Applet failed to compile: '%s'" % str(err))
 		if widgetType == "onLayoutFinish":
 			screen.onLayoutFinish.append(code)
 		else:
@@ -1189,8 +1189,8 @@ def readSkin(screen, skin, names, desktop):
 			p = processors.get(w.tag, processNone)
 			try:
 				p(w, context)
-			except SkinError, e:
-				print("[skin] Error in screen '%s' widget '%s':" % (name, w.tag), e)
+			except SkinError as err:
+				print("[skin] Error in screen '%s' widget '%s':" % (name, w.tag), err)
 
 	def processPanel(widget, context):
 		n = widget.attrib.get("name")
@@ -1208,8 +1208,8 @@ def readSkin(screen, skin, names, desktop):
 			cc = SkinContext
 		try:
 			c = cc(context, widget.attrib.get("position"), widget.attrib.get("size"), widget.attrib.get("font"))
-		except Exception as ex:
-			raise SkinError("Failed to create skin context (position='%s', size='%s', font='%s') in context '%s': %s" % (widget.attrib.get("position"), widget.attrib.get("size"), widget.attrib.get("font"), context, ex))
+		except Exception as err:
+			raise SkinError("Failed to create skin context (position='%s', size='%s', font='%s') in context '%s': %s" % (widget.attrib.get("position"), widget.attrib.get("size"), widget.attrib.get("font"), context, err))
 		processScreen(widget, c)
 
 	processors = {
@@ -1232,8 +1232,8 @@ def readSkin(screen, skin, names, desktop):
 		context.x = 0
 		context.y = 0
 		processScreen(myScreen, context)
-	except Exception as e:
-		print("[skin] Error in screen '%s':" % name, e)
+	except Exception as err:
+		print("[skin] Error in screen '%s':" % name, err)
 
 	from Components.GUIComponent import GUIComponent
 	unusedComponents = [x for x in set(screen.keys()) - usedComponents if isinstance(x, GUIComponent)]

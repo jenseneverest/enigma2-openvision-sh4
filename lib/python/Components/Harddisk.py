@@ -17,7 +17,7 @@ def readFile(filename):
 def getProcMounts():
 	try:
 		mounts = open("/proc/mounts", 'r')
-	except IOError, ex:
+	except IOError as ex:
 		print("[Harddisk] Failed to open /proc/mounts", ex)
 		return []
 	result = [line.strip().split(' ') for line in mounts]
@@ -661,7 +661,7 @@ class HarddiskManager:
 		try:
 			if os.path.exists("/dev/" + blockdev):
 				open("/dev/" + blockdev).close()
-		except IOError, err:
+		except IOError as err:
 			if err.errno == 159: # no medium present
 				medium_found = False
 
@@ -823,7 +823,7 @@ class HarddiskManager:
 				description = readFile("/sys" + phys + "/name")
 			else:
 				print("[Harddisk] couldn't read model: ")
-		except IOError, s:
+		except IOError as s:
 			print("[Harddisk] couldn't read model: ", s)
 		# not wholedisk and not partition 1
 		if part and part != 1:

@@ -6,6 +6,8 @@ from boxbranding import getDisplayType
 
 SystemInfo = {}
 
+from Tools.Multiboot import getMultibootStartupDevice, getMultibootslots
+
 def getNumVideoDecoders():
 	number_of_video_decoders = 0
 	while fileExists("/dev/dvb/adapter0/video%d" % (number_of_video_decoders), 'f'):
@@ -21,6 +23,12 @@ def countFrontpanelLEDs():
 def hassoftcaminstalled():
 	from Tools.camcontrol import CamControl
 	return len(CamControl('softcam').getList()) > 1
+
+def getBootdevice():
+	dev = ("root" in cmdline and cmdline['root'].startswith('/dev/')) and cmdline['root'][5:]
+	while dev and not fileExists('/sys/block/' + dev):
+	    dev = dev[:-1]
+	return dev
 
 # parse the boot commandline
 cmdline = open("/proc/cmdline", "r").read()
@@ -103,8 +111,8 @@ SystemInfo["Has3DSurroundSpeaker"] = fileExists("/proc/stb/audio/3dsurround_choi
 SystemInfo["Has3DSurroundSoftLimiter"] = fileExists("/proc/stb/audio/3dsurround_softlimiter_choices") and fileCheck("/proc/stb/audio/3dsurround_softlimiter")
 SystemInfo["hasXcoreVFD"] = False
 SystemInfo["HasOfflineDecoding"] = True
-SystemInfo["HasRootSubdir"] = "rootsubdir" in cmdline
-SystemInfo["canMultiBoot"] = False
+SystemInfo["MultibootStartupDevice"] = getMultibootStartupDevice()
+SystemInfo["canMultiBoot"] = getMultibootslots()
 SystemInfo["canMode12"] = "%s_4.boxmode" % model in cmdline and cmdline["%s_4.boxmode" % model] in ("1","12") and "192M"
 SystemInfo["canFlashWithOfgwrite"] = True
 SystemInfo["HDRSupport"] = fileExists("/proc/stb/hdmi/hlg_support_choices") and fileCheck("/proc/stb/hdmi/hlg_support")
@@ -112,6 +120,7 @@ SystemInfo["CanDownmixAC3"] = fileHas("/proc/stb/audio/ac3_choices", "downmix")
 SystemInfo["CanDownmixDTS"] = fileHas("/proc/stb/audio/dts_choices", "downmix")
 SystemInfo["CanDownmixAAC"] = fileHas("/proc/stb/audio/aac_choices", "downmix")
 SystemInfo["HDMIAudioSource"] = fileCheck("/proc/stb/hdmi/audio_source")
+SystemInfo["BootDevice"] = getBootdevice()
 SystemInfo["SmallFlash"] = fileExists("/etc/smallflash")
 SystemInfo["MiddleFlash"] = fileExists("/etc/middleflash")
 SystemInfo["HaveCISSL"] = fileCheck("/etc/ssl/certs/customer.pem") and fileCheck("/etc/ssl/certs/device.pem")
@@ -124,8 +133,3 @@ SystemInfo["NCamIsActive"] = SystemInfo["NCamInstalled"] and fileExists("/tmp/.n
 SystemInfo["OpenVisionModule"] = fileCheck("/proc/stb/info/openvision")
 SystemInfo["7segment"] = getDisplayType() == "7segment"
 SystemInfo["CanFadeOut"] = False
-
-dev = ("root" in cmdline and cmdline['root'].startswith('/dev/')) and cmdline['root'][5:]
-while dev and not fileExists('/sys/block/' + dev):
-    dev = dev[:-1]
-SystemInfo["BootDevice"] = dev

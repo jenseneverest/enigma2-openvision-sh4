@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-29 22:53+0330\n"
+"POT-Creation-Date: 2020-02-06 10:23+0330\n"
 "PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -2208,11 +2208,11 @@ msgstr "Basque"
 msgid "Begin time"
 msgstr "Thời gian bắt đầu"
 
+msgid "Behavior of '0' button in PiP mode"
+msgstr "Hành vi của phím 0 trong chế độ PiP"
+
 msgid "Behavior of 'pause and ok' when paused"
 msgstr "Hành vi của 'tạm dừng và ok' khi tạm dừng"
-
-msgid "Behavior of 0 key in PiP-mode"
-msgstr "Hành vi của phím 0 trong chế độ PiP"
 
 msgid "Behavior when a movie is started"
 msgstr "Hành vi khi một bộ phim được bắt đầu"
@@ -2876,7 +2876,7 @@ msgstr "Sao chép màn hình TV sang chế độ LCD"
 msgid "Close"
 msgstr "Đóng"
 
-msgid "Close PiP on exit"
+msgid "Close PiP with 'exit' button"
 msgstr "Đóng PiP khi thoát"
 
 msgid "Close title selection"
@@ -3024,7 +3024,7 @@ msgstr "Cấu hình cách quạt hoạt động"
 msgid "Configure if and how crypto icons will be shown in the channel selection list."
 msgstr "Định cấu hình nếu và cách các biểu tượng tiền điện tử sẽ được hiển thị trong danh sách chọn kênh."
 
-msgid "Configure if and how long the latest service in the PiP will be remembered."
+msgid "Configure if and how long the latest service in Picture in Picture mode will be remembered."
 msgstr "Định cấu hình nếu và bao lâu dịch vụ mới nhất trong PiP sẽ được ghi nhớ."
 
 msgid "Configure if and how service type icons will be shown in the channel selection list."
@@ -3153,8 +3153,8 @@ msgstr "Cấu hình ngôn ngữ âm thanh thứ tư."
 msgid "Configure the fourth subtitle language."
 msgstr "Cấu hình ngôn ngữ phụ đề thứ tư."
 
-msgid "Configure the function of the '0' button do when PIP is active."
-msgstr "Định cấu hình chức năng của nút '0' khi PIP hoạt động."
+msgid "Configure the function of the '0' button when Picture in Picture is active."
+msgstr "Định cấu hình chức năng của nút '0' khi PiP hoạt động."
 
 msgid "Configure the gateway."
 msgstr "Cấu hình cổng."
@@ -4130,9 +4130,6 @@ msgstr "Tắt bộ hẹn giờ"
 
 msgid "Disabled"
 msgstr "Cho phép/không cho phép"
-
-msgid "Dish"
-msgstr ""
 
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Dung lượng đĩa để dự trữ cho bản ghi (tính bằng GB)"
@@ -5947,10 +5944,6 @@ msgid "IPv6"
 msgstr ""
 
 #, fuzzy
-msgid "IPv6 setup"
-msgstr "Thiết lập PiP"
-
-#, fuzzy
 msgid "IPv6 support"
 msgstr "Hỗ trợ HLG"
 
@@ -6093,7 +6086,7 @@ msgstr "Bao gồm ECM trong luồng http"
 msgid "Include EIT in http streams"
 msgstr "Bao gồm thuế TNDN trong các luồng http"
 
-msgid "Incorrect type service for PiP!"
+msgid "Incorrect service type for Picture in Picture!"
 msgstr "Loại dịch vụ không chính xác cho PiP!"
 
 msgid "Increased voltage"
@@ -6709,10 +6702,6 @@ msgstr "Địa chỉ IP"
 msgid "MAC address settings"
 msgstr "Cài đặt bộ điều hợp"
 
-#, fuzzy
-msgid "MAC address setup"
-msgstr "Thiết lập đĩa cứng"
-
 msgid "MAC:"
 msgstr ""
 
@@ -6811,7 +6800,7 @@ msgstr "Nhà chế tạo"
 
 msgid ""
 "Manufacturer reset in progress\n"
-"Pease wait until enigma2 restarts"
+"Please wait until enigma2 restarts"
 msgstr ""
 
 msgid "Margin after recording (minutes)"
@@ -7029,8 +7018,8 @@ msgstr "Softcam cài đặt"
 msgid "Move"
 msgstr "Di chuyển"
 
-msgid "Move PIP"
-msgstr "Di chuyển PIP"
+msgid "Move PiP"
+msgstr "Di chuyển PiP"
 
 msgid "Move PiP to main picture"
 msgstr "Di chuyển PiP sang hình ảnh chính"
@@ -7187,8 +7176,9 @@ msgstr "Chuyển mã: "
 msgid "MultiType"
 msgstr "Đa loại"
 
-msgid "Multiboot"
-msgstr "Đa khởi động"
+#, fuzzy
+msgid "Multiboot image selector"
+msgstr "Nhiều lựa chọn tất cả"
 
 msgid "Multichannel PCM"
 msgstr "PCM đa kênh"
@@ -9834,12 +9824,6 @@ msgstr "Chọn Fast DiSEqC nếu hệ thống trên không của bạn hỗ tr�
 msgid "Select HDD"
 msgstr "Chọn ổ cứng"
 
-msgid "Select Image"
-msgstr "Chọn ảnh"
-
-msgid "Select Multiboot"
-msgstr "Chọn đa khởi động"
-
 msgid "Select Softcam"
 msgstr "Chọn Softcam"
 
@@ -10445,8 +10429,8 @@ msgstr "Hiển thị đường dẫn menu"
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
 
-msgid "Show PIP"
-msgstr "Hiển thị PIP"
+msgid "Show PiP"
+msgstr "Hiển thị PiP"
 
 msgid "Show Readers/Proxies"
 msgstr ""
@@ -11482,8 +11466,8 @@ msgstr ""
 msgid "Swap EN300743 palette table"
 msgstr ""
 
-msgid "Swap PIP"
-msgstr "Hoán đổi PIP"
+msgid "Swap PiP"
+msgstr "Hoán đổi PiP"
 
 msgid "Swap PiP and main picture"
 msgstr "Hoán đổi PiP và hình ảnh chính"
@@ -12378,14 +12362,14 @@ msgid "Titleset mode"
 msgstr "Chế độ tiêu đề"
 
 #, python-format
-msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgid "To apply the selected '%s' skin the GUI needs to restart. Would you like to restart the GUI now?"
 msgstr ""
 
 msgid "To audio selection"
 msgstr "Để lựa chọn âm thanh"
 
 #, python-format
-msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
+msgid "To save and apply the selected '%s' skin the GUI needs to restart. Would you like to save the selection and restart the GUI now?"
 msgstr ""
 
 msgid "To subtitle selection"
@@ -12400,7 +12384,7 @@ msgstr "Chuyển đổi HDMI trong"
 msgid "Toggle LCD LiveTV"
 msgstr "Chuyển đổi LCD LiveTV"
 
-msgid "Toggle PIPzap"
+msgid "Toggle PiPzap"
 msgstr "Chuyển đổi PIPzap"
 
 msgid "Toggle TV/RADIO mode"
@@ -12908,7 +12892,7 @@ msgstr "tắt màn hình giới thiệu"
 msgid "Use the alternative screen"
 msgstr "Chỉnh sửa thay thế"
 
-msgid "Use the cursor keys to select an installed image and then press Reboot button."
+msgid "Use the cursor keys to select an installed image then press Reboot button."
 msgstr ""
 
 msgid ""
@@ -13377,7 +13361,7 @@ msgstr "Bạn muốn loại dịch vụ quét nào?"
 msgid "When enabled enigma2 will load unlinked user bouquets. This means that user bouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Khi được bật enigma2 sẽ tải các tập tin người dùng không liên kết. Điều này có nghĩa là các userbouquets có sẵn, nhưng không được bao gồm trong các tập tin bouquets.tv hoặc bouquets.radio, vẫn sẽ được tải. Điều này cho phép bạn lấy ví dụ để giữ bó hoa người dùng của riêng bạn trong khi cài đặt được cài đặt được nâng cấp"
 
-msgid "When enabled the PiP can be closed by the exit button."
+msgid "When enabled the Picture in Picture window can be closed with 'exit' button."
 msgstr "Khi được bật, PiP có thể được đóng bằng nút thoát."
 
 msgid "When enabled the arrow buttons around the OK button will follow the 'neutrino' style zap controls instead of the enigma2 style."
@@ -13982,7 +13966,7 @@ msgid "Zap up"
 msgstr "Chuyển lên"
 
 #, python-format
-msgid "Zapped to timer service %s as PiP!"
+msgid "Zapped to timer service %s as Picture in Picture!"
 msgstr "Được chuyển sang dịch vụ hẹn giờ%s dưới dạng PiP!"
 
 #, python-format

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-29 22:53+0330\n"
+"POT-Creation-Date: 2020-02-06 10:23+0330\n"
 "PO-Revision-Date: 2019-05-15 22:50+0200\n"
 "Last-Translator: Jose Juan <jzapater@gmail.com>\n"
 "Language-Team: ANGELODOS  angelo2807@hotmail.com\n"
@@ -2406,12 +2406,12 @@ msgstr "Euskera"
 msgid "Begin time"
 msgstr "Hora inicio"
 
+#
+msgid "Behavior of '0' button in PiP mode"
+msgstr "Tecla 0 en el modo PiP"
+
 msgid "Behavior of 'pause and ok' when paused"
 msgstr "Comportamiento de ‘pausa y ok’ cuando se detiene"
-
-#
-msgid "Behavior of 0 key in PiP-mode"
-msgstr "Tecla 0 en el modo PiP"
 
 #
 msgid "Behavior when a movie is started"
@@ -3120,7 +3120,7 @@ msgstr "Clone la pantalla de TV al modo LCD"
 msgid "Close"
 msgstr "Cerrar"
 
-msgid "Close PiP on exit"
+msgid "Close PiP with 'exit' button"
 msgstr "Cerrar PiP en la salida"
 
 #
@@ -3291,7 +3291,7 @@ msgstr "Configurar cómo debe funcionar el ventilador"
 msgid "Configure if and how crypto icons will be shown in the channel selection list."
 msgstr "Configure si y cómo se mostrarán los iconos de criptografía en la lista de selección de canales."
 
-msgid "Configure if and how long the latest service in the PiP will be remembered."
+msgid "Configure if and how long the latest service in Picture in Picture mode will be remembered."
 msgstr "Configure si y por cuánto tiempo se recordará el servicio más reciente en el PiP."
 
 msgid "Configure if and how service type icons will be shown in the channel selection list."
@@ -3427,8 +3427,8 @@ msgstr "Configure el cuarto idioma de audio."
 msgid "Configure the fourth subtitle language."
 msgstr "Configure el idioma del subtítulo cuarto."
 
-msgid "Configure the function of the '0' button do when PIP is active."
-msgstr "Configure la función del botón ‘0’ cuando PIP está activo."
+msgid "Configure the function of the '0' button when Picture in Picture is active."
+msgstr "Configure la función del botón ‘0’ cuando PiP está activo."
 
 #
 msgid "Configure the gateway."
@@ -4505,9 +4505,6 @@ msgstr "Desactivar temporizador"
 #
 msgid "Disabled"
 msgstr "Desactivado"
-
-msgid "Dish"
-msgstr ""
 
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Espacio en disco para reservar para grabaciones (en GB)"
@@ -6512,11 +6509,6 @@ msgstr ""
 msgid "IPv6"
 msgstr ""
 
-#
-#, fuzzy
-msgid "IPv6 setup"
-msgstr "Configuración de PiP"
-
 #, fuzzy
 msgid "IPv6 support"
 msgstr "Soporte de HLG"
@@ -6669,7 +6661,7 @@ msgstr "Incluir ECM en los flujos http"
 msgid "Include EIT in http streams"
 msgstr "Incluir EIT en los flujos http"
 
-msgid "Incorrect type service for PiP!"
+msgid "Incorrect service type for Picture in Picture!"
 msgstr "Servicio de tipo incorrecto para PiP!"
 
 #
@@ -7373,11 +7365,6 @@ msgstr "Dirección  Ip"
 msgid "MAC address settings"
 msgstr "Configuración de adaptador"
 
-#
-#, fuzzy
-msgid "MAC address setup"
-msgstr "Configuración del disco duro"
-
 msgid "MAC:"
 msgstr ""
 
@@ -7492,7 +7479,7 @@ msgstr "Fabricante"
 
 msgid ""
 "Manufacturer reset in progress\n"
-"Pease wait until enigma2 restarts"
+"Please wait until enigma2 restarts"
 msgstr ""
 
 #
@@ -7734,8 +7721,8 @@ msgstr "Configuración de Softcam"
 msgid "Move"
 msgstr "Movimiento"
 
-msgid "Move PIP"
-msgstr "Mover PIP"
+msgid "Move PiP"
+msgstr "Mover PiP"
 
 #
 msgid "Move PiP to main picture"
@@ -7913,8 +7900,9 @@ msgstr "Transcodificación:"
 msgid "MultiType"
 msgstr "Multitipo"
 
-msgid "Multiboot"
-msgstr "Multiboot"
+#, fuzzy
+msgid "Multiboot image selector"
+msgstr "Multisat all select"
 
 msgid "Multichannel PCM"
 msgstr "PCM multicanal"
@@ -10897,12 +10885,6 @@ msgstr "Seleccione Fast DiSEqC si su sistema aéreo lo admite. Si no está segur
 msgid "Select HDD"
 msgstr "Seleccionar disco duro"
 
-msgid "Select Image"
-msgstr "Seleccionar imagen"
-
-msgid "Select Multiboot"
-msgstr "Seleccionar Multiboot"
-
 msgid "Select Softcam"
 msgstr "Seleccionar Softcam"
 
@@ -11569,8 +11551,8 @@ msgstr "Mostrar rutas del menú"
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
 
-msgid "Show PIP"
-msgstr "Mostrar PIP"
+msgid "Show PiP"
+msgstr "Mostrar PiP"
 
 msgid "Show Readers/Proxies"
 msgstr ""
@@ -12713,8 +12695,8 @@ msgstr ""
 msgid "Swap EN300743 palette table"
 msgstr ""
 
-msgid "Swap PIP"
-msgstr "Swap PIP"
+msgid "Swap PiP"
+msgstr "Swap PiP"
 
 #
 msgid "Swap PiP and main picture"
@@ -13707,14 +13689,14 @@ msgid "Titleset mode"
 msgstr "Modo Título"
 
 #, python-format
-msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgid "To apply the selected '%s' skin the GUI needs to restart. Would you like to restart the GUI now?"
 msgstr ""
 
 msgid "To audio selection"
 msgstr "A la selección de audio"
 
 #, python-format
-msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
+msgid "To save and apply the selected '%s' skin the GUI needs to restart. Would you like to save the selection and restart the GUI now?"
 msgstr ""
 
 msgid "To subtitle selection"
@@ -13730,7 +13712,7 @@ msgstr "Alternar HDMI In"
 msgid "Toggle LCD LiveTV"
 msgstr "Alternar LCD LiveTV"
 
-msgid "Toggle PIPzap"
+msgid "Toggle PiPzap"
 msgstr "Alternar PIPzap"
 
 msgid "Toggle TV/RADIO mode"
@@ -14287,7 +14269,7 @@ msgstr "Deshabilitar la pantalla de introducción"
 msgid "Use the alternative screen"
 msgstr "Editar alternativas"
 
-msgid "Use the cursor keys to select an installed image and then press Reboot button."
+msgid "Use the cursor keys to select an installed image then press Reboot button."
 msgstr ""
 
 msgid ""
@@ -14823,7 +14805,7 @@ msgstr "¿Qué tipo de escaneo de servicio quieres?"
 msgid "When enabled enigma2 will load unlinked user bouquets. This means that user bouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Cuando está habilitado, enigma2 cargará los usuarios desvinculados. Esto significa que los userbouquets que están disponibles, pero que no están incluidos en los archivos bouquets.tv o bouquets.radio, seguirán cargándose. Esto le permite, por ejemplo, mantener su propio ramo de usuario mientras se instalan los ajustes instalados"
 
-msgid "When enabled the PiP can be closed by the exit button."
+msgid "When enabled the Picture in Picture window can be closed with 'exit' button."
 msgstr "Cuando está activado, el PiP se puede cerrar con el botón de salida."
 
 msgid "When enabled the arrow buttons around the OK button will follow the 'neutrino' style zap controls instead of the enigma2 style."
@@ -15456,7 +15438,7 @@ msgid "Zap up"
 msgstr "Zap up"
 
 #, python-format
-msgid "Zapped to timer service %s as PiP!"
+msgid "Zapped to timer service %s as Picture in Picture!"
 msgstr "Zapped para dar servicio al temporizador% s como PiP!"
 
 #, python-format

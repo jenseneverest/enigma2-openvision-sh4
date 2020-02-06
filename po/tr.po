@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-29 22:53+0330\n"
+"POT-Creation-Date: 2020-02-06 10:23+0330\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -2216,11 +2216,11 @@ msgstr "Basque"
 msgid "Begin time"
 msgstr "Başlama zamanı"
 
+msgid "Behavior of '0' button in PiP mode"
+msgstr "RiR kipinde 0 tuşu görevi"
+
 msgid "Behavior of 'pause and ok' when paused"
 msgstr "Durdurulduğunda 'Dur ve OK' davranışı"
-
-msgid "Behavior of 0 key in PiP-mode"
-msgstr "RiR kipinde 0 tuşu görevi"
 
 msgid "Behavior when a movie is started"
 msgstr "Film başlatıldığı zaman"
@@ -2874,7 +2874,7 @@ msgstr "TV ekranını LCD ye yansıt"
 msgid "Close"
 msgstr "Kapat"
 
-msgid "Close PiP on exit"
+msgid "Close PiP with 'exit' button"
 msgstr "RiR Kapat ve Çık"
 
 msgid "Close title selection"
@@ -3029,7 +3029,7 @@ msgstr "Fanın nasıl çalışması gerektiğini yapılandırın"
 msgid "Configure if and how crypto icons will be shown in the channel selection list."
 msgstr "Şİfreli Kanal simgesinin kanal listesinde görünme şekli"
 
-msgid "Configure if and how long the latest service in the PiP will be remembered."
+msgid "Configure if and how long the latest service in Picture in Picture mode will be remembered."
 msgstr "En son uzun süre bakılan RiR servisini hatırlama ayarı. "
 
 msgid "Configure if and how service type icons will be shown in the channel selection list."
@@ -3158,7 +3158,7 @@ msgstr "Dördüncü ses dilini yapılandırın."
 msgid "Configure the fourth subtitle language."
 msgstr "Dördüncü altyazı dili yapılandırın."
 
-msgid "Configure the function of the '0' button do when PIP is active."
+msgid "Configure the function of the '0' button when Picture in Picture is active."
 msgstr "RiR aktif olduğunda '0 'düğmesinin işlevini yapılandırın."
 
 msgid "Configure the gateway."
@@ -4152,9 +4152,6 @@ msgstr "Zamanlayıcı Devredışı"
 
 msgid "Disabled"
 msgstr "Devre dışı"
-
-msgid "Dish"
-msgstr ""
 
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Kayıtlar için ayrılacak disk alanı (GB)"
@@ -5989,10 +5986,6 @@ msgid "IPv6"
 msgstr ""
 
 #, fuzzy
-msgid "IPv6 setup"
-msgstr "RiR kurulumu"
-
-#, fuzzy
 msgid "IPv6 support"
 msgstr "Desteklenmiyor"
 
@@ -6137,7 +6130,7 @@ msgstr "http akışlarında ECM dahil"
 msgid "Include EIT in http streams"
 msgstr "http akışlarında EIT dahil"
 
-msgid "Incorrect type service for PiP!"
+msgid "Incorrect service type for Picture in Picture!"
 msgstr "RiR için geçersiz servis!"
 
 msgid "Increased voltage"
@@ -6757,10 +6750,6 @@ msgstr "IP adresi"
 msgid "MAC address settings"
 msgstr "Ağ donanım ayarları"
 
-#, fuzzy
-msgid "MAC address setup"
-msgstr "HDD Ayarı"
-
 msgid "MAC:"
 msgstr ""
 
@@ -6859,7 +6848,7 @@ msgstr "Üretici"
 
 msgid ""
 "Manufacturer reset in progress\n"
-"Pease wait until enigma2 restarts"
+"Please wait until enigma2 restarts"
 msgstr ""
 
 msgid "Margin after recording (minutes)"
@@ -7083,7 +7072,7 @@ msgstr "SoftCam Kurulumu"
 msgid "Move"
 msgstr "Taşı"
 
-msgid "Move PIP"
+msgid "Move PiP"
 msgstr "RiR Taşı"
 
 msgid "Move PiP to main picture"
@@ -7242,8 +7231,8 @@ msgid "MultiType"
 msgstr "Çoklu Ortam"
 
 #, fuzzy
-msgid "Multiboot"
-msgstr "Çoklu Uydu"
+msgid "Multiboot image selector"
+msgstr "Çok Uydu tümünü seç"
 
 msgid "Multichannel PCM"
 msgstr ""
@@ -9925,14 +9914,6 @@ msgstr ""
 msgid "Select HDD"
 msgstr "HDD Seç"
 
-#, fuzzy
-msgid "Select Image"
-msgstr "Film seç"
-
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "Yuva (Slot) seç"
-
 msgid "Select Softcam"
 msgstr "SoftCam Seç"
 
@@ -10548,7 +10529,7 @@ msgstr "DVD ana menüsünü göster"
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
 
-msgid "Show PIP"
+msgid "Show PiP"
 msgstr "RiR Göster"
 
 msgid "Show Readers/Proxies"
@@ -11595,7 +11576,7 @@ msgstr ""
 msgid "Swap EN300743 palette table"
 msgstr ""
 
-msgid "Swap PIP"
+msgid "Swap PiP"
 msgstr "RiR Değiştir"
 
 msgid "Swap PiP and main picture"
@@ -12495,14 +12476,14 @@ msgid "Titleset mode"
 msgstr "Başlıkseti kipi"
 
 #, python-format
-msgid "To apply the selected '%s' skin the GUI needs to restart.  Would you like to restart the GUI now?"
+msgid "To apply the selected '%s' skin the GUI needs to restart. Would you like to restart the GUI now?"
 msgstr ""
 
 msgid "To audio selection"
 msgstr "Ses seçimi için"
 
 #, python-format
-msgid "To save and apply the selected '%s' skin the GUI needs to restart.  Would you like to save the selection and restart the GUI now?"
+msgid "To save and apply the selected '%s' skin the GUI needs to restart. Would you like to save the selection and restart the GUI now?"
 msgstr ""
 
 msgid "To subtitle selection"
@@ -12517,7 +12498,7 @@ msgstr "HDMI girişini değiştir"
 msgid "Toggle LCD LiveTV"
 msgstr "LCD LiveTV"
 
-msgid "Toggle PIPzap"
+msgid "Toggle PiPzap"
 msgstr "RiRzap"
 
 msgid "Toggle TV/RADIO mode"
@@ -13040,7 +13021,7 @@ msgstr "Ekranı dondur"
 msgid "Use the alternative screen"
 msgstr "Alternatifleri Düzenle"
 
-msgid "Use the cursor keys to select an installed image and then press Reboot button."
+msgid "Use the cursor keys to select an installed image then press Reboot button."
 msgstr ""
 
 msgid ""
@@ -13512,7 +13493,7 @@ msgstr ""
 msgid "When enabled enigma2 will load unlinked user bouquets. This means that user bouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr "Ne zaman enigma2 etkin bağlantısız buket yükleyecektir. Bu, mevcut değil, fakat bouquets.tv ya bouquets.radio dosyaları dahil değildir userbouquets zaten yüklü olacağı anlamına gelir. Yüklü ayarlar yükseltilmiş ise bu kendi kullanıcı buket tutmak için örneğin yapmanızı sağlar"
 
-msgid "When enabled the PiP can be closed by the exit button."
+msgid "When enabled the Picture in Picture window can be closed with 'exit' button."
 msgstr "Etkin olduğunda RiR çıkış düğmesi ile kapatılabilir."
 
 msgid "When enabled the arrow buttons around the OK button will follow the 'neutrino' style zap controls instead of the enigma2 style."
@@ -14114,7 +14095,7 @@ msgid "Zap up"
 msgstr "Zap Yukarı"
 
 #, python-format
-msgid "Zapped to timer service %s as PiP!"
+msgid "Zapped to timer service %s as Picture in Picture!"
 msgstr ""
 
 #, fuzzy, python-format

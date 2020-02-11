@@ -122,6 +122,7 @@ SystemInfo["CanDownmixDTS"] = fileHas("/proc/stb/audio/dts_choices", "downmix")
 SystemInfo["CanDownmixAAC"] = fileHas("/proc/stb/audio/aac_choices", "downmix")
 SystemInfo["HDMIAudioSource"] = fileCheck("/proc/stb/hdmi/audio_source")
 SystemInfo["BootDevice"] = getBootdevice()
+SystemInfo["LnbPowerAlwaysOn"] = False
 SystemInfo["SmallFlash"] = fileExists("/etc/smallflash")
 SystemInfo["MiddleFlash"] = fileExists("/etc/middleflash")
 SystemInfo["HaveCISSL"] = fileCheck("/etc/ssl/certs/customer.pem") and fileCheck("/etc/ssl/certs/device.pem")

@@ -51,3 +51,15 @@ else
 gdi_libenigma_gdi_a_SOURCES += gdi/gfbdc.cpp
 gdiinclude_HEADERS += gdi/gfbdc.h
 endif
+
+if ENABLE_QBOXHD
+gdi_libenigma_gdi_a_SOURCES += gdi/lpcqbox.cpp
+gdi_libenigma_gdi_a_SOURCES += gdi/sensewheel.cpp
+gdiinclude_HEADERS += gdi/lpcqbox.h
+gdiinclude_HEADERS += gdi/sensewheel.h
+endif
+
+if ENABLE_QBOXHDMINI
+gdi_libenigma_gdi_a_SOURCES += gdi/lpcqbox.cpp
+gdiinclude_HEADERS += gdi/lpcqbox.h
+endif

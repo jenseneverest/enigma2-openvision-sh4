@@ -30,3 +30,15 @@ if HAVE_LIBSDL
 driver_libenigma_driver_a_SOURCES += driver/rcsdl.cpp
 driverinclude_HEADERS += driver/rcsdl.h
 endif
+
+if ENABLE_QBOXHD
+driver_libenigma_driver_a_SOURCES += driver/rcqbox2.cpp
+driver_libenigma_driver_a_SOURCES += driver/swqbox2.cpp
+driverinclude_HEADERS += driver/rcqbox2.h
+driverinclude_HEADERS += driver/swqbox2.h
+endif
+
+if ENABLE_QBOXHDMINI
+driver_libenigma_driver_a_SOURCES += driver/fpqboxmini.cpp
+driverinclude_HEADERS += driver/fpqboxmini.h
+endif

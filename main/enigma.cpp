@@ -18,6 +18,12 @@
 #include <lib/gdi/gmaindc.h>
 #include <lib/gdi/glcddc.h>
 #include <lib/gdi/grc.h>
+#ifdef ENABLE_QBOXHD
+#include <lib/gdi/sensewheel.h>
+#endif
+#ifdef ENABLE_QBOXHDMINI
+#include <lib/gdi/lpcqbox.h>
+#endif
 #include <lib/gdi/epng.h>
 #include <lib/gdi/font.h>
 #include <lib/gui/ebutton.h>
@@ -46,7 +52,12 @@ void object_dump()
 #endif
 
 static eWidgetDesktop *wdsk, *lcddsk;
-
+#ifdef ENABLE_QBOXHD
+static eQBOXSenseWheel *sensewheel;
+#endif
+#ifdef ENABLE_QBOXHDMINI
+static eQBOXFrontButton *frontbutton;
+#endif
 static int prev_ascii_code;
 
 int getPrevAsciiCode()
@@ -74,17 +85,29 @@ void keyEvent(const eRCKey &key)
 
 	if (num_repeat == 4)
 	{
+#ifdef ENABLE_QBOXHD
+		ptr->keyPressed(key.producer->getIdentifier(), key.producer->getRCIdentifier(), key.code, eRCKey::flagLong);
+#else
 		ptr->keyPressed(key.producer->getIdentifier(), key.code, eRCKey::flagLong);
+#endif
 		num_repeat++;
 	}
 
 	if (key.flags & eRCKey::flagAscii)
 	{
 		prev_ascii_code = key.code;
+#ifdef ENABLE_QBOXHD
+		ptr->keyPressed(key.producer->getIdentifier(), key.producer->getRCIdentifier(), 510 /* faked KEY_ASCII */, 0);
+#else
 		ptr->keyPressed(key.producer->getIdentifier(), 510 /* faked KEY_ASCII */, 0);
+#endif
 	}
 	else
+#ifdef ENABLE_QBOXHD
+		ptr->keyPressed(key.producer->getIdentifier(), key.producer->getRCIdentifier(), key.code, key.flags);
+#else
 		ptr->keyPressed(key.producer->getIdentifier(), key.code, key.flags);
+#endif
 }
 
 /************************************************/
@@ -136,7 +159,11 @@ int exit_code;
 
 void quitMainloop(int exitCode)
 {
+#ifdef ENABLE_QBOXHDMINI
+	FILE *f = fopen("/proc/stb/lpc/was_timer_wakeup", "w");
+#else
 	FILE *f = fopen("/proc/stb/fp/was_timer_wakeup", "w");
+#endif
 	if (f)
 	{
 		fprintf(f, "%d", 0);
@@ -232,8 +259,18 @@ int main(int argc, char **argv)
 	for (int i = 0xfe80; i < 0xff00; ++i)
 		eTextPara::forceReplacementGlyph(i);
 
+#ifdef ENABLE_QBOXHD
+	unsigned int xres, yres, bpp;
+	/* Read from FrameBuffer the resolution */
+	if (my_dc->fb->getfbResolution( &xres, &yres, &bpp) < 0)
+		eFatal("Framebuffer Error");
+	eWidgetDesktop dsk(eSize(xres, yres));
+// 	eWidgetDesktop dsk(eSize(720, 576));
+	eWidgetDesktop dsk_lcd(eSize(DISPLAY_WIDTH, DISPLAY_HEIGHT));
+#else
 	eWidgetDesktop dsk(my_dc->size());
 	eWidgetDesktop dsk_lcd(my_lcd_dc->size());
+#endif
 
 	dsk.setStyleID(0);
 
@@ -302,6 +339,15 @@ int main(int argc, char **argv)
 
 	printf("[MAIN] executing main\n");
 
+#ifdef ENABLE_QBOXHD
+	/* SenseWheel*/
+	sensewheel = new eQBOXSenseWheel();
+#endif
+#ifdef ENABLE_QBOXHDMINI
+	/* FrontButton*/
+	frontbutton = new eQBOXFrontButton();
+#endif
+
 	bsodCatchSignals();
 	catchTermSignal();
 
@@ -322,12 +368,24 @@ int main(int argc, char **argv)
 		bsodFatal(0);
 	}
 
+#ifdef ENABLE_QBOXHD
+	if (exit_code == 6) /* terminated by signal */
+	{
+		eDebug("(exit code 6)");
+		bsodFatal("enigma2, signal");
+	}
+#endif
+
 	dsk.paint();
 	dsk_lcd.paint();
 
 	{
 		gPainter p(my_lcd_dc);
+#ifdef ENABLE_QBOXHD
+		p.resetClip(eRect(0, 0, DISPLAY_WIDTH, DISPLAY_HEIGHT));
+#else
 		p.resetClip(eRect(ePoint(0, 0), my_lcd_dc->size()));
+#endif
 		p.clear();
 		p.flush();
 	}

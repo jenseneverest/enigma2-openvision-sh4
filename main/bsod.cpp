@@ -326,6 +326,10 @@ void print_backtrace()
 	}
 }
 
+#ifdef ENABLE_QBOXHD
+extern void quitMainloop(int exitCode);
+#endif
+
 void handleFatalSignal(int signum, siginfo_t *si, void *ctx)
 {
 #ifndef NO_OOPS_SUPPORT
@@ -334,7 +338,16 @@ void handleFatalSignal(int signum, siginfo_t *si, void *ctx)
 #endif
 	print_backtrace();
 	eLog(lvlFatal, "-------FATAL SIGNAL");
+#ifdef ENABLE_QBOXHD
+	if(signum == SIGSEGV || signum == SIGILL || signum == SIGBUS || signum == SIGABRT || signum == SIGINT || signum == SIGQUIT)
+	{
+		quitMainloop(6); //Close player2 on system error
+		eDebug("closing player ...");
+	}
+	eDebug("DONE. <");
+#else
 	bsodFatal("enigma2, signal");
+#endif
 }
 
 void bsodCatchSignals()
@@ -346,8 +359,21 @@ void bsodCatchSignals()
 		perror("sigemptyset");
 
 		/* start handling segfaults etc. */
+#ifdef ENABLE_QBOXHD
+	///NEW HANDLED SIGNALS
+	sigaction(SIGHUP, &act, 0);
+	sigaction(SIGINT, &act, 0);
+	sigaction(SIGQUIT, &act, 0);
+	sigaction(SIGILL, &act, 0);
+	sigaction(SIGABRT, &act, 0);
+	sigaction(SIGBUS, &act, 0);
+// 	sigaction(SIGKILL, &act, 0);
+	sigaction(SIGSEGV, &act, 0);
+	sigaction(SIGTERM, &act, 0);
+#else
 	sigaction(SIGSEGV, &act, 0);
 	sigaction(SIGILL, &act, 0);
 	sigaction(SIGBUS, &act, 0);
 	sigaction(SIGABRT, &act, 0);
+#endif
 }

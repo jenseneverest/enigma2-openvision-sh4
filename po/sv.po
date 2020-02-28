@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-23 21:04+0330\n"
+"POT-Creation-Date: 2020-02-29 02:22+0330\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -3644,6 +3644,10 @@ msgstr "Konfigurera om rotorpositionen skall visas i infobalken."
 msgid "Configure whether or not an icon should be shown when your motorized dish is moving."
 msgstr "Vid aktiverad kommer en ikon att visas när motoriserad parabol är i rörelse."
 
+#, fuzzy
+msgid "Configure whether service picons will be shown in number zap."
+msgstr "Konfigurera om kanalpicons skall visas i kanallistan."
+
 msgid "Configure which access level to use for the configuration menu. Expert level gives access to all items."
 msgstr "Konfigurera vilken behörighetsnivå som ska användas för konfigurationsmenyn. Expertnivå ger tillgång till alla objekt."
 
@@ -3791,6 +3795,9 @@ msgstr ""
 #
 msgid "Could not load medium! No disc inserted?"
 msgstr "Kunde inte ladda media! Ingen disk istoppad?"
+
+msgid "Could not locate epg file on fallback tuner"
+msgstr ""
 
 #
 msgid "Could not open Picture in Picture"
@@ -4949,10 +4956,6 @@ msgstr ""
 msgid "ERROR - failed to scan (%s)!"
 msgstr "FEL - misslyckad sökning (%s)!"
 
-#, python-format
-msgid "ERROR downloading file %s"
-msgstr ""
-
 #
 msgid "East"
 msgstr "Öst"
@@ -5342,11 +5345,6 @@ msgstr "Strömning"
 msgid "Error"
 msgstr "Fel"
 
-#
-#, fuzzy, python-format
-msgid "Error %s"
-msgstr "Fel"
-
 msgid "Error code"
 msgstr "Felkod"
 
@@ -5372,19 +5370,10 @@ msgstr ""
 msgid "Error stop stream!"
 msgstr ""
 
-msgid "Error when writing epg.dat on server"
-msgstr ""
-
-msgid "Error while retreiving epg.dat from server"
-msgstr ""
-
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
-msgstr ""
-
-msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #
@@ -6694,6 +6683,9 @@ msgstr "URL för reserv fjärrmottagare"
 msgid "Import remote receiver URL"
 msgstr "URL för reserv fjärrmottagare"
 
+msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
+msgstr ""
+
 msgid "In most cases this should be set to No. Only enable if you have a very specific need."
 msgstr ""
 
@@ -7431,9 +7423,6 @@ msgstr "Longitud"
 
 msgid "Loop through from"
 msgstr "Loop through från"
-
-msgid "Lord Howe Island"
-msgstr ""
 
 msgid "Lower case"
 msgstr ""
@@ -8324,9 +8313,6 @@ msgstr "Ingen beskrivning tillgänglig."
 msgid "No displayable files on this medium found!"
 msgstr "Inga visningsbara filer hittade på detta media!"
 
-msgid "No epg.dat file found server"
-msgstr ""
-
 #
 msgid "No event info found, recording indefinitely."
 msgstr "Ingen programinfo hittades, inspelning oändlig."
@@ -8376,6 +8362,9 @@ msgstr "Ingen kanal"
 #
 msgid "No services/providers selected"
 msgstr "Ingen kanal / operatör vald"
+
+msgid "No settings files to download on fallback tuner"
+msgstr ""
 
 #
 msgid "No standby"
@@ -8499,9 +8488,6 @@ msgid "North"
 msgstr "Nord"
 
 msgid "Northern Mariana Islands"
-msgstr ""
-
-msgid "Northern Territory"
 msgstr ""
 
 #
@@ -11937,6 +11923,10 @@ msgstr "Visa utökad beskrivning"
 msgid "Show packages to be updated"
 msgstr "Visa paket som skall uppdateras"
 
+#, fuzzy
+msgid "Show picons during channel number input"
+msgstr "Visa picons i kanallistan"
+
 msgid "Show picons in channel selection list"
 msgstr "Visa picons i kanallistan"
 
@@ -12395,11 +12385,6 @@ msgstr "Syd"
 
 msgid "South Africa"
 msgstr ""
-
-#
-#, fuzzy
-msgid "South Australia"
-msgstr "Italienska"
 
 msgid "South Georgia and the South Sandwich Islands"
 msgstr ""
@@ -15036,11 +15021,6 @@ msgstr "Väst"
 msgid "West limit set"
 msgstr "Västra gränsen satt"
 
-#
-#, fuzzy
-msgid "Western Australia"
-msgstr "Italienska"
-
 msgid "Western Sahara"
 msgstr ""
 
@@ -15686,6 +15666,9 @@ msgstr "Zappa till Bild i Bild"
 
 msgid "Zap focus to main screen"
 msgstr "Zappa till huvudskärmen"
+
+msgid "Zap key delay for channel number input"
+msgstr ""
 
 msgid "Zap mode"
 msgstr "Zappläge"

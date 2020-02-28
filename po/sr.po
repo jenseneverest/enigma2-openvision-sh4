@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-23 21:04+0330\n"
+"POT-Creation-Date: 2020-02-29 02:22+0330\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -3675,6 +3675,9 @@ msgstr ""
 msgid "Configure whether or not an icon should be shown when your motorized dish is moving."
 msgstr ""
 
+msgid "Configure whether service picons will be shown in number zap."
+msgstr ""
+
 msgid "Configure which access level to use for the configuration menu. Expert level gives access to all items."
 msgstr ""
 
@@ -3826,6 +3829,9 @@ msgstr ""
 #, fuzzy
 msgid "Could not load medium! No disc inserted?"
 msgstr "Ne može se ubaciti medij.Disk nije ubačen?"
+
+msgid "Could not locate epg file on fallback tuner"
+msgstr ""
 
 #
 msgid "Could not open Picture in Picture"
@@ -5007,10 +5013,6 @@ msgstr ""
 msgid "ERROR - failed to scan (%s)!"
 msgstr "GREŠKA - neuspešno skeniranje (%s)!"
 
-#, python-format
-msgid "ERROR downloading file %s"
-msgstr ""
-
 #
 msgid "East"
 msgstr "Istok"
@@ -5402,11 +5404,6 @@ msgstr ""
 msgid "Error"
 msgstr "Greška"
 
-#
-#, fuzzy, python-format
-msgid "Error %s"
-msgstr "Greška"
-
 msgid "Error code"
 msgstr ""
 
@@ -5432,19 +5429,10 @@ msgstr ""
 msgid "Error stop stream!"
 msgstr ""
 
-msgid "Error when writing epg.dat on server"
-msgstr ""
-
-msgid "Error while retreiving epg.dat from server"
-msgstr ""
-
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
 "%s"
-msgstr ""
-
-msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #
@@ -6759,6 +6747,9 @@ msgstr ""
 msgid "Import remote receiver URL"
 msgstr ""
 
+msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
+msgstr ""
+
 msgid "In most cases this should be set to No. Only enable if you have a very specific need."
 msgstr ""
 
@@ -7527,9 +7518,6 @@ msgid "Longitude"
 msgstr "Geografska dužina"
 
 msgid "Loop through from"
-msgstr ""
-
-msgid "Lord Howe Island"
 msgstr ""
 
 msgid "Lower case"
@@ -8444,9 +8432,6 @@ msgstr "Opis nije dostupan."
 msgid "No displayable files on this medium found!"
 msgstr "Nisu pronađene vidljive datoteke na ovom mediju!"
 
-msgid "No epg.dat file found server"
-msgstr ""
-
 #
 msgid "No event info found, recording indefinitely."
 msgstr "Informacije o događaju nisu pronađene, snimanje beskrajno."
@@ -8498,6 +8483,9 @@ msgstr ""
 #, fuzzy
 msgid "No services/providers selected"
 msgstr "nijedni kanali/provajderi nisu izabrani"
+
+msgid "No settings files to download on fallback tuner"
+msgstr ""
 
 #
 #, fuzzy
@@ -8628,9 +8616,6 @@ msgid "North"
 msgstr "Sever"
 
 msgid "Northern Mariana Islands"
-msgstr ""
-
-msgid "Northern Territory"
 msgstr ""
 
 #
@@ -12163,6 +12148,9 @@ msgstr "prikaži proširene informacije"
 msgid "Show packages to be updated"
 msgstr ""
 
+msgid "Show picons during channel number input"
+msgstr ""
+
 msgid "Show picons in channel selection list"
 msgstr ""
 
@@ -12636,11 +12624,6 @@ msgstr "Jug"
 
 msgid "South Africa"
 msgstr ""
-
-#
-#, fuzzy
-msgid "South Australia"
-msgstr "Italijanski"
 
 msgid "South Georgia and the South Sandwich Islands"
 msgstr ""
@@ -15267,11 +15250,6 @@ msgstr "Zapad"
 msgid "West limit set"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Western Australia"
-msgstr "Italijanski"
-
 msgid "Western Sahara"
 msgstr ""
 
@@ -15887,6 +15865,9 @@ msgid "Zap focus to Picture in Picture"
 msgstr ""
 
 msgid "Zap focus to main screen"
+msgstr ""
+
+msgid "Zap key delay for channel number input"
 msgstr ""
 
 msgid "Zap mode"

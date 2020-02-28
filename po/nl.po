@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-23 21:04+0330\n"
+"POT-Creation-Date: 2020-02-29 02:22+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: PLiteam <translators@openpli.org>\n"
@@ -3527,6 +3527,13 @@ msgstr "Indien geactiveerd dan wordt de positie van de schotel aangegeven op de 
 msgid "Configure whether or not an icon should be shown when your motorized dish is moving."
 msgstr "Indien geactiveerd, dan is de activiteit van de diseqcmotor zichtbaar. "
 
+#, fuzzy
+msgid "Configure whether service picons will be shown in number zap."
+msgstr ""
+"Indien geactiveerd, dan worden de picons weergegeven in de zenderlijst.\n"
+"\n"
+"Picons zijn zenderlogo's zoals bekend van TV. Deze moet u eerst te downloaden via menu -  applicaties - groene toets - picons. Daar staan picons in diverse formaten."
+
 msgid "Configure which access level to use for the configuration menu. Expert level gives access to all items."
 msgstr ""
 "Met deze optie stelt u het toegangsniveau in van het het instellingsmenu van uw ontvanger.  Dit is ingevoerd om de normale gebruiker te verschonen van allerhande lastige instellingen.\n"
@@ -3664,6 +3671,10 @@ msgstr "Kon geen geschikt medium vinden - Verwijder aub enkele gedownloade image
 
 msgid "Could not load medium! No disc inserted?"
 msgstr "Kon het medium niet laden! Is er geen schijf geplaatst?"
+
+#, fuzzy
+msgid "Could not locate epg file on fallback tuner"
+msgstr "Activeer de import van timers van de Fallback tuner"
 
 msgid "Could not open Picture in Picture"
 msgstr "Kan Picture In Picture niet openen"
@@ -4681,10 +4692,6 @@ msgstr "EPG:"
 msgid "ERROR - failed to scan (%s)!"
 msgstr "Fout - zoeken mislukt (%s)!"
 
-#, python-format
-msgid "ERROR downloading file %s"
-msgstr "FOUT tijdens het downloaden van %s"
-
 msgid "East"
 msgstr "Oost"
 
@@ -5039,10 +5046,6 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Fout"
 
-#, python-format
-msgid "Error %s"
-msgstr "Fout %s"
-
 msgid "Error code"
 msgstr "Foutcode"
 
@@ -5075,12 +5078,6 @@ msgstr ""
 msgid "Error stop stream!"
 msgstr "Fout stop de stream!"
 
-msgid "Error when writing epg.dat on server"
-msgstr "Fout tijdens het opslaan van de epg.dat op de server"
-
-msgid "Error while retreiving epg.dat from server"
-msgstr "Fout tijdens het ophalen van de epg.dat van de server"
-
 #, python-format
 msgid ""
 "Error while retreiving fallback timer information\n"
@@ -5088,9 +5085,6 @@ msgid ""
 msgstr ""
 "Fout tijdens het ophalen van de Fallback timer informatie\n"
 "%s"
-
-msgid "Error while retreiving location of epg.dat on server"
-msgstr "Fout tijdens het benaderen van de epg.dat locatie op de server "
 
 #, python-format
 msgid ""
@@ -6277,6 +6271,9 @@ msgstr "Importeer data vanaf een externe ontvanger"
 msgid "Import remote receiver URL"
 msgstr "Locatie van de externe ontvanger"
 
+msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
+msgstr ""
+
 msgid "In most cases this should be set to No. Only enable if you have a very specific need."
 msgstr ""
 
@@ -6911,10 +6908,6 @@ msgstr "Lengtegraad"
 
 msgid "Loop through from"
 msgstr "Doorgelust vanaf ..."
-
-#, fuzzy
-msgid "Lord Howe Island"
-msgstr "Faeröer eilanden"
 
 msgid "Lower case"
 msgstr "Kleine letters"
@@ -7695,9 +7688,6 @@ msgstr "Geen beschrijving beschikbaar."
 msgid "No displayable files on this medium found!"
 msgstr "Geen weer te geven bestanden op dit medium gevonden!"
 
-msgid "No epg.dat file found server"
-msgstr "Geen epg.dat file gevonden op de server"
-
 msgid "No event info found, recording indefinitely."
 msgstr "Geen EPG gegevens gevonden. Opname voor onbepaalde tijd."
 
@@ -7739,6 +7729,9 @@ msgstr "Geen uitzending"
 
 msgid "No services/providers selected"
 msgstr "Geen zender/provider gekozen"
+
+msgid "No settings files to download on fallback tuner"
+msgstr ""
 
 msgid "No standby"
 msgstr "Geen stand-by"
@@ -7845,10 +7838,6 @@ msgstr "Noord"
 
 msgid "Northern Mariana Islands"
 msgstr "Noordelijke Mariana eilanden"
-
-#, fuzzy
-msgid "Northern Territory"
-msgstr "Franse Zuidelijke Gebieden"
 
 msgid "Norway"
 msgstr "Noorwegen"
@@ -10914,6 +10903,10 @@ msgstr "Weergave met uitgebreide informatie"
 msgid "Show packages to be updated"
 msgstr "Toon de te updaten pakketten"
 
+#, fuzzy
+msgid "Show picons during channel number input"
+msgstr "Picons in kanalenlijst tonen"
+
 msgid "Show picons in channel selection list"
 msgstr "Picons in kanalenlijst tonen"
 
@@ -11314,10 +11307,6 @@ msgstr "Zuid"
 
 msgid "South Africa"
 msgstr "Zuid Afrika"
-
-#, fuzzy
-msgid "South Australia"
-msgstr "Australië"
 
 msgid "South Georgia and the South Sandwich Islands"
 msgstr "Zuid-Georgia en de Zuidelijke Sandwicheilanden"
@@ -13674,10 +13663,6 @@ msgstr "West"
 msgid "West limit set"
 msgstr "Westlimiet gezet"
 
-#, fuzzy
-msgid "Western Australia"
-msgstr "Australië"
-
 msgid "Western Sahara"
 msgstr "Westelijke Sahara"
 
@@ -14314,6 +14299,9 @@ msgstr "Zappen in PIP scherm"
 
 msgid "Zap focus to main screen"
 msgstr "Zappen in hoofdscherm"
+
+msgid "Zap key delay for channel number input"
+msgstr ""
 
 msgid "Zap mode"
 msgstr "Zapmodus"

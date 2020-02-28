@@ -40,7 +40,8 @@ from ServiceReference import ServiceReference, isPlayableForCur
 
 from Tools import Notifications, ASCIItranslit
 from Tools.Directories import fileExists, getRecordingFilename, moveFiles
-from Tools.Command import command
+from Tools.KeyBindings import getKeyDescription
+from Components.Console import Console
 
 from enigma import eTimer, eServiceCenter, eDVBServicePMTHandler, iServiceInformation, iPlayableService, eServiceReference, eEPGCache, eActionMap, getDesktop, eDVBDB
 
@@ -109,7 +110,7 @@ def saveResumePoints():
 	global resumePointCache, resumePointCacheLast
 	import cPickle
 	try:
-		f = open('/home/root/resumepoints.pkl', 'wb')
+		f = open('/etc/enigma2/resumepoints.pkl', 'wb')
 		cPickle.dump(resumePointCache, f, cPickle.HIGHEST_PROTOCOL)
 		f.close()
 	except Exception as ex:
@@ -119,7 +120,7 @@ def saveResumePoints():
 def loadResumePoints():
 	import cPickle
 	try:
-		return cPickle.load(open('/home/root/resumepoints.pkl', 'rb'))
+		return cPickle.load(open('/etc/enigma2/resumepoints.pkl', 'rb'))
 	except Exception as ex:
 		print("[InfoBarGenerics] Failed to load resumepoints:", ex)
 		return {}
@@ -184,6 +185,18 @@ class InfoBarDish:
 	def __init__(self):
 		self.dishDialog = self.session.instantiateDialog(Dish)
 
+class InfoBarLongKeyDetection:
+	def __init__(self):
+		eActionMap.getInstance().bindAction('', -maxint -1, self.detection) #highest prio
+		self.LongButtonPressed = False
+
+	#this function is called on every keypress!
+	def detection(self, key, flag):
+		if flag == 3:
+			self.LongButtonPressed = True
+		elif flag == 0:
+			self.LongButtonPressed = False
+
 class InfoBarUnhandledKey:
 	def __init__(self):
 		self.unhandledKeyDialog = self.session.instantiateDialog(UnhandledKey)
@@ -199,7 +212,13 @@ class InfoBarUnhandledKey:
 
 	#this function is called on every keypress!
 	def actionA(self, key, flag):
+		try:
+			print('[InfoBarGenerics] KEY: %s %s' % (key,getKeyDescription(key)[0]))
+		except:
+			print('[InfoBarGenerics] KEY: %s' % key)
 		self.unhandledKeyDialog.hide()
+		if self.closeSIB(key) and self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
+			self.secondInfoBarScreen.hide()
 		if flag != 4:
 			if self.flags & (1<<1):
 				self.flags = self.uflags = 0
@@ -207,6 +226,12 @@ class InfoBarUnhandledKey:
 			if flag == 1: # break
 				self.checkUnusedTimer.start(0, True)
 		return 0
+
+	def closeSIB(self, key):
+		if key >= 12 and key not in (114, 115, 352, 103, 108, 402, 403, 407, 412):
+			return True
+		else:
+			return False
 
 	#this function is only called when no other action has handled this key
 	def actionB(self, key, flag):
@@ -435,10 +460,13 @@ class InfoBarShowHide(InfoBarScreenSaver):
 			self.toggleShow()
 
 	def toggleShow(self):
-		if self.__state == self.STATE_HIDDEN:
-			self.showFirstInfoBar()
-		else:
-			self.showSecondInfoBar()
+		if not hasattr(self, "LongButtonPressed"):
+			self.LongButtonPressed = False
+		if not self.LongButtonPressed:
+			if self.__state == self.STATE_HIDDEN:
+				self.showFirstInfoBar()
+			else:
+				self.showSecondInfoBar()
 
 	def showSecondInfoBar(self):
 		if isStandardInfoBar(self) and config.usage.show_second_infobar.value == "EPG":
@@ -585,7 +613,7 @@ class NumberZap(Screen):
 
 	def keyBlue(self):
 		if config.misc.zapkey_delay.value > 0:
-			self.Timer.start(1000*config.misc.zapkey_delay.value, True)
+			self.Timer.start(int(1000*config.misc.zapkey_delay.value), True)
 		if self.searchNumber:
 			if self.startBouquet == self.bouquet:
 				self.service, self.bouquet = self.searchNumber(int(self["number"].getText()), firstBouquetOnly = True)
@@ -596,7 +624,7 @@ class NumberZap(Screen):
 
 	def keyNumberGlobal(self, number):
 		if config.misc.zapkey_delay.value > 0:
-			self.Timer.start(1000*config.misc.zapkey_delay.value, True)
+			self.Timer.start(int(1000*config.misc.zapkey_delay.value), True)
 		self.numberString += str(number)
 		self["number"].text = self["number_summary"].text = self.numberString
 
@@ -643,7 +671,7 @@ class NumberZap(Screen):
 		self.Timer = eTimer()
 		self.Timer.callback.append(self.keyOK)
 		if config.misc.zapkey_delay.value > 0:
-			self.Timer.start(1000*config.misc.zapkey_delay.value, True)
+			self.Timer.start(int(1000*config.misc.zapkey_delay.value), True)
 
 class InfoBarNumberZap:
 	""" Handles an initial number for NumberZapping """
@@ -1163,12 +1191,14 @@ class InfoBarEPG:
 			self.serviceSel.selectService(service)
 
 	def closed(self, ret=False):
+		if not self.dlg_stack:
+			return
 		closedScreen = self.dlg_stack.pop()
 		if self.bouquetSel and closedScreen == self.bouquetSel:
 			self.bouquetSel = None
 		elif self.eventView and closedScreen == self.eventView:
 			self.eventView = None
-		if ret:
+		if ret == True or ret == 'close':
 			dlgs=len(self.dlg_stack)
 			if dlgs > 0:
 				self.dlg_stack[dlgs-1].close(dlgs > 1)
@@ -1250,7 +1280,11 @@ class InfoBarEPG:
 			answer[1]()
 
 	def openSimilarList(self, eventid, refstr):
-		self.session.open(EPGSelection, refstr, None, eventid)
+		id = self.event
+		refstr = str(self.currentService)
+		if id is not None:
+			self.hide()
+			self.session.open(EPGSelection, refstr, None, id)
 
 	def getNowNext(self):
 		epglist = [ ]
@@ -2043,7 +2077,7 @@ class InfoBarTimeshift():
 			return
 
 		if ts.isTimeshiftActive():
-			print("[InfoBarGenerics]  activate timeshift called - but shouldn't this be a normal pause?")
+			print("[InfoBarGenerics] activate timeshift called - but shouldn't this be a normal pause?")
 			self.pauseService()
 		else:
 			print("[InfoBarGenerics] play, ...")
@@ -3829,11 +3863,11 @@ class InfoBarAspectSelection:
 				if tdmod[1] == "off":
 					config.av.threedmode.value = "off"
 					config.av.threedmode.save()
-					command('killall 3d-mode')
+					Console().ePopen('killall 3d-mode')
 				elif tdmod[1] == "sbs":
 					config.av.threedmode.value = "sbs"
 					config.av.threedmode.save()
-					command('3d-mode 40 &')
+					Console().ePopen('3d-mode 40 &')
 				elif tdmod[1] == "tab":
 					config.av.threedmode.value = "tab"
 					config.av.threedmode.save()

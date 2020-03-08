@@ -1280,11 +1280,7 @@ class InfoBarEPG:
 			answer[1]()
 
 	def openSimilarList(self, eventid, refstr):
-		id = self.event
-		refstr = str(self.currentService)
-		if id is not None:
-			self.hide()
-			self.session.open(EPGSelection, refstr, None, id)
+		self.session.open(EPGSelection, refstr, None, eventid)
 
 	def getNowNext(self):
 		epglist = [ ]

@@ -1317,6 +1317,22 @@ void eEPGCache::thread()
 
 static const char* EPGDAT_IN_FLASH = "/epg.dat";
 
+void eEPGCache::restartAllChannelsEPG()
+{
+	eDebug("[eEPGCache] restart All Channels EPG");
+	singleLock m(channel_map_lock);
+	for (ChannelMap::const_iterator it(m_knownChannels.begin()); it != m_knownChannels.end(); ++it)
+		it->second->startEPG();
+}
+
+void eEPGCache::abortAllChannelsEPG()
+{
+	eDebug("[eEPGCache] abort All Channels EPG");
+	singleLock m(channel_map_lock);
+	for (ChannelMap::const_iterator it(m_knownChannels.begin()); it != m_knownChannels.end(); ++it)
+		it->second->abortEPG();
+}
+
 void eEPGCache::load()
 {
 	if (m_filename.empty())
@@ -1357,6 +1373,7 @@ void eEPGCache::load()
 		}
 		char text1[13];
 		ret = fread( text1, 13, 1, f);
+		abortAllChannelsEPG();
 		if ( !memcmp( text1, "ENIGMA_EPG_V7", 13) )
 		{
 			singleLock s(cache_lock);
@@ -1434,6 +1451,7 @@ void eEPGCache::load()
 		posix_fadvise(fileno(f), 0, 0, POSIX_FADV_DONTNEED);
 		fclose(f);
 		// We got this far, so the EPG file is okay.
+		restartAllChannelsEPG();
 		if (renameResult == 0)
 		{
 			renameResult = rename(EPGDATX, EPGDAT);
@@ -1494,7 +1512,7 @@ void eEPGCache::save()
 		fclose(f);
 		return;
 	}
-
+	abortAllChannelsEPG();
 	free(buf);
 
 	int cnt=0;
@@ -1554,6 +1572,7 @@ void eEPGCache::save()
 	fseek(f, sizeof(int), SEEK_SET);
 	fwrite("ENIGMA_EPG_V7", 13, 1, f);
 	fclose(f);
+	restartAllChannelsEPG();
 }
 
 eEPGCache::channel_data::channel_data(eEPGCache *ml)
@@ -2405,6 +2424,7 @@ void eEPGCache::channel_data::startChannel()
 
 void eEPGCache::channel_data::abortEPG()
 {
+	eDebug("[eEPGCache] stop caching events(%ld)", ::time(0));
 	for (unsigned int i=0; i < sizeof(seenSections)/sizeof(tidMap); ++i)
 	{
 		seenSections[i].clear();

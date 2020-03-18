@@ -136,3 +136,6 @@ SystemInfo["NCamIsActive"] = SystemInfo["NCamInstalled"] and fileExists("/tmp/.n
 SystemInfo["OpenVisionModule"] = fileCheck("/proc/stb/info/openvision")
 SystemInfo["7segment"] = getDisplayType() == "7segment"
 SystemInfo["CanFadeOut"] = False
+SystemInfo["HasH9SD"] = False
+SystemInfo["HasSDnomount"] = False
+SystemInfo["canBackupEMC"] = False

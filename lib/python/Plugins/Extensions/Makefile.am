@@ -6,6 +6,10 @@ if HAVE_LIBDDVD
 SUBDIRS += DVDPlayer
 endif
 
+if ENABLE_ADB_BOX
+SUBDIRS += ADBVFD
+endif
+
 if ENABLE_TF7700
 SUBDIRS += TopfieldVFD
 endif

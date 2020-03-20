@@ -36,6 +36,9 @@ class About(Screen):
 		if fileExists("/proc/stb/info/sn"):
 			hwserial = open("/proc/stb/info/sn", "r").read().strip()
 			AboutText += _("Hardware serial: ") + hwserial + "\n"
+		if fileExists("/proc/stb/info/model_name"):
+			resellername = open("/proc/stb/info/model_name", "r").read().strip()
+			AboutText += _("Reseller name: ") + resellername + "\n"
 
 		AboutText += _("Brand/Meta: ") + about.getHardwareBrand() + "\n"
 

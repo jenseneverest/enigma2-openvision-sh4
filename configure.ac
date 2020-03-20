@@ -681,6 +681,8 @@ lib/python/Plugins/SystemPlugins/OSDPositionSetup/Makefile
 lib/python/Plugins/SystemPlugins/OSD3DSetup/Makefile
 lib/python/Plugins/SystemPlugins/HdmiCEC/Makefile
 lib/python/Plugins/SystemPlugins/VideoClippingSetup/Makefile
+lib/python/Plugins/Extensions/ADBVFD/Makefile
+lib/python/Plugins/Extensions/ADBVFD/meta/Makefile
 lib/python/Plugins/Extensions/CuberevoVFD/Makefile
 lib/python/Plugins/Extensions/CuberevoVFD/meta/Makefile
 lib/python/Plugins/Extensions/CutListEditor/Makefile

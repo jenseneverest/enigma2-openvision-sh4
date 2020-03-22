@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-20 04:16+0330\n"
-"PO-Revision-Date: 2020-03-04 22:12+0100\n"
+"POT-Creation-Date: 2020-03-22 18:51+0430\n"
+"PO-Revision-Date: 2020-03-21 09:12+0100\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
 "Language: fr\n"
@@ -4169,7 +4169,7 @@ msgstr "Affichage et interface utilisateur"
 
 #, fuzzy
 msgid "Display brightness"
-msgstr "Luminosité"
+msgstr "Thème/Skin de l’affichage"
 
 msgid "Display message before playing next movie"
 msgstr "Afficher un message avant de lancer le prochain film"
@@ -4485,7 +4485,7 @@ msgstr "ERREUR - échec lors de la recherche (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr ""
+msgstr "ERREUR lors du téléchargement du fichier %s"
 
 msgid "East"
 msgstr "Est"
@@ -4601,9 +4601,8 @@ msgstr "Activer OK pour la sélection d'une chaîne"
 msgid "Enable OpenTV EPG"
 msgstr "Activer EPG OpenTV"
 
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Lecteur DVD"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Activer EPG ViaSat"
@@ -4836,9 +4835,9 @@ msgstr "Eritrée"
 msgid "Error"
 msgstr "Erreur"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Error %s"
-msgstr "Erreur"
+msgstr "Erreur %s"
 
 msgid "Error code"
 msgstr "Code d'erreur"
@@ -4873,13 +4872,10 @@ msgid "Error stop stream!"
 msgstr "Erreur arrêt du stream (diffusion)!"
 
 msgid "Error when writing epg.dat on server"
-msgstr ""
+msgstr "Erreur lors de l’écriture du epg.dat sur le serveur"
 
-#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr ""
-"Erreur lors de la récupération des informations de programmation de repli\n"
-"%s"
+msgstr "Erreur lors de la récupération du epg.dat sur le serveur"
 
 #, python-format
 msgid ""
@@ -4889,11 +4885,8 @@ msgstr ""
 "Erreur lors de la récupération des informations de programmation de repli\n"
 "%s"
 
-#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
-msgstr ""
-"Erreur lors de la récupération des informations de programmation de repli\n"
-"%s"
+msgstr "Erreur lors de la localisation du epg.dat sur le serveur"
 
 #, python-format
 msgid ""
@@ -5460,9 +5453,8 @@ msgstr "De:"
 msgid "Front panel display configuration"
 msgstr "Configuration de la liste de films"
 
-#, fuzzy
 msgid "Front panel display configuration for adb_box"
-msgstr "Configuration de la liste de films"
+msgstr ""
 
 #, python-format
 msgid "Frontprocessor version: %s"
@@ -7500,7 +7492,7 @@ msgid "No displayable files on this medium found!"
 msgstr "Aucun fichier affichable trouvé sur ce support!"
 
 msgid "No epg.dat file found server"
-msgstr ""
+msgstr "Pas de epg.dat trouvé sur le serveur"
 
 msgid "No event info found, recording indefinitely."
 msgstr "Aucune information sur l’événement trouvée, enregistrement indéfini."
@@ -7899,6 +7891,15 @@ msgstr ""
 #, fuzzy
 msgid "OpenVPN setup"
 msgstr "Ouvrir la configuration du tuner "
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr "Opkg"
@@ -9203,9 +9204,8 @@ msgstr "Type de média requis:"
 msgid "Rereading partition table"
 msgstr "Relecture de la table de partition"
 
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Renommer"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Réservé"
@@ -10670,11 +10670,11 @@ msgstr "Afficher les picons dans l'affichage avant"
 
 #, fuzzy
 msgid "Show on display"
-msgstr "Afficher les picons dans l'affichage avant"
+msgstr "Allumage de l’affichage"
 
 #, fuzzy
 msgid "Show on display in standby"
-msgstr "Afficher les picons dans l'affichage avant"
+msgstr "Éteindre lorsqu'il est en veille"
 
 #, fuzzy
 msgid "Show or hide the extended description, (skin dependant)."
@@ -11189,7 +11189,7 @@ msgstr "LED en veille"
 
 #, fuzzy
 msgid "Standby LED brightness"
-msgstr "Luminosité"
+msgstr "LED en veille"
 
 #, fuzzy
 msgid "Standby LED colour"
@@ -11571,6 +11571,16 @@ msgstr "Basculer vers la chaîne suivante"
 msgid "Switch channel up"
 msgstr "Basculer vers la chaîne précédente"
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Voir liste extensions affichages/interface utilisateur disponibles."
+
 msgid "Switch to TV mode"
 msgstr "Basculer en mode TV"
 
@@ -11681,7 +11691,7 @@ msgstr ""
 "\n"
 "Traducteur: Pr2\n"
 "Support: www.openpli.org\n"
-"Dernière MAJ: 04-03-2020"
+"Dernière MAJ: 21-03-2020"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "Fichier TS trop grand pour le niveau 1 ISO9660!"
@@ -12422,7 +12432,6 @@ msgstr "PauseDirect impossible!"
 msgid "Timezone"
 msgstr "Fuseau horaire"
 
-#, fuzzy
 msgid "Timezone area"
 msgstr "Fuseau horaire"
 
@@ -13703,6 +13712,20 @@ msgstr "Avec erreurs:"
 msgid "With popup"
 msgstr "Avec le popup"
 
+#, fuzzy
+msgid "With this option you can switch off the display during operation."
+msgstr "Cette option vous permet d'éteindre l'affichage avant."
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+#, fuzzy
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr "Cette option vous permet d'éteindre l'affichage avant."
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
+
 msgid "Without popup"
 msgstr "Sans le popup"
 
@@ -14000,7 +14023,7 @@ msgstr "Votre récepteur va redémarrer après avoir appuyé sur OK de votre té
 
 #, fuzzy
 msgid "Your timezone in the area."
-msgstr "Vous pouvez annuler le retrait."
+msgstr "Sélectionnez la fuseau horaire ou la région."
 
 msgid ""
 "Your wireless LAN internet connection could not be started!\n"
@@ -15361,6 +15384,9 @@ msgid "vertical"
 msgstr "Verticale"
 
 msgid "vfddisplay.png"
+msgstr ""
+
+msgid "violet"
 msgstr ""
 
 msgid "vitamin"

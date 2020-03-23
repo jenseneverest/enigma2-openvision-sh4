@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-22 18:51+0430\n"
-"PO-Revision-Date: 2020-03-21 09:12+0100\n"
+"POT-Creation-Date: 2020-03-23 14:41+0430\n"
+"PO-Revision-Date: 2020-03-22 22:42+0100\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
 "Language: fr\n"
@@ -7893,13 +7893,13 @@ msgid "OpenVPN setup"
 msgstr "Ouvrir la configuration du tuner "
 
 msgid "Operating LED status in deep standby mode"
-msgstr ""
+msgstr "État de la LED de fonctionnement en veille profonde"
 
 msgid "Operating LED status in standby mode"
-msgstr ""
+msgstr "État de la LED de fonctionnement en veille"
 
 msgid "Operating LED status while running."
-msgstr ""
+msgstr "État de la LED de fonctionnement en activité"
 
 msgid "Opkg"
 msgstr "Opkg"
@@ -10038,6 +10038,9 @@ msgstr "Sélectionnez le satellite que vous voulez configurer. Lorsque ce satell
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Sélectionnez le satellite que reçoit votre antenne. Si vous n’êtes pas certains choisissez ‘automatique’ et le receveur va essayer de déterminer ceci pour vous."
 
+msgid "Select the time zone within the area or region."
+msgstr "Sélectionnez le fuseau horaire dans la zone ou la région."
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Sélectionnez le tuner qui contrôle l’antenne motorisée."
 
@@ -10105,6 +10108,9 @@ msgstr "Sélectionnez votre opérateur, et appuyez sur OK pour lancer la recherc
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Sélectionnez votre région. Si non disponible changer ‘Pays’ à ‘tous’ et sélectionnez une des alternatives par défaut."
+
+msgid "Select your time zone area or region."
+msgstr "Sélectionnez votre fuseau horaire ou région."
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Sélectionner satellites 1 (USALS)"
@@ -10405,10 +10411,6 @@ msgstr "Configurer votre positionneur"
 msgid "Setup your satellite equipment"
 msgstr "Configurer votre équipement satellite"
 
-#, fuzzy
-msgid "Setup your timezone area."
-msgstr "Configurer votre positionneur"
-
 msgid "Seychelles"
 msgstr "Seychelles"
 
@@ -10654,7 +10656,7 @@ msgstr "Afficher les picons dans l'affichage avant"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Afficher les picons dans l'affichage avant"
+msgstr "Éteindre l’écran en mode veille"
 
 #, fuzzy
 msgid "Show on VFD"
@@ -10666,7 +10668,7 @@ msgstr "Afficher les picons dans l'affichage avant"
 
 #, fuzzy
 msgid "Show on VFD display in standby"
-msgstr "Afficher les picons dans l'affichage avant"
+msgstr "Éteindre l’écran en mode veille"
 
 #, fuzzy
 msgid "Show on display"
@@ -10674,7 +10676,7 @@ msgstr "Allumage de l’affichage"
 
 #, fuzzy
 msgid "Show on display in standby"
-msgstr "Éteindre lorsqu'il est en veille"
+msgstr "Éteindre l’écran en mode veille"
 
 #, fuzzy
 msgid "Show or hide the extended description, (skin dependant)."
@@ -11572,14 +11574,13 @@ msgid "Switch channel up"
 msgstr "Basculer vers la chaîne précédente"
 
 msgid "Switch off the display during Standby Mode"
-msgstr ""
+msgstr "Éteindre l’écran en mode veille"
 
 msgid "Switch off the display during Suspend Mode"
-msgstr ""
+msgstr "Eteindre l’affichage pendant la veille profonde"
 
-#, fuzzy
 msgid "Switch off the display during operation."
-msgstr "Voir liste extensions affichages/interface utilisateur disponibles."
+msgstr "Eteindre l’affichage en fonctionnement."
 
 msgid "Switch to TV mode"
 msgstr "Basculer en mode TV"
@@ -11691,7 +11692,7 @@ msgstr ""
 "\n"
 "Traducteur: Pr2\n"
 "Support: www.openpli.org\n"
-"Dernière MAJ: 21-03-2020"
+"Dernière MAJ: 22-03-2020"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "Fichier TS trop grand pour le niveau 1 ISO9660!"
@@ -12359,6 +12360,12 @@ msgstr ""
 msgid "Time update in minutes:"
 msgstr ""
 
+msgid "Time zone"
+msgstr "Fuseau horaire"
+
+msgid "Time zone area"
+msgstr "Zone horaire"
+
 msgid "Timer"
 msgstr "Programmation"
 
@@ -12428,12 +12435,6 @@ msgstr "Emplacement PauseDirect"
 
 msgid "Timeshift not possible!"
 msgstr "PauseDirect impossible!"
-
-msgid "Timezone"
-msgstr "Fuseau horaire"
-
-msgid "Timezone area"
-msgstr "Fuseau horaire"
 
 msgid "Timor-Leste"
 msgstr "Timor Oriental"
@@ -13712,19 +13713,17 @@ msgstr "Avec erreurs:"
 msgid "With popup"
 msgstr "Avec le popup"
 
-#, fuzzy
 msgid "With this option you can switch off the display during operation."
-msgstr "Cette option vous permet d'éteindre l'affichage avant."
+msgstr "Avec cette option, vous pouvez éteindre l’affichage en fonctionnement."
 
 msgid "With this option you can switch off the display in Deep Standby Mode."
-msgstr ""
+msgstr "Avec cette option vous pouvez désactiver l’écran en mode veille profonde."
 
-#, fuzzy
 msgid "With this option you can switch off the display in Standby Mode."
-msgstr "Cette option vous permet d'éteindre l'affichage avant."
+msgstr "Avec cette option, vous pouvez désactiver l’affichage en mode veille."
 
 msgid "With this option you can switch the LED color or deactivate the LED."
-msgstr ""
+msgstr "Avec cette option, vous pouvez changer la couleur LED ou désactiver la LED."
 
 msgid "Without popup"
 msgstr "Sans le popup"
@@ -14020,10 +14019,6 @@ msgstr "Votre récepteur va se mettre en veille faute d'activité."
 
 msgid "Your receiver will restart after pressing OK on your remote control."
 msgstr "Votre récepteur va redémarrer après avoir appuyé sur OK de votre télécommande."
-
-#, fuzzy
-msgid "Your timezone in the area."
-msgstr "Sélectionnez la fuseau horaire ou la région."
 
 msgid ""
 "Your wireless LAN internet connection could not be started!\n"
@@ -15387,7 +15382,7 @@ msgid "vfddisplay.png"
 msgstr ""
 
 msgid "violet"
-msgstr ""
+msgstr "violet"
 
 msgid "vitamin"
 msgstr ""

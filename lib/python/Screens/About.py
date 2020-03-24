@@ -267,6 +267,7 @@ class Geolocation(Screen):
 			GeolocationText +=  _("Longitude: ") + str(float(longitude)) + "\n"
 
 		self["AboutScrollLabel"] = ScrollLabel(GeolocationText)
+		self["key_red"] = Button(_("Close"))
 
 		self["actions"] = ActionMap(["ColorActions", "SetupActions", "DirectionActions"],
 			{
@@ -275,7 +276,7 @@ class Geolocation(Screen):
 				"up": self["AboutScrollLabel"].pageUp,
 				"down": self["AboutScrollLabel"].pageDown
 			})
-		
+
 class Devices(Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
@@ -368,7 +369,7 @@ class Devices(Screen):
 			if SystemInfo["MultibootStartupDevice"]:
 				if not search('sd[a-z][1-9]', device):
 					continue
-			else:	
+			else:
 				if not search('sd[a-z][1-9]', device) and not search('mmcblk[0-9]p[1-9]', device):
 					continue
 			if SystemInfo["HasMMC"] and pathExists("/dev/sda4") and search('sd[a][1-4]', device):
@@ -787,7 +788,7 @@ class SystemMemoryInfo(Screen):
 		self.AboutText += _("Free:") + "\t" + RamFree + "\n\n"
 
 		self["AboutScrollLabel"].setText(self.AboutText)
-		self["actions"].setEnabled(True)			
+		self["actions"].setEnabled(True)
 
 class TranslationInfo(Screen):
 	def __init__(self, session):

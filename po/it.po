@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi-enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-23 14:41+0430\n"
+"POT-Creation-Date: 2020-03-27 15:48+0430\n"
 "PO-Revision-Date: 2018-05-22 13:54+0200\n"
 "Last-Translator: Gringo <openpli@tiscali.it>\n"
 "Language-Team: www.linsat.net <spaeleus@croci.org>\n"
@@ -1149,7 +1149,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Predefinito"
+msgstr "Ripristinare i valori"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1172,7 +1172,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Predefinito"
+msgstr "Ripristinare i valori"
 
 msgid "6"
 msgstr "6"
@@ -1941,7 +1941,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Elenco dei sottocanali..."
+msgstr "Rapporto d'aspetto"
 
 msgid "Aspect ratio"
 msgstr "Rapporto d'aspetto"
@@ -2079,7 +2079,7 @@ msgstr "Nessuna sospensione"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Non disponibile"
+msgstr "Sintonizzatore non disponibile."
 
 msgid "Autoinstalling Completed"
 msgstr "Installazione completata"
@@ -2816,6 +2816,10 @@ msgid "Circular right"
 msgstr "Circolare a destra"
 
 #, fuzzy
+msgid "City: "
+msgstr "Capacità: "
+
+#, fuzzy
 msgid "Clean network trash cans"
 msgstr "Impossibile spostare nel Cestino"
 
@@ -3056,12 +3060,6 @@ msgstr "Impostare se il controllo sul collegamento HDMI EDID (Extended Display I
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr "Impostare se visualizzare i sottotitoli in carattere normale, grassetto, inclinato o grassetto inclinato."
-
-msgid "Configure if you need to swap the EN300743 mapping table."
-msgstr ""
-
-msgid "Configure if you need to swap the EN300743 palette table."
-msgstr ""
 
 msgid "Configure interface"
 msgstr "Impostare l'interfaccia"
@@ -3430,6 +3428,10 @@ msgstr "Consultare le specifiche del motore per inserire queste informazioni, op
 msgid "Content does not fit on DVD!"
 msgstr "I contenuti superano la capacità del DVD!"
 
+#, fuzzy
+msgid "Continent: "
+msgstr "Continuare"
+
 msgid "Continue"
 msgstr "Continuare"
 
@@ -3495,6 +3497,10 @@ msgstr "Informazioni sulla gestione del software"
 msgid "Country for EPG event rating information"
 msgstr "Consultare la scheda tecnica del dispositivo SCR per queste informazioni."
 
+#, fuzzy
+msgid "Country: "
+msgstr "Paese"
+
 msgid "Cover dashed flickering line for this service"
 msgstr "Far sparire le linee tratteggiate tremolanti ai bordi del canale"
 
@@ -3549,6 +3555,10 @@ msgstr ""
 
 msgid "Curacao"
 msgstr "Curacao"
+
+#, fuzzy
+msgid "Currency: "
+msgstr "Dispositivo attuale: "
 
 #, fuzzy
 msgid "Current Affairs"
@@ -4603,8 +4613,9 @@ msgstr "Abilitare il tasto OK per la selezione del canale"
 msgid "Enable OpenTV EPG"
 msgstr "Abilitare OpenTV EPG"
 
+#, fuzzy
 msgid "Enable VFD display"
-msgstr ""
+msgstr "Abilitato"
 
 msgid "Enable ViaSat EPG"
 msgstr "Abilitare l'EPG ViaSat"
@@ -5458,7 +5469,7 @@ msgstr "Da:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Impostazioni dell'elenco dei video"
+msgstr "Schermata di accensione"
 
 msgid "Front panel display configuration for adb_box"
 msgstr ""
@@ -5538,6 +5549,14 @@ msgstr ""
 
 msgid "Genre"
 msgstr "Genere"
+
+#, fuzzy
+msgid "Geolocation"
+msgstr "Selezione EPG"
+
+#, fuzzy
+msgid "Geolocation information"
+msgstr "Informazioni"
 
 msgid "Georgia"
 msgstr "Georgia"
@@ -5989,6 +6008,9 @@ msgstr "File ISO troppo grande per questo filesystem!"
 
 msgid "ISO path"
 msgstr "Percorso ISO"
+
+msgid "ISP: "
+msgstr ""
 
 msgid "Iceland"
 msgstr "Islanda"
@@ -6486,8 +6508,9 @@ msgstr "Luminosità"
 msgid "LED configuration"
 msgstr "Impostazioni"
 
+#, fuzzy
 msgid "LED control"
-msgstr ""
+msgstr "Normale"
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -6501,7 +6524,7 @@ msgstr "Display"
 
 #, fuzzy
 msgid "LED display configuration"
-msgstr "Impostazioni dell'elenco dei video"
+msgstr "Uscire dall'impostazione del server dei nomi (DNS)"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
@@ -6548,6 +6571,10 @@ msgid "Latest update log"
 msgstr "Ultimo registro di aggiornamento"
 
 msgid "Latitude"
+msgstr "Latitudine"
+
+#, fuzzy
+msgid "Latitude: "
 msgstr "Latitudine"
 
 msgid "Latvia"
@@ -6722,6 +6749,10 @@ msgid "Long key press"
 msgstr "Pressione prolungata tasto"
 
 msgid "Longitude"
+msgstr "Longitudine"
+
+#, fuzzy
+msgid "Longitude: "
 msgstr "Longitudine"
 
 msgid "Loop through from"
@@ -6984,6 +7015,9 @@ msgstr ""
 msgid "Missing "
 msgstr "Mancante "
 
+msgid "Mobile: "
+msgstr ""
+
 msgid "Mode"
 msgstr "Modalità"
 
@@ -7209,8 +7243,9 @@ msgstr "Mozambico"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
+#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Downmix audio multicanale"
+msgstr "Multicanale PCM"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Abilitare la selezione bouquet nella Multi EPG"
@@ -7906,11 +7941,13 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Accedere alla configurazione del sintonizzatore "
 
+#, fuzzy
 msgid "Operating LED status in deep standby mode"
-msgstr ""
+msgstr "Accendere il LED durante lo standby."
 
+#, fuzzy
 msgid "Operating LED status in standby mode"
-msgstr ""
+msgstr "Spegnere se messo in sospensione"
 
 msgid "Operating LED status while running."
 msgstr ""
@@ -8523,14 +8560,13 @@ msgstr "Registro della configurazione del motore"
 
 #, fuzzy
 msgid "Power"
-msgstr "Accendere LED"
+msgstr "Menu Accensione"
 
 msgid "Power LED"
-msgstr "Accendere LED"
+msgstr ""
 
-#, fuzzy
 msgid "Power LED colour"
-msgstr "Accendere LED"
+msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Gestione dell'alimentazione. Consultare il manuale del ricevitore per ulteriori informazioni."
@@ -8793,6 +8829,12 @@ msgstr "Provider"
 #, fuzzy
 msgid "Providers: "
 msgstr "Provider"
+
+msgid "Proxy: "
+msgstr ""
+
+msgid "Public IP: "
+msgstr ""
 
 msgid "Puerto Rico"
 msgstr "Porto Rico"
@@ -9216,8 +9258,9 @@ msgstr "Tipo di supporto richiesto:"
 msgid "Rereading partition table"
 msgstr "Rilettura della tabella delle partizioni in corso..."
 
+#, fuzzy
 msgid "Reseller name: "
-msgstr ""
+msgstr "Rinominare"
 
 msgid "Reserved"
 msgstr "Riservato"
@@ -10113,7 +10156,7 @@ msgstr "Selezionare il paese. Se non è presente nell'elenco selezionare \"Tutti
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Selezionare il video"
+msgstr "Selezionare una voce del menu"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Selezionare il provider e la regione. Se non è presente nell'elenco è necessario selezionare uno degli altri \"Tipi di scansione dei canali\"."
@@ -10541,7 +10584,7 @@ msgstr "Mostrare il numero del canale nella selezione dei canali"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Mostrare la lista di selezione dei canali in colonne a larghezza fissa"
+msgstr "Mostrare la guida"
 
 msgid "Show columns"
 msgstr "Mostrare la lista di selezione dei canali in colonne a larghezza fissa"
@@ -10672,11 +10715,11 @@ msgstr "Mostrare i Picon sul display"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Mostrare i Picon sul display"
+msgstr "Spegnere se messo in sospensione"
 
 #, fuzzy
 msgid "Show on VFD"
-msgstr "Mostrare la lista di selezione dei canali in colonne a larghezza fissa"
+msgstr "Mostrare la guida"
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -10684,7 +10727,7 @@ msgstr "Mostrare i Picon sul display"
 
 #, fuzzy
 msgid "Show on VFD display in standby"
-msgstr "Mostrare i Picon sul display"
+msgstr "Mostrare i simboli del canale codificato"
 
 #, fuzzy
 msgid "Show on display"
@@ -11309,6 +11352,10 @@ msgstr "Mettere il ricevitore in sospensione dopo l'accensione."
 msgid "Startup to Standby"
 msgstr "Accensione in stato di sospensione"
 
+#, fuzzy
+msgid "State: "
+msgstr "Bitrate:"
+
 msgid "Status"
 msgstr ""
 
@@ -11547,12 +11594,6 @@ msgstr "Suriname"
 
 msgid "Svalbard and Jan Mayen"
 msgstr "Svalbard e Jan Mayen"
-
-msgid "Swap EN300743 mapping table"
-msgstr ""
-
-msgid "Swap EN300743 palette table"
-msgstr ""
 
 msgid "Swap PiP"
 msgstr "Scambiare il canale PIP"
@@ -12463,6 +12504,10 @@ msgstr "Percorso dei timeshift"
 msgid "Timeshift not possible!"
 msgstr "Timeshift impossibile!"
 
+#, fuzzy
+msgid "Timezone: "
+msgstr "Fuso orario"
+
 msgid "Timor-Leste"
 msgstr "Timor Est"
 
@@ -12873,8 +12918,9 @@ msgstr "Decomprimi Immagine"
 msgid "Update"
 msgstr "Aggiornare"
 
+#, fuzzy
 msgid "Update Date/Time"
-msgstr ""
+msgstr "Salvataggio non riuscito!"
 
 msgid "Update and ask to reboot"
 msgstr "Aggiornare e al termine chiedere se riavviare"
@@ -13125,7 +13171,7 @@ msgstr "Lettore DVD"
 
 #, fuzzy
 msgid "VFD display configuration"
-msgstr "Impostazioni dell'elenco dei video"
+msgstr "Configurazione manuale"
 
 msgid "VFD display configuration for Fortis HS742X"
 msgstr ""
@@ -14324,11 +14370,11 @@ msgstr "Modificare il timer"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Informazioni canale"
+msgstr "Canale"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Numero e Picon del canale"
+msgstr "Canale"
 
 #, fuzzy
 msgid "channel number and name"
@@ -15317,11 +15363,13 @@ msgstr "Questo canale è protetto con il PIN del Controllo genitori"
 msgid "time"
 msgstr "Ora fine"
 
+#, fuzzy
 msgid "time (with seconds)"
-msgstr ""
+msgstr "Intervallo tra le immagini (sec.)"
 
+#, fuzzy
 msgid "time (without seconds)"
-msgstr ""
+msgstr "Intervallo tra le immagini (sec.)"
 
 #, fuzzy
 msgid "time and date"
@@ -15413,8 +15461,9 @@ msgstr ""
 msgid "violet"
 msgstr ""
 
+#, fuzzy
 msgid "vitamin"
-msgstr ""
+msgstr "Trasmettere"
 
 msgid "wait for ci..."
 msgstr "In attesa della CI..."

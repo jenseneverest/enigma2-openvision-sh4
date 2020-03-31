@@ -754,6 +754,5 @@ def Plugins(**kwargs):
 			name = _("fs9000VFD display"),
 			description = _("VFD configuration for Fortis FS9000/9200"),
 			where = PluginDescriptor.WHERE_PLUGINMENU,
-			icon = _("vfddisplay.png"),
 			fnc = opencfg))
 	return l

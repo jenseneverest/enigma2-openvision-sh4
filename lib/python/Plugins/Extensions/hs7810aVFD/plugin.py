@@ -401,7 +401,6 @@ def Plugins(**kwargs):
 			name = _("hs7810aVFD display"),
 			description = _("LED display configuration for Fortis HS7810A"),
 			where = PluginDescriptor.WHERE_PLUGINMENU,
-			icon = _("leddisplay.png"),
 			fnc = opencfg))
 	return l
 

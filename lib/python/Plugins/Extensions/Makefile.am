@@ -54,5 +54,13 @@ if ENABLE_HS7819
 SUBDIRS += hs7810aVFD
 endif
 
+if ENABLE_SPARK7162
+SUBDIRS += spark7162VFD
+endif
+ 
+if ENABLE_SPARK
+SUBDIRS += sparkVFD
+endif
+
 install_PYTHON =	\
 	__init__.py

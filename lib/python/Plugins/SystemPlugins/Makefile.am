@@ -7,11 +7,11 @@ SUBDIRS = SoftwareManager PositionerSetup Satfinder \
 	VideoEnhancement WirelessLan NetworkWizard SH4OSDAdjustment VFD-Icons
 
 if ENABLE_SPARK
-SUBDIRS += SH4BoosterControl SparkVFDControl
+SUBDIRS += SH4BoosterControl
 endif
 
 if ENABLE_SPARK7162
-SUBDIRS += SparkUnionTunerType SH4BoosterControl SparkVFDControl
+SUBDIRS += SparkUnionTunerType SH4BoosterControl
 endif
 
 install_PYTHON =	\

@@ -1,6 +1,5 @@
 from __future__ import print_function
 from Screens.ChannelSelection import ChannelSelection, BouquetSelector, SilentBouquetSelector
-
 from Components.ActionMap import ActionMap, HelpableActionMap
 from Components.ActionMap import NumberActionMap
 from Components.Harddisk import harddiskmanager
@@ -19,7 +18,6 @@ from Components.VolumeControl import VolumeControl
 from Components.Sources.StaticText import StaticText
 from Screens.EpgSelection import EPGSelection
 from Plugins.Plugin import PluginDescriptor
-
 from Screens.Screen import Screen
 from Screens.ScreenSaver import InfoBarScreenSaver
 from Screens import Standby
@@ -36,24 +34,18 @@ from Screens.SubtitleDisplay import SubtitleDisplay
 from Screens.RdsDisplay import RdsInfoDisplay, RassInteractive
 from Screens.TimeDateInput import TimeDateInput
 from Screens.UnhandledKey import UnhandledKey
-from ServiceReference import ServiceReference, isPlayableForCur
-
+from ServiceReference import ServiceReference, isPlayableForCur, hdmiInServiceRef
 from Tools import Notifications, ASCIItranslit
 from Tools.Directories import fileExists, getRecordingFilename, moveFiles
 from Tools.KeyBindings import getKeyDescription
-from Tools.ServiceReference import hdmiInServiceRef
 from Components.Console import Console
-
 from enigma import eTimer, eServiceCenter, eDVBServicePMTHandler, iServiceInformation, iPlayableService, eServiceReference, eEPGCache, eActionMap, getDesktop, eDVBDB
-
 from time import time, localtime, strftime
 import os
 from bisect import insort
 from sys import maxint
 import itertools, datetime
-
 from RecordTimer import RecordTimerEntry, RecordTimer, findSafeRecordPath
-
 # hack alert!
 from Screens.Menu import MainMenu, mdom
 

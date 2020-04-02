@@ -16,7 +16,6 @@ from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
 import gettext
 #Version 140722.4
-stb = HardwareInfo().get_device_name()
 lang = language.getLanguage()
 environ['LANGUAGE'] = lang[:2]
 gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))

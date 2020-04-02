@@ -18,7 +18,6 @@ import gettext
 import os
 #Version 191204.1
 #TODO: test other display type values
-stb = HardwareInfo().get_device_name()
 lang = language.getLanguage()
 environ['LANGUAGE'] = lang[:2]
 gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))

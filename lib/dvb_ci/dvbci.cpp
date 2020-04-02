@@ -1039,7 +1039,7 @@ void eDVBCIInterfaces::removePMTHandler(eDVBServicePMTHandler *pmthandler)
 				slot->linked_next = 0;
 				slot->user_mapped = false;
 			}
-			eDebug("[CI] (3) slot %d usecount is now %d", slot->getSlotID(), slot->use_count);
+			eDebug("[CI] (3)slot %d usecount is now %d", slot->getSlotID(), slot->use_count);
 			slot = next;
 		}
 		// check if another service is waiting for the CI
@@ -1334,18 +1334,18 @@ void eDVBCISlot::data(int what)
 
 	if (what & eSocketNotifier::Read)
 	{
-		eDebugCI("eSocketNotifier::Read\n");
+		eDebugCI("[CI] eSocketNotifier::Read\n");
 		status = eDataReady;
 		len = ::read(fd, data, len);
 	}
 	else if (what & eSocketNotifier::Write)
 	{
-		eDebugCI("eSocketNotifier::Write\n");
+		eDebugCI("[CI] eSocketNotifier::Write\n");
 		status = eDataWrite;
 	}
 	else if (what & eSocketNotifier::Priority)
 	{
-		eDebugCI("eSocketNotifier::Priority\n");
+		eDebugCI("[CI] eSocketNotifier::Priority\n");
 		status = eDataStatusChanged;
 	}
 	else
@@ -1386,7 +1386,7 @@ void eDVBCISlot::data(int what)
 		{
 			if (status == eDataReady)
 			{
-				eDebugCI("received data - len %d\n", len);
+				eDebugCI("[CI] received data - len %d\n", len);
 				//int s_id = data[0];
 				//int c_id = data[1];
 				//printf("%d: s_id = %d, c_id = %d\n", slot->slot, s_id, c_id);
@@ -1571,32 +1571,32 @@ int eDVBCISlot::getVersion()
 	std::string civersion = eConfigManager::getConfigValue("config.cimisc.civersion");
 	if ( civersion == "legacy" )
 	{
-		eDebug("[DVBCI] getVersion : legacy detected");
+		eDebug("[CI] getVersion : legacy detected");
 		return versionCI;
 	}
 	else if ( civersion == "ciplus1" )
 	{
-		eDebug("[DVBCI] getVersion : ciplus1 detected");
+		eDebug("[CI] getVersion : ciplus1 detected");
 		return versionCIPlus1;
 	}
 	else if ( civersion == "ciplus2" )
 	{
-		eDebug("[DVBCI] getVersion : ciplus2 detected");
+		eDebug("[CI] getVersion : ciplus2 detected");
 		return versionCIPlus2;
 	}
 	else // auto
 	{
-		eDebug("[DVBCI] getVersion : auto detected");
+		eDebug("[CI] getVersion : auto detected");
 
 		char lv1Info[256] = { 0 };
 
 		if (ioctl(fd, 1, lv1Info) < 0) {
-			eDebug("ioctl not supported: assume CI+ version 1");
+			eDebug("[CI] ioctl not supported: assume CI+ version 1");
 			return versionCIPlus1;
 		}
 
 		if (strlen(lv1Info) == 0) {
-			eDebug("no LV1 info: assume CI+ version 1");
+			eDebug("[CI] no LV1 info: assume CI+ version 1");
 			return versionCIPlus1;
 		}
 
@@ -1618,11 +1618,11 @@ int eDVBCISlot::getVersion()
 		}
 
 		if(!compatId) {
-			eDebug("CI CAM detected");
+			eDebug("[CI] CI CAM detected");
 			return versionCI;
 		}
 
-		eDebug("CI+ compatibility ID: %s", compatId);
+		eDebug("[CI] CI+ compatibility ID: %s", compatId);
 
 		char *label, *id, flag = '+';
 		int version = versionCI;
@@ -1639,7 +1639,7 @@ int eDVBCISlot::getVersion()
 						flag = *id++;
 
 					version = strtol(id, 0, 0);
-					eDebug("CI+ %c%d CAM detected", flag, version);
+					eDebug("[CI] CI+ %c%d CAM detected", flag, version);
 					break;
 				}
 			}
@@ -1665,7 +1665,7 @@ int eDVBCISlot::reset()
 	}
 
 	if (ioctl(fd, CA_RESET, getSlotID()) < 0)
-		eDebug("IOCTL CA_RESET failed for slot %d\n", slotid);
+		eDebug("[CI] IOCTL CA_RESET failed for slot %d\n", slotid);
 
 	return 0;
 }

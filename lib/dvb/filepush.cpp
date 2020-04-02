@@ -397,7 +397,7 @@ eFilePushThreadRecorder::eFilePushThreadRecorder(unsigned char* buffer, size_t b
 int eFilePushThreadRecorder::pushReply(void *buf, int len)
 {
 	m_reply.insert(m_reply.end(), (unsigned char *)buf, (unsigned char *)buf + len);
-	eDebug("pushed reply of %d bytes", len);
+	eDebug("[eFilePushThread] pushed reply of %d bytes", len);
 	return 0;
 }
 
@@ -419,7 +419,7 @@ int eFilePushThreadRecorder::read_ts(int fd, unsigned char *buf, int size)
 	{
 		rb = ::read(fd, buf + bytes, left);
 		if (rb > 0 && ((bytes % 188) != 0))
-			eDebug("%s read %d out of %d bytes, total %d, size %d, fd %d", ((bytes + rb) % 188) ? "incomplete" : "completed", rb, left, bytes, size, fd);
+			eDebug("[eFilePushThread] %s read %d out of %d bytes, total %d, size %d, fd %d", ((bytes + rb) % 188) ? "incomplete" : "completed", rb, left, bytes, size, fd);
 
 		if (rb <= 0 && errno != EAGAIN && errno != EINTR)
 			return rb;
@@ -464,14 +464,14 @@ int eFilePushThreadRecorder::read_dmx(int fd, void *m_buffer, int size)
 
 		if (bytes <= 0 && errno != EAGAIN && errno != EINTR)
 		{
-			eDebug("error reading from DMX handle %d, errno %d: %m", fd, errno);
+			eDebug("[eFilePushThread] error reading from DMX handle %d, errno %d: %m", fd, errno);
 			break;
 		}
 
 		if (bytes > 0)
 		{
 			if ((bytes % 188) != 0)
-				eDebug("incomplete packet read from %d with size %d", fd, bytes);
+				eDebug("[eFilePushThread] incomplete packet read from %d with size %d", fd, bytes);
 
 			m_packet_no++;
 			it++;
@@ -483,7 +483,7 @@ int eFilePushThreadRecorder::read_dmx(int fd, void *m_buffer, int size)
 				if ((b[3] & 0x80)) // mark decryption failed if not decrypted by enigma
 				{
 					if ((errs++ % 100) == 0)
-						eDebug("decrypt errs %d, pid %d, m_buffer %p, pos %d, buf %p, i %d: %02X %02X %02X %02X", errs, pid, m_buffer, pos, buf, i, b[0], b[1], b[2], b[3]);
+						eDebug("[eFilePushThread] decrypt errs %d, pid %d, m_buffer %p, pos %d, buf %p, i %d: %02X %02X %02X %02X", errs, pid, m_buffer, pos, buf, i, b[0], b[1], b[2], b[3]);
 					b[1] |= 0x1F;
 					b[2] |= 0xFF;
 				}
@@ -503,7 +503,7 @@ int eFilePushThreadRecorder::read_dmx(int fd, void *m_buffer, int size)
 			pos = m_reply.size();
 			buf[0] = 0;
 			memcpy(m_buffer, m_reply.data(), pos);
-			eDebug("added reply of %d bytes", pos, m_buffer);
+			eDebug("[eFilePushThread] added reply of %d bytes", pos, m_buffer);
 			m_reply.clear();
 			break; // reply to the server ASAP
 		}
@@ -517,7 +517,7 @@ int eFilePushThreadRecorder::read_dmx(int fd, void *m_buffer, int size)
 	}
 	uint64_t ts = getTick() - start;
 	if (ts > 1000)
-		eDebug("returning %d bytes from %d, last read %d bytes in %jd ms (iteration %d)", pos, size, bytes, ts, m_packet_no);
+		eDebug("[eFilePushThread] returning %d bytes from %d, last read %d bytes in %jd ms (iteration %d)", pos, size, bytes, ts, m_packet_no);
 	if (pos == 0)
 		return bytes;
 	return pos;
@@ -543,7 +543,7 @@ void eFilePushThreadRecorder::thread()
 		int flags = fcntl(m_fd_source, F_GETFL, 0);
 		flags |= O_NONBLOCK;
 		if (fcntl(m_fd_source, F_SETFL, flags) == -1)
-			eDebug("failed setting DMX handle %d in non-blocking mode, error %d: %s", m_fd_source, errno, strerror(errno));
+			eDebug("[eFilePushThread] failed setting DMX handle %d in non-blocking mode, error %d: %s", m_fd_source, errno, strerror(errno));
 	}
 
 	/* m_stop must be evaluated after each syscall. */

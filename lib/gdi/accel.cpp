@@ -60,7 +60,7 @@ void gAccel::dumpDebug()
 					it->size, it->size >> (10 - ACCEL_ALIGNMENT_SHIFT),
 					surface, surface->stride, surface->y, surface->bpp);
 		else
-			eDebug("[gAccel]    free: (%d (%dk), %d (%dk))",
+			eDebug("[gAccel] free: (%d (%dk), %d (%dk))",
 					it->index, it->index >> (10 - ACCEL_ALIGNMENT_SHIFT),
 					it->size, it->size >> (10 - ACCEL_ALIGNMENT_SHIFT));
 	 }

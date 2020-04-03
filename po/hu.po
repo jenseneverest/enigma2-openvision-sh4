@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2020-02-19 11:12+0100\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -1757,10 +1757,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "A felvételek mindig tartalmazzák az ECM üzeneteket. Ez felülírja az egyéni időzítő beállításokat. Ez az opció lehetővé teszi, hogy a felvételeket később offline dekódolhassuk. Alapértelmezett: kikapcsolva."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Mindig rákérdez"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Mindig rákérdez"
 
@@ -2666,34 +2662,14 @@ msgstr "Csatornalista menü"
 msgid "Channelname"
 msgstr "Csatorna"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Csatornaszám és picon"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Csatornaszám és picon"
-
 msgid "Channelnumber and picon"
 msgstr "Csatornaszám és picon"
 
 msgid "Channelnumber and servicename"
 msgstr "Csatornaszám és szolgáltatásnév"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Csatornaszám és picon"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Csatornaszám és picon"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Csatornaszám, picon és szolgáltatásnév"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Csatornaszám és picon"
 
 msgid "Channels"
 msgstr "Csatornák"
@@ -2869,10 +2845,6 @@ msgstr "Tuner beállítások"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "mindig"
 
 msgid "Clone TV screen to LCD"
 msgstr "TV kijelző klónozása LCD kijelzőre"
@@ -6482,10 +6454,6 @@ msgid "LAN connection"
 msgstr "Helyi privát"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Előlapi kijelző"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Fényerő"
 
@@ -6512,6 +6480,14 @@ msgstr "Filmlista beállítása"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Filmlista beállítása"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Filmlista beállítása"
 
 msgid "LNB"
 msgstr "Fej"
@@ -7769,6 +7745,9 @@ msgstr "A kijelzőn ismétlődő szövegek száma."
 msgid "Number or SMS style data entry"
 msgstr "SMS vagy szám stílusú adatbevitel"
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
 
@@ -8974,10 +8953,6 @@ msgstr "Vételi beállítások"
 msgid "Record"
 msgstr "Felvétel"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Felvétel"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "A felvételi idő rövidítve lett időzítés ütközés miatt: %s"
@@ -9016,6 +8991,17 @@ msgstr "Felvétel beállítások"
 
 msgid "Red"
 msgstr "Piros"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "kikapcsolás"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Készenlét alatt is"
 
 msgid "Red button..."
 msgstr "Piros gomb..."
@@ -10506,6 +10492,10 @@ msgstr "EPG megnyitása..."
 msgid "Show Ethernet activity"
 msgstr "Alternatívák megjelenítése"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Oszlopok megjelenítése"
+
 msgid "Show InfoBar"
 msgstr "Infobar megjelenítése"
 
@@ -10603,9 +10593,6 @@ msgstr "Bővítmények megtekintése..."
 msgid "Show favourites list"
 msgstr "Kedvencek lista mutatása"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Súgó megjelenítése"
 
@@ -10698,10 +10685,6 @@ msgid "Show on LED display in standby"
 msgstr "Piconok mutatása a kijelzőn"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Oszlopok megjelenítése"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Piconok mutatása a kijelzőn"
 
@@ -10749,9 +10732,6 @@ msgstr "Felvételi óra ikonok megjelenítése"
 
 msgid "Show record indicator"
 msgstr "Felvétel jelző ikon mutatása"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Képernyőkímélő megjelenítése"
@@ -11252,10 +11232,6 @@ msgid "Standby fan %d voltage"
 msgstr "%d. Vent. készenlét feszültség"
 
 msgid "Standby in "
-msgstr "Készenlétbe: "
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Készenlétbe: "
 
 #, fuzzy
@@ -12883,9 +12859,6 @@ msgstr "Image kicsomagolása"
 msgid "Update"
 msgstr "Frissítés"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Frissítés, majd rákérdezés az újraindításra"
 
@@ -13116,9 +13089,6 @@ msgstr "Üzbegisztán"
 msgid "VCR scart"
 msgstr "VCR scart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Fényerő"
@@ -13143,16 +13113,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Filmlista beállítása"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 msgid "VLAN connection"
@@ -14286,6 +14266,9 @@ msgstr "feketelista"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "kék"
 
@@ -14603,10 +14586,7 @@ msgstr "ból"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14687,37 +14667,22 @@ msgstr "horizontális"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 msgid "in menu and plugins"
@@ -14775,9 +14740,6 @@ msgstr "nyelvek"
 
 msgid "leave movie player..."
 msgstr "kilépés a médialejátszóból..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "bal"
@@ -14977,6 +14939,13 @@ msgstr "be"
 msgid "on READ ONLY medium."
 msgstr "a csak olvasható hordozón."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "minden metaadat megjelenítése"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "egyszeri"
 
@@ -15175,6 +15144,10 @@ msgstr "összekever"
 msgid "shut down"
 msgstr "kikapcsolás"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Jelminőség"
+
 msgid "simple"
 msgstr "egyszerű"
 
@@ -15235,6 +15208,12 @@ msgid "social/spiritual science"
 msgstr "szociális/spirituális"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15333,6 +15312,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Igen, mentéssel"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Igen, mentéssel"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "idő, chapter, hangsáv, feliratsáv választás"
 
@@ -15412,9 +15395,6 @@ msgstr "varieté"
 
 msgid "vertical"
 msgstr "vertikális"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

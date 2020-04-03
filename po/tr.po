@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -1759,10 +1759,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Her zaman kayıtlara ECM'yi ekle. Bu global bireysel zamanlayıcı ayarları geçersiz kılar. Alıcı destekliyorsa, kayıtların sonradan (bazen çevrimdışı çözme) şifresini sağlar. Varsayılan: Kapalı."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Her zaman sor"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Her zaman sor"
 
@@ -2670,29 +2666,13 @@ msgstr "Kanal Listesi"
 msgid "Channelname"
 msgstr "Kanal"
 
-msgid "Channelname in Standby Clock"
-msgstr ""
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Kapat. Bekleme Modunda"
-
 msgid "Channelnumber and picon"
 msgstr ""
 
 msgid "Channelnumber and servicename"
 msgstr ""
 
-msgid "Channelnumber in Standby Clock"
-msgstr ""
-
-msgid "Channelnumber in Standby off"
-msgstr ""
-
 msgid "Channelnumber, picon and servicename"
-msgstr ""
-
-msgid "Channelnumber/Clock in Standby Clock"
 msgstr ""
 
 #, fuzzy
@@ -2870,10 +2850,6 @@ msgstr "Tuner ayarları"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "Her Zaman"
 
 msgid "Clone TV screen to LCD"
 msgstr "TV ekranını LCD ye yansıt"
@@ -6538,10 +6514,6 @@ msgid "LAN connection"
 msgstr "LAN bağlantısı"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Ekran kurulumu"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Parlaklık"
 
@@ -6568,6 +6540,14 @@ msgstr "Film Listesi yapılandırması"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Film Listesi yapılandırması"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Film Listesi yapılandırması"
 
 msgid "LNB"
 msgstr "Unicable LNB"
@@ -7846,6 +7826,9 @@ msgstr "Ekranda metin yineleme yazısı."
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "Tamam"
 
@@ -9066,10 +9049,6 @@ msgstr "Resepsiyon ayarları"
 msgid "Record"
 msgstr "Kayıt"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Kayıt"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "%s zamanlayıcısı ile çakışmadan dolayı kayıt süresi sınırlandırılmış"
@@ -9108,6 +9087,17 @@ msgstr "Kayıt Ayarları"
 
 msgid "Red"
 msgstr "Kırmızı"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "Derin uyku"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Bekleme Modunda"
 
 msgid "Red button..."
 msgstr "Kırmızı tuş..."
@@ -10624,6 +10614,10 @@ msgstr "EPG Göster..."
 msgid "Show Ethernet activity"
 msgstr "Alternatifleri göster"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Sütunları göster"
+
 msgid "Show InfoBar"
 msgstr "Bilgi Çubuğunu Göster"
 
@@ -10721,9 +10715,6 @@ msgstr "Eklentileri göster..."
 msgid "Show favourites list"
 msgstr "Favori listesini göster"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Yardım"
 
@@ -10814,10 +10805,6 @@ msgstr ""
 msgid "Show on LED display in standby"
 msgstr ""
 
-#, fuzzy
-msgid "Show on VFD"
-msgstr "Sütunları göster"
-
 msgid "Show on VFD display"
 msgstr ""
 
@@ -10864,9 +10851,6 @@ msgstr ""
 
 msgid "Show record indicator"
 msgstr "Kayıt göstergesini Göster"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Ekran koruyucuyu göster"
@@ -11378,10 +11362,6 @@ msgid "Standby fan %d voltage"
 msgstr "Fan bekleme modu %d voltaj"
 
 msgid "Standby in "
-msgstr "Bekleme modunda"
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Bekleme modunda"
 
 #, fuzzy
@@ -13025,9 +13005,6 @@ msgstr "İndiriliyor..."
 msgid "Update"
 msgstr "Güncelle"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Güncelle ve yeniden başlatmak için sor"
 
@@ -13260,9 +13237,6 @@ msgstr ""
 msgid "VCR scart"
 msgstr "VCR scart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Parlaklık"
@@ -13287,16 +13261,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Film Listesi yapılandırması"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 #, fuzzy
@@ -14431,6 +14415,9 @@ msgstr "Kara Liste"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "Mavi"
 
@@ -14748,10 +14735,7 @@ msgstr "den"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14832,37 +14816,22 @@ msgstr "Yatay (H)"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 #, fuzzy
@@ -14923,9 +14892,6 @@ msgstr "Dil"
 
 msgid "leave movie player..."
 msgstr "Ortam oynatıcıdan çık..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "Sol"
@@ -15126,6 +15092,13 @@ msgstr "Açık"
 msgid "on READ ONLY medium."
 msgstr "Yalnızca okunabilir (READ ONLY) ortam."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "Tüm etiketleri göster"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "Birkez"
 
@@ -15324,6 +15297,10 @@ msgstr "Karışık"
 msgid "shut down"
 msgstr "Kapat"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Sinyal kalitesi"
+
 msgid "simple"
 msgstr "Basit"
 
@@ -15384,6 +15361,12 @@ msgid "social/spiritual science"
 msgstr "Sosyal/Ruhasal"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15482,6 +15465,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Evet, Kaydet"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Evet, Kaydet"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "Geçiş süresi, Bölüm, Ses, Altyazı bilgileri"
 
@@ -15563,9 +15550,6 @@ msgstr "Çeşitli Gösteri"
 
 msgid "vertical"
 msgstr "Düşey (V)"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2019-12-03 20:02+0100\n"
 "Last-Translator: blzr <blzr@o2.pl>\n"
 "Language-Team: \n"
@@ -1693,10 +1693,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Gdy włączone, w nagraniach zawsze będą zawarte ECMy. Globalnie nadpisuje ustawienia dla poszczególnych timerów. Pozwala na późniejsze odkodowanie ('dekodowanie offline'), jeżeli wspierane przez odbiornik. Domyślnie: wyłączone."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Zawsze pytaj"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Zawsze pytaj"
 
@@ -2604,34 +2600,14 @@ msgstr "Menu listy kanałów"
 msgid "Channelname"
 msgstr "Kanał"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Numer kanału i pikona"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Numer kanału i pikona"
-
 msgid "Channelnumber and picon"
 msgstr "Numer kanału i pikona"
 
 msgid "Channelnumber and servicename"
 msgstr "Numer kanału i nazwa"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Numer kanału i pikona"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Numer kanału i pikona"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Numer kanału, pikona i nazwa"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Numer kanału i pikona"
 
 msgid "Channels"
 msgstr "Kanały"
@@ -2807,10 +2783,6 @@ msgstr "Konfiguracja tunera"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "zawsze"
 
 msgid "Clone TV screen to LCD"
 msgstr "Klonuj obraz z tv na LCD"
@@ -6432,10 +6404,6 @@ msgid "LAN connection"
 msgstr "Połączenie LAN"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Wyświetlacz"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Jasność"
 
@@ -6462,6 +6430,14 @@ msgstr "Konfiguracja listy kanałów"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Konfiguracja listy kanałów"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Konfiguracja listy kanałów"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7718,6 +7694,9 @@ msgstr "Ilość powtórzeń tekstu na wyświetlaczu"
 msgid "Number or SMS style data entry"
 msgstr "Cyfra lub wprowadzanie danych typu SMS"
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
 
@@ -8922,10 +8901,6 @@ msgstr "Ustawienia odbioru"
 msgid "Record"
 msgstr "Nagrania"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Nagrania"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Czas nagrywania ograniczony z powodu konfliktu timera %s"
@@ -8964,6 +8939,17 @@ msgstr "Ustawienia nagrywania"
 
 msgid "Red"
 msgstr "Czerwony"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "Przejdź do głębokiego czuwania"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Także przy wyjściu ze standby"
 
 msgid "Red button..."
 msgstr "Czerwony..."
@@ -10461,6 +10447,10 @@ msgstr "Pokaż EPG..."
 msgid "Show Ethernet activity"
 msgstr "Pokaż alternatywne kanały"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Kolumny w liście wyboru kanałów"
+
 msgid "Show InfoBar"
 msgstr "Pokaż InfoBar"
 
@@ -10558,9 +10548,6 @@ msgstr "Wyświetl rozszerzenia..."
 msgid "Show favourites list"
 msgstr "Wyświetl listę ulubionych"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Wyświetl pomoc"
 
@@ -10653,10 +10640,6 @@ msgid "Show on LED display in standby"
 msgstr "Wyświetlaj picony na wyświetlaczu"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Kolumny w liście wyboru kanałów"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Wyświetlaj picony na wyświetlaczu"
 
@@ -10704,9 +10687,6 @@ msgstr "Wyświetlaj ikony zegara nagrywania"
 
 msgid "Show record indicator"
 msgstr "Wskaźnik nagrywania"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Wygaszacz ekranu"
@@ -11208,10 +11188,6 @@ msgid "Standby fan %d voltage"
 msgstr "Wiatrak w standby %d napięcie"
 
 msgid "Standby in "
-msgstr "Tryb czuwania za"
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Tryb czuwania za"
 
 #, fuzzy
@@ -12837,9 +12813,6 @@ msgstr "Rozpakowywanie image"
 msgid "Update"
 msgstr "Aktualizacja"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Zaktualizuj i zapytaj o restart"
 
@@ -13071,9 +13044,6 @@ msgstr ""
 msgid "VCR scart"
 msgstr ""
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Jasność"
@@ -13098,16 +13068,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Konfiguracja listy kanałów"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 msgid "VLAN connection"
@@ -14245,6 +14225,9 @@ msgstr "Blacklist"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "Niebieski"
 
@@ -14562,10 +14545,7 @@ msgstr "z"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14646,37 +14626,22 @@ msgstr "Pozioma (H)"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 msgid "in menu and plugins"
@@ -14734,9 +14699,6 @@ msgstr "Języki"
 
 msgid "leave movie player..."
 msgstr "Zamknij odtwarzacz filmów..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "Lewo"
@@ -14936,6 +14898,13 @@ msgstr "Włączony"
 msgid "on READ ONLY medium."
 msgstr "Nośnik tylko do odczytu."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "Pokaż wszystkie tagi"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "Raz"
 
@@ -15134,6 +15103,10 @@ msgstr "Wymieszaj"
 msgid "shut down"
 msgstr "Wyłącz"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Jakość sygnału"
+
 msgid "simple"
 msgstr "Prosty"
 
@@ -15194,6 +15167,12 @@ msgid "social/spiritual science"
 msgstr "Nauki społeczne"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15292,6 +15271,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Tak i zapisz"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Tak i zapisz"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "Czas odtwarzania, rozdział, audio, informacja o napisach"
 
@@ -15371,9 +15354,6 @@ msgstr "Rozrywka"
 
 msgid "vertical"
 msgstr "Pionowa (V)"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

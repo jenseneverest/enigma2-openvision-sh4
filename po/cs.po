@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -1917,10 +1917,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Vždy vkládá ECM informace do nahrávek. Globálně přepíše individuální nastavení časovače. V případě, že to podporuje Váš přijímač, může pak být nahrávka dekódována později (někdy též nazýváno jako offline dekódování). Standardně: vypnuto."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Vždy se ptát"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Vždy se ptát"
 
@@ -2947,34 +2943,14 @@ msgstr "Menu přehledu programů"
 msgid "Channelname"
 msgstr "Kanál"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Číslo kanálu a pikona"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Číslo kanálu a pikona"
-
 msgid "Channelnumber and picon"
 msgstr "Číslo kanálu a pikona"
 
 msgid "Channelnumber and servicename"
 msgstr "Číslo kanálu a název programu"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Číslo kanálu a pikona"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Číslo kanálu a pikona"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Číslo kanálu, pikona a název programu"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Číslo kanálu a pikona"
 
 #
 msgid "Channels"
@@ -3169,11 +3145,6 @@ msgstr "Konfigurace tuneru"
 
 msgid "Clients"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Clock always"
-msgstr "Vždy"
 
 msgid "Clone TV screen to LCD"
 msgstr "Klonovat TV obrazovku na LCD"
@@ -7265,11 +7236,6 @@ msgstr "LAN připojení"
 
 #
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Nastavení displeje"
-
-#
-#, fuzzy
 msgid "LED brightness"
 msgstr "Jas"
 
@@ -7298,6 +7264,14 @@ msgstr "Nastavení seznamu filmů"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Nastavení seznamu filmů"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Nastavení seznamu filmů"
 
 #
 msgid "LNB"
@@ -8757,6 +8731,9 @@ msgstr "Počet opakování textu na displeji."
 msgid "Number or SMS style data entry"
 msgstr "Číslo nebo SMS styl zadávání"
 
+msgid "NumberZapPicon"
+msgstr ""
+
 #
 msgid "OK"
 msgstr "OK"
@@ -10156,11 +10133,6 @@ msgid "Record"
 msgstr "Nahrávání a přehrávání"
 
 #
-#, fuzzy
-msgid "Record only"
-msgstr "Nahrávání a přehrávání"
-
-#
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Nahrávaný čas je omezen z důvodu konfliktu časovače %s"
@@ -10206,6 +10178,18 @@ msgstr "Nastavení nahrávání"
 
 msgid "Red"
 msgstr ""
+
+msgid "Red LED during recording"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "Přejít do hlubokého spánku"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Také při standby"
 
 msgid "Red button..."
 msgstr "Červené tlačítko"
@@ -11906,6 +11890,11 @@ msgstr "Zobrazit EPG..."
 msgid "Show Ethernet activity"
 msgstr "Zobrazit alternativy"
 
+#
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Zobrazovat sloupce"
+
 msgid "Show InfoBar"
 msgstr "Zobrazit infobar"
 
@@ -12014,9 +12003,6 @@ msgstr "Zobrazit rozšíření..."
 msgid "Show favourites list"
 msgstr "Oblíbené"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Nápověda"
 
@@ -12118,11 +12104,6 @@ msgstr "Zobrazovat pikony na displeji"
 msgid "Show on LED display in standby"
 msgstr "Vypnout display v pohotovostním režimu"
 
-#
-#, fuzzy
-msgid "Show on VFD"
-msgstr "Zobrazovat sloupce"
-
 #, fuzzy
 msgid "Show on VFD display"
 msgstr "Zobrazovat pikony na displeji"
@@ -12177,9 +12158,6 @@ msgstr "Zobrazovat ikony časovačů"
 #
 msgid "Show record indicator"
 msgstr "Zobrazovat indikátor záznamu"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Zobrazovat spořič obrazovky"
@@ -12752,10 +12730,6 @@ msgid "Standby fan %d voltage"
 msgstr "Napětí ventilátoru %d ve standby"
 
 msgid "Standby in "
-msgstr "Standby za "
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Standby za "
 
 #, fuzzy
@@ -14569,9 +14543,6 @@ msgstr "Rozbalování image"
 msgid "Update"
 msgstr "Aktualizace"
 
-msgid "Update Date/Time"
-msgstr ""
-
 #
 msgid "Update and ask to reboot"
 msgstr "Aktualizovat a požádat o restart přijímače"
@@ -14837,9 +14808,6 @@ msgstr "Uzbekistán"
 msgid "VCR scart"
 msgstr "VCR scart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #
 #, fuzzy
 msgid "VFD brightness"
@@ -14866,16 +14834,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Nastavení seznamu filmů"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 msgid "VLAN connection"
@@ -16129,6 +16107,9 @@ msgstr "blacklist"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 #
 msgid "blue"
 msgstr "Modré"
@@ -16490,10 +16471,7 @@ msgstr "z"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -16581,37 +16559,22 @@ msgstr "Horizontální"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 msgid "in menu and plugins"
@@ -16676,9 +16639,6 @@ msgstr "jazyky"
 #
 msgid "leave movie player..."
 msgstr "Opustit přehrávač"
-
-msgid "leddisplay.png"
-msgstr ""
 
 #
 msgid "left"
@@ -16908,6 +16868,14 @@ msgstr "Zapnuto"
 #
 msgid "on READ ONLY medium."
 msgstr "na READ ONLY médiu."
+
+#
+#, fuzzy
+msgid "on all mounts"
+msgstr "Zobrazit všechny tagy"
+
+msgid "on hdd"
+msgstr ""
 
 #
 msgid "once"
@@ -17143,6 +17111,10 @@ msgstr "Náhodné uspořádání"
 msgid "shut down"
 msgstr "vypnout"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Kvalita signálu"
+
 #
 msgid "simple"
 msgstr "Jednoduchý"
@@ -17206,6 +17178,12 @@ msgid "social/spiritual science"
 msgstr "sociální/duchovní vědy"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -17317,6 +17295,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Ano a uložit"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Ano a uložit"
+
 #
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "přepnout informace mezi časem, kapitolou, audiostopou, titulky"
@@ -17411,9 +17393,6 @@ msgstr "varieté"
 #
 msgid "vertical"
 msgstr "Vertikální"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

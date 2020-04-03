@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -1779,10 +1779,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Vienmēr iekļaut ECM informāciju ierakstos. Globāli ignorē individuālus taimeru iestatījumus. Tas nodrošina ierakstu atšifrēšanu (veikt bezsaistes dekodēšanu), ja jūsu uztvērējs to nodrošina. Pēc noklusējuma izslēgts."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Vienmēr jautāt"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Vienmēr jautāt"
 
@@ -2676,34 +2672,14 @@ msgstr "Kanālu saraksta izvēlne"
 msgid "Channelname"
 msgstr "Kanāls"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Kanāla numurs un pikona"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Kanāla numurs un pikona"
-
 msgid "Channelnumber and picon"
 msgstr "Kanāla numurs un pikona"
 
 msgid "Channelnumber and servicename"
 msgstr "Kanāla numurs un nosaukums"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Kanāla numurs un pikona"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Kanāla numurs un pikona"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Kanāla numurs, pikona un kanāla nosaukums"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Kanāla numurs un pikona"
 
 #, fuzzy
 msgid "Channels"
@@ -2881,10 +2857,6 @@ msgstr "Uztvērēja konfigurācija"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "vienmēr"
 
 msgid "Clone TV screen to LCD"
 msgstr "Kopēt TV ekrānu uz LCD"
@@ -6519,10 +6491,6 @@ msgid "LAN connection"
 msgstr "Tīkla savienojums"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Displeja iestatījumi"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Spilgtums"
 
@@ -6549,6 +6517,14 @@ msgstr "Mediju iestatījumi"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Mediju iestatījumi"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Mediju iestatījumi"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7813,6 +7789,9 @@ msgstr "Atkārtojamā teksta skaits displejā."
 msgid "Number or SMS style data entry"
 msgstr "SMS stila datu ievades numurs"
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "Labi"
 
@@ -9021,10 +9000,6 @@ msgstr "Uztveršanas iestatījumi"
 msgid "Record"
 msgstr "Ierakstu iestatījumi"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Ierakstu iestatījumi"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Ierobežots ieraksta laiks dēļ taimera konflikta %s"
@@ -9063,6 +9038,17 @@ msgstr "Ieraksta iestatījumi"
 
 msgid "Red"
 msgstr "Sarkanā"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "iet uz dziļo gaidstāvi"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Arī pēc gaidstāves"
 
 msgid "Red button..."
 msgstr "Sarkanā poga..."
@@ -10562,6 +10548,10 @@ msgstr "Rādīt EPG..."
 msgid "Show Ethernet activity"
 msgstr "Rādīt alternatīvas"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Rādīt kolonas"
+
 msgid "Show InfoBar"
 msgstr "Rādīt infojoslu"
 
@@ -10659,9 +10649,6 @@ msgstr "Skatīt paplašinājumus..."
 msgid "Show favourites list"
 msgstr "Atvērt favorītu sarakstu"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Rādīt palīdzību"
 
@@ -10754,10 +10741,6 @@ msgid "Show on LED display in standby"
 msgstr "Rādīt displejā pikonas"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Rādīt kolonas"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Rādīt displejā pikonas"
 
@@ -10805,9 +10788,6 @@ msgstr "Rādīt ieraksta pulksteņa ikonu"
 
 msgid "Show record indicator"
 msgstr "Rādīt ieraksta indikatoru"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Rādīt ekrānsaudzētāju"
@@ -11310,10 +11290,6 @@ msgid "Standby fan %d voltage"
 msgstr "Ventilatora spriegums %d gaidstāvē"
 
 msgid "Standby in "
-msgstr "Gaidstāvē "
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Gaidstāvē "
 
 #, fuzzy
@@ -12938,9 +12914,6 @@ msgstr "Atarhivē imidžu"
 msgid "Update"
 msgstr "Atjaunināt"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Atjaunināt un jautāt vai pārstartēt"
 
@@ -13172,9 +13145,6 @@ msgstr "Uzbekistāna"
 msgid "VCR scart"
 msgstr "VCR scart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Spilgtums"
@@ -13199,16 +13169,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Mediju iestatījumi"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 msgid "VLAN connection"
@@ -14347,6 +14327,9 @@ msgstr "melnais saraksts"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "zilā"
 
@@ -14664,10 +14647,7 @@ msgstr "no"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14748,37 +14728,22 @@ msgstr "horizontālā"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 msgid "in menu and plugins"
@@ -14836,9 +14801,6 @@ msgstr "valodas"
 
 msgid "leave movie player..."
 msgstr "iziet no mediju atskaņotāja..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "kreisā"
@@ -15039,6 +15001,13 @@ msgstr "ieslēgts"
 msgid "on READ ONLY medium."
 msgstr "uz TIKAI LASĀMA datu nesēja."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "rādīt visas birkas"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "vienreiz"
 
@@ -15237,6 +15206,10 @@ msgstr "jaukts"
 msgid "shut down"
 msgstr "izslēgt"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Signāla kvalitāte"
+
 msgid "simple"
 msgstr "vienkāršs"
 
@@ -15297,6 +15270,12 @@ msgid "social/spiritual science"
 msgstr "sociālie/garīgā zinātne"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15395,6 +15374,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Jā un saglabāt"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Jā un saglabāt"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "Ie/izslēgt laiku, nodaļu, skaņu, subtitru informāciju"
 
@@ -15475,9 +15458,6 @@ msgstr "varietē šovi"
 
 msgid "vertical"
 msgstr "vertikālā"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

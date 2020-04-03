@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -1679,10 +1679,6 @@ msgstr ""
 msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
 msgstr ""
 
-#, fuzzy
-msgid "Always off"
-msgstr "始終"
-
 msgid "Always select OK"
 msgstr ""
 
@@ -2574,28 +2570,13 @@ msgstr "頻道列表功能表"
 msgid "Channelname"
 msgstr "頻道"
 
-msgid "Channelname in Standby Clock"
-msgstr ""
-
-msgid "Channelname in Standby off"
-msgstr ""
-
 msgid "Channelnumber and picon"
 msgstr ""
 
 msgid "Channelnumber and servicename"
 msgstr ""
 
-msgid "Channelnumber in Standby Clock"
-msgstr ""
-
-msgid "Channelnumber in Standby off"
-msgstr ""
-
 msgid "Channelnumber, picon and servicename"
-msgstr ""
-
-msgid "Channelnumber/Clock in Standby Clock"
 msgstr ""
 
 #, fuzzy
@@ -2769,10 +2750,6 @@ msgstr "調諧器配置"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "始終"
 
 msgid "Clone TV screen to LCD"
 msgstr ""
@@ -6350,9 +6327,6 @@ msgstr ""
 msgid "LAN connection"
 msgstr ""
 
-msgid "LED Display Setup"
-msgstr ""
-
 #, fuzzy
 msgid "LED brightness"
 msgstr "亮度"
@@ -6379,6 +6353,14 @@ msgstr "調諧器配置"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "調諧器配置"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "調諧器配置"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7644,6 +7626,9 @@ msgstr ""
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
 
@@ -8846,10 +8831,6 @@ msgstr ""
 msgid "Record"
 msgstr "錄製"
 
-#, fuzzy
-msgid "Record only"
-msgstr "錄製"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "由於計時器 %s 衝突導致錄製時間受限"
@@ -8888,6 +8869,17 @@ msgstr "正在錄製"
 
 msgid "Red"
 msgstr ""
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "深度休眠"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "待機"
 
 msgid "Red button..."
 msgstr ""
@@ -10387,6 +10379,10 @@ msgstr ""
 msgid "Show Ethernet activity"
 msgstr "顯示選項"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "顯示選項"
+
 msgid "Show InfoBar"
 msgstr ""
 
@@ -10484,9 +10480,6 @@ msgstr ""
 msgid "Show favourites list"
 msgstr ""
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr ""
 
@@ -10574,9 +10567,6 @@ msgstr "無視頻輸出"
 msgid "Show on LED display in standby"
 msgstr ""
 
-msgid "Show on VFD"
-msgstr ""
-
 #, fuzzy
 msgid "Show on VFD display"
 msgstr "無視頻輸出"
@@ -10621,9 +10611,6 @@ msgid "Show record clock icons"
 msgstr ""
 
 msgid "Show record indicator"
-msgstr ""
-
-msgid "Show red LED on VFD"
 msgstr ""
 
 msgid "Show screensaver"
@@ -11129,10 +11116,6 @@ msgstr ""
 
 msgid "Standby in "
 msgstr ""
-
-#, fuzzy
-msgid "Standby only"
-msgstr "待機"
 
 msgid "Standby saver frequency"
 msgstr ""
@@ -12702,9 +12685,6 @@ msgstr "下載中"
 msgid "Update"
 msgstr "更新"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr ""
 
@@ -12935,9 +12915,6 @@ msgstr ""
 msgid "VCR scart"
 msgstr "錄影機"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "亮度"
@@ -12961,16 +12938,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "調諧器配置"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 #, fuzzy
@@ -14051,6 +14038,9 @@ msgstr "黑名單"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "藍色"
 
@@ -14357,10 +14347,7 @@ msgstr "來自"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14441,37 +14428,22 @@ msgstr "水準"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 #, fuzzy
@@ -14531,9 +14503,6 @@ msgstr ""
 
 msgid "leave movie player..."
 msgstr "退出電影播放..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "左"
@@ -14728,6 +14697,13 @@ msgstr "開"
 
 msgid "on READ ONLY medium."
 msgstr "唯讀介質."
+
+#, fuzzy
+msgid "on all mounts"
+msgstr "解除安裝(Unmount)"
+
+msgid "on hdd"
+msgstr ""
 
 msgid "once"
 msgstr "一次"
@@ -14924,6 +14900,9 @@ msgstr ""
 msgid "shut down"
 msgstr "關機"
 
+msgid "signal quality"
+msgstr ""
+
 msgid "simple"
 msgstr "簡單"
 
@@ -14983,6 +14962,12 @@ msgid "social/spiritual science"
 msgstr ""
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 msgid "special (general)"
@@ -15078,6 +15063,9 @@ msgstr ""
 msgid "time and date"
 msgstr ""
 
+msgid "time, day and date"
+msgstr ""
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "切換時間, 章節, 音頻,字幕資訊"
 
@@ -15157,9 +15145,6 @@ msgstr ""
 
 msgid "vertical"
 msgstr "垂直"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

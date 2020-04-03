@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi-enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2018-05-22 13:54+0200\n"
 "Last-Translator: Gringo <openpli@tiscali.it>\n"
 "Language-Team: www.linsat.net <spaeleus@croci.org>\n"
@@ -1770,10 +1770,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Se questa impostazione è attivata, i dati ECM saranno sempre inclusi nelle registrazioni e le impostazioni dei singoli timer saranno ignorate dappertutto. Se supportato dal ricevitore, ciò consente di poter decodificare sempre le registrazioni a posteriori (operazione talvolta denominata 'decodifica offline'). L'impostazione predefinita è 'No'."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Chiedere sempre"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Chiedere sempre"
 
@@ -2666,34 +2662,14 @@ msgstr "Menu elenco canali"
 msgid "Channelname"
 msgstr "Canale"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Numero e Picon del canale"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Numero e Picon del canale"
-
 msgid "Channelnumber and picon"
 msgstr "Numero e Picon del canale"
 
 msgid "Channelnumber and servicename"
 msgstr "Numero e nome del canale"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Numero e Picon del canale"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Numero e Picon del canale"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Numero, Picon e nome del canale"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Numero e Picon del canale"
 
 msgid "Channels"
 msgstr "Canali"
@@ -2869,10 +2845,6 @@ msgstr "Configurazione sintonizzatori"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "Sempre"
 
 msgid "Clone TV screen to LCD"
 msgstr "Clonare lo schermo TV sul display LCD"
@@ -6497,10 +6469,6 @@ msgid "LAN connection"
 msgstr "Connessione di rete LAN"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Display"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Luminosità"
 
@@ -6528,6 +6496,14 @@ msgstr "Uscire dall'impostazione del server dei nomi (DNS)"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Uscire dall'impostazione del server dei nomi (DNS)"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Uscire dall'impostazione del server dei nomi (DNS)"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7785,6 +7761,9 @@ msgstr "Numero di ripetizioni del testo sullo schermo."
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
 
@@ -8989,10 +8968,6 @@ msgstr "Impostazioni di ricezione"
 msgid "Record"
 msgstr "Registrazioni"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Registrazioni"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Tempo di registrazione limitato a causa del timer %s in conflitto"
@@ -9031,6 +9006,17 @@ msgstr "Impostazioni di registrazione"
 
 msgid "Red"
 msgstr "Rosso"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "Spegnimento"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Anche in stato di sospensione"
 
 msgid "Red button..."
 msgstr "Tasto Rosso..."
@@ -10526,6 +10512,10 @@ msgstr "Mostrare l'EPG..."
 msgid "Show Ethernet activity"
 msgstr "Mostrare le alternative"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Mostrare la lista di selezione dei canali in colonne a larghezza fissa"
+
 msgid "Show InfoBar"
 msgstr "Mostrare l'infobar"
 
@@ -10623,9 +10613,6 @@ msgstr "Mostrare le estensioni..."
 msgid "Show favourites list"
 msgstr "Mostrare la lista dei Preferiti"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Mostrare la guida"
 
@@ -10718,10 +10705,6 @@ msgid "Show on LED display in standby"
 msgstr "Spegnere se messo in sospensione"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Mostrare la guida"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Mostrare i Picon sul display"
 
@@ -10769,9 +10752,6 @@ msgstr "Mostrare le icone di registrazione a forma di orologio"
 
 msgid "Show record indicator"
 msgstr "Mostrare l'indicatore di registrazione"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Mostrare il salvaschermo"
@@ -11273,10 +11253,6 @@ msgid "Standby fan %d voltage"
 msgstr "Tensione ventola in sospensione %d"
 
 msgid "Standby in "
-msgstr "In sospensione tra "
-
-#, fuzzy
-msgid "Standby only"
 msgstr "In sospensione tra "
 
 #, fuzzy
@@ -12918,10 +12894,6 @@ msgstr "Decomprimi Immagine"
 msgid "Update"
 msgstr "Aggiornare"
 
-#, fuzzy
-msgid "Update Date/Time"
-msgstr "Salvataggio non riuscito!"
-
 msgid "Update and ask to reboot"
 msgstr "Aggiornare e al termine chiedere se riavviare"
 
@@ -13152,9 +13124,6 @@ msgstr "Uzbekistan"
 msgid "VCR scart"
 msgstr "SCART VCR"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Luminosità"
@@ -13179,16 +13148,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Configurazione manuale"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 msgid "VLAN connection"
@@ -14326,6 +14305,9 @@ msgstr "Lista vietati"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "Blu"
 
@@ -14643,10 +14625,7 @@ msgstr "da"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14727,37 +14706,22 @@ msgstr "Orizzontale"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 msgid "in menu and plugins"
@@ -14815,9 +14779,6 @@ msgstr "Lingue"
 
 msgid "leave movie player..."
 msgstr "Uscita dal lettore video..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "Sinistra"
@@ -15017,6 +14978,13 @@ msgstr "Sì"
 msgid "on READ ONLY medium."
 msgstr "su un supporto A SOLA LETTURA."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "Mostrare tutte le etichette"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "Una volta"
 
@@ -15215,6 +15183,10 @@ msgstr "Casuale"
 msgid "shut down"
 msgstr "Spegnimento"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Qualità del segnale"
+
 msgid "simple"
 msgstr "Semplice"
 
@@ -15275,6 +15247,12 @@ msgid "social/spiritual science"
 msgstr "Sociale/Spiritualità"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15375,6 +15353,10 @@ msgstr "Intervallo tra le immagini (sec.)"
 msgid "time and date"
 msgstr "Sì e salvare"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Sì e salvare"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "Attivare/disattivare le informazioni su tempo, capitolo, audio, sottotitoli"
 
@@ -15454,9 +15436,6 @@ msgstr "Varietà"
 
 msgid "vertical"
 msgstr "Verticale"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

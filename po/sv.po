@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -1892,10 +1892,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Inkludera alltid ECM meddelanden i inspelningar. Detta överskrider den individuella timerinställningen globalt. Det tillåter inspelningar att alltid bli avkodade efteråt (kallas ibland offline avkodning), om den stöds av mottagaren. Standard : av."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Fråga alltid"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Fråga alltid"
 
@@ -2907,34 +2903,14 @@ msgstr "Meny för kanallista"
 msgid "Channelname"
 msgstr "Kanal"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Kanalnummer och picon"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Kanalnummer och picon"
-
 msgid "Channelnumber and picon"
 msgstr "Kanalnummer och picon"
 
 msgid "Channelnumber and servicename"
 msgstr "Kanalnummer och kanalnamn"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Kanalnummer och picon"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Kanalnummer och picon"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Kanalnummer, picon och kanalnamn"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Kanalnummer och picon"
 
 #
 #, fuzzy
@@ -3131,10 +3107,6 @@ msgstr "Tunerkonfiguration"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "alltid"
 
 msgid "Clone TV screen to LCD"
 msgstr "Klona TV skärm till LCD"
@@ -7192,11 +7164,6 @@ msgstr "LAN anslutning"
 
 #
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Displayinställningar"
-
-#
-#, fuzzy
 msgid "LED brightness"
 msgstr "Ljusstyrka"
 
@@ -7225,6 +7192,14 @@ msgstr "Konfiguration av filmlista"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Konfiguration av filmlista"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Konfiguration av filmlista"
 
 #
 msgid "LNB"
@@ -8676,6 +8651,9 @@ msgstr "Antal upprepningar av text på displayen."
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 #
 msgid "OK"
 msgstr "OK"
@@ -10053,11 +10031,6 @@ msgid "Record"
 msgstr "Spela in"
 
 #
-#, fuzzy
-msgid "Record only"
-msgstr "Spela in"
-
-#
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Inspelningstid begränsad på grund av timerkonflikt med %s"
@@ -10101,6 +10074,18 @@ msgstr "Inspellningsinställningar"
 
 msgid "Red"
 msgstr "Röd"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "stäng av mottagaren"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Också vid viloläge"
 
 msgid "Red button..."
 msgstr "Röd knapp..."
@@ -11800,6 +11785,10 @@ msgstr "Visa EPG..."
 msgid "Show Ethernet activity"
 msgstr "Visa alternativ"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Visa Kolumner"
+
 msgid "Show InfoBar"
 msgstr "Visa infobalk"
 
@@ -11904,9 +11893,6 @@ msgstr "Visa utökningar..."
 msgid "Show favourites list"
 msgstr "Visa favoritlista"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Visa hjälp"
 
@@ -12006,10 +11992,6 @@ msgid "Show on LED display in standby"
 msgstr "Visa picons i display"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Visa Kolumner"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Visa picons i display"
 
@@ -12059,9 +12041,6 @@ msgstr "Visa klockikoner för inspelning"
 
 msgid "Show record indicator"
 msgstr "Visa inspelningsikon"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Visa skärmsläckare"
@@ -12632,10 +12611,6 @@ msgid "Standby fan %d voltage"
 msgstr "Standby fläkt %d Volt"
 
 msgid "Standby in "
-msgstr "Viloläge om"
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Viloläge om"
 
 #, fuzzy
@@ -14475,9 +14450,6 @@ msgstr "Laddar ner"
 msgid "Update"
 msgstr "Uppdatera"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Uppdatera och du får själv välja om du vill starta om"
 
@@ -14735,9 +14707,6 @@ msgstr ""
 msgid "VCR scart"
 msgstr "VCR scart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #
 #, fuzzy
 msgid "VFD brightness"
@@ -14764,16 +14733,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Konfiguration av filmlista"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 #, fuzzy
@@ -16035,6 +16014,9 @@ msgstr "svartlista"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 #
 msgid "blue"
 msgstr "blå"
@@ -16391,10 +16373,7 @@ msgstr "från"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -16481,37 +16460,22 @@ msgstr "horisontal"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 #
@@ -16581,9 +16545,6 @@ msgstr "språk"
 #
 msgid "leave movie player..."
 msgstr "lämna movieplayer..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 #
 msgid "left"
@@ -16811,6 +16772,13 @@ msgstr "på"
 #
 msgid "on READ ONLY medium."
 msgstr "på READ ONLY media."
+
+#, fuzzy
+msgid "on all mounts"
+msgstr "visa alla taggar"
+
+msgid "on hdd"
+msgstr ""
 
 #
 msgid "once"
@@ -17040,6 +17008,10 @@ msgstr "blanda"
 msgid "shut down"
 msgstr "stäng av"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Signalkvalitet"
+
 #
 msgid "simple"
 msgstr "enkelt"
@@ -17103,6 +17075,12 @@ msgid "social/spiritual science"
 msgstr "social / andlig vetenskap"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -17214,6 +17192,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Ja och spara"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Ja och spara"
+
 #
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "skifta tid, kapitel, ljud, undertext info"
@@ -17307,9 +17289,6 @@ msgstr "variteuppvisning"
 #
 msgid "vertical"
 msgstr "vertikal"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

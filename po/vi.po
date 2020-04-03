@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -1763,10 +1763,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Luôn bao gồm các tin nhắn ECM trong bản ghi âm. Điều này ghi đè cài đặt hẹn giờ riêng trên toàn cầu. Nó cho phép các bản ghi luôn được giải mã sau đó (đôi khi được gọi là giải mã ngoại tuyến), nếu được người nhận của bạn hỗ trợ. Mặc định: tắt."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Luôn luôn hỏi"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Luôn luôn hỏi"
 
@@ -2670,34 +2666,14 @@ msgstr "Danh sách lít kênh"
 msgid "Channelname"
 msgstr "Kênh"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Số kênh và picon"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Số kênh và picon"
-
 msgid "Channelnumber and picon"
 msgstr "Số kênh và picon"
 
 msgid "Channelnumber and servicename"
 msgstr "Số kênh và tên dịch vụ"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Số kênh và picon"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Số kênh và picon"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Số kênh, picon và tên dịch vụ"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Số kênh và picon"
 
 msgid "Channels"
 msgstr "Kênh truyền hình"
@@ -2873,10 +2849,6 @@ msgstr "Cấu hình bộ chỉnh"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "luôn luôn"
 
 msgid "Clone TV screen to LCD"
 msgstr "Sao chép màn hình TV sang LCD"
@@ -6499,10 +6471,6 @@ msgid "LAN connection"
 msgstr "Kết nối mạng nội bộ"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Thiết lập hiển thị"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Độ sáng"
 
@@ -6529,6 +6497,14 @@ msgstr "Cấu hình danh sách phim"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Cấu hình danh sách phim"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Cấu hình danh sách phim"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7787,6 +7763,9 @@ msgstr "Số lượng văn bản lặp lại trên màn hình."
 msgid "Number or SMS style data entry"
 msgstr "Nhập dữ liệu kiểu số hoặc SMS"
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "Đồng ý"
 
@@ -8993,10 +8972,6 @@ msgstr "Cài đặt tiếp tân"
 msgid "Record"
 msgstr "Ghi lại"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Ghi lại"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Ghi lại thời gian giới hạn do bộ đếm thời gian xung đột%s"
@@ -9035,6 +9010,17 @@ msgstr "Thiết lập ghi âm"
 
 msgid "Red"
 msgstr "Màu đỏ"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "đi đến chế độ chờ sâu"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Ngoài ra ở chế độ chờ"
 
 msgid "Red button..."
 msgstr "Nút màu đỏ ..."
@@ -10529,6 +10515,10 @@ msgstr "Hiển thị EPG ..."
 msgid "Show Ethernet activity"
 msgstr "Hiển thị thay thế"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Hiển thị cột"
+
 msgid "Show InfoBar"
 msgstr "Hiển thị thông tin"
 
@@ -10626,9 +10616,6 @@ msgstr "Hiển thị tiện ích mở rộng ..."
 msgid "Show favourites list"
 msgstr "Hiển thị danh sách yêu thích"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Hiển thị trợ giúp"
 
@@ -10721,10 +10708,6 @@ msgid "Show on LED display in standby"
 msgstr "Hiển thị picons trong màn hình"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Hiển thị cột"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Hiển thị picons trong màn hình"
 
@@ -10772,9 +10755,6 @@ msgstr "Hiển thị biểu tượng đồng hồ kỷ lục"
 
 msgid "Show record indicator"
 msgstr "Hiển thị chỉ số hồ sơ"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Hiển thị bảo vệ màn hình"
@@ -11276,10 +11256,6 @@ msgid "Standby fan %d voltage"
 msgstr "Quạt chờ%d điện áp"
 
 msgid "Standby in "
-msgstr "Chờ trong "
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Chờ trong "
 
 #, fuzzy
@@ -12902,9 +12878,6 @@ msgstr "Giải nén hình ảnh"
 msgid "Update"
 msgstr "Cập nhật"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Cập nhật và yêu cầu khởi động lại"
 
@@ -13135,9 +13108,6 @@ msgstr "Uzbekistan"
 msgid "VCR scart"
 msgstr "VCR scart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Độ sáng"
@@ -13162,16 +13132,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Cấu hình danh sách phim"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 msgid "VLAN connection"
@@ -14307,6 +14287,9 @@ msgstr "danh sách đen"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "màu xanh da trời"
 
@@ -14624,10 +14607,7 @@ msgstr "từ"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14708,37 +14688,22 @@ msgstr "ngang"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 msgid "in menu and plugins"
@@ -14796,9 +14761,6 @@ msgstr "ngôn ngữ"
 
 msgid "leave movie player..."
 msgstr "rời khỏi máy nghe nhạc ..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "trái"
@@ -14998,6 +14960,13 @@ msgstr "trên"
 msgid "on READ ONLY medium."
 msgstr "trên phương tiện ĐỌC CHỈ."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "hiển thị tất cả các thẻ"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "một lần"
 
@@ -15196,6 +15165,10 @@ msgstr "xáo trộn"
 msgid "shut down"
 msgstr "tắt"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Chất lượng tín hiệu"
+
 msgid "simple"
 msgstr "đơn giản"
 
@@ -15256,6 +15229,12 @@ msgid "social/spiritual science"
 msgstr "khoa học xã hội / tâm linh"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15354,6 +15333,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Có và  lưu lại"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Có và  lưu lại"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "chuyển thời gian, chương, âm thanh, thông tin phụ đề"
 
@@ -15433,9 +15416,6 @@ msgstr "chương trình tạp kỹ"
 
 msgid "vertical"
 msgstr "theo chiều dọc"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

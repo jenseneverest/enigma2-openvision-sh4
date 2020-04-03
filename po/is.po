@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2011-05-07 12:23+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -1860,10 +1860,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr ""
 
 #, fuzzy
-msgid "Always off"
-msgstr "Spyrja alltaf"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Spyrja alltaf"
 
@@ -2809,28 +2805,13 @@ msgstr "Valmynd rásalista"
 msgid "Channelname"
 msgstr "Rás"
 
-msgid "Channelname in Standby Clock"
-msgstr ""
-
-msgid "Channelname in Standby off"
-msgstr ""
-
 msgid "Channelnumber and picon"
 msgstr ""
 
 msgid "Channelnumber and servicename"
 msgstr ""
 
-msgid "Channelnumber in Standby Clock"
-msgstr ""
-
-msgid "Channelnumber in Standby off"
-msgstr ""
-
 msgid "Channelnumber, picon and servicename"
-msgstr ""
-
-msgid "Channelnumber/Clock in Standby Clock"
 msgstr ""
 
 #, fuzzy
@@ -3011,11 +2992,6 @@ msgstr "Stilling móttakara"
 
 msgid "Clients"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Clock always"
-msgstr "16:9 alltaf"
 
 msgid "Clone TV screen to LCD"
 msgstr ""
@@ -7004,11 +6980,6 @@ msgstr "Netkort"
 msgid "LAN connection"
 msgstr "LAN tenging"
 
-#
-#, fuzzy
-msgid "LED Display Setup"
-msgstr "Uppsetning skjás"
-
 #, fuzzy
 msgid "LED brightness"
 msgstr "Birta"
@@ -7038,6 +7009,14 @@ msgstr "Handvirk stilling"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Handvirk stilling"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Handvirk stilling"
 
 #
 msgid "LNB"
@@ -8516,6 +8495,9 @@ msgstr ""
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 #
 msgid "OK"
 msgstr "OK"
@@ -9902,11 +9884,6 @@ msgid "Record"
 msgstr "Upptaka"
 
 #
-#, fuzzy
-msgid "Record only"
-msgstr "Upptaka"
-
-#
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Upptöku tími takmarkaður vegna annarar tímastillingar, %s"
@@ -9951,6 +9928,19 @@ msgstr "Upptaka"
 
 msgid "Red"
 msgstr ""
+
+msgid "Red LED during recording"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "fara í djúpsvefn"
+
+#
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "fara í biðstöðu"
 
 msgid "Red button..."
 msgstr ""
@@ -11668,6 +11658,11 @@ msgstr "sýna EPG"
 msgid "Show Ethernet activity"
 msgstr "Súna valkosti"
 
+#
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Sýna upplýsingar"
+
 msgid "Show InfoBar"
 msgstr ""
 
@@ -11778,9 +11773,6 @@ msgstr "skoða íforrit..."
 msgid "Show favourites list"
 msgstr ""
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr ""
 
@@ -11883,11 +11875,6 @@ msgstr ""
 msgid "Show on LED display in standby"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Show on VFD"
-msgstr "Sýna upplýsingar"
-
 msgid "Show on VFD display"
 msgstr ""
 
@@ -11937,9 +11924,6 @@ msgid "Show record clock icons"
 msgstr ""
 
 msgid "Show record indicator"
-msgstr ""
-
-msgid "Show red LED on VFD"
 msgstr ""
 
 msgid "Show screensaver"
@@ -12520,11 +12504,6 @@ msgstr "%d Volt á viftu í biðstöðu "
 
 msgid "Standby in "
 msgstr ""
-
-#
-#, fuzzy
-msgid "Standby only"
-msgstr "Biðstaða"
 
 msgid "Standby saver frequency"
 msgstr ""
@@ -14321,9 +14300,6 @@ msgstr "Hleð niður"
 msgid "Update"
 msgstr "Uppfæra"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr ""
 
@@ -14589,9 +14565,6 @@ msgstr ""
 msgid "VCR scart"
 msgstr "Vídeó scart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Birta"
@@ -14617,16 +14590,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Handvirk stilling"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 #, fuzzy
@@ -15840,6 +15823,9 @@ msgstr "svarti listi"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 #
 msgid "blue"
 msgstr "blár"
@@ -16190,10 +16176,7 @@ msgstr ""
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -16280,37 +16263,22 @@ msgstr "lárétt"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 #, fuzzy
@@ -16378,9 +16346,6 @@ msgstr ""
 #
 msgid "leave movie player..."
 msgstr "hætta í spilara"
-
-msgid "leddisplay.png"
-msgstr ""
 
 #
 msgid "left"
@@ -16603,6 +16568,12 @@ msgstr "á"
 #
 msgid "on READ ONLY medium."
 msgstr "á READ ONLY disk."
+
+msgid "on all mounts"
+msgstr ""
+
+msgid "on hdd"
+msgstr ""
 
 #
 msgid "once"
@@ -16831,6 +16802,11 @@ msgid "shut down"
 msgstr "slökkva"
 
 #
+#, fuzzy
+msgid "signal quality"
+msgstr "Gæði tengingar:"
+
+#
 msgid "simple"
 msgstr "einfalt"
 
@@ -16892,6 +16868,12 @@ msgid "social/spiritual science"
 msgstr ""
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 msgid "special (general)"
@@ -16999,6 +16981,11 @@ msgid "time and date"
 msgstr ""
 
 #
+#, fuzzy
+msgid "time, day and date"
+msgstr "raða eftir dagsetningu"
+
+#
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "skipta á milli tíma, kafla, undirtexta upplýsingar"
 
@@ -17090,9 +17077,6 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "lóðrétt"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

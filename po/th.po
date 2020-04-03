@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -1709,9 +1709,6 @@ msgstr ""
 msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
 msgstr ""
 
-msgid "Always off"
-msgstr ""
-
 msgid "Always select OK"
 msgstr ""
 
@@ -2627,28 +2624,13 @@ msgstr "เมนูช่องรายการ"
 msgid "Channelname"
 msgstr "ช่อง"
 
-msgid "Channelname in Standby Clock"
-msgstr ""
-
-msgid "Channelname in Standby off"
-msgstr ""
-
 msgid "Channelnumber and picon"
 msgstr ""
 
 msgid "Channelnumber and servicename"
 msgstr ""
 
-msgid "Channelnumber in Standby Clock"
-msgstr ""
-
-msgid "Channelnumber in Standby off"
-msgstr ""
-
 msgid "Channelnumber, picon and servicename"
-msgstr ""
-
-msgid "Channelnumber/Clock in Standby Clock"
 msgstr ""
 
 #, fuzzy
@@ -2825,10 +2807,6 @@ msgstr "ตั้งค่า Tuner"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "16:9 ตลอดเวลา"
 
 msgid "Clone TV screen to LCD"
 msgstr ""
@@ -6514,10 +6492,6 @@ msgid "LAN connection"
 msgstr ""
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "ตั้งค่าการแสดงผล"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "ความสว่าง"
 
@@ -6544,6 +6518,14 @@ msgstr "ตั้งค่า Tuner"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "ตั้งค่า Tuner"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "ตั้งค่า Tuner"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7839,6 +7821,9 @@ msgstr ""
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "ตกลง"
 
@@ -9075,10 +9060,6 @@ msgstr "ตั้งค่าการรับ"
 msgid "Record"
 msgstr "บันทึก"
 
-#, fuzzy
-msgid "Record only"
-msgstr "บันทึก"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "การบันทึกถูกจำกัด เนื่องจากซ้ำซ้อนกับ %s"
@@ -9117,6 +9098,17 @@ msgstr "กำลังบันทึกรายการ"
 
 msgid "Red"
 msgstr ""
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "เข้าสู่โหมด Deep standby"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "เข้าสู้โหมด Standby"
 
 msgid "Red button..."
 msgstr ""
@@ -10656,6 +10648,10 @@ msgstr "แสดงผังรายการ (EPG)"
 msgid "Show Ethernet activity"
 msgstr "แสดงทางเลือกอื่น"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "แสดงข้อมูล"
+
 msgid "Show InfoBar"
 msgstr ""
 
@@ -10758,9 +10754,6 @@ msgstr "ดูส่วนเพิ่มเติม..."
 msgid "Show favourites list"
 msgstr ""
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr ""
 
@@ -10854,10 +10847,6 @@ msgstr ""
 msgid "Show on LED display in standby"
 msgstr ""
 
-#, fuzzy
-msgid "Show on VFD"
-msgstr "แสดงข้อมูล"
-
 msgid "Show on VFD display"
 msgstr ""
 
@@ -10902,9 +10891,6 @@ msgid "Show record clock icons"
 msgstr ""
 
 msgid "Show record indicator"
-msgstr ""
-
-msgid "Show red LED on VFD"
 msgstr ""
 
 msgid "Show screensaver"
@@ -11428,10 +11414,6 @@ msgstr ""
 
 msgid "Standby in "
 msgstr ""
-
-#, fuzzy
-msgid "Standby only"
-msgstr "Standby"
 
 msgid "Standby saver frequency"
 msgstr ""
@@ -13045,9 +13027,6 @@ msgstr "กำลังดาวน์โหลด"
 msgid "Update"
 msgstr "ปรุบปรุง"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr ""
 
@@ -13289,9 +13268,6 @@ msgstr ""
 msgid "VCR scart"
 msgstr "VCR scart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "ความสว่าง"
@@ -13316,16 +13292,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "ตั้งค่า Tuner"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 #, fuzzy
@@ -14436,6 +14422,9 @@ msgstr "รายการต้องห้าม"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "น้ำเงิน"
 
@@ -14747,10 +14736,7 @@ msgstr ""
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14831,37 +14817,22 @@ msgstr "แนวนอน (H)"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 #, fuzzy
@@ -14921,9 +14892,6 @@ msgstr ""
 
 msgid "leave movie player..."
 msgstr "ออกจากส่วนเล่นภาพยนต์..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "ซ้าย"
@@ -15118,6 +15086,12 @@ msgstr "เปิด"
 
 msgid "on READ ONLY medium."
 msgstr "บนสื่อบันทึกอ่านได้อย่างเดียว"
+
+msgid "on all mounts"
+msgstr ""
+
+msgid "on hdd"
+msgstr ""
 
 msgid "once"
 msgstr "ครั้งเดียว"
@@ -15316,6 +15290,10 @@ msgstr ""
 msgid "shut down"
 msgstr ""
 
+#, fuzzy
+msgid "signal quality"
+msgstr "คุณภาพการเชื่อมต่อ:"
+
 msgid "simple"
 msgstr "แบบง่าย"
 
@@ -15375,6 +15353,12 @@ msgid "social/spiritual science"
 msgstr ""
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 msgid "special (general)"
@@ -15470,6 +15454,10 @@ msgstr ""
 msgid "time and date"
 msgstr ""
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "เรียงตามวันที่"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "สลับช่วงเวลา ตอนที่ เสียง หรือซับไตเติ้ล"
 
@@ -15550,9 +15538,6 @@ msgstr ""
 
 msgid "vertical"
 msgstr "แนวตั้ง (V)"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

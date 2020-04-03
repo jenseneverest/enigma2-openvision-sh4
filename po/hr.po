@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2020-03-23 11:15+0100\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -1768,10 +1768,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Uvijek uključite ECM poruke u snimanje. To poništava pojedinačne postavke timera na globalnoj razini, omogućuje naknadno dešifriranje snimaka (ponekad se naziva offline dekodiranje), ako to podržava vaš prijemnik. Zadano: isključeno."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Uvijek pitaj"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Uvijek pitaj"
 
@@ -2677,34 +2673,14 @@ msgstr "Izbornik s popisom kanala"
 msgid "Channelname"
 msgstr "Kanal"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Broj kanala i pikon"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Broj kanala i pikon"
-
 msgid "Channelnumber and picon"
 msgstr "Broj kanala i pikon"
 
 msgid "Channelnumber and servicename"
 msgstr "Broj kanala i naziv usluge"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Broj kanala i pikon"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Broj kanala i pikon"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Broj kanala, pikon i naziv usluge"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Broj kanala i pikon"
 
 msgid "Channels"
 msgstr "Kanali"
@@ -2880,10 +2856,6 @@ msgstr "Konfiguracija tjunera"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "uvijek"
 
 msgid "Clone TV screen to LCD"
 msgstr "Kloniranje TV zaslona na LCD"
@@ -6500,10 +6472,6 @@ msgid "LAN connection"
 msgstr "LAN veza"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Postavke zaslona"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Osvjetljenje"
 
@@ -6530,6 +6498,14 @@ msgstr "Konfiguracija popisa videozapisa"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Konfiguracija popisa videozapisa"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Konfiguracija popisa videozapisa"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7786,6 +7762,9 @@ msgstr "Broj ponavljanja teksta na zaslonu."
 msgid "Number or SMS style data entry"
 msgstr "Snimanje podataka u obliku broja ili SMS-a"
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
 
@@ -8991,10 +8970,6 @@ msgstr "Postavke prijema"
 msgid "Record"
 msgstr "Snimanje"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Snimanje"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Ograničeno vrijeme snimanja zbog proturječnog vremena %s"
@@ -9033,6 +9008,17 @@ msgstr "Postavke snimanja"
 
 msgid "Red"
 msgstr "Crvena"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "idite u duboko stanje čekanja"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Također u stanju čekanja"
 
 msgid "Red button..."
 msgstr "Crvena tipka..."
@@ -10526,6 +10512,10 @@ msgstr "Prikažite EPG..."
 msgid "Show Ethernet activity"
 msgstr "Prikaži alternative"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Prikažite stupce"
+
 msgid "Show InfoBar"
 msgstr "Prikažite info traku"
 
@@ -10623,9 +10613,6 @@ msgstr "Prikažite proširenja..."
 msgid "Show favourites list"
 msgstr "Prikažite popis favorita"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Prikažite pomoć"
 
@@ -10718,10 +10705,6 @@ msgid "Show on LED display in standby"
 msgstr "Isključite zaslon tijekom stanja čekanja"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Prikažite stupce"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Prikažite pikone na zaslonu"
 
@@ -10769,9 +10752,6 @@ msgstr "Prikažite ikone sata za snimanje"
 
 msgid "Show record indicator"
 msgstr "Prikažite indikator snimanja"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Prikažite čuvara zaslona"
@@ -11272,10 +11252,6 @@ msgid "Standby fan %d voltage"
 msgstr "Ventilator u stanju čekanja %d napon"
 
 msgid "Standby in "
-msgstr "U stanju čekanja "
-
-#, fuzzy
-msgid "Standby only"
 msgstr "U stanju čekanja "
 
 #, fuzzy
@@ -12894,9 +12870,6 @@ msgstr "Raspakivanje imagea"
 msgid "Update"
 msgstr "Ažuriranje"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Ažurirajte i zatražite ponovno pokretanje"
 
@@ -13128,9 +13101,6 @@ msgstr "Uzbekistan"
 msgid "VCR scart"
 msgstr "VCR skart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Osvjetljenje"
@@ -13155,16 +13125,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Konfiguracija popisa videozapisa"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 msgid "VLAN connection"
@@ -14299,6 +14279,9 @@ msgstr "crna lista"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "plava"
 
@@ -14616,10 +14599,7 @@ msgstr "iz"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14700,37 +14680,22 @@ msgstr "horizontalno"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 msgid "in menu and plugins"
@@ -14788,9 +14753,6 @@ msgstr "jezici"
 
 msgid "leave movie player..."
 msgstr "izađite iz video playera..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "lijevo"
@@ -14990,6 +14952,13 @@ msgstr "uklj"
 msgid "on READ ONLY medium."
 msgstr "na mediju SAMO ZA ČITANJE."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "prikaži sve oznake"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "jednom"
 
@@ -15188,6 +15157,10 @@ msgstr "slučajni poredak"
 msgid "shut down"
 msgstr "ugasiti"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Kvaliteta signala"
+
 msgid "simple"
 msgstr "jednostavan"
 
@@ -15248,6 +15221,12 @@ msgid "social/spiritual science"
 msgstr "društvena/duhovna znanost"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15346,6 +15325,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Da i spremi"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Da i spremi"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "prebacivanje vremena, poglavlja, zvuka i informacija o titlovima"
 
@@ -15425,9 +15408,6 @@ msgstr "variete šou"
 
 msgid "vertical"
 msgstr "vertikalno"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr "ljubičasta"

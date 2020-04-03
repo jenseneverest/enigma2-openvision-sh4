@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2016-11-17 12:51+0200\n"
 "Last-Translator: vovan43<vovan43@ex.ua>, sety <tim1065@mail.ru>, Irkoff <irkoff@gmail.com>\n"
 "Language-Team: gisclub.tv <http://gisclub.tv/>\n"
@@ -1777,10 +1777,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Завжди включайте ECM повідомлень в записах.Це скасовує окремі настройки таймера на глобальному рівні.Це дозволяє записам завжди бути розшифровані згодом ( іноді називають відсутнє декодування ), якщо ця функція підтримується вашим приймачем.За замовчуванням:викл."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Завжди питати"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Завжди питати"
 
@@ -2690,34 +2686,14 @@ msgstr "Меню списка каналів"
 msgid "Channelname"
 msgstr "Канал"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Номер каналу і пікон"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Номер каналу і пікон"
-
 msgid "Channelnumber and picon"
 msgstr "Номер каналу і пікон"
 
 msgid "Channelnumber and servicename"
 msgstr "Номер каналу і назва сервісу"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Номер каналу і пікон"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Номер каналу і пікон"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Номер каналу,пікон і назва сервісу"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Номер каналу і пікон"
 
 #, fuzzy
 msgid "Channels"
@@ -2896,10 +2872,6 @@ msgstr "Налаштування тюнера"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "завжди"
 
 msgid "Clone TV screen to LCD"
 msgstr "Клон телевізор з плоским екраном на LCD"
@@ -6580,10 +6552,6 @@ msgid "LAN connection"
 msgstr "LAN з'єднання"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Налаштування дисплея"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Яскравість"
 
@@ -6610,6 +6578,14 @@ msgstr "Конфігурація списку відео"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Конфігурація списку відео"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Конфігурація списку відео"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7891,6 +7867,9 @@ msgstr "Кількість повторення тексту на дисплеї
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
 
@@ -9113,10 +9092,6 @@ msgstr "Налаштування прийому"
 msgid "Record"
 msgstr "Запис"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Запис"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Час запису обмежений через конфлікт таймера %s"
@@ -9155,6 +9130,17 @@ msgstr "Налаштування запису"
 
 msgid "Red"
 msgstr "Червоний"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "перейти в глибокий Режим очікування"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Також в режимі очікування"
 
 msgid "Red button..."
 msgstr "Червона кнопка..."
@@ -10681,6 +10667,10 @@ msgstr "Показати EPG..."
 msgid "Show Ethernet activity"
 msgstr "Показати альтернативу"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Показати стовпці"
+
 msgid "Show InfoBar"
 msgstr "Показати Інфобар"
 
@@ -10778,9 +10768,6 @@ msgstr "Показати доповнення..."
 msgid "Show favourites list"
 msgstr "Показати список фаворитів"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Показати допомогу"
 
@@ -10871,10 +10858,6 @@ msgstr ""
 msgid "Show on LED display in standby"
 msgstr ""
 
-#, fuzzy
-msgid "Show on VFD"
-msgstr "Показати стовпці"
-
 msgid "Show on VFD display"
 msgstr ""
 
@@ -10921,9 +10904,6 @@ msgstr "Показати запис значка годинника"
 
 msgid "Show record indicator"
 msgstr "Показати індикатор запису"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Запустити зберігач екрану через"
@@ -11438,10 +11418,6 @@ msgid "Standby fan %d voltage"
 msgstr "Режим Standby вентилятора %d PWM"
 
 msgid "Standby in "
-msgstr "Режим очікування через "
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Режим очікування через "
 
 #, fuzzy
@@ -13108,9 +13084,6 @@ msgstr "Завантаження"
 msgid "Update"
 msgstr "Оновлення"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Оновити і запитати про перезавантаження"
 
@@ -13346,9 +13319,6 @@ msgstr ""
 msgid "VCR scart"
 msgstr "Відеомагнітофон"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Яскравість"
@@ -13373,16 +13343,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Конфігурація списку відео"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 #, fuzzy
@@ -14549,6 +14529,9 @@ msgstr "чорний список"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "синій"
 
@@ -14868,10 +14851,7 @@ msgstr "від"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14952,37 +14932,22 @@ msgstr "горизонтальна"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 #, fuzzy
@@ -15043,9 +15008,6 @@ msgstr "мови"
 
 msgid "leave movie player..."
 msgstr "вийти з відеоплеєра..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "зліва"
@@ -15246,6 +15208,13 @@ msgstr "увімкн."
 msgid "on READ ONLY medium."
 msgstr "на диск тільки для читання."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "показати всі теги"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "один раз"
 
@@ -15444,6 +15413,10 @@ msgstr "випадковий порядок"
 msgid "shut down"
 msgstr "вимкнути"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Якість сигналу"
+
 msgid "simple"
 msgstr "простий"
 
@@ -15504,6 +15477,12 @@ msgid "social/spiritual science"
 msgstr "соціальна/духовна наука"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15602,6 +15581,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Так і зберегти"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Так і зберегти"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "час перемикання, розділи, Аудіо, Інформація субтитрів"
 
@@ -15683,9 +15666,6 @@ msgstr "шоу вар'єте"
 
 msgid "vertical"
 msgstr "вертикальна"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

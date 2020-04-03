@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2019-02-13 20:52+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -1871,10 +1871,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Sisällytä aina ECM tallennuksiin. Tämä mahdollistaa tallennusten purun myöhemmin (offline decoding), mikäli vastaanottimesi tukee sitä. Jos päällä, tämä asetus ohittaa aina ajastusten erilliset asetukset."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Kysy aina"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Kysy aina"
 
@@ -2853,34 +2849,14 @@ msgstr "Kanavalistan muokkaus"
 msgid "Channelname"
 msgstr "Kanava"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Kanavanumero ja logo"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Kanavanumero ja logo"
-
 msgid "Channelnumber and picon"
 msgstr "Kanavanumero ja logo"
 
 msgid "Channelnumber and servicename"
 msgstr "Kanavanumero ja nimi"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Kanavanumero ja logo"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Kanavanumero ja logo"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Kanavanumero, logo ja nimi"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Kanavanumero ja logo"
 
 #
 #, fuzzy
@@ -3084,10 +3060,6 @@ msgstr "Virittimien asetukset"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "Aina"
 
 msgid "Clone TV screen to LCD"
 msgstr "Kopioi TV kuva etupaneeliin"
@@ -7058,10 +7030,6 @@ msgstr "Verkkosovitin"
 msgid "LAN connection"
 msgstr "LAN-yhteys"
 
-#, fuzzy
-msgid "LED Display Setup"
-msgstr "Etupaneelin näyttö"
-
 #
 #, fuzzy
 msgid "LED brightness"
@@ -7090,6 +7058,14 @@ msgstr "Tallenneluettelon asetukset"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Tallenneluettelon asetukset"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Tallenneluettelon asetukset"
 
 #
 msgid "LNB"
@@ -8553,6 +8529,9 @@ msgstr ""
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 #
 msgid "OK"
 msgstr "OK"
@@ -9928,11 +9907,6 @@ msgid "Record"
 msgstr "Tallenna"
 
 #
-#, fuzzy
-msgid "Record only"
-msgstr "Tallenna"
-
-#
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Ajastusaika rajoitettu, ristiriita ajastukseen %s"
@@ -9977,6 +9951,19 @@ msgstr "Tallenne"
 
 msgid "Red"
 msgstr "Punainen"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "Siirry virransäästötilaan"
+
+#
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Myös valmiustilassa"
 
 msgid "Red button..."
 msgstr "Punainen näppäin..."
@@ -11656,6 +11643,10 @@ msgstr "Näytä ohjelmaopas..."
 msgid "Show Ethernet activity"
 msgstr "Näytä vaihtoehtoiset kanavat"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Näytä sarakkeet"
+
 msgid "Show InfoBar"
 msgstr "Näytä tietopalkki"
 
@@ -11761,9 +11752,6 @@ msgstr "Näytä laajennukset..."
 msgid "Show favourites list"
 msgstr "Näytä suosikkilista"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Apua"
 
@@ -11864,10 +11852,6 @@ msgid "Show on LED display in standby"
 msgstr "Näytä kanavalogot"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Näytä sarakkeet"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Näytä kanavalogot"
 
@@ -11919,9 +11903,6 @@ msgstr "Näytä tallennuksien ikonit"
 #
 msgid "Show record indicator"
 msgstr "Tallennusmerkki"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Näytönsäästäjä"
@@ -12487,11 +12468,6 @@ msgstr "Valmiustilan tuuletin %d jännite"
 
 #
 msgid "Standby in "
-msgstr "Valmiustilaan kun kulunut "
-
-#
-#, fuzzy
-msgid "Standby only"
 msgstr "Valmiustilaan kun kulunut "
 
 #
@@ -14293,9 +14269,6 @@ msgstr "Puretaan ohjelmistokuvaa"
 msgid "Update"
 msgstr "Päivitä"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Päivitä ja kysy uudelleenkäynnistystä"
 
@@ -14555,9 +14528,6 @@ msgstr "Uzbekistan"
 msgid "VCR scart"
 msgstr "SCART-läpivienti"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #
 #, fuzzy
 msgid "VFD brightness"
@@ -14584,16 +14554,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Tallenneluettelon asetukset"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 msgid "VLAN connection"
@@ -15817,6 +15797,9 @@ msgstr "Kielletyt"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 #
 msgid "blue"
 msgstr "Sininen"
@@ -16168,10 +16151,7 @@ msgstr "tulosta"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -16258,37 +16238,22 @@ msgstr "Horisontaali"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 msgid "in menu and plugins"
@@ -16353,9 +16318,6 @@ msgstr "kielet"
 #
 msgid "leave movie player..."
 msgstr "poistu videotoistimesta..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 #
 msgid "left"
@@ -16585,6 +16547,13 @@ msgstr "Päällä"
 #
 msgid "on READ ONLY medium."
 msgstr "Vain-luku levystä."
+
+#, fuzzy
+msgid "on all mounts"
+msgstr "Näytä kaikki avainsanat"
+
+msgid "on hdd"
+msgstr ""
 
 #
 msgid "once"
@@ -16816,6 +16785,11 @@ msgid "shut down"
 msgstr "Sammuta"
 
 #
+#, fuzzy
+msgid "signal quality"
+msgstr "Yhteyden laatu:"
+
+#
 msgid "simple"
 msgstr "Suppea"
 
@@ -16878,6 +16852,12 @@ msgid "social/spiritual science"
 msgstr "sosiaalinen/hengellinen tiede"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -16990,6 +16970,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Kyllä ja tallenna"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Kyllä ja tallenna"
+
 #
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "Valitse aika, kappale, ääni, tekstitys"
@@ -17082,9 +17066,6 @@ msgstr "varietee"
 #
 msgid "vertical"
 msgstr "Vertikaali"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

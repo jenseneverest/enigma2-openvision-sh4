@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2018-12-17 02:51+0200\n"
 "Last-Translator: Hazem <moustafagamal@hotmail.com>\n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -1793,10 +1793,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr ""
 
 #, fuzzy
-msgid "Always off"
-msgstr "السؤال دائما"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "السؤال دائما"
 
@@ -2739,34 +2735,14 @@ msgstr "قائمة لائحة القنوات"
 msgid "Channelname"
 msgstr "قناة"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "رقم وشعار القناة"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "رقم وشعار القناة"
-
 msgid "Channelnumber and picon"
 msgstr "رقم وشعار القناة"
 
 msgid "Channelnumber and servicename"
 msgstr ""
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "رقم وشعار القناة"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "رقم وشعار القناة"
-
 msgid "Channelnumber, picon and servicename"
 msgstr ""
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "رقم وشعار القناة"
 
 #
 #, fuzzy
@@ -2947,10 +2923,6 @@ msgstr "تهيئة الموالف"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "16:9 دائما"
 
 msgid "Clone TV screen to LCD"
 msgstr ""
@@ -6713,10 +6685,6 @@ msgstr "منفذ شبكة Lan"
 msgid "LAN connection"
 msgstr "اتصال Lan"
 
-#, fuzzy
-msgid "LED Display Setup"
-msgstr "إعدادات العرض"
-
 #
 #, fuzzy
 msgid "LED brightness"
@@ -6745,6 +6713,14 @@ msgstr "تهيئة الموالف"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "تهيئة الموالف"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "تهيئة الموالف"
 
 #
 msgid "LNB"
@@ -8137,6 +8113,9 @@ msgstr ""
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 #
 msgid "OK"
 msgstr "موافق"
@@ -9415,11 +9394,6 @@ msgid "Record"
 msgstr "تسجيل"
 
 #
-#, fuzzy
-msgid "Record only"
-msgstr "تسجيل"
-
-#
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "وقت تسجيل محدود لوجود مؤقت متعارض %s"
@@ -9460,6 +9434,17 @@ msgstr "إعدادات التسجيل"
 
 msgid "Red"
 msgstr "أحمر"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "الذهاب الى وضع الاستعداد العميق"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "الذهاب لوضع الاستعداد"
 
 msgid "Red button..."
 msgstr "الزر الأحمر"
@@ -11061,6 +11046,10 @@ msgstr "عرض دليل البرامج الالكترونى"
 msgid "Show Ethernet activity"
 msgstr "إظهار البدائل"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "عرض الصفوف"
+
 msgid "Show InfoBar"
 msgstr ""
 
@@ -11162,9 +11151,6 @@ msgstr "مشاهدة الاضافات..."
 msgid "Show favourites list"
 msgstr ""
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr ""
 
@@ -11264,10 +11250,6 @@ msgstr ""
 msgid "Show on LED display in standby"
 msgstr ""
 
-#, fuzzy
-msgid "Show on VFD"
-msgstr "عرض الصفوف"
-
 msgid "Show on VFD display"
 msgstr ""
 
@@ -11314,9 +11296,6 @@ msgid "Show record clock icons"
 msgstr ""
 
 msgid "Show record indicator"
-msgstr ""
-
-msgid "Show red LED on VFD"
 msgstr ""
 
 msgid "Show screensaver"
@@ -11856,10 +11835,6 @@ msgstr "مروحه %d فولتيه"
 
 msgid "Standby in "
 msgstr ""
-
-#, fuzzy
-msgid "Standby only"
-msgstr "وضع الاستعداد"
 
 msgid "Standby saver frequency"
 msgstr ""
@@ -13578,9 +13553,6 @@ msgstr "جاري فك ضغط الصورة"
 msgid "Update"
 msgstr "تحديث"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "تحديث والسؤال لإعادة التشغيل"
 
@@ -13835,9 +13807,6 @@ msgstr ""
 msgid "VCR scart"
 msgstr "وصله فيديو كاسيت"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #
 #, fuzzy
 msgid "VFD brightness"
@@ -13863,16 +13832,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "تهيئة الموالف"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 #, fuzzy
@@ -15020,6 +14999,9 @@ msgstr "القائمة السوداء"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "أزرق"
 
@@ -15339,10 +15321,7 @@ msgstr ""
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -15424,37 +15403,22 @@ msgstr "أفقى"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 #, fuzzy
@@ -15518,9 +15482,6 @@ msgstr "اللغات"
 #
 msgid "leave movie player..."
 msgstr "اترك مشغل الأفلام .."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "يسار"
@@ -15725,6 +15686,12 @@ msgstr "يعمل"
 
 msgid "on READ ONLY medium."
 msgstr "على وسيط قراءة فقط"
+
+msgid "on all mounts"
+msgstr ""
+
+msgid "on hdd"
+msgstr ""
 
 #
 msgid "once"
@@ -15932,6 +15899,10 @@ msgstr "تشغيل عشوائي"
 msgid "shut down"
 msgstr "إغــلاق"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "جودة الإشارة"
+
 msgid "simple"
 msgstr "بسيط"
 
@@ -15991,6 +15962,12 @@ msgid "social/spiritual science"
 msgstr ""
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 msgid "special (general)"
@@ -16086,6 +16063,10 @@ msgstr ""
 msgid "time and date"
 msgstr ""
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "حسب التاريخ"
+
 #
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr ""
@@ -16175,9 +16156,6 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "رأسى"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

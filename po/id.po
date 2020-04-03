@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -1773,10 +1773,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Selalu sertakan pesan-pesan ECM dalam merekam. Hal ini akan mengabaikan penyetelan pewaktu masing-masing secara global. Memungkinkan hasil rekaman selalu di-dekripsi setelah itu (kadang disebut dekoding offline), jika didukung oleh Rx anda. Bawaan: tidak."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Selalu tanya"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Selalu tanya"
 
@@ -2685,34 +2681,14 @@ msgstr "Menu daftar kanal"
 msgid "Channelname"
 msgstr "Kanal"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Nomor kanal dan pikon"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Nomor kanal dan pikon"
-
 msgid "Channelnumber and picon"
 msgstr "Nomor kanal dan pikon"
 
 msgid "Channelnumber and servicename"
 msgstr "Nomor kanal dan nama layanan"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Nomor kanal dan pikon"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Nomor kanal dan pikon"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Nomor kanal, pikon dan nama layanan"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Nomor kanal dan pikon"
 
 #, fuzzy
 msgid "Channels"
@@ -2892,10 +2868,6 @@ msgstr "Pengaturan penala"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "selalu"
 
 msgid "Clone TV screen to LCD"
 msgstr "Gandakan layar TV ke LCD"
@@ -6599,10 +6571,6 @@ msgid "LAN connection"
 msgstr "Koneksi LAN"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Atur display"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Kecerahan"
 
@@ -6629,6 +6597,14 @@ msgstr "Pengaturan daftar film"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Pengaturan daftar film"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Pengaturan daftar film"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7912,6 +7888,9 @@ msgstr "Jumlah teks berulang pada tampilan"
 msgid "Number or SMS style data entry"
 msgstr "Nomor atau entri data gaya SMS"
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
 
@@ -9133,10 +9112,6 @@ msgstr "Pengaturan Penerimaan"
 msgid "Record"
 msgstr "Rekam"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Rekam"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Waktu rekam terbatas karna konflik pada pewaktu %s"
@@ -9175,6 +9150,17 @@ msgstr "Pengaturan Rekam"
 
 msgid "Red"
 msgstr "Merah"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "menuju deep standby"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Juga pada standby"
 
 msgid "Red button..."
 msgstr "Tombol merah..."
@@ -10699,6 +10685,10 @@ msgstr "Tampilkan EPG..."
 msgid "Show Ethernet activity"
 msgstr "Tampilkan alternatif"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Tampilkan kolom"
+
 msgid "Show InfoBar"
 msgstr "Tampilkan Bilah info"
 
@@ -10796,9 +10786,6 @@ msgstr "Tampilkan ekstensi..."
 msgid "Show favourites list"
 msgstr "Tampilkan daftar favorit"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Tampilkan bantuan"
 
@@ -10891,10 +10878,6 @@ msgid "Show on LED display in standby"
 msgstr "Tampilkan pikon pada tampilan"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Tampilkan kolom"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Tampilkan pikon pada tampilan"
 
@@ -10942,9 +10925,6 @@ msgstr "Tampilkan ikon jam rekam"
 
 msgid "Show record indicator"
 msgstr "Tampilkan indikator rekaman"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Tampilkan screensaver"
@@ -11458,10 +11438,6 @@ msgid "Standby fan %d voltage"
 msgstr "Kipas standby %d volt"
 
 msgid "Standby in "
-msgstr "Standby dalam"
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Standby dalam"
 
 #, fuzzy
@@ -13112,9 +13088,6 @@ msgstr "Meng-Unzip Image"
 msgid "Update"
 msgstr "Perbarui"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Perbarui dan meminta untuk reboot"
 
@@ -13349,9 +13322,6 @@ msgstr ""
 msgid "VCR scart"
 msgstr "scart VCR"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Kecerahan"
@@ -13376,16 +13346,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Pengaturan daftar film"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 #, fuzzy
@@ -14540,6 +14520,9 @@ msgstr "daftar hitam"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "biru"
 
@@ -14859,10 +14842,7 @@ msgstr "dari"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14943,37 +14923,22 @@ msgstr "horizontal"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 #, fuzzy
@@ -15034,9 +14999,6 @@ msgstr "bahasa"
 
 msgid "leave movie player..."
 msgstr "keluar dari pemutar film..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "kiri"
@@ -15237,6 +15199,13 @@ msgstr "hidup"
 msgid "on READ ONLY medium."
 msgstr "pada media BACA SAJA."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "tampilkan semua label"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "sekali"
 
@@ -15435,6 +15404,10 @@ msgstr "acak"
 msgid "shut down"
 msgstr "matikan"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Kualitas sinyal"
+
 msgid "simple"
 msgstr "sederhana"
 
@@ -15495,6 +15468,12 @@ msgid "social/spiritual science"
 msgstr "social/spiritual science"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15593,6 +15572,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Ya dan simpan"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Ya dan simpan"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "alihkan waktu, bab, audio, info terjemahan"
 
@@ -15674,9 +15657,6 @@ msgstr "variety show"
 
 msgid "vertical"
 msgstr "vertical"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

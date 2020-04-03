@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:48+0430\n"
+"POT-Creation-Date: 2020-04-03 12:38+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -1765,10 +1765,6 @@ msgid "Always include ECM messages in recordings. This overrides the individual 
 msgstr "Salvestised sisaldavad alati ka ECM sõnumeid. See valik alistab üksiku taimeri seadistused globaalselt ja võimaldab salvestisi hiljem dekrüptida (offlain dekodeerimine), kui vastuvõtja seda toetab. Vaikimisi: välja lülitatud."
 
 #, fuzzy
-msgid "Always off"
-msgstr "Küsi alati"
-
-#, fuzzy
 msgid "Always select OK"
 msgstr "Küsi alati"
 
@@ -2665,34 +2661,14 @@ msgstr "Kanalinimekirja menüü"
 msgid "Channelname"
 msgstr "Kanal"
 
-#, fuzzy
-msgid "Channelname in Standby Clock"
-msgstr "Kanali number ja picon"
-
-#, fuzzy
-msgid "Channelname in Standby off"
-msgstr "Kanali number ja picon"
-
 msgid "Channelnumber and picon"
 msgstr "Kanali number ja picon"
 
 msgid "Channelnumber and servicename"
 msgstr "Kanali number ja teenuse nimi"
 
-#, fuzzy
-msgid "Channelnumber in Standby Clock"
-msgstr "Kanali number ja picon"
-
-#, fuzzy
-msgid "Channelnumber in Standby off"
-msgstr "Kanali number ja picon"
-
 msgid "Channelnumber, picon and servicename"
 msgstr "Kanali number, picon ja teenuse nimi"
-
-#, fuzzy
-msgid "Channelnumber/Clock in Standby Clock"
-msgstr "Kanali number ja picon"
 
 #, fuzzy
 msgid "Channels"
@@ -2870,10 +2846,6 @@ msgstr "Tuuneri seaded"
 
 msgid "Clients"
 msgstr ""
-
-#, fuzzy
-msgid "Clock always"
-msgstr "alati"
 
 msgid "Clone TV screen to LCD"
 msgstr "Kopeeri TV ekraan LCD-le"
@@ -6505,10 +6477,6 @@ msgid "LAN connection"
 msgstr "LAN ühendus"
 
 #, fuzzy
-msgid "LED Display Setup"
-msgstr "Esipaneeli seaded"
-
-#, fuzzy
 msgid "LED brightness"
 msgstr "Heledus"
 
@@ -6535,6 +6503,14 @@ msgstr "Filmilisti seaded"
 
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
+
+#, fuzzy
+msgid "LED display configuration for Spark"
+msgstr "Filmilisti seaded"
+
+#, fuzzy
+msgid "LED display control Spark"
+msgstr "Filmilisti seaded"
 
 msgid "LNB"
 msgstr "LNB"
@@ -7799,6 +7775,9 @@ msgstr "Näidikul korduva teksti arv."
 msgid "Number or SMS style data entry"
 msgstr ""
 
+msgid "NumberZapPicon"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
 
@@ -9010,10 +8989,6 @@ msgstr "Vastuvõtu seaded"
 msgid "Record"
 msgstr "Salvestus"
 
-#, fuzzy
-msgid "Record only"
-msgstr "Salvestus"
-
 #, python-format
 msgid "Record time limited due to conflicting timer %s"
 msgstr "Salvestusaeg on piiratud teise taimeri %s tõttu"
@@ -9052,6 +9027,17 @@ msgstr "Salvestuse seadistus"
 
 msgid "Red"
 msgstr "Punane"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "mine sügavootele"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Ka ooteseisundis"
 
 msgid "Red button..."
 msgstr "Punane nupp..."
@@ -10561,6 +10547,10 @@ msgstr "Näita saatekava..."
 msgid "Show Ethernet activity"
 msgstr "Näita asenduskanaleid"
 
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Näita veergusid"
+
 msgid "Show InfoBar"
 msgstr "Näita inforiba"
 
@@ -10658,9 +10648,6 @@ msgstr "Näita laiendusi..."
 msgid "Show favourites list"
 msgstr "Näita lemmikute nimekirja"
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr "Näita abi"
 
@@ -10754,10 +10741,6 @@ msgid "Show on LED display in standby"
 msgstr "Näita piconid ekraanil"
 
 #, fuzzy
-msgid "Show on VFD"
-msgstr "Näita veergusid"
-
-#, fuzzy
 msgid "Show on VFD display"
 msgstr "Näita piconid ekraanil"
 
@@ -10805,9 +10788,6 @@ msgstr "Näita salvestuse kella ikoone"
 
 msgid "Show record indicator"
 msgstr "Näita salvestuse indikaatorit"
-
-msgid "Show red LED on VFD"
-msgstr ""
 
 msgid "Show screensaver"
 msgstr "Näita ekraanisäästjat"
@@ -11311,10 +11291,6 @@ msgid "Standby fan %d voltage"
 msgstr "Vent. %d pinge ooterežiimil"
 
 msgid "Standby in "
-msgstr "Ooterežiimis "
-
-#, fuzzy
-msgid "Standby only"
 msgstr "Ooterežiimis "
 
 #, fuzzy
@@ -12967,9 +12943,6 @@ msgstr "Tarkvara alla laadimas"
 msgid "Update"
 msgstr "Uuendus"
 
-msgid "Update Date/Time"
-msgstr ""
-
 msgid "Update and ask to reboot"
 msgstr "Uuenda ja küsi luba taaskäivitamiseks"
 
@@ -13202,9 +13175,6 @@ msgstr "Usbekistan"
 msgid "VCR scart"
 msgstr "VCR scart"
 
-msgid "VFD Icons for adb_box"
-msgstr ""
-
 #, fuzzy
 msgid "VFD brightness"
 msgstr "Heledus"
@@ -13229,16 +13199,26 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-msgid "VFD-Icons for Fortis FS9000/9200"
+#, fuzzy
+msgid "VFD display configuration for Spark 7162"
+msgstr "Filmilisti seaded"
+
+msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgid "VFD icons for Fortis HS7420 & HS7429"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS8200"
+msgid "VFD icons for Fortis HS8200"
 msgstr ""
 
-msgid "VFD-Icons for Fortis HS9510"
+msgid "VFD icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD icons for adb_box"
+msgstr ""
+
+msgid "VFD icons for spark 7162"
 msgstr ""
 
 msgid "VLAN connection"
@@ -14385,6 +14365,9 @@ msgstr "keelatud"
 msgid "blank"
 msgstr ""
 
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "sinine"
 
@@ -14702,10 +14685,7 @@ msgstr "pärit"
 msgid "fs9000"
 msgstr ""
 
-msgid "fs9000VFD display"
-msgstr ""
-
-msgid "fs9000VFD-Icons"
+msgid "fs9000VFD"
 msgstr ""
 
 msgid "full"
@@ -14786,37 +14766,22 @@ msgstr "horisontaal"
 msgid "hs7110"
 msgstr ""
 
-msgid "hs7110VFD control"
+msgid "hs7110VFD"
 msgstr ""
 
-msgid "hs7110VFD display"
+msgid "hs742xVFD"
 msgstr ""
 
-msgid "hs742xVFD display"
+msgid "hs7810aVFD"
 msgstr ""
 
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-msgid "hs7810aVFD display"
-msgstr ""
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-msgid "hs8200VFD display"
-msgstr ""
-
-msgid "hs8200VFD-Icons"
+msgid "hs8200VFD"
 msgstr ""
 
 msgid "hs9510"
 msgstr ""
 
-msgid "hs9510VFD display"
-msgstr ""
-
-msgid "hs9510VFD-Icons"
+msgid "hs9510VFD"
 msgstr ""
 
 #, fuzzy
@@ -14877,9 +14842,6 @@ msgstr "keeled"
 
 msgid "leave movie player..."
 msgstr "lõpeta salvestise taasesitus"
-
-msgid "leddisplay.png"
-msgstr ""
 
 msgid "left"
 msgstr "vasak"
@@ -15080,6 +15042,13 @@ msgstr "sees"
 msgid "on READ ONLY medium."
 msgstr "ainult LOETAV meedial."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "näita kõiki märksõnu"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "üks kord"
 
@@ -15278,6 +15247,10 @@ msgstr "segatud"
 msgid "shut down"
 msgstr "lülita välja"
 
+#, fuzzy
+msgid "signal quality"
+msgstr "Signaali kvaliteet"
+
 msgid "simple"
 msgstr "lihtne"
 
@@ -15338,6 +15311,12 @@ msgid "social/spiritual science"
 msgstr "ühiskonna/hingeteadus"
 
 msgid "spark"
+msgstr ""
+
+msgid "spark7162VFD"
+msgstr ""
+
+msgid "sparkVFD"
 msgstr ""
 
 #, fuzzy
@@ -15436,6 +15415,10 @@ msgstr ""
 msgid "time and date"
 msgstr "Jah ning salvesta"
 
+#, fuzzy
+msgid "time, day and date"
+msgstr "Jah ning salvesta"
+
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "vaheta aja, salvestuse, heli, subtiitri info"
 
@@ -15516,9 +15499,6 @@ msgstr "mitmekesine show"
 
 msgid "vertical"
 msgstr "vertikaal"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 msgid "violet"
 msgstr ""

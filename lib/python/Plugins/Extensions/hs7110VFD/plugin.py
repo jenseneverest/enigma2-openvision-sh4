@@ -171,18 +171,18 @@ def main(session, **kwargs):
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
-		name = _("hs7110VFD display"),
+		name = _("hs7110VFD"),
 		description = _("LED configuration"),
 		where = PluginDescriptor.WHERE_MENU,
 		fnc = VFDdisplaymenu),
 		PluginDescriptor(
-		name = _("hs7110VFD control"),
+		name = _("hs7110VFD"),
 		description = _("LED control for Fortis HS7110"),
 		where = PluginDescriptor.WHERE_SESSIONSTART,
 		fnc = main)]
 	if config.plugins.vfdicon.extMenu.value:
 		l.append(PluginDescriptor(
-			name = _("hs7110VFD display"),
+			name = _("hs7110VFD"),
 			description = _("LED control for Fortis HS7110"),
 			where = PluginDescriptor.WHERE_PLUGINMENU,
 			fnc = opencfg))

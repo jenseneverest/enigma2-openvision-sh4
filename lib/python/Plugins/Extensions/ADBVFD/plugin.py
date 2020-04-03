@@ -608,7 +608,7 @@ def Plugins(**kwargs):
 		fnc = VFDdisplaymenu),
 		PluginDescriptor(
 		name = _("ADBVFD"),
-		description = _("VFD Icons for adb_box"),
+		description = _("VFD icons for adb_box"),
 		where = PluginDescriptor.WHERE_SESSIONSTART,
 		fnc = main)]
 	if config.plugins.vfdicon.extMenu.value:

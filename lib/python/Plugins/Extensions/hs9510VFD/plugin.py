@@ -620,18 +620,18 @@ def main(session, **kwargs):
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
-		name = _("hs9510VFD display"),
+		name = _("hs9510VFD"),
 		description = _("VFD display configuration"),
 		where = PluginDescriptor.WHERE_MENU,
 		fnc = VFDdisplaymenu),
 		PluginDescriptor(
-		name = _("hs9510VFD-Icons"),
-		description = _("VFD-Icons for Fortis HS9510"),
+		name = _("hs9510VFD"),
+		description = _("VFD icons for Fortis HS9510"),
 		where = PluginDescriptor.WHERE_SESSIONSTART,
 		fnc = main)]
 	if config.plugins.vfdicon.extMenu.value:
 		l.append(PluginDescriptor(
-			name = _("hs9510VFD display"),
+			name = _("hs9510VFD"),
 			description = _("VFD display configuration for Fortis HS9510"),
 			where = PluginDescriptor.WHERE_PLUGINMENU,
 			fnc = opencfg))

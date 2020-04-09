@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:38+0430\n"
+"POT-Creation-Date: 2020-04-09 21:02+0430\n"
 "PO-Revision-Date: 2019-12-03 20:02+0100\n"
 "Last-Translator: blzr <blzr@o2.pl>\n"
 "Language-Team: \n"
@@ -12,6 +12,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 2.0.6\n"
+
+#, python-format
+msgid ""
+"\n"
+" %s "
+msgstr ""
 
 msgid ""
 "\n"
@@ -3569,6 +3575,14 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "DUAL LAYER DVD"
 
+#, fuzzy
+msgid "DVB"
+msgstr "DVB-S"
+
+#, fuzzy
+msgid "DVB API version: "
+msgstr "Sterowniki DVB:"
+
 msgid "DVB API: "
 msgstr ""
 
@@ -3582,8 +3596,9 @@ msgstr "Napisy DVB: PID i język "
 msgid "DVB and Pango subtitle position"
 msgstr "Pozycja napisów"
 
-msgid "DVB driver version: "
-msgstr "Sterowniki DVB:"
+#, fuzzy
+msgid "DVB information"
+msgstr "Informacje"
 
 msgid "DVB subtitle black transparency"
 msgstr "Przezroczystość tła napisów DVB"
@@ -4103,6 +4118,10 @@ msgstr "Wyświetlacz"
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "Dane EIT teraz/następny na pasku info"
 
+#, fuzzy
+msgid "Display type: "
+msgstr "Wyświetlacz"
+
 msgid "Djibouti"
 msgstr "Dżibuti"
 
@@ -4337,6 +4356,10 @@ msgstr "Pobieranie informacji o wtyczkach. Proszę czekać..."
 #, fuzzy
 msgid "Drama"
 msgstr "Film/Dramat"
+
+#, fuzzy
+msgid "Driver version: "
+msgstr "Sterowniki DVB:"
 
 msgid "Drop unconfigured satellites"
 msgstr "Pomiń nieskonfigurowane satelity"
@@ -5276,9 +5299,6 @@ msgstr "Zainstaluj image"
 msgid "Flash Image"
 msgstr "Zainstaluj image"
 
-msgid "Flash image"
-msgstr "Zainstaluj image"
-
 #, fuzzy
 msgid "Flash type: "
 msgstr "Zainstaluj image"
@@ -5983,6 +6003,14 @@ msgstr "Ignoruj konflikt"
 msgid "Image architecture: "
 msgstr ""
 
+#, fuzzy
+msgid "Image file system: "
+msgstr "Tworzenie systemu plików"
+
+#, fuzzy
+msgid "Image folder: "
+msgstr "Wybierz folder docelowy"
+
 #, python-format
 msgid ""
 "Image to install is invalid\n"
@@ -6354,6 +6382,10 @@ msgstr ""
 msgid "Kenya"
 msgstr "Kenia"
 
+#, fuzzy
+msgid "Kernel file: "
+msgstr "Wersja kernela:"
+
 msgid "Kernel version: "
 msgstr "Wersja kernela:"
 
@@ -6700,11 +6732,23 @@ msgstr "B"
 msgid "MENU"
 msgstr ""
 
+msgid "MKUBIFS: "
+msgstr ""
+
 msgid "MMC card"
 msgstr "Karta MMC"
 
 msgid "MORE"
 msgstr "Więcej"
+
+msgid "MTD boot: "
+msgstr ""
+
+msgid "MTD kernel: "
+msgstr ""
+
+msgid "MTD root: "
+msgstr ""
 
 msgid "Macao"
 msgstr "Makau"
@@ -7159,6 +7203,9 @@ msgstr "Downmix dźwięku wielokanałowego"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Wybór bukietów w Multi EPG"
+
+msgid "MultiLib: "
+msgstr ""
 
 #, fuzzy
 msgid "MultiTranscoding: "
@@ -7628,10 +7675,6 @@ msgid "Not enough disk space. Please free up some disk space and try again. (%d 
 msgstr "Nie wystarczająca ilość przestrzeni dyskowej. Zwolnij miejsce na dysku i spróbuj ponownie. (%d MB wymagane, %d MB dostępne)"
 
 #, fuzzy
-msgid "Not mounted"
-msgstr "Udział sieciowy"
-
-#, fuzzy
 msgid "Not running"
 msgstr "nieuruchomiony"
 
@@ -7695,6 +7738,9 @@ msgid "Number or SMS style data entry"
 msgstr "Cyfra lub wprowadzanie danych typu SMS"
 
 msgid "NumberZapPicon"
+msgstr ""
+
+msgid "OE: "
 msgstr ""
 
 msgid "OK"
@@ -7806,8 +7852,16 @@ msgstr "Tylko przy (re)starcie"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Wybierz 'Tak' tylko jeżeli używasz multiswitcha który wymaga sygnału sterującego DiSEqC Port-A. Dla wszystkich innych konfiguracji wybierz 'Nie'."
 
+#, fuzzy
+msgid "Open Vision"
+msgstr "Wersja Pythona:"
+
 msgid "Open Vision enigma2 image"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision information"
+msgstr "Wersja Pythona:"
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8790,6 +8844,10 @@ msgstr ""
 msgid "RC command set"
 msgstr "Kolejność poleceń"
 
+#, fuzzy
+msgid "RC type: "
+msgstr "Zainstaluj image"
+
 msgid "REC"
 msgstr ""
 
@@ -9359,6 +9417,10 @@ msgstr ""
 
 msgid "Root directory"
 msgstr "Katalog root"
+
+#, fuzzy
+msgid "Root file: "
+msgstr "Plik SRT"
 
 msgid "Rotor step position:"
 msgstr "Pozycja kroku obrotnicy:"
@@ -10860,9 +10922,6 @@ msgstr "Szerokość gegraficzna"
 
 msgid "Site longitude"
 msgstr "Długość geograficzna"
-
-msgid "Size: "
-msgstr ""
 
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
@@ -12682,6 +12741,9 @@ msgstr ""
 msgid "Typematic rate"
 msgstr ""
 
+msgid "UBINIZE: "
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr "NIEZNANY"
 
@@ -13896,6 +13958,9 @@ msgstr ""
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Musisz przełączyć na kanał %s (%s - '%s')!\n"
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Twoja kolekcja przekracza rozmiar zwykłego nośnika DVD, będziesz potrzebował czystegodwuwarstwowego DVD!"
 
@@ -14743,6 +14808,10 @@ msgstr "Ręcznie"
 msgid "martial sports"
 msgstr "Sporty walki"
 
+#, fuzzy
+msgid "master"
+msgstr "Stereo"
+
 msgid "medicine/physiology/psychology"
 msgstr "Medycyna/Fizjologia/Psychologia"
 
@@ -14951,6 +15020,9 @@ msgid "pre-school children's program"
 msgstr "Dla przedszkolaków"
 
 msgid "punch cuts"
+msgstr ""
+
+msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

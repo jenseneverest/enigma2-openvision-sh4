@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:38+0430\n"
+"POT-Creation-Date: 2020-04-09 21:02+0430\n"
 "PO-Revision-Date: 2018-11-12 20:51+0200\n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: Bulgarian\n"
@@ -12,6 +12,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2\n"
+
+#, python-format
+msgid ""
+"\n"
+" %s "
+msgstr ""
 
 msgid ""
 "\n"
@@ -3641,6 +3647,14 @@ msgstr "DTS downmix"
 msgid "DUAL LAYER DVD"
 msgstr "DUAL LAYER DVD"
 
+#, fuzzy
+msgid "DVB"
+msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB API version: "
+msgstr "Версия на DVB драйверите: "
+
 msgid "DVB API: "
 msgstr ""
 
@@ -3654,8 +3668,9 @@ msgstr ""
 msgid "DVB and Pango subtitle position"
 msgstr "Позиция на субтитрите"
 
-msgid "DVB driver version: "
-msgstr "Версия на DVB драйверите: "
+#, fuzzy
+msgid "DVB information"
+msgstr "Информация"
 
 msgid "DVB subtitle black transparency"
 msgstr "Прозрачност на черната лента при DVB субтитри"
@@ -4183,6 +4198,10 @@ msgstr "Настройки Дисплей"
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "Показвай EIT сега/следва в инфо-лентата"
 
+#, fuzzy
+msgid "Display type: "
+msgstr "Настройки Дисплей"
+
 msgid "Djibouti"
 msgstr "Джибути"
 
@@ -4414,6 +4433,10 @@ msgstr "Изтеглям информация за плъгина. Моля из
 #, fuzzy
 msgid "Drama"
 msgstr "Филми/Драма"
+
+#, fuzzy
+msgid "Driver version: "
+msgstr "Версия на DVB драйверите: "
 
 #, fuzzy
 msgid "Drop unconfigured satellites"
@@ -5367,9 +5390,6 @@ msgstr "Флашване на имидж"
 msgid "Flash Image"
 msgstr "Флашване на имидж"
 
-msgid "Flash image"
-msgstr "Флашване на имидж"
-
 #, fuzzy
 msgid "Flash type: "
 msgstr "Флашване на имидж"
@@ -6081,6 +6101,14 @@ msgstr "Игнориране на конфликт"
 msgid "Image architecture: "
 msgstr ""
 
+#, fuzzy
+msgid "Image file system: "
+msgstr "Създаване на файлова система"
+
+#, fuzzy
+msgid "Image folder: "
+msgstr "Изберете целева папка"
+
 #, python-format
 msgid ""
 "Image to install is invalid\n"
@@ -6454,6 +6482,10 @@ msgstr ""
 msgid "Kenya"
 msgstr "Кения"
 
+#, fuzzy
+msgid "Kernel file: "
+msgstr "Версия на ядрото: "
+
 msgid "Kernel version: "
 msgstr "Версия на ядрото: "
 
@@ -6801,11 +6833,23 @@ msgstr "B"
 msgid "MENU"
 msgstr ""
 
+msgid "MKUBIFS: "
+msgstr ""
+
 msgid "MMC card"
 msgstr "MMC карта"
 
 msgid "MORE"
 msgstr "ОЩЕ"
+
+msgid "MTD boot: "
+msgstr ""
+
+msgid "MTD kernel: "
+msgstr ""
+
+msgid "MTD root: "
+msgstr ""
 
 msgid "Macao"
 msgstr "Макао"
@@ -7264,6 +7308,10 @@ msgstr "Многоканален downmix"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Избор на букет при старт на Мулти-EPG"
+
+#, fuzzy
+msgid "MultiLib: "
+msgstr "Мулти ЕПГ"
 
 #, fuzzy
 msgid "MultiTranscoding: "
@@ -7739,10 +7787,6 @@ msgid "Not enough disk space. Please free up some disk space and try again. (%d 
 msgstr "Няма достатъчно място на диска. Моля освободете място на диска и опитайте отново. (%d MB трябват, %d MB налични)"
 
 #, fuzzy
-msgid "Not mounted"
-msgstr "Мрежов Маунт"
-
-#, fuzzy
 msgid "Not running"
 msgstr "не се извършва"
 
@@ -7806,6 +7850,9 @@ msgid "Number or SMS style data entry"
 msgstr ""
 
 msgid "NumberZapPicon"
+msgstr ""
+
+msgid "OE: "
 msgstr ""
 
 msgid "OK"
@@ -7918,8 +7965,16 @@ msgstr "Само при старт"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Изберете ‘да’ само ако използвате мултиключ който изисква сигнал от DiSEqC Порт-A. За всички останали конфигурации изберете ‘не’."
 
+#, fuzzy
+msgid "Open Vision"
+msgstr "Питон версия: "
+
 msgid "Open Vision enigma2 image"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision information"
+msgstr "Питон версия: "
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8908,6 +8963,10 @@ msgstr ""
 msgid "RC command set"
 msgstr "Ред на команди"
 
+#, fuzzy
+msgid "RC type: "
+msgstr "Флашване на имидж"
+
 msgid "REC"
 msgstr "REC"
 
@@ -9478,6 +9537,10 @@ msgstr "Главна"
 
 msgid "Root directory"
 msgstr "Главна директория"
+
+#, fuzzy
+msgid "Root file: "
+msgstr "SRT файл"
 
 msgid "Rotor step position:"
 msgstr "Стъпка за позицията на мотора:"
@@ -10990,9 +11053,6 @@ msgstr "Географска Ширина"
 
 msgid "Site longitude"
 msgstr "Географска Дължина"
-
-msgid "Size: "
-msgstr ""
 
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
@@ -12814,6 +12874,9 @@ msgstr ""
 msgid "Typematic rate"
 msgstr ""
 
+msgid "UBINIZE: "
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr "НЕПОЗНАТ"
 
@@ -14025,6 +14088,9 @@ msgstr ""
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Трябва да превключите на канал %s (%s - '%s')!\n"
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Ваашата колекция надвишава размера на еднослоен диск, ще ви трябва празен двуслоен DVD!"
 
@@ -14876,6 +14942,10 @@ msgstr "ръчно"
 msgid "martial sports"
 msgstr "Бойни спортове"
 
+#, fuzzy
+msgid "master"
+msgstr "стерео"
+
 msgid "medicine/physiology/psychology"
 msgstr "медицина/физиология/психология"
 
@@ -15084,6 +15154,9 @@ msgid "pre-school children's program"
 msgstr "пред-училищна детска програма"
 
 msgid "punch cuts"
+msgstr ""
+
+msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

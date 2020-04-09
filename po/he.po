@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:38+0430\n"
+"POT-Creation-Date: 2020-04-09 21:02+0430\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -20,6 +20,12 @@ msgstr ""
 "X-Poedit-Language: Arabic\n"
 "X-Poedit-Country: EGYPT\n"
 "X-Poedit-SourceCharset: iso-8859-15\n"
+
+#, python-format
+msgid ""
+"\n"
+" %s "
+msgstr ""
 
 msgid ""
 "\n"
@@ -3734,6 +3740,15 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "Dual Layer DVD"
 
+#, fuzzy
+msgid "DVB"
+msgstr "DVB-S"
+
+#
+#, fuzzy
+msgid "DVB API version: "
+msgstr ":גרסה חדשה"
+
 msgid "DVB API: "
 msgstr ""
 
@@ -3750,8 +3765,8 @@ msgstr "בחירת תרגום"
 
 #
 #, fuzzy
-msgid "DVB driver version: "
-msgstr ":גרסה חדשה"
+msgid "DVB information"
+msgstr "מידע"
 
 msgid "DVB subtitle black transparency"
 msgstr ""
@@ -4307,6 +4322,10 @@ msgstr "הצג הגדרות"
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr ""
 
+#, fuzzy
+msgid "Display type: "
+msgstr "הצג הגדרות"
+
 #
 #, fuzzy
 msgid "Djibouti"
@@ -4553,6 +4572,11 @@ msgstr "...מוריד פרטים על הפלאגין, אנא המתן"
 
 msgid "Drama"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Driver version: "
+msgstr ":גרסה חדשה"
 
 msgid "Drop unconfigured satellites"
 msgstr ""
@@ -5529,10 +5553,6 @@ msgid "Flash Image"
 msgstr "Flash"
 
 #, fuzzy
-msgid "Flash image"
-msgstr "Flash"
-
-#, fuzzy
 msgid "Flash type: "
 msgstr "Flash"
 
@@ -6270,6 +6290,15 @@ msgstr ""
 msgid "Image architecture: "
 msgstr ""
 
+#, fuzzy
+msgid "Image file system: "
+msgstr "...בודק קבצי מערכת"
+
+#
+#, fuzzy
+msgid "Image folder: "
+msgstr "בחר תיקיית יעד"
+
 #, python-format
 msgid ""
 "Image to install is invalid\n"
@@ -6675,6 +6704,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Kernel file: "
+msgstr ":גרסה חדשה"
+
+#
+#, fuzzy
 msgid "Kernel version: "
 msgstr ":גרסה חדשה"
 
@@ -7072,11 +7106,23 @@ msgstr "B"
 msgid "MENU"
 msgstr ""
 
+msgid "MKUBIFS: "
+msgstr ""
+
 msgid "MMC card"
 msgstr ""
 
 msgid "MORE"
 msgstr "עוד"
+
+msgid "MTD boot: "
+msgstr ""
+
+msgid "MTD kernel: "
+msgstr ""
+
+msgid "MTD root: "
+msgstr ""
 
 msgid "Macao"
 msgstr ""
@@ -7573,6 +7619,11 @@ msgstr ""
 
 msgid "Multi-EPG bouquet selection"
 msgstr ""
+
+#
+#, fuzzy
+msgid "MultiLib: "
+msgstr "Multi EPG"
 
 msgid "MultiTranscoding: "
 msgstr ""
@@ -8095,11 +8146,6 @@ msgstr "אין מקום בכונן הקשיח, פנה מעט מקום ונסה �
 
 #
 #, fuzzy
-msgid "Not mounted"
-msgstr "מיפוי רשת"
-
-#
-#, fuzzy
 msgid "Not running"
 msgstr "התחל מההתחלה"
 
@@ -8166,6 +8212,9 @@ msgid "Number or SMS style data entry"
 msgstr ""
 
 msgid "NumberZapPicon"
+msgstr ""
+
+msgid "OE: "
 msgstr ""
 
 #
@@ -8286,8 +8335,18 @@ msgstr ""
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Open Vision"
+msgstr ":גרסה חדשה"
+
 msgid "Open Vision enigma2 image"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision information"
+msgstr ":גרסה חדשה"
 
 msgid "Open Vision module: "
 msgstr ""
@@ -9348,6 +9407,10 @@ msgstr ""
 msgid "RC command set"
 msgstr "סדר פקודה"
 
+#, fuzzy
+msgid "RC type: "
+msgstr "Flash"
+
 msgid "REC"
 msgstr ""
 
@@ -9948,6 +10011,9 @@ msgid "Root"
 msgstr ""
 
 msgid "Root directory"
+msgstr ""
+
+msgid "Root file: "
 msgstr ""
 
 msgid "Rotor step position:"
@@ -11581,9 +11647,6 @@ msgid "Site latitude"
 msgstr ""
 
 msgid "Site longitude"
-msgstr ""
-
-msgid "Size: "
 msgstr ""
 
 #, python-format
@@ -13534,6 +13597,9 @@ msgstr ""
 msgid "Typematic rate"
 msgstr ""
 
+msgid "UBINIZE: "
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr ""
 
@@ -14786,6 +14852,9 @@ msgstr ""
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 
@@ -15646,6 +15715,10 @@ msgstr "ידני"
 msgid "martial sports"
 msgstr ""
 
+#, fuzzy
+msgid "master"
+msgstr "סטריאו"
+
 msgid "medicine/physiology/psychology"
 msgstr ""
 
@@ -15859,6 +15932,9 @@ msgid "pre-school children's program"
 msgstr ""
 
 msgid "punch cuts"
+msgstr ""
+
+msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

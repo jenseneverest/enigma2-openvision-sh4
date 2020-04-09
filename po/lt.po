@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:38+0430\n"
+"POT-Creation-Date: 2020-04-09 21:02+0430\n"
 "PO-Revision-Date: 2020-02-29 09:02+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -13,6 +13,12 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 2.3\n"
+
+#, python-format
+msgid ""
+"\n"
+" %s "
+msgstr ""
 
 msgid ""
 "\n"
@@ -3481,6 +3487,14 @@ msgstr "DTS suliejimas"
 msgid "DUAL LAYER DVD"
 msgstr "DVISLUOKSNIS DVD"
 
+#, fuzzy
+msgid "DVB"
+msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB API version: "
+msgstr "DVB tvarkyklės versija: "
+
 msgid "DVB API: "
 msgstr "DVB API: "
 
@@ -3493,8 +3507,9 @@ msgstr "DVB subtitrai PID ir kalba"
 msgid "DVB and Pango subtitle position"
 msgstr "DVB ir Pango subtitrų padėtis"
 
-msgid "DVB driver version: "
-msgstr "DVB tvarkyklės versija: "
+#, fuzzy
+msgid "DVB information"
+msgstr "Informacija"
 
 msgid "DVB subtitle black transparency"
 msgstr "DVB subtitrų juodas skaidrumas"
@@ -4000,6 +4015,10 @@ msgstr "Monitoriaus nustatymas"
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "Rodyti EIT dabar/kitas įvykio duomenis info juostoje."
 
+#, fuzzy
+msgid "Display type: "
+msgstr "Monitoriaus nustatymas"
+
 msgid "Djibouti"
 msgstr "Džibutis"
 
@@ -4225,6 +4244,10 @@ msgstr "Parsiunčiama informacija apie priedus. Prašome laukti..."
 
 msgid "Drama"
 msgstr "Drama"
+
+#, fuzzy
+msgid "Driver version: "
+msgstr "DVB tvarkyklės versija: "
 
 msgid "Drop unconfigured satellites"
 msgstr "Pašalinti nesukonfigūruotus palydovus"
@@ -5124,9 +5147,6 @@ msgstr "Įdiegimas"
 msgid "Flash Image"
 msgstr "Įdiegtas atvaizdas"
 
-msgid "Flash image"
-msgstr "Įdiegtas atvaizdas"
-
 msgid "Flash type: "
 msgstr "Įdiegimo tipas: "
 
@@ -5812,6 +5832,14 @@ msgstr "Ignoruoti konfliktą"
 msgid "Image architecture: "
 msgstr "Atvaizdo architektūra: "
 
+#, fuzzy
+msgid "Image file system: "
+msgstr "Kuriama failų sistema"
+
+#, fuzzy
+msgid "Image folder: "
+msgstr "Bendrinti aplanką"
+
 #, python-format
 msgid ""
 "Image to install is invalid\n"
@@ -6171,6 +6199,10 @@ msgstr "Išlaikys filmų sąrašą atvertą ir grojant garsinius failus."
 msgid "Kenya"
 msgstr "Kenija"
 
+#, fuzzy
+msgid "Kernel file: "
+msgstr "Branduolio versija: "
+
 msgid "Kernel version: "
 msgstr "Branduolio versija: "
 
@@ -6510,11 +6542,23 @@ msgstr "MB"
 msgid "MENU"
 msgstr ""
 
+msgid "MKUBIFS: "
+msgstr ""
+
 msgid "MMC card"
 msgstr "MMC laikmena"
 
 msgid "MORE"
 msgstr "DAUGIAU"
+
+msgid "MTD boot: "
+msgstr ""
+
+msgid "MTD kernel: "
+msgstr ""
+
+msgid "MTD root: "
+msgstr ""
 
 msgid "Macao"
 msgstr "Makao"
@@ -6949,6 +6993,10 @@ msgstr "Daugiakanalis PCM"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Daugiakanalių EPG paketų pasirinkimas"
+
+#, fuzzy
+msgid "MultiLib: "
+msgstr "Daugiakanalis EPG"
 
 msgid "MultiTranscoding: "
 msgstr "Daugialypis perkodavimas: "
@@ -7400,9 +7448,6 @@ msgstr "Nesusieta"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Diske nepakanka vietos. Atlaisvinkite vietos diske ir bandykite dar kartą (reikia %d MB, laisva %d MB)"
 
-msgid "Not mounted"
-msgstr "Nepajungta"
-
 msgid "Not running"
 msgstr "Neveikia"
 
@@ -7463,6 +7508,9 @@ msgid "Number or SMS style data entry"
 msgstr "Skaičių ar SMS stiliaus duomenų įvedimas"
 
 msgid "NumberZapPicon"
+msgstr ""
+
+msgid "OE: "
 msgstr ""
 
 msgid "OK"
@@ -7571,8 +7619,16 @@ msgstr "Tik paleidimo metu"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Pasirinkite tik \"taip\", jei naudojate \"multiswich\", kurio komandinis signalas \"DiSEqC Port-A\" reikalingas. Visoms kitoms sąrankoms pasirinkite \"ne\"."
 
+#, fuzzy
+msgid "Open Vision"
+msgstr "Open Vision modulis: "
+
 msgid "Open Vision enigma2 image"
 msgstr "Open Vision enigma2 atvaizdas"
+
+#, fuzzy
+msgid "Open Vision information"
+msgstr "Open Vision versija: "
 
 msgid "Open Vision module: "
 msgstr "Open Vision modulis: "
@@ -8533,6 +8589,10 @@ msgstr "Operatyvinė atmintis"
 msgid "RC command set"
 msgstr "Komandų tipas"
 
+#, fuzzy
+msgid "RC type: "
+msgstr "Įdiegimo tipas: "
+
 msgid "REC"
 msgstr "REC"
 
@@ -9082,6 +9142,10 @@ msgstr "Šakninis"
 
 msgid "Root directory"
 msgstr "Šakninis katalogas"
+
+#, fuzzy
+msgid "Root file: "
+msgstr "SRT failas"
 
 msgid "Rotor step position:"
 msgstr "Rotoriaus žingsnio pozicija:"
@@ -10543,9 +10607,6 @@ msgstr "Vietos platuma"
 
 msgid "Site longitude"
 msgstr "Vietos ilguma"
-
-msgid "Size: "
-msgstr "Dydis: "
 
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
@@ -12313,6 +12374,9 @@ msgstr ""
 msgid "Typematic rate"
 msgstr ""
 
+msgid "UBINIZE: "
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr "NEŽINOMA"
 
@@ -13509,6 +13573,9 @@ msgstr "Kad galėtumėte naudotis tinklo paslaugomis, pvz., FTP, telnet arba ssh
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Jūs turite perjungti į %s (%s - '%s') kanalą!\n"
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Jūsų kolekcija viršyja vieno sluoksnio DVD disko dydį, jums reikės tuščio dvigubo sluoksnio DVD!"
 
@@ -14336,6 +14403,10 @@ msgstr "rankinis"
 msgid "martial sports"
 msgstr "kovinis sportas"
 
+#, fuzzy
+msgid "master"
+msgstr "stereo"
+
 msgid "medicine/physiology/psychology"
 msgstr "medicina, fiziologija, psichologija"
 
@@ -14541,6 +14612,9 @@ msgstr "ikimokyklinė vaikų programa"
 
 msgid "punch cuts"
 msgstr "smūginiai iškirpimai"
+
+msgid "pyro"
+msgstr ""
 
 msgid "quick execute"
 msgstr "greitas vykdymas"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:38+0430\n"
+"POT-Creation-Date: 2020-04-09 21:02+0430\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -17,6 +17,12 @@ msgstr ""
 "X-Poedit-Language: Serbian\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Country: SERBIA\n"
+
+#, python-format
+msgid ""
+"\n"
+" %s "
+msgstr ""
 
 #
 msgid ""
@@ -4031,6 +4037,16 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "DVOSLOJNI DVDi "
 
+#
+#, fuzzy
+msgid "DVB"
+msgstr "DVB-S"
+
+#
+#, fuzzy
+msgid "DVB API version: "
+msgstr "Nova verzija:"
+
 msgid "DVB API: "
 msgstr ""
 
@@ -4047,8 +4063,8 @@ msgstr "Izbor subtitlova"
 
 #
 #, fuzzy
-msgid "DVB driver version: "
-msgstr "Nova verzija:"
+msgid "DVB information"
+msgstr "Informacije"
 
 msgid "DVB subtitle black transparency"
 msgstr ""
@@ -4646,6 +4662,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Display type: "
+msgstr "Postavke displeja"
+
+#
+#, fuzzy
 msgid "Djibouti"
 msgstr "O programu"
 
@@ -4925,6 +4946,11 @@ msgstr "Skidanje informacija o dodacima. Molim pričekajte..."
 
 msgid "Drama"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Driver version: "
+msgstr "Nova verzija:"
 
 #
 #, fuzzy
@@ -5970,11 +5996,6 @@ msgstr "Fleš"
 
 #
 #, fuzzy
-msgid "Flash image"
-msgstr "Fleš"
-
-#
-#, fuzzy
 msgid "Flash type: "
 msgstr "Fleš"
 
@@ -6755,6 +6776,16 @@ msgstr ""
 msgid "Image architecture: "
 msgstr ""
 
+#
+#, fuzzy
+msgid "Image file system: "
+msgstr "Kontrola sistema datoteka"
+
+#
+#, fuzzy
+msgid "Image folder: "
+msgstr "Izaberite ciljnu fasciklu"
+
 #, python-format
 msgid ""
 "Image to install is invalid\n"
@@ -7192,6 +7223,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Kernel file: "
+msgstr "Nova verzija:"
+
+#
+#, fuzzy
 msgid "Kernel version: "
 msgstr "Nova verzija:"
 
@@ -7611,6 +7647,9 @@ msgstr "B"
 msgid "MENU"
 msgstr ""
 
+msgid "MKUBIFS: "
+msgstr ""
+
 #
 #, fuzzy
 msgid "MMC card"
@@ -7619,6 +7658,15 @@ msgstr "MMC Kartica"
 #
 msgid "MORE"
 msgstr "VIŠE"
+
+msgid "MTD boot: "
+msgstr ""
+
+msgid "MTD kernel: "
+msgstr ""
+
+msgid "MTD root: "
+msgstr ""
 
 msgid "Macao"
 msgstr ""
@@ -8149,6 +8197,11 @@ msgstr ""
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi EPG izbor buketa"
+
+#
+#, fuzzy
+msgid "MultiLib: "
+msgstr "Multi EPG"
 
 msgid "MultiTranscoding: "
 msgstr ""
@@ -8710,11 +8763,6 @@ msgstr ""
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nedovoljno prostora na disku. Molimo oslobodite nešto prostora i probajte ponovo. (%d MB potrebno,%d MB omogućeno)"
 
-#
-#, fuzzy
-msgid "Not mounted"
-msgstr "Montiranje mreže"
-
 #, fuzzy
 msgid "Not running"
 msgstr "na početku"
@@ -8786,6 +8834,9 @@ msgid "Number or SMS style data entry"
 msgstr ""
 
 msgid "NumberZapPicon"
+msgstr ""
+
+msgid "OE: "
 msgstr ""
 
 #
@@ -8909,8 +8960,18 @@ msgstr ""
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Open Vision"
+msgstr "Nova verzija:"
+
 msgid "Open Vision enigma2 image"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision information"
+msgstr "Nova verzija:"
 
 msgid "Open Vision module: "
 msgstr ""
@@ -10070,6 +10131,11 @@ msgstr ""
 msgid "RC command set"
 msgstr "Redosled komandi"
 
+#
+#, fuzzy
+msgid "RC type: "
+msgstr "Fleš"
+
 msgid "REC"
 msgstr ""
 
@@ -10737,6 +10803,9 @@ msgid "Root"
 msgstr ""
 
 msgid "Root directory"
+msgstr ""
+
+msgid "Root file: "
 msgstr ""
 
 msgid "Rotor step position:"
@@ -12470,9 +12539,6 @@ msgid "Site latitude"
 msgstr ""
 
 msgid "Site longitude"
-msgstr ""
-
-msgid "Size: "
 msgstr ""
 
 #, python-format
@@ -14532,6 +14598,9 @@ msgstr ""
 msgid "Typematic rate"
 msgstr ""
 
+msgid "UBINIZE: "
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr ""
 
@@ -15867,6 +15936,9 @@ msgstr ""
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 #
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Vaša kolekcija prelazi veličinu jednoslojnog medija,trebate prazan dvoslojni DVD!  "
@@ -16798,6 +16870,11 @@ msgstr "ručno"
 msgid "martial sports"
 msgstr ""
 
+#
+#, fuzzy
+msgid "master"
+msgstr "stereo"
+
 msgid "medicine/physiology/psychology"
 msgstr ""
 
@@ -17032,6 +17109,9 @@ msgid "pre-school children's program"
 msgstr ""
 
 msgid "punch cuts"
+msgstr ""
+
+msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:38+0430\n"
+"POT-Creation-Date: 2020-04-09 21:02+0430\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -14,6 +14,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SourceCharset: iso-8859-15\n"
+
+#, python-format
+msgid ""
+"\n"
+" %s "
+msgstr ""
 
 #
 msgid ""
@@ -3992,6 +3998,14 @@ msgstr "DTS downmix"
 msgid "DUAL LAYER DVD"
 msgstr "DL DVD"
 
+#, fuzzy
+msgid "DVB"
+msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB API version: "
+msgstr "DVB drivers: "
+
 msgid "DVB API: "
 msgstr ""
 
@@ -4006,9 +4020,10 @@ msgstr ""
 msgid "DVB and Pango subtitle position"
 msgstr "Undertekst position"
 
+#
 #, fuzzy
-msgid "DVB driver version: "
-msgstr "DVB drivers: "
+msgid "DVB information"
+msgstr "Information"
 
 msgid "DVB subtitle black transparency"
 msgstr "DVB teksters sorte gennemsigtighed"
@@ -4597,6 +4612,11 @@ msgstr "Vis EIT nu/næste i Infobar"
 
 #
 #, fuzzy
+msgid "Display type: "
+msgstr "Display indstillinger"
+
+#
+#, fuzzy
 msgid "Djibouti"
 msgstr "Om"
 
@@ -4873,6 +4893,10 @@ msgstr "Henter plugin informationer. Vent venligst..."
 #, fuzzy
 msgid "Drama"
 msgstr "Film/Drama"
+
+#, fuzzy
+msgid "Driver version: "
+msgstr "DVB drivers: "
 
 #, fuzzy
 msgid "Drop unconfigured satellites"
@@ -5923,11 +5947,6 @@ msgstr "Flash"
 
 #
 #, fuzzy
-msgid "Flash image"
-msgstr "Flash"
-
-#
-#, fuzzy
 msgid "Flash type: "
 msgstr "Flash"
 
@@ -6698,6 +6717,15 @@ msgstr "Ignorer konfilkt"
 msgid "Image architecture: "
 msgstr ""
 
+#, fuzzy
+msgid "Image file system: "
+msgstr "Opretter filsystem"
+
+#
+#, fuzzy
+msgid "Image folder: "
+msgstr "Vælg målfolderen"
+
 #, python-format
 msgid ""
 "Image to install is invalid\n"
@@ -7121,6 +7149,11 @@ msgid "Kenya"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Kernel file: "
+msgstr "Kernel version:"
+
+#
 msgid "Kernel version: "
 msgstr "Kernel version:"
 
@@ -7526,6 +7559,9 @@ msgstr "B"
 msgid "MENU"
 msgstr ""
 
+msgid "MKUBIFS: "
+msgstr ""
+
 #
 msgid "MMC card"
 msgstr "MMC kort"
@@ -7533,6 +7569,15 @@ msgstr "MMC kort"
 #
 msgid "MORE"
 msgstr "MERE"
+
+msgid "MTD boot: "
+msgstr ""
+
+msgid "MTD kernel: "
+msgstr ""
+
+msgid "MTD root: "
+msgstr ""
 
 msgid "Macao"
 msgstr ""
@@ -8053,6 +8098,11 @@ msgstr "Multi channel downmix"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG favoritliste valg"
+
+#
+#, fuzzy
+msgid "MultiLib: "
+msgstr "Multi EPG"
 
 #, fuzzy
 msgid "MultiTranscoding: "
@@ -8605,11 +8655,6 @@ msgstr "Ikke tilknyttet"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Ikke diskplads nok. Venligst skab mere plads på disken og prøv igen. (%d MB nødvendig, %d MB ledig)"
 
-#
-#, fuzzy
-msgid "Not mounted"
-msgstr "Monter netværk"
-
 #, fuzzy
 msgid "Not running"
 msgstr "Ved begyndelsen"
@@ -8682,6 +8727,9 @@ msgid "Number or SMS style data entry"
 msgstr ""
 
 msgid "NumberZapPicon"
+msgstr ""
+
+msgid "OE: "
 msgstr ""
 
 #
@@ -8803,8 +8851,16 @@ msgstr "Kun ved opstart"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
+#, fuzzy
+msgid "Open Vision"
+msgstr "Python version: "
+
 msgid "Open Vision enigma2 image"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision information"
+msgstr "Python version: "
 
 msgid "Open Vision module: "
 msgstr ""
@@ -9939,6 +9995,11 @@ msgstr ""
 msgid "RC command set"
 msgstr "Kommando rækkefølge"
 
+#
+#, fuzzy
+msgid "RC type: "
+msgstr "Flash"
+
 msgid "REC"
 msgstr "REC"
 
@@ -10603,6 +10664,10 @@ msgstr ""
 
 msgid "Root directory"
 msgstr "root mappe"
+
+#, fuzzy
+msgid "Root file: "
+msgstr "SRT fil"
 
 msgid "Rotor step position:"
 msgstr "Motor step postion"
@@ -12282,9 +12347,6 @@ msgstr "Breddegrad"
 
 msgid "Site longitude"
 msgstr "Længdegrad"
-
-msgid "Size: "
-msgstr ""
 
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
@@ -14336,6 +14398,9 @@ msgstr ""
 msgid "Typematic rate"
 msgstr ""
 
+msgid "UBINIZE: "
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr ""
 
@@ -15674,6 +15739,9 @@ msgstr ""
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Du må skifte til servicen %s (%s - '%s')!\n"
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 #
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Din kollektion overstiger størrelsen af et enkeltlags medium, du har brug for en tom dobbeltlags DVD!"
@@ -16617,6 +16685,11 @@ msgstr "manuelt"
 msgid "martial sports"
 msgstr "kampsport"
 
+#
+#, fuzzy
+msgid "master"
+msgstr "stereo"
+
 msgid "medicine/physiology/psychology"
 msgstr "medicin/fysiologi/psykologi"
 
@@ -16855,6 +16928,9 @@ msgid "pre-school children's program"
 msgstr "før-skole børneprogram"
 
 msgid "punch cuts"
+msgstr ""
+
+msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

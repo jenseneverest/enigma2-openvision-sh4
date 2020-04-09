@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:38+0430\n"
+"POT-Creation-Date: 2020-04-09 21:02+0430\n"
 "PO-Revision-Date: 2020-02-10 12:49+0100\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -13,6 +13,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#, python-format
+msgid ""
+"\n"
+" %s "
+msgstr ""
 
 msgid ""
 "\n"
@@ -3642,6 +3648,14 @@ msgstr "DTS downmix"
 msgid "DUAL LAYER DVD"
 msgstr "DVOJVRSTVOVÉ DVD"
 
+#, fuzzy
+msgid "DVB"
+msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB API version: "
+msgstr "Verzia DVB ovládača: "
+
 msgid "DVB API: "
 msgstr ""
 
@@ -3655,8 +3669,9 @@ msgstr "DVB titulky, PID a jazyk"
 msgid "DVB and Pango subtitle position"
 msgstr "Pozícia titulkov"
 
-msgid "DVB driver version: "
-msgstr "Verzia DVB ovládača: "
+#, fuzzy
+msgid "DVB information"
+msgstr "Informácie"
 
 msgid "DVB subtitle black transparency"
 msgstr "Čierna priehľadnosť DVB titulkov"
@@ -4174,6 +4189,10 @@ msgstr "Nastavenie displeja"
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "Zobraziť aktuálne/nasledujúce EPG na informačnej lište"
 
+#, fuzzy
+msgid "Display type: "
+msgstr "Nastavenie displeja"
+
 msgid "Djibouti"
 msgstr "Džibuti"
 
@@ -4408,6 +4427,10 @@ msgstr "Sťahujem informácie o doplnkoch. Prosím čakajte..."
 #, fuzzy
 msgid "Drama"
 msgstr "Film/dráma"
+
+#, fuzzy
+msgid "Driver version: "
+msgstr "Verzia DVB ovládača: "
 
 msgid "Drop unconfigured satellites"
 msgstr "Zrusiť nenakonfigurované satelity"
@@ -5349,9 +5372,6 @@ msgstr "Nahrať image"
 msgid "Flash Image"
 msgstr "Nahrať image"
 
-msgid "Flash image"
-msgstr "Nahranie softvéru"
-
 #, fuzzy
 msgid "Flash type: "
 msgstr "Nahrať image"
@@ -6055,6 +6075,14 @@ msgstr "Ignorovať konflikt"
 msgid "Image architecture: "
 msgstr ""
 
+#, fuzzy
+msgid "Image file system: "
+msgstr "Vytváram systém súborov"
+
+#, fuzzy
+msgid "Image folder: "
+msgstr "Zvoliť cieľový adresár"
+
 #, python-format
 msgid ""
 "Image to install is invalid\n"
@@ -6426,6 +6454,10 @@ msgstr ""
 msgid "Kenya"
 msgstr "Keňa"
 
+#, fuzzy
+msgid "Kernel file: "
+msgstr "Verzia jadra: "
+
 msgid "Kernel version: "
 msgstr "Verzia jadra: "
 
@@ -6772,11 +6804,23 @@ msgstr "B"
 msgid "MENU"
 msgstr ""
 
+msgid "MKUBIFS: "
+msgstr ""
+
 msgid "MMC card"
 msgstr "Karta MMC"
 
 msgid "MORE"
 msgstr "VIAC"
+
+msgid "MTD boot: "
+msgstr ""
+
+msgid "MTD kernel: "
+msgstr ""
+
+msgid "MTD root: "
+msgstr ""
 
 msgid "Macao"
 msgstr "Makao"
@@ -7229,6 +7273,10 @@ msgstr "Multi kanál downmix"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Výber prehľadu pre Multi-EPG"
+
+#, fuzzy
+msgid "MultiLib: "
+msgstr "Multi EPG"
 
 #, fuzzy
 msgid "MultiTranscoding: "
@@ -7701,10 +7749,6 @@ msgid "Not enough disk space. Please free up some disk space and try again. (%d 
 msgstr "Nie je dostatok miesta na disku. Uvoľnite miesto na disku a a skúste to znova. (Potrebných je %d MB, ale voľných je iba %d MB.)"
 
 #, fuzzy
-msgid "Not mounted"
-msgstr "Sieťový prípojný bod"
-
-#, fuzzy
 msgid "Not running"
 msgstr "nebeží"
 
@@ -7768,6 +7812,9 @@ msgid "Number or SMS style data entry"
 msgstr "Vstupné údaje číslo alebo štýl SMS"
 
 msgid "NumberZapPicon"
+msgstr ""
+
+msgid "OE: "
 msgstr ""
 
 msgid "OK"
@@ -7880,8 +7927,16 @@ msgstr "Iba pri spustení"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Vyberte 'áno' iba v prípade, ak používate multiprepínač ktorý vyžaduje signálny príkaz pre DiSEqC Port-A. Pre všetky ostatné nastavenia vyberte 'nie'."
 
+#, fuzzy
+msgid "Open Vision"
+msgstr "Verzia Python: "
+
 msgid "Open Vision enigma2 image"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision information"
+msgstr "Verzia Python: "
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8865,6 +8920,10 @@ msgstr ""
 msgid "RC command set"
 msgstr "Poradie príkazov"
 
+#, fuzzy
+msgid "RC type: "
+msgstr "Nahrať image"
+
 msgid "REC"
 msgstr "REC"
 
@@ -9430,6 +9489,10 @@ msgstr "Koreňový adresár"
 
 msgid "Root directory"
 msgstr "Koreňový adresár"
+
+#, fuzzy
+msgid "Root file: "
+msgstr "SRT file"
 
 msgid "Rotor step position:"
 msgstr "Pozícia kroku rotora:"
@@ -10930,9 +10993,6 @@ msgstr "Zemepisná šírka"
 
 msgid "Site longitude"
 msgstr "Zemepisná dĺžka"
-
-msgid "Size: "
-msgstr ""
 
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
@@ -12750,6 +12810,9 @@ msgstr ""
 msgid "Typematic rate"
 msgstr ""
 
+msgid "UBINIZE: "
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr "NEZNÁME"
 
@@ -13962,6 +14025,9 @@ msgstr ""
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Prepnite na stanicu %s (%s - '%s')\n"
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Zostava presahuje kapacitu jednovrstvového média. Budete potrebovať prázdny dvojvrstvový disk DVD!"
 
@@ -14809,6 +14875,10 @@ msgstr "ručne"
 msgid "martial sports"
 msgstr "bojové športy"
 
+#, fuzzy
+msgid "master"
+msgstr "stereo"
+
 msgid "medicine/physiology/psychology"
 msgstr "medicína/fyziológia/psychológia"
 
@@ -15017,6 +15087,9 @@ msgid "pre-school children's program"
 msgstr "program pre predškolské deti"
 
 msgid "punch cuts"
+msgstr ""
+
+msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

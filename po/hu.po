@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:38+0430\n"
+"POT-Creation-Date: 2020-04-09 21:02+0430\n"
 "PO-Revision-Date: 2020-02-19 11:12+0100\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -12,6 +12,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2.4\n"
+
+#, python-format
+msgid ""
+"\n"
+" %s "
+msgstr ""
 
 msgid ""
 "\n"
@@ -3628,6 +3634,14 @@ msgstr "DTS lekeverése"
 msgid "DUAL LAYER DVD"
 msgstr "Kétréteges DVD"
 
+#, fuzzy
+msgid "DVB"
+msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB API version: "
+msgstr "DVB driver verzió: "
+
 msgid "DVB API: "
 msgstr ""
 
@@ -3641,8 +3655,9 @@ msgstr "DVB feliratok PID és nyelv"
 msgid "DVB and Pango subtitle position"
 msgstr "Felirat elhelyezése"
 
-msgid "DVB driver version: "
-msgstr "DVB driver verzió: "
+#, fuzzy
+msgid "DVB information"
+msgstr "Információk"
 
 msgid "DVB subtitle black transparency"
 msgstr "DVB felirat fekete-áttetszőssége"
@@ -4160,6 +4175,10 @@ msgstr "Előlapi kijelző"
 msgid "Display the EIT now/next eventdata in infobar."
 msgstr "Most/Következik információ EIT-ből származzon"
 
+#, fuzzy
+msgid "Display type: "
+msgstr "Előlapi kijelző"
+
 msgid "Djibouti"
 msgstr "Dzsibuti"
 
@@ -4391,6 +4410,10 @@ msgstr "Bővítmények betöltése folyamatban. Kérem, várjon..."
 #, fuzzy
 msgid "Drama"
 msgstr "Mozi/Színház"
+
+#, fuzzy
+msgid "Driver version: "
+msgstr "DVB driver verzió: "
 
 msgid "Drop unconfigured satellites"
 msgstr "Nem beállított műholdak elvetése"
@@ -5327,9 +5350,6 @@ msgstr "Flash Image"
 msgid "Flash Image"
 msgstr "Flash Image"
 
-msgid "Flash image"
-msgstr "Flash image"
-
 #, fuzzy
 msgid "Flash type: "
 msgstr "Flash Image"
@@ -6033,6 +6053,14 @@ msgstr "Hagyja figyelmen kívül az ütközést"
 msgid "Image architecture: "
 msgstr ""
 
+#, fuzzy
+msgid "Image file system: "
+msgstr "Fájlrendszer létrehozása"
+
+#, fuzzy
+msgid "Image folder: "
+msgstr "Válassza ki a célmappát"
+
 #, python-format
 msgid ""
 "Image to install is invalid\n"
@@ -6404,6 +6432,10 @@ msgstr ""
 msgid "Kenya"
 msgstr "Kenya"
 
+#, fuzzy
+msgid "Kernel file: "
+msgstr "Kernel verzió: "
+
 msgid "Kernel version: "
 msgstr "Kernel verzió: "
 
@@ -6749,11 +6781,23 @@ msgstr "B"
 msgid "MENU"
 msgstr ""
 
+msgid "MKUBIFS: "
+msgstr ""
+
 msgid "MMC card"
 msgstr "MMC kártya"
 
 msgid "MORE"
 msgstr "MÉG"
+
+msgid "MTD boot: "
+msgstr ""
+
+msgid "MTD kernel: "
+msgstr ""
+
+msgid "MTD root: "
+msgstr ""
 
 msgid "Macao"
 msgstr "Makaó"
@@ -7206,6 +7250,10 @@ msgstr "Több csatorna lekeverése"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG lista kiválasztás"
+
+#, fuzzy
+msgid "MultiLib: "
+msgstr "Multi EPG"
 
 #, fuzzy
 msgid "MultiTranscoding: "
@@ -7677,10 +7725,6 @@ msgid "Not enough disk space. Please free up some disk space and try again. (%d 
 msgstr "Nincs elég tárhely. Kérem, szabadítson fel némi helyet és próbálja meg újra. (%d MB területre lenne szükség, %d MB hely szabad jelenleg)"
 
 #, fuzzy
-msgid "Not mounted"
-msgstr "Hálózat felépítése"
-
-#, fuzzy
 msgid "Not running"
 msgstr "nem fut"
 
@@ -7746,6 +7790,9 @@ msgid "Number or SMS style data entry"
 msgstr "SMS vagy szám stílusú adatbevitel"
 
 msgid "NumberZapPicon"
+msgstr ""
+
+msgid "OE: "
 msgstr ""
 
 msgid "OK"
@@ -7858,8 +7905,16 @@ msgstr "Csak indításkor"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Csak akkor válassza az 'igen'-t, ha olyan multiswich-et használ, amely megköveteli a DiSEqC Port-A parancs jelet. Minden egyéb esetben válassza a 'nem'-et."
 
+#, fuzzy
+msgid "Open Vision"
+msgstr "Python verzió: "
+
 msgid "Open Vision enigma2 image"
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision information"
+msgstr "Python verzió: "
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8843,6 +8898,10 @@ msgstr ""
 msgid "RC command set"
 msgstr "Parancs sorrend"
 
+#, fuzzy
+msgid "RC type: "
+msgstr "Flash Image"
+
 msgid "REC"
 msgstr "Felvétel"
 
@@ -9408,6 +9467,10 @@ msgstr "Gyökér"
 
 msgid "Root directory"
 msgstr "Gyökérmappa"
+
+#, fuzzy
+msgid "Root file: "
+msgstr "SRT fájl"
 
 msgid "Rotor step position:"
 msgstr "Motor léptető pozíció:"
@@ -10905,9 +10968,6 @@ msgstr "Földrajzi szélességi fok"
 
 msgid "Site longitude"
 msgstr "Földrajzi hosszúsági fok"
-
-msgid "Size: "
-msgstr ""
 
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
@@ -12728,6 +12788,9 @@ msgstr ""
 msgid "Typematic rate"
 msgstr ""
 
+msgid "UBINIZE: "
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr "ISMERETLEN"
 
@@ -13937,6 +14000,9 @@ msgstr ""
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Váltson át a csatornára %s (%s - '%s')!\n"
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "A gyüjteményének mérete meghaladja egy sima rétegű DVD kapacitását, egy dupla-rétegű üres DVD lemezre lesz szüksége!"
 
@@ -14784,6 +14850,10 @@ msgstr "kézi"
 msgid "martial sports"
 msgstr "harci sportok"
 
+#, fuzzy
+msgid "master"
+msgstr "sztereó"
+
 msgid "medicine/physiology/psychology"
 msgstr "egészség"
 
@@ -14992,6 +15062,9 @@ msgid "pre-school children's program"
 msgstr "óvodásoknak"
 
 msgid "punch cuts"
+msgstr ""
+
+msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

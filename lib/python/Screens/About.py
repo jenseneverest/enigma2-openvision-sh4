@@ -208,12 +208,6 @@ class OpenVisionInformation(Screen):
 		if boxbranding.getImageFPU() != "":
 			OpenVisionInformationText += _("FPU: ") + boxbranding.getImageFPU() + "\n"
 
-		if boxbranding.getImageArch() == "aarch64":
-			if boxbranding.getHaveMultiLib() == "True":
-				OpenVisionInformationText += _("MultiLib: ") + _("Yes") + "\n"
-			else:
-				OpenVisionInformationText += _("MultiLib: ") + _("No") + "\n"
-
 		OpenVisionInformationText += "\n"
 
 		if boxbranding.getMachineMtdBoot() != "":

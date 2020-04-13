@@ -10,9 +10,8 @@ from Screens.MessageBox import MessageBox
 
 profile("LOAD:enigma")
 import enigma
-#+++>
+import os
 from enigma import iServiceInformation
-#+++<
 
 profile("LOAD:InfoBarGenerics")
 from Screens.InfoBarGenerics import InfoBarShowHide, \
@@ -138,9 +137,17 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 		self.rds_display.show()  # in InfoBarRdsDecoder
 		self.servicelist.correctChannelNumber()
 
+	def restartLastMovie(self):
+		service = enigma.eServiceReference(config.usage.last_movie_played.value)
+		if service:
+			if os.path.exists(service.getPath()):
+				from Components.ParentalControl import parentalControl
+				if parentalControl.isServicePlayable(service, self.openMoviePlayer):
+					self.openMoviePlayer(service)
+
 	def showMovies(self, defaultRef=None):
 		self.lastservice = self.session.nav.getCurrentlyPlayingServiceOrGroup()
-		self.session.openWithCallback(self.movieSelected, Screens.MovieSelection.MovieSelection, defaultRef or eServiceReference(config.usage.last_movie_played.value), timeshiftEnabled = self.timeshiftEnabled())
+		self.session.openWithCallback(self.movieSelected, Screens.MovieSelection.MovieSelection, defaultRef or enigma.eServiceReference(config.usage.last_movie_played.value), timeshiftEnabled = self.timeshiftEnabled())
 
 	def movieSelected(self, service):
 		ref = self.lastservice
@@ -326,21 +333,17 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, InfoBarMenu, InfoBarSeek, InfoBa
 					return
 
 		if answer in ("quit", "quitanddeleteconfirmed"):
-#+++>
 			# make sure that playback is unpaused otherwise the
 			# player driver might stop working
 			self.setSeekState(self.SEEK_STATE_PLAY)
-#+++<
 			self.close()
 		elif answer in ("movielist", "deleteandmovielistconfirmed"):
 			ref = self.session.nav.getCurrentlyPlayingServiceOrGroup()
 			self.returning = True
 			self.session.openWithCallback(self.movieSelected, Screens.MovieSelection.MovieSelection, ref)
-#+++>
 			# make sure that playback is unpaused otherwise the
 			# player driver might stop working
 			self.setSeekState(self.SEEK_STATE_PLAY)
-#+++<
 			self.session.nav.stopService()
 			if not config.movielist.stop_service.value:
 				self.session.nav.playService(self.lastservice)

@@ -2,17 +2,13 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 import struct, os, time
-from Components.config import config, ConfigSelection, ConfigYesNo, ConfigSubsection, ConfigText, ConfigCECAddress, ConfigLocations, ConfigDirectory
+from config import config, ConfigSelection, ConfigYesNo, ConfigSubsection, ConfigText, ConfigCECAddress, ConfigLocations, ConfigDirectory
 from enigma import eHdmiCEC, eActionMap
 from Tools.StbHardware import getFPWasTimerWakeup
 import NavigationInstance
 from enigma import eTimer
-<<<<<<< HEAD
-from sys import maxint
-=======
 from os import sys
-from sys import maxsize
->>>>>>> 39b620a5a7... HdmiCec.py: Import sys
+from sys import maxint
 
 LOGPATH="/hdd/"
 LOGFILE="hdmicec.log"

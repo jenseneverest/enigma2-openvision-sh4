@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 21:02+0430\n"
+"POT-Creation-Date: 2020-04-15 18:08+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -61,6 +61,9 @@ msgid ""
 msgstr ""
 "\n"
 "Taimer '%s'  keelatud!"
+
+msgid " "
+msgstr ""
 
 msgid " (0 - all networks)"
 msgstr " (0 - kõik võrgud)"
@@ -993,6 +996,10 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy, python-format
+msgid "%s?"
+msgstr "CH%s"
 
 #, python-format
 msgid "'%s' contains %d file(s) and %d sub-directories.\n"
@@ -4431,7 +4438,7 @@ msgid "Drama"
 msgstr "Film/Draama"
 
 #, fuzzy
-msgid "Driver version: "
+msgid "Drivers version: "
 msgstr "DVB draiveri versioon: "
 
 msgid "Drop unconfigured satellites"
@@ -4714,6 +4721,10 @@ msgstr "Muuda vastuvõtja nimeserveri seadeid.\n"
 msgid "Enabled"
 msgstr "Kasutusel"
 
+#, fuzzy
+msgid "Encrypted TV"
+msgstr "Kodeeritud: "
+
 msgid "Encrypted: "
 msgstr "Kodeeritud: "
 
@@ -4754,15 +4765,16 @@ msgstr "Lõpuaeg ooterežiimis väljalülitamise vältimiseks"
 msgid "English"
 msgstr "Inglise"
 
-#, python-format
-msgid "Enigma (re)starts: %d\n"
+#, fuzzy, python-format
+msgid "Enigma2 (re)starts: %d\n"
 msgstr "Enigma (taas)käivitamisi: %d\n"
 
 #, python-format
-msgid "Enigma debug level: %d\n"
+msgid "Enigma2 debug level: %d\n"
 msgstr ""
 
-msgid "Enigma version: "
+#, fuzzy
+msgid "Enigma2 version: "
 msgstr "Enigma versioon: "
 
 msgid "Enough - Vision image"
@@ -5185,6 +5197,9 @@ msgstr "CPU: "
 msgid "FTA"
 msgstr "FTA"
 
+msgid "FTA TV"
+msgstr ""
+
 #, fuzzy
 msgid "FTP"
 msgstr "FTA"
@@ -5373,6 +5388,10 @@ msgid "Flash Image"
 msgstr "Paigalda süsteemitõmmis"
 
 #, fuzzy
+msgid "Flash image"
+msgstr "Paigalda süsteemitõmmis"
+
+#, fuzzy
 msgid "Flash type: "
 msgstr "Paigalda süsteemitõmmis"
 
@@ -5448,6 +5467,10 @@ msgstr "Sagedus ja kanal"
 
 msgid "Frequency & Polarization"
 msgstr "Sagedus ja polarisatsioon"
+
+#, fuzzy
+msgid "Frequency (kHz)"
+msgstr "Sagedus"
 
 msgid "Frequency bands"
 msgstr "Sagedusalad"
@@ -6394,9 +6417,6 @@ msgstr ""
 "Näib et Sa ei näinud kõiki kaheksat nooleotsa. See tähendab et Su TV lubab üleskaneerimist ja ei ole põhjalikult seadistatud. ­\n"
 "\n"
 
-msgid "It's not a genuine Open Vision!"
-msgstr ""
-
 msgid "Italian"
 msgstr "Itaalia"
 
@@ -7277,10 +7297,6 @@ msgstr "Mitmekanaline heli > stereo"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Lemmiknimekirjade valik kanalite saatekavas"
-
-#, fuzzy
-msgid "MultiLib: "
-msgstr "Multi EPG"
 
 #, fuzzy
 msgid "MultiTranscoding: "
@@ -8262,6 +8278,10 @@ msgstr "Esita alates eelmisest märgist või esitusloendi kirjest"
 
 msgid "Play in main window"
 msgstr "Näita peaaknas"
+
+#, fuzzy
+msgid "Play last movie"
+msgstr "Vali salvestis"
 
 msgid "Play music..."
 msgstr "Mängi muusikat..."
@@ -10366,6 +10386,10 @@ msgid ""
 msgstr ""
 "Valitud kanalit ei leitud!\n"
 "(Timeout PMT lugemisel)"
+
+#, fuzzy
+msgid "Service list"
+msgstr "Näita kanalinimekirja"
 
 msgid "Service name"
 msgstr "Kanalinimi"
@@ -14953,10 +14977,6 @@ msgstr "juhend"
 msgid "martial sports"
 msgstr "käsitsivõitlus"
 
-#, fuzzy
-msgid "master"
-msgstr "stereo"
-
 msgid "medicine/physiology/psychology"
 msgstr "meditsiin/füsioloogia/psühholoogia"
 
@@ -15165,9 +15185,6 @@ msgid "pre-school children's program"
 msgstr "koolieelikute saade"
 
 msgid "punch cuts"
-msgstr ""
-
-msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

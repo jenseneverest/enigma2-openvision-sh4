@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 21:02+0430\n"
+"POT-Creation-Date: 2020-04-15 18:08+0430\n"
 "PO-Revision-Date: 2018-12-17 02:51+0200\n"
 "Last-Translator: Hazem <moustafagamal@hotmail.com>\n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -66,6 +66,9 @@ msgid ""
 msgstr ""
 "\n"
 "المؤقت '%s' معطل!"
+
+msgid " "
+msgstr ""
 
 msgid " (0 - all networks)"
 msgstr " (0 - كل الشبكات)"
@@ -999,6 +1002,10 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
+msgstr ""
+
+#, python-format
+msgid "%s?"
 msgstr ""
 
 #, python-format
@@ -4544,7 +4551,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Driver version: "
+msgid "Drivers version: "
 msgstr "إصدار برنامج DVB:"
 
 #, fuzzy
@@ -4851,6 +4858,11 @@ msgid "Enabled"
 msgstr "تم التفعيل"
 
 #
+#, fuzzy
+msgid "Encrypted TV"
+msgstr "مشفر:"
+
+#
 msgid "Encrypted: "
 msgstr "مشفر:"
 
@@ -4896,16 +4908,18 @@ msgstr ""
 msgid "English"
 msgstr "إنجليزي"
 
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr ""
+#
+#, fuzzy, python-format
+msgid "Enigma2 (re)starts: %d\n"
+msgstr "إصدار الانيجما: "
 
 #, python-format
-msgid "Enigma debug level: %d\n"
+msgid "Enigma2 debug level: %d\n"
 msgstr ""
 
 #
-msgid "Enigma version: "
+#, fuzzy
+msgid "Enigma2 version: "
 msgstr "إصدار الانيجما: "
 
 msgid "Enough - Vision image"
@@ -5322,6 +5336,9 @@ msgstr ""
 msgid "FTA"
 msgstr ""
 
+msgid "FTA TV"
+msgstr ""
+
 msgid "FTP"
 msgstr ""
 
@@ -5523,6 +5540,10 @@ msgid "Flash Image"
 msgstr "تنصيب صورة"
 
 #, fuzzy
+msgid "Flash image"
+msgstr "تنصيب صورة"
+
+#, fuzzy
 msgid "Flash type: "
 msgstr "تنصيب صورة"
 
@@ -5600,6 +5621,11 @@ msgstr ""
 
 msgid "Frequency & Polarization"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Frequency (kHz)"
+msgstr "التردد"
 
 msgid "Frequency bands"
 msgstr "نطاقات التردد"
@@ -6596,9 +6622,6 @@ msgstr ""
 "\n"
 "يرجى الرجوع إلى دليل التلفزيون الخاص بك لمعرفة كيف يمكنك تعطيل overcan على جهاز التلفزيون الخاص بك. ابحث عن عبارات مثل \"مناسب تمامًا\" ، \"العرض الكامل\" ، وما إلى ذلك. إذا لم تتمكن من العثور عليها ، فاطلب من المستخدمين الآخرين على الموقع http://forums.openpli.org.\n"
 
-msgid "It's not a genuine Open Vision!"
-msgstr ""
-
 msgid "Italian"
 msgstr "إيطالي"
 
@@ -7576,11 +7599,6 @@ msgstr ""
 
 msgid "Multi-EPG bouquet selection"
 msgstr ""
-
-#
-#, fuzzy
-msgid "MultiLib: "
-msgstr "دليل برامج متعدد"
 
 msgid "MultiTranscoding: "
 msgstr ""
@@ -8634,6 +8652,11 @@ msgstr "عرض من العلامه السابقه أو من مدخل قائمة 
 
 msgid "Play in main window"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Play last movie"
+msgstr "اختيار الفيلم"
 
 #
 msgid "Play music..."
@@ -10857,6 +10880,11 @@ msgid ""
 "Service invalid!\n"
 "(Timeout reading PMT)"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Service list"
+msgstr "قائمة القنوات الفرعية..."
 
 #
 msgid "Service name"
@@ -15598,10 +15626,6 @@ msgstr "يدوى"
 msgid "martial sports"
 msgstr ""
 
-#, fuzzy
-msgid "master"
-msgstr "ستيريو"
-
 msgid "medicine/physiology/psychology"
 msgstr ""
 
@@ -15815,9 +15839,6 @@ msgid "pre-school children's program"
 msgstr ""
 
 msgid "punch cuts"
-msgstr ""
-
-msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

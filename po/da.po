@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 21:02+0430\n"
+"POT-Creation-Date: 2020-04-15 18:08+0430\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -65,6 +65,9 @@ msgid ""
 msgstr ""
 "\n"
 "Timer '%s' deaktiveret!"
+
+msgid " "
+msgstr ""
 
 msgid " (0 - all networks)"
 msgstr "(0 - alle netværk)"
@@ -1008,6 +1011,10 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy, python-format
+msgid "%s?"
+msgstr "CH%s"
 
 #, python-format
 msgid "'%s' contains %d file(s) and %d sub-directories.\n"
@@ -4895,7 +4902,7 @@ msgid "Drama"
 msgstr "Film/Drama"
 
 #, fuzzy
-msgid "Driver version: "
+msgid "Drivers version: "
 msgstr "DVB drivers: "
 
 #, fuzzy
@@ -5215,6 +5222,11 @@ msgid "Enabled"
 msgstr "Aktiveret"
 
 #
+#, fuzzy
+msgid "Encrypted TV"
+msgstr "Krypteret:"
+
+#
 msgid "Encrypted: "
 msgstr "Krypteret:"
 
@@ -5265,17 +5277,17 @@ msgstr "Sluttid hvor nedlukning i standby skal ignoreres."
 msgid "English"
 msgstr "Engelsk"
 
-#, python-format
-msgid "Enigma (re)starts: %d\n"
+#, fuzzy, python-format
+msgid "Enigma2 (re)starts: %d\n"
 msgstr "Enigma (gen)starter: %d\n"
 
 #, python-format
-msgid "Enigma debug level: %d\n"
+msgid "Enigma2 debug level: %d\n"
 msgstr ""
 
 #
 #, fuzzy
-msgid "Enigma version: "
+msgid "Enigma2 version: "
 msgstr "Kernel version:"
 
 msgid "Enough - Vision image"
@@ -5732,6 +5744,9 @@ msgstr "CPU: "
 msgid "FTA"
 msgstr "FTA"
 
+msgid "FTA TV"
+msgstr ""
+
 #, fuzzy
 msgid "FTP"
 msgstr "FTA"
@@ -5947,6 +5962,11 @@ msgstr "Flash"
 
 #
 #, fuzzy
+msgid "Flash image"
+msgstr "Flash"
+
+#
+#, fuzzy
 msgid "Flash type: "
 msgstr "Flash"
 
@@ -6030,6 +6050,11 @@ msgstr "Frekvens & Kanal"
 
 msgid "Frequency & Polarization"
 msgstr "Frekvens & Polarisering"
+
+#
+#, fuzzy
+msgid "Frequency (kHz)"
+msgstr "Frekvens"
 
 #
 msgid "Frequency bands"
@@ -7079,9 +7104,6 @@ msgstr ""
 "\n"
 "\n"
 
-msgid "It's not a genuine Open Vision!"
-msgstr ""
-
 #
 msgid "Italian"
 msgstr "Italiensk"
@@ -8098,11 +8120,6 @@ msgstr "Multi channel downmix"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG favoritliste valg"
-
-#
-#, fuzzy
-msgid "MultiLib: "
-msgstr "Multi EPG"
 
 #, fuzzy
 msgid "MultiTranscoding: "
@@ -9212,6 +9229,11 @@ msgstr "Aspil fra forrige mærke eller spilleliste punkt"
 
 msgid "Play in main window"
 msgstr "Afspil i hovedvindue"
+
+#
+#, fuzzy
+msgid "Play last movie"
+msgstr "Vælg en film"
 
 #
 msgid "Play music..."
@@ -11627,6 +11649,10 @@ msgid ""
 msgstr ""
 "Kanal fejl!\n"
 "(Timeout læsning i PMT)"
+
+#, fuzzy
+msgid "Service list"
+msgstr "Vis serviceliste"
 
 msgid "Service name"
 msgstr "Kanalnavn"
@@ -16685,11 +16711,6 @@ msgstr "manuelt"
 msgid "martial sports"
 msgstr "kampsport"
 
-#
-#, fuzzy
-msgid "master"
-msgstr "stereo"
-
 msgid "medicine/physiology/psychology"
 msgstr "medicin/fysiologi/psykologi"
 
@@ -16928,9 +16949,6 @@ msgid "pre-school children's program"
 msgstr "før-skole børneprogram"
 
 msgid "punch cuts"
-msgstr ""
-
-msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

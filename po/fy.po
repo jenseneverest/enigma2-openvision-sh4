@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 21:02+0430\n"
+"POT-Creation-Date: 2020-04-15 18:08+0430\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -59,6 +59,9 @@ msgstr ""
 msgid ""
 "\n"
 "Timer '%s' disabled!"
+msgstr ""
+
+msgid " "
 msgstr ""
 
 msgid " (0 - all networks)"
@@ -1005,6 +1008,10 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
+msgstr ""
+
+#, python-format
+msgid "%s?"
 msgstr ""
 
 #, python-format
@@ -4878,7 +4885,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Driver version: "
+msgid "Drivers version: "
 msgstr "Nije ferzje:"
 
 #
@@ -5196,6 +5203,11 @@ msgid "Enabled"
 msgstr "Ynskeakele"
 
 #
+#, fuzzy
+msgid "Encrypted TV"
+msgstr "Encryption"
+
+#
 msgid "Encrypted: "
 msgstr ""
 
@@ -5248,17 +5260,18 @@ msgstr ""
 msgid "English"
 msgstr "Engelsk"
 
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr ""
+#
+#, fuzzy, python-format
+msgid "Enigma2 (re)starts: %d\n"
+msgstr "Nije ferzje:"
 
 #, python-format
-msgid "Enigma debug level: %d\n"
+msgid "Enigma2 debug level: %d\n"
 msgstr ""
 
 #
 #, fuzzy
-msgid "Enigma version: "
+msgid "Enigma2 version: "
 msgstr "Nije ferzje:"
 
 msgid "Enough - Vision image"
@@ -5715,6 +5728,9 @@ msgstr ""
 msgid "FTA"
 msgstr ""
 
+msgid "FTA TV"
+msgstr ""
+
 msgid "FTP"
 msgstr ""
 
@@ -5919,6 +5935,11 @@ msgstr "Flash"
 
 #
 #, fuzzy
+msgid "Flash image"
+msgstr "Flash"
+
+#
+#, fuzzy
 msgid "Flash type: "
 msgstr "Flash"
 
@@ -6003,6 +6024,11 @@ msgstr ""
 
 msgid "Frequency & Polarization"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Frequency (kHz)"
+msgstr "Frekwinsje"
 
 #
 msgid "Frequency bands"
@@ -7054,9 +7080,6 @@ msgid ""
 "\n"
 msgstr ""
 
-msgid "It's not a genuine Open Vision!"
-msgstr ""
-
 #
 msgid "Italian"
 msgstr "Italiaansk"
@@ -8093,11 +8116,6 @@ msgstr ""
 
 msgid "Multi-EPG bouquet selection"
 msgstr ""
-
-#
-#, fuzzy
-msgid "MultiLib: "
-msgstr "Multi EPG"
 
 msgid "MultiTranscoding: "
 msgstr ""
@@ -9225,6 +9243,11 @@ msgstr "Spielje fanôf it foarige punt of ôfspiellyst rigele"
 
 msgid "Play in main window"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Play last movie"
+msgstr "Kies in film"
 
 #
 #, fuzzy
@@ -11663,6 +11686,11 @@ msgid ""
 msgstr ""
 "Kanaal net jildig!\n"
 "(Tiidsoerskriding lêzen fan PMT)"
+
+#
+#, fuzzy
+msgid "Service list"
+msgstr "UnderSender lyst..."
 
 #
 #, fuzzy
@@ -16672,11 +16700,6 @@ msgstr "hânmatig"
 msgid "martial sports"
 msgstr ""
 
-#
-#, fuzzy
-msgid "master"
-msgstr "stereo"
-
 msgid "medicine/physiology/psychology"
 msgstr ""
 
@@ -16911,9 +16934,6 @@ msgid "pre-school children's program"
 msgstr ""
 
 msgid "punch cuts"
-msgstr ""
-
-msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

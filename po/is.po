@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 21:02+0430\n"
+"POT-Creation-Date: 2020-04-15 18:08+0430\n"
 "PO-Revision-Date: 2011-05-07 12:23+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -60,6 +60,9 @@ msgstr ""
 msgid ""
 "\n"
 "Timer '%s' disabled!"
+msgstr ""
+
+msgid " "
 msgstr ""
 
 msgid " (0 - all networks)"
@@ -1005,6 +1008,10 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
+msgstr ""
+
+#, python-format
+msgid "%s?"
 msgstr ""
 
 #, python-format
@@ -4717,7 +4724,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Driver version: "
+msgid "Drivers version: "
 msgstr "Ný útgáfa:"
 
 #
@@ -5030,6 +5037,10 @@ msgstr "fara úr nafnaþjóns stillingum"
 msgid "Enabled"
 msgstr "Virkt"
 
+#, fuzzy
+msgid "Encrypted TV"
+msgstr "Kóðun:"
+
 msgid "Encrypted: "
 msgstr "Kóðun:"
 
@@ -5080,17 +5091,18 @@ msgstr ""
 msgid "English"
 msgstr "Enska"
 
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr ""
+#
+#, fuzzy, python-format
+msgid "Enigma2 (re)starts: %d\n"
+msgstr "Ný útgáfa:"
 
 #, python-format
-msgid "Enigma debug level: %d\n"
+msgid "Enigma2 debug level: %d\n"
 msgstr ""
 
 #
 #, fuzzy
-msgid "Enigma version: "
+msgid "Enigma2 version: "
 msgstr "Ný útgáfa:"
 
 msgid "Enough - Vision image"
@@ -5537,6 +5549,9 @@ msgstr ""
 msgid "FTA"
 msgstr ""
 
+msgid "FTA TV"
+msgstr ""
+
 msgid "FTP"
 msgstr ""
 
@@ -5739,6 +5754,11 @@ msgstr "Forritun"
 
 #
 #, fuzzy
+msgid "Flash image"
+msgstr "Forritun"
+
+#
+#, fuzzy
 msgid "Flash type: "
 msgstr "Forritun"
 
@@ -5821,6 +5841,11 @@ msgstr ""
 
 msgid "Frequency & Polarization"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Frequency (kHz)"
+msgstr "Tíðni"
 
 #
 msgid "Frequency bands"
@@ -6871,9 +6896,6 @@ msgid ""
 "\n"
 msgstr ""
 
-msgid "It's not a genuine Open Vision!"
-msgstr ""
-
 #
 msgid "Italian"
 msgstr "Ítalska"
@@ -7905,11 +7927,6 @@ msgstr ""
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Mörg-EPG rásavanda val"
-
-#
-#, fuzzy
-msgid "MultiLib: "
-msgstr "Mörg EPG"
 
 msgid "MultiTranscoding: "
 msgstr ""
@@ -9040,6 +9057,11 @@ msgstr "spila frá fyrra merki eða atriði úr spilunarlista"
 
 msgid "Play in main window"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Play last movie"
+msgstr "Veldu mynd"
 
 #
 #, fuzzy
@@ -11452,6 +11474,11 @@ msgid ""
 msgstr ""
 "Rás ógild!\n"
 "(Rann út á tíma við lestur PMT)"
+
+#
+#, fuzzy
+msgid "Service list"
+msgstr "Listi undirrása..."
 
 #
 #, fuzzy
@@ -16462,11 +16489,6 @@ msgstr "handvirkt"
 msgid "martial sports"
 msgstr ""
 
-#
-#, fuzzy
-msgid "master"
-msgstr "víðóma"
-
 msgid "medicine/physiology/psychology"
 msgstr ""
 
@@ -16700,9 +16722,6 @@ msgid "pre-school children's program"
 msgstr ""
 
 msgid "punch cuts"
-msgstr ""
-
-msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

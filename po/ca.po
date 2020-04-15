@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 21:02+0430\n"
+"POT-Creation-Date: 2020-04-15 18:08+0430\n"
 "PO-Revision-Date: 2007-08-14 10:23+0200\n"
 "Last-Translator: Oriol Pellicer <oriol@elsud.org>\n"
 "Language-Team: \n"
@@ -58,6 +58,9 @@ msgstr ""
 msgid ""
 "\n"
 "Timer '%s' disabled!"
+msgstr ""
+
+msgid " "
 msgstr ""
 
 msgid " (0 - all networks)"
@@ -1002,6 +1005,10 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
+msgstr ""
+
+#, python-format
+msgid "%s?"
 msgstr ""
 
 #, python-format
@@ -4807,7 +4814,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Driver version: "
+msgid "Drivers version: "
 msgstr "Nova versió:"
 
 msgid "Drop unconfigured satellites"
@@ -5116,6 +5123,9 @@ msgstr ""
 msgid "Enabled"
 msgstr "Activat"
 
+msgid "Encrypted TV"
+msgstr ""
+
 #
 msgid "Encrypted: "
 msgstr ""
@@ -5165,17 +5175,18 @@ msgstr ""
 msgid "English"
 msgstr "Anglès"
 
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr ""
+#
+#, fuzzy, python-format
+msgid "Enigma2 (re)starts: %d\n"
+msgstr "Nova versió:"
 
 #, python-format
-msgid "Enigma debug level: %d\n"
+msgid "Enigma2 debug level: %d\n"
 msgstr ""
 
 #
 #, fuzzy
-msgid "Enigma version: "
+msgid "Enigma2 version: "
 msgstr "Nova versió:"
 
 msgid "Enough - Vision image"
@@ -5627,6 +5638,9 @@ msgstr ""
 msgid "FTA"
 msgstr ""
 
+msgid "FTA TV"
+msgstr ""
+
 msgid "FTP"
 msgstr ""
 
@@ -5824,6 +5838,11 @@ msgstr ""
 msgid "Flash Image"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Flash image"
+msgstr "Descarregant"
+
 msgid "Flash type: "
 msgstr ""
 
@@ -5906,6 +5925,11 @@ msgstr ""
 
 msgid "Frequency & Polarization"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Frequency (kHz)"
+msgstr "Freqüència"
 
 #
 msgid "Frequency bands"
@@ -6940,9 +6964,6 @@ msgid ""
 "\n"
 msgstr ""
 
-msgid "It's not a genuine Open Vision!"
-msgstr ""
-
 #
 msgid "Italian"
 msgstr "Italià"
@@ -7943,11 +7964,6 @@ msgstr ""
 
 msgid "Multi-EPG bouquet selection"
 msgstr ""
-
-#
-#, fuzzy
-msgid "MultiLib: "
-msgstr "Multi EPG"
 
 msgid "MultiTranscoding: "
 msgstr ""
@@ -9051,6 +9067,11 @@ msgstr ""
 
 msgid "Play in main window"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Play last movie"
+msgstr "Seleccionar una pel·lícula"
 
 msgid "Play music..."
 msgstr ""
@@ -11469,6 +11490,11 @@ msgid ""
 msgstr ""
 "Canal invàlid!\n"
 "(Timeout llegint el PMT)"
+
+#
+#, fuzzy
+msgid "Service list"
+msgstr "Llista de subserveis..."
 
 #
 #, fuzzy
@@ -16330,11 +16356,6 @@ msgstr "manual"
 msgid "martial sports"
 msgstr ""
 
-#
-#, fuzzy
-msgid "master"
-msgstr "stèreo"
-
 msgid "medicine/physiology/psychology"
 msgstr ""
 
@@ -16570,9 +16591,6 @@ msgid "pre-school children's program"
 msgstr ""
 
 msgid "punch cuts"
-msgstr ""
-
-msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

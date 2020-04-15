@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 21:02+0430\n"
+"POT-Creation-Date: 2020-04-15 18:08+0430\n"
 "PO-Revision-Date: 2020-03-17 01:28+0100\n"
 "Last-Translator: Jose Juan <jzapater@gmail.com>\n"
 "Language-Team: ANGELODOS  angelo2807@hotmail.com\n"
@@ -67,6 +67,9 @@ msgid ""
 msgstr ""
 "\n"
 "¡El temporizador '%s' está deshabilitado!"
+
+msgid " "
+msgstr ""
 
 msgid " (0 - all networks)"
 msgstr "(0 - todas las redes)"
@@ -1020,6 +1023,10 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy, python-format
+msgid "%s?"
+msgstr "CANAL %s"
 
 #, python-format
 msgid "'%s' contains %d file(s) and %d sub-directories.\n"
@@ -4834,7 +4841,7 @@ msgid "Drama"
 msgstr "Película / Drama"
 
 #, fuzzy
-msgid "Driver version: "
+msgid "Drivers version: "
 msgstr "Versión del controlador DVB:"
 
 msgid "Drop unconfigured satellites"
@@ -5146,6 +5153,11 @@ msgid "Enabled"
 msgstr "Activado"
 
 #
+#, fuzzy
+msgid "Encrypted TV"
+msgstr "Encriptado:"
+
+#
 msgid "Encrypted: "
 msgstr "Encriptado:"
 
@@ -5196,15 +5208,16 @@ msgstr "Hora de finalización para ignorar el apagado en modo de espera"
 msgid "English"
 msgstr "Inglés"
 
-#, python-format
-msgid "Enigma (re)starts: %d\n"
+#, fuzzy, python-format
+msgid "Enigma2 (re)starts: %d\n"
 msgstr "Enigma (re) comienza:% d\n"
 
-#, python-format
-msgid "Enigma debug level: %d\n"
+#, fuzzy, python-format
+msgid "Enigma2 debug level: %d\n"
 msgstr "Nivel de depuración de enigma:% d\n"
 
-msgid "Enigma version: "
+#, fuzzy
+msgid "Enigma2 version: "
 msgstr "Enigma versión:"
 
 msgid "Enough - Vision image"
@@ -5671,6 +5684,9 @@ msgstr "CPU: "
 msgid "FTA"
 msgstr "FTA"
 
+msgid "FTA TV"
+msgstr ""
+
 #, fuzzy
 msgid "FTP"
 msgstr "FTA"
@@ -5875,6 +5891,10 @@ msgid "Flash Image"
 msgstr "Imagen Flash"
 
 #, fuzzy
+msgid "Flash image"
+msgstr "Imagen Flash"
+
+#, fuzzy
 msgid "Flash type: "
 msgstr "Imagen Flash"
 
@@ -5955,6 +5975,11 @@ msgstr "Frecuencia y canal"
 
 msgid "Frequency & Polarization"
 msgstr "Frecuencia y Polarización"
+
+#
+#, fuzzy
+msgid "Frequency (kHz)"
+msgstr "Frecuencia"
 
 #
 msgid "Frequency bands"
@@ -6987,9 +7012,6 @@ msgstr ""
 "\n"
 "Consulte el manual de su televisor para ver cómo puede desactivar el overscan en su televisor. Busque términos como ‘Apropiado’, ‘Ancho total’, etc. Si no puede encontrarlo, pregunte a otros usuarios en http://forums.openpli.org.\n"
 
-msgid "It's not a genuine Open Vision!"
-msgstr ""
-
 #
 msgid "Italian"
 msgstr "Italiano"
@@ -7985,11 +8007,6 @@ msgstr "Mezcla de canales múltiples"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Selección de lista Multi-EPG"
-
-#
-#, fuzzy
-msgid "MultiLib: "
-msgstr "EPG Múltiple"
 
 #, fuzzy
 msgid "MultiTranscoding: "
@@ -9073,6 +9090,11 @@ msgstr "Reproducir desde la marca anterior o la entrada de la lista de reproduc"
 
 msgid "Play in main window"
 msgstr "Jugar en mainwindow"
+
+#
+#, fuzzy
+msgid "Play last movie"
+msgstr "Seleccionar una película"
 
 #
 msgid "Play music..."
@@ -11423,6 +11445,10 @@ msgid ""
 msgstr ""
 "¡Canal no válido!\n"
 "(Tiempo cumplido leyendo PMT)"
+
+#, fuzzy
+msgid "Service list"
+msgstr "Mostrar lista de servicios"
 
 #
 msgid "Service name"
@@ -16410,11 +16436,6 @@ msgstr "manual"
 msgid "martial sports"
 msgstr "Deportes marciales"
 
-#
-#, fuzzy
-msgid "master"
-msgstr "stéreo"
-
 msgid "medicine/physiology/psychology"
 msgstr "Medicina / fisiología / psicología"
 
@@ -16652,9 +16673,6 @@ msgid "pre-school children's program"
 msgstr "Programa infantil de preescolar"
 
 msgid "punch cuts"
-msgstr ""
-
-msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 21:02+0430\n"
+"POT-Creation-Date: 2020-04-15 18:08+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -58,6 +58,9 @@ msgid ""
 msgstr ""
 "\n"
 "Pewaktu '%s' dimatikan!"
+
+msgid " "
+msgstr ""
 
 msgid " (0 - all networks)"
 msgstr " (0 - semua jaringan)"
@@ -994,6 +997,10 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, fuzzy, python-format
+msgid "%s?"
+msgstr "CH%s"
 
 #, python-format
 msgid "'%s' contains %d file(s) and %d sub-directories.\n"
@@ -4473,7 +4480,7 @@ msgid "Drama"
 msgstr "Film/Drama"
 
 #, fuzzy
-msgid "Driver version: "
+msgid "Drivers version: "
 msgstr "Versi modul DVB: "
 
 #, fuzzy
@@ -4759,6 +4766,10 @@ msgstr "Ubah setelan namaserver pada Rx anda.\n"
 msgid "Enabled"
 msgstr "Diaktifkan"
 
+#, fuzzy
+msgid "Encrypted TV"
+msgstr "Dienkripsi: "
+
 msgid "Encrypted: "
 msgstr "Dienkripsi: "
 
@@ -4799,16 +4810,16 @@ msgstr "Batas akhir untuk mengabaikan shutdown pada standby"
 msgid "English"
 msgstr "Inggris"
 
-#, python-format
-msgid "Enigma (re)starts: %d\n"
+#, fuzzy, python-format
+msgid "Enigma2 (re)starts: %d\n"
 msgstr "Enigma (re)starts: %d\n"
 
 #, python-format
-msgid "Enigma debug level: %d\n"
+msgid "Enigma2 debug level: %d\n"
 msgstr ""
 
 #, fuzzy
-msgid "Enigma version: "
+msgid "Enigma2 version: "
 msgstr "Kernel version: "
 
 msgid "Enough - Vision image"
@@ -5243,6 +5254,9 @@ msgstr "CPU: "
 msgid "FTA"
 msgstr "FTA"
 
+msgid "FTA TV"
+msgstr ""
+
 #, fuzzy
 msgid "FTP"
 msgstr "FTA"
@@ -5440,6 +5454,10 @@ msgid "Flash Image"
 msgstr "Pasang Image"
 
 #, fuzzy
+msgid "Flash image"
+msgstr "Pasang Image"
+
+#, fuzzy
 msgid "Flash type: "
 msgstr "Pasang Image"
 
@@ -5517,6 +5535,10 @@ msgstr "Frekuensi & Kanal"
 
 msgid "Frequency & Polarization"
 msgstr "Frekuensi & Polarisasi"
+
+#, fuzzy
+msgid "Frequency (kHz)"
+msgstr "Frekuensi"
 
 msgid "Frequency bands"
 msgstr "Pita frekuensi"
@@ -6483,9 +6505,6 @@ msgstr ""
 "Mohon merujuk pada manual TV anda untuk mengetahui bagaimana anda bisa mematikan overscan pada TV anda. Cari istilah seperti 'Just fit', 'Full width', dan lainnya. Jika tidak anda temukan, tanyalah pengguna lain di http://forums.openpli.org.\n"
 "\n"
 
-msgid "It's not a genuine Open Vision!"
-msgstr ""
-
 msgid "Italian"
 msgstr "Italia"
 
@@ -7381,10 +7400,6 @@ msgstr "Turunkan kualitas multi kanal"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Pilihan buket Multi-EPG"
-
-#, fuzzy
-msgid "MultiLib: "
-msgstr "EPG Multi"
 
 msgid "MultiTranscoding: "
 msgstr ""
@@ -8375,6 +8390,10 @@ msgstr "Mainkan dari penanda sebelumnya atau entri daftarputar"
 
 msgid "Play in main window"
 msgstr "Putar pada jendela utama"
+
+#, fuzzy
+msgid "Play last movie"
+msgstr "Pilih film"
 
 msgid "Play music..."
 msgstr "Mainkan musik..."
@@ -10501,6 +10520,10 @@ msgid ""
 msgstr ""
 "Kanal tidak valid!\n"
 "(Waktu habis untuk membaca PMT)"
+
+#, fuzzy
+msgid "Service list"
+msgstr "Tampilkan daftar layanan"
 
 msgid "Service name"
 msgstr "Nama layanan"
@@ -15108,10 +15131,6 @@ msgstr "manual"
 msgid "martial sports"
 msgstr "olahraga beladiri"
 
-#, fuzzy
-msgid "master"
-msgstr "stereo"
-
 msgid "medicine/physiology/psychology"
 msgstr "pengobatan/fisiologi/psikologi"
 
@@ -15320,9 +15339,6 @@ msgid "pre-school children's program"
 msgstr "acara anak prasekolah"
 
 msgid "punch cuts"
-msgstr ""
-
-msgid "pyro"
 msgstr ""
 
 msgid "quick execute"

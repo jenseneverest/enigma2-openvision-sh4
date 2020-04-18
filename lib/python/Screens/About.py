@@ -50,9 +50,7 @@ class About(Screen):
 		if boxrctype is not None and boxrctype != "unknown":
 			AboutText += _("RC type: ") + boxrctype + "\n"
 		if boxrctype is not None and boxrctype == "unknown":
-			if fileExists("/usr/bin/remotecfg"):
-				AboutText += _("RC type: ") + _("Amlogic remote") + "\n"
-			elif fileExists("/usr/sbin/lircd"):
+			if fileExists("/usr/sbin/lircd"):
 				AboutText += _("RC type: ") + _("LIRC remote") + "\n"
 
 		AboutText += "\n"
@@ -227,16 +225,6 @@ class OpenVisionInformation(Screen):
 			OpenVisionInformationText += _("MKUBIFS: ") + boxbranding.getMachineMKUBIFS() + "\n"
 		if boxbranding.getMachineUBINIZE() != "":
 			OpenVisionInformationText += _("UBINIZE: ") + boxbranding.getMachineUBINIZE() + "\n"
-
-		OpenVisionInformationText += "\n"
-
-		if fileExists("/proc/device-tree/amlogic-dt-id"):
-			devicetid = open("/proc/device-tree/amlogic-dt-id", "r").read().strip()
-			OpenVisionInformationText += _("Device id: ") + devicetid + "\n"
-
-		if fileExists("/proc/device-tree/le-dt-id"):
-			giventid = open("/proc/device-tree/le-dt-id", "r").read().strip()
-			OpenVisionInformationText += _("Given device id: ") + giventid + "\n"
 
 		self["AboutScrollLabel"] = ScrollLabel(OpenVisionInformationText)
 		self["key_red"] = Button(_("Close"))

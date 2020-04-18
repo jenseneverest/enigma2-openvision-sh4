@@ -134,11 +134,7 @@ def getCPUInfoString():
 			try:
 				cpu_speed = int(open("/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq").read()) / 1000
 			except:
-				try:
-					import binascii
-					cpu_speed = int(int(binascii.hexlify(open('/sys/firmware/devicetree/base/cpus/cpu@0/clock-frequency', 'rb').read()), 16) / 100000000) * 100
-				except:
-					cpu_speed = "-"
+				cpu_speed = "-"
 
 		temperature = None
 		if os.path.isfile('/proc/stb/fp/temp_sensor_avs'):
@@ -150,11 +146,6 @@ def getCPUInfoString():
 		elif os.path.isfile("/sys/devices/virtual/thermal/thermal_zone0/temp"):
 			try:
 				temperature = int(open("/sys/devices/virtual/thermal/thermal_zone0/temp").read().strip())/1000
-			except:
-				pass
-		elif os.path.isfile("/proc/hisi/msp/pm_cpu"):
-			try:
-				temperature = re.search('temperature = (\d+) degree', open("/proc/hisi/msp/pm_cpu").read()).group(1)
 			except:
 				pass
 		if temperature:
@@ -204,15 +195,7 @@ def getDriverInstalledDate():
 				driver = [x.split("-")[-2:-1][0][-8:] for x in open(glob("/var/lib/opkg/info/*-dvb-modules-*.control")[0], "r") if x.startswith("Version:")][0]
 				return  "%s-%s-%s" % (driver[:4], driver[4:6], driver[6:])
 			except:
-				try:
-					driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/*-dvb-proxy-*.control")[0], "r") if x.startswith("Version:")][0]
-					return  "%s" % driver[1].replace("\n","")
-				except:
-					try:
-						driver = [x.split("Version:") for x in open(glob("/var/lib/opkg/info/*-platform-util-*.control")[0], "r") if x.startswith("Version:")][0]
-						return  "%s" % driver[1].replace("\n","")
-					except:
-						return _("unknown")
+				return _("unknown")
 	except:
 		return _("unknown")
 

@@ -12,10 +12,6 @@ def getBoxProc():
 			procmodel = open("/proc/stb/info/boxtype", "r").readline().strip().lower()
 		elif fileExists("/proc/boxtype"):
 			procmodel = open("/proc/boxtype", "r").readline().strip().lower()
-		elif fileExists("/proc/device-tree/model"):
-			procmodel = open("/proc/device-tree/model", "r").readline().strip()
-		elif fileExists("/sys/firmware/devicetree/base/model"):
-			procmodel = open("/sys/firmware/devicetree/base/model", "r").readline().strip()
 		else:
 			procmodel = open("/proc/stb/info/model", "r").readline().strip().lower()
 	except IOError:
@@ -56,10 +52,7 @@ def getFPVersion():
 			ret = ioctl(fp.fileno(),0)
 			fp.close()
 		except IOError:
-			try:
-				ret = open("/sys/firmware/devicetree/base/bolt/tag", "r").read().rstrip("\0")
-			except:
-				print("[StbHardware] getFPVersion failed!")
+			print("[StbHardware] getFPVersion failed!")
 	return ret
 
 def setFPWakeuptime(wutime):

@@ -37,6 +37,12 @@ class About(Screen):
 		if fileExists("/proc/stb/info/model_name"):
 			resellername = open("/proc/stb/info/model_name", "r").read().strip()
 			AboutText += _("Reseller name: ") + resellername + "\n"
+		if fileExists("/proc/stb/fp/resellerID"):
+			resellerid = open("/proc/stb/fp/resellerID", "r").read().strip()
+			AboutText += _("Reseller ID: ") + resellerid + "\n"
+		if fileExists("/proc/stb/info/adb_variant"):
+			adbvariant = open("/proc/stb/info/adb_variant", "r").read().strip()
+			AboutText += _("ADB variant: ") + adbvariant + "\n"
 
 		hwserial = getHWSerial()
 		if hwserial is not None and hwserial != "unknown":
@@ -87,6 +93,10 @@ class About(Screen):
 		GStreamerVersion = _("GStreamer version: ") + about.getGStreamerVersionString(cpu).replace("GStreamer","")
 		self["GStreamerVersion"] = StaticText(GStreamerVersion)
 		AboutText += "\n" + GStreamerVersion + "\n"
+
+		if fileExists("/proc/stb/player/version"):
+			playerversion = open("/proc/stb/player/version", "r").read().strip()
+			AboutText += _("Player version: ") + playerversion + "\n"
 
 		FFmpegVersion = _("FFmpeg version: ") + about.getFFmpegVersionString()
 		self["FFmpegVersion"] = StaticText(FFmpegVersion)

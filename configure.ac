@@ -57,6 +57,14 @@ if test "$enable_adb_box" = "yes"; then
 	AC_DEFINE(ENABLE_ADB_BOX, 1, [enable adb_box stuff])
 fi
 
+AC_ARG_ENABLE(adb_2850,
+	[  --enable-adb_2850            enable adb_2850 stuff],
+	[AC_DEFINE(ENABLE_ADB_2850, 1, [enable adb_2850 stuff])])
+AM_CONDITIONAL(ENABLE_ADB_2850, test "$enable_adb_2850" = "yes")
+if test "$enable_adb_2850" = "yes"; then
+	AC_DEFINE(ENABLE_ADB_2850, 1, [enable adb_2850 stuff])
+fi
+
 AC_ARG_ENABLE(arivalink200,
 	[  --enable-arivalink200            enable arivalink200 stuff],
 	[AC_DEFINE(ENABLE_ARIVALINK200, 1, [enable arivalink200 stuff])])

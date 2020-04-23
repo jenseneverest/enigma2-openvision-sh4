@@ -10,6 +10,10 @@ if ENABLE_ADB_BOX
 SUBDIRS += ADBVFD
 endif
 
+if ENABLE_ADB_2850
+SUBDIRS += ADBVFD
+endif
+
 if ENABLE_TF7700
 SUBDIRS += TopfieldVFD
 endif

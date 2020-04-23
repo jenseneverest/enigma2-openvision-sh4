@@ -6,6 +6,9 @@ datarootdir=@datarootdir@
 
 export PATH=$PATH:/usr/script
 
+brandcheck=`cat /etc/openvision/brand`
+modelcheck=`cat /etc/openvision/model`
+
 # write -E2- on vfd display
 echo "-E2-" > /dev/vfd
 

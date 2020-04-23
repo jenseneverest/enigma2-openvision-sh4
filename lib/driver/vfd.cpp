@@ -43,6 +43,7 @@
  * 20190317 Audioniek       Several CubeRevo's added.
  * 20190518 Audioniek       vitamin_hd5000 added.
  * 20200214 Audioniek       Add Fortis 4G models.
+ * 20200417 Audioniek       adb_box added.
  *
  ****************************************************************************/
 #include <stdarg.h>
@@ -177,7 +178,8 @@ evfd::evfd()
 #elif defined (ENABLE_VITAMIN_HD5000)
 	vfd_type = 17;
 #elif defined (ENABLE_FOREVER_NANOSMART) \
-   || defined (ENABLE_FOREVER_2424HD)
+   || defined (ENABLE_FOREVER_2424HD) \
+   || defined (ENABLE_ADB_BOX)
 	vfd_type = 18;
 #elif defined (ENABLE_FOREVER_3434HD) \
    || defined (ENABLE_FOREVER_9898HD)
@@ -363,6 +365,8 @@ void * start_loop (void *arg)
 		char str[] = "Open Vision";
 	#elif defined (ENABLE_VITAMIN_HD5000)
 		char str[] = "Open Vision";
+	#elif defined (ENABLE_ADB_BOX)
+		char str[] = "Open Vision";
 	#else
 		char str[] = "SH4 Enigma2";
 	#endif
@@ -393,7 +397,8 @@ void * start_loop (void *arg)
 	 && !defined (ENABLE_FOREVER_NANOSMART) \
 	 && !defined (ENABLE_FOREVER_9898HD) \
 	 && !defined (ENABLE_FOREVER_2424HD) \
-	 && !defined (ENABLE_VITAMIN_HD5000)
+	 && !defined (ENABLE_VITAMIN_HD5000) \
+	 && !defined (ENABLE_ADB_BOX)
 	/* Others cycle their icons */
 	for (int vloop = 0; vloop < 128; vloop++)
 	{
@@ -481,7 +486,8 @@ void * start_loop (void *arg)
 	 && !defined (ENABLE_CUBEREVO_3000HD) \
 	 && !defined (ENABLE_CUBEREVO_9500HD) \
 	 && !defined (ENABLE_SPARK7162) \
-	 && !defined (ENABLE_VITAMIN_HD5000)
+	 && !defined (ENABLE_VITAMIN_HD5000) \
+	 && !defined (ENABLE_ADB_BOX)
 	//set all blocked icons
 	for (int id = 0x10; id < 0x20; id++)
 	{
@@ -514,7 +520,8 @@ void * start_loop (void *arg)
  || defined (ENABLE_FOREVER_NANOSMART) \
  || defined (ENABLE_FOREVER_9898HD) \
  || defined (ENABLE_FOREVER_2424HD) \
- || defined (ENABLE_VITAMIN_HD5000)
+ || defined (ENABLE_VITAMIN_HD5000) \
+ || defined (ENABLE_ADB_BOX)
 void evfd::vfd_write_string_scrollText(char* text)
 {
 	return;
@@ -801,6 +808,8 @@ void evfd::vfd_clear_icons()
 		for (id = 1; id < 7; id++)
 	#elif defined (ENABLE_VITAMIN_HD5000)
 		for (id = 1; id < 17; id++)
+	#elif defined (ENABLE_ADB_BOX)
+		for (id = 1; id < 21; id++)
 	#else
 		for (id = 0x10; id < 0x20; id++)
 	#endif

@@ -308,8 +308,10 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("11", _("tf7700")),
 			("12", _("ufs912")),
 			("13", _("cuberevo_uni")),
-			("14", _("adb")),
-			("15", _("vitamin"))
+			("14", _("vitamin")),
+			("15", _("adb")),
+			("16", _("forever"))
+
 		]
 
 	defaultRcList = [
@@ -322,8 +324,9 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("tf7700", 11),
 			("ufs912", 12),
 			("cuberevo_uni", 13),
-			("adb", 14),
-			("vitamin", 15)
+			("vitamin", 14),
+			("adb", 15),
+			("forever", 16)
 		]
 
 	def __init__(self, session):

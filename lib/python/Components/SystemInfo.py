@@ -107,7 +107,7 @@ SystemInfo["HasHDMIpreemphasis"] = fileCheck("/proc/stb/hdmi/preemphasis")
 SystemInfo["HasColorimetry"] = fileCheck("/proc/stb/video/hdmi_colorimetry")
 SystemInfo["HasHdrType"] = fileCheck("/proc/stb/video/hdmi_hdrtype")
 SystemInfo["HasHDMI-CEC"] = fileExists(resolveFilename(SCOPE_PLUGINS, "SystemPlugins/HdmiCEC/plugin.pyo")) and (fileExists("/dev/cec0") or fileExists("/dev/hdmi_cec") or fileExists("/dev/misc/hdmi_cec0"))
-SystemInfo["HasYPbPr"] = brand ("edisionargus","nbox") or model in ("atevio7500","fortis_hdbox","hl101","hs7420","hs7429","octagon1008","tf7700","ufs912","ufs913","cuberevo","cuberevo_mini","cuberevo_mini2","cuberevo_2000hd","cuberevo_3000hd","qboxhd")
+SystemInfo["HasYPbPr"] = brand in ("edisionargus","nbox") or model in ("atevio7500","fortis_hdbox","hl101","hs7420","hs7429","octagon1008","tf7700","ufs912","ufs913","cuberevo","cuberevo_mini","cuberevo_mini2","cuberevo_2000hd","cuberevo_3000hd","qboxhd")
 SystemInfo["HasScart"] = model not in ("hs7110","hs7119","forever_2424hd","forever_3434hd","forever_nanosmart")
 SystemInfo["HasSVideo"] = model == "cuberevo"
 SystemInfo["HasComposite"] = model != "cuberevo_250hd"

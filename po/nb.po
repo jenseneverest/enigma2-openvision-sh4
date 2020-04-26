@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-24 02:22+0430\n"
-"PO-Revision-Date: 2020-03-22 16:39+0100\n"
+"POT-Creation-Date: 2020-04-26 23:48+0430\n"
+"PO-Revision-Date: 2020-04-26 13:56+0200\n"
 "Last-Translator: GeirJ <dummy@dummy.com>\n"
 "Language-Team: GeirJ\n"
 "Language: nb\n"
@@ -168,8 +168,9 @@ msgstr ""
 msgid "%-d-%b"
 msgstr ""
 
+#, fuzzy
 msgid "%-d-%b-%Y"
-msgstr ""
+msgstr "%d-%b-%Y %-H:%M"
 
 msgid "%-d/%-m"
 msgstr ""
@@ -456,17 +457,21 @@ msgstr ""
 msgid "%Y %b %d"
 msgstr ""
 
+#, fuzzy
 msgid "%Y-%B-%-d"
-msgstr ""
+msgstr "%d.%m.%Y %H:%M"
 
+#, fuzzy
 msgid "%Y-%B-%d"
-msgstr ""
+msgstr "%d.%m.%Y %H:%M"
 
+#, fuzzy
 msgid "%Y-%b-%-d"
-msgstr ""
+msgstr "%d.%m.%Y %H:%M"
 
+#, fuzzy
 msgid "%Y-%b-%d"
-msgstr ""
+msgstr "%d.%m.%Y %H:%M"
 
 msgid "%Y/%-m/%-d"
 msgstr ""
@@ -892,7 +897,7 @@ msgstr "%d-%m"
 
 #, fuzzy
 msgid "%d-%b-%Y"
-msgstr "%d-%m"
+msgstr "%d-%b-%Y %-H:%M"
 
 msgid "%d-%m"
 msgstr "%d-%m"
@@ -952,7 +957,7 @@ msgid ""
 "%s?"
 msgstr ""
 "%s\n"
-"Vil du fortsatt installere systemet\n"
+"Vil du fortsatt installere operativsystemet\n"
 "%s?"
 
 #, python-format
@@ -1018,9 +1023,9 @@ msgstr "%s/%s: %s"
 msgid "%s:%s"
 msgstr "%s:%s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s?"
-msgstr "CH%s"
+msgstr ""
 
 #, python-format
 msgid "'%s' contains %d file(s) and %d sub-directories.\n"
@@ -1494,9 +1499,8 @@ msgid "About"
 msgstr "Om"
 
 #
-#, fuzzy
 msgid "About..."
-msgstr "Om"
+msgstr "Om..."
 
 #
 #, fuzzy
@@ -2141,8 +2145,9 @@ msgstr "Lyd valg..."
 msgid "Audio plugins"
 msgstr "Lyd tillegg"
 
+#, fuzzy
 msgid "Audio source"
-msgstr ""
+msgstr "HDMI-lydkilde"
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2465,7 +2470,7 @@ msgstr "Lysstyrke"
 #
 #, fuzzy
 msgid "Blue long"
-msgstr "Blå"
+msgstr "Blå boost"
 
 msgid "Bolivia (Plurinational State of)"
 msgstr "Bolivia"
@@ -3797,12 +3802,15 @@ msgstr "Kroatia"
 msgid "Croatian"
 msgstr "Kroatisk"
 
+#
+#, fuzzy
 msgid "Cron Manager"
-msgstr ""
+msgstr "Filmbehandling"
 
+#
 #, fuzzy
 msgid "Cron manager"
-msgstr "ingen ressursforvalter"
+msgstr "Filmbehandling"
 
 #
 #, fuzzy
@@ -4192,8 +4200,9 @@ msgstr "Dyp standby LED"
 msgid "Deep standby"
 msgstr "Slå helt av"
 
-msgid "Deepstby LED brightness"
-msgstr ""
+#, fuzzy
+msgid "Deepstandby LED brightness"
+msgstr "Dyp standby LED"
 
 #
 msgid "Default"
@@ -4671,7 +4680,7 @@ msgid ""
 "Do you want to flash image\n"
 "%s"
 msgstr ""
-"Vil du å installere systemet\n"
+"Vil du å installere operativsystemet\n"
 "%s"
 
 #
@@ -5859,9 +5868,8 @@ msgstr "Last ned operativsystem"
 msgid "Flash Image"
 msgstr "Last ned operativsystem"
 
-#, fuzzy
 msgid "Flash image"
-msgstr "Last ned operativsystem"
+msgstr "Installer operativsystem"
 
 #, fuzzy
 msgid "Flash type: "
@@ -5882,7 +5890,7 @@ msgstr ""
 "%s"
 
 msgid "Following tasks will be done after you press OK!"
-msgstr "Følgende oppgaver vil bli gjort etter at du trykker OK!"
+msgstr "Følgende oppgaver vil bli utført etter at du trykker OK!"
 
 msgid "Font size"
 msgstr ""
@@ -6035,8 +6043,8 @@ msgid ""
 "GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
-"GUI må startes på nytt for aktivering av et nytt språk\n"
-"Starte GUI på nytt nå?"
+"GUI må startes på nytt for aktivering av nytt utseende\n"
+"Starte på nytt nå?"
 
 msgid "Gabon"
 msgstr "Gabon"
@@ -6069,9 +6077,10 @@ msgstr "Sjanger"
 msgid "Geolocation"
 msgstr "Opptaksmappe"
 
+#
 #, fuzzy
 msgid "Geolocation information"
-msgstr "Programvareadministrasjon"
+msgstr "Hierarki informasjon"
 
 msgid "Georgia"
 msgstr "Georgia"
@@ -6632,10 +6641,9 @@ msgstr ""
 msgid "Image file system: "
 msgstr "Oppretter filsystem"
 
-#
 #, fuzzy
 msgid "Image folder: "
-msgstr "Velg målmappe"
+msgstr "Operativsystem: "
 
 #, python-format
 msgid ""
@@ -7087,10 +7095,9 @@ msgstr "Tastaturoppsett"
 msgid "Keymap"
 msgstr ""
 
-#
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Angre"
+msgstr "Velger for Enigma2 utseende"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -7148,13 +7155,11 @@ msgstr "Opptakslistevalg"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Opptakslistevalg"
+msgstr ""
 
-#, fuzzy
 msgid "LED display control Spark"
-msgstr "Opptakslistevalg"
+msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -7711,7 +7716,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "MiniDLNA setup"
-msgstr "PiP-bilde i bilde oppsett"
+msgstr "Oppsett utseende"
 
 #, python-format
 msgid "Minimum age %d years"
@@ -8078,7 +8083,7 @@ msgstr "INS"
 #
 #, fuzzy
 msgid "NFS setup"
-msgstr "Innstilling"
+msgstr "Oppsett utseende"
 
 msgid "NIM & Type"
 msgstr "Tuner modul - type"
@@ -8710,10 +8715,8 @@ msgstr "Bare ved oppstart"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Bare velg 'Ja' Hvis du bruker en multiswich som krever et DiSEqC Port-A kommando signal. For alle andre oppsett velger du \"nei\"."
 
-#
-#, fuzzy
 msgid "Open Vision"
-msgstr "Python versjon: "
+msgstr ""
 
 msgid "Open Vision enigma2 image"
 msgstr ""
@@ -8721,12 +8724,11 @@ msgstr ""
 #
 #, fuzzy
 msgid "Open Vision information"
-msgstr "Python versjon: "
+msgstr "Åpne valg mappe"
 
-#
 #, fuzzy
 msgid "Open Vision language: "
-msgstr "Python versjon: "
+msgstr "original språk"
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8846,9 +8848,10 @@ msgstr "PGS fil"
 msgid "PGS file"
 msgstr "PGS fil"
 
+#
 #, fuzzy
 msgid "PID"
-msgstr "PDC"
+msgstr "PIDs"
 
 #
 msgid "PIN code needed"
@@ -9049,9 +9052,10 @@ msgstr "Spill av DVDer"
 msgid "Play as picture in picture"
 msgstr "Start opp bilde i bilde visning"
 
+#
 #, fuzzy
 msgid "Play audio in background"
-msgstr "Spill av lyd i liste modus"
+msgstr "Fortsett i bakgrunnen"
 
 msgid "Play audio-CD..."
 msgstr "Spill av lyd CD..."
@@ -9494,7 +9498,7 @@ msgstr "Posisjonerers oppsetts logg"
 
 #, fuzzy
 msgid "Power"
-msgstr "Strøm-LED"
+msgstr "Av/på meny"
 
 msgid "Power LED"
 msgstr "Strøm-LED"
@@ -9843,7 +9847,7 @@ msgstr "Kommando rekkefølge"
 
 #, fuzzy
 msgid "RC type: "
-msgstr "Last ned operativsystem"
+msgstr "type"
 
 #
 msgid "REC"
@@ -10019,7 +10023,7 @@ msgstr "slå helt av"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Også i av/på"
+msgstr "Slå av TV"
 
 msgid "Red button..."
 msgstr "Rød tast..."
@@ -10533,7 +10537,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "SABnzbd setup"
-msgstr "Veiviser oppsett"
+msgstr "Oppsett utseende"
 
 msgid "SCAN"
 msgstr ""
@@ -11211,9 +11215,8 @@ msgstr "Velg satellitten du vil konfigurere. Når satellitten er konfigurert kan
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Velg satellitten din parabol mottar fra. Hvis du er usikker velg 'automatisk' og mottakeren vil forsøke å finne denne for deg."
 
-#, fuzzy
 msgid "Select the time zone within the area or region."
-msgstr "Velg tidssone i området eller region."
+msgstr "Velg tidssonen i området eller region."
 
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Velg mottakeren som styrer motorisert parabol."
@@ -11273,9 +11276,10 @@ msgstr ""
 msgid "Select your country. If not available select 'all'."
 msgstr "Velg ditt land. Hvis ikke tilgjengelig velg 'alle'."
 
+#
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Velg opptak"
+msgstr "Velg et utseende"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Velg leverandør og region. Hvis den ikke finnes i listen må du velge en av de andre 'skannings tjenestetypene'."
@@ -11287,9 +11291,8 @@ msgid "Select your region. If not available change 'Country' to 'all' and select
 msgstr "Velg din region. Hvis ikke tilgjengelig kan du endre 'Land' til 'alle' og velg ett standard alternativ."
 
 #
-#, fuzzy
 msgid "Select your time zone area or region."
-msgstr "Velg tidssone eller region."
+msgstr "Velg din tidssone."
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Velger satellitene 1 (USALS)"
@@ -11533,7 +11536,7 @@ msgstr "Angi bruker-IDen for OpenWebif fra reserve tuneren"
 #
 #, fuzzy
 msgid "Set the default sorting method."
-msgstr "Velg sorteringsmetode:"
+msgstr "Velge standardinnstillinger?"
 
 #
 #, fuzzy
@@ -11686,7 +11689,7 @@ msgstr "Vis alternativer"
 #
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Vis kolonner"
+msgstr "Vis krypterings indikator"
 
 #
 msgid "Show InfoBar"
@@ -12597,11 +12600,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Stby LED brightness"
-msgstr "Lysstyrke"
-
-#
-#, fuzzy
 msgid "Step back"
 msgstr "Gå østover"
 
@@ -12902,7 +12900,7 @@ msgid "Switch off the display during Standby Mode"
 msgstr "Slå av skjermen under standby-modus"
 
 msgid "Switch off the display during Suspend Mode"
-msgstr "Slå av skjermen under hvilemodus"
+msgstr "Slå av skjerm i hvilemodus"
 
 msgid "Switch off the display during operation."
 msgstr "Slå av skjermen under drift."
@@ -13024,7 +13022,7 @@ msgstr "Detaljer for programtillegg: "
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
-msgstr "Oversettelse oppdatert: 22.03.2020"
+msgstr "Oversettelse oppdatert: 26.04.2020"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -13144,7 +13142,7 @@ msgstr "Bakkenett"
 #
 #, fuzzy
 msgid "Test"
-msgstr "Testmodus"
+msgstr "Testtype"
 
 #
 msgid "Test DiSEqC settings"
@@ -13738,14 +13736,12 @@ msgid "Time update in minutes:"
 msgstr ""
 
 #
-#, fuzzy
 msgid "Time zone"
 msgstr "Tidssone"
 
 #
-#, fuzzy
 msgid "Time zone area"
-msgstr "Tidssone"
+msgstr "Tidssoneområde"
 
 #
 msgid "Timer"
@@ -13892,9 +13888,10 @@ msgstr "Bytte mellom klipp på den aktuelle posisjonen"
 msgid "Toggle dashed flickering line for this service"
 msgstr "Skift mellom stiplede flimmer linjer for denne kanalen"
 
+#
 #, fuzzy
 msgid "Toggle default subtitles"
-msgstr "Undertekst tilpassing"
+msgstr "Velge standardinnstillinger?"
 
 msgid "Toggle infoBar"
 msgstr "Vis/Skjul infobar"
@@ -13905,9 +13902,10 @@ msgstr "Bruk nye tekst valg først eller overskriv eksisterende tekst"
 msgid "Toggle show/hide"
 msgstr "Bytt mellom vis/skjul"
 
+#
 #, fuzzy
 msgid "Toggle the default subtitles"
-msgstr "Still inn skriftstørrelse på undertekst."
+msgstr "Velge standardinnstillinger?"
 
 #
 msgid "Toggle the tv and the radio player..."
@@ -14350,10 +14348,8 @@ msgstr "Store bokstaver"
 msgid "Uppercase letters only"
 msgstr "Oppdater kun kanallisten"
 
-#
-#, fuzzy
 msgid "Uptime: "
-msgstr "Slutt tid"
+msgstr ""
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -14578,9 +14574,8 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-#, fuzzy
 msgid "VFD display configuration for Spark 7162"
-msgstr "Opptakslistevalg"
+msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
@@ -14766,10 +14761,9 @@ msgstr "Virtuell tastatur tekst:"
 msgid "Virtual keyboard"
 msgstr "Virtuelt tastatur"
 
-#
 #, fuzzy, python-format
 msgid "Vol: %s"
-msgstr "Video: %s bilder per sekund"
+msgstr ": %s"
 
 #
 msgid "Voltage mode"
@@ -15460,7 +15454,7 @@ msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Gå til kanalen %s (%s - '%s')!\n"
 
 msgid "You seem to be in timeshift!"
-msgstr ""
+msgstr "Du ser ut til å være i timeshift!"
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Samlingen overstiger ledig plass på enkeltlagsplaten, en tolags DVD må brukes!"
@@ -15641,7 +15635,7 @@ msgstr "Timer logg"
 #
 #, fuzzy
 msgid "ZeroTier setup"
-msgstr "Navneserver innstilling"
+msgstr "Motorinnstilling"
 
 msgid "ZeroTierVPN"
 msgstr ""
@@ -16601,8 +16595,9 @@ msgstr "bare fra helt avslått"
 msgid "only from standby"
 msgstr "bare fra avslått"
 
+#, fuzzy
 msgid "open Info..."
-msgstr ""
+msgstr "Kopier til..."
 
 #
 msgid "open nameserver configuration"
@@ -16675,10 +16670,9 @@ msgstr "bemerkelsesverdige mennesker"
 msgid "remove after this position"
 msgstr "slett etter denne posisjon"
 
-#
 #, fuzzy
 msgid "remove all"
-msgstr "Fjern overskrift"
+msgstr "fjern bokmerke"
 
 msgid "remove before this position"
 msgstr "slett før denne posisjonen"
@@ -16755,7 +16749,7 @@ msgstr "sekunder"
 #
 #, fuzzy
 msgid "select "
-msgstr "Angre"
+msgstr "velg"
 
 #
 msgid "select CAId's"
@@ -16993,9 +16987,8 @@ msgstr ""
 msgid "time and date"
 msgstr "Ja og lagre"
 
-#, fuzzy
 msgid "time, day and date"
-msgstr "Ja og lagre"
+msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "juster tid, kapittel, lyd, undertekst info"

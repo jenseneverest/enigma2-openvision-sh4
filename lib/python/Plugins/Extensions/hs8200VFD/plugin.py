@@ -131,7 +131,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		self.cfglist.append(getConfigListEntry(_("Show icons"), config.plugins.vfdicon.showicons))
 		self.icons_showicons = config.plugins.vfdicon.showicons.value
 		if DisplayType == 5:
-			self.cfglist.append(getConfigListEntry(_('Stby LED brightness'), config.plugins.vfdicon.standbyredledon))
+			self.cfglist.append(getConfigListEntry(_('Standby LED brightness'), config.plugins.vfdicon.standbyredledon))
 			self.cfglist.append(getConfigListEntry(_('Blue LED brightness'), config.plugins.vfdicon.ledbright))
 			self.cfglist.append(getConfigListEntry(_('Cross brightness'), config.plugins.vfdicon.crossbright))
 	        self.cfglist.append(getConfigListEntry(_('Show this plugin in plugin menu'), config.plugins.vfdicon.extMenu))

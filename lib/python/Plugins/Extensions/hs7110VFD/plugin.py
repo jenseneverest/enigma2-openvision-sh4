@@ -53,7 +53,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 
 	def createSetup(self):
 		self.cfglist = []
-		self.cfglist.append(getConfigListEntry(_("Stby LED brightness"), config.plugins.vfdicon.standbyredled))
+		self.cfglist.append(getConfigListEntry(_("Standby LED brightness"), config.plugins.vfdicon.standbyredled))
 #		self.cfglist.append(getConfigListEntry(_("Deep standby LED brightness"), config.plugins.vfdicon.dstandbyredled))
 	        self.cfglist.append(getConfigListEntry(_('Show this plugin in plugin menu'), config.plugins.vfdicon.extMenu))
 		self["config"].list = self.cfglist

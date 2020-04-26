@@ -142,8 +142,8 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		self.cfglist.append(getConfigListEntry(_("Scroll text"), config.plugins.vfdicon.textscroll))
 		self.cfglist.append(getConfigListEntry(_("Center text"), config.plugins.vfdicon.textcenter))
 		self.cfglist.append(getConfigListEntry(_('Logo brightness *'), config.plugins.vfdicon.logoled))
-		self.cfglist.append(getConfigListEntry(_('Stby LED brightness'), config.plugins.vfdicon.standbyredled))
-#		self.cfglist.append(getConfigListEntry(_('Deepstby LED brightness'), config.plugins.vfdicon.dstandbyredled))
+		self.cfglist.append(getConfigListEntry(_('Standby LED brightness'), config.plugins.vfdicon.standbyredled))
+#		self.cfglist.append(getConfigListEntry(_('Deepstandby LED brightness'), config.plugins.vfdicon.dstandbyredled))
 		self.cfglist.append(getConfigListEntry(_('Rec LED brightness'), config.plugins.vfdicon.recredled))
 	        self.cfglist.append(getConfigListEntry(_('Show this plugin in plugin menu'), config.plugins.vfdicon.extMenu))
 		self["config"].list = self.cfglist

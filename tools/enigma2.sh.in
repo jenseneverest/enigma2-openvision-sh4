@@ -6,9 +6,6 @@ datarootdir=@datarootdir@
 
 export PATH=$PATH:/usr/script
 
-brandcheck=`cat /etc/openvision/brand`
-modelcheck=`cat /etc/openvision/model`
-
 # write -E2- on vfd display
 echo "-E2-" > /dev/vfd
 
@@ -56,10 +53,6 @@ fi
 
 if [ ! -e /etc/enigma2/settings ]; then
 	touch /etc/enigma2/settings
-fi
-
-if [ ! -d /tmp/multibootcheck ]; then
-	mkdir -p /tmp/multibootcheck
 fi
 
 # enigma main loop

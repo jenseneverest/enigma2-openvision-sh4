@@ -56,7 +56,7 @@ class UnionTunerType(Screen, ConfigListScreen):
 			if line.startswith(option):
 				print(option + self.tunerconfig.value)
 			else:
-				print(line,)
+				print(line)
 		fileinput.close()
 		self.session.open(TryQuitMainloop, retvalue=2)
         self.close()

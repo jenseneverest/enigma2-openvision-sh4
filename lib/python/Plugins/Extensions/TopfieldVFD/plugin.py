@@ -238,7 +238,7 @@ class TopfieldVFD:
 
                         fd.close()
                         self.valuesSet = 1
-                except IOError,e:
+                except IOError as e:
                         if debug:
                                 print("[TopfieldVFD] setValues ", e)
 
@@ -251,7 +251,7 @@ class TopfieldVFD:
                         fd = open("/dev/fpc")
                         fcntl.ioctl(fd.fileno(), ioIconCmd, ioEthBothOff)
                         fd.close()
-                except IOError,e:
+                except IOError as e:
                         if debug:
                                 print("[TopfieldVFD] disableEthernet ", e)
 
@@ -262,7 +262,7 @@ class TopfieldVFD:
                         fd = open("/dev/fpc")
                         fcntl.ioctl(fd.fileno(), ioIconCmd, ioColonOn)
                         fd.close()
-                except IOError,e:
+                except IOError as e:
                         if debug:
                                 print("[TopfieldVFD] enableClock ", e)
 
@@ -274,7 +274,7 @@ class TopfieldVFD:
                         fcntl.ioctl(fd.fileno(), ioIconCmd, ioColonOff)
                         fd.close()
                         open("/dev/fpsmall", "w").write("     ")
-                except IOError,e:
+                except IOError as e:
                         if debug:
                                 print("[TopfieldVFD] disableClock ", e)
 
@@ -309,7 +309,7 @@ class TopfieldVFD:
                                 if used == 8:
                                         fcntl.ioctl(fd.fileno(), ioIconCmd, ioHddFull)
                                 fd.close();
-                        except IOError,e:
+                        except IOError as e:
                                 self.hddUsed = used # dummy operation
                         self.hddUsed = used
 
@@ -324,7 +324,7 @@ class TopfieldVFD:
                                 self.clock = clock
                                 try:
                                         open("/dev/fpsmall", "w").write(clock + "\0")
-                                except IOError,e:
+                                except IOError as e:
                                         if debug:
                                                 print("[TopfieldVFD] handleTimer (clock) ", e)
 
@@ -355,7 +355,7 @@ class TopfieldVFD:
                                         else:
                                                 fcntl.ioctl(fd.fileno(), ioIconCmd, ioEthBothOff)
                                         fd.close()
-                                except IOError,e:
+                                except IOError as e:
                                         if debug:
                                                 print("[TopfieldVFD] handleTimer (Ethernet) ", e)
                                 break
@@ -385,7 +385,7 @@ class TopfieldVFD:
                                 print("[TopfieldVFD] Timeshift disabled")
                                 fcntl.ioctl(fd.fileno(), ioIconCmd, ioTimeshiftOff)
                         fd.close()
-                except IOError,e:
+                except IOError as e:
                         if debug:
                                 print("[TopfieldVFD] __evSeekableStatusChanged ", e)
                 self.tsEnabled = tmp
@@ -419,7 +419,7 @@ class TopfieldVFD:
                                         fcntl.ioctl(fd.fileno(), ioIconCmd, ioRecBothOff)
 
                         fd.close()
-                except IOError,e:
+                except IOError as e:
                         if debug:
                                 print("[TopfieldVFD] gotRecordEvent ", e)
                 self.recNum = nrecs

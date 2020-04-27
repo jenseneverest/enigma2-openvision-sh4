@@ -275,10 +275,10 @@ def InitSenseWheel():
 ### Init ###
 	isensewheel.setInitEnableFlag(config.sensewheel.enabled.value)
 	if ( isensewheel.IsFlagSenseEnabled() ):
-		print"ENABLE"
+		print("ENABLE")
 		isensewheel.enableSense()
 	else:
-		print"DISABLE"
+		print("DISABLE")
 		isensewheel.setPanelLedsEnable( False )
 		isensewheel.disableSense() #-<
 ############

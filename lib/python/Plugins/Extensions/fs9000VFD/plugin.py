@@ -1,4 +1,6 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
 from Components.ServiceList import ServiceList
@@ -145,11 +147,11 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.standbyredledon.value) + " -l 1 0 -l 4 0 -l 5 0 -l 6 0 -l 7 0")
 			else:
 				Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
-				print ""
+				print("")
 				b = str(config.plugins.vfdicon.ledbright.value)
 				c = str(config.plugins.vfdicon.crossbright.value)
 				Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
-		print "[fs9000VFD] newConfig", self["config"].getCurrent()
+		print("[fs9000VFD] newConfig", self["config"].getCurrent())
 		self.createSetup()
 
 	def cancel(self):
@@ -165,18 +167,18 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 			b = str(config.plugins.vfdicon.ledbright.value)
 			c = str(config.plugins.vfdicon.crossbright.value)
 			Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
-			print "[fs9000VFD] set brightness", config.plugins.vfdicon.contrast.value
+			print("[fs9000VFD] set brightness", config.plugins.vfdicon.contrast.value)
 			Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[fs9000VFD] set text scroll", config.plugins.vfdicon.textscroll.value
+		print("[fs9000VFD] set text scroll", config.plugins.vfdicon.textscroll.value)
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print "[fs9000VFD] set text centering", config.plugins.vfdicon.textcenter.value
+		print("[fs9000VFD] set text centering", config.plugins.vfdicon.textcenter.value)
 		main(self)
 		ConfigListScreen.keySave(self)
 
@@ -210,7 +212,7 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print '[fs9000VFD] Start'
+		print('[fs9000VFD] Start')
 		self.tuned = False
 		self.play = False
 		self.record = False
@@ -228,8 +230,8 @@ class VFDIcons:
 		c = str(config.plugins.vfdicon.crossbright.value)
 		Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
 		global DisplayType
-		print '[fs9000VFD] Hardware displaytype:', DisplayType
-		print '[fs9000VFD] VFD displaytype     :', DisplayTypevfd
+		print('[fs9000VFD] Hardware displaytype:', DisplayType)
+		print('[fs9000VFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 6:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
@@ -263,28 +265,28 @@ class VFDIcons:
 				{
 					iPlayableService.evStart: self.writeName,
 				})
-		print '[fs9000VFD] Set text scrolling option'
+		print('[fs9000VFD] Set text scrolling option')
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[fs9000VFD] Set text centering option"
+		print("[fs9000VFD] Set text centering option")
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print '[fs9000VFD] End initialisation'
+		print('[fs9000VFD] End initialisation')
 
 	def __evStart(self):
-		print '[fs9000VFD] __evStart'
+		print('[fs9000VFD] __evStart')
 		self.__evSeekableStatusChanged()
 
 	def __evUpdatedEventInfo(self):
-		print '[fs9000VFD] __evUpdatedEventInfo'
+		print('[fs9000VFD] __evUpdatedEventInfo')
 #		... and do nothing else
 
 	def UpdatedInfo(self):
-		print '[fs9000VFD] __evUpdatedInfo'
+		print('[fs9000VFD] __evUpdatedInfo')
 		self.checkAudioTracks()
 		self.writeName()
 		self.showDTS()
@@ -406,16 +408,16 @@ class VFDIcons:
 						feinfo = service.frontendInfo()
 						FEdata = feinfo and feinfo.getAll(True)
 						tunerNumber = FEdata and FEdata.get("tuner_number")
-						print "[fs9000VFD] Set SAT icon; tuner number", tunerNumber
+						print("[fs9000VFD] Set SAT icon; tuner number", tunerNumber)
 						if tunerNumber == 0:
 							Console().ePopen("fp_control -i 11 1 -i 12 0") #Tu1 on, Tu2 off
 						else:
 							Console().ePopen("fp_control -i 11 0 -i 12 1") #Tu1 off, Tu2 on
 #					elif tunerType == "DVB-T" or tunerType == "DVB-C":
-#						print "[VFD-Icons] Set TER icon"
+#						print("[VFD-Icons] Set TER icon")
 #						Console().ePopen("fp_control -i 26 1 -i 2 0 -i 44 0 -i 45 0 -i 29 0") #TER on, SAT, Tu1, Tu2 off
 				else:
-					print "[fs9000VFD] No TER or SAT icon"
+					print("[fs9000VFD] No TER or SAT icon")
 					Console().ePopen("fp_control -i 26 0 -i 2 0 -i 11 0 -i 12 0") #TER, SAT, Tu1, Tu2 off
 			else:
 				                             #TER,    SAT,   HD,    Timeshift,Dolby,MP3,   Tu1 Tu2 off
@@ -595,10 +597,10 @@ class VFDIcons:
 		self.timer.stop() # stop one second timer
 		evfd.getInstance().vfd_write_string("           ")
 		self.timer.start(60000, False) # start one minute timer
-		print "[fs9000VFD] minute timer started"
+		print("[fs9000VFD] minute timer started")
 		if DisplayType == 6:
 			evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.contrast.value)
-			print "[fs9000VFD] set brightness", config.plugins.vfdicon.contrast.value
+			print("[fs9000VFD] set brightness", config.plugins.vfdicon.contrast.value)
 			self.timerEvent()
 			b = str(config.plugins.vfdicon.ledbright.value)
 			c = str(config.plugins.vfdicon.crossbright.value)
@@ -611,7 +613,7 @@ class VFDIcons:
 					Console().ePopen("fp_control -i 17 1") #USB
 				else:
 					Console().ePopen("fp_control -i 17 0")
-			print "[fs9000VFD] set icons on Leave Standby"
+			print("[fs9000VFD] set icons on Leave Standby")
 
 	def onEnterStandby(self, configElement):
 		from Screens.Standby import inStandby
@@ -619,18 +621,18 @@ class VFDIcons:
 		global DisplayType
 		if DisplayType == 6:
 			Console().ePopen("fp_control -i 40 0") #clear all VFD icons
-			print "[fs9000VFD] set display & icons on Enter Standby"
+			print("[fs9000VFD] set display & icons on Enter Standby")
 			if config.plugins.vfdicon.stbshow.value == "nothing":
 				evfd.getInstance().vfd_set_light(0)
 			else:
 				evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.stbcontrast.value)
-			print "[fs9000VFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value
+			print("[fs9000VFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value)
 			if config.plugins.vfdicon.standbyredledon.value:
 				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.standbyredledon.value) + " -l 1 0 -l 4 0 -l 5 0 -l 6 0 -l 7 0") #Red LED on, cross off
 		if (config.plugins.vfdicon.stbshow.value == "time" or config.plugins.vfdicon.stbshow.value == "time_date"):
 			self.timer.stop() # stop minute timer
 			self.timer.start(999, False) # start one second timer
-			print "[fs9000VFD] second timer started"
+			print("[fs9000VFD] second timer started")
 		if (config.plugins.vfdicon.stbshow.value == "date" or config.plugins.vfdicon.stbshow.value == "day_date" or config.plugins.vfdicon.stbshow.value == "time" or config.plugins.vfdicon.stbshow.value == "time_date"):
 			self.writeDate(config.plugins.vfdicon.stbshow.value)
 		else:
@@ -668,7 +670,7 @@ class VFDIcons:
 		if not self.mount or self.dir != dir:
 			if not self.mount:
 				self.dir = dir
-#				print "[VFD-Icons] SetMount", dir
+#				print("[VFD-Icons] SetMount", dir)
 				self.mount = self.FindMountDir(dir)
 			if not self.mount:
 				self.mount = self.FindMountDir('/autofs/sdc1')
@@ -708,7 +710,7 @@ class VFDIcons:
 				self.displayHddUsedOff() #HDD display off
 			else:
 				Console().ePopen("fp_control -i 14 1") #HDD on
-				print "[fs9000VFD] HDD mount point:", self.mount
+				print("[fs9000VFD] HDD mount point:", self.mount)
 		else:
 			self.displayHddUsedOff()
 

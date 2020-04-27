@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+from __future__ import print_function
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 from Plugins.Plugin import PluginDescriptor
@@ -125,7 +128,7 @@ class TopfieldVFDSetup(ConfigListScreen, Screen):
                 }, -2)
 
         def abort(self):
-                print "[TopfieldVFD] aborting"
+                print("[TopfieldVFD] aborting")
 
         def save(self):
                 # save all settings
@@ -142,7 +145,7 @@ class TopfieldVFDSetup(ConfigListScreen, Screen):
 
 class TopfieldVFD:
         def __init__(self, session):
-                #print "TopfieldVFD initializing"
+                #print("TopfieldVFD initializing")
                 self.session = session
                 self.service = None
                 self.onClose = [ ]
@@ -168,7 +171,7 @@ class TopfieldVFD:
                 self.setValues()
 
         def setValues(self):
-                #print "\nTopfiledVFD.setValues()\n"
+                #print("\nTopfiledVFD.setValues()\n")
                 if config.plugins.TopfieldVFD.showClock.value:
                         self.enableClock()
                 else:
@@ -237,7 +240,7 @@ class TopfieldVFD:
                         self.valuesSet = 1
                 except IOError,e:
                         if debug:
-                                print "[TopfieldVFD] setValues ", e
+                                print("[TopfieldVFD] setValues ", e)
 
         def enableEthernet(self):
                 self.ethEnabled = True
@@ -250,7 +253,7 @@ class TopfieldVFD:
                         fd.close()
                 except IOError,e:
                         if debug:
-                                print "[TopfieldVFD] disableEthernet ", e
+                                print("[TopfieldVFD] disableEthernet ", e)
 
         def enableClock(self):
                 self.clockEnabled = True
@@ -261,7 +264,7 @@ class TopfieldVFD:
                         fd.close()
                 except IOError,e:
                         if debug:
-                                print "[TopfieldVFD] enableClock ", e
+                                print("[TopfieldVFD] enableClock ", e)
 
         def disableClock(self):
                 self.clockEnabled = False
@@ -273,7 +276,7 @@ class TopfieldVFD:
                         open("/dev/fpsmall", "w").write("     ")
                 except IOError,e:
                         if debug:
-                                print "[TopfieldVFD] disableClock ", e
+                                print("[TopfieldVFD] disableClock ", e)
 
         def regExpMatch(self, pattern, string):
                 if string is None:
@@ -286,7 +289,7 @@ class TopfieldVFD:
         def displayHddUsed(self):
 
                 if debug:
-                        print "[TopfieldVFD] determine HDD usage"
+                        print("[TopfieldVFD] determine HDD usage")
 
                 # determine the HDD usage
                 used = 0;
@@ -311,7 +314,7 @@ class TopfieldVFD:
                         self.hddUsed = used
 
         def handleTimer(self):
-                #print "[ TopfieldVFD timer ]"
+                #print("[ TopfieldVFD timer ]")
                 if self.valuesSet == 0:
                         self.setValues()
 
@@ -323,7 +326,7 @@ class TopfieldVFD:
                                         open("/dev/fpsmall", "w").write(clock + "\0")
                                 except IOError,e:
                                         if debug:
-                                                print "[TopfieldVFD] handleTimer (clock) ", e
+                                                print("[TopfieldVFD] handleTimer (clock) ", e)
 
                 # check HDD periodically
                 if self.hddCheckCounter < hddCheckPeriod:
@@ -354,7 +357,7 @@ class TopfieldVFD:
                                         fd.close()
                                 except IOError,e:
                                         if debug:
-                                                print "[TopfieldVFD] handleTimer (Ethernet) ", e
+                                                print("[TopfieldVFD] handleTimer (Ethernet) ", e)
                                 break
 
         def __evStart(self):
@@ -376,15 +379,15 @@ class TopfieldVFD:
                 try:
                         fd = open("/dev/fpc")
                         if tmp:
-                                print "[TopfieldVFD] Timeshift enabled"
+                                print("[TopfieldVFD] Timeshift enabled")
                                 fcntl.ioctl(fd.fileno(), ioIconCmd, ioTimeshiftOn)
                         else:
-                                print "[TopfieldVFD] Timeshift disabled"
+                                print("[TopfieldVFD] Timeshift disabled")
                                 fcntl.ioctl(fd.fileno(), ioIconCmd, ioTimeshiftOff)
                         fd.close()
                 except IOError,e:
                         if debug:
-                                print "[TopfieldVFD] __evSeekableStatusChanged ", e
+                                print("[TopfieldVFD] __evSeekableStatusChanged ", e)
                 self.tsEnabled = tmp
 
         def gotRecordEvent(self, service, event):
@@ -418,14 +421,14 @@ class TopfieldVFD:
                         fd.close()
                 except IOError,e:
                         if debug:
-                                print "[TopfieldVFD] gotRecordEvent ", e
+                                print("[TopfieldVFD] gotRecordEvent ", e)
                 self.recNum = nrecs
 
         def shutdown(self):
                 self.abort()
 
         def abort(self):
-                print "[TopfieldVFD] aborting"
+                print("[TopfieldVFD] aborting")
 
 def main(session, **kwargs):
         session.open(TopfieldVFDSetup)
@@ -440,10 +443,10 @@ def controlTfVfd():
         global mySession
 
         if gReason == 0 and mySession != None and tfVfd == None:
-                print "[TopfieldVFD] Starting TopfieldVFD"
+                print("[TopfieldVFD] Starting TopfieldVFD")
                 tfVfd = TopfieldVFD(mySession)
         elif gReason == 1 and tfVfd != None:
-                print "[TopfieldVFD] Stopping TopfieldVFD"
+                print("[TopfieldVFD] Stopping TopfieldVFD")
                 tfVfd.disableClock()
                 tfVfd = None
 

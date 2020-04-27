@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+from __future__ import print_function
 from config import config, ConfigSubsection, ConfigSlider, ConfigOnOff, ConfigEnableDisable
 from enigma import eQBOXSenseWheel
 from Components.SystemInfo import SystemInfo
@@ -108,27 +111,27 @@ class SENSEWHEEL:
 
 	def enableSense(self):
 		eQBOXSenseWheel.getInstance().setEnableSense()
-		#print "[SENSEWHEEL] enable Sense.\n"
+		#print("[SENSEWHEEL] enable Sense.\n")
 
 	def disableSense(self):
 		eQBOXSenseWheel.getInstance().setDisableSense()
-		#print "[SENSEWHEEL] disable Sense.\n"
+		#print("[SENSEWHEEL] disable Sense.\n")
 
 	def enterStandby(self):
-		print "[SENSEWHEEL] enter Standby.\n"
+		print("[SENSEWHEEL] enter Standby.\n")
 		#Enter to standby mode
 		eQBOXSenseWheel.getInstance().setDisableSense()
-		#print "[SENSEWHEEL] disable Sense.\n"
+		#print("[SENSEWHEEL] disable Sense.\n")
 		eQBOXSenseWheel.getInstance().enterStandby( self.standby_panel_leds, self.standby_board_leds )
 		if ( not self.enable_standby_panel ):
 			eQBOXSenseWheel.getInstance().setDisableSense()
 
 	def leaveStandby(self):
-		print "[SENSEWHEEL] leave Standby.\n"
+		print("[SENSEWHEEL] leave Standby.\n")
 		# Leave from standby mode
 		eQBOXSenseWheel.getInstance().leaveStandby()
 		eQBOXSenseWheel.getInstance().setDisableSense()
-		#print "[SENSEWHEEL] disable Sense.\n"
+		#print("[SENSEWHEEL] disable Sense.\n")
 		#Power on leds for leave standby
 		if self.enable_panel_leds:
 			eQBOXSenseWheel.getInstance().setLedsPanel(self.H_panel, self.S_panel, self.V_panel)
@@ -140,7 +143,7 @@ class SENSEWHEEL:
 			eQBOXSenseWheel.getInstance().setLedsBoard(self.H_board, self.S_board, 0)
 		if ( config.sensewheel.enabled.value ):
 			eQBOXSenseWheel.getInstance().setEnableSense()
-			print "[SENSEWHEEL] re-Enable Sense.\n"
+			print("[SENSEWHEEL] re-Enable Sense.\n")
 		else:
 			self.setPanelLedsEnable( False )
 

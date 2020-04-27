@@ -1,4 +1,6 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
 from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd, getBoxType
@@ -101,7 +103,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 
 	def newConfig(self):
 		global DisplayType
-		print "newConfig", self["config"].getCurrent()
+		print("newConfig", self["config"].getCurrent())
 		self.createSetup()
 
 	def cancel(self):
@@ -114,7 +116,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[sparkVFD] set text scroll", config.plugins.vfdicon.textscroll.value
+		print("[sparkVFD] set text scroll", config.plugins.vfdicon.textscroll.value)
 		main(self)
 		ConfigListScreen.keySave(self)
 
@@ -148,7 +150,7 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print '[sparkVFD] Start'
+		print('[sparkVFD] Start')
 		self.play = False
 		self.record = False
 		self.mp3Available = False
@@ -159,8 +161,8 @@ class VFDIcons:
 		global DisplayType
 		global dot
 		dot = 0
-		print '[sparkVFD] Hardware displaytype:', DisplayType
-		print '[sparkVFD] VFD displaytype     :', DisplayTypevfd
+		print('[sparkVFD] Hardware displaytype:', DisplayType)
+		print('[sparkVFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 4:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
@@ -175,23 +177,23 @@ class VFDIcons:
 				{
 					iPlayableService.evStart: self.writeName,
 				})
-		print '[sparkVFD] Set text scrolling option'
+		print('[sparkVFD] Set text scrolling option')
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print '[sparkVFD] End initialisation'
+		print('[sparkVFD] End initialisation')
 
 	def __evStart(self):
-		print '[sparkVFD] __evStart'
+		print('[sparkVFD] __evStart')
 #		... and do nothing else
 
 	def __evUpdatedEventInfo(self):
-		print '[sparkVFD] __evUpdatedEventInfo'
+		print('[sparkVFD] __evUpdatedEventInfo')
 #		... and do nothing else
 
 	def UpdatedInfo(self):
-		print '[sparkVFD] __evUpdatedInfo'
+		print('[sparkVFD] __evUpdatedInfo')
 		self.checkAudioTracks()
 		self.writeName()
 
@@ -326,7 +328,7 @@ class VFDIcons:
 		else:
 			evfd.getInstance().vfd_clear_string()
 		self.standby = True
-		print "[sparkVFD] set display on Enter Standby"
+		print("[sparkVFD] set display on Enter Standby")
 
 
 VFDIconsInstance = None

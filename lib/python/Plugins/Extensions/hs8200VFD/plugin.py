@@ -1,4 +1,6 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
 from Components.ServiceList import ServiceList
@@ -147,11 +149,11 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.standbyredledon.value) + " -l 1 0 -l 4 0 -l 5 0 -l 6 0 -l 7 0")
 			else:
 				Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
-				print ""
+				print("")
 				b = str(config.plugins.vfdicon.ledbright.value)
 				c = str(config.plugins.vfdicon.crossbright.value)
 				Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
-		print "[hs8200VFD] newConfig", self["config"].getCurrent()
+		print("[hs8200VFD] newConfig", self["config"].getCurrent())
 		self.createSetup()
 
 	def cancel(self):
@@ -167,18 +169,18 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 			b = str(config.plugins.vfdicon.ledbright.value)
 			c = str(config.plugins.vfdicon.crossbright.value)
 			Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
-			print "[hs8200VFD] set brightness", config.plugins.vfdicon.contrast.value
+			print("[hs8200VFD] set brightness", config.plugins.vfdicon.contrast.value)
 			Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[hs8200VFD] set text scroll", config.plugins.vfdicon.textscroll.value
+		print("[hs8200VFD] set text scroll", config.plugins.vfdicon.textscroll.value)
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print "[hs8200VFD] set text centering", config.plugins.vfdicon.textcenter.value
+		print("[hs8200VFD] set text centering", config.plugins.vfdicon.textcenter.value)
 		main(self)
 		ConfigListScreen.keySave(self)
 
@@ -212,7 +214,7 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print '[hs8200VFD] Start'
+		print('[hs8200VFD] Start')
 		self.tuned = False
 		self.play = False
 		self.record = False
@@ -230,8 +232,8 @@ class VFDIcons:
 		c = str(config.plugins.vfdicon.crossbright.value)
 		Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
 		global DisplayType
-		print '[hs8200VFD] Hardware displaytype:', DisplayType
-		print '[hs8200VFD] VFD displaytype     :', DisplayTypevfd
+		print('[hs8200VFD] Hardware displaytype:', DisplayType)
+		print('[hs8200VFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 5:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
@@ -255,28 +257,28 @@ class VFDIcons:
 				{
 					iPlayableService.evStart: self.writeName,
 				})
-		print '[hs8200VFD] Set text scrolling option'
+		print('[hs8200VFD] Set text scrolling option')
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[hs8200VFD] Set text centering option"
+		print("[hs8200VFD] Set text centering option")
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print '[hs8200VFD] End initialisation'
+		print('[hs8200VFD] End initialisation')
 
 	def __evStart(self):
-		print '[hs8200VFD] __evStart'
+		print('[hs8200VFD] __evStart')
 		self.__evSeekableStatusChanged()
 
 	def __evUpdatedEventInfo(self):
-		print '[hs8200VFD] __evUpdatedEventInfo'
+		print('[hs8200VFD] __evUpdatedEventInfo')
 #		... and do nothing else
 
 	def UpdatedInfo(self):
-		print '[hs8200VFD] __evUpdatedInfo'
+		print('[hs8200VFD] __evUpdatedInfo')
 		self.checkAudioTracks()
 		self.writeName()
 		if DisplayType == 5:
@@ -379,16 +381,16 @@ class VFDIcons:
 					feinfo = service.frontendInfo()
 					FEdata = feinfo and feinfo.getAll(True)
 					tunerNumber = FEdata and FEdata.get("tuner_number")
-					print "[hs8200VFD] Set tuner number icon ", tunerNumber
+					print("[hs8200VFD] Set tuner number icon ", tunerNumber)
 					if tunerNumber == 0:
 						Console().ePopen("fp_control -i 10 1 -i 11 0") #Tu1 on, Tu2 off
 					else:
 						Console().ePopen("fp_control -i 10 0 -i 11 1") #Tu1 off, Tu2 on
 #					elif tunerType == "DVB-T" or tunerType == "DVB-C":
-#						print "[VFD-Icons] Set TER icon"
+#						print("[VFD-Icons] Set TER icon")
 #						Console().ePopen("fp_control -i 26 1 -i 2 0 -i 44 0 -i 45 0 -i 29 0") #TER on, SAT, Tu1, Tu2 off
 				else:
-					print "[hs8200VFD] No TER or SAT icon"
+					print("[hs8200VFD] No TER or SAT icon")
 					Console().ePopen("fp_control -i 10 0 -i 11 0") #TER, SAT, Tu1, Tu2 off
 			else:
 				                              # HD, Timeshift,Dolby,MP3,    Tu1    Tu2 off
@@ -500,10 +502,10 @@ class VFDIcons:
 		self.timer.stop() # stop one second timer
 		evfd.getInstance().vfd_write_string("           ")
 		self.timer.start(60000, False) # start one minute timer
-		print "[hs8200VFD] minute timer started"
+		print("[hs8200VFD] minute timer started")
 		if DisplayType == 5:
 			evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.contrast.value)
-			print "[hs8200VFD] set brightness", config.plugins.vfdicon.contrast.value
+			print("[hs8200VFD] set brightness", config.plugins.vfdicon.contrast.value)
 			self.timerEvent()
 			b = str(config.plugins.vfdicon.ledbright.value)
 			c = str(config.plugins.vfdicon.crossbright.value)
@@ -514,18 +516,18 @@ class VFDIcons:
 		inStandby.onClose.append(self.onLeaveStandby)
 		global DisplayType
 		if DisplayType == 5:
-			print "[hs8200VFD] set display & icons on Enter Standby"
+			print("[hs8200VFD] set display & icons on Enter Standby")
 			if config.plugins.vfdicon.stbshow.value == "nothing":
 				evfd.getInstance().vfd_set_light(0)
 			else:
 				evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.stbcontrast.value)
-			print "[hs8200VFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value
+			print("[hs8200VFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value)
 			if config.plugins.vfdicon.standbyredledon.value:
 				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.standbyredledon.value) + " -l 1 0 -l 4 0 -l 5 0 -l 6 0 -l 7 0") #Red LED on, cross off
 		if (config.plugins.vfdicon.stbshow.value == "time" or config.plugins.vfdicon.stbshow.value == "time_date"):
 			self.timer.stop() # stop minute timer
 			self.timer.start(999, False) # start one second timer
-			print "[hs8200VFD] second timer started"
+			print("[hs8200VFD] second timer started")
 		if (config.plugins.vfdicon.stbshow.value == "date" or config.plugins.vfdicon.stbshow.value == "day_date" or config.plugins.vfdicon.stbshow.value == "timeHM" or config.plugins.vfdicon.stbshow.value == "time" or config.plugins.vfdicon.stbshow.value == "time_date"):
 			self.writeDate(config.plugins.vfdicon.stbshow.value)
 		else:

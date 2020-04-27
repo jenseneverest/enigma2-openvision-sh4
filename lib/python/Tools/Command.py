@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 from os import stat as os_stat, path as os_path, system
 import os
 

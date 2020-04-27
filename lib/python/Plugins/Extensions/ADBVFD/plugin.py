@@ -1,4 +1,6 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
 from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd, eDVBVolumecontrol, getBoxType
@@ -95,7 +97,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		except:
 			pass
 
-		print '[ADBVFD] ADB variant:', self.adb_mod
+		print('[ADBVFD] ADB variant:', self.adb_mod)
 		if self.adb_mod == 'bsla' or self.adb_mod == 'bzzb':
 			self.disp = 'vfd'
 		else:
@@ -163,11 +165,11 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 			else:
 				Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
 #				Console().ePopen("fp_control -led " + str(config.plugins.vfdicon.contrast.value))
-				print ""
+				print("")
 				b = str(config.plugins.vfdicon.ledbright.value)
 				Console().ePopen("fp_control -led " + b)
 				Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.powerledcolour.value))
-		print "newConfig", self["config"].getCurrent()
+		print("newConfig", self["config"].getCurrent())
 		self.createSetup()
 
 	def cancel(self):
@@ -181,7 +183,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		if DisplayType == 18:
 			b = str(config.plugins.vfdicon.ledbright.value)
 			Console().ePopen("fp_control -led " + b)
-			print "[ADBVFD] set brightness", config.plugins.vfdicon.contrast.value
+			print("[ADBVFD] set brightness", config.plugins.vfdicon.contrast.value)
 			Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
 			Console().ePopen("fp_control -led " + str(config.plugins.vfdicon.ledbright.value))
 			Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.powerledcolour.value))
@@ -189,12 +191,12 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[ADBVFD] set text scroll", config.plugins.vfdicon.textscroll.value
+		print("[ADBVFD] set text scroll", config.plugins.vfdicon.textscroll.value)
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print "[ADBVFD] set text centering", config.plugins.vfdicon.textcenter.value
+		print("[ADBVFD] set text centering", config.plugins.vfdicon.textcenter.value)
 		main(self)
 		ConfigListScreen.keySave(self)
 
@@ -228,7 +230,7 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print '[ADBVFD] Start'
+		print('[ADBVFD] Start')
 		self.tuned = False
 		self.play = False
 		self.record = False
@@ -244,7 +246,7 @@ class VFDIcons:
 			self.adb_model = open("/proc/stb/info/adb_variant").read().strip()
 		except:
 			pass
-		print '[ADBVFD] ADB variant:', self.adb_model
+		print('[ADBVFD] ADB variant:', self.adb_model)
 		if self.adb_model == 'bsla' or self.adb_model == 'bzzb':
 			self.display = 'vfd'
 
@@ -256,8 +258,8 @@ class VFDIcons:
 		b = str(config.plugins.vfdicon.ledbright.value)
 		Console().ePopen("fp_control -led " + b)
 		global DisplayType
-		print '[ADBVFD] Hardware displaytype:', DisplayType
-		print '[ADBVFD] VFD displaytype     :', DisplayTypevfd
+		print('[ADBVFD] Hardware displaytype:', DisplayType)
+		print('[ADBVFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 18:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
@@ -282,28 +284,28 @@ class VFDIcons:
 				{
 					iPlayableService.evStart: self.writeName,
 				})
-		print '[ADBVFD] Set text scrolling option'
+		print('[ADBVFD] Set text scrolling option')
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
 		evfd.getInstance().vfd_set_CENTER(False)
 		if self.display == 'vfd':
-			print "[ADBVFD] Set text centering option"
+			print("[ADBVFD] Set text centering option")
 			if config.plugins.vfdicon.textcenter.value == "1":
 				evfd.getInstance().vfd_set_CENTER(True)
-		print '[ADBVFD] End initialisation'
+		print('[ADBVFD] End initialisation')
 
 	def __evStart(self):
-		print '[ADBVFD] __evStart'
+		print('[ADBVFD] __evStart')
 		self.__evSeekableStatusChanged()
 
 	def __evUpdatedEventInfo(self):
-		print '[ADBVFD] __evUpdatedEventInfo'
+		print('[ADBVFD] __evUpdatedEventInfo')
 #		... and do nothing else
 
 	def UpdatedInfo(self):
-		print '[ADBVFD] __evUpdatedInfo'
+		print('[ADBVFD] __evUpdatedInfo')
 		self.writeName()
 		if self.display == 'vfd' and DisplayType == 18:
 			self.checkAudioTracks()
@@ -406,16 +408,16 @@ class VFDIcons:
 					feinfo = service.frontendInfo()
 					FEdata = feinfo and feinfo.getAll(True)
 					tunerNumber = FEdata and FEdata.get("tuner_number")
-					print "[ADBVFD] Set tuner number icon ", tunerNumber
+					print("[ADBVFD] Set tuner number icon ", tunerNumber)
 					if tunerNumber == 0:
 						Console().ePopen("fp_control -i 9 1 -i 10 0") #Tu1 on, Tu2 off
 					else:
 						Console().ePopen("fp_control -i 9 0 -i 10 1") #Tu1 off, Tu2 on
 #					elif tunerType == "DVB-C":
-#						print "[ADBVFD] Set TER icon"
+#						print("[ADBVFD] Set TER icon")
 #						Console().ePopen("fp_control -i 26 1 -i 2 0 -i 44 0 -i 45 0 -i 29 0") #TER on, SAT, Tu1, Tu2 off
 				else:
-					print "[ADBVFD] No TER or SAT icon"
+					print("[ADBVFD] No TER or SAT icon")
 					Console().ePopen("fp_control -i 9 0 -i 10 0") #Tu1, Tu2 off
 			else:
 				                              # HD, Timeshift,Dolby,MP3,    Tu1    Tu2 off
@@ -535,12 +537,12 @@ class VFDIcons:
 		self.timer.stop() # stop one second timer
 		evfd.getInstance().vfd_write_string("               ")
 		self.timer.start(60000, False) # start one minute timer
-		print "[ADBVFD] minute timer started"
+		print("[ADBVFD] minute timer started")
 		if DisplayType == 18:
 			evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.contrast.value)
 			if self.display == 'vfd':
 				Console().ePopen("fp_control -led " + str(config.plugins.vfdicon.ledbright.value))
-			print "[ADBVFD] set brightness", config.plugins.vfdicon.contrast.value
+			print("[ADBVFD] set brightness", config.plugins.vfdicon.contrast.value)
 			self.timerEvent()
 			b = str(config.plugins.vfdicon.powerledcolour)
 			Console().ePopen("fp_control -l 1 " + b)  #Power LED
@@ -550,14 +552,14 @@ class VFDIcons:
 		inStandby.onClose.append(self.onLeaveStandby)
 		global DisplayType
 		if DisplayType == 18:
-			print "[ADBVFD] set display & icons on Enter Standby"
+			print("[ADBVFD] set display & icons on Enter Standby")
 			if config.plugins.vfdicon.stbshow.value == "nothing":
 				evfd.getInstance().vfd_set_light(0)
 			else:
 				evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.stbcontrast.value)
 				if self.display == 'vfd':
 					Console().ePopen("fp_control -led " + str(config.plugins.vfdicon.stbledbright.value))
-			print "[ADBVFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value
+			print("[ADBVFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value)
 			if config.plugins.vfdicon.standbyledcolour.value:
 				Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.standbyledcolour.value)) #Power LED
 			else:
@@ -565,7 +567,7 @@ class VFDIcons:
 		if (config.plugins.vfdicon.stbshow.value == "time" or config.plugins.vfdicon.stbshow.value == "time_date"):
 			self.timer.stop() # stop minute timer
 			self.timer.start(999, False) # start one second timer
-			print "[ADBVFD] second timer started"
+			print("[ADBVFD] second timer started")
 		if (config.plugins.vfdicon.stbshow.value == "date" or config.plugins.vfdicon.stbshow.value == "day_date" or config.plugins.vfdicon.stbshow.value == "timeHM" or config.plugins.vfdicon.stbshow.value == "time" or config.plugins.vfdicon.stbshow.value == "time_date"):
 			self.writeDate(config.plugins.vfdicon.stbshow.value)
 		else:

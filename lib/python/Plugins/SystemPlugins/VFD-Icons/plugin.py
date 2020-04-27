@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 import ServiceReference
 from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation, evfd
@@ -46,7 +49,7 @@ class VFDIcons:
                 else:
                     servicename = servicename
             else:
-                print '[VFD-Icons] no Service found'
+                print('[VFD-Icons] no Service found')
         evfd.getInstance().vfd_write_string(servicename[0:63])
         return 1
 
@@ -76,13 +79,13 @@ class VFDIcons:
         return
 
     def showDolby(self):
-        print '[VFD-Icons] showDolby'
+        print('[VFD-Icons] showDolby')
 
     def showMp3(self):
-        print '[VFD-Icons] showMp3'
+        print('[VFD-Icons] showMp3')
 
     def __evUpdatedEventInfo(self):
-        print '[VFD-Icons] __evUpdatedEventInfo'
+        print('[VFD-Icons] __evUpdatedEventInfo')
 
     def getSeekState(self):
         service = self.session.nav.getCurrentService()
@@ -95,7 +98,7 @@ class VFDIcons:
             return seek.isCurrentlySeekable()
 
     def __evSeekableStatusChanged(self):
-        print '[VFD-Icons] __evSeekableStatusChanged'
+        print('[VFD-Icons] __evSeekableStatusChanged')
 
     def __evVideoSizeChanged(self):
         service = self.session.nav.getCurrentService()

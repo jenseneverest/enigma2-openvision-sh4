@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+from __future__ import print_function
 from Components.Console import Console
 from Plugins.Plugin import PluginDescriptor
 from enigma import eTimer
@@ -12,11 +15,11 @@ class OnErrorRestart:
 		self.Timer.callback.append(self.checklog)
 
 	def StartLongTimer(self):
-		print "[OnErrorRestartService] start long timer"
+		print("[OnErrorRestartService] start long timer")
 		self.Timer.start(20000, False)
 
 	def StartFastTimer(self):
-		print "[OnErrorRestartService] check error, start fast timer"
+		print("[OnErrorRestartService] check error, start fast timer")
 		self.Timer.start(3000, False)
 
 	def checklog(self):
@@ -25,7 +28,7 @@ class OnErrorRestart:
 	def checkerror(self, result, retval, extra_args):
 		if result.strip():
 			if self.error:
-				print "[OnErrorRestartService] restart service"
+				print("[OnErrorRestartService] restart service")
 				self.error = False
 				service = self.session.nav.getCurrentlyPlayingServiceOrGroup()
 				if service:

@@ -1,4 +1,6 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from enigma import iPlayableService, evfd, getBoxType
 from Components.ServiceEventTracker import ServiceEventTracker
@@ -67,7 +69,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 #			Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.dstandbyredled.value))
 		else:
 			Console().ePopen("fp_control -l 0 0")
-		print "[hs7110VFD] newConfig", self["config"].getCurrent()
+		print("[hs7110VFD] newConfig", self["config"].getCurrent())
 		self.createSetup()
 
 	def cancel(self):
@@ -111,33 +113,33 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print '[hs7110VFD] Start'
+		print('[hs7110VFD] Start')
 		self.standby = False
 		global DisplayType
-		print '[hs7110VFD] Hardware displaytype:', DisplayType
-		print '[hs7110VFD] VFD displaytype     :', DisplayTypevfd
+		print('[hs7110VFD] Hardware displaytype:', DisplayType)
+		print('[hs7110VFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 10:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
 					iPlayableService.evStart: self.__evStart
 				})
 			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
-		print '[hs7110VFD] End initialisation'
+		print('[hs7110VFD] End initialisation')
 
 	def __evStart(self):
-		print '[hs7110VFD] __evStart'
+		print('[hs7110VFD] __evStart')
 #		... and do nothing else
 
 #	def __evUpdatedEventInfo(self):
-#		print '[VFD-Icons] __evUpdatedEventInfo'
+#		print('[VFD-Icons] __evUpdatedEventInfo')
 #		... and do nothing else
 
 #	def UpdatedInfo(self):
-#		print '[VFD-Icons] __evUpdatedInfo'
+#		print('[VFD-Icons] __evUpdatedInfo')
 #		... and do nothing else
 
 #	def timerEvent(self):
-#		print '[VFD-Icons] Timer event'
+#		print('[VFD-Icons] Timer event')
 #		... and do nothing else
 
 #	def __evTunedIn(self):

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 #
 # Simple Converter for VFD displays
 # By Taapat 2015, thx 2boom

@@ -1,4 +1,6 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 from Screens.Screen import Screen
 from Plugins.Plugin import PluginDescriptor
 from Screens.MessageBox import MessageBox
@@ -162,9 +164,9 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.recredled.value))
 			else:
 				Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
-				print ""
+				print("")
 				Console().ePopen("fp_control -l 0 0")
-		print "[hs742xVFD] newConfig", self["config"].getCurrent()
+		print("[hs742xVFD] newConfig", self["config"].getCurrent())
 		self.createSetup()
 
 	def cancel(self):
@@ -176,18 +178,18 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		global DisplayType
 		if DisplayType == 11:
 			Console().ePopen("fp_control -l 0 0")
-			print "[hs742xVFD] set brightness", config.plugins.vfdicon.contrast.value
+			print("[hs742xVFD] set brightness", config.plugins.vfdicon.contrast.value)
 			Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[hs742xVFD] set text scroll", config.plugins.vfdicon.textscroll.value
+		print("[hs742xVFD] set text scroll", config.plugins.vfdicon.textscroll.value)
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print "[hs742xVFD] set text centering", config.plugins.vfdicon.textcenter.value
+		print("[hs742xVFD] set text centering", config.plugins.vfdicon.textcenter.value)
 		main(self)
 		ConfigListScreen.keySave(self)
 
@@ -221,7 +223,7 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print '[hs742xVFD] Start'
+		print('[hs742xVFD] Start')
 		self.play = False
 		self.record = False
 		self.standby = False
@@ -231,8 +233,8 @@ class VFDIcons:
 		self.timer.start(60000, False) # start one minute timer
 		Console().ePopen("fp_control -l 0 0")
 		global DisplayType
-		print '[hs742xVFD] Hardware displaytype:', DisplayType
-		print '[hs742xVFD] VFD displaytype     :', DisplayTypevfd
+		print('[hs742xVFD] Hardware displaytype:', DisplayType)
+		print('[hs742xVFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 11:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
@@ -247,28 +249,28 @@ class VFDIcons:
 				{
 					iPlayableService.evStart: self.writeName,
 				})
-		print '[hs742xVFD] Set text scrolling option'
+		print('[hs742xVFD] Set text scrolling option')
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[hs742xVFD] Set text centering option"
+		print("[hs742xVFD] Set text centering option")
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print '[hs742xVFD] End initialisation'
+		print('[hs742xVFD] End initialisation')
 
 	def __evStart(self):
-		print '[hs742xVFD] __evStart'
+		print('[hs742xVFD] __evStart')
 #		... and do nothing else
 
 	def __evUpdatedEventInfo(self):
-		print '[hs742xVFD] __evUpdatedEventInfo'
+		print('[hs742xVFD] __evUpdatedEventInfo')
 #		... and do nothing else
 
 	def UpdatedInfo(self):
-		print '[hs742xVFD] __evUpdatedInfo'
+		print('[hs742xVFD] __evUpdatedInfo')
 		self.checkAudioTracks()
 		self.writeName()
 
@@ -366,11 +368,11 @@ class VFDIcons:
 		self.timer.start(60000, False) # start one minute timer
 		if DisplayType == 11:
 			evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.contrast.value)
-			print "[hs742xVFD] set brightness", config.plugins.vfdicon.contrast.value
+			print("[hs742xVFD] set brightness", config.plugins.vfdicon.contrast.value)
 			self.timerEvent()
 			Console().ePopen("fp_control -l 0 0") # LED off
 			Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.logoled.value)) # Logo on
-			print "[hs742xVFD] set LEDs on Leave Standby"
+			print("[hs742xVFD] set LEDs on Leave Standby")
 
 	def onEnterStandby(self, configElement):
 		from Screens.Standby import inStandby
@@ -381,7 +383,7 @@ class VFDIcons:
 				evfd.getInstance().vfd_set_light(0)
 			else:
 				evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.stbcontrast.value)
-			print "[hs742xVFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value
+			print("[hs742xVFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value)
 			if config.plugins.vfdicon.standbyredled.value:
 				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.standbyredled.value)) #Red LED on
 			Console().ePopen("fp_control -l 1 0") # Logo off
@@ -393,7 +395,7 @@ class VFDIcons:
 		else:
 			evfd.getInstance().vfd_clear_string()
 		self.standby = True
-		print "[hs742xVFD] set display & LEDs on Enter Standby"
+		print("[hs742xVFD] set display & LEDs on Enter Standby")
 
 VFDIconsInstance = None
 

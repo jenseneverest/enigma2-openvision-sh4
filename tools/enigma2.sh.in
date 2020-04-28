@@ -7,7 +7,7 @@ datarootdir=@datarootdir@
 export PATH=$PATH:/usr/script
 
 # write -E2- on vfd display
-echo "-E2-" > /dev/vfd
+echo "OV" > /dev/vfd
 
 if [ -e @libdir@/enigma2/python/Plugins/SystemPlugins/SH4BoosterControl/plugin.pyo ]; then
 	cpufreq=`cat /etc/enigma2/settings | grep config.plugins.booster.normalfrequenz | cut -d "=" -f2`

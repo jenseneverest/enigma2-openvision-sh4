@@ -317,59 +317,7 @@ void * start_loop (void *arg)
 {
 	evfd vfd;
 	blocked = true;
-	#if defined (ENABLE_SPARK7162)
-		char str[] = "OV";
-	#elif defined (ENABLE_SPARK)
-		char str[] = "OV";
-	#elif defined (ENABLE_CUBEREVO)
-		char str[] = "OV";
-	#elif defined (ENABLE_CUBEREVO_250HD)
-		char str[] = "OV";
-	#elif defined (ENABLE_CUBEREVO_MINI)
-		char str[] = "OV";
-	#elif defined (ENABLE_CUBEREVO_MINI2)
-		char str[] = "OV";
-	#elif defined (ENABLE_CUBEREVO_2000HD)
-		char str[] = "OV";
-	#elif defined (ENABLE_CUBEREVO_3000HD)
-		char str[] = "OV";
-	#elif defined (ENABLE_FORTIS_HDBOX)
-		char str[] = "OV";
-	#elif defined (ENABLE_OCTAGON1008)
-		char str[] = "OV";
-	#elif defined (ENABLE_ATEVIO7500)
-		char str[] = "OV";
-	#elif defined (ENABLE_HS7119)
-		char str[] = "OV";
-	#elif defined (ENABLE_HS7420)
-		char str[] = "OV";
-	#elif defined (ENABLE_HS7810A)
-		char str[] = "OV";
-	#elif defined (ENABLE_HS7429)
-		char str[] = "OV";
-	#elif defined (ENABLE_HS7819)
-		char str[] = "OV";
-	#elif defined (ENABLE_FOREVER_3434HD)
-		char str[] = "OV";
-	#elif defined (ENABLE_FOREVER_NANOSMART)
-		char str[] = "OV";
-	#elif defined (ENABLE_FOREVER_9898HD)
-		char str[] = "OV";
-	#elif defined (ENABLE_FOREVER_2424HD)
-		char str[] = "OV";
-	#elif defined (ENABLE_UFS910)
-		char str[] = "OV";
-	#elif defined (ENABLE_UFS912)
-		char str[] = "OV";
-	#elif defined (ENABLE_UFS913)
-		char str[] = "OV";
-	#elif defined (ENABLE_VITAMIN_HD5000)
-		char str[] = "OV";
-	#elif defined (ENABLE_ADB_BOX)
-		char str[] = "OV";
-	#else
-		char str[] = "OV";
-	#endif
+	char str[] = "OV";
 	int vfddev = open ("/dev/vfd", O_WRONLY);
 	write(vfddev, str, strlen(str));
 	close(vfddev);

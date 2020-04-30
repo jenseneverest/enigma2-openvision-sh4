@@ -280,9 +280,9 @@
 		<item level="0" text="Power LED" description="Turn on the power LED." requires="PowerLED">config.usage.powerLED</item>
 		<item level="0" text="Standby LED" description="Turn on the power LED during standby." requires="StandbyLED">config.usage.standbyLED</item>
 		<item level="0" text="Deep Standby LED" description="Turn on the power LED during deep standby." requires="SuspendLED">config.usage.suspendLED</item>
-		<item level="0" requires="LedPowerColor" text="Operating LED status while running." description="With this option you can switch the LED color or deactivate the LED.">config.lcd.ledpowercolor</item>
-		<item level="0" requires="LedStandbyColor" text="Operating LED status in standby mode" description="With this option you can switch the LED color or deactivate the LED.">config.lcd.ledstandbycolor</item>
-		<item level="0" requires="LedSuspendColor" text="Operating LED status in deep standby mode" description="With this option you can switch the LED color or deactivate the LED.">config.lcd.ledsuspendcolor</item>
+		<item level="0" requires="LedPowerColor" text="Operating LED colour status while running." description="With this option you can switch the LED color or deactivate the LED.">config.lcd.ledpowercolor</item>
+		<item level="0" requires="LedStandbyColor" text="Operating LED colour status in standby mode" description="With this option you can switch the LED color or deactivate the LED.">config.lcd.ledstandbycolor</item>
+		<item level="0" requires="LedSuspendColor" text="Operating LED colour status in deep standby mode" description="With this option you can switch the LED color or deactivate the LED.">config.lcd.ledsuspendcolor</item>
 		<item level="0" requires="Power4x7On" text="Switch off the display during operation." description="With this option you can switch off the display during operation.">config.lcd.power4x7on</item>
 		<item level="0" requires="Power4x7Standby" text="Switch off the display during Standby Mode" description="With this option you can switch off the display in Standby Mode.">config.lcd.power4x7standby</item>
 		<item level="0" requires="Power4x7Suspend" text="Switch off the display during Suspend Mode" description="With this option you can switch off the display in Deep Standby Mode.">config.lcd.power4x7suspend</item>
@@ -305,7 +305,7 @@
 		<item text="Latitude" description="Configure the latitude of your location.">config.sat.diseqcb</item>
 		<item text="Use power measurement" description="When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)." >config.sat.diseqcc</item>
 	</setup>
-	<setup key="logs" title="Log settings">
+	<setup key="logs" title="Logs">
 		<item level="2" text="Log python stack trace on spinner" description="Set to yes for debugging the root cause of a spinner.">config.crash.pystackonspinner</item>
 		<item level="2" text="Debug log time format *" description="This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since the receiver was last booted.">config.crash.logtimeformat</item>
 		<item level="2" text="Logs folder location" description="Choose the location for crash and debug logs folder.">config.crash.debug_path</item>

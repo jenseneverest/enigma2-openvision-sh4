@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 03:24+0430\n"
+"POT-Creation-Date: 2020-04-30 14:02+0430\n"
 "PO-Revision-Date: 2020-04-09 22:41+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -162,6 +162,29 @@ msgstr "%b-%-d"
 msgid "%-d-%b-%Y"
 msgstr "%Y-%b-%-d"
 
+#, fuzzy
+msgid "%-d. %B %Y"
+msgstr "%Y %B %-d"
+
+msgid "%-d. %b"
+msgstr ""
+
+#, fuzzy
+msgid "%-d. %b %Y"
+msgstr "%Y %b %-d"
+
+msgid "%-d.%-m"
+msgstr ""
+
+msgid "%-d.%-m.%Y"
+msgstr ""
+
+msgid "%-d.%m"
+msgstr ""
+
+msgid "%-d.%m.%Y"
+msgstr ""
+
 msgid "%-d/%-m"
 msgstr "%-m.%-d"
 
@@ -251,6 +274,30 @@ msgstr "%B %-d, %A"
 msgid "%A %-d-%B-%Y"
 msgstr "%Y-%B-%-d, %A"
 
+#, fuzzy
+msgid "%A %-d. %B"
+msgstr "%B %-d, %A"
+
+#, fuzzy
+msgid "%A %-d. %B %Y"
+msgstr "%Y %B %-d, %A"
+
+#, fuzzy
+msgid "%A %-d.%-m"
+msgstr "%-m/%-d %A"
+
+#, fuzzy
+msgid "%A %-d.%-m.%Y"
+msgstr "%Y/%-m/%-d %A"
+
+#, fuzzy
+msgid "%A %-d.%m"
+msgstr "%m/%-d %A"
+
+#, fuzzy
+msgid "%A %-d.%m.%Y"
+msgstr "%Y/%m/%-d %A"
+
 msgid "%A %-d/%-m"
 msgstr "%-m/%-d %A"
 
@@ -334,6 +381,30 @@ msgstr "%B-%d %A"
 
 msgid "%A %d-%B-%Y"
 msgstr "%Y-%B-%d, %A"
+
+#, fuzzy
+msgid "%A %d. %B"
+msgstr "%B %e, %A"
+
+#, fuzzy
+msgid "%A %d. %B %Y"
+msgstr "%Y %B %d %A"
+
+#, fuzzy
+msgid "%A %d.%-m"
+msgstr "%-m/%d %A"
+
+#, fuzzy
+msgid "%A %d.%-m.%Y"
+msgstr "%Y/%-m/%d %A"
+
+#, fuzzy
+msgid "%A %d.%m"
+msgstr "%m/%d %A"
+
+#, fuzzy
+msgid "%A %d.%m.%Y"
+msgstr "%Y/%m/%d %A"
 
 msgid "%A %d/%-m"
 msgstr "%-m/%d %A"
@@ -464,6 +535,34 @@ msgstr "%b-%-d %a"
 msgid "%a %-d-%b-%Y"
 msgstr "%Y %B %e, %A"
 
+#, fuzzy
+msgid "%a %-d. %B %Y"
+msgstr "%Y %B %-d %a"
+
+#, fuzzy
+msgid "%a %-d. %b"
+msgstr "%b %-d %a"
+
+#, fuzzy
+msgid "%a %-d. %b %Y"
+msgstr "%Y %B %e, %A"
+
+#, fuzzy
+msgid "%a %-d.%-m"
+msgstr "%a %-d/%-m"
+
+#, fuzzy
+msgid "%a %-d.%-m.%Y"
+msgstr "%Y/%-m/%-d %a"
+
+#, fuzzy
+msgid "%a %-d.%m"
+msgstr "%a %-d/%m"
+
+#, fuzzy
+msgid "%a %-d.%m.%Y"
+msgstr "%Y/%m/%-d %a"
+
 msgid "%a %-d/%-m"
 msgstr "%a %-d/%-m"
 
@@ -580,6 +679,34 @@ msgstr "%a %d-%b"
 
 msgid "%a %d-%b-%Y"
 msgstr "%a %d-%b-%Y"
+
+#, fuzzy
+msgid "%a %d. %B %Y"
+msgstr "%a %d %B %Y"
+
+#, fuzzy
+msgid "%a %d. %b"
+msgstr "%a %d %b"
+
+#, fuzzy
+msgid "%a %d. %b %Y"
+msgstr "%a %d %b %Y"
+
+#, fuzzy
+msgid "%a %d.%-m"
+msgstr "%a %d/%-m"
+
+#, fuzzy
+msgid "%a %d.%-m.%Y"
+msgstr "%Y/%-m/%d %a"
+
+#, fuzzy
+msgid "%a %d.%m"
+msgstr "%a %d/%m"
+
+#, fuzzy
+msgid "%a %d.%m.%Y"
+msgstr "%a %d/%m/%Y"
 
 msgid "%a %d/%-m"
 msgstr "%a %d/%-m"
@@ -801,9 +928,32 @@ msgstr "%Y-%b-%d"
 msgid "%d-%m"
 msgstr "%m-%d"
 
+#, fuzzy
+msgid "%d. %B %Y"
+msgstr "%Y %B %e, %A"
+
+msgid "%d. %b"
+msgstr ""
+
+#, fuzzy
+msgid "%d. %b %Y"
+msgstr "%d %b %Y"
+
+msgid "%d.%-m"
+msgstr ""
+
+msgid "%d.%-m.%Y"
+msgstr ""
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d GB"
+
+msgid "%d.%m"
+msgstr ""
+
+msgid "%d.%m.%Y"
+msgstr ""
 
 msgid "%d/%-m"
 msgstr "%d/%-m"
@@ -3660,6 +3810,18 @@ msgstr "Metai Mėnuo D SavDiena"
 msgid "Dayname D-Month-Year"
 msgstr "Metai-Mėnuo-D SavDiena"
 
+#, fuzzy
+msgid "Dayname D. Month Year"
+msgstr "Metai Mėnuo D SavDiena"
+
+#, fuzzy
+msgid "Dayname D.M.Year"
+msgstr "Metai/M/D SavDiena"
+
+#, fuzzy
+msgid "Dayname D.MM.Year"
+msgstr "Metai/MM/D SavDiena"
+
 msgid "Dayname D/M/Year"
 msgstr "Metai/M/D SavDiena"
 
@@ -3671,6 +3833,18 @@ msgstr "Metai Mėnuo DD SavDiena"
 
 msgid "Dayname DD-Month-Year"
 msgstr "Metai-Mėnuo-DD SavDiena"
+
+#, fuzzy
+msgid "Dayname DD. Month Year"
+msgstr "Metai Mėnuo DD SavDiena"
+
+#, fuzzy
+msgid "Dayname DD.M.Year"
+msgstr "Metai/M/DD SavDiena"
+
+#, fuzzy
+msgid "Dayname DD.MM.Year"
+msgstr "Metai/MM/DD SavDiena"
 
 msgid "Dayname DD/M/Year"
 msgstr "Metai/M/DD SavDiena"
@@ -6520,10 +6694,6 @@ msgstr "Prisijungti python steką ant suktuko?"
 msgid "Log results to /tmp"
 msgstr "Žurnalo rezultatus į/tmp"
 
-#, fuzzy
-msgid "Log settings"
-msgstr "Garso ir vaizdo nustatymai"
-
 msgid "Logfile does not exist anymore"
 msgstr "Failo žurnalo daugiau nėra"
 
@@ -6534,6 +6704,9 @@ msgstr "Šviesumas"
 #, fuzzy
 msgid "Logo brightness *"
 msgstr "Šviesumas"
+
+msgid "Logs"
+msgstr ""
 
 #, fuzzy
 msgid "Logs folder location"
@@ -7717,15 +7890,15 @@ msgid "OpenVPN setup"
 msgstr "OpenVpn valdymas"
 
 #, fuzzy
-msgid "Operating LED status in deep standby mode"
+msgid "Operating LED colour status in deep standby mode"
 msgstr "Maitinimo LED būklė giliame budėjime/budėjimo režime."
 
 #, fuzzy
-msgid "Operating LED status in standby mode"
+msgid "Operating LED colour status in standby mode"
 msgstr "Maitinimo LED būsena budėjimo režime"
 
 #, fuzzy
-msgid "Operating LED status while running."
+msgid "Operating LED colour status while running."
 msgstr "Maitinimo LED būsena veikimo režime."
 
 msgid "Opkg"
@@ -8357,6 +8530,10 @@ msgstr "Išjungimo meniu"
 
 msgid "PowerTimer list"
 msgstr "Įjungimo laikmačio sąrašas"
+
+#, fuzzy
+msgid "Powerless"
+msgstr "Išjungimo meniu"
 
 msgid "Predefined"
 msgstr "Pageidautinas"

@@ -13,6 +13,7 @@ from Screens.MessageBox import MessageBox
 profile("LOAD:enigma")
 import enigma
 import os
+from os import sys
 from enigma import iServiceInformation
 
 profile("LOAD:InfoBarGenerics")
@@ -178,7 +179,7 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, InfoBarMenu, InfoBarSeek, InfoBa
 	def __init__(self, session, service, slist=None, lastservice=None, infobar=None):
 		Screen.__init__(self, session)
 
-		self["actions"] = HelpableActionMap(self, ["MoviePlayerActions"],
+		self["actions"] = HelpableActionMap(self, "MoviePlayerActions",
 			{
 				"InfoButtonPressed": (self.openEventView, _("open Info...")),
 				"InfoButtonPressedLong": (self.showEventInfoPlugins, _("select Info...")),
@@ -570,3 +571,4 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, InfoBarMenu, InfoBarSeek, InfoBa
 
 	def ref2HumanName(self, ref):
 		return enigma.eServiceCenter.getInstance().info(ref).getName(ref)
+

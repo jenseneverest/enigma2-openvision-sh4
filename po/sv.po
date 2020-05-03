@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-30 14:02+0430\n"
+"POT-Creation-Date: 2020-05-03 16:04+0430\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -176,9 +176,8 @@ msgstr "%d.%B %Y"
 msgid "%-d. %b"
 msgstr ""
 
-#, fuzzy
 msgid "%-d. %b %Y"
-msgstr "%A %d %B"
+msgstr ""
 
 msgid "%-d.%-m"
 msgstr ""
@@ -297,9 +296,8 @@ msgstr "%A %e %B %Y"
 msgid "%A %-d.%-m"
 msgstr "%A %d %B"
 
-#, fuzzy
 msgid "%A %-d.%-m.%Y"
-msgstr "%A %d %B"
+msgstr ""
 
 #, fuzzy
 msgid "%A %-d.%m"
@@ -587,9 +585,8 @@ msgstr "%A %e %B %Y"
 msgid "%a %-d. %B %Y"
 msgstr "%A %e %B %Y"
 
-#, fuzzy
 msgid "%a %-d. %b"
-msgstr "%A %e %B %Y"
+msgstr ""
 
 #, fuzzy
 msgid "%a %-d. %b %Y"
@@ -599,9 +596,8 @@ msgstr "%A %e %B %Y"
 msgid "%a %-d.%-m"
 msgstr "%a %e/%m"
 
-#, fuzzy
 msgid "%a %-d.%-m.%Y"
-msgstr "%a %e/%m"
+msgstr ""
 
 #, fuzzy
 msgid "%a %-d.%m"
@@ -609,7 +605,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %-d.%m.%Y"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %-d/%-m"
@@ -769,7 +765,7 @@ msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d. %b"
-msgstr "%A %d %B"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d. %b %Y"
@@ -781,7 +777,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %d.%-m.%Y"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d.%m"
@@ -789,7 +785,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %d.%m.%Y"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d/%-m"
@@ -1028,25 +1024,28 @@ msgstr "%d.%B %Y"
 msgid "%d. %b"
 msgstr ""
 
-#, fuzzy
 msgid "%d. %b %Y"
-msgstr "%A %d %B"
+msgstr ""
 
+#, fuzzy
 msgid "%d.%-m"
-msgstr ""
+msgstr "%d.%B %Y"
 
+#, fuzzy
 msgid "%d.%-m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 #, python-format
 msgid "%d.%03d GB"
 msgstr ""
 
+#, fuzzy
 msgid "%d.%m"
-msgstr ""
+msgstr "%d.%B %Y"
 
+#, fuzzy
 msgid "%d.%m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 msgid "%d/%-m"
 msgstr ""
@@ -1158,9 +1157,9 @@ msgstr "%s/%s: %s"
 msgid "%s:%s"
 msgstr ""
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s?"
-msgstr "bc%s"
+msgstr ""
 
 #, python-format
 msgid "'%s' contains %d file(s) and %d sub-directories.\n"
@@ -2251,6 +2250,11 @@ msgstr "Underkanalslista..."
 msgid "Aspect ratio"
 msgstr "Bildformat"
 
+#
+#, fuzzy, python-format
+msgid "Aspect ratio changed to %s"
+msgstr "Bildformat"
+
 msgid "Assigned CAIds:"
 msgstr "Tilldelade CAid :"
 
@@ -2682,9 +2686,8 @@ msgstr ""
 msgid "Boot time"
 msgstr "Sortera tid"
 
-#, fuzzy
 msgid "Boot time and local time"
-msgstr "Ja och spara"
+msgstr ""
 
 msgid "Boot to Android image"
 msgstr ""
@@ -4444,9 +4447,10 @@ msgstr "Stäng av"
 msgid "Deep standby"
 msgstr "Stäng av"
 
+#
 #, fuzzy
 msgid "Deepstandby LED brightness"
-msgstr "Viloläges LED"
+msgstr "Stäng av"
 
 #
 msgid "Default"
@@ -4566,10 +4570,13 @@ msgstr "Ta bort post i spellista"
 msgid "Delete saved playlist"
 msgstr "Ta bort sparad spellista"
 
-msgid "Delete the character to the left of text buffer cursor"
+msgid "Delete the all the text"
 msgstr ""
 
-msgid "Delete the character under the text buffer cursor"
+msgid "Delete the character to the left of text cursor"
+msgstr ""
+
+msgid "Delete the character under the text cursor"
 msgstr ""
 
 msgid "Delete timer"
@@ -6918,10 +6925,9 @@ msgstr ""
 msgid "Image file system: "
 msgstr "Skapar filsystem"
 
-#
 #, fuzzy
 msgid "Image folder: "
-msgstr "Välj målkatalog"
+msgstr "Image : "
 
 #, python-format
 msgid ""
@@ -7434,13 +7440,11 @@ msgstr "Konfiguration av filmlista"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Konfiguration av filmlista"
+msgstr ""
 
-#, fuzzy
 msgid "LED display control Spark"
-msgstr "Konfiguration av filmlista"
+msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -8175,28 +8179,32 @@ msgstr "Flytta mot öst"
 msgid "Move main picture to PiP"
 msgstr "Flytta BiB till huvudbild"
 
-msgid "Move the text buffer cursor left"
+msgid "Move the keyboard cursor down"
 msgstr ""
 
-msgid "Move the text buffer cursor right"
+msgid "Move the keyboard cursor left"
 msgstr ""
 
-msgid "Move the text buffer cursor to the first character"
+msgid "Move the keyboard cursor right"
 msgstr ""
 
-msgid "Move the text buffer cursor to the last character"
+msgid "Move the keyboard cursor up"
 msgstr ""
 
-msgid "Move the virtual keyboard cursor down"
+#
+#, fuzzy
+msgid "Move the text cursor left"
+msgstr "byt till nästa position"
+
+#
+#, fuzzy
+msgid "Move the text cursor right"
+msgstr "flytta ner till nästa post"
+
+msgid "Move the text cursor to the first character"
 msgstr ""
 
-msgid "Move the virtual keyboard cursor left"
-msgstr ""
-
-msgid "Move the virtual keyboard cursor right"
-msgstr ""
-
-msgid "Move the virtual keyboard cursor up"
+msgid "Move the text cursor to the last character"
 msgstr ""
 
 msgid "Move to position X"
@@ -9049,20 +9057,19 @@ msgstr "Endast vid uppstart"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision"
-msgstr "Pythonversion :"
+msgstr ""
 
 msgid "Open Vision enigma2 image"
 msgstr ""
 
 #, fuzzy
 msgid "Open Vision information"
-msgstr "Pythonversion :"
+msgstr "Öppna sökvägsplats"
 
 #, fuzzy
 msgid "Open Vision language: "
-msgstr "Pythonversion :"
+msgstr "originalspråk"
 
 msgid "Open Vision module: "
 msgstr ""
@@ -9110,10 +9117,8 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Öppna inställning för tuner"
 
-#
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "stäng av mottagaren"
+msgstr ""
 
 msgid "Operating LED colour status in standby mode"
 msgstr ""
@@ -10205,10 +10210,9 @@ msgstr ""
 msgid "RC command set"
 msgstr "Kommandoordning"
 
-#
 #, fuzzy
 msgid "RC type: "
-msgstr "Flash"
+msgstr "DVB Typ"
 
 msgid "REC"
 msgstr ""
@@ -10393,7 +10397,7 @@ msgstr "stäng av mottagaren"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Också vid viloläge"
+msgstr "Sätt TV:n i viloläge"
 
 msgid "Red button..."
 msgstr "Röd knapp..."
@@ -11590,8 +11594,13 @@ msgstr ""
 msgid "Select the User Band to be assigned to this tuner. This is an index into the table of frequencies the SCR switch or SCR LNB uses to pass the requested transponder to the tuner."
 msgstr ""
 
-msgid "Select the character or action under the virtual keyboard cursor"
+msgid "Select the character or action under the keyboard cursor"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Select the locale from a menu"
+msgstr "Välj film sökväg"
 
 msgid "Select the manufacturer of your SCR device. If the manufacturer is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
 msgstr ""
@@ -11627,6 +11636,14 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Select the shifted character set"
+msgstr "Välj film sökväg"
+
+msgid "Select the shifted character set for the next character only"
+msgstr ""
+
 #, fuzzy
 msgid "Select the time zone within the area or region."
 msgstr "Välj sorteringsmetod :"
@@ -11644,15 +11661,6 @@ msgid "Select the type of LNB/device being used (normally 'Universal'). If your 
 msgstr ""
 
 msgid "Select the type of Single Cable Reception device you are using."
-msgstr ""
-
-msgid "Select the virtual keyboard locale from a menu"
-msgstr ""
-
-msgid "Select the virtual keyboard shifted character set"
-msgstr ""
-
-msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr ""
 
 #
@@ -12112,7 +12120,7 @@ msgstr "Visa alternativ"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Visa Kolumner"
+msgstr "Visa krypteringsikoner"
 
 msgid "Show InfoBar"
 msgstr "Visa infobalk"
@@ -13442,6 +13450,9 @@ msgstr ""
 msgid "TB"
 msgstr "B"
 
+msgid "TEXT"
+msgstr ""
+
 msgid "TMBD Details"
 msgstr ""
 
@@ -14355,6 +14366,11 @@ msgstr "Växla TV / RADIO läge"
 msgid "Toggle a cut mark at the current position"
 msgstr "Skifta en klippmarkering på nuvarande position"
 
+#
+#, fuzzy
+msgid "Toggle aspect ratio..."
+msgstr "Bildformat"
+
 msgid "Toggle dashed flickering line for this service"
 msgstr "Växla den streckade flimrande linjen för denna kanal"
 
@@ -14834,10 +14850,8 @@ msgstr ""
 msgid "Uppercase letters only"
 msgstr "Uppdatera endast kanallistan"
 
-#
-#, fuzzy
 msgid "Uptime: "
-msgstr "Sluttid"
+msgstr ""
 
 msgid "Uruguay"
 msgstr ""
@@ -15064,9 +15078,8 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-#, fuzzy
 msgid "VFD display configuration for Spark 7162"
-msgstr "Konfiguration av filmlista"
+msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
@@ -17531,9 +17544,8 @@ msgstr ""
 msgid "time and date"
 msgstr "Ja och spara"
 
-#, fuzzy
 msgid "time, day and date"
-msgstr "Ja och spara"
+msgstr ""
 
 #
 msgid "toggle time, chapter, audio, subtitle info"

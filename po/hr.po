@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-30 14:02+0430\n"
+"POT-Creation-Date: 2020-05-03 16:04+0430\n"
 "PO-Revision-Date: 2020-03-23 11:15+0100\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -168,9 +168,8 @@ msgstr "%d.%B %Y"
 msgid "%-d. %b"
 msgstr ""
 
-#, fuzzy
 msgid "%-d. %b %Y"
-msgstr "%A %d %B"
+msgstr ""
 
 msgid "%-d.%-m"
 msgstr ""
@@ -289,9 +288,8 @@ msgstr "%A %e %B %Y"
 msgid "%A %-d.%-m"
 msgstr "%A %d %B"
 
-#, fuzzy
 msgid "%A %-d.%-m.%Y"
-msgstr "%A %d %B"
+msgstr ""
 
 #, fuzzy
 msgid "%A %-d.%m"
@@ -578,9 +576,8 @@ msgstr "%a %e %B %Y"
 msgid "%a %-d. %B %Y"
 msgstr "%a %e %B %Y"
 
-#, fuzzy
 msgid "%a %-d. %b"
-msgstr "%a %e %B %Y"
+msgstr ""
 
 #, fuzzy
 msgid "%a %-d. %b %Y"
@@ -590,9 +587,8 @@ msgstr "%a %e %B %Y"
 msgid "%a %-d.%-m"
 msgstr "%a %e/%m"
 
-#, fuzzy
 msgid "%a %-d.%-m.%Y"
-msgstr "%a %e/%m"
+msgstr ""
 
 #, fuzzy
 msgid "%a %-d.%m"
@@ -600,7 +596,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %-d.%m.%Y"
-msgstr "%a %e/%m"
+msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %-d/%-m"
@@ -760,7 +756,7 @@ msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %d. %b"
-msgstr "%A %d %B"
+msgstr "%s %d.%d"
 
 #, fuzzy
 msgid "%a %d. %b %Y"
@@ -768,19 +764,19 @@ msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %d.%-m"
-msgstr "%a %e/%m"
+msgstr "%s %d.%d"
 
 #, fuzzy
 msgid "%a %d.%-m.%Y"
-msgstr "%a %e/%m"
+msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %d.%m"
-msgstr "%a %e/%m"
+msgstr "%s %d.%d"
 
 #, fuzzy
 msgid "%a %d.%m.%Y"
-msgstr "%a %e/%m"
+msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %d/%-m"
@@ -1026,25 +1022,28 @@ msgstr "%d.%B %Y"
 msgid "%d. %b"
 msgstr ""
 
-#, fuzzy
 msgid "%d. %b %Y"
-msgstr "%A %d %B"
+msgstr ""
 
+#, fuzzy
 msgid "%d.%-m"
-msgstr ""
+msgstr "%d.%d"
 
+#, fuzzy
 msgid "%d.%-m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 #, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d GB"
 
+#, fuzzy
 msgid "%d.%m"
-msgstr ""
+msgstr "%d.%d"
 
+#, fuzzy
 msgid "%d.%m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 msgid "%d/%-m"
 msgstr ""
@@ -1161,9 +1160,9 @@ msgstr "%s/%s: %s"
 msgid "%s:%s"
 msgstr "%s:%s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s?"
-msgstr "CH%s"
+msgstr ""
 
 #, python-format
 msgid "'%s' contains %d file(s) and %d sub-directories.\n"
@@ -2106,6 +2105,10 @@ msgstr "Popis podusluga..."
 msgid "Aspect ratio"
 msgstr "Omjer slike"
 
+#, fuzzy, python-format
+msgid "Aspect ratio changed to %s"
+msgstr "Omjer slike"
+
 msgid "Assigned CAIds:"
 msgstr "Dodjeljeni CAIdi:"
 
@@ -2478,7 +2481,7 @@ msgstr "Vrijeme pokretanja"
 
 #, fuzzy
 msgid "Boot time and local time"
-msgstr "Da i spremi"
+msgstr "Pokretanje Android slike"
 
 msgid "Boot to Android image"
 msgstr "Pokretanje Android slike"
@@ -4078,7 +4081,7 @@ msgstr "Duboko stanje čekanja"
 
 #, fuzzy
 msgid "Deepstandby LED brightness"
-msgstr "LED u stanju čekanja"
+msgstr "Duboko stanje čekanja LED-a"
 
 msgid "Default"
 msgstr "Zadano"
@@ -4186,10 +4189,15 @@ msgstr "Izbrišite unos s popisa za reprodukciju"
 msgid "Delete saved playlist"
 msgstr "Izbrišite spremljeni popis pjesama"
 
-msgid "Delete the character to the left of text buffer cursor"
+msgid "Delete the all the text"
+msgstr ""
+
+#, fuzzy
+msgid "Delete the character to the left of text cursor"
 msgstr "Izbrišite znak s lijeve strane pokazivača međuspremnika"
 
-msgid "Delete the character under the text buffer cursor"
+#, fuzzy
+msgid "Delete the character under the text cursor"
 msgstr "Izbrišite znak ispod pokazivača međuspremnika"
 
 msgid "Delete timer"
@@ -5569,7 +5577,6 @@ msgstr "Fleš imagea"
 msgid "Flash Image"
 msgstr "Fleš imagea"
 
-#, fuzzy
 msgid "Flash image"
 msgstr "Fleš imagea"
 
@@ -6285,7 +6292,7 @@ msgstr "Kreiranje datotečnog sustava"
 
 #, fuzzy
 msgid "Image folder: "
-msgstr "Odaberite ciljnu mapu"
+msgstr "Image: "
 
 #, python-format
 msgid ""
@@ -6737,13 +6744,11 @@ msgstr "Konfiguracija popisa videozapisa"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Konfiguracija popisa videozapisa"
+msgstr ""
 
-#, fuzzy
 msgid "LED display control Spark"
-msgstr "Konfiguracija popisa videozapisa"
+msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -7379,29 +7384,37 @@ msgstr "Pomaknite na istok"
 msgid "Move main picture to PiP"
 msgstr "Premjestite PiP na glavnu sliku"
 
-msgid "Move the text buffer cursor left"
-msgstr "Premjestite kursor ulijevo"
-
-msgid "Move the text buffer cursor right"
-msgstr "Pomaknite kursor tekstnog međuspremnika udesno"
-
-msgid "Move the text buffer cursor to the first character"
-msgstr "Pomaknite kursor tekstnog međuspremnika na prvi znak"
-
-msgid "Move the text buffer cursor to the last character"
-msgstr "Pomaknite pokazivač međuspremnika teksta na posljednji znak"
-
-msgid "Move the virtual keyboard cursor down"
+#, fuzzy
+msgid "Move the keyboard cursor down"
 msgstr "Pomaknite kursor virtualne tipkovnice prema dolje"
 
-msgid "Move the virtual keyboard cursor left"
+#, fuzzy
+msgid "Move the keyboard cursor left"
 msgstr "Pomaknite kursor virtualne tipkovnice prema lijevo"
 
-msgid "Move the virtual keyboard cursor right"
+#, fuzzy
+msgid "Move the keyboard cursor right"
 msgstr "Pomaknite kursor virtualne tipkovnice prema desno"
 
-msgid "Move the virtual keyboard cursor up"
+#, fuzzy
+msgid "Move the keyboard cursor up"
 msgstr "Pomaknite kursor virtualne tipkovnice prema gore"
+
+#, fuzzy
+msgid "Move the text cursor left"
+msgstr "Premjestite kursor ulijevo"
+
+#, fuzzy
+msgid "Move the text cursor right"
+msgstr "Pomaknite kursor tekstnog međuspremnika udesno"
+
+#, fuzzy
+msgid "Move the text cursor to the first character"
+msgstr "Pomaknite kursor tekstnog međuspremnika na prvi znak"
+
+#, fuzzy
+msgid "Move the text cursor to the last character"
+msgstr "Pomaknite pokazivač međuspremnika teksta na posljednji znak"
 
 msgid "Move to position X"
 msgstr "Pomaknite na poziciju X"
@@ -8146,20 +8159,19 @@ msgstr "Samo pri pokretanju"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Odaberite 'da' samo ako koristite multiswich koji zahtijeva DiSEqC naredbeni signal. Za sve ostale postavke odaberite 'ne'."
 
-#, fuzzy
 msgid "Open Vision"
-msgstr "Python verzija: "
+msgstr ""
 
 msgid "Open Vision enigma2 image"
 msgstr ""
 
 #, fuzzy
 msgid "Open Vision information"
-msgstr "Python verzija: "
+msgstr "Otvorite odabranu lokaciju"
 
 #, fuzzy
 msgid "Open Vision language: "
-msgstr "Python verzija: "
+msgstr "izvorni jezik"
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8868,7 +8880,7 @@ msgstr "Prikažite popis usluga"
 
 #, fuzzy
 msgid "Powerless"
-msgstr "Napajanje LED-a"
+msgstr "Izbornik napajanja"
 
 #, fuzzy
 msgid "Predefined"
@@ -9160,7 +9172,7 @@ msgstr "Redosljed naredbe"
 
 #, fuzzy
 msgid "RC type: "
-msgstr "Fleš imagea"
+msgstr "tip"
 
 msgid "REC"
 msgstr "REC"
@@ -9320,7 +9332,7 @@ msgstr "idite u duboko stanje čekanja"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Također u stanju čekanja"
+msgstr "Stavite TV u stanje čekanja"
 
 msgid "Red button..."
 msgstr "Crvena tipka..."
@@ -10361,8 +10373,13 @@ msgstr "Odaberite korisnički opseg frekvencije koju želite dodijeliti ovom tju
 msgid "Select the User Band to be assigned to this tuner. This is an index into the table of frequencies the SCR switch or SCR LNB uses to pass the requested transponder to the tuner."
 msgstr "Odaberite korisnički opseg koji će biti dodijeljen ovom tjuneru. Ovo je indeks u tablici frekvencija koje SCR preklopnik ili SCR LNB koristi za prijenos traženog transpondera u tjuner."
 
-msgid "Select the character or action under the virtual keyboard cursor"
+#, fuzzy
+msgid "Select the character or action under the keyboard cursor"
 msgstr "Odaberite znak ili radnju ispod pokazivača virtualne tipkovnice"
+
+#, fuzzy
+msgid "Select the locale from a menu"
+msgstr "Odaberite jezičnu oznaku virtualne tipkovnice iz izbornika"
 
 msgid "Select the manufacturer of your SCR device. If the manufacturer is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
 msgstr "Odaberite proizvođača vašeg SCR uređaja. Ako proizvođač nije na popisu, postavite 'SCR' na 'korisnički definirano' i ručno unesite parametre uređaja prema specifikacijama."
@@ -10397,6 +10414,14 @@ msgstr "Odaberite satelit koji želite konfigurirati. Nakon konfiguriranja tog s
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Odaberite satelit od kojeg vaše antene primaju signal. Ako niste sigurni odaberite 'automatsko' i primatelj će to pokušati odrediti."
 
+#, fuzzy
+msgid "Select the shifted character set"
+msgstr "Odaberite skup znakova pomaknutih virtualnom tipkovnicom"
+
+#, fuzzy
+msgid "Select the shifted character set for the next character only"
+msgstr "Odaberite skup znakova virtualne tipkovnice pomaknut samo za sljedeći znak"
+
 msgid "Select the time zone within the area or region."
 msgstr "Odaberite vremensku zonu unutar područja ili regije."
 
@@ -10414,15 +10439,6 @@ msgstr "Odaberite vrstu LNB/uređaja koji se koristi (uobičajeno 'univerzalan')
 
 msgid "Select the type of Single Cable Reception device you are using."
 msgstr "Odaberite tjuner na koji je priključen signalni kabel SCR uređaja."
-
-msgid "Select the virtual keyboard locale from a menu"
-msgstr "Odaberite jezičnu oznaku virtualne tipkovnice iz izbornika"
-
-msgid "Select the virtual keyboard shifted character set"
-msgstr "Odaberite skup znakova pomaknutih virtualnom tipkovnicom"
-
-msgid "Select the virtual keyboard shifted character set for the next character only"
-msgstr "Odaberite skup znakova virtualne tipkovnice pomaknut samo za sljedeći znak"
 
 msgid "Select update source"
 msgstr "Odaberite izvor ažuriranja"
@@ -10832,7 +10848,7 @@ msgstr "Prikaži alternative"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Prikažite stupce"
+msgstr "Prikažite kriptografske ikone"
 
 msgid "Show InfoBar"
 msgstr "Prikažite info traku"
@@ -12014,6 +12030,9 @@ msgstr "T2MI RAW način"
 msgid "TB"
 msgstr "B"
 
+msgid "TEXT"
+msgstr ""
+
 msgid "TMBD Details"
 msgstr ""
 
@@ -12825,6 +12844,10 @@ msgstr "TV/RADIO način"
 msgid "Toggle a cut mark at the current position"
 msgstr "Dodajte/uklonite oznaku na trenutnoj poziciji"
 
+#, fuzzy
+msgid "Toggle aspect ratio..."
+msgstr "Omjer slike"
+
 msgid "Toggle dashed flickering line for this service"
 msgstr "Prikažite/sakrijte crtu koja treperi za ovu uslugu"
 
@@ -13241,9 +13264,8 @@ msgstr "Velika slova"
 msgid "Uppercase letters only"
 msgstr "Ažurirajte samo popis kanala"
 
-#, fuzzy
 msgid "Uptime: "
-msgstr "Vrijeme završetka"
+msgstr ""
 
 msgid "Uruguay"
 msgstr "Urugvaj"
@@ -13449,9 +13471,8 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-#, fuzzy
 msgid "VFD display configuration for Spark 7162"
-msgstr "Konfiguracija popisa videozapisa"
+msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
@@ -15656,9 +15677,8 @@ msgstr ""
 msgid "time and date"
 msgstr "Da i spremi"
 
-#, fuzzy
 msgid "time, day and date"
-msgstr "Da i spremi"
+msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "prebacivanje vremena, poglavlja, zvuka i informacija o titlovima"

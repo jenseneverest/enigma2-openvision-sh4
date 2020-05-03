@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-30 14:02+0430\n"
+"POT-Creation-Date: 2020-05-03 16:04+0430\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -174,10 +174,8 @@ msgstr "%d.%B %Y"
 msgid "%-d. %b"
 msgstr ""
 
-#
-#, fuzzy
 msgid "%-d. %b %Y"
-msgstr "%d.%B %Y"
+msgstr ""
 
 msgid "%-d.%-m"
 msgstr ""
@@ -282,35 +280,25 @@ msgstr ""
 msgid "%A %-d-%B-%Y"
 msgstr ""
 
-#
-#, fuzzy
 msgid "%A %-d. %B"
-msgstr "%d.%B %Y"
+msgstr ""
 
 #
 #, fuzzy
 msgid "%A %-d. %B %Y"
 msgstr "%d.%B %Y"
 
-#
-#, fuzzy
 msgid "%A %-d.%-m"
-msgstr "%d.%B %Y"
+msgstr ""
 
-#
-#, fuzzy
 msgid "%A %-d.%-m.%Y"
-msgstr "%d.%B %Y"
+msgstr ""
 
-#
-#, fuzzy
 msgid "%A %-d.%m"
-msgstr "%d.%B %Y"
+msgstr ""
 
-#
-#, fuzzy
 msgid "%A %-d.%m.%Y"
-msgstr "%d.%B %Y"
+msgstr ""
 
 msgid "%A %-d/%-m"
 msgstr ""
@@ -410,20 +398,16 @@ msgstr ""
 msgid "%A %d-%B-%Y"
 msgstr ""
 
-#
-#, fuzzy
 msgid "%A %d. %B"
-msgstr "%d.%B %Y"
+msgstr ""
 
 #
 #, fuzzy
 msgid "%A %d. %B %Y"
 msgstr "%d.%B %Y"
 
-#
-#, fuzzy
 msgid "%A %d.%-m"
-msgstr "%d.%B %Y"
+msgstr ""
 
 #
 #, fuzzy
@@ -593,30 +577,22 @@ msgstr "%d.%B %Y"
 msgid "%a %-d. %B %Y"
 msgstr "%d.%B %Y"
 
-#
-#, fuzzy
 msgid "%a %-d. %b"
-msgstr "%d.%B %Y"
+msgstr ""
 
 #
 #, fuzzy
 msgid "%a %-d. %b %Y"
 msgstr "%d.%B %Y"
 
-#
-#, fuzzy
 msgid "%a %-d.%-m"
-msgstr "%d.%B %Y"
+msgstr ""
 
-#
-#, fuzzy
 msgid "%a %-d.%-m.%Y"
-msgstr "%d.%B %Y"
+msgstr ""
 
-#
-#, fuzzy
 msgid "%a %-d.%m"
-msgstr "%d.%B %Y"
+msgstr ""
 
 #
 #, fuzzy
@@ -801,10 +777,8 @@ msgstr "%d.%B %Y"
 msgid "%a %d. %b %Y"
 msgstr "%d.%B %Y"
 
-#
-#, fuzzy
 msgid "%a %d.%-m"
-msgstr "%d.%B %Y"
+msgstr ""
 
 #
 #, fuzzy
@@ -1056,26 +1030,32 @@ msgstr "%d.%B %Y"
 msgid "%d. %b"
 msgstr ""
 
+msgid "%d. %b %Y"
+msgstr ""
+
 #
 #, fuzzy
-msgid "%d. %b %Y"
+msgid "%d.%-m"
 msgstr "%d.%B %Y"
 
-msgid "%d.%-m"
-msgstr ""
-
+#
+#, fuzzy
 msgid "%d.%-m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 #, python-format
 msgid "%d.%03d GB"
 msgstr ""
 
+#
+#, fuzzy
 msgid "%d.%m"
-msgstr ""
+msgstr "%d.%B %Y"
 
+#
+#, fuzzy
 msgid "%d.%m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 msgid "%d/%-m"
 msgstr ""
@@ -2263,6 +2243,11 @@ msgstr "UnderSender lyst..."
 #
 #, fuzzy
 msgid "Aspect ratio"
+msgstr "Aspect ratio"
+
+#
+#, fuzzy, python-format
+msgid "Aspect ratio changed to %s"
 msgstr "Aspect ratio"
 
 msgid "Assigned CAIds:"
@@ -4466,7 +4451,7 @@ msgstr "Sliip stand"
 #
 #, fuzzy
 msgid "Deepstandby LED brightness"
-msgstr "Paraatmode"
+msgstr "Sliip stand"
 
 #
 msgid "Default"
@@ -4592,10 +4577,13 @@ msgstr "ofspiellyst rigele ferwiderje"
 msgid "Delete saved playlist"
 msgstr "ferwiderje opsleine ofspiellyst"
 
-msgid "Delete the character to the left of text buffer cursor"
+msgid "Delete the all the text"
 msgstr ""
 
-msgid "Delete the character under the text buffer cursor"
+msgid "Delete the character to the left of text cursor"
+msgstr ""
+
+msgid "Delete the character under the text cursor"
 msgstr ""
 
 msgid "Delete timer"
@@ -6937,10 +6925,8 @@ msgstr ""
 msgid "Image file system: "
 msgstr "Bestânsysteem neisjen"
 
-#
-#, fuzzy
 msgid "Image folder: "
-msgstr "Kies doel map"
+msgstr ""
 
 #, python-format
 msgid ""
@@ -7468,15 +7454,11 @@ msgstr "Tuner ynstellingen"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
-#
-#, fuzzy
 msgid "LED display control Spark"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -8225,28 +8207,32 @@ msgstr "Draai nei east"
 msgid "Move main picture to PiP"
 msgstr "ferplaats PiP nei haad skerm"
 
-msgid "Move the text buffer cursor left"
+msgid "Move the keyboard cursor down"
 msgstr ""
 
-msgid "Move the text buffer cursor right"
+msgid "Move the keyboard cursor left"
 msgstr ""
 
-msgid "Move the text buffer cursor to the first character"
+msgid "Move the keyboard cursor right"
 msgstr ""
 
-msgid "Move the text buffer cursor to the last character"
+msgid "Move the keyboard cursor up"
 msgstr ""
 
-msgid "Move the virtual keyboard cursor down"
+#
+#, fuzzy
+msgid "Move the text cursor left"
+msgstr "foarút nei it folgende haadstik"
+
+#
+#, fuzzy
+msgid "Move the text cursor right"
+msgstr "Nei it folgende menu item gean"
+
+msgid "Move the text cursor to the first character"
 msgstr ""
 
-msgid "Move the virtual keyboard cursor left"
-msgstr ""
-
-msgid "Move the virtual keyboard cursor right"
-msgstr ""
-
-msgid "Move the virtual keyboard cursor up"
+msgid "Move the text cursor to the last character"
 msgstr ""
 
 msgid "Move to position X"
@@ -9105,23 +9091,17 @@ msgstr ""
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
-#
-#, fuzzy
 msgid "Open Vision"
-msgstr "Nije ferzje:"
+msgstr ""
 
 msgid "Open Vision enigma2 image"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Open Vision information"
-msgstr "Nije ferzje:"
+msgstr ""
 
-#
-#, fuzzy
 msgid "Open Vision language: "
-msgstr "Nije ferzje:"
+msgstr ""
 
 msgid "Open Vision module: "
 msgstr ""
@@ -9174,10 +9154,8 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "PiP Ynstellingen"
 
-#
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "gean nei djip paraatstand"
+msgstr ""
 
 msgid "Operating LED colour status in standby mode"
 msgstr ""
@@ -10287,7 +10265,7 @@ msgstr "Kommando folgoarde"
 #
 #, fuzzy
 msgid "RC type: "
-msgstr "Flash"
+msgstr "Test moadus"
 
 msgid "REC"
 msgstr ""
@@ -10472,10 +10450,8 @@ msgstr ""
 msgid "Red LED on in deep standby"
 msgstr "gean nei djip paraatstand"
 
-#
-#, fuzzy
 msgid "Red LED on in standby"
-msgstr "gean nei paraatstand"
+msgstr ""
 
 msgid "Red button..."
 msgstr ""
@@ -11700,8 +11676,13 @@ msgstr ""
 msgid "Select the User Band to be assigned to this tuner. This is an index into the table of frequencies the SCR switch or SCR LNB uses to pass the requested transponder to the tuner."
 msgstr ""
 
-msgid "Select the character or action under the virtual keyboard cursor"
+msgid "Select the character or action under the keyboard cursor"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Select the locale from a menu"
+msgstr "kies it film paad"
 
 msgid "Select the manufacturer of your SCR device. If the manufacturer is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
 msgstr ""
@@ -11738,6 +11719,14 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Select the shifted character set"
+msgstr "kies it film paad"
+
+msgid "Select the shifted character set for the next character only"
+msgstr ""
+
 msgid "Select the time zone within the area or region."
 msgstr ""
 
@@ -11754,15 +11743,6 @@ msgid "Select the type of LNB/device being used (normally 'Universal'). If your 
 msgstr ""
 
 msgid "Select the type of Single Cable Reception device you are using."
-msgstr ""
-
-msgid "Select the virtual keyboard locale from a menu"
-msgstr ""
-
-msgid "Select the virtual keyboard shifted character set"
-msgstr ""
-
-msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr ""
 
 #
@@ -12076,8 +12056,10 @@ msgstr ""
 msgid "Set the default sorting method."
 msgstr ""
 
+#
+#, fuzzy
 msgid "Set the global sort method"
-msgstr ""
+msgstr "kies it film paad"
 
 msgid "Set the password of the OpenWebif from your fallback tuner"
 msgstr ""
@@ -13585,6 +13567,9 @@ msgstr ""
 msgid "TB"
 msgstr "B"
 
+msgid "TEXT"
+msgstr ""
+
 msgid "TMBD Details"
 msgstr ""
 
@@ -14454,6 +14439,11 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "merker oan/út op dizze posysje"
 
+#
+#, fuzzy
+msgid "Toggle aspect ratio..."
+msgstr "Aspect ratio"
+
 msgid "Toggle dashed flickering line for this service"
 msgstr ""
 
@@ -14926,10 +14916,8 @@ msgstr ""
 msgid "Uppercase letters only"
 msgstr "set folgende kanaal in skiednis"
 
-#
-#, fuzzy
 msgid "Uptime: "
-msgstr "Eintiid"
+msgstr ""
 
 msgid "Uruguay"
 msgstr ""
@@ -15170,10 +15158,8 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-#
-#, fuzzy
 msgid "VFD display configuration for Spark 7162"
-msgstr "Tuner ynstellingen"
+msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
@@ -17568,10 +17554,8 @@ msgstr ""
 msgid "time and date"
 msgstr ""
 
-#
-#, fuzzy
 msgid "time, day and date"
-msgstr "sortearje op datum"
+msgstr ""
 
 #
 msgid "toggle time, chapter, audio, subtitle info"

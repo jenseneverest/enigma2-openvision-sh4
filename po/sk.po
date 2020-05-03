@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-30 14:02+0430\n"
+"POT-Creation-Date: 2020-05-03 16:04+0430\n"
 "PO-Revision-Date: 2020-02-10 12:49+0100\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -169,9 +169,8 @@ msgstr "%d.%B %Y"
 msgid "%-d. %b"
 msgstr ""
 
-#, fuzzy
 msgid "%-d. %b %Y"
-msgstr "%A %d %B"
+msgstr ""
 
 msgid "%-d.%-m"
 msgstr ""
@@ -290,9 +289,8 @@ msgstr "%A %e %B %Y"
 msgid "%A %-d.%-m"
 msgstr "%A %d %B"
 
-#, fuzzy
 msgid "%A %-d.%-m.%Y"
-msgstr "%A %d %B"
+msgstr ""
 
 #, fuzzy
 msgid "%A %-d.%m"
@@ -579,9 +577,8 @@ msgstr "%a %e %B %Y"
 msgid "%a %-d. %B %Y"
 msgstr "%a %e %B %Y"
 
-#, fuzzy
 msgid "%a %-d. %b"
-msgstr "%a %e %B %Y"
+msgstr ""
 
 #, fuzzy
 msgid "%a %-d. %b %Y"
@@ -591,9 +588,8 @@ msgstr "%a %e %B %Y"
 msgid "%a %-d.%-m"
 msgstr "%a %e/%m"
 
-#, fuzzy
 msgid "%a %-d.%-m.%Y"
-msgstr "%a %e/%m"
+msgstr ""
 
 #, fuzzy
 msgid "%a %-d.%m"
@@ -601,7 +597,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %-d.%m.%Y"
-msgstr "%a %e/%m"
+msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %-d/%-m"
@@ -761,7 +757,7 @@ msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %d. %b"
-msgstr "%A %d %B"
+msgstr "%s %d.%d"
 
 #, fuzzy
 msgid "%a %d. %b %Y"
@@ -769,19 +765,19 @@ msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %d.%-m"
-msgstr "%a %e/%m"
+msgstr "%s %d.%d"
 
 #, fuzzy
 msgid "%a %d.%-m.%Y"
-msgstr "%a %e/%m"
+msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %d.%m"
-msgstr "%a %e/%m"
+msgstr "%s %d.%d"
 
 #, fuzzy
 msgid "%a %d.%m.%Y"
-msgstr "%a %e/%m"
+msgstr "%a %e %B %Y"
 
 #, fuzzy
 msgid "%a %d/%-m"
@@ -1027,25 +1023,28 @@ msgstr "%d.%B %Y"
 msgid "%d. %b"
 msgstr ""
 
-#, fuzzy
 msgid "%d. %b %Y"
-msgstr "%A %d %B"
+msgstr ""
 
+#, fuzzy
 msgid "%d.%-m"
-msgstr ""
+msgstr "%d.%d"
 
+#, fuzzy
 msgid "%d.%-m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 #, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d GB"
 
+#, fuzzy
 msgid "%d.%m"
-msgstr ""
+msgstr "%d.%d"
 
+#, fuzzy
 msgid "%d.%m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 msgid "%d/%-m"
 msgstr ""
@@ -1162,9 +1161,9 @@ msgstr "%s/%s: %s"
 msgid "%s:%s"
 msgstr "%s:%s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s?"
-msgstr "CH%s"
+msgstr ""
 
 #, python-format
 msgid "'%s' contains %d file(s) and %d sub-directories.\n"
@@ -2106,6 +2105,10 @@ msgstr "Zoznam podkanálov..."
 msgid "Aspect ratio"
 msgstr "Pomer strán"
 
+#, fuzzy, python-format
+msgid "Aspect ratio changed to %s"
+msgstr "Pomer strán"
+
 msgid "Assigned CAIds:"
 msgstr "Priradené CAIdy:"
 
@@ -2478,7 +2481,7 @@ msgstr "Triediť podľa času"
 
 #, fuzzy
 msgid "Boot time and local time"
-msgstr "Áno a uložiť"
+msgstr "Štart do Android image"
 
 msgid "Boot to Android image"
 msgstr "Štart do Android image"
@@ -4079,7 +4082,7 @@ msgstr "Vypnúť prijímač (hlboký spánok)"
 
 #, fuzzy
 msgid "Deepstandby LED brightness"
-msgstr "LED v pohotovostnom režime"
+msgstr "LED pri vypnutom prijímači"
 
 msgid "Default"
 msgstr "Predvolené"
@@ -4187,10 +4190,15 @@ msgstr "Zmazať položku v zozname prehrávok"
 msgid "Delete saved playlist"
 msgstr "Zmazať uložený zoznam prehrávok"
 
-msgid "Delete the character to the left of text buffer cursor"
+msgid "Delete the all the text"
+msgstr ""
+
+#, fuzzy
+msgid "Delete the character to the left of text cursor"
 msgstr "Vymazať znak vľavo od kurzora"
 
-msgid "Delete the character under the text buffer cursor"
+#, fuzzy
+msgid "Delete the character under the text cursor"
 msgstr "Vymazať znak pod kurzorom"
 
 msgid "Delete timer"
@@ -5573,9 +5581,8 @@ msgstr "Nahrať image"
 msgid "Flash Image"
 msgstr "Nahrať image"
 
-#, fuzzy
 msgid "Flash image"
-msgstr "Nahrať image"
+msgstr "Nahranie softvéru"
 
 #, fuzzy
 msgid "Flash type: "
@@ -6290,7 +6297,7 @@ msgstr "Vytváram systém súborov"
 
 #, fuzzy
 msgid "Image folder: "
-msgstr "Zvoliť cieľový adresár"
+msgstr "Image: "
 
 #, python-format
 msgid ""
@@ -6741,13 +6748,11 @@ msgstr "Konfigurácia zoznamu filmov"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Konfigurácia zoznamu filmov"
+msgstr ""
 
-#, fuzzy
 msgid "LED display control Spark"
-msgstr "Konfigurácia zoznamu filmov"
+msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -7383,29 +7388,37 @@ msgstr "Pootočiť východne"
 msgid "Move main picture to PiP"
 msgstr "Premiestniť PiP do hlavného obrazu"
 
-msgid "Move the text buffer cursor left"
-msgstr "Presunúť textový kurzor vľavo"
-
-msgid "Move the text buffer cursor right"
-msgstr "Presunúť textový kurzor vpravo"
-
-msgid "Move the text buffer cursor to the first character"
-msgstr "Presunúť textový kurzor na prvý znak"
-
-msgid "Move the text buffer cursor to the last character"
-msgstr "Presunúť textový kurzor na posledný znak"
-
-msgid "Move the virtual keyboard cursor down"
+#, fuzzy
+msgid "Move the keyboard cursor down"
 msgstr "Presunúť kurzor virtuálnej klávesnice nadol"
 
-msgid "Move the virtual keyboard cursor left"
+#, fuzzy
+msgid "Move the keyboard cursor left"
 msgstr "Presunúť kurzor virtuálnej klávesnice vľavo"
 
-msgid "Move the virtual keyboard cursor right"
+#, fuzzy
+msgid "Move the keyboard cursor right"
 msgstr "Presunúť kurzor virtuálnej klávesnice vpravo"
 
-msgid "Move the virtual keyboard cursor up"
+#, fuzzy
+msgid "Move the keyboard cursor up"
 msgstr "Presunúť kurzor virtuálnej klávesnice nahor"
+
+#, fuzzy
+msgid "Move the text cursor left"
+msgstr "Presunúť textový kurzor vľavo"
+
+#, fuzzy
+msgid "Move the text cursor right"
+msgstr "Presunúť textový kurzor vpravo"
+
+#, fuzzy
+msgid "Move the text cursor to the first character"
+msgstr "Presunúť textový kurzor na prvý znak"
+
+#, fuzzy
+msgid "Move the text cursor to the last character"
+msgstr "Presunúť textový kurzor na posledný znak"
 
 msgid "Move to position X"
 msgstr "Pootočiť na pozíciu X"
@@ -8151,20 +8164,19 @@ msgstr "Iba pri spustení"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr "Vyberte 'áno' iba v prípade, ak používate multiprepínač ktorý vyžaduje signálny príkaz pre DiSEqC Port-A. Pre všetky ostatné nastavenia vyberte 'nie'."
 
-#, fuzzy
 msgid "Open Vision"
-msgstr "Verzia Python: "
+msgstr ""
 
 msgid "Open Vision enigma2 image"
 msgstr ""
 
 #, fuzzy
 msgid "Open Vision information"
-msgstr "Verzia Python: "
+msgstr "Otvoriť voľbu umiestnenia"
 
 #, fuzzy
 msgid "Open Vision language: "
-msgstr "Verzia Python: "
+msgstr "pôvodný jazyk"
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8209,9 +8221,8 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Otvoriť nastavenia tunera "
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "prejsť do vypnutia"
+msgstr ""
 
 msgid "Operating LED colour status in standby mode"
 msgstr ""
@@ -8871,7 +8882,7 @@ msgstr "Zobraziť zoznam služieb"
 
 #, fuzzy
 msgid "Powerless"
-msgstr "LED napájania"
+msgstr "Menu napájania"
 
 #, fuzzy
 msgid "Predefined"
@@ -9163,7 +9174,7 @@ msgstr "Poradie príkazov"
 
 #, fuzzy
 msgid "RC type: "
-msgstr "Nahrať image"
+msgstr "typ"
 
 msgid "REC"
 msgstr "REC"
@@ -9323,7 +9334,7 @@ msgstr "prejsť do vypnutia"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Tiež v pohotovostnom režime"
+msgstr "Prepnúť TV do pohotovostného režimu"
 
 msgid "Red button..."
 msgstr "Červené tlačidlo..."
@@ -10362,8 +10373,13 @@ msgstr "Vyberte frekvenciu užívateľského pásma, ktorý bude priradený k to
 msgid "Select the User Band to be assigned to this tuner. This is an index into the table of frequencies the SCR switch or SCR LNB uses to pass the requested transponder to the tuner."
 msgstr "Vyberte užívateľské pásmo, ktoré bude priradené k tomuto tuneru. Toto je index do tabuľky frekvencií, ktorý používa SCR prepínač alebo SCR LNB na prechod požadovaného transpondéra to tuneru."
 
-msgid "Select the character or action under the virtual keyboard cursor"
+#, fuzzy
+msgid "Select the character or action under the keyboard cursor"
 msgstr "Vyberte znak alebo akciu pod kurzorom virtuálnej klávesnice"
+
+#, fuzzy
+msgid "Select the locale from a menu"
+msgstr "Vyberte jazyk virtuálnej klávesnice z menu"
 
 msgid "Select the manufacturer of your SCR device. If the manufacturer is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
 msgstr "Vyberte výrobcu vášho SCR zariadenia. Ak nie je výrobca v zozname, nastavte 'SCR' na 'Užívateľsky definované' a manuálne vložte parametre zariadenia podľa technickej špecifikácie."
@@ -10399,6 +10415,14 @@ msgid "Select the satellite your dish receives from. If you are unsure select 'a
 msgstr "Vyberte satelit, ktorý sa prijíma z vašej paraboly. Ak si nie ste istý, vyberte voľbu 'automaticky', prijímač sa to pokúsi zistiť za vás."
 
 #, fuzzy
+msgid "Select the shifted character set"
+msgstr "Vyberte znakovú sadu virtuálnej klávesnice po stlačení klávesy Shift"
+
+#, fuzzy
+msgid "Select the shifted character set for the next character only"
+msgstr "Vyberte znakovú sadu virtuálnej klávesnice po stlačení klávesy Shift iba pre ďalší znak"
+
+#, fuzzy
 msgid "Select the time zone within the area or region."
 msgstr "Voľba horizontálneho rozlíšenia:"
 
@@ -10416,15 +10440,6 @@ msgstr "Vyberte typ LNB/zariadenia ktoré sa používa (štandardne to je 'Unive
 
 msgid "Select the type of Single Cable Reception device you are using."
 msgstr "Vyberte typ SCR (Single Cable Reception) zariadenia, ktoré používate."
-
-msgid "Select the virtual keyboard locale from a menu"
-msgstr "Vyberte jazyk virtuálnej klávesnice z menu"
-
-msgid "Select the virtual keyboard shifted character set"
-msgstr "Vyberte znakovú sadu virtuálnej klávesnice po stlačení klávesy Shift"
-
-msgid "Select the virtual keyboard shifted character set for the next character only"
-msgstr "Vyberte znakovú sadu virtuálnej klávesnice po stlačení klávesy Shift iba pre ďalší znak"
 
 msgid "Select update source"
 msgstr "Zvoľte zdroj aktualizácie"
@@ -10835,7 +10850,7 @@ msgstr "Zobraziť alternatívy"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Zobraziť stĺpce"
+msgstr "Zobrazovať ikony kódovania"
 
 msgid "Show InfoBar"
 msgstr "Zobraziť informačný panel"
@@ -12018,6 +12033,9 @@ msgstr "Režim T2MI RAW"
 msgid "TB"
 msgstr "B"
 
+msgid "TEXT"
+msgstr ""
+
 msgid "TMBD Details"
 msgstr ""
 
@@ -12834,6 +12852,10 @@ msgstr "Prepnúť TV/RÁDIO mód"
 msgid "Toggle a cut mark at the current position"
 msgstr "Prepnúť strihovú značku na tejto pozícii"
 
+#, fuzzy
+msgid "Toggle aspect ratio..."
+msgstr "Pomer strán"
+
 msgid "Toggle dashed flickering line for this service"
 msgstr "Prepnúť čiarkovaný blikajúci riadok pre túto stanicu"
 
@@ -13250,9 +13272,8 @@ msgstr "Veľké písmená"
 msgid "Uppercase letters only"
 msgstr "Aktualizovať iba zoznam kanálov"
 
-#, fuzzy
 msgid "Uptime: "
-msgstr "Čas ukončenia"
+msgstr ""
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -13458,9 +13479,8 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-#, fuzzy
 msgid "VFD display configuration for Spark 7162"
-msgstr "Konfigurácia zoznamu filmov"
+msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
@@ -15666,9 +15686,8 @@ msgstr ""
 msgid "time and date"
 msgstr "Áno a uložiť"
 
-#, fuzzy
 msgid "time, day and date"
-msgstr "Áno a uložiť"
+msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "prepnúť informácie medzi časom, kapitolou, zvukovou stopou a titulkami"

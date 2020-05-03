@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-30 14:02+0430\n"
+"POT-Creation-Date: 2020-05-03 16:04+0430\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -171,9 +171,8 @@ msgstr "%d.%B %Y"
 msgid "%-d. %b"
 msgstr ""
 
-#, fuzzy
 msgid "%-d. %b %Y"
-msgstr "%A %d %B"
+msgstr ""
 
 msgid "%-d.%-m"
 msgstr ""
@@ -292,9 +291,8 @@ msgstr "%A %e %B %Y"
 msgid "%A %-d.%-m"
 msgstr "%A %d %B"
 
-#, fuzzy
 msgid "%A %-d.%-m.%Y"
-msgstr "%A %d %B"
+msgstr ""
 
 #, fuzzy
 msgid "%A %-d.%m"
@@ -581,9 +579,8 @@ msgstr "%A %e %B %Y"
 msgid "%a %-d. %B %Y"
 msgstr "%A %e %B %Y"
 
-#, fuzzy
 msgid "%a %-d. %b"
-msgstr "%A %e %B %Y"
+msgstr ""
 
 #, fuzzy
 msgid "%a %-d. %b %Y"
@@ -593,9 +590,8 @@ msgstr "%A %e %B %Y"
 msgid "%a %-d.%-m"
 msgstr "%a %e/%m"
 
-#, fuzzy
 msgid "%a %-d.%-m.%Y"
-msgstr "%a %e/%m"
+msgstr ""
 
 #, fuzzy
 msgid "%a %-d.%m"
@@ -603,7 +599,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %-d.%m.%Y"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %-d/%-m"
@@ -763,7 +759,7 @@ msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d. %b"
-msgstr "%A %d %B"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d. %b %Y"
@@ -775,7 +771,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %d.%-m.%Y"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d.%m"
@@ -783,7 +779,7 @@ msgstr "%a %e/%m"
 
 #, fuzzy
 msgid "%a %d.%m.%Y"
-msgstr "%a %e/%m"
+msgstr "%A %e %B %Y"
 
 #, fuzzy
 msgid "%a %d/%-m"
@@ -1011,25 +1007,28 @@ msgstr "%d.%B %Y"
 msgid "%d. %b"
 msgstr ""
 
-#, fuzzy
 msgid "%d. %b %Y"
-msgstr "%A %d %B"
+msgstr ""
 
+#, fuzzy
 msgid "%d.%-m"
-msgstr ""
+msgstr "%d.%B %Y"
 
+#, fuzzy
 msgid "%d.%-m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 #, python-format
 msgid "%d.%03d GB"
 msgstr ""
 
+#, fuzzy
 msgid "%d.%m"
-msgstr ""
+msgstr "%d.%B %Y"
 
+#, fuzzy
 msgid "%d.%m.%Y"
-msgstr ""
+msgstr "%d.%B %Y"
 
 msgid "%d/%-m"
 msgstr ""
@@ -1138,9 +1137,9 @@ msgstr "%s/%s: %s"
 msgid "%s:%s"
 msgstr "%s:%s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s?"
-msgstr "Kanal%s"
+msgstr ""
 
 #, python-format
 msgid "'%s' contains %d file(s) and %d sub-directories.\n"
@@ -2099,6 +2098,10 @@ msgstr "Alt servis listesi"
 msgid "Aspect ratio"
 msgstr "En-Boy oranı"
 
+#, fuzzy, python-format
+msgid "Aspect ratio changed to %s"
+msgstr "En-Boy oranı"
+
 msgid "Assigned CAIds:"
 msgstr "Atanan CalDS:"
 
@@ -2477,9 +2480,8 @@ msgstr ""
 msgid "Boot time"
 msgstr "Sıralama zamanı"
 
-#, fuzzy
 msgid "Boot time and local time"
-msgstr "Evet, Kaydet"
+msgstr ""
 
 msgid "Boot to Android image"
 msgstr ""
@@ -4092,7 +4094,7 @@ msgstr "Derin Uyku"
 
 #, fuzzy
 msgid "Deepstandby LED brightness"
-msgstr "Bekleme LED'i"
+msgstr "Derin Uyku"
 
 msgid "Default"
 msgstr "Varsayılan"
@@ -4202,10 +4204,13 @@ msgstr "Çalma listesi girdisini silin"
 msgid "Delete saved playlist"
 msgstr "Kayıtlı çalma listesini silin"
 
-msgid "Delete the character to the left of text buffer cursor"
+msgid "Delete the all the text"
 msgstr ""
 
-msgid "Delete the character under the text buffer cursor"
+msgid "Delete the character to the left of text cursor"
+msgstr ""
+
+msgid "Delete the character under the text cursor"
 msgstr ""
 
 msgid "Delete timer"
@@ -6323,7 +6328,7 @@ msgstr "Dosya sistemi oluşturuluyor"
 
 #, fuzzy
 msgid "Image folder: "
-msgstr "Hedef klasörü seçin"
+msgstr "Imaj: "
 
 #, python-format
 msgid ""
@@ -6776,13 +6781,11 @@ msgstr "Film Listesi yapılandırması"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Film Listesi yapılandırması"
+msgstr ""
 
-#, fuzzy
 msgid "LED display control Spark"
-msgstr "Film Listesi yapılandırması"
+msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -7425,28 +7428,30 @@ msgstr "Doğuya taşı"
 msgid "Move main picture to PiP"
 msgstr "Resim içinde resimi (RiR) ana ekrana taşı"
 
-msgid "Move the text buffer cursor left"
+msgid "Move the keyboard cursor down"
 msgstr ""
 
-msgid "Move the text buffer cursor right"
+msgid "Move the keyboard cursor left"
 msgstr ""
 
-msgid "Move the text buffer cursor to the first character"
+msgid "Move the keyboard cursor right"
 msgstr ""
 
-msgid "Move the text buffer cursor to the last character"
+msgid "Move the keyboard cursor up"
 msgstr ""
 
-msgid "Move the virtual keyboard cursor down"
+#, fuzzy
+msgid "Move the text cursor left"
+msgstr "Sonraki açıyı seç"
+
+#, fuzzy
+msgid "Move the text cursor right"
+msgstr "Bir alta taşı"
+
+msgid "Move the text cursor to the first character"
 msgstr ""
 
-msgid "Move the virtual keyboard cursor left"
-msgstr ""
-
-msgid "Move the virtual keyboard cursor right"
-msgstr ""
-
-msgid "Move the virtual keyboard cursor up"
+msgid "Move the text cursor to the last character"
 msgstr ""
 
 msgid "Move to position X"
@@ -8207,20 +8212,19 @@ msgstr "Yalnız başlangıçta"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision"
-msgstr "Python versiyonu: "
+msgstr ""
 
 msgid "Open Vision enigma2 image"
 msgstr ""
 
 #, fuzzy
 msgid "Open Vision information"
-msgstr "Python versiyonu: "
+msgstr "Seçili konumu aç"
 
 #, fuzzy
 msgid "Open Vision language: "
-msgstr "Python versiyonu: "
+msgstr "Orjinal dil"
 
 msgid "Open Vision module: "
 msgstr ""
@@ -8265,9 +8269,8 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Tuner Kurulumu"
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "Derin uyku"
+msgstr ""
 
 msgid "Operating LED colour status in standby mode"
 msgstr ""
@@ -9232,7 +9235,7 @@ msgstr "Komut sırası"
 
 #, fuzzy
 msgid "RC type: "
-msgstr "Flaş"
+msgstr "Liste tipi"
 
 msgid "REC"
 msgstr ""
@@ -9393,7 +9396,7 @@ msgstr "Derin uyku"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Bekleme Modunda"
+msgstr "TV yi bekleme konumuna al"
 
 msgid "Red button..."
 msgstr "Kırmızı tuş..."
@@ -10448,8 +10451,12 @@ msgstr ""
 msgid "Select the User Band to be assigned to this tuner. This is an index into the table of frequencies the SCR switch or SCR LNB uses to pass the requested transponder to the tuner."
 msgstr ""
 
-msgid "Select the character or action under the virtual keyboard cursor"
+msgid "Select the character or action under the keyboard cursor"
 msgstr ""
+
+#, fuzzy
+msgid "Select the locale from a menu"
+msgstr "Film yolunu seçin"
 
 msgid "Select the manufacturer of your SCR device. If the manufacturer is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
 msgstr ""
@@ -10485,6 +10492,13 @@ msgid "Select the satellite your dish receives from. If you are unsure select 'a
 msgstr ""
 
 #, fuzzy
+msgid "Select the shifted character set"
+msgstr "Film yolunu seçin"
+
+msgid "Select the shifted character set for the next character only"
+msgstr ""
+
+#, fuzzy
 msgid "Select the time zone within the area or region."
 msgstr "Seçileni sıralama yöntemi:"
 
@@ -10501,15 +10515,6 @@ msgid "Select the type of LNB/device being used (normally 'Universal'). If your 
 msgstr ""
 
 msgid "Select the type of Single Cable Reception device you are using."
-msgstr ""
-
-msgid "Select the virtual keyboard locale from a menu"
-msgstr ""
-
-msgid "Select the virtual keyboard shifted character set"
-msgstr ""
-
-msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr ""
 
 msgid "Select update source"
@@ -10927,7 +10932,7 @@ msgstr "Alternatifleri göster"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Sütunları göster"
+msgstr "Şifreleme simgelerini göster"
 
 msgid "Show InfoBar"
 msgstr "Bilgi Çubuğunu Göster"
@@ -12124,6 +12129,9 @@ msgstr ""
 msgid "TB"
 msgstr "B"
 
+msgid "TEXT"
+msgstr ""
+
 msgid "TMBD Details"
 msgstr ""
 
@@ -12939,6 +12947,10 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "Mevcut konuma Kesme işareti koyun"
 
+#, fuzzy
+msgid "Toggle aspect ratio..."
+msgstr "En-Boy oranı"
+
 msgid "Toggle dashed flickering line for this service"
 msgstr ""
 
@@ -13369,9 +13381,8 @@ msgstr ""
 msgid "Uppercase letters only"
 msgstr "Sadece kanal listesini güncelle"
 
-#, fuzzy
 msgid "Uptime: "
-msgstr "Bitiş zamanı"
+msgstr ""
 
 msgid "Uruguay"
 msgstr ""
@@ -13578,9 +13589,8 @@ msgstr ""
 msgid "VFD display configuration for Fortis HS9510"
 msgstr ""
 
-#, fuzzy
 msgid "VFD display configuration for Spark 7162"
-msgstr "Film Listesi yapılandırması"
+msgstr ""
 
 msgid "VFD icons for Fortis FS9000/9200"
 msgstr ""
@@ -15789,9 +15799,8 @@ msgstr ""
 msgid "time and date"
 msgstr "Evet, Kaydet"
 
-#, fuzzy
 msgid "time, day and date"
-msgstr "Evet, Kaydet"
+msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "Geçiş süresi, Bölüm, Ses, Altyazı bilgileri"

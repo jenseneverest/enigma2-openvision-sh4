@@ -173,7 +173,6 @@ class SecConfigure:
 		for slot in nim_slots:
 			x = slot.slot
 			nim = slot.config
-			hw = getBoxType()
 			if slot.isCompatible("DVB-S"):
 				print("[NimManager] slot: " + str(x) + " configmode: " + str(nim.configMode.value))
 				if nim.configMode.value in ( "loopthrough", "satposdepends", "nothing" ):
@@ -1188,8 +1187,6 @@ def InitSecParams():
 # the configElement should be only visible when diseqc 1.2 is disabled
 
 def InitNimManager(nimmgr, update_slots = []):
-	hw = getBoxType()
-
 	if not hasattr(config, "Nims"):
 		InitSecParams()
 		config.Nims = ConfigSubList()

@@ -10,8 +10,8 @@ from Components.config import *
 from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
-import gettext
-#Version 140128.3
+
+
 try:
 	DisplayType = evfd.getInstance().getVfdType()
 	if DisplayType != 10:

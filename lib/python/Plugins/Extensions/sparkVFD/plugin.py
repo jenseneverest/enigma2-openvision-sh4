@@ -3,7 +3,7 @@
 from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
-from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd, getBoxType
+from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd
 from time import localtime, strftime, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
@@ -23,10 +23,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if getBoxType() == 'spark':
-		DisplayType = 4
-	else:
-		DisplayType = None
+	DisplayType = 4
 
 config.plugins.vfdicon = ConfigSubsection()
 config.plugins.vfdicon.displayshow = ConfigSelection(default = "channel_namenumber",

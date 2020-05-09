@@ -3,7 +3,7 @@
 from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
-from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd, eDVBVolumecontrol, getBoxType
+from enigma import iPlayableService, iServiceInformation, iRecordableService, eTimer, evfd, eDVBVolumecontrol
 from time import localtime, strftime, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
@@ -12,21 +12,19 @@ from Components.config import *
 from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
+import os
 
 
 try:
 	DisplayType = evfd.getInstance().getVfdType()
-	if DisplayType != 5:
+	if DisplayType != 19:
 		DisplayType = None
 except:
 	DisplayType = None
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if getBoxType() == "atevio7500":
-		DisplayType = 5
-	else:
-		DisplayType = None
+	DisplayType = 19
 
 config.plugins.vfdicon = ConfigSubsection()
 config.plugins.vfdicon.displayshow = ConfigSelection(default = "channel",
@@ -50,9 +48,11 @@ config.plugins.vfdicon.stbshow = ConfigSelection(default = "time_date",
 		("time_date", _("time and date")),
 		("day_date", _("day and date"))
 		])
-config.plugins.vfdicon.contrast = ConfigSlider(default=6, limits=(0, 7))
-config.plugins.vfdicon.stbcontrast = ConfigSlider(default=0, limits=(0, 7))
-config.plugins.vfdicon.uppercase = ConfigYesNo(default=False)
+config.plugins.vfdicon.contrast = ConfigSlider(default = 6, limits = (0, 7))
+config.plugins.vfdicon.stbcontrast = ConfigSlider(default = 0, limits = (0, 7))
+config.plugins.vfdicon.ledbright = ConfigSlider(default = 6, limits = (0, 7))
+config.plugins.vfdicon.stbledbright = ConfigSlider(default = 4, limits = (0, 7))
+config.plugins.vfdicon.uppercase = ConfigYesNo(default = False)
 config.plugins.vfdicon.textscroll = ConfigSelection(default = "1",
 	choices = [
 		("0", _("no")),
@@ -70,14 +70,36 @@ config.plugins.vfdicon.showicons = ConfigSelection(default = "all",
 		("partial", _("partial")),
 		("all", _("all"))
 		])
-config.plugins.vfdicon.standbyredledon = ConfigSlider(default=7, limits=(0, 31))
-config.plugins.vfdicon.ledbright = ConfigSlider(default=15, limits=(0, 31))
-config.plugins.vfdicon.crossbright = ConfigSlider(default=31, limits=(0, 31))
-config.plugins.vfdicon.extMenu = ConfigYesNo(default=True)
+config.plugins.vfdicon.powerledcolour = ConfigSelection(default = "2",
+	choices = [
+		("0", _("off")),
+		("1", _("red")),
+		("2", _("green")),
+		("3", _("orange"))
+		])
+config.plugins.vfdicon.standbyledcolour = ConfigSelection(default = "1",
+	choices = [
+		("0", _("off")),
+		("1", _("red")),
+		("2", _("green")),
+		("3", _("orange"))
+		])
+config.plugins.vfdicon.vfd_enable = ConfigYesNo(default = False)
+config.plugins.vfdicon.extMenu = ConfigYesNo(default = True)
 
 class ConfigVFDDisplay(Screen, ConfigListScreen):
 	def __init__(self, session):
 		self.icons_showicons = None
+		try:
+			self.adb_mod = open("/proc/stb/info/adb_variant").read().strip()
+		except:
+			pass
+
+#		print('[pace7241VFD] ADB variant:', self.adb_mod)
+#		if self.adb_mod == 'bsla' or self.adb_mod == 'bzzb':
+			self.disp = 'vfd'
+#		else:
+#			self.disp = 'led'
 		Screen.__init__(self, session)
 		self.skinName = ["Setup"]
 		self["key_red"] = StaticText(_("Cancel"))
@@ -100,65 +122,79 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 
 	def createSetup(self):
 		self.cfglist = []
-		self.cfglist.append(getConfigListEntry(_("Show on VFD display"), config.plugins.vfdicon.displayshow))
-		self.cfglist.append(getConfigListEntry(_("Show on VFD display in standby"), config.plugins.vfdicon.stbshow))
-		if DisplayType == 5:
-			self.cfglist.append(getConfigListEntry(_("VFD brightness"), config.plugins.vfdicon.contrast))
+		self.cfglist.append(getConfigListEntry(_("Show on display"), config.plugins.vfdicon.displayshow))
+		self.cfglist.append(getConfigListEntry(_("Show on display in standby"), config.plugins.vfdicon.stbshow))
+		if DisplayType == 18:
+			self.cfglist.append(getConfigListEntry(_("Display brightness"), config.plugins.vfdicon.contrast))
+			if self.disp == 'vfd':
+				self.cfglist.append(getConfigListEntry(_("LED brightness"), config.plugins.vfdicon.ledbright))
 			self.cfglist.append(getConfigListEntry(_("Standby brightness"), config.plugins.vfdicon.stbcontrast))
+			if self.disp == 'vfd':
+				self.cfglist.append(getConfigListEntry(_("Standby LED brightness"), config.plugins.vfdicon.stbledbright))
 		self.cfglist.append(getConfigListEntry(_("Uppercase letters only"), config.plugins.vfdicon.uppercase))
 		self.cfglist.append(getConfigListEntry(_("Scroll text"), config.plugins.vfdicon.textscroll))
-		self.cfglist.append(getConfigListEntry(_("Center text"), config.plugins.vfdicon.textcenter))
-		self.cfglist.append(getConfigListEntry(_("Show icons"), config.plugins.vfdicon.showicons))
-		self.icons_showicons = config.plugins.vfdicon.showicons.value
-		if DisplayType == 5:
-			self.cfglist.append(getConfigListEntry(_('Standby LED brightness'), config.plugins.vfdicon.standbyredledon))
-			self.cfglist.append(getConfigListEntry(_('Blue LED brightness'), config.plugins.vfdicon.ledbright))
-			self.cfglist.append(getConfigListEntry(_('Cross brightness'), config.plugins.vfdicon.crossbright))
+		if self.disp == 'vfd':
+			self.cfglist.append(getConfigListEntry(_("Center text"), config.plugins.vfdicon.textcenter))
+			self.cfglist.append(getConfigListEntry(_("Show icons"), config.plugins.vfdicon.showicons))
+			self.icons_showicons = config.plugins.vfdicon.showicons.value
+		if DisplayType == 18:
+			self.cfglist.append(getConfigListEntry(_('Power LED colour'), config.plugins.vfdicon.powerledcolour))
+			self.cfglist.append(getConfigListEntry(_('Standby LED colour'), config.plugins.vfdicon.standbyledcolour))
+		if self.disp != 'vfd':
+		        self.cfglist.append(getConfigListEntry(_('Enable VFD display'), config.plugins.vfdicon.vfd_enable))
 	        self.cfglist.append(getConfigListEntry(_('Show this plugin in plugin menu'), config.plugins.vfdicon.extMenu))
 		self["config"].list = self.cfglist
 		self["config"].l.setList(self.cfglist)
 
 	def newConfig(self):
 		global DisplayType
-		if DisplayType == 5:
+		if DisplayType == 18:
 			if self["config"].getCurrent()[1] == config.plugins.vfdicon.stbcontrast:
 				Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.stbcontrast.value))
-			elif self["config"].getCurrent()[1] == config.plugins.vfdicon.standbyredledon:
-				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.standbyredledon.value) + " -l 1 0 -l 4 0 -l 5 0 -l 6 0 -l 7 0")
+#			elif self["config"].getCurrent()[1] == config.plugins.vfdicon.ledbright.value:
+#				Console().ePopen("fp_control -led " + str(config.plugins.vfdicon.ledbright.value))
+			elif self["config"].getCurrent()[1] == config.plugins.vfdicon.stbledbright.value:
+				b = str(config.plugins.vfdicon.stbledbright.value)
+				Console().ePopen("fp_control -led " + b)
+#			elif self["config"].getCurrent()[1] == config.plugins.vfdicon.powerledcolour.value:
+#				Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.powerledcolour.value))
+			elif self["config"].getCurrent()[1] == config.plugins.vfdicon.standbyledcolour:
+				Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.standbyledcolour.value))
 			else:
 				Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
+#				Console().ePopen("fp_control -led " + str(config.plugins.vfdicon.contrast.value))
 				print("")
 				b = str(config.plugins.vfdicon.ledbright.value)
-				c = str(config.plugins.vfdicon.crossbright.value)
-				Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
-		print("[hs8200VFD] newConfig", self["config"].getCurrent())
+				Console().ePopen("fp_control -led " + b)
+				Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.powerledcolour.value))
+		print("newConfig", self["config"].getCurrent())
 		self.createSetup()
 
 	def cancel(self):
 		main(self)
 		b = str(config.plugins.vfdicon.ledbright.value)
-		c = str(config.plugins.vfdicon.crossbright.value)
-		Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
+		Console().ePopen("fp_control -led " + b)
 		ConfigListScreen.keyCancel(self)
 
 	def keySave(self):
 		global DisplayType
-		if DisplayType == 5:
+		if DisplayType == 18:
 			b = str(config.plugins.vfdicon.ledbright.value)
-			c = str(config.plugins.vfdicon.crossbright.value)
-			Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
-			print("[hs8200VFD] set brightness", config.plugins.vfdicon.contrast.value)
+			Console().ePopen("fp_control -led " + b)
+			print("[pace7241VFD] set brightness", config.plugins.vfdicon.contrast.value)
 			Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
+			Console().ePopen("fp_control -led " + str(config.plugins.vfdicon.ledbright.value))
+			Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.powerledcolour.value))
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print("[hs8200VFD] set text scroll", config.plugins.vfdicon.textscroll.value)
+		print("[pace7241VFD] set text scroll", config.plugins.vfdicon.textscroll.value)
 		if config.plugins.vfdicon.textcenter.value == "1":
 			evfd.getInstance().vfd_set_CENTER(True)
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
-		print("[hs8200VFD] set text centering", config.plugins.vfdicon.textcenter.value)
+		print("[pace7241VFD] set text centering", config.plugins.vfdicon.textcenter.value)
 		main(self)
 		ConfigListScreen.keySave(self)
 
@@ -192,7 +228,7 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print('[hs8200VFD] Start')
+		print('[pace7241VFD] Start')
 		self.tuned = False
 		self.play = False
 		self.record = False
@@ -202,17 +238,27 @@ class VFDIcons:
 		self.dolbyAvailable = False
 		self.mp3Available = False
 #		self.DTSAvailable = False
+
+#		self.display = 'led'
+#		try:
+#			self.adb_model = open("/proc/stb/info/adb_variant").read().strip()
+#		except:
+#			pass
+#		print('[pace7241VFD] ADB variant:', self.adb_model)
+#		if self.adb_model == 'bsla' or self.adb_model == 'bzzb':
+		self.display = 'vfd'
+
 		self.timer = eTimer()
 		self.timer.callback.append(self.timerEvent)
 		self.timer.start(60000, False) # start one minute timer
-		Console().ePopen("fp_control -i 23 0")
+		if self.display == 'vfd':
+			Console().ePopen("fp_control -i 22 0")
 		b = str(config.plugins.vfdicon.ledbright.value)
-		c = str(config.plugins.vfdicon.crossbright.value)
-		Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c)
+		Console().ePopen("fp_control -led " + b)
 		global DisplayType
-		print('[hs8200VFD] Hardware displaytype:', DisplayType)
-		print('[hs8200VFD] VFD displaytype     :', DisplayTypevfd)
-		if DisplayType == 5:
+		print('[pace7241VFD] Hardware displaytype:', DisplayType)
+		print('[pace7241VFD] VFD displaytype     :', DisplayTypevfd)
+		if DisplayType == 19:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
@@ -225,41 +271,42 @@ class VFDIcons:
 				})
 			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
 			session.nav.record_event.append(self.gotRecordEvent)
-			try:
-				from Plugins.SystemPlugins.Hotplug.plugin import hotplugNotifier
-				hotplugNotifier.append(self.hotplugCB)
-			except:
-				pass
+			if self.display == 'vfd':
+				try:
+					from Plugins.SystemPlugins.Hotplug.plugin import hotplugNotifier
+					hotplugNotifier.append(self.hotplugCB)
+				except:
+					pass
 		else:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
 					iPlayableService.evStart: self.writeName,
 				})
-		print('[hs8200VFD] Set text scrolling option')
+		print('[pace7241VFD] Set text scrolling option')
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print("[hs8200VFD] Set text centering option")
-		if config.plugins.vfdicon.textcenter.value == "1":
-			evfd.getInstance().vfd_set_CENTER(True)
-		else:
-			evfd.getInstance().vfd_set_CENTER(False)
-		print('[hs8200VFD] End initialisation')
+		evfd.getInstance().vfd_set_CENTER(False)
+		if self.display == 'vfd':
+			print("[pace7241VFD] Set text centering option")
+			if config.plugins.vfdicon.textcenter.value == "1":
+				evfd.getInstance().vfd_set_CENTER(True)
+		print('[pace7241VFD] End initialisation')
 
 	def __evStart(self):
-		print('[hs8200VFD] __evStart')
+		print('[pace7241VFD] __evStart')
 		self.__evSeekableStatusChanged()
 
 	def __evUpdatedEventInfo(self):
-		print('[hs8200VFD] __evUpdatedEventInfo')
+		print('[pace7241VFD] __evUpdatedEventInfo')
 #		... and do nothing else
 
 	def UpdatedInfo(self):
-		print('[hs8200VFD] __evUpdatedInfo')
-		self.checkAudioTracks()
+		print('[pace7241VFD] __evUpdatedInfo')
 		self.writeName()
-		if DisplayType == 5:
+		if DisplayType == 19:
+			self.checkAudioTracks()
 			self.showCrypted()
 			self.showDolby()
 			self.showMP3()
@@ -311,9 +358,9 @@ class VFDIcons:
 				info = service.info()
 				crypted = info.getInfo(iServiceInformation.sIsCrypted)
 				if crypted == 1:
-					Console().ePopen("fp_control -i 7 1") #padlock icon
+					Console().ePopen("fp_control -i 6 1") #padlock icon
 				else:
-					Console().ePopen("fp_control -i 7 0")
+					Console().ePopen("fp_control -i 6 0")
 
 	def checkAudioTracks(self):
 		self.dolbyAvailable = False
@@ -337,15 +384,15 @@ class VFDIcons:
 
 	def showDolby(self):
 		if self.dolbyAvailable:
-			Console().ePopen("fp_control -i 8 1") #Dolby
+			Console().ePopen("fp_control -i 7 1") #Dolby
 		else:
-			Console().ePopen("fp_control -i 8 0")
+			Console().ePopen("fp_control -i 7 0")
 
 	def showMP3(self):
 		if self.mp3Available:
-			Console().ePopen("fp_control -i 12 1") #MP3
+			Console().ePopen("fp_control -i 11 1") #MP3
 		else:
-			Console().ePopen("fp_control -i 12 0")
+			Console().ePopen("fp_control -i 11 0")
 
 	def showTuned(self):
 		if config.plugins.vfdicon.showicons.value == "all":
@@ -359,50 +406,57 @@ class VFDIcons:
 					feinfo = service.frontendInfo()
 					FEdata = feinfo and feinfo.getAll(True)
 					tunerNumber = FEdata and FEdata.get("tuner_number")
-					print("[hs8200VFD] Set tuner number icon ", tunerNumber)
+					print("[pace7241VFD] Set tuner number icon ", tunerNumber)
 					if tunerNumber == 0:
-						Console().ePopen("fp_control -i 10 1 -i 11 0") #Tu1 on, Tu2 off
+						Console().ePopen("fp_control -i 9 1 -i 10 0") #Tu1 on, Tu2 off
 					else:
-						Console().ePopen("fp_control -i 10 0 -i 11 1") #Tu1 off, Tu2 on
-#					elif tunerType == "DVB-T" or tunerType == "DVB-C":
-#						print("[VFD-Icons] Set TER icon")
+						Console().ePopen("fp_control -i 9 0 -i 10 1") #Tu1 off, Tu2 on
+#					elif tunerType == "DVB-C":
+#						print("[pace7241VFD] Set TER icon")
 #						Console().ePopen("fp_control -i 26 1 -i 2 0 -i 44 0 -i 45 0 -i 29 0") #TER on, SAT, Tu1, Tu2 off
 				else:
-					print("[hs8200VFD] No TER or SAT icon")
-					Console().ePopen("fp_control -i 10 0 -i 11 0") #TER, SAT, Tu1, Tu2 off
+					print("[pace7241VFD] No TER or SAT icon")
+					Console().ePopen("fp_control -i 9 0 -i 10 0") #Tu1, Tu2 off
 			else:
 				                              # HD, Timeshift,Dolby,MP3,    Tu1    Tu2 off
-				Console().ePopen("fp_control  -i 5 0 -i 3 0 -i 8 0 -i 12 0 -i 10 0 -i 11 0")
+				Console().ePopen("fp_control  -i 4 0 -i 2 0 -i 7 0 -i 11 0 -i 9 0 -i 10 0")
 
 	def showMute(self):
 		if config.plugins.vfdicon.showicons.value != "none":
 			self.isMuted = eDVBVolumecontrol.getInstance().isMuted()
 			if self.isMuted:
-				Console().ePopen("fp_control -i 9 1") #Mute
+				Console().ePopen("fp_control -i 8 1") #Mute
 			else:
-				Console().ePopen("fp_control -i 9 0")
+				Console().ePopen("fp_control -i 8 0")
 
 	def showTimer(self):
 		if config.plugins.vfdicon.showicons.value == "all":
 			# check if timers are set
 			next_rec_time = -1
 			next_rec_time = self.session.nav.RecordTimer.getNextRecordingTime()
-			if next_rec_time > 0:
-				Console().ePopen("fp_control -i 4 1") #Timer
+			if self.display == 'vfd':
+				if next_rec_time > 0:
+					Console().ePopen("fp_control -i 3 1") #Timer icon
+				else:
+					Console().ePopen("fp_control -i 3 0")
 			else:
-				Console().ePopen("fp_control -i 4 0")
+				if next_rec_time > 0:
+					Console().ePopen("fp_control -l 2 1") #Timer LED
+				else:
+					Console().ePopen("fp_control -l 2 0")
 
 	def timerEvent(self):
 		self.showTimer() #update timer icon
  		if self.standby == False:
-			self.showMute() #update mute icon
-			if config.plugins.vfdicon.showicons.value == "all":
-				if (self.record == True or self.timeshift == True): # if recording or timeshifting, display a rotating disc
-					Console().ePopen("fp_control  -i 24 1")
-		if self.record == False and self.timeshift == False:
- 			if self.standby == False:
+			if self.display == 'vfd':
+				self.showMute() #update mute icon
 				if config.plugins.vfdicon.showicons.value == "all":
-					Console().ePopen("fp_control  -i 24 0")
+					if (self.record == True or self.timeshift == True): # if recording or timeshifting, display a rotating disc
+						Console().ePopen("fp_control  -i 23 1")
+		if self.record == False and self.timeshift == False:
+			if self.standby == False:
+				if self.display == 'vfd' and  config.plugins.vfdicon.showicons.value == "all":
+					Console().ePopen("fp_control  -i 23 0")
 				disptype = config.plugins.vfdicon.displayshow.value
 			else:
 				disptype = config.plugins.vfdicon.stbshow.value
@@ -415,23 +469,24 @@ class VFDIcons:
 				info = service.info()
 				height = info.getInfo(iServiceInformation.sVideoHeight)
 				if height > 576: #set HD icon
-					Console().ePopen("fp_control -i 5 1")
+					Console().ePopen("fp_control -i 4 1")
 				else:
-					Console().ePopen("fp_control -i 5 0")
+					Console().ePopen("fp_control -i 4 0")
 
 	def __evSeekableStatusChanged(self):
-		if config.plugins.vfdicon.showicons.value == "all":
-			service = self.session.nav.getCurrentService()
-			if service:
-				if self.play == False:
-					ts = service and service.timeshift()
-#					if ts and ts.isTimeshiftEnabled() > 0:
-					if ts and ts.isTimeshiftActive() > 0:
-						self.timeshift = True
-						Console().ePopen("fp_control -i 3 1") #Time shift
-					else:
-						self.timeshift = False
-						Console().ePopen("fp_control -i 3 0") #Time shift icon off
+		if config.plugins.vfdicon.showicons.value == "all" and self.display == 'vfd':
+			if not os.path.exists('/proc/stb/lcd/symbol/timeshift'):
+				service = self.session.nav.getCurrentService()
+				if service:
+					if self.play == False:
+						ts = service and service.timeshift()
+#						if ts and ts.isTimeshiftEnabled() > 0:
+						if ts and ts.isTimeshiftActive() > 0:
+							self.timeshift = True
+							Console().ePopen("fp_control -i 2 1") #Time shift
+						else:
+							self.timeshift = False
+							Console().ePopen("fp_control -i 2 0") #Time shift icon off
 
 	def gotRecordEvent(self, service, event):
 		if config.plugins.vfdicon.showicons.value != 'none':
@@ -440,9 +495,9 @@ class VFDIcons:
 				nrecs = len(recs)
 				if nrecs > 0: #recording active
 					self.record = True
-					Console().ePopen("fp_control -i 2 1") #REC on
+					Console().ePopen("fp_control -l 2 1") #REC LED on
 				else: # no recording active
-					Console().ePopen("fp_control -i 2 0") #REC off
+					Console().ePopen("fp_control -l 2 0") #REC LED off
 					self.RecordEnd()
 
 	def RecordEnd(self):
@@ -478,34 +533,39 @@ class VFDIcons:
 		self.standby = False
 		global DisplayType
 		self.timer.stop() # stop one second timer
-		evfd.getInstance().vfd_write_string("           ")
+		evfd.getInstance().vfd_write_string("               ")
 		self.timer.start(60000, False) # start one minute timer
-		print("[hs8200VFD] minute timer started")
-		if DisplayType == 5:
+		print("[pace7241VFD] minute timer started")
+		if DisplayType == 19:
 			evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.contrast.value)
-			print("[hs8200VFD] set brightness", config.plugins.vfdicon.contrast.value)
+			if self.display == 'vfd':
+				Console().ePopen("fp_control -led " + str(config.plugins.vfdicon.ledbright.value))
+			print("[pace7241VFD] set brightness", config.plugins.vfdicon.contrast.value)
 			self.timerEvent()
-			b = str(config.plugins.vfdicon.ledbright.value)
-			c = str(config.plugins.vfdicon.crossbright.value)
-			Console().ePopen("fp_control -l 0 0 -l 1 " + b + " -l 4 " + c + " -l 5 " + c + " -l 6 " + c + " -l 7 " + c) #Red LED off, cross and blue on
+			b = str(config.plugins.vfdicon.powerledcolour)
+			Console().ePopen("fp_control -l 1 " + b)  #Power LED
 
 	def onEnterStandby(self, configElement):
 		from Screens.Standby import inStandby
 		inStandby.onClose.append(self.onLeaveStandby)
 		global DisplayType
-		if DisplayType == 5:
-			print("[hs8200VFD] set display & icons on Enter Standby")
+		if DisplayType == 19:
+			print("[pace7241VFD] set display & icons on Enter Standby")
 			if config.plugins.vfdicon.stbshow.value == "nothing":
 				evfd.getInstance().vfd_set_light(0)
 			else:
 				evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.stbcontrast.value)
-			print("[hs8200VFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value)
-			if config.plugins.vfdicon.standbyredledon.value:
-				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.standbyredledon.value) + " -l 1 0 -l 4 0 -l 5 0 -l 6 0 -l 7 0") #Red LED on, cross off
+				if self.display == 'vfd':
+					Console().ePopen("fp_control -led " + str(config.plugins.vfdicon.stbledbright.value))
+			print("[pace7241VFD] set standby brightness", config.plugins.vfdicon.stbcontrast.value)
+			if config.plugins.vfdicon.standbyledcolour.value:
+				Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.standbyledcolour.value)) #Power LED
+			else:
+				Console().ePopen("fp_control -l 1 0") #Power LED red
 		if (config.plugins.vfdicon.stbshow.value == "time" or config.plugins.vfdicon.stbshow.value == "time_date"):
 			self.timer.stop() # stop minute timer
 			self.timer.start(999, False) # start one second timer
-			print("[hs8200VFD] second timer started")
+			print("[pace7241VFD] second timer started")
 		if (config.plugins.vfdicon.stbshow.value == "date" or config.plugins.vfdicon.stbshow.value == "day_date" or config.plugins.vfdicon.stbshow.value == "timeHM" or config.plugins.vfdicon.stbshow.value == "time" or config.plugins.vfdicon.stbshow.value == "time_date"):
 			self.writeDate(config.plugins.vfdicon.stbshow.value)
 		else:
@@ -517,10 +577,10 @@ class VFDIcons:
 			if dev.__contains__('sda') or dev.__contains__('sdb') or dev.__contains__('sdc'):
 #				if media_state == "add" or media_state == "change":
 				if media_state == "add":
-					Console().ePopen("fp_control -i 6 1")
+					Console().ePopen("fp_control -i 5 1")
 					self.usb = 1
 				if media_state == "remove":
-					Console().ePopen("fp_control -i 6 0")
+					Console().ePopen("fp_control -i 5 0")
 					self.usb = 0
 
 VFDIconsInstance = None
@@ -531,7 +591,7 @@ def main(session, **kwargs):
 	global hddUsed
 	if VFDIconsInstance is None:
 		VFDIconsInstance = VFDIcons(session)
-	if DisplayType == 5:
+	if DisplayType == 18:
 		if (config.plugins.vfdicon.displayshow.value == "date" or config.plugins.vfdicon.displayshow.value == "day_date"
 			or config.plugins.vfdicon.displayshow.value == "time" or config.plugins.vfdicon.displayshow.value == "time_date"):
 			sleep(1)
@@ -542,19 +602,19 @@ def main(session, **kwargs):
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
-		name = _("hs8200VFD"),
-		description = _("VFD display configuration"),
+		name = _("pace7241VFD"),
+		description = _("Front panel display configuration"),
 		where = PluginDescriptor.WHERE_MENU,
 		fnc = VFDdisplaymenu),
 		PluginDescriptor(
-		name = _("hs8200VFD"),
-		description = _("VFD icons for Fortis HS8200"),
+		name = _("pace7241VFD"),
+		description = _("VFD icons for Pace HDS-7241"),
 		where = PluginDescriptor.WHERE_SESSIONSTART,
 		fnc = main)]
 	if config.plugins.vfdicon.extMenu.value:
 		l.append(PluginDescriptor(
-			name = _("hs8200VFD"),
-			description = _("VFD configuration for Fortis HS8200"),
+			name = _("pace7241VFD"),
+			description = _("Front panel display configuration for Pace HDS-7241"),
 			where = PluginDescriptor.WHERE_PLUGINMENU,
 			fnc = opencfg))
 	return l

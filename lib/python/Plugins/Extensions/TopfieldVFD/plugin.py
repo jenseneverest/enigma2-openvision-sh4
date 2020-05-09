@@ -11,8 +11,7 @@ from Components.Label import Label
 from Components.Button import Button
 from Components.Console import Console
 from Components.ConfigList import ConfigList
-from Components.config import config, ConfigSubsection, ConfigEnableDisable, \
-     getConfigListEntry, ConfigInteger, ConfigSelection
+from Components.config import config, ConfigSubsection, ConfigEnableDisable, getConfigListEntry, ConfigInteger, ConfigSelection
 from Components.ConfigList import ConfigListScreen
 from Plugins.Plugin import PluginDescriptor
 import ServiceReference
@@ -27,9 +26,9 @@ from Components.UsageConfig import defaultMoviePath
 from os import statvfs
 import array
 
+
 my_global_session = None
 debug = False
-
 
 config.plugins.TopfieldVFD = ConfigSubsection()
 config.plugins.TopfieldVFD.allCaps = ConfigEnableDisable(default = False)

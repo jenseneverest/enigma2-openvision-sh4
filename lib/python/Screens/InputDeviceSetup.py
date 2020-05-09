@@ -312,7 +312,8 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("13", _("cuberevo_uni")),
 			("14", _("vitamin")),
 			("15", _("adb")),
-			("16", _("forever"))
+			("16", _("pace7241")),
+			("17", _("forever"))
 
 		]
 
@@ -328,7 +329,8 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("cuberevo_uni", 13),
 			("vitamin", 14),
 			("adb", 15),
-			("forever", 16)
+			("pace7241", 16),
+			("forever", 17)
 		]
 
 	def __init__(self, session):

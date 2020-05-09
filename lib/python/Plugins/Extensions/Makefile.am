@@ -66,5 +66,9 @@ if ENABLE_SPARK
 SUBDIRS += sparkVFD
 endif
 
+if ENABLE_PACE7241
+SUBDIRS += pace7241VFD
+endif
+
 install_PYTHON =	\
 	__init__.py

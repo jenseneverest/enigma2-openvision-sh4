@@ -44,6 +44,7 @@
  * 20190518 Audioniek       vitamin_hd5000 added.
  * 20200214 Audioniek       Add Fortis 4G models.
  * 20200417 Audioniek       adb_box added.
+ * 20200508 Audioniek       pace7241 added.
  *
  ****************************************************************************/
 #include <stdarg.h>
@@ -182,7 +183,8 @@ evfd::evfd()
    || defined (ENABLE_ADB_BOX)
 	vfd_type = 18;
 #elif defined (ENABLE_FOREVER_3434HD) \
-   || defined (ENABLE_FOREVER_9898HD)
+   || defined (ENABLE_FOREVER_9898HD) \
+   || defined (ENABLE_PACE7241)
 	vfd_type = 19;
 #else
 	vfd_type = -1;
@@ -346,7 +348,8 @@ void * start_loop (void *arg)
 	 && !defined (ENABLE_FOREVER_9898HD) \
 	 && !defined (ENABLE_FOREVER_2424HD) \
 	 && !defined (ENABLE_VITAMIN_HD5000) \
-	 && !defined (ENABLE_ADB_BOX)
+	 && !defined (ENABLE_ADB_BOX) \
+	 && !defined (ENABLE_PACE7241)
 	/* Others cycle their icons */
 	for (int vloop = 0; vloop < 128; vloop++)
 	{
@@ -435,7 +438,8 @@ void * start_loop (void *arg)
 	 && !defined (ENABLE_CUBEREVO_9500HD) \
 	 && !defined (ENABLE_SPARK7162) \
 	 && !defined (ENABLE_VITAMIN_HD5000) \
-	 && !defined (ENABLE_ADB_BOX)
+	 && !defined (ENABLE_ADB_BOX) \
+	 && !defined (ENABLE_PACE7241)
 	//set all blocked icons
 	for (int id = 0x10; id < 0x20; id++)
 	{
@@ -469,7 +473,8 @@ void * start_loop (void *arg)
  || defined (ENABLE_FOREVER_9898HD) \
  || defined (ENABLE_FOREVER_2424HD) \
  || defined (ENABLE_VITAMIN_HD5000) \
- || defined (ENABLE_ADB_BOX)
+ || defined (ENABLE_ADB_BOX) \
+ || defined (ENABLE_PACE7241)
 void evfd::vfd_write_string_scrollText(char* text)
 {
 	return;
@@ -756,7 +761,7 @@ void evfd::vfd_clear_icons()
 		for (id = 1; id < 7; id++)
 	#elif defined (ENABLE_VITAMIN_HD5000)
 		for (id = 1; id < 17; id++)
-	#elif defined (ENABLE_ADB_BOX)
+	#elif defined (ENABLE_ADB_BOX) || defined (ENABLE_PACE7241)
 		for (id = 1; id < 21; id++)
 	#else
 		for (id = 0x10; id < 0x20; id++)

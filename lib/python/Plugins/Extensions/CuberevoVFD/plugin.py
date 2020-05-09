@@ -2,29 +2,19 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from Screens.Screen import Screen
-from Screens.MessageBox import MessageBox
 from Plugins.Plugin import PluginDescriptor
-from Tools import Notifications
-from Components.Pixmap import Pixmap, MovingPixmap
-from Components.ActionMap import ActionMap, NumberActionMap
-from Components.Label import Label
+from Components.Pixmap import Pixmap
+from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.Console import Console
-from Components.ConfigList import ConfigList
-from Components.config import config, configfile, ConfigSubsection, ConfigEnableDisable, \
-     getConfigListEntry, ConfigInteger, ConfigSelection
+from Components.config import config, configfile, ConfigSubsection, ConfigEnableDisable, getConfigListEntry, ConfigSelection
 from Components.ConfigList import ConfigListScreen
-from Plugins.Plugin import PluginDescriptor
 import ServiceReference
-#---- Civer start ----#
-#- from enigma import iPlayableService, eServiceCenter, iServiceInformation
-#- from enigma import evfd
 from enigma import *
-#----- Civer end ----#
-from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
-from re import compile as re_compile, search as re_search
-
+from Components.ServiceEventTracker import ServiceEventTracker
+from re import search
 import os
+
 
 my_global_session = None
 

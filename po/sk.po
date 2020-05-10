@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-10 01:34+0430\n"
-"PO-Revision-Date: 2020-05-08 08:52+0200\n"
+"POT-Creation-Date: 2020-05-10 19:37+0430\n"
+"PO-Revision-Date: 2020-05-10 09:03+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
 "Language: sk\n"
@@ -927,9 +927,9 @@ msgstr "%d fps"
 #, python-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] "%d hodina"
-msgstr[1] "%d hodiny"
-msgstr[2] "%d hodín"
+msgstr[0] "%d hodine"
+msgstr[1] "%d hodinách"
+msgstr[2] "%d hodinách"
 
 #, python-format
 msgid "%d job is running in the background!"
@@ -1985,7 +1985,7 @@ msgstr "Naozaj chcete odstrániť túto položku?"
 
 #, fuzzy
 msgid "Are you sure to delete image:"
-msgstr "Naozaj chcete ukončiť tohto sprievodcu?"
+msgstr "Naozaj chcete reštartovať"
 
 msgid "Are you sure to purge all deleted user bouquets?"
 msgstr "Naozaj chcete natrvalo odstrániť všetky zmazané zoznamy staníc?"
@@ -4954,10 +4954,10 @@ msgid "End time"
 msgstr "Čas ukončenia"
 
 msgid "End time to ignore inactivity sleeptimer"
-msgstr "Konečný čas ignorovania časovača prechodu do úsporného režimu"
+msgstr "Koniec ignorovania časovača pri neaktivite"
 
 msgid "End time to ignore shutdown in standby"
-msgstr "Konečný čas ignorovania vypnutia prijímača v úspornom režime"
+msgstr "Koniec ignorovania vypnutia v pohotovostnom režime"
 
 msgid "English"
 msgstr "Angličtina"
@@ -5690,9 +5690,8 @@ msgstr "Od:"
 msgid "Front panel display configuration"
 msgstr "Konfigurácia zoznamu filmov"
 
-#, fuzzy
 msgid "Front panel display configuration for Pace HDS-7241"
-msgstr "Konfigurácia zoznamu filmov"
+msgstr ""
 
 msgid "Front panel display configuration for adb_box"
 msgstr ""
@@ -6010,6 +6009,10 @@ msgstr "Nastavenie pevného disku"
 
 #, fuzzy
 msgid "Hardware serial: "
+msgstr "Hardvér: "
+
+#, fuzzy
+msgid "Hardware type: "
 msgstr "Hardvér: "
 
 msgid "Hardware: "
@@ -7655,7 +7658,7 @@ msgid "Network ID"
 msgstr "ID siete"
 
 msgid "Network Info:"
-msgstr "Info siete:"
+msgstr "Informácie o sieti:"
 
 #, fuzzy
 msgid "Network MAC settings"
@@ -11508,7 +11511,7 @@ msgid "Specify timeframe to ignore inactivity sleeptimer"
 msgstr "Časové rozpätie ignorovania pri neaktivite"
 
 msgid "Specify timeframe to ignore the shutdown in standby"
-msgstr "Zadajte časový rámec ignorovania vypnutia v pohotovostnom režime"
+msgstr "Nastaviť čas ignorovania vypnutia prijímača v pohotovostnom režime"
 
 msgid "Speed up the performance"
 msgstr ""
@@ -11564,7 +11567,7 @@ msgstr "Pohotovostný režim po aktuálnej udalosti"
 
 #, fuzzy
 msgid "Standby brightness"
-msgstr "Pohotovostný režim za "
+msgstr "Pohotovostný režim po "
 
 #, python-format
 msgid "Standby fan %d PWM"
@@ -11575,7 +11578,7 @@ msgid "Standby fan %d voltage"
 msgstr "Pohotovosť, napätie ventilátora %d"
 
 msgid "Standby in "
-msgstr "Pohotovostný režim za "
+msgstr "Pohotovostný režim po "
 
 #, fuzzy
 msgid "Standby saver frequency"
@@ -11626,10 +11629,10 @@ msgid "Start time"
 msgstr "Začiatok"
 
 msgid "Start time to ignore inactivity sleeptimer"
-msgstr "Začiatok ignorovania časovača pri naktivite"
+msgstr "Začiatok ignorovania časovača pri neaktivite"
 
 msgid "Start time to ignore shutdown in standby"
-msgstr "Koniec ignorovania časovača pri naktivite"
+msgstr "Začiatok ignorovania vypnutia v pohotovostnom režime"
 
 msgid "Start timeshift"
 msgstr "Spustiť časový posun"

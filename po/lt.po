@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-10 19:37+0430\n"
+"POT-Creation-Date: 2020-05-15 15:32+0430\n"
 "PO-Revision-Date: 2020-04-09 22:41+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -1485,8 +1485,9 @@ msgstr "Nutraukti mėgstamų redagavimą"
 msgid "About"
 msgstr "Apie"
 
+#, fuzzy
 msgid "About..."
-msgstr "Apie..."
+msgstr "Apie"
 
 msgid "Accept the current selection"
 msgstr "Patvirtinkite dabartinį pasirinkimą"
@@ -2365,7 +2366,7 @@ msgstr "Įkrovimo laikas"
 
 #, fuzzy
 msgid "Boot time and local time"
-msgstr "Taip, ir išsaugoti"
+msgstr "Įdiegti Android atvaizdą"
 
 msgid "Boot to Android image"
 msgstr "Įdiegti Android atvaizdą"
@@ -3924,7 +3925,7 @@ msgstr "Visiškai išjungti"
 
 #, fuzzy
 msgid "Deepstandby LED brightness"
-msgstr "Budėjimo LED"
+msgstr "Gilaus budėjimo LED"
 
 msgid "Default"
 msgstr "Numatytasis"
@@ -4373,7 +4374,8 @@ msgstr "Ar norite išeiti iš rodomos vaizdo kraštinės vedlio?"
 msgid "Do you want to reboot your receiver?"
 msgstr "Ar norite iš naujo paleisti savo imtuvą?"
 
-msgid "Do you want to remove all the crahs logfiles"
+#, fuzzy
+msgid "Do you want to remove all the crash logfiles"
 msgstr "Ar norite pašalinti visus \"lūžimo\" žurnalų failus"
 
 msgid "Do you want to remove the package:\n"
@@ -5478,9 +5480,8 @@ msgstr "Nuo:"
 msgid "Front panel display configuration"
 msgstr "Priekinio skydelio ekranas"
 
-#, fuzzy
 msgid "Front panel display configuration for Pace HDS-7241"
-msgstr "Priekinio skydelio ekranas"
+msgstr ""
 
 msgid "Front panel display configuration for adb_box"
 msgstr ""
@@ -6458,7 +6459,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Enigma2 temos parinkėjas"
+msgstr "Atšaukti pasirinkimą"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -7930,7 +7931,7 @@ msgstr "OpenVpn valdymas"
 
 #, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "Maitinimo LED būklė giliame budėjime/budėjimo režime."
+msgstr "Maitinimo LED būsena giliame laukimo režime"
 
 #, fuzzy
 msgid "Operating LED colour status in standby mode"
@@ -8546,8 +8547,9 @@ msgstr "Išjungimo meniu"
 msgid "Power LED"
 msgstr ""
 
+#, fuzzy
 msgid "Power LED colour"
-msgstr ""
+msgstr "Maitinimo LED būsena budėjimo režime"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Maitinimo valdymas. Daugiau informacijos ieškokite savo imtuvo naudojimo instrukcijoje."
@@ -9237,7 +9239,7 @@ msgstr "Skaidinių lentelė nuskaitoma iš naujo"
 
 #, fuzzy
 msgid "Reseller ID: "
-msgstr "Vartotojo vardas"
+msgstr "Vartotojo ID"
 
 #, fuzzy
 msgid "Reseller name: "
@@ -11540,15 +11542,16 @@ msgstr "Perjungti kanalą žemyn"
 msgid "Switch channel up"
 msgstr "Perjungti kanalą aukštyn"
 
-msgid "Switch off the display during Standby Mode"
-msgstr ""
-
-msgid "Switch off the display during Suspend Mode"
-msgstr ""
+#, fuzzy
+msgid "Switch on the display during Standby Mode"
+msgstr "PowerControl priekinio ekrano budėjimo režimas"
 
 #, fuzzy
-msgid "Switch off the display during operation."
-msgstr "Peržiūrėti sąrašą prieinamų monitoriaus ir vartotojo sąsajos priedų."
+msgid "Switch on the display during Suspend Mode"
+msgstr "PowerControl priekinio ekrano sustabdymo režimas"
+
+msgid "Switch on the display during operation."
+msgstr ""
 
 msgid "Switch to TV mode"
 msgstr "Perjungti į TV režimą"
@@ -12842,9 +12845,8 @@ msgstr "Didžiosios raidės"
 msgid "Uppercase letters only"
 msgstr "Atnaujinti tik kanalų sąrašą"
 
-#, fuzzy
 msgid "Uptime: "
-msgstr "Pabaigos laikas"
+msgstr ""
 
 msgid "Uruguay"
 msgstr "Urugvajus"
@@ -13658,16 +13660,14 @@ msgstr "Su klaidomis:"
 msgid "With popup"
 msgstr "Su iškylančiu pranešimu"
 
-#, fuzzy
-msgid "With this option you can switch off the display during operation."
-msgstr "Ši parinktis leidžia išjungti ekraną."
-
-msgid "With this option you can switch off the display in Deep Standby Mode."
+msgid "With this option you can switch on the display during operation."
 msgstr ""
 
-#, fuzzy
-msgid "With this option you can switch off the display in Standby Mode."
-msgstr "Ši parinktis leidžia išjungti ekraną."
+msgid "With this option you can switch on the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch on the display in Standby Mode."
+msgstr ""
 
 msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr ""
@@ -15215,7 +15215,7 @@ msgstr "Atnaujinimo intervalas (sek.)"
 
 #, fuzzy
 msgid "time and date"
-msgstr "Taip, ir išsaugoti"
+msgstr "Įdiegti Android atvaizdą"
 
 msgid "time, day and date"
 msgstr ""

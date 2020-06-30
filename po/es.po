@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-15 21:17+0430\n"
+"POT-Creation-Date: 2020-06-30 23:25+0430\n"
 "PO-Revision-Date: 2020-05-10 20:14+0200\n"
 "Last-Translator: Jose Juan <jzapater@gmail.com>\n"
 "Language-Team: ANGELODOS  angelo2807@hotmail.com\n"
@@ -936,6 +936,12 @@ msgstr[0] "%d core"
 msgstr[1] "%d cores"
 
 #, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#, python-format
 msgid "%d fps"
 msgstr "%d fps"
 
@@ -965,7 +971,7 @@ msgstr "%d kB/s"
 msgid "%d min"
 msgstr "%d min"
 
-#, python-format
+#, fuzzy, python-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuto"
@@ -4015,9 +4021,10 @@ msgstr ""
 msgid "Curacao"
 msgstr "Curacao"
 
+#
 #, fuzzy
 msgid "Currency: "
-msgstr "Dispositivo actual:"
+msgstr "< Valor actual >"
 
 #
 #, fuzzy
@@ -13107,15 +13114,13 @@ msgstr "Subtítulos"
 msgid "Subtitles Settings"
 msgstr "Configuración de subtítulos"
 
-#
 #, fuzzy
 msgid "Subtitles disabled"
-msgstr "No hay actualizaciones disponibles"
+msgstr "Configuración de subtítulos"
 
-#
 #, fuzzy
 msgid "Subtitles enabled"
-msgstr "Subtítulos"
+msgstr "Límites habilitados"
 
 msgid "Succeeded:"
 msgstr "Sucedió:"
@@ -14651,8 +14656,13 @@ msgstr "Mayúsculas"
 msgid "Uppercase letters only"
 msgstr "Actualizar lista de canales solamente"
 
+#, fuzzy
+msgid "Uptime"
+msgstr "Tiempo de dormir"
+
+#, fuzzy
 msgid "Uptime: "
-msgstr ""
+msgstr "Tiempo de dormir"
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -17312,10 +17322,9 @@ msgstr "esta grabación"
 msgid "this service is protected by a parental control pin"
 msgstr "este canal está protegido por el pin de control de adultos"
 
-#
 #, fuzzy
 msgid "time"
-msgstr "Hora fin"
+msgstr "Tiempo de dormir"
 
 msgid "time (with seconds)"
 msgstr ""

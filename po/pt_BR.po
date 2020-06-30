@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-15 21:17+0430\n"
+"POT-Creation-Date: 2020-06-30 23:25+0430\n"
 "PO-Revision-Date: 2013-10-20 19:13-0300\n"
 "Last-Translator: Diogo <pingflood@gmail.com>\n"
 "Language-Team: Traduzido por Frank Viana <franksrviana@gmail.com>\n"
@@ -883,6 +883,12 @@ msgid_plural "%d cores"
 msgstr[0] ""
 msgstr[1] ""
 
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
 #, fuzzy, python-format
 msgid "%d fps"
 msgstr "%d arquivo"
@@ -911,7 +917,7 @@ msgstr ""
 msgid "%d min"
 msgstr ""
 
-#, python-format
+#, fuzzy, python-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuto"
@@ -3671,7 +3677,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Currency: "
-msgstr "Dispositivo atual: "
+msgstr "Valor atual: "
 
 #, fuzzy
 msgid "Current"
@@ -11868,11 +11874,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Subtitles disabled"
-msgstr "Nenhuma atualização disponível."
+msgstr "Legendas"
 
 #, fuzzy
 msgid "Subtitles enabled"
-msgstr "Legendas"
+msgstr "Limites ativos"
 
 msgid "Succeeded:"
 msgstr ""
@@ -13252,8 +13258,13 @@ msgstr ""
 msgid "Uppercase letters only"
 msgstr "Atualizar apenas a lista de canais"
 
+#, fuzzy
+msgid "Uptime"
+msgstr "Temporizador"
+
+#, fuzzy
 msgid "Uptime: "
-msgstr ""
+msgstr "Temporizador"
 
 msgid "Uruguay"
 msgstr ""
@@ -15665,7 +15676,7 @@ msgstr "Canal protegido com senha"
 
 #, fuzzy
 msgid "time"
-msgstr "Hora do fim"
+msgstr "Temporizador"
 
 msgid "time (with seconds)"
 msgstr ""

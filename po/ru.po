@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-30 23:25+0430\n"
-"PO-Revision-Date: 2020-04-20 21:51+0300\n"
+"POT-Creation-Date: 2020-07-04 12:41+0430\n"
+"PO-Revision-Date: 2020-06-30 22:24+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
 "Language: ru\n"
@@ -925,9 +925,9 @@ msgstr[2] "%d ядра"
 #, python-format
 msgid "%d day"
 msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d день"
+msgstr[1] "%d дня"
+msgstr[2] "%d дней"
 
 #, python-format
 msgid "%d fps"
@@ -959,7 +959,7 @@ msgstr "%d kB/s"
 msgid "%d min"
 msgstr "%d мин"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d минута"
@@ -3079,7 +3079,7 @@ msgid "Color format"
 msgstr "Формат цвета"
 
 msgid "Combined"
-msgstr "Комбинированный"
+msgstr "Комбо"
 
 msgid "Combo"
 msgstr "Combo"
@@ -3718,11 +3718,10 @@ msgstr "Curacao"
 
 #, fuzzy
 msgid "Currency: "
-msgstr "< Текущий >"
+msgstr "Текущий"
 
-#, fuzzy
 msgid "Current"
-msgstr "< Текущий >"
+msgstr "Текущий"
 
 #, fuzzy
 msgid "Current Affairs"
@@ -4100,9 +4099,8 @@ msgstr "Дефолтные настройки"
 msgid "Default timer type"
 msgstr "Тип таймера по дефолту"
 
-#, fuzzy
 msgid "Default+Picon"
-msgstr "<Дефолт + пикон >"
+msgstr "Дефолт+пикон"
 
 msgid "Delay after change voltage before switch command"
 msgstr "Задержка после изменения напряжения команд перекл."
@@ -4180,9 +4178,8 @@ msgstr "Удалить"
 msgid "Delete Image"
 msgstr "Удалить имидж"
 
-#, fuzzy
 msgid "Delete all the text"
-msgstr "удалить запись из плейлиста"
+msgstr "удалить весь текст"
 
 msgid "Delete entry"
 msgstr "удалить выбранное"
@@ -4789,9 +4786,8 @@ msgstr "Электронный Программный Гид"
 msgid "Embedded"
 msgstr "Встроенные"
 
-#, fuzzy
 msgid "Emergency"
-msgstr "< Чрезвычайная ситуация >"
+msgstr "Аварийная ситуация"
 
 msgid "Empty slot"
 msgstr "Пустой слот"
@@ -7636,7 +7632,7 @@ msgid "Nameserver setup"
 msgstr "Настройка сервера имен (DNS)"
 
 msgid "Namespace & Orbital pos."
-msgstr "Пространство имен & Орбитальная позиция"
+msgstr "Namespace & Орбит. позиция"
 
 msgid "Namibia"
 msgstr "Namibia"
@@ -8398,9 +8394,8 @@ msgstr "Пауза/продолжение воспроизведение"
 msgid "Pausing"
 msgstr "пауза"
 
-#, fuzzy
 msgid "Pending restart"
-msgstr "< Ожидание рестарта >"
+msgstr "Ожидание рестарта"
 
 #, fuzzy
 msgid "Percentage"
@@ -8972,9 +8967,9 @@ msgstr "Нажмите кнопку MENU на Вашем пульте Д/У дл
 msgid "Press OK on your remote control to continue."
 msgstr "Нажмите ОК на Вашем пульте Д/У для продолжения."
 
-#, fuzzy, python-format
+#, python-format
 msgid "Press OK to activate the selected %s skin."
-msgstr "Нажмите OK, для активации выбранного%s скина."
+msgstr "Нажмите OK, для активации выбранного %s скина."
 
 msgid "Press OK to activate the settings."
 msgstr "Нажмите OK для активации настроек."
@@ -8986,9 +8981,9 @@ msgstr "Нажмите OK, для измения настройки."
 msgid "Press OK to get further details for %s"
 msgstr "Нажмите ОК, чтобы получить подробную информацию для %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Press OK to keep the currently selected %s skin."
-msgstr "Нажмите OK, чтобы сохранить выбранный%s скин."
+msgstr "Нажмите OK, чтобы сохранить текущий выбранный скин %s скин."
 
 msgid "Press OK to scan"
 msgstr "Нажмите OK для сканирования."
@@ -11102,7 +11097,7 @@ msgid "Show service list"
 msgstr "Показать список сервисов"
 
 msgid "Show service name and event description among each other instead of side by side."
-msgstr ""
+msgstr "Показать название канала и описание события друг под другом, а не в одну строку."
 
 msgid "Show service type icons"
 msgstr "Показать иконки типа сервиса"
@@ -11155,7 +11150,7 @@ msgid "Show transponder remaining/elapsed as"
 msgstr "Показать инфо транспондера"
 
 msgid "Show two lines per entry"
-msgstr ""
+msgstr "Использовать две строки в списке каналов"
 
 msgid "Show underline characters in filenames"
 msgstr "Показывать символы подчеркивания в именах файлов записей"
@@ -11860,9 +11855,8 @@ msgstr "Выбор субтитров..."
 msgid "Subtitle settings"
 msgstr "Меню настройки субтитров"
 
-#, fuzzy
 msgid "Subtitle show/hide..."
-msgstr "Выбор субтитров..."
+msgstr "Субтитры показать/скрыть..."
 
 msgid "Subtitles"
 msgstr "Субтитры"
@@ -11870,13 +11864,11 @@ msgstr "Субтитры"
 msgid "Subtitles Settings"
 msgstr "Настройки субтитров"
 
-#, fuzzy
 msgid "Subtitles disabled"
-msgstr "Настройки субтитров"
+msgstr "Субтитры выключены"
 
-#, fuzzy
 msgid "Subtitles enabled"
-msgstr "Ограничения включены"
+msgstr "Субтитры включены"
 
 msgid "Succeeded:"
 msgstr "Успешных:"
@@ -12860,9 +12852,8 @@ msgstr "Переключить новые текстовые вставки до
 msgid "Toggle show/hide"
 msgstr "Переключатель показать/скрыть"
 
-#, fuzzy
 msgid "Toggle subtitles show/hide"
-msgstr "Переключатель показать/скрыть"
+msgstr "Переключатель субтитров показать/скрыть"
 
 msgid "Toggle the tv and the radio player..."
 msgstr "Переключение между тв и радио плеером..."
@@ -13263,13 +13254,8 @@ msgstr "Верхний регистр"
 msgid "Uppercase letters only"
 msgstr "Обновить только список каналов"
 
-#, fuzzy
 msgid "Uptime"
-msgstr "Таймер сна"
-
-#, fuzzy
-msgid "Uptime: "
-msgstr "Таймер сна"
+msgstr "Время работы"
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -15678,7 +15664,7 @@ msgstr "этот сервис защищен PIN-кодом родительск
 
 #, fuzzy
 msgid "time"
-msgstr "Таймер сна"
+msgstr "Время работы"
 
 msgid "time (with seconds)"
 msgstr ""

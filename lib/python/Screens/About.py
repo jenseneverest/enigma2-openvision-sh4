@@ -21,8 +21,6 @@ import skin, os, boxbranding
 from Components.Console import Console
 from Components.Pixmap import MultiPixmap
 from Components.Network import iNetwork
-from Components.SystemInfo import SystemInfo
-from re import search
 from Tools.Geolocation import geolocation
 
 class About(Screen):

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import print_function
+from __future__ import division, print_function
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
 from Components.ServiceList import ServiceList
@@ -417,7 +417,7 @@ class VFDIcons:
 				SQ = feinfo and feinfo.getFrontendInfo(iFrontendInformation.signalQuality)
 #				SQdB = feinfo and feinfo.getFrontendInfo(iFrontendInformation.signalQualitydB)
 #				snr = feinfo and feinfo.getFrontendInfo(iFrontendInformation.snrValue)
-				signal = (SQ * 86) / 0xFFFF
+				signal = (SQ * 86) // 0xFFFF
 				self.showSize(signal)
 
 	def showTimer(self):
@@ -685,12 +685,12 @@ class VFDIcons:
 #				print("[CheckUsed] Total blocks     :", f.f_blocks)
 #				print("[CheckUsed] Free blocks      :", f.f_bavail)
 #			if f.f_blocks != 0:
-#				print("[CheckUsed] Free/Used space  :", f.f_bavail * 100 / f.f_blocks, "/", (f.f_blocks - f.f_bavail) * 100 / f.f_blocks, "%")
+#				print("[CheckUsed] Free/Used space  :", f.f_bavail * 100 // f.f_blocks, "/", (f.f_blocks - f.f_bavail) * 100 // f.f_blocks, "%")
 		if self.mount:
 			if f.f_blocks == 0:
 				return 0
 			else:
-				return (f.f_blocks - f.f_bavail) * 90 / f.f_blocks
+				return (f.f_blocks - f.f_bavail) * 90 // f.f_blocks
 		else:
 			return 0
 

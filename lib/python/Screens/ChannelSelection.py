@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division, print_function
+from __future__ import print_function
 from Tools.Profile import profile
 from Screens.Screen import Screen
 import Screens.InfoBar
@@ -1667,7 +1667,7 @@ class ChannelSelectionBase(Screen):
 												h = _("W")
 											else:
 												h = _("E")
-											service_name = ("%d.%d" + h) % (orbpos // 10, orbpos % 10)
+											service_name = ("%d.%d" + h) % (orbpos / 10, orbpos % 10)
 										if self.showSatDetails:
 											if not '(type == 1)' in srvtypes and '(type == 17)' in srvtypes:
 												service_type = "HD-%s"%(service_type)

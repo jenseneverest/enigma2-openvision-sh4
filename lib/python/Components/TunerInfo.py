@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division
 from Components.GUIComponent import GUIComponent
 
 from enigma import eLabel, eSlider, iFrontendInformation
@@ -54,9 +53,9 @@ class TunerInfo(GUIComponent):
 		if self.type is self.SNR_DB:
 			value = self.getValue(self.SNR_DB)
 		elif self.type is self.SNR_PERCENTAGE or self.type is self.SNR_BAR:
-			value = self.getValue(self.SNR) * 100 // 65535
+			value = self.getValue(self.SNR) * 100 / 65535
 		elif self.type is self.AGC_PERCENTAGE or self.type is self.AGC_BAR:
-			value = self.getValue(self.AGC) * 100 // 65535
+			value = self.getValue(self.AGC) * 100 / 65535
 		elif self.type is self.BER_VALUE or self.type is self.BER_BAR:
 			value = self.getValue(self.BER)
 		elif self.type is self.LOCK_STATE:
@@ -64,7 +63,7 @@ class TunerInfo(GUIComponent):
 
 		if self.type is self.SNR_DB:
 			if value is not None and value != 0x12345678:
-				self.setText("%3.02f dB" % (value // 100.0))
+				self.setText("%3.02f dB" % (value / 100.0))
 			else:
 				self.setText("")
 		elif self.type is self.SNR_PERCENTAGE or self.type is self.AGC_PERCENTAGE:

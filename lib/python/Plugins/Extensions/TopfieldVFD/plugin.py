@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from __future__ import division, print_function
+from __future__ import print_function
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 from Plugins.Plugin import PluginDescriptor
@@ -295,7 +295,7 @@ class TopfieldVFD:
                 try:
                         f = statvfs(defaultMoviePath())
                         # there are 8 HDD segments in the VFD
-                        used = (f.f_blocks - f.f_bavail) * 8 // f.f_blocks
+                        used = (f.f_blocks - f.f_bavail) * 8 / f.f_blocks
                 except:
                         used = 0;
 

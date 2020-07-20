@@ -5,6 +5,7 @@ from Components.config import config, ConfigSelection, ConfigSubDict, ConfigYesN
 from Components.SystemInfo import SystemInfo
 from Tools.CList import CList
 from os import path
+from boxbranding import getHaveRCA, getHaveYUV, getHaveSCART, getHaveAVJACK
 
 # The "VideoHardware" is the interface to /proc/stb/video.
 # It generates hotplug events, and gives you the list of
@@ -103,11 +104,18 @@ class VideoHardware:
 		self.readPreferredModes()
 		self.widescreen_modes = set(["576i", "576p", "720p", "1080i", "1080p", "2160p"]).intersection(*[self.modes_available])
 
-		if self.modes.has_key("DVI-PC") and not self.getModeList("DVI-PC"):
+		if "DVI-PC" in self.modes and not self.getModeList("DVI-PC"):
 			print("[Videomode] VideoHardware remove DVI-PC because of not existing modes")
 			del self.modes["DVI-PC"]
-		if self.modes.has_key("Scart") and not self.getModeList("Scart"):
+		if "Scart" in self.modes and not self.getModeList("Scart"):
 			print("[Videomode] VideoHardware remove Scart because of not existing modes")
+			del self.modes["Scart"]
+		if "YPbPr" in self.modes and not getHaveYUV():
+			del self.modes["YPbPr"]
+		if "Scart" in self.modes and not getHaveSCART() and (getHaveRCA() == "True" or getHaveAVJACK() == "True"):
+			modes["RCA"] = modes["Scart"]
+			del self.modes["Scart"]
+		if "Scart" in self.modes and not getHaveRCA() and (not getHaveSCART() and not getHaveAVJACK()):
 			del self.modes["Scart"]
 
 		self.createConfig()

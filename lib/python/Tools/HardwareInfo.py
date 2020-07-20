@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from __future__ import print_function
+from boxbranding import getHaveHDMI
 
 hw_info = None
 
@@ -10,7 +11,7 @@ class HardwareInfo:
 	device_brand = _("unavailable")
 	device_version = ""
 	device_revision = ""
-	device_hdmi = True
+	device_hdmi = False
 
 	def __init__(self):
 		global hw_info
@@ -19,15 +20,33 @@ class HardwareInfo:
 		hw_info = self
 
 		print("[HardwareInfo] Scanning hardware info")
-
+		# Version
 		try:
-			self.device_name = open("/etc/model").read().strip()
+			self.device_version = open("/proc/stb/info/version").read().strip()
+		except:
+			pass
+
+		# Revision
+		try:
+			self.device_revision = open("/proc/stb/info/board_revision").read().strip()
+		except:
+			pass
+
+		# Name ... bit odd, but history prevails
+		try:
+			self.device_name = open("/etc/openvision/model").read().strip()
+		except:
+			pass
+
+		# Model
+		try:
+			self.device_model = open("/etc/openvision/model").read().strip()
 		except:
 			pass
 
 		# Brand
 		try:
-			self.device_brand = open("/etc/brand").read().strip().upper()
+			self.device_brand = open("/etc/openvision/brand").read().strip()
 		except:
 			pass
 
@@ -41,6 +60,9 @@ class HardwareInfo:
 			self.device_string = "%s (%s)" % (self.device_model, self.device_version)
 		else:
 			self.device_string = self.device_model
+
+		# only some early DMM boxes do not have HDMI hardware
+		self.device_hdmi =  getHaveHDMI() == "True"
 
 		print("[HardwareInfo] Detected: " + self.get_device_string())
 

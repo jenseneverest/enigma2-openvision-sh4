@@ -29,10 +29,16 @@ class About(Screen):
 		self.setTitle(_("About"))
 		hddsplit = skin.parameters.get("AboutHddSplit", 0)
 
+		model = getBoxType()
+
 		procmodel = getBoxProc()
 
-		AboutText = _("Hardware: ") + getBoxType() + "\n"
-		if procmodel != getBoxType():
+		stbplatform = boxbranding.getMachineBuild()
+
+		AboutText = _("Hardware: ") + model + "\n"
+		if stbplatform != model:
+			AboutText += _("Platform: ") + stbplatform + "\n"
+		if procmodel != model:
 			AboutText += _("Proc model: ") + procmodel + "\n"
 		if fileExists("/proc/stb/info/model_name"):
 			resellername = open("/proc/stb/info/model_name", "r").read().strip()
@@ -67,6 +73,11 @@ class About(Screen):
 		cpu = about.getCPUInfoString()
 		AboutText += _("CPU: ") + cpu + "\n"
 		AboutText += _("CPU brand: ") + about.getCPUBrand() + "\n"
+
+		socfamily = boxbranding.getSoCFamily()
+		if socfamily is not None:
+			AboutText += _("SoC family: ") + socfamily + "\n"
+
 		AboutText += _("CPU architecture: ") + about.getCPUArch() + "\n"
 		AboutText += _("CPU benchmark: ") + about.getCPUBenchmark() + _(" DMIPS") + "\n"
 

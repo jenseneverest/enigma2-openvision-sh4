@@ -11,9 +11,18 @@ profile("PYTHON_START")
 # it will break output redirection for crash logs.
 import Tools.RedirectOutput
 from Tools.Directories import resolveFilename, fileExists
-from boxbranding import getVisionVersion, getVisionRevision
+from boxbranding import getVisionVersion, getVisionRevision, getMachineBuild
+from enigma import getBoxType, getBoxBrand
+
+model = getBoxType()
+brand = getBoxBrand()
+platform = getMachineBuild()
+
 print("[mytest] Open Vision version = %s" % getVisionVersion())
 print("[mytest] Open Vision revision = %s" % getVisionRevision())
+print("[mytest] Brand/Meta = %s" % brand)
+print("[mytest] Model = %s" % model)
+print("[mytest] Platform = %s" % platform)
 
 import enigma
 import eConsoleImpl

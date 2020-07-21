@@ -4,7 +4,7 @@ from enigma import Misc_Options, eDVBCIInterfaces, eDVBResourceManager, eGetEnig
 from Tools.Directories import SCOPE_PLUGINS, fileCheck, fileExists, fileHas, pathExists, resolveFilename
 import os, re
 from os import access, R_OK
-from boxbranding import getDisplayType, getHaveSCART, getHaveYUV, getHaveRCA, getHaveWOL, getHaveTranscoding, getHaveMultiTranscoding
+from boxbranding import getDisplayType, getHaveSCART, getHaveYUV, getHaveRCA, getHaveWOL, getHaveTranscoding, getHaveMultiTranscoding, getHaveHDMI
 
 SystemInfo = {}
 
@@ -108,7 +108,7 @@ SystemInfo["Has2160p"] = False
 SystemInfo["HasHDMIpreemphasis"] = fileCheck("/proc/stb/hdmi/preemphasis")
 SystemInfo["HasColorimetry"] = fileCheck("/proc/stb/video/hdmi_colorimetry")
 SystemInfo["HasHdrType"] = fileCheck("/proc/stb/video/hdmi_hdrtype")
-SystemInfo["HasHDMI-CEC"] = fileExists(resolveFilename(SCOPE_PLUGINS, "SystemPlugins/HdmiCEC/plugin.pyo")) and (fileExists("/dev/cec0") or fileExists("/dev/hdmi_cec") or fileExists("/dev/misc/hdmi_cec0"))
+SystemInfo["HasHDMI-CEC"] = getHaveHDMI() == "True" and fileExists(resolveFilename(SCOPE_PLUGINS, "SystemPlugins/HdmiCEC/plugin.pyo")) and (fileExists("/dev/cec0") or fileExists("/dev/hdmi_cec") or fileExists("/dev/misc/hdmi_cec0"))
 SystemInfo["HasYPbPr"] = getHaveYUV() == "True"
 SystemInfo["HasScart"] = getHaveSCART() == "True"
 SystemInfo["HasSVideo"] = model == "cuberevo"

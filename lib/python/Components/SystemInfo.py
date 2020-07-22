@@ -39,6 +39,7 @@ def getBootdevice():
 
 model = getBoxType()
 brand = getBoxBrand()
+displaytype = getDisplayType()
 
 SystemInfo["InDebugMode"] = eGetEnigmaDebugLvl() >= 4
 SystemInfo["CommonInterface"] = eDVBCIInterfaces.getInstance().getNumOfSlots()
@@ -87,7 +88,6 @@ SystemInfo["VFD_final_scroll_delay"] = fileCheck("/proc/stb/lcd/final_scroll_del
 SystemInfo["LcdLiveTV"] = fileCheck("/proc/stb/fb/sd_detach") or fileCheck("/proc/stb/lcd/live_enable")
 SystemInfo["LcdLiveTVMode"] = fileCheck("/proc/stb/lcd/mode")
 SystemInfo["LcdLiveDecoder"] = fileCheck("/proc/stb/lcd/live_decoder")
-SystemInfo["FastChannelChange"] = False
 SystemInfo["3DMode"] = fileCheck("/proc/stb/fb/3dmode") or fileCheck("/proc/stb/fb/primary/3d")
 SystemInfo["3DZNorm"] = fileCheck("/proc/stb/fb/znorm") or fileCheck("/proc/stb/fb/primary/zoffset")
 SystemInfo["Blindscan_t2_available"] = False
@@ -142,7 +142,7 @@ SystemInfo["OScamIsActive"] = SystemInfo["OScamInstalled"] and fileExists("/tmp/
 SystemInfo["NCamInstalled"] = fileExists("/usr/bin/ncam")
 SystemInfo["NCamIsActive"] = SystemInfo["NCamInstalled"] and fileExists("/tmp/.ncam/ncam.version")
 SystemInfo["OpenVisionModule"] = fileCheck("/proc/stb/info/openvision")
-SystemInfo["7segment"] = getDisplayType() == "7segment"
+SystemInfo["7segment"] = displaytype == "7segment" or "7seg" in displaytype
 SystemInfo["CanFadeOut"] = False
 SystemInfo["HasH9SD"] = False
 SystemInfo["HasSDnomount"] = False

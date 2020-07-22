@@ -45,6 +45,7 @@
  * 20200214 Audioniek       Add Fortis 4G models.
  * 20200417 Audioniek       adb_box added.
  * 20200508 Audioniek       pace7241 added.
+ * 20200719 Audioniek       hl101, vip1_v2 and vip2_v1 added.
  *
  ****************************************************************************/
 #include <stdarg.h>
@@ -113,7 +114,10 @@ struct vfd_ioctl_data
    || defined (ENABLE_HS7429) \
    || defined (ENABLE_FOREVER_3434HD) \
    || defined (ENABLE_FOREVER_9898HD) \
-   || defined (ENABLE_SPARK7162)
+   || defined (ENABLE_SPARK7162) \
+   || defined (ENABLE_HL101) \
+   || defined (ENABLE_VIP1_V2) \
+   || defined (ENABLE_VIP2_V1)
 	#define VFDLENGTH 8
 #elif defined (ENABLE_VITAMIN_HD5000)
 	#define VFDLENGTH 11
@@ -155,7 +159,10 @@ evfd::evfd()
 	vfd_type = 6;
 #elif defined (ENABLE_OCTAGON1008)
 	vfd_type = 7;
-#elif defined (ENABLE_SPARK7162)
+#elif defined (ENABLE_SPARK7162) \
+   || defined (ENABLE_HL101) \
+   || defined (ENABLE_VIP1_V2) \
+   || defined (ENABLE_VIP2_V1)
 	vfd_type = 8;
 #elif defined (ENABLE_HS7810A) || defined (ENABLE_HS7819) || defined (ENABLE_HS7119)
 	vfd_type = 9;
@@ -203,7 +210,7 @@ evfd::~evfd()
 
 #if defined (ENABLE_TF7700)
 
-char * getProgress()
+char *getProgress()
 {
 	int n;
 	static char progress[20] = "0";
@@ -228,7 +235,7 @@ char * getProgress()
 	return progress;
 }
 
-void * start_loop (void *arg)
+void *start_loop (void *arg)
 {
 	int fplarge = open ("/dev/fplarge", O_WRONLY);
 	int fpsmall = open ("/dev/fpsmall", O_WRONLY);
@@ -256,7 +263,7 @@ void * start_loop (void *arg)
 	frontpanel_ioctl_icons icons = {0, 0, 0xf};
 
 	// start the display loop
-	char * progress = getProgress();
+	char *progress = getProgress();
 	int index = 2;
 	while (!requested)
 	{
@@ -315,7 +322,7 @@ void * start_loop (void *arg)
 }
 #else  //next code for boxes other than Topfield TF7700
 
-void * start_loop (void *arg)
+void *start_loop (void *arg)
 {
 	evfd vfd;
 	blocked = true;
@@ -349,7 +356,10 @@ void * start_loop (void *arg)
 	 && !defined (ENABLE_FOREVER_2424HD) \
 	 && !defined (ENABLE_VITAMIN_HD5000) \
 	 && !defined (ENABLE_ADB_BOX) \
-	 && !defined (ENABLE_PACE7241)
+	 && !defined (ENABLE_PACE7241) \
+	 && !defined (ENABLE_HL101) \
+	 && !defined (ENABLE_VIP1_V2) \
+	 && !defined (ENABLE_VIP2_V1)
 	/* Others cycle their icons */
 	for (int vloop = 0; vloop < 128; vloop++)
 	{
@@ -439,7 +449,10 @@ void * start_loop (void *arg)
 	 && !defined (ENABLE_SPARK7162) \
 	 && !defined (ENABLE_VITAMIN_HD5000) \
 	 && !defined (ENABLE_ADB_BOX) \
-	 && !defined (ENABLE_PACE7241)
+	 && !defined (ENABLE_PACE7241) \
+	 && !defined (ENABLE_HL101) \
+	 && !defined (ENABLE_VIP1_V2) \
+	 && !defined (ENABLE_VIP2_V1)
 	//set all blocked icons
 	for (int id = 0x10; id < 0x20; id++)
 	{
@@ -474,7 +487,10 @@ void * start_loop (void *arg)
  || defined (ENABLE_FOREVER_2424HD) \
  || defined (ENABLE_VITAMIN_HD5000) \
  || defined (ENABLE_ADB_BOX) \
- || defined (ENABLE_PACE7241)
+ || defined (ENABLE_PACE7241) \
+ || defined (ENABLE_HL101) \
+ || defined (ENABLE_VIP1_V2) \
+ || defined (ENABLE_VIP2_V1)
 void evfd::vfd_write_string_scrollText(char* text)
 {
 	return;
@@ -738,7 +754,10 @@ void evfd::vfd_clear_icons()
 {
 	int id;
 
-	#if defined (ENABLE_SPARK7162)
+	#if defined (ENABLE_SPARK7162) \
+	 || defined (ENABLE_HL101) \
+	 || defined (ENABLE_VIP1_V2) \
+	 || defined (ENABLE_VIP2_V1)
 		for (id = 1; id < 46; id++)
 	#elif defined (ENABLE_FORTIS_HDBOX)
 		for (id = 1; id < 40; id++)

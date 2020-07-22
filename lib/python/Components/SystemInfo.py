@@ -92,7 +92,7 @@ SystemInfo["3DMode"] = fileCheck("/proc/stb/fb/3dmode") or fileCheck("/proc/stb/
 SystemInfo["3DZNorm"] = fileCheck("/proc/stb/fb/znorm") or fileCheck("/proc/stb/fb/primary/zoffset")
 SystemInfo["Blindscan_t2_available"] = False
 SystemInfo["RcTypeChangable"] = pathExists("/proc/stb/ir/rc/type")
-SystemInfo["HasFullHDSkinSupport"] = brand in ("cuberevo","fulan","hs","edisionargus","forever","nbox") or model in ("atevio7500","hl101","octagon1008","fortis_hdbox")
+SystemInfo["HasFullHDSkinSupport"] = brand in ("cuberevo","fulan","hs","edisionargus","forever","nbox") or model in ("atevio7500","hl101","octagon1008","fortis_hdbox","vitamin_hd5000","ufs912","ufs913","tf7700")
 SystemInfo["HasBypassEdidChecking"] = fileCheck("/proc/stb/hdmi/bypass_edid_checking")
 SystemInfo["HasColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
 SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"]
@@ -100,7 +100,7 @@ SystemInfo["HasMultichannelPCM"] = fileCheck("/proc/stb/audio/multichannel_pcm")
 SystemInfo["HasMMC"] = "root" in cmdline and cmdline["root"].startswith("/dev/mmcblk")
 SystemInfo["HasTranscoding"] = getHaveTranscoding() == "True" or getHaveMultiTranscoding() == "True" or pathExists("/proc/stb/encoder/0") or fileCheck("/dev/bcm_enc0")
 SystemInfo["HasH265Encoder"] = fileHas("/proc/stb/encoder/0/vcodec_choices", "h265")
-SystemInfo["CanNotDoSimultaneousTranscodeAndPIP"] = False
+SystemInfo["CanNotDoSimultaneousTranscodeAndPIP"] = True
 SystemInfo["HasColordepth"] = fileCheck("/proc/stb/video/hdmi_colordepth")
 SystemInfo["HasFrontDisplayPicon"] = False
 SystemInfo["Has24hz"] = fileCheck("/proc/stb/video/videomode_24hz")

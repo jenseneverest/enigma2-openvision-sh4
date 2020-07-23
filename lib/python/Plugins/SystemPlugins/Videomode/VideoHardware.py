@@ -5,7 +5,13 @@ from Components.config import config, ConfigSelection, ConfigSubDict, ConfigYesN
 from Components.SystemInfo import SystemInfo
 from Tools.CList import CList
 from os import path
-from boxbranding import getHaveRCA, getHaveYUV, getHaveSCART, getHaveAVJACK
+from boxbranding import getHaveAVJACK, getSoCFamily
+
+socfamily = getSoCFamily().replace('sti','')
+has_scart = SystemInfo["HasScart"]
+has_yuv = SystemInfo["HasYPbPr"]
+has_rca = SystemInfo["HasComposite"]
+has_avjack = getHaveAVJACK() == "True"
 
 # The "VideoHardware" is the interface to /proc/stb/video.
 # It generates hotplug events, and gives you the list of
@@ -43,28 +49,38 @@ class VideoHardware:
 								"50Hz":	{ 60: "1080p50" },
 								"60Hz": { 60: "1080p60" } }
 
-	rates["2160p30"] =		{ "25Hz":	{ 50: "2160p25" },
-								"30Hz":		{ 60: "2160p30"} }
-
-	rates["2160p"] =		{ "50Hz":	{ 50: "2160p50" },
-								"60Hz":		{ 60: "2160p" },
-								"multi":	{ 50: "2160p50", 60: "2160p" } }
-
 	rates["PC"] = {
 		"1024x768"  : { 60: "1024x768_60", 70: "1024x768_70", 75: "1024x768_75", 90: "1024x768_90", 100: "1024x768_100" }, #43 60 70 72 75 90 100
 		"1280x1024" : { 60: "1280x1024_60", 70: "1280x1024_70", 75: "1280x1024_75" }, #43 47 60 70 74 75
 		"1600x1200" : { 60: "1600x1200_60" }, #60 66 76
 	}
 
-	if SystemInfo["HasScart"]:
+	if has_scart:
 		modes["Scart"] = ["PAL"]
-	elif SystemInfo["HasComposite"]:
-		modes["RSA"] = ["576i", "PAL", "NTSC", "Multi"]
-        if SystemInfo["HasYPbPr"]:
-		modes["YPbPr"] = ["720p", "1080i", "576p", "480p", "576i", "480i"]
-	modes["Component"] = ["720p", "1080p", "1080i", "576p", "576i"]
-	modes["HDMI"] = ["720p", "1080p", "1080i", "576p", "576i"]
+	elif has_rca:
+		modes["RCA"] = ["576i", "PAL"]
+
+	if socfamily in ("7105","7111"):
+		modes["HDMI"] = ["720p", "1080p", "1080i", "576p", "576i", "480p", "480i"]
+		widescreen_modes = {"720p", "1080p", "1080i"}
+	else:
+		modes["HDMI"] = ["720p", "1080i", "576p", "576i", "480p", "480i"]
+		widescreen_modes = {"720p", "1080i"}
+
 	modes["HDMI-PC"] = ["PC"]
+
+	if has_yuv:
+		modes["YPbPr"] = modes["HDMI"]
+
+	if "YPbPr" in modes and not has_yuv:
+		del modes["YPbPr"]
+
+	if "Scart" in modes and not has_scart and (has_rca or has_avjack):
+		modes["RCA"] = modes["Scart"]
+		del modes["Scart"]
+
+	if "Scart" in modes and not has_rca and not has_scart and not has_avjack:
+		del modes["Scart"]
 
 	def getOutputAspect(self):
 		ret = (16,9)
@@ -102,20 +118,19 @@ class VideoHardware:
 
 		self.readAvailableModes()
 		self.readPreferredModes()
-		self.widescreen_modes = set(["576i", "576p", "720p", "1080i", "1080p", "2160p"]).intersection(*[self.modes_available])
 
-		if "DVI-PC" in self.modes and not self.getModeList("DVI-PC"):
-			print("[Videomode] VideoHardware remove DVI-PC because of not existing modes")
-			del self.modes["DVI-PC"]
+		if "HDMI-PC" in self.modes and not self.getModeList("HDMI-PC"):
+			print("[Videomode] VideoHardware remove HDMI-PC because of not existing modes")
+			del self.modes["HDMI-PC"]
 		if "Scart" in self.modes and not self.getModeList("Scart"):
 			print("[Videomode] VideoHardware remove Scart because of not existing modes")
 			del self.modes["Scart"]
-		if "YPbPr" in self.modes and not getHaveYUV():
+		if "YPbPr" in self.modes and not has_yuv:
 			del self.modes["YPbPr"]
-		if "Scart" in self.modes and not getHaveSCART() and (getHaveRCA() == "True" or getHaveAVJACK() == "True"):
+		if "Scart" in self.modes and not has_scart and (has_rca or has_avjack):
 			modes["RCA"] = modes["Scart"]
 			del self.modes["Scart"]
-		if "Scart" in self.modes and not getHaveRCA() and (not getHaveSCART() and not getHaveAVJACK()):
+		if "Scart" in self.modes and not has_rca and not has_scart and not has_avjack:
 			del self.modes["Scart"]
 
 		self.createConfig()
@@ -242,7 +257,6 @@ class VideoHardware:
 		return True
 
 	def isPortUsed(self, port):
-#		if port == "DVI":
 		if port == "HDMI":
 			self.readPreferredModes()
 			return len(self.modes_preferred) != 0
@@ -275,10 +289,6 @@ class VideoHardware:
 		portlist = self.getPortList()
 		for port in portlist:
 			descr = port
-			if descr == 'DVI':
-				descr = 'HDMI'
-			elif descr == 'DVI-PC':
-				descr = 'HDMI-PC'
 			lst.append((port, descr))
 
 			# create list of available modes
@@ -391,7 +401,7 @@ class VideoHardware:
 		print("[Videomode] VideoHardware updateColor: ", port)
 		if port == "HDMI":
 			self.setHDMIColor(config.av.colorformat_hdmi)
-		elif port == "Component":
+		elif port == "YPbPr":
 			self.setYUVColor(config.av.colorformat_yuv)
 		elif port == "Scart":
 			map = {"cvbs": 0, "rgb": 1, "svideo": 2, "yuv": 3}

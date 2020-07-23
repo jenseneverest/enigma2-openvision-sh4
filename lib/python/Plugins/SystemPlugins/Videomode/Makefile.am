@@ -9,9 +9,6 @@ install_PYTHON =	\
 	VideoWizard.py
 
 dist_install_DATA = \
-	Component.png \
-	DVI.png \
-	lcd_DVI.png \
 	lcd_Scart.png \
 	lcd_YPbPr.png \
 	Scart.png \

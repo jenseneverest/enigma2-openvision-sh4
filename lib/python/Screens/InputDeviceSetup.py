@@ -301,8 +301,7 @@ class InputDeviceSetup(Screen, ConfigListScreen):
 class RemoteControlType(Screen, ConfigListScreen):
 	rcList = [
 			("0", _("Default")),
-			("1", _("atevio7500")),
-			("3", _("hl101")),
+			("7", _("atevio7500")),
 			("7", _("fs9000")),
 			("8", _("hs9510")),
 			("9", _("hs7110")),
@@ -313,14 +312,12 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("14", _("vitamin")),
 			("15", _("adb")),
 			("16", _("pace7241")),
-			("17", _("vip2_1")),
+			("17", _("hl101")),
 			("18", _("forever"))
-
 		]
 
 	defaultRcList = [
-			("atevio7500", 1),
-			("hl101", 3),
+			("atevio7500", 7),
 			("fs9000", 7),
 			("hs9510", 8),
 			("hs7110", 9),
@@ -331,7 +328,7 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("vitamin", 14),
 			("adb", 15),
 			("pace7241", 16),
-			("vip2_1", 17),
+			("hl101", 17),
 			("forever", 18)
 		]
 

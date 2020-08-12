@@ -198,28 +198,28 @@ class CuberevoVFD:
 	def enableClock(self):
 		self.clockEnabled = True
 		try:
-			os.popen("/usr/bin/fp_control -dt 1")
+			os.popen("/bin/fp_control -dt 1")
 		except OSError:
 			print("[CuberevoVFD] no memory")
 
 	def disableClock(self):
 		self.clockEnabled = False
 		try:
-			os.popen("/usr/bin/fp_control -dt 0")
+			os.popen("/bin/fp_control -dt 0")
 		except OSError:
 			print("[CuberevoVFD] no memory")
 
 	def enableTimeMode(self):
 		self.timeModeEnabled = 1
 		try:
-			os.popen("/usr/bin/fp_control -tm 1")
+			os.popen("/bin/fp_control -tm 1")
 		except OSError:
 			print("[CuberevoVFD] no memory")
 
 	def disableTimeMode(self):
 		self.timeModeEnabled = 0
 		try:
-			os.popen("/usr/bin/fp_control -tm 0")
+			os.popen("/bin/fp_control -tm 0")
 		except OSError:
 			print("[CuberevoVFD] no memory")
 
@@ -249,28 +249,28 @@ class CuberevoVFD:
 	def enableLed(self):
 		self.ledEnabled = True
 		try:
-			os.popen("/usr/bin/fp_control -l 0 1")
+			os.popen("/bin/fp_control -l 0 1")
 		except OSError:
 			print("[CuberevoVFD] no memory")
 
 	def disableLed(self):
 		self.ledEnabled = False
 		try:
-			os.popen("/usr/bin/fp_control -l 0 0")
+			os.popen("/bin/fp_control -l 0 0")
 		except OSError:
 			print("[CuberevoVFD] no memory")
 
 	def enableFan(self):
 		self.fanEnabled = True
 		try:
-			os.popen("/usr/bin/fp_control -sf 1")
+			os.popen("/bin/fp_control -sf 1")
 		except OSError:
 			print("[CuberevoVFD] no memory")
 
 	def disableFan(self):
 		self.fanEnabled = False
 		try:
-			os.popen("/usr/bin/fp_control -sf 0")
+			os.popen("/bin/fp_control -sf 0")
 		except OSError:
 			print("[CuberevoVFD] no memory")
 

@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 from keyids import KEYIDS
 from Components.config import config
-from Components.RcModel import rc_model
 
 keyBindings = {}
 
@@ -721,40 +720,37 @@ def queryKeyBinding(context, action):
 		return []
 
 def getKeyDescription(key):
-	if rc_model.rcIsDefault():
-		idx = config.misc.rcused.value
+	rcType = config.plugins.remotecontroltype.rctype.value
+	# rcType = config.misc.inputdevices.rcType.value
+	print "[Keybindings.py] RC type is:", rcType
+	if rcType == 10:	# Spark
+		idx = 3
+	elif rcType == 7:	# Fortis FS9000/FS9200/HS8200
+		idx = 4
+	elif rcType == 8:	# Fortis HS9510/HS7420/HS7429/HS7810A/HS7819
+		idx = 4
+	elif rcType == 9:	# Fortis HS7110/HS7119
+		idx = 4
+	elif rcType == 11:	# Topfield TF77X0HDPVR
+		idx = 5
+	elif rcType == 12:	# Kathrein UFS912
+		idx = 6
+	elif rcType == 13:	# CubeRevo Universal
+		idx = 7
+	elif rcType == 14:	# Vitamin HD5000
+		idx = 8
+	elif rcType == 15:	# ADB XMP
+		idx = 9
+	elif rcType == 16:	# Pace 7241
+		idx = 10
+	elif rcType == 17:	# Edision argus
+		idx = 11
+	elif rcType == 18:	# HL101
+		idx = 12
+	elif rcType == 19:	# Forever
+		idx = 13
 	else:
-		rcType = config.plugins.remotecontroltype.rctype.value
-		# rcType = config.misc.inputdevices.rcType.value
-		print "[Keybindings.py] RC type is:", rcType
-		if rcType == 10:	# Spark
-			idx = 3
-		elif rcType == 7:	# Fortis FS9000/FS9200/HS8200
-			idx = 4
-		elif rcType == 8:	# Fortis HS9510/HS7420/HS7429/HS7810A/HS7819
-			idx = 4
-		elif rcType == 9:	# Fortis HS7110/HS7119
-			idx = 4
-		elif rcType == 11:	# Topfield TF77X0HDPVR
-			idx = 5
-		elif rcType == 12:	# Kathrein UFS912
-			idx = 6
-		elif rcType == 13:	# CubeRevo Universal
-			idx = 7
-		elif rcType == 14:	# Vitamin HD5000
-			idx = 8
-		elif rcType == 15:	# ADB XMP
-			idx = 9
-		elif rcType == 16:	# Pace 7241
-			idx = 10
-		elif rcType == 17:	# Edision argus
-			idx = 11
-		elif rcType == 18:	# HL101
-			idx = 12
-		elif rcType == 19:	# Forever
-			idx = 13
-		else:
-			idx = 2
+		idx = 2
 	return keyDescriptions[idx].get(key)
 
 def getKeyBindingKeys(filterfn=lambda key: True):

@@ -12,6 +12,7 @@ from Components.ConfigList import ConfigListScreen
 from Components.ActionMap import ActionMap, HelpableActionMap
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
+from boxbranding import getRCType
 
 class InputDeviceSelection(Screen,HelpableScreen):
 	skin = """
@@ -316,41 +317,6 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("19", _("Forever")),
 		]
 
-	defaultRcList = [
-			("fortis_hdbox", 7),
-			("atevio7500", 7),
-			("hs9510", 8),
-			("hs7420", 8),
-			("hs7429", 8),
-			("hs7810a", 8),
-			("hs7819", 8),
-			("hs7110", 9),
-			("hs7119", 9),
-			("spark", 10),
-			("spark7162", 10),
-			("tf7700", 11),
-			("ufs912", 12),
-			("ufs913", 12),
-			("cuberevo", 13),
-			("cuberevo_mini", 13),
-			("cuberevo_mini2", 13),
-			("cuberevo_250hd", 13),
-			("cuberevo_9500hd", 13),
-			("cuberevo_2000hd", 13),
-			("cuberevo_3000hd", 13),
-			("vitamin_hd5000", 14),
-			("adb_box", 15),
-			("adb_2850", 15),
-			("pace7241", 16),
-			("vip1_v2", 17),
-			("vip2_v1", 17),
-			("hl101", 18),
-			("forever_2424hd", 19),
-			("forever_3434hd", 19),
-			("forever_9898hd", 19),
-			("forever_nanosmart", 19),
-		]
-
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		self.skinName = ["RemoteControlType", "Setup" ]
@@ -377,11 +343,7 @@ class RemoteControlType(Screen, ConfigListScreen):
 		self.getDefaultRcType()
 
 	def getDefaultRcType(self):
-		data = iRcTypeControl.getBoxType()
-		for x in self.defaultRcList:
-			if x[0] in data:
-				self.defaultRcType = x[1]
-				break
+		self.defaultRcType = getRCType()
 		if self.defaultRcType == 0:
 			self.defaultRcType = iRcTypeControl.readRcType()
 

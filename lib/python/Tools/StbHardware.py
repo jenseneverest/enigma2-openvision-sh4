@@ -6,12 +6,15 @@ from fcntl import ioctl
 from struct import pack, unpack
 from time import time, localtime
 from Tools.Directories import fileExists
+from boxbranding import getRCName
 
 def getBoxProcType():
 	procmodeltype = "unknown"
 	try:
 		if fileExists("/proc/stb/info/type"):
 			procmodeltype = open("/proc/stb/info/type", "r").readline().strip().lower()
+		else:
+			procmodeltype = getRCName()
 	except IOError:
 		print("[StbHardware] getBoxProcType failed!")
 	return procmodeltype

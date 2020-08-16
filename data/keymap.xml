@@ -22,6 +22,7 @@
 		<key id="KEY_POWER" mapto="power_down" flags="m" />
 		<key id="KEY_POWER" mapto="power_up" flags="b" />
 		<key id="KEY_KP0" mapto="discrete_off" flags="m" />
+		<key id="KEY_GOTO" mapto="power" flags="m"/>
 	</map>
 
 	<!--
@@ -33,6 +34,7 @@
 
 	<map context="HelpActions">
 		<key id="KEY_HELP" mapto="displayHelp" flags="b" />
+		<key id="KEY_OPTION" mapto="displayHelp" flags="b"/>
 		<!-- Keyboard specific buttons -->
 		<key id="KEY_F1" mapto="displayHelp" flags="b" />
 	</map>
@@ -360,11 +362,11 @@
 		<key id="KEY_OK" mapto="toggleShowLong" flags="l" />
 		<key id="KEY_ENTER" mapto="toggleShow" flags="m" />
 		<key id="KEY_EXIT" mapto="hide" flags="m" />
-		<key id="KEY_INFO" mapto="toggleSecondInfoBar" flags="l"/>
 		<key id="KEY_ESC" mapto="hide" flags="m" />
 		<key id="KEY_ENTER" mapto="toggleShowLong" flags="l" />
 		<key id="KEY_EXIT" mapto="hideLong" flags="l" />
 		<key id="KEY_ESC" mapto="hideLong" flags="l" />
+		<key id="KEY_INFO" mapto="toggleSecondInfoBar" flags="l"/>
 	</map>
 
 	<map context="InfobarActions">
@@ -392,6 +394,12 @@
 		<key id="KEY_LANGUAGE" mapto="audioSelection" flags="m"/>
 	</map>
 
+	<map context="InfobarAspectSelectionActions">
+		<key id="KEY_GREEN" mapto="aspectSelection" flags="l" />
+		<key id="KEY_MODE" mapto="aspectSelection" flags="l" />
+		<key id="KEY_MODE" mapto="aspectSelection" flags="b" />
+	</map>
+
 	<map context="InfobarSubtitleSelectionActions">
 		<key id="KEY_SUBTITLE" mapto="subtitleSelection" flags="b" />
 		<key id="KEY_SUBTITLE" mapto="subtitleShowHide" flags="l" />
@@ -414,10 +422,12 @@
 	<map context="InfobarVmodeButtonActions">
 		<key id="KEY_VMODE" mapto="vmodeSelection" flags="b" />
 		<key id="KEY_GREEN" mapto="vmodeSelection" flags="l" />
+		<key id="KEY_ANGLE" mapto="vmodeSelection" flags="m"/>
 	</map>
 
 	<map context="InfobarPiPActions">
 		<key id="KEY_SCREEN" mapto="activatePiP" flags="b" />
+		<key id="KEY_F6" mapto="activatePiP" flags="b"/>
 		<key id="KEY_TVSAT" mapto="activatePiP" flags="b"/>
 	</map>
 
@@ -996,15 +1006,12 @@
 		<key id="KEY_SHOUTCAST" mapto="shoutcast" flags="m"/>
 		<key id="KEY_YOUTUBE" mapto="youtube" flags="m"/>
 		<key id="KEY_SPARK" mapto="spark" flags="m"/>
-		<key id="KEY_FIND" mapto="find" flags="m"/>
 		<key id="KEY_PLAYMODE" mapto="playmode" flags="b"/>
 		<key id="KEY_PLAYMODE" mapto="playmode_long" flags="l"/>
-		<key id="KEY_FILE" mapto="file" flags="m"/>
 		<key id="KEY_USB" mapto="usb" flags="b"/>
 		<key id="KEY_USB" mapto="usb_long" flags="l"/>
 		<key id="KEY_PORTAL" mapto="portal" flags="b"/>
 		<key id="KEY_PORTAL" mapto="portal_long" flags="l"/>
-		<key id="KEY_SLOW" mapto="slow" flags="m"/>
 		<key id="KEY_FAST" mapto="fast" flags="m"/>
 		<key id="KEY_RECALL" mapto="recall" flags="m"/>
 		<key id="KEY_VOD" mapto="vod" flags="b" />
@@ -1025,5 +1032,8 @@
 		<key id="KEY_ZOOM" mapto="zoom_long" flags="l"/>
 		<key id="KEY_FILE" mapto="file" flags="b"/>
 		<key id="KEY_FILE" mapto="file_long" flags="l"/>
+		<key id="KEY_FILE" mapto="file" flags="m"/>
+		<key id="KEY_FIND" mapto="find" flags="m"/>
+		<key id="KEY_SLOW" mapto="slow" flags="m"/>
 	</map>
 </keymap>

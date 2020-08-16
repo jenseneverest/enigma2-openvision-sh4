@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -1185,8 +1185,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Alle årgange"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr "(Radio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr "(TV)"
 
 #, fuzzy
 msgid "(VU+ type)"
@@ -1230,6 +1238,11 @@ msgstr ""
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr ""
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1576,6 +1589,9 @@ msgid "AC3 downmix"
 msgstr "AC3 downmix"
 
 msgid "ACQUIRING TSID/ONID"
+msgstr ""
+
+msgid "ADB XMP"
 msgstr ""
 
 msgid "ADB variant: "
@@ -2356,6 +2372,11 @@ msgstr "Auto Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Auto EXIF Orientation rotation/spejling"
+
+#
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Timer"
 
 #
 msgid "Auto chapter split every ? minutes (0=never)"
@@ -4041,6 +4062,9 @@ msgstr "Lysstyrke"
 msgid "Cuba"
 msgstr ""
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -5208,6 +5232,9 @@ msgstr "Indstil østlig grænse"
 msgid "Ecuador"
 msgstr ""
 
+msgid "Edision argus"
+msgstr ""
+
 #
 msgid "Edit"
 msgstr "Rediger"
@@ -5368,6 +5395,9 @@ msgstr "Aktiver favoritliste valg i multi-EPG"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Åbne flyttetype"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Aktiver fallback remote receiver"
@@ -6211,8 +6241,24 @@ msgid "Force legacy signal stats"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Forever"
+msgstr "aldrig"
+
+#
 msgid "Format"
 msgstr "Formatere"
+
+msgid "Fortis mini"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Fortis standard"
+msgstr "standard"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Fremad lydstyke"
@@ -6621,6 +6667,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Forsinkelse af eksterne undertekster"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -7060,6 +7109,12 @@ msgstr "Inkluder ECM i http stream"
 msgid "Include EIT in http streams"
 msgstr "Inkluder EIT i http stream"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Ukorrekt kanaltype for BiB!"
 
@@ -7386,6 +7441,9 @@ msgid "Just scale"
 msgstr "Scaler"
 
 msgid "KA-SAT"
+msgstr ""
+
+msgid "Kathrein UFS"
 msgstr ""
 
 msgid "Kazakhstan"
@@ -8898,6 +8956,9 @@ msgstr "Ikke tilknyttet"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Ikke diskplads nok. Venligst skab mere plads på disken og prøv igen. (%d MB nødvendig, %d MB ledig)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "Ved begyndelsen"
@@ -9255,6 +9316,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "PPanel"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 #
 msgid "Package list update"
@@ -11204,9 +11268,6 @@ msgstr "Gem tidsforskydnings fil"
 msgid "Save timeshift file in movie directory"
 msgstr "Gem tidsforskydnings fil i film bibliotek"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Gem timeshift i filmmappen og zap"
-
 msgid "Save timeshift only for current event"
 msgstr "Gem kun timeshift for nuværende begivenhed"
 
@@ -12882,6 +12943,9 @@ msgstr ""
 msgid "Spanish"
 msgstr "Spansk"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -13723,6 +13787,15 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Trådløs LAN plugin er ikke installeret!\n"
+"Installer det venligst."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standarden understøtter ikke H.264 (HDTV) video streams. Vil du lave en speciel DVD med et andet data format (som ikke kan afspilles in en særskilt DVD afspiller) i stedet?"
 
@@ -14481,6 +14554,9 @@ msgstr "Top og bund"
 
 msgid "Top and bottom"
 msgstr "Top og bund"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -15351,6 +15427,14 @@ msgstr "Virtuelt tastatur"
 msgid "Virtual keyboard"
 msgstr "Virtuelt tastatur"
 
+#
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtuelt tastatur"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Video: %s fps"
@@ -16005,6 +16089,9 @@ msgstr "Du kan kun brænde receiver optagelser!"
 msgid "You can remove this plugin."
 msgstr "Du kan fjerne dette plugin."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 #
 msgid "You cannot delete this!"
 msgstr "Dette kan ikke slettes!"
@@ -16278,11 +16365,6 @@ msgstr "Relativ"
 msgid "actual time only"
 msgstr "Aktuel tid kun"
 
-#
-#, fuzzy
-msgid "adb"
-msgstr "Standby"
-
 msgid "adult movie/drama"
 msgstr "voksen film/drama"
 
@@ -16349,9 +16431,6 @@ msgstr "kunst/kultur (uden musik)"
 
 msgid "arts/culture magazine"
 msgstr "kunst/kultur magasin"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "atletik"
@@ -16528,9 +16607,6 @@ msgstr ""
 msgid "cooking"
 msgstr "madlavning"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "nyheder/nuværende begivenheder"
@@ -16661,6 +16737,10 @@ msgstr "afslut klip her"
 msgid "end cut here (reset)"
 msgstr "afslut klip her"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Sæt standard"
+
 msgid "entertainment (10-16 year old)"
 msgstr "underholdning (10-16 år gammel)"
 
@@ -16758,11 +16838,6 @@ msgid "foreign countries/expeditions"
 msgstr "fremmede lande/ekspeditioner"
 
 #
-#, fuzzy
-msgid "forever"
-msgstr "aldrig"
-
-#
 msgid "forward to the next chapter"
 msgstr "frem til næste kapitel"
 
@@ -16772,9 +16847,6 @@ msgstr "ledig"
 
 msgid "from"
 msgstr "fra"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -16853,15 +16925,9 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 #
 msgid "horizontal"
 msgstr "horisontal"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -16873,9 +16939,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -17209,9 +17272,6 @@ msgstr "original"
 msgid "original language"
 msgstr "original sprog"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -17482,9 +17542,6 @@ msgstr "social/politiske emner/økonomi"
 msgid "social/spiritual science"
 msgstr "social/spirituel science"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -17571,9 +17628,6 @@ msgstr "DVB T"
 msgid "testing"
 msgstr "fungerer"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "denne bouquet er beskyttet af forældrekontrol pin"
 
@@ -17645,9 +17699,6 @@ msgstr "vandsport"
 msgid "uShare setup"
 msgstr "Video opsætning"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "utilgængelig"
 
@@ -17696,12 +17747,6 @@ msgid "vertical"
 msgstr "vertikal"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 #

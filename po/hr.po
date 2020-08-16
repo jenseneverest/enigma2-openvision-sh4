@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2020-07-25 13:40+0200\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -1179,8 +1179,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Svi uzrasti"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Radio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (ТV)"
 
 msgid "(VU+ type)"
 msgstr "(VU+ tip)"
@@ -1219,6 +1227,11 @@ msgstr "-NEMA USLUGE\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-GREŠKA USLUGE:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1524,6 +1537,9 @@ msgstr "AC3 mikser"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "STJECANJE TSID/ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2199,6 +2215,10 @@ msgstr "Аuto Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Аuto EXIF orijentacija rotacije"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Tajmer"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatski podijeliti na poglavlja svakih ? minuta (0=nikad)"
@@ -3707,6 +3727,9 @@ msgstr "Osvjetljenje"
 msgid "Cuba"
 msgstr "Kuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4722,6 +4745,9 @@ msgstr "Postavite istočnu granicu"
 msgid "Ecuador"
 msgstr "Ekvador"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Uredite"
 
@@ -4861,6 +4887,9 @@ msgstr "Omogućite odabir paketa u multi EPG-u."
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Omogući sortiranje kanala"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Omogućite rezervni daljinski prijemnik"
@@ -5619,8 +5648,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Forsiraj statistiku naslijeđenih signala"
 
+#, fuzzy
+msgid "Forever"
+msgstr "nikada"
+
 msgid "Format"
 msgstr "Format"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "standard"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Prednja tipka za glasnoću"
@@ -5989,6 +6032,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Odgoda za vanjske titlove"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -6392,6 +6438,12 @@ msgstr "Uključite ECM u web prijenos"
 msgid "Include EIT in http streams"
 msgstr "Uključite EIT u web prijenos"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Pogrešan tip servisa za PiP!"
 
@@ -6675,6 +6727,9 @@ msgstr "Just scale"
 
 msgid "KA-SAT"
 msgstr "KA-SAT"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazahstan"
@@ -7969,6 +8024,9 @@ msgstr "Nije povezano"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nedovoljno prostora na disku. Oslobodite prostor na disku i pokušajte ponovno. (%d MB potrebno, %d MB dostupno)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "nije pokrenut"
@@ -8302,6 +8360,9 @@ msgstr "РМТ PID"
 
 msgid "PPanel"
 msgstr "PPanel"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Ažuriranje popisa paketa."
@@ -9974,9 +10035,6 @@ msgstr "Spremite vremenski pomak fajl"
 msgid "Save timeshift file in movie directory"
 msgstr "Spremite datoteku vremenskog pomaka u direktoriju filma"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Spremite vremenski pomak i prebacite"
-
 msgid "Save timeshift only for current event"
 msgstr "Spremite vremenski pomak samo za trenutni događaj"
 
@@ -11463,6 +11521,9 @@ msgstr "Španjolska"
 msgid "Spanish"
 msgstr "Španjolski"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12206,6 +12267,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"WLAN dodatak nije instaliran!\n"
+"Molimo instalirajte ga."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standard ne podržava H.264 (HDTV) video web prijenos. Želite li stvoriti DVD s posebnim formatom podataka (koji se neće reproducirati u samostalnim DVD playerima)?"
 
@@ -12884,6 +12953,9 @@ msgstr "Iznad i ispod"
 
 msgid "Top and bottom"
 msgstr "Iznad i ispod"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13633,6 +13705,13 @@ msgstr "Tekst virtualne tipkovnice:"
 msgid "Virtual keyboard"
 msgstr "Virtualna tipkovnica"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtualna tipkovnica"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Video: %s fps"
@@ -14232,6 +14311,9 @@ msgstr "Možete snimiti samo zapise o prijemniku!"
 msgid "You can remove this plugin."
 msgstr "Možete ukloniti ovaj dodatak."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Ne možete to izbrisati!"
 
@@ -14497,10 +14579,6 @@ msgstr "aktivan"
 msgid "actual time only"
 msgstr "samo stvarno vrijeme"
 
-#, fuzzy
-msgid "adb"
-msgstr "Na čekanju"
-
 msgid "adult movie/drama"
 msgstr "film za odrasle/drama"
 
@@ -14564,9 +14642,6 @@ msgstr "umjetnost/kultura (bez glazbe, općenito)"
 
 msgid "arts/culture magazine"
 msgstr "časopis za umjetnost i kulturu"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "atletika"
@@ -14722,9 +14797,6 @@ msgstr "upravljano po HDMI"
 msgid "cooking"
 msgstr "kuhanje"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "vijesti/aktualnosti (općenito)"
@@ -14838,6 +14910,10 @@ msgstr "završite izrezivanje"
 msgid "end cut here (reset)"
 msgstr "završite izrezivanje"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Postavite zadano"
+
 msgid "entertainment (10-16 year old)"
 msgstr "zabava (10-16 godina starosti)"
 
@@ -14924,10 +15000,6 @@ msgstr "prisilno omogućen"
 msgid "foreign countries/expeditions"
 msgstr "strane zemlje/ekspedicije"
 
-#, fuzzy
-msgid "forever"
-msgstr "nikada"
-
 msgid "forward to the next chapter"
 msgstr "na sljedeće poglavlje"
 
@@ -14936,9 +15008,6 @@ msgstr "slobodno"
 
 msgid "from"
 msgstr "iz"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15012,14 +15081,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horizontalno"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15031,9 +15094,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15324,9 +15384,6 @@ msgstr "izvornik"
 msgid "original language"
 msgstr "izvorni jezik"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15567,9 +15624,6 @@ msgstr "društvena/politička pitanja/ekonomija (općenito)"
 msgid "social/spiritual science"
 msgstr "društvena/duhovna znanost"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15646,9 +15700,6 @@ msgstr "Zemaljski"
 msgid "testing"
 msgstr "testiranje"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "ovaj paket je zaštićen pinom roditeljske kontrole"
 
@@ -15713,9 +15764,6 @@ msgstr "vodeni sport"
 msgid "uShare setup"
 msgstr "Vodič za postavljanje"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "nedostupno"
 
@@ -15757,12 +15805,6 @@ msgstr "vertikalno"
 
 msgid "violet"
 msgstr "ljubičasta"
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
-msgstr ""
 
 msgid "wait for ci..."
 msgstr "pričekajte za CI..."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2020-05-13 21:36+0200\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
@@ -1167,8 +1167,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Minden korosztály"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Rádió)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr "(VU+ típus)"
@@ -1207,6 +1215,11 @@ msgstr "-NINCS CSATORNA\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-CSATORNA HIBA:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1512,6 +1525,9 @@ msgstr "AC3 lekeverése"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "TSID/ONID BESZERZÉSE"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2187,6 +2203,10 @@ msgstr "Automatikus DiSEqC"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Automatikus EXIF elrendezés forgatása/tükrözése"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Időzítő"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatikus fejezet készítés ? percenként (0=soha)"
@@ -3695,6 +3715,9 @@ msgstr "Fényerő"
 msgid "Cuba"
 msgstr "Kuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4704,6 +4727,9 @@ msgstr "Keleti limit beállítás"
 msgid "Ecuador"
 msgstr "Ecuador"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Szerkesztés"
 
@@ -4844,6 +4870,9 @@ msgstr "Lista választás lehetősége a Multi-EPG-ben"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Mozgatási mód engedélyezése"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Tartalék távoli vevő engedélyezése"
@@ -5598,8 +5627,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Hagyományos jel-statisztikák kényszerítése"
 
+#, fuzzy
+msgid "Forever"
+msgstr "soha"
+
 msgid "Format"
 msgstr "Formázás"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "hagyományos"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Hangerőszabályzás továbbítása"
@@ -5970,6 +6013,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Külső feliratok késleltetése"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -6374,6 +6420,12 @@ msgstr "Legyen ECM a HTTP jelfolyamban"
 msgid "Include EIT in http streams"
 msgstr "Legyen EIT a HTTP jelfolyamban"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Nem megfelelő csatorna a Kép-a-Képben módhoz!"
 
@@ -6656,6 +6708,9 @@ msgstr "Skálázás (nyújtás)"
 
 msgid "KA-SAT"
 msgstr "KA-SAT"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazahsztán"
@@ -7949,6 +8004,9 @@ msgstr "Nem-csatlakozott"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nincs elég tárhely. Kérem, szabadítson fel némi helyet és próbálja meg újra. (%d MB területre lenne szükség, %d MB hely szabad jelenleg)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "nem fut"
@@ -8284,6 +8342,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "PPanel"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Csomaglista frissítés"
@@ -9955,9 +10016,6 @@ msgstr "Időcsúsztatás felvételének megtartása"
 msgid "Save timeshift file in movie directory"
 msgstr "Időcsúsztatás felvételének megtartása a felvételek mappájában"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Időcsúsztatás felvételének megtartása a felvételek mappájában és ugrás"
-
 msgid "Save timeshift only for current event"
 msgstr "Csak ezen időcsúsztatás felvételének megtartása"
 
@@ -11441,6 +11499,9 @@ msgstr "Spanyolország"
 msgid "Spanish"
 msgstr "Spanyol"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12196,6 +12257,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"A vezeték nélküli bővítmény nincs telepítve!\n"
+"Kérem, telepítse."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "A DVD szabvány nem támogatja a H.264 (HDTV) videó streamet. Szeretne ehelyett létrehozni egy speciális formátumú adat DVD-t (mely azonban nem játszható le a hagyományos lejátszókban)?"
 
@@ -12875,6 +12944,9 @@ msgstr "Teteje és Alja"
 
 msgid "Top and bottom"
 msgstr "Teteje és Alja"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13623,6 +13695,13 @@ msgstr "Virtuális Billentyűzet Szöveg:"
 msgid "Virtual keyboard"
 msgstr "Virtuális Billentyűzet"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtuális Billentyűzet"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Videó: %s fps"
@@ -14222,6 +14301,9 @@ msgstr "Csak ezzel a készüléktípussal felvett anyagokat lehet kiírni!"
 msgid "You can remove this plugin."
 msgstr "A bővítmény eltávolítható."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Ez nem törölheti le!"
 
@@ -14488,10 +14570,6 @@ msgstr "aktív"
 msgid "actual time only"
 msgstr "csak az aktuális időt"
 
-#, fuzzy
-msgid "adb"
-msgstr "Készenlét"
-
 msgid "adult movie/drama"
 msgstr "felnőtt/dráma"
 
@@ -14555,9 +14633,6 @@ msgstr "művészet/kultúra (prózai, általános)"
 
 msgid "arts/culture magazine"
 msgstr "művészet/kultúra magazin"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "atlétika"
@@ -14713,9 +14788,6 @@ msgstr "HDMI által vezérelve"
 msgid "cooking"
 msgstr "főzés"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "hírek/gazdaság (általános)"
@@ -14829,6 +14901,10 @@ msgstr "vágás kilépő pontja"
 msgid "end cut here (reset)"
 msgstr "vágás kilépő pontja"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Alapértelmezett"
+
 msgid "entertainment (10-16 year old)"
 msgstr "szórakoztató (10-16 éves korosztály"
 
@@ -14915,10 +14991,6 @@ msgstr "kényszerített engedélyezés"
 msgid "foreign countries/expeditions"
 msgstr "külföldi országok/kirándulás"
 
-#, fuzzy
-msgid "forever"
-msgstr "soha"
-
 msgid "forward to the next chapter"
 msgstr "ugrás a következő fejezethez"
 
@@ -14927,9 +14999,6 @@ msgstr "szabad"
 
 msgid "from"
 msgstr "ból"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15003,14 +15072,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horizontális"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15022,9 +15085,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15315,9 +15375,6 @@ msgstr "eredeti"
 msgid "original language"
 msgstr "eredeti nyelv"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15558,9 +15615,6 @@ msgstr "szociális/politikai/gazdasági (általános)"
 msgid "social/spiritual science"
 msgstr "szociális/spirituális"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15637,9 +15691,6 @@ msgstr "Földi"
 msgid "testing"
 msgstr "működőképes"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "ez a lista gyermekzár PIN-kóddal védett"
 
@@ -15704,9 +15755,6 @@ msgstr "vizi sport"
 msgid "uShare setup"
 msgstr "Varázsló beállítása"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "nem elérhető"
 
@@ -15748,12 +15796,6 @@ msgstr "vertikális"
 
 msgid "violet"
 msgstr "ibolya"
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
-msgstr ""
 
 msgid "wait for ci..."
 msgstr "várakozás modulra..."

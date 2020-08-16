@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2019-12-03 20:02+0100\n"
 "Last-Translator: blzr <blzr@o2.pl>\n"
 "Language-Team: \n"
@@ -1083,7 +1083,14 @@ msgstr ""
 msgid "( All readers)"
 msgstr "b/o"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Radio)"
+
 msgid "(Show only reader:"
+msgstr ""
+
+msgid "(TV)"
 msgstr ""
 
 msgid "(VU+ type)"
@@ -1123,6 +1130,10 @@ msgstr "-BRAK KANAŁU\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-BŁĄD KANAŁU:%d\n"
+
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr ""
 
 msgid "/s"
 msgstr ""
@@ -1430,6 +1441,9 @@ msgstr ""
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "UZYSKIWANIE TSID/ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2107,6 +2121,10 @@ msgstr ""
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Automatyczny obrót/zmiana orientacji EXIF"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Timery"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatyczny podział rozdziałów co ? minuty (0=nigdy)"
@@ -3619,6 +3637,9 @@ msgstr "Jasność"
 msgid "Cuba"
 msgstr "Kuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4639,6 +4660,9 @@ msgstr "Ustaw limit East"
 msgid "Ecuador"
 msgstr "Ekwador"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Edytuj"
 
@@ -4778,6 +4802,9 @@ msgstr "Włącz wybór bukietów w multi-EPG"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Włącz tryb przenoszenia"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Włącz opcję 'rezerwowego' zdalnego odbiornika"
@@ -5541,8 +5568,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Wymuś starszy typ statystyk sygnału"
 
+#, fuzzy
+msgid "Forever"
+msgstr "Nigdy"
+
 msgid "Format"
 msgstr "Format"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "Standardowe"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Przekazuj klawisze głośności"
@@ -5915,6 +5956,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Opóźnienie dla napisów zewnętrznych"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -6318,6 +6362,12 @@ msgstr "ECMy w streamie http"
 msgid "Include EIT in http streams"
 msgstr "EIT w streamie http"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Typ serwisu nieobsługiwany w PiP!"
 
@@ -6599,6 +6649,9 @@ msgid "Just scale"
 msgstr "Po prostu skaluj"
 
 msgid "KA-SAT"
+msgstr ""
+
+msgid "Kathrein UFS"
 msgstr ""
 
 msgid "Kazakhstan"
@@ -7902,6 +7955,9 @@ msgstr "Nie powiązane"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nie wystarczająca ilość przestrzeni dyskowej. Zwolnij miejsce na dysku i spróbuj ponownie. (%d MB wymagane, %d MB dostępne)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "nieuruchomiony"
@@ -8229,6 +8285,9 @@ msgid "PMT PID"
 msgstr ""
 
 msgid "PPanel"
+msgstr ""
+
+msgid "Pace HDS7241"
 msgstr ""
 
 msgid "Package list update"
@@ -9907,9 +9966,6 @@ msgstr "Zapisz plik timeshift"
 msgid "Save timeshift file in movie directory"
 msgstr "Zapisz plik timeshift w katalogu movie"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Zapisz timeshift w katalogu movie i przełącz"
-
 msgid "Save timeshift only for current event"
 msgstr "Zapisz timeshift tylko dla bieżącego wydarzenia"
 
@@ -11403,6 +11459,9 @@ msgstr "Hiszpania"
 msgid "Spanish"
 msgstr "Hiszpański"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12155,6 +12214,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Wtyczka sieci bezprzewodowej nie jest zainstalowana!\n"
+"Zainstaluj ją."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "Standard DVD nie wspiera strumienia video H.264 (HDTV). Czy zamiast tego nagrać dane w formacie data DVD? Dane nie będą czytane w stacjonarnych odtwarzaczach DVD."
 
@@ -12838,6 +12905,9 @@ msgstr "Góra i dół"
 
 msgid "Top and bottom"
 msgstr "Góra i dół"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13588,6 +13658,13 @@ msgstr "Tekst wirtualnej klawiatury:"
 msgid "Virtual keyboard"
 msgstr "Wirtualna klawiatura"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Wirtualna klawiatura"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, python-format
 msgid "Vol: %s"
 msgstr ""
@@ -14190,6 +14267,9 @@ msgstr "\"Możesz wypalać tylko nagrania!"
 msgid "You can remove this plugin."
 msgstr "Możesz usunąć tą wtyczkę"
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Tego nie można usunąć!"
 
@@ -14456,10 +14536,6 @@ msgstr "aktywny"
 msgid "actual time only"
 msgstr "Tylko bieżący czas"
 
-#, fuzzy
-msgid "adb"
-msgstr "Czuwanie"
-
 msgid "adult movie/drama"
 msgstr "Film/Dramat dla dorosłych"
 
@@ -14523,9 +14599,6 @@ msgstr "Kultura/Sztuka (bez muzyki, ogólna)"
 
 msgid "arts/culture magazine"
 msgstr "Magazyn kulturalny"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "Sport"
@@ -14681,9 +14754,6 @@ msgstr "kontrolowane przez HDMI"
 msgid "cooking"
 msgstr "Gotowanie"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "Wiadomości"
@@ -14797,6 +14867,10 @@ msgstr "Koniec cięcia tutaj"
 msgid "end cut here (reset)"
 msgstr "Koniec cięcia tutaj"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Ustaw domyślny"
+
 msgid "entertainment (10-16 year old)"
 msgstr "Rozrywka (10-16 lat)"
 
@@ -14883,10 +14957,6 @@ msgstr "Wymuszanie włączone"
 msgid "foreign countries/expeditions"
 msgstr "Wyprawy/Podróże"
 
-#, fuzzy
-msgid "forever"
-msgstr "Nigdy"
-
 msgid "forward to the next chapter"
 msgstr "Przeskocz do nastepnego rozdziału"
 
@@ -14895,9 +14965,6 @@ msgstr "Wolne"
 
 msgid "from"
 msgstr "z"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -14971,14 +15038,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "Pozioma (H)"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -14990,9 +15051,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15283,9 +15341,6 @@ msgstr "Oryginalny"
 msgid "original language"
 msgstr "Język oryginalny"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15526,9 +15581,6 @@ msgstr "Poltyka/Społeczeństwo/Ekonomia"
 msgid "social/spiritual science"
 msgstr "Nauki społeczne"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15605,9 +15657,6 @@ msgstr "Naziemna"
 msgid "testing"
 msgstr "Pracuje"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "Ten bukiet jest chroniony kodem PIN"
 
@@ -15672,9 +15721,6 @@ msgstr "Sporty wodne"
 msgid "uShare setup"
 msgstr "Ustawienia kreatora instalacji"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "Niedostępny"
 
@@ -15715,12 +15761,6 @@ msgid "vertical"
 msgstr "Pionowa (V)"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

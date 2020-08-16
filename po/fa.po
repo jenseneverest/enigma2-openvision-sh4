@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2018-02-14 16:51+0330\n"
 "Last-Translator: Persian Prince <persianprince@pe4k.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -1148,8 +1148,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr ""
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (رادیو)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (تلوزیون)"
 
 msgid "(VU+ type)"
 msgstr "(نوع ووپلاس)"
@@ -1189,6 +1197,11 @@ msgstr "-بدون کانال\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-خطای کانال:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1477,6 +1490,9 @@ msgid "AC3 downmix"
 msgstr ""
 
 msgid "ACQUIRING TSID/ONID"
+msgstr ""
+
+msgid "ADB XMP"
 msgstr ""
 
 msgid "ADB variant: "
@@ -2191,6 +2207,10 @@ msgstr ""
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr ""
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "نوع لیست"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "ایجاد فصل به صورت خودکار بر حسب دقیقه ؟ صفر به معنی هیچ وقت است"
@@ -3725,6 +3745,9 @@ msgstr "روشنایی"
 msgid "Cuba"
 msgstr ""
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4760,6 +4783,9 @@ msgstr "تنظیم محدودیت شرق"
 msgid "Ecuador"
 msgstr ""
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "ویرایش"
 
@@ -4904,6 +4930,9 @@ msgstr ""
 #, fuzzy
 msgid "Enable client mode"
 msgstr "فعال کردن Netmed EPG"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr ""
@@ -5655,8 +5684,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr ""
 
+#, fuzzy
+msgid "Forever"
+msgstr "هیچ وقت"
+
 msgid "Format"
 msgstr "فرمت"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "استاندارد"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr ""
@@ -6036,6 +6079,9 @@ msgid "HH:mm:ss"
 msgstr ""
 
 msgid "HI-cleanup for external subtitles"
+msgstr ""
+
+msgid "HL-101"
 msgstr ""
 
 msgid "HLG"
@@ -6443,6 +6489,12 @@ msgstr "شامل ECM در جریان های http"
 msgid "Include EIT in http streams"
 msgstr "شامل EIT در جریان های http"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr ""
 
@@ -6737,6 +6789,9 @@ msgid "Just scale"
 msgstr "فقط Scale"
 
 msgid "KA-SAT"
+msgstr ""
+
+msgid "Kathrein UFS"
 msgstr ""
 
 msgid "Kazakhstan"
@@ -8065,6 +8120,9 @@ msgstr ""
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "فضای کافی وجود ندارد ، لطفا مقداری فضا خالی و دوباره تلاش کنید . (%d مگابایت نیاز است و %d مگابایت در دسترس است)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "در حال اجرا نیست"
@@ -8392,6 +8450,9 @@ msgid "PMT PID"
 msgstr "PMT PID"
 
 msgid "PPanel"
+msgstr ""
+
+msgid "Pace HDS7241"
 msgstr ""
 
 msgid "Package list update"
@@ -10108,9 +10169,6 @@ msgstr ""
 msgid "Save timeshift file in movie directory"
 msgstr ""
 
-msgid "Save timeshift in movie dir and zap"
-msgstr ""
-
 msgid "Save timeshift only for current event"
 msgstr ""
 
@@ -11643,6 +11701,9 @@ msgstr ""
 msgid "Spanish"
 msgstr "اسپانیایی"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12411,6 +12472,15 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"بسته هدایتگر شبکه نصب نشده است\n"
+"لطفا آن را نصب کنید"
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr ""
 
@@ -13034,6 +13104,9 @@ msgid "Top and Bottom"
 msgstr ""
 
 msgid "Top and bottom"
+msgstr ""
+
+msgid "Topfield TF77X0HDPVR"
 msgstr ""
 
 msgid "TopfieldVFD"
@@ -13771,6 +13844,12 @@ msgstr ""
 msgid "Virtual keyboard"
 msgstr ""
 
+msgid "Virtual keyboard skin"
+msgstr ""
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, python-format
 msgid "Vol: %s"
 msgstr ""
@@ -14345,6 +14424,9 @@ msgstr ""
 msgid "You can remove this plugin."
 msgstr ""
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr ""
 
@@ -14576,10 +14658,6 @@ msgstr ""
 msgid "actual time only"
 msgstr ""
 
-#, fuzzy
-msgid "adb"
-msgstr "خاموشی موقت"
-
 msgid "adult movie/drama"
 msgstr ""
 
@@ -14641,9 +14719,6 @@ msgid "arts/culture (without music, general)"
 msgstr ""
 
 msgid "arts/culture magazine"
-msgstr ""
-
-msgid "atevio7500"
 msgstr ""
 
 msgid "athletics"
@@ -14796,9 +14871,6 @@ msgstr ""
 msgid "cooking"
 msgstr ""
 
-msgid "cuberevo_uni"
-msgstr ""
-
 msgid "current affairs (general)"
 msgstr ""
 
@@ -14904,6 +14976,10 @@ msgstr ""
 msgid "end cut here (reset)"
 msgstr ""
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "پیش فرض"
+
 msgid "entertainment (10-16 year old)"
 msgstr ""
 
@@ -14991,10 +15067,6 @@ msgstr "فعال شد"
 msgid "foreign countries/expeditions"
 msgstr ""
 
-#, fuzzy
-msgid "forever"
-msgstr "هیچ وقت"
-
 msgid "forward to the next chapter"
 msgstr ""
 
@@ -15003,9 +15075,6 @@ msgstr "خالی"
 
 msgid "from"
 msgstr "از"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15079,14 +15148,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "افقی"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15098,9 +15161,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15386,9 +15446,6 @@ msgstr ""
 msgid "original language"
 msgstr ""
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15625,9 +15682,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15701,9 +15755,6 @@ msgstr "Terrestrial"
 msgid "testing"
 msgstr ""
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr ""
 
@@ -15767,9 +15818,6 @@ msgstr ""
 msgid "uShare setup"
 msgstr "تنظیمات تصویر"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr ""
 
@@ -15810,12 +15858,6 @@ msgid "vertical"
 msgstr "عمودی"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

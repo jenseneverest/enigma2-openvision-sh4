@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2020-06-30 22:24+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -1179,8 +1179,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Все категории"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Радио)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (ТВ)"
 
 msgid "(VU+ type)"
 msgstr "(VU+ тип)"
@@ -1219,6 +1227,11 @@ msgstr "-НЕТ СЕРВИСА\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-ОШИБКА СЕРВИСА:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/с"
 
 msgid "/s"
 msgstr "/с"
@@ -1524,6 +1537,9 @@ msgstr "AC3 микширование"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "ПОЛУЧЕНИЕ TSID/ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2198,6 +2214,10 @@ msgstr "Авто Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Авто EXIF ориентация вращения/поворота"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Таймер"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Автоматически разделять на главы каждые ? минут (0=никогда)"
@@ -3706,6 +3726,9 @@ msgstr "Яркость"
 msgid "Cuba"
 msgstr "Cuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4717,6 +4740,9 @@ msgstr "Установить ограничение на восток"
 msgid "Ecuador"
 msgstr "Ecuador"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Редактировать"
 
@@ -4856,6 +4882,9 @@ msgstr "Включить выбор букетов при запуске мул�
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Включить режим перемещения"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Включить запасной удаленный ресивер"
@@ -5614,8 +5643,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Применять устаревшую статистику вывода сигналов"
 
+#, fuzzy
+msgid "Forever"
+msgstr "никогда"
+
 msgid "Format"
 msgstr "Формат"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "стандарт"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Перенаправить кнопки громкости звука"
@@ -5986,6 +6029,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Задержка для внешних субтитров"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -6392,6 +6438,12 @@ msgstr "Включать ECM в http стрим потоки"
 msgid "Include EIT in http streams"
 msgstr "Включать EIT в http стрим потоки"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Некорректный тип сервиса для PiP!"
 
@@ -6672,6 +6724,9 @@ msgstr "Только масштаб"
 
 msgid "KA-SAT"
 msgstr "KA-спутник"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
@@ -7966,6 +8021,9 @@ msgstr "Нет ассоциаций"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Нет места на диске. Пожалуйста, освободите немного места на диске и попробуйте снова. (%d MB требуется, %d MB доступно)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "не запущенно"
@@ -8298,6 +8356,9 @@ msgstr "РМТ PID"
 
 msgid "PPanel"
 msgstr "PPanel (shell скрипты)"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Список пакетов обновления"
@@ -9974,9 +10035,6 @@ msgstr "Сохранить файл таймшифта"
 msgid "Save timeshift file in movie directory"
 msgstr "Сохранить файл таймшифта в каталог movie"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Сохранить таймшифт в каталог movie и переключить"
-
 msgid "Save timeshift only for current event"
 msgstr "Сохранить таймшифт только для текущего события"
 
@@ -11463,6 +11521,9 @@ msgstr "Spain"
 msgid "Spanish"
 msgstr "Испанский"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12206,6 +12267,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Плагин для настройки беспроводной сети не инсталлирован!\n"
+"Пожалуйста, установите его."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD стандарт не поддерживает H.264 (HDTV) видео потоков. Вы хотите создать специальный формат DVD (который возможно не будет проигрываться в стационарных DVD проигрывателях)?"
 
@@ -12882,6 +12951,9 @@ msgstr "Сверху и снизу"
 
 msgid "Top and bottom"
 msgstr "Сверху и снизу"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13631,6 +13703,13 @@ msgstr "Текст виртуальной клавиатуры:"
 msgid "Virtual keyboard"
 msgstr "Виртуальная клавиатура"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Виртуальная клавиатура"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Видео: %s fps"
@@ -14230,6 +14309,9 @@ msgstr "Вы можете прожечь(технология burn) только
 msgid "You can remove this plugin."
 msgstr "Вы можете удалить это плагин."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Вы не можете удалить это!"
 
@@ -14495,10 +14577,6 @@ msgstr "активно"
 msgid "actual time only"
 msgstr "только фактическое время"
 
-#, fuzzy
-msgid "adb"
-msgstr "Режим ожидания"
-
 msgid "adult movie/drama"
 msgstr "эротический фтльм/драма"
 
@@ -14562,9 +14640,6 @@ msgstr "искусство/культура (без музыки, общее)"
 
 msgid "arts/culture magazine"
 msgstr "искусство/культура журнал"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "атлетика"
@@ -14720,9 +14795,6 @@ msgstr "управляемый по HDMI"
 msgid "cooking"
 msgstr "приготовление"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "новости/текущие события (общее)"
@@ -14836,6 +14908,10 @@ msgstr "окончание сокращения здесь"
 msgid "end cut here (reset)"
 msgstr "окончание сокращения здесь"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Установить по дефолту"
+
 msgid "entertainment (10-16 year old)"
 msgstr "развлечения (10-16 лет)"
 
@@ -14922,10 +14998,6 @@ msgstr "принудительно включено"
 msgid "foreign countries/expeditions"
 msgstr "зарубежные страны/экспедиции"
 
-#, fuzzy
-msgid "forever"
-msgstr "никогда"
-
 msgid "forward to the next chapter"
 msgstr "вперед к следующему разделу"
 
@@ -14934,9 +15006,6 @@ msgstr "свободно"
 
 msgid "from"
 msgstr "из"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15010,14 +15079,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "горизонтальная"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15029,9 +15092,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15322,9 +15382,6 @@ msgstr "оригинал"
 msgid "original language"
 msgstr "язык оригинала"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15565,9 +15622,6 @@ msgstr "социальные/политические вопросы/эконо�
 msgid "social/spiritual science"
 msgstr "социальная/духовная наука"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15644,9 +15698,6 @@ msgstr "Наземный"
 msgid "testing"
 msgstr "в работе"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "этот букет защищен PIN-кодом родительского контроля"
 
@@ -15711,9 +15762,6 @@ msgstr "водный спорт"
 msgid "uShare setup"
 msgstr "Настройки мастера"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "недоступно"
 
@@ -15755,12 +15803,6 @@ msgstr "вертикальная"
 
 msgid "violet"
 msgstr "фиолетовый"
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
-msgstr ""
 
 msgid "wait for ci..."
 msgstr "ожидание для ci..."

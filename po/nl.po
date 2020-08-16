@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: PLiteam <translators@openpli.org>\n"
@@ -1168,8 +1168,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Alle leeftijden"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Radio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr "(VU+ type)"
@@ -1208,6 +1216,11 @@ msgstr "-GEEN ZENDER\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-ZENDERFOUT:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1513,6 +1526,9 @@ msgstr "AC3 downmix"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "VERKRIJG TSID/ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2197,6 +2213,10 @@ msgstr "Auto Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Automatisch EXIF Oriëntatie rotatie/spiegeling"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Timer"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatisch hoofdstuk splitsen elke ? min (0=nooit)"
@@ -3901,6 +3921,9 @@ msgstr "Helderheid display indien actief"
 msgid "Cuba"
 msgstr "Cuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4924,6 +4947,9 @@ msgstr "Oost-limiet gezet"
 msgid "Ecuador"
 msgstr "Ecuador"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Bewerk"
 
@@ -5068,6 +5094,9 @@ msgstr "Indien geactiveerd, dan wordt het bouquet selectiemenu weergegeven in de
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Activeer de verplaatsmodus"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Activeer de 'Fallback tuner'"
@@ -5831,8 +5860,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Force Legacy Signal Stats"
 
+#, fuzzy
+msgid "Forever"
+msgstr "nooit"
+
 msgid "Format"
 msgstr "Formaat"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "Standaard"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Volumetoetsen doorsturen"
@@ -6203,6 +6246,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Vertraging van de externe ondertitels"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -6614,6 +6660,12 @@ msgstr "Neem ECM op in http streams"
 msgid "Include EIT in http streams"
 msgstr "Neem EIT op in http streams"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Onjuist service type voor PIP!"
 
@@ -6895,6 +6947,9 @@ msgstr "Alleen schalen"
 
 msgid "KA-SAT"
 msgstr "KA-SAT"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazachstan"
@@ -8190,6 +8245,9 @@ msgstr "Geen verband"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Onvoldoende schijfruimte. Maak ruimte vrij en probeer het opnieuw (%d MB noodzakelijk, %d MB beschikbaar)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "niet actief"
@@ -8528,6 +8586,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "PPanel"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Pakketlijst vernieuwen"
@@ -10230,9 +10291,6 @@ msgstr "Sla de timeshiftopname op"
 msgid "Save timeshift file in movie directory"
 msgstr "Sla de timeshiftopname in de movie directory op"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Sla de timeshift op in de movie directory en schakel om"
-
 msgid "Save timeshift only for current event"
 msgstr "Sla de timeshift enkel op voor het lopende programma"
 
@@ -11728,6 +11786,9 @@ msgstr "Spanje"
 msgid "Spanish"
 msgstr "Spaans"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12481,6 +12542,12 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr "De WiFi plugin is niet geïnstalleerd. Deze plugin eerst installeren aub."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "De DVD standaard ondersteunt geen H.264 (HDTV) videostreams. Wilt u een DVD aanmaken met een speciaal formaat (veel DVD spelers kunnen dat niet afspelen)?"
 
@@ -13168,6 +13235,9 @@ msgstr "Boven en onderzijde"
 
 msgid "Top and bottom"
 msgstr "Boven en onderzijde"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13928,6 +13998,13 @@ msgstr "Virtueel toetsenbord tekst"
 msgid "Virtual keyboard"
 msgstr "Virtueel toetsenbord"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtueel toetsenbord"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Video: %s fps"
@@ -14560,6 +14637,9 @@ msgstr "U kunt enkel opnames branden die door uw ontvanger gemaakt zijn!"
 msgid "You can remove this plugin."
 msgstr "U kunt deze applicatie verwijderen."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "U kunt dit niet wissen!"
 
@@ -14827,10 +14907,6 @@ msgstr "actief"
 msgid "actual time only"
 msgstr "enkel de actuele tijd"
 
-#, fuzzy
-msgid "adb"
-msgstr "Stand-by"
-
 msgid "adult movie/drama"
 msgstr "Erotiek/Drama"
 
@@ -14894,9 +14970,6 @@ msgstr "Kunst/Cultuur (Algemeen)"
 
 msgid "arts/culture magazine"
 msgstr "Kunst/Cultuur (Magazine)"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "Atletiek"
@@ -15056,9 +15129,6 @@ msgstr "geregeld door de HDMI"
 msgid "cooking"
 msgstr "Kookprogramma"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "Nieuws/Actualiteiten (Algemeen)"
@@ -15172,6 +15242,10 @@ msgstr "Stop snijpunt hier"
 msgid "end cut here (reset)"
 msgstr "Stop snijpunt hier"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Zet als standaard"
+
 msgid "entertainment (10-16 year old)"
 msgstr "Amusement (10-16 jaar)"
 
@@ -15258,10 +15332,6 @@ msgstr "geforceerd ingeschakeld"
 msgid "foreign countries/expeditions"
 msgstr "Onbekende landen/Expedities"
 
-#, fuzzy
-msgid "forever"
-msgstr "nooit"
-
 msgid "forward to the next chapter"
 msgstr "Verder naar het volgende hoofdstuk"
 
@@ -15270,9 +15340,6 @@ msgstr "vrij"
 
 msgid "from"
 msgstr "van"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15346,14 +15413,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horizontaal"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15365,9 +15426,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15658,9 +15716,6 @@ msgstr "Origineel"
 msgid "original language"
 msgstr "originele taal"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15901,9 +15956,6 @@ msgstr "Sociaal/Politiek/Economisch (Algemeen)"
 msgid "social/spiritual science"
 msgstr "Sociale/Geestelijke wetenschap"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15980,9 +16032,6 @@ msgstr "Terrestrial"
 msgid "testing"
 msgstr "bezig"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "Dit bouquet is beschermd met een pincode t.b.v. het kinderslot."
 
@@ -16047,9 +16096,6 @@ msgstr "Watersport"
 msgid "uShare setup"
 msgstr "Installatiewizard"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "niet beschikbaar"
 
@@ -16091,12 +16137,6 @@ msgstr "verticaal"
 
 msgid "violet"
 msgstr "paars"
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
-msgstr ""
 
 msgid "wait for ci..."
 msgstr "wacht op CI..."

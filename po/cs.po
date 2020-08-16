@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4\n"
 
 #, python-format
 msgid ""
@@ -1207,8 +1207,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "všechny kategorie"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Rádio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr "(VU+ typ)"
@@ -1252,6 +1260,11 @@ msgstr ""
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr ""
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1606,6 +1619,9 @@ msgstr "AC3 downmix"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "ACQUIRING TSID/ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2391,6 +2407,11 @@ msgstr "Auto Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Orientace (rotace/převrácení) automaticky podle EXIF"
+
+#
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Časovač"
 
 #
 msgid "Auto chapter split every ? minutes (0=never)"
@@ -4078,6 +4099,9 @@ msgstr "Jas"
 msgid "Cuba"
 msgstr "Kuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -5071,7 +5095,7 @@ msgstr "Chcete aktualizovat balíček:\n"
 
 #, python-format
 msgid "Do you want to update your receiver to %s?"
-msgstr "Chcete zaktualizovat Váš přijímač na %s?"
+msgstr "Zaktualizovat přijímač na %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Chcete zaktualizovat Váš přijímač?"
@@ -5250,6 +5274,9 @@ msgstr "Východní limit nastaven"
 msgid "Ecuador"
 msgstr "Ekvádor"
 
+msgid "Edision argus"
+msgstr ""
+
 #
 msgid "Edit"
 msgstr "Upravit"
@@ -5411,6 +5438,9 @@ msgstr "Povolí výběr přehledu při spuštění multi-EPG."
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Povolit přesun"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Povolit záložní přijímač"
@@ -6265,8 +6295,24 @@ msgid "Force legacy signal stats"
 msgstr "Vynutit starší signálové statistiky"
 
 #
+#, fuzzy
+msgid "Forever"
+msgstr "Nikdy"
+
+#
 msgid "Format"
 msgstr "Formát"
+
+msgid "Fortis mini"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Fortis standard"
+msgstr "Standardní"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Předávat hlasitost"
@@ -6522,9 +6568,8 @@ msgstr "Jít na pozici 0"
 msgid "Goto X"
 msgstr "Přejít na X"
 
-#, fuzzy
 msgid "Goto down service"
-msgstr "Přejít na poslední program"
+msgstr "Přejít na program níž"
 
 msgid "Goto index position"
 msgstr "Přejít na indexovou pozici"
@@ -6551,9 +6596,8 @@ msgstr "Přejít na primetime / aktuální čas"
 msgid "Goto specific date/time"
 msgstr "Přejít na zadané datum/čas"
 
-#, fuzzy
 msgid "Goto up service"
-msgstr "Přejít na poslední program"
+msgstr "Přejít na program výš"
 
 msgid "Goto:"
 msgstr "Na:"
@@ -6675,6 +6719,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Zpoždění externích titulků"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -7114,6 +7161,12 @@ msgstr "Včetně ECM v http streamech"
 msgid "Include EIT in http streams"
 msgstr "Včetně EIT v http streamech"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Nekorektní typ služby pro PiP!"
 
@@ -7446,6 +7499,9 @@ msgstr "Celá obrazovka (nedodržuje poměr stran)"
 
 msgid "KA-SAT"
 msgstr "KA-SAT"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazachstán"
@@ -8944,6 +9000,9 @@ msgstr "Neasociováno"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nedostatek místa na disku. Uvolněte prostor na disku a zkuste znovu. (%d MB požadováno, %d MB k dispozici)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Not running"
@@ -9307,6 +9366,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "PPanel"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 #
 msgid "Package list update"
@@ -11256,9 +11318,6 @@ msgstr "Uložit timeshift soubor"
 msgid "Save timeshift file in movie directory"
 msgstr "Uložit timeshift soubor do adresáře filmů"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Uložit timeshift do adresáře filmů a přepnout"
-
 msgid "Save timeshift only for current event"
 msgstr "Uložit timeshift pouze pro aktuální událost"
 
@@ -12941,6 +13000,9 @@ msgstr "Španělsko"
 msgid "Spanish"
 msgstr "Španělsky"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -13604,7 +13666,7 @@ msgstr ""
 "Pro případné korekce můžete kontaktovat autora\n"
 "na výše uvedené adrese.\n"
 "\n"
-"®5.7.2020"
+"®4.8.2020"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -13784,6 +13846,14 @@ msgstr ""
 
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
+
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Plugin pro bezdrátovou LAN není nainstalován!\n"
+"Nainstalujte plugin."
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standard nepodporuje H.264 (HDTV) video streamy. Chcete místo toho vytvořit speciální formát data DVD (které ale nepůjde přehrát ve stolních DVD přehrávačích)?"
@@ -14528,6 +14598,9 @@ msgstr "Nahoru a dolů"
 
 msgid "Top and bottom"
 msgstr "Nahoru a dolů"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -15390,6 +15463,14 @@ msgstr "Text virtuální klávesnice:"
 msgid "Virtual keyboard"
 msgstr "Virtuální klávesnice"
 
+#
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtuální klávesnice"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Video: %s fps"
@@ -16034,6 +16115,9 @@ msgstr "Můžete vypalovat pouze nahrávky z přijímače!"
 msgid "You can remove this plugin."
 msgstr "Můžete odstranit tento plugin"
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 #
 msgid "You cannot delete this!"
 msgstr "Toto nemůžete smazat!"
@@ -16323,11 +16407,6 @@ msgstr "aktivní"
 msgid "actual time only"
 msgstr "Pouze aktuální čas"
 
-#
-#, fuzzy
-msgid "adb"
-msgstr "Pohotovostní režim"
-
 msgid "adult movie/drama"
 msgstr "pro dospělé/drama"
 
@@ -16396,9 +16475,6 @@ msgstr "umění/kultura (bez hudby, obecně)"
 
 msgid "arts/culture magazine"
 msgstr "umění/kulturní magazín"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "atletika"
@@ -16576,9 +16652,6 @@ msgstr "řízeno pomocí HDMI"
 msgid "cooking"
 msgstr "vaření"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "zprávy/publicistika (obecně)"
@@ -16710,6 +16783,11 @@ msgstr "konec střihu zde"
 msgid "end cut here (reset)"
 msgstr "konec střihu zde"
 
+#
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Výchozí"
+
 msgid "entertainment (10-16 year old)"
 msgstr "zábavný (10-16 let)"
 
@@ -16808,11 +16886,6 @@ msgid "foreign countries/expeditions"
 msgstr "cizí země/expedice"
 
 #
-#, fuzzy
-msgid "forever"
-msgstr "Nikdy"
-
-#
 msgid "forward to the next chapter"
 msgstr "přeskočit na další kapitolu"
 
@@ -16822,9 +16895,6 @@ msgstr "volného místa"
 
 msgid "from"
 msgstr "z"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -16904,15 +16974,9 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 #
 msgid "horizontal"
 msgstr "Horizontální"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -16924,9 +16988,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -17260,9 +17321,6 @@ msgstr "Původní"
 msgid "original language"
 msgstr "původní jazyk"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -17538,9 +17596,6 @@ msgstr "společensko politické problémy/ekonomie (obecně)"
 msgid "social/spiritual science"
 msgstr "sociální/duchovní vědy"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -17627,9 +17682,6 @@ msgstr "Pozemní"
 msgid "testing"
 msgstr "pracuji"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "tento přehled je chráněn rodičovským PINem"
 
@@ -17702,9 +17754,6 @@ msgstr "vodní sporty"
 msgid "uShare setup"
 msgstr "Pomocník nastavení"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "nedostupný"
 
@@ -17755,12 +17804,6 @@ msgstr "Vertikální"
 
 msgid "violet"
 msgstr "fialová"
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
-msgstr ""
 
 #
 msgid "wait for ci..."

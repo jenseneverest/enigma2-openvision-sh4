@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2020-06-30 23:30+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -1059,8 +1059,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "( Visi skaitytojai)"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Radijas)"
+
 msgid "(Show only reader:"
 msgstr "(rodyti tik skaitytoją:"
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr "(VU+ tipas)"
@@ -1099,6 +1107,11 @@ msgstr "-KANALO NĖRA\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-KANALO KLAIDA:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1394,6 +1407,9 @@ msgstr "AC3 suliejimas"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "GAUNAMAS TSID/ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2057,6 +2073,10 @@ msgstr "Automatinis Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Automatinis EXIF ​​orientacijos pasukimas/keitimas"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Laikmačiai"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatinis skyrių skaidymas kas ? minutę (0=niekada)"
@@ -3522,6 +3542,9 @@ msgstr "Šviesumas"
 msgid "Cuba"
 msgstr "Kuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4498,6 +4521,9 @@ msgstr "Nustatykite rytų ribas"
 msgid "Ecuador"
 msgstr "Ekvadoras"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Redaguoti"
 
@@ -4634,6 +4660,9 @@ msgstr "Įjungti paketų pasirinkimą multi-EPG režime"
 
 msgid "Enable client mode"
 msgstr "Įjungti kliento režimą"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Įjungti atsarginį nuotolinį imtuvą"
@@ -5361,8 +5390,22 @@ msgstr "Šrifto dydis"
 msgid "Force legacy signal stats"
 msgstr "Priverstinė pasenusių signalų statistika"
 
+#, fuzzy
+msgid "Forever"
+msgstr "niekada"
+
 msgid "Format"
 msgstr "Formatas"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "standartinis"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Reguliuoti TV garsumą imtuvo pulteliu"
@@ -5724,6 +5767,9 @@ msgstr "HH:mm:ss"
 
 msgid "HI-cleanup for external subtitles"
 msgstr "Išorinių subtitrų valymas"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -6113,6 +6159,12 @@ msgstr "Į http transliaciją įtraukti ECM"
 msgid "Include EIT in http streams"
 msgstr "Į http transliaciją įtraukti EIT"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Nesuderinamas su PiP kanalas!"
 
@@ -6384,6 +6436,9 @@ msgstr "Tik pakeisti dydį"
 
 msgid "KA-SAT"
 msgstr "KA-PALYDOVAS"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazachstanas"
@@ -7634,6 +7689,9 @@ msgstr "Nesusieta"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Diske nepakanka vietos. Atlaisvinkite vietos diske ir bandykite dar kartą (reikia %d MB, laisva %d MB)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 msgid "Not running"
 msgstr "Neveikia"
 
@@ -7953,6 +8011,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "PLi skydelis"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Paketo sąrašo atnaujinimas"
@@ -9577,9 +9638,6 @@ msgstr "Išsaugoti laiko poslinkį į failą"
 msgid "Save timeshift file in movie directory"
 msgstr "Išsaugoti laiko poslinkio failą filmų kataloge"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Išsaugoti laiko poslinkį filmų kataloge ir perjungti"
-
 msgid "Save timeshift only for current event"
 msgstr "Išsaugoti laiko poslinkį tik šiam įvykiui"
 
@@ -11027,6 +11085,9 @@ msgstr "Ispanija"
 msgid "Spanish"
 msgstr "Ispanų"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -11748,6 +11809,14 @@ msgstr "%s %s skaito saugomus EPG duomenis kas (val)."
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr "%s %s išsaugo EPG duomenis kas (val.)."
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Bevielio tinklo programa neįdiegta!\n"
+"Prašome įdiegti tai."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standartas nesupranta H.264 (HDTV) vaizdo srauto. Todėl vietoje to gal geriau sukurti STB formato duomenų DVD (bet šis pasileis NE visuose DVD grotuvuose)?"
 
@@ -12408,6 +12477,9 @@ msgstr "Viršuje ir apačioje"
 
 msgid "Top and bottom"
 msgstr "Viršuje ir apačioje"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13151,6 +13223,13 @@ msgstr "Virtualus klaviatūros tekstas:"
 msgid "Virtual keyboard"
 msgstr "Virtuali klaviatūra"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtuali klaviatūra"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, python-format
 msgid "Vol: %s"
 msgstr "Gars: %s"
@@ -13737,6 +13816,9 @@ msgstr "Jūs galite įrašyti tik imtuvo įrašus!"
 msgid "You can remove this plugin."
 msgstr "Jūs galite pašalinti šį priedą."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Jūs negalite to ištrinti!"
 
@@ -14002,10 +14084,6 @@ msgstr "aktyvus"
 msgid "actual time only"
 msgstr "tik realus laikas"
 
-#, fuzzy
-msgid "adb"
-msgstr "Budėjimo režimas"
-
 msgid "adult movie/drama"
 msgstr "filmas suaugusiems, drama"
 
@@ -14068,9 +14146,6 @@ msgstr "menas/kultūra (be muzikos, bendras)"
 
 msgid "arts/culture magazine"
 msgstr "menas/kultūrinis žurnalas"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "atletika"
@@ -14220,9 +14295,6 @@ msgstr "kontroliuojama HDMI"
 msgid "cooking"
 msgstr "valgio gaminimas"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 msgid "current affairs (general)"
 msgstr "aktualijos (bendrai)"
 
@@ -14327,6 +14399,10 @@ msgstr "iškirpimo pabaiga"
 msgid "end cut here (reset)"
 msgstr "čia iškirpti (atstatyti)"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Nustatykite numatytuoju"
+
 msgid "entertainment (10-16 year old)"
 msgstr "pramogos (10-16 metų vaikams)"
 
@@ -14412,10 +14488,6 @@ msgstr "priverstinai įjungta"
 msgid "foreign countries/expeditions"
 msgstr "užsienio šalys/ekspedicijos"
 
-#, fuzzy
-msgid "forever"
-msgstr "niekada"
-
 msgid "forward to the next chapter"
 msgstr "persukti pirmyn į kitą skyrių"
 
@@ -14424,9 +14496,6 @@ msgstr "laisvi"
 
 msgid "from"
 msgstr "nuo"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -14500,14 +14569,8 @@ msgstr "hh:mmAM/PM"
 msgid "hh:mmam/pm"
 msgstr "hh:mmam/pm"
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horizontali"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -14519,9 +14582,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -14805,9 +14865,6 @@ msgstr "originalus"
 msgid "original language"
 msgstr "originalo kalba"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15038,9 +15095,6 @@ msgstr "socialiniai/politiniai klausimai/ekonomika (bendra)"
 msgid "social/spiritual science"
 msgstr "socialinis/dvasinis mokslas"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15114,9 +15168,6 @@ msgstr "Antžeminė TV"
 msgid "testing"
 msgstr "testuojama"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "šis paketas apsaugotas tėvų kontrolės PIN kodu"
 
@@ -15178,9 +15229,6 @@ msgstr "uShare jugtis"
 msgid "uShare setup"
 msgstr "uShare nustatymas"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "nepasiekiamas"
 
@@ -15222,13 +15270,6 @@ msgstr "vertikali"
 
 msgid "violet"
 msgstr "violetinė"
-
-msgid "vip2_1"
-msgstr ""
-
-#, fuzzy
-msgid "vitamin"
-msgstr "Srautinis perdavimas"
 
 msgid "wait for ci..."
 msgstr "laukite CI atsako..."

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2020-05-12 14:02+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -1180,8 +1180,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Všetky vekové kategórie"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Rádio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr "(Typ VU+)"
@@ -1220,6 +1228,11 @@ msgstr "-ŽIADNA STANICA\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-CHYBA PRENOSU:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1524,6 +1537,9 @@ msgstr "AC3 downmix"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "ZÍSKANIE TSID / ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2199,6 +2215,10 @@ msgstr "Auto DiSEqC"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Automatická EXIF rotácia orientácie /preklopenie"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Časovač"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automaticky rozdeľovať kapitoly každých ? minút (0 = nikdy)"
@@ -3707,6 +3727,9 @@ msgstr "Jas"
 msgid "Cuba"
 msgstr "Kuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4721,6 +4744,9 @@ msgstr "Východný limit nastavený"
 msgid "Ecuador"
 msgstr "Equádor"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Upraviť"
 
@@ -4861,6 +4887,9 @@ msgstr "Povoliť výber prehľadu v multi EPG"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Zapnúť presun"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Povoliť záložný vzdialený prijímač"
@@ -5619,8 +5648,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Vynútiť zastaralú štatistiku signálu"
 
+#, fuzzy
+msgid "Forever"
+msgstr "nikdy"
+
 msgid "Format"
 msgstr "Formát"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "štandardné"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Preposielať tlačidlá hlasitosti"
@@ -5991,6 +6034,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Oneskorenie externých titulkov"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG (Hybrid Log-Gamma)"
@@ -6395,6 +6441,12 @@ msgstr "Zahrnúť ECM do http streamov"
 msgid "Include EIT in http streams"
 msgstr "Zahrnúť EIT (EPG) do http streamov"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Nesprávny typ služby pre PiP!"
 
@@ -6677,6 +6729,9 @@ msgstr "Iba prispôsobiť"
 
 msgid "KA-SAT"
 msgstr "KA-SAT"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazachstan"
@@ -7971,6 +8026,9 @@ msgstr "Nepriradené"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nie je dostatok miesta na disku. Uvoľnite miesto na disku a a skúste to znova. (Potrebných je %d MB, ale voľných je iba %d MB.)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "nebeží"
@@ -8304,6 +8362,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "PPanel"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Aktualizácia zoznamu balíčkov"
@@ -9975,9 +10036,6 @@ msgstr "Uloženie súboru časového posunu"
 msgid "Save timeshift file in movie directory"
 msgstr "Uložiť súbor časového posunu do priečinka filmov"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Uložiť súbor časového posunu do priečinka filmov a prepnúť"
-
 msgid "Save timeshift only for current event"
 msgstr "Uložiť súbor časového posunu iba pre aktuálnu reláciu"
 
@@ -11464,6 +11522,9 @@ msgstr "Španielsko"
 msgid "Spanish"
 msgstr "Španielčina"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12216,6 +12277,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Doplnok bezdrôtovej LAN nie je nainštalovaný!\n"
+"Prosím, nainštalujte ho."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "Štandard DVD nepodporuje H.264 (HDTV) video streamy. Chcete vytvoriť špeciálny formát dátového disku DVD (ktorý sa nebude dať prehrať v klasických DVD prehrávačoch)?"
 
@@ -12895,6 +12964,9 @@ msgstr "Hore a dole"
 
 msgid "Top and bottom"
 msgstr "Hore a dole"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13643,6 +13715,13 @@ msgstr "Text virtuálnej klávesnice:"
 msgid "Virtual keyboard"
 msgstr "Virtuálna klávesnica"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtuálna klávesnica"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Video: %s fps"
@@ -14245,6 +14324,9 @@ msgstr "Môžete napáliť iba nahrávky z prijímača!"
 msgid "You can remove this plugin."
 msgstr "Tento doplnok môžete odstrániť."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Toto nemôžete zmazať!"
 
@@ -14511,10 +14593,6 @@ msgstr "aktvne"
 msgid "actual time only"
 msgstr "iba aktuálny čas"
 
-#, fuzzy
-msgid "adb"
-msgstr "Pohotovostný režim"
-
 msgid "adult movie/drama"
 msgstr "film pre dospelých/dráma"
 
@@ -14578,9 +14656,6 @@ msgstr "umenie/kultúra (bez hudby, všeobecne)"
 
 msgid "arts/culture magazine"
 msgstr "umenie/kultúrny časopis"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "atletika"
@@ -14736,9 +14811,6 @@ msgstr "ovládané cez HDMI"
 msgid "cooking"
 msgstr "varenie"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "spravodajstvo/publicistika (všeobecne)"
@@ -14852,6 +14924,10 @@ msgstr "strih končí tu"
 msgid "end cut here (reset)"
 msgstr "strih končí tu"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Nastaviť predvolené"
+
 msgid "entertainment (10-16 year old)"
 msgstr "zábavný (10 až 16 rokov)"
 
@@ -14938,10 +15014,6 @@ msgstr "vynútiť povolenie"
 msgid "foreign countries/expeditions"
 msgstr "zahraničné krajiny/expedície"
 
-#, fuzzy
-msgid "forever"
-msgstr "nikdy"
-
 msgid "forward to the next chapter"
 msgstr "preskočiť na ďalšiu kapitolu"
 
@@ -14950,9 +15022,6 @@ msgstr "voľných"
 
 msgid "from"
 msgstr "z"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15026,14 +15095,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horizontálna"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15045,9 +15108,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15338,9 +15398,6 @@ msgstr "pôvodná"
 msgid "original language"
 msgstr "pôvodný jazyk"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15581,9 +15638,6 @@ msgstr "sociálne/politické problémy/ekonómia (všeobecne)"
 msgid "social/spiritual science"
 msgstr "sociálne/duchovnej vedy"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15660,9 +15714,6 @@ msgstr "Pozemné"
 msgid "testing"
 msgstr "pracujem"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "tento zoznam je chránený rodičovskou kontrolou"
 
@@ -15727,9 +15778,6 @@ msgstr "vodné športy"
 msgid "uShare setup"
 msgstr "Sprievodca nastavením"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "nedostupné"
 
@@ -15771,12 +15819,6 @@ msgstr "vertikálna"
 
 msgid "violet"
 msgstr "fialová"
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
-msgstr ""
 
 msgid "wait for ci..."
 msgstr "čakať na ci..."

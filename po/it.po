@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi-enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2020-05-16 18:46+0200\n"
 "Last-Translator: Gringo <openpli@tiscali.it>\n"
 "Language-Team: www.linsat.net <spaeleus@croci.org>\n"
@@ -1175,8 +1175,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Tutte le età"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Radio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr "(tipo VU+)"
@@ -1215,6 +1223,11 @@ msgstr "-NESSUN CANALE\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-ERRORE CANALE:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1522,6 +1535,9 @@ msgstr "Downmix AC3"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "ACQUISIZIONE TSID/ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2199,6 +2215,10 @@ msgstr "DiSEqC automatico"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Rotazione/inversione automatica dell'orientamento EXIF"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Timer"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Suddivisione automatica in capitoli ogni x minuti (0=mai)"
@@ -3696,6 +3716,9 @@ msgstr "Luminosità"
 msgid "Cuba"
 msgstr "Cuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4713,6 +4736,9 @@ msgstr "Impostare limite Est"
 msgid "Ecuador"
 msgstr "Ecuador"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Modificare"
 
@@ -4852,6 +4878,9 @@ msgstr "Abilitare la selezione del bouquet anche nella Multi EPG."
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Abilitare la modalità spostamento"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Abilitare il ricevitore remoto di fallback"
@@ -5616,8 +5645,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Forzare le statistiche del segnale legacy"
 
+#, fuzzy
+msgid "Forever"
+msgstr "Mai"
+
 msgid "Format"
 msgstr "Formato"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "Predefinito"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Replicare i tasti per controllare il volume"
@@ -5990,6 +6033,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Ritardo per i sottotitoli esterni"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG (Hybrid Log Gamma)"
@@ -6395,6 +6441,12 @@ msgstr "Includere ECM nei flussi http"
 msgid "Include EIT in http streams"
 msgstr "Includere EIT nei flussi http"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Canale di tipo non idoneo per il PIP!"
 
@@ -6677,6 +6729,9 @@ msgstr "Scalare solamente"
 
 msgid "KA-SAT"
 msgstr "KA-SAT"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazakistan"
@@ -7979,6 +8034,9 @@ msgstr "Non associato"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Spazio su disco insufficiente. Liberare spazio sul disco e riprovare. (%d MB richiesti, %d MB disponibili)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "Non in esecuzione"
@@ -8309,6 +8367,9 @@ msgstr "PID PMT"
 
 msgid "PPanel"
 msgstr "PPanel"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Aggiornamento dell'elenco pacchetti"
@@ -9983,9 +10044,6 @@ msgstr "Salvare il file di timeshift"
 msgid "Save timeshift file in movie directory"
 msgstr "Salvare il file di timeshift nella cartella dei video"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Salvare il file di timeshift nella cartella dei video e cambiare canale"
-
 msgid "Save timeshift only for current event"
 msgstr "Salvare il file di timeshift solo per l'evento attuale"
 
@@ -11475,6 +11533,9 @@ msgstr "Spagna"
 msgid "Spanish"
 msgstr "Spagnolo"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12226,6 +12287,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Il plugin Rete Wireless non è installato!\n"
+"E' necessario installarlo."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "Lo standard DVD non è compatibile con i flussi video H.264 (HDTV). Creare un DVD con un formato dati speciale (che non sarà leggibile dai lettori DVD standard)?"
 
@@ -12909,6 +12978,9 @@ msgstr "Alto e basso"
 
 msgid "Top and bottom"
 msgstr "Alto e basso"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13662,6 +13734,13 @@ msgstr "Testo Tastiera virtuale:"
 msgid "Virtual keyboard"
 msgstr "Tastiera virtuale"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Tastiera virtuale"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Video: %s fps"
@@ -14264,6 +14343,9 @@ msgstr "E' possibile masterizzare solo le registrazioni del ricevitore!"
 msgid "You can remove this plugin."
 msgstr "E' possibile eliminare questo plugin."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Non è possibile effettuare questa eliminazione!"
 
@@ -14530,10 +14612,6 @@ msgstr "attiva"
 msgid "actual time only"
 msgstr "Solo orario attuale"
 
-#, fuzzy
-msgid "adb"
-msgstr "Sospensione"
-
 msgid "adult movie/drama"
 msgstr "Film/opera per adulti"
 
@@ -14597,9 +14675,6 @@ msgstr "Arte/Cultura (generiche, no musica)"
 
 msgid "arts/culture magazine"
 msgstr "Rubriche di Arte/Cultura"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "Atletica"
@@ -14755,9 +14830,6 @@ msgstr ""
 msgid "cooking"
 msgstr "Cucina"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "Notizie/Attualità (generale)"
@@ -14871,6 +14943,10 @@ msgstr "Terminare il taglio qui"
 msgid "end cut here (reset)"
 msgstr "Terminare il taglio qui"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Ripristinare i valori"
+
 msgid "entertainment (10-16 year old)"
 msgstr "Intrattenimento (10-16 anni)"
 
@@ -14957,10 +15033,6 @@ msgstr "forza abilitata"
 msgid "foreign countries/expeditions"
 msgstr "Paesi stranieri/Spedizioni"
 
-#, fuzzy
-msgid "forever"
-msgstr "Mai"
-
 msgid "forward to the next chapter"
 msgstr "Avanzare al capitolo successivo"
 
@@ -14969,9 +15041,6 @@ msgstr "liberi"
 
 msgid "from"
 msgstr "da"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15045,14 +15114,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "Orizzontale"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15064,9 +15127,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15357,9 +15417,6 @@ msgstr "Originale"
 msgid "original language"
 msgstr "Lingua originale"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15600,9 +15657,6 @@ msgstr "Sociale/Politica/Economia (generale)"
 msgid "social/spiritual science"
 msgstr "Sociale/Spiritualità"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15679,9 +15733,6 @@ msgstr "Terrestre"
 msgid "testing"
 msgstr "funzionante"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "Questo bouquet è protetto con il PIN del Controllo genitori"
 
@@ -15746,9 +15797,6 @@ msgstr "Sport acquatici"
 msgid "uShare setup"
 msgstr "Configurazione guidata"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "Non disponibile"
 
@@ -15789,12 +15837,6 @@ msgid "vertical"
 msgstr "Verticale"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

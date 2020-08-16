@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -1168,8 +1168,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Mọi lứa tuổi"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Radio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr "(VU + loại)"
@@ -1208,6 +1216,11 @@ msgstr "-KHÔNG DỊCH VỤ\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-DỊCH VỤ KHÔNG CÓ: %d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1515,6 +1528,9 @@ msgstr "AC3 kết hợp"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "THU NHẬP TSID / ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2188,6 +2204,10 @@ msgstr "Tự động Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Tự động xoay / lật định hướng"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Hẹn giờ"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Chương tự động chia mỗi? phút (0 = không bao giờ)"
@@ -3700,6 +3720,9 @@ msgstr "Độ sáng"
 msgid "Cuba"
 msgstr "Cuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4719,6 +4742,9 @@ msgstr "Giới hạn đông"
 msgid "Ecuador"
 msgstr "Ecuador"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Chỉnh sửa"
 
@@ -4858,6 +4884,9 @@ msgstr "Cho phép lựa chọn gói kênh trong đa EPG"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Cho phép chế độ di chuyển"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Cho phép thu từ xa dự phòng"
@@ -5623,8 +5652,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Lực lượng thống kê tín hiệu kế thừa"
 
+#, fuzzy
+msgid "Forever"
+msgstr "không bao giờ"
+
 msgid "Format"
 msgstr "Định dạng"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "tiêu chuẩn"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Phím âm lượng chuyển tiếp"
@@ -5997,6 +6040,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Độ trễ cho phụ đề bên ngoài"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -6401,6 +6447,12 @@ msgstr "Bao gồm ECM trong luồng http"
 msgid "Include EIT in http streams"
 msgstr "Bao gồm thuế TNDN trong các luồng http"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Loại dịch vụ không chính xác cho PiP!"
 
@@ -6682,6 +6734,9 @@ msgstr "Chỉ cần quy mô"
 
 msgid "KA-SAT"
 msgstr "KA-SAT"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
@@ -7986,6 +8041,9 @@ msgstr "Không liên quan"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Không đủ dung lượng đĩa. Vui lòng giải phóng không gian đĩa và thử lại. (Yêu cầu%d MB,%d MB khả dụng)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "không chạy"
@@ -8316,6 +8374,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "Bảng điều khiển"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Cập nhật danh sách gói"
@@ -9993,9 +10054,6 @@ msgstr "Lưu tập tin timeshift"
 msgid "Save timeshift file in movie directory"
 msgstr "Lưu tập tin timeshift trong thư mục phim"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Lưu timeshift trong thư mục phim và zap"
-
 msgid "Save timeshift only for current event"
 msgstr "Chỉ lưu thời gian cho sự kiện hiện tại"
 
@@ -11486,6 +11544,9 @@ msgstr "Tây Ban Nha"
 msgid "Spanish"
 msgstr "Người Tây Ban Nha"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12235,6 +12296,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Plugin LAN không dây chưa được cài đặt!\n"
+"Vui lòng cài đặt nó."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "Chuẩn DVD không hỗ trợ luồng video H.264 (HDTV). Bạn có muốn tạo một DVD dữ liệu định dạng đặc biệt (thay vào đó sẽ không phát trong các đầu DVD độc lập) không?"
 
@@ -12918,6 +12987,9 @@ msgstr "Trên và dưới"
 
 msgid "Top and bottom"
 msgstr "Trên và dưới"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13667,6 +13739,13 @@ msgstr "Văn bản KeyBoard ảo:"
 msgid "Virtual keyboard"
 msgstr "Bàn phím ảo"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Bàn phím ảo"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Video:%s khung hình / giây"
@@ -14269,6 +14348,9 @@ msgstr "Bạn chỉ có thể ghi bản ghi nhận!"
 msgid "You can remove this plugin."
 msgstr "Bạn có thể loại bỏ plugin này."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Bạn không thể xóa cái này!"
 
@@ -14533,10 +14615,6 @@ msgstr "hoạt động"
 msgid "actual time only"
 msgstr "chỉ thời gian thực tế"
 
-#, fuzzy
-msgid "adb"
-msgstr "Tắt ở chế độ chờ"
-
 msgid "adult movie/drama"
 msgstr "phim / phim người lớn"
 
@@ -14600,9 +14678,6 @@ msgstr "nghệ thuật / văn hóa (không có âm nhạc, nói chung)"
 
 msgid "arts/culture magazine"
 msgstr "tạp chí văn hóa nghệ thuật"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "điền kinh"
@@ -14758,9 +14833,6 @@ msgstr "được điều khiển bởi HDMI"
 msgid "cooking"
 msgstr "nấu ăn"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "tin tức / vấn đề thời sự (chung)"
@@ -14874,6 +14946,10 @@ msgstr "kết thúc cắt ở đây"
 msgid "end cut here (reset)"
 msgstr "kết thúc cắt ở đây"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Đặt mặc định"
+
 msgid "entertainment (10-16 year old)"
 msgstr "giải trí (10-16 tuổi)"
 
@@ -14960,10 +15036,6 @@ msgstr "kích hoạt lực"
 msgid "foreign countries/expeditions"
 msgstr "nước ngoài / cuộc thám hiểm"
 
-#, fuzzy
-msgid "forever"
-msgstr "không bao giờ"
-
 msgid "forward to the next chapter"
 msgstr "chuyển sang chương tiếp theo"
 
@@ -14972,9 +15044,6 @@ msgstr "miễn phí"
 
 msgid "from"
 msgstr "từ"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15048,14 +15117,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "ngang"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15067,9 +15130,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15360,9 +15420,6 @@ msgstr "nguyên"
 msgid "original language"
 msgstr "ngôn ngữ gốc"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15603,9 +15660,6 @@ msgstr "các vấn đề xã hội / chính trị / kinh tế (nói chung)"
 msgid "social/spiritual science"
 msgstr "khoa học xã hội / tâm linh"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15682,9 +15736,6 @@ msgstr "TH mặt đất"
 msgid "testing"
 msgstr "đang làm việc"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "gói kênh này được bảo vệ bởi một chốt kiểm soát của cha mẹ"
 
@@ -15749,9 +15800,6 @@ msgstr "thể thao dưới nước"
 msgid "uShare setup"
 msgstr "Thiết lập số dách"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "không có sẵn"
 
@@ -15792,12 +15840,6 @@ msgid "vertical"
 msgstr "theo chiều dọc"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

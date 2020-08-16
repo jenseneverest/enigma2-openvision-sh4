@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -1165,8 +1165,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Semua umur"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Radio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 #, fuzzy
 msgid "(VU+ type)"
@@ -1207,6 +1215,11 @@ msgstr "-Tidak ada layanan\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-Layanan error:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/d"
 
 msgid "/s"
 msgstr "/d"
@@ -1516,6 +1529,9 @@ msgstr "Downmix AC3"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "Mendapatka TSID/ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2207,6 +2223,10 @@ msgstr "DiSEqC otomatis"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Membalik/Putaran Orientasi EXIF otomatis"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Pewaktu"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Pemisahan bab otomatis setiap ? menit (0=tidak pernah)"
@@ -3733,6 +3753,9 @@ msgstr "Kecerahan"
 msgid "Cuba"
 msgstr "Kuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4769,6 +4792,9 @@ msgstr "Setel batas timur"
 msgid "Ecuador"
 msgstr "Ekuador"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Ubah"
 
@@ -4912,6 +4938,9 @@ msgstr "Aktifkan pemilihan buket pada Multi-EPG"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Aktifkan mode pindahkan"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Aktifkan penggunaan rx dari jauh"
@@ -5695,8 +5724,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Paksa statistik sinyal lawas"
 
+#, fuzzy
+msgid "Forever"
+msgstr "takpernah"
+
 msgid "Format"
 msgstr "Format"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "standar"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Teruskan tombol suara"
@@ -6078,6 +6121,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Tunda pada terjemahan dari luar"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -6491,6 +6537,12 @@ msgstr "Sertakan ECM pada streaming http"
 msgid "Include EIT in http streams"
 msgstr "Sertakan EIT pada streaming http"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Jenis layanan tidak benar pada PiP!"
 
@@ -6775,6 +6827,9 @@ msgid "Just scale"
 msgstr "Hanya skala"
 
 msgid "KA-SAT"
+msgstr ""
+
+msgid "Kathrein UFS"
 msgstr ""
 
 msgid "Kazakhstan"
@@ -8104,6 +8159,9 @@ msgstr "Tak diasosiasikan"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Tidak cukup ruang simpan disk. Mohon kosongkan beberapa ruang disk dan coba lagi. (%d MB diperlukan, %d MB tersedia)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "Di awal"
@@ -8437,6 +8495,9 @@ msgid "PMT PID"
 msgstr "PID PMT"
 
 msgid "PPanel"
+msgstr ""
+
+msgid "Pace HDS7241"
 msgstr ""
 
 msgid "Package list update"
@@ -10141,9 +10202,6 @@ msgstr "Simpan berkas timeshift"
 msgid "Save timeshift file in movie directory"
 msgstr "Simpan berkas timeshift dalam direktori film"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Simpan timeshift dalam dir film dan zap"
-
 msgid "Save timeshift only for current event"
 msgstr "Simpan timeshift hanya untuk acara saat ini"
 
@@ -11659,6 +11717,9 @@ msgstr "Spanyol"
 msgid "Spanish"
 msgstr "Spanyol"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12421,6 +12482,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Plugin jaringan nirkabel tidak terpasang!\n"
+"Mohon pasang dulu."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "Standar DVB tidak mendukung stream video H.264 (HDTV). Anda ingin membuat DVD data format khusus sebagai gantinya (yg tidak akan memutar pada pemutar DVB mandiri)?"
 
@@ -13109,6 +13178,9 @@ msgstr "Atas dan bawah"
 
 msgid "Top and bottom"
 msgstr "Atas dan bawah"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13880,6 +13952,13 @@ msgstr "Teks Papankunci Virtual:"
 msgid "Virtual keyboard"
 msgstr "Papankunci virtual"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Papankunci virtual"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, python-format
 msgid "Vol: %s"
 msgstr ""
@@ -14490,6 +14569,9 @@ msgstr "Anda hanya bisa membakar rekaman Rx!"
 msgid "You can remove this plugin."
 msgstr "Anda bisa menghapus plugin ini."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Anda tidak bisa menghapus ini!"
 
@@ -14759,10 +14841,6 @@ msgstr "Relatif"
 msgid "actual time only"
 msgstr "waktu aktual saja"
 
-#, fuzzy
-msgid "adb"
-msgstr "Standby"
-
 msgid "adult movie/drama"
 msgstr "film dewasa/drama"
 
@@ -14827,9 +14905,6 @@ msgstr "seni/budaya (tanpa musik, umum)"
 
 msgid "arts/culture magazine"
 msgstr "seni/budaya majalah"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "atletik"
@@ -14985,9 +15060,6 @@ msgstr "dikontrol HDMI"
 msgid "cooking"
 msgstr "memasak"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "berita/kejadian terkini (umum)"
@@ -15101,6 +15173,10 @@ msgstr "akhiri potong di sini"
 msgid "end cut here (reset)"
 msgstr "akhiri potong di sini"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Atur bawaan"
+
 msgid "entertainment (10-16 year old)"
 msgstr "hiburan (umur 10-16 tahun)"
 
@@ -15189,10 +15265,6 @@ msgstr "aktifkan"
 msgid "foreign countries/expeditions"
 msgstr "negara asing/ekspedisi"
 
-#, fuzzy
-msgid "forever"
-msgstr "takpernah"
-
 msgid "forward to the next chapter"
 msgstr "maju ke bab berikutnya"
 
@@ -15201,9 +15273,6 @@ msgstr "bebas"
 
 msgid "from"
 msgstr "dari"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15277,14 +15346,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horizontal"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15296,9 +15359,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15593,9 +15653,6 @@ msgstr "asli"
 msgid "original language"
 msgstr "bahasa aslinya"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15836,9 +15893,6 @@ msgstr "social/political issues/economics (general)"
 msgid "social/spiritual science"
 msgstr "social/spiritual science"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15915,9 +15969,6 @@ msgstr "Terrestrial"
 msgid "testing"
 msgstr "berfungsi"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "buket ini dilindungi dgn pin pengawasan orangtua"
 
@@ -15983,9 +16034,6 @@ msgstr "olahraga air"
 msgid "uShare setup"
 msgstr "Atur video"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "tidak tersedia"
 
@@ -16027,12 +16075,6 @@ msgid "vertical"
 msgstr "vertical"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

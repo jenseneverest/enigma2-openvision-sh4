@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -1164,8 +1164,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Kõik vanused"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Raadio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr "(VU+ tüüp)"
@@ -1204,6 +1212,11 @@ msgstr "-TEENUST POLE \n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-TEENUSE VIGA:%d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1511,6 +1524,9 @@ msgstr "AC3 > stereo"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "TSID/ONID OTSING"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2195,6 +2211,10 @@ msgstr "Auto Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "EXIF orientatsiooni automaatne pööramine/ümberpööramine"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Taimer"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automaatne peatüki lõikamine iga ? minuti (0=mitte kunagi)"
@@ -3700,6 +3720,9 @@ msgstr "Heledus"
 msgid "Cuba"
 msgstr "Kuuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4724,6 +4747,9 @@ msgstr "Ida piir on määratud"
 msgid "Ecuador"
 msgstr "Ecuador"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Muuda"
 
@@ -4866,6 +4892,9 @@ msgstr "Luba multiEPG-s nimekirjade valik."
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Luba liigutamine nimekirjades"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Luba kaugvastuvõtja"
@@ -5627,8 +5656,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Kasuta aegunud signaalistatistikat"
 
+#, fuzzy
+msgid "Forever"
+msgstr "mitte kunagi"
+
 msgid "Format"
 msgstr "Vorming"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "tavaline"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Kasuta helitugevuse nuppe"
@@ -6001,6 +6044,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Väliste subtiitrite viide"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -6405,6 +6451,12 @@ msgstr "Kaasa ECM http voogudesse"
 msgid "Include EIT in http streams"
 msgstr "Kaasa EIT http voogudesse"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "PiP jaoks sobimatu teenus!"
 
@@ -6685,6 +6737,9 @@ msgstr "Alati kogu ekraan"
 
 msgid "KA-SAT"
 msgstr "Ka-SAT"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kasahstan"
@@ -7989,6 +8044,9 @@ msgstr "Pole seotud"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Kõvakettal pole piisavalt ruumi. Kustuta ebavajalik ja proovi uuesti. (%d MB vaja, %d MB saadaval)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "ei tööta"
@@ -8322,6 +8380,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "PPaneel"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Pakettide nimekirja uuendus"
@@ -10006,9 +10067,6 @@ msgstr "Salvesta ajanihke fail"
 msgid "Save timeshift file in movie directory"
 msgstr "Salvesta ajanihke fail filmikataloogis"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Salvesta ajanihke fail filmikataloogis ja vaheta kanalit"
-
 msgid "Save timeshift only for current event"
 msgstr "Salvesta ajanihe ainult käimasoleva sündmuse jaoks"
 
@@ -11510,6 +11568,9 @@ msgstr "Hispaania"
 msgid "Spanish"
 msgstr "Hispaania"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12268,6 +12329,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Wifi laiendus-plugin ei ole paigaldatud!\n"
+"Palun paigalda see."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standard ei toeta H.264 (HDTV) video voogesitust. Kas soovite luua eri vormingus andmete (data) DVD, mida teised DVD mängijad ei mängi?"
 
@@ -12965,6 +13034,9 @@ msgstr "Üleval ja all"
 
 msgid "Top and bottom"
 msgstr "Üleval ja all"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13725,6 +13797,13 @@ msgstr "Virtuaalklahvistik"
 msgid "Virtual keyboard"
 msgstr "Virtuaalklahvistik"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtuaalklahvistik"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Video: %s fps"
@@ -14333,6 +14412,9 @@ msgstr "Plaadile saab kirjutada ainult vastuvõtja salvestusi!"
 msgid "You can remove this plugin."
 msgstr "Selle laienduse saab eemaldada."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Seda ei saa kustutada!"
 
@@ -14600,10 +14682,6 @@ msgstr "Suhteline"
 msgid "actual time only"
 msgstr "ainult tegelik aeg"
 
-#, fuzzy
-msgid "adb"
-msgstr "Ooterežiim"
-
 msgid "adult movie/drama"
 msgstr "täiskasvanute film/draama"
 
@@ -14667,9 +14745,6 @@ msgstr "Kunst/kultuur (välja arvatud muusika)"
 
 msgid "arts/culture magazine"
 msgstr "kunsti- ja kultuurimagasin"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "kergejõustik"
@@ -14825,9 +14900,6 @@ msgstr ""
 msgid "cooking"
 msgstr "kokasaade"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "uudised/sündmused (üldine)"
@@ -14941,6 +15013,10 @@ msgstr "lõpeta lõige siin"
 msgid "end cut here (reset)"
 msgstr "lõpeta lõige siin"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Sea vaikeseadesse"
+
 msgid "entertainment (10-16 year old)"
 msgstr "meelelahutus (10-16 aastastele)"
 
@@ -15027,10 +15103,6 @@ msgstr "jõuga lubatud"
 msgid "foreign countries/expeditions"
 msgstr "välisriigid/reisid"
 
-#, fuzzy
-msgid "forever"
-msgstr "mitte kunagi"
-
 msgid "forward to the next chapter"
 msgstr "hüppa järgmisele peatükile"
 
@@ -15039,9 +15111,6 @@ msgstr "vaba"
 
 msgid "from"
 msgstr "pärit"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15115,14 +15184,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horisontaal"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15134,9 +15197,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15431,9 +15491,6 @@ msgstr "algne"
 msgid "original language"
 msgstr "algupärane keel"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15674,9 +15731,6 @@ msgstr "ühiskondlikud/poliitilised asjad/majandus (üldiselt)"
 msgid "social/spiritual science"
 msgstr "ühiskonna/hingeteadus"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15753,9 +15807,6 @@ msgstr "Maapealne TV (DVB-T)"
 msgid "testing"
 msgstr "töös"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "see kanalivalik on kaitstud lapseluku PIN koodiga"
 
@@ -15820,9 +15871,6 @@ msgstr "veesport"
 msgid "uShare setup"
 msgstr "Video seaded"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "pole saadaval"
 
@@ -15864,12 +15912,6 @@ msgid "vertical"
 msgstr "vertikaal"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

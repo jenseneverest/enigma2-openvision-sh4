@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2016-11-17 12:51+0200\n"
 "Last-Translator: vovan43<vovan43@ex.ua>, sety <tim1065@mail.ru>, Irkoff <irkoff@gmail.com>\n"
 "Language-Team: gisclub.tv <http://gisclub.tv/>\n"
@@ -1172,8 +1172,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Всі категорії"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Радіо)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (ТБ)"
 
 #, fuzzy
 msgid "(VU+ type)"
@@ -1214,6 +1222,11 @@ msgstr ""
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr ""
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/с"
 
 msgid "/s"
 msgstr "/с"
@@ -1522,6 +1535,9 @@ msgid "AC3 downmix"
 msgstr "AC3 мікшування"
 
 msgid "ACQUIRING TSID/ONID"
+msgstr ""
+
+msgid "ADB XMP"
 msgstr ""
 
 msgid "ADB variant: "
@@ -2212,6 +2228,10 @@ msgstr "Авто Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Авто EXIF обертання орієнтація / гортати"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Таймер"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Автоматично розділяти на розділи кожні ? хвилин (0 = ніколи)"
@@ -3739,6 +3759,9 @@ msgstr "Яскравість"
 msgid "Cuba"
 msgstr ""
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4775,6 +4798,9 @@ msgstr "Включити обмеження на схід"
 msgid "Ecuador"
 msgstr ""
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Редагувати"
 
@@ -4919,6 +4945,9 @@ msgstr "Увімкнути вибір букетів при запуску му�
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Увімкнути режим переміщення"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Включити резервний віддалений приймач"
@@ -5672,8 +5701,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr ""
 
+#, fuzzy
+msgid "Forever"
+msgstr "ніколи"
+
 msgid "Format"
 msgstr "Формат"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "стандарт"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Передати кнопки звуку"
@@ -6053,6 +6096,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Затримка для зовнішніх субтитрів"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -6467,6 +6513,12 @@ msgstr "Вмикати ECM в http стрім"
 msgid "Include EIT in http streams"
 msgstr "Вмикати EIT в http стрім"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Неправильне обслуговування типу для PiP!"
 
@@ -6755,6 +6807,9 @@ msgid "Just scale"
 msgstr "Тільки маштаб"
 
 msgid "KA-SAT"
+msgstr ""
+
+msgid "Kathrein UFS"
 msgstr ""
 
 msgid "Kazakhstan"
@@ -8076,6 +8131,9 @@ msgstr "Немає асоціацій"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Немає місця на диску. Будь ласка звільніть трохи місця і спробуйте знову. (%d MB потрібно, %d MB доступно)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "Швидкість обертання мотора"
@@ -8413,6 +8471,9 @@ msgstr "РМТ PID"
 
 msgid "PPanel"
 msgstr "Р-панель"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Список пакетів оновлення"
@@ -10116,9 +10177,6 @@ msgstr "Зберегти файл таймшифту"
 msgid "Save timeshift file in movie directory"
 msgstr "Зберегти файл таймшифту в каталог movie"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Зберегти таймшифт в каталогу movie і перейти"
-
 msgid "Save timeshift only for current event"
 msgstr "Зберегти таймшифт тільки для поточної події"
 
@@ -11633,6 +11691,9 @@ msgstr ""
 msgid "Spanish"
 msgstr "Іспанський"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12393,6 +12454,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Плагін Witeless LAN не встановлений!\n"
+"Будь ласка, встановіть його."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD стандарт не підтримує H.264 (HDTV) відео потоків. Ви хочете створити спеціальний формат DVD (який можливо не програватиметься в стаціонарних DVD програвачах)?"
 
@@ -13099,6 +13168,9 @@ msgstr "Вверх і вниз"
 
 msgid "Top and bottom"
 msgstr "Вверх і вниз"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13872,6 +13944,13 @@ msgstr "Віртуальна клавіатура"
 msgid "Virtual keyboard"
 msgstr "Віртуальна клавіатура"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Віртуальна клавіатура"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Відео: %s fps"
@@ -14495,6 +14574,9 @@ msgstr "Ви можете пропалити тільки записи реси�
 msgid "You can remove this plugin."
 msgstr "Ви можете видалити цей плагін."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Ви не можете видалити це!"
 
@@ -14762,10 +14844,6 @@ msgstr "Відносна"
 msgid "actual time only"
 msgstr "тільки фактичний час"
 
-#, fuzzy
-msgid "adb"
-msgstr "Режим очікування"
-
 msgid "adult movie/drama"
 msgstr "дорослий фільм / драма"
 
@@ -14830,9 +14908,6 @@ msgstr "мистецтво/культура (без музики, загальн
 
 msgid "arts/culture magazine"
 msgstr "мистецтво/культура журнал"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "атлетика"
@@ -14988,9 +15063,6 @@ msgstr ""
 msgid "cooking"
 msgstr "приготування"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "новини/поточні події (загальне)"
@@ -15104,6 +15176,10 @@ msgstr "кінець редагування"
 msgid "end cut here (reset)"
 msgstr "кінець редагування"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Встановити за замовчуванням"
+
 msgid "entertainment (10-16 year old)"
 msgstr "розваги (10-16 років)"
 
@@ -15192,10 +15268,6 @@ msgstr "увімкнено"
 msgid "foreign countries/expeditions"
 msgstr "зарубіжні країни/експедиції"
 
-#, fuzzy
-msgid "forever"
-msgstr "ніколи"
-
 msgid "forward to the next chapter"
 msgstr "вперед до наступного розділу"
 
@@ -15204,9 +15276,6 @@ msgstr "вільно"
 
 msgid "from"
 msgstr "від"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15280,14 +15349,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "горизонтальна"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15299,9 +15362,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15596,9 +15656,6 @@ msgstr "оригінал"
 msgid "original language"
 msgstr "мова оригіналу"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15839,9 +15896,6 @@ msgstr "соціальні/політичні питання/Економіка 
 msgid "social/spiritual science"
 msgstr "соціальна/духовна наука"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15918,9 +15972,6 @@ msgstr "Наземний"
 msgid "testing"
 msgstr "працюючий"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "цей букет захищений батьківським контролем"
 
@@ -15986,9 +16037,6 @@ msgstr "водний спорт"
 msgid "uShare setup"
 msgstr "Налаштування відео"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "недоступно"
 
@@ -16030,12 +16078,6 @@ msgid "vertical"
 msgstr "вертикальна"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

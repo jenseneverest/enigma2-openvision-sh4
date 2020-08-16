@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -1181,8 +1181,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Visi vecumi"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Radio)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr "(VU+ tips)"
@@ -1221,6 +1229,11 @@ msgstr "-NAV KANĀLA\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-KĻŪDA: %d\n"
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1528,6 +1541,9 @@ msgstr "AC3 dekodēšana"
 
 msgid "ACQUIRING TSID/ONID"
 msgstr "ACQUIRING TSID/ONID"
+
+msgid "ADB XMP"
+msgstr ""
 
 msgid "ADB variant: "
 msgstr ""
@@ -2210,6 +2226,10 @@ msgstr "Auto Diseqc"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Automātiska attēla attēlošana izmantojot EXIF datus"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Taimeri"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automātiska nodaļu veidošana katras ? minūtes (0=neveidot)"
@@ -3708,6 +3728,9 @@ msgstr "Spilgtums"
 msgid "Cuba"
 msgstr "Kuba"
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4732,6 +4755,9 @@ msgstr "Iestatīt austrumu limitu"
 msgid "Ecuador"
 msgstr "Ekvadora"
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Rediģēt"
 
@@ -4873,6 +4899,9 @@ msgstr "Aktivizēt buķešu izvēli multi-EPG"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Aktivizēt pārvietošanas režīmu"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Izmantot citu rezeves uztvērēju"
@@ -5643,8 +5672,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Piespiedu mantoto signālu statistika"
 
+#, fuzzy
+msgid "Forever"
+msgstr "nekad"
+
 msgid "Format"
 msgstr "Formatēt"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "standarta"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Pāradresēt skaļuma taustiņus"
@@ -6017,6 +6060,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Aizture ārējiem subtitriem"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr "HLG"
@@ -6422,6 +6468,12 @@ msgstr "Ietvert ECM http plūsmās"
 msgid "Include EIT in http streams"
 msgstr "Ietvert EIT http plūsmās"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "Nepareizs PiP kanāla veids!"
 
@@ -6702,6 +6754,9 @@ msgstr "Mērogot"
 
 msgid "KA-SAT"
 msgstr "KA-SAT"
+
+msgid "Kathrein UFS"
+msgstr ""
 
 msgid "Kazakhstan"
 msgstr "Kazahstāna"
@@ -8012,6 +8067,9 @@ msgstr "Nav piešķirts"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nav pietiekami vietas uz diska. Lūdzu atbrīvot vietu uz diska un mēģināt vēlreiz. (%d MB ir nepieciešami, bet %d MB pieejami)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "nenotiek"
@@ -8342,6 +8400,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "PPanelis"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Pakotņu saraksta atjaunināšana"
@@ -10021,9 +10082,6 @@ msgstr "Saglabāt laika aiztures failu"
 msgid "Save timeshift file in movie directory"
 msgstr "Saglabāt laika aiztures failu ierakstu mapē"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Saglabāt laika aiztures failu ierakstu mapē un pārslēgt"
-
 msgid "Save timeshift only for current event"
 msgstr "Saglabāt laika aizturi tikai pašreizējai pārraidei"
 
@@ -11519,6 +11577,9 @@ msgstr "Spānija"
 msgid "Spanish"
 msgstr "Spāņu"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12270,6 +12331,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Bezvadu tīkla spraudnis nav instalēts!\n"
+"Lūdzu uzstādiet to."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standarts neatbalsta H.264 (HDTV) video. Vai jūs vēlaties izveidot īpaša formāta datu DVD (kuru nevarēs atskaņot standarta DVD atskaņotāji)?"
 
@@ -12952,6 +13021,9 @@ msgstr "Vertikāli"
 
 msgid "Top and bottom"
 msgstr "Vertikāli"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13703,6 +13775,13 @@ msgstr "Virtuālās tastatūras teksts:"
 msgid "Virtual keyboard"
 msgstr "Virtuālā tastatūra"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtuālā tastatūra"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Video: %s fps"
@@ -14305,6 +14384,9 @@ msgstr "Jūs varat ierakstīt tikai uztvērēja ierakstus!"
 msgid "You can remove this plugin."
 msgstr "Jūs varat izdzēst šo spraudni."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Jūs šo nevarat dzēst!"
 
@@ -14572,10 +14654,6 @@ msgstr "Relatīvs"
 msgid "actual time only"
 msgstr "tikai aktuālajam laikam"
 
-#, fuzzy
-msgid "adb"
-msgstr "Gaidstāve"
-
 msgid "adult movie/drama"
 msgstr "pieaugušo filma/drāma"
 
@@ -14639,9 +14717,6 @@ msgstr "māksla/kultūra (bez mūzikas, kopējā)"
 
 msgid "arts/culture magazine"
 msgstr "māksla/kultūra žurnāli"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "atlētika"
@@ -14797,9 +14872,6 @@ msgstr "kontrolē HDMI"
 msgid "cooking"
 msgstr "cepšana"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "jaunumi/aktualitātes (vispārīgi)"
@@ -14913,6 +14985,10 @@ msgstr "beigt griešanu šeit"
 msgid "end cut here (reset)"
 msgstr "beigt griešanu šeit"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Pēc noklusējuma"
+
 msgid "entertainment (10-16 year old)"
 msgstr "izklaide (10-16 gadu veciem)"
 
@@ -14999,10 +15075,6 @@ msgstr "piespiedu aktivizēts"
 msgid "foreign countries/expeditions"
 msgstr "ārvalstis/ekspedīcijas"
 
-#, fuzzy
-msgid "forever"
-msgstr "nekad"
-
 msgid "forward to the next chapter"
 msgstr "pāradresēt uz nākamo nodaļu"
 
@@ -15011,9 +15083,6 @@ msgstr "brīvs"
 
 msgid "from"
 msgstr "no"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15087,14 +15156,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "horizontālā"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15106,9 +15169,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15400,9 +15460,6 @@ msgstr "oriģināls"
 msgid "original language"
 msgstr "oriģinālā valoda"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15643,9 +15700,6 @@ msgstr "sociālie/politiskie jautājumi/ekonomika (vispārīgi)"
 msgid "social/spiritual science"
 msgstr "sociālie/garīgā zinātne"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15722,9 +15776,6 @@ msgstr "Virszemes"
 msgid "testing"
 msgstr "darbojas"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "šī buķete ir aizsargāta ar vecāku aizsardzību"
 
@@ -15789,9 +15840,6 @@ msgstr "ūdens sports"
 msgid "uShare setup"
 msgstr "Iestatījumi"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "nepieejams"
 
@@ -15833,12 +15881,6 @@ msgid "vertical"
 msgstr "vertikālā"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -1154,8 +1154,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Her yaş"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (Radyo)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (TV)"
 
 msgid "(VU+ type)"
 msgstr ""
@@ -1195,6 +1203,11 @@ msgstr ""
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr ""
+
+#, fuzzy
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr "/s"
 
 msgid "/s"
 msgstr "/s"
@@ -1503,6 +1516,9 @@ msgid "AC3 downmix"
 msgstr "AC3 downmix"
 
 msgid "ACQUIRING TSID/ONID"
+msgstr ""
+
+msgid "ADB XMP"
 msgstr ""
 
 msgid "ADB variant: "
@@ -2191,6 +2207,10 @@ msgstr ""
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "Otomatik EXIF Oryantasyon Rotasyon/Çevirme"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Zamanlayıcı"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Otomatik bölümlere ayrılsın mı? Dakika (0=ayırma)"
@@ -3713,6 +3733,9 @@ msgstr "Parlaklık"
 msgid "Cuba"
 msgstr ""
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4747,6 +4770,9 @@ msgstr "Doğu limit ayarı"
 msgid "Ecuador"
 msgstr ""
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "Düzenle"
 
@@ -4890,6 +4916,9 @@ msgstr "Çoklu-EPG içinde buket seçimini etkinleştir"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Taşıma kipini aç"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "Yedek cihaz kontrolu"
@@ -5646,8 +5675,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr ""
 
+#, fuzzy
+msgid "Forever"
+msgstr "Hiç"
+
 msgid "Format"
 msgstr "Biçimlendir"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "Standart"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "Ses tuşları İleri"
@@ -6025,6 +6068,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Harici altyazılar için Gecikme"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -6436,6 +6482,12 @@ msgstr "http akışlarında ECM dahil"
 msgid "Include EIT in http streams"
 msgstr "http akışlarında EIT dahil"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "RiR için geçersiz servis!"
 
@@ -6715,6 +6767,9 @@ msgid "Just scale"
 msgstr "Sadece ölçek"
 
 msgid "KA-SAT"
+msgstr ""
+
+msgid "Kathrein UFS"
 msgstr ""
 
 msgid "Kazakhstan"
@@ -8033,6 +8088,9 @@ msgstr "İlişkili değil"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Yetersiz disk alanı. Disk alanı boşaltarak tekrar deneyin. (%d MB gerekli, kullanılabilir %d MB)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "Motor çalışma zaman aşımı"
@@ -8369,6 +8427,9 @@ msgstr "PMT PID"
 
 msgid "PPanel"
 msgstr "PPanel"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "Paket listesi güncelleniyor..."
@@ -10067,9 +10128,6 @@ msgstr "ZamanKay. dosyaya kaydedin"
 msgid "Save timeshift file in movie directory"
 msgstr "Zaman Kaydırmayı Film klasörüne kaydet"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "Zaman Kaydırmayı Film klasörüne kaydet ve kanal değiş"
-
 msgid "Save timeshift only for current event"
 msgstr "Zaman Kaydırmayı kaydet geçerli olay için"
 
@@ -11574,6 +11632,9 @@ msgstr ""
 msgid "Spanish"
 msgstr "İspanyolca"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12341,6 +12402,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"Kablosuz ağ (WLAN) eklentisi yüklenmemiş!\n"
+"Lütfen yükleyin."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standardı H.264 (HDTV) video akışını desteklemiyor. Bunun yerine özel bir biçimde veri DVD (standar DVD oynatıcılarda oynatılamayabilir) oluşturmak istiyor musunuz?"
 
@@ -13015,6 +13084,9 @@ msgstr "Üst ve alt"
 
 msgid "Top and bottom"
 msgstr "Üst ve alt"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13785,6 +13857,13 @@ msgstr "Sanal klavye"
 msgid "Virtual keyboard"
 msgstr "Sanal klavye"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Sanal klavye"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "Görüntü: % s fps"
@@ -14391,6 +14470,9 @@ msgstr "Sadece alıcıdaki kayıtlarını yazabilirsiniz!"
 msgid "You can remove this plugin."
 msgstr "Bu eklentiyi kaldırabilirsiniz."
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Bunu silemezsiniz!"
 
@@ -14644,10 +14726,6 @@ msgstr "İlgili"
 msgid "actual time only"
 msgstr "Sadece gerçek zamanlı"
 
-#, fuzzy
-msgid "adb"
-msgstr "Hazırda beklet"
-
 msgid "adult movie/drama"
 msgstr "Yetişkin Film/Drama"
 
@@ -14712,9 +14790,6 @@ msgstr "Sanat/Kültür (Müziksiz, Genel)"
 
 msgid "arts/culture magazine"
 msgstr "Sanat/Kültür Magazin"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "Atletizm"
@@ -14869,9 +14944,6 @@ msgstr ""
 msgid "cooking"
 msgstr "Yemek"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "Haber/Güncel Olaylar (Genel)"
@@ -14984,6 +15056,10 @@ msgstr "Kesimi burada bitir"
 msgid "end cut here (reset)"
 msgstr "Kesimi burada bitir"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "Varsayılan olarak ayarla"
+
 msgid "entertainment (10-16 year old)"
 msgstr "Eğlence (10-16 yaş)"
 
@@ -15072,10 +15148,6 @@ msgstr "Etkin"
 msgid "foreign countries/expeditions"
 msgstr "Yabancı Ülkeler/Keşif"
 
-#, fuzzy
-msgid "forever"
-msgstr "Hiç"
-
 msgid "forward to the next chapter"
 msgstr "Sonraki Bölüme İlerle"
 
@@ -15084,9 +15156,6 @@ msgstr "Boş"
 
 msgid "from"
 msgstr "den"
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -15160,14 +15229,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "Yatay (H)"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -15179,9 +15242,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15476,9 +15536,6 @@ msgstr "Orjinal"
 msgid "original language"
 msgstr "Orjinal dil"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15719,9 +15776,6 @@ msgstr "Sosyal/Siyasi/Ekonomi (Genel)"
 msgid "social/spiritual science"
 msgstr "Sosyal/Ruhasal"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15798,9 +15852,6 @@ msgstr "Karasal"
 msgid "testing"
 msgstr "Çalışıyor"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "Bu buket Aile Koruma Şifresi ile Kilitlenmiş"
 
@@ -15866,9 +15917,6 @@ msgstr "Su Sporları"
 msgid "uShare setup"
 msgstr "Video ayarları"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "Kullanılamaz"
 
@@ -15910,12 +15958,6 @@ msgid "vertical"
 msgstr "Düşey (V)"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

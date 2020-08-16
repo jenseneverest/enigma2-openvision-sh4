@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -1187,7 +1187,15 @@ msgstr ""
 msgid "( All readers)"
 msgstr ""
 
+#
+#, fuzzy
+msgid "(Radio)"
+msgstr "Radio"
+
 msgid "(Show only reader:"
+msgstr ""
+
+msgid "(TV)"
 msgstr ""
 
 msgid "(VU+ type)"
@@ -1232,6 +1240,10 @@ msgstr ""
 
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
+msgstr ""
+
+msgctxt "Hotkey help separator"
+msgid "/"
 msgstr ""
 
 msgid "/s"
@@ -1562,6 +1574,9 @@ msgid "AC3 downmix"
 msgstr ""
 
 msgid "ACQUIRING TSID/ONID"
+msgstr ""
+
+msgid "ADB XMP"
 msgstr ""
 
 msgid "ADB variant: "
@@ -2351,6 +2366,11 @@ msgstr ""
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Auto Timers"
+msgstr "Tiidssjtoering"
 
 #
 msgid "Auto chapter split every ? minutes (0=never)"
@@ -4028,6 +4048,9 @@ msgstr "Helderens"
 msgid "Cuba"
 msgstr ""
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -5200,6 +5223,9 @@ msgstr ""
 msgid "Ecuador"
 msgstr ""
 
+msgid "Edision argus"
+msgstr ""
+
 #
 msgid "Edit"
 msgstr "Bewurkje"
@@ -5359,6 +5385,9 @@ msgstr "bewurkjen boeket oan"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "Ferpleatsen mode oan"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr ""
@@ -6194,8 +6223,24 @@ msgid "Force legacy signal stats"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Forever"
+msgstr "nea"
+
+#
 msgid "Format"
 msgstr "Formaat"
+
+msgid "Fortis mini"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Fortis standard"
+msgstr "standert"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr ""
@@ -6609,6 +6654,9 @@ msgid "HH:mm:ss"
 msgstr ""
 
 msgid "HI-cleanup for external subtitles"
+msgstr ""
+
+msgid "HL-101"
 msgstr ""
 
 msgid "HLG"
@@ -7042,6 +7090,12 @@ msgstr ""
 msgid "Include EIT in http streams"
 msgstr ""
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr ""
 
@@ -7377,6 +7431,9 @@ msgid "Just scale"
 msgstr "Alinne skale"
 
 msgid "KA-SAT"
+msgstr ""
+
+msgid "Kathrein UFS"
 msgstr ""
 
 msgid "Kazakhstan"
@@ -8903,6 +8960,9 @@ msgstr ""
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Net genôch diskrûmte. Rûmje wat rotzooi op en besykje opnei. (%d MB nedich, %d oanwêzich)"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Not running"
@@ -9260,6 +9320,9 @@ msgid "PMT PID"
 msgstr ""
 
 msgid "PPanel"
+msgstr ""
+
+msgid "Pace HDS7241"
 msgstr ""
 
 #
@@ -11224,9 +11287,6 @@ msgstr ""
 msgid "Save timeshift file in movie directory"
 msgstr ""
 
-msgid "Save timeshift in movie dir and zap"
-msgstr ""
-
 msgid "Save timeshift only for current event"
 msgstr ""
 
@@ -12940,6 +13000,9 @@ msgstr ""
 msgid "Spanish"
 msgstr "Spaans"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -13782,6 +13845,15 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"De WLAN ynstekker is net ynstallearre!\n"
+"Ynstallearje dizze earst."
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr ""
 
@@ -14511,6 +14583,9 @@ msgid "Top and Bottom"
 msgstr ""
 
 msgid "Top and bottom"
+msgstr ""
+
+msgid "Topfield TF77X0HDPVR"
 msgstr ""
 
 msgid "TopfieldVFD"
@@ -15390,6 +15465,14 @@ msgstr "Virtueel Toetseboerd"
 msgid "Virtual keyboard"
 msgstr "Virtueel Toetseboerd"
 
+#
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "Virtueel Toetseboerd"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, python-format
 msgid "Vol: %s"
 msgstr ""
@@ -16019,6 +16102,9 @@ msgstr ""
 msgid "You can remove this plugin."
 msgstr ""
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 #
 msgid "You cannot delete this!"
 msgstr "Jo kinne dit net ferwiderje!"
@@ -16272,11 +16358,6 @@ msgstr ""
 msgid "actual time only"
 msgstr ""
 
-#
-#, fuzzy
-msgid "adb"
-msgstr "Paraatmode"
-
 msgid "adult movie/drama"
 msgstr ""
 
@@ -16341,9 +16422,6 @@ msgid "arts/culture (without music, general)"
 msgstr ""
 
 msgid "arts/culture magazine"
-msgstr ""
-
-msgid "atevio7500"
 msgstr ""
 
 msgid "athletics"
@@ -16518,9 +16596,6 @@ msgstr ""
 msgid "cooking"
 msgstr ""
 
-msgid "cuberevo_uni"
-msgstr ""
-
 msgid "current affairs (general)"
 msgstr ""
 
@@ -16647,6 +16722,11 @@ msgstr "stop stik hjirre"
 msgid "end cut here (reset)"
 msgstr "stop stik hjirre"
 
+#
+#, fuzzy
+msgid "enigma2 default"
+msgstr "lyst styl standert"
+
 msgid "entertainment (10-16 year old)"
 msgstr ""
 
@@ -16745,11 +16825,6 @@ msgid "foreign countries/expeditions"
 msgstr ""
 
 #
-#, fuzzy
-msgid "forever"
-msgstr "nea"
-
-#
 msgid "forward to the next chapter"
 msgstr "foarút nei it folgende haadstik"
 
@@ -16758,9 +16833,6 @@ msgid "free"
 msgstr "frij"
 
 msgid "from"
-msgstr ""
-
-msgid "fs9000"
 msgstr ""
 
 msgid "fs9000VFD"
@@ -16840,15 +16912,9 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 #
 msgid "horizontal"
 msgstr "horizontal"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -16860,9 +16926,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -17189,9 +17252,6 @@ msgstr ""
 msgid "original language"
 msgstr ""
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -17462,9 +17522,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -17549,9 +17606,6 @@ msgstr "Ether"
 msgid "testing"
 msgstr ""
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr ""
 
@@ -17622,9 +17676,6 @@ msgstr ""
 msgid "uShare setup"
 msgstr "Fideo ynstellingen"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr ""
 
@@ -17673,12 +17724,6 @@ msgid "vertical"
 msgstr "ferticaal"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 #

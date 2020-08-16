@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-26 18:55+0430\n"
+"POT-Creation-Date: 2020-08-16 18:46+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 344784320@qq.com\n"
 "Language-Team: Openpli Team\n"
@@ -1034,8 +1034,16 @@ msgstr ""
 msgid "( All readers)"
 msgstr "所有年龄"
 
+#, fuzzy
+msgid "(Radio)"
+msgstr " (广播)"
+
 msgid "(Show only reader:"
 msgstr ""
+
+#, fuzzy
+msgid "(TV)"
+msgstr " (电视)"
 
 msgid "(VU+ type)"
 msgstr ""
@@ -1074,6 +1082,10 @@ msgstr "-无服务\n"
 #, python-format
 msgid "-SERVICE ERROR:%d\n"
 msgstr "-服务错误:%d\n"
+
+msgctxt "Hotkey help separator"
+msgid "/"
+msgstr ""
 
 msgid "/s"
 msgstr ""
@@ -1379,6 +1391,9 @@ msgid "AC3 downmix"
 msgstr "AC3 缩减混音"
 
 msgid "ACQUIRING TSID/ONID"
+msgstr ""
+
+msgid "ADB XMP"
 msgstr ""
 
 msgid "ADB variant: "
@@ -2055,6 +2070,10 @@ msgstr "自动切换开关"
 
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr "自动EXIF信息方向旋转／翻转"
+
+#, fuzzy
+msgid "Auto Timers"
+msgstr "定时器"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "每隔? 分钟自动分割。(0=从不)"
@@ -3562,6 +3581,9 @@ msgstr "亮度"
 msgid "Cuba"
 msgstr ""
 
+msgid "Cuberevo universal"
+msgstr ""
+
 msgid "CuberevoVFD"
 msgstr ""
 
@@ -4564,6 +4586,9 @@ msgstr "东极限位置"
 msgid "Ecuador"
 msgstr ""
 
+msgid "Edision argus"
+msgstr ""
+
 msgid "Edit"
 msgstr "修改"
 
@@ -4703,6 +4728,9 @@ msgstr "启用多路EPG自定义列表选择"
 #, fuzzy
 msgid "Enable client mode"
 msgstr "允许移动模式"
+
+msgid "Enable fade-out functionality"
+msgstr ""
 
 msgid "Enable fallback remote receiver"
 msgstr "启用备用远程接收器"
@@ -5456,8 +5484,22 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "强制传统信号统计"
 
+#, fuzzy
+msgid "Forever"
+msgstr "从不"
+
 msgid "Format"
 msgstr "格式化"
+
+msgid "Fortis mini"
+msgstr ""
+
+#, fuzzy
+msgid "Fortis standard"
+msgstr "标准"
+
+msgid "Fortis universal"
+msgstr ""
 
 msgid "Forward volume keys"
 msgstr "前向音量键"
@@ -5828,6 +5870,9 @@ msgstr ""
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "外挂字幕延迟"
+
+msgid "HL-101"
+msgstr ""
 
 msgid "HLG"
 msgstr ""
@@ -6227,6 +6272,12 @@ msgstr "媒体流里包含ECM"
 msgid "Include EIT in http streams"
 msgstr "媒体流里包含EIT"
 
+#, python-format
+msgid ""
+"Incorrect format for skip value: '%s'\n"
+"Skip cancelled."
+msgstr ""
+
 msgid "Incorrect service type for Picture in Picture!"
 msgstr "不正确的画中画频道服务类型"
 
@@ -6508,6 +6559,9 @@ msgid "Just scale"
 msgstr "左右拉伸"
 
 msgid "KA-SAT"
+msgstr ""
+
+msgid "Kathrein UFS"
 msgstr ""
 
 msgid "Kazakhstan"
@@ -7798,6 +7852,9 @@ msgstr "不关联"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "磁盘空间不足。请释放一些磁盘空间并重试。（%d MB 被请求, %d MB 可用）"
 
+msgid "Not recommended for HiSilicon and Amlogic"
+msgstr ""
+
 #, fuzzy
 msgid "Not running"
 msgstr "未运行"
@@ -8128,6 +8185,9 @@ msgstr ""
 
 msgid "PPanel"
 msgstr "ppanel面板"
+
+msgid "Pace HDS7241"
+msgstr ""
 
 msgid "Package list update"
 msgstr "更新软件列表"
@@ -9801,9 +9861,6 @@ msgstr "保存时移文件"
 msgid "Save timeshift file in movie directory"
 msgstr "保存时移文件到movie目录。"
 
-msgid "Save timeshift in movie dir and zap"
-msgstr "保存时移到movie目录并跳转"
-
 msgid "Save timeshift only for current event"
 msgstr "仅仅为当前事件保存时移"
 
@@ -11284,6 +11341,9 @@ msgstr ""
 msgid "Spanish"
 msgstr "西班牙语"
 
+msgid "Spark"
+msgstr ""
+
 msgid "Spark7162 select tuner mode"
 msgstr ""
 
@@ -12031,6 +12091,14 @@ msgstr ""
 msgid "The %s %s stores the EPG data every (hours)."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The AutoTimer plugin is not installed!\n"
+"Please install it."
+msgstr ""
+"WLAN插件未安装!\n"
+"请先安装。"
+
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD 标准不支持 H。264 (HDTV) 的视频流。你想创建一个机顶盒数据格式 DVD (不能在传统的DVD上播放) 吗?"
 
@@ -12711,6 +12779,9 @@ msgstr "顶部和底部"
 
 msgid "Top and bottom"
 msgstr "顶部和底部"
+
+msgid "Topfield TF77X0HDPVR"
+msgstr ""
 
 msgid "TopfieldVFD"
 msgstr ""
@@ -13459,6 +13530,13 @@ msgstr "虚拟键盘文本："
 msgid "Virtual keyboard"
 msgstr "虚拟键盘"
 
+#, fuzzy
+msgid "Virtual keyboard skin"
+msgstr "虚拟键盘"
+
+msgid "Vitamin 5000HD"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Vol: %s"
 msgstr "视频: %s fps"
@@ -14061,6 +14139,9 @@ msgstr "您仅仅能烧录机顶盒录像"
 msgid "You can remove this plugin."
 msgstr "你可以删除这个插件。"
 
+msgid "You can select the skin of virtual keyboard."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "这个文件不能删除!"
 
@@ -14325,10 +14406,6 @@ msgstr "活动的"
 msgid "actual time only"
 msgstr "仅仅实际时间"
 
-#, fuzzy
-msgid "adb"
-msgstr "一般待机"
-
 msgid "adult movie/drama"
 msgstr "成人电影／戏剧"
 
@@ -14392,9 +14469,6 @@ msgstr "艺术/文化（不包括音乐，传统的）"
 
 msgid "arts/culture magazine"
 msgstr "艺术/文化杂志"
-
-msgid "atevio7500"
-msgstr ""
 
 msgid "athletics"
 msgstr "竞技"
@@ -14550,9 +14624,6 @@ msgstr ""
 msgid "cooking"
 msgstr "烹饪"
 
-msgid "cuberevo_uni"
-msgstr ""
-
 #, fuzzy
 msgid "current affairs (general)"
 msgstr "新闻/时政"
@@ -14666,6 +14737,10 @@ msgstr "结束录像剪辑"
 msgid "end cut here (reset)"
 msgstr "结束录像剪辑"
 
+#, fuzzy
+msgid "enigma2 default"
+msgstr "设为默认"
+
 msgid "entertainment (10-16 year old)"
 msgstr "娱乐（10-16年龄段）"
 
@@ -14752,10 +14827,6 @@ msgstr "强制启用"
 msgid "foreign countries/expeditions"
 msgstr "外国/探险"
 
-#, fuzzy
-msgid "forever"
-msgstr "从不"
-
 msgid "forward to the next chapter"
 msgstr "快进到下一个章节"
 
@@ -14764,9 +14835,6 @@ msgstr "空闲"
 
 msgid "from"
 msgstr "来自: "
-
-msgid "fs9000"
-msgstr ""
 
 msgid "fs9000VFD"
 msgstr ""
@@ -14840,14 +14908,8 @@ msgstr ""
 msgid "hh:mmam/pm"
 msgstr ""
 
-msgid "hl101"
-msgstr ""
-
 msgid "horizontal"
 msgstr "水平"
-
-msgid "hs7110"
-msgstr ""
 
 msgid "hs7110VFD"
 msgstr ""
@@ -14859,9 +14921,6 @@ msgid "hs7810aVFD"
 msgstr ""
 
 msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510"
 msgstr ""
 
 msgid "hs9510VFD"
@@ -15152,9 +15211,6 @@ msgstr "原始"
 msgid "original language"
 msgstr "原始语言"
 
-msgid "pace7241"
-msgstr ""
-
 msgid "pace7241VFD"
 msgstr ""
 
@@ -15395,9 +15451,6 @@ msgstr "社会/政治/经济"
 msgid "social/spiritual science"
 msgstr "社会/精神科学"
 
-msgid "spark"
-msgstr ""
-
 msgid "spark7162VFD"
 msgstr ""
 
@@ -15474,9 +15527,6 @@ msgstr "地面波"
 msgid "testing"
 msgstr "测试"
 
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr "此频道受家长控制。"
 
@@ -15541,9 +15591,6 @@ msgstr "水上运动"
 msgid "uShare setup"
 msgstr "向导安装程序"
 
-msgid "ufs912"
-msgstr ""
-
 msgid "unavailable"
 msgstr "不可用"
 
@@ -15584,12 +15631,6 @@ msgid "vertical"
 msgstr "垂直"
 
 msgid "violet"
-msgstr ""
-
-msgid "vip2_1"
-msgstr ""
-
-msgid "vitamin"
 msgstr ""
 
 msgid "wait for ci..."

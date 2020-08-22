@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project Slovenia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2020-05-16 18:48+0200\n"
 "Last-Translator: Taykun345 <support@satnigmo.com>\n"
 "Language-Team: Satnigmo <support@satnigmo.com>\n"
@@ -1208,6 +1208,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr ""
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (Radio)"
@@ -1862,6 +1865,11 @@ msgstr "Dodaj/Izbriši časovnik za trenutni dogodek"
 msgid "Adding schedule..."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "drugi kabel motoriziranega LNB"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
@@ -2450,6 +2458,11 @@ msgid "Auto play blu-ray file"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Želite iskati kanale?"
+
+#
 msgid "Auto scart switching"
 msgstr "Samodejno preklapljanje SCART"
 
@@ -2683,11 +2696,6 @@ msgstr ""
 
 msgid "Big PiP"
 msgstr "Napredni PiP"
-
-#
-#, fuzzy
-msgid "Bitrate"
-msgstr "Bitrate:"
 
 #
 msgid "Bitrate:"
@@ -4856,6 +4864,10 @@ msgstr "Izklop časovnika"
 msgid "Disabled"
 msgstr "Onemogočeno"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Nastavitve seznama posnetkov"
+
 #
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Prostor na disku rezerviran za snemanje (v GB)"
@@ -6344,11 +6356,6 @@ msgid "Forward volume keys"
 msgstr "Pošlji naprej tipke za glasnosti"
 
 #
-#, fuzzy
-msgid "Frame rate"
-msgstr "Hitrost osveževanja"
-
-#
 msgid "Frame size in full view"
 msgstr "Velikost okvirja v polnem pogledu"
 
@@ -6721,10 +6728,6 @@ msgid "HDMI HDR Type"
 msgstr ""
 
 #, fuzzy
-msgid "HDMI recording"
-msgstr "Zaključi s snemanjem"
-
-#, fuzzy
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC nastavitve"
 
@@ -6811,10 +6814,6 @@ msgstr ""
 
 msgid "Hebrew"
 msgstr ""
-
-#, fuzzy
-msgid "Height"
-msgstr "višina"
 
 msgid "Helps setting up your antenna"
 msgstr "Pomaga pri nastavitvi krožnika"
@@ -7152,9 +7151,6 @@ msgstr "Naslov rezervnega oddaljenega sprejemnika"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 #
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Da bi se lahko izvedlo snemanje določeno s časovnikom, je bil TV prestavljen v način snemanja!\n"
@@ -7390,11 +7386,6 @@ msgstr "Vmesnik:"
 
 #
 msgid "Interface: "
-msgstr "Vmesnik:"
-
-#
-#, fuzzy
-msgid "Interlaced"
 msgstr "Vmesnik:"
 
 msgid "Internal"
@@ -7737,6 +7728,9 @@ msgid "Leisure hobbies"
 msgstr ""
 
 msgid "Lesotho"
+msgstr ""
+
+msgid "Let you change RC type but use it with care."
 msgstr ""
 
 #
@@ -8499,6 +8493,11 @@ msgstr "Multi-EPG"
 
 msgid "Multi channel downmix"
 msgstr "Pretvorba večkanalnega zvoka"
+
+#
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Vrsta starševske zaščite"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Izbirnik Multi-EPG seznamov kanalov"
@@ -9270,6 +9269,10 @@ msgstr "originalni jezik"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Verzija pythona:"
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -10886,7 +10889,7 @@ msgid "Required medium type:"
 msgstr "Zahtevana vrsta medija:"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Preverite vašo internetno povezavo"
 
 msgid "Rereading partition table"
@@ -14022,13 +14025,6 @@ msgstr ""
 "Vtičnik za brezžično mrežo ni nameščen!\n"
 "Prosim, da ga namestite."
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "Nastavitev razmerja slike za zaslon."
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #
 #, fuzzy, python-format
 msgid ""
@@ -14049,12 +14045,6 @@ msgstr ""
 #
 msgid "The following files were found..."
 msgstr "Najdene datoteke:"
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 msgid ""
@@ -14156,9 +14146,6 @@ msgstr ""
 #, fuzzy
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Poteka ponovni zagon uporabniškega vmesnika (GUI) ..."
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 msgid ""
@@ -15930,6 +15917,10 @@ msgstr ""
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Če je nastavitev vključena, potem se lahko seznam posnetkov zapusti s pritiskom na tipko \"izhod\":"
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Če je nastavitev vključena, potem sprejemnik samodejno uporabi zvočno sled, ki je bila pred tem že izbrana."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Če je nastavitev vključena, potem se meri porabo električne energije, da bi se zaznal trenutek, ko rotor preneha s premikanjem. Omenjena funkcija deluje le če jo podpira kanalnik sprejemnika."
 
@@ -16012,6 +16003,9 @@ msgstr "Če je nastavitev vključena, potem se časovni zamik v ozadju samodejno
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Če je nastavitev vključena, potem sprejemnik pridobi IP naslov samodejno - DHCP."
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Če je nastavitev vključena, potem sprejemnik samodejno zazna aktivnost na vhodu SCART."
 
@@ -16045,10 +16039,6 @@ msgstr ""
 #
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Kam naj shranjujem začasne posnetke časovnega zamika?"
-
-#, fuzzy
-msgid "Width"
-msgstr "širina"
 
 #
 msgid "Wireless LAN"
@@ -16538,6 +16528,9 @@ msgstr "Relativno"
 
 msgid "actual time only"
 msgstr "samo trenutni čas"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr ""
@@ -17566,6 +17559,9 @@ msgid "rock/pop"
 msgstr ""
 
 msgid "romance"
+msgstr ""
+
+msgid "rotor"
 msgstr ""
 
 #, fuzzy

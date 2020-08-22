@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -1164,6 +1164,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Kõik vanused"
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (Raadio)"
@@ -1723,6 +1726,10 @@ msgstr "Lisa/kõrvalda praeguse sündmuse muutuse taimer"
 msgid "Adding schedule..."
 msgstr ""
 
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "Mootorsüsteemi LNB teine kaabel"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr "Ajami lisavalikud lubavad sisestada andmeid mootori spetsifikatsioonilehelt, et enigma saaks arvutada antenni ühelt satelliidilt teisele liigutamise aja."
 
@@ -2238,6 +2245,10 @@ msgstr "Automaatsed keele valikud"
 msgid "Auto play blu-ray file"
 msgstr "Mängi kohe bluray faili"
 
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Tee nüüd kiire teenuste otsing"
+
 msgid "Auto scart switching"
 msgstr "Autom. SCART ümberlülitus"
 
@@ -2438,10 +2449,6 @@ msgstr "Bhutan"
 
 msgid "Big PiP"
 msgstr "Suur PiP"
-
-#, fuzzy
-msgid "Bitrate"
-msgstr "Bitikiirus:"
 
 msgid "Bitrate:"
 msgstr "Bitikiirus:"
@@ -4380,6 +4387,10 @@ msgstr "Keela taimer"
 msgid "Disabled"
 msgstr "Keelatud"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Filmilisti seaded"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Salvestistele tagatud kettaruum (GB)"
 
@@ -5676,10 +5687,6 @@ msgstr ""
 msgid "Forward volume keys"
 msgstr "Kasuta helitugevuse nuppe"
 
-#, fuzzy
-msgid "Frame rate"
-msgstr "Värskendussagedus"
-
 msgid "Frame size in full view"
 msgstr "Kaadri suurus täisvaates"
 
@@ -6013,10 +6020,6 @@ msgstr "HDMI värviruum"
 msgid "HDMI HDR Type"
 msgstr "HDMI HDR tüüp"
 
-#, fuzzy
-msgid "HDMI recording"
-msgstr "Peata salvestamine"
-
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC allikas aktiivne"
 
@@ -6094,10 +6097,6 @@ msgstr "Heardi ja McDonaldi saared"
 
 msgid "Hebrew"
 msgstr "Heebrea"
-
-#, fuzzy
-msgid "Height"
-msgstr "kõrgus"
 
 msgid "Helps setting up your antenna"
 msgstr "Aitab antenni seadistada"
@@ -6411,9 +6410,6 @@ msgstr "Impordi kaugvastuvõtja URL"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Sunnitud kanalivahetus. Taimeri salvestus just käivitus ja vajas seda tuunerit!\n"
 
@@ -6610,10 +6606,6 @@ msgid "Interface"
 msgstr "Liides: "
 
 msgid "Interface: "
-msgstr "Liides: "
-
-#, fuzzy
-msgid "Interlaced"
 msgstr "Liides: "
 
 msgid "Internal"
@@ -6917,6 +6909,9 @@ msgstr "Vaba aja hobid"
 
 msgid "Lesotho"
 msgstr "Lesotho"
+
+msgid "Let you change RC type but use it with care."
+msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 msgid "Letterbox"
@@ -7570,6 +7565,10 @@ msgstr "Multi EPG"
 
 msgid "Multi channel downmix"
 msgstr "Mitmekanaline heli > stereo"
+
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Kaugjuhtimispuldi tüübi seadmine"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Lemmiknimekirjade valik kanalite saatekavas"
@@ -8247,6 +8246,10 @@ msgstr "algupärane keel"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Pythoni versioon: "
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -9638,7 +9641,7 @@ msgid "Required medium type:"
 msgstr "Nõutav meedia tüüp:"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Kontrolli internetiühendust"
 
 msgid "Rereading partition table"
@@ -12361,13 +12364,6 @@ msgstr ""
 "Wifi laiendus-plugin ei ole paigaldatud!\n"
 "Palun paigalda see."
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "Määra ekraani pildisuhe."
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -12386,12 +12382,6 @@ msgstr ""
 
 msgid "The following files were found..."
 msgstr "Leitud järgmised failid"
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -12504,9 +12494,6 @@ msgstr ""
 #, fuzzy
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Vastuvõtja kasutajaliides taaskäivitub."
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -14109,6 +14096,10 @@ msgstr "Määrates 'jah', dekodeeritakse http vood serveri poolt. Klientvastuvõ
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Määrates 'jah' saab väljuda filmimängijast EXIT nupuga."
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Määrates 'jah', kasutab vastuvõtja automaatselt varem valitud heliriba."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Määrates 'jah', mõõdetakse energia kulu, tuvastamaks mootori pööramise lõppemist (kui vastuvõtja seda toetab)."
 
@@ -14188,6 +14179,9 @@ msgstr "Määrates 'jah', algab ajanihe taustal automaatselt pärast määratud 
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Määrates 'jah', kasutatakse IP määramiseks DHCP-d."
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Määrates 'jah', vastuvõtja tuvastab tegevuse VCR SCART sisendis."
 
@@ -14220,10 +14214,6 @@ msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Kuhu salvestada ajanihke sisu?"
-
-#, fuzzy
-msgid "Width"
-msgstr "laius"
 
 msgid "Wireless LAN"
 msgstr "Traadita LAN"
@@ -14681,6 +14671,9 @@ msgstr "Suhteline"
 
 msgid "actual time only"
 msgstr "ainult tegelik aeg"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr "täiskasvanute film/draama"
@@ -15599,6 +15592,10 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romantika"
+
+#, fuzzy
+msgid "rotor"
+msgstr "Mootor: "
 
 #, fuzzy
 msgid "running..."

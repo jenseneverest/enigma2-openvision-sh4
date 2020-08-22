@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2020-05-16 18:44+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -1185,6 +1185,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr ""
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #
 #, fuzzy
 msgid "(Radio)"
@@ -1814,6 +1817,9 @@ msgstr ""
 msgid "Adding schedule..."
 msgstr ""
 
+msgid "Additional cable of motorized LNB"
+msgstr ""
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
@@ -2361,6 +2367,11 @@ msgstr ""
 msgid "Auto play blu-ray file"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Viltu leita að rásum?"
+
 msgid "Auto scart switching"
 msgstr "Sjálfvirk skipting á scarti"
 
@@ -2574,10 +2585,6 @@ msgstr ""
 
 msgid "Big PiP"
 msgstr ""
-
-#, fuzzy
-msgid "Bitrate"
-msgstr "Bitahraði:"
 
 msgid "Bitrate:"
 msgstr "Bitahraði:"
@@ -4632,6 +4639,10 @@ msgstr ""
 msgid "Disabled"
 msgstr "Óvirkt"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Handvirk stilling"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
 
@@ -6061,11 +6072,6 @@ msgid "Forward volume keys"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Frame rate"
-msgstr "Hressingar tíðni"
-
-#
 msgid "Frame size in full view"
 msgstr "Stærð ramma í fullri stærð"
 
@@ -6439,11 +6445,6 @@ msgstr ""
 msgid "HDMI HDR Type"
 msgstr ""
 
-#
-#, fuzzy
-msgid "HDMI recording"
-msgstr "þessi upptaka"
-
 msgid "HDMI-CEC Source Active"
 msgstr ""
 
@@ -6529,11 +6530,6 @@ msgstr ""
 
 msgid "Hebrew"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Height"
-msgstr "Hægri"
 
 msgid "Helps setting up your antenna"
 msgstr ""
@@ -6862,9 +6858,6 @@ msgstr ""
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 #
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Til að taka upp á tíma stillingu þá var sjónvarpið stillt á upptökurás!\n"
@@ -7096,10 +7089,6 @@ msgid "Interface"
 msgstr "Netkort:"
 
 msgid "Interface: "
-msgstr "Netkort:"
-
-#, fuzzy
-msgid "Interlaced"
 msgstr "Netkort:"
 
 msgid "Internal"
@@ -7458,6 +7447,9 @@ msgid "Leisure hobbies"
 msgstr ""
 
 msgid "Lesotho"
+msgstr ""
+
+msgid "Let you change RC type but use it with care."
 msgstr ""
 
 #
@@ -8218,6 +8210,11 @@ msgstr "Mörg EPG"
 
 msgid "Multi channel downmix"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Gerð foreldrastýringar"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Mörg-EPG rásavanda val"
@@ -8992,6 +8989,11 @@ msgstr ""
 
 msgid "Open Vision module: "
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Ný útgáfa:"
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -10593,7 +10595,7 @@ msgid "Required medium type:"
 msgstr "Þarf gerð disks:"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Uppsetning á þráðlausu neti."
 
 msgid "Rereading partition table"
@@ -13687,12 +13689,6 @@ msgstr ""
 "Þráðlausa netkortið er ekki tengt!\n"
 "Vinsamlega tengið það."
 
-msgid "The aspect ratio of the recording."
-msgstr ""
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -13710,12 +13706,6 @@ msgstr ""
 #
 msgid "The following files were found..."
 msgstr "Eftirfarandi skrár fundust..."
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #, fuzzy
 msgid ""
@@ -13822,9 +13812,6 @@ msgstr ""
 #, fuzzy
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Vinsamlega bíðið á meðan netkerfið er endurræst..."
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 msgid ""
@@ -15569,6 +15556,9 @@ msgstr ""
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr ""
 
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr ""
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr ""
 
@@ -15649,6 +15639,9 @@ msgstr ""
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "opna nafnaþjóns stillingar"
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr ""
 
@@ -15682,9 +15675,6 @@ msgstr ""
 #
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Hvar á að vista tímabundnar tímafærslu upptökur?"
-
-msgid "Width"
-msgstr ""
 
 #
 msgid "Wireless LAN"
@@ -16149,6 +16139,9 @@ msgid "active"
 msgstr ""
 
 msgid "actual time only"
+msgstr ""
+
+msgid "additional cable of rotor"
 msgstr ""
 
 msgid "adult movie/drama"
@@ -17168,6 +17161,9 @@ msgid "rock/pop"
 msgstr ""
 
 msgid "romance"
+msgstr ""
+
+msgid "rotor"
 msgstr ""
 
 #, fuzzy

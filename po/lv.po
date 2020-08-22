@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -1181,6 +1181,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Visi vecumi"
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (Radio)"
@@ -1739,6 +1742,10 @@ msgstr "Pievienot/noņemt mainīt taimeri tekošajai pārraidei"
 msgid "Adding schedule..."
 msgstr ""
 
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "Otrais kabelis vai motorizēta LNB"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr "Papildu motora iespējas ļauj izmantot informāciju no sava motora specifikācijas. Tāpēc enigma var noteikt, cik ilgs laiks būs nepieciešams, lai pārvietotu satelītantenu no viena satelīta uz citu."
 
@@ -2253,6 +2260,10 @@ msgstr "Automātiska valodas izvēle"
 msgid "Auto play blu-ray file"
 msgstr "Automātiski atskaņot blu-ray"
 
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Veikt ātro kanālu meklēšanu"
+
 msgid "Auto scart switching"
 msgstr "Automātiska SCART pārslēgšana"
 
@@ -2451,10 +2462,6 @@ msgstr "Butāna"
 
 msgid "Big PiP"
 msgstr "Liels PiP"
-
-#, fuzzy
-msgid "Bitrate"
-msgstr "Bitreits:"
 
 msgid "Bitrate:"
 msgstr "Bitreits:"
@@ -4389,6 +4396,10 @@ msgstr "Izslēgt taimeri"
 msgid "Disabled"
 msgstr "Izslēgts"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Mediju iestatījumi"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Rezerve ierakstiem diskā (GB)"
 
@@ -5692,10 +5703,6 @@ msgstr ""
 msgid "Forward volume keys"
 msgstr "Pāradresēt skaļuma taustiņus"
 
-#, fuzzy
-msgid "Frame rate"
-msgstr "Atjaunināšanas biežums"
-
 msgid "Frame size in full view"
 msgstr "Kadra izmērs pilnskatā"
 
@@ -6029,10 +6036,6 @@ msgstr "HDMI Colorspace"
 msgid "HDMI HDR Type"
 msgstr "HDMI HDR veids"
 
-#, fuzzy
-msgid "HDMI recording"
-msgstr "Apturēt ierakstu"
-
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC avots aktīvs"
 
@@ -6110,10 +6113,6 @@ msgstr "Heard sala un McDonald sala"
 
 msgid "Hebrew"
 msgstr "Ebreju"
-
-#, fuzzy
-msgid "Height"
-msgstr "augstums"
 
 msgid "Helps setting up your antenna"
 msgstr "Palīdzēs iestatīt jūsu antenu"
@@ -6428,9 +6427,6 @@ msgstr "Attālinātais uztvērējs importam"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Lai uzsāktu ierakstu pēc taimera, TV tika pārslēgts uz ierakstāmo kanālu!\n"
 
@@ -6627,10 +6623,6 @@ msgid "Interface"
 msgstr "Interfeiss: "
 
 msgid "Interface: "
-msgstr "Interfeiss: "
-
-#, fuzzy
-msgid "Interlaced"
 msgstr "Interfeiss: "
 
 msgid "Internal"
@@ -6934,6 +6926,9 @@ msgstr "Brīvā laika hobiji"
 
 msgid "Lesotho"
 msgstr "Lesoto"
+
+msgid "Let you change RC type but use it with care."
+msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 msgid "Letterbox"
@@ -7593,6 +7588,10 @@ msgstr "Daudzkanālu EPG"
 
 msgid "Multi channel downmix"
 msgstr "Dudzkanālu skaņas dekodēšana"
+
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Pults iestatījumi"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Daudzkanālu EPG buķetes izvēle"
@@ -8269,6 +8268,10 @@ msgstr "oriģinālā valoda"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Python versija: "
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -9658,7 +9661,7 @@ msgid "Required medium type:"
 msgstr "Nepieciešamais veids:"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Pārbaudīt interneta savienojumu"
 
 msgid "Rereading partition table"
@@ -12363,13 +12366,6 @@ msgstr ""
 "Bezvadu tīkla spraudnis nav instalēts!\n"
 "Lūdzu uzstādiet to."
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "Konfigurēt ekrāna proporcijas."
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -12388,12 +12384,6 @@ msgstr ""
 
 msgid "The following files were found..."
 msgstr "Tika atrasti sekojoši faili..."
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -12505,9 +12495,6 @@ msgstr ""
 
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Uztvērēja lietotāja interfeiss tiek pārstartēts testa režīmā"
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -14082,6 +14069,10 @@ msgstr "Ja ieslēgts, http straumes tiks dekodētas serverī. Klientiem nebūs j
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Ja ieslēgts, ir iespējams iziet no mediju atskaņotāja ar exit taustiņu."
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Ja ieslēgts, uztvērējs automātiski lietos audio celiņu, kuru iepriekš norādījāt."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Ja ieslēgts, tiks mērīta patērētā jauda lai noskaidrotu kad pozicionieris apstājies (ja to uztur uztvērējs)."
 
@@ -14161,6 +14152,9 @@ msgstr "Ja ieslēgts, pēc norādītā laika laika aizture sāksies fonā autom�
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Ja ieslēgts, lieto DHCP IP konfigurācijai"
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Ja ieslēgts, jūsu uztvērējs noteiks aktivitāti VRC SCART ieejā."
 
@@ -14193,10 +14187,6 @@ msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Kur saglabāt pagaidu laika aiztures ierakstus?"
-
-#, fuzzy
-msgid "Width"
-msgstr "platums"
 
 msgid "Wireless LAN"
 msgstr "Bezvadu tīkls"
@@ -14653,6 +14643,9 @@ msgstr "Relatīvs"
 
 msgid "actual time only"
 msgstr "tikai aktuālajam laikam"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr "pieaugušo filma/drāma"
@@ -15568,6 +15561,10 @@ msgstr "roks/pops"
 
 msgid "romance"
 msgstr "romance"
+
+#, fuzzy
+msgid "rotor"
+msgstr "Rotors: "
 
 #, fuzzy
 msgid "running..."

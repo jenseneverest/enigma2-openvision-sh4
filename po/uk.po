@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2016-11-17 12:51+0200\n"
 "Last-Translator: vovan43<vovan43@ex.ua>, sety <tim1065@mail.ru>, Irkoff <irkoff@gmail.com>\n"
 "Language-Team: gisclub.tv <http://gisclub.tv/>\n"
@@ -1172,6 +1172,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Всі категорії"
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (Радіо)"
@@ -1735,6 +1738,10 @@ msgstr "Додати/видалити зміни таймера для пото�
 msgid "Adding schedule..."
 msgstr ""
 
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "Другий кабель від LNB на моторі"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
@@ -2255,6 +2262,10 @@ msgstr "Авто вибір мови"
 msgid "Auto play blu-ray file"
 msgstr "Автоматичне відтворення файлів Blu-Ray"
 
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Ви хочете почати сканування?"
+
 msgid "Auto scart switching"
 msgstr "Автоматичне перемикання SCART"
 
@@ -2457,10 +2468,6 @@ msgstr ""
 
 msgid "Big PiP"
 msgstr "Велике PiP"
-
-#, fuzzy
-msgid "Bitrate"
-msgstr "Бітрейт:"
 
 msgid "Bitrate:"
 msgstr "Бітрейт:"
@@ -4423,6 +4430,10 @@ msgstr "Відключити таймер"
 msgid "Disabled"
 msgstr "Відключений"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Конфігурація списку відео"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Резервувати місце на диску для записів (в GB)"
 
@@ -5721,10 +5732,6 @@ msgstr ""
 msgid "Forward volume keys"
 msgstr "Передати кнопки звуку"
 
-#, fuzzy
-msgid "Frame rate"
-msgstr "Частота оновлення"
-
 msgid "Frame size in full view"
 msgstr "Розмір рамки при перегляді на весь екран"
 
@@ -6064,10 +6071,6 @@ msgid "HDMI HDR Type"
 msgstr "NIM і Тип тюнера"
 
 #, fuzzy
-msgid "HDMI recording"
-msgstr "Зупинити запис"
-
-#, fuzzy
 msgid "HDMI-CEC Source Active"
 msgstr "Все одним пультом(HDMI-CEC)"
 
@@ -6148,10 +6151,6 @@ msgstr ""
 
 msgid "Hebrew"
 msgstr "Іврит"
-
-#, fuzzy
-msgid "Height"
-msgstr "висота"
 
 msgid "Helps setting up your antenna"
 msgstr "Допома в налаштуванні антени"
@@ -6470,9 +6469,6 @@ msgstr "Запасний URL віддаленого приймача"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr ""
 "Для старту запису за таймером,\n"
@@ -6673,10 +6669,6 @@ msgid "Interface"
 msgstr "Інтерфейс: "
 
 msgid "Interface: "
-msgstr "Інтерфейс: "
-
-#, fuzzy
-msgid "Interlaced"
 msgstr "Інтерфейс: "
 
 msgid "Internal"
@@ -6991,6 +6983,9 @@ msgid "Leisure hobbies"
 msgstr "Хоббі на відпочинку"
 
 msgid "Lesotho"
+msgstr ""
+
+msgid "Let you change RC type but use it with care."
 msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
@@ -7653,6 +7648,10 @@ msgstr "Мульти EPG"
 
 msgid "Multi channel downmix"
 msgstr "Багатоканальне мікшування"
+
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Вибір пульта Д/У"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Вибір фаворитів при старті мульти-EPG"
@@ -8336,6 +8335,10 @@ msgstr "мова оригіналу"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Версія пайтон: "
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -9741,7 +9744,7 @@ msgid "Required medium type:"
 msgstr "Необхідний тип носія:"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Перевірте інтернет-з'єднання"
 
 msgid "Rereading partition table"
@@ -12488,13 +12491,6 @@ msgstr ""
 "Плагін Witeless LAN не встановлений!\n"
 "Будь ласка, встановіть його."
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "Налаштування співвідношення сторін екрану."
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -12513,12 +12509,6 @@ msgstr ""
 
 msgid "The following files were found..."
 msgstr "Наступні файли були знайдені ..."
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -12635,9 +12625,6 @@ msgstr ""
 #, fuzzy
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Рестарт GUI ресивера"
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -14261,6 +14248,10 @@ msgstr "Якщо включити , HTTP потоки дешифруются н�
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Якщо увімкнено, то можна закрити відеоплеєр з допомогою кнопки вихід."
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Якщо увімкнено, ресивер буде використовувати субтитри, які були обрані раніше"
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Якщо увімкнено, використовується вимірювання потужності для виявлення, коли ротор перестав повертатися (якщо є підтримка в ресивері)."
 
@@ -14347,6 +14338,9 @@ msgstr "Якщо ця функція увімкнена, таймшифт зап
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Оберіть, щоб включити або відключити DHCP."
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Якщо це включено, Ваш ресивер визначатиме активність на вході VCR SCART."
 
@@ -14379,10 +14373,6 @@ msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Куди зберегти тимчасові файли відкладеного перегляду?"
-
-#, fuzzy
-msgid "Width"
-msgstr "ширина"
 
 msgid "Wireless LAN"
 msgstr "Бездротова мережа"
@@ -14843,6 +14833,9 @@ msgstr "Відносна"
 
 msgid "actual time only"
 msgstr "тільки фактичний час"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr "дорослий фільм / драма"
@@ -15764,6 +15757,10 @@ msgstr "рок/поп"
 
 msgid "romance"
 msgstr "романс"
+
+#, fuzzy
+msgid "rotor"
+msgstr "Ротор: "
 
 #, fuzzy
 msgid "running..."

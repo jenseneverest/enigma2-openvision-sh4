@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -1175,6 +1175,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Alla åldersgrupper"
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (Radio)"
@@ -1827,6 +1830,10 @@ msgstr "Lägg till / Ta bort ändrad timer för detta program"
 msgid "Adding schedule..."
 msgstr ""
 
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "Kabel två för motoriserad LNB"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
@@ -2401,6 +2408,11 @@ msgid "Auto play blu-ray file"
 msgstr "Auto uppspelning av blu-ray fil"
 
 #
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Vill du söka efter kanaler?"
+
+#
 msgid "Auto scart switching"
 msgstr "Auto scart växling"
 
@@ -2633,11 +2645,6 @@ msgstr ""
 
 msgid "Big PiP"
 msgstr "Stor BiB"
-
-#
-#, fuzzy
-msgid "Bitrate"
-msgstr "Bitrate :"
 
 #
 msgid "Bitrate:"
@@ -4786,6 +4793,10 @@ msgstr "Avaktivera timer"
 msgid "Disabled"
 msgstr "Avaktivera"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Konfiguration av filmlista"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Diskutrymme att reservera för inspelningar (i GB)"
 
@@ -6244,11 +6255,6 @@ msgid "Forward volume keys"
 msgstr "Volymknappar framåt"
 
 #
-#, fuzzy
-msgid "Frame rate"
-msgstr "Uppdateringsfrekvens"
-
-#
 msgid "Frame size in full view"
 msgstr "Ramstorlek i fullskärm"
 
@@ -6619,10 +6625,6 @@ msgid "HDMI HDR Type"
 msgstr "NIM & Typ"
 
 #, fuzzy
-msgid "HDMI recording"
-msgstr "Stoppa inspelning"
-
-#, fuzzy
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC inställning"
 
@@ -6708,10 +6710,6 @@ msgstr ""
 
 msgid "Hebrew"
 msgstr "Hebreiska"
-
-#, fuzzy
-msgid "Height"
-msgstr "höjd"
 
 msgid "Helps setting up your antenna"
 msgstr "Hjälper dig att ställa in parabolen"
@@ -7043,9 +7041,6 @@ msgstr "URL för reserv fjärrmottagare"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 #
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "För att göra en timerinspelning, växlade TV:n till inspelande kanal!\n"
@@ -7275,11 +7270,6 @@ msgstr "Gränssnitt : "
 
 #
 msgid "Interface: "
-msgstr "Gränssnitt : "
-
-#
-#, fuzzy
-msgid "Interlaced"
 msgstr "Gränssnitt : "
 
 msgid "Internal"
@@ -7625,6 +7615,9 @@ msgid "Leisure hobbies"
 msgstr "Fritidsintressen"
 
 msgid "Lesotho"
+msgstr ""
+
+msgid "Let you change RC type but use it with care."
 msgstr ""
 
 #
@@ -8376,6 +8369,11 @@ msgstr "Multi EPG"
 
 msgid "Multi channel downmix"
 msgstr "Multikanals nedmixning"
+
+#
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Fjärrkontrollstyp"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG favoritlistsval"
@@ -9138,6 +9136,10 @@ msgstr "originalspråk"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Pythonversion :"
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -10725,7 +10727,7 @@ msgid "Required medium type:"
 msgstr "Nödvändig mediatyp :"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Kontrollera internetanslutningen"
 
 msgid "Rereading partition table"
@@ -13764,13 +13766,6 @@ msgstr ""
 "Pluginet för trådlöst LAN är inte installerad!\n"
 "Vänligen installera den."
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "Konfigurera bildförhållandet på skärmen."
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -13791,12 +13786,6 @@ msgstr ""
 #
 msgid "The following files were found..."
 msgstr "Följande filer hittades..."
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 msgid ""
@@ -13920,9 +13909,6 @@ msgstr ""
 #, fuzzy
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Användargränssnittet för din mottagare startas om"
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 msgid ""
@@ -15711,6 +15697,10 @@ msgstr "Vid aktiverad kommer http strömmar avkodas på serversidan. (Fjärr) kl
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Vid aktiverad kan man avsluta movieplayer med exitknappen."
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Vid aktiverad kommer mottagaren automatiskt använda ljudspåret som du valt tidigare."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Vid aktiverad kommer energiförbrukningen mätas för att upptäcka när rotorn slutar vrida (när det stöds av tunern)."
 
@@ -15792,6 +15782,9 @@ msgstr "Vid aktiverad startas timeshift automatiskt i bakgrunden vid en angiven 
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Vid aktiverad används DHCP för IP konfiguration."
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Vid aktiverad kommer din mottagare känna av aktivitet på VCR SCART ingången."
 
@@ -15825,10 +15818,6 @@ msgstr ""
 #
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Var ska temporära timeshiftinspelningar sparas?"
-
-#, fuzzy
-msgid "Width"
-msgstr "bredd"
 
 #
 msgid "Wireless LAN"
@@ -16330,6 +16319,9 @@ msgstr "Relativ"
 
 msgid "actual time only"
 msgstr "Endast aktuell tid"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr "vuxenfilm / drama"
@@ -17364,6 +17356,10 @@ msgstr "rock / pop"
 
 msgid "romance"
 msgstr "romantik"
+
+#, fuzzy
+msgid "rotor"
+msgstr "Rotor :"
 
 #, fuzzy
 msgid "running..."

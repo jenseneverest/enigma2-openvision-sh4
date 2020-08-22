@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2020-05-16 18:41+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -1185,6 +1185,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Kaikenikäisille"
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (Radio)"
@@ -1813,6 +1816,11 @@ msgstr "Lisää/poista ajastus nykyiselle ohjelmalle"
 msgid "Adding schedule..."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "Kääntyvän antennin LNB:n toinen kaapeli"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
@@ -2370,6 +2378,11 @@ msgid "Auto play blu-ray file"
 msgstr "Automaattinen blu-ray tiedoston toisto"
 
 #
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Tee nopea kanavahaku nyt"
+
+#
 msgid "Auto scart switching"
 msgstr "Autom. SCARTin kytkentä"
 
@@ -2593,11 +2606,6 @@ msgstr "Bhutan"
 
 msgid "Big PiP"
 msgstr "Suuri PiP"
-
-#
-#, fuzzy
-msgid "Bitrate"
-msgstr "Nopeus:"
 
 #
 msgid "Bitrate:"
@@ -4708,6 +4716,10 @@ msgstr "Poista tämä ajastus käytöstä"
 msgid "Disabled"
 msgstr "Ei käytössä"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Tallenneluettelon asetukset"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Tallennuksille varattu levytila (GB)"
 
@@ -6131,10 +6143,6 @@ msgstr ""
 msgid "Forward volume keys"
 msgstr "Välitä äänenvoimakkuusnäppäimet"
 
-#, fuzzy
-msgid "Frame rate"
-msgstr "Virkistystaajuus"
-
 #
 msgid "Frame size in full view"
 msgstr "Kehyksen koko kokoruudussa"
@@ -6501,10 +6509,6 @@ msgstr "HDMI väriavaruus"
 msgid "HDMI HDR Type"
 msgstr "HDMI HDR Tyyppi"
 
-#, fuzzy
-msgid "HDMI recording"
-msgstr "Pysäytä tallennus"
-
 msgid "HDMI-CEC Source Active"
 msgstr ""
 
@@ -6585,10 +6589,6 @@ msgstr "Heard Island and McDonald Islands"
 
 msgid "Hebrew"
 msgstr "Hebrea"
-
-#, fuzzy
-msgid "Height"
-msgstr "Korkeus"
 
 msgid "Helps setting up your antenna"
 msgstr "Auttaa antennin asennuksessa"
@@ -6925,9 +6925,6 @@ msgstr "Syötä etävastaanottimen URL-osoite"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 #
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr ""
@@ -7154,10 +7151,6 @@ msgid "Interface"
 msgstr "Liittymä: "
 
 msgid "Interface: "
-msgstr "Liittymä: "
-
-#, fuzzy
-msgid "Interlaced"
 msgstr "Liittymä: "
 
 #
@@ -7499,6 +7492,9 @@ msgstr "Vapaa-ajan harrastukset"
 
 msgid "Lesotho"
 msgstr "Lesotho"
+
+msgid "Let you change RC type but use it with care."
+msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 msgid "Letterbox"
@@ -8252,6 +8248,11 @@ msgstr "Kanavaopas"
 
 msgid "Multi channel downmix"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Kaukosäätimen tyypin asetus"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG suosikkilistan valinta"
@@ -9018,6 +9019,10 @@ msgstr "Alkuperäinen kieli"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Pythonin versio: "
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -10611,7 +10616,7 @@ msgid "Required medium type:"
 msgstr "Tarvittava tallennusmedia:"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Tarkista Internet-yhteys"
 
 msgid "Rereading partition table"
@@ -13632,13 +13637,6 @@ msgstr ""
 "WLAN-lisäosaa ei ole asennettu!\n"
 "Asenna se."
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "Määrittää näytön kuvasuhteen."
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -13658,12 +13656,6 @@ msgstr ""
 #
 msgid "The following files were found..."
 msgstr "Seuraavat tiedostot löytyi..."
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -13783,9 +13775,6 @@ msgstr ""
 
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Vastaanottimesi käyttöliittymä käynnistyy uudelleen debug tilaan"
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 msgid ""
@@ -15515,6 +15504,10 @@ msgstr "Kun valittuna, http-striimit puretaan lähettävässä päässä. Asiaka
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Kun päällä, on mahdollista poistua tallenteista exit-napilla."
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Kun päällä, vastaanotin käyttää kanavalle aiemmin valitsemaasi ääniraitaa automaattisesti."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Kun päällä, mitataan virrankulutusta jotta voidaan havaita kun kääntömoottori pysähtyy (jos viritin tukee tätä)."
 
@@ -15594,6 +15587,9 @@ msgstr "Kun päällä, ajansiirto alkaa automaattisesti taustalla määritellyn 
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Kun päällä, käytetään DHCP:tä IP-määritykseen."
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Kun päällä, vastaanotin tunnistaa aktiviteetin VCR SCART-sisäänmenossa."
 
@@ -15627,10 +15623,6 @@ msgstr ""
 #
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Minne ajansiirron väliaikainen tiedosto tallennetaan?"
-
-#, fuzzy
-msgid "Width"
-msgstr "Leveys"
 
 #
 msgid "Wireless LAN"
@@ -16115,6 +16107,9 @@ msgstr "Suhteellinen"
 
 msgid "actual time only"
 msgstr "Vain nykyinen hetki"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr "aikuisviihde"
@@ -17141,6 +17136,11 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romantiikka"
+
+#
+#, fuzzy
+msgid "rotor"
+msgstr "Moottori: "
 
 #, fuzzy
 msgid "running..."

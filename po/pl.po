@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2019-12-03 20:02+0100\n"
 "Last-Translator: blzr <blzr@o2.pl>\n"
 "Language-Team: \n"
@@ -1083,6 +1083,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr "b/o"
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (Radio)"
@@ -1638,6 +1641,10 @@ msgstr "Dodaj/usuń timer dla bieżącej audycji"
 msgid "Adding schedule..."
 msgstr ""
 
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "Drugi kabel zmotoryzowanego LNB"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr "Dodatkowe opcje obrotnicy pozwalają wprowadzić szczegóły ze specyfikacji twojego sprzętu żeby enigma mogła skalkulować jak długo zajmie przemieszczenie czaszy z jednego satelity do innego."
 
@@ -2148,6 +2155,10 @@ msgstr "Automatyczny wybór języka"
 msgid "Auto play blu-ray file"
 msgstr "Automatycznie odtwarzaj plik blu-ray"
 
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Rozpocznij szybkie skanowanie kanałów"
+
 msgid "Auto scart switching"
 msgstr "Automatyczne przełączanie scart"
 
@@ -2346,10 +2357,6 @@ msgstr ""
 
 msgid "Big PiP"
 msgstr "Pełnoekranowy PiP"
-
-#, fuzzy
-msgid "Bitrate"
-msgstr "Kalibruj"
 
 msgid "Bitrate:"
 msgstr ""
@@ -4294,6 +4301,10 @@ msgstr "Wyłącz timer"
 msgid "Disabled"
 msgstr "Wyłączone"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Konfiguracja listy kanałów"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Przestrzeń dyskowa zarezerwowana dla nagrań (w GB)"
 
@@ -5588,10 +5599,6 @@ msgstr ""
 msgid "Forward volume keys"
 msgstr "Przekazuj klawisze głośności"
 
-#, fuzzy
-msgid "Frame rate"
-msgstr "Częstotliwość odświeżania"
-
 msgid "Frame size in full view"
 msgstr "Rozmiar ramki w pełnym widoku"
 
@@ -5925,10 +5932,6 @@ msgstr "Przestrzeń kolorów HDMI"
 msgid "HDMI HDR Type"
 msgstr "Typ HDMI HDR"
 
-#, fuzzy
-msgid "HDMI recording"
-msgstr "Zatrzymaj nagrywanie"
-
 msgid "HDMI-CEC Source Active"
 msgstr "Źródło HDMI-CEC aktywne"
 
@@ -6006,10 +6009,6 @@ msgstr "Wyspy Heard i McDonald"
 
 msgid "Hebrew"
 msgstr "Hebrajski"
-
-#, fuzzy
-msgid "Height"
-msgstr "Wysokość"
 
 msgid "Helps setting up your antenna"
 msgstr "Pomaga ustawić antenę"
@@ -6322,9 +6321,6 @@ msgstr "Importuj adres zdalnego odbiornika"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Aby nagrywać z timera, TV został przełączony na nagrywany kanał!\n"
 
@@ -6521,10 +6517,6 @@ msgid "Interface"
 msgstr "Interfejs: "
 
 msgid "Interface: "
-msgstr "Interfejs: "
-
-#, fuzzy
-msgid "Interlaced"
 msgstr "Interfejs: "
 
 msgid "Internal"
@@ -6829,6 +6821,9 @@ msgid "Leisure hobbies"
 msgstr "Hobby/czas wolny"
 
 msgid "Lesotho"
+msgstr ""
+
+msgid "Let you change RC type but use it with care."
 msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
@@ -7488,6 +7483,10 @@ msgstr ""
 
 msgid "Multi channel downmix"
 msgstr "Downmix dźwięku wielokanałowego"
+
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Ustawienia typu pilota"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Wybór bukietów w Multi EPG"
@@ -8156,6 +8155,10 @@ msgstr "Język oryginalny"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Wersja Pythona:"
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -9542,7 +9545,7 @@ msgid "Required medium type:"
 msgstr "Wymagany typ nośnika:"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Sprawdź połączenie internetowe"
 
 msgid "Rereading partition table"
@@ -12246,13 +12249,6 @@ msgstr ""
 "Wtyczka sieci bezprzewodowej nie jest zainstalowana!\n"
 "Zainstaluj ją."
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "Skonfiguruj aspect ratio."
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -12271,12 +12267,6 @@ msgstr ""
 
 msgid "The following files were found..."
 msgstr "Następujące pliki zostały znalezione..."
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -12390,9 +12380,6 @@ msgstr ""
 
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "GUI odbiornika jest restartowane do trybu debugowania"
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -13965,6 +13952,10 @@ msgstr "Gdy włączone, strumień http będzie odkodowywany po stronie serwera. 
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Gdy właczone, można wyjść z odtwarzacza za pomocą klawisza exit"
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Gdy włączone, automatycznie zostanie włączona ścieżka audio ostatnio wybrana na danym kanale."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Gdy włączone, pobierana moc będzie mierzona w celu wykrycia czy obrotnica zakończyła ruch (jeżeli wspierane przez tuner)."
 
@@ -14044,6 +14035,9 @@ msgstr "Gdy włączone, timeshift zostanie uruchomiony w tle po określonym czas
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Gdy włączone, używa DHCP do konfiguracji IP."
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Gdy włączone, odbiornik automatycznie wykryje urządzenia na wejściu VCR SCART."
 
@@ -14076,10 +14070,6 @@ msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Gdzie zapisywać tymczasowe nagrania timeshift?"
-
-#, fuzzy
-msgid "Width"
-msgstr "Szerokość"
 
 msgid "Wireless LAN"
 msgstr "Sieć bezprzewodowa"
@@ -14535,6 +14525,9 @@ msgstr "aktywny"
 
 msgid "actual time only"
 msgstr "Tylko bieżący czas"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr "Film/Dramat dla dorosłych"
@@ -15449,6 +15442,10 @@ msgstr "Rock/Pop"
 
 msgid "romance"
 msgstr "Romans"
+
+#, fuzzy
+msgid "rotor"
+msgstr "Obrotnica: "
 
 #, fuzzy
 msgid "running..."

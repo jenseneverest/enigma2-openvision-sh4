@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 344784320@qq.com\n"
 "Language-Team: Openpli Team\n"
@@ -1034,6 +1034,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr "所有年龄"
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (广播)"
@@ -1589,6 +1592,10 @@ msgstr "为当前事件增加/移除/更改定时器"
 msgid "Adding schedule..."
 msgstr ""
 
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "极轴座第二个接头"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr "额外的马达选项允许你输入马达规格表中的详细信息，这样Enigma就可以计算出将碟形天线从一颗卫星移动到另一颗卫星需要多长时间。"
 
@@ -2097,6 +2104,10 @@ msgstr "自动语言选择"
 msgid "Auto play blu-ray file"
 msgstr "自动播放蓝光文件"
 
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "现在进行快速服务扫描"
+
 msgid "Auto scart switching"
 msgstr "自动切换录像机"
 
@@ -2294,10 +2305,6 @@ msgstr ""
 
 msgid "Big PiP"
 msgstr "大型画中画"
-
-#, fuzzy
-msgid "Bitrate"
-msgstr "比特率:"
 
 msgid "Bitrate:"
 msgstr "比特率:"
@@ -4229,6 +4236,10 @@ msgstr "禁用定时器"
 msgid "Disabled"
 msgstr "禁用的"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "电影列表配置"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "为录像保留磁盘空间(GB)"
 
@@ -5504,10 +5515,6 @@ msgstr ""
 msgid "Forward volume keys"
 msgstr "前向音量键"
 
-#, fuzzy
-msgid "Frame rate"
-msgstr "刷新频率"
-
 msgid "Frame size in full view"
 msgstr "全屏显示时的帧大小"
 
@@ -5839,10 +5846,6 @@ msgstr "HDMI色域"
 msgid "HDMI HDR Type"
 msgstr ""
 
-#, fuzzy
-msgid "HDMI recording"
-msgstr "停止录像"
-
 msgid "HDMI-CEC Source Active"
 msgstr ""
 
@@ -5920,10 +5923,6 @@ msgstr ""
 
 msgid "Hebrew"
 msgstr "希伯来语"
-
-#, fuzzy
-msgid "Height"
-msgstr "高"
 
 msgid "Helps setting up your antenna"
 msgstr "帮助设置天线"
@@ -6232,9 +6231,6 @@ msgstr "导入远程接收器URL"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "定时录制开始,即将切换到预录频道!\n"
 
@@ -6431,10 +6427,6 @@ msgid "Interface"
 msgstr "网卡: "
 
 msgid "Interface: "
-msgstr "网卡: "
-
-#, fuzzy
-msgid "Interlaced"
 msgstr "网卡: "
 
 msgid "Internal"
@@ -6739,6 +6731,9 @@ msgid "Leisure hobbies"
 msgstr "休闲业余爱好"
 
 msgid "Lesotho"
+msgstr ""
+
+msgid "Let you change RC type but use it with care."
 msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
@@ -7385,6 +7380,10 @@ msgstr ""
 
 msgid "Multi channel downmix"
 msgstr "多声道混音"
+
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "遥控类型设置"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG自定义组选项"
@@ -8054,6 +8053,10 @@ msgstr "原始语言"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Python版本:"
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -9440,7 +9443,7 @@ msgid "Required medium type:"
 msgstr "需要介质类型:"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "检查英特网连接"
 
 msgid "Rereading partition table"
@@ -12123,13 +12126,6 @@ msgstr ""
 "WLAN插件未安装!\n"
 "请先安装。"
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "配置屏幕宽高比。"
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -12148,12 +12144,6 @@ msgstr ""
 
 msgid "The following files were found..."
 msgstr "下列文件已找到。。。"
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -12268,9 +12258,6 @@ msgstr ""
 
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "接收器的用户界面正在调试模式下重新启动"
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -13837,6 +13824,10 @@ msgstr "一旦启用，http媒体流在服务端解扰。远程客户端不需�
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "一旦启用，有可能可以使用exit键退出电影播放器。"
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "一旦启用，接收机将会自动使用你之前所选择的音轨。"
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "一旦启用，马达停止转动时，电量功耗检测将由调谐器支持。"
 
@@ -13916,6 +13907,9 @@ msgstr "一旦启用，时移将在后台按指定时间之后自动启动。"
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "一旦启用，将使用DHCP来配置IP地址。"
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "一旦启用，接受机将检测VCR SCART输入接口上的活动。"
 
@@ -13948,10 +13942,6 @@ msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "在哪里保存时光平移临时录制的内容?"
-
-#, fuzzy
-msgid "Width"
-msgstr "宽"
 
 msgid "Wireless LAN"
 msgstr "无线网络"
@@ -14405,6 +14395,9 @@ msgstr "活动的"
 
 msgid "actual time only"
 msgstr "仅仅实际时间"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr "成人电影／戏剧"
@@ -15319,6 +15312,10 @@ msgstr "摇滚/流行"
 
 msgid "romance"
 msgstr "浪漫"
+
+#, fuzzy
+msgid "rotor"
+msgstr "马达: "
 
 #, fuzzy
 msgid "running..."

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2014-12-15 19:38-0000\n"
 "Last-Translator: Phenom <phenomxy@gmail.com>\n"
 "Language-Team: Muaitai <muaitai@gmail.com>\n"
@@ -1183,6 +1183,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Todas as idades"
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (Rádio)"
@@ -1829,6 +1832,10 @@ msgstr "Adicionar/Remover/Alterar agendamento para o programa actual"
 msgid "Adding schedule..."
 msgstr ""
 
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "Segundo cabo do LNB motorizado"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
@@ -2421,6 +2428,11 @@ msgid "Auto play blu-ray file"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Deseja fazer uma pesquisa de canais?"
+
+#
 msgid "Auto scart switching"
 msgstr "Selecção automática porta SCART"
 
@@ -2653,10 +2665,6 @@ msgstr ""
 
 msgid "Big PiP"
 msgstr "PiP tamanho grande"
-
-#, fuzzy
-msgid "Bitrate"
-msgstr "Taxa de bits"
 
 msgid "Bitrate:"
 msgstr "Taxa de bits"
@@ -4836,6 +4844,10 @@ msgstr "Desactivar agendamento"
 msgid "Disabled"
 msgstr "Desactivado"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Configuração da Lista de Vídeos"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Espaço reservado no disco para gravações (GB)"
 
@@ -6299,11 +6311,6 @@ msgid "Forward volume keys"
 msgstr "Avançar nos botões de volume "
 
 #
-#, fuzzy
-msgid "Frame rate"
-msgstr "Taxa de refrescamento"
-
-#
 msgid "Frame size in full view"
 msgstr "Tamanho da janela em vista completa"
 
@@ -6672,10 +6679,6 @@ msgid "HDMI HDR Type"
 msgstr ""
 
 #, fuzzy
-msgid "HDMI recording"
-msgstr "Parar a gravação"
-
-#, fuzzy
 msgid "HDMI-CEC Source Active"
 msgstr "Configurações HDMI-CEC"
 
@@ -6764,10 +6767,6 @@ msgstr ""
 
 msgid "Hebrew"
 msgstr "Hebraico"
-
-#, fuzzy
-msgid "Height"
-msgstr "altura"
 
 msgid "Helps setting up your antenna"
 msgstr ""
@@ -7100,9 +7099,6 @@ msgstr ""
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 #
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Para proceder a uma gravação agendada, a TV mudou para o canal da gravação desejada!\n"
@@ -7339,10 +7335,6 @@ msgid "Interface"
 msgstr "Interface: "
 
 msgid "Interface: "
-msgstr "Interface: "
-
-#, fuzzy
-msgid "Interlaced"
 msgstr "Interface: "
 
 msgid "Internal"
@@ -7699,6 +7691,9 @@ msgid "Leisure hobbies"
 msgstr "Passatempos"
 
 msgid "Lesotho"
+msgstr ""
+
+msgid "Let you change RC type but use it with care."
 msgstr ""
 
 #
@@ -8469,6 +8464,11 @@ msgstr "Guia de Programação Múltiplo"
 
 msgid "Multi channel downmix"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Tipo de controlo remoto"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Guia de Programação Múltiplo na selecção de favoritos"
@@ -9247,6 +9247,10 @@ msgstr "idioma original"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Versão do Kernel: "
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -10880,7 +10884,7 @@ msgid "Required medium type:"
 msgstr "Formato de média necessário:"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Verifique a ligação à Internet"
 
 #, fuzzy
@@ -14012,13 +14016,6 @@ msgstr ""
 "O plugin de rede sem fios não está instalado!\n"
 "Por favor instale-o."
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "Configurar a proporção (aspect ratio) do ecrã"
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -14039,12 +14036,6 @@ msgstr ""
 #
 msgid "The following files were found..."
 msgstr "Os seguintes ficheiros foram encontrados..."
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 #, fuzzy
@@ -14154,9 +14145,6 @@ msgstr ""
 #, fuzzy
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "O interface gráfico está a reiniciar"
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 msgid ""
@@ -15950,6 +15938,10 @@ msgstr ""
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Quando activado, é possível sair do reprodutor de vídeo com o botão EXIT."
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Quando activado, o receptor irá usar a faixa de áudio que seleccionou antes automaticamente."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Quando activado, medir o consumo de energia para detectar quando o motor pára de girar (quando suportado pelo sintonizador)."
 
@@ -16033,6 +16025,9 @@ msgstr "Quando activado, o Timeshift começa automaticamente em segundo plano ap
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Quando activado, o DHCP será usado para receber um endereço IP."
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Quando activado, o seu receptor irá detectar actividade na entrada SCART VCR\"."
 
@@ -16066,10 +16061,6 @@ msgstr ""
 #
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Onde guardar as gravações temporárias do Timeshift?"
-
-#, fuzzy
-msgid "Width"
-msgstr "largura"
 
 #
 msgid "Wireless LAN"
@@ -16558,6 +16549,9 @@ msgid "active"
 msgstr "Relativo"
 
 msgid "actual time only"
+msgstr ""
+
+msgid "additional cable of rotor"
 msgstr ""
 
 msgid "adult movie/drama"
@@ -17594,6 +17588,10 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romance"
+
+#, fuzzy
+msgid "rotor"
+msgstr "automobilismo"
 
 #, fuzzy
 msgid "running..."

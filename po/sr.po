@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -1200,6 +1200,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr ""
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #
 #, fuzzy
 msgid "(Radio)"
@@ -1842,6 +1845,9 @@ msgstr ""
 msgid "Adding schedule..."
 msgstr ""
 
+msgid "Additional cable of motorized LNB"
+msgstr ""
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
@@ -2430,6 +2436,11 @@ msgid "Auto play blu-ray file"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Želite li napraviti skeniranje kanala?"
+
+#
 msgid "Auto scart switching"
 msgstr "Automatsko uključenje skarta"
 
@@ -2667,11 +2678,6 @@ msgstr ""
 
 msgid "Big PiP"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Bitrate"
-msgstr "Bit rata:"
 
 #
 msgid "Bitrate:"
@@ -4857,6 +4863,11 @@ msgstr ""
 msgid "Disabled"
 msgstr "Onemogućeno"
 
+#
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Konfiguracija tjunera"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
 
@@ -6324,11 +6335,6 @@ msgid "Forward volume keys"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Frame rate"
-msgstr "Brzina osvježavanja"
-
-#
 msgid "Frame size in full view"
 msgstr "Veličina frejma u punom izgledu"
 
@@ -6707,11 +6713,6 @@ msgstr ""
 msgid "HDMI HDR Type"
 msgstr ""
 
-#
-#, fuzzy
-msgid "HDMI recording"
-msgstr "ovo snimanje"
-
 msgid "HDMI-CEC Source Active"
 msgstr ""
 
@@ -6797,11 +6798,6 @@ msgstr ""
 
 msgid "Hebrew"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Height"
-msgstr "Desno"
 
 msgid "Helps setting up your antenna"
 msgstr ""
@@ -7132,9 +7128,6 @@ msgstr ""
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 #
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Da bi počelo snimanje po tajmeru,TV je prebačen na kanal za snimanje!\n"
@@ -7374,11 +7367,6 @@ msgstr "Iinterfejs:"
 
 #
 msgid "Interface: "
-msgstr "Iinterfejs:"
-
-#
-#, fuzzy
-msgid "Interlaced"
 msgstr "Iinterfejs:"
 
 msgid "Internal"
@@ -7740,6 +7728,9 @@ msgid "Leisure hobbies"
 msgstr ""
 
 msgid "Lesotho"
+msgstr ""
+
+msgid "Let you change RC type but use it with care."
 msgstr ""
 
 #
@@ -8513,6 +8504,11 @@ msgstr "Multi EPG"
 
 msgid "Multi channel downmix"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Tip roditeljske zaštite"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi EPG izbor buketa"
@@ -9289,6 +9285,11 @@ msgstr ""
 
 msgid "Open Vision module: "
 msgstr ""
+
+#
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Nova verzija:"
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -10916,7 +10917,7 @@ msgstr "Potrebni tip medija:"
 
 #
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Izbor vremena osvežavanja"
 
 msgid "Rereading partition table"
@@ -14054,12 +14055,6 @@ msgstr ""
 "Bežični LAN dodatak nije instaliran!\n"
 "Molimo instalirajte ga."
 
-msgid "The aspect ratio of the recording."
-msgstr ""
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -14078,12 +14073,6 @@ msgstr ""
 #
 msgid "The following files were found..."
 msgstr "Sledeće datoteke su pronađene..."
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 #, fuzzy
@@ -14192,9 +14181,6 @@ msgstr ""
 #, fuzzy
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Molim sačekajte dok se vaša mreža ponovo startuje"
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 #
 msgid ""
@@ -15966,6 +15952,9 @@ msgstr ""
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr ""
 
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr ""
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr ""
 
@@ -16046,6 +16035,9 @@ msgstr ""
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Otvori konfiguraciju nejmservera "
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr ""
 
@@ -16079,9 +16071,6 @@ msgstr ""
 #
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Gde sačuvati privrem. snimanja uz pomoć vrem. pomaka?"
-
-msgid "Width"
-msgstr ""
 
 #
 msgid "Wireless LAN"
@@ -16557,6 +16546,9 @@ msgid "active"
 msgstr ""
 
 msgid "actual time only"
+msgstr ""
+
+msgid "additional cable of rotor"
 msgstr ""
 
 msgid "adult movie/drama"
@@ -17584,6 +17576,9 @@ msgid "rock/pop"
 msgstr ""
 
 msgid "romance"
+msgstr ""
+
+msgid "rotor"
 msgstr ""
 
 #

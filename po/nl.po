@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-16 18:46+0430\n"
+"POT-Creation-Date: 2020-08-22 19:23+0430\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: PLiteam <translators@openpli.org>\n"
@@ -1168,6 +1168,9 @@ msgstr ""
 msgid "( All readers)"
 msgstr "Alle leeftijden"
 
+msgid "(Latest revision on github: "
+msgstr ""
+
 #, fuzzy
 msgid "(Radio)"
 msgstr " (Radio)"
@@ -1723,6 +1726,10 @@ msgstr "Voeg een timerwijziging voor het huidige programma toe of verwijder deze
 msgid "Adding schedule..."
 msgstr ""
 
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "Tweede kabel van een draaibare LNB"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr "Met aanvullende motoropties kunt u details van de specificaties uw motor invoeren waarmee Enigma kan bepalen hoe lang het duurt om de schotel van de ene naar de andere satelliet te verplaatsen."
 
@@ -2240,6 +2247,10 @@ msgstr "Automatische taalkeuzeselectie"
 msgid "Auto play blu-ray file"
 msgstr "Speel blu-ray bestand automatisch af"
 
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "Voer een provider gerelateerde fastscan uit."
+
 msgid "Auto scart switching"
 msgstr "Automatisch scart schakelen"
 
@@ -2438,10 +2449,6 @@ msgstr "Bhoetan"
 
 msgid "Big PiP"
 msgstr "Grote PIP"
-
-#, fuzzy
-msgid "Bitrate"
-msgstr "Bitrate:"
 
 msgid "Bitrate:"
 msgstr "Bitrate:"
@@ -4573,6 +4580,10 @@ msgstr "Timer uitschakelen"
 msgid "Disabled"
 msgstr "Gedéactiveerd"
 
+#, fuzzy
+msgid "Disabled in configuration"
+msgstr "Configuratie van de opnamelijst"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Te reserveren schijfruimte voor opnames (in GB)"
 
@@ -5880,10 +5891,6 @@ msgstr ""
 msgid "Forward volume keys"
 msgstr "Volumetoetsen doorsturen"
 
-#, fuzzy
-msgid "Frame rate"
-msgstr "Herhaalfrequentie"
-
 msgid "Frame size in full view"
 msgstr "Framegrootte in vol beeld"
 
@@ -6215,10 +6222,6 @@ msgstr "HDMI kleurruimte"
 msgid "HDMI HDR Type"
 msgstr "HDMI HDR Type"
 
-#, fuzzy
-msgid "HDMI recording"
-msgstr "Stop opname"
-
 msgid "HDMI-CEC Source Active"
 msgstr "HDMI-CEC actieve bron"
 
@@ -6296,10 +6299,6 @@ msgstr "Heard en McDonaldeilanden"
 
 msgid "Hebrew"
 msgstr "Hebreeuws"
-
-#, fuzzy
-msgid "Height"
-msgstr "hoogte"
 
 msgid "Helps setting up your antenna"
 msgstr "Hulp om de schotel in te stellen"
@@ -6620,9 +6619,6 @@ msgstr "Locatie van de externe ontvanger"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
-msgstr ""
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Vanwege een geplande opname is naar het juiste kanaal geschakeld!\n"
 
@@ -6819,10 +6815,6 @@ msgid "Interface"
 msgstr "Interface: "
 
 msgid "Interface: "
-msgstr "Interface: "
-
-#, fuzzy
-msgid "Interlaced"
 msgstr "Interface: "
 
 msgid "Internal"
@@ -7127,6 +7119,9 @@ msgstr "Vrije tijd hobby's"
 
 msgid "Lesotho"
 msgstr "Lesotho"
+
+msgid "Let you change RC type but use it with care."
+msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 msgid "Letterbox"
@@ -7774,6 +7769,10 @@ msgstr "Multi EPG"
 
 msgid "Multi channel downmix"
 msgstr "Multi channel downmix"
+
+#, fuzzy
+msgid "Multi remote control support"
+msgstr "Hiermee stelt u het type afstandsbediening in."
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG bouquet selectie"
@@ -8452,6 +8451,10 @@ msgstr "originele taal"
 
 msgid "Open Vision module: "
 msgstr ""
+
+#, fuzzy
+msgid "Open Vision revision check"
+msgstr "Pythonversie:"
 
 msgid "Open Vision revision: "
 msgstr ""
@@ -9868,7 +9871,7 @@ msgid "Required medium type:"
 msgstr "Benodigd medium type"
 
 #, fuzzy
-msgid "Requires internet connection."
+msgid "Requires internet connection"
 msgstr "Controleer of u een internetverbinding heeft."
 
 msgid "Rereading partition table"
@@ -12570,13 +12573,6 @@ msgid ""
 "Do you want to install it?"
 msgstr "De WiFi plugin is niet geïnstalleerd. Deze plugin eerst installeren aub."
 
-#, fuzzy
-msgid "The aspect ratio of the recording."
-msgstr "Configureer de beeldverhouding van het scherm."
-
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 #, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -12595,12 +12591,6 @@ msgstr ""
 
 msgid "The following files were found..."
 msgstr "De volgende bestanden werden gevonden..."
-
-msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
-msgstr ""
-
-msgid "The height of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -12715,9 +12705,6 @@ msgstr ""
 
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "De gebruikersomgeving van uw ontvanger wordt in debug modus herstart"
-
-msgid "The width of the picture. The input will be scaled to match this value."
-msgstr ""
 
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -14320,6 +14307,10 @@ msgstr ""
 "\n"
 "U kunt kiezen uit, niet mogelijk, met popup of zonder popup."
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Indien geactiveerd, dan zal de tuner automatisch het eerder geselecteerde audiospoor gebruiken."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Indien geactiveerd, dan wordt het door de rotor opgenomen vermogen gedetecteerd indien deze stopt met draaien. (indien door de tuner ondersteund)"
 
@@ -14405,6 +14396,9 @@ msgstr ""
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Indien geactiveerd, gebruik dan DHCP om jouw IPadres te bepalen."
 
+msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Indien geactiveerd, herkent de ontvanger een signaal op de VCR SCART ingang."
 
@@ -14449,10 +14443,6 @@ msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Waar wilt u de tijdelijke timeshift opnames opslaan?"
-
-#, fuzzy
-msgid "Width"
-msgstr "breedte"
 
 msgid "Wireless LAN"
 msgstr "Draadloos netwerk"
@@ -14906,6 +14896,9 @@ msgstr "actief"
 
 msgid "actual time only"
 msgstr "enkel de actuele tijd"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr "Erotiek/Drama"
@@ -15824,6 +15817,10 @@ msgstr "Rock/Pop"
 
 msgid "romance"
 msgstr "Romantiek"
+
+#, fuzzy
+msgid "rotor"
+msgstr "Rotor:"
 
 #, fuzzy
 msgid "running..."

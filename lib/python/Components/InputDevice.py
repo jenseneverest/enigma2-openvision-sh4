@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from Components.config import config, ConfigSlider, ConfigSubsection, ConfigYesNo, ConfigText, ConfigInteger
-from Components.SystemInfo import SystemInfo
 import errno
 import xml.etree.cElementTree
 from enigma import eRCInput
@@ -11,6 +10,7 @@ from RcModel import rc_model
 from fcntl import ioctl
 import os
 import struct
+from Tools.Directories import pathExists
 from boxbranding import getRCType
 
 # asm-generic/ioctl.h
@@ -236,19 +236,19 @@ class InitInputDevices:
 					fd.seek(0)
 					content = fd.readlines()
 					line, column = err.position
-					print("[RCRemap] XML Parse Error: '%s' in '%s'!" % (err, filename))
+					print("[InputDevice] RC remap XML Parse Error: '%s' in '%s'!" % (err, filename))
 					data = content[line - 1].replace("\t", " ").rstrip()
-					print("[RCRemap] XML Parse Error: '%s'" % data)
-					print("[RCRemap] XML Parse Error: '%s^%s'" % ("-" * column, " " * (len(data) - column - 1)))
+					print("[InputDevice] RC remap XML Parse Error: '%s'" % data)
+					print("[InputDevice] RC remap XML Parse Error: '%s^%s'" % ("-" * column, " " * (len(data) - column - 1)))
 				except Exception as err:
 					print("[skin] Error: Unable to parse remote control data in '%s' - '%s'!" % (filename, err))
 		except (IOError, OSError) as err:
 			if err.errno == errno.ENOENT:  # No such file or directory
-				print("[RCRemap] Warning: Remote control file '%s' does not exist!" % filename)
+				print("[InputDevice] RC remap warning: Remote control file '%s' does not exist!" % filename)
 			else:
-				print("[RCRemap] Error %d: Opening remote control file '%s'! (%s)" % (err.errno, filename, err.strerror))
+				print("[InputDevice] RC remap error %d: Opening remote control file '%s'! (%s)" % (err.errno, filename, err.strerror))
 		except Exception as err:
-			print("[RCRemap] Error: Unexpected error opening remote control file '%s'! (%s)" % (filename, err))
+			print("[InputDevice] RC remap error: Unexpected error opening remote control file '%s'! (%s)" % (filename, err))
 		return domRemote
 
 iInputDevices = inputDevices()
@@ -256,11 +256,11 @@ iInputDevices = inputDevices()
 
 config.plugins.remotecontroltype = ConfigSubsection()
 config.plugins.remotecontroltype.rctype = ConfigInteger(default = int(getRCType()))
-config.plugins.remotecontroltype.multirc = ConfigYesNo(default = False)
+config.plugins.remotecontroltype.multirc = ConfigYesNo(default = True)
 
 class RcTypeControl():
 	def __init__(self):
-		if SystemInfo["RcTypeChangable"] and config.plugins.remotecontroltype.multirc.value is True:
+		if pathExists("/proc/stb/ir/rc/type") and config.plugins.remotecontroltype.multirc.value is True:
 			self.isSupported = True
 			if config.plugins.remotecontroltype.rctype.value != 0:
 				self.writeRcType(config.plugins.remotecontroltype.rctype.value)

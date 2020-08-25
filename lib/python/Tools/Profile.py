@@ -4,7 +4,7 @@ from __future__ import print_function
 # the implementation here is a bit crappy.
 import time
 from Tools.Directories import resolveFilename, SCOPE_CONFIG
-
+from os import path
 from enigma import evfd
 
 PERCENTAGE_START = 0
@@ -46,7 +46,16 @@ def profile(id):
 				perc = PERCENTAGE_START
 			try:
 				open("/proc/progress", "w").write("%d \n" % perc)
-				evfd.getInstance().vfd_write_string("-%02d-" % perc)
+				if perc > 1 and perc < 98:
+					value = 1
+					if path.exists("/proc/stb/lcd/symbol_circle"):
+						open("/proc/stb/lcd/symbol_circle", "w").write("%1d \n" % value)
+					if perc > 20:
+						evfd.getInstance().vfd_write_string("-%02d-" % perc)
+				elif perc > 98:
+					value = 0
+					if path.exists("/proc/stb/lcd/symbol_circle"):
+						open("/proc/stb/lcd/symbol_circle", "w").write("%1d \n" % value)
 			except IOError:
 				pass
 

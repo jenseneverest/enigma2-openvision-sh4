@@ -5,9 +5,8 @@ from Components.config import config, ConfigSelection, ConfigSubDict, ConfigYesN
 from Components.SystemInfo import SystemInfo
 from Tools.CList import CList
 from os import path
-from boxbranding import getHaveAVJACK, getSoCFamily
+from boxbranding import getHaveAVJACK
 
-socfamily = getSoCFamily().replace('sti','')
 has_scart = SystemInfo["HasScart"]
 has_yuv = SystemInfo["HasYPbPr"]
 has_rca = SystemInfo["HasComposite"]
@@ -60,12 +59,8 @@ class VideoHardware:
 	elif has_rca:
 		modes["RCA"] = ["576i", "PAL"]
 
-	if socfamily in ("7105","7111"):
-		modes["HDMI"] = ["720p", "1080p", "1080i", "576p", "576i", "480p", "480i"]
-		widescreen_modes = {"720p", "1080p", "1080i"}
-	else:
-		modes["HDMI"] = ["720p", "1080i", "576p", "576i", "480p", "480i"]
-		widescreen_modes = {"720p", "1080i"}
+	modes["HDMI"] = ["720p", "1080p", "1080i", "576p", "576i", "480p", "480i"]
+	widescreen_modes = {"720p", "1080p", "1080i"}
 
 	modes["HDMI-PC"] = ["PC"]
 

@@ -57,7 +57,7 @@ def getFPVersion():
 	ret = "unknown"
 	try:
 		if fileExists("/proc/stb/fp/version"):
-			ret = long(open("/proc/stb/fp/version", "r").read())
+			ret = int(open("/proc/stb/fp/version", "r").read())
 		else:
 			fp = open("/dev/dbox/fp0")
 			ret = ioctl(fp.fileno(),0)
@@ -106,7 +106,7 @@ def setRTCtime(wutime):
 def getFPWakeuptime():
 	ret = 0
 	try:
-		ret = long(open("/proc/stb/fp/wakeup_time", "r").read())
+		ret = int(open("/proc/stb/fp/wakeup_time", "r").read())
 	except IOError:
 		try:
 			fp = open("/dev/dbox/fp0")

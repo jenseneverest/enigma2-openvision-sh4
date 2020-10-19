@@ -336,7 +336,7 @@ def autostart(reason, **kwargs):
 	global gReason
 	global mySession
 
-	if kwargs.has_key("session"):
+	if 'session' in kwargs:
 		global my_global_session
 		mySession = kwargs["session"]
 	else:

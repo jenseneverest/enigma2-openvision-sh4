@@ -51,6 +51,12 @@ import itertools, datetime
 from RecordTimer import RecordTimerEntry, RecordTimer, findSafeRecordPath
 # hack alert!
 from Screens.Menu import MainMenu, mdom
+import six
+
+if six.PY2:
+	pycode = func_code
+else:
+	pycode = __code__
 
 def isStandardInfoBar(self):
 	return self.__class__.__name__ == "InfoBar"
@@ -614,7 +620,7 @@ class NumberZap(Screen):
 				self.startBouquet = self.bouquet
 
 	def keyBlue(self):
-		if int(config.misc.zapkey_delay.value > 0):
+		if int(config.misc.zapkey_delay.value) > 0:
 			self.Timer.start(int(1000*int(config.misc.zapkey_delay.value)), True)
 		if self.searchNumber:
 			if self.startBouquet == self.bouquet:
@@ -625,7 +631,7 @@ class NumberZap(Screen):
 			self["Service"].newService(self.service)
 
 	def keyNumberGlobal(self, number):
-		if int(config.misc.zapkey_delay.value > 0):
+		if int(config.misc.zapkey_delay.value) > 0:
 			self.Timer.start(int(1000*int(config.misc.zapkey_delay.value)), True)
 		self.numberString += str(number)
 		self["number"].text = self["number_summary"].text = self.numberString
@@ -672,7 +678,7 @@ class NumberZap(Screen):
 
 		self.Timer = eTimer()
 		self.Timer.callback.append(self.keyOK)
-		if int(config.misc.zapkey_delay.value > 0):
+		if int(config.misc.zapkey_delay.value) > 0:
 			self.Timer.start(int(1000*int(config.misc.zapkey_delay.value)), True)
 
 class InfoBarNumberZap:
@@ -1121,7 +1127,7 @@ class InfoBarEPG:
 
 	def getEPGPluginList(self, getAll=False):
 		pluginlist = [(p.name, boundFunction(self.runPlugin, p), p.description or p.name) for p in plugins.getPlugins(where = PluginDescriptor.WHERE_EVENTINFO) \
-				if 'selectedevent' not in p.__call__.func_code.co_varnames] or []
+				if 'selectedevent' not in p.__call__.pycode.co_varnames] or []
 		from Components.ServiceEventTracker import InfoBarCount
 		if getAll or InfoBarCount == 1:
 			pluginlist.append((_("Show EPG for current channel..."), self.openSingleServiceEPG, _("Display EPG list for current channel")))

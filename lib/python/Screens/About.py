@@ -22,7 +22,10 @@ from Components.Console import Console
 from Components.Pixmap import MultiPixmap
 from Components.Network import iNetwork
 from Tools.Geolocation import geolocation
-import urllib2
+try:
+	import urllib2
+except:
+	import urllib
 import six
 
 class About(Screen):
@@ -222,9 +225,14 @@ class OpenVisionInformation(Screen):
 		if config.misc.OVupdatecheck.value is True:
 			try:
 				ovurl = "https://raw.githubusercontent.com/OpenVisionE2/openvision-development-platform/develop/meta-openvision/conf/distro/revision.conf"
-				ovresponse = urllib2.urlopen(ovurl)
-				ovrevision = ovresponse.read()
-				ovrevisionupdate = int(filter(str.isdigit, ovrevision))
+				if six.PY2:
+					ovresponse = urllib2.urlopen(ovurl)
+					ovrevision = ovresponse.read()
+					ovrevisionupdate = int(filter(str.isdigit, ovrevision))
+				else:
+					ovresponse = urllib.request.urlopen(ovurl)
+					ovrevision = ovresponse.read().decode()
+					ovrevisionupdate = ovrevision.split('r')[1][:3]
 			except Exception as e:
 				ovrevisionupdate = _("Requires internet connection")
 		else:

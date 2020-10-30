@@ -23,7 +23,7 @@ class OnErrorRestart:
 		self.Timer.start(3000, False)
 
 	def checklog(self):
-		self.Console.ePopen('dmesg -c | grep "Error-pti_task"' , self.checkerror)
+		self.Console.ePopen('dmesg -c | grep "Error-pti_task"', self.checkerror)
 
 	def checkerror(self, result, retval, extra_args):
 		if result.strip():

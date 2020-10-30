@@ -261,7 +261,7 @@ class VFDIcons:
 		print('[ADBVFD] Hardware displaytype:', DisplayType)
 		print('[ADBVFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 18:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
@@ -280,7 +280,7 @@ class VFDIcons:
 				except:
 					pass
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evStart: self.writeName,
 				})

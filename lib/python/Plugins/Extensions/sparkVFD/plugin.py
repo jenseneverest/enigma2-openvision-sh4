@@ -161,7 +161,7 @@ class VFDIcons:
 		print('[sparkVFD] Hardware displaytype:', DisplayType)
 		print('[sparkVFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 4:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
@@ -170,7 +170,7 @@ class VFDIcons:
 			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
 			session.nav.record_event.append(self.gotRecordEvent)
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evStart: self.writeName,
 				})

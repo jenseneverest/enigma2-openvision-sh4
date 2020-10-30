@@ -119,7 +119,7 @@ class VFDIcons:
 		print('[hs7110VFD] Hardware displaytype:', DisplayType)
 		print('[hs7110VFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 10:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evStart: self.__evStart
 				})

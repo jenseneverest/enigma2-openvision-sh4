@@ -25,7 +25,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if model in ("hs7810a","hs7819","hs7119"):
+	if model in ("hs7810a", "hs7819", "hs7119"):
 		DisplayType = 9
 	else:
 		DisplayType = None
@@ -59,7 +59,7 @@ config.plugins.vfdicon.textcenter = ConfigSelection(default = "0",
 		("0", _("no")),
 		("1", _("yes"))
 		])
-if model in ("hs7810a","hs7819"):
+if model in ("hs7810a", "hs7819"):
 	config.plugins.vfdicon.logoled = ConfigSlider(default=4, limits=(0, 7))
 config.plugins.vfdicon.standbyredled = ConfigSlider(default=3, limits=(0, 7))
 config.plugins.vfdicon.dstandbyredled = ConfigSlider(default=7, limits=(0, 7))
@@ -96,7 +96,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		self.cfglist.append(getConfigListEntry(_("Uppercase letters only"), config.plugins.vfdicon.uppercase))
 		self.cfglist.append(getConfigListEntry(_("Scroll text"), config.plugins.vfdicon.textscroll))
 		self.cfglist.append(getConfigListEntry(_("Center text"), config.plugins.vfdicon.textcenter))
-		if model in ("hs7810a","hs7819"):
+		if model in ("hs7810a", "hs7819"):
 			self.cfglist.append(getConfigListEntry(_('Logo brightness'), config.plugins.vfdicon.logoled))
 		self.cfglist.append(getConfigListEntry(_('Standby LED brightness'), config.plugins.vfdicon.standbyredled))
 		self.cfglist.append(getConfigListEntry(_('Rec LED brightness'), config.plugins.vfdicon.recredled))
@@ -113,7 +113,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 			Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.dstandbyredled.value))
 		elif self["config"].getCurrent()[1] == config.plugins.vfdicon.recredled:
 			Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.recredled.value))
-		elif model in ("hs7810a","hs7819") and (self["config"].getCurrent()[1] == config.plugins.vfdicon.logoled):
+		elif model in ("hs7810a", "hs7819") and (self["config"].getCurrent()[1] == config.plugins.vfdicon.logoled):
 			Console().ePopen("fp_control -l 1 " + str(config.plugins.vfdicon.logoled.value))
 		print("[hs7810aVFD] newConfig", self["config"].getCurrent())
 		self.createSetup()
@@ -135,7 +135,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		else:
 			evfd.getInstance().vfd_set_CENTER(False)
 		print("[hs7810aVFD] set text centering", config.plugins.vfdicon.textcenter.value)
-		if model in ("hs7810a","hs7819"):
+		if model in ("hs7810a", "hs7819"):
 			Console().ePopen("fp_control -l 0 0 -l 1 " + str(config.plugins.vfdicon.logoled.value)) # red LED off, logo on
 		else:
 			Console().ePopen("fp_control -l 0 0") # red LED off
@@ -181,7 +181,7 @@ class VFDIcons:
 		self.timer = eTimer()
 		self.timer.callback.append(self.timerEvent)
 		self.timer.start(60000, False) # start one minute timer
-		if model in ("hs7810a","hs7819"):
+		if model in ("hs7810a", "hs7819"):
 			Console().ePopen("fp_control -l 0 0 -l 1 " + str(config.plugins.vfdicon.logoled.value)) # red LED off, logo on
 		else:
 			Console().ePopen("fp_control -l 0 0") # red LED off
@@ -189,7 +189,7 @@ class VFDIcons:
 		print('[hs7810aVFD] Hardware displaytype:', DisplayType)
 		print('[hs7810aVFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 9:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
@@ -198,7 +198,7 @@ class VFDIcons:
 			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
 			session.nav.record_event.append(self.gotRecordEvent)
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evStart: self.writeName,
 				})
@@ -327,7 +327,7 @@ class VFDIcons:
 		self.standby = False
 		global DisplayType
 		evfd.getInstance().vfd_write_string("    ")
-		if model in ("hs7810a","hs7819"):
+		if model in ("hs7810a", "hs7819"):
 			Console().ePopen("fp_control -l 0 0 -l 1 " + str(config.plugins.vfdicon.logoled.value)) # LED off, logo on
 		else:
 			Console().ePopen("fp_control -l 0 0") # LED off
@@ -340,7 +340,7 @@ class VFDIcons:
 		inStandby.onClose.append(self.onLeaveStandby)
 		global DisplayType
 		if config.plugins.vfdicon.standbyredled.value:
-			if model in ("hs7810a","hs7819"):
+			if model in ("hs7810a", "hs7819"):
 				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.standbyredled.value) + "-l 1 0") #Red LED on, logo off
 			else:
 				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.standbyredled.value)) #Red LED on

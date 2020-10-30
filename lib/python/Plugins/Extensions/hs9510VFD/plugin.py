@@ -204,7 +204,7 @@ class VFDIcons:
 		print('[hs9510VFD] Hardware displaytype:', DisplayType)
 		print('[hs9510VFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 7:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
@@ -232,7 +232,7 @@ class VFDIcons:
 			if self.standby == False:
 				self.displayHddUsed()
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evStart: self.writeName,
 				})
@@ -394,7 +394,7 @@ class VFDIcons:
 			if service:
 				info = service.info()
 				aspect = info.getInfo(iServiceInformation.sAspect)
-				if aspect in (1,2,5,6,9,10,13,14):
+				if aspect in (1, 2, 5, 6, 9, 10, 13, 14):
 					Console().ePopen("fp_control -i 16 0")
 				else:
 					Console().ePopen("fp_control -i 16 1") #set 16:9 icon

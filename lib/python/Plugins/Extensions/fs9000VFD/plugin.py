@@ -212,7 +212,7 @@ class VFDIcons:
 		print('[fs9000VFD] Hardware displaytype:', DisplayType)
 		print('[fs9000VFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 6:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
@@ -240,7 +240,7 @@ class VFDIcons:
 			if self.standby == False:
 				self.displayHddUsed()
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evStart: self.writeName,
 				})

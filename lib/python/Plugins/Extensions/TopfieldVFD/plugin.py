@@ -50,17 +50,17 @@ ioRec2Flush = struct.pack('LLB', 0x2000, 0x0, 0x6)
 ioRecBothFlush = struct.pack('LLB', 0x3000, 0x0, 0x6)
 ioClockFlush = struct.pack('LLB', 0x20, 0x0, 0x6)
 ioClockOff = struct.pack('LLB', 0x20, 0x0, 0x0)
-ioHddClear =    struct.pack('LLB', 0x0, 0xff8000,0x0)
-ioHddUsage = (  struct.pack('LLB', 0x0, 0x006000,0xf),  # HDD empty
-                struct.pack('LLB', 0x0, 0x00e000,0xf),
-                struct.pack('LLB', 0x0, 0x01e000,0xf),
-                struct.pack('LLB', 0x0, 0x03e000,0xf),
-                struct.pack('LLB', 0x0, 0x07e000,0xf),
-                struct.pack('LLB', 0x0, 0x0fe000,0xf),
-                struct.pack('LLB', 0x0, 0x1fe000,0xf),
-                struct.pack('LLB', 0x0, 0x3fe000,0xf),
-                struct.pack('LLB', 0x0, 0x7fe000,0xf))  # HDD full
-ioHddFull = struct.pack('LLB', 0x0, 0x800000,0x6)       # "HDD full" flashing
+ioHddClear =    struct.pack('LLB', 0x0, 0xff8000, 0x0)
+ioHddUsage = (  struct.pack('LLB', 0x0, 0x006000, 0xf),  # HDD empty
+                struct.pack('LLB', 0x0, 0x00e000, 0xf),
+                struct.pack('LLB', 0x0, 0x01e000, 0xf),
+                struct.pack('LLB', 0x0, 0x03e000, 0xf),
+                struct.pack('LLB', 0x0, 0x07e000, 0xf),
+                struct.pack('LLB', 0x0, 0x0fe000, 0xf),
+                struct.pack('LLB', 0x0, 0x1fe000, 0xf),
+                struct.pack('LLB', 0x0, 0x3fe000, 0xf),
+                struct.pack('LLB', 0x0, 0x7fe000, 0xf))  # HDD full
+ioHddFull = struct.pack('LLB', 0x0, 0x800000, 0x6)       # "HDD full" flashing
 hddCheckPeriod = 60 # check every 60 seconds
 ioIconCmd = 0x400b3a20
 ioTimeshiftOn = struct.pack('LLB', 0x80, 0x0, 0xf)
@@ -73,10 +73,10 @@ ioRecBothOn = struct.pack('LLB', 0x3000, 0x0, 0xf)
 ioRecBothOff = struct.pack('LLB', 0x3000, 0x0, 0x0)
 ioEthBothOff = struct.pack('LLB', 0x0c000000, 0x0, 0x0)
 ioEthLeftOn = struct.pack('LLB', 0x08000000, 0x0, 0xe)
-ioEthRightOn = struct.pack('LLB', 0x04000000, 0x0,0xb)
+ioEthRightOn = struct.pack('LLB', 0x04000000, 0x0, 0xb)
 
-ioColonOn = struct.pack('LLB', 0x4, 0x0,0x3)
-ioColonOff = struct.pack('LLB', 0x4, 0x0,0x0)
+ioColonOn = struct.pack('LLB', 0x4, 0x0, 0x3)
+ioColonOff = struct.pack('LLB', 0x4, 0x0, 0x0)
 ioBrightnessCmd = 0x40013a05
 ioIrFilter1Cmd = 0x40003a06
 ioIrFilter4Cmd = 0x40003a09
@@ -148,7 +148,7 @@ class TopfieldVFD:
                 self.session = session
                 self.service = None
                 self.onClose = [ ]
-                self.__event_tracker = ServiceEventTracker(screen=self,eventmap=
+                self.__event_tracker = ServiceEventTracker(screen=self, eventmap=
                         {
                                 iPlayableService.evSeekableStatusChanged: self.__evSeekableStatusChanged,
                                 iPlayableService.evStart: self.__evStart,
@@ -230,7 +230,7 @@ class TopfieldVFD:
 
 #---- Topfi start ----#
                         buf = array.array('h', [0])
-                        fcntl.ioctl(fd.fileno(),ioBootReason,buf,1)
+                        fcntl.ioctl(fd.fileno(), ioBootReason, buf, 1)
                         if buf[0] == 2:
                                 fcntl.ioctl(fd.fileno(), ioIconCmd, ioOffFlush)
 #---- Topfi end ----#
@@ -318,7 +318,7 @@ class TopfieldVFD:
                         self.setValues()
 
                 if self.clockEnabled:
-                        clock = strftime("%k%M",localtime(time()))
+                        clock = strftime("%k%M", localtime(time()))
                         if clock != self.clock:
                                 self.clock = clock
                                 try:

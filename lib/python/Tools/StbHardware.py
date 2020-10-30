@@ -60,7 +60,7 @@ def getFPVersion():
 			ret = int(open("/proc/stb/fp/version", "r").read())
 		else:
 			fp = open("/dev/dbox/fp0")
-			ret = ioctl(fp.fileno(),0)
+			ret = ioctl(fp.fileno(), 0)
 	except IOError:
 		print("[StbHardware] getFPVersion failed!")
 	return ret

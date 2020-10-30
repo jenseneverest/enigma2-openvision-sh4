@@ -76,7 +76,7 @@ def setResumePoint(session):
 				resumePointCache[key] = [lru, pos[1], l]
 				if len(resumePointCache) > 50:
 					candidate = key
-					for k,v in resumePointCache.items():
+					for k, v in resumePointCache.items():
 						if v[0] < lru:
 							candidate = k
 					del resumePointCache[candidate]
@@ -147,7 +147,7 @@ def reload_subservice_groupslist(force=False):
 			groupedservices = "/etc/enigma2/groupedservices"
 			if not os.path.isfile(groupedservices):
 				groupedservices = "/usr/share/enigma2/groupedservices"
-			subservice.groupslist = [list(g) for k,g in itertools.groupby([line.split('#')[0].strip() for line in open(groupedservices).readlines()], lambda x:not x) if not k]
+			subservice.groupslist = [list(g) for k, g in itertools.groupby([line.split('#')[0].strip() for line in open(groupedservices).readlines()], lambda x:not x) if not k]
 		except:
 			subservice.groupslist = []
 reload_subservice_groupslist()
@@ -218,7 +218,7 @@ class InfoBarUnhandledKey:
 	#this function is called on every keypress!
 	def actionA(self, key, flag):
 		try:
-			print('[InfoBarGenerics] KEY: %s %s' % (key,getKeyDescription(key)[0]))
+			print('[InfoBarGenerics] KEY: %s %s' % (key, getKeyDescription(key)[0]))
 		except:
 			print('[InfoBarGenerics] KEY: %s' % key)
 		self.unhandledKeyDialog.hide()
@@ -268,12 +268,12 @@ class InfoBarShowHide(InfoBarScreenSaver):
 	FLAG_CENTER_DVB_SUBS = 2048
 
 	def __init__(self):
-		self["ShowHideActions"] = ActionMap( ["InfobarShowHideActions"] ,
+		self["ShowHideActions"] = ActionMap( ["InfobarShowHideActions"],
 			{
 				"toggleShow": self.okButtonCheck,
 				"hide": self.keyHide,
-				"toggleShowLong" : self.toggleShowLong,
-				"hideLong" : self.hideLong,
+				"toggleShowLong": self.toggleShowLong,
+				"hideLong": self.hideLong,
 			}, 1) # lower prio to make it possible to override ok and cancel..
 
 		self.__event_tracker = ServiceEventTracker(screen=self, eventmap=
@@ -1385,7 +1385,7 @@ class InfoBarRdsDecoder:
 		self["RdsActions"] = ActionMap(["InfobarRdsActions"],
 		{
 			"startRassInteractive": self.startRassInteractive
-		},-1)
+		}, -1)
 
 		self["RdsActions"].setEnabled(False)
 
@@ -1936,12 +1936,12 @@ class InfoBarTimeshift():
 				"timeshiftStop": (self.stopTimeshift, _("Stop timeshift")),      # currently undefined :), probably 'TV'
 				"seekFwdManual": (self.seekFwdManual, _("Seek forward (enter time)")),
 				"seekBackManual": (self.seekBackManual, _("Seek backward (enter time)")),
-				"seekdef:1": (boundFunction(self.seekdef,1), _("Seek")),
-				"seekdef:3": (boundFunction(self.seekdef,3), _("Seek")),
-				"seekdef:4": (boundFunction(self.seekdef,4), _("Seek")),
-				"seekdef:6": (boundFunction(self.seekdef,6), _("Seek")),
-				"seekdef:7": (boundFunction(self.seekdef,7), _("Seek")),
-				"seekdef:9": (boundFunction(self.seekdef,9), _("Seek")),
+				"seekdef:1": (boundFunction(self.seekdef, 1), _("Seek")),
+				"seekdef:3": (boundFunction(self.seekdef, 3), _("Seek")),
+				"seekdef:4": (boundFunction(self.seekdef, 4), _("Seek")),
+				"seekdef:6": (boundFunction(self.seekdef, 6), _("Seek")),
+				"seekdef:7": (boundFunction(self.seekdef, 7), _("Seek")),
+				"seekdef:9": (boundFunction(self.seekdef, 9), _("Seek")),
 			}, prio=0)
 		self["TimeshiftActivateActions"] = ActionMap(["InfobarTimeshiftActivateActions"],
 			{
@@ -2124,7 +2124,7 @@ class InfoBarTimeshift():
 		filename = begin_date + " - " + service_name
 
 		if config.recording.filename_composition.value == "event":
-			filename = "%s - %s_%s" % (info["name"], strftime("%Y%m%d %H%M",localtime(time())), service_name)
+			filename = "%s - %s_%s" % (info["name"], strftime("%Y%m%d %H%M", localtime(time())), service_name)
 		elif config.recording.filename_composition.value == "short":
 			filename = strftime("%Y%m%d", localtime(time())) + " - " + info["name"]
 		elif config.recording.filename_composition.value == "long":
@@ -2372,7 +2372,7 @@ class InfoBarExtensions:
 		if autotimerFunc is not None:
 			autotimerFunc(self.session)
 		else:
-			self.session.open(MessageBox, _("The AutoTimer plugin is not installed!\nPlease install it."), type = MessageBox.TYPE_INFO,timeout = 10 )
+			self.session.open(MessageBox, _("The AutoTimer plugin is not installed!\nPlease install it."), type = MessageBox.TYPE_INFO, timeout = 10 )
 
 from Tools.BoundFunction import boundFunction
 import inspect
@@ -2791,7 +2791,7 @@ class InfoBarInstantRecord:
 		elif answer[1] == "stopdeleteall":
 			self.deleteRecording = True
 			self.stopAllCurrentRecordings(list)
-		elif answer[1] in ( "indefinitely" , "manualduration", "manualendtime", "event"):
+		elif answer[1] in ( "indefinitely", "manualduration", "manualendtime", "event"):
 			self.startInstantRecording(limitEvent = answer[1] in ("event", "manualendtime") or False)
 			if answer[1] == "manualduration":
 				self.changeDuration(len(self.recording)-1)
@@ -3123,7 +3123,7 @@ class InfoBarTimerButton:
 		self.session.open(TimerEditList)
 
 class VideoMode(Screen):
-	def __init__(self,session):
+	def __init__(self, session):
 		Screen.__init__(self, session)
 		self["videomode"] = Label()
 		self.timer = eTimer()

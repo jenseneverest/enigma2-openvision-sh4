@@ -24,7 +24,7 @@ except:
 DisplayTypevfd = DisplayType
 
 if DisplayTypevfd is None:
-	if getBoxType() in ("hs7420","hs7429"):
+	if getBoxType() in ("hs7420", "hs7429"):
 		DisplayType = 11
 	else:
 		DisplayType = None
@@ -209,7 +209,7 @@ class VFDIcons:
 		print('[hs742xVFD] Hardware displaytype:', DisplayType)
 		print('[hs742xVFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 11:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
@@ -218,7 +218,7 @@ class VFDIcons:
 			session.nav.record_event.append(self.gotRecordEvent)
 			config.misc.standbyCounter.addNotifier(self.onEnterStandby, initial_call = False)
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evStart: self.writeName,
 				})

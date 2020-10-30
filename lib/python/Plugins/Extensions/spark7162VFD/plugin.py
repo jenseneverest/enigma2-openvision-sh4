@@ -208,7 +208,7 @@ class VFDIcons:
 		print('[spark7162VFD] Hardware displaytype:', DisplayType)
 		print('[spark7162VFD] VFD displaytype     :', DisplayTypevfd)
 		if DisplayType == 8:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evUpdatedInfo: self.UpdatedInfo,
 					iPlayableService.evUpdatedEventInfo: self.__evUpdatedEventInfo,
@@ -236,7 +236,7 @@ class VFDIcons:
 			if self.standby == False:
 				self.displayHddUsed()
 		else:
-			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
+			self.__event_tracker = ServiceEventTracker(screen = self, eventmap =
 				{
 					iPlayableService.evStart: self.writeName,
 				})

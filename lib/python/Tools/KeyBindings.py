@@ -371,7 +371,7 @@ keyDescriptions = [{  # id=0 - dmm0 remote directory, DM8000.
 	KEYIDS["KEY_RECORD"]: ("RECORD",),
 	KEYIDS["KEY_STOP"]: ("STOP",),
 	KEYIDS["KEY_SLOW"]: ("SLOW",),
-	KEYIDS["KEY_FILE"]: ("LIST" ,),
+	KEYIDS["KEY_FILE"]: ("LIST",),
 	KEYIDS["KEY_SAT"]: ("SAT",),
 	KEYIDS["KEY_PREVIOUS"]: ("STEPBACK",),
 	KEYIDS["KEY_NEXT"]: ("STEPFORWARD",),

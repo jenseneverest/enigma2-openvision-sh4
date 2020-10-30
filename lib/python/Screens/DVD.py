@@ -391,7 +391,7 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		audioTuple = info and info.getInfoObject(iServiceInformation.sUser+6)
 		print("[DVD] AudioInfoAvail ", repr(audioTuple))
 		if audioTuple:
-			audioString = "%s (%s)" % (audioTuple[1],audioTuple[2])
+			audioString = "%s (%s)" % (audioTuple[1], audioTuple[2])
 			self["audioLabel"].setText(audioString)
 			if audioTuple != self.last_audioTuple and not self.in_menu:
 				self.doShow()
@@ -417,7 +417,7 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 		if angleTuple:
 			angleString = ""
 			if angleTuple[1] > 1:
-				angleString = "%d / %d" % (angleTuple[0],angleTuple[1])
+				angleString = "%d / %d" % (angleTuple[0], angleTuple[1])
 				self["anglePix"].show()
 			else:
 				self["anglePix"].hide()
@@ -453,7 +453,7 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 			cur = self.session.nav.getCurrentlyPlayingServiceOrGroup()
 			cd = harddiskmanager.getAutofsMountpoint(harddiskmanager.getCD())
 			if cur and cur.toString()[-len(cd):] != cd:
-				choices.insert(0,(_("Play DVD"), "playPhysical"))
+				choices.insert(0, (_("Play DVD"), "playPhysical"))
 		self.session.openWithCallback(self.exitCB, ChoiceBox, title=_("Leave DVD player?"), list = choices)
 
 	def sendKey(self, key):
@@ -559,7 +559,7 @@ class DVDPlayer(Screen, InfoBarBase, InfoBarNotifications, InfoBarSeek, InfoBarP
 			if curref is None or curref != newref:
 				self.service = None
 				if newref.toString()[-9:] == "/VIDEO_TS" or newref.toString()[-1] == "/":
-					names = newref.toString().rsplit("/",3)
+					names = newref.toString().rsplit("/", 3)
 					if names[2][:5] == "Disk " or names[2][:4] == "DVD ":
 						name = str(names[1]) + " - " + str(names[2])
 					else:

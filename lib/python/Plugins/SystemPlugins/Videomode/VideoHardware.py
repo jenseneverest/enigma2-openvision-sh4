@@ -49,9 +49,9 @@ class VideoHardware:
 								"60Hz": { 60: "1080p60" } }
 
 	rates["PC"] = {
-		"1024x768"  : { 60: "1024x768_60", 70: "1024x768_70", 75: "1024x768_75", 90: "1024x768_90", 100: "1024x768_100" }, #43 60 70 72 75 90 100
-		"1280x1024" : { 60: "1280x1024_60", 70: "1280x1024_70", 75: "1280x1024_75" }, #43 47 60 70 74 75
-		"1600x1200" : { 60: "1600x1200_60" }, #60 66 76
+		"1024x768": { 60: "1024x768_60", 70: "1024x768_70", 75: "1024x768_75", 90: "1024x768_90", 100: "1024x768_100" }, #43 60 70 72 75 90 100
+		"1280x1024": { 60: "1280x1024_60", 70: "1280x1024_70", 75: "1280x1024_75" }, #43 47 60 70 74 75
+		"1600x1200": { 60: "1600x1200_60" }, #60 66 76
 	}
 
 	if has_scart:
@@ -78,7 +78,7 @@ class VideoHardware:
 		del modes["Scart"]
 
 	def getOutputAspect(self):
-		ret = (16,9)
+		ret = (16, 9)
 		port = config.av.videoport.value
 		if port not in config.av.videomode:
 			print("[Videomode] VideoHardware current port not available in getOutputAspect!!! force 16:9")
@@ -93,16 +93,16 @@ class VideoHardware:
 				else:
 					aspect = {"16_9": "16:9", "16_10": "16:10"}[config.av.aspect.value]
 					if aspect == "16:10":
-						ret = (16,10)
+						ret = (16, 10)
 			elif is_auto:
 				try:
 					aspect_str = open("/proc/stb/vmpeg/0/aspect", "r").read()
 					if aspect_str == "1": # 4:3
-						ret = (4,3)
+						ret = (4, 3)
 				except IOError:
 					pass
 			else:  # 4:3
-				ret = (4,3)
+				ret = (4, 3)
 		return ret
 
 	def __init__(self):

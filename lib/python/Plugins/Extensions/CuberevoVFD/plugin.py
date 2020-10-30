@@ -23,7 +23,7 @@ config.plugins.CuberevoVFD.scroll = ConfigSelection(default = "once", choices = 
 config.plugins.CuberevoVFD.brightness = ConfigSelection(default = "bright", choices = [("dark"), ("medium"), ("bright")])
 config.plugins.CuberevoVFD.showClock = ConfigEnableDisable(default = True)
 #config.plugins.CuberevoVFD.setDaylight = ConfigEnableDisable(default = False)
-config.plugins.CuberevoVFD.timeMode = ConfigSelection(default = "24h", choices = [("12h"),("24h")])
+config.plugins.CuberevoVFD.timeMode = ConfigSelection(default = "24h", choices = [("12h"), ("24h")])
 config.plugins.CuberevoVFD.setLed = ConfigEnableDisable(default = False)
 config.plugins.CuberevoVFD.setFan = ConfigEnableDisable(default = True)
 
@@ -129,7 +129,7 @@ class CuberevoVFD:
 		self.session = session
 		self.service = None
 		self.onClose = [ ]
-		self.__event_tracker = ServiceEventTracker(screen=self,eventmap=
+		self.__event_tracker = ServiceEventTracker(screen=self, eventmap=
 			{
 				iPlayableService.evSeekableStatusChanged: self.__evSeekableStatusChanged,
 				iPlayableService.evStart: self.__evStart,
@@ -300,10 +300,10 @@ class CuberevoVFD:
 			return
 		if tmp:
 			print("[CuberevoVFD] Timeshift enabled")
-			evfd.getInstance().vfd_set_icon(0x1A,True)
+			evfd.getInstance().vfd_set_icon(0x1A, True)
 		else:
 			print("[CuberevoVFD] Timeshift disabled")
-			evfd.getInstance().vfd_set_icon(0x1A,False)
+			evfd.getInstance().vfd_set_icon(0x1A, False)
 		self.tsEnabled = tmp
 		
 	def shutdown(self):

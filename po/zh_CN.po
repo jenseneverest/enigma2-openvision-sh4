@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 16:49+0330\n"
+"POT-Creation-Date: 2020-11-01 14:41+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 344784320@qq.com\n"
 "Language-Team: Openpli Team\n"
@@ -4226,6 +4226,14 @@ msgstr "目录浏览"
 msgid "Disable"
 msgstr "禁用"
 
+#, fuzzy
+msgid "Disable FCC"
+msgstr "禁用"
+
+#, fuzzy
+msgid "Disable FCC during recordings"
+msgstr "媒体流里总是包含ECM"
+
 msgid "Disable Picture in Picture"
 msgstr "禁用画中画"
 
@@ -4693,6 +4701,10 @@ msgstr "为有源天线启用5V供电"
 
 msgid "Enable EIT EPG"
 msgstr "启用EIT EPG"
+
+#, fuzzy
+msgid "Enable FCC"
+msgstr "启用"
 
 #, fuzzy
 msgid "Enable FreeSat EPG"
@@ -5266,6 +5278,14 @@ msgstr ""
 "FBC自动\n"
 "非活动"
 
+#, fuzzy
+msgid "FCC enabled"
+msgstr "启用"
+
+#, fuzzy
+msgid "FCCSetup"
+msgstr "设置"
+
 msgid "FEC"
 msgstr "前向纠错码(FEC)"
 
@@ -5396,6 +5416,12 @@ msgstr ""
 
 msgid "Fast"
 msgstr "快速"
+
+msgid "Fast Channel Change Setup"
+msgstr ""
+
+msgid "Fast Channel Change setup"
+msgstr ""
 
 msgid "Fast DiSEqC"
 msgstr "快速DiSEqC"
@@ -5972,6 +5998,10 @@ msgstr "分级模式"
 
 msgid "High bitrate support"
 msgstr "高比特率支持"
+
+#, fuzzy
+msgid "History Prev/Next"
+msgstr "历史记录里的下一个频道"
 
 msgid "History back"
 msgstr "历史记录里的上一个频道"
@@ -6751,6 +6781,9 @@ msgstr ""
 msgid "Let you change RC type but use it with care."
 msgstr ""
 
+msgid "Lets define enigma2 once more"
+msgstr ""
+
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 msgid "Letterbox"
 msgstr "信箱模式"
@@ -7079,6 +7112,10 @@ msgstr ""
 
 msgid "Mauritius"
 msgstr ""
+
+#, fuzzy
+msgid "Max channels"
+msgstr "频道"
 
 msgid "Max memory positions"
 msgstr "最大内存位置"
@@ -8068,9 +8105,6 @@ msgstr ""
 msgid "Open Vision RC type: "
 msgstr ""
 
-msgid "Open Vision enigma2 image"
-msgstr ""
-
 #, fuzzy
 msgid "Open Vision information"
 msgstr "打开位置选择"
@@ -8124,6 +8158,10 @@ msgstr ""
 #, fuzzy
 msgid "OpenVPN setup"
 msgstr "打开调谐器设置"
+
+#, fuzzy
+msgid "OpenVision"
+msgstr "Python版本:"
 
 msgid "Operating LED colour status in deep standby mode"
 msgstr ""
@@ -9190,6 +9228,9 @@ msgstr "亮度"
 msgid "Recall to previous service"
 msgstr "返回之前的频道"
 
+msgid "Receiver or driver does not support FCC"
+msgstr ""
+
 msgid "Receiver reads the stored EPG data every (hours)."
 msgstr ""
 
@@ -9463,6 +9504,9 @@ msgstr "重复"
 
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
 msgstr "使用彩色文本替换每个对话框中的 ‘-’符号（就像为听力受损者提供的文本字幕）"
+
+msgid "Report problems to:"
+msgstr ""
 
 msgid "Request for physical address report"
 msgstr "物理地址报告请求"
@@ -10827,6 +10871,9 @@ msgstr "在信息条显示加密信息"
 msgid "Show detailed event info"
 msgstr "显示事件详细信息"
 
+msgid "Show development packages in opkg"
+msgstr ""
+
 msgid "Show event details"
 msgstr "显示事件详细内容"
 
@@ -11368,6 +11415,10 @@ msgstr "声音运营商"
 msgid "Source request"
 msgstr "源目录"
 
+#, fuzzy
+msgid "Sources are available at:"
+msgstr "一些插件不可用:\n"
+
 msgid "South"
 msgstr "南"
 
@@ -11811,10 +11862,6 @@ msgid ""
 "Sundtek - hardware blind scan in progress.\n"
 "Please wait(3-20 min) for the scan to finish."
 msgstr ""
-
-#, fuzzy, python-format
-msgid "Support at %s"
-msgstr "体育"
 
 msgid "Suriname"
 msgstr ""
@@ -13958,6 +14005,9 @@ msgstr "一旦启用，时移将在后台按指定时间之后自动启动。"
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "一旦启用，将使用DHCP来配置IP地址。"
 
+msgid "When enabled, you will see dev, staticdev, dbg, doc, src and po packages in opkg list."
+msgstr ""
+
 msgid "When enabled, you will see the available revision on github"
 msgstr ""
 
@@ -14353,6 +14403,10 @@ msgstr ""
 msgid "Zap"
 msgstr "跳转"
 
+#, fuzzy
+msgid "Zap Up/Down"
+msgstr "向下切换频道"
+
 msgid "Zap back to previously tuned service?"
 msgstr "回到上次的频道吗？"
 
@@ -14577,9 +14631,6 @@ msgstr "底部"
 
 msgid "broadcasting/press"
 msgstr "广播／新闻"
-
-msgid "by Open Vision developers"
-msgstr ""
 
 msgid "by date"
 msgstr "按日期"
@@ -14975,6 +15026,12 @@ msgstr ""
 msgid "hs9510VFD"
 msgstr ""
 
+msgid "https://github.com/OpenVisionE2"
+msgstr ""
+
+msgid "https://openvision.tech"
+msgstr ""
+
 msgid "in menu and plugins"
 msgstr "在插件和菜单"
 
@@ -15283,6 +15340,10 @@ msgstr "流行文化/传统艺术"
 
 msgid "pre-school children's program"
 msgstr "学前儿童程序（早教程序）"
+
+#, fuzzy
+msgid "priority"
+msgstr "次序"
 
 msgid "punch cuts"
 msgstr ""

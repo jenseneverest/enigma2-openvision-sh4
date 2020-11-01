@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 16:49+0330\n"
+"POT-Creation-Date: 2020-11-01 14:41+0330\n"
 "PO-Revision-Date: 2013-10-23 19:15+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -4550,6 +4550,14 @@ msgstr "Søk i kataloger"
 msgid "Disable"
 msgstr "Deaktivere"
 
+#
+#, fuzzy
+msgid "Disable FCC"
+msgstr "Deaktivere"
+
+msgid "Disable FCC during recordings"
+msgstr ""
+
 msgid "Disable Picture in Picture"
 msgstr "Stopp bilde i bilde funksjon"
 
@@ -5093,6 +5101,11 @@ msgstr "Aktivere 5V for aktiv antenne"
 
 msgid "Enable EIT EPG"
 msgstr "Aktivere EIT EPG"
+
+#
+#, fuzzy
+msgid "Enable FCC"
+msgstr "Aktivere"
 
 #, fuzzy
 msgid "Enable FreeSat EPG"
@@ -5716,6 +5729,16 @@ msgid ""
 msgstr ""
 
 #
+#, fuzzy
+msgid "FCC enabled"
+msgstr "aktivert"
+
+#
+#, fuzzy
+msgid "FCCSetup"
+msgstr "Innstilling"
+
+#
 msgid "FEC"
 msgstr ""
 
@@ -5851,6 +5874,12 @@ msgstr ""
 #
 msgid "Fast"
 msgstr "Hurtig"
+
+msgid "Fast Channel Change Setup"
+msgstr ""
+
+msgid "Fast Channel Change setup"
+msgstr ""
 
 msgid "Fast DiSEqC"
 msgstr "Hurtig DiSEqC"
@@ -6473,6 +6502,10 @@ msgstr "Hierarki info"
 #
 msgid "High bitrate support"
 msgstr "Høy bitrate støtte"
+
+#, fuzzy
+msgid "History Prev/Next"
+msgstr "Gjenopprette mottaker"
 
 msgid "History back"
 msgstr ""
@@ -7338,6 +7371,9 @@ msgstr ""
 msgid "Let you change RC type but use it with care."
 msgstr ""
 
+msgid "Lets define enigma2 once more"
+msgstr ""
+
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 msgid "Letterbox"
 msgstr "Brevformat"
@@ -7712,6 +7748,11 @@ msgstr "Litauisk"
 #, fuzzy
 msgid "Mauritius"
 msgstr "Favorittliste"
+
+#
+#, fuzzy
+msgid "Max channels"
+msgstr "Kanal"
 
 msgid "Max memory positions"
 msgstr ""
@@ -8831,9 +8872,6 @@ msgstr ""
 msgid "Open Vision RC type: "
 msgstr ""
 
-msgid "Open Vision enigma2 image"
-msgstr ""
-
 msgid "Open Vision information"
 msgstr ""
 
@@ -8891,6 +8929,11 @@ msgstr ""
 #, fuzzy
 msgid "OpenVPN setup"
 msgstr "PiP-bilde i bilde oppsett"
+
+#
+#, fuzzy
+msgid "OpenVision"
+msgstr "Linuxkjerne versjon: "
 
 msgid "Operating LED colour status in deep standby mode"
 msgstr ""
@@ -10061,6 +10104,9 @@ msgstr "Lysstyrke"
 msgid "Recall to previous service"
 msgstr ""
 
+msgid "Receiver or driver does not support FCC"
+msgstr ""
+
 msgid "Receiver reads the stored EPG data every (hours)."
 msgstr ""
 
@@ -10351,6 +10397,9 @@ msgid "Repeats"
 msgstr "Gjentakelser"
 
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
+msgstr ""
+
+msgid "Report problems to:"
 msgstr ""
 
 #, fuzzy
@@ -11848,6 +11897,9 @@ msgstr "Vis krypteringsinfo på informasjonslinjen"
 msgid "Show detailed event info"
 msgstr "Vis detaljert programinformasjon"
 
+msgid "Show development packages in opkg"
+msgstr ""
+
 #
 msgid "Show event details"
 msgstr "Vis programdetaljer"
@@ -12444,6 +12496,11 @@ msgid "Source request"
 msgstr "Server forespørsel"
 
 #
+#, fuzzy
+msgid "Sources are available at:"
+msgstr "Noen programtillegg er ikke tilgjengelig:\n"
+
+#
 msgid "South"
 msgstr "Sør"
 
@@ -12930,10 +12987,6 @@ msgid ""
 "Sundtek - hardware blind scan in progress.\n"
 "Please wait(3-20 min) for the scan to finish."
 msgstr ""
-
-#, fuzzy, python-format
-msgid "Support at %s"
-msgstr "Sport"
 
 #
 #, fuzzy
@@ -15242,6 +15295,9 @@ msgstr "Når dette er valgt, vil timeshift starte automatisk i bakgrunnen etter 
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Når dette er valgt, vil DHCP brukes til IP-konfigurasjon."
 
+msgid "When enabled, you will see dev, staticdev, dbg, doc, src and po packages in opkg list."
+msgstr ""
+
 msgid "When enabled, you will see the available revision on github"
 msgstr ""
 
@@ -15649,6 +15705,9 @@ msgstr ""
 msgid "Zap"
 msgstr "Gå til"
 
+msgid "Zap Up/Down"
+msgstr ""
+
 #
 msgid "Zap back to previously tuned service?"
 msgstr "Gå tilbake til forrige kanal?"
@@ -15901,9 +15960,6 @@ msgstr ""
 
 msgid "broadcasting/press"
 msgstr "kringkasting/presse"
-
-msgid "by Open Vision developers"
-msgstr ""
 
 #
 msgid "by date"
@@ -16344,6 +16400,12 @@ msgstr ""
 msgid "hs9510VFD"
 msgstr ""
 
+msgid "https://github.com/OpenVisionE2"
+msgstr ""
+
+msgid "https://openvision.tech"
+msgstr ""
+
 #
 #, fuzzy
 msgid "in menu and plugins"
@@ -16692,6 +16754,11 @@ msgstr "populær kultur/tradisjonell kunst"
 
 msgid "pre-school children's program"
 msgstr "førskolebarn/barneprogram"
+
+#
+#, fuzzy
+msgid "priority"
+msgstr "Prioritet"
 
 msgid "punch cuts"
 msgstr ""

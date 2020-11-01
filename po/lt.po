@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 16:49+0330\n"
+"POT-Creation-Date: 2020-11-01 14:41+0330\n"
 "PO-Revision-Date: 2020-09-09 23:39+0300\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -4166,6 +4166,14 @@ msgstr "Katalogų naršyklė"
 msgid "Disable"
 msgstr "Išjungti"
 
+#, fuzzy
+msgid "Disable FCC"
+msgstr "Išjungti"
+
+#, fuzzy
+msgid "Disable FCC during recordings"
+msgstr "LED spalva įrašymo metu"
+
 msgid "Disable Picture in Picture"
 msgstr "Išjungti vaizdą vaizde"
 
@@ -4622,6 +4630,10 @@ msgstr "Įjungti 5V aktyviai antenai"
 
 msgid "Enable EIT EPG"
 msgstr "Įjungti  EIT EPG"
+
+#, fuzzy
+msgid "Enable FCC"
+msgstr "Įjungti"
 
 msgid "Enable FreeSat EPG"
 msgstr "Įjungti freesat EPG"
@@ -5172,6 +5184,14 @@ msgstr ""
 "FBC automatinis\n"
 "neaktyvus"
 
+#, fuzzy
+msgid "FCC enabled"
+msgstr "įjungtas"
+
+#, fuzzy
+msgid "FCCSetup"
+msgstr "Valdymas"
+
 msgid "FEC"
 msgstr "FEC"
 
@@ -5294,6 +5314,12 @@ msgstr "Farerų salos"
 
 msgid "Fast"
 msgstr "Greitas"
+
+msgid "Fast Channel Change Setup"
+msgstr ""
+
+msgid "Fast Channel Change setup"
+msgstr ""
 
 msgid "Fast DiSEqC"
 msgstr "Greitas DiSEqC"
@@ -5860,6 +5886,10 @@ msgstr "Informacijos lygis"
 
 msgid "High bitrate support"
 msgstr "Aukštos bitų spartos palaikymas"
+
+#, fuzzy
+msgid "History Prev/Next"
+msgstr "Istorija pirmyn"
 
 msgid "History back"
 msgstr "Istorija atgal"
@@ -6624,6 +6654,9 @@ msgstr "Lesotas"
 msgid "Let you change RC type but use it with care."
 msgstr "Leiskite pakeisti RC tipą, tačiau naudokite jį atsargiai."
 
+msgid "Lets define enigma2 once more"
+msgstr ""
+
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 msgid "Letterbox"
 msgstr "Įterpiant juostas viršuje ir apačioje"
@@ -6943,6 +6976,10 @@ msgstr "Mauritanija"
 
 msgid "Mauritius"
 msgstr "Mauricijus"
+
+#, fuzzy
+msgid "Max channels"
+msgstr "Kanalai"
 
 msgid "Max memory positions"
 msgstr "Maksimalios atminties pozicijos"
@@ -7894,9 +7931,6 @@ msgstr "Open Vision nuotolinio valdymo pulto pavadinimas: "
 msgid "Open Vision RC type: "
 msgstr "Open Vision nuotolinio valdymo pulto RC tipas: "
 
-msgid "Open Vision enigma2 image"
-msgstr "Open Vision enigma2 atvaizdas"
-
 msgid "Open Vision information"
 msgstr "Open Vision informacija"
 
@@ -7946,6 +7980,10 @@ msgstr "OpenVpn loginis žurnalas"
 
 msgid "OpenVPN setup"
 msgstr "OpenVpn valdymas"
+
+#, fuzzy
+msgid "OpenVision"
+msgstr "Open Vision"
 
 #, fuzzy
 msgid "Operating LED colour status in deep standby mode"
@@ -8988,6 +9026,9 @@ msgstr "Šviesumas"
 msgid "Recall to previous service"
 msgstr "Grįžti į ankstesnį kanalą"
 
+msgid "Receiver or driver does not support FCC"
+msgstr ""
+
 #, fuzzy
 msgid "Receiver reads the stored EPG data every (hours)."
 msgstr "%s %s skaito saugomus EPG duomenis kas (val)."
@@ -9250,6 +9291,9 @@ msgstr "Pakartojimai"
 
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
 msgstr "Galite pakeisti ženklą ' - ' dialoguose skirtingų spalvų tekstu kiekvienam pašnekovui (kaip teleteksto subtitrai turintiems klausos sutrikimų)"
+
+msgid "Report problems to:"
+msgstr ""
 
 msgid "Request for physical address report"
 msgstr "Prašymas pateikti fizinio adreso ataskaitą"
@@ -10586,6 +10630,9 @@ msgstr "Infojuostoje rodyti šifravimo informaciją"
 msgid "Show detailed event info"
 msgstr "Rodyti išsamią įvykio informaciją"
 
+msgid "Show development packages in opkg"
+msgstr ""
+
 msgid "Show event details"
 msgstr "Rodyti įvykio detales"
 
@@ -11111,6 +11158,10 @@ msgstr "Garso nešėjas"
 msgid "Source request"
 msgstr "Užklausos šaltinis"
 
+#, fuzzy
+msgid "Sources are available at:"
+msgstr "Kai kurių priedų nėra:\n"
+
 msgid "South"
 msgstr "Pietų"
 
@@ -11540,10 +11591,6 @@ msgid ""
 msgstr ""
 "Pasisekė, kad šis įrenginys palaiko aparatinės įrangos akląją paiešką...\n"
 "Palaukite, kol baigsis foninė paieška..."
-
-#, python-format
-msgid "Support at %s"
-msgstr "Palaikymas %s"
 
 msgid "Suriname"
 msgstr "Surinamas"
@@ -13643,6 +13690,9 @@ msgstr "Kai čia įjungta, laiko poslinkis įsijungs po nurodyto laiko automati�
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "Kai įjungta, naudoti DHCP IP konfigūraciją."
 
+msgid "When enabled, you will see dev, staticdev, dbg, doc, src and po packages in opkg list."
+msgstr ""
+
 msgid "When enabled, you will see the available revision on github"
 msgstr "Kai įjungta, pamatysite galimą github pakeitimą"
 
@@ -14035,6 +14085,10 @@ msgstr "Zambija"
 msgid "Zap"
 msgstr "Perjungti"
 
+#, fuzzy
+msgid "Zap Up/Down"
+msgstr "Perjungti žemyn"
+
 msgid "Zap back to previously tuned service?"
 msgstr "Perjungti į ankstesnį suderintą kanalą?"
 
@@ -14253,9 +14307,6 @@ msgstr "apačia"
 
 msgid "broadcasting/press"
 msgstr "transliacija, spauda"
-
-msgid "by Open Vision developers"
-msgstr "sukūrė Open Vision kūrėjai"
 
 msgid "by date"
 msgstr "pagal datą"
@@ -14636,6 +14687,12 @@ msgstr ""
 msgid "hs9510VFD"
 msgstr ""
 
+msgid "https://github.com/OpenVisionE2"
+msgstr ""
+
+msgid "https://openvision.tech"
+msgstr ""
+
 msgid "in menu and plugins"
 msgstr "meniu ir prieduose"
 
@@ -14937,6 +14994,10 @@ msgstr "populiarioji kultūra/tradiciniai menai"
 
 msgid "pre-school children's program"
 msgstr "ikimokyklinė vaikų programa"
+
+#, fuzzy
+msgid "priority"
+msgstr "Pirmenybė"
 
 msgid "punch cuts"
 msgstr "smūginiai iškirpimai"

@@ -30,11 +30,11 @@
 #include <Python.h>
 
 /* Interval between "garbage collect" cycles */
-#define CLEAN_INTERVAL 60000    //  1 min
+#define CLEAN_INTERVAL (60 * 1000)       //  1 minute
 /* Restart EPG data capture */
-#define UPDATE_INTERVAL 3600000  // 60 min
+#define UPDATE_INTERVAL (60 * 60 * 1000)  // 60 minutes
 /* Time to wait after tuning in before EPG data capturing starts */
-#define ZAP_DELAY 2000          // 2 sec
+#define ZAP_DELAY (2 * 1000)          // 2 seconds
 
 struct DescriptorPair
 {

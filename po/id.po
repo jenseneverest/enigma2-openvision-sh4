@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-01 14:41+0330\n"
+"POT-Creation-Date: 2020-11-01 14:18+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -62,6 +62,9 @@ msgstr ""
 msgid " "
 msgstr ""
 
+msgid "  REC  "
+msgstr ""
+
 msgid " (0 - all networks)"
 msgstr " (0 - semua jaringan)"
 
@@ -94,6 +97,9 @@ msgstr " (lebih tinggi dari auto rotor)"
 msgid " (lower than any auto)"
 msgstr " (lebih rendah dari auto)"
 
+msgid " HI "
+msgstr ""
+
 msgid " extensions."
 msgstr " ekstensi."
 
@@ -105,6 +111,9 @@ msgstr " paket yang dipilih."
 
 msgid " updates available."
 msgstr " pembaruan tersedia."
+
+msgid "!! Bootloader Upgrade !!"
+msgstr ""
 
 #, fuzzy
 msgid "%-H:%M"
@@ -1212,6 +1221,13 @@ msgstr "tidak dikenal"
 msgid "* Only available if more than one interface is active."
 msgstr "* Hanya tersedia jika lebih dari satu antarmuka yang aktif."
 
+#, fuzzy
+msgid "* current animation"
+msgstr "Aktifkan setelan saat ini"
+
+msgid "-"
+msgstr ""
+
 msgid "-NO SERVICE\n"
 msgstr "-Tidak ada layanan\n"
 
@@ -1251,6 +1267,9 @@ msgstr "100 MB/s"
 msgid "10bit"
 msgstr "10bit"
 
+msgid "12 character"
+msgstr ""
+
 msgid "12V output"
 msgstr "keluaran 12V"
 
@@ -1269,6 +1288,14 @@ msgstr "Kotaksurat 16:10"
 msgid "16:10 PanScan"
 msgstr "PanScan 16:10"
 
+#, fuzzy
+msgid "16:10 letterbox"
+msgstr "Kotaksurat 16:10"
+
+#, fuzzy
+msgid "16:10 panscan"
+msgstr "PanScan 16:10"
+
 msgid "16:9"
 msgstr "16:9"
 
@@ -1278,11 +1305,19 @@ msgstr "Kotaksurat 16:9"
 msgid "16:9 always"
 msgstr "selalu 16:9"
 
+#, fuzzy
+msgid "16:9 letterbox"
+msgstr "Kotaksurat 16:9"
+
 msgid "16K"
 msgstr ""
 
 msgid "18 V"
 msgstr "18 V"
+
+#, fuzzy
+msgid "1X"
+msgstr "1"
 
 msgid "2"
 msgstr "2"
@@ -1305,14 +1340,36 @@ msgstr ""
 msgid "29.97"
 msgstr "29.97"
 
+#, fuzzy
+msgid "2X"
+msgstr "2"
+
 msgid "3"
 msgstr "3"
 
 msgid "30"
 msgstr "30"
 
-msgid "3D Modus"
-msgstr ""
+#, fuzzy
+msgid "3D Surround"
+msgstr "surround 3D"
+
+#, fuzzy
+msgid "3D Surround Speaker Position"
+msgstr "letak pengeras suara surround 3D"
+
+msgid "3D surround"
+msgstr "surround 3D"
+
+msgid "3D surround softlimiter"
+msgstr "batasan lembut surround 3D"
+
+msgid "3D surround speaker position"
+msgstr "letak pengeras suara surround 3D"
+
+#, fuzzy
+msgid "3X"
+msgstr "3"
 
 msgid "3d mode"
 msgstr "mode 3d"
@@ -1320,12 +1377,14 @@ msgstr "mode 3d"
 msgid "4"
 msgstr "4"
 
+msgid "420"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
-#, fuzzy
-msgid "450 (default)"
-msgstr "bawaan"
+msgid "444"
+msgstr ""
 
 msgid "4:3"
 msgstr "4:3"
@@ -1337,7 +1396,19 @@ msgid "4:3 PanScan"
 msgstr "PanScan 4:3"
 
 #, fuzzy
+msgid "4:3 letterbox"
+msgstr "Kotaksurat 4:3"
+
+#, fuzzy
+msgid "4:3 panscan"
+msgstr "PanScan 4:3"
+
+#, fuzzy
 msgid "4K"
+msgstr "4"
+
+#, fuzzy
+msgid "4X"
 msgstr "4"
 
 msgid "5"
@@ -1345,10 +1416,6 @@ msgstr "5"
 
 msgid "50 MB/s"
 msgstr ""
-
-#, fuzzy
-msgid "540 (default)"
-msgstr "bawaan"
 
 msgid "6"
 msgstr "6"
@@ -1358,6 +1425,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8 character"
+msgstr ""
 
 #, fuzzy
 msgid "8K"
@@ -1527,20 +1597,24 @@ msgstr "Penyetelan A/V"
 msgid "AAC downmix"
 msgstr "Downmix AAC"
 
+#, fuzzy
+msgid "AAC plus downmix"
+msgstr "Downmix AAC"
+
+msgid "AAC transcoding"
+msgstr ""
+
+msgid "AC3"
+msgstr ""
+
 msgid "AC3 downmix"
 msgstr "Downmix AC3"
 
+msgid "AC3 plus transcoding"
+msgstr ""
+
 msgid "ACQUIRING TSID/ONID"
 msgstr "Mendapatka TSID/ONID"
-
-msgid "ADB XMP"
-msgstr ""
-
-msgid "ADB variant: "
-msgstr ""
-
-msgid "ADBVFD"
-msgstr ""
 
 msgid "AFP"
 msgstr ""
@@ -1559,6 +1633,12 @@ msgid "ANNEX-B: "
 msgstr ""
 
 msgid "ANNEX-C: "
+msgstr ""
+
+msgid "ARM"
+msgstr ""
+
+msgid "ARM64"
 msgstr ""
 
 #, fuzzy
@@ -1589,10 +1669,6 @@ msgstr "Batalkan ubah favorit"
 msgid "About"
 msgstr "Tentang"
 
-#, fuzzy
-msgid "About..."
-msgstr "Tentang"
-
 msgid "Accesspoint:"
 msgstr "Poin akses:"
 
@@ -1602,9 +1678,6 @@ msgstr "Aktifkan HbbTV (Tombol merah)"
 #, fuzzy
 msgid "Activate IPv6 configuration"
 msgstr "Aktifkan setelan saat ini"
-
-msgid "Activate Keymap now?"
-msgstr ""
 
 #, fuzzy
 msgid "Activate MAC address configuration"
@@ -1631,10 +1704,6 @@ msgstr "Aktifkan batas akhir dan jeda timeshift"
 #, fuzzy
 msgid "Active"
 msgstr "Relatif"
-
-#, python-format
-msgid "Active Keymap: %s"
-msgstr ""
 
 msgid "Adapter settings"
 msgstr "Penyetelan adapter"
@@ -1822,10 +1891,6 @@ msgstr "Layanan"
 msgid "All ages"
 msgstr "Semua umur"
 
-#, fuzzy
-msgid "All caps"
-msgstr "Semua umur"
-
 msgid "All frequency"
 msgstr "Semua frekuensi"
 
@@ -1885,6 +1950,9 @@ msgid "Allows receiver to store the EPG data regularly."
 msgstr ""
 
 msgid "Allows you to enable the twisted log. It contains very detailed information of everything the twisted does."
+msgstr ""
+
+msgid "Allows you to enable/disable displaying icons on the frontpanel."
 msgstr ""
 
 msgid "Allows you to hide the extensions of known file types."
@@ -1950,6 +2018,12 @@ msgstr "Selalu sertakan pesan-pesan ECM dalam merekam. Hal ini akan mengabaikan 
 msgid "American Samoa"
 msgstr "Samoa Amerika"
 
+msgid "Amlogic"
+msgstr ""
+
+msgid "Amlogic remote"
+msgstr ""
+
 msgid "An empty filename is illegal."
 msgstr "Nama berkas kosong tidak diperbolehkan."
 
@@ -1969,11 +2043,27 @@ msgstr "Dan akan menempatkan Rx anda pada standby "
 msgid "Andorra"
 msgstr "Andora"
 
+#, fuzzy
+msgid "Android mode"
+msgstr "mode 3d"
+
 msgid "Angola"
 msgstr "Angola"
 
 msgid "Anguilla"
 msgstr "Anguila"
+
+#, fuzzy
+msgid "Animation Setup"
+msgstr "Atur Posisioner"
+
+#, fuzzy
+msgid "Animation Speed"
+msgstr "Kecepatan gerak lambat"
+
+#, fuzzy
+msgid "Animations"
+msgstr "Informasi"
 
 msgid "Antarctica"
 msgstr "Antartika"
@@ -2022,12 +2112,6 @@ msgstr "Anda yakin ingin menghapus entri ini?"
 #, fuzzy
 msgid "Are you sure to restore all deleted images"
 msgstr "Anda yakin ingin menghapus semua layanan kabel?"
-
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr "Tes penyetelan jaringan Rx anda.\n"
 
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -2119,11 +2203,11 @@ msgstr ""
 msgid "Ask user (with default as 'yes')"
 msgstr ""
 
-#, fuzzy
-msgid "Aspect list..."
-msgstr "Daftar sub layanan..."
-
 msgid "Aspect ratio"
+msgstr "Aspek rasio"
+
+#, fuzzy
+msgid "Aspect ratio list..."
 msgstr "Aspek rasio"
 
 msgid "Assigned CAIds:"
@@ -2167,6 +2251,12 @@ msgstr "PID Audio%s, codec & bhs"
 msgid "Audio PID, codec & lang"
 msgstr "PID Audio, codec & bhs"
 
+msgid "Audio Source"
+msgstr ""
+
+msgid "Audio auto volume level"
+msgstr "level suara audio otomatis"
+
 msgid "Audio language selection 1"
 msgstr "Pemilihan bahasa audio 1"
 
@@ -2184,9 +2274,6 @@ msgstr "Pilihan audio..."
 
 msgid "Audio plugins"
 msgstr "Plugin audio"
-
-msgid "Audio source"
-msgstr ""
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2222,6 +2309,10 @@ msgid "Auto"
 msgstr "Auto"
 
 #, fuzzy
+msgid "Auto (not available)"
+msgstr "Penala tidak tersedia."
+
+#, fuzzy
 msgid "Auto Detect"
 msgstr "DiSEqC otomatis"
 
@@ -2234,6 +2325,10 @@ msgstr "Membalik/Putaran Orientasi EXIF otomatis"
 #, fuzzy
 msgid "Auto Timers"
 msgstr "Flesh otomatis"
+
+#, fuzzy
+msgid "Auto Volume Level"
+msgstr "level suara audio otomatis"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Pemisahan bab otomatis setiap ? menit (0=tidak pernah)"
@@ -2267,10 +2362,6 @@ msgstr "Pertukaran scart otomatis"
 #, fuzzy
 msgid "Auto standby"
 msgstr "Tidak bisa standby"
-
-#, fuzzy
-msgid "Auto(not available)"
-msgstr "tidak tersedia"
 
 #, fuzzy
 msgid "Autoinstalling Completed"
@@ -2324,6 +2415,9 @@ msgstr "Variabel format tersedia"
 msgid "Available locales are:"
 msgstr "Locale yang tersedia:"
 
+msgid "Axas E4HD Ultra"
+msgstr ""
+
 msgid "Azerbaijan"
 msgstr ""
 
@@ -2347,6 +2441,24 @@ msgid "BT 2020 NCL"
 msgstr ""
 
 msgid "BT 709"
+msgstr ""
+
+msgid "BT2020 CL"
+msgstr ""
+
+msgid "BT2020 NCL"
+msgstr ""
+
+msgid "BT470 BG"
+msgstr ""
+
+msgid "BT601 XvYCC"
+msgstr ""
+
+msgid "BT709"
+msgstr ""
+
+msgid "BT709 XvYCC"
 msgstr ""
 
 msgid "Back"
@@ -2458,11 +2570,18 @@ msgstr ""
 msgid "Bermuda"
 msgstr ""
 
+msgid "Beyonwiz U4"
+msgstr ""
+
 msgid "Bhutan"
 msgstr ""
 
 msgid "Big PiP"
 msgstr "PiP Besar"
+
+#, fuzzy
+msgid "Bitrate"
+msgstr "Bitrate:"
 
 msgid "Bitrate:"
 msgstr "Bitrate:"
@@ -2479,15 +2598,17 @@ msgstr ""
 msgid "Blinking REC Symbol"
 msgstr ""
 
+msgid "Blinking blue"
+msgstr ""
+
+msgid "Blinking red"
+msgstr ""
+
 msgid "Block noise reduction"
 msgstr "Pengurangan nois blok"
 
 msgid "Blue"
 msgstr "Biru"
-
-#, fuzzy
-msgid "Blue LED brightness"
-msgstr "Kecerahan"
 
 #, fuzzy
 msgid "Blue long"
@@ -2509,9 +2630,6 @@ msgstr "Tingkatkan biru"
 msgid "Boost green"
 msgstr "Tingkatkan hijau"
 
-msgid "Booster Control"
-msgstr ""
-
 #, fuzzy
 msgid "Boot time"
 msgstr "Pilah waktu"
@@ -2523,6 +2641,9 @@ msgid "Boot to Android image"
 msgstr ""
 
 msgid "Boot to Recovery menu"
+msgstr ""
+
+msgid "Bootloader update required!"
 msgstr ""
 
 #, fuzzy
@@ -2547,7 +2668,14 @@ msgstr ""
 msgid "Brightness"
 msgstr "Kecerahan"
 
+#, fuzzy
+msgid "Brightness (Dimmed)"
+msgstr "Kecerahan"
+
 msgid "British Indian Ocean Territory"
+msgstr ""
+
+msgid "Broadcom"
 msgstr ""
 
 msgid "Brunei Darussalam"
@@ -2792,12 +2920,11 @@ msgstr "Pencarkan PiP"
 msgid "Cayman Islands"
 msgstr "Pulau Cayman"
 
+msgid "Celsius"
+msgstr ""
+
 msgid "Center DVB subtitles"
 msgstr "Tengahkan terjemahan DVB"
-
-#, fuzzy
-msgid "Center text"
-msgstr "ke tengah"
 
 msgid "Center time-labels and remove date"
 msgstr "Tengahkan label-waktu dan tanggal penghapusan"
@@ -2809,19 +2936,11 @@ msgid "Chad"
 msgstr ""
 
 #, fuzzy
-msgid "Change CPU speed settings"
-msgstr "Ubah penyetelan ulang dan penundaan?"
-
-#, fuzzy
 msgid "Change Language"
 msgstr "Ganti Bahasa"
 
 msgid "Change PIN"
 msgstr "Ganti PIN"
-
-#, fuzzy
-msgid "Change VFD display settings"
-msgstr "Ubah penyetelan ulang dan penundaan?"
 
 msgid "Change bouquets in quickzap"
 msgstr "Ganti buket saat zap cepat"
@@ -2842,10 +2961,6 @@ msgid "Change step size"
 msgstr "Ubah ukuran langkah"
 
 msgid "Change timer"
-msgstr "Ubah pewaktu"
-
-#, fuzzy
-msgid "Change video port"
 msgstr "Ubah pewaktu"
 
 msgid "Channel"
@@ -2997,6 +3112,26 @@ msgstr ""
 
 msgid "Choose the name of the file that holds the EPG data when receiver is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
+
+#, fuzzy
+msgid "Choose whether AAC sound tracks should be transcoded."
+msgstr "Atur apakah jalur suara kanal banyak ingin diturunkan ke stereo."
+
+#, fuzzy
+msgid "Choose whether AC3 Plus sound tracks should be transcoded to AC3."
+msgstr "Atur apakah jalur suara kanal banyak ingin diturunkan ke stereo."
+
+#, fuzzy
+msgid "Choose whether DTS channel sound tracks should be downmixed or transcoded."
+msgstr "Atur apakah jalur suara kanal banyak ingin diturunkan ke stereo."
+
+#, fuzzy
+msgid "Choose whether WMA Pro channel sound tracks should be downmixed or transcoded."
+msgstr "Atur apakah jalur suara kanal banyak ingin diturunkan ke stereo."
+
+#, fuzzy
+msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
+msgstr "Atur apakah jalur suara kanal banyak ingin diturunkan ke stereo."
 
 msgid "Choose which tuner to configure."
 msgstr "Pilih penala mana untuk disetel."
@@ -3224,6 +3359,18 @@ msgstr "Atur berapa lama infobar tetap muncul setelah diaktifkan."
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "Atur berapa menit acara yg sudah usai tetap bisa tampil pada EPG. Berguna ketika anda memerlukan info tentang suatu acara yang baru saja selesai, atau ditunda."
 
+msgid "Configure front LED color during normal operations (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during recording (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during recording in standby (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during standby (this needs an enigma2 restart)."
+msgstr ""
+
 msgid "Configure how many channels are shown in the selection list."
 msgstr "Atur berapa jumlah kanal yang ditampilkan pada daftar pemilihan"
 
@@ -3306,6 +3453,10 @@ msgstr "Atur lebar batas terjemahan. Batas yg gelap membuat terjemahan lebih mud
 msgid "Configure the brightness level of the front panel display during standby."
 msgstr "Atur tingkat kecerahan display panel depan selama standby."
 
+#, fuzzy
+msgid "Configure the brightness level of the front panel display for dimmed operation."
+msgstr "Atur tingkat kecerahan display panel depan."
+
 msgid "Configure the brightness level of the front panel display."
 msgstr "Atur tingkat kecerahan display panel depan."
 
@@ -3314,9 +3465,6 @@ msgstr "Atur warna terjemahan dari luar, alternatif (normal warna putih, miring 
 
 msgid "Configure the color of the teletext subtitles."
 msgstr "Atur warna terjemahan teleteks."
-
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
-msgstr ""
 
 msgid "Configure the contrast level of the front panel display."
 msgstr "Atur tingkat kontras display panel depan."
@@ -3550,6 +3698,9 @@ msgstr "Atur apakah ikon sebaiknya ditampilkan atau tidak ketika parabola anda y
 msgid "Configure whether service picons will be shown in number zap."
 msgstr "Atur jika pikon layanan akan ditampilkan pada daftar pemilihan kanal."
 
+msgid "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseuso recordings (e.g. EPGrefresh)."
+msgstr ""
+
 msgid "Configure which access level to use for the configuration menu. Expert level gives access to all items."
 msgstr "Atur level akses mana yang digunakan untuk mengatur menu. Level ahli memberikan akses ke semua item."
 
@@ -3617,10 +3768,6 @@ msgstr "Terhubung ke"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr "Transcoding terhubung, batasan - tak ada PiP!"
 
-#, fuzzy
-msgid "Connection speed in kb/s"
-msgstr "Penyetelan koleksi"
-
 msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
 msgstr ""
 
@@ -3652,11 +3799,18 @@ msgstr "Lanjut mainkan"
 msgid "Continue playing"
 msgstr "Lanjut mainkan"
 
+#, fuzzy
+msgid "Continues"
+msgstr "Lanjut"
+
 msgid "Continues play (loop)"
 msgstr "Putar terus (loop)"
 
 msgid "Contrast"
 msgstr "Kontras"
+
+msgid "Control LED can be turned on or off here."
+msgstr ""
 
 msgid "Cook Islands"
 msgstr "Kepulauan Koki"
@@ -3676,6 +3830,10 @@ msgstr "Kosta Rika"
 
 msgid "Cote d'Ivoire"
 msgstr ""
+
+#, fuzzy
+msgid "Could not connect to server"
+msgstr "Tidak bisa merekam karena layanan tidak valid %s"
 
 msgid "Could not find installed channel list."
 msgstr "Daftar kanal terpasang tidak ditemukan."
@@ -3757,18 +3915,8 @@ msgstr "tidak ada pengelola sumberdaya"
 msgid "Cron timers"
 msgstr "Ubah pewaktu"
 
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Kecerahan"
-
 msgid "Cuba"
 msgstr "Kuba"
-
-msgid "Cuberevo universal"
-msgstr ""
-
-msgid "CuberevoVFD"
-msgstr ""
 
 msgid "Curacao"
 msgstr ""
@@ -3868,6 +4016,9 @@ msgstr "Ceko"
 msgid "D"
 msgstr "D"
 
+msgid "DAC"
+msgstr ""
+
 msgid "DHCP"
 msgstr "DHCP"
 
@@ -3875,8 +4026,25 @@ msgstr "DHCP"
 msgid "DLNA support"
 msgstr "mendukung HLG"
 
+msgid "DMM advanced"
+msgstr "DMM tingkat mahir"
+
+msgid "DMM normal"
+msgstr "DMM normal"
+
+msgid ""
+"DO NOT POWER OFF YOUR DEVICE WHILE UPDATING!\n"
+"Update now?"
+msgstr ""
+
+msgid "DTS"
+msgstr ""
+
 msgid "DTS downmix"
 msgstr "downmix DTS"
+
+msgid "DTS/DTS-HD HR/DTS-HD MA/DTS:X"
+msgstr ""
 
 msgid "DUAL LAYER DVD"
 msgstr "DVD Dua Lapis"
@@ -3944,9 +4112,6 @@ msgstr "DVB-T2"
 #, fuzzy
 msgid "DVB-T: "
 msgstr "DVB-T"
-
-msgid "DVD"
-msgstr ""
 
 msgid "DVD Burn"
 msgstr "Bakar DVD"
@@ -4141,10 +4306,6 @@ msgstr "Deep standby LED"
 
 msgid "Deep standby"
 msgstr "Deep standby"
-
-#, fuzzy
-msgid "Deepstandby LED brightness"
-msgstr "Deep standby LED"
 
 msgid "Default"
 msgstr "Bawaan"
@@ -4353,6 +4514,10 @@ msgstr "NIMs terdeteksi:"
 msgid "Device"
 msgstr "Kanal"
 
+#, fuzzy
+msgid "Device id: "
+msgstr "Nama perangkat:"
+
 msgid "Device mounts"
 msgstr ""
 
@@ -4400,6 +4565,13 @@ msgstr "Apakah anda melihat semua kedelapan anak panah?"
 msgid "Digital contour removal"
 msgstr "Penghapus kontur digital"
 
+#, fuzzy
+msgid "Dim delay"
+msgstr "Jangan tunda"
+
+msgid "Dim the LCD after specified time."
+msgstr ""
+
 msgid "Direct playback of linked titles without menu"
 msgstr "Putar langsung judul terkait tanpa menu"
 
@@ -4417,12 +4589,16 @@ msgid "Disable"
 msgstr "Matikan"
 
 #, fuzzy
+msgid "Disable Animations"
+msgstr "Matikan pewaktu"
+
+#, fuzzy
 msgid "Disable FCC"
 msgstr "Matikan"
 
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Selalu sertakan ECM dalam merekam"
+msgstr "Lokasi perekaman segera"
 
 msgid "Disable Picture in Picture"
 msgstr "Matikan Picture in Picture"
@@ -4435,6 +4611,9 @@ msgstr "Matikan acara saat ini tapi tidak acara mendatang"
 
 msgid "Disable move mode"
 msgstr "Matikan mode pindahkan"
+
+msgid "Disable the HDD Process on VFD"
+msgstr ""
 
 msgid "Disable timer"
 msgstr "Matikan pewaktu"
@@ -4475,14 +4654,14 @@ msgstr "Atur display"
 msgid "Display and userinterface"
 msgstr "Display dan antarmuka pengguna"
 
-#, fuzzy
-msgid "Display brightness"
-msgstr "Atur display"
-
 msgid "Display message before playing next movie"
 msgstr "Tampilkan pesan sebelum memutar film berikutnya"
 
 msgid "Display setup"
+msgstr "Atur display"
+
+#, fuzzy
+msgid "Display skin"
 msgstr "Atur display"
 
 #, fuzzy
@@ -4681,6 +4860,9 @@ msgstr "Dominika"
 msgid "Dominican Republic"
 msgstr "Republik Dominika"
 
+msgid "Don't ask again!"
+msgstr ""
+
 msgid "Don't save and stop timeshift"
 msgstr "Jangan simpan dan hentikan timeshift"
 
@@ -4690,6 +4872,11 @@ msgstr "Jangan hentikan acara saat ini tapi matikan acara mendatang"
 #, fuzzy
 msgid "Don't stop current event but disable future events"
 msgstr "Jangan hentikan acara saat ini tapi matikan acara mendatang"
+
+msgid ""
+"Don't worry your device is still ok! There are several safety mechanisms in place!\n"
+"Your device is still as fine as it was before this procedure!"
+msgstr ""
 
 msgid "Don't zap"
 msgstr "Jangan zap"
@@ -4729,6 +4916,10 @@ msgid "Downloading plugin information. Please wait..."
 msgstr "Mengunduh informasi plugin. Mohon menunggu..."
 
 #, fuzzy
+msgid "Downmix"
+msgstr "downmix DTS"
+
+#, fuzzy
 msgid "Drama"
 msgstr "Film/Drama"
 
@@ -4748,6 +4939,13 @@ msgstr "Kontras dinamis"
 
 msgid "E"
 msgstr "E"
+
+#, fuzzy
+msgid "E "
+msgstr "E"
+
+msgid "E3HD/XPEEDLX/GI"
+msgstr ""
 
 #, fuzzy
 msgid "ECM Info"
@@ -4775,6 +4973,10 @@ msgstr "EPG"
 
 msgid "EPG Cache Check"
 msgstr ""
+
+#, fuzzy
+msgid "EPG Selection"
+msgstr "Pemilihan EPG"
 
 #, fuzzy
 msgid "EPG filename"
@@ -4816,11 +5018,11 @@ msgstr "Timur"
 msgid "East limit set"
 msgstr "Setel batas timur"
 
+msgid "EasyMedia"
+msgstr ""
+
 msgid "Ecuador"
 msgstr "Ekuador"
-
-msgid "Edision argus"
-msgstr ""
 
 msgid "Edit"
 msgstr "Ubah"
@@ -4907,12 +5109,19 @@ msgstr "Aktifkan kontrol zap gaya 'neutrino'"
 msgid "Enable 5V for active antenna"
 msgstr "Aktifkan 5V pada antena aktif"
 
+#, fuzzy
+msgid "Enable BT audio"
+msgstr "Diaktifkan"
+
 msgid "Enable EIT EPG"
 msgstr "Aktifkan EPG EIT"
 
 #, fuzzy
 msgid "Enable FCC"
 msgstr "Aktifkan"
+
+msgid "Enable Focus Animation"
+msgstr ""
 
 #, fuzzy
 msgid "Enable FreeSat EPG"
@@ -4937,9 +5146,6 @@ msgstr "Aktifkan OK pada pemilihan kanal"
 #, fuzzy
 msgid "Enable OpenTV EPG"
 msgstr "Aktifkan EPG EIT"
-
-msgid "Enable VFD display"
-msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Aktifkan EPG ViaSat"
@@ -5000,6 +5206,9 @@ msgstr "Aktifkan perlindungan orangtua"
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
 msgstr "Aktifkan rx enigma2 dari jauh untuk mencoba menala layanan yang tidak bisa ditala secara lokal (misalnya penala sedang digunakan atau tipe layanan tidak tersedia pada penala lokal. Tentukan URL lengkap termasuk http:// dan nomor port (biasanya ...:8001), misalnya http://box_kedua:8001."
+
+msgid "Enable screenshot of LCD in /tmp"
+msgstr ""
 
 msgid "Enable teletext caching"
 msgstr "Aktifkan penyembunyian teleteks"
@@ -5091,6 +5300,9 @@ msgstr ""
 #, fuzzy
 msgid "Enigma2 version: "
 msgstr "Kernel version: "
+
+msgid "Enigmalight"
+msgstr ""
 
 msgid "Enough - Vision image"
 msgstr ""
@@ -5261,6 +5473,9 @@ msgstr "Estonia"
 msgid "Estonian"
 msgstr "Estonia"
 
+msgid "EtPortal"
+msgstr "EtPortal"
+
 msgid "Ethernet network interface"
 msgstr "Antarmuka jaringan ethernet"
 
@@ -5398,6 +5613,9 @@ msgstr "Ahli"
 msgid "Expert settings"
 msgstr "Ubah pengaturan"
 
+msgid "Ext. NumberZap"
+msgstr ""
+
 msgid "Extend sleeptimer 15 minutes"
 msgstr "Perpanjang pewaktu tidur 15 menit"
 
@@ -5461,9 +5679,18 @@ msgstr "Pilihan motor tambahan"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Waktu mulai tambahan untuk mengambaikan pewaktu tidur yg tidak aktif"
 
+msgid "Extrude from left"
+msgstr ""
+
+msgid "F"
+msgstr ""
+
 #, fuzzy
 msgid "F1"
 msgstr "1"
+
+msgid "F1/F3/F4/F4-TURBO/TRIPLEX"
+msgstr ""
 
 #, fuzzy
 msgid "F2"
@@ -5504,6 +5731,9 @@ msgstr ""
 "FBC otomatis\n"
 "tidak aktif"
 
+msgid "FCC 1953"
+msgstr ""
+
 #, fuzzy
 msgid "FCC enabled"
 msgstr "aktifkan"
@@ -5528,6 +5758,9 @@ msgstr ""
 #, fuzzy
 msgid "FPU: "
 msgstr "CPU: "
+
+msgid "FSBL Update Check"
+msgstr ""
 
 msgid "FTA"
 msgstr "FTA"
@@ -5568,6 +5801,9 @@ msgstr ""
 "Anda sungguh ingin melanjutkan?"
 
 msgid "Fade the infobar when hiding"
+msgstr ""
+
+msgid "Fahrenheit"
 msgstr ""
 
 msgid "Failed"
@@ -5702,8 +5938,7 @@ msgstr "Letak akhir pada indeks"
 msgid "Final scroll delay"
 msgstr ""
 
-#, fuzzy
-msgid "Find currently played service"
+msgid "Find currently playing service"
 msgstr "Temukan layanan yg sedang diputar"
 
 msgid "Fine movement"
@@ -5773,25 +6008,15 @@ msgstr ""
 msgid "Force legacy signal stats"
 msgstr "Paksa statistik sinyal lawas"
 
-#, fuzzy
-msgid "Forever"
-msgstr "takpernah"
-
 msgid "Format"
 msgstr "Format"
 
-msgid "Fortis mini"
-msgstr ""
-
-#, fuzzy
-msgid "Fortis standard"
-msgstr "standar"
-
-msgid "Fortis universal"
-msgstr ""
-
 msgid "Forward volume keys"
 msgstr "Teruskan tombol suara"
+
+#, fuzzy
+msgid "Frame rate"
+msgstr "Rerata segaran"
 
 msgid "Frame size in full view"
 msgstr "Ukuran bingkai pada tinjauan penuh"
@@ -5860,18 +6085,15 @@ msgid "From:"
 msgstr "Dari:"
 
 #, fuzzy
-msgid "Front panel display configuration"
-msgstr "Pengaturan daftar film"
-
-msgid "Front panel display configuration for Pace HDS-7241"
-msgstr ""
-
-msgid "Front panel display configuration for adb_box"
-msgstr ""
+msgid "Front panel display"
+msgstr "Tampilan daya"
 
 #, python-format
 msgid "Frontprocessor version: %s"
 msgstr "Versi prosessor depan: %s"
+
+msgid "Full Range RGB"
+msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: display as fullscreen, even if the content aspect ratio does not match the screen ratio)
 #, fuzzy
@@ -5893,9 +6115,19 @@ msgstr "Pilihan Selanjutnya"
 msgid "Further options"
 msgstr "Pilihan selanjutnya"
 
+msgid "G"
+msgstr "G"
+
 #, fuzzy
 msgid "GB"
 msgstr "RGB"
+
+msgid "GIGABLUE Black"
+msgstr ""
+
+#, fuzzy
+msgid "GStreamer version: "
+msgstr "Versi Gstreamer: "
 
 #, fuzzy
 msgid "GUI Settings"
@@ -5935,6 +6167,10 @@ msgstr ""
 msgid "General AC3 delay"
 msgstr "Tunda AC3 umum"
 
+#, fuzzy
+msgid "General BT audio delay"
+msgstr "Tunda AC3 umum"
+
 msgid "General PCM delay"
 msgstr "Tunda PCM umum"
 
@@ -5970,6 +6206,10 @@ msgstr ""
 
 msgid "Gibraltar"
 msgstr ""
+
+#, fuzzy
+msgid "Given device id: "
+msgstr "Perangkat saat ini: "
 
 msgid "Go down the list"
 msgstr "Menuju bawah daftar"
@@ -6051,8 +6291,15 @@ msgstr "Menuju:"
 msgid "GotoX calibration"
 msgstr "Menuju kalibrasi X"
 
+msgid "Grab: "
+msgstr ""
+
 msgid "GraphMultiEpg Settings"
 msgstr "Pengaturan GraphMultiEpg"
+
+#, fuzzy
+msgid "Graphical EPG"
+msgstr "EPG Multi Grafis"
 
 msgid "Graphical Multi EPG"
 msgstr "EPG Multi Grafis"
@@ -6075,6 +6322,12 @@ msgid "Greenland"
 msgstr ""
 
 msgid "Grenada"
+msgstr ""
+
+msgid "Grow drop"
+msgstr ""
+
+msgid "Grow from left"
 msgstr ""
 
 msgid "Guadeloupe"
@@ -6101,6 +6354,12 @@ msgstr ""
 msgid "Guyana"
 msgstr ""
 
+msgid "H"
+msgstr ""
+
+msgid "H7/H9/H9COMBO/H10 new model"
+msgstr ""
+
 msgid "H: = Hourly / D: = Daily / W: = Weekly / M: = Monthly"
 msgstr ""
 
@@ -6117,6 +6376,18 @@ msgstr "D"
 msgid "HD list"
 msgstr "daftar HD"
 
+msgid "HD11/HD51/HD1100/HD1200/HD1265/HD1500/HD500C/HD530C/VS1000/VS1500"
+msgstr ""
+
+msgid "HD2400"
+msgstr "HD2400"
+
+msgid "HD60"
+msgstr ""
+
+msgid "HDMI"
+msgstr "HDMI"
+
 msgid "HDMI Colordepth"
 msgstr "Kedalaman warna HDMI"
 
@@ -6128,6 +6399,10 @@ msgstr "Ruang warna HDMI"
 
 msgid "HDMI HDR Type"
 msgstr "Jenis HDR HDMI"
+
+#, fuzzy
+msgid "HDMI recording"
+msgstr "Hentikan rekaman"
 
 #, fuzzy
 msgid "HDMI-CEC Source Active"
@@ -6159,9 +6434,6 @@ msgstr ""
 msgid "HI-cleanup for external subtitles"
 msgstr "Tunda pada terjemahan dari luar"
 
-msgid "HL-101"
-msgstr ""
-
 msgid "HLG"
 msgstr ""
 
@@ -6172,6 +6444,9 @@ msgstr "mendukung HLG"
 #, fuzzy
 msgid "Haiti"
 msgstr "Haiti"
+
+msgid "Halt: "
+msgstr ""
 
 msgid "Handle standby from TV"
 msgstr "Tangani standby dari TV"
@@ -6211,10 +6486,17 @@ msgstr ""
 msgid "Hebrew"
 msgstr "Yahudi"
 
+#, fuzzy
+msgid "Height"
+msgstr "tinggi"
+
 msgid "Helps setting up your antenna"
 msgstr "Membantu pengaturan antena anda"
 
-msgid "Here you can change the screen positions with the arrow buttons on your remote control!"
+msgid "HiSilicon"
+msgstr ""
+
+msgid "HiSilicon dedicated information"
 msgstr ""
 
 #, fuzzy
@@ -6377,6 +6659,9 @@ msgstr "Hungaria"
 msgid "Hungary"
 msgstr "Hungaria"
 
+msgid "I"
+msgstr ""
+
 #, fuzzy
 msgid "I do not want to perform any service scans"
 msgstr "Saya tidak ingin melakukan pelacakan layanan apapun"
@@ -6386,6 +6671,10 @@ msgstr "DIAM"
 
 msgid "IGNORE"
 msgstr ""
+
+#, fuzzy
+msgid "IMDB Search"
+msgstr "Mencari"
 
 msgid "INFO"
 msgstr "INFO"
@@ -6443,6 +6732,9 @@ msgstr "Jika diaktifkan, layar menunjukkan 12 karater ketimbang 8, tapi dalam la
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "Jika diset ke 'ya' nilai sinyal (SNR, dlsb) akan dihitung dari API V3. Ini adalah API versi lama yg sekarang sudah digantikan."
+
+msgid "If the text is too long to be displayed on the front panel display, it will be repeated (number of times):"
+msgstr ""
 
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr "Jika menggunakan saklar tak terikat multi, perintah DiSEqC musti dikirim berulangkali. Set pada nomor saklar tak terikat pada deretan kurang satu."
@@ -6533,6 +6825,9 @@ msgstr "Impor URL Rx jauh"
 msgid "In live view wait this many seconds after a numeric key press before assuming the required channel number has been entered. Default: 5 seconds. Setting zero will require confirmation with 'OK'. "
 msgstr ""
 
+msgid "In most cases this should be set to No. Only enable if you have a very specific need."
+msgstr ""
+
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Dalam hal merekam pewaktu, TV dialihkan ke layanan perekaman!\n"
 
@@ -6612,10 +6907,6 @@ msgid "Info bar timeout"
 msgstr "Batas waktu bilah info"
 
 #, fuzzy
-msgid "InfoBar"
-msgstr "Bilah info"
-
-#, fuzzy
 msgid "Infobar fade-out speed"
 msgstr "Batas waktu bilah info"
 
@@ -6691,6 +6982,10 @@ msgstr "Pasang daftar kanal"
 msgid "Install extensions"
 msgstr "Pasang ekstensi"
 
+#, fuzzy
+msgid "Install lcd picons on"
+msgstr "Pasang picon pada"
+
 msgid "Install local extension"
 msgstr "Pasang ekstensi lokal"
 
@@ -6731,6 +7026,10 @@ msgid "Interface"
 msgstr "Antarmuka: "
 
 msgid "Interface: "
+msgstr "Antarmuka: "
+
+#, fuzzy
+msgid "Interlaced"
 msgstr "Antarmuka: "
 
 msgid "Internal"
@@ -6825,6 +7124,9 @@ msgstr "Item per halaman "
 msgid "Items per page for list screen"
 msgstr "Item per halaman untuk layar daftar"
 
+msgid "J"
+msgstr ""
+
 msgid "Jamaica"
 msgstr ""
 
@@ -6857,15 +7159,6 @@ msgid "Just scale"
 msgstr "Hanya skala"
 
 msgid "KA-SAT"
-msgstr ""
-
-msgid "Kathrein RC660 (UFS910/922"
-msgstr ""
-
-msgid "Kathrein RC671 (UFS912"
-msgstr ""
-
-msgid "Kathrein RC675 (UFS913)"
 msgstr ""
 
 msgid "Kazakhstan"
@@ -6903,16 +7196,6 @@ msgstr "Peta papankunci"
 msgid "Keyboard setup"
 msgstr "Pengaturan papankunci"
 
-msgid "Keymap"
-msgstr ""
-
-#, fuzzy
-msgid "Keymap selector"
-msgstr "Tidak dipilih"
-
-msgid "Keymaps found: (press green or ok to select)"
-msgstr ""
-
 msgid "Kiribati"
 msgstr ""
 
@@ -6936,38 +7219,52 @@ msgid "LAN connection"
 msgstr "Koneksi LAN"
 
 #, fuzzy
-msgid "LED brightness"
-msgstr "Kecerahan"
+msgid "LCD scroll speed"
+msgstr "Kecepatan terakhir"
 
 #, fuzzy
-msgid "LED configuration"
-msgstr "Penyetelan"
+msgid "LCD setup"
+msgstr "Atur 3D OSD"
 
-msgid "LED control"
+#, fuzzy
+msgid "LED Deep Standby"
+msgstr "Deep standby"
+
+#, fuzzy
+msgid "LED Normal"
+msgstr "normal"
+
+#, fuzzy
+msgid "LED Standby"
+msgstr "Standby"
+
+#, fuzzy
+msgid "LED brightness during deep standby."
+msgstr "Hidupkan LED daya selama deep standby."
+
+msgid "LED brightness during normal operations."
 msgstr ""
 
-msgid "LED control for Fortis HS7110"
+msgid "LED brightness during standby."
 msgstr ""
 
-msgid "LED control for Fortis HS7810A"
+msgid "LED color during normal operations"
 msgstr ""
 
 #, fuzzy
-msgid "LED display"
-msgstr "Atur display"
+msgid "LED color during recording"
+msgstr "Lokasi perekaman segera"
+
+msgid "LED color during recording in standby"
+msgstr ""
 
 #, fuzzy
-msgid "LED display configuration"
-msgstr "Pengaturan daftar film"
+msgid "LED color during standby"
+msgstr "Hidupkan LED daya selama standby."
 
-msgid "LED display configuration for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display configuration for Spark"
-msgstr ""
-
-msgid "LED display control Spark"
-msgstr ""
+#, fuzzy
+msgid "LED setup"
+msgstr "Atur 3D OSD"
 
 msgid "LIRC remote"
 msgstr ""
@@ -7063,6 +7360,9 @@ msgid "Letterbox zoom"
 msgstr "Zoom kotaksurat"
 
 msgid "Liberia"
+msgstr ""
+
+msgid "Libs: "
 msgstr ""
 
 msgid "Libya"
@@ -7194,14 +7494,6 @@ msgstr "Hasil log pada /tmp"
 msgid "Logfile does not exist anymore"
 msgstr "Berkas log tidak ada lagi"
 
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Kecerahan"
-
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Kecerahan"
-
 msgid "Logs"
 msgstr ""
 
@@ -7227,6 +7519,9 @@ msgstr "Pengulangan dari"
 
 msgid "Lower case"
 msgstr "Huruf kecil"
+
+msgid "Lower framerate save CPU time"
+msgstr ""
 
 #, fuzzy
 msgid "Luxembourg"
@@ -7254,7 +7549,7 @@ msgstr ""
 msgid "MB"
 msgstr "B"
 
-msgid "MENU"
+msgid "MIRACLEBOX TWINPLUS"
 msgstr ""
 
 msgid "MKUBIFS: "
@@ -7363,6 +7658,9 @@ msgid ""
 "Please wait until enigma2 restarts"
 msgstr ""
 
+msgid "Mara M9"
+msgstr ""
+
 msgid "Margin after recording (minutes)"
 msgstr "Batas setelah merekam (menit)"
 
@@ -7414,10 +7712,6 @@ msgstr ""
 msgid "Mb/s"
 msgstr ""
 
-#, fuzzy
-msgid "Media framework: "
-msgstr "Pemutar media"
-
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
 
@@ -7453,16 +7747,6 @@ msgstr "Menu"
 msgid "Menusort (%s)"
 msgstr "Menusortir (%s)"
 
-#, python-format
-msgid ""
-"Merlin Enigma2 Keymapselector v%s\n"
-"\n"
-"If you experience any problems please contact\n"
-"www.dreambox-tools.info\n"
-"\n"
-"2009-2012 DarkVolli"
-msgstr ""
-
 msgid "Message"
 msgstr "Pesan"
 
@@ -7496,6 +7780,12 @@ msgstr ""
 msgid "MiniDLNA setup"
 msgstr "Atur PiP"
 
+msgid "MiniTV"
+msgstr ""
+
+msgid "MiniTV with OSD"
+msgstr ""
+
 #, python-format
 msgid "Minimum age %d years"
 msgstr "Umur minimum %d tahun"
@@ -7507,6 +7797,9 @@ msgid "Mins"
 msgstr ""
 
 msgid "Mins Secs"
+msgstr ""
+
+msgid "Mipsel"
 msgstr ""
 
 msgid "Missing "
@@ -7617,10 +7910,6 @@ msgstr "gerak ke bawah menuju entri selanjutnya"
 
 msgid "Move east"
 msgstr "Bergerak ke timur"
-
-#, fuzzy
-msgid "Move main picture to PiP"
-msgstr "Pindahkan PiP ke gambar utama"
 
 #, fuzzy
 msgid "Move the keyboard cursor down"
@@ -7735,15 +8024,16 @@ msgstr ""
 msgid "Multi EPG"
 msgstr "EPG Multi"
 
-msgid "Multi channel downmix"
-msgstr "Turunkan kualitas multi kanal"
-
 #, fuzzy
 msgid "Multi remote control support"
 msgstr "Pengaturan jenis kontrol remote"
 
 msgid "Multi-EPG bouquet selection"
 msgstr "Pilihan buket Multi-EPG"
+
+#, fuzzy
+msgid "MultiLib: "
+msgstr "EPG Multi"
 
 msgid "MultiTranscoding: "
 msgstr ""
@@ -7790,6 +8080,10 @@ msgstr "Bisu"
 
 msgid "Myanmar"
 msgstr ""
+
+#, fuzzy
+msgid "N"
+msgstr "TIDAK"
 
 msgid "N/A"
 msgstr "T/A"
@@ -8057,6 +8351,10 @@ msgstr "Tidak ada penala lagi!"
 msgid "No images found"
 msgstr "Jaringan tidak ditemukan"
 
+#, fuzzy
+msgid "No matching place names found"
+msgstr "Jaringan tidak ditemukan"
+
 msgid "No network connection available."
 msgstr "Koneksi jaringan tidak tersedia."
 
@@ -8111,6 +8409,10 @@ msgid ""
 msgstr ""
 "Tidak ada penala yang diaktifkan!\n"
 "Silakan atur pengaturan penala anda sebelum mulai lacak layanan."
+
+#, fuzzy
+msgid "No update required!"
+msgstr "Tak ditetapkan"
 
 msgid "No updates available"
 msgstr "Pembaruan tidak tersedia"
@@ -8176,9 +8478,6 @@ msgstr "normal"
 msgid "Normal mode"
 msgstr "Mode normal"
 
-msgid "Normal running frequency"
-msgstr ""
-
 #, fuzzy
 msgid "Normal speed"
 msgstr "Mode normal"
@@ -8202,6 +8501,14 @@ msgstr "Tak diasosiasikan"
 
 #, fuzzy
 msgid "Not Defined"
+msgstr "Tak ditetapkan"
+
+#, fuzzy
+msgid "Not Installed"
+msgstr "Pasang"
+
+#, fuzzy
+msgid "Not Required"
 msgstr "Tak ditetapkan"
 
 msgid "Not associated"
@@ -8255,12 +8562,6 @@ msgstr "Sekarang"
 msgid "Now playing"
 msgstr "Sedang dimainkan"
 
-msgid "Now you can change the position of the lower and right side. Press blue button to switch..."
-msgstr ""
-
-msgid "Now you can change the position of the upper and left side. Press blue button to switch..."
-msgstr ""
-
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "Sekarang, gunakan setelan kontran untuk menaikkan kecerahan latar sebanyak mungkin, tapi pastikan bahwa anda masih bisa melihat perbedaan antara dua tingkat warna paling cerah. Jika anda telah melakukan itu, tekan OK."
 
@@ -8287,6 +8588,15 @@ msgstr "Nomor atau entri data gaya SMS"
 msgid "NumberZapPicon"
 msgstr ""
 
+msgid "OCTAGON SF4008"
+msgstr ""
+
+msgid "OCTAGON SF5008"
+msgstr ""
+
+msgid "ODIN M7"
+msgstr ""
+
 msgid "OE: "
 msgstr ""
 
@@ -8296,11 +8606,12 @@ msgstr "OK"
 msgid "ONID"
 msgstr "ONID"
 
+#, fuzzy
+msgid "OSD"
+msgstr "SNR"
+
 msgid "OSD 3D setup"
 msgstr "Atur 3D OSD"
-
-msgid "OSD Adjustment"
-msgstr ""
 
 msgid "OSD name request"
 msgstr "meminta nama OSD"
@@ -8348,7 +8659,7 @@ msgstr "Mati"
 msgid "Offline decode delay (ms)"
 msgstr "Tunda dekode offline (md)"
 
-msgid "Old - SH4"
+msgid "Old"
 msgstr ""
 
 msgid "Oman"
@@ -8433,14 +8744,6 @@ msgstr ""
 msgid "Open Vision version: "
 msgstr "Versi Python:"
 
-#, fuzzy
-msgid "Open channel list"
-msgstr "tidak ada daftar kanal"
-
-#, fuzzy
-msgid "Open current transponder"
-msgstr "Transponder saat ini"
-
 msgid "Open select location"
 msgstr "Buka lokasi yg dipilih"
 
@@ -8470,13 +8773,13 @@ msgstr "Buka pengaturan penala"
 msgid "OpenVision"
 msgstr "Versi Python:"
 
-msgid "Operating LED colour status in deep standby mode"
+msgid "Operating LED status in deep standby mode"
 msgstr ""
 
-msgid "Operating LED colour status in standby mode"
+msgid "Operating LED status in standby mode"
 msgstr ""
 
-msgid "Operating LED colour status while running."
+msgid "Operating LED status while running."
 msgstr ""
 
 msgid "Opkg"
@@ -8543,7 +8846,10 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "Kode PIN diperlukan"
 
-msgid "PLAY"
+msgid "PIP"
+msgstr ""
+
+msgid "PIP with OSD"
 msgstr ""
 
 msgid "PLP ID"
@@ -8556,16 +8862,10 @@ msgstr "Kode PLS"
 msgid "PLS Mode"
 msgstr "Mode PLS"
 
-msgid "PLUGINS"
-msgstr ""
-
 msgid "PMT PID"
 msgstr "PID PMT"
 
 msgid "PPanel"
-msgstr ""
-
-msgid "Pace HDS7241"
 msgstr ""
 
 msgid "Package list update"
@@ -8619,6 +8919,13 @@ msgstr "Perobah kanal dalam pengawasan orangtua"
 
 msgid "Parental control setup"
 msgstr "Atur pengawasan orangtua"
+
+#, fuzzy
+msgid "Partitions: "
+msgstr " (Partisi %d)"
+
+msgid "Passthrough"
+msgstr ""
 
 msgid "Password"
 msgstr "Katakunci"
@@ -8730,8 +9037,7 @@ msgstr "Mainkan DVD"
 msgid "Play DVDs"
 msgstr "Mainkan DVD"
 
-#, fuzzy
-msgid "Play as picture in picture"
+msgid "Play as Picture in Picture"
 msgstr "Mainkan sbg picture in picture"
 
 #, fuzzy
@@ -8746,9 +9052,6 @@ msgstr "Mainkan file-file media"
 
 msgid "Play entry"
 msgstr "Mainkan entri"
-
-msgid "Play file when add in empty playlist"
-msgstr ""
 
 msgid "Play from next mark or playlist entry"
 msgstr "Mainkan dari penanda berikutnya atau entri daftarputar"
@@ -8780,16 +9083,6 @@ msgstr "Mainkan sebelumnya"
 
 msgid "Play recorded movies..."
 msgstr "Mainkan film yang direkam..."
-
-msgid "Play with exteplayer"
-msgstr ""
-
-msgid "Play with gstreamer"
-msgstr ""
-
-#, fuzzy
-msgid "Player version: "
-msgstr "Versi kernel: "
 
 msgid "Please add titles to the compilation."
 msgstr "Mohon tambahkan judul ke kompilasi."
@@ -8895,10 +9188,6 @@ msgid "Please select a subservice to record..."
 msgstr "Mohon pilih sub layanan untuk rekam..."
 
 msgid "Please select a subservice..."
-msgstr "Mohon pilih sub layanan..."
-
-#, fuzzy
-msgid "Please select an 3D modus..."
 msgstr "Mohon pilih sub layanan..."
 
 #, fuzzy
@@ -9073,6 +9362,9 @@ msgstr "Polarisasi"
 msgid "Polish"
 msgstr "Polandia"
 
+msgid "Popup"
+msgstr ""
+
 #, fuzzy
 msgid "Port"
 msgstr "Port A"
@@ -9121,15 +9413,27 @@ msgstr "Atur Posisioner"
 msgid "Positioner setup log"
 msgstr "Log pengaturan posisioner"
 
+msgid "Power LED can be turned on or off here."
+msgstr ""
+
 #, fuzzy
-msgid "Power"
-msgstr "Menu Daya"
+msgid "Power LED state during deep-standby."
+msgstr "Hidupkan LED daya selama deep standby."
 
-msgid "Power LED"
+#, fuzzy
+msgid "Power LED state during standby."
+msgstr "Hidupkan LED daya selama standby."
+
+msgid "Power LED state in Deep-Standby"
 msgstr ""
 
-msgid "Power LED colour"
-msgstr ""
+#, fuzzy
+msgid "Power LED state in Standby"
+msgstr "Matikan saat Standby"
+
+#, fuzzy
+msgid "Power On Display"
+msgstr "Tampilan daya"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Pengelolaan daya. Periksa manual Rx anda untuk informasi lanjut."
@@ -9382,6 +9686,9 @@ msgstr "Lindungi menu standby"
 msgid "Protect timer menu"
 msgstr "Lindungi menu pewaktu"
 
+msgid "Protek 4K UHD/HD61"
+msgstr ""
+
 #, fuzzy
 msgid "Protocol"
 msgstr "Rotor:"
@@ -9432,6 +9739,10 @@ msgstr "Pertanyaan"
 msgid "Quick"
 msgstr "Cepat"
 
+#, fuzzy
+msgid "Quick EPG"
+msgstr "Cepat"
+
 msgid "Quick execute..."
 msgstr ""
 
@@ -9442,15 +9753,14 @@ msgid "RAM"
 msgstr ""
 
 #, fuzzy
-msgid "RC command set"
-msgstr "Urutan perintah"
-
-#, fuzzy
 msgid "RC type: "
 msgstr "Jenis DVB"
 
 msgid "REC"
 msgstr "REK"
+
+msgid "REC "
+msgstr ""
 
 msgid "REC Symbol"
 msgstr ""
@@ -9497,6 +9807,9 @@ msgstr ""
 msgid "Reader Statistics"
 msgstr ""
 
+msgid "Reader: "
+msgstr ""
+
 #, python-format
 msgid "Ready to install \"%s\" ?"
 msgstr ""
@@ -9504,6 +9817,10 @@ msgstr ""
 #, python-format
 msgid "Ready to remove \"%s\" ?"
 msgstr ""
+
+#, fuzzy
+msgid "Really WOL now?"
+msgstr "Yakin ingin reboot sekarang?"
 
 msgid "Really close without saving settings?"
 msgstr "Yakin tutup tanpa menyimpan pengaturan?"
@@ -9522,6 +9839,14 @@ msgstr "Yakit keluar zapcepat sub layanan?"
 msgid "Really perform a manufacturer reset now?"
 msgstr "Lindungi layar parameter pabrik"
 
+#, fuzzy
+msgid "Really reboot into android mode?"
+msgstr "Yakin ingin reboot sekarang?"
+
+#, fuzzy
+msgid "Really reboot into recovery mode?"
+msgstr "Yakin ingin reboot sekarang?"
+
 msgid "Really reboot now?"
 msgstr "Yakin ingin reboot sekarang?"
 
@@ -9539,6 +9864,10 @@ msgstr "Yakin ingin mematikan rx sekarang?"
 msgid "Really store at index %2d for current position?"
 msgstr "Yakin menyimpan pada indeks %2d untuk posisi sekarang?"
 
+#, fuzzy
+msgid "Really update the front panel and reboot now?"
+msgstr "Yakin meningkatkan frontprosessor dan reboot sekarang?"
+
 msgid "Really update the frontprocessor and reboot now?"
 msgstr "Yakin meningkatkan frontprosessor dan reboot sekarang?"
 
@@ -9548,9 +9877,8 @@ msgstr "Yakin meningkatkan Rx anda dan reboot sekarang?"
 msgid "Reboot"
 msgstr "Reboot"
 
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Kecerahan"
+msgid "Rec"
+msgstr "Rek"
 
 msgid "Recall to previous service"
 msgstr "Kembali ke layanan sebelumnya"
@@ -9606,19 +9934,12 @@ msgstr "Rekam"
 msgid "Recover inetd"
 msgstr "Pengaturan Rekam"
 
+#, fuzzy
+msgid "Recovery mode"
+msgstr "[mode pindah]"
+
 msgid "Red"
 msgstr "Merah"
-
-msgid "Red LED during recording"
-msgstr ""
-
-#, fuzzy
-msgid "Red LED on in deep standby"
-msgstr "menuju deep standby"
-
-#, fuzzy
-msgid "Red LED on in standby"
-msgstr "Setel TV ke standby"
 
 msgid "Red button..."
 msgstr "Tombol merah..."
@@ -9852,13 +10173,6 @@ msgstr "Periksa sambungan internet"
 msgid "Rereading partition table"
 msgstr "Baca ulang tabel partisi"
 
-#, fuzzy
-msgid "Reseller ID: "
-msgstr "ID Pengguna"
-
-msgid "Reseller name: "
-msgstr ""
-
 msgid "Reserved"
 msgstr "Dialokasikan"
 
@@ -10079,6 +10393,9 @@ msgstr "Federasi Rusia"
 msgid "Rwanda"
 msgstr ""
 
+msgid "S"
+msgstr ""
+
 msgid "S-Video"
 msgstr "S-Video"
 
@@ -10088,9 +10405,6 @@ msgstr ""
 #, fuzzy
 msgid "SABnzbd setup"
 msgstr "Atur video"
-
-msgid "SCAN"
-msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr "Rentang pencarian dioptimalkan SCPC"
@@ -10107,19 +10421,6 @@ msgstr "Unikabel SCR"
 #, fuzzy
 msgid "SDR"
 msgstr "SNR"
-
-msgid "SETUP"
-msgstr ""
-
-msgid "SH4"
-msgstr ""
-
-msgid "SH4 Booster Control"
-msgstr ""
-
-#, fuzzy
-msgid "SH4 OSD Position setup"
-msgstr "Atur Posisioner"
 
 msgid "SINGLE LAYER DVD"
 msgstr "DVD LAPIS TUNGGAL"
@@ -10147,10 +10448,6 @@ msgstr "berkas SSA"
 
 msgid "SSID:"
 msgstr "SSID:"
-
-#, fuzzy
-msgid "STMicroelectronics"
-msgstr "Pilihan pewaktu"
 
 msgid "Saint Barthelemy"
 msgstr ""
@@ -10183,6 +10480,9 @@ msgstr "Pengaturan softcam"
 #, fuzzy
 msgid "Same as stream"
 msgstr "Hentikan pengecekan"
+
+msgid "Same behavior as current animation"
+msgstr ""
 
 msgid "Same resolution as skin"
 msgstr "Sama dgn resolusi tampilan"
@@ -10351,10 +10651,6 @@ msgstr "Pindai jaringan nirkabel"
 msgid "Scan your network for wireless access points and connect to them using your selected wireless device.\n"
 msgstr "Pindai jaringan anda untuk mendapatkan akses poin nirkabel dan sambungkan menggunakan peralatan nirkabel terpilih.\n"
 
-#, fuzzy
-msgid "Scanning"
-msgstr "Melacak..."
-
 #, python-format
 msgid "Scanning %s..."
 msgstr "Melacak %s..."
@@ -10384,23 +10680,20 @@ msgstr "Lacak lamedb standar yg disortir oleh satelit yg terhubung dgn posisione
 msgid "Schedule EPG and channel list import"
 msgstr ""
 
+msgid "Screenshot of LCD in /tmp"
+msgstr ""
+
 msgid "Scroll delay"
 msgstr "Tunda gulir"
-
-#, fuzzy
-msgid "Scroll long strings"
-msgstr "Penyetelan koleksi"
-
-#, fuzzy
-msgid "Scroll pause"
-msgstr "Ulang gulir"
 
 msgid "Scroll repeats"
 msgstr "Ulang gulir"
 
-#, fuzzy
-msgid "Scroll text"
-msgstr "Ulang gulir"
+msgid "Scrolling delay (software renderer)"
+msgstr ""
+
+msgid "Scrolling speed (software renderer)"
+msgstr ""
 
 #, fuzzy
 msgid "Search"
@@ -10663,9 +10956,6 @@ msgstr "Pilih slot"
 msgid "Select sort method:"
 msgstr "Pilih metode sortir:"
 
-msgid "Select spark7162 dvb-t/c tuner mode"
-msgstr ""
-
 msgid "Select target folder"
 msgstr "Pilih folder tujuan"
 
@@ -10777,10 +11067,6 @@ msgstr ""
 
 msgid "Select your country. If not available select 'all'."
 msgstr "Pilih negara anda. Jika tidak tersedia, pilih 'semua'."
-
-#, fuzzy
-msgid "Select your keymap"
-msgstr "Pilih film"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Pilih provder dan wilayah anda. Jika tidak ada dalam daftar, anda perlu pilih satu dari 'jenis lacak layanan' lain."
@@ -10979,22 +11265,17 @@ msgstr "Atur bawaan"
 msgid "Set end time"
 msgstr "Atur waktu berakhir"
 
-#, fuzzy
-msgid "Set fan"
-msgstr "Atur bawaan"
-
 msgid "Set fixed"
 msgstr "Atur tetap"
 
 msgid "Set fps for external subtitles"
 msgstr "Tentukan fps untuk terjemahan dari luar"
 
+msgid "Set framerate for MiniTV"
+msgstr ""
+
 msgid "Set interface as default Interface"
 msgstr "Atur antarmuka sebagai Antarmuka standar"
-
-#, fuzzy
-msgid "Set led"
-msgstr "Atur tetap"
 
 msgid "Set limits"
 msgstr "Atur batasan"
@@ -11023,6 +11304,9 @@ msgstr "Atur ID Pengguna OpenWebif dari penala terpakai anda"
 msgid "Set the default sorting method."
 msgstr "Pilih metode sortir:"
 
+msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
+msgstr ""
+
 #, fuzzy
 msgid "Set the global sort method"
 msgstr "Pilih metode sortir:"
@@ -11036,6 +11320,13 @@ msgstr "Atur port OpenWebif dari penala terpakai anda"
 #, fuzzy
 msgid "Set the repeat interval of the schedule."
 msgstr "Atur refresh rate layar."
+
+msgid "Set the scrolling speed of text on the front panel display, this is used by software renderer in some skins."
+msgstr ""
+
+#, fuzzy
+msgid "Set the scrolling speed of text on the front panel display."
+msgstr "Atur tingkat kontras display panel depan."
 
 #, fuzzy
 msgid "Set the sort method for this directory"
@@ -11083,6 +11374,10 @@ msgstr "Penyetelan"
 
 msgid "Setup"
 msgstr "Pengaturan"
+
+#, fuzzy
+msgid "Setup UI animations"
+msgstr "Atur positioner anda"
 
 #, fuzzy
 msgid "Setup hard disk"
@@ -11147,6 +11442,10 @@ msgstr "Tampilkan pesan CI"
 msgid "Show Clients"
 msgstr "Tampilkan film"
 
+#, fuzzy
+msgid "Show Display Icons"
+msgstr "Tampilkan ikon kripto"
+
 msgid "Show EIT now/next in infobar"
 msgstr "Tampilkan EIT sekarang/berikutnya di infobar"
 
@@ -11157,12 +11456,15 @@ msgid "Show EPG..."
 msgstr "Tampilkan EPG..."
 
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "Tampilkan alternatif"
+msgid "Show HDD progress"
+msgstr "Progres kecil"
 
 #, fuzzy
-msgid "Show HDD icons"
-msgstr "Tampilkan ikon kripto"
+msgid "Show HDMI Output Resulution"
+msgstr "Tampilkan pilihan terjemahan"
+
+msgid "Show HDMI-Output Res"
+msgstr ""
 
 msgid "Show InfoBar"
 msgstr "Tampilkan Bilah info"
@@ -11173,6 +11475,14 @@ msgstr "tampilkan menu utama DVD"
 
 msgid "Show Media playback Remaining/Elapsed as"
 msgstr ""
+
+#, fuzzy
+msgid "Show MiniTV in the front panel display"
+msgstr "Atur tingkat kecerahan display panel depan."
+
+#, fuzzy
+msgid "Show PIP in the front panel display"
+msgstr "Tampilkan pikon pada tampilan"
 
 msgid "Show PiP"
 msgstr "Tampilkan PiP"
@@ -11220,10 +11530,6 @@ msgstr "Tampilkan indikator sibuk saat sistem sibuk."
 msgid "Show channel numbers in channel selection"
 msgstr "Tampilkan nomor kanal pada pemilihan kanal"
 
-#, fuzzy
-msgid "Show clock"
-msgstr "Tampilkan kolom"
-
 msgid "Show columns"
 msgstr "Tampilkan kolom"
 
@@ -11269,10 +11575,6 @@ msgstr "Tampilkan bantuan"
 
 msgid "Show icon for new/unseen items"
 msgstr "Tampilkan ikon pada item baru/belum dilihat"
-
-#, fuzzy
-msgid "Show icons"
-msgstr "Tampilkan kolom"
 
 #, fuzzy
 msgid "Show in Standby"
@@ -11345,30 +11647,6 @@ msgid "Show notification when import channels was successful"
 msgstr "Tampilkan pemberitahuan saat impor kanal berhasil"
 
 #, fuzzy
-msgid "Show on LED display"
-msgstr "Tampilkan pikon pada tampilan"
-
-#, fuzzy
-msgid "Show on LED display in standby"
-msgstr "Tinjau daftar ketersedaan ekstensi penampil dan antarmuka pengguna."
-
-#, fuzzy
-msgid "Show on VFD display"
-msgstr "Tampilkan pikon pada tampilan"
-
-#, fuzzy
-msgid "Show on VFD display in standby"
-msgstr "Tinjau daftar ketersedaan ekstensi penampil dan antarmuka pengguna."
-
-#, fuzzy
-msgid "Show on display"
-msgstr "Tampilan daya"
-
-#, fuzzy
-msgid "Show on display in standby"
-msgstr "Tinjau daftar ketersedaan ekstensi penampil dan antarmuka pengguna."
-
-#, fuzzy
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "Tampilkan deskripsi lebih luas"
 
@@ -11400,6 +11678,10 @@ msgstr "Tampilkan ikon jam rekam"
 
 msgid "Show record indicator"
 msgstr "Tampilkan indikator rekaman"
+
+#, fuzzy
+msgid "Show recording symbol"
+msgstr "Hentikan rekaman:"
 
 #, fuzzy
 msgid "Show screen path"
@@ -11454,10 +11736,6 @@ msgstr ""
 msgid "Show the tv player..."
 msgstr "Tampilkan pemutar tv..."
 
-#, fuzzy
-msgid "Show this plugin in plugin menu"
-msgstr "Tampilkan pemutar media pada menu utama"
-
 msgid "Show time elapsed as positive"
 msgstr ""
 
@@ -11494,6 +11772,9 @@ msgstr "Tampilkan permainan"
 msgid "Show/hide window"
 msgstr "Tampilkan/sembunyikan jendela"
 
+msgid "Showiframe: "
+msgstr ""
+
 msgid "Shows live tv or informations on LCD."
 msgstr "Tampilkan tv live atau informasi pada LCD."
 
@@ -11516,15 +11797,15 @@ msgstr "Matikan"
 msgid "Shutdown when in Standby"
 msgstr "Matikan saat Standby"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Berdampingan"
-
 msgid "Side by side"
 msgstr "Berdampingan"
 
 msgid "Sierra Leone"
 msgstr ""
+
+#, fuzzy
+msgid "Sigma Designs"
+msgstr "Kernel version: "
 
 msgid "Signal OK, proceeding"
 msgstr "Sinyal OK, lanjutkan"
@@ -11554,8 +11835,16 @@ msgstr "Siaran serupa:"
 msgid "Simple"
 msgstr "Mudah"
 
+#, fuzzy
+msgid "Simple fade"
+msgstr "Mudah"
+
 msgid "Simple titleset (compatibility for legacy players)"
 msgstr "Atur judul mudah (kecocokan dgn pemutar lawas)"
+
+#, fuzzy
+msgid "Simple zoom"
+msgstr "Mudah"
 
 #, fuzzy
 msgid "Singapore"
@@ -11585,6 +11874,10 @@ msgstr "Lintang tempat"
 
 msgid "Site longitude"
 msgstr "Bujur tempat"
+
+#, fuzzy
+msgid "Skin"
+msgstr "Beberapa tampilan"
 
 #, python-format
 msgid "Skin & Resolution: %s (%sx%s)\n"
@@ -11626,11 +11919,27 @@ msgstr "Pewaktu tidur"
 msgid "Sleeptimer edit"
 msgstr "Ubah pewaktu tidur"
 
+msgid "Slide drop"
+msgstr ""
+
+msgid "Slide from left"
+msgstr ""
+
+msgid "Slide left to right"
+msgstr ""
+
 msgid "Slide picture in loop"
 msgstr "Geser gambar dalam pengulangan"
 
+msgid "Slide right to left"
+msgstr ""
+
 msgid "Slide show interval (sec.)"
 msgstr "Interval tayangan slide (sec.)"
+
+#, fuzzy
+msgid "Slide top to bottom"
+msgstr "Atas dan bawah"
 
 #, python-format
 msgid "Slot %d"
@@ -11670,6 +11979,12 @@ msgstr "PIN kartu pintar"
 
 msgid "Smooth"
 msgstr "Lembut"
+
+msgid "Smpte 170M"
+msgstr ""
+
+msgid "Smpte 240M"
+msgstr ""
 
 msgid "SoC family: "
 msgstr ""
@@ -11715,9 +12030,7 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Beberapa plugin tidak tersedia:\n"
 
-msgid ""
-"Sorry!\n"
-"Picture in Picture is not available in HD channels!"
+msgid "Sorry only possible to record 2 channels at once!"
 msgstr ""
 
 #, python-format
@@ -11811,15 +12124,6 @@ msgstr "Spanyol"
 msgid "Spanish"
 msgstr "Spanyol"
 
-msgid "Spark"
-msgstr ""
-
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-msgid "SparkUnionTunerType config"
-msgstr ""
-
 #, fuzzy
 msgid "Special"
 msgstr "Spesial 1"
@@ -11904,20 +12208,8 @@ msgstr "Standby / mulai ulang"
 msgid "Standby LED"
 msgstr "Standby"
 
-#, fuzzy
-msgid "Standby LED brightness"
-msgstr "Standby"
-
-#, fuzzy
-msgid "Standby LED colour"
-msgstr "Standby"
-
 msgid "Standby after current event"
 msgstr "Standby setelah acara saat ini"
-
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Standby dalam"
 
 #, python-format
 msgid "Standby fan %d PWM"
@@ -11931,24 +12223,12 @@ msgid "Standby in "
 msgstr "Standby dalam"
 
 #, fuzzy
-msgid "Standby saver frequency"
-msgstr "Standby setelah acara saat ini"
-
-#, fuzzy
 msgid "Standby speed"
 msgstr "Kecepatan kipas"
 
 #, fuzzy
 msgid "Start"
 msgstr "Mulai pengecekan"
-
-#, fuzzy
-msgid "Start Boot Frequency"
-msgstr "Frekuensi"
-
-#, fuzzy
-msgid "Start boot frequency"
-msgstr "Semua frekuensi"
 
 #, fuzzy
 msgid "Start cut"
@@ -12154,6 +12434,9 @@ msgstr "Info klien streaming"
 msgid "Strict DLNA"
 msgstr ""
 
+msgid "Stripes"
+msgstr ""
+
 msgid "Strongest position"
 msgstr "Posisi terkuat"
 
@@ -12299,6 +12582,10 @@ msgstr "Tinjau daftar ketersedaan ekstensi penampil dan antarmuka pengguna."
 msgid "Switch on the display during operation."
 msgstr "Tinjau daftar ketersedaan ekstensi penampil dan antarmuka pengguna."
 
+#, fuzzy
+msgid "Switch to HDMI-IN mode"
+msgstr "Beralih ke mode TV"
+
 msgid "Switch to TV mode"
 msgstr "Beralih ke mode TV"
 
@@ -12415,6 +12702,9 @@ msgstr "Berkas TS terlalu besar untuk ISO9660 tingkat 1!"
 msgid "TSID"
 msgstr "TSID"
 
+msgid "TUNER:"
+msgstr "PENALA:"
+
 msgid "TUNING"
 msgstr "MENALA"
 
@@ -12518,10 +12808,6 @@ msgstr "Kontrol kipas dan suhu"
 msgid "Terrestrial"
 msgstr "Terrestrial"
 
-#, fuzzy
-msgid "Test"
-msgstr "Mode pengetesan"
-
 msgid "Test DiSEqC settings"
 msgstr "Pengaturan pengecekan DiSEqC"
 
@@ -12603,6 +12889,13 @@ msgstr ""
 "Plugin jaringan nirkabel tidak terpasang!\n"
 "Mohon pasang dulu."
 
+#, fuzzy
+msgid "The aspect ratio of the recording."
+msgstr "Atur aspek rasio layar."
+
+msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
+msgstr ""
+
 #, fuzzy, python-format
 msgid ""
 "The current image might not be stable.\n"
@@ -12621,6 +12914,12 @@ msgstr ""
 
 msgid "The following files were found..."
 msgstr "Ditemukan berkas berikut..."
+
+msgid "The frame rate of the recording. Ideally, this will match the frame rate of the source or be an integer multiple. If in doubt, set to 60, which should work with most sources."
+msgstr ""
+
+msgid "The height of the picture. The input will be scaled to match this value."
+msgstr ""
 
 msgid ""
 "The network wizard extension is not installed!\n"
@@ -12737,6 +13036,9 @@ msgstr ""
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Antarmuka pengguna rx anda sedang memulai ulang"
 
+msgid "The width of the picture. The input will be scaled to match this value."
+msgstr ""
+
 msgid ""
 "The wireless LAN plugin is not installed!\n"
 "Please install it and choose what you want to do next."
@@ -12819,6 +13121,9 @@ msgstr "Pilihan ini memungkinkan mengurangi block-noise pada gambar. Lebih jelas
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr "Pilihan ini memungkinkan untuk mengatur tingkat kontras dinamis pada gambar."
 
+msgid "This option allows you can to set the auto volume level."
+msgstr "Pilihan ini memungkinkan anda bisa mengatur tingkat suara otomatis."
+
 #, fuzzy
 msgid "This option allows you choose how to display elapsed time as + or -"
 msgstr "Pilihan ini memungkinkan anda untuk mematikan layar."
@@ -12841,6 +13146,10 @@ msgstr "Pilihan ini memungkinkan anda mengaktifkan saringan lembut untuk mengont
 msgid "This option allows you enable the vertical scaler dejagging."
 msgstr "Pilihan ini memungkinkan anda mengaktifkan pengikisan skala vertikal."
 
+#, fuzzy
+msgid "This option allows you to Power Off the display."
+msgstr "Pilihan ini memungkinkan anda untuk mematikan layar."
+
 msgid "This option allows you to add the softcam setup in the extensions menu."
 msgstr "Pilihan ini memungkinkan anda untuk menambahkan pengaturan softcam ke menu ekstensi."
 
@@ -12852,6 +13161,9 @@ msgstr "Pilihan ini memungkinakn anda untuk menaikkan warna biru pada gambar."
 
 msgid "This option allows you to boost the green tones in the picture."
 msgstr "Pilihan ini memungkinkan anda untuk menaikkan warna hijau pada gambar."
+
+msgid "This option allows you to change the virtuell loadspeaker position."
+msgstr "Pilihan ini memungkinkan anda untuk mengganti posisi pengeras suara virtual."
 
 #, fuzzy
 msgid "This option allows you to choose how to display elapsed time. As + or -"
@@ -12885,6 +13197,15 @@ msgstr "Pilihan ini memungkinkan anda untuk mengatur ruang warna dari Otomatis k
 msgid "This option allows you to configure the HDR type."
 msgstr "Pilihan ini memungkinkan anda untuk mengatur jenis HDR."
 
+msgid "This option allows you to disable or change the virtuell loadspeaker position."
+msgstr "Pilihan ini memungkinkan anda untuk mematikan atau mengganti posisi pengeras suara virtual."
+
+msgid "This option allows you to enable 3D surround softlimiter."
+msgstr "Pilihan ini memungkinkan anda untuk mengaktifkan batasan lembut surround 3D."
+
+msgid "This option allows you to enable 3D surround sound."
+msgstr "Pilihan ini memungkinkan anda mengaktifkan suara surround 3D."
+
 msgid "This option allows you to enable or disable the 10 bit color mode"
 msgstr "Pilihan ini memungkinkan anda mengaktifkan atau mematikan mode warna 10 bit"
 
@@ -12914,11 +13235,19 @@ msgstr "Pilihan ini memungkinkan anda untuk menampilkan menu dan/atau tautan cep
 msgid "This option allows you to show the full screen path leading to the current screen."
 msgstr "Pilihan ini memungkinkan anda untuk menaikkan warna hijau pada gambar."
 
+#, fuzzy
+msgid "This option allows you to switch audio to BT speakers."
+msgstr "Pilihan ini memungkinkan anda bisa mengatur tingkat suara otomatis."
+
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "Pilihan ini memungkinkan anda untuk meninjau setelan baru dan lama secara berdampingan."
 
 msgid "This option can be useful for long HDMI cables."
 msgstr "Pilihan ini bisa bermanfaat untuk kabel HDMI panjang."
+
+#, fuzzy
+msgid "This option configures the general audio delay for BT speakers."
+msgstr "Atur penundaan audio umum pada jalur suara stereo."
 
 msgid "This option set the level of surpression of mosquito noise (Mosquito Noise is random aliasing as a result of strong compression). Obviously this goes at the cost of picture details."
 msgstr "Pilihan ini mengatur tingkat tekanan kebisingan nyamuk (Kebisingan Nyamuk adalah salah identifikasi random akibat tekanan kuat). Lebih jelasnya, ini mengorbankan detil gambar."
@@ -13053,12 +13382,11 @@ msgstr "tidak didukung"
 msgid "Time"
 msgstr "Waktu"
 
-msgid "Time import should start"
+msgid "Time for next LCD scrolling"
 msgstr ""
 
-#, fuzzy
-msgid "Time mode"
-msgstr "Mode tone"
+msgid "Time import should start"
+msgstr ""
 
 msgid "Time scale"
 msgstr "Rentang waktu"
@@ -13133,8 +13461,16 @@ msgid "Timer type"
 msgstr "Jenis pewaktu"
 
 #, fuzzy
+msgid "Timer+"
+msgstr "Pewaktu"
+
+#, fuzzy
 msgid "Timer:"
 msgstr "Pewaktu"
+
+#, fuzzy
+msgid "Timerlist"
+msgstr "Ubah pewaktu"
 
 #, fuzzy
 msgid "Timers"
@@ -13189,6 +13525,14 @@ msgid "Today"
 msgstr "Hari ini"
 
 msgid "Toggle HDMI In"
+msgstr "Alihkan In HDMI"
+
+#, fuzzy
+msgid "Toggle HDMI-In PiP"
+msgstr "Alihkan In HDMI"
+
+#, fuzzy
+msgid "Toggle HDMI-In full screen"
 msgstr "Alihkan In HDMI"
 
 msgid "Toggle LCD LiveTV"
@@ -13247,18 +13591,8 @@ msgstr "Toneburst A/B"
 msgid "Tonga"
 msgstr ""
 
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Atas dan bawah"
-
 msgid "Top and bottom"
 msgstr "Atas dan bawah"
-
-msgid "Topfield TF77X0HDPVR"
-msgstr ""
-
-msgid "TopfieldVFD"
-msgstr ""
 
 msgid "Total"
 msgstr ""
@@ -13409,6 +13743,22 @@ msgstr "Turki"
 msgid "Turks and Caicos Islands"
 msgstr ""
 
+msgid "Turn off HDMI-IN Full screen mode"
+msgstr ""
+
+msgid "Turn off HDMI-IN PiP mode"
+msgstr ""
+
+msgid "Turn on HDMI-IN Full screen mode"
+msgstr ""
+
+msgid "Turn on HDMI-IN PiP mode"
+msgstr ""
+
+#, fuzzy
+msgid "Turn on the control LED."
+msgstr "Hidupkan LED daya selama standby."
+
 msgid "Turn on the power LED during deep standby."
 msgstr "Hidupkan LED daya selama deep standby."
 
@@ -13444,12 +13794,6 @@ msgstr "Tipe LNB/peralatan"
 
 msgid "Type of scan"
 msgstr "Tipe Pelacakan"
-
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
 
 msgid "UBINIZE: "
 msgstr ""
@@ -13544,14 +13888,6 @@ msgstr "Tunda unikabel setelah perintah diseqc terakhir"
 msgid "Uninstall"
 msgstr "Copot"
 
-#, fuzzy
-msgid "UnionTunerType"
-msgstr "Jenis penala"
-
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Pengaturan penala"
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -13618,8 +13954,16 @@ msgstr[1] "Pembaruan selesai, %d paket terpasang."
 msgid "Update completed. Do you want to reboot your receiver?"
 msgstr "Pembaruan selesai. Apakah anda ingin reboot Rx anda?"
 
+#, fuzzy
+msgid "Update failed!"
+msgstr "Penulisan gagal!"
+
 msgid "Update failed. Your receiver does not have a working internet connection."
 msgstr "Pembaruan gagal. Rx anda tanpa koneksi internet."
+
+#, fuzzy
+msgid "Update finished!"
+msgstr "Eksekusi selesai!!"
 
 msgid "Update has completed."
 msgstr "Pembaruan telah selesai."
@@ -13627,6 +13971,11 @@ msgstr "Pembaruan telah selesai."
 #, fuzzy
 msgid "Update interval (in seconds)"
 msgstr "Interval tayangan slide (sec.)"
+
+msgid ""
+"Update succeeded!\n"
+"Your Bootloader is now up-to-date!"
+msgstr ""
 
 msgid "Updatefeed not available."
 msgstr "Umpan pembaruan tidak tersedia."
@@ -13639,10 +13988,6 @@ msgstr "Memperbarui katalog perangkat lunak"
 
 msgid "Upper case"
 msgstr "Huruf besar"
-
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "Perbarui daftar kanal saja"
 
 #, fuzzy
 msgid "Uptime"
@@ -13729,8 +14074,15 @@ msgstr "Gunakan posisi terjemahan DVB asli"
 msgid "Use original teletext position"
 msgstr "Gunakan posisi teleteks asli"
 
+msgid "Use piconlcd directory for picons on color LCD"
+msgstr ""
+
 msgid "Use power measurement"
 msgstr "Gunakan perhitungan daya"
+
+#, fuzzy
+msgid "Use separate picon pack for front panel display"
+msgstr "Atur tingkat kontras display panel depan."
 
 #, fuzzy
 msgid "Use slim screen"
@@ -13831,56 +14183,11 @@ msgid "VCR scart"
 msgstr "scart VCR"
 
 #, fuzzy
-msgid "VFD brightness"
-msgstr "Kecerahan"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-#, fuzzy
-msgid "VFD display"
-msgstr "Pemutar DVD"
-
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Pengaturan daftar film"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD display configuration for Spark 7162"
-msgstr ""
-
-msgid "VFD icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD icons for Fortis HS9510"
-msgstr ""
-
-msgid "VFD icons for Pace HDS-7241"
-msgstr ""
-
-msgid "VFD icons for adb_box"
-msgstr ""
-
-msgid "VFD icons for spark 7162"
-msgstr ""
-
-#, fuzzy
 msgid "VLAN connection"
 msgstr "Koneksi LAN"
+
+msgid "VMC"
+msgstr ""
 
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (trailer intro)"
@@ -13890,6 +14197,9 @@ msgstr "Berkas VOB"
 
 msgid "VOB file"
 msgstr "berkas VOB"
+
+msgid "VU+"
+msgstr ""
 
 #, fuzzy
 msgid "Vanuatu"
@@ -13947,6 +14257,10 @@ msgstr "Atur video"
 
 msgid "Video wizard"
 msgstr "Wizard video"
+
+#, fuzzy
+msgid "Video: "
+msgstr "PID Video"
 
 #, python-format
 msgid "Video: %s fps"
@@ -14039,9 +14353,6 @@ msgstr "Papankunci virtual"
 msgid "Virtual keyboard skin"
 msgstr "Papankunci virtual"
 
-msgid "Vitamin 5000HD"
-msgstr ""
-
 #, python-format
 msgid "Vol: %s"
 msgstr ""
@@ -14067,6 +14378,9 @@ msgstr "WEP"
 msgid "WLAN connection"
 msgstr "Koneksi WLAN"
 
+msgid "WMA Pro"
+msgstr ""
+
 msgid "WPA"
 msgstr "WPA"
 
@@ -14078,6 +14392,12 @@ msgstr "WPA2"
 
 msgid "WSS on 4:3"
 msgstr "WSS pada 4:3"
+
+msgid "WWIO 4K"
+msgstr ""
+
+msgid "WWIO_BRE2ZE_TC"
+msgstr ""
 
 msgid "Waiting"
 msgstr "Menunggu"
@@ -14466,6 +14786,10 @@ msgstr ""
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Di mana menyimpan rekaman timeshift temporer?"
 
+#, fuzzy
+msgid "Width"
+msgstr "lebar"
+
 msgid "Wireless LAN"
 msgstr "Nirkabel"
 
@@ -14536,6 +14860,12 @@ msgstr "Tulis ke /tmp/positionersetup.log"
 msgid "XBox support"
 msgstr "tidak didukung"
 
+msgid "XP1000"
+msgstr ""
+
+msgid "XP3000"
+msgstr ""
+
 msgid "YCbCr420"
 msgstr ""
 
@@ -14550,9 +14880,6 @@ msgstr "YA"
 
 msgid "YPbPr"
 msgstr "YPbPr"
-
-msgid "YUV"
-msgstr ""
 
 msgid "Year"
 msgstr "Tahun"
@@ -14650,6 +14977,12 @@ msgstr "Anda bisa membatalkan penghapusan."
 msgid "You can continue watching TV etc. while this is running."
 msgstr "Anda bisa terus menonton TV dlsb sementara ini berjalan."
 
+msgid "You can display MiniTV with or without OSD menu"
+msgstr ""
+
+msgid "You can display PIP with or without OSD menu"
+msgstr ""
+
 msgid "You can install this plugin."
 msgstr "Anda bisa memasang plugin ini."
 
@@ -14725,6 +15058,15 @@ msgstr "Koleksi anda melebihi ukuran media satu lapis, anda memerlukan sebuah DV
 msgid "Your current collection will get lost!"
 msgstr "Koleksi anda saat ini akan hilang!"
 
+#, fuzzy
+msgid ""
+"Your front panel will be updated\n"
+"This may take a few minutes"
+msgstr ""
+"Prosesor depan anda akan ditingkatkan\n"
+"Mohon tunggu sampai Rx anda reboot\n"
+"Ini bisa memakan waktu beberapa menit"
+
 msgid ""
 "Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
@@ -14760,6 +15102,10 @@ msgstr "Rx anda bisa menggunakan amplitude tone. Periksa manual Rx anda untuk in
 msgid "Your receiver does not have an internet connection"
 msgstr "Receiver anda tidak ada koneksi internet"
 
+#, fuzzy
+msgid "Your receiver goes to WOL"
+msgstr "Receiver anda sedang reboot"
+
 msgid "Your receiver is not connected to the internet, please check your network settings and try again."
 msgstr ""
 
@@ -14788,6 +15134,14 @@ msgstr ""
 "Mohon tekan OK untuk lanjut."
 
 msgid "Your receiver is rebooting"
+msgstr "Receiver anda sedang reboot"
+
+#, fuzzy
+msgid "Your receiver is rebooting into android mode"
+msgstr "Receiver anda sedang reboot"
+
+#, fuzzy
+msgid "Your receiver is rebooting into recovery mode"
 msgstr "Receiver anda sedang reboot"
 
 msgid "Your receiver is shutting down"
@@ -14901,7 +15255,31 @@ msgstr "Atur nameserver"
 msgid "ZeroTierVPN"
 msgstr ""
 
+msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
+msgstr ""
+
+msgid "Zgemma H0/H8/H9/I55Plus old model"
+msgstr ""
+
+msgid "Zgemma Star S/2S/H1/H2"
+msgstr ""
+
+msgid "Zgemma i55"
+msgstr ""
+
 msgid "Zimbabwe"
+msgstr ""
+
+msgid "Zoom In/Out TV..."
+msgstr ""
+
+msgid "Zoom Off..."
+msgstr ""
+
+msgid "Zoom from left"
+msgstr ""
+
+msgid "Zoom from right"
 msgstr ""
 
 msgid "[alternative edit]"
@@ -14990,6 +15368,10 @@ msgstr "dan pilih kanal berikutnya"
 msgid "and select previous channel"
 msgstr "dan pilih kanal sebelumnya"
 
+#, fuzzy
+msgid "any recordings"
+msgstr "Perekaman"
+
 msgid "are you sure to cancel all changes"
 msgstr "anda yakin untuk membatalkan semua perubahan"
 
@@ -15048,12 +15430,6 @@ msgstr "hitam & putih"
 msgid "blacklist"
 msgstr "daftar hitam"
 
-msgid "blank"
-msgstr ""
-
-msgid "blink"
-msgstr ""
-
 msgid "blue"
 msgstr "biru"
 
@@ -15069,9 +15445,8 @@ msgstr "penyiaran/press"
 msgid "by date"
 msgstr "berdasarkan tanggal"
 
-#, fuzzy
-msgid "cable"
-msgstr "Kabel"
+msgid "by hmmmdada"
+msgstr ""
 
 #, fuzzy
 msgid "cancel"
@@ -15088,22 +15463,6 @@ msgstr "ke tengah"
 
 msgid "centered, wrapped"
 msgstr "ke tengah, dibungkus"
-
-#, fuzzy
-msgid "change sides"
-msgstr "Ubah pewaktu"
-
-#, fuzzy
-msgid "channel name"
-msgstr "Info Kanal"
-
-#, fuzzy
-msgid "channel number"
-msgstr "Nomor kanal dan pikon"
-
-#, fuzzy
-msgid "channel number and name"
-msgstr "Nomor kanal dan nama layanan"
 
 msgid "chapters"
 msgstr "bab"
@@ -15144,12 +15503,18 @@ msgstr "dikonfirmasi"
 msgid "connected"
 msgstr "terhubung"
 
-#, fuzzy
-msgid "continuous"
-msgstr "Lanjut"
-
 msgid "controlled by HDMI"
 msgstr "dikontrol HDMI"
+
+msgid "convert to AC3"
+msgstr ""
+
+msgid "convert to DTS"
+msgstr ""
+
+#, fuzzy
+msgid "convert to multi-channel PCM"
+msgstr "Kanal multi PCM"
 
 msgid "cooking"
 msgstr "memasak"
@@ -15161,16 +15526,8 @@ msgstr "berita/kejadian terkini (umum)"
 msgid "daily"
 msgstr "harian"
 
-#, fuzzy
-msgid "date"
-msgstr "Perbarui"
-
 msgid "day"
 msgstr "hari"
-
-#, fuzzy
-msgid "day and date"
-msgstr "berdasarkan tanggal"
 
 msgid "delete cut"
 msgstr "potong hapus"
@@ -15268,6 +15625,10 @@ msgid "end cut here (reset)"
 msgstr "akhiri potong di sini"
 
 #, fuzzy
+msgid "ene"
+msgstr "Gaya"
+
+#, fuzzy
 msgid "enigma2 default"
 msgstr "Atur bawaan"
 
@@ -15284,10 +15645,6 @@ msgstr "hiburan (umur 6-14 tahun)"
 msgid "epg cache backup"
 msgstr "cadangan cache epg"
 
-#, fuzzy
-msgid "eplayer3"
-msgstr "Sembunyikan pemutar media"
-
 msgid "equestrian"
 msgstr "equestrian"
 
@@ -15297,12 +15654,27 @@ msgstr "gagal memulai pindaian"
 msgid "error while scanning"
 msgstr "gagal saat memindai"
 
-msgid "execute cuts and exit"
+#, fuzzy
+msgid "ese"
+msgstr "Atur ulang"
+
+msgid "et4000"
 msgstr ""
 
-#, fuzzy
-msgid "exit "
-msgstr "Keluar dari EPG"
+msgid "et5000/et6000"
+msgstr ""
+
+msgid "et8000/et10000/et13000"
+msgstr ""
+
+msgid "et9000/et9100"
+msgstr ""
+
+msgid "et9200/et9500/et6500"
+msgstr ""
+
+msgid "execute cuts and exit"
+msgstr ""
 
 msgid "exit DVD player or return to file browser"
 msgstr "keluar pemutar DVD atua kembali ke perambah berkas"
@@ -15316,6 +15688,13 @@ msgstr "keluar dari menu atur adapter jaringan"
 msgid "experimental film/video"
 msgstr "percobaan film/video"
 
+msgid "extra wide"
+msgstr "lebar ekstra"
+
+#, fuzzy
+msgid "extrawide"
+msgstr "lebar ekstra"
+
 msgid "failed"
 msgstr "gagal"
 
@@ -15324,6 +15703,9 @@ msgstr "salah"
 
 msgid "fashion"
 msgstr "gaya"
+
+msgid "fast"
+msgstr ""
 
 msgid "fileformats (BMP, PNG, JPG, GIF)"
 msgstr "format file (BMP, PNG, JPG, GIF)"
@@ -15352,6 +15734,9 @@ msgstr "folk/traditional music"
 msgid "football/soccer"
 msgstr "bolakaki/sepakbola"
 
+msgid "force AC3plus"
+msgstr ""
+
 #, fuzzy
 msgid "force disabled"
 msgstr "dimatikan"
@@ -15371,9 +15756,6 @@ msgstr "bebas"
 
 msgid "from"
 msgstr "dari"
-
-msgid "fs9000VFD"
-msgstr ""
 
 msgid "full"
 msgstr ""
@@ -15447,21 +15829,6 @@ msgstr ""
 msgid "horizontal"
 msgstr "horizontal"
 
-msgid "hs7110VFD"
-msgstr ""
-
-msgid "hs742xVFD"
-msgstr ""
-
-msgid "hs7810aVFD"
-msgstr ""
-
-msgid "hs8200VFD"
-msgstr ""
-
-msgid "hs9510VFD"
-msgstr ""
-
 msgid "https://github.com/OpenVisionE2"
 msgstr ""
 
@@ -15499,12 +15866,6 @@ msgstr "masukkan tanda di sini"
 
 msgid "insert mark here"
 msgstr "masukkan tanda di sini"
-
-#, python-format
-msgid ""
-"installed keymap \"%s\"\n"
-"activate now keymap \"%s\"?"
-msgstr ""
 
 msgid "invalid type"
 msgstr "tipe tidak valid"
@@ -15580,6 +15941,10 @@ msgstr "menu"
 msgid "mins"
 msgstr "mnt"
 
+#, fuzzy
+msgid "minute"
+msgstr "menit"
+
 msgid "minutes"
 msgstr "menit"
 
@@ -15637,6 +16002,10 @@ msgstr ""
 msgid "nature/animals/environment"
 msgstr "alam/binatang/lingkungan"
 
+#, fuzzy
+msgid "ne"
+msgstr "Satu"
+
 msgid "never"
 msgstr "takpernah"
 
@@ -15656,6 +16025,14 @@ msgstr "berita/kejadian terkini (umum)"
 msgid "news/weather report"
 msgstr "berita/laporan cuaca"
 
+#, fuzzy
+msgid "nne"
+msgstr "tidak ada"
+
+#, fuzzy
+msgid "nnw"
+msgstr "Takdikenal"
+
 msgid "no"
 msgstr "tidak"
 
@@ -15667,6 +16044,10 @@ msgstr "Slot CI tidak ditemukan"
 
 msgid "no channel list"
 msgstr "tidak ada daftar kanal"
+
+#, fuzzy
+msgid "no delay"
+msgstr "Jangan tunda"
 
 msgid "no module found"
 msgstr "Modul tidak ditemukan"
@@ -15698,12 +16079,11 @@ msgstr "belum dites"
 msgid "not_tested"
 msgstr "bleum_dites"
 
-#, fuzzy
-msgid "nothing"
-msgstr "Jangan lakukan"
-
 msgid "nothing connected"
 msgstr "tak ada yang tersambung"
+
+msgid "nw"
+msgstr ""
 
 msgid "of a DUAL layer medium used."
 msgstr "dari media lapis DUA yg digunakan."
@@ -15726,13 +16106,6 @@ msgstr "hidup"
 msgid "on READ ONLY medium."
 msgstr "pada media BACA SAJA."
 
-#, fuzzy
-msgid "on all mounts"
-msgstr "tampilkan semua label"
-
-msgid "on hdd"
-msgstr ""
-
 msgid "once"
 msgstr "sekali"
 
@@ -15742,26 +16115,14 @@ msgstr "hanya dari deep standby"
 msgid "only from standby"
 msgstr "hanya dari standby"
 
-msgid "open Info..."
-msgstr ""
-
 msgid "open nameserver configuration"
 msgstr "buka setelan namaserver"
-
-msgid "orange"
-msgstr ""
 
 msgid "original"
 msgstr "asli"
 
 msgid "original language"
 msgstr "bahasa aslinya"
-
-msgid "pace7241VFD"
-msgstr ""
-
-msgid "partial"
-msgstr ""
 
 msgid "pass"
 msgstr "lewatkan"
@@ -15790,6 +16151,18 @@ msgstr ""
 
 msgid "quick execute"
 msgstr ""
+
+#, fuzzy
+msgid "real or pseudo recordings"
+msgstr "Hentikan rekaman:"
+
+#, fuzzy
+msgid "real recordings"
+msgstr "Perekaman"
+
+#, fuzzy
+msgid "real recordings or streaming"
+msgstr "Lokasi rekaman pewaktu"
 
 #, fuzzy
 msgid "reboot system"
@@ -15878,28 +16251,21 @@ msgstr "Rotor:"
 msgid "running..."
 msgstr "Peringatan"
 
-msgid "save"
-msgstr ""
-
 msgid "scan state"
 msgstr "keadaan pemindaian"
 
 msgid "science fiction/fantasy/horror"
 msgstr "science fiction/fantasy/horror"
 
+#, fuzzy
+msgid "se"
+msgstr "Gunakan"
+
 msgid "seconds"
 msgstr "detik"
 
-#, fuzzy
-msgid "select "
-msgstr "Tidak dipilih"
-
 msgid "select CAId's"
 msgstr "pilih CAId"
-
-#, fuzzy
-msgid "select Info..."
-msgstr "Pilihan pewaktu..."
 
 msgid "select menu entry"
 msgstr "pilih entri menu"
@@ -15909,10 +16275,6 @@ msgstr "serious music/classic music"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "serious/classical/religious/historical movie/drama"
-
-#, fuzzy
-msgid "set default"
-msgstr "Atur bawaan"
 
 #, fuzzy
 msgid "shortest"
@@ -15941,10 +16303,6 @@ msgstr "acak"
 
 msgid "shut down"
 msgstr "matikan"
-
-#, fuzzy
-msgid "signal quality"
-msgstr "Kualitas sinyal"
 
 msgid "simple"
 msgstr "sederhana"
@@ -15995,6 +16353,9 @@ msgstr "slot%s - %s, dgn cadangan"
 msgid "slot%s - %s, without backup"
 msgstr "slot%s - %s, tanpa cadangan"
 
+msgid "slow"
+msgstr ""
+
 #, fuzzy
 msgid "soap/melodrama/folkloric"
 msgstr "soap/melodram/folkloric"
@@ -16004,12 +16365,6 @@ msgstr "social/political issues/economics (general)"
 
 msgid "social/spiritual science"
 msgstr "social/spiritual science"
-
-msgid "spark7162VFD"
-msgstr ""
-
-msgid "sparkVFD"
-msgstr ""
 
 #, fuzzy
 msgid "special (general)"
@@ -16031,6 +16386,13 @@ msgstr "olahraga (umum)"
 msgid "sports magazine"
 msgstr "majalah olahraga"
 
+#, fuzzy
+msgid "sse"
+msgstr "Gunakan"
+
+msgid "ssw"
+msgstr ""
+
 msgid "standard"
 msgstr "standar"
 
@@ -16049,6 +16411,9 @@ msgstr "stereo"
 
 msgid "successful"
 msgstr "sukses"
+
+msgid "sw"
+msgstr ""
 
 msgid "switch to the next angle"
 msgstr "ganti ke sudut berikutnya"
@@ -16074,10 +16439,6 @@ msgstr "berkas template"
 msgid "tennis/squash"
 msgstr "tennis/squash"
 
-#, fuzzy
-msgid "terrestrial"
-msgstr "Terrestrial"
-
 msgid "testing"
 msgstr "berfungsi"
 
@@ -16089,23 +16450,6 @@ msgstr "rekaman ini"
 
 msgid "this service is protected by a parental control pin"
 msgstr "layanan ini dilindungi dgn pin pengawasan orangtua"
-
-#, fuzzy
-msgid "time"
-msgstr "Pewaktu tidur"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-#, fuzzy
-msgid "time and date"
-msgstr "Ya dan simpan"
-
-msgid "time, day and date"
-msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "alihkan waktu, bab, audio, info terjemahan"
@@ -16173,6 +16517,13 @@ msgstr "takbisa dites"
 msgid "until standby/restart"
 msgstr "sampai standby/mulai ulang"
 
+#, fuzzy
+msgid "use best / controlled by HDMI"
+msgstr "dikontrol HDMI"
+
+msgid "use_hdmi_cacenter"
+msgstr ""
+
 msgid "user defined"
 msgstr "ditentukan pengguna"
 
@@ -16224,6 +16575,9 @@ msgstr "ketika PiPzap diaktifkan zap kanal atas..."
 msgid "white"
 msgstr "putih"
 
+msgid "wide"
+msgstr "lebar"
+
 msgid "width"
 msgstr "lebar"
 
@@ -16251,6 +16605,12 @@ msgstr "dgn nama penala"
 msgid "with_errors"
 msgstr "dgn_kesalahan"
 
+msgid "wnw"
+msgstr ""
+
+msgid "wsw"
+msgstr ""
+
 msgid "yellow"
 msgstr "kuning"
 
@@ -16263,9 +16623,6 @@ msgstr "ya (simpan feeds)"
 msgid "yes, but not in multi selections"
 msgstr ""
 
-msgid "yuv"
-msgstr ""
-
 msgid "zap"
 msgstr "zap"
 
@@ -16274,3 +16631,6 @@ msgstr "zap dan rekam"
 
 msgid "zapped"
 msgstr "zapped"
+
+msgid "®"
+msgstr ""

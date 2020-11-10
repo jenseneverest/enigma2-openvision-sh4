@@ -27,6 +27,7 @@ try:
 except:
 	import urllib
 import six
+import uuid
 
 class About(Screen):
 	def __init__(self, session):
@@ -87,6 +88,10 @@ class About(Screen):
 			AboutText += _("SoC family: ") + socfamily + "\n"
 
 		AboutText += _("CPU architecture: ") + about.getCPUArch() + "\n"
+
+		AboutText += "\n"
+		ovrandom  = str(uuid.uuid4())
+		AboutText += _("Open Vision random UUID: ") + ovrandom + "\n"
 
 		if not boxbranding.getDisplayType().startswith(' '):
 			AboutText += "\n"

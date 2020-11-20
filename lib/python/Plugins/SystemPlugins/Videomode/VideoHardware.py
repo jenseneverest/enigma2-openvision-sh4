@@ -17,7 +17,7 @@ has_avjack = getHaveAVJACK() == "True"
 # available and preferred modes, as well as handling the currently
 # selected mode. No other strict checking is done.
 
-config.av.edid_override = ConfigYesNo(default = True)
+config.av.edid_override = ConfigYesNo(default = False)
 
 class VideoHardware:
 	rates = { } # high-level, use selectable modes.
@@ -64,8 +64,7 @@ class VideoHardware:
 
 	modes["HDMI-PC"] = ["PC"]
 
-	if has_yuv:
-		modes["YPbPr"] = modes["HDMI"]
+	modes["YPbPr"] = modes["HDMI"]
 
 	if "YPbPr" in modes and not has_yuv:
 		del modes["YPbPr"]

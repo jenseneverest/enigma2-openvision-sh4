@@ -1086,14 +1086,14 @@ def InitUsageConfig():
 	if SystemInfo["HasBypassEdidChecking"]:
 		def setHasBypassEdidChecking(configElement):
 			open(SystemInfo["HasBypassEdidChecking"], "w").write("00000001" if configElement.value else "00000000")
-		config.av.bypassEdidChecking = ConfigYesNo(default=False)
+		config.av.bypassEdidChecking = ConfigYesNo(default=True)
 		config.av.bypassEdidChecking.addNotifier(setHasBypassEdidChecking)
 
 	if SystemInfo["HasColorspace"]:
 		def setHaveColorspace(configElement):
 			open(SystemInfo["HasColorspace"], "w").write(configElement.value)
 		if SystemInfo["HasColorspaceSimple"]:
-			config.av.hdmicolorspace = ConfigSelection(default = "Edid(Auto)", choices={"Edid(Auto)": _("Auto"), "Hdmi_Rgb": _("RGB"), "444": _("YCbCr444"), "422": _("YCbCr422"), "420": _("YCbCr420")})
+			config.av.hdmicolorspace = ConfigSelection(default = "Hdmi_Rgb", choices={"Edid(Auto)": _("Auto"), "Hdmi_Rgb": _("RGB"), "444": _("YCbCr444"), "422": _("YCbCr422"), "420": _("YCbCr420")})
 		else:
 			config.av.hdmicolorspace = ConfigSelection(default = "hdmi_rgb", choices={"hdmi_rgb": _("rgb"), "hdmi_yuv": _("yuv"), "hdmi_422": _("422")})
 		config.av.hdmicolorspace.addNotifier(setHaveColorspace)

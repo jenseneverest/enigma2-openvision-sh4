@@ -4,7 +4,7 @@ from enigma import Misc_Options, eDVBCIInterfaces, eDVBResourceManager, eGetEnig
 from Tools.Directories import SCOPE_PLUGINS, fileCheck, fileExists, fileHas, pathExists, resolveFilename
 import os, re
 from os import access, R_OK
-from boxbranding import getDisplayType, getHaveSCART, getHaveYUV, getHaveRCA, getHaveTranscoding, getHaveMultiTranscoding, getHaveHDMI, getHaveSVIDEO
+from boxbranding import getDisplayType, getHaveSCART, getHaveYUV, getHaveRCA, getHaveTranscoding, getHaveMultiTranscoding, getHaveHDMI, getHaveSVIDEO, getFHDSkin
 
 SystemInfo = {}
 SystemInfo["HasRootSubdir"] = False
@@ -92,7 +92,7 @@ SystemInfo["LcdLiveDecoder"] = fileCheck("/proc/stb/lcd/live_decoder")
 SystemInfo["3DMode"] = fileCheck("/proc/stb/fb/3dmode") or fileCheck("/proc/stb/fb/primary/3d")
 SystemInfo["3DZNorm"] = fileCheck("/proc/stb/fb/znorm") or fileCheck("/proc/stb/fb/primary/zoffset")
 SystemInfo["Blindscan_t2_available"] = False
-SystemInfo["HasFullHDSkinSupport"] = brand in ("cuberevo", "fulan", "hs", "edisionargus", "forever", "nbox") or model in ("atevio7500", "hl101", "octagon1008", "fortis_hdbox", "vitamin_hd5000", "ufs912", "ufs913", "tf7700", "opt9600")
+SystemInfo["HasFullHDSkinSupport"] = getFHDSkin() == "True"
 SystemInfo["HasBypassEdidChecking"] = fileCheck("/proc/stb/hdmi/bypass_edid_checking")
 SystemInfo["HasColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
 SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"]

@@ -390,7 +390,7 @@ static pthread_mutex_t channel_map_lock =
 DEFINE_REF(eEPGCache)
 
 eEPGCache::eEPGCache()
-	:messages(this,1, "eEPGCache"), cleanTimer(eTimer::create(this)), m_running(false)
+	:messages(this,1, "eEPGCache"), cleanTimer(eTimer::create(this)), m_running(false), m_timeQueryRef(nullptr)
 {
 	eDebug("[eEPGCache] Initialized EPGCache (wait for setCacheFile call now)");
 
@@ -2619,42 +2619,6 @@ void eEPGCache::channel_data::readData( const uint8_t *data, int source)
 {
 	int map;
 	iDVBSectionReader *reader = NULL;
-/* Dagobert: this is still very hacky, but currently I cant find
- * the origin of the readData call. I think the caller is
- * responsible for the unaligned data pointer in this call.
- * So we malloc our own memory here which _should_ be aligned.
- *
- * TODO: We should search for the origin of this call. As I
- * said before I need an UML Diagram or must try to import
- * e2 and all libs into an IDE for better overview ;)
- *
- */
-	const uint8_t *aligned_data;
-	bool isNotAligned = false;
-
-	if ((unsigned int) data % 4 != 0)
-		isNotAligned = true;
-
-	if (isNotAligned)
-	{
-		int len = ((data[1] & 0x0F) << 8 | data[2]) -1;
-
-		/*eDebug("len %d %x, %x %x\n", len, len, data[1], data[2]);*/
-
-		if ( EIT_SIZE >= len )
-			return;
-
-		aligned_data = (const uint8_t *) malloc(len);
-
-		if ((unsigned int)aligned_data % 4 != 0)
-		{
-			eDebug("[eEPGCache] channel_data::readData: ERROR: unaligned data pointer %p\n", aligned_data);
-		}
-
-		/*eDebug("%p %p\n", aligned_data, data); */
-		memcpy((void *) aligned_data, (const uint8_t *) data, len);
-		data = aligned_data;
-	}
 	switch (source)
 	{
 		case NOWNEXT:
@@ -2779,8 +2743,6 @@ void eEPGCache::channel_data::readData( const uint8_t *data, int source)
 			cache->sectionRead(data, source, this);
 		}
 	}
-	if (isNotAligned)
-		free((void *)aligned_data);
 }
 
 #if ENABLE_FREESAT
@@ -3091,56 +3053,136 @@ RESULT eEPGCache::lookupEventId(const eServiceReference &service, int event_id, 
 RESULT eEPGCache::startTimeQuery(const eServiceReference &service, time_t begin, int minutes)
 {
 	singleLock s(cache_lock);
-	const eServiceReferenceDVB &ref = (const eServiceReferenceDVB&)handleGroup(service);
+
+	if (m_timeQueryRef)
+		delete m_timeQueryRef;
+	m_timeQueryRef = (eServiceReferenceDVB*)new eServiceReference(handleGroup(service));
+
 	if (begin == -1)
 		begin = ::time(0);
-	eventCache::iterator It = eventDB.find(ref);
+
+	m_timeQueryBegin = begin;
+	m_timeQueryMinutes = minutes;
+	m_timeQueryCount = 0;
+
+	eventCache::iterator It = eventDB.find(*m_timeQueryRef);
 	if ( It != eventDB.end() && !It->second.byTime.empty() )
 	{
-		m_timemap_cursor = It->second.byTime.lower_bound(begin);
-		if ( m_timemap_cursor != It->second.byTime.end() )
+		timeMap::iterator timemap_it = It->second.byTime.lower_bound(m_timeQueryBegin);
+		if ( timemap_it != It->second.byTime.end() )
 		{
-			if ( m_timemap_cursor->first != begin )
+			if ( timemap_it->first != m_timeQueryBegin )
 			{
-				timeMap::iterator x = m_timemap_cursor;
+				timeMap::iterator x = timemap_it;
 				--x;
 				if ( x != It->second.byTime.end() )
 				{
 					time_t start_time = x->first;
-					if ( begin > start_time && begin < (start_time+x->second->getDuration()))
-						m_timemap_cursor = x;
+					if ( m_timeQueryBegin > start_time && m_timeQueryBegin < (start_time+x->second->getDuration()))
+						timemap_it = x;
 				}
 			}
 		}
 
-		if (minutes != -1)
-			m_timemap_end = It->second.byTime.lower_bound(begin+minutes*60);
+		timeMap::iterator timemap_end;
+		if (m_timeQueryMinutes != -1)
+			timemap_end = It->second.byTime.lower_bound(m_timeQueryBegin + m_timeQueryMinutes * 60);
 		else
-			m_timemap_end = It->second.byTime.end();
+			timemap_end = It->second.byTime.end();
 
-		currentQueryTsidOnid = (ref.getTransportStreamID().get()<<16) | ref.getOriginalNetworkID().get();
-		return m_timemap_cursor == m_timemap_end ? -1 : 0;
+		return timemap_it == timemap_end ? -1 : 0;
 	}
 	return -1;
 }
 
 RESULT eEPGCache::getNextTimeEntry(Event *&result)
 {
-	if ( m_timemap_cursor != m_timemap_end )
+	singleLock s(cache_lock);
+	eventCache::iterator It = eventDB.find(*m_timeQueryRef);
+	if ( It != eventDB.end() && !It->second.byTime.empty() )
 	{
-		result = new Event((uint8_t*)m_timemap_cursor++->second->get());
-		return 0;
+		timeMap::iterator timemap_it = It->second.byTime.lower_bound(m_timeQueryBegin);
+		if ( timemap_it != It->second.byTime.end() )
+		{
+			if ( timemap_it->first != m_timeQueryBegin )
+			{
+				timeMap::iterator x = timemap_it;
+				--x;
+				if ( x != It->second.byTime.end() )
+				{
+					time_t start_time = x->first;
+					if ( m_timeQueryBegin > start_time && m_timeQueryBegin < (start_time+x->second->getDuration()))
+						timemap_it = x;
+				}
+			}
+		}
+
+		timeMap::iterator timemap_end;
+		if (m_timeQueryMinutes != -1)
+			timemap_end = It->second.byTime.lower_bound(m_timeQueryBegin + m_timeQueryMinutes * 60);
+		else
+			timemap_end = It->second.byTime.end();
+
+		for (int i = 0; i < m_timeQueryCount; i++)
+		{
+			if ( timemap_it == timemap_end )
+				return -1;
+			else
+				timemap_it++;
+		}
+		if ( timemap_it != timemap_end )
+		{
+			result = new Event((uint8_t*)timemap_it->second->get());
+			m_timeQueryCount++;
+			return 0;
+		}
 	}
 	return -1;
 }
 
 RESULT eEPGCache::getNextTimeEntry(ePtr<eServiceEvent> &result)
 {
-	if ( m_timemap_cursor != m_timemap_end )
+	singleLock s(cache_lock);
+	eventCache::iterator It = eventDB.find(*m_timeQueryRef);
+	if ( It != eventDB.end() && !It->second.byTime.empty() )
 	{
-		Event ev((uint8_t*)m_timemap_cursor++->second->get());
-		result = new eServiceEvent();
-		return result->parseFrom(&ev, currentQueryTsidOnid);
+		timeMap::iterator timemap_it = It->second.byTime.lower_bound(m_timeQueryBegin);
+		if ( timemap_it != It->second.byTime.end() )
+		{
+			if ( timemap_it->first != m_timeQueryBegin )
+			{
+				timeMap::iterator x = timemap_it;
+				--x;
+				if ( x != It->second.byTime.end() )
+				{
+					time_t start_time = x->first;
+					if ( m_timeQueryBegin > start_time && m_timeQueryBegin < (start_time+x->second->getDuration()))
+						timemap_it = x;
+				}
+			}
+		}
+
+		timeMap::iterator timemap_end;
+		if (m_timeQueryMinutes != -1)
+			timemap_end = It->second.byTime.lower_bound(m_timeQueryBegin + m_timeQueryMinutes * 60);
+		else
+			timemap_end = It->second.byTime.end();
+
+		for (int i = 0; i < m_timeQueryCount; i++)
+		{
+			if ( timemap_it == timemap_end )
+				return -1;
+			else
+				timemap_it++;
+		}
+		if ( timemap_it != timemap_end )
+		{
+			Event ev((uint8_t*)timemap_it->second->get());
+			result = new eServiceEvent();
+			int currentQueryTsidOnid = (m_timeQueryRef->getTransportStreamID().get()<<16) | m_timeQueryRef->getOriginalNetworkID().get();
+			m_timeQueryCount++;
+			return result->parseFrom(&ev, currentQueryTsidOnid);
+		}
 	}
 	return -1;
 }
@@ -3449,24 +3491,12 @@ PyObject *eEPGCache::lookupEvent(ePyObject list, ePyObject convertFunc)
 			}
 			if (minutes)
 			{
-				singleLock s(cache_lock);
 				if (!startTimeQuery(ref, stime, minutes))
 				{
-					while ( m_timemap_cursor != m_timemap_end )
+					ePtr<eServiceEvent> evt;
+					while ( getNextTimeEntry(evt) != -1 )
 					{
-						if (forceReturnTen)  // GN return only 10 items
-						{
-							if (returnTenItemsCount > 10)
-							{
-								//eDebug("[eEPGCache] tuple entry no 10 is reached");
-								break;
-							}
-							returnTenItemsCount++;
-						}
-						Event ev((uint8_t*)m_timemap_cursor++->second->get());
-						eServiceEvent evt;
-						evt.parseFrom(&ev, currentQueryTsidOnid);
-						if (handleEvent(&evt, dest_list, argstring, argcount, service, nowTime, service_name, convertFunc, convertFuncArgs))
+						if (handleEvent(evt, dest_list, argstring, argcount, service, nowTime, service_name, convertFunc, convertFuncArgs))
 							return 0;  // error
 					}
 				}

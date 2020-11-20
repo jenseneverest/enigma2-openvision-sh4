@@ -310,7 +310,8 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("18", _("HL-101")),
 			("19", _("Kathrein RC660 (UFS910/922")),
 			("20", _("Kathrein RC675 (UFS913)")),
-			("21", _("Forever"))
+			("21", _("Opticum HD 9600 series")),
+			("22", _("Forever"))
 		]
 
 	def __init__(self, session):

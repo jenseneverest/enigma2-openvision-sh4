@@ -18,7 +18,9 @@
    || defined (ENABLE_SPARK7162) \
    || defined (ENABLE_HL101) \
    || defined (ENABLE_VIP1_V2) \
-   || defined (ENABLE_VIP2_V1)
+   || defined (ENABLE_VIP1_V2) \
+   || defined (ENABLE_VIP2) \
+   || defined (ENABLE_OPT9600)
 	#define VFDLENGTH 8
 #elif defined (ENABLE_VITAMIN_HD5000)
 	#define VFDLENGTH 11
@@ -40,8 +42,9 @@
 // define number of icons
 #if defined (ENABLE_SPARK7162) \
  || defined (ENABLE_HL101) \
+ || defined (ENABLE_VIP1_V1) \
  || defined (ENABLE_VIP1_V2) \
- || defined (ENABLE_VIP2_V1)
+ || defined (ENABLE_VIP2)
 #define ICON_MAX 45
 #elif defined (ENABLE_FORTIS_HDBOX)
 #define ICON_MAX 39

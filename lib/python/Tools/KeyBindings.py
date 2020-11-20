@@ -679,7 +679,51 @@ keyDescriptions = [{  # id=0 - dmm0 remote directory, DM8000.
 	KEYIDS["KEY_RED"]: ("RED",),
 	KEYIDS["KEY_GREEN"]: ("GREEN",),
 	KEYIDS["KEY_YELLOW"]: ("YELLOW",),
-	KEYIDS["KEY_BLUE"]: ("BLUE",)
+	KEYIDS["KEY_BLUE"]: ("BLUE",),
+}, {  # id=13 - Opticum HD 9600 series
+	KEYIDS["KEY_POWER"]: ("POWER",),
+	KEYIDS["KEY_MUTE"]: ("MUTE",),
+	KEYIDS["KEY_HELP"]: ("HELP",),
+	KEYIDS["KEY_SWITCHVIDEOMODE"]: ("TV.FORMAT",),
+	KEYIDS["KEY_TV2"]: ("TV/RADIO",),
+	KEYIDS["KEY_MODE"]: ("MODE",),
+	KEYIDS["KEY_1"]: ("1",),
+	KEYIDS["KEY_2"]: ("2",),
+	KEYIDS["KEY_3"]: ("3",),
+	KEYIDS["KEY_4"]: ("4",),
+	KEYIDS["KEY_5"]: ("5",),
+	KEYIDS["KEY_6"]: ("6",),
+	KEYIDS["KEY_7"]: ("7",),
+	KEYIDS["KEY_8"]: ("8",),
+	KEYIDS["KEY_9"]: ("9",),
+	KEYIDS["KEY_MENU"]: ("MENU",),
+	KEYIDS["KEY_0"]: ("0",),
+	KEYIDS["KEY_BACK"]: ("RECALL",),
+	KEYIDS["KEY_REWIND"]: ("REWIND",),
+	KEYIDS["KEY_STOP"]: ("STOP",),
+	KEYIDS["KEY_PLAYPAUSE"]: ("PLAY_PAUSE",),
+	KEYIDS["KEY_FASTFORWARD"]: ("FASTFORWARD",),
+	KEYIDS["KEY_RECORD"]: ("RECORD",),
+	KEYIDS["KEY_UP"]: ("UP",),
+	KEYIDS["KEY_EXIT"]: ("EXIT",),
+	KEYIDS["KEY_LEFT"]: ("LEFT",),
+	KEYIDS["KEY_OK"]: ("OK",),
+	KEYIDS["KEY_INFO"]: ("INFO",),
+	KEYIDS["KEY_RIGHT"]: ("RIGHT",),
+	KEYIDS["KEY_DOWN"]: ("DOWN",),
+	KEYIDS["KEY_EPG"]: ("EPG",),
+	KEYIDS["KEY_FILE"]: ("FILELIST",),
+	KEYIDS["KEY_SLOW"]: ("STEP_FWD",),
+	KEYIDS["KEY_PREVIOUS"]: ("PREVIOUS",),
+	KEYIDS["KEY_NEXT"]: ("NEXT",),
+	KEYIDS["KEY_RED"]: ("RED",),
+	KEYIDS["KEY_GREEN"]: ("GREEN",),
+	KEYIDS["KEY_YELLOW"]: ("YELLOW",),
+	KEYIDS["KEY_BLUE"]: ("BLUE",),
+	KEYIDS["KEY_FAVORITES"]: ("FAV",),
+	KEYIDS["KEY_PROGRAM"]: ("STATUS",),
+	KEYIDS["KEY_OPTION"]: ("OPTION",),
+	KEYIDS["KEY_SUBTITLE"]: ("FIND",),
 }]
 
 def addKeyBinding(domain, key, context, action, flags):
@@ -738,8 +782,10 @@ def getKeyDescription(key):
 		idx = 6
 	elif rcType == 20:	# Kathrein UFS913
 		idx = 6
-	elif rcType == 21:	# Forever
+	elif rcType == 21:	# Opticum HD 9600 series
 		idx = 13
+	elif rcType == 22:	# Forever
+		idx = 4
 	else:
 		idx = 2
 	return keyDescriptions[idx].get(key)

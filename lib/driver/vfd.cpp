@@ -20,7 +20,7 @@
  *
  ****************************************************************************
  *
- * VFD/LED driver for enigma2.
+ * VFD/LED front panel driver for enigma2.
  *
  ****************************************************************************
  *
@@ -47,6 +47,7 @@
  * 20200508 Audioniek       pace7241 added.
  * 20200719 Audioniek       hl101, vip1_v2 and vip2_v1 added.
  * 20200828 Audioniek       Add vip1_v1, rename vip2.
+ * 20201115 Audioniek       Add opt9600.
  *
  ****************************************************************************/
 #include <stdarg.h>
@@ -150,6 +151,8 @@ evfd::evfd()
    || defined (ENABLE_FOREVER_9898HD) \
    || defined (ENABLE_PACE7241)
 	vfd_type = 19;
+#elif defined (ENABLE_OPT9600)
+	vfd_type = 20;
 #else
 	vfd_type = -1;
 #endif
@@ -454,7 +457,8 @@ void *start_loop(void *arg)
  || defined (ENABLE_HL101) \
  || defined (ENABLE_VIP1_V1) \
  || defined (ENABLE_VIP1_V2) \
- || defined (ENABLE_VIP2)
+ || defined (ENABLE_VIP2) \
+ || defined (ENABLE_OPT9600)
 void evfd::vfd_write_string_scrollText(char *text)
 {
 	return;

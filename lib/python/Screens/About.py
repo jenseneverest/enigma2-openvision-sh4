@@ -43,7 +43,10 @@ class About(Screen):
 
 		model = getBoxType()
 
-		procmodel = getBoxProc()
+		try:
+			procmodel = getBoxProc()
+		except:
+			procmodel = boxbranding.getMachineProcModel()
 
 		stbplatform = boxbranding.getMachineBuild()
 

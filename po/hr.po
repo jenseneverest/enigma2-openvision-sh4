@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2020-10-11 19:24+0200\n"
 "Last-Translator: Željko <zeljko2@hi.ht.hr>\n"
 "Language-Team: Željko\n"
@@ -1337,7 +1337,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Postavite zadano"
+msgstr "zadano"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1359,7 +1359,7 @@ msgstr "50 МB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Postavite zadano"
+msgstr "zadano"
 
 msgid "6"
 msgstr "6"
@@ -2121,7 +2121,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Omjer slike"
+msgstr "Popis podusluga..."
 
 msgid "Aspect ratio"
 msgstr "Omjer slike"
@@ -2266,7 +2266,7 @@ msgstr "Bez čekanja"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Tjuner nije raspoloživ."
+msgstr "nedostupno"
 
 msgid "Autoinstalling Completed"
 msgstr "Automatska instalacija je dovršena"
@@ -3921,9 +3921,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "Snimanje DVD-a"
@@ -4384,7 +4383,7 @@ msgstr "Onemogućite"
 
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Mjesto za trenutno snimanje"
+msgstr "Uključivanje ECM-a u snimanjima"
 
 msgid "Disable Picture in Picture"
 msgstr "Onemogućite sliku u slici"
@@ -4892,9 +4891,8 @@ msgstr "Omogućite OK za odabir kanala"
 msgid "Enable OpenTV EPG"
 msgstr "Omogućite OpenTV EPG"
 
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Omogućeno"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Omogućite ViaSat EPG"
@@ -5801,7 +5799,7 @@ msgstr "Оd:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Prikaz na zaslonu"
+msgstr "Konfiguracija popisa videozapisa"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6413,6 +6411,10 @@ msgstr "Zanemarite prostor za imena DVB-T podmreže"
 msgid "Ignore conflict"
 msgstr "Zanemari sukob"
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Image: "
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -6865,9 +6867,8 @@ msgstr "Osvjetljenje"
 msgid "LED configuration"
 msgstr "Konfiguracija"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Normalan"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -6886,9 +6887,8 @@ msgstr "Konfiguracija popisa videozapisa"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Konfiguracija popisa videozapisa"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7339,7 +7339,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Dodaj kanal"
+msgstr "Medija player"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7642,9 +7642,8 @@ msgstr "Mozambik"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Višekanalni PCM"
+msgstr "Višekanalno miješanje"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -7905,6 +7904,9 @@ msgstr "Nije (podržan) pronađen DVDROM!"
 
 msgid "No Connection"
 msgstr "Nije spojeno"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr "Nema dostupnih ECMPid (FTA usluga)"
@@ -8315,9 +8317,8 @@ msgstr "izvorni jezik"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Python verzija: "
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -8364,7 +8365,7 @@ msgstr "Otvorite postavke tjunera "
 
 #, fuzzy
 msgid "OpenVision"
-msgstr "Python verzija: "
+msgstr "Proširenja"
 
 #, fuzzy
 msgid "Operating LED colour status in deep standby mode"
@@ -8380,6 +8381,9 @@ msgstr "Operativni LED status dok se izvodi."
 
 msgid "Opkg"
 msgstr "Opkg"
+
+msgid "Opticum HD 9600 series"
+msgstr ""
 
 msgid "Options disable timer"
 msgstr "Opcije onemogućavanja tajmera"
@@ -9008,13 +9012,14 @@ msgstr "Zapisnik o postavljanju položaja"
 
 #, fuzzy
 msgid "Power"
-msgstr "Izbornik napajanja"
+msgstr "Napajanje LED-a"
 
 msgid "Power LED"
-msgstr ""
+msgstr "Napajanje LED-a"
 
+#, fuzzy
 msgid "Power LED colour"
-msgstr ""
+msgstr "Napajanje LED-a"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Upravljanje napajanjem. Dodatne informacije potražite u priručniku prijemnika."
@@ -9493,17 +9498,16 @@ msgstr "Postavke snimanja"
 msgid "Red"
 msgstr "Crvena"
 
-#, fuzzy
 msgid "Red LED during recording"
-msgstr "Mjesto za trenutno snimanje"
+msgstr ""
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Uključite napajanje za LED tijekom dubokog stanja čekanja."
+msgstr "idite u duboko stanje čekanja"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Uključite napajanje za LED tijekom stanja čekanja."
+msgstr "Stavite TV u stanje čekanja"
 
 msgid "Red button..."
 msgstr "Crvena tipka..."
@@ -9739,9 +9743,8 @@ msgstr "Ponovno čitanje tablice particija"
 msgid "Reseller ID: "
 msgstr "Korisnički ID"
 
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Preimenovati"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Rezervirano"
@@ -10639,7 +10642,7 @@ msgstr "Izaberite svoju zemlju. Ako nije dostupno, odaberite 'sve'."
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "odaberite stavku izbornika"
+msgstr "Odaberite video"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Odaberite svog pružatelja usluga i regiju. Ako se ne nalazi na ovom popisu, morat ćete odabrati jednu od drugih 'vrsta skeniranja usluga'."
@@ -11014,7 +11017,7 @@ msgstr "Prikaži alternative"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Mali napredak"
+msgstr "Prikažite kriptografske ikone"
 
 msgid "Show InfoBar"
 msgstr "Prikažite info traku"
@@ -11074,7 +11077,7 @@ msgstr "Prikažite brojeve kanala u odabiru kanala"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Prikažite pomoć"
+msgstr "Prikažite stupce"
 
 msgid "Show columns"
 msgstr "Prikažite stupce"
@@ -11206,7 +11209,7 @@ msgstr "Prikažite pikone na zaslonu"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Radni LED status u stanju čekanja"
+msgstr "Uključite zaslon tijekom stanja čekanja"
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -12379,6 +12382,9 @@ msgstr "Testirajte zaslone koji su korisni za fino podešavanje zaslona"
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 msgid "Text color"
 msgstr "Boja teksta"
 
@@ -13470,6 +13476,10 @@ msgstr "Koristite način prikaza od 12 znakova"
 msgid "Use DHCP"
 msgstr "Koristite DHCP"
 
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Koristite DHCP"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Koristite EIT EPG informacije kada su dostupne."
 
@@ -13904,6 +13914,10 @@ msgstr "Buđenje"
 
 msgid "Wakeup TV from standby"
 msgstr "Buđenje TV-a iz stanja čekanja"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Signal buđenja iz televizora"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Omogućite prijemniku pokretanje tajmera"
@@ -14879,11 +14893,11 @@ msgstr "Promijenite tajmer"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Kanal"
+msgstr "Informacije o kanalu"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Kanal"
+msgstr "Broj kanala i pikon"
 
 #, fuzzy
 msgid "channel number and name"
@@ -15871,17 +15885,15 @@ msgstr "ova usluga je zaštićena pinom roditeljske kontrole"
 msgid "time"
 msgstr "Produljenje rada"
 
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Interval dijaprojekcije (sek.)"
+msgstr ""
 
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Interval dijaprojekcije (sek.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"
-msgstr "Pokretanje Android slike"
+msgstr "Da i spremi"
 
 msgid "time, day and date"
 msgstr ""

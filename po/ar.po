@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBH enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2019-04-12 12:36+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad - مساعد الجعيد\n"
@@ -1377,7 +1377,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "تعيين افتراضي"
+msgstr "الإفتراضي"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1400,7 +1400,7 @@ msgstr "50 ميجا بايت/ثانيه"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "تعيين افتراضي"
+msgstr "الإفتراضي"
 
 msgid "6"
 msgstr ""
@@ -2200,7 +2200,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "نسبة الطول والعرض"
+msgstr "قائمة القنوات"
 
 msgid "Aspect ratio"
 msgstr "نسبة الطول والعرض"
@@ -2353,7 +2353,7 @@ msgstr "لا يوجد وضع استعداد"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "المؤالف غير متوفر."
+msgstr "غير متوفر"
 
 msgid "Autoinstalling Completed"
 msgstr ""
@@ -4089,9 +4089,8 @@ msgstr "نظام البث الرقمي الأرضي الثاني"
 msgid "DVB-T: "
 msgstr "نظام البث الرقمي الأرضي"
 
-#, fuzzy
 msgid "DVD"
-msgstr "نظام البث الرقمي عبر الكيبل"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr ""
@@ -4571,7 +4570,7 @@ msgstr "تعطيل"
 
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "بدء التسجيل الفوري"
+msgstr "إيقاف جميع التسجيلات الحالية"
 
 msgid "Disable Picture in Picture"
 msgstr "تعطيل صوره داخل صوره"
@@ -5117,9 +5116,8 @@ msgstr "إختيار القناة"
 msgid "Enable OpenTV EPG"
 msgstr "تفعيل دليل البرامج الالكتروينة للقنوات المفتوحة"
 
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "تمكين"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "تمكين دليل البرامج الإلكترونية بواسطة القمر"
@@ -6047,7 +6045,7 @@ msgstr "من:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "إغلاق شاشة العرض الصغيرة"
+msgstr "حماية التكوين"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6699,6 +6697,10 @@ msgstr "تجاهل نظام البث الرقمي الأرضي على الاتص
 msgid "Ignore conflict"
 msgstr ""
 
+#, fuzzy
+msgid "Image View On"
+msgstr "مدير الصور"
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -7166,9 +7168,8 @@ msgstr "الإضاءه"
 msgid "LED configuration"
 msgstr "الاعدادات..."
 
-#, fuzzy
 msgid "LED control"
-msgstr "طبيعى"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7187,9 +7188,8 @@ msgstr "حماية التكوين"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "حماية التكوين"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7654,7 +7654,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "إضافة خدمة"
+msgstr "مشغل الوسائط"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7967,7 +7967,7 @@ msgstr "دليل برنامح يومي متعدد"
 
 #, fuzzy
 msgid "Multi channel downmix"
-msgstr "قنوات متعددة لترميز الذبذبة العام"
+msgstr "قناة للأسفل"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -8242,6 +8242,9 @@ msgstr "لايوجد سواقة ديفيدي مدعومه!"
 
 msgid "No Connection"
 msgstr "لا يوجد إتصال"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr "أرقام تعاريف القنوات المشفرة غير متوفر (للقنوات المفتوحة)"
@@ -8675,9 +8678,8 @@ msgstr "اللغة الاصلية"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "الإصدار:\t%s"
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -8726,20 +8728,21 @@ msgstr "فتح ضبط المؤالف "
 
 #, fuzzy
 msgid "OpenVision"
-msgstr "الإصدار:\t%s"
+msgstr "الملحقات."
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "قم بتشغیل لمبة الإضاءة في مقدمة الجهاز أثناء الاستعداد."
+msgstr ""
 
-#, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "قم بتشغیل لمبة الإضاءة في مقدمة الجهاز أثناء الاستعداد."
+msgstr ""
 
 msgid "Operating LED colour status while running."
 msgstr ""
 
 msgid "Opkg"
+msgstr ""
+
+msgid "Opticum HD 9600 series"
 msgstr ""
 
 #, fuzzy
@@ -9394,13 +9397,15 @@ msgstr "سجل ضبط النظام المتحرك"
 
 #, fuzzy
 msgid "Power"
-msgstr "قائمة الإغلاق"
+msgstr "الأغلاق"
 
+#, fuzzy
 msgid "Power LED"
-msgstr ""
+msgstr "الأغلاق"
 
+#, fuzzy
 msgid "Power LED colour"
-msgstr ""
+msgstr "الأغلاق"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "إدارة الإغلاق. راجع دليل المتلقي الخاص بك للحصول على المعلومات."
@@ -9903,17 +9908,16 @@ msgstr "نوع التسجيل"
 msgid "Red"
 msgstr "أحمر"
 
-#, fuzzy
 msgid "Red LED during recording"
-msgstr "بدء التسجيل الفوري"
+msgstr ""
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "قم بتشغیل لمبة الإضاءة في مقدمة الجهاز أثناء الاستعداد."
+msgstr "الذهاب الى وضع الاستعداد العميق"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "قم بتشغیل لمبة الإضاءة في مقدمة الجهاز أثناء الاستعداد."
+msgstr "وضع التلفزيون في وضع الاستعداد"
 
 msgid "Red button..."
 msgstr "الزر الأحمر..."
@@ -10158,9 +10162,8 @@ msgstr "أعاده توجيه جدول التقسيم"
 msgid "Reseller ID: "
 msgstr ""
 
-#, fuzzy
 msgid "Reseller name: "
-msgstr "إعادة التسميه"
+msgstr ""
 
 msgid "Reserved"
 msgstr "محجوز"
@@ -11133,7 +11136,7 @@ msgstr "اختر بلدك. إذا لم يكن متاحًا ، فحدد 'الكل
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "أختار القائمة المدخلة"
+msgstr "أختار الفيلم"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "حدد مزود الخدمة والمنطقة. إذا لم تكن موجودة في هذه القائمة سوف تحتاج إلى تحديد واحد من الآخر ' أنواع البحث القناة '."
@@ -11532,7 +11535,7 @@ msgstr "عرض البدائل"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "تقدم صغير"
+msgstr "عرض أيقونة التشفير"
 
 #, fuzzy
 msgid "Show InfoBar"
@@ -11597,7 +11600,7 @@ msgstr "عرض أرقام القنوات في قائمة إختيار القنو
 
 #, fuzzy
 msgid "Show clock"
-msgstr "عرض التعليمات"
+msgstr "عرض الأعمدة"
 
 msgid "Show columns"
 msgstr "عرض الأعمدة"
@@ -11736,7 +11739,7 @@ msgstr "عرض الإيقونات في قائمة القنوات"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "عرض في قائمة الإغلاق"
+msgstr "عرض الإيقونات في قائمة القنوات"
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -11744,7 +11747,7 @@ msgstr "عرض الإيقونات في قائمة القنوات"
 
 #, fuzzy
 msgid "Show on VFD display in standby"
-msgstr "عرض أيقونة التشفير"
+msgstr "عرض الإيقونات في قائمة القنوات"
 
 #, fuzzy
 msgid "Show on display"
@@ -12974,6 +12977,9 @@ msgstr "الاختبارات التي تساعد علي ضبط الشاشة بش
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 msgid "Text color"
 msgstr "لون النص"
 
@@ -14119,6 +14125,10 @@ msgstr "استخدام 12 حرفا على شاشة العرض"
 msgid "Use DHCP"
 msgstr "إستخدام بروتوكول العناوين الآلي"
 
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "إستخدام بروتوكول العناوين الآلي"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "إستخدام جداول معلومات الأحداث لمعلومات دليل البرامج الإلكترونية عندما تكون متوفرة."
 
@@ -14566,6 +14576,10 @@ msgstr "تنبيه"
 
 msgid "Wakeup TV from standby"
 msgstr "تنبيه التلفزيون من وضع الإستعداد"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "إشارة تنبيه من التلفزيون"
 
 msgid "Wakeup receiver for start timer"
 msgstr ""
@@ -15579,11 +15593,11 @@ msgstr "تغيير المؤقت"
 
 #, fuzzy
 msgid "channel name"
-msgstr "قناة"
+msgstr "معلومات القناة"
 
 #, fuzzy
 msgid "channel number"
-msgstr "قناة"
+msgstr "عرض رقم القناة في شريط المعلومات"
 
 #, fuzzy
 msgid "channel number and name"
@@ -16600,13 +16614,11 @@ msgstr "هذه القناه محميه برقم سري بواسطه التحكم
 msgid "time"
 msgstr "مدة التشغيل"
 
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "الفاصل الزمني لعرض الشرائح (ثانيه)"
+msgstr ""
 
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "الفاصل الزمني لعرض الشرائح (ثانيه)"
+msgstr ""
 
 msgid "time and date"
 msgstr ""

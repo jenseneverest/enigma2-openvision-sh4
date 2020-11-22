@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2020-09-06 21:40+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -1337,7 +1337,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Установить по дефолту"
+msgstr "по умолчанию"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1359,7 +1359,7 @@ msgstr "50 МБ/с"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Установить по дефолту"
+msgstr "по умолчанию"
 
 msgid "6"
 msgstr "6"
@@ -2120,7 +2120,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Соотношение сторон"
+msgstr "Список субсервисов..."
 
 msgid "Aspect ratio"
 msgstr "Соотношение сторон"
@@ -2265,7 +2265,7 @@ msgstr "не переходить в режим ожидания"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Тюнер не доступен."
+msgstr "недоступно"
 
 msgid "Autoinstalling Completed"
 msgstr "Авто инсталляция завершена."
@@ -3920,9 +3920,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "Запись на DVD"
@@ -4383,7 +4382,7 @@ msgstr "Отключить"
 
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Расположение немедленные записей"
+msgstr "Всегда включать ECM в записи"
 
 msgid "Disable Picture in Picture"
 msgstr "Отключить PiP (картинку в картинке)"
@@ -4887,9 +4886,8 @@ msgstr "Включить OK для списка выбора каналов"
 msgid "Enable OpenTV EPG"
 msgstr "Включить OpenTV EPG"
 
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Включено"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Включить ViaSat EPG"
@@ -5796,7 +5794,7 @@ msgstr "От:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Питание на дисплее"
+msgstr "Конфигурация списка видео"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6409,6 +6407,10 @@ msgstr "Игнорировать DVB-T пространство имен суб�
 msgid "Ignore conflict"
 msgstr "Игнорировать конфликт"
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Имидж: "
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -6860,9 +6862,8 @@ msgstr "Яркость"
 msgid "LED configuration"
 msgstr "Конфигурация"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Нормальный"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -6881,9 +6882,8 @@ msgstr "Конфигурация списка видео"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Конфигурация списка видео"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7334,7 +7334,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Добавить сервис"
+msgstr "Медиаплеер"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7637,9 +7637,8 @@ msgstr "Mozambique"
 msgid "Multi EPG"
 msgstr "Мульти EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Мультиканал PCM"
+msgstr "Мультиканальное микширование"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -7900,6 +7899,9 @@ msgstr "Не найден (поддерживаемый) DVDROM!"
 
 msgid "No Connection"
 msgstr "Нет соединения"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr "Нет доступных ECMPids (FTA сервис)"
@@ -8312,9 +8314,8 @@ msgstr "язык оригинала"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Версия python: "
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -8361,7 +8362,7 @@ msgstr "Открыть настройки тюнера "
 
 #, fuzzy
 msgid "OpenVision"
-msgstr "Версия python: "
+msgstr "Дополнения"
 
 #, fuzzy
 msgid "Operating LED colour status in deep standby mode"
@@ -8377,6 +8378,9 @@ msgstr "Состояние LED в режиме работы"
 
 msgid "Opkg"
 msgstr "Opkg"
+
+msgid "Opticum HD 9600 series"
+msgstr ""
 
 msgid "Options disable timer"
 msgstr "Варианты отключения таймера"
@@ -9005,13 +9009,14 @@ msgstr "Лог настроек позиционера"
 
 #, fuzzy
 msgid "Power"
-msgstr "Меню выключения"
+msgstr "LED питания"
 
 msgid "Power LED"
-msgstr ""
+msgstr "LED питания"
 
+#, fuzzy
 msgid "Power LED colour"
-msgstr ""
+msgstr "LED питания"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Управление питанием. Для получения дополнительной информации обратитесь к инструкции."
@@ -9490,17 +9495,16 @@ msgstr "Настройка записей"
 msgid "Red"
 msgstr "Красная"
 
-#, fuzzy
 msgid "Red LED during recording"
-msgstr "Расположение немедленные записей"
+msgstr ""
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Включить питание на кнопке LED в режиме глубокого ожидания."
+msgstr "перейти в глубокий режим ожидания"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Включить питание на кнопке LED, на передней панели в режиме ожидания / режиме глубокого ожидания."
+msgstr "Перевести ТВ в режим ожидания"
 
 msgid "Red button..."
 msgstr "Красная кнопка..."
@@ -9740,9 +9744,8 @@ msgstr "Пересмотр таблицы разделов"
 msgid "Reseller ID: "
 msgstr "Пользовательский ID"
 
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Переименовать"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Зарезервировано"
@@ -10640,7 +10643,7 @@ msgstr "Выбор Вашего региона. Если Ваша страна �
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "выбор записи меню"
+msgstr "Выбор видео"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Выбор провайдера  и региона. Если их в этом списке нет, Вам нужно выбрать один из других 'типов сканирования сервисов'."
@@ -11015,7 +11018,7 @@ msgstr "Показать альтернативу"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Маленький прогресс"
+msgstr "Показать крипто иконки в списке выбора каналов"
 
 msgid "Show InfoBar"
 msgstr "Показать инфобар"
@@ -11075,7 +11078,7 @@ msgstr "Показать номера каналов в списке выбор�
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Показать помощь"
+msgstr "Показать колонки для названий событий"
 
 msgid "Show columns"
 msgstr "Показать колонки для названий событий"
@@ -11207,7 +11210,7 @@ msgstr "Показать пиконы на дисплее"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Состояние LED в режиме ожидания"
+msgstr "Включить дисплей в режиме ожидания"
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -12382,6 +12385,9 @@ msgstr "Проверка экрана, которыЯ является поле�
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 msgid "Text color"
 msgstr "Цвет текста"
 
@@ -13474,6 +13480,10 @@ msgstr "Использовать режим дисплея в 12 символо�
 msgid "Use DHCP"
 msgstr "Использовать DHCP"
 
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Использовать DHCP"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Использовать информацию EIT EPG (сейчас/далее), если она доступна."
 
@@ -13908,6 +13918,10 @@ msgstr "Включить"
 
 msgid "Wakeup TV from standby"
 msgstr "Включить ТВ при выходе из режима ожидания"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Сигнал включения от ТВ"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Включить ресивер для старта таймера"
@@ -14883,11 +14897,11 @@ msgstr "Изменить таймер"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Канал"
+msgstr "Информация канала"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Канал"
+msgstr "Номер канала и пикон"
 
 #, fuzzy
 msgid "channel number and name"
@@ -15875,17 +15889,15 @@ msgstr "этот сервис защищен PIN-кодом родительск
 msgid "time"
 msgstr "Время работы"
 
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Интервал слайдшоу (сек.)"
+msgstr ""
 
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Интервал слайдшоу (сек.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"
-msgstr "Загрузить имидж Android"
+msgstr "Да, и сохранить"
 
 msgid "time, day and date"
 msgstr ""

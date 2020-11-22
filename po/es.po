@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2019-10-16 22:14+0200\n"
 "Last-Translator: Kuatto\n"
 "Language-Team: Álvaro <mi casa>\n"
@@ -1333,7 +1333,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Establecer por defecto"
+msgstr "por defecto"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1356,7 +1356,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Establecer por defecto"
+msgstr "por defecto"
 
 msgid "6"
 msgstr "6"
@@ -1594,9 +1594,8 @@ msgstr "abortar edición de favoritos"
 msgid "About"
 msgstr "Acerca de"
 
-#, fuzzy
 msgid "About..."
-msgstr "Acerca de"
+msgstr "Acerca de..."
 
 msgid "Accesspoint:"
 msgstr "Punto de acceso:"
@@ -1607,8 +1606,9 @@ msgstr "Activar HbbTV (Botón Rojo)"
 msgid "Activate IPv6 configuration"
 msgstr "Activar la configuración de IPv6"
 
+#, fuzzy
 msgid "Activate Keymap now?"
-msgstr ""
+msgstr "Modo activado"
 
 msgid "Activate MAC address configuration"
 msgstr "Activar la configuración de la dirección MAC"
@@ -2117,7 +2117,7 @@ msgstr "Preguntar al usuario (con valor predeterminado 'si')"
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Relación de aspecto"
+msgstr "Lista de satélites …"
 
 msgid "Aspect ratio"
 msgstr "Relación de aspecto"
@@ -2183,7 +2183,7 @@ msgstr "Plugins de audio"
 
 #, fuzzy
 msgid "Audio source"
-msgstr "Sincronizar Audio"
+msgstr "Fuente de corte:"
 
 #, python-format
 msgid "Audio track (%s) format"
@@ -2263,7 +2263,7 @@ msgstr "modo reposo automático"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Sintonizador no disponible."
+msgstr "no disponible"
 
 msgid "Autoinstalling Completed"
 msgstr "Autoinstalación completada"
@@ -3897,9 +3897,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "Quemar DVD"
@@ -4093,9 +4092,8 @@ msgstr "Reposo Profundo"
 msgid "Deep standby"
 msgstr "Reposo profundo"
 
-#, fuzzy
 msgid "Deepstandby LED brightness"
-msgstr "Reposo Profundo"
+msgstr ""
 
 msgid "Default"
 msgstr "Por defecto"
@@ -4859,7 +4857,7 @@ msgstr "Activar OpenTV EPG"
 
 #, fuzzy
 msgid "Enable VFD display"
-msgstr "Activado"
+msgstr "Habilitar el historial de Zap"
 
 msgid "Enable ViaSat EPG"
 msgstr "Activar Viasat EPG"
@@ -6100,7 +6098,7 @@ msgid "Hebrew"
 msgstr "Hebreo"
 
 msgid "Help"
-msgstr ""
+msgstr "Ayuda"
 
 msgid "Helps setting up your antenna"
 msgstr "Ayuda a configurar su antena"
@@ -6373,6 +6371,10 @@ msgstr "Ignorar DVB-T espacio de nombres subred"
 
 msgid "Ignore conflict"
 msgstr "Ignorar conflicto"
+
+#, fuzzy
+msgid "Image View On"
+msgstr "Ver shares"
 
 #, fuzzy
 msgid "Image architecture: "
@@ -6787,7 +6789,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Keymap selector"
-msgstr "Deseleccionar"
+msgstr "Abrir selección"
 
 msgid "Keymaps found: (press green or ok to select)"
 msgstr ""
@@ -6821,9 +6823,8 @@ msgstr "Brillo"
 msgid "LED configuration"
 msgstr "Configuración"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Normal"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -6842,9 +6843,8 @@ msgstr "Configuración manual"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Configuración manual"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7263,7 +7263,7 @@ msgstr "Mauricio"
 
 #, fuzzy
 msgid "Max channels"
-msgstr "Canales"
+msgstr "Todos los Canales"
 
 msgid "Max memory positions"
 msgstr "Posiciones máximas de memoria"
@@ -7285,7 +7285,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Editar Canales"
+msgstr "Reproductor MediaPlayer"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr "Reproducción de medios Restante/Transcurrido como"
@@ -7592,9 +7592,8 @@ msgstr "Mozambique"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "PCM Multicanal"
+msgstr "Mezcla múltiple de canales"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -7848,6 +7847,9 @@ msgstr "DVDROM (soportado) no encontrado!"
 
 msgid "No Connection"
 msgstr "Sin conexión"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr "No ECMPids disponibles (Servicio FTA)"
@@ -8256,9 +8258,8 @@ msgstr "idioma original"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Versión de Python: "
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -8304,7 +8305,7 @@ msgstr "Configurar OpenVPN"
 
 #, fuzzy
 msgid "OpenVision"
-msgstr "abrir opciones lista"
+msgstr "Extensiones"
 
 #, fuzzy
 msgid "Operating LED colour status in deep standby mode"
@@ -8312,13 +8313,16 @@ msgstr "Estado del LED de encendido durante modo de espera profundo."
 
 #, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "Estado del LED de encendido en modo Reposo"
+msgstr "Color del LED durante modo reposo"
 
 #, fuzzy
 msgid "Operating LED colour status while running."
 msgstr "Estado del LED de encendido cuando está en marcha."
 
 msgid "Opkg"
+msgstr ""
+
+msgid "Opticum HD 9600 series"
 msgstr ""
 
 msgid "Options disable timer"
@@ -8725,7 +8729,7 @@ msgstr "Seleccionar un subservicio…"
 
 #, fuzzy
 msgid "Please select an 3D modus..."
-msgstr "Seleccione resolución..."
+msgstr "Seleccionar un subservicio…"
 
 msgid "Please select an aspect ratio..."
 msgstr "Seleccione el modo pantalla deseado..."
@@ -9425,7 +9429,7 @@ msgstr "Color del LED durante la grabación"
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Estado del LED de encendido durante modo de espera profundo."
+msgstr "Cuando está en modo de espera profundo"
 
 #, fuzzy
 msgid "Red LED on in standby"
@@ -9670,7 +9674,7 @@ msgstr "ID de Usuario"
 
 #, fuzzy
 msgid "Reseller name: "
-msgstr "Nombre de usuario"
+msgstr "nombre del dispositivo: "
 
 msgid "Reserved"
 msgstr "Reservado"
@@ -10562,7 +10566,7 @@ msgstr "Seleccione su país. Si no está disponible seleccione “todo”."
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Seleccionar entrada menu"
+msgstr "Seleccione su skin"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Seleccione su proveedor y región. Si no está presente en esta lista, deberá seleccionar uno de los otros ‘tipos de búsqueda de canal’."
@@ -11120,7 +11124,7 @@ msgstr "Mostrar picons en pantalla"
 
 #, fuzzy
 msgid "Show on VFD display in standby"
-msgstr "Control Encendido display en modo reposo"
+msgstr "Mostrar iconos en Display"
 
 #, fuzzy
 msgid "Show on display"
@@ -11128,7 +11132,7 @@ msgstr "Encender pantalla"
 
 #, fuzzy
 msgid "Show on display in standby"
-msgstr "Control Encendido display en modo reposo"
+msgstr "Mostrar en modo reposo"
 
 msgid "Show or hide the extended description, (skin dependant)."
 msgstr "Mostrar u ocultar la descripción extendida."
@@ -11160,9 +11164,8 @@ msgstr "Mostrar iconos de reloj de grabación"
 msgid "Show record indicator"
 msgstr "Mostrar indicador de grabación"
 
-#, fuzzy
 msgid "Show screen path"
-msgstr "Mostrar rutas de menú"
+msgstr "Mostrar ruta en Pantalla"
 
 msgid "Show screensaver"
 msgstr "Mostrar salvapantallas"
@@ -12251,7 +12254,7 @@ msgstr "Terrestre"
 
 #, fuzzy
 msgid "Test"
-msgstr "Modo test"
+msgstr "Tipo de test"
 
 msgid "Test DiSEqC settings"
 msgstr "Test de los ajustes Diseqc"
@@ -12272,6 +12275,9 @@ msgid "Testscreens that are helpfull to fine-tune your display"
 msgstr "Pantallas de test son útiles para calibrar su pantalla"
 
 msgid "Text"
+msgstr ""
+
+msgid "Text View On"
 msgstr ""
 
 msgid "Text color"
@@ -13157,8 +13163,9 @@ msgstr "Tipo de dispositivo LNB"
 msgid "Type of scan"
 msgstr "Tipo de búsqueda"
 
+#, fuzzy
 msgid "Typematic delay"
-msgstr ""
+msgstr "Retraso en el servicio"
 
 msgid "Typematic rate"
 msgstr ""
@@ -13364,6 +13371,10 @@ msgid "Use 12 characters display mode"
 msgstr "Use el modo de visualización de 12 caracteres"
 
 msgid "Use DHCP"
+msgstr "Usa DHCP"
+
+#, fuzzy
+msgid "Use DHCP for DNS"
 msgstr "Usa DHCP"
 
 msgid "Use EIT EPG information when it is available."
@@ -13719,7 +13730,7 @@ msgstr "Islas Vírgenes (USA)"
 
 #, fuzzy
 msgid "Virtual KeyBoard Functions"
-msgstr "Teclado virtual"
+msgstr "Teclado virtual en skin"
 
 #, fuzzy
 msgid "Virtual KeyBoard Text:"
@@ -13728,9 +13739,8 @@ msgstr "Teclado virtual"
 msgid "Virtual keyboard"
 msgstr "Teclado virtual"
 
-#, fuzzy
 msgid "Virtual keyboard skin"
-msgstr "Teclado virtual"
+msgstr "Teclado virtual en skin"
 
 msgid "Vitamin 5000HD"
 msgstr ""
@@ -13797,6 +13807,10 @@ msgstr "Despertar"
 
 msgid "Wakeup TV from standby"
 msgstr "Despertar TV desde reposo"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Señal de despertador de TV"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Despertar receptor para comenzar temporizador"
@@ -14330,7 +14344,7 @@ msgid "You can remove this plugin."
 msgstr "Puede borrar este plugin."
 
 msgid "You can select the skin of virtual keyboard."
-msgstr ""
+msgstr "Puede seleccionar el skin del teclado virtual."
 
 msgid "You cannot delete this!"
 msgstr "No puedes borrar esto!"
@@ -14766,11 +14780,11 @@ msgstr "Cambiar temporizador"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Canal"
+msgstr "nombre uShare"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Canal"
+msgstr "Número de canal y picon"
 
 #, fuzzy
 msgid "channel number and name"
@@ -15393,7 +15407,7 @@ msgstr "en medio de SOLO LECTURA."
 
 #, fuzzy
 msgid "on all mounts"
-msgstr "mostrar todas las etiquetas"
+msgstr "Desmontar Realmente "
 
 msgid "on hdd"
 msgstr ""
@@ -15413,8 +15427,9 @@ msgstr ""
 msgid "open nameserver configuration"
 msgstr "abrir la configuración del servidor de nombres"
 
+#, fuzzy
 msgid "orange"
-msgstr ""
+msgstr "Búsqueda Rango"
 
 msgid "original"
 msgstr "original"
@@ -15425,8 +15440,9 @@ msgstr "idioma original"
 msgid "pace7241VFD"
 msgstr ""
 
+#, fuzzy
 msgid "partial"
-msgstr ""
+msgstr "coincidencia parcial"
 
 msgid "pass"
 msgstr "pasar"
@@ -15554,7 +15570,7 @@ msgstr "segundos"
 
 #, fuzzy
 msgid "select "
-msgstr "Deseleccionar"
+msgstr "seleccionar"
 
 msgid "select CAId's"
 msgstr "seleccionar CAIds"
@@ -15754,15 +15770,15 @@ msgstr "este canal está protegido por un PIN de control parental"
 
 #, fuzzy
 msgid "time"
-msgstr "Temporizador de descanso"
+msgstr "Tiempo final"
 
 #, fuzzy
 msgid "time (with seconds)"
-msgstr "Actualizar intervalo (segundos)"
+msgstr "Tiempo de espera emergente en segundos"
 
 #, fuzzy
 msgid "time (without seconds)"
-msgstr "Actualizar intervalo (segundos)"
+msgstr "Tiempo de espera emergente en segundos"
 
 #, fuzzy
 msgid "time and date"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi-enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2020-05-16 18:46+0200\n"
 "Last-Translator: Gringo <openpli@tiscali.it>\n"
 "Language-Team: www.linsat.net <spaeleus@croci.org>\n"
@@ -1333,7 +1333,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Ripristinare i valori"
+msgstr "Predefinito"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1356,7 +1356,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Ripristinare i valori"
+msgstr "Predefinito"
 
 msgid "6"
 msgstr "6"
@@ -2122,7 +2122,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Rapporto d'aspetto"
+msgstr "Elenco dei sottocanali..."
 
 msgid "Aspect ratio"
 msgstr "Rapporto d'aspetto"
@@ -2268,7 +2268,7 @@ msgstr "Nessuna sospensione"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Sintonizzatore non disponibile."
+msgstr "Non disponibile"
 
 msgid "Autoinstalling Completed"
 msgstr "Installazione completata"
@@ -3913,9 +3913,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "Scrittura DVD"
@@ -4381,7 +4380,7 @@ msgstr "Disabilitare"
 
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Percorso delle registrazioni immediate"
+msgstr "Includere sempre i dati ECM nelle registrazioni"
 
 msgid "Disable Picture in Picture"
 msgstr "Disabilitare il PIP"
@@ -4885,9 +4884,8 @@ msgstr "Abilitare il tasto OK per la selezione del canale"
 msgid "Enable OpenTV EPG"
 msgstr "Abilitare OpenTV EPG"
 
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Abilitato"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Abilitare l'EPG ViaSat"
@@ -5800,7 +5798,7 @@ msgstr "Da:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Schermata di accensione"
+msgstr "Impostazioni dell'elenco dei video"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6417,6 +6415,10 @@ msgstr "Ignorare la sottorete dello spazio dei nomi DVB-T"
 msgid "Ignore conflict"
 msgstr "Ignorare il conflitto"
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Immagine: "
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -6869,9 +6871,8 @@ msgstr "Luminosità"
 msgid "LED configuration"
 msgstr "Impostazioni"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Normale"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -6890,9 +6891,8 @@ msgstr "Impostazioni dell'elenco dei video"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Impostazioni dell'elenco dei video"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7340,7 +7340,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Aggiungere un canale"
+msgstr "Lettore multimediale"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7655,9 +7655,8 @@ msgstr "Mozambico"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Multicanale PCM"
+msgstr "Downmix audio multicanale"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -7917,6 +7916,9 @@ msgstr "Nessun DVD-ROM (supportato) disponibile!"
 
 msgid "No Connection"
 msgstr "Nessuna connessione"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr "ID ECM non disponibili (Canale FTA)"
@@ -8327,9 +8329,8 @@ msgstr "Lingua originale"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Versione Python: "
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -8376,20 +8377,21 @@ msgstr "Accedere alla configurazione del sintonizzatore "
 
 #, fuzzy
 msgid "OpenVision"
-msgstr "Versione Python: "
+msgstr "Estensioni"
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "Accendere il LED durante lo standby."
+msgstr ""
 
-#, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "Attivare il LED di accensione durante la sospensione."
+msgstr ""
 
 msgid "Operating LED colour status while running."
 msgstr ""
 
 msgid "Opkg"
+msgstr ""
+
+msgid "Opticum HD 9600 series"
 msgstr ""
 
 msgid "Options disable timer"
@@ -9018,13 +9020,14 @@ msgstr "Registro della configurazione del motore"
 
 #, fuzzy
 msgid "Power"
-msgstr "Menu Accensione"
+msgstr "Accendere LED"
 
 msgid "Power LED"
-msgstr ""
+msgstr "Accendere LED"
 
+#, fuzzy
 msgid "Power LED colour"
-msgstr ""
+msgstr "Accendere LED"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Gestione dell'alimentazione. Consultare il manuale del ricevitore per ulteriori informazioni."
@@ -9503,17 +9506,16 @@ msgstr "Impostazioni di registrazione"
 msgid "Red"
 msgstr "Rosso"
 
-#, fuzzy
 msgid "Red LED during recording"
-msgstr "Percorso delle registrazioni immediate"
+msgstr ""
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Accendere il LED durante lo standby."
+msgstr "Spegnimento"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Attivare il LED di accensione durante la sospensione."
+msgstr "Mettere la TV in sospensione"
 
 msgid "Red button..."
 msgstr "Tasto Rosso..."
@@ -9749,9 +9751,8 @@ msgstr "Rilettura della tabella delle partizioni in corso..."
 msgid "Reseller ID: "
 msgstr "ID Utente"
 
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Rinominare"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Riservato"
@@ -10653,7 +10654,7 @@ msgstr "Selezionare il paese. Se non è presente nell'elenco selezionare \"Tutti
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Selezionare una voce del menu"
+msgstr "Selezionare il video"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Selezionare il provider e la regione. Se non è presente nell'elenco è necessario selezionare uno degli altri \"Tipi di scansione dei canali\"."
@@ -11029,7 +11030,7 @@ msgstr "Mostrare le alternative"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Barra di avanzamento corta"
+msgstr "Mostrare i simboli del canale codificato"
 
 msgid "Show InfoBar"
 msgstr "Mostrare l'infobar"
@@ -11089,7 +11090,7 @@ msgstr "Mostrare il numero del canale nella selezione dei canali"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Mostrare la guida"
+msgstr "Mostrare la lista di selezione dei canali in colonne a larghezza fissa"
 
 msgid "Show columns"
 msgstr "Mostrare la lista di selezione dei canali in colonne a larghezza fissa"
@@ -11221,7 +11222,7 @@ msgstr "Mostrare i Picon sul display"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Spegnere se messo in sospensione"
+msgstr "Mostrare l'elenco delle estensioni disponibili per lo schermo e l'interfaccia utente."
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -12403,6 +12404,9 @@ msgstr "Schermate di prova utili per la regolazione di precisione del display"
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 msgid "Text color"
 msgstr "Colore del testo"
 
@@ -13506,6 +13510,10 @@ msgstr "Utilizzare la modalità display a 12 caratteri"
 msgid "Use DHCP"
 msgstr "Utilizzare DHCP"
 
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Utilizzare DHCP"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Utilizzare le informazioni EPG EIT (Event Information Table) quando disponibili."
 
@@ -13940,6 +13948,10 @@ msgstr "Riattivare"
 
 msgid "Wakeup TV from standby"
 msgstr "Riattivare la TV dalla sospensione"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Segnale di riattivazione dalla TV"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Riattivare il ricevitore per il timer di avvio"
@@ -14920,11 +14932,11 @@ msgstr "Modificare il timer"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Canale"
+msgstr "Informazioni canale"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Canale"
+msgstr "Numero e Picon del canale"
 
 #, fuzzy
 msgid "channel number and name"
@@ -15913,17 +15925,15 @@ msgstr "Questo canale è protetto con il PIN del Controllo genitori"
 msgid "time"
 msgstr "Timer di spegnimento"
 
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Intervallo tra le immagini (sec.)"
+msgstr ""
 
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Intervallo tra le immagini (sec.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"
-msgstr "Avvia l'immagine Android"
+msgstr "Sì e salvare"
 
 msgid "time, day and date"
 msgstr ""

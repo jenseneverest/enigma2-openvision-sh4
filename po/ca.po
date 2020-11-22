@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2020-07-08 18:12+0200\n"
 "Last-Translator: Oriol Pellicer <oriol@elsud.org>\n"
 "Language-Team: angelodos angelo2807@hotmail.com\n"
@@ -1411,7 +1411,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Instal · lat per defecte"
+msgstr "per defecte"
 
 #
 msgid "4:3"
@@ -1438,7 +1438,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Instal · lat per defecte"
+msgstr "per defecte"
 
 msgid "6"
 msgstr "6"
@@ -2292,7 +2292,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Relació d'aspecteRelació d’aspecte"
+msgstr "Llista de subserveis..."
 
 #
 msgid "Aspect ratio"
@@ -2453,7 +2453,7 @@ msgstr "Sense standby"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Sintonitzador no disponible."
+msgstr "no disponible"
 
 msgid "Autoinstalling Completed"
 msgstr "S’ha completat la instal·lació automàtica"
@@ -4261,9 +4261,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "DVD Burn"
@@ -4772,10 +4771,9 @@ msgstr "Deshabilitar"
 msgid "Disable FCC"
 msgstr "Deshabilitar"
 
-#
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Ubicació per a enregistraments instantanis"
+msgstr "Incloeu sempre l’ECM als enregistraments"
 
 #
 msgid "Disable Picture in Picture"
@@ -5359,10 +5357,8 @@ msgstr "Activa OK per a la selecció del canal"
 msgid "Enable OpenTV EPG"
 msgstr "Habilita EPG de OpenTV"
 
-#
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Activat"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Habilita ViaSat EPG"
@@ -6365,9 +6361,10 @@ msgstr "Divendres"
 msgid "From:"
 msgstr "De:"
 
+#
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Potència en pantalla"
+msgstr "Configuració de la llista de pel·lícules"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -7027,6 +7024,10 @@ msgstr "Ignora la subxarxa de l’espai de noms DVB-T"
 msgid "Ignore conflict"
 msgstr "Ignora el conflicte"
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Imatge:"
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -7527,9 +7528,8 @@ msgstr "Brillantor"
 msgid "LED configuration"
 msgstr "Configuració"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Normal"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7550,10 +7550,8 @@ msgstr "Configuració de la llista de pel·lícules"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Configuració de la llista de pel·lícules"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -8063,7 +8061,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Media framework: "
-msgstr "Afegir canal"
+msgstr "Reproductor"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -8406,9 +8404,8 @@ msgstr "Mozambique"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Multicanal PCM"
+msgstr "Downmix multicanal"
 
 #
 #, fuzzy
@@ -8709,6 +8706,9 @@ msgstr "No s’ha trobat DVDROM (compatible)."
 #
 msgid "No Connection"
 msgstr "Sense conexió"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr "No hi ha ECMPids disponibles (servei FTA)"
@@ -9159,9 +9159,8 @@ msgstr "original llengua"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Python versio:"
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -9209,9 +9208,10 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Sintonitzador de configuració obert"
 
+#
 #, fuzzy
 msgid "OpenVision"
-msgstr "Python versio:"
+msgstr "Extensions"
 
 #, fuzzy
 msgid "Operating LED colour status in deep standby mode"
@@ -9227,6 +9227,9 @@ msgstr "Funcionament de l’estat del LED mentre s’executa."
 
 msgid "Opkg"
 msgstr "Opkg"
+
+msgid "Opticum HD 9600 series"
+msgstr ""
 
 msgid "Options disable timer"
 msgstr "Opcions desactiva el temporitzador"
@@ -9953,13 +9956,14 @@ msgstr "Posicionador (selecció de satèl·lits)"
 
 #, fuzzy
 msgid "Power"
-msgstr "PowerMenu"
+msgstr "Alimentació LED"
 
 msgid "Power LED"
-msgstr ""
+msgstr "Alimentació LED"
 
+#, fuzzy
 msgid "Power LED colour"
-msgstr ""
+msgstr "Alimentació LED"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Gestió d’energia. Consulteu el manual del vostre receptor per obtenir més informació."
@@ -10494,18 +10498,17 @@ msgstr "Configuració de l’enregistrament"
 msgid "Red"
 msgstr "Xarxa"
 
+msgid "Red LED during recording"
+msgstr ""
+
 #
 #, fuzzy
-msgid "Red LED during recording"
-msgstr "Ubicació per a enregistraments instantanis"
-
-#, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Enceneu el LED d’alimentació durant el mode d’espera profunda."
+msgstr "aturar completament"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Enceneu el LED d’alimentació durant el mode d’espera."
+msgstr "Posa la televisió en espera"
 
 msgid "Red button..."
 msgstr "Xarxa boto:"
@@ -10770,10 +10773,8 @@ msgstr "Taula de particions que es dirigeix"
 msgid "Reseller ID: "
 msgstr "ID d’usuari"
 
-#
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Canviar el nom"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Reservat"
@@ -11786,7 +11787,7 @@ msgstr "Seleccioneu el vostre país. Si no està disponible, seleccioneu “tot�
 #
 #, fuzzy
 msgid "Select your keymap"
-msgstr "selecciona l’entrada del menú"
+msgstr "Selecciona la pel·lícula"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Seleccioneu el vostre proveïdor i la vostra regió. Si no apareix en aquesta llista, haureu de seleccionar un dels altres “tipus d’exploració de serveis”."
@@ -12197,7 +12198,7 @@ msgstr "Mostrar alternatives"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Petits avenços"
+msgstr "Mostra les icones crypto"
 
 msgid "Show InfoBar"
 msgstr "Mostra Infobar"
@@ -12260,7 +12261,7 @@ msgstr "Mostra els números de canal a la selecció del canal"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Mostra ajuda"
+msgstr "Mostra les columnes"
 
 msgid "Show columns"
 msgstr "Mostra les columnes"
@@ -12399,7 +12400,7 @@ msgstr "Mostra els picons a la pantalla"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Funcionament de l’estat del LED en mode d’espera"
+msgstr "Mostra la llista d’extensions de visualització i d’interfície d’usuari disponibles"
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -13694,6 +13695,9 @@ msgstr "Proves de pantalla que serveixen per ajustar la pantalla"
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 msgid "Text color"
 msgstr "Color del text"
 
@@ -14897,6 +14901,11 @@ msgstr "Utilitzeu el mode de visualització de 12 caràcters"
 msgid "Use DHCP"
 msgstr "Utilitzar DHCP"
 
+#
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Utilitzar DHCP"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Utilitzeu la informació d’EIT EPG quan estigui disponible."
 
@@ -15387,6 +15396,10 @@ msgstr "Desperta"
 
 msgid "Wakeup TV from standby"
 msgstr "TV despertador des del mode d’espera"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Senyal de despertador de TV"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Receptor de despertador per temporitzador d’inici"
@@ -16424,15 +16437,13 @@ msgstr "centrat, embolicat"
 msgid "change sides"
 msgstr "Canvia el temporitzador"
 
-#
 #, fuzzy
 msgid "channel name"
-msgstr "Canal"
+msgstr "Informació del canal"
 
-#
 #, fuzzy
 msgid "channel number"
-msgstr "Canal"
+msgstr "Nombre de canal i picon"
 
 #, fuzzy
 msgid "channel number and name"
@@ -17541,19 +17552,15 @@ msgstr "aquest canal està protegit per un pin de control parental"
 msgid "time"
 msgstr "Horaris"
 
-#
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Interval de presentació de diapositives (seg.)"
+msgstr ""
 
-#
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Interval de presentació de diapositives (seg.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"
-msgstr "Arrenca a la imatge d’Android"
+msgstr "Sí i  grabar"
 
 msgid "time, day and date"
 msgstr ""

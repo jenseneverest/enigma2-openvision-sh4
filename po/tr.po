@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -1313,7 +1313,7 @@ msgstr ""
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Varsayılan olarak ayarla"
+msgstr "Öntanımlı"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1336,7 +1336,7 @@ msgstr ""
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Varsayılan olarak ayarla"
+msgstr "Öntanımlı"
 
 msgid "6"
 msgstr "6"
@@ -2110,7 +2110,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "En-Boy oranı"
+msgstr "Alt servis listesi"
 
 msgid "Aspect ratio"
 msgstr "En-Boy oranı"
@@ -2258,7 +2258,7 @@ msgstr "Beklemede değil"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Tuner mevcut değil."
+msgstr "Kullanılamaz"
 
 #, fuzzy
 msgid "Autoinstalling Completed"
@@ -3929,9 +3929,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr ""
@@ -4405,7 +4404,7 @@ msgstr "Pasif"
 
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Anlık kayıt konumu"
+msgstr "Kayıtlara ECM yi dahil et."
 
 msgid "Disable Picture in Picture"
 msgstr "Resim içinde resim (RiR) 'i kapat"
@@ -4921,9 +4920,8 @@ msgstr "OK ile kanal seç"
 msgid "Enable OpenTV EPG"
 msgstr "EIT EPG Aktif"
 
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Etkin"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "ViaSat EPG Aktif"
@@ -5830,7 +5828,7 @@ msgstr "Gönderen:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Yapılandırma Koruması"
+msgstr "Film Listesi yapılandırması"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6454,6 +6452,10 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Imaj: "
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -6907,9 +6909,8 @@ msgstr "Parlaklık"
 msgid "LED configuration"
 msgstr "Yapılandırma"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Normal"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -6928,9 +6929,8 @@ msgstr "Film Listesi yapılandırması"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Film Listesi yapılandırması"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7384,7 +7384,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Servis Ekle"
+msgstr "Ortam Oynatıcı"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7697,9 +7697,8 @@ msgstr ""
 msgid "Multi EPG"
 msgstr "Çoklu EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Kanal Aşağı"
+msgstr "Çoklu kanal"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -7960,6 +7959,9 @@ msgstr "Desteklenen DVDROM  bulunamadı!"
 
 msgid "No Connection"
 msgstr "Bağlantı yok"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr ""
@@ -8379,9 +8381,8 @@ msgstr "Orjinal dil"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Python versiyonu: "
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -8428,20 +8429,21 @@ msgstr "Tuner Kurulumu"
 
 #, fuzzy
 msgid "OpenVision"
-msgstr "Python versiyonu: "
+msgstr "Eklentiler"
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "H.Bekleme modunda LED açık kalsın"
+msgstr ""
 
-#, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "H.Bekleme modunda LED açık kalsın"
+msgstr ""
 
 msgid "Operating LED colour status while running."
 msgstr ""
 
 msgid "Opkg"
+msgstr ""
+
+msgid "Opticum HD 9600 series"
 msgstr ""
 
 msgid "Options disable timer"
@@ -9573,17 +9575,16 @@ msgstr "Kayıt Ayarları"
 msgid "Red"
 msgstr "Kırmızı"
 
-#, fuzzy
 msgid "Red LED during recording"
-msgstr "Anlık kayıt konumu"
+msgstr ""
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "H.Bekleme modunda LED açık kalsın"
+msgstr "Derin uyku"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "H.Bekleme modunda LED açık kalsın"
+msgstr "TV yi bekleme konumuna al"
 
 msgid "Red button..."
 msgstr "Kırmızı tuş..."
@@ -9821,9 +9822,8 @@ msgstr "Bölümleme tablosu okunuyor"
 msgid "Reseller ID: "
 msgstr "Kullanıcı tanımlı"
 
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Ad değiştir "
+msgstr ""
 
 msgid "Reserved"
 msgstr "Ayrılmış"
@@ -10736,7 +10736,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "Menü girişini seçin"
+msgstr "Film seç"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr ""
@@ -11117,7 +11117,7 @@ msgstr "Alternatifleri göster"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Küçük ilerlemeler"
+msgstr "Şifreleme simgelerini göster"
 
 msgid "Show InfoBar"
 msgstr "Bilgi Çubuğunu Göster"
@@ -11177,7 +11177,7 @@ msgstr "Kanal seçiminde kanal numaralarını göster."
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Yardım"
+msgstr "Sütunları göster"
 
 msgid "Show columns"
 msgstr "Sütunları göster"
@@ -11304,17 +11304,15 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-#, fuzzy
 msgid "Show on LED display"
-msgstr "Şifreleme simgelerini göster"
+msgstr ""
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Kapat. Bekleme Modunda"
+msgstr "Ekran ve kullanıcı arayüzü eklentilerini listele."
 
-#, fuzzy
 msgid "Show on VFD display"
-msgstr "Şifreleme simgelerini göster"
+msgstr ""
 
 #, fuzzy
 msgid "Show on VFD display in standby"
@@ -11322,7 +11320,7 @@ msgstr "Ekran ve kullanıcı arayüzü eklentilerini listele."
 
 #, fuzzy
 msgid "Show on display"
-msgstr "Şifreleme simgelerini göster"
+msgstr "Radyo kanal listesini göster..."
 
 #, fuzzy
 msgid "Show on display in standby"
@@ -12514,6 +12512,9 @@ msgstr "İnce ayar için test ekranı"
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 msgid "Text color"
 msgstr "Yazı rengi"
 
@@ -13621,6 +13622,10 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "DHCP Kullan"
 
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "DHCP Kullan"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Uygun olduğunda EPG EIT bilgilerini kullan."
 
@@ -14061,6 +14066,10 @@ msgstr "Wake Up"
 
 msgid "Wakeup TV from standby"
 msgstr "TV'nin bekleme modundan çıkmasını bekle"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "TV'den Uyandırma sinyali"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Açılış saati"
@@ -15032,11 +15041,11 @@ msgstr "Saati değiştir"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Kanal"
+msgstr "Kanal Bilgisi"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Kanal"
+msgstr "Hızlı Tarama kanal numaralarını kullanın"
 
 msgid "channel number and name"
 msgstr ""
@@ -16029,13 +16038,11 @@ msgstr "Bu kanal Aile Koruma Şifresi ile Kilitlenmiş"
 msgid "time"
 msgstr "Uyku Zamanlayıcı"
 
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Slayt gösterisi aralığı (sn)"
+msgstr ""
 
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Slayt gösterisi aralığı (sn)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"

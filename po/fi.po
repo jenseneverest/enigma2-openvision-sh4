@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2020-05-16 18:41+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -1357,6 +1357,7 @@ msgstr "4"
 msgid "422"
 msgstr "422"
 
+#
 #, fuzzy
 msgid "450 (default)"
 msgstr "Oletus"
@@ -1382,6 +1383,7 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr "50 MB/s"
 
+#
 #, fuzzy
 msgid "540 (default)"
 msgstr "Oletus"
@@ -2231,9 +2233,10 @@ msgstr ""
 msgid "Ask user (with default as 'yes')"
 msgstr ""
 
+#
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Kuvasuhde"
+msgstr "Alipalvelulista..."
 
 msgid "Aspect ratio"
 msgstr "Kuvasuhde"
@@ -2397,7 +2400,7 @@ msgstr "Ei valmiustilaa"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Viritin ei saatavilla"
+msgstr "ei saatavilla"
 
 msgid "Autoinstalling Completed"
 msgstr "Asennus on valmis."
@@ -4191,9 +4194,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr ""
@@ -4714,7 +4716,7 @@ msgstr "Poista käytöstä"
 
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Tallennuksien hakemisto"
+msgstr "Sisällytä aina ECM tallennuksiin"
 
 #
 msgid "Disable Picture in Picture"
@@ -5297,10 +5299,8 @@ msgstr "Käytä OK:ta kanavanvalintaan"
 msgid "Enable OpenTV EPG"
 msgstr "Ota käyttöön EIT EPG"
 
-#
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Käytössä"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Ota käyttöön ViaSat EPG"
@@ -6284,10 +6284,9 @@ msgstr "Perjantai"
 msgid "From:"
 msgstr "Mistä:"
 
-#
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Suojaa asetukset"
+msgstr "Tallenneluettelon asetukset"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6951,6 +6950,10 @@ msgstr "Jätä huomioimatta antenniverkon aliverkko"
 msgid "Ignore conflict"
 msgstr ""
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Ohjelmisto: "
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -7455,9 +7458,8 @@ msgstr "Valoisuus"
 msgid "LED configuration"
 msgstr "Asetukset"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Normaali"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7476,9 +7478,8 @@ msgstr "Tallenneluettelon asetukset"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Tallenneluettelon asetukset"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7994,10 +7995,9 @@ msgstr "Mayotte"
 msgid "Mb/s"
 msgstr ""
 
-#
 #, fuzzy
 msgid "Media framework: "
-msgstr "Lisää kanava"
+msgstr "Mediasoitin"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -8352,9 +8352,8 @@ msgstr "Mozambique"
 msgid "Multi EPG"
 msgstr "Kanavaopas"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "PCM-monikanavaääni"
+msgstr ""
 
 #
 #, fuzzy
@@ -8654,6 +8653,9 @@ msgstr "DVDROM-asemaa ei löytynyt!"
 
 msgid "No Connection"
 msgstr "Ei yhteyttä"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr "ECMP-id ei ole saatavilla (Free-to-air palvelu)"
@@ -9111,9 +9113,8 @@ msgstr "Alkuperäinen kieli"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Pythonin versio: "
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -9159,22 +9160,24 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Avaa viritinasetukset"
 
+#
 #, fuzzy
 msgid "OpenVision"
-msgstr "Pythonin versio: "
+msgstr "Laajennukset"
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "Kytke virta-LED päälle valmiustilassa."
+msgstr ""
 
-#, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "Kytke virta-LED päälle valmiustilassa."
+msgstr ""
 
 msgid "Operating LED colour status while running."
 msgstr ""
 
 msgid "Opkg"
+msgstr ""
+
+msgid "Opticum HD 9600 series"
 msgstr ""
 
 msgid "Options disable timer"
@@ -10463,9 +10466,8 @@ msgstr "Tallenne"
 msgid "Red"
 msgstr "Punainen"
 
-#, fuzzy
 msgid "Red LED during recording"
-msgstr "Tallennuksien hakemisto"
+msgstr ""
 
 #
 #, fuzzy
@@ -10474,7 +10476,7 @@ msgstr "Siirry virransäästötilaan"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Kytke virta-LED päälle valmiustilassa."
+msgstr "Laita TV valmiustilaan"
 
 msgid "Red button..."
 msgstr "Punainen näppäin..."
@@ -10745,10 +10747,8 @@ msgstr "Levyosioita luetaan uudelleen"
 msgid "Reseller ID: "
 msgstr "Käyttäjä"
 
-#
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Uudelleennimeä"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Varattu"
@@ -11761,7 +11761,7 @@ msgstr "Valitse maa. Jos ei haluamaasi löydy, valitse 'kaikki'."
 #
 #, fuzzy
 msgid "Select your keymap"
-msgstr "valitse valikon kohta"
+msgstr "Valitse tallenne"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr ""
@@ -12177,7 +12177,7 @@ msgstr "Näytä vaihtoehtoiset kanavat"
 #
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Pieni etenemispalkki"
+msgstr "Näytä salauksen kuvakkeet"
 
 msgid "Show InfoBar"
 msgstr "Näytä tietopalkki"
@@ -12242,7 +12242,7 @@ msgstr "Näytä kanavanumerot kanavalistassa"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Apua"
+msgstr "Näytä sarakkeet"
 
 msgid "Show columns"
 msgstr "Näytä sarakkeet"
@@ -12387,7 +12387,7 @@ msgstr "Näytä kanavalogot"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Siirry virransäästötilaan"
+msgstr "Näytä saatavilla olevat näyttö- ja käyttöliittymälaajennukset."
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -13723,6 +13723,9 @@ msgstr "Testikuvat ovat avuksi näytön virityksessä"
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 #
 msgid "Text color"
 msgstr "Tekstin väri"
@@ -14922,6 +14925,11 @@ msgstr "Käytä 12 merkin näyttöä"
 msgid "Use DHCP"
 msgstr "Käytä DHCP:tä"
 
+#
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Käytä DHCP:tä"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Käytä ohjelmaoppaan EIT-tietoja, jos saatavilla."
 
@@ -15417,6 +15425,10 @@ msgstr "Käynnisty"
 
 msgid "Wakeup TV from standby"
 msgstr "Käynnistä TV valmiustilasta"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Käynnistyssignaali TV:ltä"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Herätä vastaanotin"
@@ -16450,15 +16462,13 @@ msgstr "Keskellä, sovitettu"
 msgid "change sides"
 msgstr "Muuta ajastusta"
 
-#
 #, fuzzy
 msgid "channel name"
-msgstr "Kanava"
+msgstr "Kanavatiedot"
 
-#
 #, fuzzy
 msgid "channel number"
-msgstr "Kanava"
+msgstr "Kanavanumero ja logo"
 
 #, fuzzy
 msgid "channel number and name"
@@ -17573,15 +17583,11 @@ msgstr "Tämä kanava on suojattu lapsilukolla"
 msgid "time"
 msgstr "Uniajastin"
 
-#
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Kuvien näyttöaika (sekuntia)"
+msgstr ""
 
-#
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Kuvien näyttöaika (sekuntia)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"

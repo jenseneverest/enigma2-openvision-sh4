@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: OpenPLi translators <tech@openpli.org>\n"
 "Language-Team: PLiteam <translators@openpli.org>\n"
@@ -1326,7 +1326,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Zet als standaard"
+msgstr "standaard"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1348,7 +1348,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Zet als standaard"
+msgstr "standaard"
 
 msgid "6"
 msgstr "6"
@@ -2119,7 +2119,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Beeldverhouding"
+msgstr "Subzenderlijst..."
 
 msgid "Aspect ratio"
 msgstr "Beeldverhouding"
@@ -2264,7 +2264,7 @@ msgstr "Geen stand-by"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Tuner niet beschikbaar"
+msgstr "niet beschikbaar"
 
 msgid "Autoinstalling Completed"
 msgstr "(Auto)installatie is afgerond"
@@ -4118,9 +4118,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "DVD branden"
@@ -4581,7 +4580,7 @@ msgstr "Uit"
 
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Opname-locatie directe opnames"
+msgstr "Voeg de ECM altijd toe aan opnames"
 
 msgid "Disable Picture in Picture"
 msgstr "Picture In Picture uitschakelen"
@@ -5098,9 +5097,8 @@ msgstr "Zenderlijst openen met de 'Ok' toets"
 msgid "Enable OpenTV EPG"
 msgstr "Activeer OpenTV EPG"
 
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Ingeschakeld"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Viasat EPG inschakelen"
@@ -6012,7 +6010,7 @@ msgstr "Van:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Schakel het display in"
+msgstr "Configuratie van de opnamelijst"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6629,6 +6627,10 @@ msgstr "Negeer DVB-T namespace sub-netwerk"
 msgid "Ignore conflict"
 msgstr "Conflict negeren"
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Image: "
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -7082,9 +7084,8 @@ msgstr "Helderheid display indien actief"
 msgid "LED configuration"
 msgstr "Configuratie"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Normaal"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7103,9 +7104,8 @@ msgstr "Configuratie van de opnamelijst"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Configuratie van de opnamelijst"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7555,7 +7555,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Voeg een zender toe"
+msgstr "Mediaspeler"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7858,9 +7858,8 @@ msgstr "Mozambique"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Multichannel PCM"
+msgstr "Multi channel downmix"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -8123,6 +8122,9 @@ msgstr "Geen (ondersteunde) DVDROM gevonden!"
 
 msgid "No Connection"
 msgstr "Geen verbinding"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr "Geen ECMPids beschikbaar (FTA zender)"
@@ -8538,9 +8540,8 @@ msgstr "originele taal"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Pythonversie:"
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -8587,7 +8588,7 @@ msgstr "Open tunerinstellingen "
 
 #, fuzzy
 msgid "OpenVision"
-msgstr "Pythonversie:"
+msgstr "Applicaties"
 
 #, fuzzy
 msgid "Operating LED colour status in deep standby mode"
@@ -8603,6 +8604,9 @@ msgstr "Kleur van de LED tijdens bedrijf"
 
 msgid "Opkg"
 msgstr "Opkg"
+
+msgid "Opticum HD 9600 series"
+msgstr ""
 
 msgid "Options disable timer"
 msgstr "Opties m.b.t. déactiveren timer"
@@ -9256,13 +9260,14 @@ msgstr "Positioner instellingen log"
 
 #, fuzzy
 msgid "Power"
-msgstr "Powermenu"
+msgstr "Power LED"
 
 msgid "Power LED"
-msgstr ""
+msgstr "Power LED"
 
+#, fuzzy
 msgid "Power LED colour"
-msgstr ""
+msgstr "Power LED"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Power management. Raadpleeg de handleiding van uw ontvanger voor meer details."
@@ -9741,17 +9746,16 @@ msgstr "Instellingen t.b.v. de opnames"
 msgid "Red"
 msgstr "Rood"
 
-#, fuzzy
 msgid "Red LED during recording"
-msgstr "Opname-locatie directe opnames"
+msgstr ""
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Met deze optie bepaalt u of de power led brandt als de ontvanger in deep stand-by staat."
+msgstr "uitschakelen"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Met deze optie bepaalt u of de power led brandt als de ontvanger stand-by staat."
+msgstr "Zet de TV in stand-by"
 
 msgid "Red button..."
 msgstr "Rode toets..."
@@ -9989,9 +9993,8 @@ msgstr "Lees de partitietabel opnieuw"
 msgid "Reseller ID: "
 msgstr "Gebruikers ID"
 
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Wijzigen"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Gereserveerd"
@@ -10888,7 +10891,7 @@ msgstr "Kies uw land. Indien niet beschikbaar kies 'alle'."
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "selecteer menuitem"
+msgstr "Kies een film"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Kies uw provider en regio. Indien niet aanwezig in de lijst kies dan voor een van de alternatieve scanopties."
@@ -11275,7 +11278,7 @@ msgstr "Alternatieven weergeven"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Kleine stapjes voorwaarts"
+msgstr "Toon icoon indien gecodeerd"
 
 msgid "Show InfoBar"
 msgstr "Toon de informatiebalk"
@@ -11335,7 +11338,7 @@ msgstr "Toon de kanaalnummers in de zenderlijst"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Toon de help"
+msgstr "Toon de kolommen"
 
 msgid "Show columns"
 msgstr "Toon de kolommen"
@@ -11467,7 +11470,7 @@ msgstr "De picons op het display weergeven"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Kleur van de LED in stand-by"
+msgstr "Schakel het display in tijdens stand-by"
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -12654,6 +12657,9 @@ msgstr "Testschermen waarmee u de weergave van uw scherm kunt optimaliseren"
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 msgid "Text color"
 msgstr "Tekstkleur"
 
@@ -13750,6 +13756,10 @@ msgstr "Gebruik de 12 characters display modus"
 msgid "Use DHCP"
 msgstr "Automatisch IP verkrijgen (DHCP)"
 
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Automatisch IP verkrijgen (DHCP)"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Indien geactiveerd kunt u, indien deze beschikbaar is, de EIT EPG informatie inschakelen."
 
@@ -14195,6 +14205,10 @@ msgstr "Actief worden"
 
 msgid "Wakeup TV from standby"
 msgstr "Activeer de TV vanuit stand-by"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Activeer het signaal van TV met "
 
 msgid "Wakeup receiver for start timer"
 msgstr "Haal de ontvanger uit  om een timeropname te starten"
@@ -15205,11 +15219,11 @@ msgstr "Wijzig timer"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Kanaal"
+msgstr "Zenderinfo"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Kanaal"
+msgstr "Kanaalnummer en picon"
 
 #, fuzzy
 msgid "channel number and name"
@@ -16201,17 +16215,15 @@ msgstr "Dit kanaal is beveiligd met een kinderslot"
 msgid "time"
 msgstr "Uptime"
 
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Diavoorstelling interval in (sec.)"
+msgstr ""
 
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Diavoorstelling interval in (sec.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"
-msgstr "Start op met Android"
+msgstr "Ja en sla op"
 
 msgid "time, day and date"
 msgstr ""

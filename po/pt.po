@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2014-12-15 19:38-0000\n"
 "Last-Translator: Phenom <phenomxy@gmail.com>\n"
 "Language-Team: Muaitai <muaitai@gmail.com>\n"
@@ -1351,9 +1351,10 @@ msgstr "4"
 msgid "422"
 msgstr ""
 
+#
 #, fuzzy
 msgid "450 (default)"
-msgstr "Definir como padrão"
+msgstr "padrão"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1376,9 +1377,10 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+#
 #, fuzzy
 msgid "540 (default)"
-msgstr "Definir como padrão"
+msgstr "padrão"
 
 msgid "6"
 msgstr "6"
@@ -2271,7 +2273,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Proporção"
+msgstr "Lista de sub-canais... "
 
 #
 #, fuzzy
@@ -4314,9 +4316,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr ""
@@ -4839,10 +4840,8 @@ msgstr "Desabilitar"
 msgid "Disable FCC"
 msgstr "Desabilitar"
 
-#
-#, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Localização das gravações instantâneas"
+msgstr ""
 
 #
 msgid "Disable Picture in Picture"
@@ -5444,10 +5443,8 @@ msgstr "Activar OK para selecção de canal"
 msgid "Enable OpenTV EPG"
 msgstr "Activar Guia de Programação EIT"
 
-#
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Activar"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Activar Guia de Programação Viasat"
@@ -6450,10 +6447,9 @@ msgstr "Sexta-feira"
 msgid "From:"
 msgstr "De:"
 
-#
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "abrir a configuração do servidor de DNS"
+msgstr "Configuração da Lista de Vídeos"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -7126,6 +7122,10 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Imagem: "
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -7651,9 +7651,8 @@ msgstr "Brilho"
 msgid "LED configuration"
 msgstr "Configuração"
 
-#, fuzzy
 msgid "LED control"
-msgstr "normal"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7673,9 +7672,8 @@ msgstr "Configuração da Lista de Vídeos"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Configuração da Lista de Vídeos"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -8207,7 +8205,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Media framework: "
-msgstr "Adicionar canal"
+msgstr "Leitor multimédia"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -8567,9 +8565,8 @@ msgstr ""
 msgid "Multi EPG"
 msgstr "Guia de Programação Múltiplo"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Mostrar Guia de Programação Múltiplo canal"
+msgstr ""
 
 #
 #, fuzzy
@@ -8870,6 +8867,9 @@ msgstr "Nenhum DVDROM (suportado) encontrado!"
 #
 msgid "No Connection"
 msgstr "Sem Ligação"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr ""
@@ -9344,9 +9344,8 @@ msgstr "idioma original"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Versão do Kernel: "
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -9398,22 +9397,24 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Configuração Picture in Picture"
 
+#
 #, fuzzy
 msgid "OpenVision"
-msgstr "Versão do Kernel: "
+msgstr "Extensões"
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "Ligar o LED de Power durante o Standby."
+msgstr ""
 
-#, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "Ligar o LED de Power durante o Standby."
+msgstr ""
 
 msgid "Operating LED colour status while running."
 msgstr ""
 
 msgid "Opkg"
+msgstr ""
+
+msgid "Opticum HD 9600 series"
 msgstr ""
 
 msgid "Options disable timer"
@@ -10731,18 +10732,17 @@ msgstr "A gravar"
 msgid "Red"
 msgstr ""
 
+msgid "Red LED during recording"
+msgstr ""
+
 #
 #, fuzzy
-msgid "Red LED during recording"
-msgstr "Localização das gravações instantâneas"
-
-#, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Ligar o LED de Power durante o Standby."
+msgstr "desligar"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Ligar o LED de Power durante o Standby."
+msgstr "Colocar TV em Standby"
 
 msgid "Red button..."
 msgstr "Botão vermelho..."
@@ -11018,10 +11018,8 @@ msgstr "Ler novamente a tabela de partições"
 msgid "Reseller ID: "
 msgstr "Definido pelo utilizador"
 
-#
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Renomear"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Reservado"
@@ -12075,7 +12073,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Select your keymap"
-msgstr "seleccionar entrada de menu"
+msgstr "Seleccione um filme"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr ""
@@ -12509,10 +12507,9 @@ msgstr "Mostrar Guia de Programação..."
 msgid "Show Ethernet activity"
 msgstr "Ver alternativas"
 
-#
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Em progresso"
+msgstr "Mostrar ícones de encriptação"
 
 msgid "Show InfoBar"
 msgstr ""
@@ -12576,10 +12573,9 @@ msgstr "Mostrar animação quando o sistema está ocupado."
 msgid "Show channel numbers in channel selection"
 msgstr "Mostrar a numeração dos canais na Lista de Canais"
 
-#
 #, fuzzy
 msgid "Show clock"
-msgstr "Mostrar informação"
+msgstr "Mostrar colunas"
 
 msgid "Show columns"
 msgstr "Mostrar colunas"
@@ -12725,26 +12721,26 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-#, fuzzy
 msgid "Show on LED display"
-msgstr "Mostrar ícones de encriptação"
+msgstr ""
 
+#
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Desligar quando em Standby"
+msgstr "Ver lista de extensões de ecrã e interface de utilizador disponíveis"
 
-#, fuzzy
 msgid "Show on VFD display"
-msgstr "Mostrar ícones de encriptação"
+msgstr ""
 
 #
 #, fuzzy
 msgid "Show on VFD display in standby"
 msgstr "Ver lista de extensões de ecrã e interface de utilizador disponíveis"
 
+#
 #, fuzzy
 msgid "Show on display"
-msgstr "Mostrar ícones de encriptação"
+msgstr "Mostrar rádio..."
 
 #
 #, fuzzy
@@ -14101,6 +14097,9 @@ msgstr ""
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Text color"
@@ -15327,6 +15326,11 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "Usar DHCP"
 
+#
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Usar DHCP"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Usar informação EIT EPG quando está disponível."
 
@@ -15850,6 +15854,10 @@ msgstr "Acordar"
 
 msgid "Wakeup TV from standby"
 msgstr "Acordar TV do Standby"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Sinal de acordar da TV"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Acordar receptor para iniciar um agendamento"
@@ -16900,12 +16908,11 @@ msgstr "Alterar agendamento"
 #
 #, fuzzy
 msgid "channel name"
-msgstr "Canal"
+msgstr "%d canal encontrado"
 
-#
 #, fuzzy
 msgid "channel number"
-msgstr "Canal"
+msgstr "Usar o número dos canais da pesquisa rápida"
 
 msgid "channel number and name"
 msgstr ""
@@ -18021,15 +18028,11 @@ msgstr "este canal está protegido pelo PIN de controlo parental"
 msgid "time"
 msgstr "Temporizador"
 
-#
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Intervalo do visualizador de imagens (seg.)"
+msgstr ""
 
-#
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Intervalo do visualizador de imagens (seg.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -1358,9 +1358,10 @@ msgstr "4"
 msgid "422"
 msgstr "422"
 
+#
 #, fuzzy
 msgid "450 (default)"
-msgstr "Sæt standard"
+msgstr "standard"
 
 #
 msgid "4:3"
@@ -1384,9 +1385,10 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+#
 #, fuzzy
 msgid "540 (default)"
-msgstr "Sæt standard"
+msgstr "standard"
 
 #
 msgid "6"
@@ -2259,7 +2261,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Billed format"
+msgstr "Underkanal liste..."
 
 #
 msgid "Aspect ratio"
@@ -2428,7 +2430,7 @@ msgstr "Ingen standby"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Tuner ikke tilgængelig."
+msgstr "utilgængelig"
 
 #, fuzzy
 msgid "Autoinstalling Completed"
@@ -4278,9 +4280,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "DVD Brænding"
@@ -4800,10 +4801,9 @@ msgstr "Afbryd"
 msgid "Disable FCC"
 msgstr "Afbryd"
 
-#
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Placering af umiddelbare optagelser"
+msgstr "Inkluder altid ECM i optagelser"
 
 #
 msgid "Disable Picture in Picture"
@@ -5399,10 +5399,8 @@ msgstr "Anvend OK for kanal valg"
 msgid "Enable OpenTV EPG"
 msgstr "Aktiver EIT EPG"
 
-#
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Aktiveret"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Aktiver Viasat EPG"
@@ -6416,7 +6414,7 @@ msgstr "Fra"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Beskyt konfiguration"
+msgstr "Konfigurer filmliste"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -7083,6 +7081,10 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr "Ignorer konfilkt"
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Billede:"
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -7597,9 +7599,8 @@ msgstr "Lysstyrke"
 msgid "LED configuration"
 msgstr "Konfiguration"
 
-#, fuzzy
 msgid "LED control"
-msgstr "normal"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7619,9 +7620,8 @@ msgstr "Konfigurer filmliste"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Konfigurer filmliste"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -8142,7 +8142,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Media framework: "
-msgstr "Tilføj kanal"
+msgstr "Medie afspiller"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -8498,9 +8498,8 @@ msgstr ""
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Multichannel PCM"
+msgstr "Multi channel downmix"
 
 #
 #, fuzzy
@@ -8802,6 +8801,9 @@ msgstr "Ingen (understøttet) DVDROM fundet!"
 #
 msgid "No Connection"
 msgstr "Ingen forbindelse"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr ""
@@ -9266,9 +9268,8 @@ msgstr "original sprog"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Python version: "
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -9316,22 +9317,24 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Åben setup tuner"
 
+#
 #, fuzzy
 msgid "OpenVision"
-msgstr "Python version: "
+msgstr "Udvidelser"
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "Tænd for strøm LED under standby."
+msgstr ""
 
-#, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "Tænd for strøm LED under standby."
+msgstr ""
 
 msgid "Operating LED colour status while running."
 msgstr ""
 
 msgid "Opkg"
+msgstr ""
+
+msgid "Opticum HD 9600 series"
 msgstr ""
 
 msgid "Options disable timer"
@@ -10624,18 +10627,17 @@ msgstr "Optagelses Setup"
 msgid "Red"
 msgstr "Rød"
 
+msgid "Red LED during recording"
+msgstr ""
+
 #
 #, fuzzy
-msgid "Red LED during recording"
-msgstr "Placering af umiddelbare optagelser"
-
-#, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Tænd for strøm LED under standby."
+msgstr "gå til dyb standby"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Tænd for strøm LED under standby."
+msgstr "Sæt TV i standby"
 
 msgid "Red button..."
 msgstr "Rød knap"
@@ -10904,10 +10906,8 @@ msgstr "Genlæs partitionstabel"
 msgid "Reseller ID: "
 msgstr "Brugerdefineret"
 
-#
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Omdøb"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Reserveret"
@@ -11943,7 +11943,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Select your keymap"
-msgstr "vælg meny indgang"
+msgstr "Vælg film"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr ""
@@ -12360,10 +12360,9 @@ msgstr "Vis EPG..."
 msgid "Show Ethernet activity"
 msgstr "Vis alternativer"
 
-#
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Små fremskridt"
+msgstr "Vis krypto ikoner"
 
 msgid "Show InfoBar"
 msgstr "Vis InfoBar"
@@ -12427,7 +12426,7 @@ msgstr "Vis kanalnumre i kanalvælger"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Vis hjælp"
+msgstr "Vis spalter"
 
 msgid "Show columns"
 msgstr "Vis spalter"
@@ -12565,26 +12564,26 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-#, fuzzy
 msgid "Show on LED display"
-msgstr "Vis krypto ikoner"
+msgstr ""
 
+#
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Luk ned når standby er aktiv"
+msgstr "Vis oplistning af tilgængelige visnings- og brugerinterface udvidelser."
 
-#, fuzzy
 msgid "Show on VFD display"
-msgstr "Vis krypto ikoner"
+msgstr ""
 
 #
 #, fuzzy
 msgid "Show on VFD display in standby"
 msgstr "Vis oplistning af tilgængelige visnings- og brugerinterface udvidelser."
 
+#
 #, fuzzy
 msgid "Show on display"
-msgstr "Vis krypto ikoner"
+msgstr "Vis radio afspilleren..."
 
 #
 #, fuzzy
@@ -13906,6 +13905,9 @@ msgstr "Testskærme der kan hjælpe med at fintune dit display"
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 #
 msgid "Text color"
 msgstr "Tekstfarve"
@@ -15148,6 +15150,11 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "Brug (DHCP)"
 
+#
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Brug (DHCP)"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Brug EIT EPG information når det er tilgængeligt."
 
@@ -15651,6 +15658,10 @@ msgstr "Vågn op"
 
 msgid "Wakeup TV from standby"
 msgstr "Væk TV fra Standby"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Vågn op signal fra TV"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Vågn receiver ved timer start"
@@ -16695,15 +16706,13 @@ msgstr "centreret, pakket"
 msgid "change sides"
 msgstr "Ændre timer"
 
-#
 #, fuzzy
 msgid "channel name"
-msgstr "Kanal Info..."
+msgstr "Kanal Info"
 
-#
 #, fuzzy
 msgid "channel number"
-msgstr "Kanal Info..."
+msgstr "Kanalnummer og picon"
 
 #, fuzzy
 msgid "channel number and name"
@@ -17821,15 +17830,11 @@ msgstr "denne service er beskyttet af forældre kontrol "
 msgid "time"
 msgstr "Sleeptimer"
 
-#
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Slideshow interval (sek.)"
+msgstr ""
 
-#
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Slideshow interval (sek.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -1352,9 +1352,10 @@ msgstr "4"
 msgid "422"
 msgstr ""
 
+#
 #, fuzzy
 msgid "450 (default)"
-msgstr "Ange standard"
+msgstr "grund"
 
 #
 msgid "4:3"
@@ -1380,9 +1381,10 @@ msgstr "5"
 msgid "50 MB/s"
 msgstr ""
 
+#
 #, fuzzy
 msgid "540 (default)"
-msgstr "Ange standard"
+msgstr "grund"
 
 #
 msgid "6"
@@ -2256,7 +2258,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Bildformat"
+msgstr "Underkanalslista..."
 
 #
 msgid "Aspect ratio"
@@ -2423,9 +2425,10 @@ msgstr "Auto scart växling"
 msgid "Auto standby"
 msgstr "Inget viloläge"
 
+#
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Tuner inte tillgänglig."
+msgstr "ej tillgänglig"
 
 #, fuzzy
 msgid "Autoinstalling Completed"
@@ -4267,9 +4270,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "DVD Brännare"
@@ -4787,10 +4789,9 @@ msgstr "Avaktivera"
 msgid "Disable FCC"
 msgstr "Avaktivera"
 
-#
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Plats för direktinspelningar"
+msgstr "Inkludera alltid ECM i inspelningar"
 
 #
 msgid "Disable Picture in Picture"
@@ -5383,10 +5384,8 @@ msgstr "Aktivera OK knapp för kanalval"
 msgid "Enable OpenTV EPG"
 msgstr "Aktivera EIT EPG"
 
-#
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Aktiverad"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Aktivera ViaSat EPG"
@@ -6395,7 +6394,7 @@ msgstr "Från :"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Ta bort alla loggfiler"
+msgstr "Konfiguration av filmlista"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -7062,6 +7061,10 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr "Ignorera konflikt"
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Image : "
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -7573,9 +7576,8 @@ msgstr "Ljusstyrka"
 msgid "LED configuration"
 msgstr "Konfiguration"
 
-#, fuzzy
 msgid "LED control"
-msgstr "normal"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -7595,9 +7597,8 @@ msgstr "Konfiguration av filmlista"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Konfiguration av filmlista"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -8113,7 +8114,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Media framework: "
-msgstr "Lägg till tjänst"
+msgstr "Mediaspelare"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -8469,9 +8470,8 @@ msgstr ""
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Multikanal PCM"
+msgstr "Multikanals nedmixning"
 
 #
 #, fuzzy
@@ -8770,6 +8770,9 @@ msgstr "Ingen (supporterad) DVDROM hittad!"
 #
 msgid "No Connection"
 msgstr "Ingen anslutning"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr ""
@@ -9229,9 +9232,8 @@ msgstr "originalspråk"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Pythonversion :"
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -9279,22 +9281,24 @@ msgstr ""
 msgid "OpenVPN setup"
 msgstr "Öppna inställning för tuner"
 
+#
 #, fuzzy
 msgid "OpenVision"
-msgstr "Pythonversion :"
+msgstr "Utökningar"
 
-#, fuzzy
 msgid "Operating LED colour status in deep standby mode"
-msgstr "Slå på powerlampan i viloläge."
+msgstr ""
 
-#, fuzzy
 msgid "Operating LED colour status in standby mode"
-msgstr "Slå på powerlampan i viloläge."
+msgstr ""
 
 msgid "Operating LED colour status while running."
 msgstr ""
 
 msgid "Opkg"
+msgstr ""
+
+msgid "Opticum HD 9600 series"
 msgstr ""
 
 msgid "Options disable timer"
@@ -10578,18 +10582,17 @@ msgstr "Inspellningsinställningar"
 msgid "Red"
 msgstr "Röd"
 
+msgid "Red LED during recording"
+msgstr ""
+
 #
 #, fuzzy
-msgid "Red LED during recording"
-msgstr "Plats för direktinspelningar"
-
-#, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Slå på powerlampan i viloläge."
+msgstr "stäng av mottagaren"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Slå på powerlampan i viloläge."
+msgstr "Sätt TV:n i viloläge"
 
 msgid "Red button..."
 msgstr "Röd knapp..."
@@ -10856,10 +10859,8 @@ msgstr "Läser om partitionstabellen"
 msgid "Reseller ID: "
 msgstr "Användardefinierat"
 
-#
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Byt namn"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Reserverad"
@@ -11893,7 +11894,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Select your keymap"
-msgstr "välj meny post"
+msgstr "Välj en film"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr ""
@@ -12307,10 +12308,9 @@ msgstr "Visa EPG..."
 msgid "Show Ethernet activity"
 msgstr "Visa alternativ"
 
-#
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Liten tidslinje"
+msgstr "Visa krypteringsikoner"
 
 msgid "Show InfoBar"
 msgstr "Visa infobalk"
@@ -12374,7 +12374,7 @@ msgstr "Visa kanalnummer i kanallistan"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Visa hjälp"
+msgstr "Visa Kolumner"
 
 msgid "Show columns"
 msgstr "Visa Kolumner"
@@ -12515,9 +12515,10 @@ msgstr ""
 msgid "Show on LED display"
 msgstr "Visa picons i display"
 
+#
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "Stäng av vid viloläge"
+msgstr "Visa lista över tillgängliga Display och Användargränssnittutökningar."
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -13848,6 +13849,9 @@ msgstr "Testbilder som är hjälpfulla vid fininställning av skärmen"
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 #
 msgid "Text color"
 msgstr "textfärg"
@@ -15102,6 +15106,11 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "Använd DHCP"
 
+#
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Använd DHCP"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Använd EIT EPG information när den är tillgänglig."
 
@@ -15602,6 +15611,10 @@ msgstr "Väck"
 
 msgid "Wakeup TV from standby"
 msgstr "Väck TV från viloläge"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Uppväckningssignal från TV"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Väck mottagare för starttimer"
@@ -16660,15 +16673,13 @@ msgstr "centrerad, radbrytning"
 msgid "change sides"
 msgstr "Ändra timer"
 
-#
 #, fuzzy
 msgid "channel name"
-msgstr "Kanal"
+msgstr "Kanal info"
 
-#
 #, fuzzy
 msgid "channel number"
-msgstr "Kanal"
+msgstr "Kanalnummer och picon"
 
 #, fuzzy
 msgid "channel number and name"
@@ -17786,15 +17797,11 @@ msgstr "denna kanal är föräldraskyddad"
 msgid "time"
 msgstr "Insomningstimer"
 
-#
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Slideshow intervall (sec.)"
+msgstr ""
 
-#
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Slideshow intervall (sec.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"

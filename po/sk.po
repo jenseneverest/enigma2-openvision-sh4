@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-19 21:25+0330\n"
+"POT-Creation-Date: 2020-11-22 17:32+0330\n"
 "PO-Revision-Date: 2020-05-12 14:02+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -1338,7 +1338,7 @@ msgstr "422"
 
 #, fuzzy
 msgid "450 (default)"
-msgstr "Nastaviť predvolené"
+msgstr "predvolené"
 
 msgid "4:3"
 msgstr "4:3"
@@ -1360,7 +1360,7 @@ msgstr "50 MB/s"
 
 #, fuzzy
 msgid "540 (default)"
-msgstr "Nastaviť predvolené"
+msgstr "predvolené"
 
 msgid "6"
 msgstr "6"
@@ -2122,7 +2122,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Aspect list..."
-msgstr "Pomer strán"
+msgstr "Zoznam podkanálov..."
 
 msgid "Aspect ratio"
 msgstr "Pomer strán"
@@ -2268,7 +2268,7 @@ msgstr "Neprechádzať do pohotovostného režimu"
 
 #, fuzzy
 msgid "Auto(not available)"
-msgstr "Tuner nie je k dispozícii."
+msgstr "nedostupné"
 
 msgid "Autoinstalling Completed"
 msgstr "Autoinštalácia dokončená"
@@ -3924,9 +3924,8 @@ msgstr "DVB-T2"
 msgid "DVB-T: "
 msgstr "DVB-T"
 
-#, fuzzy
 msgid "DVD"
-msgstr "DVB-C"
+msgstr ""
 
 msgid "DVD Burn"
 msgstr "Napáliť DVD"
@@ -4389,7 +4388,7 @@ msgstr "Zakázať"
 
 #, fuzzy
 msgid "Disable FCC during recordings"
-msgstr "Umiestnenie okamžitých záznamov"
+msgstr "Vždy zahrnúť ECM do nahrávok"
 
 msgid "Disable Picture in Picture"
 msgstr "Vypnúť obraz v obraze"
@@ -4894,9 +4893,8 @@ msgstr "Povoliť tlačidlom OK výber stanice"
 msgid "Enable OpenTV EPG"
 msgstr "Povoliť OpenTV EPG"
 
-#, fuzzy
 msgid "Enable VFD display"
-msgstr "Povolené"
+msgstr ""
 
 msgid "Enable ViaSat EPG"
 msgstr "Povoliť ViaSat EPG"
@@ -5803,7 +5801,7 @@ msgstr "Od:"
 
 #, fuzzy
 msgid "Front panel display configuration"
-msgstr "Zapnúť obrazovku"
+msgstr "Konfigurácia zoznamu filmov"
 
 msgid "Front panel display configuration for Pace HDS-7241"
 msgstr ""
@@ -6418,6 +6416,10 @@ msgstr "Ignorovať DVB-T namespace sub network"
 msgid "Ignore conflict"
 msgstr "Ignorovať konflikt"
 
+#, fuzzy
+msgid "Image View On"
+msgstr "Image: "
+
 msgid "Image architecture: "
 msgstr ""
 
@@ -6869,9 +6871,8 @@ msgstr "Jas"
 msgid "LED configuration"
 msgstr "Konfigurácia"
 
-#, fuzzy
 msgid "LED control"
-msgstr "Normálny"
+msgstr ""
 
 msgid "LED control for Fortis HS7110"
 msgstr ""
@@ -6890,9 +6891,8 @@ msgstr "Konfigurácia zoznamu filmov"
 msgid "LED display configuration for Fortis HS7810A"
 msgstr ""
 
-#, fuzzy
 msgid "LED display configuration for Spark"
-msgstr "Konfigurácia zoznamu filmov"
+msgstr ""
 
 msgid "LED display control Spark"
 msgstr ""
@@ -7343,7 +7343,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Media framework: "
-msgstr "Pridať stanicu"
+msgstr "Prehrávač médií"
 
 msgid "Media playback Remaining/Elapsed as"
 msgstr ""
@@ -7646,9 +7646,8 @@ msgstr "Mozambik"
 msgid "Multi EPG"
 msgstr "Multi EPG"
 
-#, fuzzy
 msgid "Multi channel downmix"
-msgstr "Multikanál PCM"
+msgstr "Multi kanál downmix"
 
 #, fuzzy
 msgid "Multi remote control support"
@@ -7909,6 +7908,9 @@ msgstr "Nenájdený (podporovaný) DVDROM!"
 
 msgid "No Connection"
 msgstr "Nie je spojenie"
+
+msgid "No ECM info is currently available. This is only available while decrypting."
+msgstr ""
 
 msgid "No ECMPids available (FTA Service)"
 msgstr "ECMPidy nedostupné (FTA stanica)"
@@ -8319,9 +8321,8 @@ msgstr "pôvodný jazyk"
 msgid "Open Vision module: "
 msgstr ""
 
-#, fuzzy
 msgid "Open Vision random UUID: "
-msgstr "Verzia Python: "
+msgstr ""
 
 msgid "Open Vision revision check"
 msgstr ""
@@ -8368,7 +8369,7 @@ msgstr "Otvoriť nastavenia tunera "
 
 #, fuzzy
 msgid "OpenVision"
-msgstr "Verzia Python: "
+msgstr "Rozšírenia"
 
 #, fuzzy
 msgid "Operating LED colour status in deep standby mode"
@@ -8384,6 +8385,9 @@ msgstr "LED stav v prevádzkovom režime"
 
 msgid "Opkg"
 msgstr "Opkg"
+
+msgid "Opticum HD 9600 series"
+msgstr ""
 
 msgid "Options disable timer"
 msgstr "Možnosti zakázať časovač"
@@ -9013,13 +9017,14 @@ msgstr "Záznam nastavení pozicionéra"
 
 #, fuzzy
 msgid "Power"
-msgstr "Menu napájania"
+msgstr "LED napájania"
 
 msgid "Power LED"
-msgstr ""
+msgstr "LED napájania"
 
+#, fuzzy
 msgid "Power LED colour"
-msgstr ""
+msgstr "LED napájania"
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Správa napájania. Pre viac informácií si preštudujte návod k prijímaču."
@@ -9498,17 +9503,16 @@ msgstr "Nastavenie nahrávania"
 msgid "Red"
 msgstr "Červená"
 
-#, fuzzy
 msgid "Red LED during recording"
-msgstr "Umiestnenie okamžitých záznamov"
+msgstr ""
 
 #, fuzzy
 msgid "Red LED on in deep standby"
-msgstr "Zapnúť LED napájania pri vypnutom prijímači."
+msgstr "prejsť do vypnutia"
 
 #, fuzzy
 msgid "Red LED on in standby"
-msgstr "Zapnúť LED napájania pohotovostnom režime."
+msgstr "Prepnúť TV do pohotovostného režimu"
 
 msgid "Red button..."
 msgstr "Červené tlačidlo..."
@@ -9742,9 +9746,8 @@ msgstr "Znovunačítanie tabuľky partícií"
 msgid "Reseller ID: "
 msgstr "Užívateľské ID"
 
-#, fuzzy
 msgid "Reseller name: "
-msgstr "Premenovať"
+msgstr ""
 
 msgid "Reserved"
 msgstr "Rezervované"
@@ -10642,7 +10645,7 @@ msgstr "Vyberte vašu krajinu. Ak nie je dostupné, vyberte 'všetky'."
 
 #, fuzzy
 msgid "Select your keymap"
-msgstr "zvoliť položku menu"
+msgstr "Vybrať film"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr "Vyberte vášho poskytovateľa a región. Ak sa v tomto zozname nenachádza, budete musieť nejaký vybrať z voľby 'Typ vyhľadávania staníc'."
@@ -11017,7 +11020,7 @@ msgstr "Zobraziť alternatívy"
 
 #, fuzzy
 msgid "Show HDD icons"
-msgstr "Malý pokrok"
+msgstr "Zobrazovať ikony kódovania"
 
 msgid "Show InfoBar"
 msgstr "Zobraziť informačný panel"
@@ -11077,7 +11080,7 @@ msgstr "Vo výbere staníc zobraziť číslo stanice"
 
 #, fuzzy
 msgid "Show clock"
-msgstr "Zobraziť nápovedu"
+msgstr "Zobraziť stĺpce"
 
 msgid "Show columns"
 msgstr "Zobraziť stĺpce"
@@ -11209,7 +11212,7 @@ msgstr "Zobraziť picony na obrazovke"
 
 #, fuzzy
 msgid "Show on LED display in standby"
-msgstr "LED stav v pohotovostnom režime "
+msgstr "Vypnúť displej v pohotovostnom režime."
 
 #, fuzzy
 msgid "Show on VFD display"
@@ -12391,6 +12394,9 @@ msgstr "Testovacie obrazce pomáhajú jemné doladiť vašu obrazovku"
 msgid "Text"
 msgstr ""
 
+msgid "Text View On"
+msgstr ""
+
 msgid "Text color"
 msgstr "Farba textu"
 
@@ -13487,6 +13493,10 @@ msgstr "Použiť 12 znakový režim displeja"
 msgid "Use DHCP"
 msgstr "Použiť DHCP"
 
+#, fuzzy
+msgid "Use DHCP for DNS"
+msgstr "Použiť DHCP"
+
 msgid "Use EIT EPG information when it is available."
 msgstr "Ak sú dostupné, použiť EIT EPG informácie."
 
@@ -13919,6 +13929,10 @@ msgstr "Prebudiť"
 
 msgid "Wakeup TV from standby"
 msgstr "Prebudiť TV z pohotovostného režimu"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "Signál na prebudenie prijímača z TV"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Prebudiť prijímač začiatkom časovača"
@@ -14899,11 +14913,11 @@ msgstr "Zmeniť časovač"
 
 #, fuzzy
 msgid "channel name"
-msgstr "Kanál"
+msgstr "Informácie o stanici"
 
 #, fuzzy
 msgid "channel number"
-msgstr "Kanál"
+msgstr "Číslo kanálu a picona"
 
 #, fuzzy
 msgid "channel number and name"
@@ -15892,17 +15906,15 @@ msgstr "táto stanica je chránená rodičovskou kontrolou"
 msgid "time"
 msgstr "Časovač vypnutia"
 
-#, fuzzy
 msgid "time (with seconds)"
-msgstr "Interval prezentácie (sek.)"
+msgstr ""
 
-#, fuzzy
 msgid "time (without seconds)"
-msgstr "Interval prezentácie (sek.)"
+msgstr ""
 
 #, fuzzy
 msgid "time and date"
-msgstr "Štart do Android image"
+msgstr "Áno a uložiť"
 
 msgid "time, day and date"
 msgstr ""

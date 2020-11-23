@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-22 17:32+0330\n"
+"POT-Creation-Date: 2020-11-23 13:40+0330\n"
 "PO-Revision-Date: 2013-10-23 19:15+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -1300,6 +1300,10 @@ msgstr ""
 msgid "A"
 msgstr ""
 
+#, fuzzy
+msgid "A command sent from TV will wake up the receiver from standby."
+msgstr "Våkne mottakeren fra avslått stilling"
+
 #
 #, python-format
 msgid ""
@@ -2412,6 +2416,9 @@ msgstr ""
 
 msgid "Basque"
 msgstr "Baskisk"
+
+msgid "Before sending command for switch TV to standby receiver tests if all other receivers pluged to TV are in standby. If are not, 'sourceactive' instead 'stanby' is sent to the TV."
+msgstr ""
 
 #
 msgid "Begin time"
@@ -4354,6 +4361,9 @@ msgstr ""
 msgid "Delay in miliseconds between scrolling characters on display."
 msgstr ""
 
+msgid "Delay in queue between sending CEC commands. For working HDMI-CEC protocol must be for some receivers used delay. Usualy between 50-150ms."
+msgstr ""
+
 msgid "Delay:"
 msgstr ""
 
@@ -5197,6 +5207,10 @@ msgstr "Aktivere flere kanallister"
 #, fuzzy
 msgid "Enable or disable IPv6"
 msgstr "Aktivere freesat EPG"
+
+#, fuzzy
+msgid "Enable or disable using HDMI-CEC."
+msgstr "Aktivere EIT EPG"
 
 msgid "Enable parental protection"
 msgstr ""
@@ -6716,6 +6730,9 @@ msgid "Icons"
 msgstr "Varsler"
 
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
+msgid "If enabled, CEC protocol traffic can be saved to a logfile 'hdmicec.log'."
 msgstr ""
 
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
@@ -9800,6 +9817,10 @@ msgstr "Trykk INFO på fjernkontrollen for ytterligere informasjon."
 msgid "Press MENU on your remote control for additional options."
 msgstr "Trykk på MENU på fjernkontrollen for flere alternativer."
 
+#, fuzzy
+msgid "Press OK and select directory as path for logfile."
+msgstr "Oppretter katalog %s mislyktes."
+
 msgid "Press OK on your remote control to continue."
 msgstr "Trykk OK for å fortsette."
 
@@ -9985,8 +10006,15 @@ msgstr ""
 msgid "Purge deleted user bouquets"
 msgstr ""
 
+#, fuzzy
+msgid "Put A/V receiver to standby."
+msgstr "Slå av mottaker"
+
 msgid "Put TV in standby"
 msgstr "Slå av TV"
+
+msgid "Put TV to standby when receiver goes to standby or to deep standby."
+msgstr ""
 
 msgid "Put receiver in standby"
 msgstr "Slå av mottaker"
@@ -10243,6 +10271,9 @@ msgstr "Valg av oppfriskningsrate"
 
 msgid "Regard deep standby as standby"
 msgstr "Betrakt 'helt slått av' samme som 'avslått'"
+
+msgid "Regard deep standby as standby. It will be sending same commands when box goest to deep standby."
+msgstr ""
 
 msgid "Region"
 msgstr ""
@@ -12460,6 +12491,9 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Noen programtillegg er ikke tilgjengelig:\n"
 
+msgid "Some tv's do not handle command 'Image View On' for wakingup correctly, so you can try sending 'Text View On' as alternative."
+msgstr ""
+
 msgid ""
 "Sorry!\n"
 "Picture in Picture is not available in HD channels!"
@@ -13550,6 +13584,9 @@ msgstr ""
 msgid "The user interface of your receiver is restarting in debug mode"
 msgstr "Enigma2 starter på nytt"
 
+msgid "The wake up command can be sent multiple times."
+msgstr ""
+
 #
 msgid ""
 "The wireless LAN plugin is not installed!\n"
@@ -14572,6 +14609,10 @@ msgstr ""
 msgid "Use TV remote control"
 msgstr "Bruk fjernkontroll tilhørende TV"
 
+#, fuzzy
+msgid "Use TV remote control for your receiver."
+msgstr "Bruk fjernkontroll tilhørende TV"
+
 msgid "Use USALS for this sat"
 msgstr "Bruk USALS for satellittposisjonering"
 
@@ -15026,6 +15067,10 @@ msgstr "Våkne TV fra avslått stilling"
 msgid "Wakeup"
 msgstr "Våkne"
 
+#, fuzzy
+msgid "Wakeup A/V receiver from standby."
+msgstr "Våkne mottakeren fra avslått stilling"
+
 msgid "Wakeup TV from standby"
 msgstr "Våkne TV fra avslått stilling"
 
@@ -15157,6 +15202,12 @@ msgid "What day of week ?"
 msgstr ""
 
 msgid "What type of service scan do you want?"
+msgstr ""
+
+msgid "When TV is turned off, the receiver will switch to standby by a command received from the TV."
+msgstr ""
+
+msgid "When TV is turned on, the receiver will be awakened by a command received from the TV."
 msgstr ""
 
 msgid "When enabled enigma2 will load unlinked user bouquets. This means that user bouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
@@ -15374,6 +15425,12 @@ msgstr "Når annet enn null er valgt vil et opptak starte tidligere enn starttid
 
 msgid "When nonzero, a recording will stop later than the ending time indicated by the EPG."
 msgstr "Når annet enn null er valgt vil et opptak stoppe senere enn sluttidspunktet angitt av EPG."
+
+msgid "When receiver wakes up/starts, it will send command for switch TV to correct input to which the receiver is pluged."
+msgstr ""
+
+msgid "When receiver wakes up/starts, it will try wake up TV by sending the appropriate command."
+msgstr ""
 
 msgid "When selected this allows video modes to be selected even if they are not reported as supported."
 msgstr ""
@@ -15763,6 +15820,9 @@ msgstr ""
 "Har du koblet til din USB WLAN minnepinne?\n"
 "\n"
 "Velg hva du vil gjøre videre."
+
+msgid "ZAP timers can send command 'sourceactive' before zap for set TV to correct input."
+msgstr ""
 
 msgid "Zambia"
 msgstr ""

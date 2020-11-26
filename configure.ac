@@ -643,6 +643,16 @@ AC_ARG_WITH(subttxtabnormalptsdiffs,
 )
 AC_DEFINE_UNQUOTED(SUBT_TXT_ABNORMAL_PTS_DIFFS, $with_subttxtabnormalptsdiffs,[Configure abnormal pts for subtitle and teletext])
 
+AC_ARG_WITH(fcc,
+	AC_HELP_STRING([--with-fcc], [use FCC specific codes for fast channel change]),
+	[[fcc=$withval]],
+	[[fcc=no]]
+)
+AM_CONDITIONAL(HAVE_FCC_ABILITY, test x"$with_fcc" = xyes)
+if test x"$with_fcc" = xyes ; then
+	AC_DEFINE(HAVE_FCC_ABILITY, 1,[use FCC specific codes for fast channel change])
+fi
+
 AC_ARG_WITH(oever,
 	[  --with-oever=NAME oe name [[7.2,...]]],
 	[OE_VER="$withval"],[OE_VER=""])

@@ -53,6 +53,7 @@ EXTRA_OECONF = "\
 	--with-oever="${VISIONVERSION}" \
 	${@bb.utils.contains_any("MACHINE_FEATURES", "7segment 7seg", "--with-7segment" , "", d)} \
 	${@bb.utils.contains("MACHINE_FEATURES", "nolcd", "--with-nolcd" , "", d)} \
+	${@bb.utils.contains("MACHINE_FEATURES", "fcc", "--with-fcc" , "", d)} \
 	BUILD_SYS=${BUILD_SYS} \
 	HOST_SYS=${HOST_SYS} \
 	STAGING_INCDIR=${STAGING_INCDIR} \

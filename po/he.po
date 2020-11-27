@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-25 11:52+0330\n"
+"POT-Creation-Date: 2020-11-27 19:47+0330\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -3128,6 +3128,9 @@ msgstr "Tuner הגדרת"
 msgid "Clients"
 msgstr ""
 
+msgid "Cloadfare"
+msgstr ""
+
 msgid "Clone TV screen to LCD"
 msgstr ""
 
@@ -3945,6 +3948,9 @@ msgstr "D"
 
 msgid "DHCP"
 msgstr "DHCP"
+
+msgid "DHCP router"
+msgstr ""
 
 #, fuzzy
 msgid "DLNA support"
@@ -5078,11 +5084,11 @@ msgstr ""
 msgid "Enable auto cable scan"
 msgstr ""
 
-msgid "Enable auto fast scan"
+msgid "Enable auto fastscan"
 msgstr ""
 
 #, python-format
-msgid "Enable auto fast scan for %s"
+msgid "Enable auto fastscan for %s"
 msgstr ""
 
 msgid "Enable blinking REC symbol on the LCD display"
@@ -5798,9 +5804,6 @@ msgstr ""
 msgid "Fast DiSEqC"
 msgstr "DiSEqC מהיר"
 
-msgid "Fast Scan"
-msgstr ""
-
 #
 msgid "Fast epoch"
 msgstr ""
@@ -5808,6 +5811,16 @@ msgstr ""
 #, fuzzy
 msgid "Fast forward speeds"
 msgstr "מהירות העברה קדימה"
+
+#
+#, fuzzy
+msgid "FastScan"
+msgstr "מהיר"
+
+#
+#, fuzzy
+msgid "Fastscan"
+msgstr "מהיר"
 
 #
 #, fuzzy
@@ -6161,6 +6174,9 @@ msgid "Go up the list"
 msgstr ""
 
 msgid "Gold"
+msgstr ""
+
+msgid "Google DNS"
 msgstr ""
 
 msgid "Goto"
@@ -7061,10 +7077,10 @@ msgstr ""
 msgid "KA-SAT"
 msgstr ""
 
-msgid "Kathrein RC660 (UFS910/922"
+msgid "Kathrein RC660 (UFS910/922)"
 msgstr ""
 
-msgid "Kathrein RC671 (UFS912"
+msgid "Kathrein RC671 (UFS912)"
 msgstr ""
 
 msgid "Kathrein RC675 (UFS913)"
@@ -8155,6 +8171,10 @@ msgstr "Nameserver"
 msgid "Nameserver %d"
 msgstr "Nameserver %d"
 
+#, fuzzy
+msgid "Nameserver configuration"
+msgstr "exit nameserver configuration"
+
 msgid "Nameserver settings"
 msgstr "Nameserver settings"
 
@@ -8788,6 +8808,12 @@ msgstr ""
 msgid "Open the movie list"
 msgstr "חזור לרשימת הסרטים"
 
+msgid "OpenDNS FamilyShield"
+msgstr ""
+
+msgid "OpenDNS Home"
+msgstr ""
+
 msgid "OpenVPN"
 msgstr ""
 
@@ -9187,7 +9213,7 @@ msgstr ""
 "Please configure your internet connection by filling out the required values.\n"
 "When you are ready press OK to continue."
 
-msgid "Please connect your receiver to the internet"
+msgid "Please connect your %s %s (kernel %s) to the internet"
 msgstr ""
 
 msgid "Please do not change any values unless you know what you are doing!"
@@ -13202,8 +13228,8 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Thank you for using the wizard. Your receiver is now ready for use.\n"
-"Press OK to start using your receiver."
+"Thank you for using the wizard. Your %s %s (kernel %s) is now ready for use.\n"
+"Press OK to start using Open Vision %s-%s"
 msgstr ""
 "Thank you for using the wizard.\n"
 "Please press OK to continue."
@@ -14332,11 +14358,6 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "Use DHCP"
 
-#
-#, fuzzy
-msgid "Use DHCP for DNS"
-msgstr "Use DHCP"
-
 msgid "Use EIT EPG information when it is available."
 msgstr ""
 
@@ -14433,7 +14454,10 @@ msgstr "Use the Networkwizard to configure selected network adapter"
 msgid "Use the network wizard to configure your network\n"
 msgstr "Use the Networkwizard to configure your Network\n"
 
-msgid "Use the up/down keys on your remote control to select an option. After that, press OK."
+#, fuzzy
+msgid ""
+"Use the up/down keys on your remote control to select an option. After that, press OK.\n"
+"We detected your RC as %s (type %s id %s)"
 msgstr ".השתמש במקשי השלט על מנת לבחור באפשרות. בסוף, לחץ אשר"
 
 #, fuzzy
@@ -14901,6 +14925,12 @@ msgid "Weighted position"
 msgstr ""
 
 msgid ""
+"Welcome to Open Vision %s-%s\n"
+"This start wizard will guide you through the basic setup of your %s %s (kernel %s).\n"
+"Press the OK button on your remote control to move to the next step."
+msgstr ""
+
+msgid ""
 "Welcome to the cutlist editor.\n"
 "\n"
 "Seek to the start of the stuff you want to cut away, press RED.\n"
@@ -14914,13 +14944,6 @@ msgid ""
 "If you want to connect your receiver to the Internet, this wizard will guide you through the basic network setup of your receiver.\n"
 "\n"
 "Press OK to start configuring your network"
-msgstr ""
-
-msgid ""
-"Welcome.\n"
-"\n"
-"This start wizard will guide you through the basic setup of your receiver.\n"
-"Press the OK button on your remote control to move to the next step."
 msgstr ""
 
 #
@@ -15424,6 +15447,9 @@ msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
 
 msgid "You seem to be in timeshift!"
+msgstr ""
+
+msgid "Your %s %s (kernel %s) does not have an internet connection"
 msgstr ""
 
 msgid "Your PIN code is 0000. This is the default PIN code and it disables parental control!\n"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project Slovenia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-25 11:52+0330\n"
+"POT-Creation-Date: 2020-11-27 19:47+0330\n"
 "PO-Revision-Date: 2020-05-16 18:48+0200\n"
 "Last-Translator: Taykun345 <support@satnigmo.com>\n"
 "Language-Team: Satnigmo <support@satnigmo.com>\n"
@@ -3376,6 +3376,9 @@ msgstr "Nastavitev kanalnikov"
 msgid "Clients"
 msgstr ""
 
+msgid "Cloadfare"
+msgstr ""
+
 msgid "Clone TV screen to LCD"
 msgstr ""
 
@@ -4265,6 +4268,9 @@ msgstr "D"
 #
 msgid "DHCP"
 msgstr "Samodejno pridobivanje IP naslova - DHCP"
+
+msgid "DHCP router"
+msgstr ""
 
 #, fuzzy
 msgid "DLNA support"
@@ -5506,12 +5512,13 @@ msgstr "Virgin EPG sistem"
 msgid "Enable auto cable scan"
 msgstr "Omogoči samodejno iskanje DVB-C kanalov"
 
-msgid "Enable auto fast scan"
+#, fuzzy
+msgid "Enable auto fastscan"
 msgstr "Omogoči samodejno hitro iskanje"
 
-#, python-format
-msgid "Enable auto fast scan for %s"
-msgstr ""
+#, fuzzy, python-format
+msgid "Enable auto fastscan for %s"
+msgstr "Omogoči samodejno hitro iskanje"
 
 msgid "Enable blinking REC symbol on the LCD display"
 msgstr ""
@@ -6290,16 +6297,22 @@ msgid "Fast DiSEqC"
 msgstr "Hiter DiSEqC"
 
 #
-msgid "Fast Scan"
-msgstr "Hitro iskanje"
-
-#
 msgid "Fast epoch"
 msgstr "Hiter del"
 
 #
 msgid "Fast forward speeds"
 msgstr "Hitrosti hitrega predvajanja naprej"
+
+#
+#, fuzzy
+msgid "FastScan"
+msgstr "Hitro iskanje"
+
+#
+#, fuzzy
+msgid "Fastscan"
+msgstr "Hitro iskanje"
 
 #
 #, fuzzy
@@ -6676,6 +6689,9 @@ msgid "Go up the list"
 msgstr "Pojdi gor po seznamu"
 
 msgid "Gold"
+msgstr ""
+
+msgid "Google DNS"
 msgstr ""
 
 msgid "Goto"
@@ -7627,10 +7643,10 @@ msgstr "Samodejno"
 msgid "KA-SAT"
 msgstr ""
 
-msgid "Kathrein RC660 (UFS910/922"
+msgid "Kathrein RC660 (UFS910/922)"
 msgstr ""
 
-msgid "Kathrein RC671 (UFS912"
+msgid "Kathrein RC671 (UFS912)"
 msgstr ""
 
 msgid "Kathrein RC675 (UFS913)"
@@ -8772,6 +8788,11 @@ msgid "Nameserver %d"
 msgstr "Imenski strežnik %d"
 
 #
+#, fuzzy
+msgid "Nameserver configuration"
+msgstr "Izhod iz nastavitev imenskega strežnika"
+
+#
 msgid "Nameserver settings"
 msgstr "Nastavitve imenskega strežnika"
 
@@ -9435,6 +9456,12 @@ msgstr ""
 msgid "Open the movie list"
 msgstr "Odprtje seznama posnetkov"
 
+msgid "OpenDNS FamilyShield"
+msgstr ""
+
+msgid "OpenDNS Home"
+msgstr ""
+
 msgid "OpenVPN"
 msgstr ""
 
@@ -9850,7 +9877,8 @@ msgstr ""
 "Nastavite vašo internetno povezavo.\n"
 "Po vnosu vseh podatkov, pritisnite OK."
 
-msgid "Please connect your receiver to the internet"
+#, fuzzy
+msgid "Please connect your %s %s (kernel %s) to the internet"
 msgstr "Prosim, povežite vaš sprejemnik z internetom!"
 
 #
@@ -14171,9 +14199,10 @@ msgid ""
 msgstr "Hvala, da ste uporabili čarovnik. Za nadaljevanje pritisnite OK!"
 
 #
+#, fuzzy
 msgid ""
-"Thank you for using the wizard. Your receiver is now ready for use.\n"
-"Press OK to start using your receiver."
+"Thank you for using the wizard. Your %s %s (kernel %s) is now ready for use.\n"
+"Press OK to start using Open Vision %s-%s"
 msgstr ""
 "Hvala, da ste uporabili čarovnik. Sprejemnik je sedaj pripravljen za uporabo.\n"
 "Za nadaljevanje pritisnite OK!"
@@ -15365,11 +15394,6 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "Uporaba samodejnega pridobivanja IP naslova - DHCP"
 
-#
-#, fuzzy
-msgid "Use DHCP for DNS"
-msgstr "Uporaba samodejnega pridobivanja IP naslova - DHCP"
-
 msgid "Use EIT EPG information when it is available."
 msgstr "EIT EPG se uporablja v primerih, ko TV postaje oddajajo tudi spored. Primer so slovenski kanali v DVB-T."
 
@@ -15472,7 +15496,10 @@ msgid "Use the network wizard to configure your network\n"
 msgstr "Za nastavljanje vašega omrežja, uporabite omrežni čarovnik.\n"
 
 #
-msgid "Use the up/down keys on your remote control to select an option. After that, press OK."
+#, fuzzy
+msgid ""
+"Use the up/down keys on your remote control to select an option. After that, press OK.\n"
+"We detected your RC as %s (type %s id %s)"
 msgstr "Za izbiranje uporabite tipke gor/dol na vašem daljinskem upravljalniku. Nato pritisnite tipko OK."
 
 #
@@ -15964,6 +15991,17 @@ msgstr "vsak teden"
 msgid "Weighted position"
 msgstr ""
 
+#, fuzzy
+msgid ""
+"Welcome to Open Vision %s-%s\n"
+"This start wizard will guide you through the basic setup of your %s %s (kernel %s).\n"
+"Press the OK button on your remote control to move to the next step."
+msgstr ""
+"Dobrodošli.\n"
+"\n"
+"Začetni čarovnik vas bo vodil skozi osnovne nastavitve vašega sprejemnika.\n"
+"Za nadaljevanje pritisnite tipko OK."
+
 #
 #, fuzzy
 msgid ""
@@ -15990,17 +16028,6 @@ msgstr ""
 "\n"
 "Če želite sprejemnik povezati na internet, vas bo omenjeni čarovnik vodil skozi vse potrebne nastavitve, ki so potrebne za delovanje internetne povezave na vašem sprejemniku!\n"
 "\n"
-"Za nadaljevanje pritisnite tipko OK."
-
-msgid ""
-"Welcome.\n"
-"\n"
-"This start wizard will guide you through the basic setup of your receiver.\n"
-"Press the OK button on your remote control to move to the next step."
-msgstr ""
-"Dobrodošli.\n"
-"\n"
-"Začetni čarovnik vas bo vodil skozi osnovne nastavitve vašega sprejemnika.\n"
 "Za nadaljevanje pritisnite tipko OK."
 
 #
@@ -16540,6 +16567,10 @@ msgstr "Morate preklopiti na kanal %s (%s - '%s')!\n"
 
 msgid "You seem to be in timeshift!"
 msgstr ""
+
+#, fuzzy
+msgid "Your %s %s (kernel %s) does not have an internet connection"
+msgstr "Sprejemnik nima delujoče internetne povezave"
 
 msgid "Your PIN code is 0000. This is the default PIN code and it disables parental control!\n"
 msgstr ""

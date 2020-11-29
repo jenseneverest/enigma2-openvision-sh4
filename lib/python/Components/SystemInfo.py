@@ -140,7 +140,7 @@ SystemInfo["OScamInstalled"] = fileExists("/usr/bin/oscam") or fileExists("/usr/
 SystemInfo["OScamIsActive"] = SystemInfo["OScamInstalled"] and fileExists("/tmp/.oscam/oscam.version")
 SystemInfo["NCamInstalled"] = fileExists("/usr/bin/ncam")
 SystemInfo["NCamIsActive"] = SystemInfo["NCamInstalled"] and fileExists("/tmp/.ncam/ncam.version")
-SystemInfo["OpenVisionModule"] = fileCheck("/proc/stb/info/openvision")
+SystemInfo["OpenVisionModule"] = fileCheck("/proc/openvision/distro")
 SystemInfo["7segment"] = displaytype == "7segment" or "7seg" in displaytype
 SystemInfo["HasH9SD"] = False
 SystemInfo["HasSDnomount"] = False
